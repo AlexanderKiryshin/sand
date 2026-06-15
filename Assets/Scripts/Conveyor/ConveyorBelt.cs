@@ -9,8 +9,10 @@ public class ConveyorBelt : MonoBehaviour
     public const float EntryX = 200f;
     public const float ExitX = -220f;
     public const float MoveSpeed = 55f;
+    public const float FullSpeedMultiplier = 1.3f;
     public const float CollectionTolerance = 35f;
     public const float BucketSpacing = 72f;
+    public const float BucketWidth = 40f;
 
     [SerializeField] private int requiredFilledBuckets = 5;
 
@@ -32,6 +34,7 @@ public class ConveyorBelt : MonoBehaviour
         public Bucket Bucket;
         public float PositionX;
         public bool PendingRemoval;
+        internal int LastSimTickAlignedColumn = -1;
     }
 
     private void Awake()
@@ -55,6 +58,11 @@ public class ConveyorBelt : MonoBehaviour
     public bool CanAcceptBucket()
     {
         return entries.Count < MaxOnBelt;
+    }
+
+    public bool IsFull()
+    {
+        return entries.Count >= MaxOnBelt;
     }
 
     public bool TryPlaceBucket(Bucket bucket)
@@ -106,7 +114,8 @@ public class ConveyorBelt : MonoBehaviour
             return;
         }
 
-        float move = MoveSpeed * deltaTime;
+        float speed = MoveSpeed * (IsFull() ? FullSpeedMultiplier : 1f);
+        float move = speed * deltaTime;
         bool changed = false;
 
         for (int i = entries.Count - 1; i >= 0; i--)
@@ -248,6 +257,11 @@ public class ConveyorBelt : MonoBehaviour
                 continue;
             }
 
+            if (!IsBucketStableForCollection(entry, gridWidth))
+            {
+                continue;
+            }
+
             float distance = activeMapper != null
                 ? activeMapper.GetColumnAlignmentError(entry.PositionX, gridX, gridWidth)
                 : float.MaxValue;
@@ -264,6 +278,58 @@ public class ConveyorBelt : MonoBehaviour
     public bool CanCollectAt(int gridX, int gridWidth, byte colorIndex)
     {
         return FindBucketForColumn(gridX, gridWidth, colorIndex) != null;
+    }
+
+    public bool IsBucketStableForCollection(BeltEntry entry, int gridWidth)
+    {
+        if (entry == null)
+        {
+            return false;
+        }
+
+        int alignedColumn = GetAlignedColumn(entry, gridWidth);
+        return alignedColumn >= 0 && alignedColumn == entry.LastSimTickAlignedColumn;
+    }
+
+    public void EndSandSimTick(int gridWidth)
+    {
+        for (int i = 0; i < entries.Count; i++)
+        {
+            BeltEntry entry = entries[i];
+            entry.LastSimTickAlignedColumn = GetAlignedColumn(entry, gridWidth);
+        }
+    }
+
+    private int GetAlignedColumn(BeltEntry entry, int gridWidth)
+    {
+        if (entry == null || entry.Bucket == null || entry.Bucket.IsFull
+            || entry.Bucket.State != BucketState.OnConveyor || !IsInCollectionZone(entry))
+        {
+            return -1;
+        }
+
+        SandConveyorMapper activeMapper = EnsureMapper();
+        int bestColumn = -1;
+        float bestDistance = float.MaxValue;
+
+        for (int gridX = 0; gridX < gridWidth; gridX++)
+        {
+            if (!IsColumnUnderBucket(gridX, gridWidth, entry))
+            {
+                continue;
+            }
+
+            float distance = activeMapper != null
+                ? activeMapper.GetColumnAlignmentError(entry.PositionX, gridX, gridWidth)
+                : float.MaxValue;
+            if (distance < bestDistance)
+            {
+                bestDistance = distance;
+                bestColumn = gridX;
+            }
+        }
+
+        return bestColumn;
     }
 
     public bool HasBucketAlignedAt(int gridX, int gridWidth)

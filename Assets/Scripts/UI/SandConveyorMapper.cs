@@ -74,22 +74,33 @@ public class SandConveyorMapper : MonoBehaviour
             return false;
         }
 
-        float bucketSandX = GetBucketSandLocalX(bucketBeltX);
-        float columnCenter = GetColumnLocalX(gridX, gridWidth);
-        float threshold = GetColumnHalfWidth(gridWidth) * 0.85f;
+        float bucketSandLeft = BeltLocalXToSandLocalX(
+            bucketBeltX - ConveyorBelt.BucketWidth * 0.5f, beltSpace);
+        float bucketSandRight = BeltLocalXToSandLocalX(
+            bucketBeltX + ConveyorBelt.BucketWidth * 0.5f, beltSpace);
+        if (bucketSandLeft > bucketSandRight)
+        {
+            float swap = bucketSandLeft;
+            bucketSandLeft = bucketSandRight;
+            bucketSandRight = swap;
+        }
+
+        float bucketSandX = (bucketSandLeft + bucketSandRight) * 0.5f;
         Rect rect = sandImage.rect;
         float contentLeft = rect.xMin + GetSandPadding();
         float contentRight = rect.xMax - GetSandPadding();
         float margin = GetColumnHalfWidth(gridWidth);
         bool inBounds = bucketSandX >= contentLeft - margin && bucketSandX <= contentRight + margin;
-        bool aligned = Mathf.Abs(bucketSandX - columnCenter) <= threshold;
-
         if (!inBounds)
         {
             return false;
         }
 
-        return aligned;
+        float columnCenter = GetColumnLocalX(gridX, gridWidth);
+        float columnHalf = GetColumnHalfWidth(gridWidth);
+        float columnLeft = columnCenter - columnHalf;
+        float columnRight = columnCenter + columnHalf;
+        return columnLeft < bucketSandRight && columnRight > bucketSandLeft;
     }
 
     public float GetBucketSandLocalX(float bucketBeltX)

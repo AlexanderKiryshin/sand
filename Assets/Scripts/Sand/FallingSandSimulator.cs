@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FallingSandSimulator : MonoBehaviour
 {
-    [SerializeField] private float ticksPerSecond = 24f;
+    [SerializeField] private float ticksPerSecond = 32f;
     [SerializeField] private int maxCollectPerTick = 6;
     [SerializeField] private int collectRowCount = 8;
 
@@ -16,6 +16,7 @@ public class FallingSandSimulator : MonoBehaviour
     private int fallTickCounter;
     private bool scanLeftToRight = true;
     private readonly Dictionary<int, bool> collectColumnCache = new Dictionary<int, bool>();
+    private bool[] movedThisTick;
 
     public event Action OnGridChanged;
 
@@ -26,6 +27,7 @@ public class FallingSandSimulator : MonoBehaviour
         grid = sandGrid;
         collector = sandCollector;
         conveyor = FindObjectOfType<ConveyorBelt>();
+        movedThisTick = new bool[grid.Width * grid.Height];
         tickTimer = 0f;
         isSleeping = false;
         fallTickCounter = 0;
@@ -130,12 +132,19 @@ public class FallingSandSimulator : MonoBehaviour
     public bool SimulateTick()
     {
         collectColumnCache.Clear();
+        ClearMovedThisTick();
         grid.RecalculateSandBounds();
 
         bool changed = SimulateFallPass();
         if (ProcessCollectionUnderBucket())
         {
             changed = true;
+            grid.RecalculateSandBounds();
+        }
+
+        if (conveyor != null)
+        {
+            conveyor.EndSandSimTick(grid.LevelWidth);
         }
 
         if (changed)
@@ -145,6 +154,60 @@ public class FallingSandSimulator : MonoBehaviour
 
         fallTickCounter++;
         scanLeftToRight = !scanLeftToRight;
+        return changed;
+    }
+
+    private void ClearMovedThisTick()
+    {
+        if (movedThisTick == null || movedThisTick.Length != grid.Width * grid.Height)
+        {
+            movedThisTick = new bool[grid.Width * grid.Height];
+            return;
+        }
+
+        Array.Clear(movedThisTick, 0, movedThisTick.Length);
+    }
+
+    private void MarkMovedThisTick(int x, int y)
+    {
+        movedThisTick[y * grid.Width + x] = true;
+    }
+
+    private bool WasMovedThisTick(int x, int y)
+    {
+        return movedThisTick[y * grid.Width + x];
+    }
+
+    private bool CollapseColumn(int x)
+    {
+        int topRow = grid.SandMinY;
+        int bottomRow = grid.SandMaxY;
+        if (bottomRow < topRow)
+        {
+            return false;
+        }
+
+        bool changed = false;
+        int writeY = bottomRow;
+        for (int y = bottomRow; y >= topRow; y--)
+        {
+            byte color = grid.GetCell(x, y);
+            if (color == 0)
+            {
+                continue;
+            }
+
+            if (y != writeY)
+            {
+                grid.SetCell(x, writeY, color);
+                grid.SetCell(x, y, 0);
+                MarkMovedThisTick(x, writeY);
+                changed = true;
+            }
+
+            writeY--;
+        }
+
         return changed;
     }
 
@@ -204,12 +267,8 @@ public class FallingSandSimulator : MonoBehaviour
         {
             grid.SetCell(x, belowY, color);
             grid.SetCell(x, y, 0);
+            MarkMovedThisTick(x, belowY);
             return true;
-        }
-
-        if (IsMatchingCollectionColumn(x, color))
-        {
-            return false;
         }
 
         int firstDir = GetDiagonalDirection(x, y);
@@ -239,13 +298,9 @@ public class FallingSandSimulator : MonoBehaviour
             return false;
         }
 
-        if (IsMatchingCollectionColumn(targetX, color))
-        {
-            return false;
-        }
-
         grid.SetCell(targetX, belowY, color);
         grid.SetCell(x, y, 0);
+        MarkMovedThisTick(targetX, belowY);
         return true;
     }
 
@@ -271,13 +326,19 @@ public class FallingSandSimulator : MonoBehaviour
 
     private bool IsCollectibleGrain(int x, int y, byte color)
     {
-        if (!IsMatchingCollectionColumn(x, color))
+        if (!IsMatchingCollectionColumn(x, color) || !IsSettledGrain(x, y) || WasMovedThisTick(x, y))
         {
             return false;
         }
 
         int drainStart = grid.Height - Mathf.Max(1, collectRowCount);
         return y >= drainStart;
+    }
+
+    private bool IsSettledGrain(int x, int y)
+    {
+        int belowY = y + 1;
+        return belowY >= grid.Height || !grid.IsEmpty(x, belowY);
     }
 
     private bool ProcessCollectionUnderBucket()
@@ -316,6 +377,7 @@ public class FallingSandSimulator : MonoBehaviour
                 {
                     grid.SetCell(x, y, 0);
                     grid.EnqueueVacancy(x, y);
+                    CollapseColumn(x);
                     changed = true;
                     collectedThisTick++;
                 }

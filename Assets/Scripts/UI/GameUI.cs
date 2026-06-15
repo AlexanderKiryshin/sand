@@ -55,7 +55,7 @@ public class GameUI : MonoBehaviour
             return;
         }
 
-        conveyorLabel.text = conveyorBelt.FilledBuckets + "/" + conveyorBelt.RequiredFilledBuckets;
+        conveyorLabel.text = conveyorBelt.Entries.Count + "/" + ConveyorBelt.MaxOnBelt;
     }
 
     public void ShowLevelComplete()

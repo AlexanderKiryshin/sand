@@ -30,7 +30,7 @@ public static class GameSceneBuilder
         GameObject systems = new GameObject("GameSystems");
         LevelLoader levelLoader = systems.AddComponent<LevelLoader>();
         FallingSandSimulator sandSimulator = systems.AddComponent<FallingSandSimulator>();
-        SetPrivateField(sandSimulator, "ticksPerSecond", 24f);
+        SetPrivateField(sandSimulator, "ticksPerSecond", 32f);
         SetPrivateField(sandSimulator, "maxCollectPerTick", 6);
         SetPrivateField(sandSimulator, "collectRowCount", 8);
         SandCollector sandCollector = systems.AddComponent<SandCollector>();

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,6 +21,8 @@ public class ConveyorBeltView : MonoBehaviour
     {
         public RectTransform rect;
         public Image fillImage;
+        public TextMeshProUGUI fillLabel;
+        public int lastFillPercent = -1;
     }
 
     private void Awake()
@@ -126,7 +129,13 @@ public class ConveyorBeltView : MonoBehaviour
             return;
         }
 
-        beltOffset += beltScrollSpeed * Time.deltaTime;
+        float scrollSpeed = beltScrollSpeed;
+        if (conveyor != null && conveyor.IsFull())
+        {
+            scrollSpeed *= ConveyorBelt.FullSpeedMultiplier;
+        }
+
+        beltOffset += scrollSpeed * Time.deltaTime;
         float normalized = (beltOffset / beltTexture.width) % 1f;
         stripeImage.uvRect = new Rect(normalized, 0f, 1f, 1f);
     }
@@ -202,6 +211,13 @@ public class ConveyorBeltView : MonoBehaviour
             {
                 visual.fillImage.fillAmount = entry.Bucket.FillNormalized;
             }
+
+            int fillPercent = Mathf.RoundToInt(entry.Bucket.FillNormalized * 100f);
+            if (visual.fillLabel != null && visual.lastFillPercent != fillPercent)
+            {
+                visual.lastFillPercent = fillPercent;
+                visual.fillLabel.text = fillPercent + "%";
+            }
         }
     }
 
@@ -273,7 +289,7 @@ public class ConveyorBeltView : MonoBehaviour
         bucketObject.transform.SetParent(bucketContainer, false);
 
         RectTransform rect = bucketObject.GetComponent<RectTransform>();
-        rect.sizeDelta = new Vector2(40f, 40f);
+        rect.sizeDelta = new Vector2(ConveyorBelt.BucketWidth, ConveyorBelt.BucketWidth);
         rect.anchoredPosition = new Vector2(ConveyorBelt.EntryX, 0f);
 
         Image outline = bucketObject.AddComponent<Image>();
@@ -300,7 +316,24 @@ public class ConveyorBeltView : MonoBehaviour
                 levelLoader.CurrentLevel.GetPaletteColor(bucket.ColorIndex));
         }
 
-        return new BucketVisual { rect = rect, fillImage = fill };
+        GameObject labelObject = new GameObject("FillLabel", typeof(RectTransform));
+        labelObject.transform.SetParent(bucketObject.transform, false);
+        RectTransform labelRect = labelObject.GetComponent<RectTransform>();
+        labelRect.anchorMin = Vector2.zero;
+        labelRect.anchorMax = Vector2.one;
+        labelRect.offsetMin = Vector2.zero;
+        labelRect.offsetMax = Vector2.zero;
+
+        TextMeshProUGUI fillLabel = labelObject.AddComponent<TextMeshProUGUI>();
+        fillLabel.text = "0%";
+        fillLabel.alignment = TextAlignmentOptions.Center;
+        fillLabel.fontSize = 12f;
+        fillLabel.color = Color.white;
+        fillLabel.outlineWidth = 0.2f;
+        fillLabel.outlineColor = new Color(0f, 0f, 0f, 0.75f);
+        fillLabel.raycastTarget = false;
+
+        return new BucketVisual { rect = rect, fillImage = fill, fillLabel = fillLabel };
     }
 
     private static Texture2D CreateBeltTexture(int width, int height)

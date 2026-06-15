@@ -124,11 +124,6 @@ public static class GameSceneBuilder
 
         RawImage rawImage = imageObject.AddComponent<RawImage>();
 
-        GameObject overlayObject = CreateUIObject("SandGrainOverlay", panel.transform);
-        RectTransform overlayRect = overlayObject.GetComponent<RectTransform>();
-        Stretch(overlayRect, 12f);
-        overlayObject.AddComponent<SandGrainOverlay>();
-
         return rawImage;
     }
 

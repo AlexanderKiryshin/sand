@@ -7,6 +7,8 @@ public class SandPourAnimator : MonoBehaviour
     [SerializeField] private RectTransform pourLayer;
     [SerializeField] private int poolSize = 96;
     [SerializeField] private float pourDuration = 0.55f;
+    [SerializeField] [Range(0f, 0.6f)] private float pourDurationSpread = 0.4f;
+    [SerializeField] private Vector2 pourStartJitter = new Vector2(10f, 6f);
     [SerializeField] private Vector2 grainSize = new Vector2(4f, 4f);
     [SerializeField] private bool syncGrainSizeWithRenderer = true;
     [SerializeField] private float grainSizeScale = 1f;
@@ -212,19 +214,28 @@ public class SandPourAnimator : MonoBehaviour
         }
     }
 
-    private void SpawnPourGrain(Vector3 startWorld, Vector3 endWorld, Color32 color, Bucket targetBucket)
+    private void SpawnPourGrain(
+        Vector3 startWorld,
+        Vector3 endWorld,
+        Color32 color,
+        Bucket targetBucket)
     {
         PourGrain grain = pool.Count > 0 ? pool.Dequeue() : CreateGrain();
         grain.rect.sizeDelta = GetGrainSize();
-        grain.startWorld = startWorld;
+
+        float durationFactor = 1f + Random.Range(-pourDurationSpread, pourDurationSpread);
+        grain.duration = Mathf.Max(0.12f, pourDuration * durationFactor);
+        grain.startWorld = startWorld + new Vector3(
+            Random.Range(-pourStartJitter.x, pourStartJitter.x),
+            Random.Range(-pourStartJitter.y, pourStartJitter.y),
+            0f);
         grain.endWorld = endWorld;
         grain.targetBucket = targetBucket;
-        grain.elapsed = 0f;
-        grain.duration = pourDuration;
+        grain.elapsed = Random.Range(0f, grain.duration * 0.15f);
         grain.active = true;
         grain.image.color = color;
         grain.rect.gameObject.SetActive(true);
-        grain.rect.position = startWorld;
+        grain.rect.position = grain.startWorld;
         grain.rect.SetAsLastSibling();
         activeGrains.Add(grain);
     }

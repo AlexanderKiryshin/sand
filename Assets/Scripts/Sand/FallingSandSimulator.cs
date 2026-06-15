@@ -199,8 +199,7 @@ public class FallingSandSimulator : MonoBehaviour
 
             if (y != writeY)
             {
-                grid.SetCell(x, writeY, color);
-                grid.SetCell(x, y, 0);
+                grid.MoveGrain(x, y, x, writeY);
                 MarkMovedThisTick(x, writeY);
                 changed = true;
             }
@@ -265,8 +264,7 @@ public class FallingSandSimulator : MonoBehaviour
 
         if (grid.IsEmpty(x, belowY))
         {
-            grid.SetCell(x, belowY, color);
-            grid.SetCell(x, y, 0);
+            grid.MoveGrain(x, y, x, belowY);
             MarkMovedThisTick(x, belowY);
             return true;
         }
@@ -298,8 +296,7 @@ public class FallingSandSimulator : MonoBehaviour
             return false;
         }
 
-        grid.SetCell(targetX, belowY, color);
-        grid.SetCell(x, y, 0);
+        grid.MoveGrain(x, y, targetX, belowY);
         MarkMovedThisTick(targetX, belowY);
         return true;
     }

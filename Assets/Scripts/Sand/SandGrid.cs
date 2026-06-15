@@ -5,6 +5,7 @@ using UnityEngine;
 public class SandGrid
 {
     private byte[] cells;
+    private Color32[] displayColors;
     private readonly int width;
     private readonly int height;
     private readonly int levelWidth;
@@ -39,6 +40,7 @@ public class SandGrid
         height = levelHeight * subGrainsPerAxis;
         palette = levelData.palette;
         cells = new byte[width * height];
+        displayColors = new Color32[width * height];
         dirtyFlags = new bool[width * height];
         dirtyIndices = new List<int>(256);
         vacancyQueue = new List<int>(256);
@@ -109,6 +111,11 @@ public class SandGrid
         }
 
         cells[index] = value;
+        if (value == 0)
+        {
+            displayColors[index] = default;
+        }
+
         MarkDirty(index);
 
         if (previous != 0)
@@ -203,6 +210,66 @@ public class SandGrid
     public bool HasVacancies()
     {
         return vacancyQueue.Count > 0;
+    }
+
+    public Color32 GetDisplayColor(int x, int y)
+    {
+        if (!IsInside(x, y))
+        {
+            return default;
+        }
+
+        return displayColors[y * width + x];
+    }
+
+    public void SetDisplayColor(int x, int y, Color32 color)
+    {
+        if (!IsInside(x, y))
+        {
+            return;
+        }
+
+        displayColors[y * width + x] = color;
+    }
+
+    public void MoveGrain(int fromX, int fromY, int toX, int toY)
+    {
+        if (!IsInside(fromX, fromY) || !IsInside(toX, toY))
+        {
+            return;
+        }
+
+        int fromIndex = fromY * width + fromX;
+        int toIndex = toY * width + toX;
+        byte color = cells[fromIndex];
+        if (color == 0)
+        {
+            return;
+        }
+
+        Color32 display = displayColors[fromIndex];
+        cells[fromIndex] = 0;
+        displayColors[fromIndex] = default;
+        MarkDirty(fromIndex);
+        remainingCount--;
+
+        byte previous = cells[toIndex];
+        cells[toIndex] = color;
+        displayColors[toIndex] = display;
+        MarkDirty(toIndex);
+
+        if (previous == 0)
+        {
+            remainingCount++;
+        }
+
+        UpdateSandBounds(toY);
+        ClearVacancyQueued(toIndex);
+
+        if (fromY <= sandMinY || fromY >= sandMaxY)
+        {
+            boundsNeedRecalc = true;
+        }
     }
 
     public bool IsInside(int x, int y)

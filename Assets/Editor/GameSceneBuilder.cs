@@ -35,6 +35,7 @@ public static class GameSceneBuilder
         SetPrivateField(sandSimulator, "collectRowCount", 8);
         SandCollector sandCollector = systems.AddComponent<SandCollector>();
         ConveyorBelt conveyorBelt = systems.AddComponent<ConveyorBelt>();
+        ConveyorSettings conveyorSettings = EnsureConveyorSettings();
         WinConditionChecker winChecker = systems.AddComponent<WinConditionChecker>();
         GameManager gameManager = systems.AddComponent<GameManager>();
 
@@ -58,6 +59,7 @@ public static class GameSceneBuilder
         SetPrivateField(levelLoader, "conveyorBelt", conveyorBelt);
 
         SetPrivateField(sandCollector, "conveyorBelt", conveyorBelt);
+        SetPrivateField(conveyorBelt, "settings", conveyorSettings);
 
         SetPrivateField(gameManager, "levelDatabase", database);
         SetPrivateField(gameManager, "levelLoader", levelLoader);
@@ -91,6 +93,32 @@ public static class GameSceneBuilder
 
         AssetDatabase.SaveAssets();
         Debug.Log("Game scene built at " + scenePath);
+    }
+
+    [MenuItem("Window/Sand/Ensure Conveyor Settings")]
+    public static ConveyorSettings EnsureConveyorSettingsAsset()
+    {
+        return EnsureConveyorSettings();
+    }
+
+    private static ConveyorSettings EnsureConveyorSettings()
+    {
+        const string path = "Assets/Settings/ConveyorSettings.asset";
+        ConveyorSettings settings = AssetDatabase.LoadAssetAtPath<ConveyorSettings>(path);
+        if (settings != null)
+        {
+            return settings;
+        }
+
+        string directory = Path.GetDirectoryName(path);
+        if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
+        {
+            Directory.CreateDirectory(directory);
+        }
+
+        settings = ScriptableObject.CreateInstance<ConveyorSettings>();
+        AssetDatabase.CreateAsset(settings, path);
+        return settings;
     }
 
     private static void ConfigureCamera()
@@ -219,13 +247,13 @@ public static class GameSceneBuilder
         RectTransform rect = inventory.GetComponent<RectTransform>();
         rect.anchorMin = new Vector2(0.5f, 0.14f);
         rect.anchorMax = new Vector2(0.5f, 0.14f);
-        rect.sizeDelta = new Vector2(110f, 110f);
+        rect.sizeDelta = new Vector2(220f, 220f);
 
         GridLayoutGroup grid = inventory.AddComponent<GridLayoutGroup>();
-        grid.cellSize = new Vector2(44f, 44f);
-        grid.spacing = new Vector2(8f, 8f);
+        grid.cellSize = new Vector2(36f, 36f);
+        grid.spacing = new Vector2(4f, 4f);
         grid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
-        grid.constraintCount = 2;
+        grid.constraintCount = LevelData.BucketLayoutColumns;
 
         BucketInventoryUI inventoryUI = inventory.AddComponent<BucketInventoryUI>();
         SetPrivateField(inventoryUI, "bucketContainer", rect);

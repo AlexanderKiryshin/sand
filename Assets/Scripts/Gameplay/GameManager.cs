@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
     {
         SetAnchor("SandPanel", 0.62f, new Vector2(280f, 280f));
         SetAnchor("ConveyorPanel", 0.38f, new Vector2(400f, 72f));
-        SetAnchor("BucketInventory", 0.14f, new Vector2(110f, 110f));
+        SetAnchor("BucketInventory", 0.14f, new Vector2(220f, 220f));
     }
 
     private static void SetAnchor(string objectName, float anchorY, Vector2 size)
@@ -217,7 +217,7 @@ public class GameManager : MonoBehaviour
             return false;
         }
 
-        if (!bucketInventory.TryTakeBucket(bucket, conveyorBelt))
+        if (!bucketInventory.TryTakeBucket(bucket, conveyorBelt, levelLoader != null ? levelLoader.CurrentLevel : null))
         {
             return false;
         }
@@ -248,6 +248,11 @@ public class GameManager : MonoBehaviour
         if (bucketInventoryUI != null)
         {
             bucketInventoryUI.Refresh();
+        }
+
+        if (conveyorBelt != null)
+        {
+            conveyorBelt.SetAllBucketsDeployed(bucketInventory.CountRemaining() == 0);
         }
 
         if (winConditionChecker != null)

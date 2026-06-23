@@ -6,8 +6,6 @@ using UnityEngine.UI;
 [RequireComponent(typeof(RectTransform))]
 public class ConveyorBeltView : MonoBehaviour
 {
-    [SerializeField] private float beltScrollSpeed = 90f;
-
     private RectTransform beltRect;
     private RawImage stripeImage;
     private ConveyorBelt conveyor;
@@ -129,10 +127,12 @@ public class ConveyorBeltView : MonoBehaviour
             return;
         }
 
-        float scrollSpeed = beltScrollSpeed;
-        if (conveyor != null && conveyor.IsFull())
+        float scrollSpeed = conveyor != null
+            ? conveyor.BeltScrollSpeed
+            : ConveyorSettings.DefaultBeltScrollSpeed;
+        if (conveyor != null && conveyor.IsFastSpeed)
         {
-            scrollSpeed *= ConveyorBelt.FullSpeedMultiplier;
+            scrollSpeed *= conveyor.FullSpeedMultiplier;
         }
 
         beltOffset += scrollSpeed * Time.deltaTime;

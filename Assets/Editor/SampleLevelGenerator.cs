@@ -9,7 +9,6 @@ public static class SampleLevelGenerator
     {
         const int width = 32;
         const int height = 32;
-        const int bucketCapacity = 64;
 
         Color32 pink = new Color32(248, 198, 210, 255);
         Color32 red = new Color32(220, 50, 70, 255);
@@ -28,7 +27,7 @@ public static class SampleLevelGenerator
         }
 
         byte[] cells = ColorQuantizer.MapToPalette(pixels, palette);
-        BucketSpawn[] buckets = ColorQuantizer.GenerateBucketSpawns(cells, palette.Length, bucketCapacity);
+        BucketSpawn[] buckets = ColorQuantizer.GenerateBucketSpawns(cells, palette.Length);
         Texture2D preview = ColorQuantizer.BuildPreviewTexture(width, height, cells, palette, 8);
 
         string levelsFolder = "Assets/Levels";
@@ -43,7 +42,6 @@ public static class SampleLevelGenerator
         levelData.gridHeight = height;
         levelData.palette = palette;
         levelData.cells = cells;
-        levelData.bucketCapacity = bucketCapacity;
         levelData.buckets = buckets;
         levelData.previewTexture = preview;
 

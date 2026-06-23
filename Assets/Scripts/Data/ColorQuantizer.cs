@@ -69,9 +69,8 @@ public static class ColorQuantizer
         return bestIndex;
     }
 
-    public static BucketSpawn[] GenerateBucketSpawns(byte[] cells, int paletteLength, int bucketCapacity)
+    public static BucketSpawn[] GenerateBucketSpawns(byte[] cells, int paletteLength)
     {
-        bucketCapacity = Mathf.Max(1, bucketCapacity);
         int[] counts = new int[paletteLength];
 
         for (int i = 0; i < cells.Length; i++)
@@ -104,7 +103,7 @@ public static class ColorQuantizer
             spawns[spawnIndex++] = new BucketSpawn
             {
                 colorIndex = (byte)(i + 1),
-                count = Mathf.CeilToInt(counts[i] / (float)bucketCapacity)
+                count = 1
             };
         }
 
@@ -117,14 +116,39 @@ public static class ColorQuantizer
         public int capacity;
     }
 
+    /// <summary>
+    /// Splits total grains across buckets as equally as possible.
+    /// The first (totalGrains % bucketCount) buckets receive one extra grain
+    /// so the sum matches totalGrains exactly and no bucket stays partially filled.
+    /// </summary>
+    public static int[] DistributeBucketCapacities(int totalGrains, int bucketCount)
+    {
+        bucketCount = Mathf.Max(0, bucketCount);
+        int[] capacities = new int[bucketCount];
+
+        if (bucketCount == 0)
+        {
+            return capacities;
+        }
+
+        int baseCapacity = totalGrains / bucketCount;
+        int extraBuckets = totalGrains % bucketCount;
+
+        for (int i = 0; i < bucketCount; i++)
+        {
+            int capacity = baseCapacity + (i < extraBuckets ? 1 : 0);
+            capacities[i] = capacity > 0 ? capacity : 1;
+        }
+
+        return capacities;
+    }
+
     public static BucketQueueItem[] GenerateLevelBucketQueue(
         byte[] cells,
         int width,
         int height,
-        int maxBucketCapacity,
         int grainsPerLevelCell = 1)
     {
-        maxBucketCapacity = Mathf.Max(1, maxBucketCapacity);
         grainsPerLevelCell = Mathf.Max(1, grainsPerLevelCell);
         if (cells == null || cells.Length == 0 || width <= 0 || height <= 0)
         {
@@ -165,27 +189,19 @@ public static class ColorQuantizer
         }
 
         List<BucketQueueItem> buckets = new List<BucketQueueItem>();
-        bool anyRemaining = true;
-        while (anyRemaining)
+        for (int i = 0; i < colorOrder.Count; i++)
         {
-            anyRemaining = false;
-            for (int i = 0; i < colorOrder.Count; i++)
+            byte colorIndex = colorOrder[i];
+            if (remaining[colorIndex] <= 0)
             {
-                byte colorIndex = colorOrder[i];
-                if (remaining[colorIndex] <= 0)
-                {
-                    continue;
-                }
-
-                anyRemaining = true;
-                int take = Mathf.Min(remaining[colorIndex], maxBucketCapacity);
-                buckets.Add(new BucketQueueItem
-                {
-                    colorIndex = colorIndex,
-                    capacity = take
-                });
-                remaining[colorIndex] -= take;
+                continue;
             }
+
+            buckets.Add(new BucketQueueItem
+            {
+                colorIndex = colorIndex,
+                capacity = remaining[colorIndex]
+            });
         }
 
         return buckets.ToArray();
@@ -194,7 +210,7 @@ public static class ColorQuantizer
     [System.Obsolete("Use GenerateLevelBucketQueue")]
     public static BucketQueueItem[] GenerateDrainOrderBuckets(byte[] cells, int width, int height, int maxBucketCapacity)
     {
-        return GenerateLevelBucketQueue(cells, width, height, maxBucketCapacity);
+        return GenerateLevelBucketQueue(cells, width, height);
     }
 
     public static Texture2D BuildPreviewTexture(int gridWidth, int gridHeight, byte[] cells, Color32[] palette, int pixelsPerCell)

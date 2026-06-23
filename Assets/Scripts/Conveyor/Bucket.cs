@@ -10,6 +10,7 @@ public class Bucket
 {
     public byte ColorIndex { get; private set; }
     public int Capacity { get; private set; }
+    public int LayoutIndex { get; private set; }
     public int CurrentFill { get; private set; }
     public BucketState State { get; private set; }
 
@@ -23,10 +24,11 @@ public class Bucket
         get { return Capacity > 0 ? (float)CurrentFill / Capacity : 0f; }
     }
 
-    public Bucket(byte colorIndex, int capacity)
+    public Bucket(byte colorIndex, int capacity, int layoutIndex = -1)
     {
         ColorIndex = colorIndex;
         Capacity = capacity;
+        LayoutIndex = layoutIndex;
         CurrentFill = 0;
         State = BucketState.InInventory;
     }

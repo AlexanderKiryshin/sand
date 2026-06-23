@@ -6,7 +6,6 @@ public static class DefaultLevelFactory
     {
         const int width = 32;
         const int height = 32;
-        const int bucketCapacity = 64;
 
         Color32 pink = new Color32(248, 198, 210, 255);
         Color32 red = new Color32(220, 50, 70, 255);
@@ -25,14 +24,13 @@ public static class DefaultLevelFactory
         }
 
         byte[] cells = ColorQuantizer.MapToPalette(pixels, palette);
-        BucketSpawn[] buckets = ColorQuantizer.GenerateBucketSpawns(cells, palette.Length, bucketCapacity);
+        BucketSpawn[] buckets = ColorQuantizer.GenerateBucketSpawns(cells, palette.Length);
 
         LevelData levelData = ScriptableObject.CreateInstance<LevelData>();
         levelData.gridWidth = width;
         levelData.gridHeight = height;
         levelData.palette = palette;
         levelData.cells = cells;
-        levelData.bucketCapacity = bucketCapacity;
         levelData.buckets = buckets;
         levelData.previewTexture = ColorQuantizer.BuildPreviewTexture(width, height, cells, palette, 8);
         return levelData;

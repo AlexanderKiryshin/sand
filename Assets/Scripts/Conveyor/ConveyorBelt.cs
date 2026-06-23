@@ -8,16 +8,16 @@ public class ConveyorBelt : MonoBehaviour
     public const float CollectionX = -95f;
     public const float EntryX = 200f;
     public const float ExitX = -220f;
-    public const float MoveSpeed = 55f;
-    public const float FullSpeedMultiplier = 1.3f;
     public const float CollectionTolerance = 35f;
     public const float BucketSpacing = 72f;
     public const float BucketWidth = 40f;
 
+    [SerializeField] private ConveyorSettings settings;
     [SerializeField] private int requiredFilledBuckets = 5;
 
     private readonly List<BeltEntry> entries = new List<BeltEntry>();
     private int filledBuckets;
+    private bool allBucketsDeployed;
     private SandConveyorMapper mapper;
     private SandPourAnimator pourAnimator;
 
@@ -28,6 +28,10 @@ public class ConveyorBelt : MonoBehaviour
     public int FilledBuckets { get { return filledBuckets; } }
     public int RequiredFilledBuckets { get { return requiredFilledBuckets; } }
     public IReadOnlyList<BeltEntry> Entries { get { return entries; } }
+    public bool IsFastSpeed { get { return IsFull() || allBucketsDeployed; } }
+    public float MoveSpeed { get { return settings != null ? settings.moveSpeed : ConveyorSettings.DefaultMoveSpeed; } }
+    public float FullSpeedMultiplier { get { return settings != null ? settings.fullSpeedMultiplier : ConveyorSettings.DefaultFullSpeedMultiplier; } }
+    public float BeltScrollSpeed { get { return settings != null ? settings.beltScrollSpeed : ConveyorSettings.DefaultBeltScrollSpeed; } }
 
     public class BeltEntry
     {
@@ -52,7 +56,13 @@ public class ConveyorBelt : MonoBehaviour
     {
         entries.Clear();
         filledBuckets = 0;
+        allBucketsDeployed = false;
         NotifyChanged();
+    }
+
+    public void SetAllBucketsDeployed(bool deployed)
+    {
+        allBucketsDeployed = deployed;
     }
 
     public bool CanAcceptBucket()
@@ -114,7 +124,7 @@ public class ConveyorBelt : MonoBehaviour
             return;
         }
 
-        float speed = MoveSpeed * (IsFull() ? FullSpeedMultiplier : 1f);
+        float speed = MoveSpeed * (IsFastSpeed ? FullSpeedMultiplier : 1f);
         float move = speed * deltaTime;
         bool changed = false;
 

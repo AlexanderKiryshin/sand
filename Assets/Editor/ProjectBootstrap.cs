@@ -27,5 +27,7 @@ public static class ProjectBootstrap
         {
             GameSceneBuilder.BuildGameScene();
         }
+
+        GameSceneBuilder.EnsureConveyorSettingsAsset();
     }
 }

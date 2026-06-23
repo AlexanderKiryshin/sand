@@ -8,7 +8,6 @@ public class ImageToLevelConverterWindow : EditorWindow
     private int gridWidth = 32;
     private int gridHeight = 32;
     private int colorCount = 2;
-    private int bucketCapacity = 64;
     private int previewScale = 8;
     private string levelName = "Level_01";
 
@@ -38,7 +37,6 @@ public class ImageToLevelConverterWindow : EditorWindow
         gridWidth = EditorGUILayout.IntSlider("Grid Width", gridWidth, 8, 64);
         gridHeight = EditorGUILayout.IntSlider("Grid Height", gridHeight, 8, 64);
         colorCount = EditorGUILayout.IntSlider("Color Count", colorCount, 2, 16);
-        bucketCapacity = EditorGUILayout.IntSlider("Bucket Capacity", bucketCapacity, 8, 256);
         previewScale = EditorGUILayout.IntSlider("Preview Scale", previewScale, 4, 16);
 
         EditorGUILayout.Space();
@@ -70,7 +68,7 @@ public class ImageToLevelConverterWindow : EditorWindow
         Color32[] sampledPixels = SampleSourceTexture(sourceTexture, gridWidth, gridHeight);
         generatedPalette = ColorQuantizer.KMeansQuantize(sampledPixels, colorCount, 20);
         generatedCells = ColorQuantizer.MapToPalette(sampledPixels, generatedPalette);
-        generatedBuckets = ColorQuantizer.GenerateBucketSpawns(generatedCells, generatedPalette.Length, bucketCapacity);
+        generatedBuckets = ColorQuantizer.GenerateBucketSpawns(generatedCells, generatedPalette.Length);
 
         if (previewTexture != null)
         {
@@ -149,9 +147,10 @@ public class ImageToLevelConverterWindow : EditorWindow
         levelData.gridHeight = gridHeight;
         levelData.palette = generatedPalette;
         levelData.cells = generatedCells;
-        levelData.bucketCapacity = bucketCapacity;
         levelData.buckets = generatedBuckets;
         levelData.previewTexture = ColorQuantizer.BuildPreviewTexture(gridWidth, gridHeight, generatedCells, generatedPalette, previewScale);
+        levelData.EnsureBucketLayout();
+        AutoFillBucketLayout(levelData);
 
         AssetDatabase.CreateAsset(levelData, assetPath);
 
@@ -253,5 +252,30 @@ public class ImageToLevelConverterWindow : EditorWindow
         }
 
         return 0;
+    }
+
+    private static void AutoFillBucketLayout(LevelData levelData)
+    {
+        levelData.EnsureBucketLayout();
+        for (int i = 0; i < levelData.bucketLayout.Length; i++)
+        {
+            levelData.bucketLayout[i] = 0;
+        }
+
+        byte[] usedColors = levelData.GetColorsUsedInLevel();
+        int layoutIndex = 0;
+        for (int colorSlot = 0; colorSlot < usedColors.Length && layoutIndex < LevelData.BucketLayoutCellCount; colorSlot++)
+        {
+            byte colorIndex = usedColors[colorSlot];
+            int bucketCount = 1;
+
+            for (int i = 0; i < bucketCount && layoutIndex < LevelData.BucketLayoutCellCount; i++)
+            {
+                int x = layoutIndex % LevelData.BucketLayoutColumns;
+                int y = layoutIndex / LevelData.BucketLayoutColumns;
+                levelData.SetBucketLayoutCell(x, y, colorIndex);
+                layoutIndex++;
+            }
+        }
     }
 }

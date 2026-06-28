@@ -38,7 +38,6 @@ public class ConveyorBelt : MonoBehaviour
         public Bucket Bucket;
         public float PositionX;
         public bool PendingRemoval;
-        internal int LastSimTickAlignedColumn = -1;
     }
 
     private void Awake()
@@ -307,22 +306,7 @@ public class ConveyorBelt : MonoBehaviour
 
     public bool IsBucketStableForCollection(BeltEntry entry, int gridWidth)
     {
-        if (entry == null)
-        {
-            return false;
-        }
-
-        int alignedColumn = GetAlignedColumn(entry, gridWidth);
-        return alignedColumn >= 0 && alignedColumn == entry.LastSimTickAlignedColumn;
-    }
-
-    public void EndSandSimTick(int gridWidth)
-    {
-        for (int i = 0; i < entries.Count; i++)
-        {
-            BeltEntry entry = entries[i];
-            entry.LastSimTickAlignedColumn = GetAlignedColumn(entry, gridWidth);
-        }
+        return GetAlignedColumn(entry, gridWidth) >= 0;
     }
 
     public void FillSandCollectionLookup(
@@ -363,7 +347,7 @@ public class ConveyorBelt : MonoBehaviour
                 continue;
             }
 
-            int centerColumn = entry.LastSimTickAlignedColumn;
+            int centerColumn = GetAlignedColumn(entry, levelWidth);
             if (centerColumn < 0)
             {
                 continue;
@@ -518,10 +502,6 @@ public class ConveyorBelt : MonoBehaviour
         if (entry.Bucket.IsFull)
         {
             entry.PendingRemoval = true;
-            NotifyChanged();
-        }
-        else
-        {
             NotifyChanged();
         }
 

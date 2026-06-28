@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,6 +23,7 @@ public class SandRenderer : MonoBehaviour
     private SandGrid grid;
     private Texture2D texture;
     private Color32[] pixelBuffer;
+    private Color32[] uploadScratch;
     private int pixelsPerSimCell;
     private int textureWidth;
     private int textureHeight;
@@ -81,7 +83,7 @@ public class SandRenderer : MonoBehaviour
             }
         }
 
-        ApplyTexture();
+        ApplyTextureFull();
         grid.ClearDirty();
     }
 
@@ -99,15 +101,62 @@ public class SandRenderer : MonoBehaviour
         }
 
         int gridWidth = grid.Width;
+        int gridHeight = grid.Height;
+        int pixelMinX = textureWidth;
+        int pixelMinY = textureHeight;
+        int pixelMaxX = -1;
+        int pixelMaxY = -1;
+
         for (int i = 0; i < dirty.Count; i++)
         {
             int index = dirty[i];
             int x = index % gridWidth;
             int y = index / gridWidth;
             WriteSimCell(x, y, grid.GetCell(x, y));
+
+            int cellOriginX = x * pixelsPerSimCell;
+            int displayRow = gridHeight - 1 - y;
+            int cellOriginY = displayRow * pixelsPerSimCell;
+            int cellMaxX = cellOriginX + pixelsPerSimCell - 1;
+            int cellMaxY = cellOriginY + pixelsPerSimCell - 1;
+
+            if (cellOriginX < pixelMinX)
+            {
+                pixelMinX = cellOriginX;
+            }
+
+            if (cellOriginY < pixelMinY)
+            {
+                pixelMinY = cellOriginY;
+            }
+
+            if (cellMaxX > pixelMaxX)
+            {
+                pixelMaxX = cellMaxX;
+            }
+
+            if (cellMaxY > pixelMaxY)
+            {
+                pixelMaxY = cellMaxY;
+            }
         }
 
-        ApplyTexture();
+        if (pixelMaxX < pixelMinX || pixelMaxY < pixelMinY)
+        {
+            grid.ClearDirty();
+            return;
+        }
+
+        int dirtyPixelCount = (pixelMaxX - pixelMinX + 1) * (pixelMaxY - pixelMinY + 1);
+        if (dirtyPixelCount >= pixelBuffer.Length / 2)
+        {
+            ApplyTextureFull();
+        }
+        else
+        {
+            ApplyTextureRegion(pixelMinX, pixelMinY, pixelMaxX, pixelMaxY);
+        }
+
         grid.ClearDirty();
     }
 
@@ -131,9 +180,31 @@ public class SandRenderer : MonoBehaviour
         }
     }
 
-    private void ApplyTexture()
+    private void ApplyTextureFull()
     {
         texture.SetPixels32(pixelBuffer);
+        texture.Apply(false);
+    }
+
+    private void ApplyTextureRegion(int pixelMinX, int pixelMinY, int pixelMaxX, int pixelMaxY)
+    {
+        int regionWidth = pixelMaxX - pixelMinX + 1;
+        int regionHeight = pixelMaxY - pixelMinY + 1;
+        int required = regionWidth * regionHeight;
+        if (uploadScratch == null || uploadScratch.Length < required)
+        {
+            uploadScratch = new Color32[required];
+        }
+
+        int dst = 0;
+        for (int py = pixelMinY; py <= pixelMaxY; py++)
+        {
+            int rowStart = py * textureWidth + pixelMinX;
+            Array.Copy(pixelBuffer, rowStart, uploadScratch, dst, regionWidth);
+            dst += regionWidth;
+        }
+
+        texture.SetPixels32(pixelMinX, pixelMinY, regionWidth, regionHeight, uploadScratch);
         texture.Apply(false);
     }
 

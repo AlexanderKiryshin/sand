@@ -16,6 +16,8 @@ public class SandGrid
     private readonly List<int> dirtyIndices;
     private readonly List<int> vacancyQueue;
     private readonly bool[] vacancyQueued;
+    private readonly int[] columnTopY;
+    private readonly bool[] columnHasSand;
     private int sandMinY = int.MaxValue;
     private int sandMaxY = -1;
     private bool boundsNeedRecalc;
@@ -45,6 +47,13 @@ public class SandGrid
         dirtyIndices = new List<int>(256);
         vacancyQueue = new List<int>(256);
         vacancyQueued = new bool[width * height];
+        columnTopY = new int[width];
+        columnHasSand = new bool[width];
+
+        for (int x = 0; x < width; x++)
+        {
+            columnTopY[x] = height;
+        }
 
         for (int ly = 0; ly < levelHeight; ly++)
         {
@@ -67,6 +76,7 @@ public class SandGrid
                         cells[y * width + x] = colorIndex;
                         remainingCount++;
                         UpdateSandBounds(y);
+                        NotifySandAt(x, y);
                     }
                 }
             }
@@ -101,6 +111,26 @@ public class SandGrid
         return cells[y * width + x];
     }
 
+    public byte GetCellUnchecked(int x, int y)
+    {
+        return cells[y * width + x];
+    }
+
+    public bool IsEmptyUnchecked(int x, int y)
+    {
+        return cells[y * width + x] == 0;
+    }
+
+    public bool ColumnHasSand(int x)
+    {
+        return columnHasSand[x];
+    }
+
+    public int GetColumnTopY(int x)
+    {
+        return columnTopY[x];
+    }
+
     public void SetCell(int x, int y, byte value)
     {
         if (!IsInside(x, y))
@@ -119,6 +149,11 @@ public class SandGrid
         if (value == 0)
         {
             displayColors[index] = default;
+            UpdateColumnAfterRemove(x, y);
+        }
+        else
+        {
+            NotifySandAt(x, y);
         }
 
         MarkDirty(index);
@@ -227,6 +262,11 @@ public class SandGrid
         return displayColors[y * width + x];
     }
 
+    public Color32 GetDisplayColorUnchecked(int x, int y)
+    {
+        return displayColors[y * width + x];
+    }
+
     public void SetDisplayColorSilent(int x, int y, Color32 color)
     {
         if (!IsInside(x, y))
@@ -244,37 +284,12 @@ public class SandGrid
             return;
         }
 
-        int fromIndex = fromY * width + fromX;
-        int toIndex = toY * width + toX;
-        byte color = cells[fromIndex];
-        if (color == 0)
-        {
-            return;
-        }
+        MoveGrainCore(fromX, fromY, toX, toY);
+    }
 
-        Color32 display = displayColors[fromIndex];
-        cells[fromIndex] = 0;
-        displayColors[fromIndex] = default;
-        MarkDirty(fromIndex);
-        remainingCount--;
-
-        byte previous = cells[toIndex];
-        cells[toIndex] = color;
-        displayColors[toIndex] = display;
-        MarkDirty(toIndex);
-
-        if (previous == 0)
-        {
-            remainingCount++;
-        }
-
-        UpdateSandBounds(toY);
-        ClearVacancyQueued(toIndex);
-
-        if (fromY <= sandMinY || fromY >= sandMaxY)
-        {
-            boundsNeedRecalc = true;
-        }
+    public void MoveGrainUnchecked(int fromX, int fromY, int toX, int toY)
+    {
+        MoveGrainCore(fromX, fromY, toX, toY);
     }
 
     public bool IsInside(int x, int y)
@@ -353,6 +368,84 @@ public class SandGrid
         byte[] copy = new byte[cells.Length];
         Array.Copy(cells, copy, cells.Length);
         return copy;
+    }
+
+    private void MoveGrainCore(int fromX, int fromY, int toX, int toY)
+    {
+        int fromIndex = fromY * width + fromX;
+        int toIndex = toY * width + toX;
+        byte color = cells[fromIndex];
+        if (color == 0)
+        {
+            return;
+        }
+
+        Color32 display = displayColors[fromIndex];
+        cells[fromIndex] = 0;
+        displayColors[fromIndex] = default;
+        MarkDirty(fromIndex);
+        remainingCount--;
+        UpdateColumnAfterRemove(fromX, fromY);
+
+        byte previous = cells[toIndex];
+        cells[toIndex] = color;
+        displayColors[toIndex] = display;
+        MarkDirty(toIndex);
+
+        if (previous == 0)
+        {
+            remainingCount++;
+        }
+
+        NotifySandAt(toX, toY);
+        UpdateSandBounds(toY);
+        ClearVacancyQueued(toIndex);
+
+        if (fromY <= sandMinY || fromY >= sandMaxY)
+        {
+            boundsNeedRecalc = true;
+        }
+    }
+
+    private void NotifySandAt(int x, int y)
+    {
+        if (y < columnTopY[x])
+        {
+            columnTopY[x] = y;
+        }
+
+        columnHasSand[x] = true;
+    }
+
+    private void UpdateColumnAfterRemove(int x, int removedY)
+    {
+        if (!columnHasSand[x])
+        {
+            return;
+        }
+
+        if (removedY > columnTopY[x])
+        {
+            return;
+        }
+
+        RecalculateColumnTop(x);
+    }
+
+    private void RecalculateColumnTop(int x)
+    {
+        for (int y = 0; y < height; y++)
+        {
+            if (cells[y * width + x] != 0)
+            {
+                columnTopY[x] = y;
+                columnHasSand[x] = true;
+                return;
+            }
+        }
+
+        columnTopY[x] = height;
+        columnHasSand[x] = false;
     }
 
     private void MarkDirty(int index)

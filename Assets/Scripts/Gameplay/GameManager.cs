@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     private BucketInventory bucketInventory;
     private int currentLevelIndex;
     private GameState gameState = GameState.Playing;
+    private bool sandRenderPending;
 
     public GameState State { get { return gameState; } }
     public int CurrentLevelIndex { get { return currentLevelIndex; } }
@@ -30,6 +31,9 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
+
         bucketInventory = new BucketInventory();
     }
 
@@ -43,6 +47,17 @@ public class GameManager : MonoBehaviour
         BindEvents();
         EnsureConveyorView();
         LoadLevel(0);
+    }
+
+    private void LateUpdate()
+    {
+        if (!sandRenderPending || sandRenderer == null)
+        {
+            return;
+        }
+
+        sandRenderPending = false;
+        sandRenderer.RefreshDirty();
     }
 
     private void EnsureConveyorView()
@@ -232,10 +247,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleGridChanged()
     {
-        if (sandRenderer != null)
-        {
-            sandRenderer.RefreshDirty();
-        }
+        sandRenderPending = true;
 
         if (winConditionChecker != null)
         {

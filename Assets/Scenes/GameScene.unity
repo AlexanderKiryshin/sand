@@ -426,8 +426,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f78062127cae14bb7697b24997b8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ticksPerSecond: 32
-  maxCollectPerTick: 380
+  ticksPerSecond: 8
+  maxTicksPerFrame: 16
+  maxCollectPerTick: 120
   collectRowCount: 16
   straightTicksBeforeDiagonal: 2
 --- !u!114 &439944794
@@ -1841,7 +1842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetImage: {fileID: 2110870517}
   targetSpriteRenderer: {fileID: 0}
-  pixelsPerCell: 16
+  pixelsPerCell: 8
   subGrainsPerAxis: 4
   grainStrength: 0.12
 --- !u!4 &1854315933

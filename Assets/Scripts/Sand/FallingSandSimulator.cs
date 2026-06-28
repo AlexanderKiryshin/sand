@@ -1,12 +1,16 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Profiling;
 
 public class FallingSandSimulator : MonoBehaviour
 {
+    // Collection lookup v4 — no IsMatchingCollectionColumn / CanCollectAt in prewarm.
     [SerializeField] private float ticksPerSecond = 32f;
     [SerializeField] private int maxCollectPerTick = 6;
     [SerializeField] private int collectRowCount = 8;
+    [Tooltip("Сколько тиков падения строго вниз между тиками, где разрешена диагональ (влево/вправо). 2 = два тика вниз, один с диагональю.")]
+    [SerializeField] [Min(0)] private int straightTicksBeforeDiagonal = 2;
 
     private SandGrid grid;
     private SandCollector collector;
@@ -15,8 +19,15 @@ public class FallingSandSimulator : MonoBehaviour
     private bool isSleeping;
     private int fallTickCounter;
     private bool scanLeftToRight = true;
-    private readonly Dictionary<int, bool> collectColumnCache = new Dictionary<int, bool>();
+    private bool allowDiagonalFallThisTick;
+    private readonly List<int> activeCollectLevelColumns = new List<int>(8);
     private bool[] movedThisTick;
+    private bool[] collectLookup;
+    private bool[] levelAddedScratch;
+    private int collectLookupLevelWidth;
+    private int collectCacheFrame = -1;
+    private int drainStartRow = -1;
+    private int subGrainsPerAxis = 1;
 
     public event Action OnGridChanged;
 
@@ -27,7 +38,10 @@ public class FallingSandSimulator : MonoBehaviour
         grid = sandGrid;
         collector = sandCollector;
         conveyor = FindObjectOfType<ConveyorBelt>();
+        subGrainsPerAxis = grid.SubGrainsPerAxis;
         movedThisTick = new bool[grid.Width * grid.Height];
+        drainStartRow = ComputeDrainStartRow();
+        EnsureCollectLookup(grid.LevelWidth);
         tickTimer = 0f;
         isSleeping = false;
         fallTickCounter = 0;
@@ -36,9 +50,10 @@ public class FallingSandSimulator : MonoBehaviour
     public void Wake()
     {
         isSleeping = false;
+        InvalidateCollectCache();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (grid == null)
         {
@@ -50,7 +65,7 @@ public class FallingSandSimulator : MonoBehaviour
             return;
         }
 
-        tickTimer += Time.deltaTime;
+        tickTimer += Time.fixedDeltaTime;
         float tickInterval = 1f / Mathf.Max(1f, ticksPerSecond);
         while (tickTimer >= tickInterval)
         {
@@ -79,17 +94,76 @@ public class FallingSandSimulator : MonoBehaviour
             return true;
         }
 
-        if (HasPossibleCollection())
-        {
-            return true;
-        }
-
         if (conveyor != null && conveyor.Entries.Count > 0 && grid.CountRemaining() > 0)
         {
             return true;
         }
 
-        return false;
+        return HasPossibleCollection();
+    }
+
+    private int ComputeDrainStartRow()
+    {
+        if (grid == null)
+        {
+            return 0;
+        }
+
+        return grid.Height - Mathf.Max(1, collectRowCount);
+    }
+
+    private void EnsureCollectLookup(int levelWidth)
+    {
+        if (collectLookup != null && collectLookupLevelWidth == levelWidth)
+        {
+            return;
+        }
+
+        collectLookupLevelWidth = levelWidth;
+        collectLookup = new bool[256 * levelWidth];
+        levelAddedScratch = new bool[levelWidth];
+    }
+
+    private void EnsureCollectCacheFresh()
+    {
+        if (collectCacheFrame == Time.frameCount)
+        {
+            return;
+        }
+
+        collectCacheFrame = Time.frameCount;
+        PrewarmCollectColumnCache();
+    }
+
+    private void PrewarmCollectColumnCache()
+    {
+        Profiler.BeginSample("SandCollectionPrewarmV4");
+        activeCollectLevelColumns.Clear();
+        Array.Clear(collectLookup, 0, collectLookup.Length);
+
+        if (conveyor == null || conveyor.Entries.Count == 0)
+        {
+            Profiler.EndSample();
+            return;
+        }
+
+        int levelWidth = grid.LevelWidth;
+        if (levelAddedScratch == null || levelAddedScratch.Length != levelWidth)
+        {
+            levelAddedScratch = new bool[levelWidth];
+        }
+
+        conveyor.FillSandCollectionLookup(
+            collectLookup,
+            levelWidth,
+            activeCollectLevelColumns,
+            levelAddedScratch);
+        Profiler.EndSample();
+    }
+
+    private void InvalidateCollectCache()
+    {
+        collectCacheFrame = -1;
     }
 
     private bool HasPossibleCollection()
@@ -99,21 +173,43 @@ public class FallingSandSimulator : MonoBehaviour
             return false;
         }
 
-        int topRow = grid.SandMinY;
-        int bottomRow = grid.SandMaxY;
-        if (bottomRow < topRow)
+        EnsureCollectCacheFresh();
+        if (activeCollectLevelColumns.Count == 0)
         {
             return false;
         }
 
-        for (int y = bottomRow; y >= topRow; y--)
+        int bottomRow = grid.SandMaxY;
+        if (bottomRow < drainStartRow)
         {
-            for (int x = 0; x < grid.Width; x++)
+            return false;
+        }
+
+        int levelWidth = collectLookupLevelWidth;
+        for (int columnIndex = 0; columnIndex < activeCollectLevelColumns.Count; columnIndex++)
+        {
+            int levelX = activeCollectLevelColumns[columnIndex];
+            int simXStart = levelX * subGrainsPerAxis;
+            for (int sx = 0; sx < subGrainsPerAxis; sx++)
             {
-                byte color = grid.GetCell(x, y);
-                if (color != 0 && IsCollectibleGrain(x, y, color))
+                int x = simXStart + sx;
+                for (int y = bottomRow; y >= drainStartRow; y--)
                 {
-                    return true;
+                    byte color = grid.GetCell(x, y);
+                    if (color == 0)
+                    {
+                        continue;
+                    }
+
+                    if (!collectLookup[color * levelWidth + levelX])
+                    {
+                        continue;
+                    }
+
+                    if (IsSettledGrain(x, y) && !WasMovedThisTick(x, y))
+                    {
+                        return true;
+                    }
                 }
             }
         }
@@ -131,9 +227,10 @@ public class FallingSandSimulator : MonoBehaviour
 
     public bool SimulateTick()
     {
-        collectColumnCache.Clear();
         ClearMovedThisTick();
         grid.RecalculateSandBounds();
+        EnsureCollectCacheFresh();
+        allowDiagonalFallThisTick = ShouldAllowDiagonalFall();
 
         bool changed = SimulateFallPass();
         if (ProcessCollectionUnderBucket())
@@ -155,6 +252,17 @@ public class FallingSandSimulator : MonoBehaviour
         fallTickCounter++;
         scanLeftToRight = !scanLeftToRight;
         return changed;
+    }
+
+    private bool ShouldAllowDiagonalFall()
+    {
+        if (straightTicksBeforeDiagonal <= 0)
+        {
+            return true;
+        }
+
+        int cycle = straightTicksBeforeDiagonal + 1;
+        return fallTickCounter % cycle == straightTicksBeforeDiagonal;
     }
 
     private void ClearMovedThisTick()
@@ -269,13 +377,18 @@ public class FallingSandSimulator : MonoBehaviour
             return true;
         }
 
+        if (!allowDiagonalFallThisTick)
+        {
+            return false;
+        }
+
         int firstDir = GetDiagonalDirection(x, y);
-        if (TryMoveGrainDiagonal(x, y, color, firstDir))
+        if (TryMoveGrainDiagonal(x, y, firstDir))
         {
             return true;
         }
 
-        return TryMoveGrainDiagonal(x, y, color, -firstDir);
+        return TryMoveGrainDiagonal(x, y, -firstDir);
     }
 
     private int GetDiagonalDirection(int x, int y)
@@ -283,11 +396,12 @@ public class FallingSandSimulator : MonoBehaviour
         unchecked
         {
             int hash = x * 73856093 ^ y * 19349663 ^ fallTickCounter * 83492791;
-            return (hash & 1) == 0 ? -1 : 1;
+            int dir = (hash & 1) == 0 ? -1 : 1;
+            return scanLeftToRight ? dir : -dir;
         }
     }
 
-    private bool TryMoveGrainDiagonal(int x, int y, byte color, int dirX)
+    private bool TryMoveGrainDiagonal(int x, int y, int dirX)
     {
         int belowY = y + 1;
         int targetX = x + dirX;
@@ -299,37 +413,6 @@ public class FallingSandSimulator : MonoBehaviour
         grid.MoveGrain(x, y, targetX, belowY);
         MarkMovedThisTick(targetX, belowY);
         return true;
-    }
-
-    private bool IsMatchingCollectionColumn(int simX, byte color)
-    {
-        if (collector == null)
-        {
-            return false;
-        }
-
-        int levelX = grid.ToLevelX(simX);
-        int cacheKey = (color << 8) | levelX;
-        bool cached;
-        if (collectColumnCache.TryGetValue(cacheKey, out cached))
-        {
-            return cached;
-        }
-
-        bool result = collector.CanCollectAt(levelX, grid.LevelWidth, color);
-        collectColumnCache[cacheKey] = result;
-        return result;
-    }
-
-    private bool IsCollectibleGrain(int x, int y, byte color)
-    {
-        if (!IsMatchingCollectionColumn(x, color) || !IsSettledGrain(x, y) || WasMovedThisTick(x, y))
-        {
-            return false;
-        }
-
-        int drainStart = grid.Height - Mathf.Max(1, collectRowCount);
-        return y >= drainStart;
     }
 
     private bool IsSettledGrain(int x, int y)
@@ -345,42 +428,61 @@ public class FallingSandSimulator : MonoBehaviour
             return false;
         }
 
-        bool changed = false;
-        int width = grid.Width;
-        int topRow = grid.SandMinY;
-        int bottomRow = grid.SandMaxY;
-        if (bottomRow < topRow)
+        if (activeCollectLevelColumns.Count == 0)
         {
             return false;
         }
 
-        int collectedThisTick = 0;
-        for (int y = bottomRow; y >= topRow; y--)
+        Profiler.BeginSample("SandCollectionDrainV4");
+        bool changed = false;
+        int bottomRow = grid.SandMaxY;
+        if (bottomRow < drainStartRow)
         {
-            for (int x = 0; x < width; x++)
+            Profiler.EndSample();
+            return false;
+        }
+
+        int collectedThisTick = 0;
+        int levelWidth = collectLookupLevelWidth;
+        for (int columnIndex = 0; columnIndex < activeCollectLevelColumns.Count; columnIndex++)
+        {
+            int levelX = activeCollectLevelColumns[columnIndex];
+            int simXStart = levelX * subGrainsPerAxis;
+            for (int sx = 0; sx < subGrainsPerAxis; sx++)
             {
-                if (collectedThisTick >= maxCollectPerTick)
+                int x = simXStart + sx;
+                for (int y = bottomRow; y >= drainStartRow; y--)
                 {
-                    return changed;
-                }
+                    if (collectedThisTick >= maxCollectPerTick)
+                    {
+                        Profiler.EndSample();
+                        return changed;
+                    }
 
-                byte color = grid.GetCell(x, y);
-                if (color == 0 || !IsCollectibleGrain(x, y, color))
-                {
-                    continue;
-                }
+                    byte color = grid.GetCell(x, y);
+                    if (color == 0 || !collectLookup[color * levelWidth + levelX])
+                    {
+                        continue;
+                    }
 
-                if (collector.TryCollectGrain(color, x, grid.LevelWidth, grid.SubGrainsPerAxis))
-                {
-                    grid.SetCell(x, y, 0);
-                    grid.EnqueueVacancy(x, y);
-                    CollapseColumn(x);
-                    changed = true;
-                    collectedThisTick++;
+                    if (!IsSettledGrain(x, y) || WasMovedThisTick(x, y))
+                    {
+                        continue;
+                    }
+
+                    if (collector.TryCollectGrain(color, x, grid.LevelWidth, grid.SubGrainsPerAxis))
+                    {
+                        grid.SetCell(x, y, 0);
+                        grid.EnqueueVacancy(x, y);
+                        CollapseColumn(x);
+                        changed = true;
+                        collectedThisTick++;
+                    }
                 }
             }
         }
 
+        Profiler.EndSample();
         return changed;
     }
 }

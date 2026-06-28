@@ -32,6 +32,7 @@ public static class GameSceneBuilder
         FallingSandSimulator sandSimulator = systems.AddComponent<FallingSandSimulator>();
         SetPrivateField(sandSimulator, "ticksPerSecond", 32f);
         SetPrivateField(sandSimulator, "maxCollectPerTick", 6);
+        SetPrivateField(sandSimulator, "straightTicksBeforeDiagonal", 2);
         SetPrivateField(sandSimulator, "collectRowCount", 8);
         SandCollector sandCollector = systems.AddComponent<SandCollector>();
         ConveyorBelt conveyorBelt = systems.AddComponent<ConveyorBelt>();

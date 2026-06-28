@@ -73,6 +73,11 @@ public class SandGrid
         }
     }
 
+    public void BakeDisplayColors(float grainStrength)
+    {
+        SandGrainColorBaker.Bake(this, grainStrength);
+    }
+
     public void PrepareDrainGap(int emptyRows)
     {
         emptyRows = Mathf.Clamp(emptyRows, 1, height / 4);
@@ -222,7 +227,7 @@ public class SandGrid
         return displayColors[y * width + x];
     }
 
-    public void SetDisplayColor(int x, int y, Color32 color)
+    public void SetDisplayColorSilent(int x, int y, Color32 color)
     {
         if (!IsInside(x, y))
         {

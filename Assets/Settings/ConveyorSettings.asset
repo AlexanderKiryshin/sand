@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ConveyorSettings
   m_EditorClassIdentifier: 
   moveSpeed: 55
-  fullSpeedMultiplier: 1.3
+  fullSpeedMultiplier: 2
   beltScrollSpeed: 90

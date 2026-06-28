@@ -4,7 +4,7 @@ using UnityEngine;
 public class ConveyorSettings : ScriptableObject
 {
     public const float DefaultMoveSpeed = 55f;
-    public const float DefaultFullSpeedMultiplier = 1.3f;
+    public const float DefaultFullSpeedMultiplier = 2f;
     public const float DefaultBeltScrollSpeed = 90f;
 
     [Min(0.01f)]

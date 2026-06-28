@@ -399,6 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d75622b798f139d418d929f8f1c6360e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: c5fa9e4d2c44e5b4289a109421ea3e55, type: 2}
   requiredFilledBuckets: 5
 --- !u!114 &439944792
 MonoBehaviour:
@@ -428,6 +429,7 @@ MonoBehaviour:
   ticksPerSecond: 32
   maxCollectPerTick: 380
   collectRowCount: 16
+  straightTicksBeforeDiagonal: 2
 --- !u!114 &439944794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,6 +541,8 @@ MonoBehaviour:
   pourLayer: {fileID: 0}
   poolSize: 32
   pourDuration: 0.35
+  pourDurationSpread: 0.4
+  pourStartJitter: {x: 10, y: 6}
   grainSize: {x: 4, y: 4}
   syncGrainSizeWithRenderer: 1
   grainSizeScale: 1
@@ -1839,6 +1843,7 @@ MonoBehaviour:
   targetSpriteRenderer: {fileID: 0}
   pixelsPerCell: 16
   subGrainsPerAxis: 4
+  grainStrength: 0.12
 --- !u!4 &1854315933
 Transform:
   m_ObjectHideFlags: 0
@@ -2229,7 +2234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc09bf1e6bbaee845958f74676e6513f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beltScrollSpeed: 90
 --- !u!1 &2110870515
 GameObject:
   m_ObjectHideFlags: 0

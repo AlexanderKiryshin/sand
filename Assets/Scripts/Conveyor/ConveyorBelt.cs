@@ -28,7 +28,7 @@ public class ConveyorBelt : MonoBehaviour
     public int FilledBuckets { get { return filledBuckets; } }
     public int RequiredFilledBuckets { get { return requiredFilledBuckets; } }
     public IReadOnlyList<BeltEntry> Entries { get { return entries; } }
-    public bool IsFastSpeed { get { return IsFull() || allBucketsDeployed; } }
+    public bool IsFastSpeed { get { return entries.Count > 0 && (allBucketsDeployed || IsFull()); } }
     public float MoveSpeed { get { return settings != null ? settings.moveSpeed : ConveyorSettings.DefaultMoveSpeed; } }
     public float FullSpeedMultiplier { get { return settings != null ? settings.fullSpeedMultiplier : ConveyorSettings.DefaultFullSpeedMultiplier; } }
     public float BeltScrollSpeed { get { return settings != null ? settings.beltScrollSpeed : ConveyorSettings.DefaultBeltScrollSpeed; } }
@@ -44,6 +44,21 @@ public class ConveyorBelt : MonoBehaviour
     private void Awake()
     {
         mapper = FindObjectOfType<SandConveyorMapper>();
+        EnsureSettings();
+    }
+
+    private void EnsureSettings()
+    {
+        if (settings != null)
+        {
+            return;
+        }
+
+        ConveyorSettings[] loaded = Resources.FindObjectsOfTypeAll<ConveyorSettings>();
+        if (loaded.Length > 0)
+        {
+            settings = loaded[0];
+        }
     }
 
     public void Configure(int requiredBuckets)
@@ -307,6 +322,113 @@ public class ConveyorBelt : MonoBehaviour
         {
             BeltEntry entry = entries[i];
             entry.LastSimTickAlignedColumn = GetAlignedColumn(entry, gridWidth);
+        }
+    }
+
+    public void FillSandCollectionLookup(
+        bool[] lookup,
+        int levelWidth,
+        List<int> activeColumns,
+        bool[] columnAddedScratch)
+    {
+        if (lookup == null || activeColumns == null || levelWidth <= 0)
+        {
+            return;
+        }
+
+        activeColumns.Clear();
+        int lookupLength = Mathf.Min(lookup.Length, 256 * levelWidth);
+        Array.Clear(lookup, 0, lookupLength);
+
+        if (columnAddedScratch == null || columnAddedScratch.Length != levelWidth)
+        {
+            columnAddedScratch = new bool[levelWidth];
+        }
+        else
+        {
+            Array.Clear(columnAddedScratch, 0, levelWidth);
+        }
+
+        for (int i = 0; i < entries.Count; i++)
+        {
+            BeltEntry entry = entries[i];
+            Bucket bucket = entry.Bucket;
+            if (bucket == null || bucket.IsFull || bucket.State != BucketState.OnConveyor)
+            {
+                continue;
+            }
+
+            if (!IsBucketStableForCollection(entry, levelWidth))
+            {
+                continue;
+            }
+
+            int centerColumn = entry.LastSimTickAlignedColumn;
+            if (centerColumn < 0)
+            {
+                continue;
+            }
+
+            int colorOffset = bucket.ColorIndex * levelWidth;
+            AddCollectionColumnsUnderBucket(
+                entry,
+                levelWidth,
+                centerColumn,
+                colorOffset,
+                lookup,
+                activeColumns,
+                columnAddedScratch);
+        }
+    }
+
+    private void AddCollectionColumnsUnderBucket(
+        BeltEntry entry,
+        int levelWidth,
+        int centerColumn,
+        int colorOffset,
+        bool[] lookup,
+        List<int> activeColumns,
+        bool[] columnAddedScratch)
+    {
+        for (int levelX = centerColumn; levelX >= 0; levelX--)
+        {
+            if (!IsColumnUnderBucket(levelX, levelWidth, entry))
+            {
+                break;
+            }
+
+            MarkCollectionColumn(levelX, colorOffset, lookup, activeColumns, columnAddedScratch);
+        }
+
+        for (int levelX = centerColumn + 1; levelX < levelWidth; levelX++)
+        {
+            if (!IsColumnUnderBucket(levelX, levelWidth, entry))
+            {
+                break;
+            }
+
+            MarkCollectionColumn(levelX, colorOffset, lookup, activeColumns, columnAddedScratch);
+        }
+    }
+
+    private static void MarkCollectionColumn(
+        int levelX,
+        int colorOffset,
+        bool[] lookup,
+        List<int> activeColumns,
+        bool[] columnAddedScratch)
+    {
+        int lookupIndex = colorOffset + levelX;
+        if (lookupIndex < 0 || lookupIndex >= lookup.Length || lookup[lookupIndex])
+        {
+            return;
+        }
+
+        lookup[lookupIndex] = true;
+        if (!columnAddedScratch[levelX])
+        {
+            columnAddedScratch[levelX] = true;
+            activeColumns.Add(levelX);
         }
     }
 

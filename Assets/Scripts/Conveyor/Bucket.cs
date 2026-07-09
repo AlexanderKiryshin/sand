@@ -24,6 +24,11 @@ public class Bucket
         get { return Capacity > 0 ? (float)CurrentFill / Capacity : 0f; }
     }
 
+    public int RemainingCapacity
+    {
+        get { return Capacity > CurrentFill ? Capacity - CurrentFill : 0; }
+    }
+
     public Bucket(byte colorIndex, int capacity, int layoutIndex = -1)
     {
         ColorIndex = colorIndex;

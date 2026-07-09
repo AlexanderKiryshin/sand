@@ -2,6 +2,9 @@ using UnityEngine;
 
 public static class SandGrainColorBaker
 {
+    // Временно отключено: шум зёрен песка. Поставить true, чтобы вернуть.
+    public const bool GrainNoiseEnabled = false;
+
     private const int NoiseTextureSize = 64;
     private const int NoiseRandomSeed = 92837111;
     private static readonly Color32 ClearPixel = new Color32(0, 0, 0, 0);
@@ -84,6 +87,11 @@ public static class SandGrainColorBaker
             return ClearPixel;
         }
 
+        if (!GrainNoiseEnabled)
+        {
+            return palette[paletteIndex];
+        }
+
         int sx = simX % subGrainsPerAxis;
         int sy = simY % subGrainsPerAxis;
         return ApplyGrain(palette[paletteIndex], simX, simY, sx, sy);
@@ -97,7 +105,7 @@ public static class SandGrainColorBaker
         Color32[] noisePixels,
         int noiseBlockSimSize)
     {
-        if (grainStrength <= 0f || noisePixels == null)
+        if (!GrainNoiseEnabled || grainStrength <= 0f || noisePixels == null)
         {
             return baseColor;
         }
@@ -115,6 +123,11 @@ public static class SandGrainColorBaker
 
     private static Color32 ApplyGrain(Color32 baseColor, int x, int y, int sx, int sy)
     {
+        if (!GrainNoiseEnabled)
+        {
+            return baseColor;
+        }
+
         int noise = Hash(x, y, sx, sy) % 21 - 10;
         return new Color32(
             (byte)Mathf.Clamp(baseColor.r + noise, 0, 255),

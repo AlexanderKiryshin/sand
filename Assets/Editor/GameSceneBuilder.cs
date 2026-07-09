@@ -79,6 +79,8 @@ public static class GameSceneBuilder
         polish.AddComponent<SandEffects>();
         polish.AddComponent<SandConveyorMapper>();
         polish.AddComponent<SandPourAnimator>();
+        polish.AddComponent<LevelIntroSandAnimator>();
+        polish.AddComponent<TutorialController>();
         polish.AddComponent<GameAudio>();
         LevelSelectUI levelSelect = polish.AddComponent<LevelSelectUI>();
         SetPrivateField(levelSelect, "gameManager", gameManager);

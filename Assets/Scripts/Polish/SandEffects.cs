@@ -8,16 +8,20 @@ public class SandEffects : MonoBehaviour
 
     private void Awake()
     {
-        collector = FindObjectOfType<SandCollector>();
-        if (collector != null)
+        Transform legacyParticles = transform.Find("SandCollectParticles");
+        if (legacyParticles != null)
         {
-            collector.OnGrainCollected += HandleGrainCollected;
+            Destroy(legacyParticles.gameObject);
         }
 
-        if (collectParticles == null)
+        collector = FindObjectOfType<SandCollector>();
+        if (collector == null || collectParticles == null)
         {
-            collectParticles = CreateDefaultParticles();
+            enabled = false;
+            return;
         }
+
+        collector.OnGrainCollected += HandleGrainCollected;
     }
 
     private void OnDestroy()
@@ -35,7 +39,7 @@ public class SandEffects : MonoBehaviour
             return;
         }
 
-        var main = collectParticles.main;
+        ParticleSystem.MainModule main = collectParticles.main;
         LevelLoader loader = FindObjectOfType<LevelLoader>();
         if (loader != null && loader.CurrentLevel != null)
         {
@@ -44,29 +48,5 @@ public class SandEffects : MonoBehaviour
         }
 
         collectParticles.Emit(1);
-    }
-
-    private ParticleSystem CreateDefaultParticles()
-    {
-        GameObject particleObject = new GameObject("SandCollectParticles");
-        particleObject.transform.SetParent(transform);
-        ParticleSystem particles = particleObject.AddComponent<ParticleSystem>();
-
-        var main = particles.main;
-        main.startLifetime = 0.35f;
-        main.startSpeed = 1.5f;
-        main.startSize = 0.08f;
-        main.maxParticles = 128;
-        main.simulationSpace = ParticleSystemSimulationSpace.World;
-
-        var emission = particles.emission;
-        emission.rateOverTime = 0f;
-
-        var shape = particles.shape;
-        shape.enabled = true;
-        shape.shapeType = ParticleSystemShapeType.Box;
-        shape.scale = new Vector3(2f, 0.1f, 0.1f);
-
-        return particles;
     }
 }

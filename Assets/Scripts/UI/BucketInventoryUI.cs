@@ -8,6 +8,8 @@ public class BucketInventoryUI : MonoBehaviour
     [SerializeField] private BucketView bucketViewPrefab;
     [SerializeField] private GridLayoutGroup gridLayout;
 
+    public BucketView BucketViewPrefab { get { return bucketViewPrefab; } }
+
     private readonly Dictionary<int, BucketView> activeViews = new Dictionary<int, BucketView>();
     private BucketInventory inventory;
     private ConveyorBelt conveyor;
@@ -41,42 +43,101 @@ public class BucketInventoryUI : MonoBehaviour
             return;
         }
 
-        levelData.EnsureBucketLayout();
-        if (levelData.HasBucketLayout())
+        List<Bucket> sortedBuckets = new List<Bucket>(inventory.Buckets);
+        sortedBuckets.Sort((left, right) => left.LayoutIndex.CompareTo(right.LayoutIndex));
+
+        int maxLayoutIndex = -1;
+        for (int i = 0; i < sortedBuckets.Count; i++)
         {
-            for (int layoutIndex = 0; layoutIndex < LevelData.BucketLayoutCellCount; layoutIndex++)
-            {
-                byte cell = levelData.bucketLayout[layoutIndex];
-                if (LevelData.IsBucketLayoutWall(cell))
-                {
-                    CreateWallPlaceholder(layoutIndex);
-                    continue;
-                }
-
-                Bucket bucket = inventory.GetBucketAtLayoutIndex(layoutIndex);
-                if (bucket == null)
-                {
-                    CreatePlaceholder(layoutIndex);
-                    continue;
-                }
-
-                CreateBucketView(bucket, layoutIndex);
-            }
-
-            return;
+            maxLayoutIndex = Mathf.Max(maxLayoutIndex, sortedBuckets[i].LayoutIndex);
         }
 
-        IReadOnlyList<Bucket> buckets = inventory.Buckets;
-        for (int i = 0; i < LevelData.BucketLayoutCellCount; i++)
+        if (maxLayoutIndex >= 0)
         {
-            if (i >= buckets.Count)
+            ResizeContainer(maxLayoutIndex);
+        }
+
+        for (int i = 0; i < sortedBuckets.Count; i++)
+        {
+            Bucket bucket = sortedBuckets[i];
+            CreateBucketView(bucket, bucket.LayoutIndex);
+        }
+    }
+
+    public Bucket GetFirstAccessibleBucket()
+    {
+        if (inventory == null || levelData == null)
+        {
+            return null;
+        }
+
+        Bucket best = null;
+        for (int i = 0; i < inventory.Buckets.Count; i++)
+        {
+            Bucket candidate = inventory.Buckets[i];
+            if (!inventory.IsBucketAccessible(candidate, levelData))
             {
-                CreatePlaceholder(i);
                 continue;
             }
 
-            CreateBucketView(buckets[i], i);
+            if (best == null || candidate.LayoutIndex < best.LayoutIndex)
+            {
+                best = candidate;
+            }
         }
+
+        return best;
+    }
+
+    public bool TryGetBucketCanvasPosition(Bucket bucket, out Vector2 canvasPosition)
+    {
+        canvasPosition = Vector2.zero;
+        BucketView view = GetBucketView(bucket);
+        if (view == null)
+        {
+            return false;
+        }
+
+        canvasPosition = view.GetCanvasPosition();
+        return true;
+    }
+
+    public void SetTutorialBounce(Bucket bucket, float bounceOffset)
+    {
+        foreach (KeyValuePair<int, BucketView> pair in activeViews)
+        {
+            BucketView view = pair.Value;
+            if (view == null)
+            {
+                continue;
+            }
+
+            if (bucket != null && view.Bucket == bucket)
+            {
+                view.SetTutorialBounceOffset(bounceOffset);
+            }
+            else
+            {
+                view.ClearTutorialBounce();
+            }
+        }
+    }
+
+    public void ClearTutorialBounce()
+    {
+        SetTutorialBounce(null, 0f);
+    }
+
+    private void ResizeContainer(int maxLayoutIndex)
+    {
+        Vector2 cellSize = gridLayout != null ? gridLayout.cellSize : new Vector2(36f, 36f);
+        Vector2 spacing = gridLayout != null ? gridLayout.spacing : new Vector2(4f, 4f);
+        int columns = LevelData.BucketLayoutColumns;
+        int rows = (maxLayoutIndex / columns) + 1;
+
+        bucketContainer.sizeDelta = new Vector2(
+            columns * cellSize.x + (columns - 1) * spacing.x,
+            rows * cellSize.y + (rows - 1) * spacing.y);
     }
 
     private void CreateBucketView(Bucket bucket, int layoutIndex)
@@ -84,35 +145,38 @@ public class BucketInventoryUI : MonoBehaviour
         BucketView view = Instantiate(bucketViewPrefab, bucketContainer);
         Color32 color = levelData.GetPaletteColor(bucket.ColorIndex);
         view.Initialize(bucket, color, HandleBucketClicked);
-        bool selectable = inventory.IsBucketAccessible(bucket, levelData);
+
+        bool selectable = inventory.IsBucketAccessible(bucket, levelData)
+            && (gameManager == null || gameManager.IsBucketInteractionAllowed(bucket));
         view.SetSelectable(selectable);
+
         activeViews[layoutIndex] = view;
+        PositionBucketView(view, layoutIndex);
     }
 
-    private void CreateWallPlaceholder(int layoutIndex)
+    private void PositionBucketView(BucketView view, int layoutIndex)
     {
-        GameObject wallObject = new GameObject(
-            "WallSlot_" + layoutIndex,
-            typeof(RectTransform),
-            typeof(Image));
-        wallObject.transform.SetParent(bucketContainer, false);
+        Vector2 cellSize = gridLayout != null ? gridLayout.cellSize : new Vector2(36f, 36f);
+        Vector2 spacing = gridLayout != null ? gridLayout.spacing : new Vector2(4f, 4f);
+        int x = layoutIndex % LevelData.BucketLayoutColumns;
+        int y = layoutIndex / LevelData.BucketLayoutColumns;
 
-        Image image = wallObject.GetComponent<Image>();
-        image.color = new Color(0.35f, 0.35f, 0.38f, 0.95f);
-        image.raycastTarget = false;
-    }
+        RectTransform rect = view.GetComponent<RectTransform>();
+        LayoutElement layoutElement = view.GetComponent<LayoutElement>();
+        if (layoutElement == null)
+        {
+            layoutElement = view.gameObject.AddComponent<LayoutElement>();
+        }
 
-    private void CreatePlaceholder(int layoutIndex)
-    {
-        GameObject placeholderObject = new GameObject(
-            "BucketSlot_" + layoutIndex,
-            typeof(RectTransform),
-            typeof(Image));
-        placeholderObject.transform.SetParent(bucketContainer, false);
-
-        Image image = placeholderObject.GetComponent<Image>();
-        image.color = new Color(1f, 1f, 1f, 0.08f);
-        image.raycastTarget = false;
+        layoutElement.ignoreLayout = true;
+        rect.anchorMin = new Vector2(0f, 1f);
+        rect.anchorMax = new Vector2(0f, 1f);
+        rect.pivot = new Vector2(0f, 1f);
+        rect.sizeDelta = cellSize;
+        rect.anchoredPosition = new Vector2(
+            x * (cellSize.x + spacing.x),
+            -y * (cellSize.y + spacing.y));
+        view.CaptureLayoutPosition();
     }
 
     private void HandleBucketClicked(Bucket bucket)
@@ -122,25 +186,12 @@ public class BucketInventoryUI : MonoBehaviour
             return;
         }
 
-        int layoutIndex = bucket.LayoutIndex;
-        if (layoutIndex < 0)
-        {
-            for (int i = 0; i < inventory.Buckets.Count; i++)
-            {
-                if (inventory.Buckets[i] == bucket)
-                {
-                    layoutIndex = i;
-                    break;
-                }
-            }
-        }
-
-        if (layoutIndex < 0)
+        if (!gameManager.IsBucketInteractionAllowed(bucket))
         {
             return;
         }
 
-        if (!inventory.IsBucketAccessible(bucket, levelData))
+        if (bucket.LayoutIndex < 0 || !inventory.IsBucketAccessible(bucket, levelData))
         {
             return;
         }
@@ -181,4 +232,30 @@ public class BucketInventoryUI : MonoBehaviour
             Destroy(bucketContainer.GetChild(i).gameObject);
         }
     }
+
+    private BucketView GetBucketView(Bucket bucket)
+    {
+        if (bucket == null)
+        {
+            return null;
+        }
+
+        BucketView view;
+        if (activeViews.TryGetValue(bucket.LayoutIndex, out view) && view != null && view.Bucket == bucket)
+        {
+            return view;
+        }
+
+        foreach (KeyValuePair<int, BucketView> pair in activeViews)
+        {
+            if (pair.Value != null && pair.Value.Bucket == bucket)
+            {
+                return pair.Value;
+            }
+        }
+
+        return null;
+    }
 }
+
+

@@ -30,7 +30,10 @@ public class LevelLoader : MonoBehaviour
         }
 
         currentGrid = new SandGrid(currentLevel, sandRenderer != null ? sandRenderer.SubGrainsPerAxis : 1);
-        currentGrid.BakeDisplayColors(sandRenderer != null ? sandRenderer.GrainStrength : 0.12f);
+        float grainStrength = SandGrainColorBaker.GrainNoiseEnabled && sandRenderer != null
+            ? sandRenderer.GrainStrength
+            : 0f;
+        currentGrid.BakeDisplayColors(grainStrength);
 
         if (sandRenderer != null)
         {

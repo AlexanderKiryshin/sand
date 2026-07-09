@@ -4,6 +4,36 @@ using UnityEngine;
 [CustomEditor(typeof(LevelData))]
 public class LevelDataEditor : Editor
 {
+    [MenuItem("Window/Sand/Fix Sub Grains (set to 1)")]
+    private static void FixSubGrainsOnAllLevels()
+    {
+        string[] guids = AssetDatabase.FindAssets("t:LevelData");
+        int changed = 0;
+        for (int i = 0; i < guids.Length; i++)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guids[i]);
+            LevelData level = AssetDatabase.LoadAssetAtPath<LevelData>(path);
+            if (level == null || level.subGrainsPerAxis == 1)
+            {
+                continue;
+            }
+
+            level.subGrainsPerAxis = 1;
+            EditorUtility.SetDirty(level);
+            changed++;
+        }
+
+        if (changed > 0)
+        {
+            AssetDatabase.SaveAssets();
+        }
+
+        EditorUtility.DisplayDialog(
+            "Fix Sub Grains",
+            string.Format("Updated {0} of {1} LevelData asset(s) to subGrainsPerAxis = 1.", changed, guids.Length),
+            "OK");
+    }
+
     private enum LayoutPaintMode
     {
         Color,
@@ -14,13 +44,65 @@ public class LevelDataEditor : Editor
     private byte selectedLayoutColor;
     private LayoutPaintMode paintMode = LayoutPaintMode.Color;
     private bool layoutFoldout = true;
+    private bool paletteFoldout = true;
+    private bool bucketsFoldout = true;
+    private bool recalcFoldout = true;
+
+    private SandColorPalette recalcTargetPalette;
+    private Texture2D recalcSourceTexture;
+    private int recalcColorCount = 4;
+    private bool recalcAutoColorCount = true;
+    private int recalcPreviewScale = 8;
+    private bool recalcAutoBackground = true;
+    private Color recalcBackgroundColor = Color.white;
 
     public override void OnInspectorGUI()
     {
-        DrawDefaultInspector();
-
         LevelData levelData = (LevelData)target;
+        serializedObject.Update();
+
         levelData.EnsureBucketLayout();
+
+        EditorGUILayout.LabelField("Grid", EditorStyles.boldLabel);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("gridWidth"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("gridHeight"));
+
+        SerializedProperty subGrainsProp = serializedObject.FindProperty("subGrainsPerAxis");
+        if (subGrainsProp.intValue != 1)
+        {
+            subGrainsProp.intValue = 1;
+        }
+
+        using (new EditorGUI.DisabledScope(true))
+        {
+            EditorGUILayout.PropertyField(subGrainsProp);
+        }
+
+        if (levelData.usesTiles)
+        {
+            string splitInfo = levelData.usesUnitySpriteSheet
+                ? string.Format(
+                    "Unity sprite sheet: {0}×{1} tiles, cell {2}×{3}",
+                    levelData.tilesX,
+                    levelData.tilesY,
+                    levelData.tileCellWidth,
+                    levelData.tileCellHeight)
+                : string.Format(
+                    "Tiles: {0}×{1}, cell {2}×{3}, sources {4}",
+                    levelData.tilesX,
+                    levelData.tilesY,
+                    levelData.tileCellWidth,
+                    levelData.tileCellHeight,
+                    levelData.tileSources != null ? levelData.tileSources.Length : 0);
+            EditorGUILayout.LabelField(splitInfo, EditorStyles.miniLabel);
+        }
+
+        DrawPaletteEditor(levelData);
+        DrawBucketRulesSection(levelData);
+        DrawBucketsEditor(levelData);
+        DrawCellsInfo(levelData);
+
+        serializedObject.ApplyModifiedProperties();
 
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Summary", EditorStyles.boldLabel);
@@ -30,15 +112,224 @@ public class LevelDataEditor : Editor
         EditorGUILayout.LabelField("Total Buckets", levelData.GetTotalBucketCount().ToString());
 
         DrawBucketLayoutEditor(levelData);
+        DrawRecalculateSection(levelData);
+        DrawPreview(levelData);
+    }
 
-        if (levelData.previewTexture != null)
+    private void DrawRecalculateSection(LevelData levelData)
+    {
+        EditorGUILayout.Space();
+        recalcFoldout = EditorGUILayout.Foldout(recalcFoldout, "Recalculate Colors", true);
+        if (!recalcFoldout)
         {
-            EditorGUILayout.Space();
-            EditorGUILayout.LabelField("Preview", EditorStyles.boldLabel);
-            float size = 256f;
-            Rect rect = GUILayoutUtility.GetRect(size, size);
-            EditorGUI.DrawPreviewTexture(rect, levelData.previewTexture);
+            return;
         }
+
+        EditorGUILayout.HelpBox(
+            levelData.usesTiles
+                ? "Tiled level from Unity sprite sheet: recalculate reloads sprites from the texture asset."
+                : "If colors look wrong, assign the Color Palette and source image, then recalculate. "
+                  + "Or use Window > Sand > Image to Level, select the image and click Regenerate Preview before Save.",
+            MessageType.Info);
+
+        recalcTargetPalette = (SandColorPalette)EditorGUILayout.ObjectField(
+            "Color Palette",
+            recalcTargetPalette,
+            typeof(SandColorPalette),
+            false);
+        recalcSourceTexture = (Texture2D)EditorGUILayout.ObjectField(
+            levelData.usesTiles ? "Source Image (optional)" : "Source Image",
+            recalcSourceTexture,
+            typeof(Texture2D),
+            false);
+        recalcAutoColorCount = EditorGUILayout.Toggle("Auto Color Count", recalcAutoColorCount);
+        int recalcColorMax = recalcTargetPalette != null
+            ? Mathf.Max(2, recalcTargetPalette.GetColorCount())
+            : SandColorPalette.MaxColorCount;
+        using (new EditorGUI.DisabledScope(recalcAutoColorCount))
+        {
+            recalcColorCount = EditorGUILayout.IntSlider("Color Count", recalcColorCount, 2, recalcColorMax);
+        }
+
+        if (recalcAutoColorCount)
+        {
+            EditorGUILayout.LabelField("Colors are detected automatically from the source", EditorStyles.miniLabel);
+        }
+
+        recalcPreviewScale = EditorGUILayout.IntSlider("Preview Scale", recalcPreviewScale, 4, 16);
+        recalcAutoBackground = EditorGUILayout.Toggle("Auto Background", recalcAutoBackground);
+        using (new EditorGUI.DisabledScope(recalcAutoBackground))
+        {
+            recalcBackgroundColor = EditorGUILayout.ColorField("Background Color", recalcBackgroundColor);
+        }
+
+        EditorGUILayout.BeginHorizontal();
+        bool canRecalculate = levelData.usesTiles
+            ? levelData.tileSources != null && levelData.tileSources.Length > 0
+            : recalcSourceTexture != null;
+        using (new EditorGUI.DisabledScope(!canRecalculate))
+        {
+            string recalcLabel = levelData.usesTiles ? "Recalculate from Tiles" : "Recalculate from Source Image";
+            if (GUILayout.Button(recalcLabel, GUILayout.Height(28f)))
+            {
+                Undo.RecordObject(levelData, "Recalculate Colors From Source");
+                bool success = LevelDataColorRecalculator.RecalculateFromTexture(
+                    levelData,
+                    recalcSourceTexture,
+                    recalcTargetPalette,
+                    recalcColorCount,
+                    recalcAutoColorCount,
+                    recalcAutoBackground,
+                    recalcBackgroundColor,
+                    recalcPreviewScale);
+                if (success)
+                {
+                    EditorUtility.SetDirty(levelData);
+                }
+            }
+        }
+
+        using (new EditorGUI.DisabledScope(recalcTargetPalette == null))
+        {
+            if (GUILayout.Button("Remap to Palette", GUILayout.Height(28f)))
+            {
+                Undo.RecordObject(levelData, "Remap Level To Palette");
+                bool success = LevelDataColorRecalculator.RemapToPalette(
+                    levelData,
+                    recalcTargetPalette,
+                    recalcColorCount);
+                if (success)
+                {
+                    EditorUtility.SetDirty(levelData);
+                }
+            }
+        }
+        EditorGUILayout.EndHorizontal();
+    }
+
+    private void DrawPaletteEditor(LevelData levelData)
+    {
+        EditorGUILayout.Space();
+        paletteFoldout = EditorGUILayout.Foldout(paletteFoldout, "Colors In Drawing", true);
+        if (!paletteFoldout)
+        {
+            return;
+        }
+
+        SerializedProperty paletteProp = serializedObject.FindProperty("palette");
+        if (paletteProp == null || !paletteProp.isArray)
+        {
+            EditorGUILayout.HelpBox("Palette is missing.", MessageType.Warning);
+            return;
+        }
+
+        byte[] usedColors = levelData.GetUsedPaletteColorsByFrequency();
+        if (usedColors.Length == 0)
+        {
+            EditorGUILayout.HelpBox("No palette colors found in the drawing.", MessageType.Info);
+            return;
+        }
+
+        for (int i = 0; i < usedColors.Length; i++)
+        {
+            byte colorIndex = usedColors[i];
+            int arrayIndex = colorIndex - 1;
+            if (arrayIndex < 0 || arrayIndex >= paletteProp.arraySize)
+            {
+                continue;
+            }
+
+            SerializedProperty colorProp = paletteProp.GetArrayElementAtIndex(arrayIndex);
+            Color32 paletteColor = colorProp.colorValue;
+            int cellCount = levelData.CountLevelCellsForColor(colorIndex);
+
+            EditorGUILayout.BeginHorizontal();
+            DrawColorSwatch(paletteColor, 24f);
+
+            Color32 editedColor = PaletteColorField.DrawLayout(paletteColor, GUILayout.MinWidth(56f));
+            if (!PaletteColorUtility.ColorsEqual(paletteColor, editedColor))
+            {
+                colorProp.colorValue = editedColor;
+                paletteColor = editedColor;
+            }
+
+            EditorGUILayout.LabelField(
+                string.Format("Color {0}  ({1} cells)  {2}", colorIndex, cellCount, FormatHex(paletteColor)),
+                GUILayout.MinWidth(80f));
+            EditorGUILayout.EndHorizontal();
+        }
+    }
+
+    private void DrawBucketsEditor(LevelData levelData)
+    {
+        EditorGUILayout.Space();
+        bucketsFoldout = EditorGUILayout.Foldout(bucketsFoldout, "Buckets", true);
+        if (!bucketsFoldout)
+        {
+            return;
+        }
+
+        if (levelData.buckets == null || levelData.buckets.Length == 0)
+        {
+            EditorGUILayout.HelpBox("No buckets defined.", MessageType.Info);
+            return;
+        }
+
+        for (int i = 0; i < levelData.buckets.Length; i++)
+        {
+            BucketSpawn spawn = levelData.buckets[i];
+            if (!levelData.IsColorUsedInLevel(spawn.colorIndex))
+            {
+                continue;
+            }
+
+            Color32 paletteColor = levelData.GetPaletteColor(spawn.colorIndex);
+
+            EditorGUILayout.BeginHorizontal();
+            DrawColorSwatch(paletteColor, 24f);
+            EditorGUILayout.LabelField(
+                string.Format(
+                    "Color {0}: {1} bucket(s), {2} cells, {3}",
+                    spawn.colorIndex,
+                    spawn.count,
+                    levelData.CountLevelCellsForColor(spawn.colorIndex),
+                    FormatHex(paletteColor)));
+            EditorGUILayout.EndHorizontal();
+        }
+    }
+
+    private static void DrawCellsInfo(LevelData levelData)
+    {
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Cells", EditorStyles.boldLabel);
+        int expected = levelData.gridWidth * levelData.gridHeight;
+        int actual = levelData.cells != null ? levelData.cells.Length : 0;
+        EditorGUILayout.LabelField("Data Size", string.Format("{0} / {1}", actual, expected));
+        if (actual != expected)
+        {
+            EditorGUILayout.HelpBox("Cell data size does not match grid dimensions.", MessageType.Warning);
+        }
+    }
+
+    private static void DrawPreview(LevelData levelData)
+    {
+        if (levelData.previewTexture == null)
+        {
+            return;
+        }
+
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Preview", EditorStyles.boldLabel);
+        EditorGUILayout.ObjectField("Preview Texture", levelData.previewTexture, typeof(Texture2D), false);
+
+        float maxSize = 280f;
+        float aspect = levelData.previewTexture.height > 0
+            ? levelData.previewTexture.width / (float)levelData.previewTexture.height
+            : 1f;
+        float displayWidth = aspect >= 1f ? maxSize : maxSize * aspect;
+        float displayHeight = aspect >= 1f ? maxSize / aspect : maxSize;
+        Rect rect = GUILayoutUtility.GetRect(displayWidth, displayHeight);
+        GUI.DrawTexture(rect, levelData.previewTexture, ScaleMode.ScaleToFit);
     }
 
     private void DrawBucketLayoutEditor(LevelData levelData)
@@ -50,10 +341,10 @@ public class LevelDataEditor : Editor
             return;
         }
 
-        byte[] usedColors = levelData.GetColorsUsedInLevel();
+        byte[] usedColors = levelData.GetUsedPaletteColorsByFrequency();
         if (usedColors.Length == 0)
         {
-            EditorGUILayout.HelpBox("No sand colors on the level image yet.", MessageType.Info);
+            EditorGUILayout.HelpBox("No palette colors found in the drawing.", MessageType.Info);
             return;
         }
 
@@ -74,18 +365,22 @@ public class LevelDataEditor : Editor
         {
             byte colorIndex = usedColors[i];
             Color32 paletteColor = levelData.GetPaletteColor(colorIndex);
-            Color buttonColor = SandDisplayColors.FromPalette(paletteColor);
             bool selected = paintMode == LayoutPaintMode.Color && selectedLayoutColor == colorIndex;
 
-            GUI.backgroundColor = buttonColor;
-            if (GUILayout.Toggle(selected, " " + colorIndex, "MiniButton", GUILayout.Height(24f)))
+            Rect buttonRect = GUILayoutUtility.GetRect(36f, 24f, GUILayout.Width(36f));
+            EditorGUI.DrawRect(buttonRect, (Color)paletteColor);
+            if (selected)
+            {
+                EditorGUI.DrawRect(new Rect(buttonRect.x, buttonRect.y, buttonRect.width, 2f), Color.white);
+            }
+
+            if (GUI.Button(buttonRect, colorIndex.ToString(), EditorStyles.centeredGreyMiniLabel))
             {
                 paintMode = LayoutPaintMode.Color;
                 selectedLayoutColor = colorIndex;
             }
         }
 
-        GUI.backgroundColor = Color.white;
         if (GUILayout.Toggle(paintMode == LayoutPaintMode.Wall, "Wall", "MiniButton", GUILayout.Height(24f), GUILayout.Width(64f)))
         {
             paintMode = LayoutPaintMode.Wall;
@@ -126,7 +421,7 @@ public class LevelDataEditor : Editor
             EditorUtility.SetDirty(levelData);
         }
 
-        if (GUILayout.Button("Auto Fill From Sand"))
+        if (GUILayout.Button("Regenerate From Rules"))
         {
             AutoFillLayoutFromSand(levelData);
         }
@@ -147,7 +442,7 @@ public class LevelDataEditor : Editor
         }
         else
         {
-            background = (Color)SandDisplayColors.FromPalette(levelData.GetPaletteColor(cell));
+            background = (Color)levelData.GetPaletteColor(cell);
         }
 
         Rect rect = GUILayoutUtility.GetRect(36f, 36f, GUILayout.Width(36f), GUILayout.Height(36f));
@@ -184,29 +479,73 @@ public class LevelDataEditor : Editor
 
     private static void AutoFillLayoutFromSand(LevelData levelData)
     {
-        Undo.RecordObject(levelData, "Auto Fill Bucket Layout");
-        levelData.EnsureBucketLayout();
-        for (int i = 0; i < levelData.bucketLayout.Length; i++)
-        {
-            levelData.bucketLayout[i] = 0;
-        }
+        ApplyBucketRules(levelData);
+    }
 
-        byte[] usedColors = levelData.GetColorsUsedInLevel();
-        int layoutIndex = 0;
-        for (int colorSlot = 0; colorSlot < usedColors.Length && layoutIndex < LevelData.BucketLayoutCellCount; colorSlot++)
-        {
-            byte colorIndex = usedColors[colorSlot];
-            int bucketCount = 1;
+    private void DrawBucketRulesSection(LevelData levelData)
+    {
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Bucket Generation", EditorStyles.boldLabel);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("bucketSettingsOverride"));
 
-            for (int i = 0; i < bucketCount && layoutIndex < LevelData.BucketLayoutCellCount; i++)
+        if (LevelEditorUtility.TryFindLevelInDatabase(levelData, out LevelDatabase database, out int levelIndex))
+        {
+            EditorGUILayout.LabelField("Level Database Index", levelIndex.ToString());
+            LevelSegmentRules segment = database.GetSegmentRulesForLevel(levelIndex);
+            if (levelData.bucketSettingsOverride != null)
             {
-                int x = layoutIndex % LevelData.BucketLayoutColumns;
-                int y = layoutIndex / LevelData.BucketLayoutColumns;
-                levelData.SetBucketLayoutCell(x, y, colorIndex);
-                layoutIndex++;
+                EditorGUILayout.LabelField(
+                    "Resolved Settings",
+                    levelData.bucketSettingsOverride.name + " (override)",
+                    EditorStyles.miniLabel);
+            }
+            else if (segment != null)
+            {
+                string settingsName = segment.bucketSettings != null ? segment.bucketSettings.name : "none";
+                string maxGrains = segment.bucketSettings != null && segment.bucketSettings.maxGrainsPerBucket > 0
+                    ? string.Format(", max {0} grains/bucket", segment.bucketSettings.maxGrainsPerBucket)
+                    : string.Empty;
+                EditorGUILayout.LabelField(
+                    "Resolved Settings",
+                    string.Format("{0} / {1}{2}", segment.displayName, settingsName, maxGrains),
+                    EditorStyles.miniLabel);
+            }
+            else
+            {
+                EditorGUILayout.HelpBox("No segment rules for this level index. Legacy auto-fill will be used.", MessageType.Info);
             }
         }
+        else
+        {
+            EditorGUILayout.HelpBox("Level is not in a Level Database. Assign bucketSettingsOverride or add to database.", MessageType.Info);
+        }
 
+        if (GUILayout.Button("Apply Bucket Rules", GUILayout.Height(24f)))
+        {
+            ApplyBucketRules(levelData);
+        }
+    }
+
+    private static void ApplyBucketRules(LevelData levelData)
+    {
+        Undo.RecordObject(levelData, "Apply Bucket Rules");
+        LevelEditorUtility.ApplyBucketLayoutRules(levelData);
         EditorUtility.SetDirty(levelData);
+    }
+
+    private static void DrawColorSwatch(Color32 color, float size)
+    {
+        Rect rect = GUILayoutUtility.GetRect(size, size, GUILayout.Width(size), GUILayout.Height(size));
+        EditorGUI.DrawRect(rect, (Color)color);
+    }
+
+    private static string FormatHex(Color32 color)
+    {
+        if (color.a == 255)
+        {
+            return string.Format("#{0:X2}{1:X2}{2:X2}", color.r, color.g, color.b);
+        }
+
+        return string.Format("#{0:X2}{1:X2}{2:X2}{3:X2}", color.r, color.g, color.b, color.a);
     }
 }

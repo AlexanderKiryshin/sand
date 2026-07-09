@@ -4,6 +4,7 @@ using UnityEngine;
 public class LevelDatabase : ScriptableObject
 {
     public LevelData[] levels = new LevelData[0];
+    public LevelSegmentDatabase segmentDatabase;
 
     public LevelData GetLevel(int index)
     {
@@ -13,6 +14,49 @@ public class LevelDatabase : ScriptableObject
         }
 
         return levels[index];
+    }
+
+    public LevelSegmentRules GetSegmentRulesForLevel(int index)
+    {
+        if (segmentDatabase == null)
+        {
+            return null;
+        }
+
+        return segmentDatabase.GetSegmentForLevelIndex(index);
+    }
+
+    public void ApplyBucketLayoutRules(LevelData level, int levelIndex)
+    {
+        if (level == null)
+        {
+            return;
+        }
+
+        LevelBucketSettings settings = level.bucketSettingsOverride;
+        if (settings == null)
+        {
+            LevelSegmentRules segment = GetSegmentRulesForLevel(levelIndex);
+            settings = segment != null ? segment.bucketSettings : null;
+        }
+
+        LevelBucketLayoutGenerator.Apply(level, settings);
+    }
+
+    public LevelBucketSettings GetBucketSettingsForLevel(int levelIndex, LevelData level = null)
+    {
+        if (level == null)
+        {
+            level = GetLevel(levelIndex);
+        }
+
+        if (level != null && level.bucketSettingsOverride != null)
+        {
+            return level.bucketSettingsOverride;
+        }
+
+        LevelSegmentRules segment = GetSegmentRulesForLevel(levelIndex);
+        return segment != null ? segment.bucketSettings : null;
     }
 
     public int LevelCount

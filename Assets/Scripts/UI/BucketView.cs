@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,23 +7,31 @@ public class BucketView : MonoBehaviour
 {
     [SerializeField] private Image bucketImage;
     [SerializeField] private Button button;
+    [SerializeField] private TextMeshProUGUI capacityLabel;
+    [Header("Sprites")]
+    [Tooltip("White or grayscale sprite tinted with the bucket color when the bucket can be taken.")]
+    [SerializeField] private Sprite openBucketSprite;
+    [Tooltip("White or grayscale sprite tinted with the bucket color when the bucket is blocked.")]
+    [SerializeField] private Sprite lockedBucketSprite;
 
     private Bucket bucket;
     private Action<Bucket> onClick;
     private Color32 baseColor;
+    private bool isSelectable = true;
+    private RectTransform cachedRectTransform;
+    private Vector2 layoutAnchoredPosition;
+    private float tutorialBounceOffset;
 
     public Bucket Bucket { get { return bucket; } }
+    public Sprite OpenBucketSprite { get { return openBucketSprite; } }
+    public Sprite LockedBucketSprite { get { return lockedBucketSprite; } }
 
     public void Initialize(Bucket targetBucket, Color32 color, Action<Bucket> clickHandler)
     {
         bucket = targetBucket;
         onClick = clickHandler;
         baseColor = SandDisplayColors.FromPalette(color);
-
-        if (bucketImage != null)
-        {
-            bucketImage.color = baseColor;
-        }
+        cachedRectTransform = GetComponent<RectTransform>();
 
         if (button == null)
         {
@@ -33,37 +42,141 @@ public class BucketView : MonoBehaviour
         {
             button.onClick.RemoveAllListeners();
             button.onClick.AddListener(HandleClick);
-
-            ColorBlock colors = button.colors;
-            colors.normalColor = Color.white;
-            colors.highlightedColor = new Color(0.92f, 0.92f, 0.92f, 1f);
-            colors.pressedColor = new Color(0.85f, 0.85f, 0.85f, 1f);
-            colors.selectedColor = Color.white;
-            colors.disabledColor = new Color(0.75f, 0.75f, 0.75f, 0.55f);
-            button.colors = colors;
+            button.transition = Selectable.Transition.None;
         }
+
+        ApplyVisual();
+        UpdateRemainingCapacity();
+        ApplyTutorialOffset();
     }
 
     public void SetSelectable(bool selectable)
     {
+        isSelectable = selectable;
+
         if (button != null)
         {
             button.interactable = selectable;
         }
 
-        if (bucketImage != null)
+        ApplyVisual();
+    }
+
+    public void UpdateRemainingCapacity()
+    {
+        EnsureCapacityLabel();
+        if (capacityLabel == null || bucket == null)
         {
-            if (selectable)
-            {
-                bucketImage.color = baseColor;
-            }
-            else
-            {
-                Color dimmed = baseColor;
-                dimmed.a = 160;
-                bucketImage.color = dimmed;
-            }
+            return;
         }
+
+        capacityLabel.text = bucket.RemainingCapacity.ToString();
+        SandDisplayColors.ApplyCapacityLabelStyle(capacityLabel, baseColor);
+    }
+
+    public void CaptureLayoutPosition()
+    {
+        if (cachedRectTransform == null)
+        {
+            cachedRectTransform = GetComponent<RectTransform>();
+        }
+
+        if (cachedRectTransform == null)
+        {
+            return;
+        }
+
+        layoutAnchoredPosition = cachedRectTransform.anchoredPosition;
+        ApplyTutorialOffset();
+    }
+
+    public void SetTutorialBounceOffset(float offsetY)
+    {
+        tutorialBounceOffset = offsetY;
+        ApplyTutorialOffset();
+    }
+
+    public void ClearTutorialBounce()
+    {
+        tutorialBounceOffset = 0f;
+        ApplyTutorialOffset();
+    }
+
+    public Vector2 GetCanvasPosition()
+    {
+        if (cachedRectTransform == null)
+        {
+            cachedRectTransform = GetComponent<RectTransform>();
+        }
+
+        Canvas canvas = GetComponentInParent<Canvas>();
+        RectTransform canvasRect = canvas != null ? canvas.transform as RectTransform : null;
+        if (cachedRectTransform == null || canvasRect == null)
+        {
+            return Vector2.zero;
+        }
+
+        Camera eventCamera = canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera;
+        Vector2 screen = RectTransformUtility.WorldToScreenPoint(eventCamera, cachedRectTransform.position);
+        Vector2 canvasPosition;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screen, eventCamera, out canvasPosition);
+        return canvasPosition;
+    }
+
+    private void ApplyVisual()
+    {
+        if (bucketImage == null)
+        {
+            return;
+        }
+
+        Sprite sprite = isSelectable ? openBucketSprite : lockedBucketSprite;
+        if (sprite != null)
+        {
+            bucketImage.sprite = sprite;
+            bucketImage.color = baseColor;
+            return;
+        }
+
+        if (isSelectable)
+        {
+            bucketImage.color = baseColor;
+            return;
+        }
+
+        Color dimmed = baseColor;
+        dimmed.a = 160;
+        bucketImage.color = dimmed;
+    }
+
+    private void EnsureCapacityLabel()
+    {
+        if (capacityLabel != null)
+        {
+            return;
+        }
+
+        Transform existing = transform.Find("CapacityLabel");
+        if (existing != null)
+        {
+            capacityLabel = existing.GetComponent<TextMeshProUGUI>();
+            SandDisplayColors.ApplyCapacityLabelStyle(capacityLabel, baseColor);
+            return;
+        }
+
+        GameObject labelObject = new GameObject("CapacityLabel", typeof(RectTransform));
+        labelObject.transform.SetParent(transform, false);
+        RectTransform labelRect = labelObject.GetComponent<RectTransform>();
+        labelRect.anchorMin = Vector2.zero;
+        labelRect.anchorMax = Vector2.one;
+        labelRect.offsetMin = Vector2.zero;
+        labelRect.offsetMax = Vector2.zero;
+
+        capacityLabel = labelObject.AddComponent<TextMeshProUGUI>();
+        capacityLabel.alignment = TextAlignmentOptions.Center;
+        capacityLabel.fontSize = 11f;
+        capacityLabel.raycastTarget = false;
+        SandDisplayColors.ApplyCapacityLabelStyle(capacityLabel, baseColor);
     }
 
     private void HandleClick()
@@ -72,5 +185,20 @@ public class BucketView : MonoBehaviour
         {
             onClick(bucket);
         }
+    }
+
+    private void ApplyTutorialOffset()
+    {
+        if (cachedRectTransform == null)
+        {
+            cachedRectTransform = GetComponent<RectTransform>();
+        }
+
+        if (cachedRectTransform == null)
+        {
+            return;
+        }
+
+        cachedRectTransform.anchoredPosition = layoutAnchoredPosition + new Vector2(0f, tutorialBounceOffset);
     }
 }

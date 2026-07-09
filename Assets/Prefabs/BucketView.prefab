@@ -133,3 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bucketImage: {fileID: 1222292024273615656}
   button: {fileID: 6754368648595242657}
+  openBucketSprite: {fileID: -4585236109652133848, guid: 4b9093a264af2f745843ffb635d19033,
+    type: 3}
+  lockedBucketSprite: {fileID: -5184273388982262320, guid: 4b9093a264af2f745843ffb635d19033,
+    type: 3}

@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private BucketInventoryUI bucketInventoryUI;
 
     private BucketInventory bucketInventory;
+    private TutorialController tutorialController;
     private int currentLevelIndex;
     private GameState gameState = GameState.Playing;
     private bool sandRenderPending;
@@ -46,6 +47,7 @@ public class GameManager : MonoBehaviour
 
         BindEvents();
         EnsureConveyorView();
+        ResolveTutorialController();
         LoadLevel(0);
     }
 
@@ -63,22 +65,7 @@ public class GameManager : MonoBehaviour
     private void EnsureConveyorView()
     {
         ApplyRuntimeLayout();
-
-        if (FindObjectOfType<SandPourAnimator>() == null)
-        {
-            GameObject polish = GameObject.Find("Polish");
-            if (polish == null)
-            {
-                polish = new GameObject("Polish");
-            }
-
-            if (FindObjectOfType<SandConveyorMapper>() == null)
-            {
-                polish.AddComponent<SandConveyorMapper>();
-            }
-
-            polish.AddComponent<SandPourAnimator>();
-        }
+        EnsurePolishComponents();
 
         if (FindObjectOfType<ConveyorBeltView>() != null)
         {
@@ -89,6 +76,35 @@ public class GameManager : MonoBehaviour
         if (conveyorPanel != null)
         {
             conveyorPanel.AddComponent<ConveyorBeltView>();
+        }
+    }
+
+    private static void EnsurePolishComponents()
+    {
+        GameObject polish = GameObject.Find("Polish");
+        if (polish == null)
+        {
+            polish = new GameObject("Polish");
+        }
+
+        if (FindObjectOfType<SandConveyorMapper>() == null)
+        {
+            polish.AddComponent<SandConveyorMapper>();
+        }
+
+        if (FindObjectOfType<SandPourAnimator>() == null)
+        {
+            polish.AddComponent<SandPourAnimator>();
+        }
+
+        if (FindObjectOfType<LevelIntroSandAnimator>() == null)
+        {
+            polish.AddComponent<LevelIntroSandAnimator>();
+        }
+
+        if (FindObjectOfType<TutorialController>() == null)
+        {
+            polish.AddComponent<TutorialController>();
         }
     }
 
@@ -173,6 +189,7 @@ public class GameManager : MonoBehaviour
 
         currentLevelIndex = Mathf.Clamp(index, 0, levelDatabase.LevelCount - 1);
         gameState = GameState.Playing;
+        sandRenderPending = false;
 
         LevelData level = levelLoader.LoadLevel(currentLevelIndex);
         if (level == null)
@@ -182,7 +199,10 @@ public class GameManager : MonoBehaviour
 
         bucketInventory.BuildFromLevel(
             level,
-            sandRenderer != null ? sandRenderer.SubGrainsPerAxis : 1);
+            sandRenderer != null ? sandRenderer.SubGrainsPerAxis : 1,
+            levelDatabase != null
+                ? levelDatabase.GetBucketSettingsForLevel(currentLevelIndex, level)
+                : null);
 
         if (conveyorBelt != null)
         {
@@ -199,9 +219,32 @@ public class GameManager : MonoBehaviour
             bucketInventoryUI.Bind(bucketInventory, conveyorBelt, level, this);
         }
 
-        HandleGridChanged();
+        if (sandRenderer != null)
+        {
+            LevelIntroSandAnimator introAnimator = FindObjectOfType<LevelIntroSandAnimator>();
+            if (introAnimator != null)
+            {
+                introAnimator.PlayIntro(level, sandRenderer, sandSimulator);
+            }
+            else
+            {
+                sandRenderer.PlayIntroPour(1.2f);
+            }
+        }
+
+        ResolveTutorialController();
+        if (tutorialController != null)
+        {
+            tutorialController.HandleLevelLoaded(this, gameUI, bucketInventoryUI, conveyorBelt);
+        }
+
         HandleInventoryChanged();
         HandleConveyorChanged();
+
+        if (winConditionChecker != null)
+        {
+            winConditionChecker.CheckConditions();
+        }
     }
 
     public void RestartLevel()
@@ -242,7 +285,17 @@ public class GameManager : MonoBehaviour
             sandSimulator.Wake();
         }
 
+        if (tutorialController != null)
+        {
+            tutorialController.HandleBucketPlaced(bucket);
+        }
+
         return true;
+    }
+
+    public bool IsBucketInteractionAllowed(Bucket bucket)
+    {
+        return tutorialController == null || tutorialController.IsBucketInteractionAllowed(bucket);
     }
 
     private void HandleGridChanged()
@@ -313,6 +366,14 @@ public class GameManager : MonoBehaviour
         if (gameUI != null)
         {
             gameUI.ShowLevelComplete();
+        }
+    }
+
+    private void ResolveTutorialController()
+    {
+        if (tutorialController == null)
+        {
+            tutorialController = FindObjectOfType<TutorialController>();
         }
     }
 }

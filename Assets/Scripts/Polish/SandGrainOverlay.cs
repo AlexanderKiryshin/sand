@@ -16,12 +16,43 @@ public class SandGrainOverlay : MonoBehaviour
             rawImage = GetComponent<RawImage>();
         }
 
-        noiseTexture = BuildNoiseTexture(64, 64);
-        if (rawImage != null)
+        ApplyVisibility();
+    }
+
+    private void OnEnable()
+    {
+        ApplyVisibility();
+    }
+
+    public void ApplyVisibility()
+    {
+        if (!SandGrainColorBaker.GrainNoiseEnabled)
         {
-            rawImage.texture = noiseTexture;
-            rawImage.color = new Color(1f, 1f, 1f, grainStrength);
+            if (rawImage != null)
+            {
+                rawImage.texture = null;
+                rawImage.color = new Color(1f, 1f, 1f, 0f);
+                rawImage.enabled = false;
+            }
+
+            gameObject.SetActive(false);
+            return;
         }
+
+        gameObject.SetActive(true);
+        if (rawImage == null)
+        {
+            return;
+        }
+
+        rawImage.enabled = true;
+        if (noiseTexture == null)
+        {
+            noiseTexture = BuildNoiseTexture(64, 64);
+        }
+
+        rawImage.texture = noiseTexture;
+        rawImage.color = new Color(1f, 1f, 1f, grainStrength);
     }
 
     private static Texture2D BuildNoiseTexture(int width, int height)

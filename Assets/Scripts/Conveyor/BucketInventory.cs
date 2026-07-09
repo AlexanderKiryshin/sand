@@ -11,7 +11,7 @@ public class BucketInventory
     public IReadOnlyList<Bucket> Buckets { get { return buckets; } }
     public int TotalBucketCount { get; private set; }
 
-    public void BuildFromLevel(LevelData levelData, int subGrainsPerAxis)
+    public void BuildFromLevel(LevelData levelData, int subGrainsPerAxis, LevelBucketSettings bucketSettings = null)
     {
         buckets.Clear();
         TotalBucketCount = 0;
@@ -22,15 +22,9 @@ public class BucketInventory
             return;
         }
 
+        int maxGrainsPerBucket = bucketSettings != null ? bucketSettings.maxGrainsPerBucket : 0;
         int grainsPerLevelCell = Mathf.Max(1, subGrainsPerAxis) * Mathf.Max(1, subGrainsPerAxis);
-        if (levelData.HasBucketLayout())
-        {
-            BuildFromBucketLayout(levelData, grainsPerLevelCell);
-        }
-        else
-        {
-            BuildFromGeneratedQueue(levelData, grainsPerLevelCell);
-        }
+        BuildFromGeneratedQueue(levelData, grainsPerLevelCell, maxGrainsPerBucket);
 
         NotifyChanged();
     }
@@ -55,18 +49,12 @@ public class BucketInventory
             return false;
         }
 
-        int layoutIndex = bucket.LayoutIndex >= 0 ? bucket.LayoutIndex : GetQueueLayoutIndex(bucket);
-        if (layoutIndex < 0)
+        if (bucket.LayoutIndex < 0)
         {
             return false;
         }
 
-        if (!levelData.HasBucketLayout())
-        {
-            return layoutIndex < LevelData.BucketLayoutColumns;
-        }
-
-        return BucketLayoutAccess.IsAccessible(layoutIndex, levelData, this);
+        return BucketGridAccess.IsAccessible(bucket.LayoutIndex, this);
     }
 
     public bool TryTakeBucket(Bucket bucket, ConveyorBelt conveyor, LevelData levelData)
@@ -115,94 +103,41 @@ public class BucketInventory
         NotifyChanged();
     }
 
-    private void BuildFromGeneratedQueue(LevelData levelData, int grainsPerLevelCell)
+    private void BuildFromGeneratedQueue(LevelData levelData, int grainsPerLevelCell, int maxGrainsPerBucket)
     {
         ColorQuantizer.BucketQueueItem[] queue = ColorQuantizer.GenerateLevelBucketQueue(
             levelData.cells,
             levelData.gridWidth,
             levelData.gridHeight,
-            grainsPerLevelCell);
+            grainsPerLevelCell,
+            maxGrainsPerBucket);
 
         TotalBucketCount = queue.Length;
+        int[] shuffledSlots = CreateShuffledSlotOrder(queue.Length);
         for (int i = 0; i < queue.Length; i++)
         {
             ColorQuantizer.BucketQueueItem item = queue[i];
-            buckets.Add(new Bucket(item.colorIndex, item.capacity));
+            buckets.Add(new Bucket(item.colorIndex, item.capacity, shuffledSlots[i]));
         }
     }
 
-    private void BuildFromBucketLayout(LevelData levelData, int grainsPerLevelCell)
+    private static int[] CreateShuffledSlotOrder(int slotCount)
     {
-        levelData.EnsureBucketLayout();
-        int[] grainsPerColor = new int[256];
-        int[] bucketsPerColor = new int[256];
-        int[] nextCapacityIndex = new int[256];
-
-        for (int i = 0; i < levelData.cells.Length; i++)
+        int[] slots = new int[slotCount];
+        for (int i = 0; i < slotCount; i++)
         {
-            byte colorIndex = levelData.cells[i];
-            if (colorIndex > 0)
-            {
-                grainsPerColor[colorIndex] += grainsPerLevelCell;
-            }
+            slots[i] = i;
         }
 
-        for (int layoutIndex = 0; layoutIndex < levelData.bucketLayout.Length; layoutIndex++)
+        for (int i = slotCount - 1; i > 0; i--)
         {
-            byte colorIndex = levelData.bucketLayout[layoutIndex];
-            if (!LevelData.IsBucketLayoutBucket(colorIndex))
-            {
-                continue;
-            }
-
-            bucketsPerColor[colorIndex]++;
+            int swapIndex = UnityEngine.Random.Range(0, i + 1);
+            int temp = slots[i];
+            slots[i] = slots[swapIndex];
+            slots[swapIndex] = temp;
         }
 
-        int[][] capacitiesByColor = new int[256][];
-        for (int colorIndex = 1; colorIndex < capacitiesByColor.Length; colorIndex++)
-        {
-            if (bucketsPerColor[colorIndex] <= 0)
-            {
-                continue;
-            }
-
-            capacitiesByColor[colorIndex] = ColorQuantizer.DistributeBucketCapacities(
-                grainsPerColor[colorIndex],
-                bucketsPerColor[colorIndex]);
-        }
-
-        for (int layoutIndex = 0; layoutIndex < levelData.bucketLayout.Length; layoutIndex++)
-        {
-            byte colorIndex = levelData.bucketLayout[layoutIndex];
-            if (!LevelData.IsBucketLayoutBucket(colorIndex))
-            {
-                continue;
-            }
-
-            int[] capacities = capacitiesByColor[colorIndex];
-            int capacityIndex = nextCapacityIndex[colorIndex]++;
-            int capacity = capacities != null && capacityIndex < capacities.Length
-                ? capacities[capacityIndex]
-                : grainsPerColor[colorIndex];
-            capacity = Mathf.Max(1, capacity);
-            buckets.Add(new Bucket(colorIndex, capacity, layoutIndex));
-        }
-
-        buckets.Sort(CompareBucketsByLayout);
-        TotalBucketCount = buckets.Count;
-    }
-
-    private int GetQueueLayoutIndex(Bucket bucket)
-    {
-        for (int i = 0; i < buckets.Count; i++)
-        {
-            if (buckets[i] == bucket)
-            {
-                return i;
-            }
-        }
-
-        return -1;
+        return slots;
     }
 
     private static int CompareBucketsByLayout(Bucket left, Bucket right)

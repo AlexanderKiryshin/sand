@@ -8,6 +8,21 @@ public struct BucketSpawn
     public int count;
 }
 
+[Serializable]
+public struct TileSourceData
+{
+    public string assetPath;
+    public string spriteName;
+    public int tileX;
+    public int tileY;
+    public int colorCount;
+    public bool autoColorCount;
+    public bool autoBackgroundColor;
+    public Color32 backgroundColor;
+    public string targetPaletteAssetPath;
+    public Color32[] tilePalette;
+}
+
 [CreateAssetMenu(fileName = "LevelData", menuName = "Sand/Level Data")]
 public class LevelData : ScriptableObject
 {
@@ -17,14 +32,30 @@ public class LevelData : ScriptableObject
     public const byte BucketLayoutEmpty = 0;
     public const byte BucketLayoutWall = 255;
 
+    public const int MinGridDimension = 8;
+    public const int MaxGridDimension = 64;
+    public const int MinTileCellDimension = 4;
+    public const int MaxTileCellDimension = 64;
+
     public int gridWidth = 32;
     public int gridHeight = 32;
     public Color32[] palette = new Color32[0];
     public byte[] cells = new byte[0];
-    public int subGrainsPerAxis = 4;
+    public int subGrainsPerAxis = 1;
     public BucketSpawn[] buckets = new BucketSpawn[0];
     public byte[] bucketLayout = new byte[BucketLayoutCellCount];
     public Texture2D previewTexture;
+    [Tooltip("Optional per-level override for bucket layout generation.")]
+    public LevelBucketSettings bucketSettingsOverride;
+
+    public bool usesTiles;
+    public bool usesUnitySpriteSheet;
+    public string spriteSheetAssetPath;
+    public int tilesX = 1;
+    public int tilesY = 1;
+    public int tileCellWidth = 16;
+    public int tileCellHeight = 16;
+    public TileSourceData[] tileSources = new TileSourceData[0];
 
     public int GetGrainsPerLevelCell()
     {
@@ -102,11 +133,11 @@ public class LevelData : ScriptableObject
 
     public int GetDrainOrderBucketCount()
     {
-        if (HasBucketLayout())
-        {
-            return CountBucketsInLayout();
-        }
+        return GetDrainOrderBucketCount(0);
+    }
 
+    public int GetDrainOrderBucketCount(int maxGrainsPerBucket)
+    {
         if (cells == null || cells.Length == 0)
         {
             return 0;
@@ -116,7 +147,8 @@ public class LevelData : ScriptableObject
             cells,
             gridWidth,
             gridHeight,
-            GetGrainsPerLevelCell()).Length;
+            GetGrainsPerLevelCell(),
+            maxGrainsPerBucket).Length;
     }
 
     public void EnsureBucketLayout()
@@ -257,6 +289,183 @@ public class LevelData : ScriptableObject
         }
 
         return colors;
+    }
+
+    public byte[] GetColorsUsedInLevelByFrequency()
+    {
+        return GetUsedColorIndicesByFrequency(cells);
+    }
+
+    /// <summary>
+    /// Индексы цветов из palette (1-based), которые есть в рисунке, по убыванию частоты.
+    /// </summary>
+    public byte[] GetUsedPaletteColorsByFrequency()
+    {
+        if (cells == null || palette == null || palette.Length == 0)
+        {
+            return new byte[0];
+        }
+
+        byte[] used = GetUsedColorIndicesByFrequency(cells);
+        int paletteCount = palette.Length;
+        int validCount = 0;
+        for (int i = 0; i < used.Length; i++)
+        {
+            if (used[i] > 0 && used[i] <= paletteCount)
+            {
+                used[validCount++] = used[i];
+            }
+        }
+
+        if (validCount == 0)
+        {
+            return new byte[0];
+        }
+
+        if (validCount == used.Length)
+        {
+            return used;
+        }
+
+        byte[] trimmed = new byte[validCount];
+        for (int i = 0; i < validCount; i++)
+        {
+            trimmed[i] = used[i];
+        }
+
+        return trimmed;
+    }
+
+    public static byte[] FilterUsedPaletteColors(byte[] cells, int paletteLength)
+    {
+        if (cells == null || paletteLength <= 0)
+        {
+            return new byte[0];
+        }
+
+        byte[] used = GetUsedColorIndicesByFrequency(cells);
+        int validCount = 0;
+        for (int i = 0; i < used.Length; i++)
+        {
+            if (used[i] > 0 && used[i] <= paletteLength)
+            {
+                used[validCount++] = used[i];
+            }
+        }
+
+        if (validCount == 0)
+        {
+            return new byte[0];
+        }
+
+        if (validCount == used.Length)
+        {
+            return used;
+        }
+
+        byte[] trimmed = new byte[validCount];
+        for (int i = 0; i < validCount; i++)
+        {
+            trimmed[i] = used[i];
+        }
+
+        return trimmed;
+    }
+
+    public static byte[] GetUsedColorIndicesByFrequency(byte[] cells)
+    {
+        if (cells == null || cells.Length == 0)
+        {
+            return new byte[0];
+        }
+
+        int[] counts = new int[256];
+        bool[] seen = new bool[256];
+        int uniqueCount = 0;
+        for (int i = 0; i < cells.Length; i++)
+        {
+            byte colorIndex = cells[i];
+            if (colorIndex == 0)
+            {
+                continue;
+            }
+
+            counts[colorIndex]++;
+            if (!seen[colorIndex])
+            {
+                seen[colorIndex] = true;
+                uniqueCount++;
+            }
+        }
+
+        byte[] colors = new byte[uniqueCount];
+        int writeIndex = 0;
+        for (int colorIndex = 1; colorIndex < counts.Length; colorIndex++)
+        {
+            if (seen[colorIndex])
+            {
+                colors[writeIndex++] = (byte)colorIndex;
+            }
+        }
+
+        if (colors.Length <= 1)
+        {
+            return colors;
+        }
+
+        System.Array.Sort(colors, (byte a, byte b) =>
+        {
+            int countCompare = counts[b].CompareTo(counts[a]);
+            if (countCompare != 0)
+            {
+                return countCompare;
+            }
+
+            return a.CompareTo(b);
+        });
+
+        return colors;
+    }
+
+    public void AutoFillBucketLayoutFromCells()
+    {
+        EnsureBucketLayout();
+        for (int i = 0; i < bucketLayout.Length; i++)
+        {
+            bucketLayout[i] = BucketLayoutEmpty;
+        }
+
+        byte[] colors = GetUsedPaletteColorsByFrequency();
+        for (int i = 0; i < colors.Length && i < BucketLayoutCellCount; i++)
+        {
+            int x = i % BucketLayoutColumns;
+            int y = i / BucketLayoutColumns;
+            SetBucketLayoutCell(x, y, colors[i]);
+        }
+
+        buckets = BuildBucketSpawnsFromLayout();
+    }
+
+    public BucketSpawn[] BuildBucketSpawnsFromLayout()
+    {
+        byte[] colors = GetUsedPaletteColorsByFrequency();
+        if (colors.Length == 0)
+        {
+            return new BucketSpawn[0];
+        }
+
+        BucketSpawn[] spawns = new BucketSpawn[colors.Length];
+        for (int i = 0; i < colors.Length; i++)
+        {
+            byte colorIndex = colors[i];
+            spawns[i] = new BucketSpawn
+            {
+                colorIndex = colorIndex,
+                count = Mathf.Max(1, CountBucketsInLayoutForColor(colorIndex))
+            };
+        }
+
+        return spawns;
     }
 
     public bool IsColorUsedInLevel(byte colorIndex)

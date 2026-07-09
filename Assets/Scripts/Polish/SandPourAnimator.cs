@@ -208,6 +208,9 @@ public class SandPourAnimator : MonoBehaviour
 
         Color32 color = SandDisplayColors.FromPalette(loader.CurrentLevel.GetPaletteColor(colorIndex));
 
+        EnsurePourLayer();
+        BringPourLayerToFront();
+
         for (int i = 0; i < grainsPerCollect; i++)
         {
             SpawnPourGrain(startWorld, endWorld, color, targetBucket);
@@ -242,19 +245,53 @@ public class SandPourAnimator : MonoBehaviour
 
     private void EnsurePourLayer()
     {
-        if (pourLayer != null || canvas == null)
+        SandConveyorMapper activeMapper = mapper != null ? mapper : FindObjectOfType<SandConveyorMapper>();
+        RectTransform parent = canvas != null ? canvas.transform as RectTransform : null;
+        if (parent == null)
         {
             return;
         }
 
-        GameObject layerObject = new GameObject("SandPourLayer", typeof(RectTransform));
-        layerObject.transform.SetParent(canvas.transform, false);
-        pourLayer = layerObject.GetComponent<RectTransform>();
-        pourLayer.anchorMin = Vector2.zero;
-        pourLayer.anchorMax = Vector2.one;
-        pourLayer.offsetMin = Vector2.zero;
-        pourLayer.offsetMax = Vector2.zero;
-        pourLayer.SetAsLastSibling();
+        if (pourLayer == null)
+        {
+            Transform existingOnCanvas = parent.Find("SandCollectPourLayer");
+            if (existingOnCanvas != null)
+            {
+                pourLayer = existingOnCanvas.GetComponent<RectTransform>();
+            }
+        }
+
+        if (pourLayer == null)
+        {
+            GameObject layerObject = new GameObject("SandCollectPourLayer", typeof(RectTransform));
+            layerObject.transform.SetParent(parent, false);
+            pourLayer = layerObject.GetComponent<RectTransform>();
+            StretchPourLayer(pourLayer);
+        }
+        else if (pourLayer.parent != parent)
+        {
+            pourLayer.SetParent(parent, true);
+            StretchPourLayer(pourLayer);
+        }
+
+        BringPourLayerToFront();
+    }
+
+    private static void StretchPourLayer(RectTransform layer)
+    {
+        layer.anchorMin = Vector2.zero;
+        layer.anchorMax = Vector2.one;
+        layer.offsetMin = Vector2.zero;
+        layer.offsetMax = Vector2.zero;
+        layer.pivot = new Vector2(0.5f, 0.5f);
+    }
+
+    private void BringPourLayerToFront()
+    {
+        if (pourLayer != null)
+        {
+            pourLayer.SetAsLastSibling();
+        }
     }
 
     private void BuildPool()
@@ -278,6 +315,7 @@ public class SandPourAnimator : MonoBehaviour
         rect.pivot = new Vector2(0.5f, 0.5f);
 
         Image image = grainObject.AddComponent<Image>();
+        image.sprite = SandUiSprite.White;
         image.raycastTarget = false;
         grainObject.SetActive(false);
 

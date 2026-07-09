@@ -151,6 +151,32 @@ public class SandConveyorMapper : MonoBehaviour
         return sandImage.TransformPoint(new Vector3(localX, localY, 0f));
     }
 
+    public Vector3 GetLevelCellWorldPosition(int levelX, int levelY, int gridWidth, int gridHeight)
+    {
+        EnsureReferences();
+        if (sandImage == null || gridWidth <= 0 || gridHeight <= 0)
+        {
+            return Vector3.zero;
+        }
+
+        float localX = GetColumnLocalX(levelX, gridWidth);
+        float localY = GetLevelRowLocalY(levelY, gridHeight);
+        return sandImage.TransformPoint(new Vector3(localX, localY, 0f));
+    }
+
+    public Vector3 GetLevelPourStartWorldPosition(int levelX, int gridWidth, int gridHeight)
+    {
+        EnsureReferences();
+        if (sandImage == null || gridWidth <= 0 || gridHeight <= 0)
+        {
+            return Vector3.zero;
+        }
+
+        float localX = GetColumnLocalX(levelX, gridWidth);
+        float localY = sandImage.rect.yMax + Mathf.Max(24f, sandImage.rect.height * 0.08f);
+        return sandImage.TransformPoint(new Vector3(localX, localY, 0f));
+    }
+
     public float GetPourSpanWorldY(int gridX, int gridWidth, Vector3 bucketTargetWorld)
     {
         Vector3 start = GetPourStartWorldPosition(gridX, gridWidth);
@@ -175,6 +201,15 @@ public class SandConveyorMapper : MonoBehaviour
         return contentWidth / gridWidth;
     }
 
+    public RectTransform SandPanelRect
+    {
+        get
+        {
+            EnsureReferences();
+            return sandPanel;
+        }
+    }
+
     private float GetColumnLocalX(int gridX, int gridWidth)
     {
         Rect rect = sandImage.rect;
@@ -182,6 +217,16 @@ public class SandConveyorMapper : MonoBehaviour
         float contentWidth = rect.width - GetSandPadding() * 2f;
         float normalized = (gridX + 0.5f) / gridWidth;
         return contentLeft + normalized * contentWidth;
+    }
+
+    private float GetLevelRowLocalY(int levelY, int gridHeight)
+    {
+        Rect rect = sandImage.rect;
+        float contentBottom = rect.yMin + GetSandPadding();
+        float contentTop = rect.yMax - GetSandPadding();
+        float contentHeight = contentTop - contentBottom;
+        float normalized = (levelY + 0.5f) / gridHeight;
+        return contentTop - normalized * contentHeight;
     }
 
     private float GetColumnHalfWidth(int gridWidth)

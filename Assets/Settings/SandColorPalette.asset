@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089d81379e3454243bd1f8b7a97a7340, type: 3}
+  m_Name: SandColorPalette
+  m_EditorClassIdentifier: 
+  colors:
+  - serializedVersion: 2
+    rgba: 4281479900
+  - serializedVersion: 2
+    rgba: 4280954129
+  - serializedVersion: 2
+    rgba: 4278779901
+  - serializedVersion: 2
+    rgba: 4279295031
+  - serializedVersion: 2
+    rgba: 4294836478
+  - serializedVersion: 2
+    rgba: 4292975616
+  - serializedVersion: 2
+    rgba: 4294901502
+  - serializedVersion: 2
+    rgba: 4278190080
+  - serializedVersion: 2
+    rgba: 4281218361
+  - serializedVersion: 2
+    rgba: 4283480559
+  - serializedVersion: 2
+    rgba: 4279118151
+  - serializedVersion: 2
+    rgba: 4278279105
+  - serializedVersion: 2
+    rgba: 4285045955
+  - serializedVersion: 2
+    rgba: 4278271433
+  - serializedVersion: 2
+    rgba: 4282867539
+  - serializedVersion: 2
+    rgba: 4287456827
+  - serializedVersion: 2
+    rgba: 4289044106
+  - serializedVersion: 2
+    rgba: 4282586411
+  - serializedVersion: 2
+    rgba: 4288964693
+  - serializedVersion: 2
+    rgba: 4281699557
+  - serializedVersion: 2
+    rgba: 4291465874
+  - serializedVersion: 2
+    rgba: 4281539073
+  - serializedVersion: 2
+    rgba: 4284373249
+  - serializedVersion: 2
+    rgba: 4279463255
+  - serializedVersion: 2
+    rgba: 4289956892
+  - serializedVersion: 2
+    rgba: 4281030955
+  - serializedVersion: 2
+    rgba: 4287459230
+  - serializedVersion: 2
+    rgba: 4284826625
+  - serializedVersion: 2
+    rgba: 4280427865
+  - serializedVersion: 2
+    rgba: 4278792976
+  - serializedVersion: 2
+    rgba: 4278233330
+  - serializedVersion: 2
+    rgba: 4278325122
+  - serializedVersion: 2
+    rgba: 4284824361
+  - serializedVersion: 2
+    rgba: 4288376935
+  - serializedVersion: 2
+    rgba: 4289976559

@@ -41,7 +41,7 @@ public class GameUI : MonoBehaviour
 
         if (hintLabel != null)
         {
-            hintLabel.text = "Tap a bucket of matching color to collect sand";
+            SetHint("Tap a bucket of matching color to collect sand");
         }
 
         RefreshConveyor();
@@ -87,6 +87,47 @@ public class GameUI : MonoBehaviour
         if (gameManager != null)
         {
             gameManager.LoadNextLevel();
+        }
+    }
+
+    public void SetHint(string text)
+    {
+        if (hintLabel != null)
+        {
+            hintLabel.text = text;
+        }
+
+        SetHintVisible(!string.IsNullOrEmpty(text));
+    }
+
+    public void SetHintVisible(bool visible)
+    {
+        if (hintLabel == null)
+        {
+            return;
+        }
+
+        Transform parent = hintLabel.transform.parent;
+        if (parent != null)
+        {
+            parent.gameObject.SetActive(visible);
+        }
+        else
+        {
+            hintLabel.gameObject.SetActive(visible);
+        }
+    }
+
+    public void SetControlsInteractable(bool interactable)
+    {
+        if (resetButton != null)
+        {
+            resetButton.interactable = interactable;
+        }
+
+        if (nextLevelButton != null)
+        {
+            nextLevelButton.interactable = interactable;
         }
     }
 }

@@ -27,6 +27,9 @@ public class SandRenderer : MonoBehaviour
     private int pixelsPerSimCell;
     private int textureWidth;
     private int textureHeight;
+    private bool introPourActive;
+
+    public bool IsIntroPourActive { get { return introPourActive; } }
     private static readonly Color32 ClearPixel = new Color32(0, 0, 0, 0);
 
     public void Initialize(SandGrid sandGrid)
@@ -58,7 +61,9 @@ public class SandRenderer : MonoBehaviour
                 pixelsPerSimCell);
         }
 
-        RefreshFull();
+        RebuildPixelBuffer();
+        ClearTexture();
+        grid.ClearDirty();
     }
 
     public void RefreshFull()
@@ -68,21 +73,8 @@ public class SandRenderer : MonoBehaviour
             return;
         }
 
-        for (int i = 0; i < pixelBuffer.Length; i++)
-        {
-            pixelBuffer[i] = ClearPixel;
-        }
-
-        int gridWidth = grid.Width;
-        int gridHeight = grid.Height;
-        for (int y = 0; y < gridHeight; y++)
-        {
-            for (int x = 0; x < gridWidth; x++)
-            {
-                WriteSimCell(x, y, grid.GetCell(x, y));
-            }
-        }
-
+        CompleteIntroPour();
+        RebuildPixelBuffer();
         ApplyTextureFull();
         grid.ClearDirty();
     }
@@ -91,6 +83,12 @@ public class SandRenderer : MonoBehaviour
     {
         if (grid == null || texture == null)
         {
+            return;
+        }
+
+        if (introPourActive)
+        {
+            grid.ClearDirty();
             return;
         }
 
@@ -208,12 +206,165 @@ public class SandRenderer : MonoBehaviour
         texture.Apply(false);
     }
 
-    private static void DisableStaticGrainOverlay()
+    public void PrepareForIntro()
+    {
+        CompleteIntroPour();
+
+        if (grid == null || texture == null)
+        {
+            return;
+        }
+
+        RebuildPixelBuffer();
+        ClearTexture();
+        grid.ClearDirty();
+        introPourActive = true;
+    }
+
+    public void RevealLevelBlock(int levelX, int levelY, int stride)
+    {
+        if (grid == null || texture == null || stride < 1)
+        {
+            return;
+        }
+
+        int sub = grid.SubGrainsPerAxis;
+        int levelWidth = grid.LevelWidth;
+        int levelHeight = grid.LevelHeight;
+        int pixelMinX = textureWidth;
+        int pixelMinY = textureHeight;
+        int pixelMaxX = -1;
+        int pixelMaxY = -1;
+
+        for (int blockY = 0; blockY < stride; blockY++)
+        {
+            int ly = levelY + blockY;
+            if (ly < 0 || ly >= levelHeight)
+            {
+                continue;
+            }
+
+            for (int blockX = 0; blockX < stride; blockX++)
+            {
+                int lx = levelX + blockX;
+                if (lx < 0 || lx >= levelWidth)
+                {
+                    continue;
+                }
+
+                int originX = lx * sub;
+                int originY = ly * sub;
+                for (int sy = 0; sy < sub; sy++)
+                {
+                    for (int sx = 0; sx < sub; sx++)
+                    {
+                        int simX = originX + sx;
+                        int simY = originY + sy;
+                        if (grid.GetCell(simX, simY) == 0)
+                        {
+                            continue;
+                        }
+
+                        WriteSimCell(simX, simY, grid.GetCell(simX, simY));
+
+                        int cellOriginX = simX * pixelsPerSimCell;
+                        int displayRow = grid.Height - 1 - simY;
+                        int cellOriginY = displayRow * pixelsPerSimCell;
+                        int cellMaxX = cellOriginX + pixelsPerSimCell - 1;
+                        int cellMaxY = cellOriginY + pixelsPerSimCell - 1;
+
+                        if (cellOriginX < pixelMinX)
+                        {
+                            pixelMinX = cellOriginX;
+                        }
+
+                        if (cellOriginY < pixelMinY)
+                        {
+                            pixelMinY = cellOriginY;
+                        }
+
+                        if (cellMaxX > pixelMaxX)
+                        {
+                            pixelMaxX = cellMaxX;
+                        }
+
+                        if (cellMaxY > pixelMaxY)
+                        {
+                            pixelMaxY = cellMaxY;
+                        }
+                    }
+                }
+            }
+        }
+
+        if (pixelMaxX < pixelMinX || pixelMaxY < pixelMinY)
+        {
+            return;
+        }
+
+        int dirtyPixelCount = (pixelMaxX - pixelMinX + 1) * (pixelMaxY - pixelMinY + 1);
+        if (dirtyPixelCount >= pixelBuffer.Length / 2)
+        {
+            ApplyTextureFull();
+        }
+        else
+        {
+            ApplyTextureRegion(pixelMinX, pixelMinY, pixelMaxX, pixelMaxY);
+        }
+    }
+
+    public void PlayIntroPour(float duration = 1.2f)
+    {
+        PrepareForIntro();
+    }
+
+    public void CompleteIntroPour()
+    {
+        if (!introPourActive)
+        {
+            return;
+        }
+
+        introPourActive = false;
+        ApplyTextureFull();
+    }
+
+    private void RebuildPixelBuffer()
+    {
+        for (int i = 0; i < pixelBuffer.Length; i++)
+        {
+            pixelBuffer[i] = ClearPixel;
+        }
+
+        int gridWidth = grid.Width;
+        int gridHeight = grid.Height;
+        for (int y = 0; y < gridHeight; y++)
+        {
+            for (int x = 0; x < gridWidth; x++)
+            {
+                WriteSimCell(x, y, grid.GetCell(x, y));
+            }
+        }
+    }
+
+    private void ClearTexture()
+    {
+        if (uploadScratch == null || uploadScratch.Length < pixelBuffer.Length)
+        {
+            uploadScratch = new Color32[pixelBuffer.Length];
+        }
+
+        Array.Clear(uploadScratch, 0, pixelBuffer.Length);
+        texture.SetPixels32(uploadScratch);
+        texture.Apply(false);
+    }
+
+    private void DisableStaticGrainOverlay()
     {
         SandGrainOverlay overlay = FindObjectOfType<SandGrainOverlay>();
         if (overlay != null)
         {
-            overlay.enabled = false;
+            overlay.ApplyVisibility();
         }
     }
 }

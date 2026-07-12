@@ -166,7 +166,9 @@ public static class GameSceneBuilder
         CanvasScaler scaler = canvasObject.AddComponent<CanvasScaler>();
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         scaler.referenceResolution = new Vector2(1080f, 1920f);
+        scaler.matchWidthOrHeight = 0.5f;
         canvasObject.AddComponent<GraphicRaycaster>();
+        canvasObject.AddComponent<MobilePortraitLayout>();
 
         GameObject eventSystem = new GameObject("EventSystem");
         eventSystem.AddComponent<EventSystem>();
@@ -205,7 +207,7 @@ public static class GameSceneBuilder
         RectTransform hintRect = hint.GetComponent<RectTransform>();
         hintRect.anchorMin = new Vector2(0.5f, 0.08f);
         hintRect.anchorMax = new Vector2(0.5f, 0.08f);
-        hintRect.sizeDelta = new Vector2(700f, 80f);
+        hintRect.sizeDelta = new Vector2(960f, 72f);
         Image hintBackground = hint.AddComponent<Image>();
         hintBackground.color = new Color(1f, 0.95f, 0.75f);
         TextMeshProUGUI hintLabel = CreateText(hint.transform, "HintLabel", "Tap on bucket to collect sand", 28, TextAlignmentOptions.Center);
@@ -229,7 +231,7 @@ public static class GameSceneBuilder
         completeText.rectTransform.anchoredPosition = new Vector2(0f, 60f);
 
         Button nextButton = CreateButton(dialog.transform, "NextButton", "Next Level", new Vector2(0f, -20f));
-        Button resetButton = CreateButton(header.transform, "ResetButton", "Reset", new Vector2(-420f, -20f));
+        Button resetButton = CreateHeaderButton(header.transform, "ResetButton", "Reset");
 
         GameObject uiRoot = CreateUIObject("GameUI", canvas);
         GameUI gameUI = uiRoot.AddComponent<GameUI>();
@@ -253,8 +255,8 @@ public static class GameSceneBuilder
         rect.sizeDelta = new Vector2(220f, 220f);
 
         GridLayoutGroup grid = inventory.AddComponent<GridLayoutGroup>();
-        grid.cellSize = new Vector2(36f, 36f);
-        grid.spacing = new Vector2(4f, 4f);
+        grid.cellSize = new Vector2(96f, 96f);
+        grid.spacing = new Vector2(10f, 10f);
         grid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
         grid.constraintCount = LevelData.BucketLayoutColumns;
 
@@ -310,6 +312,27 @@ public static class GameSceneBuilder
         label.alignment = alignment;
         label.color = Color.black;
         return label;
+    }
+
+    private static Button CreateHeaderButton(Transform parent, string name, string label)
+    {
+        GameObject obj = CreateUIObject(name, parent);
+        RectTransform rect = obj.GetComponent<RectTransform>();
+        rect.anchorMin = new Vector2(0f, 1f);
+        rect.anchorMax = new Vector2(0f, 1f);
+        rect.pivot = new Vector2(0f, 1f);
+        rect.sizeDelta = new Vector2(140f, 52f);
+        rect.anchoredPosition = new Vector2(12f, -12f);
+
+        Image image = obj.AddComponent<Image>();
+        image.color = new Color(0.3f, 0.65f, 0.95f);
+        Button button = obj.AddComponent<Button>();
+
+        TextMeshProUGUI text = CreateText(obj.transform, "Label", label, 22, TextAlignmentOptions.Center);
+        Stretch(text.rectTransform, 0f);
+        text.color = Color.white;
+
+        return button;
     }
 
     private static Button CreateButton(Transform parent, string name, string label, Vector2 anchoredPosition)

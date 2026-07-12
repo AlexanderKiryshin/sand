@@ -49,7 +49,15 @@ public class LevelSelectUI : MonoBehaviour
         for (int i = 0; i < levelDatabase.LevelCount; i++)
         {
             int levelIndex = i;
-            Button button = CreateLevelButton(i + 1);
+            bool unlocked = gameManager == null || gameManager.IsLevelUnlocked(levelIndex);
+            bool completed = gameManager != null && gameManager.IsLevelCompleted(levelIndex);
+            Button button = CreateLevelButton(i + 1, unlocked, completed);
+            if (!unlocked)
+            {
+                button.interactable = false;
+                continue;
+            }
+
             button.onClick.AddListener(() =>
             {
                 if (gameManager != null)
@@ -60,7 +68,7 @@ public class LevelSelectUI : MonoBehaviour
         }
     }
 
-    private Button CreateLevelButton(int levelNumber)
+    private Button CreateLevelButton(int levelNumber, bool unlocked, bool completed)
     {
         GameObject buttonObject = new GameObject("LevelButton_" + levelNumber, typeof(RectTransform));
         buttonObject.transform.SetParent(buttonContainer, false);
@@ -68,7 +76,18 @@ public class LevelSelectUI : MonoBehaviour
         rect.sizeDelta = new Vector2(140f, 48f);
 
         Image image = buttonObject.AddComponent<Image>();
-        image.color = new Color(0.35f, 0.55f, 0.85f);
+        if (!unlocked)
+        {
+            image.color = new Color(0.35f, 0.35f, 0.38f, 0.85f);
+        }
+        else if (completed)
+        {
+            image.color = new Color(0.28f, 0.72f, 0.42f, 1f);
+        }
+        else
+        {
+            image.color = new Color(0.35f, 0.55f, 0.85f, 1f);
+        }
         Button button = buttonObject.AddComponent<Button>();
 
         GameObject textObject = new GameObject("Text", typeof(RectTransform));

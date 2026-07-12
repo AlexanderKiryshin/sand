@@ -448,7 +448,7 @@ public class ConveyorBeltView : MonoBehaviour
         TextMeshProUGUI capacityLabel = labelObject.AddComponent<TextMeshProUGUI>();
         capacityLabel.text = bucket.RemainingCapacity.ToString();
         capacityLabel.alignment = TextAlignmentOptions.Center;
-        capacityLabel.fontSize = 12f;
+        capacityLabel.fontSize = GetBucketLabelFontSize();
         capacityLabel.raycastTarget = false;
 
         Color32 bucketColor = levelLoader != null && levelLoader.CurrentLevel != null
@@ -463,6 +463,29 @@ public class ConveyorBeltView : MonoBehaviour
             capacityLabel = capacityLabel,
             lastRemainingCapacity = bucket.RemainingCapacity
         };
+    }
+
+    public void RefreshGeometry()
+    {
+        foreach (KeyValuePair<Bucket, BucketVisual> pair in bucketVisuals)
+        {
+            BucketVisual visual = pair.Value;
+            if (visual.rect == null)
+            {
+                continue;
+            }
+
+            visual.rect.sizeDelta = new Vector2(ConveyorBelt.BucketWidth, ConveyorBelt.BucketWidth);
+            if (visual.capacityLabel != null)
+            {
+                visual.capacityLabel.fontSize = GetBucketLabelFontSize();
+            }
+        }
+    }
+
+    private static float GetBucketLabelFontSize()
+    {
+        return Mathf.Max(14f, ConveyorBelt.BucketWidth * 0.28f);
     }
 
     private static Texture2D CreateBeltTexture(int width, int height)

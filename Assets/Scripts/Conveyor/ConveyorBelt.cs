@@ -6,11 +6,11 @@ public class ConveyorBelt : MonoBehaviour
 {
     public const int MaxOnBelt = 5;
     public const float CollectionX = -95f;
-    public const float EntryX = 200f;
-    public const float ExitX = -220f;
+    public static float EntryX { get; private set; } = 200f;
+    public static float ExitX { get; private set; } = -220f;
     public const float CollectionTolerance = 35f;
-    public const float BucketSpacing = 72f;
-    public const float BucketWidth = 40f;
+    public static float BucketSpacing { get; private set; } = 72f;
+    public static float BucketWidth { get; private set; } = 40f;
 
     [SerializeField] private ConveyorSettings settings;
     [SerializeField] private int requiredFilledBuckets = 5;
@@ -64,6 +64,15 @@ public class ConveyorBelt : MonoBehaviour
     {
         requiredFilledBuckets = Mathf.Max(1, requiredBuckets);
         ResetConveyor();
+    }
+
+    public static void ConfigureGeometry(float beltWidthPixels, float bucketWidthPixels)
+    {
+        BucketWidth = Mathf.Max(16f, bucketWidthPixels);
+        float halfBelt = beltWidthPixels * 0.5f;
+        EntryX = halfBelt - BucketWidth * 0.5f;
+        ExitX = -halfBelt - BucketWidth;
+        BucketSpacing = BucketWidth + Mathf.Max(12f, BucketWidth * 0.2f);
     }
 
     public void ResetConveyor()

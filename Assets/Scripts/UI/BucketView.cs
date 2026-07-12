@@ -104,6 +104,11 @@ public class BucketView : MonoBehaviour
 
     public Vector2 GetCanvasPosition()
     {
+        return GetCenterCanvasPosition();
+    }
+
+    public Vector2 GetCenterCanvasPosition()
+    {
         if (cachedRectTransform == null)
         {
             cachedRectTransform = GetComponent<RectTransform>();
@@ -116,11 +121,53 @@ public class BucketView : MonoBehaviour
             return Vector2.zero;
         }
 
+        Vector3[] corners = new Vector3[4];
+        cachedRectTransform.GetWorldCorners(corners);
+        Vector3 worldCenter = (corners[0] + corners[2]) * 0.5f;
+
         Camera eventCamera = canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera;
-        Vector2 screen = RectTransformUtility.WorldToScreenPoint(eventCamera, cachedRectTransform.position);
+        Vector2 screen = RectTransformUtility.WorldToScreenPoint(eventCamera, worldCenter);
         Vector2 canvasPosition;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screen, eventCamera, out canvasPosition);
         return canvasPosition;
+    }
+
+    public float GetCanvasSize()
+    {
+        if (cachedRectTransform == null)
+        {
+            cachedRectTransform = GetComponent<RectTransform>();
+        }
+
+        if (cachedRectTransform == null)
+        {
+            return MobilePortraitLayout.BucketCellSize;
+        }
+
+        Canvas canvas = GetComponentInParent<Canvas>();
+        float scale = canvas != null ? canvas.scaleFactor : 1f;
+        return cachedRectTransform.rect.height * cachedRectTransform.lossyScale.y / Mathf.Max(scale, 0.001f);
+    }
+
+    public void SetTutorialDimmed(bool dimmed)
+    {
+        if (bucketImage == null)
+        {
+            return;
+        }
+
+        if (!dimmed)
+        {
+            ApplyVisual();
+            return;
+        }
+
+        Color dimmedColor = baseColor;
+        dimmedColor.r = (byte)Mathf.RoundToInt(baseColor.r * 0.45f);
+        dimmedColor.g = (byte)Mathf.RoundToInt(baseColor.g * 0.45f);
+        dimmedColor.b = (byte)Mathf.RoundToInt(baseColor.b * 0.45f);
+        dimmedColor.a = 120;
+        bucketImage.color = dimmedColor;
     }
 
     private void ApplyVisual()

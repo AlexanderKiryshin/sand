@@ -23,15 +23,21 @@ public class BucketInventoryUI : MonoBehaviour
         levelData = level;
         gameManager = manager;
 
+        ApplyMobileLayout();
+        Refresh();
+    }
+
+    public void ApplyMobileLayout()
+    {
         if (gridLayout != null)
         {
-            gridLayout.cellSize = new Vector2(36f, 36f);
-            gridLayout.spacing = new Vector2(4f, 4f);
+            float cellSize = MobilePortraitLayout.BucketCellSize;
+            float spacing = MobilePortraitLayout.BucketSpacing;
+            gridLayout.cellSize = new Vector2(cellSize, cellSize);
+            gridLayout.spacing = new Vector2(spacing, spacing);
             gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
             gridLayout.constraintCount = LevelData.BucketLayoutColumns;
         }
-
-        Refresh();
     }
 
     public void Refresh()
@@ -89,49 +95,49 @@ public class BucketInventoryUI : MonoBehaviour
         return best;
     }
 
+    public void SetTutorialFocus(Bucket bucket)
+    {
+    }
+
+    public void ClearTutorialFocus()
+    {
+    }
+
     public bool TryGetBucketCanvasPosition(Bucket bucket, out Vector2 canvasPosition)
     {
+        float bucketSize;
+        return TryGetBucketCanvasPosition(bucket, out canvasPosition, out bucketSize);
+    }
+
+    public bool TryGetBucketCanvasPosition(Bucket bucket, out Vector2 canvasPosition, out float bucketSize)
+    {
         canvasPosition = Vector2.zero;
+        bucketSize = MobilePortraitLayout.BucketCellSize;
         BucketView view = GetBucketView(bucket);
         if (view == null)
         {
             return false;
         }
 
-        canvasPosition = view.GetCanvasPosition();
+        canvasPosition = view.GetCenterCanvasPosition();
+        bucketSize = view.GetCanvasSize();
         return true;
     }
 
     public void SetTutorialBounce(Bucket bucket, float bounceOffset)
     {
-        foreach (KeyValuePair<int, BucketView> pair in activeViews)
-        {
-            BucketView view = pair.Value;
-            if (view == null)
-            {
-                continue;
-            }
-
-            if (bucket != null && view.Bucket == bucket)
-            {
-                view.SetTutorialBounceOffset(bounceOffset);
-            }
-            else
-            {
-                view.ClearTutorialBounce();
-            }
-        }
+        // Legacy no-op: bucket bounce moved layout and is replaced by overlay highlights.
     }
 
     public void ClearTutorialBounce()
     {
-        SetTutorialBounce(null, 0f);
+        ClearTutorialFocus();
     }
 
     private void ResizeContainer(int maxLayoutIndex)
     {
-        Vector2 cellSize = gridLayout != null ? gridLayout.cellSize : new Vector2(36f, 36f);
-        Vector2 spacing = gridLayout != null ? gridLayout.spacing : new Vector2(4f, 4f);
+        Vector2 cellSize = gridLayout != null ? gridLayout.cellSize : new Vector2(MobilePortraitLayout.BucketCellSize, MobilePortraitLayout.BucketCellSize);
+        Vector2 spacing = gridLayout != null ? gridLayout.spacing : new Vector2(MobilePortraitLayout.BucketSpacing, MobilePortraitLayout.BucketSpacing);
         int columns = LevelData.BucketLayoutColumns;
         int rows = (maxLayoutIndex / columns) + 1;
 
@@ -156,8 +162,8 @@ public class BucketInventoryUI : MonoBehaviour
 
     private void PositionBucketView(BucketView view, int layoutIndex)
     {
-        Vector2 cellSize = gridLayout != null ? gridLayout.cellSize : new Vector2(36f, 36f);
-        Vector2 spacing = gridLayout != null ? gridLayout.spacing : new Vector2(4f, 4f);
+        Vector2 cellSize = gridLayout != null ? gridLayout.cellSize : new Vector2(MobilePortraitLayout.BucketCellSize, MobilePortraitLayout.BucketCellSize);
+        Vector2 spacing = gridLayout != null ? gridLayout.spacing : new Vector2(MobilePortraitLayout.BucketSpacing, MobilePortraitLayout.BucketSpacing);
         int x = layoutIndex % LevelData.BucketLayoutColumns;
         int y = layoutIndex / LevelData.BucketLayoutColumns;
 

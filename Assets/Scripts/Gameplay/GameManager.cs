@@ -48,7 +48,8 @@ public class GameManager : MonoBehaviour
         BindEvents();
         EnsureConveyorView();
         ResolveTutorialController();
-        LoadLevel(0);
+        ProgressSaveService.Initialize(levelDatabase.LevelCount);
+        LoadLevel(ProgressSaveService.GetResumeLevelIndex());
     }
 
     private void LateUpdate()
@@ -110,28 +111,19 @@ public class GameManager : MonoBehaviour
 
     private static void ApplyRuntimeLayout()
     {
-        SetAnchor("SandPanel", 0.62f, new Vector2(280f, 280f));
-        SetAnchor("ConveyorPanel", 0.38f, new Vector2(400f, 72f));
-        SetAnchor("BucketInventory", 0.14f, new Vector2(220f, 220f));
-    }
-
-    private static void SetAnchor(string objectName, float anchorY, Vector2 size)
-    {
-        GameObject obj = GameObject.Find(objectName);
-        if (obj == null)
+        Canvas canvas = FindObjectOfType<Canvas>();
+        if (canvas == null)
         {
             return;
         }
 
-        RectTransform rect = obj.GetComponent<RectTransform>();
-        if (rect == null)
+        MobilePortraitLayout layout = canvas.GetComponent<MobilePortraitLayout>();
+        if (layout == null)
         {
-            return;
+            layout = canvas.gameObject.AddComponent<MobilePortraitLayout>();
         }
 
-        rect.anchorMin = new Vector2(0.5f, anchorY);
-        rect.anchorMax = new Vector2(0.5f, anchorY);
-        rect.sizeDelta = size;
+        layout.ApplyLayout();
     }
 
     private void BindEvents()
@@ -187,7 +179,15 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        currentLevelIndex = Mathf.Clamp(index, 0, levelDatabase.LevelCount - 1);
+        int maxIndex = levelDatabase.LevelCount - 1;
+        index = Mathf.Clamp(index, 0, maxIndex);
+        if (!ProgressSaveService.IsLevelUnlocked(index))
+        {
+            index = Mathf.Clamp(ProgressSaveService.HighestUnlockedIndex, 0, maxIndex);
+        }
+
+        currentLevelIndex = index;
+        ProgressSaveService.SetCurrentLevel(currentLevelIndex);
         gameState = GameState.Playing;
         sandRenderPending = false;
 
@@ -265,7 +265,22 @@ public class GameManager : MonoBehaviour
             nextIndex = 0;
         }
 
+        if (!ProgressSaveService.IsLevelUnlocked(nextIndex))
+        {
+            nextIndex = Mathf.Clamp(ProgressSaveService.HighestUnlockedIndex, 0, levelDatabase.LevelCount - 1);
+        }
+
         LoadLevel(nextIndex);
+    }
+
+    public bool IsLevelUnlocked(int levelIndex)
+    {
+        return ProgressSaveService.IsLevelUnlocked(levelIndex);
+    }
+
+    public bool IsLevelCompleted(int levelIndex)
+    {
+        return ProgressSaveService.IsLevelCompleted(levelIndex);
     }
 
     public bool TryPlaceBucket(Bucket bucket)
@@ -363,6 +378,7 @@ public class GameManager : MonoBehaviour
         }
 
         gameState = GameState.LevelComplete;
+        ProgressSaveService.MarkLevelCompleted(currentLevelIndex);
         if (gameUI != null)
         {
             gameUI.ShowLevelComplete();

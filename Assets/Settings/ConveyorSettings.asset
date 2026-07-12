@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46eccea1a3081c44db0c0cc02ddbed96, type: 3}
   m_Name: ConveyorSettings
   m_EditorClassIdentifier: 
-  moveSpeed: 55
+  moveSpeed: 300
   fullSpeedMultiplier: 2
   beltScrollSpeed: 90

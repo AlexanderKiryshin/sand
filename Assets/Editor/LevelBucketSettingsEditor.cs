@@ -8,11 +8,14 @@ public class LevelBucketSettingsEditor : Editor
     {
         AutoSlot,
         FixedColor,
-        Wall
+        Wall,
+        ConveyorSlot
     }
 
     private TemplatePaintMode paintMode = TemplatePaintMode.AutoSlot;
     private byte selectedColorIndex = 1;
+    private ConveyorDirection selectedConveyorDirection = ConveyorDirection.Front;
+    private int selectedConveyorCount = LevelData.DefaultConveyorBucketCount;
     private bool layoutFoldout = true;
 
     public override void OnInspectorGUI()
@@ -37,7 +40,7 @@ public class LevelBucketSettingsEditor : Editor
     private void DrawTemplatePainter(LevelBucketSettings settings)
     {
         EditorGUILayout.HelpBox(
-            "Auto = empty slot filled by rules. Wall = blocked cell. Fixed color = palette index locked in template.",
+            "Auto = empty slot filled by rules. Wall = blocked cell. Fixed color = palette index locked in template. Conveyor = dispenser with limited buckets.",
             MessageType.Info);
 
         EditorGUILayout.BeginHorizontal();
@@ -51,7 +54,29 @@ public class LevelBucketSettingsEditor : Editor
             paintMode = TemplatePaintMode.Wall;
         }
 
+        if (GUILayout.Toggle(paintMode == TemplatePaintMode.ConveyorSlot, "Conveyor", "MiniButton", GUILayout.Height(24f), GUILayout.Width(88f)))
+        {
+            paintMode = TemplatePaintMode.ConveyorSlot;
+        }
+
         EditorGUILayout.EndHorizontal();
+
+        if (paintMode == TemplatePaintMode.ConveyorSlot)
+        {
+            EditorGUILayout.LabelField("Conveyor Direction", EditorStyles.miniLabel);
+            EditorGUILayout.BeginHorizontal();
+            DrawDirectionButton(ConveyorDirection.Front, "Front");
+            DrawDirectionButton(ConveyorDirection.Back, "Back");
+            DrawDirectionButton(ConveyorDirection.Left, "Left");
+            DrawDirectionButton(ConveyorDirection.Right, "Right");
+            EditorGUILayout.EndHorizontal();
+
+            selectedConveyorCount = EditorGUILayout.IntSlider(
+                "Buckets Inside",
+                selectedConveyorCount,
+                1,
+                20);
+        }
 
         EditorGUILayout.LabelField("Fixed Color Index", EditorStyles.miniLabel);
         EditorGUILayout.BeginHorizontal();
@@ -87,6 +112,8 @@ public class LevelBucketSettingsEditor : Editor
             for (int i = 0; i < settings.layoutTemplate.Length; i++)
             {
                 settings.layoutTemplate[i] = LevelData.BucketLayoutEmpty;
+                settings.conveyorDirectionTemplate[i] = 0;
+                settings.conveyorBucketCountTemplate[i] = 0;
             }
 
             EditorUtility.SetDirty(settings);
@@ -97,7 +124,8 @@ public class LevelBucketSettingsEditor : Editor
             Undo.RecordObject(settings, "Fill Auto Slots");
             for (int i = 0; i < settings.layoutTemplate.Length; i++)
             {
-                if (!LevelData.IsBucketLayoutWall(settings.layoutTemplate[i]))
+                if (!LevelData.IsBucketLayoutWall(settings.layoutTemplate[i])
+                    && !LevelData.IsBucketLayoutConveyorSlot(settings.layoutTemplate[i]))
                 {
                     settings.layoutTemplate[i] = LevelData.BucketLayoutEmpty;
                 }
@@ -107,6 +135,14 @@ public class LevelBucketSettingsEditor : Editor
         }
 
         EditorGUILayout.EndHorizontal();
+    }
+
+    private void DrawDirectionButton(ConveyorDirection direction, string label)
+    {
+        if (GUILayout.Toggle(selectedConveyorDirection == direction, label, "MiniButton", GUILayout.Height(22f)))
+        {
+            selectedConveyorDirection = direction;
+        }
     }
 
     private void DrawTemplateCellButton(LevelBucketSettings settings, int x, int y)
@@ -119,6 +155,11 @@ public class LevelBucketSettingsEditor : Editor
         {
             background = new Color(0.2f, 0.2f, 0.2f, 1f);
             label = "W";
+        }
+        else if (LevelData.IsBucketLayoutConveyorSlot(cell))
+        {
+            background = new Color(0.35f, 0.45f, 0.65f, 1f);
+            label = "C" + settings.GetConveyorBucketCountTemplate(x, y);
         }
         else if (LevelData.IsBucketLayoutBucket(cell))
         {
@@ -142,6 +183,11 @@ public class LevelBucketSettingsEditor : Editor
             {
                 case TemplatePaintMode.Wall:
                     settings.SetTemplateCell(x, y, LevelData.BucketLayoutWall);
+                    break;
+                case TemplatePaintMode.ConveyorSlot:
+                    settings.SetTemplateCell(x, y, LevelData.BucketLayoutConveyorSlot);
+                    settings.SetConveyorDirectionTemplate(x, y, selectedConveyorDirection);
+                    settings.SetConveyorBucketCountTemplate(x, y, selectedConveyorCount);
                     break;
                 case TemplatePaintMode.FixedColor:
                     settings.SetTemplateCell(x, y, selectedColorIndex);

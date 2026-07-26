@@ -11,6 +11,7 @@ public class BucketInventoryUI : MonoBehaviour
     public BucketView BucketViewPrefab { get { return bucketViewPrefab; } }
 
     private readonly Dictionary<int, BucketView> activeViews = new Dictionary<int, BucketView>();
+    private readonly Dictionary<int, ConveyorSlotView> activeConveyorViews = new Dictionary<int, ConveyorSlotView>();
     private BucketInventory inventory;
     private ConveyorBelt conveyor;
     private LevelData levelData;
@@ -58,6 +59,14 @@ public class BucketInventoryUI : MonoBehaviour
             maxLayoutIndex = Mathf.Max(maxLayoutIndex, sortedBuckets[i].LayoutIndex);
         }
 
+        if (inventory.ConveyorSlots != null)
+        {
+            for (int i = 0; i < inventory.ConveyorSlots.Count; i++)
+            {
+                maxLayoutIndex = Mathf.Max(maxLayoutIndex, inventory.ConveyorSlots[i].LayoutIndex);
+            }
+        }
+
         if (maxLayoutIndex >= 0)
         {
             ResizeContainer(maxLayoutIndex);
@@ -68,6 +77,60 @@ public class BucketInventoryUI : MonoBehaviour
             Bucket bucket = sortedBuckets[i];
             CreateBucketView(bucket, bucket.LayoutIndex);
         }
+
+        CreateConveyorSlotViews();
+    }
+
+    private void CreateConveyorSlotViews()
+    {
+        if (inventory == null || inventory.ConveyorSlots == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < inventory.ConveyorSlots.Count; i++)
+        {
+            ConveyorSlotState slot = inventory.ConveyorSlots[i];
+            ConveyorSlotView view = CreateConveyorSlotView(slot);
+            if (view != null)
+            {
+                activeConveyorViews[slot.LayoutIndex] = view;
+            }
+        }
+    }
+
+    private ConveyorSlotView CreateConveyorSlotView(ConveyorSlotState slot)
+    {
+        GameObject slotObject = new GameObject("ConveyorSlot", typeof(RectTransform), typeof(ConveyorSlotView));
+        slotObject.transform.SetParent(bucketContainer, false);
+        ConveyorSlotView view = slotObject.GetComponent<ConveyorSlotView>();
+        view.Initialize(slot);
+        PositionConveyorSlotView(view, slot.LayoutIndex);
+        return view;
+    }
+
+    private void PositionConveyorSlotView(ConveyorSlotView view, int layoutIndex)
+    {
+        Vector2 cellSize = gridLayout != null ? gridLayout.cellSize : new Vector2(MobilePortraitLayout.BucketCellSize, MobilePortraitLayout.BucketCellSize);
+        Vector2 spacing = gridLayout != null ? gridLayout.spacing : new Vector2(MobilePortraitLayout.BucketSpacing, MobilePortraitLayout.BucketSpacing);
+        int x = layoutIndex % LevelData.BucketLayoutColumns;
+        int y = layoutIndex / LevelData.BucketLayoutColumns;
+
+        RectTransform rect = view.GetComponent<RectTransform>();
+        LayoutElement layoutElement = view.GetComponent<LayoutElement>();
+        if (layoutElement == null)
+        {
+            layoutElement = view.gameObject.AddComponent<LayoutElement>();
+        }
+
+        layoutElement.ignoreLayout = true;
+        rect.anchorMin = new Vector2(0f, 1f);
+        rect.anchorMax = new Vector2(0f, 1f);
+        rect.pivot = new Vector2(0f, 1f);
+        rect.sizeDelta = cellSize;
+        rect.anchoredPosition = new Vector2(
+            x * (cellSize.x + spacing.x),
+            -y * (cellSize.y + spacing.y));
     }
 
     public Bucket GetFirstAccessibleBucket()
@@ -227,6 +290,7 @@ public class BucketInventoryUI : MonoBehaviour
         }
 
         activeViews.Clear();
+        activeConveyorViews.Clear();
 
         if (bucketContainer == null)
         {

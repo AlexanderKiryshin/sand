@@ -30,7 +30,9 @@ public class LevelData : ScriptableObject
     public const int BucketLayoutRows = 5;
     public const int BucketLayoutCellCount = BucketLayoutColumns * BucketLayoutRows;
     public const byte BucketLayoutEmpty = 0;
+    public const byte BucketLayoutConveyorSlot = 254;
     public const byte BucketLayoutWall = 255;
+    public const byte DefaultConveyorBucketCount = 3;
 
     public const int MinGridDimension = 8;
     public const int MaxGridDimension = 64;
@@ -44,6 +46,8 @@ public class LevelData : ScriptableObject
     public int subGrainsPerAxis = 1;
     public BucketSpawn[] buckets = new BucketSpawn[0];
     public byte[] bucketLayout = new byte[BucketLayoutCellCount];
+    public byte[] conveyorDirections = new byte[BucketLayoutCellCount];
+    public byte[] conveyorBucketCounts = new byte[BucketLayoutCellCount];
     public Texture2D previewTexture;
     [Tooltip("Optional per-level override for bucket layout generation.")]
     public LevelBucketSettings bucketSettingsOverride;
@@ -182,9 +186,102 @@ public class LevelData : ScriptableObject
         return cell == BucketLayoutWall;
     }
 
+    public static bool IsBucketLayoutConveyorSlot(byte cell)
+    {
+        return cell == BucketLayoutConveyorSlot;
+    }
+
     public static bool IsBucketLayoutBucket(byte cell)
     {
-        return cell > BucketLayoutEmpty && cell < BucketLayoutWall;
+        return cell > BucketLayoutEmpty && cell < BucketLayoutConveyorSlot;
+    }
+
+    public void EnsureConveyorMetadata()
+    {
+        if (conveyorDirections == null || conveyorDirections.Length != BucketLayoutCellCount)
+        {
+            conveyorDirections = new byte[BucketLayoutCellCount];
+        }
+
+        if (conveyorBucketCounts == null || conveyorBucketCounts.Length != BucketLayoutCellCount)
+        {
+            conveyorBucketCounts = new byte[BucketLayoutCellCount];
+        }
+    }
+
+    public ConveyorDirection GetConveyorDirection(int layoutIndex)
+    {
+        EnsureConveyorMetadata();
+        if (layoutIndex < 0 || layoutIndex >= BucketLayoutCellCount)
+        {
+            return ConveyorDirection.Front;
+        }
+
+        byte raw = conveyorDirections[layoutIndex];
+        if (raw > (byte)ConveyorDirection.Right)
+        {
+            return ConveyorDirection.Front;
+        }
+
+        return (ConveyorDirection)raw;
+    }
+
+    public ConveyorDirection GetConveyorDirectionAt(int x, int y)
+    {
+        if (x < 0 || x >= BucketLayoutColumns || y < 0 || y >= BucketLayoutRows)
+        {
+            return ConveyorDirection.Front;
+        }
+
+        return GetConveyorDirection(y * BucketLayoutColumns + x);
+    }
+
+    public void SetConveyorDirection(int layoutIndex, ConveyorDirection direction)
+    {
+        EnsureConveyorMetadata();
+        if (layoutIndex < 0 || layoutIndex >= BucketLayoutCellCount)
+        {
+            return;
+        }
+
+        conveyorDirections[layoutIndex] = (byte)direction;
+    }
+
+    public int GetConveyorBucketCount(int layoutIndex)
+    {
+        EnsureConveyorMetadata();
+        if (layoutIndex < 0 || layoutIndex >= BucketLayoutCellCount)
+        {
+            return DefaultConveyorBucketCount;
+        }
+
+        byte count = conveyorBucketCounts[layoutIndex];
+        return count > 0 ? count : DefaultConveyorBucketCount;
+    }
+
+    public void SetConveyorBucketCount(int layoutIndex, int count)
+    {
+        EnsureConveyorMetadata();
+        if (layoutIndex < 0 || layoutIndex >= BucketLayoutCellCount)
+        {
+            return;
+        }
+
+        conveyorBucketCounts[layoutIndex] = (byte)Mathf.Clamp(count, 1, 99);
+    }
+
+    public bool HasConveyorSlots()
+    {
+        EnsureBucketLayout();
+        for (int i = 0; i < bucketLayout.Length; i++)
+        {
+            if (IsBucketLayoutConveyorSlot(bucketLayout[i]))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public int CountBucketsInLayout()

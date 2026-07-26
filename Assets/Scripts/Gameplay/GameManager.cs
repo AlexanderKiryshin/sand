@@ -204,6 +204,8 @@ public class GameManager : MonoBehaviour
                 ? levelDatabase.GetBucketSettingsForLevel(currentLevelIndex, level)
                 : null);
 
+        bucketInventory.TryDispenseAll(level);
+
         if (conveyorBelt != null)
         {
             conveyorBelt.Configure(bucketInventory.TotalBucketCount);
@@ -325,6 +327,12 @@ public class GameManager : MonoBehaviour
 
     private void HandleInventoryChanged()
     {
+        LevelData level = levelLoader != null ? levelLoader.CurrentLevel : null;
+        if (level != null)
+        {
+            bucketInventory.TryDispenseAll(level);
+        }
+
         if (bucketInventoryUI != null)
         {
             bucketInventoryUI.Refresh();

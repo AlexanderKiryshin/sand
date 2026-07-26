@@ -63,6 +63,14 @@ public static class LevelBucketLayoutGenerator
                 continue;
             }
 
+            if (LevelData.IsBucketLayoutConveyorSlot(templateCell))
+            {
+                level.bucketLayout[i] = LevelData.BucketLayoutConveyorSlot;
+                level.SetConveyorDirection(i, (ConveyorDirection)settings.conveyorDirectionTemplate[i]);
+                level.SetConveyorBucketCount(i, settings.conveyorBucketCountTemplate[i]);
+                continue;
+            }
+
             if (LevelData.IsBucketLayoutBucket(templateCell) && level.IsColorUsedInLevel(templateCell))
             {
                 level.bucketLayout[i] = templateCell;
@@ -88,6 +96,14 @@ public static class LevelBucketLayoutGenerator
                 if (LevelData.IsBucketLayoutWall(templateCell))
                 {
                     level.bucketLayout[index] = LevelData.BucketLayoutWall;
+                    continue;
+                }
+
+                if (LevelData.IsBucketLayoutConveyorSlot(templateCell))
+                {
+                    level.bucketLayout[index] = LevelData.BucketLayoutConveyorSlot;
+                    level.SetConveyorDirection(index, settings.GetConveyorDirectionTemplate(x, y));
+                    level.SetConveyorBucketCount(index, settings.GetConveyorBucketCountTemplate(x, y));
                     continue;
                 }
 
@@ -119,6 +135,16 @@ public static class LevelBucketLayoutGenerator
             if (LevelData.IsBucketLayoutWall(settings.layoutTemplate[i]))
             {
                 level.bucketLayout[i] = LevelData.BucketLayoutWall;
+            }
+            else if (LevelData.IsBucketLayoutConveyorSlot(settings.layoutTemplate[i]))
+            {
+                level.bucketLayout[i] = LevelData.BucketLayoutConveyorSlot;
+                level.SetConveyorDirection(i, settings.GetConveyorDirectionTemplate(
+                    i % LevelData.BucketLayoutColumns,
+                    i / LevelData.BucketLayoutColumns));
+                level.SetConveyorBucketCount(i, settings.GetConveyorBucketCountTemplate(
+                    i % LevelData.BucketLayoutColumns,
+                    i / LevelData.BucketLayoutColumns));
             }
         }
     }

@@ -47,12 +47,11 @@ public class LevelSegmentDatabaseEditor : Editor
                 string endLabel = endExclusive == int.MaxValue ? "∞" : (endExclusive - 1).ToString();
                 EditorGUILayout.LabelField(
                     string.Format(
-                        "{0}: levels {1}..{2} | fill={3} | bucket settings={4}",
+                        "{0}: levels {1}..{2} | fill={3}",
                         string.IsNullOrEmpty(segment.displayName) ? segment.segmentId : segment.displayName,
                         segment.startLevelIndex,
                         endLabel,
-                        segment.bucketSettings != null ? segment.bucketSettings.fillMode.ToString() : "default",
-                        segment.bucketSettings != null ? segment.bucketSettings.name : "none"),
+                        segment.fillMode),
                     EditorStyles.miniLabel);
             }
         }

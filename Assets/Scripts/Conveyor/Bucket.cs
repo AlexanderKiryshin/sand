@@ -54,6 +54,11 @@ public class Bucket
         return true;
     }
 
+    public void SetLayoutIndex(int layoutIndex)
+    {
+        LayoutIndex = layoutIndex;
+    }
+
     public void MoveToConveyor()
     {
         State = BucketState.OnConveyor;

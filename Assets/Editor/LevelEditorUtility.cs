@@ -5,7 +5,6 @@ using UnityEngine;
 public static class LevelEditorUtility
 {
     private const string SegmentsFolder = "Assets/Levels/Segments";
-    private const string BucketSettingsPath = SegmentsFolder + "/DefaultBucketSettings.asset";
     private const string SegmentRulesPath = SegmentsFolder + "/Segment_01.asset";
     private const string SegmentDatabasePath = SegmentsFolder + "/LevelSegmentDatabase.asset";
 
@@ -99,14 +98,6 @@ public static class LevelEditorUtility
             RemoveBrokenSegmentAssetFiles();
         }
 
-        LevelBucketSettings bucketSettings = AssetDatabase.LoadAssetAtPath<LevelBucketSettings>(BucketSettingsPath);
-        if (bucketSettings == null)
-        {
-            bucketSettings = ScriptableObject.CreateInstance<LevelBucketSettings>();
-            bucketSettings.fillMode = BucketLayoutFillMode.FrequencyByRow;
-            AssetDatabase.CreateAsset(bucketSettings, BucketSettingsPath);
-        }
-
         LevelSegmentRules segmentRules = AssetDatabase.LoadAssetAtPath<LevelSegmentRules>(SegmentRulesPath);
         if (segmentRules == null)
         {
@@ -115,17 +106,18 @@ public static class LevelEditorUtility
             segmentRules.displayName = "Levels 1+";
             segmentRules.startLevelIndex = 0;
             segmentRules.levelCount = 0;
-            segmentRules.bucketSettings = bucketSettings;
+            segmentRules.fillMode = BucketLayoutFillMode.FrequencyByRow;
             segmentRules.defaultGridWidth = 32;
             segmentRules.defaultGridHeight = 32;
             segmentRules.defaultColorCount = 4;
             segmentRules.defaultAutoColorCount = true;
             segmentRules.defaultPalette = AssetDatabase.LoadAssetAtPath<SandColorPalette>("Assets/Settings/SandColorPalette.asset");
+            segmentRules.EnsureTemplate();
             AssetDatabase.CreateAsset(segmentRules, SegmentRulesPath);
         }
-        else if (segmentRules.bucketSettings == null)
+        else
         {
-            segmentRules.bucketSettings = bucketSettings;
+            segmentRules.EnsureTemplate();
             EditorUtility.SetDirty(segmentRules);
         }
 
@@ -175,7 +167,6 @@ public static class LevelEditorUtility
 
     private static void RemoveBrokenSegmentAssetFiles()
     {
-        DeleteAssetIfPresent(BucketSettingsPath);
         DeleteAssetIfPresent(SegmentRulesPath);
         DeleteAssetIfPresent(SegmentDatabasePath);
         AssetDatabase.Refresh();

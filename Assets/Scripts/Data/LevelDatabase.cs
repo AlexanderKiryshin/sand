@@ -33,17 +33,11 @@ public class LevelDatabase : ScriptableObject
             return;
         }
 
-        LevelBucketSettings settings = level.bucketSettingsOverride;
-        if (settings == null)
-        {
-            LevelSegmentRules segment = GetSegmentRulesForLevel(levelIndex);
-            settings = segment != null ? segment.bucketSettings : null;
-        }
-
+        LevelSegmentRules settings = GetBucketSettingsForLevel(levelIndex, level);
         LevelBucketLayoutGenerator.Apply(level, settings);
     }
 
-    public LevelBucketSettings GetBucketSettingsForLevel(int levelIndex, LevelData level = null)
+    public LevelSegmentRules GetBucketSettingsForLevel(int levelIndex, LevelData level = null)
     {
         if (level == null)
         {
@@ -55,8 +49,7 @@ public class LevelDatabase : ScriptableObject
             return level.bucketSettingsOverride;
         }
 
-        LevelSegmentRules segment = GetSegmentRulesForLevel(levelIndex);
-        return segment != null ? segment.bucketSettings : null;
+        return GetSegmentRulesForLevel(levelIndex);
     }
 
     public int LevelCount

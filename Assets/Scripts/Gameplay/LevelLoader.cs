@@ -14,6 +14,11 @@ public class LevelLoader : MonoBehaviour
     public LevelData CurrentLevel { get { return currentLevel; } }
     public SandGrid CurrentGrid { get { return currentGrid; } }
 
+    public void SetCurrentLevel(LevelData level)
+    {
+        currentLevel = level;
+    }
+
     public LevelData LoadLevel(int index)
     {
         if (levelDatabase == null)

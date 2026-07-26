@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     private int currentLevelIndex;
     private GameState gameState = GameState.Playing;
     private bool sandRenderPending;
+    private LevelData runtimeLevelInstance;
 
     public GameState State { get { return gameState; } }
     public int CurrentLevelIndex { get { return currentLevelIndex; } }
@@ -169,6 +170,7 @@ public class GameManager : MonoBehaviour
         }
 
         bucketInventory.OnInventoryChanged -= HandleInventoryChanged;
+        ClearRuntimeLevelInstance();
     }
 
     public void LoadLevel(int index)
@@ -197,12 +199,17 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        LevelSegmentRules bucketSettings = levelDatabase != null
+            ? levelDatabase.GetBucketSettingsForLevel(currentLevelIndex, level)
+            : null;
+        level = PrepareRuntimeLevel(level, bucketSettings);
+
         bucketInventory.BuildFromLevel(
             level,
             sandRenderer != null ? sandRenderer.SubGrainsPerAxis : 1,
-            levelDatabase != null
-                ? levelDatabase.GetBucketSettingsForLevel(currentLevelIndex, level)
-                : null);
+            bucketSettings);
+
+        bucketInventory.TryDispenseAll(level);
 
         if (conveyorBelt != null)
         {
@@ -325,6 +332,12 @@ public class GameManager : MonoBehaviour
 
     private void HandleInventoryChanged()
     {
+        LevelData level = levelLoader != null ? levelLoader.CurrentLevel : null;
+        if (level != null)
+        {
+            bucketInventory.TryDispenseAll(level);
+        }
+
         if (bucketInventoryUI != null)
         {
             bucketInventoryUI.Refresh();
@@ -391,5 +404,38 @@ public class GameManager : MonoBehaviour
         {
             tutorialController = FindObjectOfType<TutorialController>();
         }
+    }
+
+    private LevelData PrepareRuntimeLevel(LevelData levelAsset, LevelSegmentRules bucketSettings)
+    {
+        ClearRuntimeLevelInstance();
+
+        if (levelAsset == null
+            || bucketSettings == null
+            || bucketSettings.fillMode != BucketLayoutFillMode.RandomComponents)
+        {
+            return levelAsset;
+        }
+
+        runtimeLevelInstance = Instantiate(levelAsset);
+        runtimeLevelInstance.name = levelAsset.name + " (Runtime)";
+        LevelBucketLayoutGenerator.Apply(runtimeLevelInstance, bucketSettings);
+        if (levelLoader != null)
+        {
+            levelLoader.SetCurrentLevel(runtimeLevelInstance);
+        }
+
+        return runtimeLevelInstance;
+    }
+
+    private void ClearRuntimeLevelInstance()
+    {
+        if (runtimeLevelInstance == null)
+        {
+            return;
+        }
+
+        Destroy(runtimeLevelInstance);
+        runtimeLevelInstance = null;
     }
 }

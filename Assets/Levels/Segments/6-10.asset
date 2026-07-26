@@ -10,15 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5e6f708192a3b4c5d6e7f8091a2b3c4, type: 3}
-  m_Name: Segment_01
+  m_Name: 6-10
   m_EditorClassIdentifier: 
-  segmentId: segment_01
-  displayName: Levels 1+
-  startLevelIndex: 0
-  levelCount: 30
-  bucketSettings: {fileID: 11400000, guid: 009101cbb322dc749be664aedd66cee6, type: 2}
+  segmentId: segment_6_10
+  displayName: Levels 6-10
+  startLevelIndex: 5
+  levelCount: 5
   defaultPalette: {fileID: 11400000, guid: 37f8b0867c1a39a4797af4c173837264, type: 2}
-  defaultGridWidth: 64
-  defaultGridHeight: 64
+  defaultGridWidth: 32
+  defaultGridHeight: 32
   defaultColorCount: 4
   defaultAutoColorCount: 1
+  layoutTemplate: 00000000000000000000000000000000000000000000000000
+  conveyorDirectionTemplate: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCountTemplate: 00000000000000000000000000000000000000000000000000
+  fillMode: 0
+  randomComponents:
+  - type: 0
+    count: 0
+    direction: 0
+    conveyorBucketCount: 0
+  maxGrainsPerBucket: 500

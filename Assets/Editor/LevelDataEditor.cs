@@ -501,13 +501,12 @@ public class LevelDataEditor : Editor
             }
             else if (segment != null)
             {
-                string settingsName = segment.bucketSettings != null ? segment.bucketSettings.name : "none";
-                string maxGrains = segment.bucketSettings != null && segment.bucketSettings.maxGrainsPerBucket > 0
-                    ? string.Format(", max {0} grains/bucket", segment.bucketSettings.maxGrainsPerBucket)
+                string maxGrains = segment.maxGrainsPerBucket > 0
+                    ? string.Format(", max {0} grains/bucket", segment.maxGrainsPerBucket)
                     : string.Empty;
                 EditorGUILayout.LabelField(
                     "Resolved Settings",
-                    string.Format("{0} / {1}{2}", segment.displayName, settingsName, maxGrains),
+                    string.Format("{0} ({1}){2}", segment.displayName, segment.fillMode, maxGrains),
                     EditorStyles.miniLabel);
             }
             else

@@ -51,7 +51,10 @@ MonoBehaviour:
   - colorIndex: 5
     count: 1
   bucketLayout: 04030708020601050000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   previewTexture: {fileID: 0}
+  bucketSettingsOverride: {fileID: 0}
   usesTiles: 0
   usesUnitySpriteSheet: 0
   spriteSheetAssetPath: 

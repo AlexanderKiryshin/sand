@@ -211,6 +211,8 @@ public class GameManager : MonoBehaviour
 
         bucketInventory.TryDispenseAll(level);
 
+        bucketInventory.TryDispenseAll(level);
+
         if (conveyorBelt != null)
         {
             conveyorBelt.Configure(bucketInventory.TotalBucketCount);

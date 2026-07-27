@@ -3,7 +3,7 @@ using System;
 [Serializable]
 public class PlayerProgress
 {
-    public const int SaveVersion = 2;
+    public const int SaveVersion = 3;
 
     public int saveVersion = SaveVersion;
     public int highestUnlockedIndex;

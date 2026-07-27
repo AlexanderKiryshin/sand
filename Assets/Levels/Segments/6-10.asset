@@ -24,10 +24,10 @@ MonoBehaviour:
   layoutTemplate: 00000000000000000000000000000000000000000000000000
   conveyorDirectionTemplate: 00000000000000000000000000000000000000000000000000
   conveyorBucketCountTemplate: 00000000000000000000000000000000000000000000000000
-  fillMode: 0
+  fillMode: 3
   randomComponents:
   - type: 0
-    count: 0
+    count: 1
     direction: 0
     conveyorBucketCount: 0
   maxGrainsPerBucket: 500

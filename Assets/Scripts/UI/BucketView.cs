@@ -17,10 +17,14 @@ public class BucketView : MonoBehaviour
     private Bucket bucket;
     private Action<Bucket> onClick;
     private Color32 baseColor;
-    private bool isSelectable = true;
+    private bool looksOpen = true;
+    private bool magnetTapHint;
+    private float magnetPulseTime;
     private RectTransform cachedRectTransform;
     private Vector2 layoutAnchoredPosition;
     private float tutorialBounceOffset;
+    private RectTransform pulseVisualRect;
+    private Image pulseVisualImage;
 
     public Bucket Bucket { get { return bucket; } }
     public Sprite OpenBucketSprite { get { return openBucketSprite; } }
@@ -52,14 +56,34 @@ public class BucketView : MonoBehaviour
 
     public void SetSelectable(bool selectable)
     {
-        isSelectable = selectable;
+        ConfigureInteraction(selectable, selectable, false);
+    }
 
+    /// <summary>
+    /// looksOpen controls open/locked sprite. canClick enables taps. magnetTapHint pulses on locked targets.
+    /// </summary>
+    public void ConfigureInteraction(bool looksOpenVisual, bool canClick, bool showMagnetTapHint)
+    {
+        looksOpen = looksOpenVisual;
         if (button != null)
         {
-            button.interactable = selectable;
+            button.interactable = canClick;
         }
 
+        SetMagnetTapHint(showMagnetTapHint);
         ApplyVisual();
+    }
+
+    private void Update()
+    {
+        if (!magnetTapHint || pulseVisualRect == null)
+        {
+            return;
+        }
+
+        magnetPulseTime += Time.unscaledDeltaTime;
+        float pulse = 1f + Mathf.Sin(magnetPulseTime * 2.1f) * 0.055f;
+        pulseVisualRect.localScale = new Vector3(pulse, pulse, 1f);
     }
 
     public void UpdateRemainingCapacity()
@@ -177,15 +201,28 @@ public class BucketView : MonoBehaviour
             return;
         }
 
-        Sprite sprite = isSelectable ? openBucketSprite : lockedBucketSprite;
+        Sprite sprite = looksOpen ? openBucketSprite : lockedBucketSprite;
         if (sprite != null)
         {
             bucketImage.sprite = sprite;
+        }
+
+        if (magnetTapHint)
+        {
+            Color hidden = baseColor;
+            hidden.a = 0f;
+            bucketImage.color = hidden;
+            SyncPulseVisualFromBucketImage();
+            return;
+        }
+
+        if (sprite != null)
+        {
             bucketImage.color = baseColor;
             return;
         }
 
-        if (isSelectable)
+        if (looksOpen)
         {
             bucketImage.color = baseColor;
             return;
@@ -194,6 +231,109 @@ public class BucketView : MonoBehaviour
         Color dimmed = baseColor;
         dimmed.a = 160;
         bucketImage.color = dimmed;
+    }
+
+    private void SetMagnetTapHint(bool enabled)
+    {
+        magnetTapHint = enabled;
+        magnetPulseTime = 0f;
+
+        if (cachedRectTransform == null)
+        {
+            cachedRectTransform = GetComponent<RectTransform>();
+        }
+
+        // Layout root must stay fixed — pulse a centered child visual instead.
+        if (cachedRectTransform != null)
+        {
+            cachedRectTransform.localScale = Vector3.one;
+            cachedRectTransform.anchoredPosition = layoutAnchoredPosition + new Vector2(0f, tutorialBounceOffset);
+        }
+
+        if (enabled)
+        {
+            EnsurePulseVisual();
+            SyncPulseVisualFromBucketImage();
+            if (bucketImage != null)
+            {
+                Color hidden = baseColor;
+                hidden.a = 0f;
+                bucketImage.color = hidden;
+            }
+
+            if (pulseVisualRect != null)
+            {
+                pulseVisualRect.gameObject.SetActive(true);
+                pulseVisualRect.localScale = Vector3.one;
+            }
+        }
+        else
+        {
+            if (pulseVisualRect != null)
+            {
+                pulseVisualRect.localScale = Vector3.one;
+                pulseVisualRect.gameObject.SetActive(false);
+            }
+
+            if (bucketImage != null)
+            {
+                ApplyVisual();
+            }
+        }
+    }
+
+    private void EnsurePulseVisual()
+    {
+        if (pulseVisualRect != null)
+        {
+            return;
+        }
+
+        GameObject visual = new GameObject("MagnetPulseVisual", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+        visual.transform.SetParent(transform, false);
+        pulseVisualRect = visual.GetComponent<RectTransform>();
+        pulseVisualRect.anchorMin = new Vector2(0.5f, 0.5f);
+        pulseVisualRect.anchorMax = new Vector2(0.5f, 0.5f);
+        pulseVisualRect.pivot = new Vector2(0.5f, 0.5f);
+        pulseVisualRect.anchoredPosition = Vector2.zero;
+        pulseVisualImage = visual.GetComponent<Image>();
+        pulseVisualImage.raycastTarget = false;
+        pulseVisualImage.preserveAspect = true;
+        pulseVisualImage.type = Image.Type.Simple;
+        visual.SetActive(false);
+
+        if (capacityLabel != null)
+        {
+            capacityLabel.transform.SetAsLastSibling();
+        }
+    }
+
+    private void SyncPulseVisualFromBucketImage()
+    {
+        if (pulseVisualRect == null || pulseVisualImage == null)
+        {
+            return;
+        }
+
+        if (cachedRectTransform == null)
+        {
+            cachedRectTransform = GetComponent<RectTransform>();
+        }
+
+        Vector2 size = cachedRectTransform != null ? cachedRectTransform.sizeDelta : new Vector2(56f, 56f);
+        pulseVisualRect.sizeDelta = size;
+        Sprite sprite = looksOpen ? openBucketSprite : lockedBucketSprite;
+        if (sprite == null && bucketImage != null)
+        {
+            sprite = bucketImage.sprite;
+        }
+
+        pulseVisualImage.sprite = sprite;
+        pulseVisualImage.color = baseColor;
+        if (bucketImage != null)
+        {
+            pulseVisualImage.preserveAspect = bucketImage.preserveAspect;
+        }
     }
 
     private void EnsureCapacityLabel()
@@ -246,6 +386,7 @@ public class BucketView : MonoBehaviour
             return;
         }
 
+        cachedRectTransform.localScale = Vector3.one;
         cachedRectTransform.anchoredPosition = layoutAnchoredPosition + new Vector2(0f, tutorialBounceOffset);
     }
 }

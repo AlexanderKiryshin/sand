@@ -18,6 +18,7 @@ public class MobilePortraitLayout : MonoBehaviour
     private const float ConveyorImageMargin = 28f;
     private const float HintWidth = 740f;
     private const float HintHeight = 148f;
+    private const float BoosterBarHeight = 110f;
     private const float SectionGap = 20f;
     private const float BottomPadding = 52f;
 
@@ -75,10 +76,12 @@ public class MobilePortraitLayout : MonoBehaviour
 
         LayoutHeader(margins);
         LayoutResetButton(margins);
-        LayoutHint(bottomBase, usableWidth);
+        float boosterReserve = LayoutBoosterBar(bottomBase, usableWidth);
+        float hintBottom = bottomBase + boosterReserve;
+        LayoutHint(hintBottom, usableWidth);
 
         float hintLayoutHeight = GetHintLayoutHeight();
-        float hintTop = bottomBase + hintLayoutHeight;
+        float hintTop = hintBottom + hintLayoutHeight;
         float contentTop = ReferenceHeight - margins.top - HeaderHeight - TopSectionGap;
         float middleStackHeight = ConveyorHeight + SectionGap + EstimateBucketAreaHeight();
         float maxSandSize = contentTop - hintTop - SectionGap - middleStackHeight;
@@ -179,6 +182,25 @@ public class MobilePortraitLayout : MonoBehaviour
         }
 
         return hint.sizeDelta.y > 1f ? hint.sizeDelta.y : HintHeight;
+    }
+
+    private float LayoutBoosterBar(float bottomBase, float usableWidth)
+    {
+        RectTransform boosterBar = FindRect("BoosterBar");
+        if (boosterBar == null || !boosterBar.gameObject.activeInHierarchy)
+        {
+            return 0f;
+        }
+
+        float height = boosterBar.sizeDelta.y > 1f ? boosterBar.sizeDelta.y : BoosterBarHeight;
+        float width = Mathf.Min(
+            boosterBar.sizeDelta.x > 1f ? boosterBar.sizeDelta.x : 520f,
+            usableWidth - 40f);
+        float centerY = bottomBase + height * 0.5f;
+        SetCenterAnchor(boosterBar, centerY / ReferenceHeight, new Vector2(width, height));
+        // Keep boosters under the tutorial/hint plate in draw order.
+        boosterBar.SetAsFirstSibling();
+        return height + SectionGap;
     }
 
     private void LayoutHint(float bottomBase, float usableWidth)

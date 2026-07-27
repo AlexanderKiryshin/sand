@@ -78,7 +78,7 @@ TextureImporter:
       213: -3478438553291478789
     second: "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_24"
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -95,9 +95,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -129,10 +132,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -144,6 +152,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -156,6 +165,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -168,6 +178,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -708,9 +719,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_0": -3155761892670432333
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_1": 4693970002324612331
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_10": 6030399880211237842
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_11": -27619125339374601
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_12": -8599152648619193104
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_13": 297062790636312467
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_14": -2405326076820358606
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_15": 6567699902443534581
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_16": -6816402329648882818
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_17": 7577734978783924219
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_18": -601557871048262786
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_19": -4098950662976132175
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_2": -9070714219748410060
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_20": -268999125319504452
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_21": -8070349735679906924
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_22": -5077458677094624921
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_23": 8059222297454032532
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_24": -3478438553291478789
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_3": -927696137047093183
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_4": -7636784636748332980
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_5": 5604233740359781585
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_6": -7165525358113786103
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_7": -7657552345155355984
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_8": -431564582149232750
+      "ChatGPT Image 7 \u0438\u044E\u043B. 2026 \u0433., 16_38_50_9": -1077361508328206470
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

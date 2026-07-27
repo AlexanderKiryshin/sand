@@ -589,6 +589,27 @@ public class ConveyorBelt : MonoBehaviour
         NotifyChanged();
     }
 
+    public void MarkBucketFilledByBooster(Bucket bucket)
+    {
+        if (bucket == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < entries.Count; i++)
+        {
+            BeltEntry entry = entries[i];
+            if (entry.Bucket != bucket)
+            {
+                continue;
+            }
+
+            entry.PendingRemoval = true;
+            NotifyChanged();
+            return;
+        }
+    }
+
     public bool IsComplete()
     {
         return filledBuckets >= requiredFilledBuckets && entries.Count == 0;

@@ -23,7 +23,10 @@ public static class ProgressSaveService
 
     public static void Load()
     {
-        int savedVersion = PlayerPrefs.GetInt(KeyVersion, 0);
+        int savedVersion = GameProgressStore.HasKey(KeyVersion)
+            ? GameProgressStore.GetInt(KeyVersion)
+            : PlayerPrefs.GetInt(KeyVersion, 0);
+
         if (savedVersion == 1)
         {
             progress = LoadLegacyV1();
@@ -33,8 +36,23 @@ public static class ProgressSaveService
             return;
         }
 
-        if (savedVersion != PlayerProgress.SaveVersion)
+        if (savedVersion != PlayerProgress.SaveVersion && savedVersion != 2 && savedVersion != 3)
         {
+            // Prefer Mirra store; migrate from PlayerPrefs if present.
+            if (PlayerPrefs.HasKey(KeyHighestUnlocked))
+            {
+                progress = new PlayerProgress
+                {
+                    saveVersion = PlayerProgress.SaveVersion,
+                    highestUnlockedIndex = PlayerPrefs.GetInt(KeyHighestUnlocked, 0),
+                    highestCompletedIndex = PlayerPrefs.GetInt(KeyHighestCompleted, -1),
+                    currentLevelIndex = PlayerPrefs.GetInt(KeyCurrentLevel, 0)
+                };
+                ClampProgress();
+                Save();
+                return;
+            }
+
             progress = CreateNewProgress();
             Save();
             return;
@@ -43,9 +61,9 @@ public static class ProgressSaveService
         progress = new PlayerProgress
         {
             saveVersion = PlayerProgress.SaveVersion,
-            highestUnlockedIndex = PlayerPrefs.GetInt(KeyHighestUnlocked, 0),
-            highestCompletedIndex = PlayerPrefs.GetInt(KeyHighestCompleted, -1),
-            currentLevelIndex = PlayerPrefs.GetInt(KeyCurrentLevel, 0)
+            highestUnlockedIndex = ReadInt(KeyHighestUnlocked, 0),
+            highestCompletedIndex = ReadInt(KeyHighestCompleted, -1),
+            currentLevelIndex = ReadInt(KeyCurrentLevel, 0)
         };
 
         ClampProgress();
@@ -60,6 +78,13 @@ public static class ProgressSaveService
 
         ClampProgress();
 
+        GameProgressStore.SetInt(KeyVersion, progress.saveVersion);
+        GameProgressStore.SetInt(KeyHighestUnlocked, progress.highestUnlockedIndex);
+        GameProgressStore.SetInt(KeyHighestCompleted, progress.highestCompletedIndex);
+        GameProgressStore.SetInt(KeyCurrentLevel, progress.currentLevelIndex);
+        GameProgressStore.Save();
+
+        // Keep PlayerPrefs mirror for local editor fallback.
         PlayerPrefs.SetInt(KeyVersion, progress.saveVersion);
         PlayerPrefs.SetInt(KeyHighestUnlocked, progress.highestUnlockedIndex);
         PlayerPrefs.SetInt(KeyHighestCompleted, progress.highestCompletedIndex);
@@ -127,6 +152,16 @@ public static class ProgressSaveService
     {
         progress = CreateNewProgress();
         Save();
+    }
+
+    private static int ReadInt(string key, int defaultValue)
+    {
+        if (GameProgressStore.HasKey(key))
+        {
+            return GameProgressStore.GetInt(key, defaultValue);
+        }
+
+        return PlayerPrefs.GetInt(key, defaultValue);
     }
 
     private static PlayerProgress LoadLegacyV1()

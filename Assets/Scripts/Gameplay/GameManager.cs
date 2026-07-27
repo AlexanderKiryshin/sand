@@ -50,6 +50,13 @@ public class GameManager : MonoBehaviour
         EnsureConveyorView();
         ResolveTutorialController();
         ProgressSaveService.Initialize(levelDatabase.LevelCount);
+
+        SandEconomyHud economyHud = FindObjectOfType<SandEconomyHud>();
+        if (economyHud != null)
+        {
+            economyHud.Bootstrap(this);
+        }
+
         LoadLevel(ProgressSaveService.GetResumeLevelIndex());
     }
 
@@ -107,6 +114,11 @@ public class GameManager : MonoBehaviour
         if (FindObjectOfType<TutorialController>() == null)
         {
             polish.AddComponent<TutorialController>();
+        }
+
+        if (FindObjectOfType<SandEconomyHud>() == null)
+        {
+            polish.AddComponent<SandEconomyHud>();
         }
     }
 
@@ -245,6 +257,12 @@ public class GameManager : MonoBehaviour
         if (tutorialController != null)
         {
             tutorialController.HandleLevelLoaded(this, gameUI, bucketInventoryUI, conveyorBelt);
+        }
+
+        SandEconomyHud economyHud = FindObjectOfType<SandEconomyHud>();
+        if (economyHud != null)
+        {
+            economyHud.OnLevelLoaded(currentLevelIndex);
         }
 
         HandleInventoryChanged();
@@ -394,7 +412,12 @@ public class GameManager : MonoBehaviour
 
         gameState = GameState.LevelComplete;
         ProgressSaveService.MarkLevelCompleted(currentLevelIndex);
-        if (gameUI != null)
+        SandEconomyHud economyHud = FindObjectOfType<SandEconomyHud>();
+        if (economyHud != null)
+        {
+            economyHud.ShowLevelComplete();
+        }
+        else if (gameUI != null)
         {
             gameUI.ShowLevelComplete();
         }

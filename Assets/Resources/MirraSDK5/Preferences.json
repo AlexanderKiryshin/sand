@@ -1,0 +1,54 @@
+{
+    "groupCollection": [
+        {
+            "key": "Editor",
+            "group": {
+                "boolCollection": [],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": [
+                    {
+                        "key": "Configuration",
+                        "value": "EditorConfiguration"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "Build",
+            "group": {
+                "boolCollection": [],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": [
+                    {
+                        "key": "Configuration",
+                        "value": "MirraWebConfiguration"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "EditorConfiguration",
+            "group": {
+                "boolCollection": [
+                    {
+                        "key": "IAds.Visible",
+                        "value": true
+                    },
+                    {
+                        "key": "IAds.Override",
+                        "value": false
+                    },
+                    {
+                        "key": "IData.Visible",
+                        "value": true
+                    }
+                ],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": []
+            }
+        }
+    ]
+}

@@ -53,25 +53,6 @@ public class BucketInventoryUI : MonoBehaviour
         List<Bucket> sortedBuckets = new List<Bucket>(inventory.Buckets);
         sortedBuckets.Sort((left, right) => left.LayoutIndex.CompareTo(right.LayoutIndex));
 
-        int maxLayoutIndex = -1;
-        for (int i = 0; i < sortedBuckets.Count; i++)
-        {
-            maxLayoutIndex = Mathf.Max(maxLayoutIndex, sortedBuckets[i].LayoutIndex);
-        }
-
-        if (inventory.ConveyorSlots != null)
-        {
-            for (int i = 0; i < inventory.ConveyorSlots.Count; i++)
-            {
-                maxLayoutIndex = Mathf.Max(maxLayoutIndex, inventory.ConveyorSlots[i].LayoutIndex);
-            }
-        }
-
-        if (maxLayoutIndex >= 0)
-        {
-            ResizeContainer(maxLayoutIndex);
-        }
-
         for (int i = 0; i < sortedBuckets.Count; i++)
         {
             Bucket bucket = sortedBuckets[i];
@@ -79,6 +60,36 @@ public class BucketInventoryUI : MonoBehaviour
         }
 
         CreateConveyorSlotViews();
+    }
+
+    /// <summary>
+    /// Updates clickability / magnet pulse without rebuilding views (avoids inventory panel jump).
+    /// </summary>
+    public void RefreshInteractionState()
+    {
+        if (inventory == null || levelData == null)
+        {
+            return;
+        }
+
+        bool magnetMode = BoosterService.instance != null
+            && BoosterService.instance.ActiveTargetMode == BoosterType.Magnet;
+
+        foreach (KeyValuePair<int, BucketView> pair in activeViews)
+        {
+            BucketView view = pair.Value;
+            if (view == null || view.Bucket == null)
+            {
+                continue;
+            }
+
+            Bucket bucket = view.Bucket;
+            bool accessible = inventory.IsBucketAccessible(bucket, levelData);
+            bool allowedByTutorial = gameManager == null || gameManager.IsBucketInteractionAllowed(bucket) || magnetMode;
+            bool canClick = (magnetMode || accessible) && allowedByTutorial;
+            bool magnetTapHint = magnetMode && !accessible;
+            view.ConfigureInteraction(accessible, canClick, magnetTapHint);
+        }
     }
 
     private void CreateConveyorSlotViews()
@@ -197,30 +208,23 @@ public class BucketInventoryUI : MonoBehaviour
         ClearTutorialFocus();
     }
 
-    private void ResizeContainer(int maxLayoutIndex)
-    {
-        Vector2 cellSize = gridLayout != null ? gridLayout.cellSize : new Vector2(MobilePortraitLayout.BucketCellSize, MobilePortraitLayout.BucketCellSize);
-        Vector2 spacing = gridLayout != null ? gridLayout.spacing : new Vector2(MobilePortraitLayout.BucketSpacing, MobilePortraitLayout.BucketSpacing);
-        int columns = LevelData.BucketLayoutColumns;
-        int rows = (maxLayoutIndex / columns) + 1;
-
-        bucketContainer.sizeDelta = new Vector2(
-            columns * cellSize.x + (columns - 1) * spacing.x,
-            rows * cellSize.y + (rows - 1) * spacing.y);
-    }
-
     private void CreateBucketView(Bucket bucket, int layoutIndex)
     {
         BucketView view = Instantiate(bucketViewPrefab, bucketContainer);
         Color32 color = levelData.GetPaletteColor(bucket.ColorIndex);
         view.Initialize(bucket, color, HandleBucketClicked);
 
-        bool selectable = inventory.IsBucketAccessible(bucket, levelData)
-            && (gameManager == null || gameManager.IsBucketInteractionAllowed(bucket));
-        view.SetSelectable(selectable);
-
         activeViews[layoutIndex] = view;
         PositionBucketView(view, layoutIndex);
+
+        bool magnetMode = BoosterService.instance != null
+            && BoosterService.instance.ActiveTargetMode == BoosterType.Magnet;
+        bool accessible = inventory.IsBucketAccessible(bucket, levelData);
+        bool allowedByTutorial = gameManager == null || gameManager.IsBucketInteractionAllowed(bucket) || magnetMode;
+        bool canClick = (magnetMode || accessible) && allowedByTutorial;
+        bool magnetTapHint = magnetMode && !accessible;
+        // Keep locked visual when magnet targets closed buckets — only pulse a tap hint.
+        view.ConfigureInteraction(accessible, canClick, magnetTapHint);
     }
 
     private void PositionBucketView(BucketView view, int layoutIndex)
@@ -251,6 +255,11 @@ public class BucketInventoryUI : MonoBehaviour
     private void HandleBucketClicked(Bucket bucket)
     {
         if (gameManager == null || conveyor == null || inventory == null || bucket == null)
+        {
+            return;
+        }
+
+        if (SandEconomyHud.instance != null && SandEconomyHud.instance.TryHandleBucketClick(bucket))
         {
             return;
         }

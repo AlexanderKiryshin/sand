@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public enum BucketState
 {
     InInventory,
@@ -77,5 +79,26 @@ public class Bucket
     public void MarkRemoved()
     {
         State = BucketState.Removed;
+    }
+
+    public void ForceFillToCapacity()
+    {
+        if (State != BucketState.OnConveyor && State != BucketState.Full)
+        {
+            return;
+        }
+
+        CurrentFill = Capacity;
+        State = BucketState.Full;
+    }
+
+    public void SetColorAndCapacity(byte colorIndex, int capacity)
+    {
+        ColorIndex = colorIndex;
+        Capacity = Mathf.Max(1, capacity);
+        if (CurrentFill > Capacity)
+        {
+            CurrentFill = Capacity;
+        }
     }
 }

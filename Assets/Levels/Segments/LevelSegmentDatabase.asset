@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: LevelSegmentDatabase
   m_EditorClassIdentifier: 
   segments:
-  - {fileID: 11400000, guid: f6ebf4b469b370447b392f09218971ed, type: 2}
+  - {fileID: 11400000, guid: e0081ecc4f4cf0c4b88b556cdc3ab391, type: 2}
+  - {fileID: 11400000, guid: 06e5596581bffd047b41e16603d2695e, type: 2}

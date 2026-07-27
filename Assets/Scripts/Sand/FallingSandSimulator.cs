@@ -64,6 +64,15 @@ public class FallingSandSimulator : MonoBehaviour
         InvalidateCollectCache();
     }
 
+    public void NotifyExternalGridEdit()
+    {
+        Wake();
+        if (OnGridChanged != null)
+        {
+            OnGridChanged();
+        }
+    }
+
     public void SetSimulationPaused(bool paused)
     {
         simulationPaused = paused;

@@ -420,7 +420,7 @@ public class ConveyorBeltView : MonoBehaviour
         rect.anchoredPosition = new Vector2(ConveyorBelt.EntryX, 0f);
 
         Image bucketImage = bucketObject.AddComponent<Image>();
-        bucketImage.raycastTarget = false;
+        bucketImage.raycastTarget = true;
         bucketImage.preserveAspect = true;
 
         Sprite openSprite = bucketAppearanceSource != null
@@ -436,6 +436,17 @@ public class ConveyorBeltView : MonoBehaviour
             bucketImage.color = SandDisplayColors.FromPalette(
                 levelLoader.CurrentLevel.GetPaletteColor(bucket.ColorIndex));
         }
+
+        Button button = bucketObject.AddComponent<Button>();
+        button.targetGraphic = bucketImage;
+        Bucket captured = bucket;
+        button.onClick.AddListener(() =>
+        {
+            if (SandEconomyHud.instance != null)
+            {
+                SandEconomyHud.instance.TryHandleConveyorBucketClick(captured);
+            }
+        });
 
         GameObject labelObject = new GameObject("CapacityLabel", typeof(RectTransform));
         labelObject.transform.SetParent(bucketObject.transform, false);

@@ -75,12 +75,17 @@ public class BucketInventory
 
     public bool TryTakeBucket(Bucket bucket, ConveyorBelt conveyor, LevelData levelData)
     {
+        return TryTakeBucket(bucket, conveyor, levelData, false);
+    }
+
+    public bool TryTakeBucket(Bucket bucket, ConveyorBelt conveyor, LevelData levelData, bool ignoreAccessibility)
+    {
         if (bucket == null || !buckets.Contains(bucket) || conveyor == null)
         {
             return false;
         }
 
-        if (levelData != null && !IsBucketAccessible(bucket, levelData))
+        if (!ignoreAccessibility && levelData != null && !IsBucketAccessible(bucket, levelData))
         {
             return false;
         }
@@ -98,6 +103,11 @@ public class BucketInventory
         buckets.Remove(bucket);
         NotifyChanged();
         return true;
+    }
+
+    public void NotifyInventoryChangedPublic()
+    {
+        NotifyChanged();
     }
 
     public int CountRemaining()

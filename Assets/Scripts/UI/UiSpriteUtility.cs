@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public static class UiSpriteUtility
@@ -59,18 +60,91 @@ public static class UiSpriteUtility
         Color32 corner = pixels[0];
         Color32 corner2 = pixels[width - 1];
 
+        // First pass: exact corner-color match (solid backgrounds).
         for (int i = 0; i < pixels.Length; i++)
         {
             Color32 pixel = pixels[i];
-            if (IsBackgroundPixel(pixel, corner) || IsBackgroundPixel(pixel, corner2) || IsCheckerboardPixel(pixel))
+            if (IsBackgroundPixel(pixel, corner) || IsBackgroundPixel(pixel, corner2))
             {
                 pixels[i] = new Color32(pixel.r, pixel.g, pixel.b, 0);
             }
         }
 
+        // Second pass: flood-fill checkerboard / gray backdrop from image borders only,
+        // so icon highlights (silver tips etc.) stay intact.
+        RemoveConnectedGrayBackground(pixels, width, height);
+
         readable.SetPixels32(pixels);
         readable.Apply();
         return readable;
+    }
+
+    private static void RemoveConnectedGrayBackground(Color32[] pixels, int width, int height)
+    {
+        int count = pixels.Length;
+        bool[] visited = new bool[count];
+        Queue<int> queue = new Queue<int>(width * 4);
+
+        void TryEnqueue(int x, int y)
+        {
+            if (x < 0 || y < 0 || x >= width || y >= height)
+            {
+                return;
+            }
+
+            int index = y * width + x;
+            if (visited[index] || !IsGrayBackdropCandidate(pixels[index]))
+            {
+                return;
+            }
+
+            visited[index] = true;
+            queue.Enqueue(index);
+        }
+
+        for (int x = 0; x < width; x++)
+        {
+            TryEnqueue(x, 0);
+            TryEnqueue(x, height - 1);
+        }
+
+        for (int y = 0; y < height; y++)
+        {
+            TryEnqueue(0, y);
+            TryEnqueue(width - 1, y);
+        }
+
+        while (queue.Count > 0)
+        {
+            int index = queue.Dequeue();
+            Color32 pixel = pixels[index];
+            pixels[index] = new Color32(pixel.r, pixel.g, pixel.b, 0);
+
+            int x = index % width;
+            int y = index / width;
+            TryEnqueue(x - 1, y);
+            TryEnqueue(x + 1, y);
+            TryEnqueue(x, y - 1);
+            TryEnqueue(x, y + 1);
+        }
+    }
+
+    private static bool IsGrayBackdropCandidate(Color32 pixel)
+    {
+        if (pixel.a < AlphaCutoff)
+        {
+            return true;
+        }
+
+        int min = Mathf.Min(pixel.r, Mathf.Min(pixel.g, pixel.b));
+        int max = Mathf.Max(pixel.r, Mathf.Max(pixel.g, pixel.b));
+        if (max - min > 16)
+        {
+            return false;
+        }
+
+        int avg = (pixel.r + pixel.g + pixel.b) / 3;
+        return avg >= 70 && avg <= 245;
     }
 
     private static Texture2D EnsureReadable(Texture2D source)
@@ -108,23 +182,6 @@ public static class UiSpriteUtility
         int dg = Mathf.Abs(pixel.g - reference.g);
         int db = Mathf.Abs(pixel.b - reference.b);
         return dr <= BackgroundMatchTolerance && dg <= BackgroundMatchTolerance && db <= BackgroundMatchTolerance;
-    }
-
-    private static bool IsCheckerboardPixel(Color32 pixel)
-    {
-        if (pixel.a < AlphaCutoff)
-        {
-            return true;
-        }
-
-        int min = Mathf.Min(pixel.r, Mathf.Min(pixel.g, pixel.b));
-        int max = Mathf.Max(pixel.r, Mathf.Max(pixel.g, pixel.b));
-        if (max - min > 10)
-        {
-            return false;
-        }
-
-        return pixel.r >= 185 && pixel.g >= 185 && pixel.b >= 185;
     }
 
     private static Rect GetOpaqueBounds(Texture2D texture)

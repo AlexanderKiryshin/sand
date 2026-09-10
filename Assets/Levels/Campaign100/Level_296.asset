@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_296
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283644454
+  - serializedVersion: 2
+    rgba: 4286401598
+  - serializedVersion: 2
+    rgba: 4288178767
+  - serializedVersion: 2
+    rgba: 4291797650
+  - serializedVersion: 2
+    rgba: 4290036943
+  - serializedVersion: 2
+    rgba: 4278782216
+  - serializedVersion: 2
+    rgba: 4284315025
+  - serializedVersion: 2
+    rgba: 4291158134
+  - serializedVersion: 2
+    rgba: 4290478187
+  - serializedVersion: 2
+    rgba: 4288717904
+  - serializedVersion: 2
+    rgba: 4280492322
+  - serializedVersion: 2
+    rgba: 4281549141
+  encodedCells: S1:4:4096:8B79DF69:ZZXPbxNHFMf/hnXalYK5YKNIKb3YE1m1zY0l6oYeY0WoXBbTR8zzNazU+FIh0pXDJbYVaeTeApY1ORmiATq+slbr/aP6fbsBhDqSV5v9vB/f9+bNxJgbPvsLI0tteJVvVsnzLo3hlGY5b1Vv/Y8L4QIbVatUqkp9w0+MIaK5GSZiUK0rJQajawPweTInpldJksy/8sJgu+SVTj/MIkuUFBwLj2rBtyV+8ox8WoB+ADctdYE0XzjiD4eHlvzhh+RQuBEMXs/5CP7mNGEIPEkuc56valX8R9u64lXMSTQjnp0mM5EAmAznUKjBtd72Khs28mk2GyaFxPkQj5ZR9WpFg1cqkfWicmRu/J3752uuWqijOsp5fatOvCgrQ2jR9UIdgVLjnHfRnEaN1DsyXwzAUWnBPYjnu6XKwtWUGMSdztHvjzpmb6fgjPb45FWY76B3rXWG9ZtbdYwJJrk+jhZEthwRtDiXAvefpoNB/GYv57S1RRR5d8hNNx07cadl5ygeXO69DsTf59QjyOyPbcH7x4NOp/Pp5c/m9W34My1oo7JJ5QUzZysYxJ2jT48OXs7n5nZlxBGT5WjDLsham62WWRwfrZiPDjAYP9SRP3JEZX7niFnUP4/jT0TOZmhEq1qnEruuZZ+Q3Ao/jlfvUZA9Bf9JKeTnLUh4vnoKnyxbDuJVH/79X685+ZFFE47jOO/NYJAtia1zcbFTfuRF5NWi4yyGs6RfimDXJ9npC0N3HntvydIqi1dx5tZpLBty8Ixmw2HOSyljh4EGcdy3bI/B7YEchovhK2M8l6K/a0RdZ/HSooY+U/om5+bUzInWsD9e8ZrWmUyqw2Pwp8z6hTkZJrqa0sJm750DR3xY4OXl3MxbLw5PEvBpl2zGACm6Bn/Jn2BOWzgZSeKqU72TLuGOIlL4X6I76XBu5DjYYcK2PdXNpbj1ad0n/gX+aT5q5hmpF17a0HqTXSRh/+oStUWjurhA+/61GFuE410vaNL5+aT5D1ENNjcx/zeSofP3duyPAeGkTLSsSQ/OkNsG76o/Dumu29EF0derR3eJzvVYL1QNhhvybRzmz2atiZdgGtFWfTR2qt2l6mOA7qbg6GPErHs60ERbpcqtqO6XnfO06tFUaaV3I2I/IuumvV560/O4ZOVv3XNUI5pKZtl352yoe359Y+FZH9boC+PXBMb8Ajsa6cl+J6KyTwhpy9x1bO1uz+WUAykl7Ox/j2sXrtzQb7GlCAsrhD/TISzCcLKPHZPDq7V1JEercNebqHY81uHkCdVxagPNOZcAiHIeEp3pnm081GFD9iQMriBP6KLIgsndVelz3A7fISb6EwTgaIWTM5Rza9fMYRAG+/dZWhfsvitDG8prMCNMrgSfHwYaDQ8DLDSuETQkgyv4cqLzSvIlKXw8n1gkkhxu7e7pOr4UPEQ5sEIk8CK8g/EYXz7ve/4yQTFSpaxa6KY5UaopqcLCTKq8EhGN8D6dfxwLV0okFFqeyN3g3FSEX/EOytDUlrtUtIgd0b2lQ9dxfwa2nHNujz8rkG3myG7pDe2faUSSb0RfZxQ14CAp1/AxpRAinlFjXFSJn3TLkksds3/20TlJ3YOAvAp9HaHYaotCvAbEb7p2rZr/Q7g2uMI4yECwE/FK49hGzab60qvA+Z6EeMA1axtK4wrFKW185qhc9pvdA1f+Dw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000ff00000000fffefffeffffffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000020002000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 30902374
+  displayTitle: Wolverine beneath Aurora Pines
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 46be5b643bd4dc94bbe2e66bbb494105,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

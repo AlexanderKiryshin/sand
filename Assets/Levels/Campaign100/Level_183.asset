@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_183
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4286539301
+  - serializedVersion: 2
+    rgba: 4291209851
+  - serializedVersion: 2
+    rgba: 4281379232
+  - serializedVersion: 2
+    rgba: 4282598706
+  - serializedVersion: 2
+    rgba: 4292467414
+  - serializedVersion: 2
+    rgba: 4283914833
+  - serializedVersion: 2
+    rgba: 4280562977
+  - serializedVersion: 2
+    rgba: 4286214749
+  - serializedVersion: 2
+    rgba: 4284910233
+  - serializedVersion: 2
+    rgba: 4280965445
+  - serializedVersion: 2
+    rgba: 4287215828
+  - serializedVersion: 2
+    rgba: 4281302129
+  encodedCells: S1:4:4096:8B8A584E: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000ff00fe0000fffe000000000000000000000000
+  conveyorDirections: 00000000000000000100000001000000000000000000000000
+  conveyorBucketCounts: 00000000000000000200000004000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 19067997
+  displayTitle: Hanging Gardens in a Quarry
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: bc86555d8e889584099ee62d63339ed3,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

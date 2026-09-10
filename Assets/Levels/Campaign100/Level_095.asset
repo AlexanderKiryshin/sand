@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_095
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281308642
+  - serializedVersion: 2
+    rgba: 4284913592
+  - serializedVersion: 2
+    rgba: 4279254634
+  - serializedVersion: 2
+    rgba: 4279785602
+  - serializedVersion: 2
+    rgba: 4281018394
+  - serializedVersion: 2
+    rgba: 4281027662
+  - serializedVersion: 2
+    rgba: 4280642471
+  - serializedVersion: 2
+    rgba: 4283149036
+  - serializedVersion: 2
+    rgba: 4278855491
+  - serializedVersion: 2
+    rgba: 4285172380
+  - serializedVersion: 2
+    rgba: 4280254154
+  - serializedVersion: 2
+    rgba: 4282615746
+  encodedCells: S1:4:4096:3C787DB0:fZTPb9NIFMf/hlECcTQ95UJV9RJNNl7Lp8hDXRQuiDWo6l5QzVRiT1FNh8i9BCEY1FyqaTYa+VaxHHKzHGSix4Uf6ma1+aP2jVMQuwt8pXHs+bzve/Nmpm39ujl7Pfue/pg9VWpr9gMppTYvfszVdqu1dbE129r6Jt9sWT3FcYGJWlut/+W3WKkqLGmtdVGFo8Hmx4g1Hz+RsvW1PqzsrFprUynkNkD9K6ilvgh5KKV6Ws2utiu2uVyt1OpzFplIeaNaEE5vt7aX47Eajzc/YKCjRjYAdQOXo8ar1biyrtRy3FKEkNFVCdQLa1f4UBV3LFZEXflRyzEiNNqYDWI1qjI8kZ+lKqvVW1K568++8BTHiVyNHZvy7TvYIA4huwLXOLpKAPbRsMYc4FSRHieheLbhjHA6wU2A3KaBlND3OxgUcrEhd45jsnbzCpZAyPvG8nlO05iLcacbiyP5lUo0noRL8c4ZxJhcXXJxXIHwc0CvK/uxuA792Dn5Oz4OBV+DcSBfHMmE3BY5FwIXEBKCL5ILrB1i64F6/2kg8p4YkVg8zz+R3oAfiuPDWJ7wHh8/YUoxLjpcnKJN7MS7fCfG3zpRb+loY1fx+kec2Ikv5SFyLvglUnybx3WnMfAVF11rjLGeRDA/4Qn6rTi//ZFzLnaq79iuFt9m4pEQ94S4/DMW4Q4Xa4jD7qY8HeBNxoBHs9lrkeR925O4ya/yVwcRXu6+Elu3X41783mSxNdDLCGOsVfrtxfGGRHa47gVeYhL4fxYJFzM7UEfPg4xptGobkg+crCbJE7D45BDKglJ70frFJLa43aWnOLsEX7IsqT4c2cP4xrBlwjijJwGoaRnrwnIxn4EpNw7kmEB4EfXsIbC2zQarO8RyHvRG3BZkJesoK4bDRsjp/3gd5seAAik96LH0pimviUbvmF7b8gpPIz2rpFBbjl5MIlu5sQ0zUCb35inzcD3uhN9LScDaVdzZxJFhJy/9JBlrmeMq3/xvCiC6n5BvuYZS40xnmcy0zFTeTeK8qqXnO4/tLytMbMutNbmZ+OHd83edZJW9/9+hJymSHyTusiHrD319iZNos0COabCpqVn9Jmeuho78YbMGN3sMK9G8ny/4hRLu4wlZjJpuh7T0Z5npsbD/u9E0eMCW+0Yj2ELE0N8D9diPLdvFrjIAfrPKcmwMaaZmZiaqcI8/CjyHGx9YMRpmjOmPWyxfmasX/v4AOLb+mVGSBEQF8HC1ClC45m2p2/hDiOO7LkmNeJXPIUpFJlpDrxbfxGgltt9nNaoNj8d1UydTPMaGRZQTutXfjxFqofpYmpI0QDSgxpIDbSdUgr7lR9PKx0UVOdZWaP9vIDzKSTtnAJk+/M3mCaHswwyH6a0Rs+hlhcZ7g3Ogpn3DeA/k/LsDIwPBeYGKOQiA1jMEfi4a6wEmvhl2s5IQWtAQYal7x8NIcznFBiK+wtgxXkGi7IoG7aQj7nxr6hMywJ5p8PYokw1k8mwLNPMgC6gXwILsILbsSkCPB+NhzD0vdKUKWMuK1LGOcP1WK699fA8ZD5bK+AsmM/xdK++NfuPOmgPWRB+gwd2dI5cac0hZ98VrwoF7vd4wIKg823UPbCPruDd7oEVOzjoMtHtMoavjIl/AA==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000feff000000feffffffffffffffffffffffffffffffff
+  conveyorDirections: 00000002000000000200000000000000000000000000000000
+  conveyorBucketCounts: 00000003000000000200000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 9851845
+  displayTitle: Desert Caravan
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 16a66155b1e58864880013b106071220,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

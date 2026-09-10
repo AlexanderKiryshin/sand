@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6f708192a3b4c5d6e7f8091a2b3c4, type: 3}
+  m_Name: Rules_114
+  m_EditorClassIdentifier: Assembly-CSharp::LevelSegmentRules
+  segmentId: campaign_114
+  displayName: Chapter 57
+  startLevelIndex: 113
+  levelCount: 1
+  defaultPalette: {fileID: 0}
+  defaultGridWidth: 32
+  defaultGridHeight: 32
+  defaultColorCount: 4
+  defaultAutoColorCount: 1
+  layoutTemplate: 0000000000000000fe00ff000000feffff0000000000000000
+  conveyorDirectionTemplate: 00000000000000000200000000000200000000000000000000
+  conveyorBucketCountTemplate: 00000000000000000200000000000300000000000000000000
+  fillMode: 2
+  randomComponents: []
+  maxGrainsPerBucket: 147

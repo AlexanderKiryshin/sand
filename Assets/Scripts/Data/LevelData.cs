@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [Serializable]
 public struct BucketSpawn
@@ -24,7 +25,7 @@ public struct TileSourceData
 }
 
 [CreateAssetMenu(fileName = "LevelData", menuName = "Sand/Level Data")]
-public class LevelData : ScriptableObject
+public class LevelData : ScriptableObject, ISerializationCallbackReceiver
 {
     public const int BucketLayoutColumns = 5;
     public const int BucketLayoutRows = 5;
@@ -42,13 +43,46 @@ public class LevelData : ScriptableObject
     public int gridWidth = 32;
     public int gridHeight = 32;
     public Color32[] palette = new Color32[0];
-    public byte[] cells = new byte[0];
+    [SerializeField, HideInInspector] private string encodedCells = string.Empty;
+    [SerializeField, HideInInspector, FormerlySerializedAs("cells")] private byte[] legacyCells;
+    [NonSerialized] private byte[] decodedCells;
+
+    // Existing gameplay and editor code can still read, assign and edit cells in place.
+    // The array is decoded only when used and is never serialized alongside its text.
+    public byte[] cells
+    {
+        get
+        {
+            if (decodedCells == null)
+                decodedCells = !string.IsNullOrEmpty(encodedCells)
+                    ? LevelCellCodec.Decode(encodedCells)
+                    : legacyCells ?? Array.Empty<byte>();
+            return decodedCells;
+        }
+        set { decodedCells = value ?? Array.Empty<byte>(); }
+    }
     public int subGrainsPerAxis = 1;
     public BucketSpawn[] buckets = new BucketSpawn[0];
     public byte[] bucketLayout = new byte[BucketLayoutCellCount];
     public byte[] conveyorDirections = new byte[BucketLayoutCellCount];
     public byte[] conveyorBucketCounts = new byte[BucketLayoutCellCount];
-    public Texture2D previewTexture;
+    [Header("Campaign")]
+    public bool campaignLevel;
+    public int campaignTemplateVersion;
+    public string artTheme;
+    public int campaignSeed;
+    public string displayTitle;
+    [Range(3, 5)] public int beltCapacity = 5;
+    [Range(0.6f, 1.5f)] public float beltSpeedMultiplier = 1f;
+    [Min(0)] public int frostMoves;
+    public bool sectionBuckets;
+    public bool keyGates;
+    public bool linkedBuckets;
+    public bool largeBuckets;
+    public bool alternatingCrates;
+    public bool swappingColors;
+    public bool loopInventory;
+    public bool mysteryBuckets;
     [Tooltip("Optional per-level override for bucket layout generation (uses segment layout fields).")]
     public LevelSegmentRules bucketSettingsOverride;
 
@@ -60,6 +94,21 @@ public class LevelData : ScriptableObject
     public int tileCellWidth = 16;
     public int tileCellHeight = 16;
     public TileSourceData[] tileSources = new TileSourceData[0];
+
+    public void OnBeforeSerialize()
+    {
+        // Serialization callbacks also run on Unity's worker thread: managed code only.
+        // Re-encode decoded arrays so in-place edits, Undo and Instantiate are preserved.
+        if (decodedCells != null) encodedCells = LevelCellCodec.Encode(decodedCells);
+        else if (legacyCells != null && legacyCells.Length > 0 && string.IsNullOrEmpty(encodedCells))
+            encodedCells = LevelCellCodec.Encode(legacyCells);
+        legacyCells = null;
+    }
+
+    public void OnAfterDeserialize()
+    {
+        decodedCells = null;
+    }
 
     public int GetGrainsPerLevelCell()
     {

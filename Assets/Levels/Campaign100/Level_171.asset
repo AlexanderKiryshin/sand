@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_171
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278454021
+  - serializedVersion: 2
+    rgba: 4281032257
+  - serializedVersion: 2
+    rgba: 4281163669
+  - serializedVersion: 2
+    rgba: 4283587120
+  - serializedVersion: 2
+    rgba: 4281828205
+  - serializedVersion: 2
+    rgba: 4279311895
+  - serializedVersion: 2
+    rgba: 4282752183
+  - serializedVersion: 2
+    rgba: 4287336282
+  - serializedVersion: 2
+    rgba: 4280305773
+  - serializedVersion: 2
+    rgba: 4288272608
+  - serializedVersion: 2
+    rgba: 4280433183
+  - serializedVersion: 2
+    rgba: 4279775810
+  encodedCells: S1:4:4096:2F2428C6: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fefe0000ff00000000ff00000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000403000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 17811249
+  displayTitle: Pangolin on a Jungle Log
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 1f78097fed242f349ad49454529060b4,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

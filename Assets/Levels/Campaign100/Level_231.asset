@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_231
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280295729
+  - serializedVersion: 2
+    rgba: 4291283175
+  - serializedVersion: 2
+    rgba: 4287256714
+  - serializedVersion: 2
+    rgba: 4284588258
+  - serializedVersion: 2
+    rgba: 4288644802
+  - serializedVersion: 2
+    rgba: 4283783299
+  - serializedVersion: 2
+    rgba: 4285692083
+  - serializedVersion: 2
+    rgba: 4281023065
+  - serializedVersion: 2
+    rgba: 4281824949
+  - serializedVersion: 2
+    rgba: 4292780928
+  - serializedVersion: 2
+    rgba: 4284693341
+  - serializedVersion: 2
+    rgba: 4280503946
+  encodedCells: S1:4:4096:D912519A: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000feff000000ff0000fe00000000000000000000
+  conveyorDirections: 00000000000002000000000000000200000000000000000000
+  conveyorBucketCounts: 00000000000002000000000000000300000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 24094989
+  displayTitle: Kangaroo in Purple Outback Flowers
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: d5f55eaea847fab44b18f725ac06dcf3,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

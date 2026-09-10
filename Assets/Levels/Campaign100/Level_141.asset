@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_141
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4286419367
+  - serializedVersion: 2
+    rgba: 4292785290
+  - serializedVersion: 2
+    rgba: 4279505943
+  - serializedVersion: 2
+    rgba: 4289836473
+  - serializedVersion: 2
+    rgba: 4281352540
+  - serializedVersion: 2
+    rgba: 4289104243
+  - serializedVersion: 2
+    rgba: 4280822323
+  - serializedVersion: 2
+    rgba: 4293650660
+  - serializedVersion: 2
+    rgba: 4282739347
+  - serializedVersion: 2
+    rgba: 4292250956
+  - serializedVersion: 2
+    rgba: 4292726464
+  - serializedVersion: 2
+    rgba: 4284506213
+  encodedCells: S1:4:4096:796BE0C1:rVTPU9tGFP4boALMmEs01OOxcmE2RBy4mCgeM+KScXcUt1zwUMHYXBhVLJ34Ykc4zywXBjyupjn5wKTKyarqbNhcEpu4HfxH9a2h6aW9dLqWVpa+fe/73o9dXf9vQ+oGzrG8e2tmp4/4bzw28DK+rIbp4/495mDoEai3jVhyw4irgus6/+JCGtleVbS4bmSnJqdRDak4ksTJGeBfKSK9JU4BQI9yei+r93rxlRQy/f3rp5/b0jAi/AxG1OS9XvMtf9PTr7Mx12vznc1ja0ZGvR7aoKOrZjaK0G3Ug1iXz7dpqIWlpXYvyuUGEOWqHEmzrStDN6p2uDjXoeUwpN+0Iz06xfj0WHDRBMi2hH5LtUOHLoV0M6TdN0h/KjCiZtS85iAALueo7zs353QxLK+U3uRyRhXVX+ei66rOBZxvphhh3e2w2wnLrNvuKQX8bZSL3Kp71Xw+95Ee7d3chGHnvFNeKC9GUVTN4OS6UXXg5rZ9f++W1rfDMg3DxUO6CKhKDWH0qu7pPmVj5lDndTfshGE4mrvkHGtwt0Ia+oQxx6eOPxeq8MLR+KvxSEEKlxyO6z5z6tSnTKF0Mn705AfKhYRaK9sDDnXms23qOMwJwy7dM33TZ/SZ8VIaUsq4BT5jjPo3NxTp6R/mE1YiZJWeHAshsuC6vI6471BKz9F+3fMIId6hc7IGWbvGXTdGdTdM4WWM7/GCR0psXF4ZH6NtradXPh0wj/pj6iM97ZhLaE2fdc/Z8ddRpZYR8e8T5jElb4GWKSOvCTFLK06Z1dsS48PqTNiQqaHkMTKeWSGElejmTOMuQ/sKow6rX2DwjAwn60ohDZemqNGSdfQ/XdNR/klp1SQlk5YDwObgUgJjBENEDWhvEhUd8ZzyyjvRNHBjAMdvjJiM+P6Pqwr3PJN4vv8KWtP0w5iQPWZ6pOyvOgwXeEjSLScgBqo+A26aRP1ImZqrxDcJ8z3zGb2rLggOiDGF+76PJCiEMNOhwJv3NUZ3hI3J0HeQGInqJjNLnan9hsKHSqC6Gc6oHWMh3snUfUUmHDxi/srWETKn0xS/uMDAAS9hN9HdS/WNmeZ9qBjMyV/9B3yNkTPB6oTdsRDT9C4weygdUywDGCl8qFKISVIEatXLLG9aeYCAB8CGAF6djY+QRAk0vSFrC7CtABoaF4FZhzXzApBeVY4piiFmdmO3tV+w7ATq4+Ka2c2+MJU9MT3M4ausMWsP3Fpxt7Ccz9QBzKdwRBSMBV4kpLGv21qhYAXufGVncFAMJnOA3j3sHc9pr3tWzZL5wijPpZs5MDIFOV4CVP/KI+veORyj4HmrXbS2ZOzKTC030l1bHBEyhy4uyg1xBgkUG5gcqSdvc1fV5UjPuZXHW8PuGpY3CIo2aFoqBYG0M3J2MJuJY92VFWvirB89eppupALQUiq9Rdc2ANJ4kvbi/cryIP5UyH9IB4FV3NWCNu9DJiMbQT4QeMQZzYxhfZ4cflBJsexJI0lzuJZcy2s8kGlpB4adoLekyK1ksLf0U2IDxBs/WzMzg2WZn9JxbMrESkvtg3V2HkNQ1EeJ9rHBDY4bjYv+3ZFS5NLeh8RtpOzBTn7yPA8zKRt3i0juemKfx8BT1iDoWwcfK78FQutvpWUWNQTTttkXxUarkIhaK9h6aNt5q8DFAynswE5sO8GeLWoNoRq8JjN9aS3E1u3kQSKtvCWTtECRtqW2foDBfB7IyaSVFDR92Z7PSzuRog0y7nN516C1F9/VDyRPjT7Jne1+spHYxWRXn0nyUkWP+//h0SS5HGizzfTD97dGGoK0FLdL0kq/V77gRWVyNuqPMpVK4V06Sfq8UZRCs9PJ5Y7VwjM0+pdxHf0PQ94/v2388o8cMhf/CQ==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe0000fe0000ff00ff0000000000000000000000
+  conveyorDirections: 00000000000100000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000300000300000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 14669379
+  displayTitle: Bison in Snowy Grassland
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: bfaab5bd330c5884c9ce63d45c501b38,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

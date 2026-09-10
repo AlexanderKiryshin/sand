@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_189
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282232540
+  - serializedVersion: 2
+    rgba: 4291274268
+  - serializedVersion: 2
+    rgba: 4289825036
+  - serializedVersion: 2
+    rgba: 4279837204
+  - serializedVersion: 2
+    rgba: 4279779651
+  - serializedVersion: 2
+    rgba: 4281740041
+  - serializedVersion: 2
+    rgba: 4283776006
+  - serializedVersion: 2
+    rgba: 4283391819
+  - serializedVersion: 2
+    rgba: 4287391494
+  - serializedVersion: 2
+    rgba: 4292856388
+  - serializedVersion: 2
+    rgba: 4285484805
+  - serializedVersion: 2
+    rgba: 4280247430
+  encodedCells: S1:4:4096:ED43BA4D:NZRBb9vIFcc/g4Fstged6GzbOD15tjUE9RS/GdmJLgFm6KDlaUM+WktfWiscCbOXoImjhXUyAwkD7slYLBZCT5UimpiTATPeAz9U3yhZCiAp/ub/nzfvvRkzxy5ju3uPl8vrvYvl978u/XUdBHsBY4cfcFwhY2w/eBJcL/emy2e/0HO5F9C1z9hwjZgTX9X0f+96CctnPy+/YJKzv63XN/Gc1YUrgqtlsIyX3/+y94VfEUfIDBRMr55sFf9+e/3sz8E1zbBV0/xrvIEPuqpdsEv82fH1P37djvSTM+YOR/kYPjjXPbjyA/YhEG8/c69f9ViMxGvX273ap2/XjwLx0zdB8HiLi9qtYKNh7VyPOev93wbh7C+BdaW3d85lI9Tg6t/508Onh5z0tXOsKHTlsjWm0q1cr3A1zf8Uvms6/w2C/zl3wJimYeusv9bkv79yfomPABpOz4L1KDyaQKVQIj3/9DtvOoMvi2MTY0w8Eunzj2TnfIqeCgnQfrOlK6/XaX4k9Md6G+Lu6jCGpuXffuGl030R8rVWxpWOPu2yWLad2zNvX1B8WlexGq37nCIkPWOXv7XE2zPPuyQ/0DIZ5+Kj0bb01TiSTfugjZq/slVxsKjIQKrTPlTOWMa6rC8lbztvmujv7PyAzM8XWiVcpJTHjaUm+xGUIv9GzVjtdGUmWqvXyahvMrSuYOdCRp636h0rNbkvtIbR2TqdZViXlr0KoaM6ndtIDVhPl+a8MkaMEp2qbG1K2/0P33nh9ZFSzPbMxCycVnjaxyZziAvLm51b1bS3bauUtYbK506UPj2J5WaDpbXwgLjyvGnsxJTG6ZPX6WnIRwLsqhzCVzu3siUaNYoSZijCE+ifUgh5VdvyWLQ7jWpmUSQjTgXx6TlBSKhmRs+tPe43Eff6zgvF55QAz4FzoUBnm9LB+6MGVPtVs7PTqg9bvEglT2QySqlFyB+kVE1ny+dGf9Z7gxwvbqpyGALlt7ltOjvNu7L+zGMJKPN3OL0ph6RXUnUGnZ1W1sYneHLCpcLkh3RDuRgCcdVGg6bhnNKjf5xS/hMI40Ga03odvJQ+e52BknxD/P2Nnooklhj1N9Wlqyk6pQYdWmGkRgsf4P0UY+DJ6z5tsTLjJFecKkAFWHvs0lzImKsRXG6IH1EAHYAX9LvjPvpUIwdaVLK+mLoFvQ08H8hbejUep6OQBqgzkWtnSQ5AnMsB3IG5vKzyNFFCxPIMcezsBEDIByC5vAOo0zcGUYtIQKKSWLXK2eekJzQAwW19OdVoUiQ9zY/tvXH1MVjLjr+lSoKdTFJ9f5ujAOKCdkhJK7S22z18VNiurf3y/jBOud+wqg+5FroiTtpHV3QvtM6r2TjHRByB7PMcj95VWwPzc2FtRfJxqk36iQsYxVSj33CTul6Xuszr85671LnOwxBCiGMVNjTddObKLjkUVtN28i2zkZKaS0JCPI2w8iEWdpWlelIZZx4mQqE6UuEoVNh0/uXMxlnr7HA4N/Mh3rYNSOSSQ07jmllaZbSE2pUayUF/HcooCWOyl2qg/sm1qXBu6JCx5zr7+s0P5QI9lxJiOpPCpG82C1a5oqBdX81unE+uompRAj+1NHAoZpseHTlXnlNxEVMKSyanANioMM/ali9yahra9bR1NVxUoRIRnkqV3LUiwziOc8zpqKr0w/HN/exChypMqAGhjaP4YTtAspyY1DozG7uTcW5C1fieEe2ZjKlpMWzGWuPBE+dq49KWr6USHGK8U6Fszyb4ooW5znHfHtTha2qZhDgQh5YSROb3UfMTGle8yt+/lG2UJc+3nNoa8FMLId6hzqgEup4efcKsfyIS8odYUhlVpCSFrw/Y/qskfwlJjmkKVF4aEIpYEedITTBndqjTt1S62MdON0GDKEfoefrH3e+KNA9lLPqwvSRxpBgRBXHEx/tDzFPAUSroI4X3fw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000feff00000000fffe00000000000000000000
+  conveyorDirections: 00000000000000020000000000000100000000000000000000
+  conveyorBucketCounts: 00000000000000040000000000000300000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 19696371
+  displayTitle: Bronze Diving Bell under the Sea
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 7c30a9c99e2b29e4e8ea1fcbce2f32eb,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_247
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278387718
+  - serializedVersion: 2
+    rgba: 4281892294
+  - serializedVersion: 2
+    rgba: 4280179094
+  - serializedVersion: 2
+    rgba: 4278848784
+  - serializedVersion: 2
+    rgba: 4279576376
+  - serializedVersion: 2
+    rgba: 4279515761
+  - serializedVersion: 2
+    rgba: 4279112988
+  - serializedVersion: 2
+    rgba: 4279180332
+  - serializedVersion: 2
+    rgba: 4281224548
+  - serializedVersion: 2
+    rgba: 4279249744
+  - serializedVersion: 2
+    rgba: 4280499022
+  - serializedVersion: 2
+    rgba: 4288342264
+  encodedCells: S1:4:4096:904B1027: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000ff000000000000ff0000000000fe000000fe
+  conveyorDirections: 00000000000000000000000000000000000000000300000002
+  conveyorBucketCounts: 00000000000000000000000000000000000000000400000003
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 25770653
+  displayTitle: Female Miner with a Brass Headlamp
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 0a8d1d79a04f94043a1ba92dc95ac3d3,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_284
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289626467
+  - serializedVersion: 2
+    rgba: 4293061359
+  - serializedVersion: 2
+    rgba: 4282073924
+  - serializedVersion: 2
+    rgba: 4288463835
+  - serializedVersion: 2
+    rgba: 4280034864
+  - serializedVersion: 2
+    rgba: 4284981173
+  - serializedVersion: 2
+    rgba: 4284512903
+  - serializedVersion: 2
+    rgba: 4289568657
+  - serializedVersion: 2
+    rgba: 4282080112
+  - serializedVersion: 2
+    rgba: 4294361745
+  - serializedVersion: 2
+    rgba: 4278651664
+  - serializedVersion: 2
+    rgba: 4284505688
+  encodedCells: S1:4:4096:DD19C8B7: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: fffe000000ffff000000fffffffffeffffffffffffffffffff
+  conveyorDirections: 00030000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00020000000000000000000000000400000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 29645626
+  displayTitle: Oxcart on a Terraced Mountain Path
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: de10d07f95a46414e9ca0dfc61192472,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

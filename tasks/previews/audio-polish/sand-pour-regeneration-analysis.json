@@ -1,0 +1,27 @@
+{
+  "before": {
+    "seconds": 3.0,
+    "sample_rate": 44100,
+    "channels": 1,
+    "peak": 0.719970703125,
+    "rms": 0.10379424876165359,
+    "dc_offset": -9.021139108855348e-05,
+    "loop_boundary_step": 0.0223388671875,
+    "adjacent_step_p99": 0.330810546875,
+    "energy_above_8khz_percent": 20.560787779761668
+  },
+  "after": {
+    "seconds": 6.0,
+    "sample_rate": 44100,
+    "channels": 1,
+    "peak": 0.688568115234375,
+    "rms": 0.10399683529677452,
+    "dc_offset": 5.8820728812358274e-09,
+    "loop_boundary_step": 0.01025390625,
+    "adjacent_step_p99": 0.12210144042968718,
+    "energy_above_8khz_percent": 0.04136815645335241
+  },
+  "other_audio_and_metadata_unchanged": true,
+  "preview": "Two consecutive loops at maximum runtime sand gain 0.42, with outer 200 ms fades.",
+  "scope": "PCM analysis only; no subjective listening or Unity Play Mode run."
+}

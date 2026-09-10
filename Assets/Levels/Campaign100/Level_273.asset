@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_273
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4294622072
+  - serializedVersion: 2
+    rgba: 4284328439
+  - serializedVersion: 2
+    rgba: 4279385266
+  - serializedVersion: 2
+    rgba: 4278786150
+  - serializedVersion: 2
+    rgba: 4279316373
+  - serializedVersion: 2
+    rgba: 4279116667
+  - serializedVersion: 2
+    rgba: 4280181735
+  - serializedVersion: 2
+    rgba: 4288076541
+  - serializedVersion: 2
+    rgba: 4281419687
+  - serializedVersion: 2
+    rgba: 4279717322
+  - serializedVersion: 2
+    rgba: 4282079676
+  - serializedVersion: 2
+    rgba: 4281827056
+  encodedCells: S1:4:4096:26A1C15B:TZTBbttGEIafQTn1TAG1qvDkAU2V8a00gaBHeteN4FNNrqH4FAvKBgxPzMEEqlPRBGB5M6PQ2PrSpA6s7o1CoEDZh+oMKaXZCwV9OzP/zM6M7/u+8I/FR50ou8l6vWeqTqQTMwhh4XdHBL440H+ptDEPkCdSMs4qCH/y/aC9EPnRI9BaNvMHvZ5UyBkDOIjJks5xEOXIbWMjr6WsGVsoYEd+JMiYFAw8gMzsEU+kG7KFFzI/EFseCeKNmX/Xe0Yc7dH8OBJ0g2LE9gjghbGz3jMpXXXmrMZHRxxh1Ek4zvYBVpe21ftbSoDKqfjZUWtLd4IoGozA619eWaifAcZy2NGR6GKTA/Fwv/I2xsIC1WxRAXjOUZs3MRTJF+h/Y+aD73onIQYAl6M2SszvknxvK5UYm/yHM/DUGHVF2wD0AFau1DBF/b00nCVVEmJ0P2hj452AW0YpT1qNNThlM+UmMUYVEbluH+CgmV8r92Fj8gx57VYiptzFlosfjX2joG+Z7POazZLkNEZTwVtOGt5a5rryVo1ppBnPVAJYfM7irb3w31nmoYJqaAbpevxcJmMsPGHR1SdaWIfDqdcfNpY0Txd1HXJsgY5TE0T95gZGsBoOkJ8zKQ+2uM0Py7iy92EfXl1d2TKVzlSykDDr4gcRf247VQNgy2Eq63CaQhiS+VZfxJ5vHHj1QTdpncq1C0kVxq1/sX2BygWn732Ypth9rgsKu4uxLj6+/gFbDcFZAfRTbN7aA2xOxr/6RyFqgw2N/HIj16cepB504dv8BGdqr+WQK2mYC6jxW84W7qnDnEdQ5SOzdsYgZUiQxzH1LuOOe8qYY2OCeZqGAHXScRQXYAez6RoFMWe0MkYmDupzMTuO7UvPwLiXHIbh6ydPFhuJbVJ5lcQJFpwe1udMuOMEpYWvix9MinzmAY5QG5rEiXeL6RrVj9ndnZGf1YnyUJ/L/K51ueBh7VJ21ThMZZ46WJyWUwPiCIpxNT2k3CvAuPYLkB6jEW+Fo0QBVY1U0Q0pr64dF8g/Gvoxza8DHsqrKuzvNfIRpl+l8gQ59a+ID0AlGF7h/KS3cm+8wOnEJoi6+oqYw3Rvny5UiTx8OcfNQP4li1qIRXTU3oiCV3V6rWzHafk55hVjbfyIg7QG+CdzNjLLc7zX2SOnIcICeoOMkdXmcp6PYOqFn2SdxNTBHFsbHWYW7TtYZRlxNK+Tp9hgvF0+BVuZ7BcKMMvy7BAcLN9anVD3taPHnOGt9Svah9MsH9S4eacY3uW75ma8bzU2lgn6eZ6rkIfEz7F3u+lH3aYxyCsvzz4z8ZbUE99t74XBvaOXn979qUtdlrqPODln290siBtLF1rrZbnUunlJ9mfBdrf7ojJZY8/z9zqn82KZtlwEQbs6ohjtm7mat3QwsHJ8HHfWGQc42mJl7GZQ7w3y7jRSqrHsRp82aPyqmY9s2OS7cxmOxbn4f3cNb26yw/mOqn/vPgE/32WH/vXv32fkPCO8v9J6ZW7Pg6/8Deakt8b3urwI9JdbeNqtVt8vC0ocU7/X97/dtz/1l4vybJd9URRLcrDUZXex1Dpe6oude432F+Vjv6sd0e4URVvAPz6Wjy/Qx84az89la1J8nPC4mBQUoCAvunWAn2I5eeJPirKYTCZviF/wgsJ3vgvyjQbLuPjm6HJStBrJ0WSJ37vltxw1TEo0pAvLx/9g2Dcd+A8=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000000000fffe00feff0000000000000000000000
+  conveyorDirections: 00000000000000000000010001000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000030003000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 28493607
+  displayTitle: Orange Canyon Slot at Noon
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 02cc598fe68849640ad0182b01f99fa9,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -6,103 +6,77 @@ public class LevelSelectUI : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
     [SerializeField] private LevelDatabase levelDatabase;
-    [SerializeField] private RectTransform buttonContainer;
-    [SerializeField] private Button levelButtonPrefab;
+
+    private Button openButton;
+    private CampaignGallery menu;
 
     private void Start()
     {
-        if (buttonContainer == null || levelDatabase == null || gameManager == null)
-        {
-            BuildDefaultUI();
-        }
-
-        BuildButtons();
+        EnsureBuilt();
     }
 
-    private void BuildDefaultUI()
+    private void EnsureBuilt()
     {
+        if (openButton != null) return;
         Canvas canvas = FindObjectOfType<Canvas>();
-        if (canvas == null)
-        {
-            return;
-        }
+        if (canvas == null) return;
+        openButton = CreateOpenButton(canvas.transform);
+    }
 
-        GameObject panel = new GameObject("LevelSelect", typeof(RectTransform));
-        panel.transform.SetParent(canvas.transform, false);
-        RectTransform rect = panel.GetComponent<RectTransform>();
-        rect.anchorMin = new Vector2(1f, 1f);
-        rect.anchorMax = new Vector2(1f, 1f);
+    private Button CreateOpenButton(Transform canvas)
+    {
+        GameObject go = new GameObject("LevelSelectButton", typeof(RectTransform), typeof(Image), typeof(Button));
+        go.transform.SetParent(canvas, false);
+        RectTransform rect = (RectTransform)go.transform;
+        rect.anchorMin = rect.anchorMax = new Vector2(1f, 1f);
         rect.pivot = new Vector2(1f, 1f);
-        rect.sizeDelta = new Vector2(180f, 300f);
-        rect.anchoredPosition = new Vector2(-20f, -140f);
-
-        buttonContainer = rect;
-    }
-
-    private void BuildButtons()
-    {
-        if (buttonContainer == null || levelDatabase == null)
-        {
-            return;
-        }
-
-        for (int i = 0; i < levelDatabase.LevelCount; i++)
-        {
-            int levelIndex = i;
-            bool unlocked = gameManager == null || gameManager.IsLevelUnlocked(levelIndex);
-            bool completed = gameManager != null && gameManager.IsLevelCompleted(levelIndex);
-            Button button = CreateLevelButton(i + 1, unlocked, completed);
-            if (!unlocked)
-            {
-                button.interactable = false;
-                continue;
-            }
-
-            button.onClick.AddListener(() =>
-            {
-                if (gameManager != null)
-                {
-                    gameManager.LoadLevel(levelIndex);
-                }
-            });
-        }
-    }
-
-    private Button CreateLevelButton(int levelNumber, bool unlocked, bool completed)
-    {
-        GameObject buttonObject = new GameObject("LevelButton_" + levelNumber, typeof(RectTransform));
-        buttonObject.transform.SetParent(buttonContainer, false);
-        RectTransform rect = buttonObject.GetComponent<RectTransform>();
-        rect.sizeDelta = new Vector2(140f, 48f);
-
-        Image image = buttonObject.AddComponent<Image>();
-        if (!unlocked)
-        {
-            image.color = new Color(0.35f, 0.35f, 0.38f, 0.85f);
-        }
-        else if (completed)
-        {
-            image.color = new Color(0.28f, 0.72f, 0.42f, 1f);
-        }
-        else
-        {
-            image.color = new Color(0.35f, 0.55f, 0.85f, 1f);
-        }
-        Button button = buttonObject.AddComponent<Button>();
-
-        GameObject textObject = new GameObject("Text", typeof(RectTransform));
-        textObject.transform.SetParent(buttonObject.transform, false);
-        TextMeshProUGUI label = textObject.AddComponent<TextMeshProUGUI>();
-        label.text = "L" + levelNumber;
+        rect.anchoredPosition = new Vector2(-30f, -170f);
+        rect.sizeDelta = new Vector2(168f, 56f);
+        Image bg = go.GetComponent<Image>();
+        bg.sprite = HintUiSprites.RoundedPanel;
+        bg.type = Image.Type.Sliced;
+        bg.color = new Color(0.15f, 0.37f, 0.37f, 0.96f);
+        Button button = go.GetComponent<Button>();
+        button.targetGraphic = bg;
+        button.onClick.AddListener(OpenMenu);
+        var labelGo = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI));
+        labelGo.transform.SetParent(go.transform, false);
+        TextMeshProUGUI label = labelGo.GetComponent<TextMeshProUGUI>();
+        label.text = CampaignText.Get("levels");
+        label.fontSize = 24;
+        label.fontStyle = FontStyles.Bold;
         label.alignment = TextAlignmentOptions.Center;
-        label.fontSize = 24f;
-        label.color = Color.white;
-        RectTransform textRect = label.rectTransform;
-        textRect.anchorMin = Vector2.zero;
-        textRect.anchorMax = Vector2.one;
-        textRect.offsetMin = Vector2.zero;
-        textRect.offsetMax = Vector2.zero;
-
+        label.color = new Color(1f, 0.99f, 0.91f);
+        label.raycastTarget = false;
+        label.rectTransform.anchorMin = Vector2.zero;
+        label.rectTransform.anchorMax = Vector2.one;
+        label.rectTransform.offsetMin = label.rectTransform.offsetMax = Vector2.zero;
         return button;
+    }
+
+    public void OpenMenu()
+    {
+        EnsureBuilt();
+        if (gameManager == null) gameManager = FindObjectOfType<GameManager>();
+        if (levelDatabase == null)
+        {
+            LevelDatabase[] databases = Resources.FindObjectsOfTypeAll<LevelDatabase>();
+            if (databases.Length > 0) levelDatabase = databases[0];
+        }
+
+        // Reuse the painting gallery while keeping replay limited to passed levels.
+        menu = CampaignGallery.Show(levelDatabase, gameManager, completedLevelsOnly: true);
+    }
+
+    public void CloseMenu()
+    {
+        if (menu != null) menu.Close();
+        menu = null;
+    }
+
+    private void OnDestroy()
+    {
+        CloseMenu();
+        if (openButton != null) Destroy(openButton.gameObject);
     }
 }

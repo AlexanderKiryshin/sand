@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Art_078
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280625195
+  - serializedVersion: 2
+    rgba: 4284964999
+  - serializedVersion: 2
+    rgba: 4280905657
+  - serializedVersion: 2
+    rgba: 4283083509
+  - serializedVersion: 2
+    rgba: 4280636304
+  - serializedVersion: 2
+    rgba: 4279712366
+  - serializedVersion: 2
+    rgba: 4281088082
+  - serializedVersion: 2
+    rgba: 4284838319
+  - serializedVersion: 2
+    rgba: 4279182144
+  - serializedVersion: 2
+    rgba: 4284567123
+  - serializedVersion: 2
+    rgba: 4279112724
+  - serializedVersion: 2
+    rgba: 4283861468
+  encodedCells: S1:4:4096:1CF11543:TZRBb9vIFcc/w6CwGJU9qdtGMHrZjijHSC67llIY1cWgZxjWvRhaDjNVLlyVHCjupUJhM64uqsFhBuwl2aYJ2BNbWAYxpxb2Wk74ofpI25t9kEhqfu/93/+RIyrOH3Z+iPzt5t3FfSguOz+Kbucz32z4hHXnsDC/XY/ncX16CwSSfpfn6VLF9VLc1M7jKu7Mu53NW42Xee6bbvyqVu3eVsZxk36nkecSsdcqhoR43RxrDAJxg7/Lcxa8eu3WazVpDhAL+ALfDN8AP359c7e8jhfre/4rwPM/ipwhqm7W1boG62pRNbyqum/zzc56GnSigGbq5qaqFpBUDRqZqqoaq89awXyF6Ewp4JfwGcX3AVYX8f+iIJZ6T8lIQkmdUVcv7nC38/UX+aY8ypScMRAYQcqi7l3Vd2C9+NB5NM07Eh0ccsaeVp/jY9Wtx/3Q+XoqOkofQHlrePkDfvGxAovA54+Arw5KpUTrqlavBnXWi+t4Ufd4dwo8loqXmWpdVaPLAQTwPyHIXSwW09NHQjyn6vu2PKTDQRO1ytu8NlrFrdNHoeKUEsGX7KrB1WhQ/SPPP1bV9SL++ekz74B6NhYyZU8Hd1F9Ac99cLmO19+dPqfWnoXDizRloL9b48vBL/6Z56N3L/9bvTvxaOjYTLUNP7mvvxx4kRCD99AjPCEsdPrbuBWlrXv5QW/sCeG8f1n9PvRDatE+H6CWD/17Ow3/xifCCB4a1zeJiBzLxqwnWz4aDoa7t+WG8yB1QtaeJAalfdujKzbz2WDwFCwuRpUjIL4U6JCFqk/PXUz+Iykn5C/HvxmNYpIKS6QOFYbbEoL41p49HsuhHJL4+CSOn3kzMRUzYQhEROh7LBE7bMyGjHix6Mbxc+J73IkMGUJtyMdOonZogiWj6vjbv3a+JTQSRESCRktKwrbnWhFmY844O7b/Rn5tYQjbNSAjYnvhzLaxHHoJL/nql12LwT7llLHseyGF7wXM6u1jRsbnZYu3GOaWYsJJfRwk7osQMcq+6eN9TMaKK5ZiT+FjZ4NsAR9TN0TE8CXBRFGWzeTWmfITK1WSbzneLGKHpeelKcbbQ8WYFtuJop6P+xgTy7b7kbMUKy+09vG2paQq+wl3GR0zy6aEWWNJ6J5juNyT3palnKSvlOv2x30KsxEM9RR6tjwYhqG+ohaXCjCoq3LChLGNCXPpbHdLlbOCQZI6U9a4b50VmW8EAhkpJpTTLd/hUyTPtq2VtMkQyzJ7/9BAh8gQAbaoZH2fh2aqwKLtetZZqV49PFk/CFAgRGozKX2ipolS24S4BHvwJ9s9ubIe/AHtIXFIicc497xzxDF1iWWpTM923U+jD/8WKTLkzCXw0JQlgxkeezaRSmXuLv3zk+6FuYEQYhcwo1I0ccn4gHlWVqqjNLu5HsXtSeijAi0nCrglj4zxhFEJPEXZAby/jPE1CYziQHmuyvpqFrIJHyeqVFo//vTsyYY0rfSNgZZuApa5OjKAk0wBflN8uu45ea6PYIMXpitl6aktAz9OWKa1aQZob46jfIIarjnTSpZTIjMpdanZT9BPXdL7mdZ6wv4VIKSldlWBELxdCs08zfVL+6vLjQtIOActtISZFSKgnRnFJFm5Wclw7++ANTMDA2mXlE4bmeAsyy40X+nfPrnaf6InOiv1hrH0FMqy0iY6q0tgTSOy09vJMrPMTGEU7nnrQuk20p+j5wxxpMGsNoylMrXmZdtsfjeBsI1tv7mcoaI+HZQambq4xY+NQ9yLijr7SKAmYVKWS4TULTe/snZ6Z42ZNzkqjmoO2ksEI5uFiYTY6/em9fx6cmgUJgg01mshZCLD+NK29qnZ8LzQvoGKmjcHuP1tESHHth83v1pIwy5pPNCVLr12wHx4FdrEDttgEOZH0S3WAjpmCHYt7H0RgvG6Hmq5Lppe/wc=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe00fe000000ff0000ff0000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000040003000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: 
+  campaignSeed: 8071452
+  displayTitle: Venetian Bridge
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 80167689e1a14304c9fb73d13cdcfb62,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

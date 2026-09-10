@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_092
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282001462
+  - serializedVersion: 2
+    rgba: 4279208927
+  - serializedVersion: 2
+    rgba: 4281475595
+  - serializedVersion: 2
+    rgba: 4287849218
+  - serializedVersion: 2
+    rgba: 4278806711
+  - serializedVersion: 2
+    rgba: 4282857835
+  - serializedVersion: 2
+    rgba: 4282864817
+  - serializedVersion: 2
+    rgba: 4289763896
+  - serializedVersion: 2
+    rgba: 4284168452
+  - serializedVersion: 2
+    rgba: 4282667324
+  - serializedVersion: 2
+    rgba: 4279645019
+  - serializedVersion: 2
+    rgba: 4279061387
+  encodedCells: S1:4:4096:ACA724D9:dVXPj9pGFP4bRpaMyN7c+FCFi/W6IAO3eNt11JNTN03hYiENIjeEYmu1Oe4h6m07DquHuDmVinPakE27hRPEUnc9f1TfjE2iHPrA2Mw373vf+zGQ5/9nC/2JZJ7nXbyu7LfXn41WTz0PxVf4wU49hXsVvvK8w/qfB/jigAOi76UH+n+/kNd4JeC0ChAWf1funroO/L53caojnISyRbcLhfnVVeG1wG0RFo+8UwWnytdPNX+F08e2FQQn6gvhqPagr/PDOl5o2zfBWx1X476v+bVADQdhUewqYWmqAtS4r5fKXRmEw6Ff+VPWmHpC4WmN934J7K11UhNgSsRCiIO790na4XY4+FyZVPM/Tmt3b2hZ8n0pi4M/6faF8L1J7WGF+3frVvnmC3+KAtBvVvV4GCw9bz0If6/Yq9KDQC/+XlXgoSVp2zbU+lKsDZqIsa7GB/sxSSyG25uvcANx+oNS+rak9ecyCMnfT5V6dIXCp7F3SPET1a918rnxNBvALidxPYSK3grKHyv1KFboAhhXzeSshr1HwTAMe97bJ94hvjAuMY5r+odWYIVSN6dWh9jESWyqQir64cDaBY81+/MlyYPuqDmfmCo8cXrPrdDaSjVV+K31BoHMMOaYIF5phaVlBcPlTyr6r3/kQstjV7yBZ1dKQWoHVhDa+T3Ry3xJ+UOm8rvCSaITkMUwlPJdSWrQJUY374LRnly55K/wVmiHgX00qI9FgrkQRjRKJlPN79mhFezKTe5X2XFKEJrOKHF5B9078g+oPsW7e40uzsYKd6fRHLmLYp97t7K05W5DuL1AnCh81mYRYBuoVb73IQzDcpsvcJV3iWE8QWQG44bZfuGo/L9rtQJZZIta/XiEgtDIaLTHoAqU3m2k/R407M46DS4yZhocTD5XDj7erjeFpIEXuMJ4Pjap/Y7RAR4JFxZa9aYs+7ha4AKbyXjuzoFRAUxqRLbQJ20z2KnGuQuEEYcXbBQZnE3X0AHQR221GbxBN8twRnhmOGDwyGxPRk6WUS0UQVDQVOYwmz4d44TwaRTBGe+oZqskbjeFfkwobWE4Dlwy5sSmXnMhx9vB7lgANY7/bLYN5cLYlLVhRgI0gZRLzGnzyGSzBgPBIiIAaEAfdIb34dLV8iIGpkP4s5C5boeTP6K1xP2uR3M1i2FGOD0cn4dtjEZtld+wGOLdUCotMSQMGMBfnWny9LjJVWy3gD3eSfKfEd/YjJiA0XnS2T8zojkV9ZvjfW95J5dud5ZMHRLo4NH6YzR+VZogsi7s+5D198USu1S8CGImRucdFg5evdQNQAn7AtZFn/QBYyxmYBz1zCS8aYuVqt7+GLpgb/XBURscw2Ftxjnv3aDacC8FPJVbATOnMY4ovMGAH3GTJy+BDotwJQ2g7MOo4cTcNBkDJ/rIeO/6+pyKQwR7WcobundiZtKLymrwhENynkBbxbyTctsD6MXkS+EZtc9R8c04715rVZl6c8eMqfNqR0Q3Z62Ipn2oLOu2OTM4iTMNx6A8AAiPrv/pKW9qfZeS48QfKYgeL3FlAEZHTv3Pqn83HIfR9CkbgZs9oDARZHlXo+sHager49Hc0GCBk5ErNQFg0yNxhiqOUU2d2tJVwgnPIXM2il8XuHKn0aiY6uDdQwMA/gM=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fffeff00fe00000000000000000000000000
+  conveyorDirections: 00000000000000000100000100000000000000000000000000
+  conveyorBucketCounts: 00000000000000000200000300000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 9537658
+  displayTitle: Seahorse Garden
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: fada636ab046ae449b4793d4561ecdd3,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_201
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281041091
+  - serializedVersion: 2
+    rgba: 4285434014
+  - serializedVersion: 2
+    rgba: 4278979854
+  - serializedVersion: 2
+    rgba: 4282492652
+  - serializedVersion: 2
+    rgba: 4288461779
+  - serializedVersion: 2
+    rgba: 4290217566
+  - serializedVersion: 2
+    rgba: 4281024080
+  - serializedVersion: 2
+    rgba: 4280428331
+  - serializedVersion: 2
+    rgba: 4283981928
+  - serializedVersion: 2
+    rgba: 4293043552
+  - serializedVersion: 2
+    rgba: 4280311693
+  - serializedVersion: 2
+    rgba: 4292857785
+  encodedCells: S1:4:4096:D23B2213:pVVNb9tGEP0Nm26gAnsKXdUS0kuz+VjHvjBYwwl4Y0AkLnxKAcZKfaHldqnylKxtLmtfQtUSF8m1AarqQosIE2xvRoxE4Y/qkLILpNcOBJHcN/Nm5u1wOZn8f9PG5Na0uZ3PL9bmW80FVn/527RylJu/6ueqWixOqq0P9f908qtQKmwhoDDPJh+qasFTVd7WpPaY996GsxzQMiqvoXZ14VBB/A9/wI0xJlKliuM+EBhiPi/weeV98OpcQrxTSlGlxLvICFGaalpNpnPggVzzrSqWYSZDOVZUMhqKQV1gdWFT8FHDbS2ZlIqOpMp2/my4zwEE9trn7k42ys7Of9z5eHZ+qKcAzivfP6/ppzU+mewcv15LKnV8/Ga+oPX9xgHSNzpM7w6rj2uf1mr/HVjfafDzyxLgt1JVa8dni9AFDLYAF9Y5a+BLaGHTiyxgr9c+XuT9rzU5Jr8df5w/8/3bL6xu1vvS4TtQdF6pZ/6b2+Ou7qbL1pMvcGHI5x2/D3edwVgLmYyX/8Xek2u9WvKf/ND3te54JzpLmFp+S2qOc9g6ZNS2Upn/tT8aWFZ7M4GHONwVKVQhFEtU6B+OfN8KR8ratbzkRCcDrTqhIK/8854enX/yt3vfPvFDPdSPXG/loVax1smJH0JGf5Q9HfmHfpL1OiLV3V3vhlRJluhu53DbH3V7wK17h/ppb5R2urEVuweym0AJOj3wRzrRKeC7z087VjqQA8WskxOZtWFdd9WrF1fam8s/X2vnz03phHE4TpTVblP6WKsMKriCCn6f7zlcPA/sImEiU3rZ8igbnqja4WsYVpMrEZUmMkcDFQuqxqG3QhW0ABk05xwQg+BajGOpRCzGwrpFFWvDPCtt8Uuzj8Z3hmHGlOhbLkxxp62Y1Js2IIBizsPkTp8JpkC3x0xR2j8AXK9fhvNxwmC041itZO4LwKlOoML3l/xHIoT3J05iRS3rQDFae4BtYATGeSTiOh50ox3tXuDZiX6Am/AiUzGjaqilkkup165hKpOhPl3QfyNYv8GZpEuW63kAb+yPB9ZmA+P9MFaKMRkC3nFd79EtOlzndCER0EdxAqIomTHJHqaW17b643V+U2dp02EB0TKWfZYB79Kua7XdQReQV1o/AHabh5TJgYRXHArvp10PrMZ5pjc5QtjeoDSM2ZKqG1tu603AO1dB2X2d1gIIeZ/GjM2oon261E1Tz3O9Kw6y7aG+ZxO0GoRmX0kb1IlugoBNAkMIQi+hACeInL4TsK840KOChlbdgWcb20Z21uUOnIszFDBuKzbje3QIuKs7Di9sDC1AmcQJgjiCTaZ9jkF4S1tKrkM0wr9rB6Mc84AENpLyvsNBeMvSikF/9WDpe4g7OApacHDmOeH7dLWfWys0u8qBHvHhA2znCOWoLHKxOsu/V9RBZCV2vXquMN8PMSLEtm2nEEZExdFsFdt7CUi8gbGD+U3KQQcEHnlemD0ecScngXbb3lWQ1uZ7DC61C8iJSFHYG8XMmKHrtWdQNqxSGE9kY9uxMewUzlGrKEx0PZTMEIxwvX9QXYGa16TpCRciN/RGBPQ45xjjHM4YxyEOkDQvAy84NEO4gUBCOEYOaExIkeOiccALKuAqYPMxgg+PAMqIgDs82lDuwgPnec5LY8pyLwpMQIxxECY5XzDYGCCBCiJKETlBSwTwLoOUEfi0mujCiKCsP0kt1Mr3TBQRUBnOEsgBxRbGwDeRmFyIoEUMHBMbpjRlYHJSd0kKAg3AngEiyrwFVZbClOCJCM5hLsHPBqcIyhtAHAnK6zqFg6trnZ6+NDAEFph7mlr/AA==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe0000fffe0000ff000000000000000000000000
+  conveyorDirections: 00000000000100000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000400000004000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 20953119
+  displayTitle: Anteater in a Blue Grass Savanna
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: b53364a2a3e8fd84ba4f7c1af53e440c,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

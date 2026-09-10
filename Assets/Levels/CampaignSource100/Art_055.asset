@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Art_055
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283141322
+  - serializedVersion: 2
+    rgba: 4281085000
+  - serializedVersion: 2
+    rgba: 4279309088
+  - serializedVersion: 2
+    rgba: 4282210675
+  - serializedVersion: 2
+    rgba: 4284642944
+  - serializedVersion: 2
+    rgba: 4282599241
+  - serializedVersion: 2
+    rgba: 4279123318
+  - serializedVersion: 2
+    rgba: 4280558382
+  - serializedVersion: 2
+    rgba: 4279460263
+  - serializedVersion: 2
+    rgba: 4289110668
+  - serializedVersion: 2
+    rgba: 4278585357
+  - serializedVersion: 2
+    rgba: 4278920519
+  encodedCells: S1:4:4096:5A054E74:rZXPc9tEFMf/BhU3nWRyQS5pSnKpFuqY1UXNRmRILqFRWpJTGnnRJFw6KWxFdCHyCE3diycMQq0vHsYdRuHSCBqnqwuRB9Vo/yje2m6HGTgij2Xvfva9/b4fWiXJ/3R9eKxeqr/Anxnlv/C8qqqX4fG/eG882q+q2hJC/uk/+PYLuCnjUVVFKT7RUQgT3QlfecefFaqW+p3oNk97ykZvwq9uJomlbFjJt/UbGkIsbx9mSzB+yz+zk31rw7KsIetrSODZdsz9XrJtSag0km17ez8BbMU3zhDmq0ocD09fjG1nunZvptGzIYDtZ2wf8RSVGY85n/hWFNsyLJvI5X+t74fc553Mq6f8rf2GcX3ToqbU8iZJ+lWURsq1P84n9t1uQk1lZdcBLd1fYQJjPq0o7ssJ30iS3Ypi7dJGV+mCj/5SCrw99MDzRIGxTogdUGWUD86PimttpTjfmdlItscKd+doY45WIL7kNee8rdxC6J3+pKLsUpO+T+kWJPEV8LLtxg+zCb8xA9wgZtORHPy30Ek87R5lEJ4MadesKIbRmDKoTSWH4pW1elvnp4nVoFvbtnm1AtwhlFIweZ2C//h8CfFTy4Ip6wvD/sa2TVNyajWC13zhvfgl5wegljbshqEQRimssB8A7/Ve8ernyjBbnJPlsigxlEcKNQ2IQNrft3p8XrWm6+HxFuBHlMiL2h8d2TalwdYW/fi4uvlBxHSMQZ5i2kQhleCOSKn0YNCqBt17/etr93yMW7ZCHlySirGsl/peE/z/XgWqapoW3YM+wLlSWdk07MHhjsj36BalJ9FogVqJbyKE0nytQldIMFi+ROUeVChw4xsjfoV9yVENlfnaFMSt5Uhw+G38GLvxiKuP2Fm11B+LYtl2TQ9a8rYML45jtzraYZZoau4/HpIBriO9xrMDmeCTOI7U40VQeGWxqvb1o/hT0xHxsD84kOYB2A91JO315qKK9Lwj6ICdM2ifJpgfgjnTZQLUiww4zr0iFyI+pLYZUOfPDth3vHEKSlVFqOx44nCasWXQHthA48Kb8Krk+boQHh4We3MT7gpRG/E8X9RQmoL35y5jlATEsV1QJ4bnWPIULUD+CiHEV95sQUkI7VVEcaGLtFU9i1kUuaz2gyfSoV4U309VIHrTA9+ewDh1Izd2I1YMRI0J3T38cmo3INRYvDwrRQ2nkRQSMRYV+oKeY8aEsAN4vhbVJdgPu/H4qncKDkVEjLVCh/5kUyHcVM+PwDh2C6/jsSFGeGHgFZzbFDZgcV3Ls5Et4ydC6AxnvMqg1fgdJ3CcaKhVMWeR67oX/Kko2DlOueqx7Ok8sVcJiW/K1EBoD0WaYeGxGsa6lovSf6OQ4+9oDIUVsydS/EVWCsbO0xxpKMf9MDTnQodBZQtFbq/DxpBWvcxlAGnYd1R4eGrAtVuSRxf8OWOMjzlqLbWae07G5FrRjh66nssKxmp8DelInhSOHTiUCh2lSLCYxa6eg/mQt3KYK0O+R4AHQi7OiiiqscIDnvK1ZV1kPgqhftB+IstTjnMGznXJOb9LCuGHvr9Kwvt0RcvgbMAoP2QIgoft+Q7JSRiGkjuU6JAuzvM8PxIQfARi9wgZtGDBqglf4JynHFpKl7xeIrQDzz7gcF7eVs8QeOcYagzuCwxioL7rQBwnDMLVpuQgkLGROFxyuT4Pxwsc0uz7YAAKgEaY49EAIZDXd8KQEAcylaZc5ykUTiqRwWDJW9yB8oaoCr2ZynNDIo7w6Nf3W2ELMHnghxKl8EHSHOIDNQe+FHAQhk0ahqksBl7CWFZldJP791t96IBX4UoF/9bdMWbuKxjdhddG8vMnCbxknyRJIA/mJ38D
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe00fe000000000000ff00ff000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000020004000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: 
+  campaignSeed: 5662685
+  displayTitle: Town Musician
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.1
+  frostMoves: 2
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: aff1faa7fafb19b4da489000f4455166,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

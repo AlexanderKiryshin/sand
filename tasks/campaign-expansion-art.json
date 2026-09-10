@@ -1,0 +1,1053 @@
+{
+  "mode": "built-in image_gen; user-authorized 5x5 atlases",
+  "atlases": [
+    {
+      "name": "Expansion_01",
+      "scenes": [
+        {
+          "number": 101,
+          "title": "Red Fox in Blueberry Heath",
+          "theme": "wildlife"
+        },
+        {
+          "number": 102,
+          "title": "Glassblower at a Crimson Furnace",
+          "theme": "people"
+        },
+        {
+          "number": 103,
+          "title": "Terraced Rice Fields at Dawn",
+          "theme": "places"
+        },
+        {
+          "number": 104,
+          "title": "Yellow Tram on a Rainy Street",
+          "theme": "journeys"
+        },
+        {
+          "number": 105,
+          "title": "Clockwork Whale above Rooftops",
+          "theme": "fantasy"
+        },
+        {
+          "number": 106,
+          "title": "Cheetah on a Termite Mound",
+          "theme": "wildlife"
+        },
+        {
+          "number": 107,
+          "title": "Pearl Diver beside a Reef",
+          "theme": "people"
+        },
+        {
+          "number": 108,
+          "title": "Basalt Sea Arch in Surf",
+          "theme": "places"
+        },
+        {
+          "number": 109,
+          "title": "Snowmobile across a Frozen River",
+          "theme": "journeys"
+        },
+        {
+          "number": 110,
+          "title": "Giant's Teacup in a Fern Valley",
+          "theme": "fantasy"
+        },
+        {
+          "number": 111,
+          "title": "Walrus on Pink Sea Ice",
+          "theme": "wildlife"
+        },
+        {
+          "number": 112,
+          "title": "Falconer on Desert Battlements",
+          "theme": "people"
+        },
+        {
+          "number": 113,
+          "title": "Rose Courtyard with Mosaic Fountain",
+          "theme": "places"
+        },
+        {
+          "number": 114,
+          "title": "Cable Car above Autumn Vineyards",
+          "theme": "journeys"
+        },
+        {
+          "number": 115,
+          "title": "Treehouse on a Walking Tortoise",
+          "theme": "fantasy"
+        },
+        {
+          "number": 116,
+          "title": "Badger beside an Old Stone Wall",
+          "theme": "wildlife"
+        },
+        {
+          "number": 117,
+          "title": "Baker beside a Round Bread Oven",
+          "theme": "people"
+        },
+        {
+          "number": 118,
+          "title": "Turquoise Salt Pools",
+          "theme": "places"
+        },
+        {
+          "number": 119,
+          "title": "Bicycle beside a Flower Canal",
+          "theme": "journeys"
+        },
+        {
+          "number": 120,
+          "title": "Paper Crane Constellation",
+          "theme": "fantasy"
+        },
+        {
+          "number": 121,
+          "title": "Humpback Whale under Silver Waves",
+          "theme": "wildlife"
+        },
+        {
+          "number": 122,
+          "title": "Carpet Weaver in an Indigo Workshop",
+          "theme": "people"
+        },
+        {
+          "number": 123,
+          "title": "Copper Roofs after Rain",
+          "theme": "places"
+        },
+        {
+          "number": 124,
+          "title": "Sled Dogs Crossing a Snow Bridge",
+          "theme": "journeys"
+        },
+        {
+          "number": 125,
+          "title": "Lantern Jellyfish in a Moonlit Cove",
+          "theme": "fantasy"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE production atlas for an existing illustrated sand puzzle game. Generate EXACTLY 25 different full-bleed SQUARE paintings in a precise 5 columns by 5 rows grid. Square canvas, ideally 2500x2500 pixels or larger. No margins, gutters, borders, lettering, captions, digits or watermarks; tiles touch on exact straight grid boundaries. Every cell is a separate complete composition; no objects cross tile boundaries. Reference image is STYLE REFERENCE ONLY; create entirely NEW scenes, do not reuse its subjects. Style: sophisticated hand-drawn cel illustration, strong dark contours and large readable color masses, rich but coherent 8-12 main colors per tile, atmospheric foreground/middle/background depth, mature all-ages adventure art. NO pixel art, no chibi, no isolated icons, no blank/white/flat backgrounds. Full environment fills every square. Compose for readability at 64x64 sand cells: large recognizable subject, broad shapes, very little microtexture. Vary viewpoints, silhouettes, light, palettes and horizon positions across neighboring cells. Follow the 25 different subjects in exact row-major order:\n1. Red Fox in Blueberry Heath\n2. Glassblower at a Crimson Furnace\n3. Terraced Rice Fields at Dawn\n4. Yellow Tram on a Rainy Street\n5. Clockwork Whale above Rooftops\n6. Cheetah on a Termite Mound\n7. Pearl Diver beside a Reef\n8. Basalt Sea Arch in Surf\n9. Snowmobile across a Frozen River\n10. Giant's Teacup in a Fern Valley\n11. Walrus on Pink Sea Ice\n12. Falconer on Desert Battlements\n13. Rose Courtyard with Mosaic Fountain\n14. Cable Car above Autumn Vineyards\n15. Treehouse on a Walking Tortoise\n16. Badger beside an Old Stone Wall\n17. Baker beside a Round Bread Oven\n18. Turquoise Salt Pools\n19. Bicycle beside a Flower Canal\n20. Paper Crane Constellation\n21. Humpback Whale under Silver Waves\n22. Carpet Weaver in an Indigo Workshop\n23. Copper Roofs after Rain\n24. Sled Dogs Crossing a Snow Bridge\n25. Lantern Jellyfish in a Moonlit Cove"
+    },
+    {
+      "name": "Expansion_02",
+      "scenes": [
+        {
+          "number": 126,
+          "title": "Ring Tailed Lemur on Baobab",
+          "theme": "wildlife"
+        },
+        {
+          "number": 127,
+          "title": "Violin Maker in a Sunlit Attic",
+          "theme": "people"
+        },
+        {
+          "number": 128,
+          "title": "Red Canyon with a Narrow River",
+          "theme": "places"
+        },
+        {
+          "number": 129,
+          "title": "Green Bus on a Serpentine Coast",
+          "theme": "journeys"
+        },
+        {
+          "number": 130,
+          "title": "Library Growing inside a Giant Shell",
+          "theme": "fantasy"
+        },
+        {
+          "number": 131,
+          "title": "Wombat among Golden Grasses",
+          "theme": "wildlife"
+        },
+        {
+          "number": 132,
+          "title": "Mountain Rescuer with an Orange Rope",
+          "theme": "people"
+        },
+        {
+          "number": 133,
+          "title": "Rainforest Suspension Bridge",
+          "theme": "places"
+        },
+        {
+          "number": 134,
+          "title": "Canoe among Water Lilies",
+          "theme": "journeys"
+        },
+        {
+          "number": 135,
+          "title": "Mountain Carved like a Sleeping Lion",
+          "theme": "fantasy"
+        },
+        {
+          "number": 136,
+          "title": "Mandrill under Tropical Leaves",
+          "theme": "wildlife"
+        },
+        {
+          "number": 137,
+          "title": "Mask Carver in a Cedar Workshop",
+          "theme": "people"
+        },
+        {
+          "number": 138,
+          "title": "Lavender Salt Cave",
+          "theme": "places"
+        },
+        {
+          "number": 139,
+          "title": "Solar Rover on Red Dunes",
+          "theme": "journeys"
+        },
+        {
+          "number": 140,
+          "title": "Cloud Manta Ray over a City",
+          "theme": "fantasy"
+        },
+        {
+          "number": 141,
+          "title": "Bison in Snowy Grassland",
+          "theme": "wildlife"
+        },
+        {
+          "number": 142,
+          "title": "Festival Drummer beneath Bunting",
+          "theme": "people"
+        },
+        {
+          "number": 143,
+          "title": "Blue Mosque Courtyard at Dusk",
+          "theme": "places"
+        },
+        {
+          "number": 144,
+          "title": "White Yacht in a Black Rock Cove",
+          "theme": "journeys"
+        },
+        {
+          "number": 145,
+          "title": "Garden of Crystal Bells",
+          "theme": "fantasy"
+        },
+        {
+          "number": 146,
+          "title": "Fennec Fox beside a Desert Flower",
+          "theme": "wildlife"
+        },
+        {
+          "number": 147,
+          "title": "Pearl Crowned Opera Singer",
+          "theme": "people"
+        },
+        {
+          "number": 148,
+          "title": "Scarlet Poplar Road",
+          "theme": "places"
+        },
+        {
+          "number": 149,
+          "title": "Motorcycle beside Desert Petroglyphs",
+          "theme": "journeys"
+        },
+        {
+          "number": 150,
+          "title": "Silver Rabbit on a Crescent Bridge",
+          "theme": "fantasy"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE production atlas for an existing illustrated sand puzzle game. Generate EXACTLY 25 different full-bleed SQUARE paintings in a precise 5 columns by 5 rows grid. Square canvas, ideally 2500x2500 pixels or larger. No margins, gutters, borders, lettering, captions, digits or watermarks; tiles touch on exact straight grid boundaries. Every cell is a separate complete composition; no objects cross tile boundaries. Reference image is STYLE REFERENCE ONLY; create entirely NEW scenes, do not reuse its subjects. Style: sophisticated hand-drawn cel illustration, strong dark contours and large readable color masses, rich but coherent 8-12 main colors per tile, atmospheric foreground/middle/background depth, mature all-ages adventure art. NO pixel art, no chibi, no isolated icons, no blank/white/flat backgrounds. Full environment fills every square. Compose for readability at 64x64 sand cells: large recognizable subject, broad shapes, very little microtexture. Vary viewpoints, silhouettes, light, palettes and horizon positions across neighboring cells. Follow the 25 different subjects in exact row-major order:\n1. Ring Tailed Lemur on Baobab\n2. Violin Maker in a Sunlit Attic\n3. Red Canyon with a Narrow River\n4. Green Bus on a Serpentine Coast\n5. Library Growing inside a Giant Shell\n6. Wombat among Golden Grasses\n7. Mountain Rescuer with an Orange Rope\n8. Rainforest Suspension Bridge\n9. Canoe among Water Lilies\n10. Mountain Carved like a Sleeping Lion\n11. Mandrill under Tropical Leaves\n12. Mask Carver in a Cedar Workshop\n13. Lavender Salt Cave\n14. Solar Rover on Red Dunes\n15. Cloud Manta Ray over a City\n16. Bison in Snowy Grassland\n17. Festival Drummer beneath Bunting\n18. Blue Mosque Courtyard at Dusk\n19. White Yacht in a Black Rock Cove\n20. Garden of Crystal Bells\n21. Fennec Fox beside a Desert Flower\n22. Pearl Crowned Opera Singer\n23. Scarlet Poplar Road\n24. Motorcycle beside Desert Petroglyphs\n25. Silver Rabbit on a Crescent Bridge"
+    },
+    {
+      "name": "Expansion_03",
+      "scenes": [
+        {
+          "number": 151,
+          "title": "Capybara in Orange Marsh Reeds",
+          "theme": "wildlife"
+        },
+        {
+          "number": 152,
+          "title": "Botanist with a Leaf Press",
+          "theme": "people"
+        },
+        {
+          "number": 153,
+          "title": "Sunken Marble Stairway",
+          "theme": "places"
+        },
+        {
+          "number": 154,
+          "title": "Red Kayak below an Ice Wall",
+          "theme": "journeys"
+        },
+        {
+          "number": 155,
+          "title": "Giant Koi Swimming through Clouds",
+          "theme": "fantasy"
+        },
+        {
+          "number": 156,
+          "title": "Arctic Hare in Heather",
+          "theme": "wildlife"
+        },
+        {
+          "number": 157,
+          "title": "Falcon Masked Dancer",
+          "theme": "people"
+        },
+        {
+          "number": 158,
+          "title": "White Chalk Cliffs and Turquoise Sea",
+          "theme": "places"
+        },
+        {
+          "number": 159,
+          "title": "Funicular between Hilltop Houses",
+          "theme": "journeys"
+        },
+        {
+          "number": 160,
+          "title": "Moss Golem Planting a Flower",
+          "theme": "fantasy"
+        },
+        {
+          "number": 161,
+          "title": "Okapi in Emerald Underbrush",
+          "theme": "wildlife"
+        },
+        {
+          "number": 162,
+          "title": "Clock Repairer with Magnifying Glass",
+          "theme": "people"
+        },
+        {
+          "number": 163,
+          "title": "Circular Stone Labyrinth",
+          "theme": "places"
+        },
+        {
+          "number": 164,
+          "title": "Wooden Fishing Skiff at Sunrise",
+          "theme": "journeys"
+        },
+        {
+          "number": 165,
+          "title": "Doorway Suspended in a Waterfall",
+          "theme": "fantasy"
+        },
+        {
+          "number": 166,
+          "title": "Armadillo on Flowered Red Earth",
+          "theme": "wildlife"
+        },
+        {
+          "number": 167,
+          "title": "Geologist Holding Amethyst",
+          "theme": "people"
+        },
+        {
+          "number": 168,
+          "title": "Pink Sand Beach and Black Palms",
+          "theme": "places"
+        },
+        {
+          "number": 169,
+          "title": "Silver Rocket on a Moon Launchpad",
+          "theme": "journeys"
+        },
+        {
+          "number": 170,
+          "title": "Golden Snail Carrying a Garden",
+          "theme": "fantasy"
+        },
+        {
+          "number": 171,
+          "title": "Pangolin on a Jungle Log",
+          "theme": "wildlife"
+        },
+        {
+          "number": 172,
+          "title": "Candle Maker with Wax Lanterns",
+          "theme": "people"
+        },
+        {
+          "number": 173,
+          "title": "Geothermal Pools under Snow",
+          "theme": "places"
+        },
+        {
+          "number": 174,
+          "title": "Vintage Racing Car in a Pine Bend",
+          "theme": "journeys"
+        },
+        {
+          "number": 175,
+          "title": "Origami City on a Lotus Leaf",
+          "theme": "fantasy"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE production atlas for an existing illustrated sand puzzle game. Generate EXACTLY 25 different full-bleed SQUARE paintings in a precise 5 columns by 5 rows grid. Square canvas, ideally 2500x2500 pixels or larger. No margins, gutters, borders, lettering, captions, digits or watermarks; tiles touch on exact straight grid boundaries. Every cell is a separate complete composition; no objects cross tile boundaries. Reference image is STYLE REFERENCE ONLY; create entirely NEW scenes, do not reuse its subjects. Style: sophisticated hand-drawn cel illustration, strong dark contours and large readable color masses, rich but coherent 8-12 main colors per tile, atmospheric foreground/middle/background depth, mature all-ages adventure art. NO pixel art, no chibi, no isolated icons, no blank/white/flat backgrounds. Full environment fills every square. Compose for readability at 64x64 sand cells: large recognizable subject, broad shapes, very little microtexture. Vary viewpoints, silhouettes, light, palettes and horizon positions across neighboring cells. Follow the 25 different subjects in exact row-major order:\n1. Capybara in Orange Marsh Reeds\n2. Botanist with a Leaf Press\n3. Sunken Marble Stairway\n4. Red Kayak below an Ice Wall\n5. Giant Koi Swimming through Clouds\n6. Arctic Hare in Heather\n7. Falcon Masked Dancer\n8. White Chalk Cliffs and Turquoise Sea\n9. Funicular between Hilltop Houses\n10. Moss Golem Planting a Flower\n11. Okapi in Emerald Underbrush\n12. Clock Repairer with Magnifying Glass\n13. Circular Stone Labyrinth\n14. Wooden Fishing Skiff at Sunrise\n15. Doorway Suspended in a Waterfall\n16. Armadillo on Flowered Red Earth\n17. Geologist Holding Amethyst\n18. Pink Sand Beach and Black Palms\n19. Silver Rocket on a Moon Launchpad\n20. Golden Snail Carrying a Garden\n21. Pangolin on a Jungle Log\n22. Candle Maker with Wax Lanterns\n23. Geothermal Pools under Snow\n24. Vintage Racing Car in a Pine Bend\n25. Origami City on a Lotus Leaf"
+    },
+    {
+      "name": "Expansion_04",
+      "scenes": [
+        {
+          "number": 176,
+          "title": "Red Squirrel beside Fly Agarics",
+          "theme": "wildlife"
+        },
+        {
+          "number": 177,
+          "title": "Tea Harvester on Misty Slopes",
+          "theme": "people"
+        },
+        {
+          "number": 178,
+          "title": "Blue Ice Tunnel",
+          "theme": "places"
+        },
+        {
+          "number": 179,
+          "title": "Dog Cart on a Cobbled Lane",
+          "theme": "journeys"
+        },
+        {
+          "number": 180,
+          "title": "Stained Glass Tiger in a Ruined Chapel",
+          "theme": "fantasy"
+        },
+        {
+          "number": 181,
+          "title": "Manta Ray over White Sand",
+          "theme": "wildlife"
+        },
+        {
+          "number": 182,
+          "title": "Mountain Shepherd with Wooden Flute",
+          "theme": "people"
+        },
+        {
+          "number": 183,
+          "title": "Hanging Gardens in a Quarry",
+          "theme": "places"
+        },
+        {
+          "number": 184,
+          "title": "Orange Helicopter above a Fjord",
+          "theme": "journeys"
+        },
+        {
+          "number": 185,
+          "title": "Night Circus on Floating Stones",
+          "theme": "fantasy"
+        },
+        {
+          "number": 186,
+          "title": "Wild Boar among Autumn Acorns",
+          "theme": "wildlife"
+        },
+        {
+          "number": 187,
+          "title": "Astronaut in a Lunar Greenhouse",
+          "theme": "people"
+        },
+        {
+          "number": 188,
+          "title": "Green Canyon with Ribbon Waterfall",
+          "theme": "places"
+        },
+        {
+          "number": 189,
+          "title": "Bronze Diving Bell under the Sea",
+          "theme": "journeys"
+        },
+        {
+          "number": 190,
+          "title": "Singing Stones in a Lavender Desert",
+          "theme": "fantasy"
+        },
+        {
+          "number": 191,
+          "title": "Chameleon on a Passionflower Vine",
+          "theme": "wildlife"
+        },
+        {
+          "number": 192,
+          "title": "Bookbinder Stitching a Red Cover",
+          "theme": "people"
+        },
+        {
+          "number": 193,
+          "title": "Snow Covered Torii by the Sea",
+          "theme": "places"
+        },
+        {
+          "number": 194,
+          "title": "Electric Train through Cherry Blossoms",
+          "theme": "journeys"
+        },
+        {
+          "number": 195,
+          "title": "Tiny Village inside a Pocket Watch",
+          "theme": "fantasy"
+        },
+        {
+          "number": 196,
+          "title": "Giraffe at an Acacia Waterhole",
+          "theme": "wildlife"
+        },
+        {
+          "number": 197,
+          "title": "Cartographer Drawing an Island",
+          "theme": "people"
+        },
+        {
+          "number": 198,
+          "title": "Volcanic Black Beach at Sunrise",
+          "theme": "places"
+        },
+        {
+          "number": 199,
+          "title": "River Ferry between Yellow Cliffs",
+          "theme": "journeys"
+        },
+        {
+          "number": 200,
+          "title": "Sleeping Moon in a Forest Nest",
+          "theme": "fantasy"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE production atlas for an existing illustrated sand puzzle game. Generate EXACTLY 25 different full-bleed SQUARE paintings in a precise 5 columns by 5 rows grid. Square canvas, ideally 2500x2500 pixels or larger. No margins, gutters, borders, lettering, captions, digits or watermarks; tiles touch on exact straight grid boundaries. Every cell is a separate complete composition; no objects cross tile boundaries. Reference image is STYLE REFERENCE ONLY; create entirely NEW scenes, do not reuse its subjects. Style: sophisticated hand-drawn cel illustration, strong dark contours and large readable color masses, rich but coherent 8-12 main colors per tile, atmospheric foreground/middle/background depth, mature all-ages adventure art. NO pixel art, no chibi, no isolated icons, no blank/white/flat backgrounds. Full environment fills every square. Compose for readability at 64x64 sand cells: large recognizable subject, broad shapes, very little microtexture. Vary viewpoints, silhouettes, light, palettes and horizon positions across neighboring cells. Follow the 25 different subjects in exact row-major order:\n1. Red Squirrel beside Fly Agarics\n2. Tea Harvester on Misty Slopes\n3. Blue Ice Tunnel\n4. Dog Cart on a Cobbled Lane\n5. Stained Glass Tiger in a Ruined Chapel\n6. Manta Ray over White Sand\n7. Mountain Shepherd with Wooden Flute\n8. Hanging Gardens in a Quarry\n9. Orange Helicopter above a Fjord\n10. Night Circus on Floating Stones\n11. Wild Boar among Autumn Acorns\n12. Astronaut in a Lunar Greenhouse\n13. Green Canyon with Ribbon Waterfall\n14. Bronze Diving Bell under the Sea\n15. Singing Stones in a Lavender Desert\n16. Chameleon on a Passionflower Vine\n17. Bookbinder Stitching a Red Cover\n18. Snow Covered Torii by the Sea\n19. Electric Train through Cherry Blossoms\n20. Tiny Village inside a Pocket Watch\n21. Giraffe at an Acacia Waterhole\n22. Cartographer Drawing an Island\n23. Volcanic Black Beach at Sunrise\n24. River Ferry between Yellow Cliffs\n25. Sleeping Moon in a Forest Nest"
+    },
+    {
+      "name": "Expansion_05",
+      "scenes": [
+        {
+          "number": 201,
+          "title": "Anteater in a Blue Grass Savanna",
+          "theme": "wildlife"
+        },
+        {
+          "number": 202,
+          "title": "Spice Seller beside Saffron Baskets",
+          "theme": "people"
+        },
+        {
+          "number": 203,
+          "title": "Cobalt Cathedral Interior",
+          "theme": "places"
+        },
+        {
+          "number": 204,
+          "title": "Wooden Biplane over Tulip Fields",
+          "theme": "journeys"
+        },
+        {
+          "number": 205,
+          "title": "Porcelain Elephant in a Tea Garden",
+          "theme": "fantasy"
+        },
+        {
+          "number": 206,
+          "title": "Iguana on a Sunlit Mayan Stone",
+          "theme": "wildlife"
+        },
+        {
+          "number": 207,
+          "title": "Female Blacksmith Holding a Silver Sword",
+          "theme": "people"
+        },
+        {
+          "number": 208,
+          "title": "Aqueduct over a Red Valley",
+          "theme": "places"
+        },
+        {
+          "number": 209,
+          "title": "Icebreaker in Golden Polar Light",
+          "theme": "journeys"
+        },
+        {
+          "number": 210,
+          "title": "Fox Shaped Island under Stars",
+          "theme": "fantasy"
+        },
+        {
+          "number": 211,
+          "title": "Manatee among Mangrove Roots",
+          "theme": "wildlife"
+        },
+        {
+          "number": 212,
+          "title": "Puppeteer with a Painted Marionette",
+          "theme": "people"
+        },
+        {
+          "number": 213,
+          "title": "Frosted Glasshouse at Sunrise",
+          "theme": "places"
+        },
+        {
+          "number": 214,
+          "title": "Postal Scooter beside Lemon Trees",
+          "theme": "journeys"
+        },
+        {
+          "number": 215,
+          "title": "Rainbow Staircase in a Storm Cloud",
+          "theme": "fantasy"
+        },
+        {
+          "number": 216,
+          "title": "Mountain Goat on a Slate Ridge",
+          "theme": "wildlife"
+        },
+        {
+          "number": 217,
+          "title": "Leatherworker Making a Travel Bag",
+          "theme": "people"
+        },
+        {
+          "number": 218,
+          "title": "Tropical Cenote with Hanging Roots",
+          "theme": "places"
+        },
+        {
+          "number": 219,
+          "title": "Desert Sail Wagon under Purple Sky",
+          "theme": "journeys"
+        },
+        {
+          "number": 220,
+          "title": "Copper Beetle carrying a Lighthouse",
+          "theme": "fantasy"
+        },
+        {
+          "number": 221,
+          "title": "Tapir in a Moonlit Stream",
+          "theme": "wildlife"
+        },
+        {
+          "number": 222,
+          "title": "Chess Master in a Walled Garden",
+          "theme": "people"
+        },
+        {
+          "number": 223,
+          "title": "Terracotta Courtyard after Rain",
+          "theme": "places"
+        },
+        {
+          "number": 224,
+          "title": "Rescue Boat beside a Fog Bell",
+          "theme": "journeys"
+        },
+        {
+          "number": 225,
+          "title": "Planetarium inside a Giant Acorn",
+          "theme": "fantasy"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE production atlas for an existing illustrated sand puzzle game. Generate EXACTLY 25 different full-bleed SQUARE paintings in a precise 5 columns by 5 rows grid. Square canvas, ideally 2500x2500 pixels or larger. No margins, gutters, borders, lettering, captions, digits or watermarks; tiles touch on exact straight grid boundaries. Every cell is a separate complete composition; no objects cross tile boundaries. Reference image is STYLE REFERENCE ONLY; create entirely NEW scenes, do not reuse its subjects. Style: sophisticated hand-drawn cel illustration, strong dark contours and large readable color masses, rich but coherent 8-12 main colors per tile, atmospheric foreground/middle/background depth, mature all-ages adventure art. NO pixel art, no chibi, no isolated icons, no blank/white/flat backgrounds. Full environment fills every square. Compose for readability at 64x64 sand cells: large recognizable subject, broad shapes, very little microtexture. Vary viewpoints, silhouettes, light, palettes and horizon positions across neighboring cells. Follow the 25 different subjects in exact row-major order:\n1. Anteater in a Blue Grass Savanna\n2. Spice Seller beside Saffron Baskets\n3. Cobalt Cathedral Interior\n4. Wooden Biplane over Tulip Fields\n5. Porcelain Elephant in a Tea Garden\n6. Iguana on a Sunlit Mayan Stone\n7. Female Blacksmith Holding a Silver Sword\n8. Aqueduct over a Red Valley\n9. Icebreaker in Golden Polar Light\n10. Fox Shaped Island under Stars\n11. Manatee among Mangrove Roots\n12. Puppeteer with a Painted Marionette\n13. Frosted Glasshouse at Sunrise\n14. Postal Scooter beside Lemon Trees\n15. Rainbow Staircase in a Storm Cloud\n16. Mountain Goat on a Slate Ridge\n17. Leatherworker Making a Travel Bag\n18. Tropical Cenote with Hanging Roots\n19. Desert Sail Wagon under Purple Sky\n20. Copper Beetle carrying a Lighthouse\n21. Tapir in a Moonlit Stream\n22. Chess Master in a Walled Garden\n23. Terracotta Courtyard after Rain\n24. Rescue Boat beside a Fog Bell\n25. Planetarium inside a Giant Acorn"
+    },
+    {
+      "name": "Expansion_06",
+      "scenes": [
+        {
+          "number": 226,
+          "title": "Honey Badger beside Desert Rocks",
+          "theme": "wildlife"
+        },
+        {
+          "number": 227,
+          "title": "Ceramic Tile Painter in a Blue Studio",
+          "theme": "people"
+        },
+        {
+          "number": 228,
+          "title": "Redwoods around a Small Lake",
+          "theme": "places"
+        },
+        {
+          "number": 229,
+          "title": "Yellow Submarine among Sea Fans",
+          "theme": "journeys"
+        },
+        {
+          "number": 230,
+          "title": "Origami Dragon over a Bamboo Bridge",
+          "theme": "fantasy"
+        },
+        {
+          "number": 231,
+          "title": "Kangaroo in Purple Outback Flowers",
+          "theme": "wildlife"
+        },
+        {
+          "number": 232,
+          "title": "Circus Acrobat on a Silk Ribbon",
+          "theme": "people"
+        },
+        {
+          "number": 233,
+          "title": "Monastery Carved into a Cliff",
+          "theme": "places"
+        },
+        {
+          "number": 234,
+          "title": "Amphibious Truck Crossing a Jungle Ford",
+          "theme": "journeys"
+        },
+        {
+          "number": 235,
+          "title": "Crystal Frog on a Glowing Lily",
+          "theme": "fantasy"
+        },
+        {
+          "number": 236,
+          "title": "Dugong beneath Sea Grass",
+          "theme": "wildlife"
+        },
+        {
+          "number": 237,
+          "title": "Young Violinist in a Train Station",
+          "theme": "people"
+        },
+        {
+          "number": 238,
+          "title": "White Desert Mushroom Rocks",
+          "theme": "places"
+        },
+        {
+          "number": 239,
+          "title": "Sailing Catamaran at a Tropical Sunset",
+          "theme": "journeys"
+        },
+        {
+          "number": 240,
+          "title": "Castle inside an Hourglass",
+          "theme": "fantasy"
+        },
+        {
+          "number": 241,
+          "title": "Saiga Antelope on a Golden Steppe",
+          "theme": "wildlife"
+        },
+        {
+          "number": 242,
+          "title": "Basket Maker beside Willow Reeds",
+          "theme": "people"
+        },
+        {
+          "number": 243,
+          "title": "Coastal Cave with Emerald Reflections",
+          "theme": "places"
+        },
+        {
+          "number": 244,
+          "title": "Steam Tractor at a Harvest Fair",
+          "theme": "journeys"
+        },
+        {
+          "number": 245,
+          "title": "Giant Feather Boat on a Starry River",
+          "theme": "fantasy"
+        },
+        {
+          "number": 246,
+          "title": "Serval in Wetland Papyrus",
+          "theme": "wildlife"
+        },
+        {
+          "number": 247,
+          "title": "Female Miner with a Brass Headlamp",
+          "theme": "people"
+        },
+        {
+          "number": 248,
+          "title": "Terraced City in a Meteor Crater",
+          "theme": "places"
+        },
+        {
+          "number": 249,
+          "title": "Monorail between Glass Towers",
+          "theme": "journeys"
+        },
+        {
+          "number": 250,
+          "title": "Moonlit Stone Owl Guarding a Gate",
+          "theme": "fantasy"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE production atlas for an existing illustrated sand puzzle game. Generate EXACTLY 25 different full-bleed SQUARE paintings in a precise 5 columns by 5 rows grid. Square canvas, ideally 2500x2500 pixels or larger. No margins, gutters, borders, lettering, captions, digits or watermarks; tiles touch on exact straight grid boundaries. Every cell is a separate complete composition; no objects cross tile boundaries. Reference image is STYLE REFERENCE ONLY; create entirely NEW scenes, do not reuse its subjects. Style: sophisticated hand-drawn cel illustration, strong dark contours and large readable color masses, rich but coherent 8-12 main colors per tile, atmospheric foreground/middle/background depth, mature all-ages adventure art. NO pixel art, no chibi, no isolated icons, no blank/white/flat backgrounds. Full environment fills every square. Compose for readability at 64x64 sand cells: large recognizable subject, broad shapes, very little microtexture. Vary viewpoints, silhouettes, light, palettes and horizon positions across neighboring cells. Follow the 25 different subjects in exact row-major order:\n1. Honey Badger beside Desert Rocks\n2. Ceramic Tile Painter in a Blue Studio\n3. Redwoods around a Small Lake\n4. Yellow Submarine among Sea Fans\n5. Origami Dragon over a Bamboo Bridge\n6. Kangaroo in Purple Outback Flowers\n7. Circus Acrobat on a Silk Ribbon\n8. Monastery Carved into a Cliff\n9. Amphibious Truck Crossing a Jungle Ford\n10. Crystal Frog on a Glowing Lily\n11. Dugong beneath Sea Grass\n12. Young Violinist in a Train Station\n13. White Desert Mushroom Rocks\n14. Sailing Catamaran at a Tropical Sunset\n15. Castle inside an Hourglass\n16. Saiga Antelope on a Golden Steppe\n17. Basket Maker beside Willow Reeds\n18. Coastal Cave with Emerald Reflections\n19. Steam Tractor at a Harvest Fair\n20. Giant Feather Boat on a Starry River\n21. Serval in Wetland Papyrus\n22. Female Miner with a Brass Headlamp\n23. Terraced City in a Meteor Crater\n24. Monorail between Glass Towers\n25. Moonlit Stone Owl Guarding a Gate"
+    },
+    {
+      "name": "Expansion_07",
+      "scenes": [
+        {
+          "number": 251,
+          "title": "Pronghorn under Painted Desert Mesas",
+          "theme": "wildlife"
+        },
+        {
+          "number": 252,
+          "title": "Perfumer with Amber Glass Bottles",
+          "theme": "people"
+        },
+        {
+          "number": 253,
+          "title": "Ancient Stone Theatre by the Sea",
+          "theme": "places"
+        },
+        {
+          "number": 254,
+          "title": "Horse Tram through a Winter Market",
+          "theme": "journeys"
+        },
+        {
+          "number": 255,
+          "title": "Jade Serpent around a Sun Temple",
+          "theme": "fantasy"
+        },
+        {
+          "number": 256,
+          "title": "Quokka among Coastal Wildflowers",
+          "theme": "wildlife"
+        },
+        {
+          "number": 257,
+          "title": "Mountain Guide with Red Backpack",
+          "theme": "people"
+        },
+        {
+          "number": 258,
+          "title": "Sunlit Cactus Conservatory",
+          "theme": "places"
+        },
+        {
+          "number": 259,
+          "title": "Hang Glider above a Green Gorge",
+          "theme": "journeys"
+        },
+        {
+          "number": 260,
+          "title": "Teapot Airship above Tea Terraces",
+          "theme": "fantasy"
+        },
+        {
+          "number": 261,
+          "title": "Dhole by a Jungle Waterhole",
+          "theme": "wildlife"
+        },
+        {
+          "number": 262,
+          "title": "Female Knight Polishing a Shield",
+          "theme": "people"
+        },
+        {
+          "number": 263,
+          "title": "Glowing Lava Tube at Twilight",
+          "theme": "places"
+        },
+        {
+          "number": 264,
+          "title": "Tiny Tugboat beside Ocean Liners",
+          "theme": "journeys"
+        },
+        {
+          "number": 265,
+          "title": "Glass Deer in an Autumn Orchard",
+          "theme": "fantasy"
+        },
+        {
+          "number": 266,
+          "title": "Narwhal below a Broken Ice Floe",
+          "theme": "wildlife"
+        },
+        {
+          "number": 267,
+          "title": "Instrument Maker with a Brass Horn",
+          "theme": "people"
+        },
+        {
+          "number": 268,
+          "title": "Desert Fort under a Milky Way",
+          "theme": "places"
+        },
+        {
+          "number": 269,
+          "title": "Retro Camper beside a Mountain Stream",
+          "theme": "journeys"
+        },
+        {
+          "number": 270,
+          "title": "Mushroom Village on a Giant Boot",
+          "theme": "fantasy"
+        },
+        {
+          "number": 271,
+          "title": "Pika on a Mossy Boulder",
+          "theme": "wildlife"
+        },
+        {
+          "number": 272,
+          "title": "Silversmith Making a Moon Brooch",
+          "theme": "people"
+        },
+        {
+          "number": 273,
+          "title": "Orange Canyon Slot at Noon",
+          "theme": "places"
+        },
+        {
+          "number": 274,
+          "title": "Wooden Toboggan on a Pine Trail",
+          "theme": "journeys"
+        },
+        {
+          "number": 275,
+          "title": "Water Spirit Braiding a River",
+          "theme": "fantasy"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE production atlas for an existing illustrated sand puzzle game. Generate EXACTLY 25 different full-bleed SQUARE paintings in a precise 5 columns by 5 rows grid. Square canvas, ideally 2500x2500 pixels or larger. No margins, gutters, borders, lettering, captions, digits or watermarks; tiles touch on exact straight grid boundaries. Every cell is a separate complete composition; no objects cross tile boundaries. Reference image is STYLE REFERENCE ONLY; create entirely NEW scenes, do not reuse its subjects. Style: sophisticated hand-drawn cel illustration, strong dark contours and large readable color masses, rich but coherent 8-12 main colors per tile, atmospheric foreground/middle/background depth, mature all-ages adventure art. NO pixel art, no chibi, no isolated icons, no blank/white/flat backgrounds. Full environment fills every square. Compose for readability at 64x64 sand cells: large recognizable subject, broad shapes, very little microtexture. Vary viewpoints, silhouettes, light, palettes and horizon positions across neighboring cells. Follow the 25 different subjects in exact row-major order:\n1. Pronghorn under Painted Desert Mesas\n2. Perfumer with Amber Glass Bottles\n3. Ancient Stone Theatre by the Sea\n4. Horse Tram through a Winter Market\n5. Jade Serpent around a Sun Temple\n6. Quokka among Coastal Wildflowers\n7. Mountain Guide with Red Backpack\n8. Sunlit Cactus Conservatory\n9. Hang Glider above a Green Gorge\n10. Teapot Airship above Tea Terraces\n11. Dhole by a Jungle Waterhole\n12. Female Knight Polishing a Shield\n13. Glowing Lava Tube at Twilight\n14. Tiny Tugboat beside Ocean Liners\n15. Glass Deer in an Autumn Orchard\n16. Narwhal below a Broken Ice Floe\n17. Instrument Maker with a Brass Horn\n18. Desert Fort under a Milky Way\n19. Retro Camper beside a Mountain Stream\n20. Mushroom Village on a Giant Boot\n21. Pika on a Mossy Boulder\n22. Silversmith Making a Moon Brooch\n23. Orange Canyon Slot at Noon\n24. Wooden Toboggan on a Pine Trail\n25. Water Spirit Braiding a River"
+    },
+    {
+      "name": "Expansion_08",
+      "scenes": [
+        {
+          "number": 276,
+          "title": "Caracal in Sunlit Dry Grass",
+          "theme": "wildlife"
+        },
+        {
+          "number": 277,
+          "title": "Lace Maker beside a Gothic Window",
+          "theme": "people"
+        },
+        {
+          "number": 278,
+          "title": "Lakeside Sauna in Deep Winter",
+          "theme": "places"
+        },
+        {
+          "number": 279,
+          "title": "Rescue Hovercraft in a Reed Delta",
+          "theme": "journeys"
+        },
+        {
+          "number": 280,
+          "title": "Crystalline Stag Beetle under Ferns",
+          "theme": "fantasy"
+        },
+        {
+          "number": 281,
+          "title": "Cassowary among Rainforest Roots",
+          "theme": "wildlife"
+        },
+        {
+          "number": 282,
+          "title": "Kite Maker in a Festival Workshop",
+          "theme": "people"
+        },
+        {
+          "number": 283,
+          "title": "Blue Tiled Bathhouse with Sunbeams",
+          "theme": "places"
+        },
+        {
+          "number": 284,
+          "title": "Oxcart on a Terraced Mountain Path",
+          "theme": "journeys"
+        },
+        {
+          "number": 285,
+          "title": "Sunflower Giant beneath a Summer Sky",
+          "theme": "fantasy"
+        },
+        {
+          "number": 286,
+          "title": "Sea Otter with a Shell in Kelp",
+          "theme": "wildlife"
+        },
+        {
+          "number": 287,
+          "title": "Archaeologist at a Mosaic Dig",
+          "theme": "people"
+        },
+        {
+          "number": 288,
+          "title": "Pink Marble Quarry and Green Lake",
+          "theme": "places"
+        },
+        {
+          "number": 289,
+          "title": "Bamboo Raft through a Limestone Gorge",
+          "theme": "journeys"
+        },
+        {
+          "number": 290,
+          "title": "Clockwork Salamander in a Copper Garden",
+          "theme": "fantasy"
+        },
+        {
+          "number": 291,
+          "title": "Echidna beside a Flowering Banksia",
+          "theme": "wildlife"
+        },
+        {
+          "number": 292,
+          "title": "Harbor Pilot with a Brass Compass",
+          "theme": "people"
+        },
+        {
+          "number": 293,
+          "title": "Golden Dunes around a Crescent Lake",
+          "theme": "places"
+        },
+        {
+          "number": 294,
+          "title": "Ski Lift above a Snowy Village",
+          "theme": "journeys"
+        },
+        {
+          "number": 295,
+          "title": "Palace Carried by a Gentle Cloud Giant",
+          "theme": "fantasy"
+        },
+        {
+          "number": 296,
+          "title": "Wolverine beneath Aurora Pines",
+          "theme": "wildlife"
+        },
+        {
+          "number": 297,
+          "title": "Stargazing Child with a Paper Map",
+          "theme": "people"
+        },
+        {
+          "number": 298,
+          "title": "Fallen Temple among Banyan Roots",
+          "theme": "places"
+        },
+        {
+          "number": 299,
+          "title": "Wind Powered Land Yacht on Salt Flats",
+          "theme": "journeys"
+        },
+        {
+          "number": 300,
+          "title": "Celestial Garden inside an Open Book",
+          "theme": "fantasy"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE production atlas for an existing illustrated sand puzzle game. Generate EXACTLY 25 different full-bleed SQUARE paintings in a precise 5 columns by 5 rows grid. Square canvas, ideally 2500x2500 pixels or larger. No margins, gutters, borders, lettering, captions, digits or watermarks; tiles touch on exact straight grid boundaries. Every cell is a separate complete composition; no objects cross tile boundaries. Reference image is STYLE REFERENCE ONLY; create entirely NEW scenes, do not reuse its subjects. Style: sophisticated hand-drawn cel illustration, strong dark contours and large readable color masses, rich but coherent 8-12 main colors per tile, atmospheric foreground/middle/background depth, mature all-ages adventure art. NO pixel art, no chibi, no isolated icons, no blank/white/flat backgrounds. Full environment fills every square. Compose for readability at 64x64 sand cells: large recognizable subject, broad shapes, very little microtexture. Vary viewpoints, silhouettes, light, palettes and horizon positions across neighboring cells. Follow the 25 different subjects in exact row-major order:\n1. Caracal in Sunlit Dry Grass\n2. Lace Maker beside a Gothic Window\n3. Lakeside Sauna in Deep Winter\n4. Rescue Hovercraft in a Reed Delta\n5. Crystalline Stag Beetle under Ferns\n6. Cassowary among Rainforest Roots\n7. Kite Maker in a Festival Workshop\n8. Blue Tiled Bathhouse with Sunbeams\n9. Oxcart on a Terraced Mountain Path\n10. Sunflower Giant beneath a Summer Sky\n11. Sea Otter with a Shell in Kelp\n12. Archaeologist at a Mosaic Dig\n13. Pink Marble Quarry and Green Lake\n14. Bamboo Raft through a Limestone Gorge\n15. Clockwork Salamander in a Copper Garden\n16. Echidna beside a Flowering Banksia\n17. Harbor Pilot with a Brass Compass\n18. Golden Dunes around a Crescent Lake\n19. Ski Lift above a Snowy Village\n20. Palace Carried by a Gentle Cloud Giant\n21. Wolverine beneath Aurora Pines\n22. Stargazing Child with a Paper Map\n23. Fallen Temple among Banyan Roots\n24. Wind Powered Land Yacht on Salt Flats\n25. Celestial Garden inside an Open Book"
+    }
+  ]
+}

@@ -2,8 +2,8 @@ using UnityEngine;
 
 public static class SandGrainColorBaker
 {
-    // Временно отключено: шум зёрен песка. Поставить true, чтобы вернуть.
-    public const bool GrainNoiseEnabled = false;
+    // Baked once; the subtle texture travels with each simulated grain.
+    public const bool GrainNoiseEnabled = true;
 
     private const int NoiseTextureSize = 64;
     private const int NoiseRandomSeed = 92837111;
@@ -128,7 +128,7 @@ public static class SandGrainColorBaker
             return baseColor;
         }
 
-        int noise = Hash(x, y, sx, sy) % 21 - 10;
+        int noise = Hash(x, y, sx, sy) % 9 - 4;
         return new Color32(
             (byte)Mathf.Clamp(baseColor.r + noise, 0, 255),
             (byte)Mathf.Clamp(baseColor.g + noise, 0, 255),
@@ -159,13 +159,13 @@ public static class SandGrainColorBaker
     {
         unchecked
         {
-            int hash = 17;
-            hash = hash * 31 + x;
-            hash = hash * 31 + y;
-            hash = hash * 31 + sx;
-            hash = hash * 31 + sy;
-            hash = hash * 31 + 92837111;
-            return hash & int.MaxValue;
+            uint hash = (uint)(x * 73856093 ^ y * 19349663 ^ 92837111);
+            hash ^= hash >> 16;
+            hash *= 0x7feb352d;
+            hash ^= hash >> 15;
+            hash *= 0x846ca68b;
+            hash ^= hash >> 16;
+            return (int)(hash & int.MaxValue);
         }
     }
 }

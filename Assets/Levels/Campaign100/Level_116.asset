@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_116
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281968571
+  - serializedVersion: 2
+    rgba: 4285497225
+  - serializedVersion: 2
+    rgba: 4281237638
+  - serializedVersion: 2
+    rgba: 4282337353
+  - serializedVersion: 2
+    rgba: 4292267713
+  - serializedVersion: 2
+    rgba: 4278914830
+  - serializedVersion: 2
+    rgba: 4287604146
+  - serializedVersion: 2
+    rgba: 4283654243
+  - serializedVersion: 2
+    rgba: 4281087026
+  - serializedVersion: 2
+    rgba: 4279772195
+  - serializedVersion: 2
+    rgba: 4280442976
+  - serializedVersion: 2
+    rgba: 4279779647
+  encodedCells: S1:4:4096:FEB6BEA0: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: ff000000ffff000000fffffefeffffffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000203000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 12051154
+  displayTitle: Badger beside an Old Stone Wall
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 01d1acdfb787f8f49a369258fc50266b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

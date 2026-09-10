@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_259
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282465824
+  - serializedVersion: 2
+    rgba: 4291744723
+  - serializedVersion: 2
+    rgba: 4281423183
+  - serializedVersion: 2
+    rgba: 4286146367
+  - serializedVersion: 2
+    rgba: 4282745977
+  - serializedVersion: 2
+    rgba: 4284239662
+  - serializedVersion: 2
+    rgba: 4288643919
+  - serializedVersion: 2
+    rgba: 4279584710
+  - serializedVersion: 2
+    rgba: 4286490811
+  - serializedVersion: 2
+    rgba: 4292457333
+  - serializedVersion: 2
+    rgba: 4289304687
+  - serializedVersion: 2
+    rgba: 4280625948
+  encodedCells: S1:4:4096:8DDCA7D3:VZVBbxNHFMc/w+vGC7R7soQQcFpNxuB2Lxab3Yb0spo+S5F8GWwPMnCpMJ3izY2qWIhLtCTqCk4WtOr6VJqwapaLZTkkZT5U39ihpE+K7exv5r3/m/fm7bQ4Z9dWX5P6UX1if9Tr9WJyDp/9ri8BEftVvzY572JC/12r03b6sDYtin8CZoJ8ap9fs/tWvlb4C3p8b2zN5NPJpL5SYKOP9BXiQLz4eXy2ovpPxqTQZXWlfgf+IE9H4/GnFURXnt9qXZZX7sBVilk8+7Tg5qu8Tg90mWriabUGKxmf+PjkJHtc6BVPywsg0+v/X0BBruqRxbrUF6QapiRg8jmCteCqxbpKv1LqYaptCsWT8x7YkusSeo2HlS4t//CZPj85WeI0tpxUViNa8PSM0t/z8WMKrvV9tc4O323FYajLabGMPF7i8U45rCwH3me1R8NYV6/TpzefW/rkhD5+jYeluKFcH4DxxiH5evnhh2fnTiHWfea4HFGyRhcrfXxQVeWzM+9km3eVkr4jkn4bEn5ISVRkX9PWlYfvlOq7wB3odpXK96vU4kp/uwpPAlSDAVnSVZHa3EdRvSRMOT+5uSqUWgelfCSu1jMGeFhRRXWcjuJVgL5ylQKfOYL5icNF6yClgu/M3//+25IPIkUcgVMY4YB7ixLQH435Safa9tPFyO4H8JIa1GDQ2AzDsHpuzPtqeBT+QgJd11XHEjy0Kvv7xFt3DVn1ZxqGJHANpHLb6Pg1GUK+39y4VZZbM7O2s3MQkgPLpWqzms9kj04gZ7foAExVfdzaCpUigVLJBogakp+IONIpWtvSYU+paEyJt1xgTPCNKMrDnDXIQVpNdThUqqeOLypo9VwDvt+P1H6Wb6o8jQ+KUaxD1euRC9eNwjXwYMG5epHlLMoxDF+PrPuIFKhujxJQrMaR98Msz6P8m40wLHSsehFt590IpBsxBB/VoPlyP8qbfGMz1DE5qHXbKCO31VOBA4LjXp6TxM1w42BjGkfr7QQSR1KMds10fCF8XPK8/z1uTb8UNQfanNJWEVsIOl+eIKXfztoY4sPbDVQ+uACy1+Mm8AWrUQUzR2z7iHsvpusoXNe3zdNbE8Yw5LwGuMtwm6HYG44Yoi8bDnFqD2PmnQXDhNP+BNtZOb2n2nQpQEkXEuN5hvN5IIIObgvRFn9Ni55q+ImStjXmBsAItuBCoEB/b5tdLgpqe1eCtL0LxjMmwLlghlbsYSN6S9ia61o8s5zhrqAk53SVkoMp8agXqeVumHlqZliSsQU5YQtMDosj27RKrRbMjHtsMvC2jcFaRgIPi1EYkjblJks+U8q8Uk6TLTrSbyATNDV7ahjJhHNZm4Gh+s5VfgkuBTIRnLPsaBRHYejOHI6edSHlXOansslmgUAPhXhUhGEEwk+EN6MID2TW2j8N6AJ2BO3B+RviQxd87hHvkhbR3T1lOXc6sokU4w01YLgm/TndLHAs57unu/npAiBHEGKjPEr1hRY30EFDd9hj2MFscCqkm1MficvTo7Sy+ZMg8aAFhmOnk7G9ptzPBSbRWxpDKShSYLjoKqovD5ADP23lOe+/fHdQTavYpeLOjOHdY2NEEFBfiEtunrO/6YrTIFIgsZY4zDyg87e1ZRyjbvOSwFRXZXWd+iZAsQiIg0sF7ixQ5IPBIMBH9s1wm+QZzuYBHa8EEXC+MNgc5LUA8cYjHWuaW7MOKTMPjDmmNAPjZdngGAOOH2nUxu8UJAsnMEbOvBm9G6ljM8QZCwTvIA25H2ls0x5jj5gahCqDGeUQBJ254cTVXWodO4o86XlsYQLBmk1axA2ShFTH913HGDBmRgHeUU5ntprB9m1EZ5zSFNMX0vJf
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000ff00fe000000000000fe000000000000ff0000
+  conveyorDirections: 00000000000000000300000000000001000000000000000000
+  conveyorBucketCounts: 00000000000000000400000000000003000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 27027401
+  displayTitle: Hang Glider above a Green Gorge
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 21d5c66958cd5bb4ebaadd0bbe817eab,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

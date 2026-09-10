@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_169
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4291680996
+  - serializedVersion: 2
+    rgba: 4283047940
+  - serializedVersion: 2
+    rgba: 4279110155
+  - serializedVersion: 2
+    rgba: 4287129196
+  - serializedVersion: 2
+    rgba: 4282670484
+  - serializedVersion: 2
+    rgba: 4285414692
+  - serializedVersion: 2
+    rgba: 4286599232
+  - serializedVersion: 2
+    rgba: 4284624910
+  - serializedVersion: 2
+    rgba: 4281153620
+  - serializedVersion: 2
+    rgba: 4280950816
+  - serializedVersion: 2
+    rgba: 4284323548
+  - serializedVersion: 2
+    rgba: 4292522888
+  encodedCells: S1:4:4096:D0AB7D18:dZXPb9s2FMf/BgFBu86+VOscxT21tANY7WUNHc/ZLp2tBHFOTVta8HZp6oqLl0uERmCznaZqg6xdYiXOwvTSpUbh6mSkA9qCf9QeaTm/mj3AhMjP+773pWSJOf3SYIwZ+v+G6zIbMs4v5s+obU3TNi+rsKZGW8uqhM85nZblr4wk1853UPWpxEyIrBDaaPMSfl16nxJiJLLab+Dgxgn/Sg5oBvAHATwrRto5hzOp3h1z6JF9boxXf9Z1o7cNFwZw0Ct7Qstupnqmu1u34z3ohaX+vciON/CAjfXg2dyLoxnXoC/gvn0L3oGONG/CDbfLrXBGL1WuKy6UXGO2/kJ3QW24JkJoOe5UdoBfge2nN8h4YbjMNRhDHKFYv6f0H+T2JPeYCsCM933f0NcqmlwYjcA9GPCY8Xycwno8CHLuGtVk9pWRGNtXUhWy/9fuWlvp55W7SXkVLVQzdXaPXndhQr4YjeWMTepv81Js6Cm3yVV4/GflbPu2daADV/UZkXEWq/76pD8UuMhbfeTn/qkhP50T+xxmvW4c7vGFtP5ppP68Vhxzc1Buf8bTOhz5YbS10L5EDxkeAXtom83TzBlmn16QPI/BmnM1c0HPbI8Qm3j5GAWMLbR/TZcnN8dWWyWkwy2eZws4o7bmMeKd3AcVqr+NcUbWI54ciAe4mXIP+Q3PrmJNzU51Ez7Lfd8j1bp2is6G04rNXotgfJGnemqay8ljp1rW+g8vKBffUeAvETpq0eVy5u/znNL9PIXom6jq0B9QpulQVdXpqdobtNmR/EaIlpv0XTHzYF1Om8RJfqEOceBacfj7dzr0qHjnydwTmELd3yWDqFRhwAj5g++AR7eejpfpUsopLFQeFUooxFMNdGdnwutqbFO6TjHe5ahRXqjDO3ZrDo/5sH3CIaFooqhqoaIPXAH6Z1pnf72CcReZe8srlg+8hvFbSGkvpfX31zEGe8hKVqxhKSrOYfwS04m5NsXVlxhbqISSwWAYRKVauQwLHTrWY1yo1nGhG5rdYJC8TpJBzZK8SuvK542FAq7joFEsBlaSvM5kkiPLkhy/wfhNB+MfvWd1XLNKfjhIwkTTkqOV+wHGZVwAWxSMOo/nK9Ehb9SSIzTUXgfvhklglYG3FSfOzcVdfp9HCYo5BOI8jFZWrGdL8Iya5BFxHi8eomLcTeAN412Zwles6FnrrXz45BHthMNo784RP+wGh41BEn855Mnh1M2tRneVVuySyfd4bJq8Gx2A3Ar8msUPDnic78LHt2MemFWYlEqqtQq/Fh6UTMRLXRCgXVPa6s8anMwS0luycHP1D5LTV3umVMQmgi9LvsV1vjo7redyBlslZBU+yQ9zt3tQbRey8vCD48XVe3ovl9dVAs/LVd5vd8we53FIO7AdMr3mONRp9onelLtzKBfH4hO0WA7FT+KS+Lj/UXy6i/y/rsGBsyFPnUm8F/IUOH6FRFxA0cezoqw2EhtL/8rL48LxXWSatUBO+qcpG+2rcAiK7+cKaAd2EVrXhCZeCXVwKk7nv4ECU8f/AQ==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000fe00feff00000000000000ff000000
+  conveyorDirections: 00000000000000000000010002000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000040004000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 17601791
+  displayTitle: Silver Rocket on a Moon Launchpad
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: f2250629b3c87324e8f604d0e4eb2ae1,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

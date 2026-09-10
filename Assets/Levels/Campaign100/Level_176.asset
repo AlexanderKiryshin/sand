@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_176
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4285619770
+  - serializedVersion: 2
+    rgba: 4293579963
+  - serializedVersion: 2
+    rgba: 4280506469
+  - serializedVersion: 2
+    rgba: 4289628516
+  - serializedVersion: 2
+    rgba: 4280706779
+  - serializedVersion: 2
+    rgba: 4280128725
+  - serializedVersion: 2
+    rgba: 4279775813
+  - serializedVersion: 2
+    rgba: 4281760143
+  - serializedVersion: 2
+    rgba: 4279252614
+  - serializedVersion: 2
+    rgba: 4279377186
+  - serializedVersion: 2
+    rgba: 4279652023
+  - serializedVersion: 2
+    rgba: 4286686919
+  encodedCells: S1:4:4096:7CDA8B23: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000ff00000000fffefffffeffffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000040000040000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 18334894
+  displayTitle: Red Squirrel beside Fly Agarics
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 47ef58aa438202f47b7861c4a00d0152,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

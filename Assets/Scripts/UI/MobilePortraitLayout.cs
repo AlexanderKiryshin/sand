@@ -14,7 +14,7 @@ public class MobilePortraitLayout : MonoBehaviour
     private const float SandMaxSize = 720f;
     private const float SandMinSize = 300f;
     private const float TopSectionGap = 12f;
-    private const float ConveyorHeight = 104f;
+    private const float ConveyorHeight = 220f;
     private const float ConveyorImageMargin = 28f;
     private const float HintWidth = 740f;
     private const float HintHeight = 148f;
@@ -71,19 +71,37 @@ public class MobilePortraitLayout : MonoBehaviour
         lastScreenSize = new Vector2Int(Screen.width, Screen.height);
 
         SafeMargins margins = GetSafeMargins();
-        float usableWidth = ReferenceWidth - margins.left - margins.right;
+        float usableWidth = Screen.width / Mathf.Max(0.001f, GetCanvasScaleFactor()) - margins.left - margins.right;
         float bottomBase = margins.bottom + BottomPadding;
 
         LayoutHeader(margins);
         LayoutResetButton(margins);
+        RectTransform skip = FindRect("SkipLevelBtn");
+        if (skip != null)
+            skip.anchoredPosition = new Vector2(-margins.right - 30f, -margins.top - 100f);
+        RectTransform levelsBtn = FindRect("LevelSelectButton");
+        if (levelsBtn != null)
+        {
+            levelsBtn.anchorMin = levelsBtn.anchorMax = new Vector2(1f, 1f);
+            levelsBtn.pivot = new Vector2(1f, 1f);
+            levelsBtn.anchoredPosition = new Vector2(-margins.right - 30f, -margins.top - 170f);
+            levelsBtn.sizeDelta = new Vector2(168f, 56f);
+        }
+        // Fit the completion card on narrow phones and short editor game views.
+        Transform completion = transform.Find("EconomyLevelCompletePanel/Card");
+        if (completion != null)
+        {
+            float availableHeight = ReferenceHeight - margins.top - margins.bottom - 48f;
+            float scale = Mathf.Min(1f, (usableWidth - 48f) / 620f, availableHeight / 660f);
+            completion.localScale = Vector3.one * Mathf.Max(.1f, scale);
+        }
         float boosterReserve = LayoutBoosterBar(bottomBase, usableWidth);
-        float hintBottom = bottomBase + boosterReserve;
-        LayoutHint(hintBottom, usableWidth);
+        // Hints draw on top of content and must not reserve vertical space (no UI shrink).
+        LayoutHintOverlay(bottomBase + boosterReserve, usableWidth);
 
-        float hintLayoutHeight = GetHintLayoutHeight();
-        float hintTop = hintBottom + hintLayoutHeight;
+        float hintTop = bottomBase + boosterReserve;
         float contentTop = ReferenceHeight - margins.top - HeaderHeight - TopSectionGap;
-        float middleStackHeight = ConveyorHeight + SectionGap + EstimateBucketAreaHeight();
+        float middleStackHeight = ConveyorHeight + SectionGap + EstimateBucketAreaHeight() + 42f;
         float maxSandSize = contentTop - hintTop - SectionGap - middleStackHeight;
         float sandSize = Mathf.Clamp(
             Mathf.Min(usableWidth * SandWidthFraction, maxSandSize, SandMaxSize),
@@ -102,7 +120,7 @@ public class MobilePortraitLayout : MonoBehaviour
         float bucketAreaHeight = EstimateBucketAreaHeight();
         float bucketCenterY = belowSand - ConveyorHeight - SectionGap - bucketAreaHeight * 0.5f;
         LayoutBucketInventory(bucketCenterY, usableWidth);
-        HideDebugLevelSelect();
+        // Debug LevelSelect panel is replaced by the in-game LevelSelectUI menu button.
 
         BucketInventoryUI inventoryUI = FindObjectOfType<BucketInventoryUI>();
         if (inventoryUI != null)
@@ -126,7 +144,8 @@ public class MobilePortraitLayout : MonoBehaviour
 
         canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         canvasScaler.referenceResolution = new Vector2(ReferenceWidth, ReferenceHeight);
-        canvasScaler.matchWidthOrHeight = 0.5f;
+        // Layout coordinates are in a fixed 1920-unit height, including on tall phones.
+        canvasScaler.matchWidthOrHeight = 1f;
     }
 
     private static void LockPortraitOrientation()
@@ -169,19 +188,8 @@ public class MobilePortraitLayout : MonoBehaviour
         resetButton.anchorMin = new Vector2(0f, 1f);
         resetButton.anchorMax = new Vector2(0f, 1f);
         resetButton.pivot = new Vector2(0f, 1f);
-        resetButton.sizeDelta = new Vector2(140f, 52f);
-        resetButton.anchoredPosition = new Vector2(margins.left + 12f, -12f);
-    }
-
-    private float GetHintLayoutHeight()
-    {
-        RectTransform hint = FindRect("Hint");
-        if (hint == null || !hint.gameObject.activeInHierarchy)
-        {
-            return 0f;
-        }
-
-        return hint.sizeDelta.y > 1f ? hint.sizeDelta.y : HintHeight;
+        resetButton.sizeDelta = new Vector2(200f, 80f);
+        resetButton.anchoredPosition = new Vector2(margins.left + 16f, -10f);
     }
 
     private float LayoutBoosterBar(float bottomBase, float usableWidth)
@@ -198,12 +206,10 @@ public class MobilePortraitLayout : MonoBehaviour
             usableWidth - 40f);
         float centerY = bottomBase + height * 0.5f;
         SetCenterAnchor(boosterBar, centerY / ReferenceHeight, new Vector2(width, height));
-        // Keep boosters under the tutorial/hint plate in draw order.
-        boosterBar.SetAsFirstSibling();
         return height + SectionGap;
     }
 
-    private void LayoutHint(float bottomBase, float usableWidth)
+    private void LayoutHintOverlay(float boosterTop, float usableWidth)
     {
         RectTransform hint = FindRect("Hint");
         if (hint == null)
@@ -215,8 +221,15 @@ public class MobilePortraitLayout : MonoBehaviour
         float width = hint.sizeDelta.x > 1f
             ? Mathf.Min(hint.sizeDelta.x, usableWidth - 80f)
             : Mathf.Min(HintWidth, usableWidth - 80f);
-        float centerY = bottomBase + height * 0.5f;
+        // Sit just above the booster bar so the tip never covers boosters.
+        float centerY = boosterTop + height * 0.5f + 8f;
         SetCenterAnchor(hint, centerY / ReferenceHeight, new Vector2(width, height));
+        RectTransform boosterBar = FindRect("BoosterBar");
+        if (boosterBar != null && hint.parent == boosterBar.parent)
+        {
+            hint.SetAsLastSibling();
+            boosterBar.SetSiblingIndex(Mathf.Max(0, hint.GetSiblingIndex() - 1));
+        }
     }
 
     private void LayoutBucketInventory(float centerY, float usableWidth)
@@ -273,22 +286,26 @@ public class MobilePortraitLayout : MonoBehaviour
         }
 
         SetCenterAnchor(sandPanel, centerY / ReferenceHeight, new Vector2(sandSize, sandSize));
+        RectTransform painting = FindRect("SandImage");
+        if (painting != null)
+        {
+            painting.anchorMin = Vector2.zero;
+            painting.anchorMax = Vector2.one;
+            painting.offsetMin = new Vector2(12, 14);
+            painting.offsetMax = new Vector2(-12, -12);
+        }
     }
 
     private float EstimateBucketAreaHeight()
     {
         int columns = LevelData.BucketLayoutColumns;
-        int rows = 4;
+        int rows = LevelData.BucketLayoutRows;
         return rows * bucketCellSize + (rows - 1) * bucketSpacing;
     }
 
     private static void HideDebugLevelSelect()
     {
-        GameObject levelSelect = GameObject.Find("LevelSelect");
-        if (levelSelect != null)
-        {
-            levelSelect.SetActive(false);
-        }
+        // Retained for callers; LevelSelectUI now owns the player-facing menu.
     }
 
     private static void SetCenterAnchor(RectTransform rect, float anchorY, Vector2 size)
@@ -327,8 +344,8 @@ public class MobilePortraitLayout : MonoBehaviour
             return 1f;
         }
 
-        float logWidth = Mathf.Log(ReferenceWidth / Screen.width, 2f);
-        float logHeight = Mathf.Log(ReferenceHeight / Screen.height, 2f);
+        float logWidth = Mathf.Log(Screen.width / ReferenceWidth, 2f);
+        float logHeight = Mathf.Log(Screen.height / ReferenceHeight, 2f);
         float logWeightedAverage = Mathf.Lerp(logWidth, logHeight, canvasScaler.matchWidthOrHeight);
         return Mathf.Pow(2f, logWeightedAverage);
     }

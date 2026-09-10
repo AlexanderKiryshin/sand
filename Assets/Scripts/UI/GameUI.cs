@@ -14,7 +14,7 @@ public class GameUI : MonoBehaviour
     private const float HintWidthNormal = 600f;
     private const float HintHeightNormal = 92f;
     private const float HintWidthTutorial = 740f;
-    private const float HintHeightTutorial = 148f;
+    private const float HintHeightTutorial = 176f;
     private const float TutorialTopBandHeight = 38f;
 
     private GameManager gameManager;
@@ -32,6 +32,17 @@ public class GameUI : MonoBehaviour
     private TextMeshProUGUI hintBadgeLabel;
     private bool tutorialHintActive;
     private float hintPulseTime;
+    private int tutorialStep;
+    private CanvasGroup hintGroup;
+    private TextMeshProUGUI hintStepLabel;
+    private Button hintCloseButton;
+    private LocalizationManager localization;
+    private Button addSlotButton;
+    private TextMeshProUGUI addSlotLabel;
+    private bool slotAdPending;
+    private float slotAvailabilityTimer;
+
+    public System.Action OnHintDismissed;
 
     private void Awake()
     {
@@ -46,42 +57,95 @@ public class GameUI : MonoBehaviour
         }
 
         EnsureHintDecorations();
+        StyleRestartButton();
         HideLevelComplete();
+        localization = LocalizationManager.Instance;
+        if (localization != null) localization.onLanguageChange += RefreshLanguage;
+    }
+
+    private void OnDestroy()
+    {
+        if (localization != null) localization.onLanguageChange -= RefreshLanguage;
+    }
+
+    private void RefreshLanguage()
+    {
+        RefreshConveyor();
+        if (gameManager != null && levelLabel != null)
+            levelLabel.text = CampaignText.Get("level") + " " + (gameManager.CurrentLevelIndex + 1) + " / " + gameManager.LevelCount;
+        if (resetButton == null || localization == null) return;
+        var tmp = resetButton.GetComponentInChildren<TMP_Text>();
+        if (tmp != null) tmp.text = localization.GetText("restart");
+        var text = resetButton.GetComponentInChildren<Text>();
+        if (text != null) text.text = localization.GetText("restart");
+    }
+
+    private void StyleRestartButton()
+    {
+        if (resetButton == null) return;
+        Image background = resetButton.GetComponent<Image>();
+        background.sprite = HintUiSprites.RoundedPanel;
+        background.type = Image.Type.Sliced;
+        background.color = new Color(.15f, .37f, .37f);
+        var legacy = resetButton.GetComponentInChildren<Text>();
+        if (legacy != null) legacy.gameObject.SetActive(false);
+        var text = resetButton.GetComponentInChildren<TextMeshProUGUI>();
+        if (text == null)
+        {
+            var label = new GameObject("RestartLabel", typeof(RectTransform), typeof(TextMeshProUGUI));
+            label.transform.SetParent(resetButton.transform, false);
+            text = label.GetComponent<TextMeshProUGUI>();
+        }
+        text.fontSize = 29;
+        text.fontStyle = FontStyles.Bold;
+        text.alignment = TextAlignmentOptions.MidlineLeft;
+        text.color = new Color(1, .99f, .91f);
+        text.raycastTarget = false;
+        text.rectTransform.anchorMin = Vector2.zero;
+        text.rectTransform.anchorMax = Vector2.one;
+        text.rectTransform.offsetMin = new Vector2(66, 4);
+        text.rectTransform.offsetMax = new Vector2(-10, -4);
+        var icon = new GameObject("RestartIcon", typeof(RectTransform), typeof(Image));
+        icon.transform.SetParent(resetButton.transform, false);
+        var image = icon.GetComponent<Image>();
+        image.sprite = GameUiSymbols.Get(GameUiSymbol.Restart);
+        image.raycastTarget = false;
+        image.rectTransform.anchorMin = image.rectTransform.anchorMax = new Vector2(0, .5f);
+        image.rectTransform.anchoredPosition = new Vector2(36, 0);
+        image.rectTransform.sizeDelta = new Vector2(45, 45);
     }
 
     private void Update()
     {
-        if (!tutorialHintActive)
-        {
-            return;
-        }
-
-        hintPulseTime += Time.deltaTime;
-
-        if (hintGlow != null)
-        {
-            float glowAlpha = 0.28f + Mathf.Sin(hintPulseTime * 3.4f) * 0.12f;
-            Color glow = hintGlow.color;
-            glow.a = glowAlpha;
-            hintGlow.color = glow;
-        }
-
-        if (hintArrow != null)
-        {
-            float bob = Mathf.Sin(hintPulseTime * 4f) * 3f;
-            RectTransform arrowRect = hintArrow.rectTransform;
-            arrowRect.anchoredPosition = new Vector2(0f, -TutorialTopBandHeight * 0.5f - 6f + bob);
-        }
+        slotAvailabilityTimer -= Time.unscaledDeltaTime;
+        if (slotAvailabilityTimer <= 0) { RefreshSlotButton(); slotAvailabilityTimer = .5f; }
+        if (hintGroup == null || hintGroup.alpha >= 1) return;
+        hintPulseTime += Time.unscaledDeltaTime;
+        hintGroup.alpha = Mathf.SmoothStep(0, 1, hintPulseTime / .22f);
     }
-
     public void Bind(GameManager manager, ConveyorBelt conveyor, LevelData level)
     {
         gameManager = manager;
         conveyorBelt = conveyor;
+        if (localization == null)
+        {
+            localization = LocalizationManager.Instance;
+            if (localization != null) localization.onLanguageChange += RefreshLanguage;
+        }
 
         if (levelLabel != null)
         {
-            levelLabel.text = "Level " + (manager.CurrentLevelIndex + 1);
+            levelLabel.text = CampaignText.Get("level") + " " + (manager.CurrentLevelIndex + 1) + " / " + manager.LevelCount;
+            levelLabel.rectTransform.sizeDelta = new Vector2(420, 60);
+            levelLabel.fontSize = 36;
+            levelLabel.fontStyle = FontStyles.Bold;
+            levelLabel.enableWordWrapping = false;
+            levelLabel.color = new Color(0.13f, 0.25f, 0.28f);
+            Button collection = levelLabel.GetComponent<Button>();
+            if (collection == null) collection = levelLabel.gameObject.AddComponent<Button>();
+            levelLabel.raycastTarget = true;
+            collection.onClick.RemoveAllListeners();
+            collection.onClick.AddListener(manager.OpenCollection);
         }
 
         if (hintLabel != null)
@@ -90,6 +154,7 @@ public class GameUI : MonoBehaviour
         }
 
         RefreshConveyor();
+        RefreshLanguage();
         HideLevelComplete();
     }
 
@@ -100,7 +165,66 @@ public class GameUI : MonoBehaviour
             return;
         }
 
-        conveyorLabel.text = conveyorBelt.Entries.Count + "/" + ConveyorBelt.MaxOnBelt;
+        conveyorLabel.text = string.Format(CampaignText.Get("belt_occupied"), conveyorBelt.OccupiedSlots, conveyorBelt.Capacity);
+        conveyorLabel.color = new Color(.13f, .25f, .28f);
+        conveyorLabel.fontSize = 27;
+        conveyorLabel.fontStyle = FontStyles.Bold;
+        conveyorLabel.enableAutoSizing = true;
+        conveyorLabel.fontSizeMin = 22;
+        conveyorLabel.fontSizeMax = 27;
+        conveyorLabel.rectTransform.anchorMin = conveyorLabel.rectTransform.anchorMax = new Vector2(.5f, 0);
+        conveyorLabel.rectTransform.sizeDelta = new Vector2(700, 38);
+        conveyorLabel.rectTransform.anchoredPosition = new Vector2(0, 13);
+        EnsureSlotButton();
+        conveyorLabel.rectTransform.sizeDelta = new Vector2(330, 46);
+        conveyorLabel.rectTransform.anchoredPosition = new Vector2(-100, 13);
+        RefreshSlotButton();
+    }
+
+    private void EnsureSlotButton()
+    {
+        if (addSlotButton != null || conveyorLabel == null) return;
+        var go = new GameObject("AddConveyorSlot", typeof(RectTransform), typeof(Image), typeof(Button));
+        go.transform.SetParent(conveyorLabel.transform.parent, false);
+        var rect = (RectTransform)go.transform;
+        rect.anchorMin = rect.anchorMax = new Vector2(.5f, 0);
+        rect.anchoredPosition = new Vector2(160, 13);
+        rect.sizeDelta = new Vector2(220, 54);
+        var bg = go.GetComponent<Image>(); bg.sprite = HintUiSprites.RoundedPanel; bg.type = Image.Type.Sliced;
+        bg.color = new Color(1, .77f, .25f);
+        addSlotButton = go.GetComponent<Button>(); addSlotButton.targetGraphic = bg;
+        addSlotButton.onClick.AddListener(RequestExtraSlot);
+        var icon = new GameObject("Video", typeof(RectTransform), typeof(Image)); icon.transform.SetParent(rect, false);
+        var art = icon.GetComponent<Image>(); art.sprite = BusesUiArt.Ad; art.preserveAspect = true; art.raycastTarget = false;
+        art.rectTransform.anchoredPosition = new Vector2(-74, 0); art.rectTransform.sizeDelta = new Vector2(42, 42);
+        var label = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)); label.transform.SetParent(rect, false);
+        addSlotLabel = label.GetComponent<TextMeshProUGUI>(); addSlotLabel.fontSize = 25; addSlotLabel.fontStyle = FontStyles.Bold;
+        addSlotLabel.color = new Color(.17f, .29f, .28f); addSlotLabel.alignment = TextAlignmentOptions.Center; addSlotLabel.raycastTarget = false;
+        addSlotLabel.rectTransform.sizeDelta = new Vector2(154, 50); addSlotLabel.rectTransform.anchoredPosition = new Vector2(25, 0);
+    }
+
+    private void RefreshSlotButton()
+    {
+        if (addSlotButton == null || conveyorBelt == null) return;
+        bool canGrow = conveyorBelt.CanAddRewardedSlot;
+        addSlotLabel.text = CampaignText.Get(!canGrow ? "slots_max" : slotAdPending ? "ad_wait" : "slot_ad");
+        addSlotButton.interactable = canGrow && !slotAdPending && AdManager.instance != null && AdManager.instance.CanStartRewarded(true);
+    }
+
+    private void RequestExtraSlot()
+    {
+        if (slotAdPending || conveyorBelt == null || AdManager.instance == null || !AdManager.instance.CanStartRewarded(true)) return;
+        int request = conveyorBelt.BeginSlotReward(out int generation);
+        if (request == 0) return;
+        slotAdPending = true; RefreshSlotButton();
+        AdManager.instance.StartRewarded(gameManager.CurrentLevelIndex.ToString(), "conveyor_slot",
+            () => FinishSlotAd(true), () => FinishSlotAd(false), true);
+        void FinishSlotAd(bool watched)
+        {
+            if (this == null || conveyorBelt == null) return;
+            conveyorBelt.CompleteSlotReward(request, generation, watched);
+            slotAdPending = false; RefreshConveyor();
+        }
     }
 
     public void ShowLevelComplete()
@@ -143,10 +267,11 @@ public class GameUI : MonoBehaviour
         SetHint(text, false);
     }
 
-    public void SetTutorialHint(string text)
+    public void SetTutorialHint(string text, int step = 0)
     {
         EnsureHintDecorations();
         tutorialHintActive = true;
+        tutorialStep = step;
         hintPulseTime = 0f;
         ApplyHintLayout(true);
         SetHint(text, true);
@@ -154,104 +279,61 @@ public class GameUI : MonoBehaviour
 
     private void SetHint(string text, bool tutorialEmphasis)
     {
-        if (hintLabel != null)
-        {
-            hintLabel.text = text;
-            hintLabel.fontSize = tutorialEmphasis ? 34f : 29f;
-            hintLabel.fontStyle = tutorialEmphasis ? FontStyles.Bold : FontStyles.Normal;
-            hintLabel.color = tutorialEmphasis
-                ? new Color(0.1f, 0.16f, 0.3f, 1f)
-                : new Color(0.2f, 0.18f, 0.14f, 1f);
-            hintLabel.alignment = TextAlignmentOptions.Left;
-            hintLabel.margin = tutorialEmphasis
-                ? new Vector4(120f, 16f, 22f, 12f)
-                : new Vector4(80f, 12f, 20f, 12f);
-        }
-
-        if (hintShadow != null)
-        {
-            hintShadow.gameObject.SetActive(true);
-            hintShadow.sprite = HintUiSprites.RoundedPanel;
-            hintShadow.type = Image.Type.Sliced;
-            hintShadow.color = tutorialEmphasis
-                ? new Color(0.05f, 0.1f, 0.22f, 0.34f)
-                : new Color(0.1f, 0.08f, 0.06f, 0.22f);
-        }
-
-        if (hintGlow != null)
-        {
-            hintGlow.gameObject.SetActive(tutorialEmphasis);
-            hintGlow.sprite = HintUiSprites.RoundedPanel;
-            hintGlow.type = Image.Type.Sliced;
-            hintGlow.color = new Color(0.35f, 0.72f, 1f, 0.28f);
-        }
-
-        if (hintBorderOuter != null)
-        {
-            hintBorderOuter.gameObject.SetActive(true);
-            hintBorderOuter.sprite = HintUiSprites.RoundedOutline;
-            hintBorderOuter.type = Image.Type.Sliced;
-            hintBorderOuter.color = tutorialEmphasis
-                ? new Color(0.18f, 0.48f, 0.95f, 1f)
-                : new Color(0.78f, 0.62f, 0.28f, 0.9f);
-        }
-
-        if (hintBorderInner != null)
-        {
-            hintBorderInner.gameObject.SetActive(false);
-        }
-
-        if (hintTopBand != null)
-        {
-            hintTopBand.gameObject.SetActive(tutorialEmphasis);
-            hintTopBand.sprite = HintUiSprites.FlatBar;
-            hintTopBand.type = Image.Type.Simple;
-            hintTopBand.color = new Color(0.24f, 0.56f, 0.98f, 1f);
-        }
-
-        if (hintBackground != null)
-        {
-            hintBackground.sprite = HintUiSprites.GradientPanel;
-            hintBackground.type = Image.Type.Sliced;
-            hintBackground.color = tutorialEmphasis
-                ? new Color(0.96f, 0.98f, 1f, 1f)
-                : new Color(1f, 0.98f, 0.93f, 1f);
-        }
-
-        if (hintIconBadge != null)
-        {
-            hintIconBadge.gameObject.SetActive(true);
-            hintIconBadge.sprite = HintUiSprites.CircleBadge;
-            hintIconBadge.color = tutorialEmphasis
-                ? new Color(0.18f, 0.5f, 0.96f, 1f)
-                : new Color(0.9f, 0.72f, 0.28f, 1f);
-        }
-
-        if (hintIcon != null)
-        {
-            hintIcon.gameObject.SetActive(true);
-            hintIcon.sprite = tutorialEmphasis ? HintUiSprites.TapIcon : HintUiSprites.BucketIcon;
-            hintIcon.color = Color.white;
-            hintIcon.preserveAspect = true;
-        }
-
-        if (hintBadgeLabel != null)
-        {
-            hintBadgeLabel.gameObject.SetActive(tutorialEmphasis);
-            hintBadgeLabel.text = "TUTORIAL";
-        }
-
-        if (hintArrow != null)
-        {
-            hintArrow.gameObject.SetActive(tutorialEmphasis);
-            hintArrow.sprite = HintUiSprites.ArrowUp;
-            hintArrow.color = new Color(0.25f, 0.62f, 1f, 0.95f);
-            hintArrow.preserveAspect = true;
-        }
-
+        if (hintLabel == null) return;
+        hintLabel.text = text;
+        hintLabel.fontSize = 29;
+        hintLabel.enableAutoSizing = true;
+        hintLabel.fontSizeMin = 25;
+        hintLabel.fontSizeMax = 29;
+        hintLabel.fontStyle = FontStyles.Normal;
+        hintLabel.color = new Color(.18f, .31f, .32f);
+        hintLabel.alignment = TextAlignmentOptions.MidlineLeft;
+        hintLabel.raycastTarget = false;
+        hintLabel.margin = tutorialEmphasis
+            ? new Vector4(28, 66, 64, 18)
+            : new Vector4(80, 12, 64, 12);
+        hintShadow.gameObject.SetActive(true);
+        hintShadow.sprite = HintUiSprites.RoundedPanel;
+        hintShadow.type = Image.Type.Sliced;
+        hintShadow.color = new Color(.10f, .26f, .26f, .14f);
+        hintGlow.gameObject.SetActive(false);
+        hintBorderOuter.gameObject.SetActive(true);
+        hintBorderOuter.sprite = HintUiSprites.RoundedPanel;
+        hintBorderOuter.type = Image.Type.Sliced;
+        hintBorderOuter.color = new Color(.68f, .79f, .73f);
+        hintBorderInner.gameObject.SetActive(false);
+        hintBackground.sprite = HintUiSprites.RoundedPanel;
+        hintBackground.type = Image.Type.Sliced;
+        hintBackground.color = new Color(1f, .99f, .94f);
+        hintTopBand.gameObject.SetActive(tutorialEmphasis);
+        hintTopBand.color = Color.clear;
+        hintIconBadge.gameObject.SetActive(!tutorialEmphasis);
+        hintIconBadge.sprite = HintUiSprites.CircleBadge;
+        hintIconBadge.color = new Color(.25f, .53f, .48f);
+        hintIcon.gameObject.SetActive(!tutorialEmphasis);
+        hintIcon.sprite = HintUiSprites.BucketIcon;
+        hintIcon.color = Color.white;
+        hintIcon.preserveAspect = true;
+        hintArrow.gameObject.SetActive(false);
+        hintBadgeLabel.text = CampaignText.Get(tutorialStep > 0 && tutorialEmphasis ? "tutorial_title_" + tutorialStep : "learn");
+        hintBadgeLabel.fontSize = 29;
+        hintBadgeLabel.color = new Color(.12f, .35f, .34f);
+        hintBadgeLabel.alignment = TextAlignmentOptions.MidlineLeft;
+        hintBadgeLabel.margin = new Vector4(0, 0, 120, 0);
+        hintStepLabel.gameObject.SetActive(tutorialEmphasis && tutorialStep > 0);
+        hintStepLabel.text = tutorialStep + "  /  3";
+        LayoutHintCloseButton(tutorialEmphasis && tutorialStep > 0);
+        hintGroup.alpha = 0;
+        hintPulseTime = 0;
         SetHintVisible(!string.IsNullOrEmpty(text));
     }
 
+    private void HandleHintCloseClicked()
+    {
+        SetHintVisible(false);
+        SetControlsInteractable(true);
+        OnHintDismissed?.Invoke();
+    }
     public void SetHintVisible(bool visible)
     {
         if (hintLabel == null)
@@ -267,6 +349,16 @@ public class GameUI : MonoBehaviour
         else
         {
             hintLabel.gameObject.SetActive(visible);
+        }
+
+        if (hintCloseButton != null)
+        {
+            hintCloseButton.gameObject.SetActive(visible);
+        }
+
+        if (hintGroup != null)
+        {
+            hintGroup.blocksRaycasts = visible;
         }
 
         if (MobilePortraitLayout.Instance != null)
@@ -321,7 +413,7 @@ public class GameUI : MonoBehaviour
         Stretch(hintShadow.rectTransform, new Vector2(8f, -10f), new Vector2(-8f, -18f));
         Stretch(hintGlow.rectTransform, new Vector2(-6f, -4f), new Vector2(6f, 4f));
         Stretch(hintBorderOuter.rectTransform, Vector2.zero, Vector2.zero);
-        Stretch(hintBackground.rectTransform, new Vector2(4f, 4f), new Vector2(-4f, -4f));
+        Stretch(hintBackground.rectTransform, new Vector2(2f, 2f), new Vector2(-2f, -2f));
 
         LayoutTopBandRect();
 
@@ -347,6 +439,29 @@ public class GameUI : MonoBehaviour
         arrowRect.anchoredPosition = new Vector2(0f, -TutorialTopBandHeight * 0.5f - 6f);
 
         hintBadgeLabel = EnsureBadgeLabel(hintTopBand.transform);
+        hintGroup = hintRootRect.GetComponent<CanvasGroup>();
+        if (hintGroup == null) hintGroup = hintRootRect.gameObject.AddComponent<CanvasGroup>();
+        hintGroup.blocksRaycasts = false;
+        Transform oldStep = hintRootRect.Find("StepProgress");
+        if (oldStep == null)
+        {
+            var stepObject = new GameObject("StepProgress", typeof(RectTransform), typeof(TextMeshProUGUI));
+            stepObject.transform.SetParent(hintRootRect, false);
+            oldStep = stepObject.transform;
+        }
+        hintStepLabel = oldStep.GetComponent<TextMeshProUGUI>();
+        hintStepLabel.fontSize = 23;
+        hintStepLabel.fontStyle = FontStyles.Bold;
+        hintStepLabel.color = new Color(.38f, .56f, .50f);
+        hintStepLabel.alignment = TextAlignmentOptions.MidlineRight;
+        hintStepLabel.raycastTarget = false;
+        RectTransform stepRect = hintStepLabel.rectTransform;
+        stepRect.anchorMin = stepRect.anchorMax = Vector2.one;
+        stepRect.pivot = Vector2.one;
+        stepRect.anchoredPosition = new Vector2(-72, -20);
+        stepRect.sizeDelta = new Vector2(110, 38);
+
+        EnsureHintCloseButton();
 
         hintShadow.transform.SetAsFirstSibling();
         hintGlow.transform.SetSiblingIndex(1);
@@ -358,6 +473,8 @@ public class GameUI : MonoBehaviour
         hintIcon.transform.SetSiblingIndex(7);
         hintArrow.transform.SetSiblingIndex(8);
         hintLabel.transform.SetAsLastSibling();
+        hintLabel.raycastTarget = false;
+        if (hintCloseButton != null) hintCloseButton.transform.SetAsLastSibling();
 
         foreach (Image image in new[] { hintShadow, hintGlow, hintBorderOuter, hintBorderInner, hintTopBand, hintBackground, hintIconBadge, hintIcon, hintArrow })
         {
@@ -368,6 +485,69 @@ public class GameUI : MonoBehaviour
         }
 
         ApplyHintLayout(tutorialHintActive);
+    }
+
+    private void EnsureHintCloseButton()
+    {
+        if (hintRootRect == null) return;
+
+        Transform existing = hintRootRect.Find("HintClose");
+        GameObject closeObject;
+        if (existing != null)
+        {
+            closeObject = existing.gameObject;
+        }
+        else
+        {
+            closeObject = new GameObject("HintClose", typeof(RectTransform), typeof(Image), typeof(Button));
+            closeObject.transform.SetParent(hintRootRect, false);
+        }
+
+        hintCloseButton = closeObject.GetComponent<Button>();
+        Image background = closeObject.GetComponent<Image>();
+        background.sprite = HintUiSprites.CircleBadge;
+        background.type = Image.Type.Simple;
+        background.color = new Color(.16f, .38f, .37f);
+        background.raycastTarget = true;
+        hintCloseButton.targetGraphic = background;
+        hintCloseButton.onClick.RemoveAllListeners();
+        hintCloseButton.onClick.AddListener(HandleHintCloseClicked);
+
+        Transform iconTransform = closeObject.transform.Find("Icon");
+        GameObject iconObject;
+        if (iconTransform != null)
+        {
+            iconObject = iconTransform.gameObject;
+        }
+        else
+        {
+            iconObject = new GameObject("Icon", typeof(RectTransform), typeof(Image));
+            iconObject.transform.SetParent(closeObject.transform, false);
+        }
+
+        Image icon = iconObject.GetComponent<Image>();
+        icon.sprite = GameUiSymbols.Get(GameUiSymbol.Close);
+        icon.color = new Color(1f, .99f, .91f);
+        icon.raycastTarget = false;
+        icon.preserveAspect = true;
+        RectTransform iconRect = icon.rectTransform;
+        iconRect.anchorMin = Vector2.zero;
+        iconRect.anchorMax = Vector2.one;
+        iconRect.offsetMin = new Vector2(10f, 10f);
+        iconRect.offsetMax = new Vector2(-10f, -10f);
+
+        LayoutHintCloseButton(tutorialHintActive && tutorialStep > 0);
+    }
+
+    private void LayoutHintCloseButton(bool withStep)
+    {
+        if (hintCloseButton == null) return;
+
+        RectTransform rect = hintCloseButton.GetComponent<RectTransform>();
+        rect.anchorMin = rect.anchorMax = Vector2.one;
+        rect.pivot = Vector2.one;
+        rect.sizeDelta = new Vector2(44f, 44f);
+        rect.anchoredPosition = new Vector2(-18f, withStep ? -16f : -24f);
     }
 
     private void ApplyHintLayout(bool tutorial)
@@ -409,8 +589,8 @@ public class GameUI : MonoBehaviour
         }
 
         RectTransform topBandRect = hintTopBand.rectTransform;
-        const float horizontalInset = 4f;
-        const float topInset = 4f;
+        const float horizontalInset = 28f;
+        const float topInset = 20f;
         topBandRect.anchorMin = new Vector2(0f, 1f);
         topBandRect.anchorMax = new Vector2(1f, 1f);
         topBandRect.pivot = new Vector2(0.5f, 1f);

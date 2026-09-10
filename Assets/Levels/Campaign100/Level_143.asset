@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_143
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280173496
+  - serializedVersion: 2
+    rgba: 4289563835
+  - serializedVersion: 2
+    rgba: 4284443032
+  - serializedVersion: 2
+    rgba: 4284041302
+  - serializedVersion: 2
+    rgba: 4286404441
+  - serializedVersion: 2
+    rgba: 4279971156
+  - serializedVersion: 2
+    rgba: 4279440662
+  - serializedVersion: 2
+    rgba: 4290340204
+  - serializedVersion: 2
+    rgba: 4282684130
+  - serializedVersion: 2
+    rgba: 4289680179
+  - serializedVersion: 2
+    rgba: 4283313186
+  - serializedVersion: 2
+    rgba: 4285940013
+  encodedCells: S1:4:4096:77DDB1E8:bZRPb9tGFsA/g2LXgbCnjBzARnJJSMbl2peGw6iqdNmS01o1L6pVCkL3kkTmQFFObRbhurmokqVOm1u3WJXRpbUEuR5eNvLAjvg+1L6R67Qo8ogZie/3/nHeI3mSJKcyeYecdvTOcX1E38Uvtee4FsE7eYrbk3P+U7KAd3HUjpKns2KWLHx9P/6rP8SYfsaLyeI/V7qfrnxx/R2S8SHnfDaGlSv+85/8kXeec+6eJqfmX/kpru/PRqcdzr+5ODyeoH4xHiWj7/7E7ezrBUeDWSzlM1S9GP0R+wRLdybPLg4Qz54jHx2ejA9j1I4O43g0wgM9pJNvRnucnx/IExXH8Yc/JofxCC8t9MUo/mgac77X+vSkrBiqLp7Fh0kS/2vJXQzymboociwg3l3y3a+X5C2PP5xyjVvPYqD69t/xH2JpG7+D/jP/eXzhvOUbl/zbr+L4/ePyFE+XPY93bVQZ1ZjEXwG80NzAZN+9wfo4p5P1XRFvkKlPNkiSAOgodB1jvDkp4vHQ1jo9JoT8eosQBSgvNgjxb2+Qu2dPOW9hCfezSoGQ1zcJgaXc1pwQWxWLvIUZzCxdJ+Tjm+Q1yOxMaq60TcbX+YEu4TwoLHkGWSYzmRJiYjAHbt3ferTFecTZXaNwv/A6yy65JN8i/3V6ixQfYQlbMiDE+NycSylfgdTc0AkxyS3kvKGQF7YrcypfLWCBVqS8TQrI7xY05wBGYQ630R+rH6dSFsAyDE/tRPuP+T+jxwD7WwBJmp4vn0/KcTLeiRh82eKPePq4AYGpCToqrDCVqbbiVbW9DL6D9eGYl3VlyydIJaXIA91f5OMZV9jHNC0fl33mKdlxymma8XK65Gl2+ftDuj3HptqMgZHtIC9mxSWXgI/Iiyv+y7kVmyv++0rs9ZlyNZw94eBKfQa84W9P5B49Lpdlb094GdcH++oJ/1+FTVLkDyxqsKnZ9V3DMZ15R/PO4glvVphUKX9MV6nt6AEwVz+gzG9p9/9Ch+crKjjrnB9nALa7QF7pex64+9Gn46eyfNDI051/sIPzHSTB8mDA1VsvRFvpHjRs7+gDdkAlZJC6TEsF0hRcvE0p4zzviTus5JuOSWkACrlL65R2KJ1Qxg6G9icirx76jAVsLwCrhGnQyk8ZO9tj1sOhmIi81e4zJtAmFflKAHBUYsAUMFZvN8QvA9Fvr/q9vAjUe/luVwU73W5VsUrgev32MJyJfL8t/HxXzJVAqao+7swLq6bdb2/1jtfCvz3s9cRAVJnmpUCIrvCdgajbK+1hzhw0++1er4vcQty1ldgcCG9fYNp6+7pt5vP1tujXhr03rualqRChcJBj/Gi4Zl1f8mgg7L5o8q6gQnDh1JuRgdrGmhmK1aiJlsK2Bs2odo+ilSj1BrgdRXzLaojPo7DeRG6GzX7zHh00edM2hpExwC4O69x+xMN6e9hEnv/ikof4nxcfrOLk1Bt2ixfrjUbTrof5+n5Ih8MoemBwXgxxSrZwdDo8MsN7+44Z+mDd2xsMI+44lBcjPUUNVsLp3mGWbfu69XOrZ/psPlFPU6cVLTmDSvm2PMsuvx/4IgGcZTeZay8nX/pToEfULJUyHArE/V7dq3qmStEbXyq3NAWjPynbb7D1Wl7a0qg6FKzf9BtdCUpuYPb9l7ozOMA29G2wNj0XLBvt0wqrVpRxxCrIPXYGVeghr/oOMLuC7m6w6SrDClxjE0wG4MGRg1xRUBSnusKYx9RNi+G4gMHU7ibc9cH1FFOBbUEud732sFbL5XJ5XIUbq/jlIuTatTv7ubXltR/Wamu5t0KWYuRWcjmtvZHLcfT+3eDOFV9BPSprOiavhVfON37H5NqK5rVcLfd/
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000ff000000000000fe00000000000000fe000000ff
+  conveyorDirections: 00000000000000000000000003000000000000000300000000
+  conveyorBucketCounts: 00000000000000000000000003000000000000000400000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 14878837
+  displayTitle: Blue Mosque Courtyard at Dusk
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 6ccff7274e9ddf249976f3ed4f851f00,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

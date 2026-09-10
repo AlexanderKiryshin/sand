@@ -10,11 +10,43 @@ public enum BucketState
 
 public class Bucket
 {
-    public byte ColorIndex { get; private set; }
+    private byte firstColor;
+    public byte ColorIndex => HasSecondSection && CurrentFill >= FirstSectionCapacity ? SecondColor : firstColor;
+    public byte FirstColor => firstColor;
+    public byte SecondColor { get; private set; }
+    public int FirstSectionCapacity { get; private set; }
+    public bool HasSecondSection => SecondColor != 0;
+    public int SlotCost { get; private set; } = 1;
+    public int KeyId { get; set; }
+    public int GateKeyId { get; set; }
+    public Bucket LinkedPartner { get; set; }
+    public Bucket SwapPartner { get; set; }
+    public int RemainingForColor(byte color)
+    {
+        if (!HasSecondSection) return color == firstColor ? RemainingCapacity : 0;
+        int first = Mathf.Max(0, FirstSectionCapacity - CurrentFill);
+        int second = Capacity - Mathf.Max(FirstSectionCapacity, CurrentFill);
+        return (color == firstColor ? first : 0) + (color == SecondColor ? second : 0);
+    }
+    public void AddSection(byte color, int capacity)
+    { FirstSectionCapacity = Capacity; SecondColor = color; Capacity += capacity; }
+    public void MakeLarge(int addedCapacity) { Capacity += addedCapacity; SlotCost = 2; }
     public int Capacity { get; private set; }
     public int LayoutIndex { get; private set; }
     public int CurrentFill { get; private set; }
     public BucketState State { get; private set; }
+    public int FrostMoves { get; private set; }
+    public bool IsFrozen { get { return FrostMoves > 0; } }
+    public bool IsMystery { get; private set; }
+
+    public void SetModifiers(int frostMoves, bool mystery)
+    {
+        FrostMoves = Mathf.Max(0, frostMoves);
+        IsMystery = mystery;
+    }
+
+    public void ThawOneMove() { FrostMoves = Mathf.Max(0, FrostMoves - 1); }
+    public void Reveal() { IsMystery = false; }
 
     public bool IsFull
     {
@@ -33,7 +65,7 @@ public class Bucket
 
     public Bucket(byte colorIndex, int capacity, int layoutIndex = -1)
     {
-        ColorIndex = colorIndex;
+        firstColor = colorIndex;
         Capacity = capacity;
         LayoutIndex = layoutIndex;
         CurrentFill = 0;
@@ -94,11 +126,18 @@ public class Bucket
 
     public void SetColorAndCapacity(byte colorIndex, int capacity)
     {
-        ColorIndex = colorIndex;
+        firstColor = colorIndex;
         Capacity = Mathf.Max(1, capacity);
         if (CurrentFill > Capacity)
         {
             CurrentFill = Capacity;
         }
+    }
+
+    public void SetContents(byte colorIndex, int capacity, int currentFill)
+    {
+        firstColor = colorIndex;
+        Capacity = Mathf.Max(1, capacity);
+        CurrentFill = Mathf.Clamp(currentFill, 0, Capacity);
     }
 }

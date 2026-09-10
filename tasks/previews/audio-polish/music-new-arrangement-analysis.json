@@ -1,0 +1,69 @@
+{
+  "duration_seconds": 180,
+  "sample_rate": 22050,
+  "channels": 2,
+  "peak": 0.519989013671875,
+  "rms": 0.09141743396255847,
+  "game_rms": 0.014626789434009356,
+  "loop_seam": 0.00445556640625,
+  "max_normal_step": 0.093231201171875,
+  "sound_effects_unchanged": true,
+  "sections": [
+    {
+      "section": "Keyboard theme",
+      "start_seconds": 0.0,
+      "rms": 0.10686,
+      "peak": 0.46268,
+      "power_centroid_hz": 335.1
+    },
+    {
+      "section": "Nylon groove",
+      "start_seconds": 22.5,
+      "rms": 0.09294,
+      "peak": 0.44238,
+      "power_centroid_hz": 313.6
+    },
+    {
+      "section": "Reed melody",
+      "start_seconds": 45.0,
+      "rms": 0.07015,
+      "peak": 0.27115,
+      "power_centroid_hz": 350.1
+    },
+    {
+      "section": "Moving strings",
+      "start_seconds": 67.5,
+      "rms": 0.09391,
+      "peak": 0.51999,
+      "power_centroid_hz": 330.8
+    },
+    {
+      "section": "Keyboard interlude",
+      "start_seconds": 90.0,
+      "rms": 0.06928,
+      "peak": 0.46832,
+      "power_centroid_hz": 333.6
+    },
+    {
+      "section": "Instrument dialogue",
+      "start_seconds": 112.5,
+      "rms": 0.08607,
+      "peak": 0.41544,
+      "power_centroid_hz": 354.5
+    },
+    {
+      "section": "Theme with strings",
+      "start_seconds": 135.0,
+      "rms": 0.10733,
+      "peak": 0.44849,
+      "power_centroid_hz": 362.3
+    },
+    {
+      "section": "Gentle handover",
+      "start_seconds": 157.5,
+      "rms": 0.09661,
+      "peak": 0.48615,
+      "power_centroid_hz": 280.1
+    }
+  ]
+}

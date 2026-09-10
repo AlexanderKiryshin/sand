@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_109
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293844432
+  - serializedVersion: 2
+    rgba: 4289692254
+  - serializedVersion: 2
+    rgba: 4292786585
+  - serializedVersion: 2
+    rgba: 4280891558
+  - serializedVersion: 2
+    rgba: 4280095504
+  - serializedVersion: 2
+    rgba: 4284894005
+  - serializedVersion: 2
+    rgba: 4293511857
+  - serializedVersion: 2
+    rgba: 4292135874
+  - serializedVersion: 2
+    rgba: 4282264867
+  - serializedVersion: 2
+    rgba: 4292060022
+  - serializedVersion: 2
+    rgba: 4293913320
+  - serializedVersion: 2
+    rgba: 4288177986
+  encodedCells: S1:4:4096:3A7AC861:pVXPb9tGFv4bpsKCrukTBcuSzIs0sChTvhRIgBX21CQjLBe9lIGmZqoLPW0niPbSGHG4Vi9xTCKD+BIJ27isLpLaWsn0UnqhWsT8UfuG6Y9dLNDLPogkON+b7/tm3htxnP5xjNP/K9w/hi+jU7g/uvxf5PrbFB+fRhCXqb6dRv+ZhOtqFB1H/x2/oxj/pGQ14vArkh4W+KQw5AJ6HGWqfSlv7CHXQBu7kFZYhSeg0Y3Kfty18q+qzdP28R6O8E7Whnn4F6Wb6fSxXKbKkpcudvaeRtzKZAdwhx0z7mTjbGw3J3VlXb7FmPcfRvVptlzi+jxiZVa/VtcKqL+1DuapxdLn72fT5sF4KWXa7Oxm6SSb2mn+1fwyH2ftavp1Tqx6HQaiXSkv07Gb2/Y0V+ObdKqUNbL++be4oqxdNZfWvJMepCCV1231Yyff2kQzVP8mjW21ZYFA5/Fw6uaZgsjL9jA82jkwXpXJne1xfb9VL0vZSbFt21amxnnWSXdKp1vX6s62H3zZ3K+5o/HrTNnjSZqXcfYozfIS8NjqkPT29+3+/kHettcWGFcHaTaZ5LZ6F4nrxZV1vL2+UNZ2U62aY8dw1QBcJBq2aF+Q5wEJ1sK21kqt1Ovpz8r1AfIgJ1O9vcRviX5NiLqK86wFQwNbfbQeKGJnyTrpVSqBEAdekqz+TrKLgFZWg9XFnf2LR8K6oOLikD4XbwQVffGJJWhC6SrRs2o9SoMkEcnhngieBw+oSALff5CsbH9Ak4qoJVQE4sz3DytnsUjoRRL7SU09sJqZT8+o2Kd0Pwj8YPCi9pI+s9YfB0lr4NplvEqb9D5N1hUqavRi8KAqaHC8GhzWRDPlGH9I2q6VtyitgIGV71depC8DK7EGFm0xzp52SRe7O9cBpQJUgwF9cXZWe1wefEztJnMST9z7zGHZgLZWiaAVmtHDpFH7YuWXrSZnhATk9h5Oga3iU4iWT9uVrR3/Z8viE4fHsSdIy3Fdq6wotWE+bVnjvHk0xhM4Fne9mHQDhBwMRjF3DHaygTbQb/HSE+Le+carcvEWcsPgPNzgEMWAkYi4S84/dyYGoAhJac7kLORMZ4aQRYggpBt/MtacDeNqBg/TNBBAhib4kJCY6NhGoVM4wIxtGr/pP/PIbUJ+6O1tcKcYkHAxxF/BucO4wQwhSHI39gj5ZYIJ1+ZCk2mJigR+IQC+vQFQoS7RBg9Djpl2F3iFuEfufoc4MkIDmUNjjrg04RV5xIufAN73+re6KNQOSyAszfBK65x58Tty4XXPn0CRmMMZY6iEZsPZ4JzcqnTPNR57cTfofcZgOtPrLsHsq8NK8AJHt/oJbJBH7omgD4ZhC2dSvpVy+LR60yHkT1GzLLRDoKEoNEKTDw0+N6Ws7s5Pek9q8Um1CvyEBsEbE33wfcME/i1pjtq71ROxkXiBOPEF7Xn9N6KE/BiZVwi/DRezZWewXNC/Ht+Hljs5jIn4R+8N+vO/TCih3IQamnIk24uT5ae1454n4kCgL5d/ufWDLrGEXboCCzJadhZRZ9QUtYc8ZM/IEzq8mrjmkBvhFZI6A2I0qj7Gr9PFyOz1p2xmhpgfGRzWoldaRLScLYe4JKVuMI4YP4JN4qGGtRoKgWoWGu8aELjlUVGc4WzIER/OCqFZAzYeBjmHFbwXQmu4UArg7EjppAz21dA7b2jdcFxPy3M5nDU6JmZQdOA04ILWK4W6RG6Yzoq/9pJuWgZHw+C6OTF7dyEeLlhxApySPjZXDfx7MN2WurugFwA0SmYxbJSk2WgsUNHkujWNcBNj6CRWMIOUXu9QAujA+sOSYYJXZ+LC1+u1U9JfMLzogBVIbxY6oP8K7OstAZ+h44SMFacY8Ilzf4LxBPOSVnM4Ko7Lr/Fv
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000ff00000000000000000000feff000000fe
+  conveyorDirections: 00000000000000000000000000000000000000000000000002
+  conveyorBucketCounts: 00000000000000000000000000000000000000030000000004
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 11318051
+  displayTitle: Snowmobile across a Frozen River
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: c217bd29f6449a348b560d41f67ce4cc,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_204
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283324116
+  - serializedVersion: 2
+    rgba: 4292980857
+  - serializedVersion: 2
+    rgba: 4282863942
+  - serializedVersion: 2
+    rgba: 4291483618
+  - serializedVersion: 2
+    rgba: 4287664266
+  - serializedVersion: 2
+    rgba: 4293053874
+  - serializedVersion: 2
+    rgba: 4282087302
+  - serializedVersion: 2
+    rgba: 4280172197
+  - serializedVersion: 2
+    rgba: 4280457699
+  - serializedVersion: 2
+    rgba: 4292713045
+  - serializedVersion: 2
+    rgba: 4279709034
+  - serializedVersion: 2
+    rgba: 4280363301
+  encodedCells: S1:4:4096:24C91CE7:fZRBb9s2FMc/A5HDFEgnJfWwYJeUtZzAuixVvXbrqVnUDcvJkugWySUIFseoL0LahgJ1MYIhEtxTt5Oxi+MklUtdDHWxDfFD7VFK0nQY9iDJJH/v/d97JOHB4P/tj/9c/WHw5/Xor//kG5b1RfzKR9q/yy3r1mEweK/fZ5RStqIP3sNUL7F1nUGXdkRpSJNvYNQkFX1FYrfkSxI39TPKQaKvl3Ydb7nvVyTfsJb1Z1Tau68L3gS8PGhYll4B54KfrfRpwkOZw1ou9GEZHJY25BS43hzJHMlhqW41INyt6IUX2EGl+e3ZTOboF9HgUPAlyYllfe8uL1XOLoDn6RPLJZbbgK9uPSylHv34E9lybAI15Jw/IaRwIY2CE0Lcx4+MS9cj9zJGWcJfNiSTusCJzTl4vX5T2SH6dvMiZByKIGQZUlgPKxskhLI71vmBvdMk9xznKUsTukNIRRa61GxWnr2Bxg4dYiwRoyLyLW8EZSZPir7khv/eukigL/L2PjEyIdLa1gGFrTqUFTpQHH1JzmXjKSGZ4JwJ8bR6xGQEIU1445fEMsAhirhIOQsyYQqQyBnzyEP3TRL8okMTMuc85Zwm2cW8ct4gF/RXyYmdic7p20TubTLmnOciyxuvDXIp1YGTT7wvacIol5ZXhbAe2FuQWe6f617x4vB5EiaAaSrEtuc1iCe30CGQmhA75EzGCpHJj+e+sLwdFzYR+mt8KpSOCu0covMWIT/DkVkld4krzxucrkbgIGALouce2bhH7lij+F493U05lpn6nl2sOCX2ZIYGCesG1EJsOEEetT7zK8mh2v4auFZhwYZekxe36pvEKn7T7b+JfSGK8S21PSlfmNiFt1u/Kcco9T1jt5iWGrsiLwu2iGE7ktuidbeVVNyMgJey+LZLEL4CtYOWHBlGwQ2BZQGG81mjXWu3b/lVyQ9aNzvl2oDbzy+rGPLvtxyBHfCsbl5SKruy279h/IGzJMscxwYfgcUB/mCYb2li2s5me7qH4SKyLMu6joc3qyZ2qniEMVwCYeL9NviL3KSjPDO7NQG+cOxg2MTw7NewwNtZ3axlQi6JKc7amejiGs5wBi64CuuFc2ZudtttAe9d278zroVB/G+jx7Q05MPfWhDRHvJ9VFqvdAkCtLgYw6SnIeQzXwHEfYq4WrotIoVGhfLJTUB8I/GF+eEY1ofFc23DoarKL+/3IVCDsYrUIZc/QxUyqDDhpSg8GpJkiDgwGcf5vGAyth/ETFNBaagNkQqXGgLHY4iKYhp34rgzj9tafg654ElVrg7jJAig7k40jTvBuHP4lao9gOAc8fgURZQG495iFBx23qXHszk9VpCS7uXacJpCtjwa70VjOg8D6p+gBK35CmdIzE7H/agb9WNBF1EU+O2F3jFiSPWVx5SO1RGK5ydx2oli5dWxEoAk87miJCFlqK6giYZO10/j/Ds8VWYfNDRmiKlwLPRxHlIER6Sh7sJwnimL6wnaW1BmodKFpKHia8oMTUZqmvARi4UarHE/TtmrkO6rtI0RVXsTNDsemiqba/6cQSYFTcPeuubz5KS7wFS0SmcKMhla52gvRJNQBU4fhP4kQ1FWR349zRUEVayqaHKEJqk/xCFaDdEMUz8zQ7je+wo9Yv6aps6mNBe8Pg1lgTOT+nCjuxnvstnHETdTXodbXoP7uoBWNVTH/jA7wniBwwX+Bw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000fefeff00ff000000000000000000000000
+  conveyorDirections: 00000000000000000001000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000403000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 21267306
+  displayTitle: Wooden Biplane over Tulip Fields
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 41bee36a6a29ea745bd2d49bad4358bc,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

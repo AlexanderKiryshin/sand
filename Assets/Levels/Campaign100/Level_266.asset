@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_266
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283706627
+  - serializedVersion: 2
+    rgba: 4289427722
+  - serializedVersion: 2
+    rgba: 4283711009
+  - serializedVersion: 2
+    rgba: 4291467048
+  - serializedVersion: 2
+    rgba: 4288774729
+  - serializedVersion: 2
+    rgba: 4293047123
+  - serializedVersion: 2
+    rgba: 4287191043
+  - serializedVersion: 2
+    rgba: 4294100353
+  - serializedVersion: 2
+    rgba: 4286407479
+  - serializedVersion: 2
+    rgba: 4294372561
+  - serializedVersion: 2
+    rgba: 4285415425
+  - serializedVersion: 2
+    rgba: 4290489995
+  encodedCells: S1:4:4096:59B0F857:VZXPb9RGFMf/BhPKgnzK4NqgcFmNELLIhemrNwonSC20Ui6NrImVnGKWTMA9RZEZLSe6itA2OSGa3VpcnFJcaW5EORDlj+p7YzvQp429O5/5vl9+GZcl2seyteSErkE5x+s4SgTQl3Lc4XRgb7sSt81FIgYfWjCmfVr7gf0VBe/LVQEB+0BSbddmJ6n8zHZR6IH/vtyCKJEZwbG27l/JPeUxr/RXwFOzIkql9GcErWvaIIKMsRUAj4mxJjzCiGiWAvrNfFaWW/sCvH0tIzYyxMd6vop1AQZm+00pq4VOI6jrz2Ot0y1dBgKSDXky99pifO2rOh8EbKxXPAHAvEEWyUKLBm/BhpSjbC8PHoMQIDzB0PyNO+/bHgrps3SkJHiPPbxEsJhImRSDjZNVapWEkztMZokElm1LAFmYWv6rApFKOCjSEx+wNrbhYaGnb4oo0XpPqcFIqTJNEonpg4ykJ3EhUxqkLvTeZhRkQZTOpZxLHckkwoQyptTrFPSBlp8CqTJMNWKFL4oIwEeO8gfImUAfS556xQAAW5dI5EAVqZnahBFjmM4etd52njHMWHgsU2r2HF2MGPhS7irFmIcq+ngYycsCwsGnHLD2aITbBUFBbvDPV7PflK3KbIP4hF/JAemFDe59WaY1rBFOWa4spzZb/3j/ZfklrYFBbrZ3VU76xr4cT39kF7cJ1yOjamNM/h2/PORDfvETI54TRFM1poodwz2XRxPO/+DMcmXVKMdPQP0M1sP7az/cChdbntd5w2tKUKkvxyEPJ1N+l5xlpJfEjbEBnsZ37/en4dlxeJs4JSVbjj5UeDYNOefx+mT9nvVv1GsZNRkif8rX+ZTz6fnlZcza+DjHHa/5GqpDPkQcB0GGqatN/DdpuXrHb034Mj+eXq7H55iN5QCRqRr+YK2PwflXkr8gjkWnOAld+F6PY2eWz1Ae46PDAMZEDXeJ12Ef40/+Ik6pId+2vM8xQv4OU//K+dk54n+a3mJQ3GAeWn6IsSd8bR1x/LLrvesa5ri8X5kp5RYOh+Q9ft7pUQhV3V8YHh1h7FvTr+uYfHz/eSt3HJv7w4Wwb71PQysnXucNdypTHXEHcZ9PzrD2w/hnXpEYZ8N1XNxhFvgC8ifhZEje4xd8x86FanhlHNSHC5PwSWyt57xUdU1PldRLjuHcuP23/Hwax0OU9xx0rWxmTuVmjuljEs7fb1F6OMTe9B3VjqVxeiZzyIzz9ncU32XXTN6rVItNhZ13EaPecafDqZ31zrkdLK1JXrnWSWXaYez8z95o+Y1XVTcr9EzpoeDxWDhVxylO65bCnho1xrOnSa8107mg2vM3dDo7/7OrGNjXfDM50Ae06l5xfOLf+ACPEmj59asQTeWm0nu+8ABs+otMXOsi0Dg6rnFx9neTCNrVwHOq622t2K4d81qvyNEAGg7OjussngadCwwzwHOULcEmLTCPvFe9JYb3jEI4RiR4DgmlHJTS9VcSK9qG/Po1ExGGUbDzCNwd3ARNhjmWWJmd3iM8yfBIZln58eJmkRb4epH65g1M+kY0wJcb/tbd2238bGy/ruh5uSWL+VbawYb/+GfDFfFiXpb6OysvLrJnduWefTnr8orv0+U/
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000fffffffefeffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000020200000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 27760504
+  displayTitle: Narwhal below a Broken Ice Floe
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 5d4efad6dfc84a64a862a86ecc6f26bc,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

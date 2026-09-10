@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_241
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4286563050
+  - serializedVersion: 2
+    rgba: 4292273387
+  - serializedVersion: 2
+    rgba: 4279774780
+  - serializedVersion: 2
+    rgba: 4283610349
+  - serializedVersion: 2
+    rgba: 4286423995
+  - serializedVersion: 2
+    rgba: 4284320166
+  - serializedVersion: 2
+    rgba: 4281496481
+  - serializedVersion: 2
+    rgba: 4293448379
+  - serializedVersion: 2
+    rgba: 4283526266
+  - serializedVersion: 2
+    rgba: 4293441675
+  - serializedVersion: 2
+    rgba: 4281570769
+  - serializedVersion: 2
+    rgba: 4280702320
+  encodedCells: S1:4:4096:0E08B15A:fVXNb9tGFv8b6Moy1OhSAW1k91QwieJGF7XTEAV58QZU4MIXQ+GoRHURRHMQzFxWCzSMsBfHNutJcmrRQmBzETrOIBheDKkeuJw/qo+0nd0e2gdpPt7vfb8hXpb9E20ls9ZW6/3tPf/l9d6aTlutG3zr/Sk7vdpmLRBowzIrL3C4sfDTLJv9mm21S+2SptnWj1m7dWNr9hOwniVJNs2SdpIk7VbWaiUJwLPsxyxLZkfT6emnrWSWJdd4e1oeKgsJnD9MktNn06RC50mrlCmpPb0+/JG0X9yuPN8gyV/o8+dJ8p9kmvwd3f9vkiz/d51DfrP5/+MQ/KR0nWSz9XU/ucrqZp3NP3+TZXZ19yv6xvd//nDdsnzfsjLr39bdR+v+sgKsHav8WQ2rRH1/3doBuUN7Z315dS0pqFs3VDEG/m++vwTFdd8HCOPQ38f7Yb+xj33ON1+YHfvRXdv3U98PcBD2g10eYM53MU9xgPvpvXTwRfNuZT9IOff9Pu77fji7Kda9z15bvQfg/JBzyPHbZP5yevp98u33QwzUD8JB07LG4Q7f750ms+e8v8sxx/2QpynmEMcl7n4AUeJ6CGxwANtT5NZImGKBDnlDD+zJnjXgAPGwWhq5q2ooUpR5i7E2Ixvr+iHEy2PQ5SeNQiklFVKaiIgZs/c40P1/1eIeQk9ihGrEMEaVIykjjmaGDIY43mshgIFcFBGmmSaERIRoQ0iZBsNW3boSQJOSzQAvZQxhP6QnOB5ZqNYDgZobkStcA1bKmDQYhAG2ejUPQhbOMbA1K2VKfaAUX/buYf8Ms4h8h6xDMqxwogFnMRvicFO8wkF87f/wAsfXmkAx6fP0K1TDB2Xo4L93iPGwDA0WiHSoT07qoNjplqByBToOR/ii0tRsGI/Svm+5laorXLoQ8tVghKGOBwelETyEFyCFQkihKwfoeGAwfuT7cRDGZDgMGh8jZKFeryYquPeDiS8w3931U36goXb1tZItkStvISGU6zwZ4uAoxCcn/GDYD/prX4DtSCFKbrlKuVD/YbptH0G7UxAKd/cRYmolxSqn0FaBxGqYdu3to7B8oid8c3ErKqjKIRupNpSbK43TO3wbzIyfhD63Y2gSU1BNsyALhLzaIP36mDdcKMUK148aVRMBFowpdLxyOumluMMfQk2Uiy3+kaMWkhCq3DXI/1UkjlJHcF5minoX9fDs6lHUriq48VaNLgQ9eicgVAc9qfMeWrhVbUsppTaK11+j4uhMUQE5rxoh5ARvGcQBFDJS7uu31AZ8Qw0Bae64VEXvoG4KikOdguavaaEun4ohZTKXTz9xKS3roiiNpZLkq3xAJ6SI5aLIiZSTDSIXuVKRoIQs1Bhe1OABk4XcIMQhSsRLSTSkNyZUkIgumPaahtymTSUfgt2zyQV8BYgwwjziFev1/II0zHhDMaWIklTxcVS8oySXTemZYi02k8KM2JiyjvaEoMXgLVpbQM+EqxxBxaUxTJvmWKtzmTsLtXoolSW0oAhpyJ3sGj1cslFUkNgVKm+at0TVI8geSVYbe4p3u10z+UzX9O/nkubwfbt6zbktkFoVHtSoP2ETNDEamn3BrDjylHeu6WMlPy2+ky4VnBHbjsAGGTPvPCaOo7ycFSTaO2Ou6yBuuqbjMtMlxlj2kjFJfsshUR2wvJAy2u7azC5Wy25nw9yxz6OVZkUxMRT+XY9ItQ2qpvhyubynPW1rx8gHRktWsI6nwZoOzXlXr4y2O528aWljOg4DgnDtZaerz38PR/5O/3SeZW+yQz6dVzOiXQ3N+QwGmp+OggP/GfB/yV5uJtUkmVWjcDov5x3ei43uv6jmyh/Py1mUzQC3Ab9fzjcTmtHj4A1wf84uyzEHY3ae3B9ttqZ2if8J
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000ff00000000ff0000000000fe0000000000fe
+  conveyorDirections: 00000000000000000000000000000000000002000000000002
+  conveyorBucketCounts: 00000000000000000000000000000000000003000000000003
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 25142279
+  displayTitle: Saiga Antelope on a Golden Steppe
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 185a155cd5ebb7c46a6bb762b984856a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

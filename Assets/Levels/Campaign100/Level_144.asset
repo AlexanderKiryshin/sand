@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_144
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282292657
+  - serializedVersion: 2
+    rgba: 4281230449
+  - serializedVersion: 2
+    rgba: 4285288970
+  - serializedVersion: 2
+    rgba: 4279701259
+  - serializedVersion: 2
+    rgba: 4280818965
+  - serializedVersion: 2
+    rgba: 4285690994
+  - serializedVersion: 2
+    rgba: 4283254596
+  - serializedVersion: 2
+    rgba: 4280694863
+  - serializedVersion: 2
+    rgba: 4291545538
+  - serializedVersion: 2
+    rgba: 4292850041
+  - serializedVersion: 2
+    rgba: 4288051990
+  - serializedVersion: 2
+    rgba: 4281937187
+  encodedCells: S1:4:4096:15810F1E:VVXPjxtFFv4bPFrIXMfSwEi7txaHjeeCUjVORF2Ael0a7bsE3N2B9WWRu5tFfZkREpb2uCSSh1wIAoTDzSdiLvHUczHS+6P42h5CeLLsdn1V3/ver2q9M9ycPF9+uvzTfrj9tcZa/TCd3J89+2z47St4OHy2f/BGSV34/HDwsHu1eDX87fj2kXqc0/HFwbtde1jtFz9Nmzh4hVutZXI5HyhvjpY/Ldvl8guuPZW9nLfUOOJ6HB9tLjZfHQyHD99uHz1kCkJ+/mz57O84TUTBJro4ennncnPw9sXwmCRY6wf/GB4MxIpwzXVtHqUjVj5++fnmUEQt1YmO6IAMRfah9q6lmjq1gc8cW+FAUvHxQKOLNFbfxpYcS0c8IwIuQl1642IIfZFTPmtToi5wIk5BmIREquOjgw0bVmqaSZWSTQKprCWTal3XenDwgYh3UFfZJlXEwUm0UmKPUjpv2qP/iETXcZeKNm98oMCxkBvLAgZ+6/KIo/NIgGumeep4DDgy3Sh7wFxdDlVsVLVd1YakGjSIsljoV8SSbw4pOnFOpYR8Vacual5b6YvG+mbY2JlJTrhqu2qmoioRwZAn+GSezkVmyBXchWku2mFRlKob7nGRN14S+BVctupa7Wr1FIu6PX+KorHGaScuorqoz6zdRm3rgqiu0/lYKSKDiALx9aSm3eFcw6ukc0Z+xXnyWz4Bk6hvJlsDHHtTHW409PrQIXzx0jES4Ldlstyf15y0RW4UGaY4eF+t9I9V07mUGLrE1/8lv1v0fztBslTHzldlcJoUhWM/vQneG1Ljt/jrwE6+breuNSJ2EljPUGbb8yu8Qbywl+nWoKWJHMI6o8fGiImkgTrrTIwqBVLPyDT6gwxHMhKjl0BqrYlq6xSM9Qgp788nQ9ahhRNORGMwIbOwZUdIJEX/5AzZAymksS1Mb0XKt8FEQdwkijbsvVvL6qwRa20xaSQIuB8HFcyFD8aTg8M2zLYIuquqzpRNQuJt7DrrTZ8B8o6pRDZlMp2FaCZNwELEkNHYgxjJA/k0R04Nn+FAh9Ao9kGOCXMnYiAwoUW9uBZN1bQgFb1B+mDEcYYijJONNrraWBTPojeVjTPYSBKhUazJtS4CJp7awqN1Q24x0f1cCyWntmjZ0FmBrpVUG9cuznHoHPcaqozby08nBuNSkvH10yeLB4tFjkKdW7QHNWbmjDbopnbq+tCNNV9Px0iDt2Q9dWbiEIMpdFI23heLxYMHk20IqCEC9IXYRg2Z2ezMdijm49SWzbRdfMJxCv2oy6wem6QtApq2rb1TNuWTxd7Yem9tzIuS/diPY1EBucLVubz6Py7YK3hFC2IaEIapAlVVfIrL89YWV9RfNdgCHmfq8sz4cvT9TXY3++7ud8tvFlcZ0Tu5sRXbmTWpvJeN1qv1+sUatso+zFaj9b9G1nQ5uZzMO1lvq9V6Z7tN+H99716Ly4WsOV1lqyw7Xa1HWB590zP1m/9dedQLcWbrbAdl/dfqRbZaPwfFJx9tyWLCTTzN9g72m17s3ZQQTZMy7/mzbMe5vlXQa7y+vuasKLe4QO2v/dLzPbBaw/8oO935+rixaHTz6tjOfln3Qq5BeWq8MdGHHh+9jiP89Wik7mtv7I8t9Xi2I9kz3e7NrguoE7a781kP98g/oRZP17hDrvkUzez/8P/iNRWQm63vZqfYJfP/vTefz818b1/2X4eHty/I5fc/L+d/sZMdfjn482U9n9/H537/vbP+dzD49jXc7PDLk/3ZPf7Hy3q5/B0=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fffefffe0000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000300020000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 14983566
+  displayTitle: White Yacht in a Black Rock Cove
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 85ce9a3d086cd4749ac52cb89a8ca72b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

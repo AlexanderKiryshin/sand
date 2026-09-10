@@ -18,9 +18,6 @@ public static class BusesUiArt
     private static Sprite btnGreen;
     private static Sprite btnBlue;
     private static Sprite btnRed;
-    private static Sprite magnetIcon;
-    private static Sprite transparentIcon;
-    private static Sprite shuffleIcon;
     private static Sprite removeAdsIcon;
 
     public static Sprite Gold => goldIcon ?? (goldIcon = Load("UI/BusesIcons/Icon_Gold"));
@@ -36,9 +33,9 @@ public static class BusesUiArt
     public static Sprite BtnGreen => btnGreen ?? (btnGreen = Load("UI/BusesButtons/Btn_MainButton_Green"));
     public static Sprite BtnBlue => btnBlue ?? (btnBlue = Load("UI/BusesButtons/Btn_MainButton_Blue"));
     public static Sprite BtnRed => btnRed ?? (btnRed = Load("UI/BusesButtons/Btn_MainButton_Red"));
-    public static Sprite Magnet => magnetIcon ?? (magnetIcon = LoadProcessedBooster("UI/Boosters/Booster_Magnet"));
-    public static Sprite Transparent => transparentIcon ?? (transparentIcon = LoadProcessedBooster("UI/Boosters/Booster_Transparent"));
-    public static Sprite Shuffle => shuffleIcon ?? (shuffleIcon = LoadProcessedBooster("UI/Boosters/Booster_Shuffle"));
+    public static Sprite Magnet => GameUiSymbols.Get(GameUiSymbol.Magnet);
+    public static Sprite Transparent => GameUiSymbols.Get(GameUiSymbol.Fill);
+    public static Sprite Shuffle => GameUiSymbols.Get(GameUiSymbol.Shuffle);
     public static Sprite RemoveAds => removeAdsIcon ?? (removeAdsIcon = Load("UI/BusesIcons/Icon_Adremove"));
 
     public static Sprite GetBoosterIcon(BoosterType type)
@@ -54,17 +51,6 @@ public static class BusesUiArt
             default:
                 return Magnet;
         }
-    }
-
-    private static Sprite LoadProcessedBooster(string resourcePath)
-    {
-        Sprite processed = UiSpriteUtility.LoadProcessedIcon(resourcePath);
-        if (processed != null)
-        {
-            return processed;
-        }
-
-        return Load(resourcePath);
     }
 
     private static Sprite Load(string resourcePath)

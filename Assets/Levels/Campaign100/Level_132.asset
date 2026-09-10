@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_132
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284116351
+  - serializedVersion: 2
+    rgba: 4279373584
+  - serializedVersion: 2
+    rgba: 4288176182
+  - serializedVersion: 2
+    rgba: 4293717485
+  - serializedVersion: 2
+    rgba: 4292591786
+  - serializedVersion: 2
+    rgba: 4287534236
+  - serializedVersion: 2
+    rgba: 4279314576
+  - serializedVersion: 2
+    rgba: 4291729255
+  - serializedVersion: 2
+    rgba: 4280821549
+  - serializedVersion: 2
+    rgba: 4291393829
+  - serializedVersion: 2
+    rgba: 4282665039
+  - serializedVersion: 2
+    rgba: 4279785950
+  encodedCells: S1:4:4096:21218071:tZTPb9tkGMf/Bpdqk2UufdUSrPYCb1ussEuWx5G3cRnxW17KLlHawMgJI2SKcinOuz2EXeJl9V65F1QqTOCSMgaWOUVI2cB/FI9ThoTGlViRLH/e7/P7eafT//8n/3kLy//Aal+cX759sRi88xLeF+IFD+eDxbcvcSmE2r/kA1Z+97J7cWnhbMriGvvxPx2I7IswDJOLq+H3/4YjzJb67Ij44jc7fAG+/RvLnT0hUP2kj8JasEg+GWGlmQqAiqMQvEXy2LYDuxyU9n3MEInLJR+hUM6BLzZszdi8TFhwv5Jjti/AP5/Sy26dt5TQsbZZuTg9Kr/EbDTKJLgAHhnCiPOW7+qE2XZYxuHiAX2joIRPAVQcR82WOqzk80EYh+GD5ccqJbIwdHHkNEEpZh+tzZNaEIYlIgwp6h2XOJ3AKGqBa6/ZLKjVknBRtqUAkjtk33dBOiPn0AM7ju3F1ml4FJZ7Urg+iCiCJgWhHL4LsB4wbZenCfHFHmHhDnlTeb7w/Sg6B399ro9YORgQD+9QaE3hRKPLKB1swnAc6KDiSRAu7pDRdoTYxI8FCD/CNsCY/AfzchEQf094DsfIkf6+p7DtIPdA1yj/oCwpwcEdqhnJo6bvo48e57wNky0ds2BRxiwMB1nmRI4TCX+ILsp65AgvrdmMPV8MWEAJLAuYIez6yhcoMio3q2k2XyxqWzYVMFt2IKP+gJQopwpxQ2sKL5yfkv3waxxlkYPQpBGgCPbFnvdYazuoxfPgORXw/hTrnI40hx4oVPJRw/+cJVWAYchmR8kP1P5pnTtdQE/gsfrV2vuMMZvRcpQ62ci/mY5uDp3MacO5B2ihNm5vuIyx8vlWGD+vseP97KarsB5Jpyl9U6RWC0QesyRkwcVvNfYVxT70cJ/S4MoDmMw6rng3tedbg/LPU5sdoyOhGpKqiNiQYBpSfGDqkDJMioqPlFAAO+g4XbxrtFZnbVcl8VYZDJLZJvsSb9LoAvB7VGlPX2k8nSm5fZXmn83zuM+Oq8Hzd3b5Hq2J0uPcuNVCMd6kDLZWLu7igybxbX522PPlNsZ6LTU7Cj+sNoh+F/gWNdzd3uW8B76HOt3MTQsmb9sBi4m/iR/xtgs71PdDj2Z4nK/pu4Y4ULG91BfZH/wmCMKkB3AtvXZhGieNIYm/Ij6rf0ortb3ku3sAlq9zY3arAyRHcp/XR98IrDCXDlVPNyaFeWI0YJOtqNcZ0xk+QMn5mdN1UXhCN56k1lOjD4zl+IitXCD2cYefIe/uKtFVZqulzc7MXK9SEyw2cPSM5JHD+T1vu9tenfV03ik6a4x9gJLZBe3u7tI970W8+xGcWCd948SizK4D+d8UCq8RJH2Pc8+FA2tsGU8KigzcdWal5xi9Qvbp6XLSu9TftH9lkzxX3Oxkgn9aUb481EVXuUXH2tQrac9/ZK+8IXfO+LVqATnH6u8N8alh6WSltdpi6dr7gkfRj9x5wR30farzumkVRT/Or17/GbbPnpH5+iUW3vIW8mBCbUyPzBvpDUs+PqYCRBXnUkoYKuGKiTb7J6w4KYrG5N41is1ZdoFuEe9xceIpCQdGMliL09fycecZURpvOkQjMHyor9yWuuWu2vGrD9HV6fswXHKOHCS8rgvLTm1DQO+XuNoIkR6I4YiuEaoiCCVYvnmhTcsA+P0XIeDXfm6uNoZIlPSQ9q2xLmzLMDo0LiAOC63zpw3YphKQHp6kpv04j41ZdSA/aD3SOT0d6cmKuzDRBYt1bI17VxoAJJykeZr2ixb4PKsjbNhpzGgI7bvFjG79nn94kaezG4AuUAmLGbmzWF6Mx3kxs4pbhlHQF2NmzTrE8r8A
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000ff000000fefeff00000000000000000000
+  conveyorDirections: 00000000000000000000000002010000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000004030000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 13726818
+  displayTitle: Mountain Rescuer with an Orange Rope
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: fc1e994b86882994090f2c51618df5d6,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

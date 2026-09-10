@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Art_096
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278527075
+  - serializedVersion: 2
+    rgba: 4278787380
+  - serializedVersion: 2
+    rgba: 4278519304
+  - serializedVersion: 2
+    rgba: 4278322971
+  - serializedVersion: 2
+    rgba: 4278331023
+  - serializedVersion: 2
+    rgba: 4278392905
+  - serializedVersion: 2
+    rgba: 4278741435
+  - serializedVersion: 2
+    rgba: 4278850591
+  - serializedVersion: 2
+    rgba: 4278797698
+  - serializedVersion: 2
+    rgba: 4278782992
+  - serializedVersion: 2
+    rgba: 4290413964
+  - serializedVersion: 2
+    rgba: 4278324270
+  encodedCells: S1:4:4096:7638721E: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe00fe000000000000ff00ff000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000040004000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: 
+  campaignSeed: 9956574
+  displayTitle: Dragon Treasury
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.1
+  frostMoves: 1
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: cd20dc18d0b573e45b2eca5346a4840f,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -9,7 +9,7 @@ public class LevelIntroSandAnimator : MonoBehaviour
     [SerializeField] private float introDuration = 1.5f;
     [SerializeField] private int introGrainBudget = 1500;
     [SerializeField] private int poolSize = 512;
-    [SerializeField] private int maxActiveGrains = 384;
+    [SerializeField] private int maxActiveGrains = 320;
     [SerializeField] private float fallDuration = 0.42f;
     [SerializeField] [Range(0f, 0.5f)] private float fallDurationSpread = 0.25f;
     [SerializeField] private Vector2 startJitter = new Vector2(8f, 18f);

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_242
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279842650
+  - serializedVersion: 2
+    rgba: 4282143304
+  - serializedVersion: 2
+    rgba: 4278849044
+  - serializedVersion: 2
+    rgba: 4284250482
+  - serializedVersion: 2
+    rgba: 4279904559
+  - serializedVersion: 2
+    rgba: 4281298792
+  - serializedVersion: 2
+    rgba: 4290625967
+  - serializedVersion: 2
+    rgba: 4281956523
+  - serializedVersion: 2
+    rgba: 4280766851
+  - serializedVersion: 2
+    rgba: 4283934677
+  - serializedVersion: 2
+    rgba: 4286355859
+  - serializedVersion: 2
+    rgba: 4293517517
+  encodedCells: S1:4:4096:32968C42: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000ffff000000fffffffefeffffffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000203000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 25247008
+  displayTitle: Basket Maker beside Willow Reeds
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: da85d6f44cd444d4488619276029cf2c,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

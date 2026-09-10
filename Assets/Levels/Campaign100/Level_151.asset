@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_151
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279050012
+  - serializedVersion: 2
+    rgba: 4281890034
+  - serializedVersion: 2
+    rgba: 4280241797
+  - serializedVersion: 2
+    rgba: 4279995121
+  - serializedVersion: 2
+    rgba: 4281033628
+  - serializedVersion: 2
+    rgba: 4280236615
+  - serializedVersion: 2
+    rgba: 4288537594
+  - serializedVersion: 2
+    rgba: 4279588778
+  - serializedVersion: 2
+    rgba: 4280303975
+  - serializedVersion: 2
+    rgba: 4283720906
+  - serializedVersion: 2
+    rgba: 4279594190
+  - serializedVersion: 2
+    rgba: 4281705977
+  encodedCells: S1:4:4096:730D7742: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fffefe000000000000000000ff0000000000
+  conveyorDirections: 00000000000000000100000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000204000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 15716669
+  displayTitle: Capybara in Orange Marsh Reeds
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: caacb56567e46cd4c8fa57f87128bb9e,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

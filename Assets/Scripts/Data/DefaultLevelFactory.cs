@@ -32,7 +32,6 @@ public static class DefaultLevelFactory
         levelData.palette = palette;
         levelData.cells = cells;
         levelData.buckets = buckets;
-        levelData.previewTexture = ColorQuantizer.BuildPreviewTexture(width, height, cells, palette, 8);
         return levelData;
     }
 

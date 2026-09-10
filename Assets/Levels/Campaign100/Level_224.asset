@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_224
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279965202
+  - serializedVersion: 2
+    rgba: 4289437327
+  - serializedVersion: 2
+    rgba: 4282004005
+  - serializedVersion: 2
+    rgba: 4283516985
+  - serializedVersion: 2
+    rgba: 4290292892
+  - serializedVersion: 2
+    rgba: 4288515966
+  - serializedVersion: 2
+    rgba: 4282734500
+  - serializedVersion: 2
+    rgba: 4286608483
+  - serializedVersion: 2
+    rgba: 4285226828
+  - serializedVersion: 2
+    rgba: 4279903852
+  - serializedVersion: 2
+    rgba: 4292662211
+  - serializedVersion: 2
+    rgba: 4291082666
+  encodedCells: S1:4:4096:85C37EA1:RZTPU9tGFMf/ho2UH2RyiYJdXLgob0MR4eLs4koJJ4MCaXRyJqoTODHTOmW4JBghNVwyVhIt4UI6HWfcngj5wYgTWC6p94/qW9nQxw/Dft77vh/7pFK16laNqmEUi74yo+rmZriPC4bhF8fyf9ByWixWXYlfeFJ1R/HQWMy9CwPsF/FYSum5SqZk1PzaUA3/zNUNN0PuFhC/5kp2ATMVhvrFWnHIlU0xTGBUq0ZutVw9l78D7oKbAaf8hmEsFgZ8gA0X469pwDgo+58Xz8KVPnezm67GKB9VAefyw9alPPG8Tc+iAJhmQbWqJoHh7pCnnuu2OKV8wXUxpuAO+ABnclad37I4510pR/P2sYmaMcQSC0cV4Jx1pVst5Mf3Ve0o62H3AAy5NeBGHrbpDipXfA5gHouwOONdT6WuIvFuyjPzKOuiq+NgfhcvqWgUqrJ37ZyvUOD4YTmMxxiOMy8Y1dO/zvkcCkt5JLB+7uJgili6cbD+7zmnLJZyV6D+6GAu+F3/pX/GdxFgFQ62KQzjkW+oa3/2Z0P+M+Chw+NvcttGN+Q/+5jCMOrvV78bxic53+XIY8N4iluBArXVxtoZj+IkGuQXRu3pYK/GPvy9JjO1O7iepziQ7cR2YuHXQoWD2rPV9pdGPkJP/Ui5HSaOI3z/d+VQnPyt3Vlr5LfrDTRWgkSInId137+wNULgj7MLlpmXrYShEIh2QiVghkD01oMzjr99PwwjxYVysG23kM2Iwn3XnkcH9cS8ibljRwEmiUI/KKTjp31p13tsPn+eXtcTivOPkh3kY8vHcnu8cenk2ofLW/mWFkRi43jQo4V8yZbP1tvXf220LxNyXS3MZmgLHgsu4jgUkbt8erx+uXF1r9PZ62hKIEzspojsWMQbobAPSy/GT9t7nekO2k+IozBMIuwfW9zwg7nKg/XGhU6nqfBdbHJTkXqCXg4fc+/IMGt0ws7AdtzMDbDn3N5wbmRWt9HudJ4MOa5RP4je5VhnQLvv2u29y4330ZAfpulEcBzUJ+H5JKMmLGR2A21rtdNpkKuknB6l8uFycYITQkED6KZbjUaaLr5fmyLENAHfY/vy9PgoJq8iqlNt9HExRVuxLGJqBA5TvK3ehF/hyhkoOegr7LrHD19QFPCPgyBM/FpFR3eT6IRhPf2HvrfyAviUZgrfe8lF6JdNohFGdW1DJNwJSURtC/jGK6eSIJ3iZWaDg48wxKHFIBZLuNUAWACOtZ7e0slWLERLN+FtgpckOL5ODm7jG4tFU/2jdFKDxHJaLWBkK4qFg0tSF+qBbDUdypc8IDQ2gxhix/xevecsKwrfCuE0LdyG5rceJQzLZ1M6s1iMeRlgHWGSJE6UhD25T8ugqQZMpk8zNMehG7jsSV0knz+nFYRAQHGiTaOAAEZBhI6Iiv3oa0o1YmtEMxUnO44TsRibwfLqdWOzN1HD0TK8GYco+3E7gdEIMRbwJIizdNfnKK+BQ3PORIKbICL1trkfjFNgDEiFadTSCI6f3KXQDKPlEm+Wkjid0+FjCuwlu1GaMc1cH8sTh/KTl6UHaRfATGcw9ZKt3dNy/mWUHu4uY9R+X15ikyDTGxyOZnF9RnCKzFxk0jMZlL398Ze95lc5m/aP+vc0TG4yWze1aYARDVeFLvvpyqfHtv7ReNNzOFZGbmsWI9PsokrT0h8R41OaYc6L326bKE/KXCvrZMdSgyRaC0Ze7R7M6KQ80gRQIRzXgZAfuA0jOEizbLVKB/4VcjJeyQvnrKX4TrhA4QqYUIlLr+N5M5s1LYVNyL3IND+JYhTEG3v+LuuHbpCLE33wQYCzKYgcFBCtpsWiAIIrGzGZgiH/Dw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: fe000000ffff000000fffffeffffffffffffffffffffffffff
+  conveyorDirections: 03000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 04000000000000000000000300000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 23361886
+  displayTitle: Rescue Boat beside a Fog Bell
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 06336186980bb6542b24fdc97b5826e9,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

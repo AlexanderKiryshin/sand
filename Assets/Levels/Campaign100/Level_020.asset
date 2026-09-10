@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_020
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278322436
+  - serializedVersion: 2
+    rgba: 4284189590
+  - serializedVersion: 2
+    rgba: 4279646544
+  - serializedVersion: 2
+    rgba: 4283593060
+  - serializedVersion: 2
+    rgba: 4278587406
+  - serializedVersion: 2
+    rgba: 4280497970
+  - serializedVersion: 2
+    rgba: 4279445030
+  - serializedVersion: 2
+    rgba: 4278983190
+  - serializedVersion: 2
+    rgba: 4281031553
+  - serializedVersion: 2
+    rgba: 4281815114
+  - serializedVersion: 2
+    rgba: 4278720288
+  - serializedVersion: 2
+    rgba: 4287218648
+  encodedCells: S1:4:4096:864EE71F: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
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 13
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 12
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 1
+    count: 1
+  bucketLayout: 0000000000000000000000000000fe00000000ff0000000000
+  conveyorDirections: 00000000000000000000000000000200000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000200000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 1997170
+  displayTitle: Elven Archer
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: aa35eca05cb88874a9eab304e27cbe4c,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

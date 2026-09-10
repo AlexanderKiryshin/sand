@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_253
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4290875245
+  - serializedVersion: 2
+    rgba: 4287742189
+  - serializedVersion: 2
+    rgba: 4279837214
+  - serializedVersion: 2
+    rgba: 4286490318
+  - serializedVersion: 2
+    rgba: 4289768372
+  - serializedVersion: 2
+    rgba: 4281416766
+  - serializedVersion: 2
+    rgba: 4285237416
+  - serializedVersion: 2
+    rgba: 4286277213
+  - serializedVersion: 2
+    rgba: 4283395204
+  - serializedVersion: 2
+    rgba: 4289294137
+  - serializedVersion: 2
+    rgba: 4283322455
+  - serializedVersion: 2
+    rgba: 4280769382
+  encodedCells: S1:4:4096:1C9FD1EC:ZVVNb+NGEv0NNOJF4pymQYcrOKe0wVmBvAxDmavQlxHMxIhvptC2lroMo1gWlEsQf3SkXEYWZDPURVivo+XuydRQ4tSehgHXzvSPSlGeBJlMAfzofq+qXld3kdJEerA16R174hT3934fV56+y9l5Iq+8YddMeWX1z7hpmmRJqOCbTGrF6x/CPMHJAl4pmDJZXS2wR6sSkZxazVklpPCXV56g49N1mRS24zjrhNQcZ/ksHg/zjlMrrmJiOa45hkN2irF83VOW845T+Y1tmLJRTBTzUcQXfW5iCPLAKpKira9XKnx9/Xoa8WjOdyuFZ61mVGTTIA9BDML5bhT1ptHVeX8avVH4R+PTKHo5jXrHx2kUKe/A5P3/9L6+wwgLXljE3/H/J+evl9g5P+7zniKtrDySHkk1g8i19RXJcTnPrgp8cc7b/Bgmk7Uows2skB0s5aTvHl7R/vF5+7Nd53Qyid6YJD0r8Cjao+ourZ5Evegtm0jPjBMJI9HM69GzKPrlLbh3LT0zTyUMR6n7OBvn07u38OcfYn5DQinlTH1Mjw5vlvg/fiesSetkZ4L5hSt0qqs6nUZfX7uLyyVYCHxqttz7Ij7iIhB01IfzrJ9ev/F/WiH3wfdRdMHUzYtGM9e3ZvEJtTmEPz0s0DFev7yJIoCuBa+omwcAJ/SMX9k/fYfua2u7Na+H+b20PGrolOb5DOr0f8c87J9Ookm09ncr/PaD96Vw7jWCnNEgaMStLBmeFhuKAr/8V2S//Pc0SksatC1jrgFD/xv6UGG8Hzvd5z/crDFAK1XnHsRwUL7If9uB3rYz+lH/S5PCvuZVj+QUXKhvimypHuVJbNL5pXHTZN4B9apmOwAP5M2cbl29xOy9L1dDafxc/04f77dVCAwj3aBAHrv08wt+NsVCS4E0vivr6rA6S920Krsdiv6qLram2X+jv0nfsvPxEaWMVNulRjjbjEMVzGSYsdEBVSV3krNucGnX2aXfNTsw3Iy7LhwkH6GQC/2HXbpNg46StLs++g/arWHZ7ULySd0GJB3NOD0UQeKZlwkMBrIS+h1itudf3dphkAafMJbUS+0g1rw4ceWqP7tQEq/FwpFnz8IR7ZpBfTTyOkkDmEo35KpSsmdzmyahVhop+wbAiAyHG8F+CrB3bpX84dxUBl2WQL+bqKolG56XNDpLPATFDgdk6A8263vYtdjWQwDFuIW0+rgcJ6ln2+2BVbWqJcPCfiZFA5szgASwDrEH+dDqXM4URR6SDexeWUaGIRt8Ad2kHC9C0WoT5fbWKsnnYMjFVwOT1Phf4xSS8kILmWgpftWsW6XaIpgRopjEN7gy8BI0cDUqujKp3sqpTE5A27KJvPy0hFrCOZxxque5bRm+3JFl+YSFsMEYafnWsM9hL1U1cDPRCX2yYZiKaZwsoIMFZkGQQpmpZxz6NBcAwZwQ3yqWZvjVBSRpaQYdvuDjOFczIVzoktYAV4WMIr2Br6TPFyqLm9QVQhWwAbJhojgFl4fLbM/DF0l8SGPV1fWMCdG5te1bhfj+AJPIrbYHV5/v5q57RjPdxRAs3OjOPJaUbkPrwLOwF8L+nVApUJd+XB5/ag7zn+deMOvOh8TDfYPgi9PXmFx11aypC7H96pXw5+CN2EcnXhruI0dTKVVpIkROaVO+Rxb+QASZcS21Wz5oTQ8JNM5FJihKoJn4+P9jIUzcqMK8pr5lmJuxKtAw0DZWIhO5IHi8Cli4I2hpoGH8fPtTKoSebQ+xmh08VChQZTROkEdzXH0T/yX5NwqejVdYzkqXEAxJO6ABZqeByzpGdV61yFaJ+IJZDXGkCtrEJCFtCl3N8Og64CZgGa36tmlYpsB89eTwEGXnTSxfU9PipWgv2Gem+TOjhWqG1WFZUX42QnyUeqCaLRyK9guVuZqnukWJWCbcrAF78D3vL9rOi7G4C9LxN43L+/G9Sn8F
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000fe00000000000000ff00000000ff0000fe
+  conveyorDirections: 00000000000000000300000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000200000000000000000000000000000002
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 26399027
+  displayTitle: Ancient Stone Theatre by the Sea
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: d41660f05d605544a9bda1cd0b68516a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

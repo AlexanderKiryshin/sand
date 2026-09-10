@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_252
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279646564
+  - serializedVersion: 2
+    rgba: 4289979638
+  - serializedVersion: 2
+    rgba: 4285699001
+  - serializedVersion: 2
+    rgba: 4283405002
+  - serializedVersion: 2
+    rgba: 4281232824
+  - serializedVersion: 2
+    rgba: 4278850079
+  - serializedVersion: 2
+    rgba: 4279278314
+  - serializedVersion: 2
+    rgba: 4286101730
+  - serializedVersion: 2
+    rgba: 4283382077
+  - serializedVersion: 2
+    rgba: 4280111501
+  - serializedVersion: 2
+    rgba: 4279444797
+  - serializedVersion: 2
+    rgba: 4283133331
+  encodedCells: S1:4:4096:265187D0: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000ff0000fe0000ff00fe0000000000000000000000
+  conveyorDirections: 00000000000000000300000000030000000000000000000000
+  conveyorBucketCounts: 00000000000000000300000000030000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 26294298
+  displayTitle: Perfumer with Amber Glass Bottles
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: bdbd6a7ff5d5efc4baf708bc43b224be,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

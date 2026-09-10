@@ -51,7 +51,17 @@ public class SandConveyorMapper : MonoBehaviour
 
         if (bucketContainer == null && beltRect != null)
         {
-            Transform container = beltRect.Find("ConveyorBuckets");
+            Transform container = beltRect.Find("BeltViewport/ConveyorBuckets");
+            if (container == null)
+            {
+                container = beltRect.Find("BeltViewport/PerspectiveRoot/ConveyorBuckets");
+            }
+
+            if (container == null)
+            {
+                container = beltRect.Find("ConveyorBuckets");
+            }
+
             if (container != null)
             {
                 bucketContainer = container.GetComponent<RectTransform>();

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_220
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283124574
+  - serializedVersion: 2
+    rgba: 4286145396
+  - serializedVersion: 2
+    rgba: 4278848271
+  - serializedVersion: 2
+    rgba: 4283279609
+  - serializedVersion: 2
+    rgba: 4279512416
+  - serializedVersion: 2
+    rgba: 4281741881
+  - serializedVersion: 2
+    rgba: 4280578003
+  - serializedVersion: 2
+    rgba: 4285362595
+  - serializedVersion: 2
+    rgba: 4280229668
+  - serializedVersion: 2
+    rgba: 4286075984
+  - serializedVersion: 2
+    rgba: 4283792855
+  - serializedVersion: 2
+    rgba: 4280043413
+  encodedCells: S1:4:4096:8157FF10:fVVBbxNHFP4NG8QS01w8FdR1egkTO5k2l4qlDkouxlmHVXxZLK+ywIXidJDsi5cGpjiXzXQ3eSQnV0St1UuJI1saLshZ3JT9UX3rmIIqhZG8np3vve993/PMuNu9aGQvWCbdz4xOlpA06VzISQi58SU+Pod/Tc7HBQEAY7TzscjHWTZL9pvrSYHO/51kO+fpy0Z9J0Oyn4LZMVdSkQixbDx5rkTn0xZgVraT1PQ8If42jB0xof8gMukJOvcE4otWYGVwHRM6mQ94J/l444BFM9gWE4co46POhF+ITd8KUlrmvxZgpezvExx1CEGrNNUSRHiZCY5J+NUdCyRi8Tfy0n8qxKCNLx46SEgT5RNGmh2XQXzWyyQ6Oh4yCYFsLwb4ELvE+x4zvDYG9UWSlkQlOHmdrN1API0cfNBXQglHJCxjMcRTA6Uwf7k1fnuSFA6fYU7GEySTUHmvE3xFCCyarJOOXkYtAvPwia7EAH3gvO0pnM9ifjkRi3g7IVftdiJGNfClPUuwqh2kz/HJOJBTpNrDSaPfTuzYFvG64wKVE9PcOKgRsjt9usU5byeFRdF61e0KjI+iOI4rJrXJvc1is91HhnaDDz7gVhQ3Oa9Uhix9b9o4EYNGnfe5avjmK9IVg40IUT4aIUWOusUGf6KW633FuW29yhIxHY/MZsEwOI9PzG1KhwaOQqHRR/xP3HXlaLTFETc4psO0e8s4H23hQ3CN7JpxHHFurBl1c6ESPDJXVA+jeys/i32IviF3TFTX5IXC3WZuOIpr/7xRaoWjBSFst3aNmGZUiSsYcWrSZp3PFG8hbNS5Eu19t5xG3IyRYZ2fRqXRcx6Xf0SlhlFXPbUfwPUpEzCiEsfNOBdzUR/ZR4VzfbwBZat8h6GjCnI0K0vxauGUz9jN1YkDx7LKi1WGETFy5Ghc5/WtK9ajCaycMHU5TbzVecoem1uUvo95HV9K8bhDffESanb6zjqTSxIolblSk49W5cyLm9huvpRCPChqW5Lmc1WfHuZzefwVl6420yWEFxpKABT1s+Ay2aegDwPK8senlcPi8pUfkH213+MhdV0mTSJkqZKTVBbRSdXMnbxbORc4BYdnUtPwzBwGtGRSitEYdstfNcY92IQ5ejSFPYwkpZEpqQmochjVfo3QXU9l0n7Vva/bN6DFBAuYtCg243Hp4Xqd91RfbdrED5npsJIQ8RL9KxguMEmb8zPr5/Vr9pl9lAdTpsT04eXS4L21NaS0tLZn5hBt9Grhsy9aNrpw9DNz8alQ8lKdHtObwU+FedwAyg/dI9vRHMdlFeQQ/QXKR3KDuuuc4yloLLlVF1KOHkIpqFbxSHyXU4qubdCzN2odCXKUBjSl2zZYQwDQxYM1xPcWjnNvGupYqerRfZ3RAPF5F1gI2weYFBzyDXY8Po+b4XV7Ssho77Z08jLvRBu4N2Xz+D19PMZrAJfSWovtSc3JU5AuWErNYczB2Ri3AZhGNJaH0HVDCbAFZnoRL8B7FK+P17OoCX6Z1qfsOaiVXAfcuUDfuZtcWbCdXEr5JMDVcECga3a4gxrd3EO8ir59KjJdQiWEDFxdb2lUpqbtlAwfui1/h5Bh8n9AGGPAIKVpb6d9rKSF7zTnAfNTLUJJBm/lAJgMAW7bNpqQYJflmqZT0LTm4lcdvN4D3A4UNwXouk4lo34YaaHGQIOUda2bdTGX0UQjaI4mWTV0WEqzHXnJdsLdbuhQrE4hifjDceZo1dG0lv1W8ymEaf9q6M7RhF9KyaSLDUQrKcfBH3ROYi/fBoBLYxg755YxWoJVDcHXigCoVnf+BQ==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000fe000000000000000000000000fe000000
+  conveyorDirections: 00000000000000000200000000000000000000000002000000
+  conveyorBucketCounts: 00000000000000000400000000000000000000000004000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 22942970
+  displayTitle: Copper Beetle carrying a Lighthouse
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: b4cc9b16b1269474abbf3420f1cb9ade,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

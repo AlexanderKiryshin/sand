@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_270
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280239462
+  - serializedVersion: 2
+    rgba: 4288517743
+  - serializedVersion: 2
+    rgba: 4280972748
+  - serializedVersion: 2
+    rgba: 4279508252
+  - serializedVersion: 2
+    rgba: 4280636058
+  - serializedVersion: 2
+    rgba: 4282020992
+  - serializedVersion: 2
+    rgba: 4281809695
+  - serializedVersion: 2
+    rgba: 4283019753
+  - serializedVersion: 2
+    rgba: 4281422409
+  - serializedVersion: 2
+    rgba: 4290429369
+  - serializedVersion: 2
+    rgba: 4279972413
+  - serializedVersion: 2
+    rgba: 4285229633
+  encodedCells: S1:4:4096:5F3729F2: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000ff0000000000000000feff00000000ff00fe
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000020000000000000002
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 28179420
+  displayTitle: Mushroom Village on a Giant Boot
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 7912848be45d3f6448edb74b0f7f68fe,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

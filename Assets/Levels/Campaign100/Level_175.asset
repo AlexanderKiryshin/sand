@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_175
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4286416333
+  - serializedVersion: 2
+    rgba: 4285746039
+  - serializedVersion: 2
+    rgba: 4279901968
+  - serializedVersion: 2
+    rgba: 4280706378
+  - serializedVersion: 2
+    rgba: 4280647546
+  - serializedVersion: 2
+    rgba: 4285480496
+  - serializedVersion: 2
+    rgba: 4288790518
+  - serializedVersion: 2
+    rgba: 4285620389
+  - serializedVersion: 2
+    rgba: 4282722855
+  - serializedVersion: 2
+    rgba: 4286596943
+  - serializedVersion: 2
+    rgba: 4282889718
+  - serializedVersion: 2
+    rgba: 4282678990
+  encodedCells: S1:4:4096:3BC7E05E:fZVBb9s2FIB/A53NViJdwgKGY/Ti0DWcYZfOEobtFkT+AVYA1tLNQwGtjS9SMYepe5kNeGXWSxRAjblejAJrMeqiBGi8WT9qj5LdpTvk2ZKo9z0+vkc+PAlxv0T3Yz6/F58Dr983/Qu+cyUiLOoYR/mquO5wzqsYJKpjUFXewbCOc0WE8aQ64dyd4c9SebUZsRrcgHJO3epG+VPlFtcUE5SxGmM5Bw8UXkERhh9XLIRfJCh1Rq/5bMOFGCmLcCHZGWNCeBRUsHLB+YyKl+zK07RFAlax4nEMnG/EjYUnBC3B/AsBU2NPzP6bzifcE8ojWkjHFZ/eCjD/DDcxgNuylPN3InsivPj8DiruFx7dXkh4JD6ld2ZP18/fKd1OVs96n+Tw6pz/XzA73QuXyQqlH+U4mNwhc4cqKZ9G9evEQGkqdViK0rmAk4I4XUVjWv4gMPBKmpyMdzHMiWexd0Zd18WzvdgRO7IeXmdSwl/fxbAZVG0wheOJ4giKbEc++ysDKHMe+ade1ZmVHOrMhfbWmwMf/JmlifywUvz5cBBxZ2eJPIhDnchF+aRyawyHMsmk3rv6Z+hfeWKk1WCvvyFkKn4rG2iVDTPfzxJ99w84aCg1QsilmIvp/mX9SdnQZSKlhrJMf3OykOhCiFYI1TkXsRM//wB8layklgJ/qAfqIKFAsVAPJ975eONniqMszXQYZVqvKryzKIZCACkv/YEPsSUoS4Bn2SpoPDVN01b+hWVuLRFKpZEAzwww9X3U0E3TMk0oJrD7KjVSJA0weuX7p0Pf1xYN/XsA5mX0Y85vBygBmzSAybd+haHG+LGtDGK4Ok8RMoBnp4GGKiiAKkWH+iEA0zxSVj4CyVCAUBAgbYi0ADVePTa7gLpdGyyaBDisjzRkpCeGsqwcmoWARbfbtXIb0KM0Q2h3n1QeqwTyGEwbsAkX6WyBQQW14e1rhbvmDwqDD0u5MJtmnjX466onKL5br9HMn5ZtW/lyhZgmmZj5GhZRt0JrddfubMsmjqI2aRIwW/PCIPf3iDjndrcJlUC6pkrU3nDlHNyTaHagKGl3ikDsIjbbUoE2ybGj4Nb+C3SU48LBemceEUK54hraQg2UZwqr5DsKg6aqv8m8BbyhDuC6mGeDiVUEPReew8l2G1X8wQC1SaeIGtCRpby7UHzubBuVfCn90zYhnc3CR0eACfSNPnbKqJTKEpRc0CZ5lHm+SqbcdWJKNTYYh4tAC1SqttVZU/V27ByPHMZ+ZrUSQ7XpmqikzGLouLSkCgprDL/m5EuZTqfOdLanQXfFWsjIl7xDDqYcmhXFOMTQeNuFeh3di375wHVnEF/rAVZ9GxMV+I1cvfm2876zddZj0N0h+hZoH6gZUASE8+ugbxzc7JcCxLQDMgX/n4O9SX4xlnLs0upSK6FbFkDXhX9LTVPJ3mQPVyU57jn0tRYuVnqt2lfd7YDM65zvTwh5/ytdC3wManrA+tSlLXIM/RiSQMGybyyTca8/mpyFAewYU92xRatiLxYvnZj/DY1xW01X3xMc1mrkOO+fVaY+a+6nzKNluVIdN/+A4aL3zuioX8U0cJaZ0yuWJw/yLxppinU81RK9Kx3YEcioc0zdtQaSpiMEg6Wbp7Q+IPov
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000fffe00000000000000ff0000fe0000
+  conveyorDirections: 00000000000000000000000300000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000300000000000000000000040000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 18230165
+  displayTitle: Origami City on a Lotus Leaf
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 31fd36581594d974d96d64e52b90549f,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

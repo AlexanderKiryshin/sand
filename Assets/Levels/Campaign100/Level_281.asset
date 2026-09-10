@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_281
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278321666
+  - serializedVersion: 2
+    rgba: 4280826425
+  - serializedVersion: 2
+    rgba: 4279638296
+  - serializedVersion: 2
+    rgba: 4284188807
+  - serializedVersion: 2
+    rgba: 4282671965
+  - serializedVersion: 2
+    rgba: 4280101418
+  - serializedVersion: 2
+    rgba: 4282397998
+  - serializedVersion: 2
+    rgba: 4281683015
+  - serializedVersion: 2
+    rgba: 4279045131
+  - serializedVersion: 2
+    rgba: 4287219393
+  - serializedVersion: 2
+    rgba: 4290479437
+  - serializedVersion: 2
+    rgba: 4280820512
+  encodedCells: S1:4:4096:7DDAE627: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000ff00ff000000fe00fe0000000000000000000000
+  conveyorDirections: 00000000000000000000000300020000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000400040000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 29331439
+  displayTitle: Cassowary among Rainforest Roots
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: ee0c1f6133b43ef45944305075b5fd9b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

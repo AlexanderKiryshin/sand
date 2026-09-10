@@ -28,7 +28,6 @@ public static class SampleLevelGenerator
 
         byte[] cells = ColorQuantizer.MapToPalette(pixels, palette);
         BucketSpawn[] buckets = ColorQuantizer.GenerateBucketSpawns(cells, palette.Length);
-        Texture2D preview = ColorQuantizer.BuildPreviewTexture(width, height, cells, palette, 8);
 
         string levelsFolder = "Assets/Levels";
         if (!AssetDatabase.IsValidFolder(levelsFolder))
@@ -43,12 +42,8 @@ public static class SampleLevelGenerator
         levelData.palette = palette;
         levelData.cells = cells;
         levelData.buckets = buckets;
-        levelData.previewTexture = preview;
 
         AssetDatabase.CreateAsset(levelData, assetPath);
-
-        string previewPath = Path.ChangeExtension(assetPath, null) + "_preview.png";
-        File.WriteAllBytes(previewPath, preview.EncodeToPNG());
 
         string databasePath = Path.Combine(levelsFolder, "LevelDatabase.asset");
         LevelDatabase database = AssetDatabase.LoadAssetAtPath<LevelDatabase>(databasePath);

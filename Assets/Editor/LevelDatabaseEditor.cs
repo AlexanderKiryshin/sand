@@ -17,7 +17,7 @@ public class LevelDatabaseEditor : Editor
     private SerializedProperty levelsProp;
     private LevelData levelToAdd;
 
-    private readonly Dictionary<int, Texture2D> fallbackThumbnails = new Dictionary<int, Texture2D>();
+    private readonly LevelPreviewCache previews = new LevelPreviewCache();
 
     private void OnEnable()
     {
@@ -27,15 +27,7 @@ public class LevelDatabaseEditor : Editor
 
     private void OnDisable()
     {
-        foreach (Texture2D texture in fallbackThumbnails.Values)
-        {
-            if (texture != null)
-            {
-                DestroyImmediate(texture);
-            }
-        }
-
-        fallbackThumbnails.Clear();
+        previews.Clear();
     }
 
     private void BuildList()
@@ -198,7 +190,7 @@ public class LevelDatabaseEditor : Editor
             return;
         }
 
-        Texture2D texture = level.previewTexture != null ? level.previewTexture : GetFallbackThumbnail(level);
+        Texture2D texture = previews.Get(level);
         if (texture != null)
         {
             GUI.DrawTexture(rect, texture, ScaleMode.ScaleToFit);
@@ -207,35 +199,6 @@ public class LevelDatabaseEditor : Editor
         {
             GUI.Label(rect, "No\npreview", EditorStyles.centeredGreyMiniLabel);
         }
-    }
-
-    private Texture2D GetFallbackThumbnail(LevelData level)
-    {
-        if (level.cells == null || level.cells.Length == 0 || level.palette == null || level.palette.Length == 0)
-        {
-            return null;
-        }
-
-        int expected = level.gridWidth * level.gridHeight;
-        if (level.cells.Length != expected)
-        {
-            return null;
-        }
-
-        int key = level.GetInstanceID();
-        if (fallbackThumbnails.TryGetValue(key, out Texture2D cached) && cached != null)
-        {
-            return cached;
-        }
-
-        Texture2D generated = ColorQuantizer.BuildPreviewTexture(
-            level.gridWidth,
-            level.gridHeight,
-            level.cells,
-            level.palette,
-            4);
-        fallbackThumbnails[key] = generated;
-        return generated;
     }
 
     private void DrawColorSwatches(Rect rect, LevelData level)

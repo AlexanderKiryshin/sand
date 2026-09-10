@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_015
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4285096747
+  - serializedVersion: 2
+    rgba: 4292264608
+  - serializedVersion: 2
+    rgba: 4284325840
+  - serializedVersion: 2
+    rgba: 4279706919
+  - serializedVersion: 2
+    rgba: 4286810761
+  - serializedVersion: 2
+    rgba: 4280565322
+  - serializedVersion: 2
+    rgba: 4283328349
+  - serializedVersion: 2
+    rgba: 4280899952
+  - serializedVersion: 2
+    rgba: 4282074165
+  - serializedVersion: 2
+    rgba: 4291796574
+  - serializedVersion: 2
+    rgba: 4287922999
+  - serializedVersion: 2
+    rgba: 4282547366
+  encodedCells: S1:4:4096:856EA947:rZTPc9tEFMf/BkMhJD5VNBACN4ExM7o0fd1a4FOInc7gS8c7L6vWl5IfsmguTMRmA7pAhJUlvbSXdEQvOfQHNTe5YjujP4q3ckoHzuxYmid/dt/7vrdv90H+v4wX//5s2tfZm+8l+d/pZ/mPj2pT7+S/5fr5f/w9HS/J3+dmQy49OyJ71Xn4hsvnt82FOWVPJ3tnTu44zsU/WXB2ay8NX8dOH+2ZM+cB8dcOLsVfvYd//pWQ+WA1/5KDvC3Vyhuep4zHP6i9KM8vv5VdBXiE6ubN1wG+BL8JaYyTWj4Ap5+Kzh3nIsKVK+D7qc+VeZznoMm7ElyNKYF6grN02oBU6SA6fJnnO4sYS6nmk/PVuYLf4IjH4vf8mxVn47r1/9Pi0ffqn+TXGBi4xAz5cvqp5SjOXmzld4oarzK4IQDW5GPiDCADjh3zYslLqsdWxC96CoLBSkfRB7ArJD9ekeqgRRMG+cP81FlDYIDfHZJezrvEmUIl2onbqmhTLz9EP2UQfLu17Dhx3OnThBKlMp4qRmWRr65vBE/fhWD5F+KlYgbuyJjLoly+hQcoHGftD/yIX+0vrxOfCahm1/uIZTHIc2wlxnG+vYLLG86G43xM/kvTnQkD2C4+yR2Fhbf+/roTOh84s7rggLJbjiqBZWU/8aDqEe87PWfNWXd2+yC7kHYN8cJyoQa93nLvQzLXVnq70S50Sq5lOULjve8461gSD/d7xNc3er8GNznv8Ih3RoiS1PZQmpfbQZ9cOL2ytxvIHeGfaF+/QuP2aNj1x5Jeu5u9zgCPJP/CP0nB1xR/zt3BFohBD3FwbcBimWrQOtAa2+7XlreK/R8ol/uduH+9nwjBNUqGvk/5F27vM2xVJkk2X97nvLo+u3lD44QH2BkxbHvD4vNKeG5VVe3emM0GCAEiVY9zFIqbCl23JUoPaYpbVEnWAmQorslqNBKM9Mt9V2FZilZrKN0tTE5AcB9Ya+gpqSTtbjiUTBpUUpRjb5RwRhjAHIiR5B1TJq6YIA6FlG5rX+jJAYsJQ6eFMMORqTxNaZJYhsoMs2CCHaJUX2k6QhbKJMfuWAcTxZSxMyWzi4GL2cEQW23XdQv3ONNZUE7E4Fd9xCVxSb0rSjNSbe8A71eeW4x1pMMs069G5Fx0IAY2nLmuGZb6KIjC+ZjeuzvxSbzgVoLxrqXhOAyjMNM6OtHR4s+ZJso7KOh0cd4qtg/rZackLNPRk1NrWQcMYgWsrKoiCjefTBuEF+6eT5vTJk1IbfpcsS4bYdQeN6fTKa1fbEwbNecp0NlCjiewJUnZ1PJoYTptnpPVbOq0003bALHQinRFlv9MvNlokNU4zTSFL+nRR+NIR/X6LLScjPNG8ySg8Ajq0+wwCvXcv02i5s3oWXrJcmGMux3qxZrfy155L6e1+/NAw41anufW2VthjUjj+TvNOtIi7ACkhtORSPRhVjtu2PTqMW3Y3qD1BXWeoR0JQ8qqSflbukn1qzF8WjG6OdqFpg2oOa2/u9AIji84N13qbNfdbocLjSapWGjce7txS2sGwpafJ6qouCm65bbdISv0Fm5wBjPNGK+vrqrNZeWp9v7m7uHnYRj7jO7M1FwEEBLdxEjPnQ9BB90bJkzb4vnUgnGMhTucw6LtFpKuKkFnFo59e/MCVomoEiqSO2zJvS3cQ2whAlAb0tVPRSiNV829F3RNTbQUE21j2ycljomcUWvbcRJheVQis43D2Vwfw1kX6eh6cy+Fq04AZkHNuZVAhUDheQQLzx3iCOi6mcyLr22HMI48Nglxr1bPGIM0mHOf/Q0=
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 9
+    count: 1
+  bucketLayout: 0000000000000000ff000000000000000000000000feff0000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000003000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wonders
+  campaignSeed: 1473525
+  displayTitle: Desert Oasis
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: b58d59bf7d444cc4b9e58ac99802215a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

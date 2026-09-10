@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_287
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281874240
+  - serializedVersion: 2
+    rgba: 4293836699
+  - serializedVersion: 2
+    rgba: 4279903024
+  - serializedVersion: 2
+    rgba: 4286145117
+  - serializedVersion: 2
+    rgba: 4278782994
+  - serializedVersion: 2
+    rgba: 4288452508
+  - serializedVersion: 2
+    rgba: 4284712365
+  - serializedVersion: 2
+    rgba: 4289975790
+  - serializedVersion: 2
+    rgba: 4282603637
+  - serializedVersion: 2
+    rgba: 4285770203
+  - serializedVersion: 2
+    rgba: 4281024861
+  - serializedVersion: 2
+    rgba: 4283854222
+  encodedCells: S1:4:4096:B3C6BFF2:bZVPb9vIFcA/g9Zyt258KWG4aXsquEKXYS5KJnKc6LJQeEidSwyV8WZ98VbroWietoL4QvNiyLYy5lxaGCYz1iWRBZsZXdxkTVOaD7WPym5hpH2ACJG/939m3mgaypK27grhLhf/TybiphSftD9oNyS9/Jzfu4m1d5rm/he/LL58/znX/q1pm+Llsvb/5N3/fPnT7Lkcf3rb+Ryv449q/2mLTwqDZe3eu6UbHMMrCNnOhIrDUNNQy5TyBre1dQVOm/PT2A1va3/UvpDyFwW4bS9j9evfhk4qaZBS5H/W3hX8O4Q/Ati2vXlb2gBSZnCx49+2T7W3n/iPG3Yhh/YLOwfnsU3Bo36hOJPv1mf0SqmrdqYA1m0F9vchXEg5mnEbzTeuEmeHzbjNkG+HG8Nf+cZ1aMcUhH+xkyPPDvtw4oUbiCx9KNdGoRNv+17y3o1pOwNIVQYJDRP0L3Vdt0bSAep74CTuqYxFwDMPjtp+Uvg2db0i5a7f9rwwTTmgxOBlCbzxr9P7EVOq0JoCDWPOOIMkFkni42tyh7H7VqryFPkrF/w4V2OVBAkk4CfUgz4z7s8rNc7R3BEBQK6UgsBB3qeJCwzt5zOPj78Z7UKSZ/mMJ8lAFCGSoOCln/Lsy3n5IUmOOMvVTgjY1XPhnlJxhFyvXsqs9I2UNJ6kTHkMwAmwTIDr4HXBSZk9IGcyxejnWEoec8V3AYJEBFHO2HCeMFI1ozRQrP1KtTOKfCqQB8Dk2IjmqqVqOY1SoVgulPKKJF8JEXzdqDAZSWaWy/Nve0w6aU7dXLmZwiICcVpZO2AsOmD6Qvmrt72UsUE2wBzAiQwVJgk0GgcYfpoaH57cOkPVV5hTwAZOJnM1SFxLtzARg+X52mjuDM2TwPOBvZm0pVQhfF2xDpjid7EEfVg6i4xeeK04ZxOX6hEbgKHrvYM80qOINdLSUPaiNxPFsPo++4c7GQjcE8OpMqyhoZvm3HQYjXevcxaBn+PGS94A7oleztnaqGFZpqn3mJpej6ecxu9F4Clxx9TnimZKs6JbqUTN8YfXaqoSQV13183O0R57ZUirYlmjTCnG0LHicAHYujj4K8Z/hvuq0ahYT1o0U6bBU3OK6yU5quXPKrq+lsV/0xsWIfuUPkX9qfLOmTTlFB091YsA4o7euE/Ix5+eIdZ7KuJ7w+GQp7nS0b7xg0D7KiFWRZ8J13t/MUw2NnluHaR4KIRrofvyL1hPZaS+ta+YlOxpbugj2dfObhFy9itXY8xtE2tJ2RpL9VHvMTnD8EMjulvgDxyPwXSq0jGmyCJLysdL9x4Qog8jY5YfWqeGyrAC3EqGJc1bSxp58sDCcMVyMK4uJe7wA+Rcj9JUn1vS/l4qqamxxvhBnqn0luJRGnGO+leswVZr2u+Vh8vqUcUXuZImy/CsYnRcGOzGAvlCWyg179ZVtflxL/dUphb47MQ3zB76Kz0mXx1tHZbIwvOrFdJ6XirlC4YuzfQHSr3zPcxy5ZjF1KOUZouly9pePceFXKt4tL3p+VwtMrjw29ixvN3nW8perGb+IS20O9BMgkOVl579EzauoeO16WW2yP27OTqrd0+2X5zWOpC4bCjBPql/fLlf3fqy5WFUmtVrpDPxSBeHBN0y5+Jsf+Xq0UmfLWxl6Jm0jjovO7UuBPZvQ3hNT+igHAvRr9v7pb3WXPdhJ/NrzS6esytBjzbt7RfHeDG5DOfDJSmTztF+vQYwqaH/Q6e4uU5w1kz4OaOTVhxskI1mE4JuGa6J78BhrVl771KBp8oV7nO72Q1t6jt28+PKQxwwq00qBu//tS2OcFyJ/qrwSEv95sUGBscrAseU4KtFdOGeF4/VS9ae7BfNqR079ZaPWdS2ywWfXcLusTv24n7brZMEagT8rEqOxSYW97txhkk+IuSy69BdYhNSa8K1A36w0rSbqEDRvHYsFq+gg7O/RQjpdrshwENSOyGlwSOM8JwQR8HP
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000fffe000000ff00000000000000fe000000
+  conveyorDirections: 00000000000000000001000000000000000000000003000000
+  conveyorBucketCounts: 00000000000000000002000000000000000000000004000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 29959813
+  displayTitle: Archaeologist at a Mosaic Dig
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 480e9ddf03208ec4db3a4fffaf0fb35a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

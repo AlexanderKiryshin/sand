@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_154
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282787852
+  - serializedVersion: 2
+    rgba: 4289292553
+  - serializedVersion: 2
+    rgba: 4293377406
+  - serializedVersion: 2
+    rgba: 4291133971
+  - serializedVersion: 2
+    rgba: 4294236591
+  - serializedVersion: 2
+    rgba: 4294768361
+  - serializedVersion: 2
+    rgba: 4292585309
+  - serializedVersion: 2
+    rgba: 4282800335
+  - serializedVersion: 2
+    rgba: 4291793979
+  - serializedVersion: 2
+    rgba: 4286598406
+  - serializedVersion: 2
+    rgba: 4280228705
+  - serializedVersion: 2
+    rgba: 4289493554
+  encodedCells: S1:4:4096:D5E756FB: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000fffe000000000000fe00ff00000000
+  conveyorDirections: 00000000000000000000000100000000000001000000000000
+  conveyorBucketCounts: 00000000000000000000000300000000000004000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 16030856
+  displayTitle: Red Kayak below an Ice Wall
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: dc08bec929f24e549baad83d3bfb4308,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

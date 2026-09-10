@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_233
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281886061
+  - serializedVersion: 2
+    rgba: 4284504661
+  - serializedVersion: 2
+    rgba: 4284381829
+  - serializedVersion: 2
+    rgba: 4293700973
+  - serializedVersion: 2
+    rgba: 4285898680
+  - serializedVersion: 2
+    rgba: 4279310353
+  - serializedVersion: 2
+    rgba: 4281878085
+  - serializedVersion: 2
+    rgba: 4290752421
+  - serializedVersion: 2
+    rgba: 4288071139
+  - serializedVersion: 2
+    rgba: 4280627498
+  - serializedVersion: 2
+    rgba: 4289167712
+  - serializedVersion: 2
+    rgba: 4293189077
+  encodedCells: S1:4:4096:FEB0EBDF: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000ff0000fe00fe00ff0000000000000000000000
+  conveyorDirections: 00000000000000000001000200000000000000000000000000
+  conveyorBucketCounts: 00000000000000000003000300000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 24304447
+  displayTitle: Monastery Carved into a Cliff
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 273977de678571c468a74c42a3f36042,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

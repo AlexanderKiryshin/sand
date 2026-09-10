@@ -84,6 +84,7 @@ public class RewardedShop : MonoBehaviour
 
         MirraSDK.Analytics.GameplayStop();
         gameObject.SetActive(true);
+        transform.SetAsLastSibling();
         SetCurrencies();
     }
 
@@ -169,15 +170,20 @@ public class RewardedShop : MonoBehaviour
 
     private void SetCurrencies()
     {
-        SetPrice(beginnerKitPriceText, BeginnerKitTag);
-        SetPrice(premiumKitPriceText, PremiumKitTag);
-        SetPrice(gold300PriceText, Gold300Tag);
-        SetPrice(gold700PriceText, Gold700Tag);
-        SetPrice(gold1200PriceText, Gold1200Tag);
-        SetPrice(removeAdPriceText, RemoveAdTag);
+        SetPrice(beginnerKitPriceText, BeginnerKitTag, beginnerKitButton);
+        SetPrice(premiumKitPriceText, PremiumKitTag, premiumKitButton);
+        SetPrice(gold300PriceText, Gold300Tag, gold300Button);
+        SetPrice(gold700PriceText, Gold700Tag, gold700Button);
+        SetPrice(gold1200PriceText, Gold1200Tag, gold1200Button);
+        SetPrice(removeAdPriceText, RemoveAdTag, removeAdButton);
+        if (!IsAdActive)
+        {
+            removeAdPriceText.text = CampaignText.Get("purchased");
+            removeAdButton.interactable = false;
+        }
     }
 
-    private static void SetPrice(TextMeshProUGUI label, string tag)
+    private static void SetPrice(TextMeshProUGUI label, string tag, Button button)
     {
         if (label == null)
         {
@@ -187,11 +193,13 @@ public class RewardedShop : MonoBehaviour
         try
         {
             ProductData productData = MirraSDK.Payments.GetProductData(tag);
-            label.text = productData.GetFullPriceFloat() + productData.Currency;
+            label.text = productData.GetFullPriceFloat();
+            if (button != null) button.interactable = true;
         }
         catch (Exception)
         {
-            label.text = tag;
+            label.text = CampaignText.Get("unavailable");
+            if (button != null) button.interactable = false;
         }
     }
 

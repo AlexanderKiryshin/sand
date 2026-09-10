@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_279
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289568400
+  - serializedVersion: 2
+    rgba: 4289912564
+  - serializedVersion: 2
+    rgba: 4286215278
+  - serializedVersion: 2
+    rgba: 4283528860
+  - serializedVersion: 2
+    rgba: 4280435392
+  - serializedVersion: 2
+    rgba: 4282013557
+  - serializedVersion: 2
+    rgba: 4280236113
+  - serializedVersion: 2
+    rgba: 4287285746
+  - serializedVersion: 2
+    rgba: 4284914888
+  - serializedVersion: 2
+    rgba: 4291678673
+  - serializedVersion: 2
+    rgba: 4283911492
+  - serializedVersion: 2
+    rgba: 4280098336
+  encodedCells: S1:4:4096:BA9BBE2D:fZRBc9pGFMc/gwaPNRN86ZaATHNx5YGp8SVGlSzsU1rZyUwvGGXXBC4YrIWgSzUeI01yqa0Y1PaC49YdJZcU10y7nIqLSrUfqiuw23Sm7R/Nwuxv33v/fbvC9wEA5/7/CqT/m6UB8AEbf/gP/iWIKPjXIjSKt+x9G8x1Oz1+Oyvq+ytv/MjdmQ2E2xXpczb9x2iO2a+Inyi2bd8tiPQxef23YQAOlgGwwPsib9bm3s/Z1oAxnxTsOxvgxzcfMs8s9DwNXtgogoxGEmZ1PhY/iryABBtf9CLeS835rNLpXZ4o8zfNl4LVQwKw5vx9tTps8Z4gCK2OY91yi1WwBWtmeEMBYMsSBAt51jzetpx5ISt6egZwSqx9e/ho7s6ak79kHOtfCU27lZzbF+y/+BELawqNl+hhsmGbCcBKW6y6cxd5fGzbTWv/5eap1XRSrAHWrMm3STrHjtPrbe63nNQ3zZZ8Ermd2bd70QL2cTx707ETR8oLtcEmBUuIKrMk3pFzdOKpZVuVLGlZ1U/LZc9x5tYc25t+62z2PM9VVQXJEOlwy/OUnudogdn1vLJHv/XKsqRKni5DSXoqSxXFO1YdRwl0szfd9L54pbquNJMsQ6hLW2XJVrymS72Dzu+9KYv3XNdTJV2FEBoSqrRarvu4i4JGq7O5P6Y0qq4prqtDnWXA+a7ash93JpTqylQbGcNTx9GyVJF0F0JZb7SlLmuwe0MDt/tEowGlneVXN9vYYwkQwrK52fHcJ94NpbKUPqKRTJ2aDYVxA0Js4I5hP4IGXX+U2F79jpAcyVUpNbpu2WB8st0VZPtxl+Ut/2r2P62QratBnVL3vqvzBb2B8u5e4gj8ptCb76a8+DNhumK7KN9XL3T5UlKKCCY2wCNE3Qf05/VpxMXYhH5+H+zp0qp0VsEoebK5c6h1PZoj7YiTeDh9nDyRnvm6Dkte6nj/kXY40bwTZfDZgAxGhBQ3fgPgouA3dCW/l0qiDaiNNU2zVHXItse84lSavTtrtbKyFXQTZYj2GH6qOc41yohjqTK5jP457j1v6KVqqnWuKxvwifb0c+2VLklQgjvw6eu+n/YLqPEMJQ/OfXWyYXiatqPt7uJD8zDYnfwU7z/3ZaX+HKXK52t+5SwFd1gNbRfj3UO8C6/j3Gtf6hqMpw4AEKG7ENL44HaHhIxIfzm5cYlrSip5ANKF8TSko3A0ouyhIaGTUT/RKVyYdQVfFpLpwi8B/adI/8L4ulEtKQb2v3+d/KNBt9/H20vcQu3eKmZc5xb7fN8f/TM8xvE17gpDZK5wfDHG+dxiyObDGV0fcQscj8Ub06ib69zlM67P9RferUcsysNx3CLjWQPWEc5lsiju3+NiOW4mMRYfvMvVB3iYwe16HtUueYNbISIZiGzbJE5COiRiKZbhs7jdzmNDySqL3Fo+R8iApRfFkF4TUuHhMBvgOkblVJAtiRkURm0LQ8q+QlIpLhl1lDXqQdXt4jNYuGr/3VqyJWZWeKOIsVGaGA+62KuKq7Bwy8nKoCLG+kPjIR4xjlMKbsLwTL2ewdmI0eozjEW8hOsTc7mKTRnzzq4Kr9tD5gwOIV+rYZwNTIRD3EJBR0I7UkoUjdn9rogLuFRjN9t4mxlXsGcGsjqM49NVUW8TNdYvcYuQy9fNBs7CoIJdasqtwA1yq/mbKD5WyfDFtWpxUqzhYGwGHdqVf7354DJWIlckJ+bEvMjVYtViUDMRDcxJx+woJvWyuVP9ioVXCHfB1/lsEdXayAxN+oBeVujLVkfVOa60EJ0Qz7f5bAPjKq622ctuLlVGk3EqYZ18QqIzFOPsaFELYzMw24i+NUcwNW0uxfkIRfErPGatxexwzHEUbwZL41Z3PRObXwCuyLMFAQ7rgfkQrUOYGcTe/RiLc3daicei6zDKirk/AQ==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000ff000000fe0000feff0000000000000000000000
+  conveyorDirections: 00000000000000000002000001000000000000000000000000
+  conveyorBucketCounts: 00000000000000000003000003000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 29121981
+  displayTitle: Rescue Hovercraft in a Reed Delta
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: a85a9884daaac9e48b396e5e1d5e779c,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

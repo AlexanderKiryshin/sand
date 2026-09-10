@@ -6,6 +6,24 @@ using UnityEngine;
 /// </summary>
 public static class GameProgressStore
 {
+    // Opt-in editor captures use a disposable in-memory profile.
+    public static bool IsPreview
+    {
+        get
+        {
+#if UNITY_EDITOR
+            return UnityEditor.SessionState.GetBool("Sand.CampaignPreview", false)
+                || UnityEditor.SessionState.GetBool("Sand.AudioPolishChecks", false)
+                || UnityEditor.SessionState.GetBool("Sand.BuildSizeChecks", false);
+#else
+            return false;
+#endif
+        }
+    }
+#if UNITY_EDITOR
+    private static readonly System.Collections.Generic.Dictionary<string, object> preview = new System.Collections.Generic.Dictionary<string, object>();
+    private static T PreviewGet<T>(string key, T fallback) => preview.TryGetValue(key, out object value) && value is T typed ? typed : fallback;
+#endif
     private static bool UseMirra
     {
         get
@@ -23,6 +41,9 @@ public static class GameProgressStore
 
     public static bool HasKey(string key)
     {
+#if UNITY_EDITOR
+        if (IsPreview) return preview.ContainsKey(key);
+#endif
         if (UseMirra)
         {
             return MirraSDK.Data.HasKey(key);
@@ -33,6 +54,9 @@ public static class GameProgressStore
 
     public static int GetInt(string key, int defaultValue = 0)
     {
+#if UNITY_EDITOR
+        if (IsPreview) return PreviewGet(key, defaultValue);
+#endif
         if (UseMirra)
         {
             return MirraSDK.Data.HasKey(key) ? MirraSDK.Data.GetInt(key) : defaultValue;
@@ -43,6 +67,9 @@ public static class GameProgressStore
 
     public static void SetInt(string key, int value)
     {
+#if UNITY_EDITOR
+        if (IsPreview) { preview[key] = value; return; }
+#endif
         if (UseMirra)
         {
             MirraSDK.Data.SetInt(key, value);
@@ -54,6 +81,9 @@ public static class GameProgressStore
 
     public static float GetFloat(string key, float defaultValue = 0f)
     {
+#if UNITY_EDITOR
+        if (IsPreview) return PreviewGet(key, defaultValue);
+#endif
         if (UseMirra)
         {
             return MirraSDK.Data.HasKey(key) ? MirraSDK.Data.GetFloat(key) : defaultValue;
@@ -64,6 +94,9 @@ public static class GameProgressStore
 
     public static void SetFloat(string key, float value)
     {
+#if UNITY_EDITOR
+        if (IsPreview) { preview[key] = value; return; }
+#endif
         if (UseMirra)
         {
             MirraSDK.Data.SetFloat(key, value);
@@ -75,6 +108,9 @@ public static class GameProgressStore
 
     public static bool GetBool(string key, bool defaultValue = false)
     {
+#if UNITY_EDITOR
+        if (IsPreview) return PreviewGet(key, defaultValue);
+#endif
         if (UseMirra)
         {
             return MirraSDK.Data.HasKey(key) ? MirraSDK.Data.GetBool(key) : defaultValue;
@@ -85,6 +121,9 @@ public static class GameProgressStore
 
     public static void SetBool(string key, bool value)
     {
+#if UNITY_EDITOR
+        if (IsPreview) { preview[key] = value; return; }
+#endif
         if (UseMirra)
         {
             MirraSDK.Data.SetBool(key, value);
@@ -96,6 +135,7 @@ public static class GameProgressStore
 
     public static void Save()
     {
+        if (IsPreview) return;
         if (UseMirra)
         {
             MirraSDK.Data.Save();

@@ -3,9 +3,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ConveyorSettings", menuName = "Sand/Conveyor Settings")]
 public class ConveyorSettings : ScriptableObject
 {
-    public const float DefaultMoveSpeed = 55f;
-    public const float DefaultFullSpeedMultiplier = 2f;
-    public const float DefaultBeltScrollSpeed = 90f;
+    public const float DefaultMoveSpeed = 168f;
+    public const float DefaultFullSpeedMultiplier = 1.35f;
+    public const float DefaultBeltScrollSpeed = 240f;
 
     [Min(0.01f)]
     public float moveSpeed = DefaultMoveSpeed;

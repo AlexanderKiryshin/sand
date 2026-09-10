@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Art_016
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280954129
+  - serializedVersion: 2
+    rgba: 4278190080
+  - serializedVersion: 2
+    rgba: 4281218361
+  - serializedVersion: 2
+    rgba: 4279118151
+  - serializedVersion: 2
+    rgba: 4282867539
+  - serializedVersion: 2
+    rgba: 4289044106
+  - serializedVersion: 2
+    rgba: 4284373249
+  - serializedVersion: 2
+    rgba: 4289956892
+  - serializedVersion: 2
+    rgba: 4281030955
+  - serializedVersion: 2
+    rgba: 4284826625
+  - serializedVersion: 2
+    rgba: 4280427865
+  - serializedVersion: 2
+    rgba: 4278792976
+  - serializedVersion: 2
+    rgba: 4278325122
+  - serializedVersion: 2
+    rgba: 4289976559
+  encodedCells: S1:4:4096:3EE52A32:pZO9jqMwEMefgbTJFoylNCQNI21zt/swROKKlSjXzb3UUWxj0dBc4+bSZt1S8gw3Yxtjk8AW+5cIJr/58nhc119qDKtnxAs9CzwGA3S6xHgg3gT3ewvm45JjEt7xiMYBAseU+xjN6JR4swHbjN6dhPe6DFT4FufE69x1Zp2PwzjrQfiIjq+PeT2sc9/2lfC0t3Fo6sXB3XVfppybWEfNl1LO/DI33es98GdcTo139/xqunYJPecqP4wx3ZsHTfBlDXz4RyBV8bi+J7xmTqOWprZy0wPIPK3c84b7CGXEZxjqT7jc5nKN00+1iC61wyy7SbuMsOVEyL8C98QGgUPCvYXWOoqfcDb5O3H3XUYMkBoGveMWCvoPROAlohB5H7hzwBKjGAJBa+mrK/2ICRGn6bX8FQI6kxIx4ZIjzdWVlAnDTvqD5Q9UHavjYy4Cr467bMv/O9zZ7LLfGxxglx2yfJPrL/ghyzY5KXf9Fa59WcpVMfXV832SL9urm+HbeYMrvc5CdQnX+3+Wv2BHRsaAekn50x/LfxC3f9xUDh29z55P+XPgRQvtHm7xgJyowlaxI1hOKvgMS7fo9UkViuV5bkOLeYCuhqkxLk9hA51DjfpExdkt0gc9aqrGd0V/RrywBSYclbpydzq/jXba2DTUxmniCyGcW8uVG0wRET6M+TLQBYxuH32isPdFLCJ6j+m6/fwP
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 14
+    count: 1
+  - colorIndex: 13
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  - colorIndex: 1
+    count: 1
+  bucketLayout: 00000000000000fe00000000ff000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000030000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: 
+  campaignSeed: 1578254
+  displayTitle: 
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 322775b879334dd4b87a3a89816f0635,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

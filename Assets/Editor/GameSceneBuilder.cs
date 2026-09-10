@@ -31,7 +31,8 @@ public static class GameSceneBuilder
         LevelLoader levelLoader = systems.AddComponent<LevelLoader>();
         FallingSandSimulator sandSimulator = systems.AddComponent<FallingSandSimulator>();
         SetPrivateField(sandSimulator, "ticksPerSecond", 32f);
-        SetPrivateField(sandSimulator, "maxCollectPerTick", 6);
+        SetPrivateField(sandSimulator, "maxCollectPerTick", FallingSandSimulator.CollectionPerTick);
+        SetPrivateField(sandSimulator, "maxCollectPerFrame", FallingSandSimulator.CollectionPerFrame);
         SetPrivateField(sandSimulator, "straightTicksBeforeDiagonal", 2);
         SetPrivateField(sandSimulator, "collectRowCount", 8);
         SandCollector sandCollector = systems.AddComponent<SandCollector>();
@@ -47,7 +48,7 @@ public static class GameSceneBuilder
         RawImage sandImage = CreateSandDisplay(canvas.transform);
         SetPrivateField(sandRenderer, "targetImage", sandImage);
         SetPrivateField(sandRenderer, "pixelsPerCell", 16);
-        SetPrivateField(sandRenderer, "subGrainsPerAxis", 4);
+        SetPrivateField(sandRenderer, "subGrainsPerAxis", 1);
 
         GameUI gameUI = CreateGameUI(canvas.transform);
         BucketInventoryUI inventoryUI = CreateInventoryUI(canvas.transform);
@@ -201,6 +202,7 @@ public static class GameSceneBuilder
         conveyorPanel.AddComponent<ConveyorBeltView>();
 
         TextMeshProUGUI conveyorLabel = CreateText(conveyorPanel.transform, "ConveyorLabel", "0/5", 28, TextAlignmentOptions.Center);
+        conveyorLabel.raycastTarget = false;
         Stretch(conveyorLabel.rectTransform, 0f);
 
         GameObject hint = CreateUIObject("Hint", canvas);

@@ -544,7 +544,15 @@ public static class ImageProcessor
             return new Color32[0];
         }
 
-        return ColorQuantizer.SelectPopularColors(contentPixels.ToArray(), colorCount);
+        // Exact-color popularity discards gradients and often reduces painted art to two dark colors.
+        // Cluster the full color distribution instead; keep imports reproducible and preserve game RNG.
+        UnityEngine.Random.State previousRandom = UnityEngine.Random.state;
+        try
+        {
+            UnityEngine.Random.InitState(42173);
+            return ColorQuantizer.KMeansQuantize(contentPixels.ToArray(), colorCount, 24);
+        }
+        finally { UnityEngine.Random.state = previousRandom; }
     }
 
     private static byte[] MapToPalette(Color32[] pixels, bool[] isPadding, Color32[] palette, byte alphaThreshold)

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_127
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278849821
+  - serializedVersion: 2
+    rgba: 4292800242
+  - serializedVersion: 2
+    rgba: 4282882522
+  - serializedVersion: 2
+    rgba: 4279778410
+  - serializedVersion: 2
+    rgba: 4284581802
+  - serializedVersion: 2
+    rgba: 4279509300
+  - serializedVersion: 2
+    rgba: 4283131778
+  - serializedVersion: 2
+    rgba: 4279921351
+  - serializedVersion: 2
+    rgba: 4280111247
+  - serializedVersion: 2
+    rgba: 4279512142
+  - serializedVersion: 2
+    rgba: 4286960371
+  - serializedVersion: 2
+    rgba: 4281691817
+  encodedCells: S1:4:4096:A3E603BF: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000000000ff00fe0000ff000000fe000000000000
+  conveyorDirections: 00000000000000000000000300000000000001000000000000
+  conveyorBucketCounts: 00000000000000000000000400000000000004000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 13203173
+  displayTitle: Violin Maker in a Sunlit Attic
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 3508e35afaebc6c4786efbe76e586130,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

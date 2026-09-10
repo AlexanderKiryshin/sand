@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_054
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284327378
+  - serializedVersion: 2
+    rgba: 4288257673
+  - serializedVersion: 2
+    rgba: 4279577142
+  - serializedVersion: 2
+    rgba: 4280632664
+  - serializedVersion: 2
+    rgba: 4282215562
+  - serializedVersion: 2
+    rgba: 4278794094
+  - serializedVersion: 2
+    rgba: 4278871748
+  - serializedVersion: 2
+    rgba: 4278864787
+  - serializedVersion: 2
+    rgba: 4287021282
+  - serializedVersion: 2
+    rgba: 4288843362
+  - serializedVersion: 2
+    rgba: 4283059517
+  - serializedVersion: 2
+    rgba: 4286358968
+  encodedCells: S1:4:4096:36E950E2:bVRNb9tGEP0Nm0ixDfhEIGjr6tLuilUhX9IdMgTUi6BdV6l9SUlteC2KiDzkYohe7aEXF/0SoEsDBA2MnmLl0j3JUZAq2B/VWUqOjaIDCFzOm3nzZmZFk5uiKIweXvyf/X1hlJn6AFPeeP+6FZFrPS2L4uXHL6897527hSul8xIZPsCIr28RKK2Re1q8+Pba07oiree38lWmvcTiRf3u0Pad+xCghuHku7HHi9r3/spHeNz98fz9QWDQio3dCKjru/NWEATYnymmPuT+xcXBBkf4IHDOwwHWx/Y0/oo/t/nBgQdqNAhyleuyVHpa40FwcDALbptKQyzgVUy/qhPns5uAOwRxqlKcwY+m/K32udlsNv9kg+8Totqfd4xCkWdmhwQ/zWr8mgJx0+nk+RhnGEiy3IJb/A7xuCknJTZoWo6cr92jX8j5Br+62l87R/LcVNicG2LDKE1KQuYb3I95nyicDvb+7KMafyRln8x9C8RtzNTbQwuuWrP111LKmme+wWczL70ssEKr1XLu8Of+W8QdIWS59oFrNakXVBbv3OEbd/grWfsFI+42T5WqSeiv4NId/u6+3CVL9O/VMFkSj3dUmpeFc8vDu+6w4fH5en8PAxD9noiMH33hV4jFV77EOVnO95BghvBpWaiK4oI09uBxttq25an98IpsQtO6x/Jde3Xy2erkn+USCy/3athonVJ/PX2T7Wo4WJ00fdmdOl2ZcaEoDVGe/xex6mlYmfGU9MtNwGNtSkW58QRZWXSgQxltR2f9s2nh8VxBrpBeoTwwBa1KoO0HMBJnZXFqisd5WGmI00QZXSR6GqYJUB5BKUfl+BtTAGiF9Kn2dziST5kEeBM1CejCX/nxw0zHmAAszmI9jAGiSIgT8gDDsvG0KoocfTABDkmV0JRS4G/SkpAmkXIox08SYKBFijiYRLSRigmg7B6R/f7u8KmZIg+wVP2QMM78kdMVBWhDQ5ld0o9ygwwsy/RDhiI8TfS2XSXtwYBzDIcIYkpZlWrT8VkwGESr/j1yetQQd3UZQSKAZXzCRpoCw0iaqqLfxPnv4uiflNgGoGZUXQHtUTQOK6pxsk05UnRCABVVGBTLaIFnhtqEf60GSo3zzv0ewKgywsQ6Ic0ICwAXWIXRu/fUeGKGXZriiPHTmQMRhKAEKlibt2lDhGoa7ryyyAZRlnJEcGgRawto7pweEUJp3tkJTqyFjKPIFPdEaUO2G9Dok36T0FybxDn7yvqpc6bzNKwbAIkdyggyGjb6i9fWeq8Iy1yFngJf6OZBTuVxyyLOKUTW4CdE1UU8Db08lkIsPrV0geGX3Nr+8vHJKGY4hahbk/RGSsjewjLLvRf8gK/tEjVVuTqSWN52varuEdsCtRwcU8rjgT1eeAGUZ0ypbarFJeI3gqU8jMVrC9xiFuAn0KO2O7ADiLgY4W1DfhwP+qgvzvwmreVWCCakfIiTt7ancvACMtamPREturZrj3tILxc4emkXmQq98BhiLCpggbgUEs+Yu/DDV7Tr90rjSi66l9iNHfh0lI3Btldr4oCTiwDZrT3mAk+27xuzSXc77JB6NbVdCmnlsT91rU6w9iXqx6sPsb22xfbZVZryLQMe0I0CUL2QdUTcBe55qb8BaXqTvzWKI+WMo/56N1tv7xg2Bfz/mmFn242x/2R366Hibv8F
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe00feff00000000000000ff0000000000000000
+  conveyorDirections: 00000000000100000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000400030000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 5557956
+  displayTitle: Autumn Riverboat
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 2663f0973fca4fd4cb8765b76327d284,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

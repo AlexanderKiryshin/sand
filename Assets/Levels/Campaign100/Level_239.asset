@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_239
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4286856476
+  - serializedVersion: 2
+    rgba: 4286728538
+  - serializedVersion: 2
+    rgba: 4286206351
+  - serializedVersion: 2
+    rgba: 4285029563
+  - serializedVersion: 2
+    rgba: 4288924654
+  - serializedVersion: 2
+    rgba: 4282161659
+  - serializedVersion: 2
+    rgba: 4282468466
+  - serializedVersion: 2
+    rgba: 4283183919
+  - serializedVersion: 2
+    rgba: 4288977582
+  - serializedVersion: 2
+    rgba: 4281145871
+  - serializedVersion: 2
+    rgba: 4283724775
+  - serializedVersion: 2
+    rgba: 4288642171
+  encodedCells: S1:4:4096:E736C7C6:VZVNU9tGGMc/g5TONHi4eJ1OCOESrSYDgRPaBGPllFaZIekpAUGiU6cQObiXJG7YLr70kOmo4wvg1ponXDoowmR7CaThpfpQ/a9MXrpgWd7fPq/77LNb44yIttkOpRVeYw4vB2M19pwUyBYxSaRqL1J10RFDLGoMI6U+UT+l8W3wyWcp3WDcN9gzlGGWqE674HhttpobihvxaU+UnBrNxlyPnhPZRGmqW5sD4XG+x4WAcbYD42mPaPeGcWCHGm6r4bXnjHUxfcmZ7UspREoNuHGj9kLSJO8pfmR4pn3XzdLY91JFjRkC4jvr5AnhHhq+p7mndV/NtRFgnTlKcbfXWBfghScy4RoVrWakVSrXY2ebFPd6JBtCvD+UkQ+sfV/si7aSstFzeINc0a4rH7wYaCPueqKdiXaf0nrq7BC4W5eZ0IfJwM/8DJZEprNUNkmQk71WWvhz9NbXRTKoZ2GufY3xmmRvzk0PWpvt/SjPaF9Pd5OVvyMgPzMLSLUbPTrQPTmIcl9p/W/SHayU1CzawN54L2gebwP83Afvdld+MpI6zDPd77UneUq3tZBgIUbR7Q7u5FGOX1pkq5tIMKkDvSl97Zc8SQZd8wIXs01qKSFa9EbrdZ2LCJPgK4fL5QLY6LfmdEgNoXVLa+DwA/j44ZIRz6Ow9aexmar5KH+r9a1z/rh4FIZR+f/S6Ilpyl/EhorFj3wtPB+GP1mXHDuW+yLS4XF3IXhcLHzkT4wb/cEMku0j3RrhJcHKZw43fERxG3shhEbQBeTBl8MvRhwewDISmkM+WQiWi4Wl//MsehjmxmMTfrJ8GJzzHEnSeaynarNlcqMPRv9pkax9KZ+HE8xxF8MHZXgLwUGRBOHd4AsbOCkuZ7N7hgfBWvG94QFMPpHYa50bjg/nx8VCEPyMx3II+TyKpZRYwJzytHF2Uiy8Sq4U3eBRCPmwuTHkEyXEx6Qn+Oe0OzTeajbB6643wcZKBcy4P+QonzjeMPrlJJ+QEvD5GOsmRh5OvtJ+3Cwpxljn/EV2EyOf4MmbcSybQwXS8A38SXUC/ptRImPIb5QOGt4sv1MpScmzX7HoaVNCFtNjmD8timQq5keS1pNOs99hd4I1bzVexUE/6hSdYsSyqmVXcwtE+IfILtgdFIaPXmdbljU6UWMcraHfPlb0O927h+hfLiN/WgiONQxfKJ7jpHO6e4YQkngQLS/dNUcAB77GuS/QTDZ3ZQFHMEzXk0qaGteuy50ayk/rI5CTE8N3ScoT2Sm5aXc19AqRlaSU30VTwUKjv/SAjyS1K4GsFuejA44FprYz3+zbFeM/AqnAcFFYZxZtSWndWTLy0G+PVFmNW2aBeVjvLOtafeXZUuhrUzYOGxmzR6usWkI8u5blZcEtc4LhPeb61nZlaxxVYptEWt9Y1b3FAIceXdS0afsXc0WQLOUthhWO0Hd12cIch9vWZZUSOrjDLtjVQ2YdzbjmNPnuHmRZ1bb66PNjpXBKZ6UTXEf+JQY/a2aDcMdUSOEF8amZ+W+5CO+jfsX0V0OTuIDQxidxA1Cqxi1styPeCOGwavVadSifSmXBx62KqiJENpuZg3c1Q1UMuVR0EdorJv6p2T14Pu3Y1nlO+uYaw0UCN0/Y0dPoMtff3WTcHaZryFNJcJ6UcbM6+iAM3Fxoz5m1Lccu5VG9JgxJWPCjfTO7zryrlmV/0o/STpU0PlS9H5wovG7QX5/tqzLICnLwfmb1oVWbFXzPsc32jJYcVKakLj6T2OX5IFi6ZQ+1n8vDRaOk8m5LWdXB6v2a/fW7Ibb+Aw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe00fe0000000000ff0000000000000000ff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000020003000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 24932821
+  displayTitle: Sailing Catamaran at a Tropical Sunset
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 39f2bd31bde1da348a64b4b68d0049b1,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

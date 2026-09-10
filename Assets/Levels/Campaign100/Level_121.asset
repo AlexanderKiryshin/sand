@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_121
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4285154060
+  - serializedVersion: 2
+    rgba: 4294045404
+  - serializedVersion: 2
+    rgba: 4287913990
+  - serializedVersion: 2
+    rgba: 4290023221
+  - serializedVersion: 2
+    rgba: 4282065413
+  - serializedVersion: 2
+    rgba: 4289033488
+  - serializedVersion: 2
+    rgba: 4290354267
+  - serializedVersion: 2
+    rgba: 4286801712
+  - serializedVersion: 2
+    rgba: 4286599173
+  - serializedVersion: 2
+    rgba: 4291673227
+  - serializedVersion: 2
+    rgba: 4283839239
+  - serializedVersion: 2
+    rgba: 4284118627
+  encodedCells: S1:4:4096:2DF01946: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000000000fe00fe000000ff000000000000ff0000
+  conveyorDirections: 00000000000000000000000300000000000000000000000000
+  conveyorBucketCounts: 00000000000000000003000200000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 12574799
+  displayTitle: Humpback Whale under Silver Waves
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: e29ff6b42a84ee34b8ee7437736dc28c,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

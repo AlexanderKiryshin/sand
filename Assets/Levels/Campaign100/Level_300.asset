@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_300
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278914065
+  - serializedVersion: 2
+    rgba: 4280621076
+  - serializedVersion: 2
+    rgba: 4291418336
+  - serializedVersion: 2
+    rgba: 4284896061
+  - serializedVersion: 2
+    rgba: 4288254339
+  - serializedVersion: 2
+    rgba: 4281619047
+  - serializedVersion: 2
+    rgba: 4283797167
+  - serializedVersion: 2
+    rgba: 4282264609
+  - serializedVersion: 2
+    rgba: 4287413984
+  - serializedVersion: 2
+    rgba: 4279706159
+  - serializedVersion: 2
+    rgba: 4282804352
+  - serializedVersion: 2
+    rgba: 4280761932
+  encodedCells: S1:4:4096:328B809F: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe00000000ff0000feff00000000000000000000
+  conveyorDirections: 00000000000000000000000000010000000000000000000000
+  conveyorBucketCounts: 00000000000300000000000000040000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 31321290
+  displayTitle: Celestial Garden inside an Open Book
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: af7eeca90a27eee47b6b4e07b1084c5b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

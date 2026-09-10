@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_217
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280700294
+  - serializedVersion: 2
+    rgba: 4280893276
+  - serializedVersion: 2
+    rgba: 4279247685
+  - serializedVersion: 2
+    rgba: 4278982702
+  - serializedVersion: 2
+    rgba: 4279250534
+  - serializedVersion: 2
+    rgba: 4280297521
+  - serializedVersion: 2
+    rgba: 4278321668
+  - serializedVersion: 2
+    rgba: 4279047198
+  - serializedVersion: 2
+    rgba: 4281952939
+  - serializedVersion: 2
+    rgba: 4286164699
+  - serializedVersion: 2
+    rgba: 4278717720
+  - serializedVersion: 2
+    rgba: 4278716943
+  encodedCells: S1:4:4096:FF962483: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000000000000000fe00fe00ff000000000000ff00
+  conveyorDirections: 00000000000000000000000000000200000000000000000000
+  conveyorBucketCounts: 00000000000000000000000004000200000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 22628783
+  displayTitle: Leatherworker Making a Travel Bag
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 1da8e84e63e488f458673dc95181ca1b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_236
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279904267
+  - serializedVersion: 2
+    rgba: 4291812806
+  - serializedVersion: 2
+    rgba: 4283320594
+  - serializedVersion: 2
+    rgba: 4286213387
+  - serializedVersion: 2
+    rgba: 4289167363
+  - serializedVersion: 2
+    rgba: 4280504366
+  - serializedVersion: 2
+    rgba: 4287074160
+  - serializedVersion: 2
+    rgba: 4290947344
+  - serializedVersion: 2
+    rgba: 4282363812
+  - serializedVersion: 2
+    rgba: 4291609423
+  - serializedVersion: 2
+    rgba: 4281367904
+  - serializedVersion: 2
+    rgba: 4285228087
+  encodedCells: S1:4:4096:4128D7C5:RVJNb9s2GP4NhDIWhnJyETjITaM/llmXTHLSNrmsNgev3YWQy8JjLnU+dJhP7owRumVuPRg+zUgBwTfBGQdPO01uPaD6UXtJNR1lSRafj/d5X4lSWKNF1H0n5aI8istxGVYk4bKID8qRhsd03B3LbrxYHiyXsL9cwFneXy7iSGqcvntG90ZSxgcyXi4BAhZwFwf3OMij/VhGwBgBvjTn/lI/GlzS8T6AS1BHsRFHB0ugwwN9BnLAJSSQEmQxhIjLUQxYJJexsZdjWQYXwCNg6P1Im0Uj0N/LjT6ODEFqG3OPTDqQghwIsWGAGO5AgmuRX3ZNSLOpQfN70orjoj8JFtol1k1omR6E9G+lLPDuGDi6iungXt9dRuMCL0JKeVAewFEuAyiXmg2jN4u4IH83ADTUr6e8kMXqan2L1rw27e7tDcJwOxgMwspnwnhMX9wXCMNhmOchLM0YybGv/TvtT3g43OZ5DpRwGw4GlYqULd01bZsfvcq3QzcfAmmYg9GgPKJdOOgXtB1oeW6Wa67DEFwqI9Ncj9LjTou+b+Sum5Esz7NhrguFg6e0o+1r7Q8UUb1FiEtcYAy1RR6Wu7T6A/221T6m3+1tc5cUKwO5PsIKHW8o4KRd03KDZ4QYcR6aAnpy7Re1GtHmn/W55uSVEPCrDiKcko37Pw7Wmemh0FsEd9qb++ouyXQL8JgPyxWAn+8Ejufl2SdvoBVJMz0ESt9Sp3bkXOZmB7xN+V1zHUIDnRPqBFWdOivGp+W5VTyC/vR5i1kke6+9PUN4CBdkkSJh5+NlCyHTNSHt1tnGdYtBODrlcEg/+FXAL3Qg3cuZr0e7WwwB8KfP/VOLPHTJIfn0EejX0KZ+zcn1S/qmvnNGttq85dM/AN7TEeDumgnmJ4+qvQagq3a183b2va8/gq0H36MpkGVf+kdeMRfPm80pqQLeAHmtmEbmvtC4BeWzjX9WI1cAe61OB/CvQHWxwV6PkMnKviCTKvX8f3K3TTtXnSp53d1Bjnd9fFcPSJDUIYLne60c2vDpiU/I6196J2irrOqpIggTh6yA8XhTa73373yf/PzIw1+z+fmOaCRW2lyRQ0yCrE68s3+9nv9Edo89wTi3/woavKFYM3Vsy+kRn/jW5uzUv632mDivnzdnr95wlDI+J4KIlfWY1D2P3F1cCq5uAyXmr64JVhixUmk1ISvsTWAQZ16VfeDnFhFzxtU15kKgPgtKZOpYh1Y2OfQCxBWeo554GUxSxKfCVjwozQRPCQlms4xU7d68JILrox9/Q5zfsJsSU3Nkq48wh3Xzoj5xgtmRYLhRupnaTCFls8Se4MT5aQXfRtBIyd+2o9gD/rtaKcwZxghzhaaBgqnXm5Omk1r1OeaoKqac8WTWF002Zexmdeg2L+/69T/tHVxCtmNzW7GklKwVTmBc17+mqnnSV+LlKWQSvL/Lp7AN7n2M7Wkf3NarNwJD5tnMVikLuM0QQyhhNwlWqrRWczxBU9tGKE37NhLqFUIKsQQc0HQ9SxPB+jzhoBHzFGGGHYTA3uZ4liTJTT9JZmDPHLZK5zZPOXSmu+McJQlT7IYna445drDiMFl4xwKsWAn+JoIjLEpTxTnfddJUQRHOhC6FGUPrFIrZcEKfmKEUiwQQDuHQA8TAOoVKyhYogc2ECaY4hFaIWwjBDuKJjTBec2QzTUwVtIgQs5DGoQNkpawOWRMLijGlw2CoRpDDkIWxdoATolvcQcLWD5whWztgy8xQCcvkwSiBd1bXrgwC6zLIlMGW7hVrpwRMdF/IQf8B
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: fe000000ffff000000fffffffeffffffffffffffffffffffff
+  conveyorDirections: 03000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 03000000000000000000000004000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 24618634
+  displayTitle: Dugong beneath Sea Grass
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 6bbb8d37dbd640440a6515474b714d24,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

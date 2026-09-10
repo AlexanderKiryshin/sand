@@ -1,0 +1,6 @@
+# studio-qa.playtest — единый Studio QA сценарий
+# Playtest-Dev дописывает секции (# CARD <id>), Tester гоняет целиком через run_playtest.
+# Общие VAL/макросы — Assets/PlaytestDefs/studio-qa.defs (INCLUDE при наличии).
+
+TIMESCALE 10
+ASSERT_CONSOLE_CLEAN

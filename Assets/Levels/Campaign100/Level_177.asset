@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_177
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280843379
+  - serializedVersion: 2
+    rgba: 4293056718
+  - serializedVersion: 2
+    rgba: 4280310092
+  - serializedVersion: 2
+    rgba: 4283716407
+  - serializedVersion: 2
+    rgba: 4284446815
+  - serializedVersion: 2
+    rgba: 4286674518
+  - serializedVersion: 2
+    rgba: 4280301605
+  - serializedVersion: 2
+    rgba: 4288517500
+  - serializedVersion: 2
+    rgba: 4279113228
+  - serializedVersion: 2
+    rgba: 4290886057
+  - serializedVersion: 2
+    rgba: 4281509010
+  - serializedVersion: 2
+    rgba: 4283735764
+  encodedCells: S1:4:4096:28E92C44:bVRBb+O4Ff4NhCYQAt2M2WDgm8AOCFW+JEtp42wv3ooz3mBOU1vV+iZwpizhOaWxVhV6MeRdgvWe3CQ1eBN0EAwds4tBAP2oPiUz7bYoAVsgv8f3vve9xzcY/N91dfI/2//ev43z/NcncRz/enuVx1mefLY96eE4/g+8yxPAP1lcJfGn9dlDnudJlkOELM8HMV1k/7Z4wg0gWZLkjwbTkObZ/rNFYh5XDlfyPdjl+zBg4bUpklkWZ2BwZ/r4BUCmMGafD5OQBkG0z6/z/NHD3QJoALYbDkxvu+95Rok5MWaRfYpyByCsFwv4GFMMiv3wLAZafQTILMuf8p6HJ8Mr88SZ0ucFsEkeSUD0wdtvphFjLM6e8DP2wgx3BaBA4wWkkLxiMeDz6dvB2cngjMZhn/mgiM3QQNjF/FWPRnRKw7OC7uLXXzxpMwRwuNglcxbNwxlleRwElIYgKR28ff4UbEijiAUBoyxieU4Bp8ndZXBC6VP1puA6oEAPfmbKKHxgE8wA3w16fYvVahoFEVxkRXweZmFvC3Ronpx8w0C5/X7KAGdT8A8LcDCNoln+8+0lkHg+3E1XSVxMWWwuGZQrDpMEHEy67k08y8/owCzyJDEXQCR8bS6LHASZXf/Sdd2HIGYX4OLW7Ic7EKmv7p9vQZQs6+Gue30EsfYXq8c+K/L3VF+/i27Mzvxdez3+JgCuZtGnauAUCYJcl9zeGg2rt4CY0fyCDge9WsPWRZZAFuJDs+8tug4yYWxGzdmjmi8RFu3v8RFB7AetRw/lw5tevcl1fvGophDEwWm7dF201pufup/0Q6/sM4dBllf7AXLfC+Egjpp5uCnvuz8mvVQTdhTNZ32fKGkh0Y0kxzT8Mh7/LWYrqF4U0WenNLtcGUAFKTnn6uF3cRhCt56zr/oIEWJRGBlA0Rp3XNjdOJ6F+7w4Z31FJ8DhKMgMcrkgXJMHoulmFv/VFFlgjiCFUxodPWMrIcRRyvH9/UhB/X989Zeif1/sSyguiyoWcYFcwsnoY6c2lM7+xAr8D2OiZ+wUfLBJ5Dvrdy85+diNNB3T2ez2EvBLGq1erVjAVucVbtFLTD6OPow343FMb87fYWgYemfMZUBNQWps+XiER0pv1Jj+GAXvJOiyNz0e3ZofbFxzD+N7reVGj78LrSD/5/n3ezMwbM6ujTo0SnkjTtQDVG88fvFby//+nJ5/0T8lyKXx0dL1OCe61PrbgO6vMK4mN/TmaZIYcsAVElulZN8eznf5Lx8gIgp6nJkFE8JKneV2qT1KtVST7L7DrsudyQ109u2CubalhV83uhzT8YM4xui+G9mEW2iyCKNp5NY8dXDbtNuvqf5ZKIxR14nG9omD6CqcKYdLIkXjt+sx3Ugvxa7oCLFT33fa0+s5acqDsGVlO9vfgIfSg07xsDjUyCaO+/VKawfLSqBlY1WntlbiuOZKHyrhY4ss/bbZSqxqXSFOnHqrNdTbIZav8LE89mvkoq2nhGz9etnUTlo1UhOu+o5bOwSj1q48202bFuxVaqfbw1YonXql5Xl8e8B2XWpHN8dbrm3utrbrAy6h4zDWnoWXqeA20gpJoQXCpddU7lZICSxK4RNeaykIkcqSzfEaq7RJ26otwVYQD8syLQV4U64k2wqDdMfACFXuYa2hXAJjlwiB4f0oz09J02I4Io3TVts1eJClJeEP82OhhJ3addtyjVtR2ZhXXHDxrRKaSAscexrCQQNgskY4xZZVKW1rIfVSLCWXCpfK4hBTcClUI9qaW9tqqbSokdKe1E2ZwuagZSOV3QpbOdsWgweJykoqBUmu4XIr5KHSNQwky/GspW2XcKOVqk9SiJe6tZWot/5SapcfsL9UcFna0JVCgwjva+RJYTvIxZpLz8YEJkMKUtJZSDfwtPtp/TjT/xBs4CXDEIu+ggH/Lw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fffe0000fffe000000000000000000000000
+  conveyorDirections: 00000000000000000300000003000000000000000000000000
+  conveyorBucketCounts: 00000000000000000400000004000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 18439623
+  displayTitle: Tea Harvester on Misty Slopes
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 9a65ec69f8c44784bbc1b9af188ba8ec,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

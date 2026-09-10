@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_206
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4286886596
+  - serializedVersion: 2
+    rgba: 4292596410
+  - serializedVersion: 2
+    rgba: 4285433993
+  - serializedVersion: 2
+    rgba: 4281419316
+  - serializedVersion: 2
+    rgba: 4278849548
+  - serializedVersion: 2
+    rgba: 4280572240
+  - serializedVersion: 2
+    rgba: 4281367413
+  - serializedVersion: 2
+    rgba: 4291551464
+  - serializedVersion: 2
+    rgba: 4279906341
+  - serializedVersion: 2
+    rgba: 4292916330
+  - serializedVersion: 2
+    rgba: 4283785297
+  - serializedVersion: 2
+    rgba: 4282228389
+  encodedCells: S1:4:4096:8E46C888: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000ffff000000fffffefffeffffffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000020002000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 21476764
+  displayTitle: Iguana on a Sunlit Mayan Stone
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: ad86de5546c4dc54a9813441a70a6474,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

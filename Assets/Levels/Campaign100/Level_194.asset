@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_194
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281828791
+  - serializedVersion: 2
+    rgba: 4292119904
+  - serializedVersion: 2
+    rgba: 4279505938
+  - serializedVersion: 2
+    rgba: 4288710608
+  - serializedVersion: 2
+    rgba: 4284905807
+  - serializedVersion: 2
+    rgba: 4292267252
+  - serializedVersion: 2
+    rgba: 4281744976
+  - serializedVersion: 2
+    rgba: 4284505467
+  - serializedVersion: 2
+    rgba: 4283584576
+  - serializedVersion: 2
+    rgba: 4290356202
+  - serializedVersion: 2
+    rgba: 4286870952
+  - serializedVersion: 2
+    rgba: 4281480228
+  encodedCells: S1:4:4096:CFB00B8D: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: ff00000000fe00000000fffffeffffffffffffffffffffffff
+  conveyorDirections: 00000000000300000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000200000000000004000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 20220016
+  displayTitle: Electric Train through Cherry Blossoms
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 4e82b4d31fa96ca489cab4fa090ab417,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

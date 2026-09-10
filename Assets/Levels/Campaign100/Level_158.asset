@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_158
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280504645
+  - serializedVersion: 2
+    rgba: 4288517230
+  - serializedVersion: 2
+    rgba: 4287986951
+  - serializedVersion: 2
+    rgba: 4290418461
+  - serializedVersion: 2
+    rgba: 4280299802
+  - serializedVersion: 2
+    rgba: 4280056180
+  - serializedVersion: 2
+    rgba: 4292209650
+  - serializedVersion: 2
+    rgba: 4282821315
+  - serializedVersion: 2
+    rgba: 4285493345
+  - serializedVersion: 2
+    rgba: 4293508724
+  - serializedVersion: 2
+    rgba: 4280063897
+  - serializedVersion: 2
+    rgba: 4288194747
+  encodedCells: S1:4:4096:865EC3CE:zZVBi9tGFMc/w1A0JNiXjM0KtT5Z2l1yrKU0JPSiLKPUrC8T0GRh9hK13UFElxzSGJzLKnGFik6b9GJ6UcGqYXJZB1drog/VN/Luko/QMZZAv5n35v3fX6PF4v89rD98A8GP0vv02wXJF2SxuPiKr9S0HSsFAyPeucyzz9lft/xET1gJjihl6Pc8khEZrg9/9B57XvtHvlLiNx3gDmKcaE4I8JuBMAs4F3cMpJSfwfp1nxDz4S2nyGCUicBH57GZWUSuh2QdfcUNn/oG5DYYM+WAyCjtE2necs6rtoIVN9A9aZLYJB7w0Q0HulICCsOokJEZwRQCXCd4/+ia69o7DDXAiWlC+h3v6SqqSs2mZVCqCjKdmZHmBOIAimK4rMQx8n1qqNmqqpAYkAjqkwS4EyW6fgb685nCHX+OzhKTRO8sUjs9z4My2vqoT7Hie01GtglsYH1kkWyUX3h2yzmId2ywsww4iGvm0T6leeR4HhlqjkvFRRHLokh1c7KxZdl2z3Y9D7SEKrhg6oVJZJ2kFnA5Gto77pCWVyqQcTaQMkl1/Oe2HgTk61tEt4HjJEnq8wR4PtjK54cth8ROr+UrUSdSNlLGWldZ3/L+cAjc5erlizq5ktA6AlnqRnPdmP6jdr1iSrTrgcO1hg04LX9nDaPvQb8lU2fXXK+XB70D4I63T+ebPxdeSRWO4bHmpJaZfBYeODrH0f6HRNfHebflJiksuMk0vztyQR7nyO7BDSlUtzzT+U24p9Ghzq+DuI6LWZYkmh8SaxCZrUytO7WMrq5fyregDgTeDtaar9eWvVvfAxkV7B4lMkoksZoY4qRpnDiu08aHaYKzf6G6SNbZehBJMEhuNfcc177WCeyNYRXEz9aFNkAKMoOx2hmtv5Q6AaoLbGCnJM2tKHbb/bXruQAHN7rA9XoA2xtDX7Uwzi0Xir+qoTNNM5BxOs7Jk+RwF0D7f8o5DsOzLJbNFhpAHsytNLOhAsAwiyvBL0OtUt0MBlnxxHtvpdFDB/BHnaRSJ0p00Zs8ftoMtrF5zVuB4CXwGC9nKx40T3/NmjqNivueMyefH+0UBpkQrq7gBRW+zLdNuh5b/aO5NZ7Lj9cVIIQ6qlLK+LKti/N8vG/blNIXUo5+hhmOi7aow9VlhcUmLuj8wREY42IrFzrBCEIgFBgg8T/67W5+2rfn4Bz6gTj2x8fDVl/EjHPOS/S6VDOZkCEZ3jjYsV3Iz07x+BQbAi3Byi81p7vegQbQo43f9ccM8WVHNZwJc01GrTFae0GJzeYUToBOyRTfnDD+HSH3D+0eTIK1YFN7Y0x8A6PyuBTGCuMv+vgiw9162/3FKSaTLfINw8dcldCs+BmHCaNrg4AYc5qHAaVLvwrKzkyJN38/G5IeueHnk82E+VQdl6yjsJqJqsL3TOKMyM5BBs0bn7LpKvQZT3gpKiEuIcMPdusQ16dzgwWv79AQ424DblK84g+H3t43IxM26aEwPOaYUjgj6aRhn0BFzMQbuS1cL4IZKFRh0IUjcCm6k7uXp9UpfE+4+oQTAk3o2UYY8qYIltTfdPNJc8p4wBWrsMJ7fTgqepjzS4i7VCgotpsC7IKql1WAsDgzdYSyDOl2c9JZKkWN802XGz7YhdOS872DC+Iy2LhfilJhAxtUfylxR38K4WPGBSdmM2l2Y7p520xPTq6u3k5vBzz+Dw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000feff000000fffffeffffffffffffffffffffffffffff
+  conveyorDirections: 00000002000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000004000000000000020000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 16449772
+  displayTitle: White Chalk Cliffs and Turquoise Sea
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: d4627e8d97444c44ebf548cfa5233bcf,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_153
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278978562
+  - serializedVersion: 2
+    rgba: 4293644356
+  - serializedVersion: 2
+    rgba: 4280424966
+  - serializedVersion: 2
+    rgba: 4282606185
+  - serializedVersion: 2
+    rgba: 4283383310
+  - serializedVersion: 2
+    rgba: 4285157390
+  - serializedVersion: 2
+    rgba: 4288126056
+  - serializedVersion: 2
+    rgba: 4281805836
+  - serializedVersion: 2
+    rgba: 4290694836
+  - serializedVersion: 2
+    rgba: 4290549516
+  - serializedVersion: 2
+    rgba: 4285557040
+  - serializedVersion: 2
+    rgba: 4288114179
+  encodedCells: S1:4:4096:2F7BC42A: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fefffe00ff00000000000000000000000000
+  conveyorDirections: 00000000000000000001000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000020003000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 15926127
+  displayTitle: Sunken Marble Stairway
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 9b9a7e788a7912740988b03a83b79ae0,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

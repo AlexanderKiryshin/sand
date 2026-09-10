@@ -9,6 +9,7 @@ public class ConveyorSlotView : MonoBehaviour
     [SerializeField] private TextMeshProUGUI countLabel;
 
     private ConveyorSlotState slotState;
+    private static Sprite directionSprite;
 
     public ConveyorSlotState SlotState { get { return slotState; } }
 
@@ -51,7 +52,9 @@ public class ConveyorSlotView : MonoBehaviour
                 bodyImage = gameObject.AddComponent<Image>();
             }
 
-            bodyImage.color = new Color32(96, 96, 112, 255);
+            bodyImage.sprite = HintUiSprites.RoundedPanel;
+            bodyImage.type = Image.Type.Sliced;
+            bodyImage.color = new Color32(63, 109, 116, 255);
             bodyImage.raycastTarget = false;
         }
 
@@ -82,8 +85,8 @@ public class ConveyorSlotView : MonoBehaviour
         arrowRect.anchorMin = new Vector2(0.5f, 0.5f);
         arrowRect.anchorMax = new Vector2(0.5f, 0.5f);
         arrowRect.pivot = new Vector2(0.5f, 0.5f);
-        arrowRect.sizeDelta = new Vector2(18f, 18f);
-        arrowRect.anchoredPosition = Vector2.zero;
+        arrowRect.sizeDelta = new Vector2(64f, 64f);
+        arrowRect.anchoredPosition = new Vector2(-7, -4);
 
         arrowImage = arrowObject.GetComponent<Image>();
         if (arrowImage == null)
@@ -91,7 +94,7 @@ public class ConveyorSlotView : MonoBehaviour
             arrowImage = arrowObject.AddComponent<Image>();
         }
 
-        arrowImage.color = new Color32(230, 230, 240, 255);
+        arrowImage.color = new Color32(255, 223, 126, 255);
         arrowImage.raycastTarget = false;
         CreateArrowSprite();
     }
@@ -115,15 +118,14 @@ public class ConveyorSlotView : MonoBehaviour
         labelObject = new GameObject("CountLabel", typeof(RectTransform));
         labelObject.transform.SetParent(transform, false);
         RectTransform labelRect = labelObject.GetComponent<RectTransform>();
-        labelRect.anchorMin = new Vector2(0.5f, 1f);
-        labelRect.anchorMax = new Vector2(0.5f, 1f);
-        labelRect.pivot = new Vector2(0.5f, 0f);
-        labelRect.sizeDelta = new Vector2(36f, 20f);
-        labelRect.anchoredPosition = new Vector2(0f, 4f);
+        labelRect.anchorMin = labelRect.anchorMax = new Vector2(1, 1);
+        labelRect.pivot = new Vector2(1, 1);
+        labelRect.sizeDelta = new Vector2(36f, 36f);
+        labelRect.anchoredPosition = new Vector2(-2f, -2f);
 
         countLabel = labelObject.AddComponent<TextMeshProUGUI>();
         countLabel.alignment = TextAlignmentOptions.Center;
-        countLabel.fontSize = 14f;
+        countLabel.fontSize = 27f;
         countLabel.fontStyle = FontStyles.Bold;
         countLabel.color = Color.white;
         countLabel.raycastTarget = false;
@@ -136,21 +138,23 @@ public class ConveyorSlotView : MonoBehaviour
             return;
         }
 
-        Texture2D texture = new Texture2D(16, 16, TextureFormat.RGBA32, false);
+        if (directionSprite != null) { arrowImage.sprite = directionSprite; return; }
+        Texture2D texture = new Texture2D(64, 64, TextureFormat.RGBA32, false);
         texture.filterMode = FilterMode.Bilinear;
         Color32 clear = new Color32(0, 0, 0, 0);
         Color32 fill = new Color32(255, 255, 255, 255);
-        for (int y = 0; y < 16; y++)
+        for (int y = 0; y < 64; y++)
         {
-            for (int x = 0; x < 16; x++)
+            for (int x = 0; x < 64; x++)
             {
-                bool inside = y >= 4 && y <= 11 && x >= 6 && x <= 9;
-                bool tip = y <= 3 && x >= 8 - y && x <= 7 + y;
+                bool inside = y >= 27 && y <= 57 && x >= 23 && x <= 40;
+                bool tip = y >= 5 && y <= 31 && Mathf.Abs(x - 31.5f) <= y - 4;
                 texture.SetPixel(x, y, inside || tip ? fill : clear);
             }
         }
 
-        texture.Apply();
-        arrowImage.sprite = Sprite.Create(texture, new Rect(0f, 0f, 16f, 16f), new Vector2(0.5f, 0.5f), 16f);
+        texture.Apply(false, true);
+        directionSprite = Sprite.Create(texture, new Rect(0, 0, 64, 64), new Vector2(.5f, .5f), 64);
+        arrowImage.sprite = directionSprite;
     }
 }

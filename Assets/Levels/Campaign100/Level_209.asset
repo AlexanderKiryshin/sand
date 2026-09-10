@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_209
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4287687931
+  - serializedVersion: 2
+    rgba: 4284534268
+  - serializedVersion: 2
+    rgba: 4290691006
+  - serializedVersion: 2
+    rgba: 4289495893
+  - serializedVersion: 2
+    rgba: 4281607450
+  - serializedVersion: 2
+    rgba: 4284460276
+  - serializedVersion: 2
+    rgba: 4290764013
+  - serializedVersion: 2
+    rgba: 4285824408
+  - serializedVersion: 2
+    rgba: 4291209354
+  - serializedVersion: 2
+    rgba: 4280563857
+  - serializedVersion: 2
+    rgba: 4286470707
+  - serializedVersion: 2
+    rgba: 4285437390
+  encodedCells: S1:4:4096:00DC182E:ZVXPb9s2GP0bnKHwhvZirpGzIDelU4XsUphuK2iXdWXrxr1U3bjM0KVVMybwKUmTKIgvg5W5hHt1URi7dJGBBtxlHqZ6Af+oPVJJmmJfEIni+3687/GzlCulUtjMXGKuNbfLWS99r0L85co4zLCB7TXOeYFVz3qnFNB+avGZ1rpXOvA9Zy+2eKoOD/dNKhiPEKl1zK2HRe3+Pp9xjXuBzKiuNRZpidvAD9hJ13ozE+nEUQQ3nSKgN4t75vo3gBl3tGNTA7ZJ0Mbanm1op7eGCO5E/MwcOOkY3s40Lgq9gyTFGRKRiDiEkDgi5rnQe2nvADyAx4VeImfmLFl0Zvs4MJ0XqKfjc7z40STT6AsMAXNicqF3k8GEjtZKkqa/TgyHyCHovuAoXqnUyELEbUYTZEKL2LBCmigyi6Ur9okAjo0Hbg65ZOk8CjnwNdGWHb+ETxljpEZIZA6j4DPLJNalR81crv2Du2NxfWFGHTJXgUJEs4Xakzgq983BFLE9VseQB36PXZyCPXCrvc1cqVSix2Q6Me5FTCLozy8JZ+PrhE0W7FPE4acL233EDTdT/7sa+JPPz6S0/Muh4kCRYvxmzPQ2Q4oo0lM90x8dDLdVNhqx9AGbJ2UDhTnc89mAqJjKEZsfjeenH1vnzlytnB9ncQxjV34fd+wM8KIzjaMyNZkDpQ4fW1tdJD1DnnfOe4uMuuPVEWOryDC2ewg85Rfdb82uRWX0+D1bRMQSjrdjdJ3DUJDpaLfF2JnDmLFS4045NMaBlTYqHRZPLX6mK/CIscsei9eAPy0WDfFP4pktwk5R4Jd/+SnG18RXnEs4HNDHGv/6Z4NDNqvPA8Ym9y9qsHEn/lV6lh8x6TEXn9h4vDGQkvOvSun+hzN2w/Xl7DVwO5wgoFjzUQmpiWoz5vflTTdJvKT+XNRFlTH30XnsZKJUO3G9o2VfJv5nQniJaN2QUp3jbby3koFcdxNXNABvCu+hDDN/eMKGZReqKwaySTNJqS+E6DcyOpGBlJnMvndbwyH2Vb4uPFe47tayEIFHQ9o+USqktB3mucqpCpohvbUsVCJEVwzdfGWQD5GCMhnkYRAGdBIefNPf9FSX5hvC2xCubKu2hIUoFA6CGa9QBHxxe6fibnr9k2xTiH0hGvIEPFwpNwJxV4XhF1Fli9JctYdg6jW6Xl+K45VgSG/eaWzfpX61Ib/cZhXxsLni0+A+dQfijkzU4bNmQAnZnqt+S68/N6EuXur5/UR4vmk78Tc8Ua2RCv7JrYwGWaa6Yd4eJCjwAv7uK+lL6dsXR898D4bs6l+MDSRFChcmrVXrwDdeNqAIYx9au55cFonrDrwSlptmvidX98MTxrr77d2BXMmWIWnfgtIXLmZEtR8zHPr6Vu80DGQWBF4Q9o+kdG2W+h9tdg+HerhQ1zpngyCXAYUfzPek179eU7sPmR6fOrWefqcgloRewZGtn/j0OiHPq/eiIn07fdu6pU4gZUAVtfH9jNIf8DOsv5vu4BvX068VVe31vmTsFfAsoNTEV37yqvxt50nrzZ/4bHYNLYX8J5gHxHPyzDNkXciWCKWE1eZI5gZVWdX5DVL6ou9jaiHcccMya9I8pMcZVk9vU0kzmpuBS9z+i1K5ZqiG5aqfHCvQwjAmaCh4Sa2Hau+m6S5rpQcMX5vWLp5A2RBGLiz+Aw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe00ff00fe00000000000000000000000000
+  conveyorDirections: 00000000000000000000000200000000000000000000000000
+  conveyorBucketCounts: 00000000000000040000000200000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 21790951
+  displayTitle: Icebreaker in Golden Polar Light
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 20cc15ee284140e4aa4082048ab3adce,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,1 @@
+PASS: GameAnalyticsSDK and game runtime C# compile with UNITY_WEBGL + PLATFORM_WEBGL, without UNITY_EDITOR or YandexGamesPlatform_yg. Unity 6000.3.4f1 compiler and resolved project references. WebGL Build Support is absent: this does not verify IL2CPP, JavaScript linking or a browser player.

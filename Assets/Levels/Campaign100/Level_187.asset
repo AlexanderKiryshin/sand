@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_187
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281496931
+  - serializedVersion: 2
+    rgba: 4279373322
+  - serializedVersion: 2
+    rgba: 4282687643
+  - serializedVersion: 2
+    rgba: 4288124567
+  - serializedVersion: 2
+    rgba: 4290360496
+  - serializedVersion: 2
+    rgba: 4283779906
+  - serializedVersion: 2
+    rgba: 4289169511
+  - serializedVersion: 2
+    rgba: 4285952103
+  - serializedVersion: 2
+    rgba: 4278920089
+  - serializedVersion: 2
+    rgba: 4280298019
+  - serializedVersion: 2
+    rgba: 4280830266
+  - serializedVersion: 2
+    rgba: 4292929001
+  encodedCells: S1:4:4096:078E456C:fZTPc9vUFsf/BmNaeLor1MQvz80mMZ0BZ5Vwr9E43jTcY2se3jyPfKsp3YSpLA/NpqkkiyZLFk/pyp4m01yxMU46ji4bMlEcyv2jOG5LKWXo0cKSPufX9/jqmOb7rfzmrvRXsAX/fl/ct63Zex2+bHqz2T/jjojv+zneLMFCtPx3LkSz5/uLpnk/CC2tYflvHPEMeZ8N9qP+QNN3uY/1McofNIToe/5A5+/EB9xHAb4WQlg+WtRefJsLEXvIdTcSzwXvtaCr9dJbw+q5lkbeuNO6Pv0m6mM3A63/5ELULuf9i1YYXRfivu+3/JcN/aG/N+jtzAs1dz4m1/vM93Z838uX33BxZ17eFM5MrcXrd3YGyNv+7K0E/vy3J4T65qHTv5rNNXizdwflxJR/3QUIL8HDHv38Hd7vx7FSsYsdDqxctz18p99KYkcqVUr0Wj3P3/Z3LndmptZtBOev+HOh/hcXptuXMyDE81s7Gi4aerlz/lrKdLwXP1DpI+7f9wvb/qzVYpTnOozbLxNYTyfxnlKPHu34Nl7IQ7A419ESPV80LRH1v5wWHlzbdDH14OEmCri+eiPgeXzXhuWOK8SAZGpcUDPPP/nqdMWfeeXVG+ZFrg9rGiL8ExVZV9lk3OxNV4rq023fWzTLIxH8aAo8eDSKMqIO/kU+3KdNVSzc3p55h6Pyja3L81zWdBBZ0Xdpmo7VtS/6/am6hv3DrZEk9QWt773QjSCOA6V+SIiq9I3xFLnvwVCq7hbOKGrvM8r20uxJYhDSJ8r5qPDVrAW31GNR83J9L28zxg5lcnz22a3p6ST5XtnFVgsgHrn1ntYyv6Bu7ec0OVZr06+n4+T7jwnYPlhOXK65F/uOlVu5rdJEqpXTNLNKU7KW51qHgftDnV6w9hW3OEx/O5GkskEeGHvTJ0Td7t9hz8z/b8F+mNd12w6VylR1ZWg8INvJGVG/eCDc3SjQubXc0Qw2np+q27+tVAqbU/vg4Ne04KHooJxfwVLpHm/QwCJDlRonY6WUPEpIdkUd4eB0Fs1ml3JOM2NIUuNUzeu8yApBd9d127pNF5a2ji458KwglVH5sTBJszTNlOt2mjg8Zpmw23gMAGkqs+NP0wrJMinJ5nfmBl3SlG/pnOWI7TRNDpIVWSnK1FhTk/qwQ49ocKXRzjl7VlcHSXK8poYTqTK5qorl8oZZC+c437KBM+RSVtWwena8lmbjcSYfn3BK25AzB/MDRqnkLJXV5GxNqbNxlk4ZpRRou7EU2+5VqlKJPDv4j3yiyp+rM1I82bMovbDoAmPiaTmTabJaHaI6tMRQayRVlkV1PVgMHXFEFBkOq2RSHKs0LUo1KmSTZy6lug2UChGSghqRaqViVLLxTSPNjBWSxW6NXjSa1D7kQKqfqKxqGpXKTaMwIj/d/MD4ZNeNgqv9KxuAsRTnMlyRRqEqR2pUri9v6FiIEr3Yt5qiTanMRsbQSGVFPbRAs9MF0YxFSVIePsPqAHI+9uJktPrLOq40OHRErStqcjdyTOEGrlMejdLyKpG2Xu+KJtAFAZjeDEK9a5ZGXXyIGWjdoHzdEU1K0Qn5pdaHnTIup1i8NPohDTY7okbx9KBqEek8ApuB4K/5U+pgKHJXMCGOSnfFLpcUBb7maOha49Tp0FIJ97SNL3CC4SsezB0wdUBLYHNuAQS2BZRH8IqjJ8VUNbpQipoBMM6AQ7DR7dT+zI99NZdeAFD8qsPOPdpArcJ5w7nVxSx4IoFBSDmzoQm46oT7ivN63rkLLGTM4uU8wDiOWxn7j6KXfEEEXTY/cFhX2IEpTMERU4yP5lwK/JjZXSyPHjR0BXdCCGE+LGEJXgv/iw82zFVDlzM+V9BtAvwO
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000ff0000fe000000000000feff0000000000000000
+  conveyorDirections: 00000000000000000100000000000001000000000000000000
+  conveyorBucketCounts: 00000000000000000400000000000003000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 19486913
+  displayTitle: Astronaut in a Lunar Greenhouse
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 540ea28a856d8274294597ad33f72789,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

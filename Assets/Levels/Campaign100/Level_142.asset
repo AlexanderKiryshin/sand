@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_142
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279511383
+  - serializedVersion: 2
+    rgba: 4285449721
+  - serializedVersion: 2
+    rgba: 4282201676
+  - serializedVersion: 2
+    rgba: 4283473131
+  - serializedVersion: 2
+    rgba: 4279328463
+  - serializedVersion: 2
+    rgba: 4281949323
+  - serializedVersion: 2
+    rgba: 4280238456
+  - serializedVersion: 2
+    rgba: 4282806713
+  - serializedVersion: 2
+    rgba: 4279176206
+  - serializedVersion: 2
+    rgba: 4286863201
+  - serializedVersion: 2
+    rgba: 4279965998
+  - serializedVersion: 2
+    rgba: 4283971593
+  encodedCells: S1:4:4096:83706CEA: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000fe00ff000000fe000000ff000000000000
+  conveyorDirections: 00000000000000000200000000000200000000000000000000
+  conveyorBucketCounts: 00000000000000000400000000000300000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 14774108
+  displayTitle: Festival Drummer beneath Bunting
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: ecf57923325cb7649b6c5e0ed63bfb0b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

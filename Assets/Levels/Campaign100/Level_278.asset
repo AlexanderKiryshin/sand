@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_278
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4292521892
+  - serializedVersion: 2
+    rgba: 4290548894
+  - serializedVersion: 2
+    rgba: 4280029969
+  - serializedVersion: 2
+    rgba: 4293043595
+  - serializedVersion: 2
+    rgba: 4282870429
+  - serializedVersion: 2
+    rgba: 4282460188
+  - serializedVersion: 2
+    rgba: 4285022505
+  - serializedVersion: 2
+    rgba: 4281481293
+  - serializedVersion: 2
+    rgba: 4291399025
+  - serializedVersion: 2
+    rgba: 4289819473
+  - serializedVersion: 2
+    rgba: 4287651392
+  - serializedVersion: 2
+    rgba: 4289834194
+  encodedCells: S1:4:4096:056C9CE7:VZXPj9tEFMf/Bpdo0QKXDYhqoRc0xXEIl7CjImePldEicSkuM5uYCwTNdOMTuN2alktiy9lJuLRbOXjcS5vKJh4ujUAC5D+KN8mWtm/Xq9183vfNj/f265KUlM3pXAiRScMYd8Vr0RyuCkLUTf+CPzBex01GPOJSb7r5c3c8Hm/Bvtif7DchCClukpgQ/aFhgHp/shVuYiIQIiwZMn86F7vAx0Amk8kFhmy0QK1hZPKe0FxX32/+H/BrkpKWS5HHErG/5ZDxSoo77Kul+53rLeTuC958JZClCELcJYV8yzAm/yvXV2b/1PW6RhYiHUoWhOewPXn5Ba7lTECCJJHL/MJFLueZkcmk2SyadV1fkXImZS0lQnSRpZ+0CCvnhkzT2Xpd14//lToyeNBHrEoKG33t09J4IFNZMagqtTzTCeWckHTpD9uMvm98n6aVZI9fiGEF6ZEOclFEIXYMxtLRgMitHB5omTcTfcv0TO6aRU0J83KWarXQKULIRbQilmnmq4Jfrv2S0w7V8p7QYkhCw2nbcgVXjPCatUrqM1XlWU8zOZIj00Kd39C0v1AFqaFVlJqwx4stDAYUWdwtWsPBiClSM49wuEsNc3jogJquZyopWsuElH7NPc5JSx+gJ0ejihBCV/OrbjEXzD9hLcRoi5uMaf1o4HuEMuonnCUzjHGsqMuY4u4igeqKUzhsSXyTCHOQYp1wQozn35LS9EY5h1CU+6QTdaLcdHubBHsX/1nQlPlA/VJR6hX8xFvOLHS+SWgYcbwmI4+xkvOyJHAXfvGw6CAUaB4LDCNypaRQGBJYwXnB5fnKghl3TbKerOvubiyYR5XPFYGjFqmanbcRMhFEEIahcye0eMlofuLDfSS+onk082C6wjAIrVAHMb1DD0YjnTPlemUnYm33uhuER44VBqCPV+ScCCxEnGV2LJfHK+Reh9pHjgPPnVD/A+BrMb6IxOKmGQTBhl/XemxvocTxD9h2by1NEqJgo4WcwLZ/jp7JT3T/Ipll8dmqDdsP7gIPNK/OvixyeQ+aXP0OOeLsSV/z8Ch0vjpywtBObl97JO9NYfrOYIZXnydX4fB3W3C0W0fOUTiahzvdR6DPZudC9vaqTrSCdiSXr9S/OI7zd107O9n89iFoIyFnT2CJzEWnd0FvWQhWcZy/HOfjv5ufNQ5wNjOyQz3q7VaF/qqRG6DNPVr3L+35xLSxQAyuqmlg/Lz+9d9PrcD6qN8+wH4YQLHhZxhHeAyN7zYmwn4O/y73LWSakbB/PGgfvPsG7uJYT4WIfxLv1QIM4dKtJDOX7+DbUfugkYouZOCusJ+N7Vjsz3Cc2bDvxwLHw875agnqDAt60F8GYJwPBtOY9WIBtmdj3I7iqYiNbhsNr0FLRA9K4PU7e7+uLzrXWCXaULEA2tUfvPccfAeaC6EL4OxN4PiVaDRqsMAY2sv7C1ER9vZLrtdsjKVU6oxzAS4EE7w0ut0X/Fn/ROW7zh/FDCyp4v23jUtGtKkf68HHsVT5Bz+Fx67HRrDud3rMpjLb1BcVVfLe8ekxOTomHvd3DOPGDhbGNbHZLSlVJh9CA8mpc+yqcgYvo/6OsWukhubPMsnBCU7D4wC4pZh6f3dcZfAaSYQY4xPtgRS4E2ruSqWtazCH2cj1oRYq7YOcfOEck9OvviGSg+2JvgCDnAp9vMMNBq4XIWTrXBsLW2zuEhs34CVGzCPwLpdxpidfVlWuv8XWFuAN6dM7wE4Llm+5UrlUla8TjDHofcbAM6jP81ypSvnAlVKHF5dvY87ucFLeB3fVsdr8VL2Xvfthaj+FDagtV+qJsvHrMbMp8FJr5y9LG9gWPWFvvsTe01LtTR6uPnyqSkNfzrjxHw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: ff000000ffff000000fffffffefeffffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000002040000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 29017252
+  displayTitle: Lakeside Sauna in Deep Winter
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: c8457531291b0c141a30aa2f1a491c51,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

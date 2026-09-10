@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sand · лента, спавн и цветные бустеры</title>
+<style>
+:root{font-family:Segoe UI,system-ui,sans-serif;color:#173f40;background:#edf3e9}*{box-sizing:border-box}body{margin:0}header{padding:24px 32px;border-bottom:1px solid #cadbd0}h1{font-size:25px;margin:0 0 8px}p{margin:0;color:#526f68}.layout{display:grid;grid-template-columns:280px 1fr;gap:40px;max-width:1120px;margin:auto;padding:24px}nav{display:grid;gap:7px}button{font:inherit;color:#285954;background:#fffdf1;border:1px solid #c6d9c8;border-radius:10px;padding:11px 15px;text-align:left;cursor:pointer}button[aria-current=true]{background:#285d5c;color:white;border-color:#285d5c}figure{margin:0;text-align:center}img{display:block;max-height:78vh;max-width:100%;width:auto;margin:auto;border-radius:8px;box-shadow:0 6px 28px #1c46401a}figcaption{margin:12px auto 0;font-size:14px;max-width:540px;line-height:1.5}footer{padding:0 20px 24px;font-size:13px;color:#627971;text-align:center}.pager{display:flex;gap:8px;justify-content:center;margin-top:14px}a{color:#285d5c}@media(max-width:720px){.layout{display:flex;flex-direction:column;gap:18px;padding:16px}nav{grid-template-columns:1fr 1fr}nav button{font-size:13px;padding:9px}img{max-height:80vh}header{padding:20px}h1{font-size:20px}}
+</style>
+<header><h1>Sand · спавн на ленте и цветные бустеры</h1><p>Версия 4 · реальные игровые кадры 7 сентября 2026</p></header>
+<main class="layout"><aside><nav id="states" aria-label="Игровые состояния"></nav><div class="pager"><button id="previous" aria-label="Предыдущий кадр">←</button><button id="next" aria-label="Следующий кадр">→</button></div></aside><figure><img id="frame" alt=""><figcaption id="caption"></figcaption></figure></main>
+<footer>540 × 960 · 64 × 64 физических песчинок · <a href="../../conveyor-spawn-and-art-v4.md">Отчёт и проверки</a></footer>
+<script>
+const frames=[
+ ['Новые вёдра на ленте','18-visible-batch-spawn.png','Первичное добавление в открытые свободные позиции. Центр нарисованного основания стоит на средней линии поверхности.'],
+ ['Первый ход','17-visible-initial-spawn.png','Новое ведро видно сразу после нажатия; оно появляется перед кожухом.'],
+ ['Обучение и замки','01-tutorial.png','Полноцветные иллюстрации, увеличенные золотые замки и требуемые уровни 6, 8 и 10.'],
+ ['Лента и стрелки подачи','08-conveyor-active.png','Крупные стрелки показывают направление подачи. Счётчик учитывает всю вместимость и видимые места, куда можно добавить ведро сейчас.'],
+ ['Переворот ведра','09-bucket-flip-mid.png','Середина настоящей анимации открытия маршрута в запасе.'],
+ ['Вход в кожух','10-hood-enter.png','Компактный кожух перекрывает проходящее ведро; задняя стенка расположена за ним.'],
+ ['Полное скрытие','11-hood-hidden.png','Ведро скрывается целиком перед циклическим переносом.'],
+ ['Выход из кожуха','12-hood-exit.png','Уже движущееся ведро появляется из противоположного кожуха.'],
+ ['Лёд','03-new-painting.png','Ледяные оболочки и счётчики ходов сохранены.'],
+ ['Разморозка','05-thawed-buckets.png','После настоящего хода лёд исчезает.'],
+ ['Бустер включён','15-booster-selected.png','Нажатие на цветную кнопку включает режим магнита.'],
+ ['Магазин','13-shop-top.png','Новые изображения работают и в составе наборов. Цены на кадре — данные редакторского провайдера SDK.'],
+ ['Магазин: прокрутка','14-shop-bottom.png','Проверена прокрутка и закрытие магазина; покупок не было.'],
+ ['После рестарта','16-restart-and-controls.png','Кнопка «Заново» восстановила текущую картину и запас.']
+];
+let index=0;const nav=document.getElementById('states'),picture=document.getElementById('frame'),caption=document.getElementById('caption');
+frames.forEach((frame,i)=>{let b=document.createElement('button');b.textContent=frame[0];b.onclick=()=>show(i);nav.append(b)});
+function show(i){index=(i+frames.length)%frames.length;picture.src=frames[index][1];picture.alt=frames[index][0];caption.textContent=frames[index][2];Array.from(nav.children).forEach((b,n)=>b.setAttribute('aria-current',n===index?'true':'false'))}
+document.getElementById('previous').onclick=()=>show(index-1);document.getElementById('next').onclick=()=>show(index+1);document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){show(index+1);e.preventDefault()}if(e.key==='ArrowLeft'){show(index-1);e.preventDefault()}});show(0);
+</script></html>

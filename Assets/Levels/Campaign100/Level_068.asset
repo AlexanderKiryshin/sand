@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_068
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279461771
+  - serializedVersion: 2
+    rgba: 4288447316
+  - serializedVersion: 2
+    rgba: 4280046430
+  - serializedVersion: 2
+    rgba: 4289109622
+  - serializedVersion: 2
+    rgba: 4279511842
+  - serializedVersion: 2
+    rgba: 4288529627
+  - serializedVersion: 2
+    rgba: 4288586905
+  - serializedVersion: 2
+    rgba: 4288459192
+  - serializedVersion: 2
+    rgba: 4278553288
+  - serializedVersion: 2
+    rgba: 4289362997
+  - serializedVersion: 2
+    rgba: 4279779136
+  - serializedVersion: 2
+    rgba: 4283603140
+  encodedCells: S1:4:4096:C672CFA7:rVU9j9s2GP4NBOFB0E3uoQGuk8IorcCbDso5QCZHR+Rabi2qGOh2do5GnSk5WEQyCUIGwltatIA76RjGNZgl8Bj9qD7U3SUpWnTqa1D8eN7PR6/o9fp/lce//Sf8oip//7fzgz+uZqXL81/+Blzb3bmaZpPyrf3hn/b3VG9dzicl5z/e5DD76OXes7sHAdf6T+/LGzz/9QY/+2rxev2zmlf6JX/+EYfJwcHBMPxutcPXa6X03cnbslyWAX0dHsNrufyGDddnUODLEnJzfBAekyUeR/wLdaYqm/60nHzCg5xVYesuWzVTXPoSSerPYBU4QYDLD9N8w6fPJ+US8Pdffo7fx3zr9ibnMZ2qSanLZ5NlfoSgPT7X958Nh/nRgzfcJwEvjzVGfpRDhkhKz+Hx6M4dIQq6qMqJXmoo5flFwIehKo15/6EQliYeO5QwAV4dA89zBZmN9nNHnSeEKFXNJ0sdTpWew4XK89FslJ8IIRzGdASgmiyPR2oEUOcaOjOVz6DAPPez4LBSy2VID/hFj49yL6RktOuALoLv4DrfR/bV/QlWJxsnfbzrdgGHi/xKes3g6snG+zQmXYdsHmDgKJjNEFpdjPI3ijnJyfsd8BPem+pQY68CuXd7ITxn7w8/4RfAz6/DVOrBAv7th+5Dedzjj4/nYLkMcWaVmquN8tIxvkvK8pTlMz2fq57YnPc5fv1ESc95+75bqEdcgTCF8yrXJdfnavPIKeW98zsbeyXYXM/VtZzzx1p793K59J7a3WHxbnqaTj/hCpbqVCwU6veDXUef61OhdaCwKlVVqfRppTcFtl4Kuuv2ns4f+alagNfzK/spfD3R+tR7key67h0Tblrxnlit0LmShvVGwj7Z67oxK9xCpSr0lVKX0rnYDtUt6byU9LCLi1QIdQZ8OLxQIxKDdkb2hmgOKfZs4ih65KFMw5exPxzK1AmfMToGbuU7a731zFnqeMIewrAgNTHGjB3Hy6MkHgtXWAzXcsshCWFNZLLUUrojpCXjgSMJbUwiJG+YoYQ0htTGRMYQwiKSQLvG3phXxqZtvMKe9gq1CYGwiNDkplcx2ySJG8NtbZKsxuozCVpQkg3bcmZMHbEkMo3JqMETzq4cGE8ywlmzhbkhlBQZ3EcEGWSoKzKRY5nJuEm22YoyigyaumFRY6ipKdxE0rRIPSOMNaRlK1LTFUNNTZY0mBLjJacrU3vP2Nb6pq1bVGjjjGYRJVlDUuuYZ9xGpmXRtqZ120QRBUEsi5Iki7iVApS/Qr5xu22S2iIGR6WZ2RKaGAGimWAmIcZnWxRqcclgWyOaT8xWpngp3Jp4ULfG+jRhNkI9Nja2qQ1DL9GWy9Yw32TCF44XnraFYcTEoa5GoFtSOTAxa6xIuaNjj0Zr+MpY4+soQbOI1IuGMpNZNrYDSgsmwExmtz4Or9k7hhJAdSpxwQlYpGxVg5jaMxOHS6nlYlCbsUjRmgUuOXTiSvix8fHWcihQJoQcCNZCAz6Y8MjK2pUxzocrbSBhJXicCM7C0nEGDpxMv/WJgIrAzVEIHpQYigGeQAXXlZPIDBEcY06wor8gLWIF/6lHryMwPpvAQXASvhAMLvst5y6FGc76CPjqXL/qGQGxiCOcS11MiCBkvf5ujT/Zg+HJ/lF3iGt0r2PIsvkL
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000fe00ffff000000fe0000000000000000000000
+  conveyorDirections: 00000000000000000000000000010000000000000000000000
+  conveyorBucketCounts: 00000000000002000000000000020000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 7024162
+  displayTitle: Sunflower Windmill
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: c516a5c43c653b646add64c5927d4294,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

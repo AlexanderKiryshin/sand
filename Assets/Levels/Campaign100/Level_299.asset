@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_299
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4291084492
+  - serializedVersion: 2
+    rgba: 4292183108
+  - serializedVersion: 2
+    rgba: 4293980405
+  - serializedVersion: 2
+    rgba: 4289040792
+  - serializedVersion: 2
+    rgba: 4280162852
+  - serializedVersion: 2
+    rgba: 4293437555
+  - serializedVersion: 2
+    rgba: 4293772195
+  - serializedVersion: 2
+    rgba: 4292842069
+  - serializedVersion: 2
+    rgba: 4293386724
+  - serializedVersion: 2
+    rgba: 4287917152
+  - serializedVersion: 2
+    rgba: 4282996669
+  - serializedVersion: 2
+    rgba: 4293514188
+  encodedCells: S1:4:4096:F5325911:dZRBT+NGFMc/w4j0EOilLlKtqJd0SGDUXEyGrTbLJcu6KrCXgmQo4rISYgDlUqsKLtoLHafVdH1iva0695xyAqMEV/Oh+t7YCaHdvjjOeH7z3vvP85tcOR+xm+FsGH2Mv3wxG4ZR5DqO67rzfGdpNryKIggRPeVDsjzPwzDsR+58evLZPHedyN5n6UfkUZ8l4RO+8+Ipj9yo78wpGC51Z/Kv7IJozwnLmTsnHC2V+UNnr8CR45aF+MWmn+o7PSj9w7MvnMOvPreTr5DD3J3b74dXh5aPcydcoxmGdIfAf4yih+zALfaHdjqO1qhJUDHyKDqLLsPI8ksrkDKaGeM4/e9GI9L93oUt43UCtA98TTJKjYGplyAf4xcW0+iB/gxcIf4S+A5w76cSHx5N3jaliQ7XMLqBhZAeeInP+kfBeM2YHqU0B24sJ4QcWRz0owDs7bhJqSw5yiMEZvuIgiN7p5A9M8IcR1Y+6drZMXxP7IglED4RJjgMvp36g9cPwa8XyXHQ3KeZMi0QCBzlWb7fzEzQFCIIIHuWMBR4vKqmfPUcNywvxH7QgtwtivIMbQ9HFUK8QLQYbji/aGWiKWEIV2+isu3RqNol3lgIXJ6bFWowsq1Ob9JSr1Ge5wlxcMrOMSCF0LJFVW8i0Me38t9Y956YnKIGlUmj4AnnfCvvjVCisBOTKAYvPsfloieGJZeW0tUTIXJlTLlaTAp+onIhVs9XMxOb1d8E4B7ETozYHI52gddzM8FNURPbfbTMn3d2/yC/ek0qkE0mdkLru9x80+ksO3fm2DxsW/l1U8DxBPiN1nw9hcbs9fXezugdcPJHDeQGZ9DbWuuO5ss1Z3md15zy7fBOrXZzFJz2g0utU61racp1h6f6puCpXl++0c/0Mz61Ducp3NdLDmOIy3XN6XR0mnY4ftCgvGD80SpkcTHlFXincJHuEKjv+6iReHjV6bxt+/5Go9Gg/2dbW8gYHCX2Hybh6/9O6QeCQzmdU0yqYrFibMCY9GMMgR0PDyxWTJUBYNVgu0GHgyK4pEwpFcPDAp5dDLiw8YnvD3eH8MSYklVYcF06tzdgYQW25u/6o3dUVSGtokxSJW3kV75UC3XkUKKvpWr7A4U23Yi/s0L90kb1qtoCToBLRTE7cJ/7T2ygqNVXxRJK8G/QBvXxRv3BNviDQsZWMIf1t79draFEUlLgtkSxUomtnG9LlHZS/V7rdv7apwuUch6r3Cgo4NYHzd/bZlrk/BbOxF/6bwqNf29ySgmUpgKFfG7fOOf3xmzyFP8zTH0B+j7BSEp506a439yEWyLBPzafYv/bTB4psGf9gScYH021Oa+rKrDrqpWEHHShPyyC1LAPZVQc87ZnDyvMZVAf9E+SLKEKvZJKBeNvFkGNhP+PGM9ljgpATYJNWvG824InAHCoUKGU8EKfc2zc69zMLMf8CfrnCXDb2OT2kceG4VlNgLckUwUnU5owK0XZgC1olsq/AiT/AA==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe000000fe00000000ff00000000ff0000000000
+  conveyorDirections: 00000000000000000002000000000000000000000000000000
+  conveyorBucketCounts: 00000000000400000002000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 31216561
+  displayTitle: Wind Powered Land Yacht on Salt Flats
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: d821daa5666ca6b429354fa664e3694e,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

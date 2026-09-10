@@ -24,6 +24,25 @@ public class TutorialController : MonoBehaviour
     private bool stepActive;
     private bool completed;
     private float animationTime;
+    private const string CompletedKey = "sand_tutorial_v2_complete";
+    private int phase;
+    private float watchTime;
+    private bool levelHintActive;
+    private SandEconomyHud economyHud;
+    private LocalizationManager localization;
+
+    public void HandleBucketFilled(Bucket bucket)
+    {
+        if (!tutorialEnabled || completed || phase != 1) return;
+        phase = 2;
+        BeginFirstStep();
+    }
+
+    public void HandleLevelCompleted()
+    {
+        if (tutorialEnabled) CompleteTutorial();
+        if (gameUI != null) gameUI.SetHintVisible(false);
+    }
 
     private void Awake()
     {
@@ -33,6 +52,16 @@ public class TutorialController : MonoBehaviour
 
     private void Update()
     {
+        if (CampaignGallery.IsOpen || (SandEconomyHud.instance != null && SandEconomyHud.instance.IsShopOpen))
+        {
+            SetTutorialVisualsVisible(false);
+            return;
+        }
+        if (tutorialEnabled && phase == 1)
+        {
+            watchTime += Time.unscaledDeltaTime;
+            if (watchTime > 20f) { phase = 2; BeginFirstStep(); }
+        }
         if (!stepActive || completed)
         {
             if (bucketInventoryUI != null)
@@ -67,14 +96,22 @@ public class TutorialController : MonoBehaviour
 
         EnsureOverlay();
         SetTutorialVisualsVisible(true);
+        UpdateHighlightRing(bucketCenter, bucketSize);
         UpdateHand(bucketCenter, bucketSize);
     }
 
     private void OnDestroy()
     {
+        if (localization != null) localization.onLanguageChange -= RefreshLanguage;
+        if (gameUI != null) gameUI.OnHintDismissed -= HandleHintDismissed;
         if (introAnimator != null)
         {
             introAnimator.OnIntroFinished -= HandleIntroFinished;
+        }
+        if (highlightRingImage != null && highlightRingImage.sprite != null)
+        {
+            Destroy(highlightRingImage.sprite.texture);
+            Destroy(highlightRingImage.sprite);
         }
     }
 
@@ -84,15 +121,25 @@ public class TutorialController : MonoBehaviour
         BucketInventoryUI inventoryUI,
         ConveyorBelt conveyor)
     {
+        if (gameUI != null) gameUI.OnHintDismissed -= HandleHintDismissed;
         gameManager = manager;
         gameUI = ui;
+        if (gameUI != null) gameUI.OnHintDismissed += HandleHintDismissed;
         bucketInventoryUI = inventoryUI;
+        economyHud = FindObjectOfType<SandEconomyHud>();
+        if (localization != null) localization.onLanguageChange -= RefreshLanguage;
+        localization = LocalizationManager.Instance;
+        if (localization != null) localization.onLanguageChange += RefreshLanguage;
         completed = false;
         stepActive = false;
         animationTime = 0f;
         targetBucket = null;
+        phase = 0;
+        watchTime = 0f;
+        levelHintActive = false;
 
         tutorialEnabled = gameManager != null
+            && !GameProgressStore.GetBool(CompletedKey)
             && (!tutorialOnFirstLevelOnly || gameManager.CurrentLevelIndex == 0);
 
         ResolveCanvas();
@@ -108,6 +155,17 @@ public class TutorialController : MonoBehaviour
                 gameUI.SetHintVisible(false);
             }
 
+            // Always (re)show lesson hints on level load/restart — do not gate on persisted seen state.
+            if (manager != null && manager.CurrentLevelIndex > 0 && CampaignProgression.IsLessonStart(manager.CurrentLevelIndex))
+            {
+                string lesson = CampaignProgression.GetLesson(manager.CurrentLevelIndex);
+                if (!string.IsNullOrEmpty(lesson) && gameUI != null)
+                {
+                    gameUI.SetTutorialHint(lesson);
+                    levelHintActive = true;
+                }
+            }
+
             if (bucketInventoryUI != null)
             {
                 bucketInventoryUI.Refresh();
@@ -118,7 +176,7 @@ public class TutorialController : MonoBehaviour
 
         if (gameUI != null)
         {
-            gameUI.SetControlsInteractable(false);
+            gameUI.SetControlsInteractable(true);
             gameUI.SetHintVisible(false);
         }
 
@@ -144,10 +202,17 @@ public class TutorialController : MonoBehaviour
 
         if (!stepActive)
         {
-            return false;
+            return phase == 1;
         }
 
         return bucket != null && bucket == targetBucket;
+    }
+
+    public static string GetLessonSeenKey(int index) => "sand_lesson_seen_" + CampaignProgression.GetLessonId(index);
+
+    public void HandleHintDismissed()
+    {
+        levelHintActive = false;
     }
 
     public void HandleBucketPlaced(Bucket bucket)
@@ -162,7 +227,16 @@ public class TutorialController : MonoBehaviour
             return;
         }
 
-        CompleteTutorial();
+        if (phase == 0)
+        {
+            phase = 1;
+            stepActive = false;
+            watchTime = 0f;
+            SetTutorialVisualsVisible(false);
+            if (gameUI != null) gameUI.SetTutorialHint(CampaignText.Get("tutorial_watch"), 2);
+            if (bucketInventoryUI != null) bucketInventoryUI.Refresh();
+        }
+        else CompleteTutorial();
     }
 
     private void BeginFirstStep()
@@ -184,8 +258,8 @@ public class TutorialController : MonoBehaviour
 
         if (gameUI != null)
         {
-            gameUI.SetControlsInteractable(false);
-            gameUI.SetHintVisible(false);
+            gameUI.SetControlsInteractable(true);
+            gameUI.SetTutorialHint(CampaignText.Get(phase == 0 ? "tutorial_pick" : "tutorial_repeat"), phase + 1);
         }
 
         bucketInventoryUI.Refresh();
@@ -193,6 +267,12 @@ public class TutorialController : MonoBehaviour
 
     private void CompleteTutorial()
     {
+        if (tutorialEnabled)
+        {
+            Analytic.Track("tutorial_completed");
+            GameProgressStore.SetBool(CompletedKey, true);
+            GameProgressStore.Save();
+        }
         completed = true;
         stepActive = false;
         tutorialEnabled = false;
@@ -203,7 +283,8 @@ public class TutorialController : MonoBehaviour
         if (gameUI != null)
         {
             gameUI.SetControlsInteractable(true);
-            gameUI.SetHintVisible(false);
+            gameUI.SetTutorialHint(CampaignText.Get("tutorial_free"));
+            levelHintActive = true;
         }
 
         if (bucketInventoryUI != null)
@@ -285,6 +366,16 @@ public class TutorialController : MonoBehaviour
         overlayRoot.SetAsLastSibling();
         EnsureHighlightRing();
         EnsureHand();
+        DestroySkipButtonIfPresent();
+    }
+
+    private void DestroySkipButtonIfPresent()
+    {
+        if (overlayRoot == null) return;
+        Transform existing = overlayRoot.Find("SkipTutorial");
+        if (existing != null) Destroy(existing.gameObject);
+        existing = canvas != null ? canvas.transform.Find("SkipTutorial") : null;
+        if (existing != null) Destroy(existing.gameObject);
     }
 
     private void EnsureHighlightRing()
@@ -314,7 +405,7 @@ public class TutorialController : MonoBehaviour
 
             highlightRingImage = ringObject.GetComponent<Image>();
             highlightRingImage.sprite = CreateRingSprite();
-            highlightRingImage.color = new Color(1f, 0.92f, 0.2f, 0.95f);
+            highlightRingImage.color = new Color(.22f, .62f, .56f, .9f);
             highlightRingImage.raycastTarget = false;
         }
         else if (highlightRingImage == null)
@@ -374,15 +465,15 @@ public class TutorialController : MonoBehaviour
             return;
         }
 
-        float pulse = 1f + Mathf.Sin(animationTime * ringPulseSpeed) * ringPulseScale;
-        float ringSize = bucketSize * 1.42f * pulse;
+        float pulse = 1f + Mathf.Sin(animationTime * ringPulseSpeed) * Mathf.Min(.025f, ringPulseScale);
+        float ringSize = bucketSize * 1.12f * pulse;
         highlightRingRect.anchoredPosition = bucketCenter;
         highlightRingRect.sizeDelta = new Vector2(ringSize, ringSize);
 
         if (highlightRingImage != null)
         {
-            float alphaPulse = 0.72f + Mathf.Sin(animationTime * ringPulseSpeed * 1.2f) * 0.2f;
-            highlightRingImage.color = new Color(1f, 0.9f, 0.15f, alphaPulse);
+            float alphaPulse = .85f + Mathf.Sin(animationTime * ringPulseSpeed) * .1f;
+            highlightRingImage.color = new Color(.21f, .58f, .51f, alphaPulse);
         }
     }
 
@@ -395,13 +486,13 @@ public class TutorialController : MonoBehaviour
 
         handRect.pivot = TutorialHandSprite.Pivot;
 
-        float handSize = bucketSize * handSizeMultiplier;
+        float handSize = bucketSize * Mathf.Min(.88f, handSizeMultiplier);
         handRect.sizeDelta = new Vector2(handSize, handSize);
 
-        float tap = (Mathf.Sin(animationTime * handTapSpeed) + 1f) * 0.5f;
-        Vector2 fingerTarget = bucketCenter + new Vector2(-bucketSize * 0.02f, bucketSize * 0.01f);
-        Vector2 restOffset = new Vector2(handSize * 0.1f, handSize * 0.32f);
-        Vector2 pressedOffset = new Vector2(handSize * 0.03f, handSize * 0.06f);
+        float tap = (Mathf.Sin(animationTime * Mathf.Min(3f, handTapSpeed)) + 1f) * 0.5f;
+        Vector2 fingerTarget = bucketCenter + new Vector2(bucketSize * .33f, -bucketSize * .24f);
+        Vector2 restOffset = new Vector2(handSize * .1f, -handSize * .10f);
+        Vector2 pressedOffset = Vector2.zero;
         handRect.anchoredPosition = Vector2.Lerp(fingerTarget + restOffset, fingerTarget + pressedOffset, tap);
 
         float scalePulse = 1f - tap * 0.04f;
@@ -412,13 +503,23 @@ public class TutorialController : MonoBehaviour
     {
         if (highlightRingRect != null)
         {
-            highlightRingRect.gameObject.SetActive(false);
+            highlightRingRect.gameObject.SetActive(visible);
         }
 
         if (handRect != null)
         {
             handRect.gameObject.SetActive(visible);
         }
+    }
+
+    private void RefreshLanguage()
+    {
+        if (gameUI == null || (economyHud != null && economyHud.IsTutorialActive)) return;
+        if (tutorialEnabled)
+            gameUI.SetTutorialHint(CampaignText.Get(phase == 0 ? "tutorial_pick" : phase == 1 ? "tutorial_watch" : "tutorial_repeat"), phase + 1);
+        else if (levelHintActive)
+            gameUI.SetTutorialHint(gameManager.CurrentLevelIndex == 0 ? CampaignText.Get("tutorial_free") : CampaignProgression.GetLesson(gameManager.CurrentLevelIndex));
+        if (bucketInventoryUI != null) bucketInventoryUI.Refresh();
     }
 
     private static Sprite CreateRingSprite()
@@ -429,13 +530,15 @@ public class TutorialController : MonoBehaviour
 
         Vector2 center = new Vector2(size * 0.5f, size * 0.5f);
         float outerRadius = size * 0.5f - 1f;
-        float innerRadius = outerRadius - 7f;
+        float innerRadius = outerRadius - 2.4f;
 
         for (int y = 0; y < size; y++)
         {
             for (int x = 0; x < size; x++)
             {
-                float distance = Vector2.Distance(new Vector2(x + 0.5f, y + 0.5f), center);
+                Vector2 p = new Vector2(Mathf.Abs(x + .5f - center.x), Mathf.Abs(y + .5f - center.y));
+                Vector2 q = p - new Vector2(21f, 21f);
+                float distance = new Vector2(Mathf.Max(q.x, 0), Mathf.Max(q.y, 0)).magnitude + Mathf.Min(Mathf.Max(q.x, q.y), 0) + 21f;
                 float ring = Mathf.Clamp01(outerRadius - distance) * Mathf.Clamp01(distance - innerRadius);
                 float softOuter = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01((outerRadius - distance) / 2f));
                 float softInner = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01((distance - innerRadius) / 2f));

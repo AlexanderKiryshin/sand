@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_126
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283587681
+  - serializedVersion: 2
+    rgba: 4280826946
+  - serializedVersion: 2
+    rgba: 4279374870
+  - serializedVersion: 2
+    rgba: 4282027441
+  - serializedVersion: 2
+    rgba: 4292127599
+  - serializedVersion: 2
+    rgba: 4287407540
+  - serializedVersion: 2
+    rgba: 4280166959
+  - serializedVersion: 2
+    rgba: 4290631651
+  - serializedVersion: 2
+    rgba: 4281879380
+  - serializedVersion: 2
+    rgba: 4281297279
+  - serializedVersion: 2
+    rgba: 4284200935
+  - serializedVersion: 2
+    rgba: 4285037447
+  encodedCells: S1:4:4096:EA2C4720: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe000000000000fffffe0000ff0000000000
+  conveyorDirections: 00000000000000020000000000000000030000000000000000
+  conveyorBucketCounts: 00000000000000030000000000000000030000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 13098444
+  displayTitle: Ring Tailed Lemur on Baobab
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 4fbae7bb83f970746b0147cd778117c3,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

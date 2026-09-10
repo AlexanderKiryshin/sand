@@ -22,6 +22,7 @@ public class SandPourAnimator : MonoBehaviour
     private Canvas canvas;
     private readonly List<PourGrain> activeGrains = new List<PourGrain>();
     private readonly Queue<PourGrain> pool = new Queue<PourGrain>();
+    public int ActiveGrainCount => activeGrains.Count;
 
     private class PourGrain
     {
@@ -53,7 +54,7 @@ public class SandPourAnimator : MonoBehaviour
 
         if (collector != null)
         {
-            collector.OnGrainCollected += HandleGrainCollected;
+            collector.OnBucketGrainCollected += HandleGrainCollected;
         }
     }
 
@@ -116,7 +117,7 @@ public class SandPourAnimator : MonoBehaviour
     {
         if (collector != null)
         {
-            collector.OnGrainCollected -= HandleGrainCollected;
+            collector.OnBucketGrainCollected -= HandleGrainCollected;
         }
     }
 
@@ -170,7 +171,20 @@ public class SandPourAnimator : MonoBehaviour
         return false;
     }
 
-    private void HandleGrainCollected(byte colorIndex, int simGridX)
+    public void ClearPour()
+    {
+        for (int i = activeGrains.Count - 1; i >= 0; i--)
+        {
+            PourGrain grain = activeGrains[i];
+            grain.active = false;
+            grain.targetBucket = null;
+            grain.rect.gameObject.SetActive(false);
+            pool.Enqueue(grain);
+        }
+        activeGrains.Clear();
+    }
+
+    private void HandleGrainCollected(byte colorIndex, int simGridX, Bucket collectedBucket)
     {
         LevelLoader loader = FindObjectOfType<LevelLoader>();
         if (loader == null || loader.CurrentLevel == null || pourLayer == null || mapper == null)
@@ -190,16 +204,12 @@ public class SandPourAnimator : MonoBehaviour
             return;
         }
 
-        ConveyorBelt.BeltEntry bucketEntry = conveyor != null
-            ? conveyor.FindBucketForColumn(levelGridX, levelGridWidth, colorIndex)
-            : null;
-
         Vector3 endWorld = startWorld;
         Bucket targetBucket = null;
-        if (bucketEntry != null && bucketEntry.Bucket != null && beltView != null
-            && beltView.TryGetBucketPourTargetWorldPosition(bucketEntry.Bucket, out endWorld))
+        if (collectedBucket != null && beltView != null
+            && beltView.TryGetBucketPourTargetWorldPosition(collectedBucket, out endWorld))
         {
-            targetBucket = bucketEntry.Bucket;
+            targetBucket = collectedBucket;
         }
         else
         {

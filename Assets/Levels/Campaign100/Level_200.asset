@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_200
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282329869
+  - serializedVersion: 2
+    rgba: 4287751160
+  - serializedVersion: 2
+    rgba: 4281632412
+  - serializedVersion: 2
+    rgba: 4280632649
+  - serializedVersion: 2
+    rgba: 4280770666
+  - serializedVersion: 2
+    rgba: 4283450142
+  - serializedVersion: 2
+    rgba: 4279839536
+  - serializedVersion: 2
+    rgba: 4281283623
+  - serializedVersion: 2
+    rgba: 4279441688
+  - serializedVersion: 2
+    rgba: 4280558614
+  - serializedVersion: 2
+    rgba: 4278979594
+  - serializedVersion: 2
+    rgba: 4292833833
+  encodedCells: S1:4:4096:8D707F7E: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000fffffefffeffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000002000200000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 20848390
+  displayTitle: Sleeping Moon in a Forest Nest
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 0fea8249e17b2a545b932ad186557cc6,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

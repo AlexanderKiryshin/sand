@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_184
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280953633
+  - serializedVersion: 2
+    rgba: 4291467623
+  - serializedVersion: 2
+    rgba: 4284434217
+  - serializedVersion: 2
+    rgba: 4279128764
+  - serializedVersion: 2
+    rgba: 4289689928
+  - serializedVersion: 2
+    rgba: 4293583837
+  - serializedVersion: 2
+    rgba: 4293051557
+  - serializedVersion: 2
+    rgba: 4293832556
+  - serializedVersion: 2
+    rgba: 4287194427
+  - serializedVersion: 2
+    rgba: 4293039951
+  - serializedVersion: 2
+    rgba: 4287533707
+  - serializedVersion: 2
+    rgba: 4282874477
+  encodedCells: S1:4:4096:378A2A6A:hZTPU9tGFMf/hq1I0xSf1BFO4ORsaKpKF4qmM7m6XRjhU5iybssJJ1gEn0LSoHBLNJqws1xCpwn1jbgOo1lfXPXQjPeP6vfJQDNtJ31jS7I/78f3vX325qv+B22z+z9cyg/h3fe4/x88kW3Z/+hl9bzm/Ct6J+lJErhYeaz9/M9oWHua/9PK4eX7cDeZ8m6bPh588WX/4PDSoYL7KemXKPFJv59+ecjSw4f9lJz76clOgku/l4A/OWCP0jQ9Sa9fy5YOcMfzeZ4pT5cfpufG2MPD4wt+cIL6sHT58ZTuG753PcPDWv/RSR/33obsIsHy/QpfMVEEz5tP6cPJGm6/brS7bTkXfUvf/MmimSiip8Wn5+XEBsLl1xSV7ixH0cxM9Dj929oPOl0ojJYixu45EdnSHxdwP/1ext4mZhSNlwCI8ltO481lOPEuBhVFsxWNZhq3ltlZi9hOmqJyb0WfJcnZ/RfJ1Yo7t5ac7O40+An4PRm/7SDD1WT/3p3KY8nZuvNTpY0mE8vNt1LSYaQ7V6f68H4sZZv6klIXuKxCwz5cvqocGIt+w5fd+oZsSpWbYbfpAXaT29dmqwos+o74ipBzMlN6qFuCTkkm7IwxSr+0RbU3xPZ2faDiN3pBdIizzeRz+ezF8la1OEi/IrvqB5G3ClmfW5fy47vMaQNuJe12kgiYuxELXcTFdl0IjJGi2L2EUbI5ITzRtrEwK81h3NsWPdrFhHrFSsruqhDNvADPi5bXNM3tTWh6hTiS9nq1JcS2eDcJWmKojBAmFnXaI1nfh9SDPREL8bsdWTuIlVcYbwg/+ePe66RT32nvpYnoiSs2PComOi+G2jRbPc9b2E1P1uX8yvp6eh3aS25HhaNVnA+LUQ/1eruvj9123VvtdJrgnE/CkBstVK4murcq3tDvsT+/5roaeHEQ8jJwvlFaqUIV5kbTrbu7bn9+3m3mwh0GCA+4tUaZwmhjR2bBdYX3S38+EbkrFgLOB0XJrLVxrjK4KDNqCdc9hhcs9znP/MZ4VNqBVsVEGaMwKPD+GrCCPJ5ds7WGmYT2SCkTQAbij4/nMXjTIq4c5oRFyfVAkUZVzAkkQG+5jgWlZw2nwbnmRY4SaOKt585XPC987iu/wdnAD0y2oWKV61ZhRNOrV+rEYub7PsRjvwxSk2nigsJpPCp7VwPnivonXOihoZ2YGuQ5tZDZEI0VGuV1oRcgu73dvOCMOw02OkJ8YKp4vB5gwyoH7mcOR38jrY2ZNkgjAK8Wc5Hz0uF8DAUjcBpeBp094qsVx/FxjgZLBq5JpFHcIEGd5r+Y8cqcU15abQaGTOPEsMU0IX7OOZvYsIYSA0pQ6BvI78Kq3LyEAsfWTk+1CQyN4UYn6WBNiI+Jh2gysDwYTEek4nq9AwHN5+Cc5IdBwA03EyyZggvSU7R707cIx3bVeEC1Z2kF4OO5U7vplw0IR/vPfGP4ILDkoJQ7DXdJGaJhz1Cbm2DAQ1SPL8K5DSkc8aNMGTtpBGV5FKtL7o8b45KOFyXKANmDieWxuCjPQ1ZDME2fT0rbKHHXgb7kmAkjiOtgHPJTOiOjmufcQyRD8jHetUFtxM0gyLCO+Lvx6OzH4xpjiIVZ25hFKJ2GUvR/RLtpLWNIQLxmfcOp8Uw972Bx6rc/c89wkLRM+IE5lv0F
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000fffe0000000000000000000000fe00
+  conveyorDirections: 00000000000000000000000100000000000000000000000300
+  conveyorBucketCounts: 00000000000000000000000200000000000000000000000400
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 19172726
+  displayTitle: Orange Helicopter above a Fjord
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: a6afcf25aa74ef74080297549eacae4d,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

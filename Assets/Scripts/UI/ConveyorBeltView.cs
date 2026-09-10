@@ -6,25 +6,35 @@ using UnityEngine.UI;
 [RequireComponent(typeof(RectTransform))]
 public class ConveyorBeltView : MonoBehaviour
 {
+    private const float PlateGap = 10f;
+    private const float PerspectivePitch = 32f;
+    private const float PerspectiveYaw = 0f;
+    private const float DefaultCoverInset = 52f;
+    private const float RailThickness = 14f;
+
     [SerializeField] private BucketView bucketAppearanceSource;
     [SerializeField] private Image leftCover;
     [SerializeField] private Image rightCover;
 
     private RectTransform beltRect;
     private RectTransform beltViewport;
-    private RawImage stripeImage;
+    private RectTransform perspectiveRoot;
+    private RectTransform plateTrack;
+    private RectTransform bucketContainer;
+    private ConveyorSurfaceGraphic surfaceGraphic;
     private ConveyorBelt conveyor;
     private LevelLoader levelLoader;
-    private Texture2D beltTexture;
-    private float beltOffset;
-    private RectTransform bucketContainer;
+    private float coverInset = DefaultCoverInset;
+    private readonly List<Sprite> ownedSprites = new List<Sprite>();
     private readonly Dictionary<Bucket, BucketVisual> bucketVisuals = new Dictionary<Bucket, BucketVisual>();
+    private readonly List<BucketCompletionAnimation> completingBuckets = new List<BucketCompletionAnimation>();
 
     private class BucketVisual
     {
         public RectTransform rect;
         public Image bucketImage;
         public TextMeshProUGUI capacityLabel;
+        public CanvasGroup visibility;
         public int lastRemainingCapacity = -1;
     }
 
@@ -38,6 +48,7 @@ public class ConveyorBeltView : MonoBehaviour
         if (conveyor != null)
         {
             conveyor.OnConveyorChanged += SyncBucketVisuals;
+            conveyor.OnBucketFilled += AnimateFilledBucket;
         }
 
         BuildBeltVisuals();
@@ -48,23 +59,52 @@ public class ConveyorBeltView : MonoBehaviour
         if (conveyor != null)
         {
             conveyor.OnConveyorChanged -= SyncBucketVisuals;
+            conveyor.OnBucketFilled -= AnimateFilledBucket;
+        }
+        foreach (Sprite sprite in ownedSprites)
+        {
+            if (sprite == null) continue;
+            Destroy(sprite.texture);
+            Destroy(sprite);
         }
     }
 
     private void Start()
     {
         SyncBucketVisuals();
+        RebuildPlates();
+        ApplyCoverInsetAndMask();
     }
 
     private void Update()
     {
+        SyncFillBoosterPause();
+
         if (conveyor != null)
         {
             conveyor.UpdateBelt(Time.deltaTime);
         }
 
-        AnimateBeltStripes();
+        UpdatePlatePositions();
         UpdateBucketPositions();
+    }
+
+    private void SyncFillBoosterPause()
+    {
+        if (conveyor == null)
+        {
+            return;
+        }
+
+        bool pauseForFill = BoosterService.instance != null
+            && BoosterService.instance.ActiveTargetMode == BoosterType.Transparent;
+        bool pauseForTutorial = SandEconomyHud.instance != null
+            && SandEconomyHud.instance.ShouldPauseConveyorForTutorial;
+        bool shouldPause = pauseForFill || pauseForTutorial || CampaignGallery.IsOpen;
+        if (conveyor.IsMovementPaused != shouldPause)
+        {
+            conveyor.SetMovementPaused(shouldPause);
+        }
     }
 
     private void ResolveBucketAppearanceSource()
@@ -90,44 +130,162 @@ public class ConveyorBeltView : MonoBehaviour
         }
 
         RemoveRootMaskAndBackground();
-        beltViewport = EnsureBeltViewport();
+        beltViewport = EnsureChild("BeltViewport", transform);
+        StretchRect(beltViewport);
+        beltViewport.SetAsFirstSibling();
+        DestroyLegacyBeltChildren(beltViewport);
 
-        Image background = beltViewport.GetComponent<Image>();
-        if (background == null)
-        {
-            background = beltViewport.gameObject.AddComponent<Image>();
-        }
-
-        background.color = new Color(0.5f, 0.53f, 0.57f, 1f);
-        background.raycastTarget = false;
-
-        GameObject stripesObject = ReparentOrCreateChild(beltViewport, "BeltStripes");
-        RectTransform stripesRect = stripesObject.GetComponent<RectTransform>();
-        StretchRect(stripesRect);
-
-        stripeImage = stripesObject.GetComponent<RawImage>();
-        if (stripeImage == null)
-        {
-            stripeImage = stripesObject.AddComponent<RawImage>();
-        }
-
-        stripeImage.raycastTarget = false;
-        stripeImage.color = new Color(1f, 1f, 1f, 0.55f);
-
-        beltTexture = CreateBeltTexture(256, 32);
-        stripeImage.texture = beltTexture;
-
-        GameObject containerObject = ReparentOrCreateChild(beltViewport, "ConveyorBuckets");
-        bucketContainer = containerObject.GetComponent<RectTransform>();
-        StretchRect(bucketContainer);
-
-        RectMask2D viewportMask = beltViewport.GetComponent<RectMask2D>();
-        if (viewportMask == null)
-        {
-            viewportMask = beltViewport.gameObject.AddComponent<RectMask2D>();
-        }
+        BuildPerspectiveRoot(beltViewport);
+        BuildPlateTrack();
+        RectTransform surface = EnsureChild("PerspectiveSurface", transform);
+        surface.anchorMin = new Vector2(0, .5f);
+        surface.anchorMax = new Vector2(1, .5f);
+        surface.sizeDelta = new Vector2(-52, 132);
+        surface.anchoredPosition = new Vector2(0, -25);
+        surface.SetAsFirstSibling();
+        surfaceGraphic = surface.GetComponent<ConveyorSurfaceGraphic>();
+        if (surfaceGraphic == null) surfaceGraphic = surface.gameObject.AddComponent<ConveyorSurfaceGraphic>();
+        surfaceGraphic.raycastTarget = false;
+        surfaceGraphic.Initialize(conveyor);
+        RectTransform backs = EnsureChild("HoodBackWalls", transform);
+        StretchRect(backs);
+        var backGraphic = backs.GetComponent<ConveyorHoodGraphic>();
+        if (backGraphic == null) backGraphic = backs.gameObject.AddComponent<ConveyorHoodGraphic>();
+        backGraphic.Initialize(surfaceGraphic, true);
+        backs.SetSiblingIndex(surface.GetSiblingIndex() + 1);
+        BuildBucketContainer(beltViewport);
+        RectTransform hoods = EnsureChild("ConveyorHoods", transform);
+        StretchRect(hoods);
+        var hoodGraphic = hoods.GetComponent<ConveyorHoodGraphic>();
+        if (hoodGraphic == null) hoodGraphic = hoods.gameObject.AddComponent<ConveyorHoodGraphic>();
+        hoodGraphic.Initialize(surfaceGraphic);
+        hoods.SetAsLastSibling();
 
         SetupCoverImages();
+        ApplyCoverInsetAndMask();
+        DisableConveyorLabelRaycasts();
+        RebuildPlates();
+    }
+
+    private void BuildPerspectiveRoot(RectTransform parent)
+    {
+        perspectiveRoot = EnsureChild("PerspectiveRoot", parent);
+        StretchRect(perspectiveRoot);
+        perspectiveRoot.offsetMin = new Vector2(4f, 20f);
+        perspectiveRoot.offsetMax = new Vector2(-4f, -10f);
+        perspectiveRoot.localRotation = Quaternion.Euler(PerspectivePitch, PerspectiveYaw, 0f);
+        perspectiveRoot.localScale = new Vector3(1.02f, 1.12f, 1f);
+    }
+
+    private void BuildPlateTrack()
+    {
+        plateTrack = EnsureChild("PlateTrack", perspectiveRoot);
+        StretchRect(plateTrack);
+        plateTrack.offsetMin = new Vector2(2f, RailThickness + 2f);
+        plateTrack.offsetMax = new Vector2(-2f, -(RailThickness + 2f));
+        // Keep plates under the rails.
+        plateTrack.SetSiblingIndex(1);
+    }
+
+    private void BuildBucketContainer(RectTransform viewport)
+    {
+        // Buckets stay outside the perspective root so they remain upright / billboarded.
+        GameObject bucketsObject = ReparentOrCreateChild(viewport, "ConveyorBuckets");
+        bucketContainer = bucketsObject.GetComponent<RectTransform>();
+        StretchRect(bucketContainer);
+        bucketContainer.offsetMin = new Vector2(0f, 24f);
+        bucketContainer.offsetMax = new Vector2(0f, -8f);
+        bucketContainer.localRotation = Quaternion.identity;
+        bucketContainer.localScale = Vector3.one;
+        bucketContainer.SetAsLastSibling();
+    }
+
+    private void ApplyCoverInsetAndMask()
+    {
+        if (beltViewport == null)
+        {
+            return;
+        }
+
+        beltViewport.offsetMin = new Vector2(-32, -12);
+        beltViewport.offsetMax = new Vector2(32, 80);
+
+        RectMask2D mask = beltViewport.GetComponent<RectMask2D>();
+        if (mask == null)
+        {
+            mask = beltViewport.gameObject.AddComponent<RectMask2D>();
+        }
+
+        // The only clipping is at the OUTSIDE of the opaque hoods.
+        mask.enabled = true;
+    }
+
+    private float ResolveCoverInset()
+    {
+        float inset = DefaultCoverInset;
+        if (leftCover != null)
+        {
+            inset = Mathf.Max(inset, leftCover.rectTransform.rect.width * 0.42f);
+        }
+
+        if (rightCover != null)
+        {
+            inset = Mathf.Max(inset, rightCover.rectTransform.rect.width * 0.42f);
+        }
+
+        return inset;
+    }
+
+    private void RebuildPlates() => UpdatePlatePositions();
+
+    private static float GetPlateSize()
+    {
+        float fromBucket = ConveyorBelt.BucketWidth;
+        float fromSpacing = Mathf.Max(24f, ConveyorBelt.BucketSpacing - PlateGap);
+        return Mathf.Min(fromBucket, fromSpacing);
+    }
+
+    private void UpdatePlatePositions()
+    {
+        if (surfaceGraphic != null) surfaceGraphic.SetTravel(conveyor != null ? conveyor.BeltTravel : 0);
+    }
+
+    private static void DestroyLegacyBeltChildren(RectTransform viewport)
+    {
+        string[] obsolete =
+        {
+            "BeltStripes",
+            "ConveyorBuckets",
+            "BeltShadow",
+            "FarRail",
+            "FrontFace",
+            "BeltDeck",
+            "PerspectiveRoot"
+        };
+
+        for (int i = 0; i < obsolete.Length; i++)
+        {
+            Transform child = viewport.Find(obsolete[i]);
+            if (child != null)
+            {
+                Object.DestroyImmediate(child.gameObject);
+            }
+        }
+    }
+
+    private void DisableConveyorLabelRaycasts()
+    {
+        Transform label = transform.Find("ConveyorLabel");
+        if (label == null)
+        {
+            return;
+        }
+
+        Graphic[] graphics = label.GetComponentsInChildren<Graphic>(true);
+        for (int i = 0; i < graphics.Length; i++)
+        {
+            graphics[i].raycastTarget = false;
+        }
     }
 
     private void RemoveRootMaskAndBackground()
@@ -145,24 +303,17 @@ public class ConveyorBeltView : MonoBehaviour
         }
     }
 
-    private RectTransform EnsureBeltViewport()
+    private static RectTransform EnsureChild(string childName, Transform parent)
     {
-        Transform existing = transform.Find("BeltViewport");
-        GameObject viewportObject;
+        Transform existing = parent.Find(childName);
         if (existing != null)
         {
-            viewportObject = existing.gameObject;
-        }
-        else
-        {
-            viewportObject = new GameObject("BeltViewport", typeof(RectTransform));
-            viewportObject.transform.SetParent(transform, false);
+            return existing.GetComponent<RectTransform>();
         }
 
-        RectTransform viewport = viewportObject.GetComponent<RectTransform>();
-        StretchRect(viewport);
-        viewport.SetAsFirstSibling();
-        return viewport;
+        GameObject childObject = new GameObject(childName, typeof(RectTransform));
+        childObject.transform.SetParent(parent, false);
+        return childObject.GetComponent<RectTransform>();
     }
 
     private static GameObject ReparentOrCreateChild(RectTransform parent, string childName)
@@ -171,13 +322,6 @@ public class ConveyorBeltView : MonoBehaviour
         if (existingOnParent != null)
         {
             return existingOnParent.gameObject;
-        }
-
-        Transform existingOnRoot = parent.parent != null ? parent.parent.Find(childName) : null;
-        if (existingOnRoot != null)
-        {
-            existingOnRoot.SetParent(parent, false);
-            return existingOnRoot.gameObject;
         }
 
         GameObject childObject = new GameObject(childName, typeof(RectTransform));
@@ -194,12 +338,23 @@ public class ConveyorBeltView : MonoBehaviour
         rect.pivot = new Vector2(0.5f, 0.5f);
     }
 
+    private static Image GetOrAddImage(RectTransform rect)
+    {
+        Image image = rect.GetComponent<Image>();
+        if (image == null)
+        {
+            image = rect.gameObject.AddComponent<Image>();
+        }
+
+        return image;
+    }
+
     private void SetupCoverImages()
     {
         DiscoverCoverImages();
-
-        ConfigureCover(leftCover);
-        ConfigureCover(rightCover);
+        NormalizeCoverAssignment();
+        ConfigureCover(leftCover, true);
+        ConfigureCover(rightCover, false);
     }
 
     private void DiscoverCoverImages()
@@ -231,43 +386,51 @@ public class ConveyorBeltView : MonoBehaviour
         }
     }
 
-    private void ConfigureCover(Image cover)
+    private void NormalizeCoverAssignment()
     {
-        if (cover == null)
+        if (leftCover == null || rightCover == null)
         {
             return;
         }
 
-        cover.transform.SetParent(transform, true);
+        // Scene wiring may swap sides; force leftCover to the visually left cap.
+        float leftX = leftCover.rectTransform.position.x;
+        float rightX = rightCover.rectTransform.position.x;
+        if (leftX > rightX)
+        {
+            Image swap = leftCover;
+            leftCover = rightCover;
+            rightCover = swap;
+        }
+    }
+
+    private void ConfigureCover(Image cover, bool isLeft)
+    {
+        if (cover == null || beltRect == null)
+        {
+            return;
+        }
+
+        RectTransform rect = cover.rectTransform;
+        cover.transform.SetParent(transform, false);
+        rect.anchorMin = isLeft ? new Vector2(0f, 0.5f) : new Vector2(1f, 0.5f);
+        rect.anchorMax = rect.anchorMin;
+        rect.pivot = new Vector2(0.5f, 0.5f);
+
+        float height = Mathf.Max(100f, beltRect.rect.height * 1.05f);
+        float width = Mathf.Max(rect.sizeDelta.x > 1f ? rect.sizeDelta.x : 120f, height * 0.85f);
+        rect.sizeDelta = new Vector2(width, height);
+        rect.anchoredPosition = Vector2.zero;
+
         cover.maskable = false;
         cover.raycastTarget = false;
         cover.preserveAspect = true;
 
-        Color color = cover.color;
-        color.a = 1f;
-        cover.color = color;
-
+        // Retain the mask geometry while replacing the oversized machine artwork.
+        cover.color = Color.clear;
+        Transform obsoleteCap = rect.Find("MosaicEndCap");
+        if (obsoleteCap != null) Destroy(obsoleteCap.gameObject);
         cover.transform.SetAsLastSibling();
-    }
-
-    private void AnimateBeltStripes()
-    {
-        if (stripeImage == null || beltTexture == null)
-        {
-            return;
-        }
-
-        float scrollSpeed = conveyor != null
-            ? conveyor.BeltScrollSpeed
-            : ConveyorSettings.DefaultBeltScrollSpeed;
-        if (conveyor != null && conveyor.IsFastSpeed)
-        {
-            scrollSpeed *= conveyor.FullSpeedMultiplier;
-        }
-
-        beltOffset += scrollSpeed * Time.deltaTime;
-        float normalized = (beltOffset / beltTexture.width) % 1f;
-        stripeImage.uvRect = new Rect(normalized, 0f, 1f, 1f);
     }
 
     private void SyncBucketVisuals()
@@ -275,6 +438,14 @@ public class ConveyorBeltView : MonoBehaviour
         if (conveyor == null || bucketContainer == null)
         {
             return;
+        }
+
+        // A level reset clears cosmetic leftovers as well as the logical belt.
+        for (int i = completingBuckets.Count - 1; i >= 0; i--)
+        {
+            if (conveyor.FilledBuckets == 0 && completingBuckets[i] != null)
+                Destroy(completingBuckets[i].gameObject);
+            if (conveyor.FilledBuckets == 0 || completingBuckets[i] == null) completingBuckets.RemoveAt(i);
         }
 
         HashSet<Bucket> alive = new HashSet<Bucket>();
@@ -313,11 +484,22 @@ public class ConveyorBeltView : MonoBehaviour
         {
             bucketVisuals.Remove(toRemove[i]);
         }
+        // Pointer events can run after this view's Update. Apply the chosen visible
+        // position immediately so a new bucket never flashes at the hidden entry.
+        UpdateBucketPositions();
+    }
+
+    private void AnimateFilledBucket(Bucket bucket)
+    {
+        if (!bucketVisuals.TryGetValue(bucket, out BucketVisual visual) || visual.rect == null) return;
+        bucketVisuals.Remove(bucket);
+        if (visual.capacityLabel != null) visual.capacityLabel.text = "0";
+        completingBuckets.Add(visual.rect.gameObject.AddComponent<BucketCompletionAnimation>());
     }
 
     private void UpdateBucketPositions()
     {
-        if (conveyor == null)
+        if (conveyor == null || bucketContainer == null)
         {
             return;
         }
@@ -332,9 +514,33 @@ public class ConveyorBeltView : MonoBehaviour
                 continue;
             }
 
-            if (visual.rect != null)
+            if (visual.rect == null)
             {
-                visual.rect.anchoredPosition = new Vector2(entry.PositionX, 0f);
+                continue;
+            }
+
+            // Map plate-local X into the upright bucket container via world space,
+            // so buckets stay flat while still sitting over their plates.
+            Vector3 world = ProjectBeltXToBucketWorld(entry.PositionX);
+            Canvas canvas = GetComponentInParent<Canvas>();
+            Camera eventCamera = canvas != null && canvas.renderMode != RenderMode.ScreenSpaceOverlay
+                ? canvas.worldCamera
+                : null;
+            Vector2 screen = RectTransformUtility.WorldToScreenPoint(eventCamera, world);
+            Vector2 local;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                bucketContainer,
+                screen,
+                eventCamera,
+                out local);
+
+            visual.rect.anchoredPosition = local;
+            visual.rect.localRotation = Quaternion.identity;
+            visual.rect.localScale = Vector3.one;
+            if (visual.visibility != null)
+            {
+                visual.visibility.alpha = 1;
+                visual.visibility.blocksRaycasts = Mathf.Abs(entry.PositionX) < beltRect.rect.width * .5f - 30;
             }
 
             int remainingCapacity = entry.Bucket.RemainingCapacity;
@@ -344,6 +550,26 @@ public class ConveyorBeltView : MonoBehaviour
                 visual.capacityLabel.text = remainingCapacity.ToString();
             }
         }
+    }
+
+    private Vector3 ProjectBeltXToBucketWorld(float beltX)
+    {
+        if (surfaceGraphic != null)
+        {
+            float bucketHeight = GetPlateSize() * .92f;
+            return surfaceGraphic.MidlineWorld(beltX) + surfaceGraphic.rectTransform.TransformVector(0, -BucketArt.Footprint * bucketHeight, 0);
+        }
+        if (plateTrack != null)
+        {
+            return plateTrack.TransformPoint(new Vector3(beltX, GetPlateSize() * 0.15f, 0f));
+        }
+
+        if (perspectiveRoot != null)
+        {
+            return perspectiveRoot.TransformPoint(new Vector3(beltX, 0f, 0f));
+        }
+
+        return bucketContainer.TransformPoint(new Vector3(beltX, 0f, 0f));
     }
 
     public bool TryGetBucketPourTargetWorldPosition(Bucket bucket, out Vector3 worldPosition)
@@ -360,7 +586,8 @@ public class ConveyorBeltView : MonoBehaviour
             return false;
         }
 
-        float topY = visual.rect.rect.height * 0.5f - 2f;
+        // Aim the sand stream at the opening of the perspective bucket.
+        float topY = visual.rect.rect.height * .23f;
         worldPosition = visual.rect.TransformPoint(new Vector3(0f, topY, 0f));
         return true;
     }
@@ -416,16 +643,17 @@ public class ConveyorBeltView : MonoBehaviour
         bucketObject.transform.SetParent(bucketContainer, false);
 
         RectTransform rect = bucketObject.GetComponent<RectTransform>();
-        rect.sizeDelta = new Vector2(ConveyorBelt.BucketWidth, ConveyorBelt.BucketWidth);
+        float size = GetPlateSize() * 0.92f;
+        rect.sizeDelta = new Vector2(size * (bucket.SlotCost > 1 ? 1.7f : 1), size);
         rect.anchoredPosition = new Vector2(ConveyorBelt.EntryX, 0f);
+        rect.localRotation = Quaternion.identity;
 
         Image bucketImage = bucketObject.AddComponent<Image>();
+        CanvasGroup visibility = bucketObject.AddComponent<CanvasGroup>();
         bucketImage.raycastTarget = true;
-        bucketImage.preserveAspect = true;
+        bucketImage.preserveAspect = bucket.SlotCost == 1;
 
-        Sprite openSprite = bucketAppearanceSource != null
-            ? bucketAppearanceSource.OpenBucketSprite
-            : null;
+        Sprite openSprite = BucketArt.Open;
         if (openSprite != null)
         {
             bucketImage.sprite = openSprite;
@@ -442,10 +670,14 @@ public class ConveyorBeltView : MonoBehaviour
         Bucket captured = bucket;
         button.onClick.AddListener(() =>
         {
+            GameAudio.Instance?.PlayTap();
             if (SandEconomyHud.instance != null)
             {
-                SandEconomyHud.instance.TryHandleConveyorBucketClick(captured);
+                if (SandEconomyHud.instance.TryHandleConveyorBucketClick(captured)) return;
+                if (SandEconomyHud.instance.BlocksInventoryForTutorial) return;
             }
+            if (BoosterService.instance != null && BoosterService.instance.ActiveTargetMode.HasValue) return;
+            if (conveyor != null) conveyor.TryRecallBucket(captured);
         });
 
         GameObject labelObject = new GameObject("CapacityLabel", typeof(RectTransform));
@@ -455,6 +687,7 @@ public class ConveyorBeltView : MonoBehaviour
         labelRect.anchorMax = Vector2.one;
         labelRect.offsetMin = Vector2.zero;
         labelRect.offsetMax = Vector2.zero;
+        labelRect.anchoredPosition = new Vector2(0, -size * .12f);
 
         TextMeshProUGUI capacityLabel = labelObject.AddComponent<TextMeshProUGUI>();
         capacityLabel.text = bucket.RemainingCapacity.ToString();
@@ -466,18 +699,25 @@ public class ConveyorBeltView : MonoBehaviour
             ? SandDisplayColors.FromPalette(levelLoader.CurrentLevel.GetPaletteColor(bucket.ColorIndex))
             : new Color32(180, 180, 180, 255);
         SandDisplayColors.ApplyCapacityLabelStyle(capacityLabel, bucketColor);
+        bucketObject.AddComponent<BucketMechanicVisual>().Initialize(bucket, bucketImage, capacityLabel, levelLoader.CurrentLevel);
 
         return new BucketVisual
         {
             rect = rect,
             bucketImage = bucketImage,
             capacityLabel = capacityLabel,
+            visibility = visibility,
             lastRemainingCapacity = bucket.RemainingCapacity
         };
     }
 
     public void RefreshGeometry()
     {
+        ApplyCoverInsetAndMask();
+        SetupCoverImages();
+        RebuildPlates();
+
+        float size = GetPlateSize() * 0.92f;
         foreach (KeyValuePair<Bucket, BucketVisual> pair in bucketVisuals)
         {
             BucketVisual visual = pair.Value;
@@ -486,7 +726,7 @@ public class ConveyorBeltView : MonoBehaviour
                 continue;
             }
 
-            visual.rect.sizeDelta = new Vector2(ConveyorBelt.BucketWidth, ConveyorBelt.BucketWidth);
+            visual.rect.sizeDelta = new Vector2(size * (pair.Key.SlotCost > 1 ? 1.7f : 1), size);
             if (visual.capacityLabel != null)
             {
                 visual.capacityLabel.fontSize = GetBucketLabelFontSize();
@@ -496,30 +736,13 @@ public class ConveyorBeltView : MonoBehaviour
 
     private static float GetBucketLabelFontSize()
     {
-        return Mathf.Max(14f, ConveyorBelt.BucketWidth * 0.28f);
+        return Mathf.Max(22f, GetPlateSize() * .30f);
     }
 
-    private static Texture2D CreateBeltTexture(int width, int height)
+    private Sprite Own(Sprite sprite)
     {
-        Texture2D texture = new Texture2D(width, height, TextureFormat.RGBA32, false);
-        texture.wrapMode = TextureWrapMode.Repeat;
-        texture.filterMode = FilterMode.Bilinear;
-
-        Color dark = new Color(0.35f, 0.38f, 0.42f, 1f);
-        Color light = new Color(0.55f, 0.58f, 0.62f, 1f);
-        Color[] pixels = new Color[width * height];
-
-        for (int y = 0; y < height; y++)
-        {
-            for (int x = 0; x < width; x++)
-            {
-                bool stripe = (x / 10) % 2 == 0;
-                pixels[y * width + x] = stripe ? dark : light;
-            }
-        }
-
-        texture.SetPixels(pixels);
-        texture.Apply();
-        return texture;
+        ownedSprites.Add(sprite);
+        return sprite;
     }
+
 }

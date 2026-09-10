@@ -1,0 +1,8 @@
+# studio-smoke.playtest — smoke полного прохода (Harness расширяет, Tester гоняет КАЖДЫЙ раз)
+# Минимальный путь игрока: старт → core loop → ключевые экраны.
+# Без primary screenshot — ASSERT / qa.* / WAIT_UNTIL.
+
+TIMESCALE 10
+LOG [smoke] start
+ASSERT_CONSOLE_CLEAN
+LOG [smoke] end

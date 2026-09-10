@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_264
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283183896
+  - serializedVersion: 2
+    rgba: 4288973692
+  - serializedVersion: 2
+    rgba: 4291543234
+  - serializedVersion: 2
+    rgba: 4284836215
+  - serializedVersion: 2
+    rgba: 4281941613
+  - serializedVersion: 2
+    rgba: 4285353776
+  - serializedVersion: 2
+    rgba: 4289776617
+  - serializedVersion: 2
+    rgba: 4287393362
+  - serializedVersion: 2
+    rgba: 4280622360
+  - serializedVersion: 2
+    rgba: 4292720541
+  - serializedVersion: 2
+    rgba: 4283138258
+  - serializedVersion: 2
+    rgba: 4288585125
+  encodedCells: S1:4:4096:D3D656B2:bZXPbxpHFMf/hrGiDUi5eCCwcbmEsWqEfHG8ATv2KQ1J3fQyGD/GqS81NIOavbCQ8cTlguXG2cYnXFUR6jFOZHHygg2O+KP6ZrEdV+3Tslr2M++97/x4b7vd/7MIuTVDA/P0ofviP5RSYji75rsfOjf5TJqQEo11JxxNa6/TzbLuUfjqqOuRtjOD7p3JiF1t0w4z4Sj+fp2fmSkUeubxC9JsljW0p7UZGgtijFHa2UXeDXn2z8U007btae+DEUbDGD9c8r+7bLY/Kz1ba7zmK8g7XbweIUctR/0+m01lsg0dGkrIajqD3PjPsy8VR8rSiB3tGio0M0ZjnaPud7+sjoMxfZBbcg1fR6hApw2PmftiNUWD07nzJcfZVDHWEEoDqJCT+4xtx6hXfhUM3SdVWcr1WV8AgK3kHJtj1ixjHlQdSoMxrFYHJYdVWEqA1m4SA2StAasMaWhTNpWfm0sYtILRA00DfCycsZZNqU2jFqVWVW7kUBNbh5aOwCDkyeI0fcwBaJEQx3nozLIRvgdUOE4b3hCY+8Fg2yaGb8AsW5pPMiWgDAk5LHyDaSkdpiwS8ijMV1x3nimcAn+JPFildjCghEz4BbhSumNZgZLFlczHg3gzNU5NMNl3NkvSDJAylbcIyHwx85KWBpe4ve+cQXVQM1zKPOFyrB7FV+mUYT7+HOdMuZDDlWM44DYfwlJ8KTVFUFw7GuZ/06yWz423rLDDtYvROIhHyLWhP7g753mMjyEO/NMRTRWta9w285flXLkWRnh2PBi1XgDhN/w3oKrt1hU/G23BV3ey4Dh1PijDznZyW8rhs7W7e7hM1s38zfN4udSqJVFB/vay7zgcruDP3HCIF1eVTmL4g4PlguHX/gsXyAUVqvyy5Rr+lgZyA64FnpadnBLxpSatbbnSPTh8cHjol68E3An1lXaauaRX0zV32/fpXsgRzuLk7xh9y47Ti3sZr0bpHu77tizfnIAzXBbNfJPaHjLf9+hI5v/FB35JBeMdbQYk7tVR37B0Y8DAWX7oDNwmNoDiHr2XQP9h6aeQc7OJzjjq+6jS0fae37EXC4Xj3sExKgTypPAUq7QXvUUW2jnQ9tTFj/j/uNd7758Urgw5WVhoA2BP+L33sPD85L2P9qTw/RVPBJQmaYc+9u/i/2ND/YL/2u7Q14VURfaUtkeeN/PuqY84dEY73gRTsVgxNnK7Zes99HruX9tvhidAx3VC61GLvisU/Pa+H73EJ2+EwHrDtqBB9+1AT15f4bXjTdMR0JTC3aUV7bf9G/b8RGlV1KBGY8p5YwrSf1yhTXPrLacxOmgBtgCWaWSKICIT/ld/n/orWAwKRhqEd87B1p5QuOR+du1MEy/zbV/uyLJtW7qRiHBVJKcxnKQmeDDfcnNND7eDllJYzqCgTrBz8LontOBm20RJkyEozG2hfFasa3T2sH9zYra1bU5Xr6yEAMEzxUXptEQdPw/A0YHwtwArkPu4sqMx3/oRES+i9QTj3pwRIEibLHzslayy7QlLKcF5HTbBsuuNfsX0cDw0qAVgADpjhWrCYlIRq54+p9qOROFTboVYvdum2wG3jJhIsUisaaLULhY+qli5RcKFD9d/HbSH55ATbnESYETLwvifJX4OrCmACrkf1lp4njlmrG8pBz7lcfYq1tgiJBNDbJRgbwNzt2uuyL2aY1P2xKuO8LLgTSDFhTWdpt765UtMDW2cIvBwMgALQ6LQSxBr4g/RiabJ6LAwwlgQ5kWPKGlfdozwDlA37QGJBVabk/Y/
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fefe000000000000ff0000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000403000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 27551046
+  displayTitle: Tiny Tugboat beside Ocean Liners
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 3da9e31bc2e7e8647a02b2fae0322902,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

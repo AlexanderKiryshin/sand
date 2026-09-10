@@ -53,16 +53,17 @@ public static class ConveyorDirectionUtility
 
     public static float GetArrowRotationDegrees(ConveyorDirection direction)
     {
+        // The sprite points down, while grid row zero is drawn at the top.
         switch (direction)
         {
             case ConveyorDirection.Front:
-                return 0f;
-            case ConveyorDirection.Back:
                 return 180f;
+            case ConveyorDirection.Back:
+                return 0f;
             case ConveyorDirection.Left:
-                return 90f;
-            case ConveyorDirection.Right:
                 return -90f;
+            case ConveyorDirection.Right:
+                return 90f;
             default:
                 return 0f;
         }

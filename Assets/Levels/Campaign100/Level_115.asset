@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_115
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278784018
+  - serializedVersion: 2
+    rgba: 4281367176
+  - serializedVersion: 2
+    rgba: 4282798395
+  - serializedVersion: 2
+    rgba: 4284116309
+  - serializedVersion: 2
+    rgba: 4282493125
+  - serializedVersion: 2
+    rgba: 4293378710
+  - serializedVersion: 2
+    rgba: 4280966765
+  - serializedVersion: 2
+    rgba: 4280104508
+  - serializedVersion: 2
+    rgba: 4279510312
+  - serializedVersion: 2
+    rgba: 4281963424
+  - serializedVersion: 2
+    rgba: 4287272573
+  - serializedVersion: 2
+    rgba: 4280502355
+  encodedCells: S1:4:4096:EB8973FB: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000fe000000000000ff0000ff00fe000000000000
+  conveyorDirections: 00000000000000000000000000000000000003000000000000
+  conveyorBucketCounts: 00000000000004000000000000000000000002000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 11946425
+  displayTitle: Treehouse on a Walking Tortoise
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 5719815dea095b24faf4bc8d26d07ee1,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

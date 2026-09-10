@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_108
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282996072
+  - serializedVersion: 2
+    rgba: 4286862615
+  - serializedVersion: 2
+    rgba: 4282400060
+  - serializedVersion: 2
+    rgba: 4289572814
+  - serializedVersion: 2
+    rgba: 4290020694
+  - serializedVersion: 2
+    rgba: 4280622359
+  - serializedVersion: 2
+    rgba: 4281740324
+  - serializedVersion: 2
+    rgba: 4284380043
+  - serializedVersion: 2
+    rgba: 4279570187
+  - serializedVersion: 2
+    rgba: 4291275413
+  - serializedVersion: 2
+    rgba: 4293517527
+  - serializedVersion: 2
+    rgba: 4288203257
+  encodedCells: S1:4:4096:734DFBCF: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000ff0000ff00000000fefe00000000000000000000
+  conveyorDirections: 00000000000000000000000000010100000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000020400000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 11213322
+  displayTitle: Basalt Sea Arch in Surf
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: d6bcc4eb083eab24c84522cacaa0d493,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

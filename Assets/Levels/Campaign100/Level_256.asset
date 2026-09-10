@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_256
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4288966685
+  - serializedVersion: 2
+    rgba: 4285559426
+  - serializedVersion: 2
+    rgba: 4282614939
+  - serializedVersion: 2
+    rgba: 4293123022
+  - serializedVersion: 2
+    rgba: 4281819765
+  - serializedVersion: 2
+    rgba: 4284043600
+  - serializedVersion: 2
+    rgba: 4279875053
+  - serializedVersion: 2
+    rgba: 4289243622
+  - serializedVersion: 2
+    rgba: 4280894801
+  - serializedVersion: 2
+    rgba: 4292981608
+  - serializedVersion: 2
+    rgba: 4285569989
+  - serializedVersion: 2
+    rgba: 4279970089
+  encodedCells: S1:4:4096:867D60EB:ZVVBb9xEFP4NW2glygk3mIBzocOwsdaXBlNVm1vMNJnalzgwarK5RatR1JwWVpqouTRmmk7jSyFIsL3t1tuuXk61DDGdH8XztqC2PGlXtr/vzXvve+/Zo9H71n3v/vGdd+/D8O27iGSMRdcM+/fB2bu4+ZoTSgklmla/vXYPR2f/ckehQ0hEteYRUsivo7Nu2NibTPBKTNc+FYJEhBCfEPpNGHb/wxvmmutMe0IA9MB1nB6sUbbSEMImRrcbrrFCpKnjAoA79lyYCgfG8xhhF+EziAORik+niHuuJ6ZCpN7YcbrzOCgF/ASdLVesTXrI6Dl4hANTT3z84Yc3Wgs3Wq1jKOIO4WziFeBBE0fAFEO5049b0xbinJIJmfRcWFyFVQhdWIB06roLm86lG62rrdRNOyQjTuqt3Fq8FYYLIzz0LUtdMcbaybN5Qa3/2XEsptAB+Ga088doVPnv4+ntrVTAVgGNZo/1+fbDwl55C+8p4Y7j7dT7AUajOzWHAszlt3CAu2Kauu50dRye3amxl8A/wOdPrr7G7997ngpU3E3/hJvfGT0BOH36BmsquRcX8CIGSD1U/G/GNF4/HSHhk4U5h2aTe+hzK/wJC7ytqwRieIKp7pzD6hOsd0931p/fCp+h99kOh1cJvJo9RXxXOPEvKAn51p0oBfOO4/HAdwtYHX2htx0xzVBYQraHt1+EqhnLh4yz2S72ceT2BOIxm3RwqMz1GXi/46gkjJnCTgvYEcLdFmi3r3GfnxAvnhU/9yqO6YOdFfA9TglSkDBzzb5sA2WzXm6TDqV5dYoj8Mb+dHvqkZTtPfkcXprcQMQYx/gOYt7unKIU5bLd/2yNGWPOJ6xIcFharU3hjBF1V9Sj4fL+vt9GlOOPRZzAL6OrmyL8/ubNTdd1lFqmRJ40OB5Rc+5jI1HLVqvrYJKmHuJmtdG3xvJqZpICRm9WMF0RgiZbWvatMbrmrECBWAEr4Vn4BZJ2umddRoa6H+Xz2DFiukB9n71eUmxJGGlGaIlgXXHIKB6A9U2wn2ir+DtUs4gajMoMw/bEpzgPfQljHAcBSFBKGT9Hf/7atcC/8gAbsvqs3vZWsTy16CHOMQPGCIABIHsyH3taL43HoRqoweIxaoPFM8yFJRwo2dczoICrDAOlhuoiR9/K1Ng/Vp8XHBNo7PTzKRgbD9TLw2Mk6CqvDbcJo1Eb4gmbNJyKJHr7Qh3P1UWz1uIbK7reoBPCSJmV9EelXiKutTa1ZbbDfXxdFSgXmUgk57VSF6YZHs58LK+TbH3Vl5RFaoMwn+SqPmrw5oC8kf/U/6ir94nEXVkjSZaoylRHavERKjRvz2nVunHtO7rnk6H6trK+Kc8tynTBuGYsnkBsxSdXHhDal/qQsromqNsuErjB2dMUTj/4Urce06wvT3xqkiipSWaPDxUKSKUhYJeue7ubta/7TLaPli7YI2ajRC1yI3HWaUys3T12Lz2Iyr6URyqx6gJVYg5uwrqULCYBubz5IB0Mab8tldpQ6q4tM16bfjs5aJOSBHpbPNZqsBG15aE6wtQ2LC39DNXbpyUnUVD//XD+2OzzoV5SKogyS0ydaT+hUtokOzhBWAWEaFJhbdd1FVw7CIIIvzRSrif4LflxcaA2BjOa1eXLi2ywXB0tyxOqM3KwJw+CHD1xc5TKAst4Uh769+9eSInbpfl+LWVAIj30qYPbmWTN9yvDHlOpWebjfEgpTVRmG6pSQZmT3NiqxAb0/8LXDbPtttyThtL7Svl+ZVme5FaUA5VUJbU2KDHM3nqeBYeYQEWT2pLcqoqq5SwqG38pSfQXNm2IAvi6siRL+BKrFzMWBORgPcK+5lmSVEyphySpKLV54gd1hKmUeV9m+kSTMsj96GjpFc3rHGHc35xGmurqgGYWh7g0lU3yqq7+AQ==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000fe0000000000ff000000000000fe000000
+  conveyorDirections: 00000000000000000300000000000000000000000003000000
+  conveyorBucketCounts: 00000000000000000200000000000000000000000003000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 26713214
+  displayTitle: Quokka among Coastal Wildflowers
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 93e07f81c9d110644935687d4e8a3cee,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

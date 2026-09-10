@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_182
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280233271
+  - serializedVersion: 2
+    rgba: 4292460977
+  - serializedVersion: 2
+    rgba: 4283918710
+  - serializedVersion: 2
+    rgba: 4292731879
+  - serializedVersion: 2
+    rgba: 4281354328
+  - serializedVersion: 2
+    rgba: 4288593622
+  - serializedVersion: 2
+    rgba: 4287192889
+  - serializedVersion: 2
+    rgba: 4289560672
+  - serializedVersion: 2
+    rgba: 4279045906
+  - serializedVersion: 2
+    rgba: 4292846965
+  - serializedVersion: 2
+    rgba: 4285831086
+  - serializedVersion: 2
+    rgba: 4281495702
+  encodedCells: S1:4:4096:18AB4F05:fZRNb+O4Gcc/A6PVdNjRZTkGYhi9qKydGsqlBuvxTvZCGAwgWJfAGQKBclnPdqkN9uSZVoKxFyKr2RLJyQgwhrGXQBMVA+ViGJoiCD9UH7mL7QuK0oIg88fn7c+HXK//72C/fA3+Fx78whfsvxd0gBHWWg9uGjx6237/n5iwm2WLsRZpfGSjZPbi3x2vXxLWDEII2LcX+/vJQetfxoOb1s98+ZINsnmWprN26+2602nwTWcAZNTw9XLFmMrILFtm5GZ/2fk1R38mBPg8W+34eq7S9ouLZEDYYMHYHrp+AD5i61Wr8/LrznrUUip9cZMxNmItdoOREGQ5H90sViuynEEdmVIXKbiaw+sP3CCEBuv5akTWywFTq4VKVCeDapaLlPzVcM/m9Zt1tnjZIiv2tVonanUBRTLFOm0Q6dKE1n4HerxdktVSpeD8vUrfg5P2gLTaF8it3Qf70woUJcskyxIg6fuFUupNm7SgOlFHggDOVhBdKdIGfqFUsv9mlrZnPxp/a+16vYJfArOKsSYBlaqUzpPMGE239zRbLy4yMITgjK123mFFkiRQGy0mmyZsqnaDtbK1SiHSKM3mBoX4xKfvvgeH4B3M24wNWukACs2yrI1wXms/Pu7/0/q1Gu02sTVoQaGMfIZ5dM1NUaKvmqpUSsh8b69pkSRVsNIgLjb6Ftfn7usm9+ahznPwPlNpShhGSOQ29NF3hYUJRSAG/+o5NCEBV4TsIVzbusYP/P78T81Mks6485y0G0iSGVTHoygKwwdrf9rN/VY5YL+/+55nGnh9HSFsrf4NCNsm88R3uvs/81QjKMDLn32yUbSB3MhcAXfUwedzMp8nT4GLayvlJ2979/T75Pfq9cFrROXQp3vPQRDgPOf2NK7w1vvLRu3q+9tp3HOoOhjG7KlBIhSirKZ67H3z92+b3d2X5STuTZ/IciovDdK8K6ZFnPvom199CymRgZTBnYRxXEqMuQ7FXXBpTPgk7cAZgEfGf2SnsawC8IqFMbnuP2BjsK2/3B2vqgDjU1nFUuowN9iEvLabBw/ecIYGJHhVDSWYS9nTocYm58KzHuYPdrNTZVw10XvTUr4z3ODQ1aa2LtZuZKfyYJ8EZVxW8fC0Cp4gDYlhlLt2g0KkrR87U0LjahKM5VGvOkbm6lKjMER2o3XoekLGcugEFR3LydStkP4cGWQ4cO5pj3tfSvZBerfdsSiLHn2GzGVuAuMARxFGtXsu5VDSrhDdKu7xO6xBGKlhky3WwKN7SL3qClc7k5M4embMpcHFpRG8hjYRtfWqUpZju7ETdP/ogjQg24nOXV57qObG9Kv4qGcFdxG3oCxMmOLoXehyiwX816aCAJFbWwuCNNxchcNL3NhzDWL0i+50apvhweJmfLy9wtwFGXOjhS66flXZuyIQ2mAN2Zlx9QSHKG9WI/djEN4GlRWR7zSZoS+MOYt/MBB6F0zUh+6hOwa+zRusz4APYR4w0qHpo/tJ5Iox56IJjs2ZNmelgS3GOUfQa2LzGFlbW7GrDeBYf3xnMGwwF1g3Z0nYWjzuamsifghkmUNYaKL6GrkmLvHGWvEqoDtzfOzK3xnMawElCn7X9M0na/uIQvo6pB9zsEBhTktjXHQW+Lc9aB3rbLgLu46mH2J5MkTcoZMrrc+6Y8QLcPHJrzVv8jthTr8/RBRTZK8pbdIrp8dlhazNd3x4ytERdqmw9pCOXcdFRSCDorbRbkG/OoonJxLfPkLOERXdQ8h8+qrkR4LGV3nxobKHW48HhYzHllPh11s4d0VMqU+nstyAEOfn0HHVBJqRg/dtvZGyLLd+1x/TMrbexoJAXVmel69AvS4S9jyYTAV1CnAhnVp0kR9xW07uDid4I4SN7mnvDrqL0i0KHj3ehdvJDaZBFR93hQ9CboJeF+qEJ0cu0k1ro74PV7iDmqvMDcHlPwA=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000fefffffeffffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000020000030000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 18963268
+  displayTitle: Mountain Shepherd with Wooden Flute
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: b786bee28c6f47d439566f4fea4d19b5,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

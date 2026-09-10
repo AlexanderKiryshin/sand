@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_262
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280101691
+  - serializedVersion: 2
+    rgba: 4280237664
+  - serializedVersion: 2
+    rgba: 4283061084
+  - serializedVersion: 2
+    rgba: 4284714936
+  - serializedVersion: 2
+    rgba: 4284838528
+  - serializedVersion: 2
+    rgba: 4286538835
+  - serializedVersion: 2
+    rgba: 4279111184
+  - serializedVersion: 2
+    rgba: 4292136390
+  - serializedVersion: 2
+    rgba: 4281886348
+  - serializedVersion: 2
+    rgba: 4288004062
+  - serializedVersion: 2
+    rgba: 4281803278
+  - serializedVersion: 2
+    rgba: 4283841057
+  encodedCells: S1:4:4096:340EB10D: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000fe00ff00ff000000fe0000ff00000000000000
+  conveyorDirections: 00000000000000000000000000000100000000000000000000
+  conveyorBucketCounts: 00000000000004000000000000000200000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 27341588
+  displayTitle: Female Knight Polishing a Shield
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 5d73c1900a6c3074ca839365a9fa44a0,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

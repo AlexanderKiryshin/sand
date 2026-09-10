@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_140
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284383936
+  - serializedVersion: 2
+    rgba: 4291524122
+  - serializedVersion: 2
+    rgba: 4286016872
+  - serializedVersion: 2
+    rgba: 4292207338
+  - serializedVersion: 2
+    rgba: 4291856949
+  - serializedVersion: 2
+    rgba: 4292070339
+  - serializedVersion: 2
+    rgba: 4292320343
+  - serializedVersion: 2
+    rgba: 4292130973
+  - serializedVersion: 2
+    rgba: 4281748821
+  - serializedVersion: 2
+    rgba: 4290536460
+  - serializedVersion: 2
+    rgba: 4280494362
+  - serializedVersion: 2
+    rgba: 4292323705
+  encodedCells: S1:4:4096:89A0E0C4:jVNBaxtHFP4Ni3UR7mlxaBG9iFGsCPmiaDSWcC5dvFVIfUm1nqyxTonWo+K9tFZWQ7sX4dB02Z5EUopvQiLNMqemjncp86P6zTpQCmnpGEnr9733vfd9b/bq6n+cmvPfeMRe/Rv02nzJYuwtP44vEa/NCq2djyeYaC3SWseO/VHcdd1HPeD6wc4/EmpLe3llL5c2EtxrNNDUdV7/jdsAzmz8OHceuZ4uRCzp8DUqPqBP+3QmbdO/dmV/FxU6lw+o6zq2idWcnudHn5vnpX3Htu/PZCFE3D9yHfxXcxyXXj9/+O5Xw7+sAeeoF1oz1/QTrktnjvxTfmp/OPc55gt10acIBWJOWTT/TL4CQnfw5fT4WOs811JS70tKqefLI903lZSV9QwW5brQnDFGaR/tivGhQXiZ9bUnTYNcyojPWOEZv8auQSJGwX8fhDoUWhaxjAv0CkXsOyXO+Y7dozy6QSzM9RyVhRYiz4+g1H5KPb7jPOBexKVAVLxHFw1c65nBHc6A73MppRahEMNAlOe9WZdtv8s554duL5JY0BTxochNhhvovsG14PwG+/P4DdoWuQiQIYIhroOx0r1jc+5xNwBNbCjCW3YRh5yW8mzue/ShG+zPokKWcxk4z5/0gTtYXST7tI8Oz33JCzN2SRHDaLc8UvYZPTRPx9ch2sLlOIy136fvA13ivlGAsy9RNYXHcSz5mNEjEwzgeFTWH8/8CCpC6WsZ6di/JYUvM/9aHLkB7QewQUYe5/iRPgMeuEMpD/wzIeaeO3SPPcZmcwbLkSfpxEzK5anPRW9SmiZ6NBD9WFOPSo4REeUnbclZJG5xMcWKBG7aXJspqQjZaepTHu73qYg/mJeLUJcvFAfB7kHKONWcsqnZ33xq/CnhGPdQeI224pxS89FjGAuPzd1i+HAPc7xRim8YRIEkHuvbSs48XORdzln/jUr5C6CSXscMV4/PipItmvEG87mvlDpXPyJhxDyjPBprXrJ5fIN6mikVpmvB89H0yU0Ip4ZTPQ/wroWiabadqfSrNIHokZF2BnHD8ejZHBrzT8IiFKkCQ/KHiEdPxHQXL7XmfvdU3hSy2CvgUwI4zTpn4+2I53uPI37B/a2R5Pdm493HXlysVKrS5CT2uzo8vvdNrC+mokumR83J8O51cxRZqxQMrUbUDbTX/jbeY/Ob7sUwak7O7npjVyRWahq8uehKGZ92fiHYRncUDfe873/ypkNNKnAgSd6edMPmb6e/N8kFO+tdQNys+HkCkaSyMgpUkg3W6/YXhJAo2h+di+YkeDl5NhSWtVhsW5ZS2Q9KtQkZdRtbBg8mw5eTc9dFQSWtIiFrEQqckE6l0213336z3zw8D9yMqER1K1RlGdltdYHTuw0C0YlVvz5wDZqoAaUQQdZlfYOQXZWuM9pYbS8SlcLhQWWBOVpIofXLFiHKnKS9SusQD+YBuUysDowi1ZVSW+vUjLppb1CLIMZrk/agiiixVoZwe7Gqb63aG6D4q1rVqrUeXCJZWVYdCUlVWfVVew1ueJclixbLBglGTMnBBh0xQYI89IIxCsIbGDRbIJ10N9j4JYEdahu2wJeslUJekpguVVI1wUWmsm1rkaRVQ5oltKKSFmm1rMeLqrW1230BvLqygBhcZRT0SCB0CzRWvdNYq/QEyjCduT3JQCUwqE68S4xO65a3gqkGMcXGa+ShLVnhoUobnY0Jpsarsn9p54BWyrUMLKu6MaE0AUtSYsblA4pVYiK1qHZWt1ELVv4F
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: ffff000000ffff000000fffffefffeffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000003000400000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 14564650
+  displayTitle: Cloud Manta Ray over a City
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 552b0a0c659bcc04ab4b46b8825eaf43,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

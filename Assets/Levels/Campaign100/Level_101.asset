@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_101
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280302933
+  - serializedVersion: 2
+    rgba: 4291219674
+  - serializedVersion: 2
+    rgba: 4282214256
+  - serializedVersion: 2
+    rgba: 4281676078
+  - serializedVersion: 2
+    rgba: 4287074989
+  - serializedVersion: 2
+    rgba: 4279835158
+  - serializedVersion: 2
+    rgba: 4281366227
+  - serializedVersion: 2
+    rgba: 4292064665
+  - serializedVersion: 2
+    rgba: 4284892220
+  - serializedVersion: 2
+    rgba: 4290936636
+  - serializedVersion: 2
+    rgba: 4286076280
+  - serializedVersion: 2
+    rgba: 4280111525
+  encodedCells: S1:4:4096:B2A01D5F:ZVTPb9vIFf4bppKZ+Mel0yoRFrmwpAike2I5mi6tXixrHATyhSE9G1m9eIstUYCXCsWW0c01Q4DiLXW84qAXwZQAdk5CtyHS5R/VN3I3aLcDQZrR99773vvemxHi05qL/1/xf+3xux+juIvhu/vwf9zFP7KIMQZ83sV3u5M6/o8BIDNwx+8UPlf+yv4H51h5xMroV3cquTiePeAf3+/geBY/rDc4FbMuhh2EWgrxkz0V7gmc5zv8G0wL8ATzJfzMXzN2KwQ/E/FS7PD0lYXBeymWS2CYfeGxmXj9BP8gwF/SSfBzBc9nyy5kdBZ0wrr5KfuUKH1NnSUUNofq4m5sXeCmrvH7B3Qxv6Sc/lF0IbHP3oFWs/PeSRiGT2cqYhxfdiecBAlgsejO4s/E/Jw9+hoMZktIbxa7f1pwbibx8t1cLJWaoqlDteLlLvng/YS3vfasEKLYET4+ArAO6z+r4pdzfscptRKFKBWX4l9XYfhbL/ry291pTgvILzD/KuaLWwg+F9sIvFH06G8qedCJAr1DIfYl+B+LRR02YRhF4bf/wRNCiWUnizuxw/8ApX2Fv9rhiwngLrcCjm4vk/aXouAFsGPcwSevCPgfCFFNIX7Ab/bDBuLWUNszaNIrjM/EYjG5FTKXYGF/UKR10zRR+AIP2YiNCiB/XoiBzPMpp3UTKbBW2Xdwn/0M+pEd82Qh5UDKye8ADRVe11E47DCG32dFllmpW5VSVod1FAEOqgEcQnyG32ZZNrFIVpGyWn1fX9Wf8A7usQ6+BjzgDqnIYLO6agBpwARSfArpM4yzJEtdfkaAP3UVeQRDAQk04RBj+GQ3LswVcYkpD7eNQlX5wB49w6wz/EWWwFxAfKRL2TRHMHGqr6o3LzrgbjjU5z6nbqm9RFB5U0cQA9oSPR0ywE0CfYO+E3mo7z34KyPQlw2HDA+nPvUpJQapPn98BTjQn7eUSfiMDTt4rypzQmnA7ex5sq2PEOh33lcKNy9AvY5T3kg5pdygx19Q+BtBCS8uTnvNtjmC5gyh6o2swILwzQegRs0RYpo37v1j2zjMsJNSKt1lRar0O+WvoS1DSDfhYKCobPXloKx6oF4VQHpbhLyTPYRW8uNRpKFfy3EC9ARamxGu3BHiehuht72PKELb35TjvJSDXMLyW19DeZr3YYXQSWV+711tt7ZNZJ6oySDSOGPg7vHzNUJ9WU2933/n2Ukm3TSXg0SudSWfx7eH4I5IKT2t5dmuJHk5kGUp7/kT9s8GeXaGtm/l/t9LThHc54ryzYTKTJZ8vF4fUg6zsHXvB9k954e8vLDK4Mb9JiNlnsu1nA44dfg2s2/aOudTnrR6m4skoJe+EiDPK7kZcA3iJrbksBJy+nI06hHLoHqVjK/zE5oPfG6cMmfEucc14o4y1nNMQzNBJWquZGtvFWiGyZiKbyXBqE9MY9S6OX5D8pd6KfWVHMvycwP415wQHoyMNlqkeZa3PUHsxDqV9yDYYQtoOBgQYrac4O6AkrcTnlm2p6MVWuVS87kGg0ccwnVTPSza3fHdRNfv27ZxnWdScmoDbuuWSbTkedZ6tOB3v6T6vel5OSrleD3lF9wyDO5ro1tatBNh+Wbx2GCwLlbQ0DFsWlqLJ6+Lg2vXctIs8JJjk7A+YwZCgI/AgjvFQbp/e2DxzBW6VWTEIv2SaRCBrdkIQxEwvekEiCaur6Vth64HpZxu4EKv1z1i6NeXl5YDVyyFV8T0NeQQGNmB1BzIgfUDL51k/sSwDLLPN7709Ovnqw1A07WUZBQEhuVbqdCKm0vrdDPNJDJcOoF+gwnceVvjRhBcZ29EeuCvqqmUlj8F+hIantkyMLSixTPOYby57uTT9kZaZSW5JK1xCw2o0XITGIQW9/TNwKdTWRKSDtzrit7w9UUbWf5+wjXD4gYpFgSeKvXaqZUsiNolhelCGkmf/Bs=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000feff00fe0000ff000000000000000000000000
+  conveyorDirections: 00000000000000000002000000000000000000000000000000
+  conveyorBucketCounts: 00000000000003000002000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 10480219
+  displayTitle: Red Fox in Blueberry Heath
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: afd06688348072d448962d604b5b8265,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

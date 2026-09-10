@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Art_099
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283252501
+  - serializedVersion: 2
+    rgba: 4291929973
+  - serializedVersion: 2
+    rgba: 4285815823
+  - serializedVersion: 2
+    rgba: 4283002753
+  - serializedVersion: 2
+    rgba: 4290620702
+  - serializedVersion: 2
+    rgba: 4281814085
+  - serializedVersion: 2
+    rgba: 4280690457
+  - serializedVersion: 2
+    rgba: 4291871924
+  - serializedVersion: 2
+    rgba: 4288972813
+  - serializedVersion: 2
+    rgba: 4291592763
+  - serializedVersion: 2
+    rgba: 4287070290
+  - serializedVersion: 2
+    rgba: 4288111406
+  encodedCells: S1:4:4096:C8967368:tZQ/ayNHGMY/w7Bmh4vS3CaFMGrEkCM+qREMuwRX4VAhXK29mS2cZtEyQ0gV5QjC5yYYcSxW5eK4CDXrvfNZjBpLEHTyfKg8M5J8ghSpMlir9fzeP8/7zjuaTP7Xdfgf+OZfWxfvv7wH7vlucrFnNlw9vb6fTO3Xt5PgC78YmOnOMpj8NRm+h/8kCLZ7q0Z9jwcvDoc3L9/t6TGDWzO1GZASXAbBzeE7qAzcujlsDO+NMc55WA8G4MGpeh7sVv0yeASfTi7qQQP/+/gMDp7wYFUPNLhFt3icyofFN0I9H2z5Jci9WRsTLBpv8H6qPFPeysGgUQ+CVbAy5nJh4xszn2szb59Kv0WOZbm6hJyVAW8MNty8eTRfG6FoLU6Uwv4wqC8gfFBvQJ4xt3PLf/ZNjXTyJfjFsH5rGovB5Qrq16bR0qZvOtY/lBTxho9TVL4wQ7yv12Z+f7zsk1hSj8SKkMYf+tE8oi+D+nS6Xv9ujj8wQgjye4Qrkv32961xffveGr1czkt9RwTJUnXeEQoBPm1Ur2131lWl75jPJBVSSZKBd4g/Ni8nZg68mGvdanqU5EpJpWLuOBEPXxmjYdCuNDMvoCpXKF2FkaIkhhhSG1+blm63KrP0fCFjOCuiQpEryikhTdJc6qMlY0uzPPNjPxNUpVJBnqLW/8FrPbSdynZ4TGPaSXyVJjKDDCKoTeCVzAOdt+KYZhJ968hExiHiC99y06wY07piMvZjlUgahiJBjVCBPpHmgxkvK91iMy8+kGnYiRObniK/T8x2LVHhWSjChIepLV8oQrG2fFw8mmJ2dpwIfqBSnoRSqlBR1vR2fFz0RjOm4zjrdCLUJtFelQqMgPlcwMCYophVs+YZiWNC81RZDgu/Pf782UYA7xUzdtasSImqbHcynDAl3W63MEWv61Zr1prVWI0QlEBJBvznuOju1qh33WWzj0zXyGviDhgCx3u4N7IRWEUI5ymq86Bv/BSg2CzwGuOhEPZwnLKNd1Hgr7iCP6sxkQqhyxozZhfc+V7jc1Qxr+IC/uVMI6OFz1C9ZcRyyQiTUXKnT2bXW+dnV8UPb4EsZznzGOe0vO5+1GAjxP71quJREnIR8RdtxbyrMMfwlJZ3e6PRL5jXJOKcJxyJJfxx/NR79VRXHzAKwUMUJlXKwgSj9WP3BPHBjzIlkzTlbgmBAfBVEt9px6HoyB4VPja+rQzHr8IP1ZU9Fd161RupZl/ZwRCc22NPYJApNLHU+mP3qmjlTVxaFfEkzRW38e3ir/NMt/RJ9zvWdyceWQWIzB0P7VNrfaIr3cdpUruZhAozqnjK7Q1Uqi8/nWD0MQgZdSNlN6HR/kiEwl2BsrzXcQmuditKeIb5SENbDSTWyvNSq72Fu4f2UBIluYjEB63P78hPG5TubJxgFCTORUIyN24Wy1TuBZKoKEkPROnF223O97kVkCtcOzQVE6Vya7/5bXBXgOQktGFwGVIlhEtgLydU2IRRbm+J0wRvwVVKXdAclhjvbCsCHRcyFTxyO8L1yBa47enGCDeKuKQ83OxY/6dqIU8ilYuYOoUwJhu7TdCNYmeACfsH
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe000000fe0000ff0000000000ff000000000000
+  conveyorDirections: 00000000000300000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000300000004000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: 
+  campaignSeed: 10270761
+  displayTitle: Mountain Lake
+  beltCapacity: 4
+  beltSpeedMultiplier: 0.9
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 111d378bd7cfebe43a490af61fd9a090,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

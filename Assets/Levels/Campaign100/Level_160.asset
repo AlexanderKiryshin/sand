@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_160
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282673496
+  - serializedVersion: 2
+    rgba: 4280856506
+  - serializedVersion: 2
+    rgba: 4280711812
+  - serializedVersion: 2
+    rgba: 4280046673
+  - serializedVersion: 2
+    rgba: 4279046926
+  - serializedVersion: 2
+    rgba: 4281284899
+  - serializedVersion: 2
+    rgba: 4284455065
+  - serializedVersion: 2
+    rgba: 4281682751
+  - serializedVersion: 2
+    rgba: 4279706907
+  - serializedVersion: 2
+    rgba: 4288075476
+  - serializedVersion: 2
+    rgba: 4279777844
+  - serializedVersion: 2
+    rgba: 4278322179
+  encodedCells: S1:4:4096:AA1815CC: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000000000000000000000fe00fe0000ff00000000
+  conveyorDirections: 00000000000000000000000000000003000300000000000000
+  conveyorBucketCounts: 00000000000000000000000000000002000300000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 16659230
+  displayTitle: Moss Golem Planting a Flower
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 887399e7e5fc0194387f6639068a39a5,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

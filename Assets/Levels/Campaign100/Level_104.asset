@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_104
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284318368
+  - serializedVersion: 2
+    rgba: 4279374098
+  - serializedVersion: 2
+    rgba: 4282165219
+  - serializedVersion: 2
+    rgba: 4281675047
+  - serializedVersion: 2
+    rgba: 4279138242
+  - serializedVersion: 2
+    rgba: 4280440455
+  - serializedVersion: 2
+    rgba: 4288864755
+  - serializedVersion: 2
+    rgba: 4290418043
+  - serializedVersion: 2
+    rgba: 4283391597
+  - serializedVersion: 2
+    rgba: 4283910977
+  - serializedVersion: 2
+    rgba: 4286541151
+  - serializedVersion: 2
+    rgba: 4280168774
+  encodedCells: S1:4:4096:597174A1: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: fe000000ffff000000fffffffffeffffffffffffffffffffff
+  conveyorDirections: 03000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 02000000000000000000000000020000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 10794406
+  displayTitle: Yellow Tram on a Rainy Street
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 9d91ce50d1216c94abc544d472a8ad5e,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_251
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284056017
+  - serializedVersion: 2
+    rgba: 4292138195
+  - serializedVersion: 2
+    rgba: 4281886632
+  - serializedVersion: 2
+    rgba: 4287143364
+  - serializedVersion: 2
+    rgba: 4279770149
+  - serializedVersion: 2
+    rgba: 4286009169
+  - serializedVersion: 2
+    rgba: 4285889431
+  - serializedVersion: 2
+    rgba: 4284308341
+  - serializedVersion: 2
+    rgba: 4280567930
+  - serializedVersion: 2
+    rgba: 4292318534
+  - serializedVersion: 2
+    rgba: 4285113324
+  - serializedVersion: 2
+    rgba: 4282924615
+  encodedCells: S1:4:4096:007F581A:bZTPb9vYEcf/hlm5FgX6YtrZNN6T82QkLE+yXvJkyJeNo63l9cVpwQjZXpRq9ZhKFzmy9BbWxaHU5pW9NMC2gNDLW8pVhDl5V15zYf5RfaSsFAU6APXjfWbmOzNvwPFYm2WNt8b/z7asxbdlWR/+e/rq++WvD4u4rS3tkPxduB0lZ3c+6cEdTz4Tt3+Nl04J30rTJ8S6439O+T+Wyv/Ldb6/JgmOXJ1wkVJ/iM/WF04Jr6TxXy3jtLnuYxesZf60tq+ONd/6kJ69dt2ma3+KH1/qp/J6qZ9y92cjt3qnce/oN+NXZxvWJ/5C455hrN3x+bPZ+GhnkWrJjR4s+Y/0mT2uPEj4p/Lc1Z+BLPn8cOdodIe23A9WM+EDuPq44Lu0MmKj+3ehBhga9wwBdePvVjqP6mHl9J5WbWp/twA9zQUIgLX1z1JFlh8m8i+av9a8Dm5ivR5AZv11OoE3dkX+csd7cJLy5o3RgfUXieqPD3bukQ3Nk3n02CLezYKJBVcfW+/IPXXgJ/EnlrVaqCdUCA+0R+eB5a6/P6hYRPf36mnW+vzliZvU59bAzBa8j6sv3PXRwwrdrdy33F7WWk9re2l40DcAoGzW3YIkFUqffT/Wkv98mozmxO248IfVuvaYr7Seyw1ftI8/dxsrANQ98Yx6s9M0Oh1wwDRtMrI33vHkStzm0xJbAaMjxAlA58ImhBzIPWmHu5svNeacNXhD130yABiAnSG+HCWc7G42qanLcQtsAlTLaJOhLxN7IIm9eboC9Zf6XnI1ZvB+1PbYUOZS7G/4xCl+0+s3a/pawc3LYFJGLA81s4m07Y18Bsgfa80S4wl/Lkdhq2Cwoe2PJCE22fiBFFWpRD+W9eChlkg/5vDkL7afYDtHrOHGJmIX0NSjSbl6q5jcy+9RSh8Sx3q49xqg0OR9t5eWnlHbUJJ7Q5pw3/lil552ah6vuaudPpDtHOi5PpEkwTRPSKg3sF7Tl1Zaza7+XjozncIoSrugcZf4xV3LOjVKN9Bk2V6thhWZA3h/IW36hNL5BdGLt5vDctzx+m5TTEK/klM21KUsav5b7XZKuwDnsWqtoUI8mF1mVBWUbVNBGd0hm+z0Es12jLdrmW2lm5vybKjHT56LKqPT8DljMMM4VrdrBlxBo/DvNssqZReHoqrEiLw7o6ap4oG6jdbwFhtXoi0YBnZRihnCBfmBD/E8Eoa6FZpDfx5HwqNDkj/zZohoT6j5TRTHkep6htmtD8TxtcfZsPgrr98V8ywpb/6uJwwjezUQAgb1m/jrUhQx+VOXZxueYLLwaCCMOqzBT5N63YS5zmmUg5216psuK01K74vZlStemGeTm2kwgaETIAbEGU0QqS4ktDm7akwbK3prEiOOo7lEeWmiHpgzs/EC0cHzBm+9nUzRDzHEIMSRrv5WTBxZVYxim0Qx53G/OJMECfo5DGZYfpTnwaXd3ae3Z3qCNyzECWRw5jv+jHw9CxO5YJZMAc2/7d/IEm1MET4qcPTqaRctpJVS7kQqCM+9Nj+HKU6VhEDvpkMQ5YKnJgaNdmuFtqZ42ULTBvSRBGGI3oTqZrE8mO/v04iLaTbbALBRmQhBJrwV0+60xRHja++Gxe0r/oj3p6YfhmBqHb3NRLfgTVV8HO23Yxbf5PvtOv0yETaDg1ApM8K3A1DbsxYOBqV4/3HEB8wfmcAhqEoTPC+vN8qxdcDxgA32+SH3mNgx4arz5exsW76JumkDdojxodeOxHXbKzH/O+O7anV0kANUEKIKQ3+m4kZ8Ex1Xut/yqdoOlVnNQGCW4ZcAwNfjMAfisF3hEf+WmSYgJi3AdtFBR5qOcjKqEl/Hx3HbWwm/uI+KIOe0/1jNMHF2MgDx2fVZdH3Njhsyo99fBN8SAMexA9zWOexM8v58pZ/x+E+c8z5r9huMc8G9BuWe6Hv/AQ==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000ffff000000000000fe00fe000000000000
+  conveyorDirections: 00000000000000000000000000000000000003000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000030003000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 26189569
+  displayTitle: Pronghorn under Painted Desert Mesas
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: a0f47f61d09ce674ba8147486a655e88,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

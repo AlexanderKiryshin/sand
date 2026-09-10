@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_199
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282861350
+  - serializedVersion: 2
+    rgba: 4293715159
+  - serializedVersion: 2
+    rgba: 4283795066
+  - serializedVersion: 2
+    rgba: 4285232200
+  - serializedVersion: 2
+    rgba: 4282554034
+  - serializedVersion: 2
+    rgba: 4286752666
+  - serializedVersion: 2
+    rgba: 4284008170
+  - serializedVersion: 2
+    rgba: 4281227379
+  - serializedVersion: 2
+    rgba: 4279705127
+  - serializedVersion: 2
+    rgba: 4291081870
+  - serializedVersion: 2
+    rgba: 4283457345
+  - serializedVersion: 2
+    rgba: 4288253278
+  encodedCells: S1:4:4096:77E06050:RZW/b9tGFMf/hoPoNAY9aShQbcIjJQHMIuiqIdJisFdKpZdU8iVRuRQKewk8BQZTKukSBI7FxEuV1kAILQTN2O1lcZoqAHt/VN/RjfsgU4I/977vx707kmYucwkesDeptnp9hc9Gvd6ovy+kmREzg1zOhQNvrnBdfw03at04sB3JCDEdcH1xPm/UK6wXlEptVCoKIh1HSuQPRREiWVV8lWqsSlbclIeZaTquH4pz0ahfmwo2AQ9YJCN2M4OiORfCFp9ho/5BqSDgrZBtjdjNpi1N5DBvlGlZRW98CDBAcIOxwo/MXTsvNA+dqq40XaXfB2pzGvxpe8WIkd0i0vycOaepho1VOuMq4JvvmFcwRkY2a2s+z3/XCmmjkSrkivshixnLmM06yNsPnTacatyoI+eq7zMvZnaH2eHPoRBe6EjnTYkLsDsbxTdDP0Re81kRtoXm0slZWvHNRgUpRf3ClR0Goeehfkik7aWrUqXlR4yfvt9lzHZJp3DniJE3XRAptrahOA+C9LbPmD8yL4CFIhRe2z13meZpGiA/bRUPmIftuXBC9BVh2y5yV6A7LuF8xgvpsxHbMjv2PHTbrjiHc8cTp8hLTD7oG5nPIrYlOzabux5ydg5CqHU6U1j8bCcjP2J7ooubuPtzD4Rnf+GIEOvH2oNZ+e6decBcVMid3MXEQo+dO0Ks9ehg9vyMNA98l2H/pZnrErxKf43qG6y+PzXJga8zdH0MIF3kbVvo/LU/71s1Yxf1mexAaDOHIbftUODY4egEfPgtxfwPkWdg234xD9uhZ4vwb803weaWnRP0jy5weD2cM0AuMI2/NMcU9vbPyO7IZ1uZhAIb7eg9dMLwkw6PCntfG5m0R0zKJuTzMGcuJgcgNNc57A0M3E6GE47ny7VdN3SFeFJxjdVenkscfkYyQog8cGxmw3GSRDHR8qWywDAluEUmHbPJnELm7EWySJLxKGbxhaFaC6frAIsykxQAntecJ0nyEP+SURTFcdxZQA3bK6W8Bc0QcPbcsfdwFOOCRaztsEOZX5hm9r4pwXHnPei0j0JxrB6pE/VEC50xN5dE7jS3ZF54bQETnJTj9UL9QscLbxwZYIPsyj1pNu98g/nPpxPX+6Qud56qJ+NkHPUBCpllj1n+LHMdz7VvTODo+OTy5Kl6hoVcfJyASTL5OMpsKS9eJ/EyXmy/OHybLF7pQgtKb3R1c/ZJzvffvV6MksU4Wb64P4pGcRSP4vgfAzH5gVf2ctFJkkdJgjp2L1ti/Pu/VsNCtQG8fHaEpW+/frlcjnV143hxv8URDSm1JGbyPNneJiRZLNloGY3xOb7X4v2Kt8BNPtvZ8ogdMRZHi/FiwjdTPuxz3modXS8g9/StgTufJPd1YpQDgPu/wPPrXwnnwPkQ8ST0UOAE/xUn8X+2TL7Slx0fUgtV6qvnb9NXiaZJ9fzjN6xuvS75rRbw+pezHdIdkmvDxnUvKSZGJ5g/b8GkdgUyIun1OkvXd5tTmEy48ZkTEz/PKxE67U+r7k35Pk6SSWs6SI0SqTHt4g5zXnUXctO8EhiQmpbIsgG1oNWjtAuV4THQ2Lhcr26XnGZd2rewM8grf4DaHQOjG92u0aQ5maYl7XLoVZyC81NuWrlO+TJ9hzWYlBoDaqM77fbOrMo/y84k1Rf4Dh6hdTrU/vRKf4Dnb8vJ/bt0Rg1JPvZ2DNPUcbV+byKYEOHdBzW6z0+v3pEYXVLaswaV/xTwfu9ZPcpR9nKt+MD4uFZDCmcIu5JaDi5oW/DMm56mw2mqZqlaK2oxHX+AfnSAoaboXa5x0/QdrquiE2po/YELIKENvctbvSp8dUmitShYVkYHFDBVMe/Rvkpn+PJFhbQs1Vq3l5LBoNqjltVf68s/1a8AdMZ9B4lF/As=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000000000000000fe00ff00fe0000ff0000000000
+  conveyorDirections: 00000000000000000000000001000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000003000000020000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 20743661
+  displayTitle: River Ferry between Yellow Cliffs
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: c246639e6bb60224f8a5cb282b7e2760,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,51 @@
+{
+  "reference_url": "https://www.youtube.com/shorts/zfWO4ViRfbQ",
+  "reference_segment_seconds": [
+    1.4,
+    4.0
+  ],
+  "reference": {
+    "seconds": 2.6,
+    "peak": 0.117889404296875,
+    "rms": 0.02242740513546492,
+    "dc_offset": -6.494234312314669e-08,
+    "loop_boundary_step": 0.012786865234375,
+    "adjacent_step_p99": 0.08447265625,
+    "envelope_10ms_variation": 0.09430933480155523,
+    "energy_below_800hz_percent": 0.03282333511484039,
+    "energy_above_4khz_percent": 96.3060843314149,
+    "energy_8_to_16khz_percent": 69.07705672254455
+  },
+  "before": {
+    "seconds": 6.0,
+    "peak": 0.100860595703125,
+    "rms": 0.02199931265041106,
+    "dc_offset": 1.67235405446901e-08,
+    "loop_boundary_step": 0.01483154296875,
+    "adjacent_step_p99": 0.0191650390625,
+    "envelope_10ms_variation": 0.11231235444206092,
+    "energy_below_800hz_percent": 0.002430270596990988,
+    "energy_above_4khz_percent": 2.548852859873054,
+    "energy_8_to_16khz_percent": 5.816021529534541e-06
+  },
+  "after": {
+    "seconds": 6.0,
+    "peak": 0.105194091796875,
+    "rms": 0.02199933375580708,
+    "dc_offset": -2.975636869331066e-08,
+    "loop_boundary_step": 0.010223388671875,
+    "adjacent_step_p99": 0.07794189453125,
+    "envelope_10ms_variation": 0.08718450845309336,
+    "energy_below_800hz_percent": 0.043341013640498235,
+    "energy_above_4khz_percent": 96.19151744436853,
+    "energy_8_to_16khz_percent": 66.37646052851878
+  },
+  "spectral_profile_rmse_db": {
+    "before": 33.984813919767156,
+    "after": 0.7593474201021496
+  },
+  "other_audio_and_metadata_unchanged": true,
+  "synthesis": "New seeded waveform, matched to broad measured spectral profile and envelope variation. No samples from the reference are included in the generated clip.",
+  "preview": "Six seconds at maximum runtime sand gain 0.42, with outer 200 ms fades.",
+  "scope": "Objective PCM comparison with the reference. No subjective listening or Unity Play Mode run."
+}

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_112
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279242255
+  - serializedVersion: 2
+    rgba: 4290434535
+  - serializedVersion: 2
+    rgba: 4281283376
+  - serializedVersion: 2
+    rgba: 4282542743
+  - serializedVersion: 2
+    rgba: 4281882240
+  - serializedVersion: 2
+    rgba: 4283935213
+  - serializedVersion: 2
+    rgba: 4279707725
+  - serializedVersion: 2
+    rgba: 4281025377
+  - serializedVersion: 2
+    rgba: 4280229920
+  - serializedVersion: 2
+    rgba: 4290622380
+  - serializedVersion: 2
+    rgba: 4284189629
+  - serializedVersion: 2
+    rgba: 4286822632
+  encodedCells: S1:4:4096:3C5CE5FA:jZPPb9s2FMf/BlVpXQG7zOiWwsnFoxNYSC9bJc+Be+kiOgqcy7CYzSZfjCKRhe2SyrZopBdWSR1iO/lUeL2sdVSj8qVd5wUQ/6g9Sk6btpd9/UMUP/o+vvdIjcf/S4X86OP70WL6Pf/ARvlM2TWbs5+Nx3L4S9HPf6zROD8qhMhfkTeF/MbprfxnehIi5ats+GISfP0Z/0bnfCUbvl7h7lVUkMmFPNSWs/tYdDq3r3DA+byq60f1RfzkJg8+jX9NYfcXUa/Fxzn3Uz5i3Pt2MZ7UuPtpCU+YMhkuxo9My1vOCoeuyfVHY5WHS+3tF9fl9HfbsbeZtW00zrrcCdVise3mlC8lX659236/GekgVENVd112VAVu0tvm0rNsg6Cf8HvEQq57bo5zqgyGgev+8MUbiF+Aj/yOAReZ555yXVW9oeu6eZwXYlUU8veEEM8FV4sa2vYYVxkfDNvuct68BdOi0Hic5BPxBwo1RcU3mc645g1z3qr49UL6V3dplH89uqOGiq66Lmcc0uAXZ+Ltb/8Kqce9eb7V4hpCevthjimca+1XbyTJpZz25sIhOnRHbbtDJcc0zaytwhaLIPNjIv6phIoacihPeZfOCRHPZomIV1bf7gKfrXE9ZGrgKsOU35F/CTw0rYldmyTGHV4sapCe4olMsziO4QJe8CeGw4taqB64ShWSfj4Rl7JJVKJ104lUVoTyDpTtRPxpvPvAG9i06lWTKEUd+HXlvgFZGTE8QfpCVPExxrjbjGMtZDoPckNvEk9g6TixWutCTI97eNs0p5V5nRURC3Le5l/OvVqSxCKJN+IEzD1SbzZrtUOEkOoqyv2f55FDWjMR760nU3xqY+AYWX3wt6G7nR/jGSGzucDVjWi6hbEV9U3skxtMR56raB4mpGLazeRgHzknPixAKtjyoyVeDMEv+bs6caII26gbbuE17PTxVrf7O0PIyynKTqluNLATnUMVjcFLnGkSP0WsDekpHouaXdq0trB9uD+4a0MBwOngDGnthwpTAqtmdLe6ht3Fhw4yDQu4aZH5EoKzD/x7Zh+cbGFLJkbCHbggbOKLWqtFHueAK0fTBgTHKZ86dBKvYVyhnQeERDcUxhTaM0pbctEeIbhnQhCMHZfuNwkBDq94k8x3F35IjESDKq4HwT5Z8MH5XtxYcBuC9KlvGwGVvK8wzgbN6NiWmIIfukMQ6hq0k/o1hbMdG9NqvWmn/BQTWvbpVPJDcsjh8O9Ic38/9W/3cLcflulPFOL3SYUrGtvpYMuo7KW82rNqKCxvGJLXyVNN8oeL1DFZL1FaL/s+rUhukKfSf+Rf8uhluWz0kD5A0u8Q8EP+R76Vcjg46+WyH5GNsp7GJ81IYxqjWO6HIxuPfFT2ybpJTUofOBFUyJbY2Q42cJRyqiPq0LPI6Aa0Q6tEtpiQe5QmgvQwap6FZX+KypW6TaV69IJIzSNTrFJsl8Iz/a6/dkJRmdJAchBpQIT9edS3MdoZHA1KpcFaCTi16UDyKaV7JCDOvNKT+Z3Qv1uxLUkAfghCO4ED54LUTbKBfFaC3e1PEkhvER9GD2QS9d5Fa50PKDLgpJhpbEwzNYkNHJs1HvpTYsijmDmDjO/tvQJumfBObuJYcpNe1X4jackloj7fNGzDMjD+ADsdWQKl5+kjDQMbJr7KQdU0SwpHS6oGxx+nE5fqDuStS+nFuXygGWEcpA28VCA5lvWez9KGz/4D
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000fe0000fe00000000ff00000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000004000002000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 11632238
+  displayTitle: Falconer on Desert Battlements
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 28c138bad87fc3a4ba12bf73680856f0,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

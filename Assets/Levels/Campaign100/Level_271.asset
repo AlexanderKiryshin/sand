@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_271
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4285829283
+  - serializedVersion: 2
+    rgba: 4292731364
+  - serializedVersion: 2
+    rgba: 4279377695
+  - serializedVersion: 2
+    rgba: 4283985536
+  - serializedVersion: 2
+    rgba: 4281969600
+  - serializedVersion: 2
+    rgba: 4280825399
+  - serializedVersion: 2
+    rgba: 4282536280
+  - serializedVersion: 2
+    rgba: 4291339661
+  - serializedVersion: 2
+    rgba: 4280712331
+  - serializedVersion: 2
+    rgba: 4288049742
+  - serializedVersion: 2
+    rgba: 4279848792
+  - serializedVersion: 2
+    rgba: 4288460746
+  encodedCells: S1:4:4096:A20260F0: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000ff0000000000000000fe00fe0000ff0000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000200020000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 28284149
+  displayTitle: Pika on a Mossy Boulder
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: e4aeccbbf2f79544fb656dd00a5ce623,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_244
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280889400
+  - serializedVersion: 2
+    rgba: 4289629548
+  - serializedVersion: 2
+    rgba: 4279510107
+  - serializedVersion: 2
+    rgba: 4284907405
+  - serializedVersion: 2
+    rgba: 4280964490
+  - serializedVersion: 2
+    rgba: 4286827760
+  - serializedVersion: 2
+    rgba: 4282022597
+  - serializedVersion: 2
+    rgba: 4293837461
+  - serializedVersion: 2
+    rgba: 4283651929
+  - serializedVersion: 2
+    rgba: 4292075233
+  - serializedVersion: 2
+    rgba: 4283607781
+  - serializedVersion: 2
+    rgba: 4278914844
+  encodedCells: S1:4:4096:44EB0FF6:XZXPb9pIFMf/hlHCRmx8snog1V7Q1EXa+mJpaAvNBcHEauBSlRpt3EtEzahxTqgrUW5sSFt3c1nqhDDby2pjW5vpxXJolGb+qH1DafbHoBEwn/d97ztvDNMf3AzOq2RMxuPg69jQ+7DYv6FD7lTHFfINB/qg8C/OYTigr9zwjb7igyHMUxDD2HlPSEAUe1cJgsoif8j5cCHmqjyox0EYqCSVWws+47zQX3JVu1KtELL4oOuqAOjf7U6WelATFXcLShAdxkK/3R0ueRDMVL1qv7Ch6zdcOTg9hbf3QQUwmB309QGkv+Ff7fMvcjPksJkCrMPsF8DhjB+H1aW/TMop/6efKmYwe3Ecbh/zpf7oIySHDABJsogJeHi8fT5dcqg/5ANlqPH6dXuw2P/2Dj/ns688CL+1avvnwwLY5oqD+nVH8aNgifk4HA4fKx7ulHs9WFAV3ssbvv1qOOQbJ5y3t571egrePufBjb4aDqHS+Hfg1Ok5jPOHO+d7F0v9bf4urIY7XO37seKQoNpu732RowWfcaJ8hg/hMGrPnF6nx6rkTfs+1P8S/LYD2ciixkmFhy93HOY4e0mVkJMvMr+62jjn73+q87AdhrDL8w+Owzowp29I+zuZl0c/wj5CecxrkKMdco/BcCDAedT+PMprm/UZCY7hoBogP3N40SjhEmMQNq1eyAu02bCe5PcPuoS0CTkjJwamuI4Nu1TvonQzla2LYpo2VvbJA3AE4wn1DMWN+qVEiBCpyRSlzzApl8ed8dmjnn1s1O81bZtKbZR+JGgO3C6ZDUI6O/fHjWfGZNXbiljHlUhDklerq6lW7JoWedDb45UTOp5MaMPvPLiP0JqUB8F9R0ozs8jqdLq350xf6/BwQwvZ91pxPQVebiK5n1ttZGy612FOYJHxS2hR71KTGtJWgrfiQt55S66y/Q40blrDtdouY1FS0qRM0xzK0ZyUlnWBW5Qade+xgbfWage5rQZCWopWELmSaSu4Mk3sOBh30N16YttlojkaBEiN3Mn+SuVVYM6xcLeesj8e51C9HKTy+RqSkLiCTSgUjLpz02tQSq1D6+BFYLWkhH3JedA2JQTkLXZpRoZdpsXN7c3z0VWrlSl5Nr66NHGWjawWM3Oz/IfRbuvO5mr+0/5uerSJUi24KO2bc5mvGdfm4dhqWDOrchSgWreGV4oYH+QJbplzDe2WOmadWo26dUh++OWoWAIGiY+QbV7iTKIahB2OkDOKfk2S9dG1KRVfkUGdKX5VK10auZEVBruxEGvIx1cYg34UZGbZgEYfUYxzwaMw79GErucNDIcG/uUow6wktTwyTZOtPSA1TwixjuCfQUIL4Anax3OsDkIaplgTdtmjtruORPZZPnevEUKXWYafpmlaZ17ixCKu0yhZRzi7xp/EtdTSeamLI4jzLkvCFW4MLRbrafF6y2yya9lCZukeTlJtXrNtTySJqFPPjzRN3s38hIHxNDMZpWi+64Ixl9pFw/BYKqVWL1tlaqN9ie3EEYlwoLrvwRkSWil73Sb1It9zfdt2HeEIEYvEZ8KmZ6LjxmpBuK4Tx4lQ6x3hwzdIwIB/HcwRsZssPsYQGrswY5vanlpjriuYr37JCwjZnNj3fdEE9wmLImY7Tk+4zE9UGRF3wDlLIN0WrSV+T3mFZfUSrg/rrOnT6E/IK7yzSEl8Ifw4hqMUzYUZH3rg2SzxxZkbR4AhAPa86Ikq7vao2i8TSVv4EB0xyOXbCaWdnttL/KRJaReONumdxQm49rwoaYJh6tGILXZJKYvsZuyeedDFiIFb0fFBZd9rNqGaT23IKUSkT3T9NofrpqDrk+HNzTFRt0f/VNcLE31jqLi6rV79lyutmn1eWOiHk//xU32jMNnQB0t+G+6jU4VPFzdYX+X/Gw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000000000000000fffe00fe0000000000
+  conveyorDirections: 00000000000000000000000000000000000100000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000300040000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 25456466
+  displayTitle: Steam Tractor at a Harvest Fair
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 549f302d634902346a20b67da6c8055a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

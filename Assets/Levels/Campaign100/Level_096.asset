@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_096
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289179828
+  - serializedVersion: 2
+    rgba: 4284173627
+  - serializedVersion: 2
+    rgba: 4287399806
+  - serializedVersion: 2
+    rgba: 4286279519
+  - serializedVersion: 2
+    rgba: 4281946205
+  - serializedVersion: 2
+    rgba: 4285160523
+  - serializedVersion: 2
+    rgba: 4282529321
+  - serializedVersion: 2
+    rgba: 4280299571
+  - serializedVersion: 2
+    rgba: 4283926955
+  - serializedVersion: 2
+    rgba: 4281740318
+  - serializedVersion: 2
+    rgba: 4279835158
+  - serializedVersion: 2
+    rgba: 4283384113
+  encodedCells: S1:4:4096:D4E24AFF:RVXBbttGEP0GVUaBXtcqDTi8yBSMtskl4oIFkpyKMKCgG0WsUdsnIcAmFE9pFW/KXhrEAXR1ATOgfEqjasHNpWwjAvJ+VN8ubXgJEdS+mTczb4bLsuRaZ5pzXt6uFH/Mz66y5I2GBR6KO7jgd3i5BYNu0rSlKLi2wJTzptEcTpzDXVvGApd2rzM8EjjVeDB88GgMp9nXLrnWuMcbl2XZGS9SXtpwsDOZaPKTqmtNYpoExs1GvUlmD6SE5G/uEcCU0cxSmxCthXY3mmzOF1+CHqWJM0SOWrdV2BANGdLAW/zxvQ941zHpGRw1FIWN5Q4pnSwWI//dw52fCQHuoDZb4xbFao2wf0mlBt90+45bg9IZ1k3DIU5Ta+26LKDBXF573b6HXMHIKLHq88Z1CSHMH/hSzQ47BjdyMPovaQXN9ohzQDse6NV9D8uqh4ADr7bK7ZHhANu5qtTM85zYNi2hPnBtucgw8Hzvl3yqntCBA1ooBxV9usv+MzEQ30vo+5FQCTvETmH8Y+bTASO3OEt+H8nshDkoDhPBnRgl0R6KMd1xY8bejbJtsiFTyLJF/iQOALs3ODE454mRzXbUdooQN8syGLiasPfhtEG81HYE7YTkpDYTZErE/7fnmjuktu0wmjIyJK0A7fS8HWUFHKYNyVxiQpIYnbT4lcHfj6aopCY1EIyTWxPdysPtgMWLka2U6Dje4M3QtRk69Nakh12yGL2YHTvPSMwAcd2uBgXq0xic8WLMZ0fsGSbJzI5hyHTTuKQG6DDGgItjJR/3iB33dgBBYGIGScLejHVZ5UuV1BaobW42dsIoxF6MxAsl1ymSwy54b1JwD/wJC8A/4jJcrnmFIiGoGzvEGLkOZQmDgcGjL3x57GDcCHgdODHtMIdRvDTBYnSWC/2yOHp1Qp3avFCxccRCp56Kk/PwTAjO10fzWWIFBE4DeDNnGAiZh6GI5i/x1ijlWpnrmMQ7dILy4tdnchzmkRRqhimenTKGHGIg3f6EOU4shMqjuRwLNVY5LAwrM4n5GFwWBELkci6lkErgUiescmhyiOjU62N0qQQm5tFKwlkuQaAcFgz8QUK7nk+TaD5HgrjlcAYJOLxD+GJ1fP9XEeZiBVhFYYgooPigPPNKdT3P79On4WocrcdRnqNAZKIMC4afUr/b9Tr9H6tViM1VLoAiUVtBQAdg6HY63T4LV+FKRlBA2NjfwV2BGQG+RvxBDwFDSIMC5ib1wtwA+wELdjo+L6RKZZ4DD80ZoBRCqIPd3SEGnHb8Qn0Y/2Z4hVhZ1KSnakyAHtad/sPPbcLjPDd+ymQJGYvmgdYPHnS95xV218Cj0BKHqCBHo3Fk9g47HfpcfbRBx8Imp1RkQklz5JNBt//p4lIta5OTkK0Z6o+kKrfZxaTT8Z6bzZ4qZ3nrDXHGKyEr/RXOWRwxZqs6Wm5UW5oqIYZQS0V6Gb8K2Kb6uNwpvWBz471eVkpGxg4fpPLRwcV9lXqDSXLLXpmbmRJ8nozJ6SGl/T+r+7YnavvZ3IXRIy3KopleYoge0vXssvVfkrICvJSG/4Tr/Tr2/MHlo8fNJwPfU6d1Kdo6QT7Tr/fLb0lAhjsTS+xmE4yZaKnsJ3O/LtJt2g0Y8kowE39bAW78i6Lcv6rdf5RzgVkv0uI4/qhuV+nCYA9nwBJMT9hmb32dMHRG3uLlRd3U5b1yWaZF+gMry6v9V1Ld+WPVV6XV6coc+HtXlbiD1f8=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000ff00fe00fe00ff0000000000000000000000
+  conveyorDirections: 00000000000000000000000100000000000000000000000000
+  conveyorBucketCounts: 00000000000000000002000400000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 9956574
+  displayTitle: Stormy Cape
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: cd20dc18d0b573e45b2eca5346a4840f,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

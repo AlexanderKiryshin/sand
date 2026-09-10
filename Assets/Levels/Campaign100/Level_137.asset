@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_137
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279378747
+  - serializedVersion: 2
+    rgba: 4279245097
+  - serializedVersion: 2
+    rgba: 4280957512
+  - serializedVersion: 2
+    rgba: 4282091472
+  - serializedVersion: 2
+    rgba: 4280902309
+  - serializedVersion: 2
+    rgba: 4279843174
+  - serializedVersion: 2
+    rgba: 4283197052
+  - serializedVersion: 2
+    rgba: 4284331246
+  - serializedVersion: 2
+    rgba: 4278782994
+  - serializedVersion: 2
+    rgba: 4280306307
+  - serializedVersion: 2
+    rgba: 4279577679
+  - serializedVersion: 2
+    rgba: 4289324535
+  encodedCells: S1:4:4096:505A905C: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe00ff00fe0000ff00000000000000000000
+  conveyorDirections: 00000000000000010000000300000000000000000000000000
+  conveyorBucketCounts: 00000000000000030000000300000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 14250463
+  displayTitle: Mask Carver in a Cedar Workshop
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: dfd4e48746af8a74396b8dc64aeb8b5c,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

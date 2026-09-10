@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_063
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289959512
+  - serializedVersion: 2
+    rgba: 4288969006
+  - serializedVersion: 2
+    rgba: 4284563981
+  - serializedVersion: 2
+    rgba: 4291746262
+  - serializedVersion: 2
+    rgba: 4290553972
+  - serializedVersion: 2
+    rgba: 4290359959
+  - serializedVersion: 2
+    rgba: 4290561729
+  - serializedVersion: 2
+    rgba: 4289430333
+  - serializedVersion: 2
+    rgba: 4285357628
+  - serializedVersion: 2
+    rgba: 4282069023
+  - serializedVersion: 2
+    rgba: 4286930189
+  - serializedVersion: 2
+    rgba: 4285691501
+  encodedCells: S1:4:4096:B07D5705:1ZVNc9NGGMc/g2CcOAmXKAQ8Iy6wbcEWl6Zx3Ay5iPHKgXIxteQEfAnYEk1zsegEdcyFugld4UvraYJ2fIlNM87sidI2ldGH6n9lQ0sPvfeZSLL297w/mxXnfwthbzodFia/X8pbwEeaqv6k/kP66v9BvP+CD+JLcYyn/+Hyd5yzi6r6Vby2dnoa9y55/odeuuhHcBjvnMZS/oihIJ34XmYSTjYsHlMpvz0FA4dAEypo6Tsc4dqJPT8z5hMlPkogY2Ecd/DD9zO+v+6+1+BgWO4wqdeJR0/l4oZbmOBrkbRiLCtHNwrizrf+ur9hO3CQlvxl3ImAGUlmzd9wjsUy+BM8131/xBgwIaQrKxklCfi2bbvTiqI0/WudMOqwhBLkP8LljPkUuJJ+zThwl7S7OQaGYuOa0gR2FVcqsF4Aax4GvI0kOhGCxEqzbLkFV0b4MeQy9iiOciyRKJ7104ppWW4dLpRnIQdG3T0Jn+HaPp1RFGo17MQ+4DlC0Lh4Yh5C4VBRTCToVN2taggu88plJQ1SKeVZFva2LABy2OWkDd5JbDlXJiK5SW17P5Rpx6iBsRn+nlO6V7MpeA6Fh5HEMzMG2jeGlJZZZNmOQbOIHnOJbys/50igGClD8hcsrjmuQ7tE5t15fZ3SFP0Y/ulYXjBWQwXPu0RGvnOOlgxwcptSy5W8DXsTWeSQ/Un5Tj4xCru42W4Jd+Qc3wLPknb0pzP2meIc5mPeZm+jyKL7uYDt7ZeoYVoFuscN6lRsp0SLlGXBazYJArZZLkmzelH6cBwHgytQho6BZ0Nwh5rSLdJpoCN7O65bqAcd7KmYoiMRNR3TRlpWSTbVRuIoLGDYs1GtyxlrVOWs5DyqaCqaUTNtK8DIouhqN2yXVorUhn8qbSMzQthNsyTrg3QDVq0UbUuOCsOSQ5R2VUdovtL8Hf5Ds0TNJLBtTvYXi0p00BdC7G51+WZj0cv01Qtq5grDOSg5NhsVonWk/TIX5mzHvzmErubj9laceUxdqYCXgbhr89laY2NJ+hpLH6eCwFkpTloPj9NLPT7L19zMF4IMhC503PEnxJUzLak890Ov236+PX0kXuHtRuKAGENXqBNvPc7b++G5+QeqJ1/1li8I4hIndaT1hX0gD56D3kgbakNB2oiq6SLJpS+0R4tLIQ9u7e30esorcTwQg1azr2YAm0LLaOL4a4vfC27nXX646i/BBIl5n6zivMIBmEax7mF4z1SsQv5gbTqtXZBfAKEPThbm58kxQRpzB9uOOWUW6sXV3ZXGp35aetDRKGSgDrQH5QPXrCvUXnYqU46f8TbgQR+IVkbzWv3WomVZSlEp5+36Sqm+fF5t+v4Q/odD4fmaN2xOKX1qGIZZKVgrleV+RVQ+U+EZR+PNb9LnfxWXH6/7T9K06NQNC06O0bqL86rvrVduOK5LBjqZ2y1U8b+WL+ZpIW3f1zGAV48uy8FVcaKQL1cfbta3FmfKjea6mNb1IZG90zQhPhpITrIPSaWiksv5IrqWRgN1Txs2VS1NCCap61Jn4An9rLjfwA6hRuranKKqS1glct4S66Ry1MqI+8ZQc/Y0TfWG+0SMLYV8YpgDwrTlZfekL/At2XVPkkmTdx4gu2JBjp84d6ceXYUZkfFJEoUkWaiK1xcLsP78OkwHgvxLFs6m8MVZ3Poe8cZmhPwF
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe00ff00ff000000fe0000000000000000000000
+  conveyorDirections: 00000000000100000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000300000000000000040000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 6500517
+  displayTitle: Island Dolphin
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: d3758e5d297ce9c449db0439a0c19173,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

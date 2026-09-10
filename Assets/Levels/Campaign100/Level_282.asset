@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_282
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278650893
+  - serializedVersion: 2
+    rgba: 4281091955
+  - serializedVersion: 2
+    rgba: 4285154365
+  - serializedVersion: 2
+    rgba: 4280437173
+  - serializedVersion: 2
+    rgba: 4280102481
+  - serializedVersion: 2
+    rgba: 4287195230
+  - serializedVersion: 2
+    rgba: 4288137963
+  - serializedVersion: 2
+    rgba: 4279839629
+  - serializedVersion: 2
+    rgba: 4279639855
+  - serializedVersion: 2
+    rgba: 4282672521
+  - serializedVersion: 2
+    rgba: 4283010265
+  - serializedVersion: 2
+    rgba: 4284383655
+  encodedCells: S1:4:4096:FAFBCFF3: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000feff00feff000000000000000000ff
+  conveyorDirections: 00000000000000000000000000020000000000000000000000
+  conveyorBucketCounts: 00000000000000000000030000030000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 29436168
+  displayTitle: Kite Maker in a Festival Workshop
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 5c12cbb241949f0428844d38c1ce9fc2,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

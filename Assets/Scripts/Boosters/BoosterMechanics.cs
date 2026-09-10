@@ -47,7 +47,8 @@ public static class BoosterMechanics
 
         if (simulator != null && simulator.Grid != null)
         {
-            RemoveSandOfColor(simulator.Grid, bucket.ColorIndex, needed);
+            RemoveSandOfColor(simulator.Grid, bucket.FirstColor, bucket.RemainingForColor(bucket.FirstColor));
+            if (bucket.HasSecondSection) RemoveSandOfColor(simulator.Grid, bucket.SecondColor, bucket.RemainingForColor(bucket.SecondColor));
             simulator.NotifyExternalGridEdit();
         }
 
@@ -91,6 +92,8 @@ public static class BoosterMechanics
             }
         }
 
+        targets.AddRange(inventory.ReservedBuckets);
+        targets.RemoveAll(b => b.HasSecondSection || b.SlotCost > 1 || b.LinkedPartner != null || b.SwapPartner != null || b.KeyId != 0);
         if (targets.Count < 2)
         {
             return false;
@@ -98,10 +101,12 @@ public static class BoosterMechanics
 
         List<byte> colors = new List<byte>(targets.Count);
         List<int> capacities = new List<int>(targets.Count);
+        List<int> fills = new List<int>(targets.Count);
         for (int i = 0; i < targets.Count; i++)
         {
             colors.Add(targets[i].ColorIndex);
             capacities.Add(targets[i].Capacity);
+            fills.Add(targets[i].CurrentFill);
         }
 
         for (int i = colors.Count - 1; i > 0; i--)
@@ -114,11 +119,14 @@ public static class BoosterMechanics
             int tempCap = capacities[i];
             capacities[i] = capacities[swap];
             capacities[swap] = tempCap;
+            int tempFill = fills[i];
+            fills[i] = fills[swap];
+            fills[swap] = tempFill;
         }
 
         for (int i = 0; i < targets.Count; i++)
         {
-            targets[i].SetColorAndCapacity(colors[i], capacities[i]);
+            targets[i].SetContents(colors[i], capacities[i], fills[i]);
         }
 
         inventory.NotifyInventoryChangedPublic();

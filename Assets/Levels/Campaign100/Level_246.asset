@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_246
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283527017
+  - serializedVersion: 2
+    rgba: 4292532688
+  - serializedVersion: 2
+    rgba: 4278783501
+  - serializedVersion: 2
+    rgba: 4282822341
+  - serializedVersion: 2
+    rgba: 4281434511
+  - serializedVersion: 2
+    rgba: 4279906858
+  - serializedVersion: 2
+    rgba: 4286616202
+  - serializedVersion: 2
+    rgba: 4280699717
+  - serializedVersion: 2
+    rgba: 4283338669
+  - serializedVersion: 2
+    rgba: 4291016080
+  - serializedVersion: 2
+    rgba: 4280640614
+  - serializedVersion: 2
+    rgba: 4287217106
+  encodedCells: S1:4:4096:AED06917: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000fe00000000ff000000000000fe00000000ff00
+  conveyorDirections: 00000000000003000000000000000000000002000000000000
+  conveyorBucketCounts: 00000000000002000000000000000000000002000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 25665924
+  displayTitle: Serval in Wetland Papyrus
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: fe2b4f57d472e7b488a99909931bf93a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

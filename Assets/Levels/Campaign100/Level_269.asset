@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_269
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281760182
+  - serializedVersion: 2
+    rgba: 4287985515
+  - serializedVersion: 2
+    rgba: 4280624419
+  - serializedVersion: 2
+    rgba: 4283578396
+  - serializedVersion: 2
+    rgba: 4283849804
+  - serializedVersion: 2
+    rgba: 4279636491
+  - serializedVersion: 2
+    rgba: 4281285185
+  - serializedVersion: 2
+    rgba: 4287408614
+  - serializedVersion: 2
+    rgba: 4287453755
+  - serializedVersion: 2
+    rgba: 4291336072
+  - serializedVersion: 2
+    rgba: 4280898167
+  - serializedVersion: 2
+    rgba: 4289568946
+  encodedCells: S1:4:4096:BA13F77B:XVVBb9vGEv4NRF8rA7yt5aYSdLFWWiZPPVlrpkp7qW1aLdxLRXroRrnItLhBmUucNGZanfSE9C3hk9KiFaEL4Vj0w56i1n2yHn/UG9pNm3YgSIv95puZ/TSzO4nvx39Y9Gbx62Aax/cB3u9MYmccv20IDMInP8fLuFgDBpO3+Wjfhstl+NGzwc9ZBh0AG/GX+f4SP1mcTbNBGC4Gs8XpILwNX0LOf5lhzOlggR4yRDQLHz4LD8LBhWFj/HvQnC6mSMaU0RDRLBsc/BYeZJ9QCgDHFVibxlke9oPnp/I4PMYV+MgPLfCBzY+BhkvcC0N5JUvPF3NcfcYQX9TsA4D5A/s73EGHf0tCrrJ55XkYOhDuX2YDDA/zBcCTUGZzKeXxeHh6epzF4QF49rPBNsJMOjA7RehUlo6zrCyj0tU0gt2nDxYXt3O+/ApWUVg5mchwifpeRVFW7kATq6oz2wZZ8o2XUUtOoqswxm+JSn0FiIsQ8gNyRmEk+UTKUzmeTKdlFKkEzAHGKdIRZ+aoZWJ1siSHmAU9S4zZ8KJl5/m5Q+m/OIbILYrlUEZYEsulQycb8D+kLzgbteQba3E8kwMmxkecO4xyzqQc/QHzmg0m0usYwcf6GHMYkszfUY4UGzAB8pl3xBiMbNZ0bnB+bXneOH6Jh4C+yzAYa+LmDTnnj+PyRpuXx1hbzfBnXZuZ+YFvLKvY4Km+yWGOKWouTbGWu9Q0OR8hfHT5Rf0Sm6QyJuVlLpSfJlgoM+GafZE3EKLzzCIbpANHLvgGMKwC45v8GhyoMAzCSmebbIJjnNNcKpZraT6dZwNNW09PUv2AVNOgCXXfS7s+s2coFQc9tJ8WtBXtsaYdkEM9ceEoBb9hUE90UVG4/fruiXaDPyQbhZ7RqfkuY2fgiQakNbf/uvdYUyuartKQkDNKO6+E4QsX6Ey0U3FuPc7xC1HAlv2AZGSrc2dPdP1Z+1wEyqq/y07yZlaWZdWtzWspj74gfWRa/NCitYL1tnG+w50W8yy+sbkxJMMSaVvt37E6fcO3qEHIBkgSR/RP7g1e405t3yGt7f73rVtlWfpL+M0A4wcUJpJRcffOSG48+Tse7nRbRc4p9Qz5Q1w8/Atu1TY/4s6reInDAGa5Xxy2LNi9gQAX9bw+1m+P8tYsFZu17y2Lta096/zcAtru162dS/Khp9Ahiv9J28b2ye1g/YbP2u3wNSkSsrZT7zejOIKmR51N+J/w8c4A8B92AbZcn247NY/h9IKJw2jydD3vfNN09a6JCxBt2+TLaRy1+Eh+fpSeuYzOZkoTaddDtOv6oziWpdF/2oeH/YCIT1UqUmwgVdC0ZKYrpUZy0vLUP5QKhFBCP1OFpJB0xZllpT1NUwGXrQ496SvVoO3DQk8UcO+zhhfs7TeRsNY3xtNp1beVuuW3+yq5wECFAGMJj9pb71e95ovyZLzvK13pSaqvqEAF+rrneujhCtezjWa8nEqptD1bYWU9tysSw3cNShk5Urf4aChLk7H09VRL0scrSaInSgka+O7qvifWaqUfh9OvK6UlPXON5CxIlOY2Avs9XQvqeRGiQ3+JqqK8avjvGIlBld6DxNfxZEqlWGs6xllvTY+El/YaiRDaeu8dYQfBSYWsIV8Y43uvdC9VaUPpQqdC+zJ4bz3wgspadY30RWWrVDVF7xsVJIV1lLSwovUanqCVapUQYuyukTRANVLVO9fQUHXUXBiet0o492zTo6IfKKUpyucrupZoQfDdeZA26CotbtEa3dgWSA628w6tf2p980jf2yy+Uh/XKUWF8FrzjCYld5uk3Q8MXuSbfUq5LSiteZ696hQ7tAmYBMdfIM5JFYedKmXYTU/gfVHbgXF0z97+9b/5E3n9kOL1k/+Uyx/aVrZzGY/v0x9skr+Q17ZE/HqN3/vZfZqNnc4d35hPf/zTAR/heJB9sustqlY2jkz2i/Hbo5/ePNAD9AnDLHv0YL6wd7P/Aw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe00000000ff00feff0000000000000000000000
+  conveyorDirections: 00000000000300000000000002000000000000000000000000
+  conveyorBucketCounts: 00000000000300000000000002000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 28074691
+  displayTitle: Retro Camper beside a Mountain Stream
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 416413b882ae35e4e92845190f5d1f9f,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_297
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278650375
+  - serializedVersion: 2
+    rgba: 4284101664
+  - serializedVersion: 2
+    rgba: 4280035134
+  - serializedVersion: 2
+    rgba: 4289956223
+  - serializedVersion: 2
+    rgba: 4284249241
+  - serializedVersion: 2
+    rgba: 4283581249
+  - serializedVersion: 2
+    rgba: 4287126089
+  - serializedVersion: 2
+    rgba: 4282459673
+  - serializedVersion: 2
+    rgba: 4280762206
+  - serializedVersion: 2
+    rgba: 4280097308
+  - serializedVersion: 2
+    rgba: 4285573084
+  - serializedVersion: 2
+    rgba: 4285744431
+  encodedCells: S1:4:4096:9C483075:VZRBb9s2FMc/A2dAc9lcwmWzivFiEAlgd6ciQC65dIGCJuvFDcIpWk9GWhYbLxJQhzN8CYwEUHLSjGoOl0sRpECmU4WsMlB+qL0nu21KW4LE33v/9+eTKGPuDGYSw53DS7+vqool8/nkcwAzfsWB+mGpHGNJcjfdZy4xM+1mwBOtXcLN1wJ++YyVGy0GV6111eLslfm6AL9lvh6hvlIV5yzxa+ov+IyVLcO47z8DrlrMn08f1UEYwxz3wRUYqUrHWV0T5/15gI+cs5Hfr45mo9q9P68AvyNcQNViKxUzfQXWX5V1FvMThofxB4w55TOV+IeHDt34kMFYCQeEYHqpOWoksw3eTwzkM/8RQ7yCveKQz16V0FdWreC0j3kwHN6VHM6AnD7kvN9iZcnZgt8yuGSP6jtYeetQK9fH9AXnbD64Zn5ZbbjSlYyjrdrbl1E64LdKoQ9AfBHQuhvCS7X+Q185Xt2V/qLDq831Fab4AmC/4RorVi2M0k4drjC96RZ8GSQBOw5R8L/d7MOT11yjP7CAfAR+3GW6VS/Z6XXer2ACBbjjPe6W4FmGQghQ0ZXbWK+AIedMsSR2runcT6ItxA5MlW5z/YVzWNCBjnvec44s+BW8Em5T1wLwd1ppRcn7qjkDLibibelutdbqUAHXTrtKOY/MOJm5SwoBjz9CktuABvMKjCi8o6g/wwKisftfLao2wKbGAjAIyZagvrsUwu4gd/Bm3x7OHcCfxn8vkeWZow2SXX2c56sKiP6UD2PZXbaJuPf6w8I0mHOf9ZeghD4VYjzec+4pgufqU3Wt6/z3R2Lcyeixdj8HMFZrDiU+aNSn5PeskWZnHeFcEFwH238oV1XgAw+yGJSm41Q/3cd8pdDkfEBxkkkZZsdpmr58inj/EztC7hES5rlHxsCHwTbwFwvMRkapIWjLgSVZigGYfr1INiXuXDqkcSgj0hXAx8H+dvA6qVuEOzcZGWJIHE5pZpHvQPpJkCSvYIuypByZJqMxyUJrs27aRv2LcfB9Mqs/ZG7EzJRD+cxQm9H0HnDR6QY/JmYInwN4oUtH/CZwO2xamnbS9Gx8IcZ/GhPX36oR8wkzhAztkAIHA51xh9oum3OwBt5MdmmHltr2uIMdSq21D5oxfmr9ph+TXK5508ijon0Gb1h6DtgeAAd/zSbF3sjYrDVJBhFwC5TasyEom+X5Y+nuWS+H+iQ7bjcya7ti64rQ9hNYN4xvCJ30DBqgdCwuUJ12BKHZHslAPgN9Gw+GIbFQfYz4LBOrmT2YTCwqfEtsHptpNOcgv0vbYpXY7kRY0oTf8IOXTTGPiBSwvejCPtvdPem0QYBAwMCraUYm98B9I6P3J+L66vq+EF0K3e1JaYnNvIGUAzndKR6LCyKKcVGADCXTJpEHIcTIX6WFkO2tm+AG9rEoCvgc0Dj2oD84chs92X5DI7i8vsmOd4qi09mi8Ujm0kM+tXA6lfLdiRx0QeD6/OG/v4XllNT5azYEiSgcYky+fVNAE06K4kECz5bJyGujLp3AaRB19w/eydW2eBucf+cF+8//omIPgOfZKJp72X4dDhr/kJuiKFalJO0JJto9GUqCV3KwZuXD8yLoPNxFWQLWIkki+VKSRgPXIhtDefJmXwa/oGsiczqBHRa9hDbuQY0o3wpgw72xcuu0G9pc9kgvhw5MenIKRoj0Ynm6P0hOQPb0IAf/1kYyhwcCUbLnRTSK8j0TwrJhwf8D
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000fe00000000feff00ff00000000000000000000
+  conveyorDirections: 00000000000003000000000200000000000000000000000000
+  conveyorBucketCounts: 00000000000004000000000400000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 31007103
+  displayTitle: Stargazing Child with a Paper Map
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: f773fab880a035c49a71432ef3c7cf8b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

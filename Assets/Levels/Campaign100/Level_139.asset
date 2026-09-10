@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_139
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279505950
+  - serializedVersion: 2
+    rgba: 4282870997
+  - serializedVersion: 2
+    rgba: 4283006448
+  - serializedVersion: 2
+    rgba: 4281362923
+  - serializedVersion: 2
+    rgba: 4280691269
+  - serializedVersion: 2
+    rgba: 4280496756
+  - serializedVersion: 2
+    rgba: 4281353358
+  - serializedVersion: 2
+    rgba: 4284133116
+  - serializedVersion: 2
+    rgba: 4281028022
+  - serializedVersion: 2
+    rgba: 4284835716
+  - serializedVersion: 2
+    rgba: 4280702937
+  - serializedVersion: 2
+    rgba: 4288854742
+  encodedCells: S1:4:4096:D81B042C:pZRBb9s2FMc/A7fIXZOd7ACpk54sA03aXToxNlT1ws50Z6UXpzEFu6ekMQnZObXYmgG7RHWsMToZmNFN6KULa03hLjkEBYx8qD05brGuQy97BmhJv/ce/+/xSav5z9vq/+Il83O8BDz7h6VU+ie4MVsLZsk0b2dLZuBWmD1+dgh2IwuFp4XbV7SQv3Iq5J8fzmwdHLLkq7PwwpUTuD07nNv6LJt5M59/vJHFQ4JCIV86/GCZetO8aZosyjLPsv2Tl+b6PCbsK4Hvxc1ttuf6Uy5CWZxz8/DfvOOJMCzumebT2e0nnDOPyRW5YXIOd88/4T3BmEwiybkorfwH73geCyAJF2AbH/F186U0BQcBHm+zPnDp3fqIB7LIgXuSFcWeEHuhEC/edwd4UUq/B2GeYEL4fnYVyp/mzcs/uyHnnMFz4QWCg6dIRTU7PjAZhFL0mC8ycR4gz4eLMBS/zI4mKAawf4exNqTgYpu/uzw4uISNZDgfkyDI5ztsVhkI4K/i+OIiuxFR/8M4ddgwFFf2bjwe9bJ4qESsiI0Z79leVfJZeyCeTAPIVRQiL0IRiJW9/In07ySa9X1/r0HGgQ8yJzzcCPaFqAbSFydSpjjth4NTvY/GB2zoC1BUlFCHL4ovJfDWUEd64GjHGitIvSJs6LQQxTt7RbmWaOm1QuhUOgzT6UD52CzIokwjjKNiMVgLE0rpsXzCpdTObVzBesPC2FIYY6U0tzusRZlTxdteiqNpJILyLUrRA1R7sDW+vyNEh6daJ7iMNdZLo7+wY9Yp6lKj67oXy23x8szTCjwiDBl3UAWrLUJ+QIuGQeifWJ06oL+tsKO0M7Br40SvUWQ8JOT7Eb1btsyBdQLBTltqXP52/9X0a30NxYjQZuxOQSEe2BCfhKnmv/82hhh0cfmNsX+EccvBllU22xy4zuw6QaM4ji/j6eXl5c8LL05xHgQJ6K8PtJ1CC3Nu7LoIjIwQGWLsYCgroV3mhBxanCISx0DPEXF3N03LwuWyaW3TVh12ACkY5YAT9xwZMXpTtvDysYUt12h1vWqm9VejPoqNkTul49fGPYx1uCL3i4uE5NoNwDVknI9cF2TSry7YhYKysXSUS9vH222EjhbQlUEVD0c/ou9WQH/ZWnZlJMMlgtC4uY/I3RoZ0+kB6kERcfl0reCfyAaXBmRdTZcQspfQyIgfoYsFRN5VrZ1b1lnW3yxtZQDrJoZtpiNkfAFlbj5uc/MMRsvO9r2Lc3MejwxioBHajJ7i8lmUOo4B3MYIGXbGF4F/ic4X75XLedOtU9qCSMoYZfXWDly+PkfxAhpNzTJ8P04GOpIeY5yB1RmFVIs9QhnZfYe3H5tm8lYPoh01wbideVxnCPUeacdWyslGvnEi+w6eOInjYBsrbWud6mxy30b2snQo7egGC5WDtaPxoG47KkqjN1qBH9eatVpJn3a9Si2RqVa1VqIjeyCh97qi0FC1WO5+jdJ2F6tN1di5hlo4myUniqRWWsGbQ9ycQXe5wBCPONuSqR0luj8ZKqxq0Ka6axDS5G+2jiesSY9Tnc1KpCJqt1iD1eu0021A83JVyBfpTPxCfRc7Deoj1KQG/AhvoaNEPqEi2zpS9WafVbRdJwChsV1SJ2iYqhpiodbSr2ReUi8ZVBCYCnQPvg6NRMPhku7sRXhCJlrDUeT4LvQ652o9ZKnPODnarfIQZEzSSHshYw9ZE940SKobwzQ6cqJJhHITNdkileFxrcnQrvBScTLRfRjkNlqWAc3tHuvoGkr+eABHBZ88P238DQ==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe0000ff00000000000000000000feff0000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000040000000000000000000000000002000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 14459921
+  displayTitle: Solar Rover on Red Dunes
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: e5758cd18fa6f1345b7c44ce3fd9d875,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

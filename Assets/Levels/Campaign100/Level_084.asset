@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_084
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282548672
+  - serializedVersion: 2
+    rgba: 4287863178
+  - serializedVersion: 2
+    rgba: 4279513135
+  - serializedVersion: 2
+    rgba: 4280172120
+  - serializedVersion: 2
+    rgba: 4284167431
+  - serializedVersion: 2
+    rgba: 4281362844
+  - serializedVersion: 2
+    rgba: 4280043582
+  - serializedVersion: 2
+    rgba: 4284770893
+  - serializedVersion: 2
+    rgba: 4279573266
+  - serializedVersion: 2
+    rgba: 4288510785
+  - serializedVersion: 2
+    rgba: 4280441944
+  - serializedVersion: 2
+    rgba: 4280897405
+  encodedCells: S1:4:4096:63A0D54B:XZVPbxu5FcA/w8CCXCA6qUA3SE/G44qejC7KENK6nlsgBIJPgoQJDM0lpZwnhz25COyNT4XWUWftU9vFGsopHVtUSl2EIdQa4Yfqo5KiQJ4gUaPf+0/qcf5DYv8z786/ERY3WSwECJvZfvaPb/H8KQMmSOgjq/bT+fxv3yoIkYi4JG5dlr67fUK/1f+nRA9/iGNhvU7STp37k/G/1utfOa1PCUMyTCDO0nSz0mRTr9f/H+Wpc3F+YK0ABsO+M966Xn/n0S29Hz+z7qccNsKHEBDHc29er5vbdxe/zp88+92zYTLNwfoSSUHA7ZP6d/X6H9XFXJ/Xz7Iq8X2AkpViK3+f18/0xRl+vLxUl7c/2KBdEg9FE9qbZuySu9+Tb/1Yn3w36asz7KRUWAQXMbnfMLDZ68dnZ7uv/6nf4rKnJmknbQt2CPvEkzSEwUbrs/3ZvZlc904uI3PPsWMFp/jt83J9AZChupxoZSaz/IRr84abzjDxXEhRPaceYaqWiFr1jPGL7h+mIgYYtGWnqUGu5PUbYzS+OuWkYPCoIHtg05I4kxEXY22UUnqjn3eV/qg/KKOjfLzlDQnxnSSjV6jf6ryHeCoVSnOds5x4LAE4M0bJvyhUGP5Wn7/RJCkC5LYBlVecnkYLpY8UIuafTEGLujyO4p9C14adBi/em9En1OildyrJi8YPE4Bp/nAzjRsgj5b6Vm+5en6PRutdRU8mym1Txg3JNEbK8+I1Hp2M0MzuyYMevYYKg7IRWx8Yd6kzS3PUvfbuUaK+4qWrDGyDobeNYmog6hdd/YFW0lVLxUpWGTb0tmUIBheoXnQpPfS9WigsE0haQ309wdFbzgvKjPgpeTELdVRVLII2F6vi8F/Kd0R50O3eY1X/emyUKRTfWW/EGAuPqBx6md4v9+ZYUwwujTZNIfvtsYRTHSl8QUF195cTFUn00S6PscxEElM2M/KMQHuou90rypX7M6BHXJSuCZS+5LufoqIwatbtdmn7V2iWhuMMmlji7o+oo9GSXJio57k8X6jz3ygg8/Fwb0z2BW0mHQGTb3lBwSU1AY0C2084fZ1IjqGJvPvuybmiPQTqcgTjzDIqO+BetNzyq1AVxNXPtEcGBgm1VlNFUhbyyvO3knZ8IdVfFy9HtaYUVBaql0tUU9ndSvE9l6/ISOugyqyT708j+UhJCc+/cF5MgVrAi3+nG9gDnUYyokMawvPeNn4x9emjPFRCFIYIlcc1l9MXW54bygeKfcQOc8AhQtZZchmpMM97V72rnLo9QThGfLR2Mh6JRD7al8B5/lWuZXFs9EjxQ8cy0c/uaDc7M4VfcUjRX2pKR5jPd+maxiOT2NlHfvAF33CjeWFQpErv1JyrpRtBJxRyEdJfLozXgIp6fjhyKcbWuX6t3UY12MQH+YGgmdYPmvxzVIw2ybgEl9hhLRgG7axhhR/pthIEgRumaRAke2vhhFu7IKgGWSthwk874n3S6H98yWLHnNhZOzTrwLW+zvtqlZSrFHbM4WHnwFVcgtwO3ZdB6c2DIN24rIpMfoZEuMoedFiLTGPPhxR4kbrauhbXVpGy4qbZiqLW1nvMAPyarJxb09ndK65zl9MB1o1+ixhJ/CWKdbaxATPN8wOagoUpDmmGexlsabNTgsks/6QhlFC6VWEWoh3Hg0ZSJivhmh2QOrY0DMnEkbPBwvdg3WpURNBvr2wjD2ua58RnD5SLZQO65YJWUKlsi3N0cziaTzqkKWUTl0Bpna+8Re/GwNGVsFe+z8NpPg2nQjiHPHGp7wxp0MUQlo6V7qGZhzl5se5mygZuk217d3cHcLCdfeGN5OQCHnKI7qQ5DIJNv5+lCxZOC4gIEPQ8n4LKeUF5uHSTOkbGM8mnU4oOFz9efCPbe/DsYn/78Of/Ag==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000ffff000000fefffffffeffffffffffffffffffffffff
+  conveyorDirections: 00000000000000000200000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000200000003000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 8699826
+  displayTitle: Palace Peacock
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 9827e697a9be9404da5c7b588805fd64,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -9,11 +9,10 @@ public class AdManager : MonoBehaviour
 
     private string placement;
     private string progress;
-    private Action onRewarded;
-    private Action onNonReady;
+    private RewardedAttempt rewardedAttempt;
+    private float requestStartedAt;
     private Action onInterstitialClosed;
     private bool isWindowOpen;
-    private bool rewardedSuccessHandled;
     private float lastRewardedTime = -999f;
 
     [SerializeField] private float rewardedMinInterval;
@@ -31,14 +30,15 @@ public class AdManager : MonoBehaviour
         }
     }
 
-    public bool CanStartRewarded()
+    public bool CanStartRewarded(bool requireAdView = false)
     {
+        if (rewardedAttempt != null && !rewardedAttempt.IsSettled) return false;
         if (rewardedMinInterval > 0f && Time.unscaledTime - lastRewardedTime < rewardedMinInterval)
         {
             return false;
         }
 
-        if (GameProgressStore.GetBool("no_ads"))
+        if (!requireAdView && GameProgressStore.GetBool("no_ads"))
         {
             return true;
         }
@@ -49,52 +49,39 @@ public class AdManager : MonoBehaviour
         }
         catch
         {
-            return true;
+            return false;
         }
     }
 
-    public void StartRewarded(string progressMarker, string placementName, Action onSuccess, Action onNotReady)
+    public void StartRewarded(string progressMarker, string placementName, Action onSuccess, Action onNotReady, bool requireAdView = false)
     {
-        rewardedSuccessHandled = false;
+        if (!CanStartRewarded(requireAdView)) { onNotReady?.Invoke(); return; }
         progress = progressMarker;
         placement = placementName;
-        onRewarded = onSuccess;
-        onNonReady = onNotReady;
-
-        if (rewardedMinInterval > 0f && Time.unscaledTime - lastRewardedTime < rewardedMinInterval)
+        RewardedAttempt attempt = null;
+        attempt = new RewardedAttempt(() =>
         {
-            HandleRewardedError(true);
-            return;
-        }
-
-        if (GameProgressStore.GetBool("no_ads"))
+            if (rewardedAttempt == attempt) rewardedAttempt = null;
+            RestoreTimeScale();
+            Analytic.RewardedWatched(progressMarker, placementName);
+            onSuccess?.Invoke();
+        }, () =>
         {
-            lastRewardedTime = Time.unscaledTime;
-            Analytic.RewardedStarted(progress, placement);
-            HandleRewardedSuccess();
-            return;
-        }
-
+            if (rewardedAttempt == attempt) rewardedAttempt = null;
+            RestoreTimeScale();
+            onNotReady?.Invoke();
+        });
+        rewardedAttempt = attempt;
+        requestStartedAt = Time.realtimeSinceStartup;
+        lastRewardedTime = Time.unscaledTime;
+        Analytic.RewardedStarted(progressMarker, placementName);
+        if (!requireAdView && GameProgressStore.GetBool("no_ads")) { attempt.Complete(true); return; }
         try
         {
-            if (MirraSDK.Ads.IsRewardedReady)
-            {
-                lastRewardedTime = Time.unscaledTime;
-                Analytic.RewardedStarted(progress, placement);
-                MirraSDK.Ads.InvokeRewarded(HandleRewardedSuccess, HandleRewardedError, placement);
-            }
-            else
-            {
-                Analytic.RewardedStarted(progress, placement);
-                HandleRewardedError(true);
-            }
+            // Installed SDK signature is (onOpen, onClose(isSuccess), tag).
+            MirraSDK.Ads.InvokeRewarded(null, watched => attempt.Complete(watched), placementName);
         }
-        catch
-        {
-            // Editor / fallback providers: grant reward so flows remain testable.
-            lastRewardedTime = Time.unscaledTime;
-            HandleRewardedSuccess();
-        }
+        catch { attempt.Complete(false); }
     }
 
     public void ShowInterstitial(Action onClosed = null)
@@ -136,22 +123,6 @@ public class AdManager : MonoBehaviour
 
     public bool IsWindowOpen => isWindowOpen;
 
-    private void HandleRewardedSuccess()
-    {
-        rewardedSuccessHandled = true;
-        onRewarded?.Invoke();
-        Analytic.RewardedWatched(progress, placement);
-        RestoreTimeScale();
-    }
-
-    private void HandleRewardedError(bool error)
-    {
-        if (error && !rewardedSuccessHandled)
-        {
-            onNonReady?.Invoke();
-            RestoreTimeScale();
-        }
-    }
 
     private void HandleInterstitialClosed()
     {
@@ -177,6 +148,8 @@ public class AdManager : MonoBehaviour
 
     private void Update()
     {
+        if (rewardedAttempt != null && Time.realtimeSinceStartup - requestStartedAt > 180)
+            rewardedAttempt.Complete(false);
         if (disablePeriodicAds || isWindowOpen)
         {
             return;

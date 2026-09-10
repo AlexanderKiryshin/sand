@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_181
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282928752
+  - serializedVersion: 2
+    rgba: 4293456612
+  - serializedVersion: 2
+    rgba: 4290746116
+  - serializedVersion: 2
+    rgba: 4287656219
+  - serializedVersion: 2
+    rgba: 4291737117
+  - serializedVersion: 2
+    rgba: 4285026592
+  - serializedVersion: 2
+    rgba: 4292726615
+  - serializedVersion: 2
+    rgba: 4282461208
+  - serializedVersion: 2
+    rgba: 4285888604
+  - serializedVersion: 2
+    rgba: 4292270508
+  - serializedVersion: 2
+    rgba: 4284781249
+  - serializedVersion: 2
+    rgba: 4289829980
+  encodedCells: S1:4:4096:6239E363:bVVPb9xEFP8Mc4lcfLNAKQ63iZMW5baOlZVy6mYwcIN1X+2QU1MzwuplRXFmm14gxdppcrJozQ69uIcqlblUWoU02g/Fm7Gdtoi38cby7897897sOGOUpcpVirtZlWXKwaju8+oOoxmrPEq/pJtMqVK5jpNxBLNVR3P5IefPGeL0MAy1g+Pcf67FGVe85GlVeYpTOqKbYVoyFvLPVlHE8Y/zMqw4T789RDFlIX44d3jK2Spijiq5KjOWZp5WUxoeCQEPOa840u6jecp5yNOMex5l3oh6TGDIkGeZ9s8QV4yNGA/pyNSXbudImD3glcrSEBObK01D2saIPdEOM10B1954k2IB4WaPHwlD+NGgDEkhw9AFaNgbsVhnEDd7NUeSh4xWjgb3DC52Qs1gOpGJzt9L70FLuIO1YTO1vddVb3AG0JZwyIw0NeIeHzF21BnErLPW2KhPgAKIuww9zrQx9c0IsFsx5Ibw5zXOtH7d4Mi4BxC3GUKd3jMZmJEb/AigX0O4KEHcxP1DB+tt/YizCLo1iBxELG5+1VXfNoixa72YPY7dq8u8b0+3gh3oDOLF0lkul2L2AY76u73BYmliikbv9R7b9g0hvmjh5WOk3qJdjdjCbT/Q/j2M8cTgdGBKZL/4uIJ8Z7no4d0g/0Lj62iBHbircbh4L6Z0vNVm9zEF+iMeLA9a+EB8jcBW5z+gg1ZvMKEvgXr6Aq+94LYmmfyL9+4G15FE62aK275/ndx0oseDiJox+j4i2mE3Mp241eJYlKnicrHcbdfl604hQT8+GUI03NqiP4vL1to3EaCFwcfYtAQLFLmRXuzkcSACJPgGH+xGUSFvD8Q/uGQYX89jgDli/X8cBVBMgw28jeiH8SgCfEijDT8vgr6JH8bY4NPAT6Ih/b8YI34ii2AIILulfkzABvwNzWsoMInZyMXGoK+v3bgrcNqQya8Bth4fFEPoxqXZY3qbwkptE6uBaE83cXzRjVt/7UXrwUuwyESQugkCqUsAPM429CwG/kkBr6W0yeTcEsRKCihAj/kkCUx31rGvUiY3SEPERFjf4TyGepXyG/yp6t3O4OkPMnlpkRonTeoFRMkDvnki9clQ4dH0ewISkvkNUhfCEjUcFCB/0oeTwoO0YvyswJxnIMhkLs+b+NMhFIVUSlVK4WGfKpwqPIUktt5KxP9qTuFsH+b6LYCnM6/Qe38f90AEb8WsaU7t5t3u98GyUviCUMr9DfEiSbTJy7ll17bdqKuHqNXvmdIpz+Dqj/35ARRzpS4KUtuT+tUaZnecUmkDvHOT4S46Xal4b8Wqm7pZkyhXBnYNR79r8FvAI8tuMLBf0mnV6FKWeO+WroO/FEJqjONnEnGswDUOrtNaxGJKbJuc28fzfTlHARaBLDRwTQaxnJ83DSHkdP5u9qpBW1dphjKw9r+ckgk5JnL/4nN7RZol4OU6hoD+cipwHxzPpvmzCS7F+TjiOJaBmGCJkE+JsJu1a8gYxBCf5cKqJ0QUuTgnZK0trA8RxwCXK+i8Jl68+YQU//G3CMFdgvXXzZvafmNa1TSv1mxsqYN3/wI=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fffe0000fe0000ff000000000000000000000000
+  conveyorDirections: 00000000000003000002000000000000000000000000000000
+  conveyorBucketCounts: 00000000000003000004000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 18858539
+  displayTitle: Manta Ray over White Sand
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 98b593fa59489d248873bd8d4894f190,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

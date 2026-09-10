@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_295
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283781973
+  - serializedVersion: 2
+    rgba: 4292526520
+  - serializedVersion: 2
+    rgba: 4290172136
+  - serializedVersion: 2
+    rgba: 4292792784
+  - serializedVersion: 2
+    rgba: 4285168008
+  - serializedVersion: 2
+    rgba: 4292405493
+  - serializedVersion: 2
+    rgba: 4291145901
+  - serializedVersion: 2
+    rgba: 4286226622
+  - serializedVersion: 2
+    rgba: 4291273620
+  - serializedVersion: 2
+    rgba: 4292317529
+  - serializedVersion: 2
+    rgba: 4289560428
+  - serializedVersion: 2
+    rgba: 4290351233
+  encodedCells: S1:4:4096:8DA8BE96:dZXNbxtFFMD/hlHY2qi5MLJS0nKpbKdU6oXtaI3bXow1jSVyqb2MSZVL/DUsycVyl6zUU52PZZI9VUgoCzdAYHYvSZu6o50/ivfWSUFQniNrnd+8z3nvbRyD3HSFw9hx/H/yFDFj+fO3P/6XC4GYvYyf9uPns/dxFwyUmOso7fOf/o1dkRsQbkcqvWu9Tx3Nl8sd2Z2b5M934Calpxgdw/Aq5c4brZMsMe/4A0oxescF84472MzMLAFZBMCmcX3BMTv3zr63FW7Nk/wE6paoTXMebwJfY3KnO6q89pBn8TH6pgsO1WNr5f78oRumaZamSZKaBEzTVUqnEB+Yr3Sk1F3hjDKNPElOFK1k5pNb8UtMz6mUa/NH2hHzRKk8gMT05mliIsgPw3OZNO6mOMrCJJqdIM+0yTJjTk9PY0jufl9CEWszpXSmI5VBBAbUgcfx8QNWcTqiLIXw6ioCB0onJksTUDc/H0/j2C5DhUpdcf/OJp0CNypZCBwA/VhU4IIG7U0w0JsqbdY1HkB1Y45/OGWigyHWhCs8pQ5mG8HhIgk84YopKAspZXfUdZRRSk2CllJX9l3HdkV5UAMuakdK1/XdSYtr9StUETkk53bESMqwLsIjpaJwL5jwi+g3tA8HoDMW5lVdTKfh1Cj/04Afqj+S7CLVmYHGWOsMQF3pFaX2vSjsPrbCVB0mO61olhkbeB+0lVb7B973Ss9lk8uLQjR7DlmcqBp0Th+0gc+l11SvanfLfWmsKPuyoBJ1Wgf3I1TPlPbUdbV0pzrZ5sYyh3c/mMFtMhd5+LvJIhXpfa8+WeIWn/Dhx5t9k5ygOpQeTiSR99a83dvyy+VhYZtY1tY1k9ZZG2dDSBVmyjO7/b1OuQq9tGzk8r1fzJLNuoAHo1CFxuxeNPrVtVZ1XCgU1vVw48g8tksV4fRKwLUxw+rkG/+7ljWWBcLPvMNrw9eMCrfUHmB6aTSslpvjZnF8W64XLGK2QylxKKG6Cnn2uc+XfML5mLesAhlbL84eAocAQ2Uis8x9bgVlXuVy2GzI1pgQktSY2wYLHcds8HG1OiF+gRfIdpMQSxJwso3xg4PS6w2/yauTcavh83mDb3BunZF1U3hRg/xKVMp7QTMIgklnKbCIHwSkQaxIn20P29B6A3pDdidB8HVHvPH2CHDOCWkUCTlMhTuSgxu9gbsGfBTOI02sRgf5QlwXemfUk7LXXRvNdZqkhFTNFWYDAcWB6/ekd9B1sKsJuf3KnCzn+IljfzUKPSifBzV6E2EbGBkanX54ySnezaXoqwdjEqKuA98W1Buwvw9E+B2ZzEBvgweoDWRuh5dKBnpMqdTAJ5EQyBMhVugAWx+VQE5gcoGC+Z0QAxUupZAZhJ+PaooDhzOJo5Uk1z6Cu8d5R8/5AeQqXdDkFqtB5W3kmwIv2KSLtZEudsNDhjudgYMQOlgc6MutcYl3gDnwoVQeCKfkAJ79g2f5C+NZ8TNKcfuX6HmkcJ5hZ2QZ8BwzuGsXB8CBZarSDAtjzDnkRpnNAkJaReI6OaXCXAm8aCgt2c+gAS1CbOgfxGLlitfxN/1ibJGGTwhto35bUPv8kkePSu0Vuj5uEAImKIUJXskjBKRzjiYDiA0FdUHAIuprg3eILzMrQNoiwkHsQEjnLiy/CJpgFepW4RA7zBDB6cbtm79M8rtYpYwDAV4E/+DZZhS21BX3bPYMRqDYIqQYFAlbyTUXBwBDvFi2lsVJy7csgsXoUfwvPrCDVcYG3GrAn899SOEv
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000fe00000000ff0000000000ff000000fe000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000002000000000000000000000000000004000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 30797645
+  displayTitle: Palace Carried by a Gentle Cloud Giant
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: cf693f3259a56c1499cc7a36c7e7feb9,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

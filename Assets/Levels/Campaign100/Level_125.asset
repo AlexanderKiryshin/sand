@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_125
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282934183
+  - serializedVersion: 2
+    rgba: 4289428028
+  - serializedVersion: 2
+    rgba: 4283144940
+  - serializedVersion: 2
+    rgba: 4281279790
+  - serializedVersion: 2
+    rgba: 4291026147
+  - serializedVersion: 2
+    rgba: 4279437829
+  - serializedVersion: 2
+    rgba: 4282401114
+  - serializedVersion: 2
+    rgba: 4280554507
+  - serializedVersion: 2
+    rgba: 4281868559
+  - serializedVersion: 2
+    rgba: 4285349136
+  - serializedVersion: 2
+    rgba: 4287255839
+  - serializedVersion: 2
+    rgba: 4283509774
+  encodedCells: S1:4:4096:CA52ACB9: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe00feff000000ff000000000000000000000000
+  conveyorDirections: 00000000000100020000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000400020000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 12993715
+  displayTitle: Lantern Jellyfish in a Moonlit Cove
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: f4103a44c4ab3364b9e5ab9f70aec36d,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

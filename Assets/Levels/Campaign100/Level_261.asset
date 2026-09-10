@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_261
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4292327558
+  - serializedVersion: 2
+    rgba: 4281880386
+  - serializedVersion: 2
+    rgba: 4280825645
+  - serializedVersion: 2
+    rgba: 4282620308
+  - serializedVersion: 2
+    rgba: 4281692352
+  - serializedVersion: 2
+    rgba: 4279836436
+  - serializedVersion: 2
+    rgba: 4280303213
+  - serializedVersion: 2
+    rgba: 4284185229
+  - serializedVersion: 2
+    rgba: 4286425029
+  - serializedVersion: 2
+    rgba: 4285495135
+  - serializedVersion: 2
+    rgba: 4282213987
+  - serializedVersion: 2
+    rgba: 4280636056
+  encodedCells: S1:4:4096:F09706AC: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000fe000000ff00fe00ff00000000000000000000
+  conveyorDirections: 00000000000002000000000002000000000000000000000000
+  conveyorBucketCounts: 00000000000004000000000003000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 27236859
+  displayTitle: Dhole by a Jungle Waterhole
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 6b7dbd06916a723458118a65a733a2b0,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

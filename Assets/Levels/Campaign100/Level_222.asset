@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_222
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279111185
+  - serializedVersion: 2
+    rgba: 4281954720
+  - serializedVersion: 2
+    rgba: 4280364060
+  - serializedVersion: 2
+    rgba: 4283127646
+  - serializedVersion: 2
+    rgba: 4286423493
+  - serializedVersion: 2
+    rgba: 4280233082
+  - serializedVersion: 2
+    rgba: 4279242818
+  - serializedVersion: 2
+    rgba: 4280510047
+  - serializedVersion: 2
+    rgba: 4280828730
+  - serializedVersion: 2
+    rgba: 4293312127
+  - serializedVersion: 2
+    rgba: 4284841097
+  - serializedVersion: 2
+    rgba: 4290958043
+  encodedCells: S1:4:4096:C8CE1327:XZXPc9NGFMf/hofcyB5zQQP5MelFWbtYhIurpTiIC8YKYZxLPK2cTE6i1CrDKTG0uwMXs4Hu1jlygLQXETlNZn2hE8+kWH9Un5wYOn2jHyN99vve27dPK8nY8QEhgrGDcyOE4/UGvpLv7gjFGTv7nRCHs7fnvCQUXu8Q0mXvDogQnM2/IvjE/zj49Cn9E/Xs/USv+LsbRGauvyHE6LKzPw4OPqUpETxN05vEEF3kQkjBHfSv5Pxi8O04vYv8/acJF/8MiVCC8zL6Z+znx/WWZS1N/Kc3CHRJbR8HVxS7iVwqRh2n/+C1QdSWNcJXonKMV4Z8KZuMXPAWa9QrAVFrrWvlLP8z5JIpVjm8mSrGB369fmsZU3KMOZTYbGEJnTHJKzpdH0ru+41rg2XSJWtaLxPDZrUSEZgYO9bjNH3B/FtXfQSksDa5dbvHyLF+cqj1un7N/FLVRz1R6tqHPnJxTLHYbK2fpHo70HyNuo0svjy50J9ken7qJY/0Yn2XzdNcw8P48v5gkFXcOcHBXCZp0nraqmOgWinJhIoNBhoHiFqCD8d07H23bT3gcr5bSjwbhfNNF7mtxhnvVJNBvN16xVlFlKi+jq8e9hUSWzQUsQtgxlpvry4pVSEObZSIkrW+m9jEHo73l+0wjKrGOBhdRz1RicaURa3sUpcoz010HEaBeTvxHy8L5JWME7VSJrlq7uoZ5fpKFLU7kPiNMlFLZblZf4OJu8TVbpHXTrH2yAMzXrfquGw4xRZHrvtE87M0s72Mz2jPqj/h7AVjFiOVJcZu1RnWVhgqvffEbHdiba5aLd5gks1/4MdMPpfMo5QmVBlR25yp6qgu5RyX/CHf3dqc31yQ6oTuud0zBpE50zGLf1ly+XuuVGuXbbLdFltzD/9xKE84RNFGaEI8y6USW6+CXewHhcf1nquoIiqMwqATEXP2keOILS4WRoxxlkry1PPocDDbg047aINpja4riV/BVsAc1V1lfoXVGi/ZMjyJrrRmwFz0f1NKoL3JRq2phc2Rl/iL6nE0ZwaXAL5fzUlFSo5SC0dSYTKbu3n6QmH8S3OrRwPQR2CVBS4Oe3209QYHHPK745cSeXs20OnX1qJl/bDkYFe1+ebRcPSn95aerlMKjzqznWRk+dcsy/pGiVcuccTJfi3WWP1134dgIzjSPwWBZbUs5fzoYHvLetNxvaKuUl9Htzei2z5YQAFst4BiR+2fjPLAcmJvpcTaZhCd6iIAzeFJlLvn3N8/GeR3GMSe1qxrdoIE0KrUMKDHQZFDfTIqxKxQzVG627vUaWcYbANy0GNwSA6LTj8PMt8sDsfPYSMwJxwIBgAFPnJSzu/IwvPCvaXnELZnJtiYHGmueerm3PLlnZfGQ9gBWQjnLvQ25GzMUnvVcuznqvuFRuGlUVHG3IUeEzAgAR3H5XujHBThITyDCmADneshi/8RmuPmV0mzGBdx7LO8qE7jT8IjXxwNPe0X45t2apxCvxBGU44W3wU/1X8nY4DETnMf4VRBK7qAo9HHFLcazx0PqRtfxoTRnwGt9gWnJTqxZnOUaq3jUjxu+j14NOV7E+piVWl2luhoMJ63ofNZT6ceyMWdllaIEQX/84+2cj4UPQJ0zC/6qTnn/GpuBczgy/yMKVdT/7UQwuAzx83LqMI0zN6xl6NgmtMFzhqsZ4iLWldxKhjEjMzws76ahT1vBjx7WPAefp/wWR9nbrO62YYDvJfHfrkyE5pf6o//D0qwDQ3SA7tQ6P3qXHmC8w8vUqgmRVxk/HNhq3Z7hOcdEuL2FE5DVCeFxU2fFOAXhxQqQmB2UdQBcwNx6E7mZRAbBPQWiG0rEcxdMvEbCf6jd2wbCwEVQZRTabc7YRC0MAl8hxPuqz1HSHC6BJydisJ5YgJzj9sREFpyV0p7CjclZMLJOCH/Ag==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000ffff00feff000000000000000000000000fe00
+  conveyorDirections: 00000000000000000001000000000000000000000000000300
+  conveyorBucketCounts: 00000000000000000004000000000000000000000000000300
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 23152428
+  displayTitle: Chess Master in a Walled Garden
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 5a9e8fb61c3e78f40baa4ac3e37db6ed,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

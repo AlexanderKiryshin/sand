@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_218
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282160773
+  - serializedVersion: 2
+    rgba: 4293259492
+  - serializedVersion: 2
+    rgba: 4283386139
+  - serializedVersion: 2
+    rgba: 4278650372
+  - serializedVersion: 2
+    rgba: 4286153047
+  - serializedVersion: 2
+    rgba: 4281349403
+  - serializedVersion: 2
+    rgba: 4285949452
+  - serializedVersion: 2
+    rgba: 4279308554
+  - serializedVersion: 2
+    rgba: 4280230417
+  - serializedVersion: 2
+    rgba: 4281686856
+  - serializedVersion: 2
+    rgba: 4290162466
+  - serializedVersion: 2
+    rgba: 4286171065
+  encodedCells: S1:4:4096:0739F50A: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: ffff000000ffff000000fffffefeffffffffffffffffffffff
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000002020000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 22733512
+  displayTitle: Tropical Cenote with Hanging Roots
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: d45ea78c0edbc854c95dcc9050f9a172,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

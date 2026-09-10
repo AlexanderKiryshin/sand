@@ -24,6 +24,7 @@ public class SandEconomyHud : MonoBehaviour
     private TextMeshProUGUI buyPopupPrice;
     private BoosterType pendingBuyType;
     private readonly Button[] boosterButtons = new Button[3];
+    private readonly TextMeshProUGUI[] boosterTitles = new TextMeshProUGUI[3];
     private readonly TextMeshProUGUI[] boosterCharges = new TextMeshProUGUI[3];
     private readonly TextMeshProUGUI[] boosterUnlockLabels = new TextMeshProUGUI[3];
     private RectTransform handRect;
@@ -33,8 +34,31 @@ public class SandEconomyHud : MonoBehaviour
     private float handAnimTime;
     private bool handAnimating;
     private BoosterType? tutorialType;
+    private bool tutorialWaitingFirstBucket;
     private bool tutorialWaitingActivation;
     private bool tutorialWaitingTarget;
+    private bool tutorialGameplayFrozen;
+    private ConveyorBelt tutorialConveyor;
+
+    /// <summary>
+    /// Conveyor should stay paused while Fill tutorial has frozen gameplay
+    /// (waiting for booster tap) or while Fill target mode is active.
+    /// </summary>
+    public bool ShouldPauseConveyorForTutorial
+    {
+        get { return tutorialGameplayFrozen; }
+    }
+
+    /// <summary>
+    /// Inventory taps are blocked after the Fill tutorial freezes on the first belt bucket.
+    /// </summary>
+    public bool BlocksInventoryForTutorial
+    {
+        get { return tutorialGameplayFrozen; }
+    }
+
+    public bool IsTutorialActive => tutorialType.HasValue;
+    public bool IsShopOpen => shopPanel != null && shopPanel.activeInHierarchy;
 
     private void Awake()
     {
@@ -131,6 +155,7 @@ public class SandEconomyHud : MonoBehaviour
 
     private void Update()
     {
+        if (IsShopOpen) return;
         if (!handAnimating || handRect == null || !handRect.gameObject.activeSelf)
         {
             return;
@@ -145,6 +170,9 @@ public class SandEconomyHud : MonoBehaviour
 
     private void OnDestroy()
     {
+        UnwireTutorialConveyor();
+        ClearTutorialGameplayFreeze();
+
         if (CoinManager.instance != null)
         {
             CoinManager.instance.OnCoinsChanged -= HandleCoinsChanged;
@@ -172,12 +200,12 @@ public class SandEconomyHud : MonoBehaviour
 
         RefreshBoosters();
         TryStartBoosterTutorial(levelIndex);
-        Analytic.LevelStarted(levelIndex.ToString());
         MirraSDK.Analytics.GameplayStart();
     }
 
     public void ShowLevelComplete()
     {
+        RefreshCompletionText();
         if (completePanel != null)
         {
             completePanel.SetActive(true);
@@ -188,7 +216,6 @@ public class SandEconomyHud : MonoBehaviour
             AdManager.instance.OnWindowEnabled(true);
         }
 
-        Analytic.LevelCompleted(ProgressSaveService.CurrentLevelIndex.ToString());
         MirraSDK.Analytics.GameplayStop();
         StartCoroutine(PlayStars());
     }
@@ -283,8 +310,26 @@ public class SandEconomyHud : MonoBehaviour
             return;
         }
 
+        // Fill tutorial: ignore Fill taps until the player places a belt bucket.
+        if (tutorialWaitingFirstBucket && type == BoosterType.Transparent)
+        {
+            return;
+        }
+
+        // While frozen on Fill tutorial, only the Fill booster may be used.
+        if (tutorialGameplayFrozen && tutorialType == BoosterType.Transparent && type != BoosterType.Transparent)
+        {
+            return;
+        }
+
         if (BoosterService.instance.ActiveTargetMode == type)
         {
+            // Keep Fill target mode locked during the guided tutorial.
+            if (tutorialWaitingTarget && tutorialType == type)
+            {
+                return;
+            }
+
             BoosterService.instance.CancelTargetMode();
             HideHand();
             return;
@@ -343,7 +388,7 @@ public class SandEconomyHud : MonoBehaviour
         if (iconTransform != null)
         {
             Image iconImage = iconTransform.GetComponent<Image>();
-            ApplySprite(iconImage, BusesUiArt.GetBoosterIcon(type), Color.white);
+            ApplySprite(iconImage, GameUiSymbols.Booster(type), Color.white);
             if (iconImage != null)
             {
                 iconImage.type = Image.Type.Simple;
@@ -503,7 +548,11 @@ public class SandEconomyHud : MonoBehaviour
 
     private void TryStartBoosterTutorial(int levelIndex)
     {
+        UnwireTutorialConveyor();
+        ClearTutorialGameplayFreeze();
+
         tutorialType = null;
+        tutorialWaitingFirstBucket = false;
         tutorialWaitingActivation = false;
         tutorialWaitingTarget = false;
         HideHand();
@@ -520,24 +569,126 @@ public class SandEconomyHud : MonoBehaviour
         }
 
         tutorialType = pending.Value;
-        tutorialWaitingActivation = true;
 
         if (tutorialType == BoosterType.Transparent)
         {
-            EnsureBucketOnConveyorForTutorial();
+            // Wait for the player to place the first belt bucket, then freeze and guide Fill.
+            tutorialWaitingFirstBucket = true;
+            WireTutorialConveyor();
+            RefreshBoosters();
+            if (tutorialConveyor != null && tutorialConveyor.Entries.Count > 0)
+            {
+                BeginTransparentTutorialAfterFirstBucket();
+            }
+
+            return;
         }
+
+        BeginBoosterActivationTutorial(tutorialType.Value);
+    }
+
+    private void BeginBoosterActivationTutorial(BoosterType type)
+    {
+        tutorialWaitingActivation = true;
 
         if (gameManager != null)
         {
             GameUI ui = FindObjectOfType<GameUI>();
             if (ui != null && LocalizationManager.Instance != null)
             {
-                ui.SetTutorialHint(LocalizationManager.Instance.GetText(BoosterCatalog.GetTutorialHintKey(tutorialType.Value)));
+                ui.SetTutorialHint(LocalizationManager.Instance.GetText(BoosterCatalog.GetTutorialHintKey(type)));
                 ui.SetControlsInteractable(false);
             }
         }
 
-        StartCoroutine(PointHandAtBoosterNextFrame(tutorialType.Value));
+        StartCoroutine(PointHandAtBoosterNextFrame(type));
+    }
+
+    private void WireTutorialConveyor()
+    {
+        UnwireTutorialConveyor();
+        tutorialConveyor = FindObjectOfType<ConveyorBelt>();
+        if (tutorialConveyor != null)
+        {
+            tutorialConveyor.OnConveyorChanged += HandleTutorialConveyorChanged;
+        }
+    }
+
+    private void UnwireTutorialConveyor()
+    {
+        if (tutorialConveyor != null)
+        {
+            tutorialConveyor.OnConveyorChanged -= HandleTutorialConveyorChanged;
+            tutorialConveyor = null;
+        }
+    }
+
+    private void HandleTutorialConveyorChanged()
+    {
+        if (!tutorialWaitingFirstBucket || tutorialType != BoosterType.Transparent)
+        {
+            return;
+        }
+
+        if (tutorialConveyor == null || tutorialConveyor.Entries.Count == 0)
+        {
+            return;
+        }
+
+        BeginTransparentTutorialAfterFirstBucket();
+    }
+
+    private void BeginTransparentTutorialAfterFirstBucket()
+    {
+        if (!tutorialWaitingFirstBucket || tutorialType != BoosterType.Transparent)
+        {
+            return;
+        }
+
+        tutorialWaitingFirstBucket = false;
+        UnwireTutorialConveyor();
+        FreezeTutorialGameplay();
+        BeginBoosterActivationTutorial(BoosterType.Transparent);
+        RefreshBoosters();
+
+        BucketInventoryUI inventoryUi = FindObjectOfType<BucketInventoryUI>();
+        if (inventoryUi != null)
+        {
+            inventoryUi.RefreshInteractionState();
+        }
+    }
+
+    private void FreezeTutorialGameplay()
+    {
+        tutorialGameplayFrozen = true;
+
+        FallingSandSimulator simulator = FindObjectOfType<FallingSandSimulator>();
+        if (simulator != null)
+        {
+            simulator.SetSimulationPaused(true);
+        }
+
+        ConveyorBelt conveyor = tutorialConveyor != null ? tutorialConveyor : FindObjectOfType<ConveyorBelt>();
+        if (conveyor != null)
+        {
+            conveyor.SetMovementPaused(true);
+        }
+    }
+
+    private void ClearTutorialGameplayFreeze()
+    {
+        if (!tutorialGameplayFrozen)
+        {
+            return;
+        }
+
+        tutorialGameplayFrozen = false;
+
+        FallingSandSimulator simulator = FindObjectOfType<FallingSandSimulator>();
+        if (simulator != null)
+        {
+            simulator.SetSimulationPaused(false);
+        }
     }
 
     private IEnumerator PointHandAtBoosterNextFrame(BoosterType type)
@@ -557,32 +708,6 @@ public class SandEconomyHud : MonoBehaviour
         PointHandAtBooster(type);
     }
 
-    private void EnsureBucketOnConveyorForTutorial()
-    {
-        if (gameManager == null || gameManager.Inventory == null)
-        {
-            return;
-        }
-
-        ConveyorBelt conveyor = FindObjectOfType<ConveyorBelt>();
-        if (conveyor == null || conveyor.Entries.Count > 0)
-        {
-            return;
-        }
-
-        BucketInventoryUI inventoryUi = FindObjectOfType<BucketInventoryUI>();
-        Bucket bucket = inventoryUi != null ? inventoryUi.GetFirstAccessibleBucket() : null;
-        if (bucket == null && gameManager.Inventory.Buckets.Count > 0)
-        {
-            bucket = gameManager.Inventory.Buckets[0];
-        }
-
-        if (bucket != null)
-        {
-            BoosterMechanics.TryForcePlaceBucket(gameManager, bucket);
-        }
-    }
-
     private void FinishTutorial()
     {
         if (!tutorialType.HasValue)
@@ -592,16 +717,32 @@ public class SandEconomyHud : MonoBehaviour
 
         BoosterService.instance.MarkTutorialSeen(tutorialType.Value);
         tutorialType = null;
+        tutorialWaitingFirstBucket = false;
         tutorialWaitingActivation = false;
         tutorialWaitingTarget = false;
+        UnwireTutorialConveyor();
+        ClearTutorialGameplayFreeze();
         HideHand();
 
         GameUI ui = FindObjectOfType<GameUI>();
         if (ui != null)
         {
-            ui.SetHintVisible(false);
+            if (gameManager != null && gameManager.CurrentLevelIndex == 0)
+                ui.SetTutorialHint(CampaignText.Get("tutorial_free"));
+            else if (gameManager != null && CampaignProgression.IsLessonStart(gameManager.CurrentLevelIndex))
+                ui.SetTutorialHint(CampaignProgression.GetLesson(gameManager.CurrentLevelIndex));
+            else
+                ui.SetHintVisible(false);
             ui.SetControlsInteractable(true);
         }
+
+        BucketInventoryUI inventoryUi = FindObjectOfType<BucketInventoryUI>();
+        if (inventoryUi != null)
+        {
+            inventoryUi.RefreshInteractionState();
+        }
+
+        RefreshBoosters();
     }
 
     private void UpdateTutorialHandForTarget()
@@ -794,10 +935,22 @@ public class SandEconomyHud : MonoBehaviour
             inventoryUi.RefreshInteractionState();
         }
 
-        if (!tutorialWaitingActivation)
+        if (tutorialWaitingActivation && tutorialType.HasValue)
         {
-            HideHand();
+            PointHandAtBooster(tutorialType.Value);
+            return;
         }
+
+        if (tutorialWaitingTarget && tutorialType.HasValue)
+        {
+            // Player backed out of target mode — guide them back to the booster.
+            tutorialWaitingTarget = false;
+            tutorialWaitingActivation = true;
+            PointHandAtBooster(tutorialType.Value);
+            return;
+        }
+
+        HideHand();
     }
 
     private void HandleCoinsChanged(int value)
@@ -811,11 +964,37 @@ public class SandEconomyHud : MonoBehaviour
     private void RefreshLocalized()
     {
         RefreshBoosters();
+        RefreshShopText();
+        RefreshCompletionText();
+        if (skipLevelButtonGo != null)
+            skipLevelButtonGo.GetComponentInChildren<TextMeshProUGUI>().text = CampaignText.Get("debug_skip");
+    }
+
+    private void RefreshShopText()
+    {
+        if (shopPanel == null || LocalizationManager.Instance == null) return;
+        foreach (var label in shopPanel.GetComponentsInChildren<TextMeshProUGUI>(true))
+        {
+            string parent = label.transform.parent.name;
+            if (label.name == "ShopTitle") label.text = LocalizationManager.Instance.GetText("shop");
+            if (label.name == "Description") label.text = LocalizationManager.Instance.GetText("reamoveAdDescription");
+            if (label.name == "Title")
+            {
+                if (parent.StartsWith("Gold ")) label.text = parent.Replace("Gold ", "").Replace("Btn", "") + " " + CampaignText.Get("coins");
+                else label.text = LocalizationManager.Instance.GetText(parent.Replace("Btn", ""));
+            }
+            if (label.name == "Caption")
+            {
+                string key = parent == "GoldChip" ? "coins" : parent == "MagnetChip" ? "magnet" : parent == "FillChip" ? "transparent" : "shuffle";
+                label.text = key == "coins" ? CampaignText.Get(key) : LocalizationManager.Instance.GetText(key);
+            }
+        }
     }
 
     private void RefreshAll()
     {
         RefreshBoosters();
+        RefreshShopText();
         if (CoinManager.instance != null)
         {
             HandleCoinsChanged(CoinManager.instance.Coins);
@@ -834,14 +1013,23 @@ public class SandEconomyHud : MonoBehaviour
             BoosterType type = (BoosterType)i;
             bool unlocked = BoosterService.instance.IsUnlocked(type, gameManager.CurrentLevelIndex);
             int charges = BoosterService.instance.GetCharges(type);
+            if (boosterTitles[i] != null) boosterTitles[i].text = LocalizationManager.Instance != null
+                ? LocalizationManager.Instance.GetText(BoosterCatalog.GetLocalizationKey(type)) : type.ToString();
             if (boosterButtons[i] != null)
             {
-                boosterButtons[i].interactable = unlocked;
+                bool tutorialLocksOtherBoosters = tutorialGameplayFrozen
+                    && tutorialType == BoosterType.Transparent
+                    && type != BoosterType.Transparent;
+                bool tutorialBlocksFillUntilBucket = tutorialWaitingFirstBucket
+                    && type == BoosterType.Transparent;
+                boosterButtons[i].interactable = unlocked
+                    && !tutorialLocksOtherBoosters
+                    && !tutorialBlocksFillUntilBucket;
                 Image frame = boosterButtons[i].GetComponent<Image>();
                 if (frame != null)
                 {
-                    Color frameColor = Color.white;
-                    frameColor.a = unlocked ? 1f : 0.55f;
+                    Color frameColor = unlocked ? new Color(1, .99f, .93f) : new Color(.77f, .84f, .80f);
+                    frameColor.a = 1;
                     if (BoosterService.instance.ActiveTargetMode == type)
                     {
                         frameColor = new Color(1f, 0.92f, 0.45f, frameColor.a);
@@ -856,7 +1044,7 @@ public class SandEconomyHud : MonoBehaviour
                     Image iconImage = iconTransform.GetComponent<Image>();
                     if (iconImage != null)
                     {
-                        Sprite icon = BusesUiArt.GetBoosterIcon(type);
+                        Sprite icon = GameUiSymbols.Booster(type);
                         if (icon != null)
                         {
                             iconImage.sprite = icon;
@@ -864,9 +1052,7 @@ public class SandEconomyHud : MonoBehaviour
                             iconImage.type = Image.Type.Simple;
                         }
 
-                        Color c = Color.white;
-                        c.a = unlocked ? 1f : 0.4f;
-                        iconImage.color = c;
+                        iconImage.color = Color.white;
                     }
                 }
 
@@ -879,7 +1065,7 @@ public class SandEconomyHud : MonoBehaviour
 
             if (boosterCharges[i] != null)
             {
-                boosterCharges[i].text = unlocked ? charges.ToString() : string.Empty;
+                boosterCharges[i].text = unlocked ? "× " + charges : string.Empty;
                 boosterCharges[i].gameObject.SetActive(unlocked);
             }
 
@@ -889,7 +1075,7 @@ public class SandEconomyHud : MonoBehaviour
                 string label = LocalizationManager.Instance != null
                     ? LocalizationManager.Instance.GetText("unlock_at_level", unlockLevel)
                     : ("Lv." + unlockLevel);
-                boosterUnlockLabels[i].text = label;
+                boosterUnlockLabels[i].text = CampaignText.Get("level_short") + " " + unlockLevel;
                 boosterUnlockLabels[i].gameObject.SetActive(!unlocked);
             }
         }
@@ -902,7 +1088,7 @@ public class SandEconomyHud : MonoBehaviour
             yield break;
         }
 
-        Transform stars = completePanel.transform.Find("Stars");
+        Transform stars = completePanel.transform.Find("Card/Stars");
         if (stars == null)
         {
             yield break;
@@ -952,7 +1138,7 @@ public class SandEconomyHud : MonoBehaviour
         coinText.rectTransform.offsetMax = new Vector2(-12f, 0f);
         coinText.color = new Color(0.15f, 0.1f, 0.05f, 1f);
 
-        Button shopBtn = CreateIconButton(root, "ShopBtn", BusesUiArt.Store, () =>
+        Button shopBtn = CreateIconButton(root, "ShopBtn", GameUiSymbols.Get(GameUiSymbol.Shop), () =>
         {
             RewardedShop shop = shopPanel != null ? shopPanel.GetComponent<RewardedShop>() : null;
             if (shop != null)
@@ -964,7 +1150,8 @@ public class SandEconomyHud : MonoBehaviour
         shopRt.anchorMin = new Vector2(0f, 0.5f);
         shopRt.anchorMax = new Vector2(0f, 0.5f);
         shopRt.anchoredPosition = new Vector2(-40f, 0f);
-        shopRt.sizeDelta = new Vector2(52f, 52f);
+        shopRt.sizeDelta = new Vector2(64, 64);
+        shopBtn.GetComponent<Image>().color = new Color(.16f, .39f, .37f);
 
         CoinSpawner spawner = root.gameObject.AddComponent<CoinSpawner>();
         spawner.coinCount = 25;
@@ -979,28 +1166,35 @@ public class SandEconomyHud : MonoBehaviour
 
     private void BuildSkipLevelButton()
     {
-        string label = LocalizationManager.Instance != null
-            ? LocalizationManager.Instance.GetText("skip_level")
-            : "Skip";
-        Button skip = CreateStyledButton(canvas.transform, "SkipLevelBtn", label, BusesUiArt.BtnBlue, SkipCurrentLevel);
+        Button skip = CreateStyledButton(canvas.transform, "SkipLevelBtn", CampaignText.Get("debug_skip"), HintUiSprites.RoundedPanel, SkipCurrentLevel);
+        skip.GetComponent<Image>().color = new Color(.15f, .37f, .37f);
+        TextMeshProUGUI text = skip.GetComponentInChildren<TextMeshProUGUI>();
+        text.fontStyle = FontStyles.Bold;
+        text.color = new Color(1, .99f, .91f);
+        text.enableAutoSizing = true;
+        text.fontSizeMin = 18;
+        text.fontSizeMax = 24;
         RectTransform rt = skip.GetComponent<RectTransform>();
         rt.anchorMin = new Vector2(1f, 1f);
         rt.anchorMax = new Vector2(1f, 1f);
         rt.pivot = new Vector2(1f, 1f);
-        rt.anchoredPosition = new Vector2(-24f, -24f);
-        rt.sizeDelta = new Vector2(140f, 56f);
+        rt.anchoredPosition = new Vector2(-30f, -100f);
+        rt.sizeDelta = new Vector2(220f, 56f);
         skipLevelButtonGo = skip.gameObject;
         skipLevelButtonGo.SetActive(GameDebugSettings.ShowSkipLevelButton);
     }
 
     private void SkipCurrentLevel()
     {
-        if (gameManager == null)
+        if (gameManager == null || !GameDebugSettings.ShowSkipLevelButton || CampaignGallery.IsOpen
+            || IsShopOpen || (completePanel != null && completePanel.activeSelf))
         {
             return;
         }
 
         int current = gameManager.CurrentLevelIndex;
+        Analytic.Track("level_debug_skipped");
+        Analytic.AbandonLevel("debug_skip");
         ProgressSaveService.MarkLevelCompleted(current);
         if (BoosterService.instance != null)
         {
@@ -1023,140 +1217,144 @@ public class SandEconomyHud : MonoBehaviour
 
     private void BuildBoosterBar()
     {
-        RectTransform root = CreatePanel("BoosterBar", new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 80f), new Vector2(520f, 110f));
+        RectTransform root = CreatePanel("BoosterBar", new Vector2(.5f, 0), new Vector2(.5f, 0), new Vector2(0, 80), new Vector2(700, 152));
         HorizontalLayoutGroup layout = root.gameObject.AddComponent<HorizontalLayoutGroup>();
         layout.childAlignment = TextAnchor.MiddleCenter;
-        layout.spacing = 18f;
+        layout.spacing = 16;
         layout.padding = new RectOffset(8, 8, 8, 8);
-        layout.childControlWidth = false;
-        layout.childControlHeight = false;
-
-        if (MobilePortraitLayout.Instance != null)
-        {
-            MobilePortraitLayout.Instance.ApplyLayout();
-        }
-
+        layout.childControlWidth = layout.childControlHeight = false;
+        layout.childForceExpandWidth = layout.childForceExpandHeight = false;
         for (int i = 0; i < 3; i++)
         {
             BoosterType type = (BoosterType)i;
-            GameObject buttonGo = new GameObject("Booster_" + type, typeof(RectTransform), typeof(Image), typeof(Button));
+            var buttonGo = new GameObject("Booster_" + type, typeof(RectTransform), typeof(Image), typeof(Button));
             buttonGo.transform.SetParent(root, false);
-            RectTransform rt = buttonGo.GetComponent<RectTransform>();
-            rt.sizeDelta = new Vector2(120f, 96f);
-
+            var rt = (RectTransform)buttonGo.transform;
+            rt.sizeDelta = new Vector2(212, 136);
             Image frame = buttonGo.GetComponent<Image>();
-            ApplySprite(frame, BusesUiArt.FrameBlue, Color.white);
-
-            GameObject iconGo = new GameObject("Icon", typeof(RectTransform), typeof(Image));
-            iconGo.transform.SetParent(buttonGo.transform, false);
-            RectTransform iconRt = iconGo.GetComponent<RectTransform>();
-            iconRt.anchorMin = new Vector2(0.5f, 0.5f);
-            iconRt.anchorMax = new Vector2(0.5f, 0.5f);
-            iconRt.anchoredPosition = new Vector2(0f, 8f);
-            iconRt.sizeDelta = new Vector2(72f, 72f);
-            Image iconImage = iconGo.GetComponent<Image>();
-            ApplySprite(iconImage, BusesUiArt.GetBoosterIcon(type), Color.white);
-
-            GameObject lockGo = new GameObject("LockIcon", typeof(RectTransform), typeof(Image));
-            lockGo.transform.SetParent(buttonGo.transform, false);
-            RectTransform lockRt = lockGo.GetComponent<RectTransform>();
-            lockRt.anchoredPosition = Vector2.zero;
-            lockRt.sizeDelta = new Vector2(40f, 40f);
-            ApplySprite(lockGo.GetComponent<Image>(), BusesUiArt.Lock, Color.white);
-            lockGo.SetActive(false);
-
+            frame.sprite = HintUiSprites.RoundedPanel;
+            frame.type = Image.Type.Sliced;
+            frame.color = new Color(1, .99f, .93f);
+            var icon = CreateFixedImage(rt, "Icon", GameUiSymbols.Booster(type), new Vector2(-43, 20), new Vector2(104, 104));
+            icon.color = Color.white;
+            icon.raycastTarget = false;
+            var lockIcon = CreateFixedImage(rt, "LockIcon", GameUiSymbols.Get(GameUiSymbol.Lock), new Vector2(60, 32), new Vector2(64, 64));
+            lockIcon.color = Color.white;
+            lockIcon.raycastTarget = false;
             Button button = buttonGo.GetComponent<Button>();
             button.targetGraphic = frame;
+            button.transition = Selectable.Transition.ColorTint;
+            ColorBlock colors = button.colors;
+            colors.disabledColor = new Color(.90f, .94f, .91f, 1);
+            colors.pressedColor = new Color(.75f, .90f, .84f, 1);
+            button.colors = colors;
             int captured = i;
             button.onClick.AddListener(() => HandleBoosterButton((BoosterType)captured));
             boosterButtons[i] = button;
-
-            boosterCharges[i] = CreateTmp(rt, "Charges", "0", 20, TextAlignmentOptions.Center);
-            boosterCharges[i].rectTransform.anchorMin = new Vector2(1f, 0f);
-            boosterCharges[i].rectTransform.anchorMax = new Vector2(1f, 0f);
-            boosterCharges[i].rectTransform.pivot = new Vector2(1f, 0f);
-            boosterCharges[i].rectTransform.anchoredPosition = new Vector2(-6f, 4f);
-            boosterCharges[i].rectTransform.sizeDelta = new Vector2(40f, 28f);
-            boosterCharges[i].color = Color.white;
-
-            int unlockLevel = BoosterCatalog.GetUnlockLevelIndex(type) + 1;
-            string unlockText = LocalizationManager.Instance != null
-                ? LocalizationManager.Instance.GetText("unlock_at_level", unlockLevel)
-                : ("Lv." + unlockLevel);
-            boosterUnlockLabels[i] = CreateTmp(rt, "UnlockLevel", unlockText, 16, TextAlignmentOptions.Center);
-            boosterUnlockLabels[i].rectTransform.anchorMin = new Vector2(0.5f, 0f);
-            boosterUnlockLabels[i].rectTransform.anchorMax = new Vector2(0.5f, 0f);
-            boosterUnlockLabels[i].rectTransform.pivot = new Vector2(0.5f, 0f);
-            boosterUnlockLabels[i].rectTransform.anchoredPosition = new Vector2(0f, 4f);
-            boosterUnlockLabels[i].rectTransform.sizeDelta = new Vector2(110f, 24f);
-            boosterUnlockLabels[i].color = new Color(1f, 0.95f, 0.75f, 1f);
+            boosterTitles[i] = CreateFixedTmp(rt, "BoosterName", "", 26, TextAlignmentOptions.Center, new Vector2(0, -46), new Vector2(192, 34));
+            boosterTitles[i].color = new Color(.15f, .34f, .34f);
+            boosterTitles[i].fontStyle = FontStyles.Bold;
+            boosterTitles[i].enableAutoSizing = true;
+            boosterTitles[i].fontSizeMin = 22;
+            boosterTitles[i].fontSizeMax = 26;
+            boosterCharges[i] = CreateFixedTmp(rt, "Charges", "0", 29, TextAlignmentOptions.Center, new Vector2(52, 20), new Vector2(74, 42));
+            boosterCharges[i].color = new Color(.15f, .34f, .34f);
+            boosterCharges[i].fontStyle = FontStyles.Bold;
+            boosterUnlockLabels[i] = CreateFixedTmp(rt, "UnlockLevel", "", 27, TextAlignmentOptions.Center, new Vector2(57, -13), new Vector2(92, 32));
             boosterUnlockLabels[i].fontStyle = FontStyles.Bold;
+            boosterUnlockLabels[i].color = new Color(.23f, .30f, .27f);
         }
+        if (MobilePortraitLayout.Instance != null) MobilePortraitLayout.Instance.ApplyLayout();
     }
-
     private void BuildCompletePanel()
     {
-        RectTransform root = CreatePanel("LevelCompletePanel", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
-        root.offsetMin = Vector2.zero;
-        root.offsetMax = Vector2.zero;
-        Image dim = root.gameObject.AddComponent<Image>();
-        dim.color = new Color(0f, 0f, 0f, 0.65f);
+        RectTransform root = CreatePanel("EconomyLevelCompletePanel", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+        root.offsetMin = root.offsetMax = Vector2.zero;
+        root.gameObject.AddComponent<Image>().color = new Color(.06f, .14f, .18f, .72f);
         completePanel = root.gameObject;
 
-        RectTransform card = CreatePanel("Card", new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(540f, 460f), root);
-        Image cardImage = card.gameObject.AddComponent<Image>();
-        ApplySprite(cardImage, BusesUiArt.FrameBlue, Color.white);
+        RectTransform card = CreatePanel("Card", Vector2.one * .5f, Vector2.one * .5f, Vector2.zero, new Vector2(620, 660), root);
+        Image background = card.gameObject.AddComponent<Image>();
+        background.sprite = HintUiSprites.RoundedPanel;
+        background.type = Image.Type.Sliced;
+        background.color = new Color(1, .99f, .94f);
+        var shadow = card.gameObject.AddComponent<Shadow>();
+        shadow.effectColor = new Color(.04f, .15f, .15f, .24f);
+        shadow.effectDistance = new Vector2(0, -12);
 
-        GameObject ribbon = new GameObject("Ribbon", typeof(RectTransform), typeof(Image));
-        ribbon.transform.SetParent(card, false);
-        RectTransform ribbonRt = ribbon.GetComponent<RectTransform>();
-        ribbonRt.anchoredPosition = new Vector2(0f, 170f);
-        ribbonRt.sizeDelta = new Vector2(360f, 70f);
-        ApplySprite(ribbon.GetComponent<Image>(), BusesUiArt.RibbonYellow, Color.white);
+        var subtitle = CreateFixedTmp(card, "Level", "", 25, TextAlignmentOptions.Center, new Vector2(0, 268), new Vector2(540, 40));
+        subtitle.color = new Color(.38f, .56f, .50f);
+        levelCompleteTitle = CreateFixedTmp(card, "Title", "", 44, TextAlignmentOptions.Center, new Vector2(0, 209), new Vector2(548, 72));
+        levelCompleteTitle.fontStyle = FontStyles.Bold;
+        levelCompleteTitle.color = new Color(.15f, .34f, .34f);
+        levelCompleteTitle.enableAutoSizing = true;
+        levelCompleteTitle.fontSizeMin = 30;
+        levelCompleteTitle.fontSizeMax = 44;
 
-        levelCompleteTitle = CreateTmp(card, "Title", "Complete", 36, TextAlignmentOptions.Center);
-        levelCompleteTitle.rectTransform.anchoredPosition = new Vector2(0f, 170f);
-        levelCompleteTitle.color = new Color(0.2f, 0.1f, 0.05f, 1f);
-
-        GameObject trophy = new GameObject("Trophy", typeof(RectTransform), typeof(Image));
-        trophy.transform.SetParent(card, false);
-        RectTransform trophyRt = trophy.GetComponent<RectTransform>();
-        trophyRt.anchoredPosition = new Vector2(0f, 95f);
-        trophyRt.sizeDelta = new Vector2(64f, 64f);
-        ApplySprite(trophy.GetComponent<Image>(), BusesUiArt.Trophy, Color.white);
-
-        RectTransform stars = CreatePanel("Stars", new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0f, 20f), new Vector2(300f, 80f), card);
+        RectTransform stars = CreatePanel("Stars", Vector2.one * .5f, Vector2.one * .5f, new Vector2(0, 108), new Vector2(320, 100), card);
         for (int i = 0; i < 3; i++)
         {
-            GameObject star = new GameObject("Star" + i, typeof(RectTransform), typeof(Image));
-            star.transform.SetParent(stars, false);
-            RectTransform srt = star.GetComponent<RectTransform>();
-            srt.sizeDelta = new Vector2(72f, 72f);
-            srt.anchoredPosition = new Vector2((i - 1) * 96f, 0f);
-            ApplySprite(star.GetComponent<Image>(), BusesUiArt.Star, Color.white);
-            star.SetActive(false);
+            Image star = CreateFixedImage(stars, "Star" + i, BusesUiArt.Star,
+                new Vector2((i - 1) * 105, i == 1 ? 10 : 0), Vector2.one * (i == 1 ? 96 : 76));
+            star.raycastTarget = false;
+            star.gameObject.SetActive(false);
         }
 
-        Button continueBtn = CreateStyledButton(card, "ContinueBtn", "Continue", BusesUiArt.BtnGreen, OnCompleteContinue);
-        continueBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(-120f, -140f);
-        Button doubleBtn = CreateStyledButton(card, "DoubleBtn", "x2", BusesUiArt.BtnBlue, OnCompleteDouble);
-        doubleBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(120f, -140f);
+        Image reward = CreateFixedImage(card, "Reward", HintUiSprites.RoundedPanel, new Vector2(0, -4), new Vector2(300, 82));
+        reward.type = Image.Type.Sliced;
+        reward.preserveAspect = false;
+        reward.color = new Color(.90f, .94f, .86f);
+        CreateFixedImage(reward.rectTransform, "Coins", GameUiSymbols.Get(GameUiSymbol.Coins), new Vector2(-97, 0), new Vector2(56, 56)).raycastTarget = false;
+        var amount = CreateFixedTmp(reward.rectTransform, "Amount", "", 29, TextAlignmentOptions.Center, new Vector2(30, 0), new Vector2(210, 60));
+        amount.color = new Color(.15f, .34f, .34f);
+        amount.fontStyle = FontStyles.Bold;
 
-        GameObject adIcon = new GameObject("AdIcon", typeof(RectTransform), typeof(Image));
-        adIcon.transform.SetParent(doubleBtn.transform, false);
-        RectTransform adRt = adIcon.GetComponent<RectTransform>();
-        adRt.anchorMin = new Vector2(0f, 0.5f);
-        adRt.anchorMax = new Vector2(0f, 0.5f);
-        adRt.anchoredPosition = new Vector2(28f, 0f);
-        adRt.sizeDelta = new Vector2(28f, 28f);
-        ApplySprite(adIcon.GetComponent<Image>(), BusesUiArt.Ad, Color.white);
-
+        CreateCompletionButton(card, "ContinueBtn", -119, new Color(.15f, .37f, .37f), new Color(1, .99f, .91f), OnCompleteContinue);
+        CreateCompletionButton(card, "DoubleBtn", -219, new Color(1, .78f, .28f), new Color(.15f, .29f, .27f), OnCompleteDouble);
+        RefreshCompletionText();
         completePanel.SetActive(false);
     }
 
+    private void CreateCompletionButton(RectTransform card, string name, float y, Color background, Color foreground, UnityEngine.Events.UnityAction action)
+    {
+        Button button = CreateStyledButton(card, name, "", HintUiSprites.RoundedPanel, action);
+        RectTransform rect = (RectTransform)button.transform;
+        rect.anchoredPosition = new Vector2(0, y);
+        rect.sizeDelta = new Vector2(520, 82);
+        Image image = button.GetComponent<Image>();
+        image.color = background;
+        image.preserveAspect = false;
+        var label = button.GetComponentInChildren<TextMeshProUGUI>();
+        label.color = foreground;
+        label.fontStyle = FontStyles.Bold;
+        label.enableAutoSizing = true;
+        label.fontSizeMin = 23;
+        label.fontSizeMax = 30;
+        label.margin = new Vector4(20, 4, 20, 4);
+        if (name == "DoubleBtn")
+        {
+            rect.sizeDelta = new Vector2(520, 94);
+            label.fontSizeMax = 31;
+            label.margin = new Vector4(88, 4, 12, 4);
+            CreateFixedImage(rect, "RewardedVideoIcon", BusesUiArt.Ad, new Vector2(-206, 0), new Vector2(68, 68)).raycastTarget = false;
+        }
+    }
+
+    private void RefreshCompletionText()
+    {
+        if (completePanel == null) return;
+        Transform card = completePanel.transform.Find("Card");
+        if (card == null) return;
+        levelCompleteTitle.text = CampaignText.Get("victory");
+        card.Find("Level").GetComponent<TextMeshProUGUI>().text = CampaignText.Get("level") + " " + (gameManager.CurrentLevelIndex + 1);
+        int reward = CoinManager.instance != null ? CoinManager.instance.CoinsOnComplete : 50;
+        card.Find("Reward/Amount").GetComponent<TextMeshProUGUI>().text = "+" + reward + " " + CampaignText.Get("coins");
+        card.Find("ContinueBtn/Label").GetComponent<TextMeshProUGUI>().text = CampaignText.Get(gameManager.CurrentLevelIndex + 1 >= gameManager.LevelCount ? "gallery" : "victory_next");
+        card.Find("DoubleBtn/Label").GetComponent<TextMeshProUGUI>().text = CampaignText.Get("victory_double");
+    }
     private void BuildBuyPopup()
     {
-        RectTransform root = CreatePanel("BoosterBuyPopup", new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(460f, 320f));
+        RectTransform root = CreatePanel("BoosterBuyPopup", new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(580f, 430f));
         Image bg = root.gameObject.AddComponent<Image>();
         ApplySprite(bg, BusesUiArt.FrameBlue, Color.white);
         buyPopup = root.gameObject;
@@ -1167,10 +1365,17 @@ public class SandEconomyHud : MonoBehaviour
         buyPopupPrice = CreateTmp(root, "Price", "Buy for 90", 22, TextAlignmentOptions.Center);
         buyPopupPrice.rectTransform.anchoredPosition = new Vector2(0f, 55f);
 
-        Button adBtn = CreateStyledButton(root, "AdBtn", "Watch Ad", BusesUiArt.BtnBlue, BuyWithAd);
-        adBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(-110f, -30f);
+        Button adBtn = CreateStyledButton(root, "AdBtn", CampaignText.Get("watch_ad"), HintUiSprites.RoundedPanel, BuyWithAd);
+        adBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -91);
+        adBtn.GetComponent<RectTransform>().sizeDelta = new Vector2(510, 88);
+        adBtn.GetComponent<Image>().color = new Color(1, .78f, .28f);
+        var adLabel = adBtn.GetComponentInChildren<TextMeshProUGUI>();
+        adLabel.fontSize = 31; adLabel.fontStyle = FontStyles.Bold; adLabel.color = new Color(.15f, .29f, .27f);
+        adLabel.margin = new Vector4(83, 4, 12, 4);
+        CreateFixedImage((RectTransform)adBtn.transform, "RewardedVideoIcon", BusesUiArt.Ad, new Vector2(-204, 0), new Vector2(66, 66)).raycastTarget = false;
         Button coinBtn = CreateStyledButton(root, "CoinBtn", "Coins", BusesUiArt.BtnGreen, BuyWithCoins);
-        coinBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(110f, -30f);
+        coinBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -166);
+        coinBtn.GetComponent<RectTransform>().sizeDelta = new Vector2(340, 54);
 
         Button closeBtn = CreateIconButton(root, "CloseBtn", BusesUiArt.Close, CloseBuyPopup);
         RectTransform closeRt = closeBtn.GetComponent<RectTransform>();
@@ -1185,210 +1390,137 @@ public class SandEconomyHud : MonoBehaviour
     private void BuildShopPanel()
     {
         RectTransform root = CreatePanel("ShopPanel", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
-        root.offsetMin = Vector2.zero;
-        root.offsetMax = Vector2.zero;
-        root.gameObject.AddComponent<Image>().color = new Color(0f, 0f, 0f, 0.72f);
+        root.offsetMin = root.offsetMax = Vector2.zero;
+        root.gameObject.AddComponent<Image>().color = new Color(.06f, .16f, .18f, .78f);
         shopPanel = root.gameObject;
-
-        RectTransform card = CreatePanel("ShopCard", new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(620f, 820f), root);
-        Image cardImage = card.gameObject.AddComponent<Image>();
-        ApplySprite(cardImage, BusesUiArt.FrameBlue, Color.white);
-
-        string shopTitle = LocalizationManager.Instance != null
-            ? LocalizationManager.Instance.GetText("shop")
-            : "Shop";
-        CreateFixedTmp(card, "ShopTitle", shopTitle, 36, TextAlignmentOptions.Center, new Vector2(0f, 370f), new Vector2(400f, 48f));
-
-        // Scroll area so last block never leaves the panel.
-        RectTransform viewport = CreatePanel("ShopViewport", new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0f, -10f), new Vector2(560f, 680f), card);
-        Image viewportMask = viewport.gameObject.AddComponent<Image>();
-        viewportMask.color = new Color(1f, 1f, 1f, 0.01f);
-        Mask mask = viewport.gameObject.AddComponent<Mask>();
-        mask.showMaskGraphic = false;
-
-        GameObject contentGo = new GameObject("ShopContent", typeof(RectTransform));
-        contentGo.transform.SetParent(viewport, false);
-        RectTransform content = contentGo.GetComponent<RectTransform>();
-        content.anchorMin = new Vector2(0.5f, 1f);
-        content.anchorMax = new Vector2(0.5f, 1f);
-        content.pivot = new Vector2(0.5f, 1f);
-        content.anchoredPosition = Vector2.zero;
-        content.sizeDelta = new Vector2(540f, 100f);
-
+        float width = Mathf.Min(900, Screen.safeArea.width / Mathf.Max(.001f, canvas.scaleFactor) - 64);
+        width = Mathf.Max(640, width);
+        RectTransform card = CreatePanel("ShopCard", new Vector2(.5f, .5f), new Vector2(.5f, .5f), Vector2.zero, new Vector2(width, 1500), root);
+        Image background = card.gameObject.AddComponent<Image>();
+        background.sprite = HintUiSprites.RoundedPanel;
+        background.type = Image.Type.Sliced;
+        background.color = new Color(.94f, .97f, .92f);
+        var title = CreateFixedTmp(card, "ShopTitle", LocalizationManager.Instance != null ? LocalizationManager.Instance.GetText("shop") : "Shop", 44,
+            TextAlignmentOptions.MidlineLeft, new Vector2(-width * .5f + 280, 681), new Vector2(470, 70));
+        title.color = new Color(.13f, .33f, .33f);
+        title.fontStyle = FontStyles.Bold;
+        RewardedShop shop = root.gameObject.AddComponent<RewardedShop>();
+        Button close = CreateIconButton(card, "CloseShop", GameUiSymbols.Get(GameUiSymbol.Close), () => shop.CloseShop());
+        close.GetComponent<Image>().color = new Color(.16f, .38f, .37f);
+        close.GetComponent<RectTransform>().anchoredPosition = new Vector2(width * .5f - 64, 684);
+        close.GetComponent<RectTransform>().sizeDelta = new Vector2(76, 76);
+        RectTransform viewport = CreatePanel("ShopViewport", new Vector2(.5f, .5f), new Vector2(.5f, .5f), new Vector2(0, -40), new Vector2(width - 48, 1290), card);
+        viewport.gameObject.AddComponent<RectMask2D>();
+        Image scrollSurface = viewport.gameObject.AddComponent<Image>();
+        scrollSurface.color = new Color(1, 1, 1, .001f);
+        RectTransform content = CreatePanel("ShopContent", new Vector2(.5f, 1), new Vector2(.5f, 1), Vector2.zero, new Vector2(width - 64, 1260), viewport);
+        content.pivot = new Vector2(.5f, 1);
         ScrollRect scroll = card.gameObject.AddComponent<ScrollRect>();
-        scroll.viewport = viewport;
-        scroll.content = content;
-        scroll.horizontal = false;
-        scroll.vertical = true;
+        scroll.viewport = viewport; scroll.content = content;
+        scroll.horizontal = false; scroll.vertical = true;
         scroll.movementType = ScrollRect.MovementType.Clamped;
-        scroll.scrollSensitivity = 40f;
-
-        const float gap = 14f;
-        const float kitHeight = 170f;
-        const float goldHeight = 60f;
-        const float removeHeight = 186f;
-        const float closeHeight = 60f;
-        const float rowWidth = 520f;
-
-        float cursor = -8f;
-        float beginnerY = PlaceBlockCenter(ref cursor, kitHeight, gap);
-        float premiumY = PlaceBlockCenter(ref cursor, kitHeight, gap);
-        float g300Y = PlaceBlockCenter(ref cursor, goldHeight, gap);
-        float g700Y = PlaceBlockCenter(ref cursor, goldHeight, gap);
-        float g1200Y = PlaceBlockCenter(ref cursor, goldHeight, gap);
-        float removeY = PlaceBlockCenter(ref cursor, removeHeight, gap);
-        float closeY = PlaceBlockCenter(ref cursor, closeHeight, 0f);
-        content.sizeDelta = new Vector2(rowWidth, Mathf.Abs(cursor) + 12f);
-
-        RewardedShop shop = shopPanel.AddComponent<RewardedShop>();
-        Button beginner = CreateKitShopRow(content, "beginners_kit", beginnerY, BusesUiArt.Trophy, 4000, 5, kitHeight, rowWidth, out TextMeshProUGUI p1);
-        Button premium = CreateKitShopRow(content, "premium_set", premiumY, BusesUiArt.Star, 1000, 2, kitHeight, rowWidth, out TextMeshProUGUI p2);
-        Button g300 = CreateShopRow(content, "Gold 300", g300Y, BusesUiArt.Gold, out TextMeshProUGUI p3, goldHeight, rowWidth);
-        Button g700 = CreateShopRow(content, "Gold 700", g700Y, BusesUiArt.Gold, out TextMeshProUGUI p4, goldHeight, rowWidth);
-        Button g1200 = CreateShopRow(content, "Gold 1200", g1200Y, BusesUiArt.Gold, out TextMeshProUGUI p5, goldHeight, rowWidth);
-        Button remove = CreateRemoveAdsShopRow(content, removeY, removeHeight, rowWidth, out TextMeshProUGUI p6);
+        scroll.scrollSensitivity = 48;
+        float cursor = -8, rowWidth = width - 64;
+        Button beginner = CreateKitShopRow(content, "beginners_kit", PlaceBlockCenter(ref cursor, 238, 18), GameUiSymbols.Get(GameUiSymbol.Bundle), 4000, 5, 238, rowWidth, out TextMeshProUGUI p1);
+        Button premium = CreateKitShopRow(content, "premium_set", PlaceBlockCenter(ref cursor, 238, 18), GameUiSymbols.Get(GameUiSymbol.Bundle), 1000, 2, 238, rowWidth, out TextMeshProUGUI p2);
+        Button g300 = CreateShopRow(content, "Gold 300", PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p3, 116, rowWidth);
+        Button g700 = CreateShopRow(content, "Gold 700", PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p4, 116, rowWidth);
+        Button g1200 = CreateShopRow(content, "Gold 1200", PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p5, 116, rowWidth);
+        Button remove = CreateRemoveAdsShopRow(content, PlaceBlockCenter(ref cursor, 274, 18), 274, rowWidth, out TextMeshProUGUI p6);
+        content.sizeDelta = new Vector2(rowWidth, -cursor);
         shop.BindRuntime(CoinManager.instance, beginner, premium, g300, g700, g1200, remove, p1, p2, p3, p4, p5, p6);
-
-        Button close = CreateStyledButton(content, "CloseShop", "Close", BusesUiArt.BtnRed, () => shop.CloseShop());
-        RectTransform closeRt = close.GetComponent<RectTransform>();
-        closeRt.anchorMin = new Vector2(0.5f, 1f);
-        closeRt.anchorMax = new Vector2(0.5f, 1f);
-        closeRt.pivot = new Vector2(0.5f, 0.5f);
-        closeRt.sizeDelta = new Vector2(220f, closeHeight);
-        closeRt.anchoredPosition = new Vector2(0f, closeY);
-        shopPanel.SetActive(false);
+        root.gameObject.SetActive(false);
     }
 
     private static float PlaceBlockCenter(ref float cursor, float height, float gapAfter)
     {
-        // Content is top-pivoted; return center Y for center-anchored blocks.
-        float centerY = cursor - height * 0.5f;
+        float center = cursor - height * .5f;
         cursor -= height + gapAfter;
-        return centerY;
+        return center;
     }
 
-    private Button CreateKitShopRow(
-        RectTransform parent,
-        string titleKey,
-        float y,
-        Sprite icon,
-        int goldAmount,
-        int boosterBonus,
-        float height,
-        float width,
-        out TextMeshProUGUI price)
+    private Button CreateShopCard(RectTransform parent, string name, float y, float width, float height)
     {
-        string title = LocalizationManager.Instance != null
-            ? LocalizationManager.Instance.GetText(titleKey)
-            : titleKey;
-
-        GameObject go = new GameObject(titleKey + "Btn", typeof(RectTransform), typeof(Image), typeof(Button));
-        go.transform.SetParent(parent, false);
-        RectTransform rt = go.GetComponent<RectTransform>();
-        rt.anchorMin = new Vector2(0.5f, 1f);
-        rt.anchorMax = new Vector2(0.5f, 1f);
-        rt.pivot = new Vector2(0.5f, 0.5f);
+        var obj = new GameObject(name, typeof(RectTransform), typeof(Image), typeof(Button));
+        obj.transform.SetParent(parent, false);
+        var rt = (RectTransform)obj.transform;
+        rt.anchorMin = rt.anchorMax = new Vector2(.5f, 1);
         rt.sizeDelta = new Vector2(width, height);
-        rt.anchoredPosition = new Vector2(0f, y);
-        Image bg = go.GetComponent<Image>();
-        ApplySprite(bg, BusesUiArt.FrameWhite, Color.white);
-        Button button = go.GetComponent<Button>();
-        button.targetGraphic = bg;
+        rt.anchoredPosition = new Vector2(0, y);
+        Image background = obj.GetComponent<Image>();
+        background.sprite = HintUiSprites.RoundedPanel;
+        background.type = Image.Type.Sliced;
+        background.color = new Color(1, .995f, .96f);
+        Button button = obj.GetComponent<Button>();
+        button.targetGraphic = background;
+        ColorBlock colors = button.colors;
+        colors.pressedColor = new Color(.82f, .93f, .86f);
+        colors.disabledColor = new Color(.90f, .93f, .90f);
+        button.colors = colors;
+        return button;
+    }
 
-        CreateFixedImage(rt, "RowIcon", icon, new Vector2(-200f, 48f), new Vector2(48f, 48f));
-        CreateFixedTmp(rt, "Title", title, 22, TextAlignmentOptions.Left, new Vector2(-20f, 52f), new Vector2(280f, 30f))
-            .color = new Color(0.15f, 0.1f, 0.05f, 1f);
+    private TextMeshProUGUI CreateShopPrice(RectTransform parent, Vector2 position)
+    {
+        Image badge = CreateFixedImage(parent, "PriceBadge", HintUiSprites.RoundedPanel, position, new Vector2(188, 70));
+        badge.type = Image.Type.Sliced; badge.preserveAspect = false;
+        badge.color = new Color(.17f, .40f, .39f); badge.raycastTarget = false;
+        var price = CreateTmp(badge.rectTransform, "Price", "…", 30, TextAlignmentOptions.Center);
+        price.color = new Color(1, .99f, .93f);
+        price.fontStyle = FontStyles.Bold; price.raycastTarget = false;
+        price.enableAutoSizing = true; price.fontSizeMin = 21; price.fontSizeMax = 30;
+        price.enableWordWrapping = false;
+        price.margin = new Vector4(8, 5, 8, 5);
+        return price;
+    }
 
-        // 2x2 chips fully inside padded bounds (half-height ~85)
-        const float chipW = 148f;
-        const float chipH = 48f;
-        const float chipGapX = 10f;
-        float leftX = -(chipW + chipGapX) * 0.5f;
-        float rightX = (chipW + chipGapX) * 0.5f;
-        float row1Y = 2f;
-        float row2Y = -54f;
-
-        CreateKitChip(rt, "GoldChip", BusesUiArt.Gold, goldAmount.ToString(), new Vector2(leftX, row1Y), chipW, chipH);
-        CreateKitChip(rt, "MagnetChip", BusesUiArt.Magnet, "+" + boosterBonus, new Vector2(rightX, row1Y), chipW, chipH);
-        CreateKitChip(rt, "FillChip", BusesUiArt.Transparent, "+" + boosterBonus, new Vector2(leftX, row2Y), chipW, chipH);
-        CreateKitChip(rt, "ShuffleChip", BusesUiArt.Shuffle, "+" + boosterBonus, new Vector2(rightX, row2Y), chipW, chipH);
-
-        price = CreateFixedTmp(rt, "Price", "...", 20, TextAlignmentOptions.Right, new Vector2(200f, 52f), new Vector2(100f, 32f));
-        price.color = new Color(0.15f, 0.1f, 0.05f, 1f);
+    private Button CreateKitShopRow(RectTransform parent, string titleKey, float y, Sprite icon, int goldAmount, int boosterBonus, float height, float width, out TextMeshProUGUI price)
+    {
+        Button button = CreateShopCard(parent, titleKey + "Btn", y, width, height);
+        var rt = (RectTransform)button.transform;
+        bool removeAds = titleKey == "remove_ads_bundle";
+        float headerY = height * .5f - 49;
+        var symbol = CreateFixedImage(rt, "RowIcon", icon, new Vector2(-width * .5f + 53, headerY), new Vector2(58, 58));
+        symbol.color = new Color(.19f, .45f, .41f); symbol.raycastTarget = false;
+        string title = LocalizationManager.Instance != null ? LocalizationManager.Instance.GetText(titleKey) : titleKey;
+        var heading = CreateFixedTmp(rt, "Title", title, 32, TextAlignmentOptions.MidlineLeft,
+            new Vector2(-width * .5f + 100 + (width - 338) * .5f, headerY), new Vector2(width - 338, 74));
+        heading.color = new Color(.14f, .32f, .32f); heading.fontStyle = FontStyles.Bold;
+        heading.enableAutoSizing = true; heading.fontSizeMin = 26; heading.fontSizeMax = 32;
+        price = CreateShopPrice(rt, new Vector2(width * .5f - 114, headerY));
+        if (removeAds)
+        {
+            var description = CreateFixedTmp(rt, "Description", LocalizationManager.Instance != null ? LocalizationManager.Instance.GetText("reamoveAdDescription") : "Disables ads during gameplay", 25,
+                TextAlignmentOptions.Left, new Vector2(0, 25), new Vector2(width - 52, 48));
+            description.color = new Color(.28f, .43f, .40f);
+        }
+        float chipWidth = (width - 60) / 4;
+        float chipY = removeAds ? -66 : -37;
+        CreateKitChip(rt, "GoldChip", GameUiSymbols.Get(GameUiSymbol.Coins), goldAmount.ToString(), new Vector2(-1.5f * (chipWidth + 8), chipY), chipWidth, 94);
+        CreateKitChip(rt, "MagnetChip", GameUiSymbols.Booster(BoosterType.Magnet), "+" + boosterBonus, new Vector2(-.5f * (chipWidth + 8), chipY), chipWidth, 94);
+        CreateKitChip(rt, "FillChip", GameUiSymbols.Booster(BoosterType.Transparent), "+" + boosterBonus, new Vector2(.5f * (chipWidth + 8), chipY), chipWidth, 94);
+        CreateKitChip(rt, "ShuffleChip", GameUiSymbols.Booster(BoosterType.Shuffle), "+" + boosterBonus, new Vector2(1.5f * (chipWidth + 8), chipY), chipWidth, 94);
         return button;
     }
 
     private Button CreateRemoveAdsShopRow(RectTransform parent, float y, float height, float width, out TextMeshProUGUI price)
-    {
-        string title = LocalizationManager.Instance != null
-            ? LocalizationManager.Instance.GetText("remove_ads_bundle")
-            : "Remove ads bundle";
-        string info = LocalizationManager.Instance != null
-            ? LocalizationManager.Instance.GetText("reamoveAdDescription")
-            : "Disables ads during gameplay";
-
-        GameObject go = new GameObject("remove_ads_Btn", typeof(RectTransform), typeof(Image), typeof(Button));
-        go.transform.SetParent(parent, false);
-        RectTransform rt = go.GetComponent<RectTransform>();
-        rt.anchorMin = new Vector2(0.5f, 1f);
-        rt.anchorMax = new Vector2(0.5f, 1f);
-        rt.pivot = new Vector2(0.5f, 0.5f);
-        rt.sizeDelta = new Vector2(width, height);
-        rt.anchoredPosition = new Vector2(0f, y);
-        Image bg = go.GetComponent<Image>();
-        ApplySprite(bg, BusesUiArt.FrameWhite, Color.white);
-        Button button = go.GetComponent<Button>();
-        button.targetGraphic = bg;
-
-        CreateFixedImage(rt, "RowIcon", BusesUiArt.RemoveAds, new Vector2(-200f, 56f), new Vector2(48f, 48f));
-        CreateFixedTmp(rt, "Title", title, 22, TextAlignmentOptions.Left, new Vector2(-20f, 60f), new Vector2(280f, 28f))
-            .color = new Color(0.15f, 0.1f, 0.05f, 1f);
-        CreateFixedTmp(rt, "Description", info, 14, TextAlignmentOptions.Left, new Vector2(-10f, 32f), new Vector2(300f, 24f))
-            .color = new Color(0.25f, 0.2f, 0.15f, 1f);
-
-        const float chipW = 148f;
-        const float chipH = 48f;
-        const float chipGapX = 10f;
-        float leftX = -(chipW + chipGapX) * 0.5f;
-        float rightX = (chipW + chipGapX) * 0.5f;
-        float row1Y = -8f;
-        float row2Y = -64f;
-
-        CreateKitChip(rt, "GoldChip", BusesUiArt.Gold, "4000", new Vector2(leftX, row1Y), chipW, chipH);
-        CreateKitChip(rt, "MagnetChip", BusesUiArt.Magnet, "+5", new Vector2(rightX, row1Y), chipW, chipH);
-        CreateKitChip(rt, "FillChip", BusesUiArt.Transparent, "+5", new Vector2(leftX, row2Y), chipW, chipH);
-        CreateKitChip(rt, "ShuffleChip", BusesUiArt.Shuffle, "+5", new Vector2(rightX, row2Y), chipW, chipH);
-
-        price = CreateFixedTmp(rt, "Price", "...", 20, TextAlignmentOptions.Right, new Vector2(200f, 56f), new Vector2(100f, 32f));
-        price.color = new Color(0.15f, 0.1f, 0.05f, 1f);
-        return button;
-    }
+        => CreateKitShopRow(parent, "remove_ads_bundle", y, GameUiSymbols.Get(GameUiSymbol.NoAds), 4000, 5, height, width, out price);
 
     private void CreateKitChip(RectTransform parent, string name, Sprite icon, string value, Vector2 anchored, float width, float height)
     {
-        GameObject chip = new GameObject(name, typeof(RectTransform), typeof(Image));
-        chip.transform.SetParent(parent, false);
-        RectTransform rt = chip.GetComponent<RectTransform>();
-        rt.anchorMin = new Vector2(0.5f, 0.5f);
-        rt.anchorMax = new Vector2(0.5f, 0.5f);
-        rt.pivot = new Vector2(0.5f, 0.5f);
-        rt.anchoredPosition = anchored;
-        rt.sizeDelta = new Vector2(width, height);
-        ApplySprite(chip.GetComponent<Image>(), BusesUiArt.FrameWhite, new Color(0.95f, 0.95f, 0.95f, 0.98f));
-
-        CreateFixedImage(rt, "Icon", icon, new Vector2(-width * 0.28f, 0f), new Vector2(34f, 34f));
-        TextMeshProUGUI valueTmp = CreateFixedTmp(
-            rt,
-            "Value",
-            value,
-            22,
-            TextAlignmentOptions.Left,
-            new Vector2(width * 0.12f, 0f),
-            new Vector2(70f, 36f));
-        valueTmp.color = new Color(0.12f, 0.08f, 0.04f, 1f);
-        valueTmp.fontStyle = FontStyles.Bold;
+        Image chip = CreateFixedImage(parent, name, HintUiSprites.RoundedPanel, anchored, new Vector2(width, height));
+        chip.type = Image.Type.Sliced; chip.preserveAspect = false; chip.raycastTarget = false;
+        chip.color = new Color(.89f, .94f, .88f);
+        Image symbol = CreateFixedImage(chip.rectTransform, "Icon", icon, new Vector2(-width * .25f, 13), new Vector2(44, 44));
+        symbol.color = Color.white;
+        symbol.raycastTarget = false;
+        var number = CreateFixedTmp(chip.rectTransform, "Value", value, 29, TextAlignmentOptions.Center, new Vector2(width * .14f, 13), new Vector2(width * .57f, 44));
+        number.color = new Color(.14f, .33f, .32f); number.fontStyle = FontStyles.Bold;
+        string key = name == "GoldChip" ? "coins" : name == "MagnetChip" ? "magnet" : name == "FillChip" ? "transparent" : "shuffle";
+        string label = key == "coins" ? CampaignText.Get(key) : LocalizationManager.Instance != null ? LocalizationManager.Instance.GetText(key) : key;
+        var caption = CreateFixedTmp(chip.rectTransform, "Caption", label, 22, TextAlignmentOptions.Center, new Vector2(0, -25), new Vector2(width - 8, 30));
+        caption.color = new Color(.26f, .43f, .38f); caption.enableAutoSizing = true; caption.fontSizeMin = 18; caption.fontSizeMax = 22;
     }
-
     private static Image CreateFixedImage(RectTransform parent, string name, Sprite sprite, Vector2 anchored, Vector2 size)
     {
         GameObject go = new GameObject(name, typeof(RectTransform), typeof(Image));
@@ -1434,37 +1566,18 @@ public class SandEconomyHud : MonoBehaviour
         return tmp;
     }
 
-    private Button CreateShopRow(
-        RectTransform parent,
-        string label,
-        float y,
-        Sprite icon,
-        out TextMeshProUGUI price,
-        float height = 60f,
-        float width = 520f)
+    private Button CreateShopRow(RectTransform parent, string label, float y, Sprite icon, out TextMeshProUGUI price, float height = 116, float width = 836)
     {
-        GameObject go = new GameObject(label + "Btn", typeof(RectTransform), typeof(Image), typeof(Button));
-        go.transform.SetParent(parent, false);
-        RectTransform rt = go.GetComponent<RectTransform>();
-        rt.anchorMin = new Vector2(0.5f, 1f);
-        rt.anchorMax = new Vector2(0.5f, 1f);
-        rt.pivot = new Vector2(0.5f, 0.5f);
-        rt.sizeDelta = new Vector2(width, height);
-        rt.anchoredPosition = new Vector2(0f, y);
-        Image bg = go.GetComponent<Image>();
-        ApplySprite(bg, BusesUiArt.FrameWhite, Color.white);
-        Button button = go.GetComponent<Button>();
-        button.targetGraphic = bg;
-
-        CreateFixedImage(rt, "RowIcon", icon, new Vector2(-200f, 0f), new Vector2(40f, 40f));
-        CreateFixedTmp(rt, "Label", label, 22, TextAlignmentOptions.Left, new Vector2(-40f, 0f), new Vector2(280f, 36f))
-            .color = new Color(0.15f, 0.1f, 0.05f, 1f);
-
-        price = CreateFixedTmp(rt, "Price", "...", 18, TextAlignmentOptions.Right, new Vector2(200f, 0f), new Vector2(100f, 36f));
-        price.color = new Color(0.15f, 0.1f, 0.05f, 1f);
+        Button button = CreateShopCard(parent, label + "Btn", y, width, height);
+        var rt = (RectTransform)button.transform;
+        Image symbol = CreateFixedImage(rt, "RowIcon", icon, new Vector2(-width * .5f + 60, 0), new Vector2(68, 68));
+        symbol.color = Color.white; symbol.raycastTarget = false;
+        var title = CreateFixedTmp(rt, "Title", label.Replace("Gold ", "") + " " + CampaignText.Get("coins"), 34, TextAlignmentOptions.MidlineLeft,
+            new Vector2(-width * .5f + 112 + (width - 360) * .5f, 0), new Vector2(width - 360, 58));
+        title.color = new Color(.14f, .33f, .32f); title.fontStyle = FontStyles.Bold;
+        price = CreateShopPrice(rt, new Vector2(width * .5f - 114, 0));
         return button;
     }
-
     private void BuildNoMoneyToast()
     {
         RectTransform root = CreatePanel("NoMoneyToast", new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0f, 80f), new Vector2(340f, 78f));

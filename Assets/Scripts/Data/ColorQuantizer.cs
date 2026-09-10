@@ -1279,12 +1279,13 @@ public static class ColorQuantizer
 
     private static Color32 ApplyGrain(Color32 baseColor, int x, int y)
     {
+        if (baseColor.a == 0) return baseColor;
         int noise = Hash(x, y) % 31 - 15;
         return new Color32(
             (byte)Mathf.Clamp(baseColor.r + noise, 0, 255),
             (byte)Mathf.Clamp(baseColor.g + noise, 0, 255),
             (byte)Mathf.Clamp(baseColor.b + noise, 0, 255),
-            255);
+            baseColor.a);
     }
 
     private static int Hash(int x, int y)

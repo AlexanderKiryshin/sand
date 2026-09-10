@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Art_040
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280039757
+  - serializedVersion: 2
+    rgba: 4285247452
+  - serializedVersion: 2
+    rgba: 4283713584
+  - serializedVersion: 2
+    rgba: 4288136417
+  - serializedVersion: 2
+    rgba: 4279903270
+  - serializedVersion: 2
+    rgba: 4288261045
+  - serializedVersion: 2
+    rgba: 4287795590
+  - serializedVersion: 2
+    rgba: 4283596960
+  - serializedVersion: 2
+    rgba: 4285227860
+  - serializedVersion: 2
+    rgba: 4287198808
+  - serializedVersion: 2
+    rgba: 4280570748
+  - serializedVersion: 2
+    rgba: 4280185787
+  encodedCells: S1:4:4096:E131F2DB:bVVNbxNHGP4NL2jB8fqSFZWswgUNFjjiFBkLtadpOoXEvSClYyU9oSRexeFiU6sLOUULTsftpQ2J64HLhlpEnb24Ug5o90f1mfEHKurY3rX9vJ/P886s1v+7BiN3a4efA218innmp3zUDoetBV4c/nK4hHs41Cu5yTlPzMFBc4Y3tf65eyMI3rhffxMXXHhCiCdPQ5ck1IMvgtWgdmN1int4OQOx5zzCMLzeCYK/arU/8GuDSJAL4AlCPkRoPwqC4Jw/qN2y4XzgwvnzUIf6zIZ4cTMIHoskH7bbocctaq+Ca70tbb/wD7pRNvnN5iI+8xdi1t6Xh/DvZnme6yFwsVhzvrrBrSC4kgLX7Q1X3zTC3D8Kghtd45u3Wg/R4Cw6cFmz+Bh4+dwnvabbwJ07bLiQdYe/LN8sBxeU6BOt1AfL32wBtwYvL6LVIDg0TjlD3n9w0P4+cA0e/gnblZR/ql9Kh39jIE9Q7paBZ4aT9xlehHw3g/T8yu8bWYq6PsWv1STwl91y0A26XSplqc+9BX4q65sSEr3oBDZBkueJD9W8OYN7iL8LyhrlCAbnfv6PE3de/4bNL8NauL4crX59xUCA7z2Pe+T8K+J0vSXr9c3NVhHjsUwmz7PUjYbzrzw61WETFdbOlnoPy8u+D/1KNj4txAullHV5ltBygfwsz/IUvH+CdX1qQLw3ThqX8LcGc+3QGNA7+HxH3CSNBPWZbA4/0tsgR9ar27J5TZAZU5bmaXYrXYyOw+WbKi7CS4jb+cLyp9QhOfBXr96M+lJ+i6q4yVL7MlBnT2DroDOm1N3RipTXMM98jACJMX7qn4rTdriNwpnaHyjdlC2HgyAyfp7mo732cDgEPhhJxfR2S3ogDf2ZUjJBCe+wKeu7X21KvVU7ZnrQ37kOTW3/KVk8D8NhbRfaKqWPT3S/v/UBvAPJSjSxbbRkq17blKE6qao6BB7lhpw/kQ2SHzSHzboMw3jEYtUfDYZF4B/BPxE0yPNnTSlbLeDbd9SKGulRbHz+EfIJAZYxZOBMhs3W/vHZABxU2YnzTxtTPPNbzaE12VUtxXZGirGUjkAtzpXE5MY0wlZT1luof+uYMaaqimiEybfqG5DgyzN5YUiqfiwtvn+c8Dj3K4TZxTY2dBBeM7BS1fiVitGDyo4+5m8H2Lp8TAnRr7ro+1xWFbCtKi7p68uMY/SsgU/eRBe590TG+yzeUXcZe1/ik9TDZCcTu4Wujt8NEvEDaq8y620uJ/mkZEUUaZ4ZfwCtk6f9KmMWZ+uN1E+TkhscbkTCRdWYyY/H6NutNXee9KIoSg4bkaCOt8QalFeVst5rEUURjzqRvUdEj3vRRYdUdXIfxMC7B+SnKCpQgfDNLtERdKTWMkf9897jBw8L1j0yVPAinyxLdMTY5W0YIDnvdOCCEB1E55474Ok2Y1fvsxgJhNuvhXvPC9zufTCETUocmX1QH7OKgEkvusfEtD6yByisGDOMxfH6DOc9zHDUIf7aJSGKq4ltXlXcadDjYgn04X+IAH+vEiuHM0cbW7PbnguoJ+wBhBDxEp/h4K+ylmC27HwknGMHIs7YP2IxKlgX0xBcREgwO/zsMcUtPWgRRxXe9ollHae2OGSPlIqVxZk7zbAa7tE0fTaBQRUCjGcFzlIs7hbfYZbgqbwLgM/teMV27xT43N8W6PHb7F8=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe000000fe000000000000ff00ff000000000000
+  conveyorDirections: 00000000000300000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000300000004000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: 
+  campaignSeed: 4091750
+  displayTitle: Mountain Griffin
+  beltCapacity: 4
+  beltSpeedMultiplier: 1.1
+  frostMoves: 1
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 41361f0bf8a402949909a770c48ee1f5,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

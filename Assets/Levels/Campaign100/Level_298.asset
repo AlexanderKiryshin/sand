@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_298
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284396484
+  - serializedVersion: 2
+    rgba: 4293522420
+  - serializedVersion: 2
+    rgba: 4283653215
+  - serializedVersion: 2
+    rgba: 4282206541
+  - serializedVersion: 2
+    rgba: 4279903270
+  - serializedVersion: 2
+    rgba: 4280956988
+  - serializedVersion: 2
+    rgba: 4286813592
+  - serializedVersion: 2
+    rgba: 4278783245
+  - serializedVersion: 2
+    rgba: 4281359204
+  - serializedVersion: 2
+    rgba: 4288466137
+  - serializedVersion: 2
+    rgba: 4285297267
+  - serializedVersion: 2
+    rgba: 4283073167
+  encodedCells: S1:4:4096:AA435256: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000ffff0000000000fe0000000000fe000000000000
+  conveyorDirections: 00000000000000000000000002000000000001000000000000
+  conveyorBucketCounts: 00000000000000000000000003000000000003000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 31111832
+  displayTitle: Fallen Temple among Banyan Roots
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 244c3cf29fe356f46bd52b97ac88dc88,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

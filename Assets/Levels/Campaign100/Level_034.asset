@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_034
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4287926667
+  - serializedVersion: 2
+    rgba: 4292452701
+  - serializedVersion: 2
+    rgba: 4282143827
+  - serializedVersion: 2
+    rgba: 4286213986
+  - serializedVersion: 2
+    rgba: 4291219411
+  - serializedVersion: 2
+    rgba: 4286205710
+  - serializedVersion: 2
+    rgba: 4280825647
+  - serializedVersion: 2
+    rgba: 4292851847
+  - serializedVersion: 2
+    rgba: 4282870656
+  - serializedVersion: 2
+    rgba: 4288965925
+  - serializedVersion: 2
+    rgba: 4284910765
+  - serializedVersion: 2
+    rgba: 4289245619
+  encodedCells: S1:4:4096:D6B39C53:dZVBb9tGFsc/w6yHdpTwEnZ34S16IYYNMXAuU42otaoLVxoXjnkJIEwBNZdg1Ay4uXkbwNibMXKEAX2pkDUCYi+GrBoGcyEsKpA9H6pDxW3RNnmHAcUf33/ee/PeyPM+YX8B0SBoi09jGNFAfpIDSgaiPZLrH//6M3cBHaPdEfK8o22PvfqD+FMOCEGzri8Oj468V6/sYq1eDj1v27s3oCMSINn05dHvbHu9HoLBeESRbpxicfQRo4B+p/AKkqAtP4LvQXKRYVTCzvPf6ZPf+AKMNkov3/Txh1dvj47+SSmPoh/q78C4d4LRw+1hhIsP/E1n8IYPOI045wFFRYHF879Ph/xqvvbu5B0LBtziMWoeYwNPkDAAgBLazI/yzhurXVNOEEYIV74WkrkuiE/rmuSdfGAZpxzt4v93VOH4KBTxMxeU72qc5/f5IIIDGjXHVwasSIREG5ln7iY59j7PP8/X7tEZ/2lxQeyuMcHhVo+xLozGeY3zIednwzPevciMo/t9IkVSJZVDaJrfmaWcv5xdFT5mCfRRWRkDvh7jX3Cec74jd+YaXZslCZSx5poTlP9mrwspC3LsghvQnHaMWRqQ+TV4u8adbDxuZMA3lQGH03xhbm5hIGryvzXHGdLNGJC403/4tylf1lzX+v/t1viFxhitKKE/5Js/TnMemXcKo8VdcDVP0ezAEOoN+Rd1wmauGZC/5peKSXp52gDXLo+ZLRJwzh2woX7hPExVeK01vq5Kw4ALQLf8EvSKO5qHKEXhVerjW9AlrOU+Jd3F41mh1tufDbnWAs80Qpf7r/KEPbOcViBh2dkwH+TD1xgpqa50Opv9w8tvWNdwO2ABmxc2Uin5t+EEXeLsGGP8Vy/ntvbMoXTB2OMh/7f4NpLSuqvdryZXeGo9lvXhAFMkJhsO77148UhILZH+bBjM/mNLwyPGil14ckXKg7qv7A5hqKUgw02975bQxgXOdXbi0H5yx4XSYeoAoA6qum2fOKzQ+yXYY2vOHymstLAcs2pRc3ecoRXZ5Hd8lF5m4tohYLaqnliBm6LQWJPX9HaNo0BIJXoMlJrZ4gJaZlqnDUD1yQd5bBMoDuxAaJPUnJ7rnfT9wg1e1nhzhMRkVhzELjxljCUObTaL8LJpuaw5DEN5OcsOSre9tJy1zhsUyRGuHEfXnMhQZT1TkpY3fZIw9gBjSXzksLlCdXSDkUTFLojNF9s5Z1VSYCUgRkmSFWodfuTrlQEL4E05Z+z2SkyIvf3K+Txb63MarEjJKlDXfq/KdJY1g8uMnRYarf2pOoCQsar6cTiN53oHT3axwvHJjtpau4/UNbJxGace3grrtEgx8ssLW4Ma0+e4cV73bAUBgKWSs1AiBy36qaK1/ELp98B5eD+2XQspyITE3/g4fXp2ii2PYKh7LnG8s6XjAuiDQgjT9HcwIMeiXetPdM/O3TR/UtmJgAynEiC0g5zF4wblberr6+VONzE3pc2osmOHMEQZIq2lQm2+CxF6sJrYsyPAnPSSeaEybJ++JF3+UlIk1GRFHqAueAqmSbVi8wwLfGEYblGedNsapbrbH4uvS1vd++9W1TuMigYwBjPK+zTESCrXCUq1Aoc5h/vsXEuXLky1kQRbG5RORIhiYBbp+4dT/lrvM41kCRMHtO3TVovayVm5pEIC9d/yR/HGqb0mIGsBkCSUBi2qpJAUVkL2oEuOMdzzexLUl6hr6JBSy6Xcclws3b67iO0pxt9LSseauYQO94jVl/Ilw0KQvtsH6Qasu7cb7t+6IOB7tOZhaI6lhG5s5d7vLeI+awmlTEIHPxF7kFJ+4z6+prR2HKNlP2YLP0t1o2xBO9eT1G73MRvU/xec/ww=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000000000000000000000ff00fefffe0000000000
+  conveyorDirections: 00000000000000000000000000000000000100000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000300020000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 3463376
+  displayTitle: Coastal Village
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 4
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: df9253e6ef829d5488218ef6c2c0d008,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

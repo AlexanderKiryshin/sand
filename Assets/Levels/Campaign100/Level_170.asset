@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_170
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279844932
+  - serializedVersion: 2
+    rgba: 4293903516
+  - serializedVersion: 2
+    rgba: 4280527063
+  - serializedVersion: 2
+    rgba: 4286728245
+  - serializedVersion: 2
+    rgba: 4279196021
+  - serializedVersion: 2
+    rgba: 4290348623
+  - serializedVersion: 2
+    rgba: 4286107629
+  - serializedVersion: 2
+    rgba: 4293845461
+  - serializedVersion: 2
+    rgba: 4279600038
+  - serializedVersion: 2
+    rgba: 4278983706
+  - serializedVersion: 2
+    rgba: 4283921270
+  - serializedVersion: 2
+    rgba: 4288323749
+  encodedCells: S1:4:4096:9174C7B7:tVXPb9tGFv4bpgmdkOqlBKoaWF+MASPQvbWGWiC+sNqJSzqXJPSrEvPSsi4hOxcLqMPN+kKwU2HkXNhEtjn2hU2lumIuClqmseaP6qOa0y6wt32QNMP53s/vvaGaprlsmqZBuFgl/EPTjOvH+vCTqsJt0+zXB1+SXNPz4QdmvMD7sdntVtWK+ffeNJ3MIIlM9Hc4Sheq+9CGZo0vm0TOnspGLvApjvt9E70DgPJh4SA2z86OLuT7GcFtP64g6FZtCGAd0B4TQJv47OnB9HLh/X6lEFJBteGroLlIgfBYl2eX8SHifXgdgPp9o+0rWAkO63S+SUhJLsZx/DRe7qJPgEqB7wfVO/ubunGQHXhxPO3CHcyrWqnU4TootdFuLmP+moxv/vt7+fTz4j4sPQAVoICPq1L9eLm//OroahrHMjiRsJO8rWqFOkTgVxuHWG6dvjRiA06cn84zgRDG+O4zaK/7PsSwUuPxzZk3OSnME8kWeFV9VmvVgpz+GZ8tyWEyuvr5oxdeE5lRk/0FjHGg2Wy+ZxZSelJO1+h7Vb8LCqBdBUj/BFbQwQdLGclWyeqpJ8nPx83XyB+0f4++Ul/drgJU+EdjOxtymjyfep1Z8cUDDB/4h0ddpebwGqmaTYhBQlsK5pxO58SCUqngUM2PYoVZKEWIwVvaqky49RsXkkNw2C33oXp8WWIWlZIzT2ietHtvvsy5O852AmzvpIzKsgTk8Ci7esW0NDfe9iI948UO1jWBw+A2cuxjLs9G6vvppZT2/GI3yTXrX5fY/6PPqyN/jgRWk9FMXXgOu3acy6s5z2i6Gr+Tct9v+5NpLmXSEyNJ+Oz8Wb5m17zhfB6hBqg2/PS1Zo90J+FcXhl3qb72Eu4vyMXg/qtg44UUhjt0heMMs4u7xBnZO3VZi+b4sDNvuAYfdsKQdjxPepSO9If1ECHJAbqo2heSsTCKnsTcHa2mz23yqLb8o+4d4AC98JJVGkVhGLU6jCR0bfWgRuYBziIGactMoyHljLboJsuwz4mBpvWcbuP34QkZ2gjZlFqU7mpZRrQr7OmPiw8ci8m5l4TCjp5QgSqMkcyV6wt77DM4bEnetVoI0Qi/VGPk1O7MAEq4VWfREDsn3BZ2h1t0QGkLS8i8DPFP4bTGr+s7U2a7HfpkQEOxRqnj6LkcIv5dTQK8MLIrllo0tVqc2pikk2naPXROBwv+zvO3FevYfDcKaZjWONPZSx/SMMQxmMBWfn6HpfZuaIUdmmotKljCxnBrsBc9qAmSvHGntl+zaE5tRm2XOdyC41bUegngbTcSgjjrUDdl1OVorovaVdQKU4BkbDTIDyxlglkdnta4Tq0wD2kqeuNbQMbGKbnDbWZxwezUZcK1xePnTtQTvfQhnDRKeYMsYf0MZbf2Te0od9woFJvjCd53TWbJvsORFcZSVxulNMwdLoTosW149IjIj12BFdkdw+PcZTwNc8mslLoh34F7173Rx+mQuw5DizrGMLxhOIwLV2xyuFdIIraKssxZfcQ0XDo1jGvPHcPMk4azxd2vGV4OxjT8GWikzhTV2fakMAyiNcgeMoa2iGhsRJijsd2BGLDiwjPw1jcOBohnrPaA7nDhLh/0Olqv52WykA0iNYydeWxkjLSEsc3NQW/Q82ZvjsVzOVNbjk6k3GOatwgseoMI5Yac4h/OkAjFKUkEKaRhSDny5Npa1IuigVzInm1Z5HGDML4rkDhhKHxhGN4pQk4Wvn08SFxhOLu/zrc4E3bacf9Q82f6q8gqS5HYZcO+5iVTUpCigSHZ2Gq5rs7eqLka/FY4Nr3GbMokOSdZUYaaLI6xAUphjIHAm+Qmmj60OqSY6l5OMrJXnLOr/V/nqsHdhCchzTySpeK6LM/xvSvLX6bT6e1/jst5idvxuCwbUma3s/X/s7T/8+Db/1Lx/5f9Xw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: fe00000000fe00000000ffffffffffffffffffffffffffffff
+  conveyorDirections: 03000000000300000000000000000000000000000000000000
+  conveyorBucketCounts: 03000000000300000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 17706520
+  displayTitle: Golden Snail Carrying a Garden
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 124bf6fd1fe564b4c8011e1d84d9f355,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

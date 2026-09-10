@@ -1,0 +1,32 @@
+{
+  "before": {
+    "seconds": 6.0,
+    "sample_rate": 44100,
+    "channels": 1,
+    "peak": 0.114715576171875,
+    "rms": 0.023999252713156706,
+    "dc_offset": 3.47157634755291e-08,
+    "loop_boundary_step": 0.001800537109375,
+    "adjacent_step_p99": 0.023101806640625,
+    "envelope_10ms_variation": 0.30776924611174383,
+    "energy_below_800hz_percent": 0.003239165226300121,
+    "energy_above_6khz_percent": 0.00027106989915845665
+  },
+  "after": {
+    "seconds": 6.0,
+    "sample_rate": 44100,
+    "channels": 1,
+    "peak": 0.100860595703125,
+    "rms": 0.02199931265041106,
+    "dc_offset": 1.67235405446901e-08,
+    "loop_boundary_step": 0.01483154296875,
+    "adjacent_step_p99": 0.0191650390625,
+    "envelope_10ms_variation": 0.11231235444206092,
+    "energy_below_800hz_percent": 0.002430270596990988,
+    "energy_above_6khz_percent": 0.0006821416813707921
+  },
+  "synthesis": "Continuous filtered friction; removed all discrete grain impact events and saturation. Shallow smooth modulation only.",
+  "other_audio_and_metadata_unchanged": true,
+  "preview": "sand-pour-fine-preview.wav: six seconds at maximum runtime sand gain 0.42, with outer 200 ms fades.",
+  "scope": "PCM analysis only; no subjective listening or Unity Play Mode run."
+}

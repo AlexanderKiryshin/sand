@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public GameState State { get { return gameState; } }
     public int CurrentLevelIndex { get { return currentLevelIndex; } }
     public BucketInventory Inventory { get { return bucketInventory; } }
+    public int LevelCount { get { return levelDatabase != null ? levelDatabase.LevelCount : 0; } }
 
     private void Awake()
     {
@@ -116,6 +117,10 @@ public class GameManager : MonoBehaviour
             polish.AddComponent<TutorialController>();
         }
 
+        if (FindObjectOfType<LevelPresentation>() == null) polish.AddComponent<LevelPresentation>();
+        if (FindObjectOfType<GameAudio>() == null) polish.AddComponent<GameAudio>();
+        if (FindObjectOfType<AudioSettingsMenu>() == null) polish.AddComponent<AudioSettingsMenu>();
+
         if (FindObjectOfType<SandEconomyHud>() == null)
         {
             polish.AddComponent<SandEconomyHud>();
@@ -201,6 +206,9 @@ public class GameManager : MonoBehaviour
         }
 
         currentLevelIndex = index;
+        StopCoroutine(nameof(PresentLevelComplete));
+        FindObjectOfType<SandPourAnimator>()?.ClearPour();
+        GameAudio.Instance?.ResetLevelAudio();
         ProgressSaveService.SetCurrentLevel(currentLevelIndex);
         gameState = GameState.Playing;
         sandRenderPending = false;
@@ -215,19 +223,25 @@ public class GameManager : MonoBehaviour
             ? levelDatabase.GetBucketSettingsForLevel(currentLevelIndex, level)
             : null;
         level = PrepareRuntimeLevel(level, bucketSettings);
+        if (level.campaignLevel) bucketSettings = level.bucketSettingsOverride;
 
-        bucketInventory.BuildFromLevel(
-            level,
-            sandRenderer != null ? sandRenderer.SubGrainsPerAxis : 1,
-            bucketSettings);
+        Analytic.BeginLevel(currentLevelIndex, level, ProgressSaveService.IsLevelCompleted(currentLevelIndex));
 
-        bucketInventory.TryDispenseAll(level);
+        Random.State randomState = Random.state;
+        if (level.campaignLevel) Random.InitState(level.campaignSeed);
+        try
+        {
+            bucketInventory.BuildFromLevel(level,
+                sandRenderer != null ? sandRenderer.SubGrainsPerAxis : 1, bucketSettings);
+        }
+        finally { Random.state = randomState; }
 
         bucketInventory.TryDispenseAll(level);
 
         if (conveyorBelt != null)
         {
             conveyorBelt.Configure(bucketInventory.TotalBucketCount);
+            conveyorBelt.ConfigureLevel(level);
         }
 
         if (gameUI != null)
@@ -276,6 +290,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
+        Analytic.RestartLevel();
         LoadLevel(currentLevelIndex);
     }
 
@@ -289,7 +304,8 @@ public class GameManager : MonoBehaviour
         int nextIndex = currentLevelIndex + 1;
         if (nextIndex >= levelDatabase.LevelCount)
         {
-            nextIndex = 0;
+            OpenCollection();
+            return;
         }
 
         if (!ProgressSaveService.IsLevelUnlocked(nextIndex))
@@ -299,6 +315,8 @@ public class GameManager : MonoBehaviour
 
         LoadLevel(nextIndex);
     }
+
+    public void OpenCollection() { CampaignGallery.Show(levelDatabase, this); }
 
     public bool IsLevelUnlocked(int levelIndex)
     {
@@ -312,7 +330,7 @@ public class GameManager : MonoBehaviour
 
     public bool TryPlaceBucket(Bucket bucket)
     {
-        if (gameState != GameState.Playing || conveyorBelt == null)
+        if (gameState != GameState.Playing || conveyorBelt == null || !IsBucketInteractionAllowed(bucket))
         {
             return false;
         }
@@ -327,6 +345,7 @@ public class GameManager : MonoBehaviour
             sandSimulator.Wake();
         }
 
+        Analytic.BucketPlaced();
         if (tutorialController != null)
         {
             tutorialController.HandleBucketPlaced(bucket);
@@ -337,6 +356,11 @@ public class GameManager : MonoBehaviour
 
     public bool IsBucketInteractionAllowed(Bucket bucket)
     {
+        if (SandEconomyHud.instance != null && SandEconomyHud.instance.BlocksInventoryForTutorial)
+        {
+            return false;
+        }
+
         return tutorialController == null || tutorialController.IsBucketInteractionAllowed(bucket);
     }
 
@@ -389,6 +413,8 @@ public class GameManager : MonoBehaviour
 
     private void HandleBucketFilled(Bucket bucket)
     {
+        bucketInventory?.HandleBucketFilled(bucket);
+        if (tutorialController != null) tutorialController.HandleBucketFilled(bucket);
         if (winConditionChecker != null)
         {
             winConditionChecker.CheckConditions();
@@ -411,7 +437,16 @@ public class GameManager : MonoBehaviour
         }
 
         gameState = GameState.LevelComplete;
+        Analytic.CompleteLevel();
+        if (tutorialController != null) tutorialController.HandleLevelCompleted();
         ProgressSaveService.MarkLevelCompleted(currentLevelIndex);
+        StartCoroutine(nameof(PresentLevelComplete));
+    }
+
+    private System.Collections.IEnumerator PresentLevelComplete()
+    {
+        // Let the last bucket finish its exit before covering the belt with rewards.
+        yield return new WaitForSeconds(BucketCompletionAnimation.Duration);
         SandEconomyHud economyHud = FindObjectOfType<SandEconomyHud>();
         if (economyHud != null)
         {
@@ -434,6 +469,13 @@ public class GameManager : MonoBehaviour
     private LevelData PrepareRuntimeLevel(LevelData levelAsset, LevelSegmentRules bucketSettings)
     {
         ClearRuntimeLevelInstance();
+
+        if (levelAsset != null && levelAsset.campaignLevel)
+        {
+            runtimeLevelInstance = CampaignRunFactory.Create(levelAsset, currentLevelIndex);
+            levelLoader.SetCurrentLevel(runtimeLevelInstance);
+            return runtimeLevelInstance;
+        }
 
         if (levelAsset == null
             || bucketSettings == null
@@ -460,6 +502,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        if (runtimeLevelInstance.campaignLevel) Destroy(runtimeLevelInstance.bucketSettingsOverride);
         Destroy(runtimeLevelInstance);
         runtimeLevelInstance = null;
     }

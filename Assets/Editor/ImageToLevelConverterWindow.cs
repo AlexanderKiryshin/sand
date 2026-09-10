@@ -1832,7 +1832,6 @@ public class ImageToLevelConverterWindow : EditorWindow
 
         AssetDatabase.CreateAsset(levelData, assetPath);
 
-        WriteAndLinkPreview(levelData, composedPreviewTexture, assetPath);
 
         string tilesFolder = EnsureAssetSubfolder(levelsFolder, safeName);
         List<LevelData> savedLevels = new List<LevelData> { levelData };
@@ -2303,7 +2302,6 @@ public class ImageToLevelConverterWindow : EditorWindow
 
         AssetDatabase.CreateAsset(levelData, assetPath);
 
-        WriteAndLinkPreview(levelData, item.previewTexture, assetPath);
         savedLevel = levelData;
 
         if (showDialog)
@@ -2630,42 +2628,6 @@ public class ImageToLevelConverterWindow : EditorWindow
         return levelsFolder;
     }
 
-    private static string EnsurePreviewsFolder()
-    {
-        string levelsFolder = EnsureLevelsFolder();
-        return EnsureAssetSubfolder(levelsFolder, "Previews");
-    }
-
-    private static string GetPreviewPathForAsset(string assetPath)
-    {
-        string previewsFolder = EnsurePreviewsFolder();
-        string baseName = Path.GetFileNameWithoutExtension(assetPath);
-        string desiredPath = previewsFolder + "/" + baseName + "_preview.png";
-        return MakeUniqueFilePath(desiredPath);
-    }
-
-    private static string MakeUniqueFilePath(string desiredPath)
-    {
-        if (!File.Exists(desiredPath))
-        {
-            return desiredPath;
-        }
-
-        string directory = Path.GetDirectoryName(desiredPath);
-        string name = Path.GetFileNameWithoutExtension(desiredPath);
-        string extension = Path.GetExtension(desiredPath);
-        int suffix = 1;
-        string candidate;
-        do
-        {
-            candidate = Path.Combine(directory, string.Format("{0}_{1}{2}", name, suffix, extension)).Replace('\\', '/');
-            suffix++;
-        }
-        while (File.Exists(candidate));
-
-        return candidate;
-    }
-
     private static string EnsureAssetSubfolder(string parentFolder, string subfolderName)
     {
         string safeSubfolder = SanitizeAssetName(subfolderName);
@@ -2693,60 +2655,6 @@ public class ImageToLevelConverterWindow : EditorWindow
         }
 
         return string.IsNullOrWhiteSpace(name) ? "Level" : name;
-    }
-
-    private static void WriteAndLinkPreview(LevelData levelData, Texture2D previewSource, string assetPath)
-    {
-        if (levelData == null || previewSource == null)
-        {
-            return;
-        }
-
-        string previewPath = GetPreviewPathForAsset(assetPath);
-        byte[] pngData = previewSource.EncodeToPNG();
-        File.WriteAllBytes(previewPath, pngData);
-        AssetDatabase.ImportAsset(previewPath, ImportAssetOptions.ForceSynchronousImport);
-        ConfigurePreviewImporter(previewPath);
-
-        Texture2D imported = AssetDatabase.LoadAssetAtPath<Texture2D>(previewPath);
-        if (imported != null)
-        {
-            levelData.previewTexture = imported;
-            EditorUtility.SetDirty(levelData);
-        }
-    }
-
-    private static void ConfigurePreviewImporter(string previewPath)
-    {
-        TextureImporter importer = AssetImporter.GetAtPath(previewPath) as TextureImporter;
-        if (importer == null)
-        {
-            return;
-        }
-
-        bool changed = false;
-        if (importer.filterMode != FilterMode.Point)
-        {
-            importer.filterMode = FilterMode.Point;
-            changed = true;
-        }
-
-        if (importer.textureCompression != TextureImporterCompression.Uncompressed)
-        {
-            importer.textureCompression = TextureImporterCompression.Uncompressed;
-            changed = true;
-        }
-
-        if (importer.mipmapEnabled)
-        {
-            importer.mipmapEnabled = false;
-            changed = true;
-        }
-
-        if (changed)
-        {
-            importer.SaveAndReimport();
-        }
     }
 
     private static void DrawTexturePreview(Texture2D texture, float maxSize, bool allowUpscale)

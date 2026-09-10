@@ -8,8 +8,10 @@ public class FallingSandSimulator : MonoBehaviour
     // Collection lookup v4 — no IsMatchingCollectionColumn / CanCollectAt in prewarm.
     [SerializeField] private float ticksPerSecond = 32f;
     [SerializeField] private int maxTicksPerFrame = 4;
-    [SerializeField] private int maxCollectPerTick = 6;
-    [SerializeField] private int maxCollectPerFrame = 32;
+    public const int CollectionPerTick = 36;
+    public const int CollectionPerFrame = 96;
+    [SerializeField] private int maxCollectPerTick = CollectionPerTick;
+    [SerializeField] private int maxCollectPerFrame = CollectionPerFrame;
     [SerializeField] private int collectRowCount = 8;
     [Tooltip("Задержка бокового ссыпания при упоре снизу: 0 = сразу в стороны каждый тик; N = N тиков строго вниз между тиками с диагональю.")]
     [SerializeField] [Min(0)] private int straightTicksBeforeDiagonal = 0;

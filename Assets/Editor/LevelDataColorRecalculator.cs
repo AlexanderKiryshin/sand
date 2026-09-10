@@ -11,8 +11,7 @@ public static class LevelDataColorRecalculator
         int colorCount,
         bool autoColorCount,
         bool autoBackgroundColor,
-        Color32 backgroundColor,
-        int previewScale)
+        Color32 backgroundColor)
     {
         if (levelData == null)
         {
@@ -21,7 +20,7 @@ public static class LevelDataColorRecalculator
 
         if (levelData.usesTiles && levelData.tileSources != null && levelData.tileSources.Length > 0)
         {
-            return RecalculateFromTiles(levelData, targetPalette, colorCount, autoColorCount, previewScale);
+            return RecalculateFromTiles(levelData, targetPalette, colorCount, autoColorCount);
         }
 
         if (sourceTexture == null)
@@ -46,7 +45,7 @@ public static class LevelDataColorRecalculator
             Object.DestroyImmediate(readableTexture);
         }
 
-        ApplyResult(levelData, result, previewScale);
+        ApplyResult(levelData, result);
         return true;
     }
 
@@ -54,8 +53,7 @@ public static class LevelDataColorRecalculator
         LevelData levelData,
         SandColorPalette targetPalette,
         int colorCount,
-        bool autoColorCount,
-        int previewScale)
+        bool autoColorCount)
     {
         if (levelData == null || !levelData.usesTiles || levelData.tileSources == null || levelData.tileSources.Length == 0)
         {
@@ -104,7 +102,7 @@ public static class LevelDataColorRecalculator
 
             TileLevelComposer.ComposeResult composeResult = TileLevelComposer.Compose(tileInputs, settings);
             UpdateTileSourcePalettes(levelData, composeResult.tiles);
-            ApplyResult(levelData, composeResult.level, previewScale);
+            ApplyResult(levelData, composeResult.level);
             return true;
         }
 
@@ -120,7 +118,7 @@ public static class LevelDataColorRecalculator
 
         TileLevelComposer.ComposeResult legacyResult = TileLevelComposer.Compose(legacyTileInputs, settings);
         UpdateTileSourcePalettes(levelData, legacyResult.tiles);
-        ApplyResult(levelData, legacyResult.level, previewScale);
+        ApplyResult(levelData, legacyResult.level);
         return true;
     }
 
@@ -355,19 +353,11 @@ public static class LevelDataColorRecalculator
         return true;
     }
 
-    private static void ApplyResult(LevelData levelData, ImageProcessor.Result result, int previewScale)
+    private static void ApplyResult(LevelData levelData, ImageProcessor.Result result)
     {
         levelData.palette = result.palette;
         levelData.cells = result.cellIndices;
         LevelEditorUtility.ApplyBucketLayoutRules(levelData);
-
-        if (levelData.previewTexture != null)
-        {
-            Object.DestroyImmediate(levelData.previewTexture, true);
-        }
-
-        previewScale = Mathf.Clamp(previewScale, 1, 16);
-        levelData.previewTexture = ImageProcessor.BuildTexture(result, previewScale);
     }
 
     private static Texture2D EnsureReadable(Texture2D texture)

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Песочная игра — проверка оформления</title>
+<style>
+:root{font-family:Segoe UI,system-ui,sans-serif;color:#173f40;background:#edf3e9}*{box-sizing:border-box}body{margin:0}header{padding:25px 32px 18px;border-bottom:1px solid #cadbd0}h1{font-size:24px;margin:0 0 8px}header p{margin:0;color:#536f69;font-size:14px}.layout{max-width:1200px;margin:auto;padding:24px;display:grid;grid-template-columns:270px 1fr;gap:32px}nav{display:flex;flex-direction:column;gap:6px}button{font:inherit;cursor:pointer;border:1px solid #cadbd0;border-radius:10px;background:#fffdf4;color:#28524f;text-align:left;padding:12px 16px}button[aria-current=true]{background:#285d5c;color:white;border-color:#285d5c}button:hover{border-color:#729f92}figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px}img{max-width:100%;max-height:80vh;border-radius:12px;box-shadow:0 5px 18px #183f4022;object-fit:contain}figcaption{font-size:14px;color:#536f69;text-align:center}footer{padding:12px 32px 24px;font-size:13px;color:#627971;text-align:center}.pager{display:flex;gap:8px;justify-content:center;margin-top:15px}.pager button{text-align:center;padding:9px 18px}a{color:#285d5c}@media(max-width:720px){.layout{display:flex;flex-direction:column;gap:18px;padding:16px}nav{display:grid;grid-template-columns:1fr 1fr}nav button{padding:9px;font-size:13px}img{max-height:75vh}header{padding:20px}h1{font-size:20px}}
+</style>
+<header><h1>Песочная игра · обновлённое оформление</h1><p>Реальные кадры игрового запуска. Выберите состояние для просмотра.</p></header>
+<main class="layout"><aside><nav aria-label="Состояния игры" id="states"></nav><div class="pager"><button id="previous" aria-label="Предыдущий кадр">←</button><button id="next" aria-label="Следующий кадр">→</button></div></aside><figure><img id="frame" alt=""><figcaption id="caption"></figcaption></figure></main>
+<footer>540 × 960 · плотность песка 64 × 64 · покупки не выполнялись. <a href="../../bucket-controls-shop.md">Отчёт о проверках</a></footer>
+<script>
+const frames=[
+ ['Обучение и кнопки','01-tutorial.png','Общий ракурс вёдер, читаемые кнопки и уровни открытия бустеров.'],
+ ['Вёдра на ленте','08-conveyor-active.png','Дно каждого ведра опирается на середину поверхности конвейера.'],
+ ['Переворот: середина','09-bucket-flip-mid.png','Промежуточный кадр настоящей разблокировки после хода.'],
+ ['Кожух: въезд','10-hood-enter.png','Ведро постепенно перекрывается боковым кожухом.'],
+ ['Кожух: полное скрытие','11-hood-hidden.png','Перед переносом ведро целиком находится под кожухом.'],
+ ['Кожух: выход','12-hood-exit.png','После переноса ведро выходит из противоположного кожуха.'],
+ ['Лёд','03-new-painting.png','Обновлённые вёдра с сохранёнными ледяными оболочками.'],
+ ['После разморозки','05-thawed-buckets.png','Лёд снимается после настоящего хода.'],
+ ['Выбранный бустер','15-booster-selected.png','Активный бустер выделяется цветом.'],
+ ['Рестарт и управление','16-restart-and-controls.png','После нажатия «Заново» текущая картина восстановлена.'],
+ ['Магазин','13-shop-top.png','Названия, состав наборов и цены. Цены на снимке предоставляет редакторский провайдер SDK.'],
+ ['Магазин: нижняя часть','14-shop-bottom.png','Содержимое магазина и возможность закрыть окно.']
+];
+let index=0;const nav=document.getElementById('states'),image=document.getElementById('frame'),caption=document.getElementById('caption');
+frames.forEach((frame,i)=>{let b=document.createElement('button');b.textContent=frame[0];b.onclick=()=>show(i);nav.append(b)});
+function show(i){index=(i+frames.length)%frames.length;image.src=frames[index][1];image.alt=frames[index][0];caption.textContent=frames[index][2];Array.from(nav.children).forEach((b,n)=>b.setAttribute('aria-current',n===index?'true':'false'))}
+document.getElementById('previous').onclick=()=>show(index-1);document.getElementById('next').onclick=()=>show(index+1);document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){show(index+1);e.preventDefault()}if(e.key==='ArrowLeft'){show(index-1);e.preventDefault()}});show(0);
+</script></html>
+

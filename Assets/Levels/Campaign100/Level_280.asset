@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_280
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283974181
+  - serializedVersion: 2
+    rgba: 4281235317
+  - serializedVersion: 2
+    rgba: 4288602834
+  - serializedVersion: 2
+    rgba: 4283275917
+  - serializedVersion: 2
+    rgba: 4278585351
+  - serializedVersion: 2
+    rgba: 4280040248
+  - serializedVersion: 2
+    rgba: 4279574814
+  - serializedVersion: 2
+    rgba: 4284203446
+  - serializedVersion: 2
+    rgba: 4287591750
+  - serializedVersion: 2
+    rgba: 4282740055
+  - serializedVersion: 2
+    rgba: 4280767310
+  - serializedVersion: 2
+    rgba: 4291801941
+  encodedCells: S1:4:4096:1F9AE648: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000000000fe00000000fe0000000000ff
+  conveyorDirections: 00000000000000000000000000020000000003000000000000
+  conveyorBucketCounts: 00000000000000000000000000020000000003000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 29226710
+  displayTitle: Crystalline Stag Beetle under Ferns
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 298b171eea0d34e46a4fa42409469a37,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

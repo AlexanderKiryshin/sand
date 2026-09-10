@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_210
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284237316
+  - serializedVersion: 2
+    rgba: 4284624658
+  - serializedVersion: 2
+    rgba: 4288651107
+  - serializedVersion: 2
+    rgba: 4284454318
+  - serializedVersion: 2
+    rgba: 4281277188
+  - serializedVersion: 2
+    rgba: 4286334740
+  - serializedVersion: 2
+    rgba: 4280961077
+  - serializedVersion: 2
+    rgba: 4287523365
+  - serializedVersion: 2
+    rgba: 4290368722
+  - serializedVersion: 2
+    rgba: 4282852618
+  - serializedVersion: 2
+    rgba: 4281691493
+  - serializedVersion: 2
+    rgba: 4280230672
+  encodedCells: S1:4:4096:7D342CE1:dVVBbxNHFP4NI2fBbH1hWy009LIaCFjNBWWDZcUXiwwuzl6yJUMIXGhs5rBzcVuiiFvkQFk1F5s6RKteojraitlLFFsjNPOj+mbXSRG0n7Vr7/ve+943b8b2IAEM551h8imcHEO4Lp4+510H7qFzeJFt4kc5OzSs48yHTi7rzJDkPeaHLpCH88P5oaGH0DsMKS0UzLNRXXiVNx8Ok2vAuzR+YhKg1qi5tNB2z82Fb+68dYsW5uaGzpCaJib9quEX+jE9dxGGrrMTuueWc/7N2yfUvUhwh/T8qTAfzvqHRfDbmV2D66aeGswClG7umupZrnO1COZ+voZP4Se5M7hOLnj25obpcZ3S0PksgZqXmtyY1bsXhY5zzXXcXOFep/JjoV7ws6THThGjd+XGo+ITaFGTGcIg6eYsRuf0/af0S5zz9+ZOH/669f/8Nhk9lBt053P+GsyT0h33d7481s92dnchtv6C/usTtjekO/fmskickJd/ewvHP7MX9NmjZ8WcvnEc09VPxYrQhGTph+5UTrkU3z0152B41Qm36E/KT30/4oEmursmokirTD+GsmEygD2ml7pCjAXXgdapH2Qyk2Kq9QuzKUBvrS/MfagpzYVkmknJuVCMMa236LzzHvjLdwPfVyyCWEo4y5hIeca0PIEOUI9kR4iM3bS1FB3GmeCK67EQOqP08I9ky24IKGXxkhCCd6ddpiMlwKDS6zTZukTLIlLgyYeSKJVKa8F4R8B7sHh4+N7upaKVcpmxtLYiWCC7gvmd2BdSKUI3B/ZdwVPGUskiWGKqZRb5tRW/EXGlZJK823o7AVkwIESaZixr8TGv1xoNreS0sp780uvuN/z6xO/Ua1kNFq21708aDCYZiUovmfPqB37Nr++DvRWpwJ61j5cOouAkjRp6lJSQ14/juBrX99MobUhdWcTouCYJjzgPNl4doUEPIwyoq5RJLZtV4LOUTCWfBi+TMkqQAcZ/SaEZu/+6hL461prAkyID4FEZ9VDvDu5MJGeTvcUKuszWphOmpIT+m0kyQJaph5FlMqieIvTnc909UUzpILGPEnuQDAa7eCkVMgviUqX0nHOdiS7MPyjDL5Z9hGwPYxHVdLaIEJ871tNGJlpdMHFkw/7aA7uM+vsr/HVcstBNAecjymRrOtWklP/i2ai8V/f5AS5VPNzRXGnGg9Yar5B36HCUrw/XfV29DcNSk4y1uGrpltanB2RwlLSB7mGmq9uwVDxZ05zBCRAtLkkVgb5l9RDaux3jU9TbXZIqFULqLpzl1Vv3reSwTWyQv9UvgYx3Z6ykyJTiwVQECBEredfeaKOmhXabMEVvKU1h8YpHRHNCkNUkP8AbQXazDFOGGcIeap5mUnZbhF9BOQ8ZqGnU+3WWKVnjWvPWMiEHHsmB7PYogS3wznwRwTdMKM6C5dWDaiXXT5qEwBAsD4/9KGIpiyTbby6vLl4haNQeGdJ0sHA/9hudFE6J4AGxVqslqzkq+hPbQriEIz/2Dz76k0lG9B72tAVMs+BthL1+pH3uN/ygc4r62APLwDzIaZiEhfH38ce4I8fp2KriU5LTMx4u6IDjat+LJx2JzzxYTyGd823LnLEzXOrj3/px1as0Z+UXgPkQ6LjNF/vbCGhrRhf+22CwbIKASgV9UU3apthqwouYvlZzFr3AiFjGo5UXWuS/ACabedLFWABHhCTtNklG7eTB+b83gmumP/oH
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000ff00000000fe00fe000000ff00000000ff0000
+  conveyorDirections: 00000000000000000000000200000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000300020000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 21895680
+  displayTitle: Fox Shaped Island under Stars
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 81aeb4d3b733b7b47aeb76434ed73da7,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

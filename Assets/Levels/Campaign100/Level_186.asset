@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_186
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279666909
+  - serializedVersion: 2
+    rgba: 4280366926
+  - serializedVersion: 2
+    rgba: 4279252584
+  - serializedVersion: 2
+    rgba: 4279192470
+  - serializedVersion: 2
+    rgba: 4281752705
+  - serializedVersion: 2
+    rgba: 4283201700
+  - serializedVersion: 2
+    rgba: 4279311144
+  - serializedVersion: 2
+    rgba: 4284660715
+  - serializedVersion: 2
+    rgba: 4278717457
+  - serializedVersion: 2
+    rgba: 4280961126
+  - serializedVersion: 2
+    rgba: 4279330747
+  - serializedVersion: 2
+    rgba: 4279641660
+  encodedCells: S1:4:4096:1674AA27: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000fe000000000000000000ff00feff00ff000000
+  conveyorDirections: 00000000000002000000000000000000000002000000000000
+  conveyorBucketCounts: 00000000000004000000000000000000000004000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 19382184
+  displayTitle: Wild Boar among Autumn Acorns
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 13cd49cc3af511a4c88d07e8d0cb657e,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

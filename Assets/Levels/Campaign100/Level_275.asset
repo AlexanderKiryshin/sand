@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_275
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289690655
+  - serializedVersion: 2
+    rgba: 4284043319
+  - serializedVersion: 2
+    rgba: 4291073344
+  - serializedVersion: 2
+    rgba: 4281496928
+  - serializedVersion: 2
+    rgba: 4293313920
+  - serializedVersion: 2
+    rgba: 4287394115
+  - serializedVersion: 2
+    rgba: 4284498963
+  - serializedVersion: 2
+    rgba: 4281611296
+  - serializedVersion: 2
+    rgba: 4287454738
+  - serializedVersion: 2
+    rgba: 4279901202
+  - serializedVersion: 2
+    rgba: 4294238640
+  - serializedVersion: 2
+    rgba: 4292390237
+  encodedCells: S1:4:4096:2FAACB3C:FVVBb9vIGf0Ns1zGZcVLWENm3F64A9phzEsNIuvV9qIIjFcVL7YRyTb2YqvRUK4uS6jmgM2FJiR1EJ0E15ydm6sqQCtduFzGUTk/qiMSvPBx5uO897730XTX7/kaiCeU6bvU3x/ZxJoihNL9kGKMtVd6p61/kfKd81mq49PCMmPy2BF4QKObEJ/6GPn7Kk8maIYpnqirhDxBk5O/BRTvBlRD153fdPZWrb2rncDXm1MIikIp3NFAF5tTGuBrez/sND5o7vgBn1cMc9RU5IOuGeIg1BgOtqPmexSK+7N1glBZf5y68tSD/dC/DQLGaHBd3R+gfnj6tmzxuAJV7s3LeSWReKhjFqU1jF8uPi5S2n/Tyj+VnDfqBFhm/r7zQcAsPbqPzkZzfuunX+D0Px+5CuvuAmSk+GsPMxpRXd++/YeRhDvaRJXIwaM5hbDJ7dJdbCigVJyR6vmU7Nxu7RFQN0QFqbt2F91jhHZSjCm9P32jVsrb4GUGVg14wLkarzMoW/2t0XuKmcai4I3HA/Tk5Y2m2uIcJrFiuCZ3Jc6o41CK3y7yNvLe6don0Mw4LBU1bxRFPuCp4xw6Q6yfzlvu8nf4/F95XK55DglZ2UpjMGGBc+Q49xh/QSsrxHhiG3GfF3muJGsXDDo6rTnOv507vNfMW1GAMkkWzHmNfEWImYxCPGNYfBFthVdSshNMeNOTFdgoeHEAPSAjhhg7OnK+x2mitl6Ev0zWK8kSP8jt0SSTBohVH7DDxB/80Fp6i943Y1O1bM75wpbJxL7aFx5grEaP/rIPx6tu+zjjMlwLCgo4UrZcK3C09h0TJYbjTqePI3+vAKP1XFY5JHGjAIdCwrtbYcQfirJAIdt1eR1k3irjfAAf1emPG3EYQ/4WkAC9dBzXlmHp1tecy4acb12J6rsM3RaL1rIIHGdo2jIABlhz7z0cAGi/FMU7N2/3YJH/OMTDN1yCsZwpa26roN8l3hhTA7/scUJe/H17+Cyzk/U0Jsmaq+t1d/rNxOwNWSS6yp0E5wV3S8OCgDyBgptP1pWxv2V0kDMB0pQ80FdAKjivxImlEMEfsrvxyVdKiDufLStDqO3KpiuIWXUThRS8ifa7k+eWMpbGUqtBSA95MvDcQthv1Kpzr0B9CMbkQ5v0LfK940z6x5WB0TWUwvME/1OLDEZ1x3FQs93eWMT52s1QElsS4JtrpMb9zVvcQ+jbYc359Q/mo4ESWQKSJeThRO1+K+AaQ2MiDHg/vK7X3fG0Qkgs/MM9y3q+rR0Nh/TduD9k9P78U/boHatJtnCLpTmdgte/wp1nOGJnKNRFE2wd12HdXpsHcA4hNxuvt0/b2mkw3F30QoajyH+CrTosGtyWPUMFr4e9M9y51QPWF0nE6I3/5FbWa97yKvV42niuf32mazTQNNZDZINvwRZIWrY9z4lNlD/i822si3jCdNyJxeqz+YFnSqVk56pixJY4mbPNoiiizONSgiYy9CqmWdo2nJM8Ez45FJaOojSiF5JUJxB6XlwopZRLRk5ei9X3my1YgBnkS7VcLYt5YzSqSx6E8LsNNKwJdoeYVfMSGJ5dLJdurFi5pELwpwfRcE4kuuqesarBY0OuT4EQJs5kUPL5MHX+PHSOWK0mvBnFuaI0D1QpJkqZG6UUC5sG+AjXarR2T6NU4UUljkkrseYwW8aW9R31f8aB5ohoE+tpTC7G9XkhuXNQX+QiW3/6yY+i89AR2rBZ+wGJxHgGFiZRSLw4KGDl9zdhim98Stmr/bPqbDIlk73FEprWqpirGQFXKYowDjG7lISA+vgzhErRKjPVBHmScdAPd3Hoh5T9Nq9qmnbRIZ/tpWg5mEEQk3XxDlGKbkJ2WW2faFH1Qjrb0axla2pJ89KGcdmIRPmQMU37RbvFOrqoXvd6omFLCSzNgXYnKf+MaEoZrXY6wjmH2520etrRzlwbrFYvaFQ004s9kRTajIURprMhE6V0Hu6BBTSSn7ca8z5DYr7tYiyW00NHkPzqQksxF0p9JERa9sXh2CWjIjnwJp/vGfVPGX5pSAqEbmuZK6RHb1KAIrah2BlGeKPUFxArJ1KWJwj1RG76eAMyXWPOBo/Yf+VKv/fVws37nTFBPop8FEZMC/SaI9DZ/7gUB7enit0wElDFKMRiSAuuZmhWY5e9pxE5qUZR724ByAihSRxeox1BT8p2aU0Xo2icE1HQn4Ck/0w0DRGPmAf4/w==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000ff00fe0000ff000000000000fe00000000000000
+  conveyorDirections: 00000000000000020000000000000000000300000000000000
+  conveyorBucketCounts: 00000000000000040000000000000000000400000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 28703065
+  displayTitle: Water Spirit Braiding a River
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 83bf46c2eda601f4282da6628445aff4,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

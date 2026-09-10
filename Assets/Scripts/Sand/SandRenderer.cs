@@ -8,7 +8,7 @@ public class SandRenderer : MonoBehaviour
     [SerializeField] private RawImage targetImage;
     [SerializeField] private SpriteRenderer targetSpriteRenderer;
     [SerializeField] private int pixelsPerCell = 16;
-    [SerializeField] private int subGrainsPerAxis = 4;
+    [SerializeField] private int subGrainsPerAxis = 1;
     [SerializeField] [Range(0f, 1f)] private float grainStrength = 0.12f;
 
     public int DisplayScale { get { return pixelsPerCell; } }
@@ -28,12 +28,14 @@ public class SandRenderer : MonoBehaviour
     private int textureWidth;
     private int textureHeight;
     private bool introPourActive;
+    private Sprite runtimeSprite;
 
     public bool IsIntroPourActive { get { return introPourActive; } }
     private static readonly Color32 ClearPixel = new Color32(0, 0, 0, 0);
 
     public void Initialize(SandGrid sandGrid)
     {
+        ReleaseTexture();
         grid = sandGrid;
         subGrainsPerAxis = grid.SubGrainsPerAxis;
         pixelsPerCell = Mathf.Max(subGrainsPerAxis, pixelsPerCell);
@@ -43,9 +45,8 @@ public class SandRenderer : MonoBehaviour
         textureHeight = grid.Height * pixelsPerSimCell;
         texture = new Texture2D(textureWidth, textureHeight, TextureFormat.RGBA32, false);
         texture.filterMode = FilterMode.Point;
+        texture.wrapMode = TextureWrapMode.Clamp;
         pixelBuffer = new Color32[textureWidth * textureHeight];
-
-        DisableStaticGrainOverlay();
 
         if (targetImage != null)
         {
@@ -54,11 +55,12 @@ public class SandRenderer : MonoBehaviour
 
         if (targetSpriteRenderer != null)
         {
-            targetSpriteRenderer.sprite = Sprite.Create(
+            runtimeSprite = Sprite.Create(
                 texture,
                 new Rect(0f, 0f, textureWidth, textureHeight),
                 new Vector2(0.5f, 0.5f),
                 pixelsPerSimCell);
+            targetSpriteRenderer.sprite = runtimeSprite;
         }
 
         RebuildPixelBuffer();
@@ -173,7 +175,12 @@ public class SandRenderer : MonoBehaviour
             int rowOffset = (cellOriginY + py) * textureWidth + cellOriginX;
             for (int px = 0; px < pixelsPerSimCell; px++)
             {
-                pixelBuffer[rowOffset + px] = fillColor;
+                // Small, restrained facets keep the painting legible while giving sand depth.
+                float light = py == pixelsPerSimCell - 1 ? 1.035f : py == 0 ? 0.965f : 1f;
+                pixelBuffer[rowOffset + px] = colorIndex == 0 ? ClearPixel : new Color32(
+                    (byte)Mathf.Min(255, fillColor.r * light),
+                    (byte)Mathf.Min(255, fillColor.g * light),
+                    (byte)Mathf.Min(255, fillColor.b * light), fillColor.a);
             }
         }
     }
@@ -315,7 +322,18 @@ public class SandRenderer : MonoBehaviour
 
     public void PlayIntroPour(float duration = 1.2f)
     {
-        PrepareForIntro();
+        // The dedicated animator owns the animated reveal. Without it, display a complete board.
+        RefreshFull();
+    }
+
+    private void OnDestroy() { ReleaseTexture(); }
+
+    private void ReleaseTexture()
+    {
+        if (runtimeSprite != null) Destroy(runtimeSprite);
+        if (texture != null) Destroy(texture);
+        runtimeSprite = null;
+        texture = null;
     }
 
     public void CompleteIntroPour()
@@ -357,14 +375,5 @@ public class SandRenderer : MonoBehaviour
         Array.Clear(uploadScratch, 0, pixelBuffer.Length);
         texture.SetPixels32(uploadScratch);
         texture.Apply(false);
-    }
-
-    private void DisableStaticGrainOverlay()
-    {
-        SandGrainOverlay overlay = FindObjectOfType<SandGrainOverlay>();
-        if (overlay != null)
-        {
-            overlay.ApplyVisibility();
-        }
     }
 }

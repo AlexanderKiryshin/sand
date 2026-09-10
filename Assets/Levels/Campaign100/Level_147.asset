@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_147
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4288593629
+  - serializedVersion: 2
+    rgba: 4280368747
+  - serializedVersion: 2
+    rgba: 4285827750
+  - serializedVersion: 2
+    rgba: 4279702564
+  - serializedVersion: 2
+    rgba: 4282483401
+  - serializedVersion: 2
+    rgba: 4280361265
+  - serializedVersion: 2
+    rgba: 4292932602
+  - serializedVersion: 2
+    rgba: 4281294483
+  - serializedVersion: 2
+    rgba: 4287276996
+  - serializedVersion: 2
+    rgba: 4280492876
+  - serializedVersion: 2
+    rgba: 4290107119
+  - serializedVersion: 2
+    rgba: 4285902829
+  encodedCells: S1:4:4096:BAA35B8E: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000ffff00fefe000000000000000000000000000000
+  conveyorDirections: 00000000000000000100000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000203000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 15297753
+  displayTitle: Pearl Crowned Opera Singer
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 1e832f85dff482040a33e3e72a9d7159,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

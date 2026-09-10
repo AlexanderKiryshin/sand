@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_149
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283669995
+  - serializedVersion: 2
+    rgba: 4280761447
+  - serializedVersion: 2
+    rgba: 4282599517
+  - serializedVersion: 2
+    rgba: 4291670694
+  - serializedVersion: 2
+    rgba: 4279308822
+  - serializedVersion: 2
+    rgba: 4281092999
+  - serializedVersion: 2
+    rgba: 4280296749
+  - serializedVersion: 2
+    rgba: 4285227907
+  - serializedVersion: 2
+    rgba: 4281886378
+  - serializedVersion: 2
+    rgba: 4280561999
+  - serializedVersion: 2
+    rgba: 4289446884
+  - serializedVersion: 2
+    rgba: 4282810574
+  encodedCells: S1:4:4096:2D309372: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe000000ff00ff00fe0000000000000000000000
+  conveyorDirections: 00000000000000000000000000020000000000000000000000
+  conveyorBucketCounts: 00000000000300000000000000040000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 15507211
+  displayTitle: Motorcycle beside Desert Petroglyphs
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: e705e562bb3adf5438e235c83751fa12,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

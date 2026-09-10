@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_103
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279045894
+  - serializedVersion: 2
+    rgba: 4286030836
+  - serializedVersion: 2
+    rgba: 4280496157
+  - serializedVersion: 2
+    rgba: 4282333984
+  - serializedVersion: 2
+    rgba: 4282082134
+  - serializedVersion: 2
+    rgba: 4280033294
+  - serializedVersion: 2
+    rgba: 4282678658
+  - serializedVersion: 2
+    rgba: 4289366663
+  - serializedVersion: 2
+    rgba: 4287916882
+  - serializedVersion: 2
+    rgba: 4288450490
+  - serializedVersion: 2
+    rgba: 4281092923
+  - serializedVersion: 2
+    rgba: 4284698416
+  encodedCells: S1:4:4096:609B1672:bVTBbttGEP2GBZ1NA/akIHAjn7ZrrYIyF0E0kzS8uNJKAegLs9IaBXOpHYVAdUqQA6X6UiAtxMCXCgFqE70w1FJA1pcgaiA1/KgOlbh22o6AhcA38+bNzuxEURSdVKJxFFWn1crnloCV8MnJ9NlJskanSXKOwt+kWi0joxM4kulXSfkpufBYc6yhauUjkPw7xZro/ON/wH+Y4snNdb7P48oP1WoyfRaD3fwvb3m8PH35Mo7/36H0iS/sY8C/FKyK438cTk8/01+WOy3ALjxioBif+zyrJi/dYm0XDjefwX18upg4fmp/xC9RjABPqkA9jkZL+xy/THEKdY9Pkr+io7uX8GJ1PDn3KPsR3VsWrm0fr5zLFFG0znGaREsI3QP8xdsLimIZRZPjUgJwL4oz27ZfXGvEG5c8omUxWk5K6sWZAPwtRr9eK1ZQQXl8UhIvC9uenRm2azs98mLjabz6+Xg0WcWrVTxZHReAQvbbCNsLB6MN9OVR8TaKnk9GUTwZLYuS3D0DL7fdsOzG4tH37oYTRQuQFY3KBIsPribHq4Xdd9KmUzxyeyD0CwnqS/Iyvh1IjHwueszpvXd7M9mwC7waxaDRXezpniBWsJ/5WEqWv3PtdKNhu+/de3F5B8978smBbvYkplxJx2nZpRDbXhRLtzj7pXBmlX0pVUClgJ+ESu2P9rgo3tmPmze+ppJRbREhmeiqnfa8BDl/zO/sNO12yEq01hRwcmvO5iB+j3PdnvNuTW89pNLjFhWyx7Yb21gehqE38Hbs2SAM88MKFV6oS4bs/ozJVsOidRqG8k47fKwGW3MmWormkmWDpswCn9rgOQivHB7W1Tx50t8WWlvSDzye8T6+ioOeziSTWR52t15rkJ0pOCVXGv9At5s9ipmosaGi+2yrcuDVMlBmt/j1etDrYF8iybSAOqigw662rlfCmlAPWyKv93vbps/0fiqE6IRKMEuw1mbXKkmY9E2Je5Lkgpn0fglJBbLBnlQqB1vzOWV9JqW2MJPUmzczlTW3hVMovqktCkIqIaeexxgKcmtotEiftfd2lDaIVla2edDfrBx0a8OukL7MTC9LeU5lxjVt70FlQsjNSqU+rakW54HOCU3NVMIr2bOgEOio0z3oBnQ6jrjIFA8ozQxUKwpvnwk2U7xbNkduTceD948oTXONjdQI5nt/RrrLtYTrA9FhyAPmFDstU3iCIuTv/VTuyeGglp3NPF0qk07bc2YotSi5gp7ScrhP3vxerXMf5sa4zzm3mNNHSPjIQj56Ba9yzC1YeRnotgyJQcVGh2JEfIYe6Hzs8rklYTccbFVeD+ogQukMYWJkKTV9wjKYV4sB/uMNWD/feTXK2jMkt5FP+wOEeB+ESy+Zfjtn6814C9JIiUzKhrmqY4l0pp5H4zPozhof31W8s0sgvWmhXTXLPxxFatAt6wcYTaM3ME8eksjIKG9ZRwulBxxQQ3ZgQ/7w213ObmPL9w1Mu8I/hIZig7HA9+mrauUAByd9+kBYRoYQbWnCuI9zZBhS0z+S6kOy62mru2jmhByiVEMH2RUJobS5iI6Sbw7rNZ132K5ABlUONU1Ledi2PxSjaALXzOcZNYinmLZQq2/4hmldocqNo6MS9sKawrIrmTkEeRnGCO0Ozc5h52767uiWF/YDKQVjspztXXK/kZm+Qa6SIfGslvKCGvSlltfSIA0zygiCV2TuIpRLkRnEgKcLOyerBz6bUy3gejYIpcgMPFyTNDSH+RPZmWsDp8wk8LqwjxChJsUG8ltGbhJfZ2auCCOtdB9rmCxCfR9mASENyfI0NWWrY0iGTERyBPiGjRGkxcSeuY2ZXTQW9o673lewE4u/AQ==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe000000ff00ff000000000000000000fe00
+  conveyorDirections: 00000000000000020000000000000000000000000000000300
+  conveyorBucketCounts: 00000000000000040000000000000000000000000000000400
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 10689677
+  displayTitle: Terraced Rice Fields at Dawn
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 771f0ca0813c6a941ac2861576e1e8b7,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_257
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4288452247
+  - serializedVersion: 2
+    rgba: 4281545270
+  - serializedVersion: 2
+    rgba: 4287914554
+  - serializedVersion: 2
+    rgba: 4289494618
+  - serializedVersion: 2
+    rgba: 4292462781
+  - serializedVersion: 2
+    rgba: 4293783278
+  - serializedVersion: 2
+    rgba: 4279835491
+  - serializedVersion: 2
+    rgba: 4291993973
+  - serializedVersion: 2
+    rgba: 4279636757
+  - serializedVersion: 2
+    rgba: 4292577329
+  - serializedVersion: 2
+    rgba: 4282473101
+  - serializedVersion: 2
+    rgba: 4284100619
+  encodedCells: S1:4:4096:269788BB:rZTPb9s2FMf/BseKkaC7hKudae6lIx1ogS+eKEMdeklsCg6yi2zrLYNPzWGa0FMXyWCyXqomdln7tAJDZuwyYUjm6tQfw+bCf9Qene6yAT2Nhm1KH77H977vkbPZ/zhefJC+M8mnH+LPTWL++M9D76f/cmUS8n7OCvCfBefI85sppb1C6d98qsh8uZrtUrtQardX87PZ7PLyUq78R/P8ciZn1uMvDfDFeklenp1JPdzr8Hp3qqIs10/05KwHosBrHSHwcUPKEMf2sv6bWdX85MSh4JeajXbcEp1aQX6HeBwt6+xcSRnb3LY4BYAm5T3hsYKDxuH29WKq2KYQ3OIxPaE9AIdLLh2rX1m5D1U03m55zgmNrSRGHkjLcl3f3fhWu5/Po8Vst+7KQMpGn7s9KHjS5bzd7yCPJhOl7tNf1D3WPuJ7R65r9QVgYrELXiWMwpBMFsv6z88l27ANvzSULRuQQ8cOhuUxOrgeL5YvXsxiy6BFow/SimEoBQyHR1BS4XYUquVysXtpcy5jzG0oJWoU7AgA90l0Ta7nyJd0ZnPXZj4uAJfvUGgn0OQPjkMzNNPltF6fncbSlYbTBtiJXatdbEshIhVFD6Mx2r+dPXZh2OINKR1M7sgx2gHy8OHxDa9TGQdu0ZHeDj8xgDG7sZ48Q3XUOFLLKfKzJHE3OrETxxZzKeex0bkIdfjHE7Rf/sUSLGAnce045jZnsWPEHV28FV8s37xBqmO3a6zX5LwvHAerPx5PonQxXTx+e1bsQBe8NvSHPUg8jE6U9f5hOFlMp/UlPXs3IvuYfqA1CCzmCL3/eGymiz91BLvvXproQNwMyouir/cfE6KUWugFL9Muuk2ECISNGRR5uG0eR6Z5nKpIizwlB9qyqH8otYtchePja5MoU0Vmp75YTB8hYUVMj1FM0oh0fia6x6/u32nsakPOqG27Dc4ehGEaqZsRIz+/T7FBKbPtBu7PZTTWlqjvZ7SlD4vaH1L7xNM+aMyNzukztYp9ulSfn0pXjAbA3P4OLeIK3kh9cJ8qHbjK5vmp5CL4GsDbsal2ULC2fHFxsKmxSrPsMPEEHGJ3UIwOP9mTbE9cpJs6bULyPNeq7QuhOY67ZEkq+0L5GqfEzPNDIToHwtGYFSgl5M7AF6mn9OWCA094R3zF2Sr4Io3x1aDkjWC04irL8h+E2Fr5pnajF1SzcnfNH8EFZog7VNO8KpLfGYWmjq4Fr8nAJyUFF+mKz81qnsjbHPu7RhEDIXB7DYQwkR/oAKr5LXGOzeFxSjuBSO9sFjLYE1g+dVDGCIjKYaR7ByyvLUQarEPWFp5JUoWthkXOM81X7aW7CKd+IwC0U9gwAis1CdYDECsXQoygQvJHTjtNzbmoecjzNSH2UGTUsBUASjoflI4q6P5WwEQ5y7P9973ZsewekDSrZleJg/p1mwZDZ7nn6QKIhDOb91HyW79myNNsANzYQnuBPOmIBA9Rg2PG3avMT4iZDQRw1L+Ktt/XPCkt7ECe4vvKVbeElemuN8DEDkD+zRu8m7ABGUdRu3A1GGFpPmo2PJT30DmCe1SfUW4wm6whL11NMA7eaJTNbA6xZ9sGhQBbl9pkDhKFQFVNXtgzszxvSO5i/YsoH25ATv/QtxXKN0BN1TwfeNJyaxJTB7BZi3xC8i7ap3nXAzDT/LAETH7MGPP7TVzymhCT7JcxL987GpnH5h6BpnvObbbD93CLNRK8Ujq9HGRSVubAK6O7pzVJ15rOOsCrrS7qGZfnRLyVT6v5YFU3LHCl4Dt95Jj/sEwAN/ekqdIc/yGo4B1UAehDKc8LsfyCswR7ab1Q2CxASXrSafsoSv2uQf4G
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe00feff0000000000000000000000000000
+  conveyorDirections: 00000000000000010002000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000040002000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 26817943
+  displayTitle: Mountain Guide with Red Backpack
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 34c99416a93baee46a9d3642af08147a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

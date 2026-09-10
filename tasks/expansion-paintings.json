@@ -1,0 +1,1402 @@
+[
+  {
+    "number": 101,
+    "title": "Red Fox in Blueberry Heath",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_101.png",
+    "sha256": "6f7a9fdb9d420c7f4934cfe67ac38c2ba93df8dc1907fc984fc9fb2f8299e418"
+  },
+  {
+    "number": 102,
+    "title": "Glassblower at a Crimson Furnace",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_102.png",
+    "sha256": "91dd50a313d067eb51dd3417b80b305ef6516532391f895f7a62b5d6b2d589ee"
+  },
+  {
+    "number": 103,
+    "title": "Terraced Rice Fields at Dawn",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_103.png",
+    "sha256": "e2d6033933c9b3ee7ebdfd3b0a1704f260f7bba922530d40475e02ecbbcf3b23"
+  },
+  {
+    "number": 104,
+    "title": "Yellow Tram on a Rainy Street",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_104.png",
+    "sha256": "d3ac3e70d9f02725c88ee34a2e3974340af798337b7c7661e33c9069722a7738"
+  },
+  {
+    "number": 105,
+    "title": "Clockwork Whale above Rooftops",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_105.png",
+    "sha256": "dafd7ef80fa30df1fc70166f28e584bb9ab99b9c96d310b3fb95bb89372b4e45"
+  },
+  {
+    "number": 106,
+    "title": "Cheetah on a Termite Mound",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_106.png",
+    "sha256": "ac338c5f2aa996e657e5d593f854e7d20b275e47208f5a4ac0677c5b0f3bc595"
+  },
+  {
+    "number": 107,
+    "title": "Pearl Diver beside a Reef",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_107.png",
+    "sha256": "40aaa76daeaa1c03c94079a0945732631688c6aa13132b678bea27d35566e2ed"
+  },
+  {
+    "number": 108,
+    "title": "Basalt Sea Arch in Surf",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_108.png",
+    "sha256": "826e230ef4307e099d84ec263d5f2a01e0b28b5c791c105a391f358b7693b408"
+  },
+  {
+    "number": 109,
+    "title": "Snowmobile across a Frozen River",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_109.png",
+    "sha256": "1132a2c84e1f95f4535351d2f96a35579e761faf04328c6e96b5a313d1e1b6df"
+  },
+  {
+    "number": 110,
+    "title": "Giant's Teacup in a Fern Valley",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_110.png",
+    "sha256": "c814ab56da170f7d739d1fb75f9913129d53cd8c5d74537a24b4cc1f3ec05cdd"
+  },
+  {
+    "number": 111,
+    "title": "Walrus on Pink Sea Ice",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_111.png",
+    "sha256": "254cabd1c7bc5eec296e323184b2e60a3179ef72890092bf4c000e3c608425e9"
+  },
+  {
+    "number": 112,
+    "title": "Falconer on Desert Battlements",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_112.png",
+    "sha256": "4f9435e0a7ad44a414bb693b1a5866214507f6498466e69439475fa0b704c055"
+  },
+  {
+    "number": 113,
+    "title": "Rose Courtyard with Mosaic Fountain",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_113.png",
+    "sha256": "377ffe9558e4835eb971769c3e542863fbd9d9047b064f27f1c2f0a6af5f9257"
+  },
+  {
+    "number": 114,
+    "title": "Cable Car above Autumn Vineyards",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_114.png",
+    "sha256": "d5d79ac91327045182614cc4dd6bb6f289c011a5225cbd1caf4b86d80b31e75f"
+  },
+  {
+    "number": 115,
+    "title": "Treehouse on a Walking Tortoise",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_115.png",
+    "sha256": "61fddc6ee9d6adab74bf4d329eee4e28102fb1da49b1e7c920fa7ef8549ae972"
+  },
+  {
+    "number": 116,
+    "title": "Badger beside an Old Stone Wall",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_116.png",
+    "sha256": "51ed5f75f64e8fb8b9b0156962985f98ed8fde5d48f6b12e82bf009f043cbd7d"
+  },
+  {
+    "number": 117,
+    "title": "Baker beside a Round Bread Oven",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_117.png",
+    "sha256": "0ec76b3583872907681b0faf9fb7e78c831a12a4b0574fd5afa25edbdb5fd380"
+  },
+  {
+    "number": 118,
+    "title": "Turquoise Salt Pools",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_118.png",
+    "sha256": "4a1d8f0d345267c7b5de89af8c21350da36a903ca379847d67de94a3f9c96a75"
+  },
+  {
+    "number": 119,
+    "title": "Bicycle beside a Flower Canal",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_119.png",
+    "sha256": "3ab00cb52854b4beccbe242cade18d08fb5df5d8cae918dc74d6778f00ff21ff"
+  },
+  {
+    "number": 120,
+    "title": "Paper Crane Constellation",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_120.png",
+    "sha256": "3810e8f31a2746a1e76caa65fc4d798c71167ad03d7dd7191cd64140a2be4706"
+  },
+  {
+    "number": 121,
+    "title": "Humpback Whale under Silver Waves",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_121.png",
+    "sha256": "1b28a153ec1dc7ab46cdb542db56308b0a0f8fa79d19d5b1aeacd770e740cdc7"
+  },
+  {
+    "number": 122,
+    "title": "Carpet Weaver in an Indigo Workshop",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_122.png",
+    "sha256": "ed905ca653ab82980d728546589ef07f110d04b6945b89855193ca4c5b99d1c0"
+  },
+  {
+    "number": 123,
+    "title": "Copper Roofs after Rain",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_123.png",
+    "sha256": "dc55d67f5b961bb185c827a5613949363441ae3d8c980c7e18cea6cf410927fc"
+  },
+  {
+    "number": 124,
+    "title": "Sled Dogs Crossing a Snow Bridge",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_124.png",
+    "sha256": "821c9cecc8e27d5804161e059dd59cff345980d8c31ea12e93a0707654691b4a"
+  },
+  {
+    "number": 125,
+    "title": "Lantern Jellyfish in a Moonlit Cove",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_125.png",
+    "sha256": "dabf0400807183eed735dc5756d85855d3dd588219ef0dd83cd93dd718dca193"
+  },
+  {
+    "number": 126,
+    "title": "Ring Tailed Lemur on Baobab",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_126.png",
+    "sha256": "d3ba9296bc07cbf40cde4651858155775038966dcd3f4501d5e00271abcf9156"
+  },
+  {
+    "number": 127,
+    "title": "Violin Maker in a Sunlit Attic",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_127.png",
+    "sha256": "1e37ee988964bdeca633ee938574000681337f415c262b17c5e3e5b67aa789f7"
+  },
+  {
+    "number": 128,
+    "title": "Red Canyon with a Narrow River",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_128.png",
+    "sha256": "a05e6b9ff2121285c34849e8265237c7649bcce5eb3b2760bdcf73ebbbbeafd2"
+  },
+  {
+    "number": 129,
+    "title": "Green Bus on a Serpentine Coast",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_129.png",
+    "sha256": "350368201bb9b9cab2ba66f834c3ed535c7a03c2a3973d36470a1d0c0f118de7"
+  },
+  {
+    "number": 130,
+    "title": "Library Growing inside a Giant Shell",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_130.png",
+    "sha256": "d4dbc6c8f0c366ac2fdc772d8cab69bb747de561f55aa0a7fcadc68ed0c6b8fd"
+  },
+  {
+    "number": 131,
+    "title": "Wombat among Golden Grasses",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_131.png",
+    "sha256": "1eb932c617fe432cbc7ac7a9612afa2db41fffacf4f9205b1921c0eb6371f717"
+  },
+  {
+    "number": 132,
+    "title": "Mountain Rescuer with an Orange Rope",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_132.png",
+    "sha256": "78e0a2208f695305ac8310086b19a2a6db34129516ceb494a338e8d8f273cff8"
+  },
+  {
+    "number": 133,
+    "title": "Rainforest Suspension Bridge",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_133.png",
+    "sha256": "7b3fbef1e880b71dba444baed96ac83a8690e133697aec30c3fc085a3df35150"
+  },
+  {
+    "number": 134,
+    "title": "Canoe among Water Lilies",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_134.png",
+    "sha256": "551b6711c50968a88bbae71a55a3d341af0af094941e25e7584e6c9e9b44eaf4"
+  },
+  {
+    "number": 135,
+    "title": "Mountain Carved like a Sleeping Lion",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_135.png",
+    "sha256": "2f6bd307f6e5706dafbd5dc77f247c0b2d7325d69ac3e36723499cce336a309b"
+  },
+  {
+    "number": 136,
+    "title": "Mandrill under Tropical Leaves",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_136.png",
+    "sha256": "4b14c1d654899d95ce960822a49af7e7c0c58af3bd02181cd55cb76f474b8ea5"
+  },
+  {
+    "number": 137,
+    "title": "Mask Carver in a Cedar Workshop",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_137.png",
+    "sha256": "7f22f06e9887e3e9d2d41e9a98a465229d82c62f6ad6f87a00fe89eaff77cd5d"
+  },
+  {
+    "number": 138,
+    "title": "Lavender Salt Cave",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_138.png",
+    "sha256": "b9d366a970b3a435319e4a927d1e818392ac087bb1583ccec85e55770a08ed02"
+  },
+  {
+    "number": 139,
+    "title": "Solar Rover on Red Dunes",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_139.png",
+    "sha256": "a987badd6f5fc5ab3361e4ccf127bf1921090a6c0702a08cfdc9b18185b643bb"
+  },
+  {
+    "number": 140,
+    "title": "Cloud Manta Ray over a City",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_140.png",
+    "sha256": "cfd1bf9d93fe388826b9920207895c93333c269d90d287bc1f4001177f5d46d3"
+  },
+  {
+    "number": 141,
+    "title": "Bison in Snowy Grassland",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_141.png",
+    "sha256": "665237f325200c758c68e883323172246b79867081e50c04c1a91002ae95a2d8"
+  },
+  {
+    "number": 142,
+    "title": "Festival Drummer beneath Bunting",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_142.png",
+    "sha256": "f23b74a2cf6041c4b1a2ce6542e98332a269a344f5bd3f106398d84fbc8bc5ee"
+  },
+  {
+    "number": 143,
+    "title": "Blue Mosque Courtyard at Dusk",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_143.png",
+    "sha256": "4b9769972529d3c73d82216e64ed6bd2d545582c71b4bd309b7fd2fcf4377db1"
+  },
+  {
+    "number": 144,
+    "title": "White Yacht in a Black Rock Cove",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_144.png",
+    "sha256": "9ee8b93379e77e43ca119a35c700e0193a406248b3dc1c08361dd7367b05731a"
+  },
+  {
+    "number": 145,
+    "title": "Garden of Crystal Bells",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_145.png",
+    "sha256": "81040f9897f035a1e8563262d9081d37f0b271fbb4dbf20b166f8d6ac4130394"
+  },
+  {
+    "number": 146,
+    "title": "Fennec Fox beside a Desert Flower",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_146.png",
+    "sha256": "6b7523d322207f283279fa40ae6468b539acaf2202d7934f0d1ddc9569cbfe06"
+  },
+  {
+    "number": 147,
+    "title": "Pearl Crowned Opera Singer",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_147.png",
+    "sha256": "aa61b6c6f8f219c959647ec77ba65f8633c25a0458064eed36b5752c3c9c4845"
+  },
+  {
+    "number": 148,
+    "title": "Scarlet Poplar Road",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_148.png",
+    "sha256": "52b4f03980642611414338c593d4bfbcf669076f76ab34e3d70d8175564bbaf6"
+  },
+  {
+    "number": 149,
+    "title": "Motorcycle beside Desert Petroglyphs",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_149.png",
+    "sha256": "5a3a22849e8796976fd76378f1eccaa6a29301c5307c4ff74a9ac396b31f3d8e"
+  },
+  {
+    "number": 150,
+    "title": "Silver Rabbit on a Crescent Bridge",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_150.png",
+    "sha256": "524c63474380d3dbad6472890caa04337cd744571f3334b1a9be44902bd20ee3"
+  },
+  {
+    "number": 151,
+    "title": "Capybara in Orange Marsh Reeds",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_151.png",
+    "sha256": "662cd8e1994d7b9c70ebd30311144ad963d1d462e8232cbdaaecf7588717a27a"
+  },
+  {
+    "number": 152,
+    "title": "Botanist with a Leaf Press",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_152.png",
+    "sha256": "b0ccdee309c4919793c94bead3c110e8ff168f612f0a82829497e27c22f757fe"
+  },
+  {
+    "number": 153,
+    "title": "Sunken Marble Stairway",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_153.png",
+    "sha256": "6dcc9c0fabeb5decf4936143d2db0c10ff766a74dfbfc53ccc5e2ccfb20ebf27"
+  },
+  {
+    "number": 154,
+    "title": "Red Kayak below an Ice Wall",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_154.png",
+    "sha256": "fe7a44797968014a6febd2be9c274024c7abb74d83c676dddaf77c21cec6acdd"
+  },
+  {
+    "number": 155,
+    "title": "Giant Koi Swimming through Clouds",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_155.png",
+    "sha256": "634e87def3caf7854742dd4ba6011a33b6af6632ae8093614294af73d1717663"
+  },
+  {
+    "number": 156,
+    "title": "Arctic Hare in Heather",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_156.png",
+    "sha256": "ba316f809b24601dc675567d250ff1870e29d6e90c3fa30b1ba14478292cedb1"
+  },
+  {
+    "number": 157,
+    "title": "Falcon Masked Dancer",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_157.png",
+    "sha256": "1a1c18a4b5d10d49cbc00de419d0b25fb7aeef7e481e40bb267692465662ae1c"
+  },
+  {
+    "number": 158,
+    "title": "White Chalk Cliffs and Turquoise Sea",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_158.png",
+    "sha256": "cad784b70f44f7befd42867757fea63207669015529bf1cdcf941e0b83e2325a"
+  },
+  {
+    "number": 159,
+    "title": "Funicular between Hilltop Houses",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_159.png",
+    "sha256": "047bee88b2b990a3da8edf200bec5825c3e3c738934b5ab63298690384f78729"
+  },
+  {
+    "number": 160,
+    "title": "Moss Golem Planting a Flower",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_160.png",
+    "sha256": "4ee9db5d3ebb1874d2432fb8485193792734e3967d9f7ba1e614fb7ebc891123"
+  },
+  {
+    "number": 161,
+    "title": "Okapi in Emerald Underbrush",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_161.png",
+    "sha256": "b1df738dec549828febbf14cc5c78573ef2dcc30af4f16e85180818c1a19ff02"
+  },
+  {
+    "number": 162,
+    "title": "Clock Repairer with Magnifying Glass",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_162.png",
+    "sha256": "a136d4e8dd09cf04356263a74354ce1caf4e43f74f95ace120a2d4567d387fae"
+  },
+  {
+    "number": 163,
+    "title": "Circular Stone Labyrinth",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_163.png",
+    "sha256": "d79342055ca4a1896743f917256b9e7411f9dbfdcd7f3542f616ee2d4bae0958"
+  },
+  {
+    "number": 164,
+    "title": "Wooden Fishing Skiff at Sunrise",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_164.png",
+    "sha256": "6a7b1bc92743599e5a44585ef0e14282977227309a809abf3230938db1cca42e"
+  },
+  {
+    "number": 165,
+    "title": "Doorway Suspended in a Waterfall",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_165.png",
+    "sha256": "ce2613e68b0a2e8543c0ad15b01382065479710e388f18e6f0641e4381872f16"
+  },
+  {
+    "number": 166,
+    "title": "Armadillo on Flowered Red Earth",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_166.png",
+    "sha256": "a4bd8fd6c8e9e40561ad6dee7dee599d148c15305938a628565decfe238e8ba9"
+  },
+  {
+    "number": 167,
+    "title": "Geologist Holding Amethyst",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_167.png",
+    "sha256": "01683c691f8326baa21b4377a90612d5635ee9d41ce11a53d4c02241b37983b8"
+  },
+  {
+    "number": 168,
+    "title": "Pink Sand Beach and Black Palms",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_168.png",
+    "sha256": "c058fa0c78196015ee2a4260b9b8e1847a611d710b52216eddccbf17842ec1d6"
+  },
+  {
+    "number": 169,
+    "title": "Silver Rocket on a Moon Launchpad",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_169.png",
+    "sha256": "9414b51db16741299f708a5449440079abbbe6f0533207e1ee89683e5b5ce282"
+  },
+  {
+    "number": 170,
+    "title": "Golden Snail Carrying a Garden",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_170.png",
+    "sha256": "fa83912c624f5e6f95431424c6ab6be2ebeec3819f13ba8e89e510b1f1806b29"
+  },
+  {
+    "number": 171,
+    "title": "Pangolin on a Jungle Log",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_171.png",
+    "sha256": "7da9f3fd8db358987a0b1252ba4aaddfecefd882ed7261930aea6c4a843ce677"
+  },
+  {
+    "number": 172,
+    "title": "Candle Maker with Wax Lanterns",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_172.png",
+    "sha256": "9c2272570b28c17ee70a3f491fbcce3f8fac15aaf1af121d0f25efc7e0aa8428"
+  },
+  {
+    "number": 173,
+    "title": "Geothermal Pools under Snow",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_173.png",
+    "sha256": "ef71584f938880f901751beb85dfeaa0799737b9830249d0582634182dbd0102"
+  },
+  {
+    "number": 174,
+    "title": "Vintage Racing Car in a Pine Bend",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_174.png",
+    "sha256": "0fbd9f4de69dbd6ef8fd7f9c86ff5ec7f049afcfe87ae25cb3a9229237e86a67"
+  },
+  {
+    "number": 175,
+    "title": "Origami City on a Lotus Leaf",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_175.png",
+    "sha256": "a2c0d41f880d7a45967956c68fefc966c93f4430127ee84121af1512c2a5ad90"
+  },
+  {
+    "number": 176,
+    "title": "Red Squirrel beside Fly Agarics",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_176.png",
+    "sha256": "4ba5dcf3f81b1be6863e781ca0c84924286435796f528ede9b4308b5eacfdc4e"
+  },
+  {
+    "number": 177,
+    "title": "Tea Harvester on Misty Slopes",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_177.png",
+    "sha256": "a32d9f78a3e5871d97024dd9350da0a2e62801e0c0712745d7a46917cbb5f699"
+  },
+  {
+    "number": 178,
+    "title": "Blue Ice Tunnel",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_178.png",
+    "sha256": "561384ff7a8e944f99f8df5f29570f69d0c1cece20d5953c40d409e819f27a77"
+  },
+  {
+    "number": 179,
+    "title": "Dog Cart on a Cobbled Lane",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_179.png",
+    "sha256": "92782c1b893f37e3488d3efa71c987aadd4ed4feae3619f3cc391a12b90814f0"
+  },
+  {
+    "number": 180,
+    "title": "Stained Glass Tiger in a Ruined Chapel",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_180.png",
+    "sha256": "457049ade08cdc212214dea377b92f923e20a24b80668d9c9fb47c045c7c38fa"
+  },
+  {
+    "number": 181,
+    "title": "Manta Ray over White Sand",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_181.png",
+    "sha256": "79618df1b9816b56d8ba4409088669a8bdd89845bbc9ad848a2aa71b5291d90b"
+  },
+  {
+    "number": 182,
+    "title": "Mountain Shepherd with Wooden Flute",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_182.png",
+    "sha256": "627f175e92be291791bda8dcba3624ce2a9a5674e408a11941561a0778d857d5"
+  },
+  {
+    "number": 183,
+    "title": "Hanging Gardens in a Quarry",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_183.png",
+    "sha256": "084dd68c8b96d137149053a9057f80754090ab55074708ba8bb32c70c615a03d"
+  },
+  {
+    "number": 184,
+    "title": "Orange Helicopter above a Fjord",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_184.png",
+    "sha256": "151b2c25487ce1b08c7c53fafc1991e2fb67b5e8638228bce02ab58309864536"
+  },
+  {
+    "number": 185,
+    "title": "Night Circus on Floating Stones",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_185.png",
+    "sha256": "26869911e67dfbba7e46f07c8a0b3fb4a29cd5e7a66ea9a9485474ecfe07d9d6"
+  },
+  {
+    "number": 186,
+    "title": "Wild Boar among Autumn Acorns",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_186.png",
+    "sha256": "f829df0d9ddb43a0e38d65b9623ff0938f0348b5761fbfce0ba66c5190261ff3"
+  },
+  {
+    "number": 187,
+    "title": "Astronaut in a Lunar Greenhouse",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_187.png",
+    "sha256": "d0a683a2d09f57bae5594540f145fd60d464ad0c94e82cc6d94efc4626ab33d3"
+  },
+  {
+    "number": 188,
+    "title": "Green Canyon with Ribbon Waterfall",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_188.png",
+    "sha256": "7ef6443e0d2f1857485c86798067ff54bd09ae0ba69c1f627bcdc68f5f56f14a"
+  },
+  {
+    "number": 189,
+    "title": "Bronze Diving Bell under the Sea",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_189.png",
+    "sha256": "6f88eab7ec3bc8e255e89f4b376f9330e5721f1f728e1dd35db5fa5e4c88d419"
+  },
+  {
+    "number": 190,
+    "title": "Singing Stones in a Lavender Desert",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_190.png",
+    "sha256": "ac54915b2c6e087b77fda9fd6bf1e72ac9f2c864df6edcf8ae20466ed3474016"
+  },
+  {
+    "number": 191,
+    "title": "Chameleon on a Passionflower Vine",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_191.png",
+    "sha256": "793f2b912e632163306d1020a77234b4404762b62c95166bc2c45161ab2d23b0"
+  },
+  {
+    "number": 192,
+    "title": "Bookbinder Stitching a Red Cover",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_192.png",
+    "sha256": "361b2b7f3c4935468d6b29316d82b176bb62a1a9883e537c752ffc956dd5a1db"
+  },
+  {
+    "number": 193,
+    "title": "Snow Covered Torii by the Sea",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_193.png",
+    "sha256": "4ffec038abe5805cd843bac2b9f8ca455558fc5c10216d08b0c27173cd5202f3"
+  },
+  {
+    "number": 194,
+    "title": "Electric Train through Cherry Blossoms",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_194.png",
+    "sha256": "bf168858c26f58a3cc525c14bf813cd05275d255569cafe220bc2b424db5a1a8"
+  },
+  {
+    "number": 195,
+    "title": "Tiny Village inside a Pocket Watch",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_195.png",
+    "sha256": "da0844a4ffdd23f09c75a67f6d662c23a7af60dd7f07fb300815a719f514603f"
+  },
+  {
+    "number": 196,
+    "title": "Giraffe at an Acacia Waterhole",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_196.png",
+    "sha256": "898dcc138b36dee11ac30ca17fe474db61170c29aca80b76373c3a279dd060a5"
+  },
+  {
+    "number": 197,
+    "title": "Cartographer Drawing an Island",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_197.png",
+    "sha256": "5fa31cbc76ea13c1335649f63b56fbe74024792b354f985221e994fec1912829"
+  },
+  {
+    "number": 198,
+    "title": "Volcanic Black Beach at Sunrise",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_198.png",
+    "sha256": "843164cbc804d523d9b411895738a36b4bfbcc99c9c159443f872263e458bb01"
+  },
+  {
+    "number": 199,
+    "title": "River Ferry between Yellow Cliffs",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_199.png",
+    "sha256": "1ebd062d205bb18cefa4527bc54d173788741b7217f3b3c5d7161fa8ab84cf0e"
+  },
+  {
+    "number": 200,
+    "title": "Sleeping Moon in a Forest Nest",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_200.png",
+    "sha256": "6adc64ff21318182a96d00e2493884c0d9b611852f75a16da12b18746e49c81c"
+  },
+  {
+    "number": 201,
+    "title": "Anteater in a Blue Grass Savanna",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_201.png",
+    "sha256": "80df50fc1329f09108c981843218df9b10a8e06f6d490c25f2efc3bf735b82db"
+  },
+  {
+    "number": 202,
+    "title": "Spice Seller beside Saffron Baskets",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_202.png",
+    "sha256": "96587b25224ad68c20a1533d1a15dbf0f57d896d6e4d1e545263cbf42937f101"
+  },
+  {
+    "number": 203,
+    "title": "Cobalt Cathedral Interior",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_203.png",
+    "sha256": "0b81a351fbbf0f4403042f66e6946701850aafede7129322a49cda559e50b021"
+  },
+  {
+    "number": 204,
+    "title": "Wooden Biplane over Tulip Fields",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_204.png",
+    "sha256": "dd5fa6d1bbbdff1080962f42eef807acaa8c9b9672233606cc7b03ec3dff52de"
+  },
+  {
+    "number": 205,
+    "title": "Porcelain Elephant in a Tea Garden",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_205.png",
+    "sha256": "2265be9c388f42e635a5a9906e1f7f38a1ddc834532768439d24f6a7b3e64166"
+  },
+  {
+    "number": 206,
+    "title": "Iguana on a Sunlit Mayan Stone",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_206.png",
+    "sha256": "23ea11e0df2428c82cfdf2142a91db89fdf83799ea5c0872995badff2abb264d"
+  },
+  {
+    "number": 207,
+    "title": "Female Blacksmith Holding a Silver Sword",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_207.png",
+    "sha256": "de58c47dc62390c0ecd1af554ca30ffaee4fe37dafba0061ced5865b32e6ef09"
+  },
+  {
+    "number": 208,
+    "title": "Aqueduct over a Red Valley",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_208.png",
+    "sha256": "4d0212015eee63650acb694fd050cf6fc9ab651483a1bcfa77d75325b3771696"
+  },
+  {
+    "number": 209,
+    "title": "Icebreaker in Golden Polar Light",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_209.png",
+    "sha256": "5ecc58127c49576e9567f66fc580ef50a03c45e275a5e6b6aa6dc705c14e97d6"
+  },
+  {
+    "number": 210,
+    "title": "Fox Shaped Island under Stars",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_210.png",
+    "sha256": "85b3387b5bfd748105706f18d61fd127f5f03378b5651399c60c01b651980b7e"
+  },
+  {
+    "number": 211,
+    "title": "Manatee among Mangrove Roots",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_211.png",
+    "sha256": "ab227c8173823d198b0aec28b4ae6a57e12f4df84e667e081dc3cefd329ae91b"
+  },
+  {
+    "number": 212,
+    "title": "Puppeteer with a Painted Marionette",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_212.png",
+    "sha256": "23ae375470dfb75713bbe364e925fcd3c59c93522695108c36c61b262f0a1325"
+  },
+  {
+    "number": 213,
+    "title": "Frosted Glasshouse at Sunrise",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_213.png",
+    "sha256": "e2421c416490118888f3278f05e6d349559bb61b899630c9370633901da0f2ba"
+  },
+  {
+    "number": 214,
+    "title": "Postal Scooter beside Lemon Trees",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_214.png",
+    "sha256": "cf2188786ea31ce9c45a82b3c625c82ce1022f40c817f923bee34c873f85c1ff"
+  },
+  {
+    "number": 215,
+    "title": "Rainbow Staircase in a Storm Cloud",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_215.png",
+    "sha256": "8b2a79490e2adc0c1ade1fc977e834bea24eae65b0d4f10c6af2e1c9defa483a"
+  },
+  {
+    "number": 216,
+    "title": "Mountain Goat on a Slate Ridge",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_216.png",
+    "sha256": "f2cbab07f29ecbbc0e3e33e21b6399191e1946a8ff70d0f14335103df7ced268"
+  },
+  {
+    "number": 217,
+    "title": "Leatherworker Making a Travel Bag",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_217.png",
+    "sha256": "68f0f369a6d8e22eb0db7cf405b4ed2e26d54dc92dbeb22da1b4fcc03ceaf221"
+  },
+  {
+    "number": 218,
+    "title": "Tropical Cenote with Hanging Roots",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_218.png",
+    "sha256": "d06736d2e44344e1ec3d3e0133ad9903c7b69a00941046c3ca2a5f025ed609bb"
+  },
+  {
+    "number": 219,
+    "title": "Desert Sail Wagon under Purple Sky",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_219.png",
+    "sha256": "c8a5d2caba5d6dc5f4b5450e21840159178a33a079c73e059fb218a6efee5020"
+  },
+  {
+    "number": 220,
+    "title": "Copper Beetle carrying a Lighthouse",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_220.png",
+    "sha256": "7047a45c4421ed1dc7c855d4fb86fb4b0963cb6f319ec85bab1b025bf2d30db9"
+  },
+  {
+    "number": 221,
+    "title": "Tapir in a Moonlit Stream",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_221.png",
+    "sha256": "5a5c387166572517ba3d8ce01e510abf3df3f04f3e8e06af137b44fcdd1be5fd"
+  },
+  {
+    "number": 222,
+    "title": "Chess Master in a Walled Garden",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_222.png",
+    "sha256": "397af372b15500d37d47043a4f36aee4a7931cd9fda8222e3d6ac2c8f54d5126"
+  },
+  {
+    "number": 223,
+    "title": "Terracotta Courtyard after Rain",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_223.png",
+    "sha256": "841256cc24382e81d33e8874691e30b08eaa4875d73ce819c56904c497365557"
+  },
+  {
+    "number": 224,
+    "title": "Rescue Boat beside a Fog Bell",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_224.png",
+    "sha256": "c701157239e3c92997d8d332a00ecc15cfeb382394a5cfbdec44a7e26f764f65"
+  },
+  {
+    "number": 225,
+    "title": "Planetarium inside a Giant Acorn",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_225.png",
+    "sha256": "f0e177748996d7997ae78006759a1d3fdcc5d426906e35f9ab5e0b8686b66773"
+  },
+  {
+    "number": 226,
+    "title": "Honey Badger beside Desert Rocks",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_226.png",
+    "sha256": "eaf094e583203ef13ca3e2044d3c798e425dbcfcfa9b11dd28275c5ea7a105f6"
+  },
+  {
+    "number": 227,
+    "title": "Ceramic Tile Painter in a Blue Studio",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_227.png",
+    "sha256": "424b0e3838f6cb7905466e737cda68270ce596a36b5a5c02f066c626e702e966"
+  },
+  {
+    "number": 228,
+    "title": "Redwoods around a Small Lake",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_228.png",
+    "sha256": "c66834a7fd77b04553863dd5af12379bb7c57c6356db4350342f3c5a586d91d7"
+  },
+  {
+    "number": 229,
+    "title": "Yellow Submarine among Sea Fans",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_229.png",
+    "sha256": "0ed3aa8ad3c2efa26f03c77b6c19b7d01f17a67a113f249cfc41dacc9f315d31"
+  },
+  {
+    "number": 230,
+    "title": "Origami Dragon over a Bamboo Bridge",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_230.png",
+    "sha256": "305770ced2f4330b64883b22f7da0e64958a7ff01da96e0157d770c75c8eea37"
+  },
+  {
+    "number": 231,
+    "title": "Kangaroo in Purple Outback Flowers",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_231.png",
+    "sha256": "c23148c2dbe36266367ce0b15f87c59d56005ae69ca1342436bcc345da0b37ab"
+  },
+  {
+    "number": 232,
+    "title": "Circus Acrobat on a Silk Ribbon",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_232.png",
+    "sha256": "b91990d5d451b0d5c82ec851d3f1caa3b12400a0dc51580b534012253ee6d1ec"
+  },
+  {
+    "number": 233,
+    "title": "Monastery Carved into a Cliff",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_233.png",
+    "sha256": "1e81bb90b61f2c51a9e35dfccffd20fd76e35274282201e89c19b34d5e826fa8"
+  },
+  {
+    "number": 234,
+    "title": "Amphibious Truck Crossing a Jungle Ford",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_234.png",
+    "sha256": "8662374adda498cb0cc7039c735aca3d5842dd8bc162c0c0d98e333025e4400a"
+  },
+  {
+    "number": 235,
+    "title": "Crystal Frog on a Glowing Lily",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_235.png",
+    "sha256": "1ed2e37931ac7f9c3b811b821c15fc46f6c6c0f2e7f3a8f0d499dca7ddb94b79"
+  },
+  {
+    "number": 236,
+    "title": "Dugong beneath Sea Grass",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_236.png",
+    "sha256": "713331535a45f25b7dcd24fd284919d595081bfd086d055b03772a01a5a7a755"
+  },
+  {
+    "number": 237,
+    "title": "Young Violinist in a Train Station",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_237.png",
+    "sha256": "5e43d08b7454520828fef48f0137d9a368be006462d92962c4aba2bd8415f22e"
+  },
+  {
+    "number": 238,
+    "title": "White Desert Mushroom Rocks",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_238.png",
+    "sha256": "5d99a8dc46ab6dda98a521b2149d65177d477ba10595be4027a7472b9ec47bee"
+  },
+  {
+    "number": 239,
+    "title": "Sailing Catamaran at a Tropical Sunset",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_239.png",
+    "sha256": "b2c4270ea3ca03326ffeb243efca0263abc772679025f9ea5ff76fda1f024157"
+  },
+  {
+    "number": 240,
+    "title": "Castle inside an Hourglass",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_240.png",
+    "sha256": "157aa8cdbc5c4ec014f8ade88e00a9ea9050a01f500aad84b9fe9f503a834121"
+  },
+  {
+    "number": 241,
+    "title": "Saiga Antelope on a Golden Steppe",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_241.png",
+    "sha256": "588546cf9dd69d7bccc59375972c4e07c353ef35504f5babe8252023c5971dfb"
+  },
+  {
+    "number": 242,
+    "title": "Basket Maker beside Willow Reeds",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_242.png",
+    "sha256": "4aacdd4d37b962e197ebdcc36dbe6e4098c01af48e3b4a51f2bff089ffa8f5fc"
+  },
+  {
+    "number": 243,
+    "title": "Coastal Cave with Emerald Reflections",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_243.png",
+    "sha256": "11ffb96e5b6c088dad2115bfebbfd3015bc9f3b32f60791331ed9c3b404fb49a"
+  },
+  {
+    "number": 244,
+    "title": "Steam Tractor at a Harvest Fair",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_244.png",
+    "sha256": "ec20ee7ac72957cf2ca36607d14d0eedfd9110f35df0f14e4044005e6a74971f"
+  },
+  {
+    "number": 245,
+    "title": "Giant Feather Boat on a Starry River",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_245.png",
+    "sha256": "463855e3daa4ea7ed20ca5d6d7fc6ece4edd95c801c9efdea0f7bc9dc0a7b75d"
+  },
+  {
+    "number": 246,
+    "title": "Serval in Wetland Papyrus",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_246.png",
+    "sha256": "74dac614246122aeef463df7f6dd5d2a66fe58e902f4ca47e31e83d21c558741"
+  },
+  {
+    "number": 247,
+    "title": "Female Miner with a Brass Headlamp",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_247.png",
+    "sha256": "b3811b3c798eaa539f80b6ecf9ba0b8e679af469f90e607813d57fe9f968bfe8"
+  },
+  {
+    "number": 248,
+    "title": "Terraced City in a Meteor Crater",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_248.png",
+    "sha256": "024b8441a012009f90b9854059eb97e299c58fc82d1289deb4a5d5e3e226305e"
+  },
+  {
+    "number": 249,
+    "title": "Monorail between Glass Towers",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_249.png",
+    "sha256": "b07707c3fd048e7c844ccc8c3aa5d869e6574b5e917d4cb7a5fa317f57bb0d83"
+  },
+  {
+    "number": 250,
+    "title": "Moonlit Stone Owl Guarding a Gate",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_250.png",
+    "sha256": "90cb9ffd1ecafe2dd20e86365c0fee6bf19732f7d16c74ce357a3739172f6467"
+  },
+  {
+    "number": 251,
+    "title": "Pronghorn under Painted Desert Mesas",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_251.png",
+    "sha256": "0de26ea2026b181ba450527143757c301f85660151aea00c19f7cdadb7e12db2"
+  },
+  {
+    "number": 252,
+    "title": "Perfumer with Amber Glass Bottles",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_252.png",
+    "sha256": "64fcd009e9e624f5f85ae730632eab4449c3a433a5dfa4c0a5d6ccbc7598167f"
+  },
+  {
+    "number": 253,
+    "title": "Ancient Stone Theatre by the Sea",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_253.png",
+    "sha256": "af2ac3885dc7ff04d397fee15a31aad222c49e1af6b6a2004a0da1d878dd73aa"
+  },
+  {
+    "number": 254,
+    "title": "Horse Tram through a Winter Market",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_254.png",
+    "sha256": "c7bd5667bf1f4a1804f2cc293d5ff95d02c312e1fd9eb685f421c50a51f0f370"
+  },
+  {
+    "number": 255,
+    "title": "Jade Serpent around a Sun Temple",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_255.png",
+    "sha256": "5e5e72043480decb0d67f82074d2a9be97b54a700478e0b931d689fe05d2f4d9"
+  },
+  {
+    "number": 256,
+    "title": "Quokka among Coastal Wildflowers",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_256.png",
+    "sha256": "f3ba10e976bf3955ad15d69eecf7f3157e37f7e4faa7cadf71f05aa882f8ab22"
+  },
+  {
+    "number": 257,
+    "title": "Mountain Guide with Red Backpack",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_257.png",
+    "sha256": "9f56ee5e49cbf8bdcb3f2b6a3b146546f7283314717b888e2469d64a0fc5018b"
+  },
+  {
+    "number": 258,
+    "title": "Sunlit Cactus Conservatory",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_258.png",
+    "sha256": "d28b6ac598a875ed723128a5c204baa14644728fa2469928e9cb47c9366ee8d8"
+  },
+  {
+    "number": 259,
+    "title": "Hang Glider above a Green Gorge",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_259.png",
+    "sha256": "044d9c621c0fc45e27861c88d0b6fb575a939dbd12d143f7a0bd04d2a7c08520"
+  },
+  {
+    "number": 260,
+    "title": "Teapot Airship above Tea Terraces",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_260.png",
+    "sha256": "6d3274ecc64793bbf8661b27dc94cd64d10bfdcc8e4bf956ac1f882ef094c1a0"
+  },
+  {
+    "number": 261,
+    "title": "Dhole by a Jungle Waterhole",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_261.png",
+    "sha256": "66a3d2b863379994321a4ffaf9ff3a2783165e0bd22dd8c5cbb873e3ae294ae8"
+  },
+  {
+    "number": 262,
+    "title": "Female Knight Polishing a Shield",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_262.png",
+    "sha256": "e1bd271be03a1088f37cabfab7559145099221a5ab5071e52dfb581aaa3408ab"
+  },
+  {
+    "number": 263,
+    "title": "Glowing Lava Tube at Twilight",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_263.png",
+    "sha256": "10633748a348f21bc7ae3f88faf017c04ba0aa240add12f99c49e6a23211d8e4"
+  },
+  {
+    "number": 264,
+    "title": "Tiny Tugboat beside Ocean Liners",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_264.png",
+    "sha256": "9de13750c89bfa3b430060c4c62abf1e6b6e0064689692f67d69e21a29ed6bb8"
+  },
+  {
+    "number": 265,
+    "title": "Glass Deer in an Autumn Orchard",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_265.png",
+    "sha256": "2b5e73aded8f8f2d3a228c16491eff237b7061580ec20066df2745175d2cf3ae"
+  },
+  {
+    "number": 266,
+    "title": "Narwhal below a Broken Ice Floe",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_266.png",
+    "sha256": "b58244e9359cd2c92080faa1536b5bc1ccddf2a3f332f63609e85d750ee9021c"
+  },
+  {
+    "number": 267,
+    "title": "Instrument Maker with a Brass Horn",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_267.png",
+    "sha256": "5d8c77f99dbe00f52a00aed9be288f9f7522d1485c0a2f3f8069c9f76e9df942"
+  },
+  {
+    "number": 268,
+    "title": "Desert Fort under a Milky Way",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_268.png",
+    "sha256": "c5b5b28cdb1e54c8e74615feacd26dc28e2d1450fa6cadb719af07e6ed59e8cc"
+  },
+  {
+    "number": 269,
+    "title": "Retro Camper beside a Mountain Stream",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_269.png",
+    "sha256": "3d8f00eb4ab5a93c1d88b13750478195e9b5e3e1500f92f369dbc36118160679"
+  },
+  {
+    "number": 270,
+    "title": "Mushroom Village on a Giant Boot",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_270.png",
+    "sha256": "c410572e616a2b7b91790fe8a4c59cd2db03f84659e6ad5b5916b53a4c83781a"
+  },
+  {
+    "number": 271,
+    "title": "Pika on a Mossy Boulder",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_271.png",
+    "sha256": "a944301b4682c78e13eced1ef9a13b082ac8a39ceb32d1827536cdd0b8281a64"
+  },
+  {
+    "number": 272,
+    "title": "Silversmith Making a Moon Brooch",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_272.png",
+    "sha256": "557b95f1bca4d58d9b59ff9c4d7a48af03f1445124683e6636948d000ea07716"
+  },
+  {
+    "number": 273,
+    "title": "Orange Canyon Slot at Noon",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_273.png",
+    "sha256": "d9204c3f8a7ef4a997e39cb9d1f95f122375d4f339f8956f58bb1e79e88b1d1b"
+  },
+  {
+    "number": 274,
+    "title": "Wooden Toboggan on a Pine Trail",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_274.png",
+    "sha256": "4aa64f522dbd2e459e493b6f0882554f045c33aba6ac022d7262b40ee3845d68"
+  },
+  {
+    "number": 275,
+    "title": "Water Spirit Braiding a River",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_275.png",
+    "sha256": "1555c9419a64ee339bb8bf2611df1add41e8ecc9edc4d0acf546451e541d6881"
+  },
+  {
+    "number": 276,
+    "title": "Caracal in Sunlit Dry Grass",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_276.png",
+    "sha256": "e5a77d8ff24819bbc27c924084bb6d1d666132ef8894357ca7a16e8a6e3da297"
+  },
+  {
+    "number": 277,
+    "title": "Lace Maker beside a Gothic Window",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_277.png",
+    "sha256": "1211406f1bec44cf46a89df5f3e1a3babba3d38a0f69429aa95c2a7edd50739e"
+  },
+  {
+    "number": 278,
+    "title": "Lakeside Sauna in Deep Winter",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_278.png",
+    "sha256": "f27cf1e121b1a6bfbb09f1e3dbac0a39ae376efb6c378835a115ce3b1f70fef5"
+  },
+  {
+    "number": 279,
+    "title": "Rescue Hovercraft in a Reed Delta",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_279.png",
+    "sha256": "da5078aae9d026619b9505711ef3f3f5819cd7f74839d9ccecfcc0a3c6f98e88"
+  },
+  {
+    "number": 280,
+    "title": "Crystalline Stag Beetle under Ferns",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_280.png",
+    "sha256": "25ac8ada9e551791098ed1cd0196f98f29ab901a67eb6ef1b8d380c0afdce047"
+  },
+  {
+    "number": 281,
+    "title": "Cassowary among Rainforest Roots",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_281.png",
+    "sha256": "51e5562b407b9da0eee6ed9d7c0b65209e131755ee88418085ec5e613efe5281"
+  },
+  {
+    "number": 282,
+    "title": "Kite Maker in a Festival Workshop",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_282.png",
+    "sha256": "9c7197ae923a57b241462a2f2067bafcb87cd276c9393d56a811bc33fc09bd41"
+  },
+  {
+    "number": 283,
+    "title": "Blue Tiled Bathhouse with Sunbeams",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_283.png",
+    "sha256": "66f7052cbe64bf3c4ed50ee3ca29a28450e0122a0b71357d8bcaae26d207b462"
+  },
+  {
+    "number": 284,
+    "title": "Oxcart on a Terraced Mountain Path",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_284.png",
+    "sha256": "6fcfe6c9a7e5ef89b828a0be0808de15b87cc9ef01c211f8972846d17fcdbf96"
+  },
+  {
+    "number": 285,
+    "title": "Sunflower Giant beneath a Summer Sky",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_285.png",
+    "sha256": "275d21eb3cd845ce8ebae55b62984f0dca1cc0f76ec7a9adc445191f42da6f5d"
+  },
+  {
+    "number": 286,
+    "title": "Sea Otter with a Shell in Kelp",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_286.png",
+    "sha256": "25723369740eb4e8a3b9cb0edf2fda4d42d8ef1e8d7d3b22e752f9ba215ecdd2"
+  },
+  {
+    "number": 287,
+    "title": "Archaeologist at a Mosaic Dig",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_287.png",
+    "sha256": "68204435213bc6b98ecad07fea8d13de38151919a67a453cbf4ac6e3290e4ed8"
+  },
+  {
+    "number": 288,
+    "title": "Pink Marble Quarry and Green Lake",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_288.png",
+    "sha256": "6f944f42ea848ef5b61d4287738a32544e45bb28453abf4b61f2aa5e87bcf8b0"
+  },
+  {
+    "number": 289,
+    "title": "Bamboo Raft through a Limestone Gorge",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_289.png",
+    "sha256": "d9db03c07c30aa539df59690eb861072806901b7e045752333231004b176d809"
+  },
+  {
+    "number": 290,
+    "title": "Clockwork Salamander in a Copper Garden",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_290.png",
+    "sha256": "3cd2845ffa5650a8261bb08f1c7d2c27365b12739a0b5048ac42162800581fae"
+  },
+  {
+    "number": 291,
+    "title": "Echidna beside a Flowering Banksia",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_291.png",
+    "sha256": "e91ab183c784b8429c06732525541255d76365cbc5e77a4b4ce7be943c4b9fe7"
+  },
+  {
+    "number": 292,
+    "title": "Harbor Pilot with a Brass Compass",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_292.png",
+    "sha256": "c36b4e58b250fdc62b99df26c5e8da9f5f321cc7fa341194d38298d945942c16"
+  },
+  {
+    "number": 293,
+    "title": "Golden Dunes around a Crescent Lake",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_293.png",
+    "sha256": "e55390ee818e56de5e92515e7339c32c463475cdcd26fe2857a43359dbfc4e71"
+  },
+  {
+    "number": 294,
+    "title": "Ski Lift above a Snowy Village",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_294.png",
+    "sha256": "dc0ad6ca138e41a6c6c57562ea331a9d820cf71df047a92b6c063b9fcef69fc4"
+  },
+  {
+    "number": 295,
+    "title": "Palace Carried by a Gentle Cloud Giant",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_295.png",
+    "sha256": "4dcbd52a4ed191c03476da458b5b1176ca23e2ca538bb67a269e9b1169883244"
+  },
+  {
+    "number": 296,
+    "title": "Wolverine beneath Aurora Pines",
+    "theme": "wildlife",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_296.png",
+    "sha256": "4c7db20be5068339ee3c2f5b936f42fbabb7ab2759dac7a06048261225159938"
+  },
+  {
+    "number": 297,
+    "title": "Stargazing Child with a Paper Map",
+    "theme": "people",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_297.png",
+    "sha256": "572274195f362350f94520762ffe81938697dd9831ed205475060adb993a6bde"
+  },
+  {
+    "number": 298,
+    "title": "Fallen Temple among Banyan Roots",
+    "theme": "places",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_298.png",
+    "sha256": "97e08c41b23d8fd5a7b99fa5e00ae9b3adc0727f50970b3055ddfff73231e737"
+  },
+  {
+    "number": 299,
+    "title": "Wind Powered Land Yacht on Salt Flats",
+    "theme": "journeys",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_299.png",
+    "sha256": "9bc1389ee267c3d299108dcd430bba6420e866e6650c94501287d43d8cc06c4c"
+  },
+  {
+    "number": 300,
+    "title": "Celestial Garden inside an Open Book",
+    "theme": "fantasy",
+    "source": "Assets/Images/CampaignExpansion/Paintings/Painting_300.png",
+    "sha256": "ac7fee047d3a348b27563477fc0af713869cd2743a1195e32ffbca9902e578cf"
+  }
+]

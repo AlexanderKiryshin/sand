@@ -1,0 +1,30 @@
+{
+  "before": {
+    "seconds": 6.0,
+    "sample_rate": 44100,
+    "channels": 1,
+    "peak": 0.27398681640625,
+    "rms": 0.07199782209411239,
+    "dc_offset": -4.613390495086924e-09,
+    "loop_boundary_step": 0.006591796875,
+    "adjacent_step_p99": 0.0220947265625,
+    "energy_below_800hz_percent": 61.412288510303696,
+    "energy_above_6khz_percent": 1.0883566103668008e-06
+  },
+  "after": {
+    "seconds": 6.0,
+    "sample_rate": 44100,
+    "channels": 1,
+    "peak": 0.138397216796875,
+    "rms": 0.023999287345861795,
+    "dc_offset": 1.0610798138699925e-08,
+    "loop_boundary_step": 0.00152587890625,
+    "adjacent_step_p99": 0.029266357421875,
+    "energy_below_800hz_percent": 0.0019067651470816703,
+    "energy_above_6khz_percent": 0.00014156701970030063
+  },
+  "gain_change_db": -9.542420275573846,
+  "other_audio_and_metadata_unchanged": true,
+  "preview": "sand-pour-light-preview.wav: six seconds at maximum runtime sand gain 0.42, with outer 200 ms fades.",
+  "scope": "PCM analysis only; no subjective listening or Unity Play Mode run."
+}

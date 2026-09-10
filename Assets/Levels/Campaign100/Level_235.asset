@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_235
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282026897
+  - serializedVersion: 2
+    rgba: 4282003726
+  - serializedVersion: 2
+    rgba: 4288666104
+  - serializedVersion: 2
+    rgba: 4282862886
+  - serializedVersion: 2
+    rgba: 4280068832
+  - serializedVersion: 2
+    rgba: 4278913796
+  - serializedVersion: 2
+    rgba: 4280705369
+  - serializedVersion: 2
+    rgba: 4280033550
+  - serializedVersion: 2
+    rgba: 4287931627
+  - serializedVersion: 2
+    rgba: 4280041009
+  - serializedVersion: 2
+    rgba: 4283940830
+  - serializedVersion: 2
+    rgba: 4286350014
+  encodedCells: S1:4:4096:6DD774E8:LVXPb9tGFv4bZh3FCymXDgiWTU/C1AG00qUqkahCL4ZBBChPSxhjhuhFbRwa9KmqMJlwc2mEAiGqiwNVZKe5CILWWdOXbfaH2c4f1e/JHVgWxe+97733vZk3idLS9dyhnHIppTsccT7knEcyki6PXB4Dn8buTGsdw2DoA8cncgmXksdSx26ko1hrLpXUDvChwyPQ7XApFRBYaD5M7xPuO8D5m6cJ4RE4tc5nEf6fBR/wEffBjvV1eELOGriqXK4Q5eutcbyh7+zwpwE56x2ugUvu6nLseGCfGuBvxrGMFMEwiLmMuBpp2Pu+X7VyFODFqAsZ00JlwBFMj6YjXbU8zpHOif4zPnDlwgpVxRrSaM6hx5c/0Tu4ZmUFI1+/+3iqFeUW8ZGO+FkO5ziJ5ZenBvyjv3bLfOZyrjypPR6pCooqOYvV4z1SVi3Xk6x76USu+wYBUPFOcS1V+yIng7td1j1qDSN3mHA+nWooDhB/VU5V/HOfscO/tz7kvIrhTrXFOo61vK1Rtc9ZNpF3Jx9M0Q7gJIuKpf5TANXpsDTMf1qb0kPbuX6WUmtIGmJQ6m/1OZsEp+wXf+I7vq4uWwnhepYc70xuxKazZuwya9/5FOpUj49KtWNY5TBUKn7QE2ySppPS/+Rb/G63kLY3g4m5zUE+EGKPsf3Mf3Qs9eryQo/80U5/RX3Ck2iEmOybsY+IyiRS+zMtjTEqfujMjhV/IBaDvb2y7S+/g4eGD4lkaIc5r7/Q3isxt/fqi4zBT9/iK9pBrudxa8dRJIS9rs/N+WefvIauJI6iHnAI1ti32h2I3nUHOrK0eYusoK72XMk/BlljF/pGCPG+rtkkS20BcZufNbWCNx9Nq6IompvwQDSXNeucp/MX5PJSS4/f5wv7IgdeDMKBEPf6HVbvf/9C/2oLJED+r20xLgqQhxYS1R27rrvFKxAiOcLx+PNciP6mZkKs6/8PaiF6RAjxPNpwxC2OWH0Qsstwawcs/aZf9JqvqPMuL+4XvUIEwTacdNYH4X+bvf00ZWK++Nx/SqfNUuzBdss2h9tJNxjMHwctxkRRvJT/8KeVuVkUPVFswm2w1wn2+pOuCMTmcl4U0+IJHZ7/WQG8EAdh0Olv2LrVOg223Z5oFg136QDZhRDIPxB9geK7jG3r7fdwaazPTVUC7wlamzo8CrBEf7uFR89+JdUIB/o/ttjBoAjCoN4ENYTuzecoUPk0T2xBBAgT/NCDP1IVdgB+KdvyISaStcDf28UCGRwFIgwF2jlvrJQpnWXzG1X43toGcTYITaktiuaJjFd03GNJ+Nw29FUfIDXgg6KIMEW4c2Ot3eELfBWbGkUWzc6/AaP7q6VFCRbwL3p1vw/pyNQurL3vcIIXqFZQR3vzo3reKxo84q19+zyTigwGoP0RcE8c1QhfzP/FBNzj50tZeURf13V4K2JfzOc9hEF0BTyPjSSG36/DsI9NVO+s5njzBcZTWSXSYF79pUzN74cXac0CUWOjlSbfjS86uxlbv8tMlpo0vaw70Pc0TctOlq6OlXyqj32c0Kt1ygKTlkgCeCtNU9POjMnHS5/gDK7sMFBmXQfocKcs8cI8NrFW/hKoyQ4nabafX12vg6NtfS/PV5mJ79DeX8ISzgenJq3Mmb3Hgvrf18boeOy0Aevpu5NE6+zwQtN6ZYvwx0WCmek7d9Zjx5kmqlwl+X5gchqV3rAIn9DYeoh7ZFOCIKbJY/Zbz70IW3lCRWZmaZJHiczopsIgilWVneJKeYZKkPXplTEXaXrin4DnmVwlRumzSbIaO5WpjEFt5urRcpn5uDXkSurErHRV3k0f+TyvcnNVmqycjU3pLBPCK2lWzyuELf0hn55VbZZm47Gh2MeEx3JVlSp+luIVNvvSjEfOcOgbh9NsXdHseuNMSSqH33EqRHdub1BOFz7/Aw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000fe00000000feffff000000000000000000
+  conveyorDirections: 00000000000000000300000000020000000000000000000000
+  conveyorBucketCounts: 00000000000000000400000000020000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 24513905
+  displayTitle: Crystal Frog on a Glowing Lily
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: bb5a80c1ef1c487439d128f4ceed948a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

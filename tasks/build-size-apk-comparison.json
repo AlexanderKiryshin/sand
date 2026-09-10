@@ -1,0 +1,154 @@
+{
+  "before_bytes": 31900195,
+  "after_bytes": 19398015,
+  "saved_bytes": 12502180,
+  "saved_percent": 39.191547261701686,
+  "before_sha256": "d858b631d56311cc153ddf59261de39f7f64941df24a5062c0a10a80046f2b6f",
+  "after_sha256": "b9109256c1fb42f43e58917947573726a556b6103385bb853c92a9e8778e44dd",
+  "entries": [
+    {
+      "path": "lib/armeabi-v7a/libil2cpp.so",
+      "before_bytes": 11021797,
+      "after_bytes": 5409005,
+      "saved_bytes": 5612792
+    },
+    {
+      "path": "assets/bin/Data/data.unity3d",
+      "before_bytes": 8365231,
+      "after_bytes": 3026518,
+      "saved_bytes": 5338713
+    },
+    {
+      "path": "assets/bin/Data/resources.resource",
+      "before_bytes": 1494784,
+      "after_bytes": 476672,
+      "saved_bytes": 1018112
+    },
+    {
+      "path": "assets/bin/Data/Managed/Metadata/global-metadata.dat",
+      "before_bytes": 1781722,
+      "after_bytes": 1321083,
+      "saved_bytes": 460639
+    },
+    {
+      "path": "lib/armeabi-v7a/libunity.so",
+      "before_bytes": 8099230,
+      "after_bytes": 8042373,
+      "saved_bytes": 56857
+    },
+    {
+      "path": "lib/armeabi-v7a/lib_burst_generated.so",
+      "before_bytes": 34105,
+      "after_bytes": 19038,
+      "saved_bytes": 15067
+    },
+    {
+      "path": "assets/bin/Data/unity_app_guid",
+      "before_bytes": 38,
+      "after_bytes": 37,
+      "saved_bytes": 1
+    },
+    {
+      "path": "META-INF/com/android/build/gradle/app-metadata.properties",
+      "before_bytes": 53,
+      "after_bytes": 53,
+      "saved_bytes": 0
+    },
+    {
+      "path": "assets/bin/Data/RuntimeInitializeOnLoads.json",
+      "before_bytes": 564,
+      "after_bytes": 564,
+      "saved_bytes": 0
+    },
+    {
+      "path": "assets/bin/Data/Resources/unity default resources",
+      "before_bytes": 798973,
+      "after_bytes": 798973,
+      "saved_bytes": 0
+    },
+    {
+      "path": "res/QZ.png",
+      "before_bytes": 1612,
+      "after_bytes": 1612,
+      "saved_bytes": 0
+    },
+    {
+      "path": "res/hH.xml",
+      "before_bytes": 220,
+      "after_bytes": 220,
+      "saved_bytes": 0
+    },
+    {
+      "path": "res/W5.png",
+      "before_bytes": 926,
+      "after_bytes": 926,
+      "saved_bytes": 0
+    },
+    {
+      "path": "resources.arsc",
+      "before_bytes": 2672,
+      "after_bytes": 2672,
+      "saved_bytes": 0
+    },
+    {
+      "path": "AndroidManifest.xml",
+      "before_bytes": 1912,
+      "after_bytes": 1912,
+      "saved_bytes": 0
+    },
+    {
+      "path": "META-INF/com.android.games.engine.build_fingerprint",
+      "before_bytes": 83,
+      "after_bytes": 83,
+      "saved_bytes": 0
+    },
+    {
+      "path": "res/Qu.xml",
+      "before_bytes": 220,
+      "after_bytes": 220,
+      "saved_bytes": 0
+    },
+    {
+      "path": "assets/bin/Data/boot.config",
+      "before_bytes": 138,
+      "after_bytes": 138,
+      "saved_bytes": 0
+    },
+    {
+      "path": "classes.dex",
+      "before_bytes": 156800,
+      "after_bytes": 156800,
+      "saved_bytes": 0
+    },
+    {
+      "path": "assets/bin/Data/Managed/Resources/mscorlib.dll-resources.dat",
+      "before_bytes": 126076,
+      "after_bytes": 126076,
+      "saved_bytes": 0
+    },
+    {
+      "path": "res/3z.png",
+      "before_bytes": 101,
+      "after_bytes": 101,
+      "saved_bytes": 0
+    },
+    {
+      "path": "lib/armeabi-v7a/libmain.so",
+      "before_bytes": 4603,
+      "after_bytes": 4603,
+      "saved_bytes": 0
+    },
+    {
+      "path": "META-INF/version-control-info.textproto",
+      "before_bytes": 48,
+      "after_bytes": 48,
+      "saved_bytes": 0
+    },
+    {
+      "path": "assets/bin/Data/ScriptingAssemblies.json",
+      "before_bytes": 886,
+      "after_bytes": 886,
+      "saved_bytes": 0
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_289
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4285491287
+  - serializedVersion: 2
+    rgba: 4293652463
+  - serializedVersion: 2
+    rgba: 4279505681
+  - serializedVersion: 2
+    rgba: 4282871165
+  - serializedVersion: 2
+    rgba: 4288065470
+  - serializedVersion: 2
+    rgba: 4282860849
+  - serializedVersion: 2
+    rgba: 4286349699
+  - serializedVersion: 2
+    rgba: 4284110401
+  - serializedVersion: 2
+    rgba: 4281084964
+  - serializedVersion: 2
+    rgba: 4292134580
+  - serializedVersion: 2
+    rgba: 4280696400
+  - serializedVersion: 2
+    rgba: 4290156408
+  encodedCells: S1:4:4096:4ED2A49F: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000ff0000000000000000fe00fe00ff0000000000
+  conveyorDirections: 00000000000000000000000000000001000300000000000000
+  conveyorBucketCounts: 00000000000000000000000000000003000200000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 30169271
+  displayTitle: Bamboo Raft through a Limestone Gorge
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 09c95af63baa3b84593842a278c3e84b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

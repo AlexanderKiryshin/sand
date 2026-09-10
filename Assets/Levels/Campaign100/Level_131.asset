@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_131
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284727282
+  - serializedVersion: 2
+    rgba: 4288377692
+  - serializedVersion: 2
+    rgba: 4280693826
+  - serializedVersion: 2
+    rgba: 4282425564
+  - serializedVersion: 2
+    rgba: 4281170350
+  - serializedVersion: 2
+    rgba: 4284320691
+  - serializedVersion: 2
+    rgba: 4283065216
+  - serializedVersion: 2
+    rgba: 4287862952
+  - serializedVersion: 2
+    rgba: 4279441956
+  - serializedVersion: 2
+    rgba: 4293839260
+  - serializedVersion: 2
+    rgba: 4281616220
+  - serializedVersion: 2
+    rgba: 4280441473
+  encodedCells: S1:4:4096:4A5F4CC1:hVVNb9tGE/4NC5NqgfrEoonQ5mKvJZldXYjsOofwIoTrvIV50et4mUC5xEy5benL6yI24TeXgv0IYZ96KILc0pVMCKuLYNJBwP1RHVpNLwXaIQmR8/HMPDOz0Js3/ybf/PaP5t9J+O7F67/rz1a6LzE22rzOPqgdJ3tzBr+vsxtV9qsy4dP/1NnK+3PnuHv83+7xWZbd2M/+h3H+/uolP1t9O45zfJwdZ90ufL+GK8Mq31amftkG/Oa0didzjuFuPUDU9nefvtLhy6zrOCtze69eWjt+83v3dqxvOacQ90HAGczd45uYzV+7m843V+bFaRuxgsmyv9Acd/uOs4mNmYWtdpUVSlwFO8rZfHIFdrwwYZh9kJMWJ2vR8NFmH99xXay0MS+yG112U8Lj7LB7GGH9c19+6mxvOq/i8LMVt263e+uWU0KFzubA+6FT84Pu9uSVxnfanN3uXzycw0NqRZcCG7H9vQMwh/HXfxYub5/uHXyRSQt5yHt0bZLdZL052Ca6g5p1hEQiSxwuw3ESgQNCnsdF44YWvPVx/RA0z/qYz4z20Ijfey5AATaw0tZljIRA+BdM9pqyY9mIih0KEZEQwr7xguejo2SjbCZEWPZjhKhn6zSVUSQSIXbadMhrAcfVXkAmY3jVWjdGmqMnqRSdDkLft0DowKKURTPklVrLVF+bR/l+lJTiGTn17HdQDIXLe9R5qzFOB40+SvO1SyllQk4gydeiQz0UALoiWKWlbnRaDIyWcXKUrRjRFgBNFTlXqdZKxyoxUGkZCeuGc2VZwFlhjctSY6mjNCl1LJNIcIrSMbIAnW5grEhakm8HpZYLYCITcbKDni93POp5ntVXLo4bouKy3JeRTNMUOvUxwHuIcd8bYUxIeVTiMtUpFF/q8mnbpVb8gKEpVrA+KWkfoAYFSLCLm0ZzZNGh29LTuo0H8iLBMhKdExrcox6kQGDErquAXTqRelKmSsuPnnZ2vYAxL7CWgI4JQKSaTGT6Ds+1jvqTTjtTi9psi2DgpzSeNDoB5F9isP88EYhCbyzbHuJWFCFakuh6ImWsy0ki2ngL1dzG+8Tdn8OAJCRPpCRaKdmJBNQWIDvwMB7iDZeQXKaLOCpLIgfq/8+ijgf5PYv5WPfwBRwgLN8tYgF9kuckFRHsHLMp9dFab2ueFzl2B7KEAmB454UrxONdi8PyrAeD3idb+++3sAsjwldtd0mRQ//ASL1puHHdK4pxMW9H2GicLwZpme+nYpfSmgbcLOzCDvOiyOcweIzdosCDYpCmuxXEB8asb13Me/OiPy9Kpc7d1iHPXRV51OcBMhWvcroD8T/ABikV5wCR57GMdnzuU2pM3dxlENEUBWyZ1NB9kuNcRzs89BEN63DJek3z01fNE1gT2Z6iArtYih3mjyp7vfZDNmvw+Y/nxUDBZGD+UOE8Etfcr6kVmipkvvmEm8B1BwvYj6hTFG4sRMVpRS1eh2HgsynlSzWfN2s9PRG8cCciCTwaUGbCgIWGWcGPDy7yeu0+1lHEKhi1z0acQf0hp+zp7pRWfnPBNgxWcWQYkITNYp4VLKhvhwe7AbOqKac/jYaVVuVigDWntbfO6dAOAz5jPrVGQU3VFtoicXp+/eAeDYTwGfUNH9F6aGBTLeTfpcH7+0fRtHat2zrLxCgMe2wRGCtgSzjKlU+r6quLZ+biuYP1qciyx3XtD7d8H9YQhk0pDWobsCxN0ktyGaUnD2rfDBfE4/US2HoBsLWo9XauHw5iIfvnVyNekzoI6mnts1Ys6o2oJuOpLtMoFfdDjnVN7Rn3K1SP/LZpo6Hu+QNyqTSJgrCaGbO0jOFeXQd+QAPv0dWervuXOp1qPasZpmbJfGb7ba85NKq3djR4fvdKTaOG9GbhdHjf7OkwWPCRqWrG/Bph/y17WGNtSJ6rpp5pd74gSQP/xT0Tro/Hl4vmmqgFJvgP
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000000000000000ff000000000000fefffe000000
+  conveyorDirections: 00000000000000000000000000000000000000020000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000040002000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 13622089
+  displayTitle: Wombat among Golden Grasses
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 0427a86d39d6a0e4897047755e5815d6,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

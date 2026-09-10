@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_216
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284442218
+  - serializedVersion: 2
+    rgba: 4292790956
+  - serializedVersion: 2
+    rgba: 4286416783
+  - serializedVersion: 2
+    rgba: 4280624673
+  - serializedVersion: 2
+    rgba: 4293390064
+  - serializedVersion: 2
+    rgba: 4288705089
+  - serializedVersion: 2
+    rgba: 4290023012
+  - serializedVersion: 2
+    rgba: 4286207535
+  - serializedVersion: 2
+    rgba: 4282990902
+  - serializedVersion: 2
+    rgba: 4292652138
+  - serializedVersion: 2
+    rgba: 4288325038
+  - serializedVersion: 2
+    rgba: 4290167756
+  encodedCells: S1:4:4096:9398A11D:pZRBb9tGFsc/A0G2NStflq3jrpLL7KhutPJF0KBdxr7ExkTBSpc41VCVfVkHJl33lGxNjZyTNlOU0+QSBbID1heFdiKBvBiqYxScD9U3jIHd0146hg2Zv/f+7/3fGyqO/9Rx/j8uX/Py6H8eEmLE37wqsp3/5h+Ni8A4vhPH4jR+qZOdeBSX4fkGpLOWToAPRxByMfpHHBeazsY4LsNvj+GTAhci5PTO6+sGgTnOeMRCTIsH46IG+lR/3hhDDWfkbDhbXkiXdepG0dOdyqfQYJlSzfXxGae60ocKpwdk7aXWptf4XZfdo4fe8bWXUpk0Pvt19IF/4ThbXeDtvWDlmj8/P7tbKhLfOFsLjsOOe91pa5m+B6/lpaU3a4uKXl5Ls+nSiPUYW6BL48CL/0nh1JJU3brG7DbeYuyYBY+c5WB71Ka0rUpJmy5pY2UnZPdxh5302N7DwN+ab5wrlcKp5+dOWc8L+GbHP2Dss63mXvCOtlSWqixLk6ViGXHo81Yae37oLwfNhGaXKlPKzFQ+1rsfxczjt88PjrwVv6k7A3nNlcrbjp5VmbHuQvOjk+NuALRNAUJESbVU29EbLrNud7obBD1+2c4y+oGnNaUu1dKoB8tg3YDd95v9fdVO5+oyA/lE1eDv+tmud3PZ6bDQn/4QOFdZmhbJUDozV3O1/nnPa+46tMP6Kzf9psryXJdWuVqtJbvp+vDbY3ZVDtBek4Xb9851XpGrgLfGF4t7cfw+CH42NjdYd6upk+e6NZDIsBpjNIp773f9SBobhw+ZmufqEpiOyZJ56+TvLbiRbC/gtvhJWiz9LYHes3w1gemjrH16cHrge36wG5HGC9c6qSkwV0tqtQuVJyltOXTsHff8IOe28UKaL7+6SqGBJMUXGYTS9j1nC94IFkhJiBCNvwTv9NZqGGuHSY3eaILvY8ZkhDAR1uboajVrZwjDYrLFdNJhb+He0F5fRhVzXc7sG2+0b8MwlGp/1Eg6zF8OuzecIx6hSkPYyPsSBl9Cpgn+1tHmDoO1sx/2DjknqFR5ZgSrMJoGMSGfLuJ2B/hDb4U+4QNBpHg+fPAWlioMo5Mqqi9nuMM8sH/IpStx3Zg/uFKZaRiok7Upgvb5d+yRx/p9CYc0zOTxNKuZBppv55Si1pchv73tBYwPIshP1uQQqwx/gvDm9jxvVdVOyAO0G/hcpwu7ZMnf5rWHf0O45U3zu4m5w/nt/X7Qj36MBiBgW3KWmWwFpef7H88fr0xCrgOuDqOB5sIiwLsPFnAL/E733u5wCAj5/cMBl1zCeE1zkjJuprfg+fRwClHFCSMecVk1iCSGsdRJ5izcZ3knPWT9/T7nNwbAJUCYUNWiT5Ik5N0gfzpXPuf7WiCKwL2UQ+B4SN+0+gtP/d8vp1TT1080H3DNhXTruPtV/YwYyHz+jfj2wD85ijTnEahLzZH3tWuLnMCX7zBB/UJ/wDUH6rqWWReyZJDJ6upkOEtexR8sRFIQQerErTbq0hIuiBkVc4Je6QFEBRdDsOCKeoNIlbhCznDjDD0tDISD6K9DGECySoayLoWrW4F/K+ixDwPgDBQSY2JcZKU1GDKUgn1VDGThR4CjWgAqolFJEjNdrLuisi5gHDOJh9U6cGkOYIxmg0wmpbpZW5PSdmGb0jRwMnvE+9L+HqIQtiomEesWapCqq73OcL2K/3XyC3TymHeJhTGqu3Zi1mECUKAqbSIRPngykMN/85AIk5RMItMkWSN6GzKxiMDV//w4EM/t77+DeZJSnQi7UsPQo+XKmUUujGoEXmwUBIRUGpbZgEXaZynUB3G8Vn1m6m7hB7jliupEnMFmwIt8RqpmA9Y4jMRQ2sYJ9OSCOpElVMGVYpmGa2EXS1kr3g6XuNA4jI7gKrzrcFuGUmIbAZvB3YCvBxduIGjIsyJlEEFzhr3wDFZ584v9PwA=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000ff0000fe0000fe00000000000000000000000000
+  conveyorDirections: 00000000000000000200000300000000000000000000000000
+  conveyorBucketCounts: 00000000000000000200000300000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: wildlife
+  campaignSeed: 22524054
+  displayTitle: Mountain Goat on a Slate Ridge
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 5f7c483d987fb354ea56afafdaf69d8d,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

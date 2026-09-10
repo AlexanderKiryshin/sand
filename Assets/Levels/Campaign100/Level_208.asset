@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_208
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280693889
+  - serializedVersion: 2
+    rgba: 4291545280
+  - serializedVersion: 2
+    rgba: 4283662305
+  - serializedVersion: 2
+    rgba: 4279374893
+  - serializedVersion: 2
+    rgba: 4279902039
+  - serializedVersion: 2
+    rgba: 4281939005
+  - serializedVersion: 2
+    rgba: 4282663522
+  - serializedVersion: 2
+    rgba: 4287330177
+  - serializedVersion: 2
+    rgba: 4282213337
+  - serializedVersion: 2
+    rgba: 4291797096
+  - serializedVersion: 2
+    rgba: 4282406564
+  - serializedVersion: 2
+    rgba: 4285837544
+  encodedCells: S1:4:4096:52263297:hVVNb9tGEP0NRMQEqnIpDRSuoovBOAIhXQSQLtLkwno3KqFeIjlLWfZFZsy1Kp36kcgfF4FmiAV1qQ5NyviiCpYsUJfUBplA/FGdpfPRomhLieBi38ybN2+WUhD835Uf/Rc6ykv/igOU7yXS3wPykvRhCUg+iXvJP/AR38nzpZQki6vl2V/E8E3OmD4lKU6SpBcnAKRl0t08XxQkaU+RJLJopBGF1fd1rx8H1Ptyj66tSK1oN0muOUZB/n2Vs8Cka84eZSv5gCyTgFxBRK208lH3H7RIvb3Z/I4UkGQZBBs9znH7NdS/lkAp9b6n/pdS0OTqSZK0ImhlsVzN83yOz7rU//z3oMXxVvyax0DEG5C3d6tL08trz6T68kyS6tFZ0IySVnI1WSwLe94BYKZ9y+t4o43qS8CnZ0ErKtSjq42HyWKZ5sL3RdeTmnGB5xekXbhJUv/qIddh0xngnjwD/CwPLhTSGLLSjOoJKA0XjnXL8yfenY/59al0QU4OoqYZEeAIu3PP63Tnn/CocEGOm1HzaWTuzKa9F/58JltrZtxL8X49+RHy+4BPzaVp9zpza8yU0IytO0f16KTfhDvFp7a5u2OHnlLqeCWZxMN5n1zjF2QxiRrTqdno2qFj+ayoTOzl0GFWPFQaUVkmi260fTMyyc6jsaw4LKQOiW/TrhUvZma86JIeAXBKLncofWwx5lvYXw4Za0RDtg2FSLkTN+iUNAgNi3Ol1Ohi9K48caxied6Jh5QsaLR9b2ruOmGx6M4VWcb43VBxrOh224rLjJS3o4Ztk0XIQkcRSzLCooHHihV9J4O+mV3uRHQ6tUu+5fsY1/QxRpsYizQesk40lO3kcbRNpsJ4xhSgVpEGQRg/oHE5+yTaNSnw29GjoqvITMaaingARlonXoTAsU0TE/AqdrXz0wG+BoHFBX+MTtzzzGQf+q9i3M6d68CPRcBBYycOWZfrT2jUsxUs1hTFAFzj+Qhh8K+9Hw+zJuATZcCMMbtRg/q8AERgqN+m8a5NExqze0y5O5iMDaxxAUgDfsjXaAymJzcYY5MSk4vM0NJ89bp+7xmNTyC/ijfVkgPtKVnAgUAXED5X5LhjxyeE9hDWBwpGITMQz8ViRkfYNdiEPY17xO7BnlAbQBEDcgEXNBHhG9h3mBLLjJ0PDKDE5/4YbNVUHQu8f1fPFn3Z6bxdU4S0I5etQ/Mq5GPeomsMmOcobF73sJjTABdScziuw1I0GPA7jB0SEuINjNcvIU9L3cECRoLBXgCqMOXeDiE2Hk9SXnAGp10gw2WnpRIUcGSlRZ7kaHsfXFc5pvMQw/UZfHTFcdhx0CQEVWE7dQ8UYDwXHvjQXbbNXDY4POo3SVXjZwOp6l09izETmTEwGNPZgMmT3/JAADgvoWHRxfhUZHO3JvpGljmb1i8jj4B4tSqCd+d6WMOui8HSuWPol870C+kIJrel6mOdd6AyF7uiC44zf20nfG7nR98gTUOiIOpIq3GzmKvjdbb5zmrsvu2/HQVfq6BdF3UdZYQKcg0fPF2/LNvP+wcHq8ER0vV9VRwLQK8LFeheHNzHp1bheX8nqLJcVgBy8J1n68LjCjZAHHKf/XD8ahRgVoG5ZgRAdFGoaBkCoeA0ci+OV6W9TVxDmgrgPgxGFVSVkAwMEBkGPn61Kn07XufHXRQAgwC9gra2CEhEBjOO4Yf9M51PNAPqxUpGrIBAFWplBmh+f3z4Mj9qbYBtCOphVRUrcIIwgXxByCLmn+fgr+MVUZ/qMDSwt8InC2ds46YgvNFZTlUB/5VPhoCpgshfD6QSVWurQkaHMpWfIaBFIGJLFbEG/CqUIRvwmgjjijrOsdzLIDgiZAsoQWMFXh/U7//U/3Ad9j9dF++ffwI=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fffe000000000000000000000000fe000000
+  conveyorDirections: 00000000000000000100000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000200000000000000000000000004000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 21686222
+  displayTitle: Aqueduct over a Red Valley
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.2
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 40165b87b419edd41b2400fe6d223f1d,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

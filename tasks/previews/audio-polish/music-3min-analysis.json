@@ -1,0 +1,78 @@
+{
+  "duration_seconds": 180,
+  "sample_rate": 22050,
+  "channels": 2,
+  "bpm": 85.33333333333333,
+  "peak": 0.519989013671875,
+  "rms": 0.10429744994514456,
+  "game_rms": 0.01668759199122313,
+  "loop_seam": 0.00201416015625,
+  "max_normal_step": 0.065155029296875,
+  "sound_effects_unchanged": true,
+  "sections": [
+    {
+      "section": "Theme",
+      "start_seconds": 0.0,
+      "end_seconds": 22.5,
+      "rms": 0.11254,
+      "peak": 0.46146,
+      "sha256": "937cfab5a3c3682033c0e8c86712751f65e94a0e0ef19ea16992bee9328f4d15"
+    },
+    {
+      "section": "Theme variation",
+      "start_seconds": 22.5,
+      "end_seconds": 45.0,
+      "rms": 0.10913,
+      "peak": 0.45322,
+      "sha256": "356cae35d7d1869757e4381e210d5a87e9fd3f7e9fc9d51940e694cb8e72346d"
+    },
+    {
+      "section": "Answer",
+      "start_seconds": 45.0,
+      "end_seconds": 67.5,
+      "rms": 0.10231,
+      "peak": 0.4454,
+      "sha256": "fc5c27fe657ab1b37e68726a58d4c903de50d0b44bd838159a32bc9ff37e2d06"
+    },
+    {
+      "section": "New path",
+      "start_seconds": 67.5,
+      "end_seconds": 90.0,
+      "rms": 0.11443,
+      "peak": 0.51999,
+      "sha256": "9be0329c47fa8d4d8c77193507238f128c089f68ac08cdf17be66e800edc0a3b"
+    },
+    {
+      "section": "Breathing space",
+      "start_seconds": 90.0,
+      "end_seconds": 112.5,
+      "rms": 0.07767,
+      "peak": 0.36136,
+      "sha256": "68650ec9c44ddb144524d19351ea1a4168089ede52c687382ad39957c240aac6"
+    },
+    {
+      "section": "Dialogue",
+      "start_seconds": 112.5,
+      "end_seconds": 135.0,
+      "rms": 0.09874,
+      "peak": 0.42532,
+      "sha256": "c8af9309785028078dd569d78246c5b7860aed987794e9ec4570de2ebb1ed8e5"
+    },
+    {
+      "section": "Return",
+      "start_seconds": 135.0,
+      "end_seconds": 157.5,
+      "rms": 0.11154,
+      "peak": 0.49884,
+      "sha256": "5b98295cbaf2c03025440d2007f56fa41879ec6da8a5d7fd3da034c21ed6aa7c"
+    },
+    {
+      "section": "Turnaround",
+      "start_seconds": 157.5,
+      "end_seconds": 180.0,
+      "rms": 0.10325,
+      "peak": 0.47549,
+      "sha256": "5519ee5690966201b9ad672de2c32a6b6415b16d82ef442fab18188a2574faa2"
+    }
+  ]
+}

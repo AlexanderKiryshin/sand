@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Art_088
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278847500
+  - serializedVersion: 2
+    rgba: 4283259770
+  - serializedVersion: 2
+    rgba: 4279246412
+  - serializedVersion: 2
+    rgba: 4279112753
+  - serializedVersion: 2
+    rgba: 4279054227
+  - serializedVersion: 2
+    rgba: 4280230195
+  - serializedVersion: 2
+    rgba: 4279505949
+  - serializedVersion: 2
+    rgba: 4281482338
+  - serializedVersion: 2
+    rgba: 4279248234
+  - serializedVersion: 2
+    rgba: 4281151560
+  - serializedVersion: 2
+    rgba: 4278732743
+  - serializedVersion: 2
+    rgba: 4279472114
+  encodedCells: S1:4:4096:B69E7843:bVTPj9vGFf4bBhZMtEemXah7U4YiTW8vAp85YdxLIjELmbnYqx2udaPF8HWdnpTGoHVbkNIuVz3turLMq1YwBO4t2QKG9Ef1DR03TdEHiBjNN+/H9943E2GkRfj0/tP7L0tl7PelDJmULEImERnWJslqeFguhogh/cX/mKxtUf5iMkTrSymTj5j60fEjc1FeEZhOUuVqAn3DOlB9LFykte9VmtZ4KFzlq+LGSX1uqWD9StfTT5ndGCWX0o1D+eZjep3saigT5YECAAgYHqEr34SynOifYFmXZTlDUG7X6GJul9f7hJqElzW3JJR8MKDlsKTs58+Lcv+Z/izTFT9HDhIcyNKkntQ8peRpqb94Ybl6ml56AAPKWfdkuZCLhKpf6GP9RYTm3rh5UcCRKk7hr5YqgBxJU2/qiEfunqoRZKwabJ6UE4UPFkeLGW2/1DBzmro+TmQiEikvyrKp7z9cyMvp4uGyOcYIMvhBH1+RC8D1g9eTlE5PJg8Ln2hO9AR9v/2Hu/RKugDGRfFOMdbLlPOseFOe6Jjnd8VneroEA9L0opw0FT5Jlw+y2T/Tv2otFKOkuX/yhREMXqXLMm1eNfXhOEzTbnF9kWitGGMtjnMz5wNZvE5TfTlJhyfh+PO0eFd8gR2b40jitOAOLMbvmk19mS6Jp55O1/5MDVSIHse/X/Cp99kzuaeP0+ZyKOWf9vqbgEZyCJY45SPO/bbXHErVqj3iKpeTi341wPhsdXjoG6dcrNevSS37X/9RT2haJi8frrf8FCz38DDoum2+ndtl+W7/yl8iCXp5WU7blRNZo07Wqzb+I28bFPwJRRif4KKUfFP026f30DplwFvrg5ntvM9SX8nxGU5+lDOb+kv3JGHRKTiBza9JeP1H1+WyJBlOZVb4x7VktQiA39hdcGM3OC76qVLyyWIxrZ6ThiyImOXkh6u/cDDlm+GTHy8LGSblcsn8Yxca0ShiwjZn3QPuzMJw+CSltFLev0zYqy8h1txGh+GDI2dNxcPRwCyL42/o4rHyHnvrHFH8OAa0hLOpAs9oh6ZMj0kniVYyJsERaCJGeN7m+S7wuBMmw8nS7cpE0+gh4ACxG9N4ETh0d20OKE1Tms/NhJHFBocYoEG4wflm8w/uxKHpuQuPRyxiTHDHoQjxW4HCcFYfvi34SEBmGm2OTMWfcZ47gJHAc4MXd1UBwgqfZ13uIaEj7LaKHgeG3wjkRXF3OzVGsRgVAalJYxjFjQ5fORDFOIOy8O92c5AC8V+8EQGFt0Sjk21IdKDh8du82k1fu0kPxE3WiGIqnyYj8r5tUwXnB7z/0y5w4vsWDCBDpnAt1MRN0G87dKt6xYeb266TQ97OobjHvqP68RBFd+TbHjXBtjerasW7MRiOkY/IX9ABCJPOzRocw+B+f3WwyTzgvXY3V+xjFJ4YNbSbOXe4l1XVplr7bXjE536oqegOGKs81qx5d2pzv/LXt1uasV3czkMt0pjIQdO+pxnx7vtsug6q3c5zHN+vjj1LNR+gIgpPLTGQoXC21XZ3Oy1sKMyBMRIdxs55Ri2IThG54/IC3d2uCu5skPSIjlpE/6uAJozJEVpdm3Rh7Xa72+3tXLzUpOZojEVb4hViJwl7Ph3Pt98Ofv5znIhiNFL1MasfcM/2kBL9TZXz0wFDysjmfU+j8dFLGLOsX/D+Y1TlrgKqhxasDcA+WcuoqjnWS7uHHYV3zpCUYdV7ncyvto9rPPIOUS2iaEC5z07rPTB+/v6ssA3yi5ye0Bq0ScMnbo9UjjP8nYo492hfPM5A+bc+Ju44v1RAnpUnSIPvp7GF7P9ZpL2f2u08mDqiQcyI2/8YuVUAJKVaVZ/w6L9OtNb9/ma3Fg3VCtZp/Bq7/orM9/11VcXkq3bu/SZFp9Vq4LzaBvS6fwQ6v8Ehwrg3/7ALvot/7Sz7Nw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe000000fe000000000000ff00ff000000000000
+  conveyorDirections: 00000000000300000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000300000004000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: 
+  campaignSeed: 9118742
+  displayTitle: Volcano Temple
+  beltCapacity: 5
+  beltSpeedMultiplier: 1.1
+  frostMoves: 3
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: d393abea851345945a976b351b0c669b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Art_097
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283194408
+  - serializedVersion: 2
+    rgba: 4292204432
+  - serializedVersion: 2
+    rgba: 4282727428
+  - serializedVersion: 2
+    rgba: 4279636739
+  - serializedVersion: 2
+    rgba: 4285039948
+  - serializedVersion: 2
+    rgba: 4283976964
+  - serializedVersion: 2
+    rgba: 4280688644
+  - serializedVersion: 2
+    rgba: 4287724548
+  - serializedVersion: 2
+    rgba: 4281741060
+  - serializedVersion: 2
+    rgba: 4290755396
+  - serializedVersion: 2
+    rgba: 4285751556
+  - serializedVersion: 2
+    rgba: 4289633805
+  encodedCells: S1:4:4096:2E2AEF52:NVRBi9tGFP4Nwmu56p660IvpRbzuLIN7KagIH83iJSG9COHpKj4FKxnmmC5dlEgXMcbikZuhpQhfFrOKN5PThgbj6Ef1jZwMEhr7m/d933vzZnBraOzyfZ4VbT2s18Oz9dkZvY91W2TZHuPGLsh22du23RweN2fDs24c2n2R7QsEi+fZbt/WdXsYri08rNvNWXtoiQF7vOMn9s26ruvhuh6e1cT+2LYZDcTIdATZft8+boa0YFgf1m17OBQdDmDM6MFO9+2mtgzkbk0LjvExIwPAb2x4axcQOemQclvsCb+EmGAAmm4OBNsVazJBksWfWZYDbA0m0HudZRRN6LqL/2DmTXbU3xqNcDnpDFKOJFDXh9YIU1gD3qoxI+K/zKyjdrOxMMlfC5FlRWawbMw7uIm39MvCFqXwJzMjKOed4V5sRvohuyUuS9Dh7U/Prk9jZnHJ47t3+nVmbP4W33T099M7ER9xuBvBfZZnR4JDS+zt77MZi6HDQQP0ugIfGSie8GZ+DjHBR9y7px3+itMmt+2zJ4SLWyq99MHgwBzxjx1O7/3E8c9Fdm7jwSiK7/jzL+1xmJnrg7jhmakAYvn0q775hs9i1wVS3oqKA8OrO5PvyG2efcOFmAC8IZzyi3FK4fbJis7hx2LGhAOrN6NYSPSZ9ESTUbnN7a4jOM3vmHsO+ka8EVXFSZ+awOI703XJpLgTrqMBxTYJqMGkF88bY/XNnhQ2/S+REFOuNWhRjWEhHWELkNMpyAva9ehzdNXv+0wDf+CScK8xE5P1TGGr1O5nc8GcPjDFtZKS23h3cp91p4jwrE/qvuOjRC1l5b8ivBmZeU7+Mts0kXvZdxxARCXTgbeQPTchA6fHXSi+m/Uj5q4UorSjWlSUy9aMXJN3ZRbA3KTXQzUmNLArPM3BjK4MVcDiGq4m4CsbHiwtxeActg1jpG/xa5+tIrfkHX2QVnJQ+b6zBWGOBr7zY/SuLqVUqcUlPi0xigFE/oH082zGVsgdisYwCIJQSm/h9akdxPGmeSugRIWRVhdShqkcSyU9H5houpskF0KXiMC0lVdp4L2UEmS0co43kWlEskKMS6ykPNHpSTkJpZZYwRHP2YprxMu+qjoHlD1NLkAd8ZxuDJ82jlN5lQ5lQDsEC4QVJiKmPjNzEWvUCbO4DMapCgc0rRKknmvMF5K314nmHFcLroNAppXz0sMEBQ2Tf5wLH+OVR5sHWi2pfAOcVp7HMRJAbWqEW1Jy5YUWAIrqI5fYe8F1xFlM/EYwRvTALwBLrkKLy8EJ2eXwYOYWJ2mNHHUJktsCL8OfKywT8O9Iv7gUVHzsxsqmn6ZpmFZcAURlTPIgIIZYazcR87FMAxWepFgtLnjk6EjsToWAkfDJgcZFqB0kgbTSmvcmCbBPJhH/9BsnovxBV6rCcWAbbIJJbzobgfPfXsSucIQ4hwHFLq0/GVRLBPSSGFhT//tL//V17Prbp46f2vToDYPJOWowt227nn1ffoo8RwvKndwTLtMlOs6iUtO3z/9e189XT+jq8DG1kTRoUoWBk+jS+WE6LWCqPB/702lg2clfmlKPLgeJq5Pej9PzFShPhZN+/9c0CDhUxHDyW7ikLCoUE+evhHGpxmGZBuF4KVXVaVgrL8Cewc87poOqk17Ssg5NKc0UlyIG/r65Eq/AW9h/w9QGBvYEUhXVezHXC2HmvVVMcl1k2n1S+9BRFQljf1DXCGYpVZAu5FdxYlBhqjhbKJUIRls7rujchfZ4dqOijoXUdiXEgsXYubb40WBJx9x+oXsCu2fBN+H/AQ==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe00fe00ff0000000000ff00000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000020003000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: 
+  campaignSeed: 10061303
+  displayTitle: Sunken City
+  beltCapacity: 3
+  beltSpeedMultiplier: 1.1999999
+  frostMoves: 1
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 30ff8e8c25dc17748b67b91f32e5e730,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

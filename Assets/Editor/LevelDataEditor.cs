@@ -52,9 +52,11 @@ public class LevelDataEditor : Editor
     private Texture2D recalcSourceTexture;
     private int recalcColorCount = 4;
     private bool recalcAutoColorCount = true;
-    private int recalcPreviewScale = 8;
     private bool recalcAutoBackground = true;
     private Color recalcBackgroundColor = Color.white;
+    private readonly LevelPreviewCache previews = new LevelPreviewCache();
+
+    private void OnDisable() { previews.Clear(); }
 
     public override void OnInspectorGUI()
     {
@@ -156,7 +158,6 @@ public class LevelDataEditor : Editor
             EditorGUILayout.LabelField("Colors are detected automatically from the source", EditorStyles.miniLabel);
         }
 
-        recalcPreviewScale = EditorGUILayout.IntSlider("Preview Scale", recalcPreviewScale, 4, 16);
         recalcAutoBackground = EditorGUILayout.Toggle("Auto Background", recalcAutoBackground);
         using (new EditorGUI.DisabledScope(recalcAutoBackground))
         {
@@ -180,8 +181,7 @@ public class LevelDataEditor : Editor
                     recalcColorCount,
                     recalcAutoColorCount,
                     recalcAutoBackground,
-                    recalcBackgroundColor,
-                    recalcPreviewScale);
+                    recalcBackgroundColor);
                 if (success)
                 {
                     EditorUtility.SetDirty(levelData);
@@ -311,25 +311,25 @@ public class LevelDataEditor : Editor
         }
     }
 
-    private static void DrawPreview(LevelData levelData)
+    private void DrawPreview(LevelData levelData)
     {
-        if (levelData.previewTexture == null)
+        Texture2D texture = previews.Get(levelData);
+        if (texture == null)
         {
             return;
         }
 
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Preview", EditorStyles.boldLabel);
-        EditorGUILayout.ObjectField("Preview Texture", levelData.previewTexture, typeof(Texture2D), false);
 
         float maxSize = 280f;
-        float aspect = levelData.previewTexture.height > 0
-            ? levelData.previewTexture.width / (float)levelData.previewTexture.height
+        float aspect = texture.height > 0
+            ? texture.width / (float)texture.height
             : 1f;
         float displayWidth = aspect >= 1f ? maxSize : maxSize * aspect;
         float displayHeight = aspect >= 1f ? maxSize / aspect : maxSize;
         Rect rect = GUILayoutUtility.GetRect(displayWidth, displayHeight);
-        GUI.DrawTexture(rect, levelData.previewTexture, ScaleMode.ScaleToFit);
+        GUI.DrawTexture(rect, texture, ScaleMode.ScaleToFit);
     }
 
     private void DrawBucketLayoutEditor(LevelData levelData)

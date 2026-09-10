@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_155
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281021225
+  - serializedVersion: 2
+    rgba: 4288304924
+  - serializedVersion: 2
+    rgba: 4281621605
+  - serializedVersion: 2
+    rgba: 4289367948
+  - serializedVersion: 2
+    rgba: 4288067063
+  - serializedVersion: 2
+    rgba: 4289428311
+  - serializedVersion: 2
+    rgba: 4284186027
+  - serializedVersion: 2
+    rgba: 4285552973
+  - serializedVersion: 2
+    rgba: 4289829812
+  - serializedVersion: 2
+    rgba: 4289571547
+  - serializedVersion: 2
+    rgba: 4289517305
+  - serializedVersion: 2
+    rgba: 4279915250
+  encodedCells: S1:4:4096:618BF041:bZVPTxtHGMY/w8qVcHNcRSTkZq1UEL01W6vrnpJ6At7xCW1WNfQSOciE9OKAwtCeUtmEGXoJ8qDsu70k9Rq840sPKFK8H6rPrEOlSszBtuY3zzvv37Hruu5jljBOJN3bV5NhcZIrK7dzUMM0bd/Gzks+L+j8VunyuctcNm+HD1z3o6v+JytNq486zAoWLruueYBDrraHJunC18dMTVO6bqcN1+XM2mAMZNJi8otnssnDoq1G5vetB9YGdlbcjCGYUs6GLZ4V3FAe2wXCpMSpYcd1t9xzxmjMrouC6GnJ4zCzepMqKeUW9ERTfl38ScmOpZM6BCCP01QpcBdZabLrz0RZqX6CTAEMWcYTKeNlGOAtFe4noaXG2EQrOdUsO4OVOGYsY4ncJ9lZcKSZ/aouWXlL5wTuZ9SiqQoi4LrJ8lZeYJldgnkpm1946Vs8MZpKbE9Y3GIs143RxYSXkbFPxWx+w43FmrTypR9n2XWRcWzfcMPnQznUKtQqiOPIWGS5uVHjXBs3nJRRxBdFu5hhv23mC1x+DxGVXJbWsf3i2u7MLm+4/Wp34pOg9HzMsQcfzLwUftEXf5XwxH6MiMJ5weczKGfmcsGLoUXT7cWBnGYhL7JSzhd8FtelT6o0k1OakJ5lc8sNWwTyS9yJEgoDP5pwpDJIiD6jWTayT4gI62kppIYf5YZ34lFKiSIijANM4A5b9TylwPeNKYvwXpOkkdSZyV62TWbqUdzSSvpYUb0eT1Jq5aSmlBrz8h9uDC6QIWtY7tcH9bEJd+J6Y5OSHDnKDIdRmTA9TssTi1twdTaljGecWf1Awh294D/CygS+7Ywoodxk8yi2nYLhbfimcWPDlM2apymsXagmG9rxZ4ZKzK08qsf4Od6JmlpSiLeBsQ3EbdWIzADh58hv+OjTAREa7ege2cGQprzrv2W5TAbyuHf/D4unhpd8IJEzP/DZUJZLHN4DV1PILT9b7ELPOicYxftHz++5pbzkshzPQIZjFgTGfH/qiqP70bmUiWGca8q0egGepKEKfJOS+M4Vv7kfRU4YTKZzo+QLay3VSeCPOdXjKHoevxLITIahyFHEnoAzNJR+q6VR/4vobj0SV7bsKL9O7nxy3oU2YMOmGWI0Ot66G19dwT3icO5FT5wSKZlw1tR4HYzejqMtIew7i4mvOl2nL6wLnMG+hsnteMtffr3JgieQJz0mrvBQ8NyEkqGWGO0O86P453MZDaTs9nri/Vtp34t0gLYO4XXIGz7KOvCnZ42ljd0rUSmzBSsmRYH2GW0PGnXMk+F6v7e76ji5LYZsZYgpYd0KrYziOibBMLle8Xqi5jgcvds0PB0mnleB73HsyzFCJO9ZTYjq0SZu3UPFQ+3htNYRRnnM4ezeUq8qDsUmclm13Kv1HQcd1ECKganbPRKrB6/WKozWvEd63XvXoz5htmx3Eq17Htt9uCbEUiJrnkPrDj7fpZRLuIxYSX3g4Q/ioRDvpef1qeGsOjWnktvRR31x0SU67/Ab57U4XfOcR93uAe53bP1MSCFhNvA3cHwgTg/jquM8WzpeO+pXH77829aPbL4NeuT49R7SV6t8/ebtnndQ69eqH1jJc0JvqEAcb8KK5zmrle7SQdVZE3fYT1Ak5iwwtkPlE0YKifEqXeGJN1UhvvVQKPvvkliOwVGJU6lVnGfVmpCBEN5SawPxqUEg8cqgOkp+5dj1lYfzg9pBFdki+6CMSPHQGqmW3D+WwUCu96tOfxSi9308ZaStD/8C
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000fe0000ff000000ff00000000fe000000000000
+  conveyorDirections: 00000000000001000000000000000000000003000000000000
+  conveyorBucketCounts: 00000000000003000000000000000000000002000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 16135585
+  displayTitle: Giant Koi Swimming through Clouds
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 78cfc1673a531f549bc8ddd46e28b855,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

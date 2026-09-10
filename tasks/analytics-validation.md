@@ -1,0 +1,1 @@
+PASS: one-based levels 1 and 300, unique attempt IDs, completion deduplication, restart and abandonment, counters and elapsed time, GameAnalytics progression mapping. Production network calls are disabled in Editor.

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_114
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282936449
+  - serializedVersion: 2
+    rgba: 4289908967
+  - serializedVersion: 2
+    rgba: 4280624933
+  - serializedVersion: 2
+    rgba: 4283996870
+  - serializedVersion: 2
+    rgba: 4279647603
+  - serializedVersion: 2
+    rgba: 4291268436
+  - serializedVersion: 2
+    rgba: 4288574285
+  - serializedVersion: 2
+    rgba: 4289696898
+  - serializedVersion: 2
+    rgba: 4279537892
+  - serializedVersion: 2
+    rgba: 4292131488
+  - serializedVersion: 2
+    rgba: 4279722929
+  - serializedVersion: 2
+    rgba: 4283713851
+  encodedCells: S1:4:4096:C158155F:fVRBb9NIFP4NXqdso/pSdwVVOVlTlwbnksYcqvoSmVmwhguUTqPSy6oijqCXtiixSi5V8GE0XKgEW0V7yXoHyZpejEMT6PyofU5YVqvV7iRRPf6+9+Z733vTi8Hg6+Bi8J+rgP6XUKyvp98JK+f/jh8MTif6N9g0/8FcWZxt7ura7MGEdT5YGZgr0890V+BVhM6L8CfmdH06vnke0Q+m+W4wOKbnpokQWjKPj5t0MGV8KtHmMl0xw+XmHqXLK/TF+vqg223udTo3l5c/NK9ceqtJO+0worRT/PbuXFw1QwpPpxe79GLNjTr7AIf78KoJP1qltLUfQgiE7bXG7n50EoZTHMLpHu3tAmG31y12Hyaq1GseFHhzGgwpfntSELvhbnTRjB5suQbNW2HYjiIadcJuMzo5KnYXXXgz8TS5gJ6jIv6wCyKibrReReGv7eMo6n6KjMwwN6x7uZiE9LAghaeTk3WFehHUE1UnRtbb8LRFNZLXYYG3b0UPJcFyK4JND+XKyDYMQ8+UN1LT+O6DXKnqiLTbUbcHbw1DM/RVraSNPgN+bLYfbOcHd8+fH3WXI72kVPY2q49KXmZltd4xxLQfbucnd1+9P4pWJrmq1rKzqrXquTXXre9Py19Deb7+8v1ORxWrWiu5o1VAS663O8V/zhVC1zs7N5TKqwUFSuwDoVanMxwB/uX5jvq+XNfte5rlzfLfOBpEmnn7yfhvuGSA0JGa2f9RYIylfBl+g0eZMgzgrKrZ+R8Bbsjb1x5gh70ppZC3NNG/6cPT+GvladkhZB8BwXMzcG2W/+qhNq+Zi+CMeltAgBseHw0DNffoWUG4g9Dh2kE4Oc68mqeM4oBLySVPhmXx4iqeVdkJw1/CH9X8D2CRNzojfCjEMMUWkc9meAsmZhz+GI4PqyJokJRjMpR9Lbh8/TF6PaWErWk/M9XgfjwURAiRIIZFY26HfluAx/KLv4CEr/tbcTnRhfhStcisUlokwHxrQde1vF7ShNNHMimDUrlNacFp0TWLZCbSa1ptZGA7Qb/XP9f+kH5CKZrpRLnnapdadpY9SpwE+bnS3i3Vk/UFdFXgamxZmlJ1palLAXg916zEQ/2S0KftbBX2ZJ69mSlLMIZQXzr9BCVfsI6GNx5TOj4MNWh1ppVQzBhzkjnbT5C7OtR1Of8USmyHKhxDM5QSjAOjYiMfy9I9hAL1uLinLbhVWkmNlRA8BUYFCynlECHOgybdp612q+u641ARIgNe5FC+vO3qiDP5tLVNwYuO64JV0CIuWCo5yzzT1Swp2O74L7zdCu+TgMuUSxDhbiBLg4cUbdMDut/Z+CmkoTZkMpAxYZLJMtK0+7KSIl3l9KCz8WqX7s6RlGHCMda1RbfiWFolgbOq2/TkpH4EwweRKbP1as1lbCEQqCE5kdzWRX5SL/4VYSI4K/NNBjIYEY4NdXJWQQJtLz0pcAYOpawcxzxOU1bxi0kXFZ3p+skapW8EiAePyw0ueAxKU9uHch0kU6k781cCcxHEEgJFJeaEsJgHcFNs5KRszhk6cO+g4FgwhLkvZYA5L6YWWY7kqSMlDCif+lt+hGFM4csDxm2k27BhpESwgCMAXzAECzB4AVWkzNIdcIwHMvBhxiXDac2KUxDPGQYFYIAVCxJDW1BqB4SzuTMGnalgDPJiaBc8JpxLyF7BKRS+OYQusbQhMFQiwME4SAQmGK4oONhnrBFjGaebDUiKYwJBaYpxAEzbttOUL8AZKTitg4IFUBwIMAvb4GUyBG5cJoTLmAVVH8ebqAFkApMABITBtKRvET/2oTE5AuIWXO2KH3MOriEM3ZcSJXAAg0SWHzCWEZ7CHEDnMZJgfBrAH8Id8KeKwMItkLaJZJEZI8EK+6XjM0cQtgo4e2NjmVaGMTj/Jw==
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000fe00ff000000feffff0000000000000000
+  conveyorDirections: 00000000000000000200000000000200000000000000000000
+  conveyorBucketCounts: 00000000000000000200000000000300000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 11841696
+  displayTitle: Cable Car above Autumn Vineyards
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 4e697a0793022774c9d70d67438ce956,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

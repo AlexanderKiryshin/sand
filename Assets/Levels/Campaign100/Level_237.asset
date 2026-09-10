@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_237
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279445070
+  - serializedVersion: 2
+    rgba: 4291946221
+  - serializedVersion: 2
+    rgba: 4280886564
+  - serializedVersion: 2
+    rgba: 4281941574
+  - serializedVersion: 2
+    rgba: 4287400845
+  - serializedVersion: 2
+    rgba: 4283660189
+  - serializedVersion: 2
+    rgba: 4283579691
+  - serializedVersion: 2
+    rgba: 4285029457
+  - serializedVersion: 2
+    rgba: 4279242773
+  - serializedVersion: 2
+    rgba: 4291608498
+  - serializedVersion: 2
+    rgba: 4285706977
+  - serializedVersion: 2
+    rgba: 4279779721
+  encodedCells: S1:4:4096:19810519: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000fe0000ff00ff00fe00000000000000000000
+  conveyorDirections: 00000000000000000000000000000100000000000000000000
+  conveyorBucketCounts: 00000000000000020000000000000300000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 24723363
+  displayTitle: Young Violinist in a Train Station
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: a0a94028156a933429b570a8952f6612,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

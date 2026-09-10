@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_213
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281671702
+  - serializedVersion: 2
+    rgba: 4287675893
+  - serializedVersion: 2
+    rgba: 4288055211
+  - serializedVersion: 2
+    rgba: 4279569159
+  - serializedVersion: 2
+    rgba: 4285766630
+  - serializedVersion: 2
+    rgba: 4291601298
+  - serializedVersion: 2
+    rgba: 4284967052
+  - serializedVersion: 2
+    rgba: 4289889387
+  - serializedVersion: 2
+    rgba: 4287653977
+  - serializedVersion: 2
+    rgba: 4290421958
+  - serializedVersion: 2
+    rgba: 4285354309
+  - serializedVersion: 2
+    rgba: 4283381295
+  encodedCells: S1:4:4096:C36A274E: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000ff00fefe00ff0000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000040400000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 22209867
+  displayTitle: Frosted Glasshouse at Sunrise
+  beltCapacity: 4
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 3ea894a1dd54a36439e8a0e03e8c342b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

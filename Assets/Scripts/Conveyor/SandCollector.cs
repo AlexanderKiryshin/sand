@@ -6,6 +6,7 @@ public class SandCollector : MonoBehaviour
     [SerializeField] private ConveyorBelt conveyorBelt;
 
     public event Action<byte, int> OnGrainCollected;
+    public event Action<byte, int, Bucket> OnBucketGrainCollected;
 
     public void Initialize(ConveyorBelt belt)
     {
@@ -40,6 +41,7 @@ public class SandCollector : MonoBehaviour
         }
 
         int levelX = simGridX / Mathf.Max(1, subGrainsPerAxis);
+        Bucket target = conveyorBelt.FindBucketForColumn(levelX, levelGridWidth, colorIndex)?.Bucket;
         if (!conveyorBelt.TryCollectGrain(colorIndex, levelX, levelGridWidth))
         {
             return false;
@@ -49,6 +51,7 @@ public class SandCollector : MonoBehaviour
         {
             OnGrainCollected(colorIndex, simGridX);
         }
+        OnBucketGrainCollected?.Invoke(colorIndex, simGridX, target);
 
         return true;
     }

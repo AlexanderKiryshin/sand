@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_205
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4292333502
+  - serializedVersion: 2
+    rgba: 4287400048
+  - serializedVersion: 2
+    rgba: 4280367653
+  - serializedVersion: 2
+    rgba: 4280244807
+  - serializedVersion: 2
+    rgba: 4289438098
+  - serializedVersion: 2
+    rgba: 4280648562
+  - serializedVersion: 2
+    rgba: 4285871897
+  - serializedVersion: 2
+    rgba: 4281052585
+  - serializedVersion: 2
+    rgba: 4283520834
+  - serializedVersion: 2
+    rgba: 4292405743
+  - serializedVersion: 2
+    rgba: 4279638540
+  - serializedVersion: 2
+    rgba: 4287327306
+  encodedCells: S1:4:4096:D177C6A3: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 000000000000000000feff000000000000000000fffe000000
+  conveyorDirections: 00000000000000000002000000000000000000000003000000
+  conveyorBucketCounts: 00000000000000000004000000000000000000000004000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: fantasy
+  campaignSeed: 21372035
+  displayTitle: Porcelain Elephant in a Tea Garden
+  beltCapacity: 3
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 2333bd1750301af47ab781a24fcfc07f,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

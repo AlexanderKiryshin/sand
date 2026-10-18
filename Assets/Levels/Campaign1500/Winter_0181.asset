@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0181
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4286747040
+  - serializedVersion: 2
+    rgba: 4279248525
+  - serializedVersion: 2
+    rgba: 4279373842
+  - serializedVersion: 2
+    rgba: 4290543693
+  - serializedVersion: 2
+    rgba: 4292592817
+  - serializedVersion: 2
+    rgba: 4293783279
+  - serializedVersion: 2
+    rgba: 4281281840
+  - serializedVersion: 2
+    rgba: 4291993459
+  - serializedVersion: 2
+    rgba: 4283456617
+  - serializedVersion: 2
+    rgba: 4291590433
+  - serializedVersion: 2
+    rgba: 4287781681
+  - serializedVersion: 2
+    rgba: 4279653595
+  encodedCells: S1:4:4096:DA83F0F9:rZXPb+PGFcf/BsWIWcF7Ig9GG12iQcwa0Skdeafmybsalhv1olZ8peOTTMgTFr4IJZm3pi9apWKJ9NLUaQw1R67DZnqiDLgp+Ef10dlLuj2WECRCn/fj+77zKG02/8/r30/e/u74q/irN7c/M80v3+JXiZRvAt6rB9u//TdHT8rkh9u6bpq/vMVRyqF323ZiNmu+/TG92WwoX0rcfL3/S5sdhvn/5rfvmWZdr/5sfv1jLoYBtfeGG5OuesDeucGbxyxoO25ilFPKFvPifcu06t7AFLg55nzjATyKk8MMpPyAKZtZZvPq8CO84bzlPtCkV5jw8QnIuW0Tb/ph+GV8Q+n8Y+nDLY/xluuxn0jFQpv1mnOz+QjF1Q8Y/ARjjJ2xm07Dc2XbdROavWtsL0+6FJEOEXl15uO7jNnWQ+/cMs3mkbcTUwUIUsQxeNJml8zq94k/WSCkraMjlzikgo8m4DPStx30+2bdPEMJbsvbd9d1tDjx1/shtR/0TRrxGVWmVD7GkkSgE09lcPAQKru5PDf36/qZ77e9eXlUnnjgldnH4F9Y6oE1vR7lm78maVP5uuLIKV+WOIWj8/NwaxGnAeqWj3jJq6Nj13eDWHCAaKDUdtvU1iP3eBzzcjwWZL4nMuFfqMvW/qahAXu9IfLWNgHDSg45d4YnEF0qxSzyj5FBXIgY0eFpeoQpHUV5Eqg+Hc9D02PWvlmTfbHAzE8CL8DhLS8RWV+xbV33Bzbli/ZUBAJMyUiBnOIPWt6Y20uqb14jF6RgepaCnwZ8NE+8uR3a2z7NuN03m2ua3OGYTSF+PIn5xP2QhWpL+2OyYt+83ohPOK/KMaDnYoKq433BGAvNba9R5x9YTzk/G1LfUZVwSBeoZmk0p4BmO6jZ/iF7ypOpH9/ejn6C3IcXr5UxccVzxno1s8JXr9hnQnySoNgspkJzhLVSJ27yXNnWoOk9XNrsJRcZCJIWxxUfufIiLwJcqPB7a7DtKcZe4nEi0Q9eL2iOo8lLvyi8dByFgwE5NGPsD4jgow93i3jEZV5MigKDTw8ZM2tzpXL2VwAX3MrXHXF1Ext2VBQvPP+nNGGvZ4SF+OaM9tLN9HcdiK9GuQojY4LzdyybhTTljvhHTAGp1tVy4spEdQtlnMKnzLJY69JO/C8+Bf+11rozoT1VeaS6BqwT9sjZSty3/I74FxNqVOSHqhvNIKXiT4kX/HN+9YjLPf8scDtFqDqzi8mBzVhG6Xl5fB2Lu0pn471k7IIBYd6ZdQCIJT9nLOLxNQ515ny3J2Xs+gYsVT5bGsQLJL5zI75HqbVT6ZNE3qUGXChjuTQuSLvwGOvG/D5Grem1OHM15saMdYvIoP6/oEVchYJ7J6Su0jrboyrrfK2MTlHQL8ApVmxHocR/vuEefcCymBE3qDPAAVstJSZ7WrR8j0wiC3ZnRjGz2apw3QOWGwnqe8rlxHVZeUEKM2NZKJZH4F5QlJfo8lpnpaMdHpPOAINo2VUqN4rFnKIkVf1Gxw4V4CUJmKb4p6gbqp28M2F5/jzRjnOvK4cYZloLj56kxAMjUkYxf7j87foU+O//XpJAIYjTItEqjqC1qTOz84lareXRNRmYxTSDRgxktVyA68OqOI9sRUom3XvtECHuYABCqS7gHwHW/f4TNQxUYUzujh0ki6sqCWCo1PJFZUxg1w5f0fIe/up5Akei5U6VBt6Hyohoizoa4NxGD3al6p6BwCouM+0m73bC8JDaGktw14cSU/UtSd2lFc2cjHKoXUR/D3l3uZyAAvBUSIJOE59WIHMAZmpmhypc0iafQvibiTujYmrnMwl3zjHlz1UUUoYRdZYzOsLfuS4NmavdFxL0jeNPianQVpFtREtXQge8FaVHsPDgiJf/AQ==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 34344402
+  displayTitle: Mountain Rescuer with an Orange Rope
+  seasonalNumber: 181
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 4d367d6e8a43e8b479dd27743cbd2b6b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

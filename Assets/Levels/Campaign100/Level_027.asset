@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
+    rgba: 4279374367
+  - serializedVersion: 2
+    rgba: 4282802836
+  - serializedVersion: 2
+    rgba: 4279114570
+  - serializedVersion: 2
+    rgba: 4281153115
+  - serializedVersion: 2
+    rgba: 4278800591
+  - serializedVersion: 2
+    rgba: 4279704368
+  - serializedVersion: 2
     rgba: 4278847500
   - serializedVersion: 2
-    rgba: 4283259770
+    rgba: 4283388517
   - serializedVersion: 2
-    rgba: 4279246412
+    rgba: 4279054745
   - serializedVersion: 2
-    rgba: 4279112753
+    rgba: 4280691008
   - serializedVersion: 2
-    rgba: 4279054227
+    rgba: 4279182700
   - serializedVersion: 2
-    rgba: 4280230195
-  - serializedVersion: 2
-    rgba: 4279505949
-  - serializedVersion: 2
-    rgba: 4281482338
-  - serializedVersion: 2
-    rgba: 4279248234
-  - serializedVersion: 2
-    rgba: 4281151560
-  - serializedVersion: 2
-    rgba: 4278732743
-  - serializedVersion: 2
-    rgba: 4279472114
-  encodedCells: S1:4:4096:B69E7843:bVTPj9vGFf4bBhZMtEemXah7U4YiTW8vAp85YdxLIjELmbnYqx2udaPF8HWdnpTGoHVbkNIuVz3turLMq1YwBO4t2QKG9Ef1DR03TdEHiBjNN+/H9943E2GkRfj0/tP7L0tl7PelDJmULEImERnWJslqeFguhogh/cX/mKxtUf5iMkTrSymTj5j60fEjc1FeEZhOUuVqAn3DOlB9LFykte9VmtZ4KFzlq+LGSX1uqWD9StfTT5ndGCWX0o1D+eZjep3saigT5YECAAgYHqEr34SynOifYFmXZTlDUG7X6GJul9f7hJqElzW3JJR8MKDlsKTs58+Lcv+Z/izTFT9HDhIcyNKkntQ8peRpqb94Ybl6ml56AAPKWfdkuZCLhKpf6GP9RYTm3rh5UcCRKk7hr5YqgBxJU2/qiEfunqoRZKwabJ6UE4UPFkeLGW2/1DBzmro+TmQiEikvyrKp7z9cyMvp4uGyOcYIMvhBH1+RC8D1g9eTlE5PJg8Ln2hO9AR9v/2Hu/RKugDGRfFOMdbLlPOseFOe6Jjnd8VneroEA9L0opw0FT5Jlw+y2T/Tv2otFKOkuX/yhREMXqXLMm1eNfXhOEzTbnF9kWitGGMtjnMz5wNZvE5TfTlJhyfh+PO0eFd8gR2b40jitOAOLMbvmk19mS6Jp55O1/5MDVSIHse/X/Cp99kzuaeP0+ZyKOWf9vqbgEZyCJY45SPO/bbXHErVqj3iKpeTi341wPhsdXjoG6dcrNevSS37X/9RT2haJi8frrf8FCz38DDoum2+ndtl+W7/yl8iCXp5WU7blRNZo07Wqzb+I28bFPwJRRif4KKUfFP026f30DplwFvrg5ntvM9SX8nxGU5+lDOb+kv3JGHRKTiBza9JeP1H1+WyJBlOZVb4x7VktQiA39hdcGM3OC76qVLyyWIxrZ6ThiyImOXkh6u/cDDlm+GTHy8LGSblcsn8Yxca0ShiwjZn3QPuzMJw+CSltFLev0zYqy8h1txGh+GDI2dNxcPRwCyL42/o4rHyHnvrHFH8OAa0hLOpAs9oh6ZMj0kniVYyJsERaCJGeN7m+S7wuBMmw8nS7cpE0+gh4ACxG9N4ETh0d20OKE1Tms/NhJHFBocYoEG4wflm8w/uxKHpuQuPRyxiTHDHoQjxW4HCcFYfvi34SEBmGm2OTMWfcZ47gJHAc4MXd1UBwgqfZ13uIaEj7LaKHgeG3wjkRXF3OzVGsRgVAalJYxjFjQ5fORDFOIOy8O92c5AC8V+8EQGFt0Sjk21IdKDh8du82k1fu0kPxE3WiGIqnyYj8r5tUwXnB7z/0y5w4vsWDCBDpnAt1MRN0G87dKt6xYeb266TQ97OobjHvqP68RBFd+TbHjXBtjerasW7MRiOkY/IX9ABCJPOzRocw+B+f3WwyTzgvXY3V+xjFJ4YNbSbOXe4l1XVplr7bXjE536oqegOGKs81qx5d2pzv/LXt1uasV3czkMt0pjIQdO+pxnx7vtsug6q3c5zHN+vjj1LNR+gIgpPLTGQoXC21XZ3Oy1sKMyBMRIdxs55Ri2IThG54/IC3d2uCu5skPSIjlpE/6uAJozJEVpdm3Rh7Xa72+3tXLzUpOZojEVb4hViJwl7Ph3Pt98Ofv5znIhiNFL1MasfcM/2kBL9TZXz0wFDysjmfU+j8dFLGLOsX/D+Y1TlrgKqhxasDcA+WcuoqjnWS7uHHYV3zpCUYdV7ncyvto9rPPIOUS2iaEC5z07rPTB+/v6ssA3yi5ye0Bq0ScMnbo9UjjP8nYo492hfPM5A+bc+Ju44v1RAnpUnSIPvp7GF7P9ZpL2f2u08mDqiQcyI2/8YuVUAJKVaVZ/w6L9OtNb9/ma3Fg3VCtZp/Bq7/orM9/11VcXkq3bu/SZFp9Vq4LzaBvS6fwQ6v8Ehwrg3/7ALvot/7Sz7Nw==
+    rgba: 4279407861
+  encodedCells: S1:4:4096:2F6C6B27:ZZRBb9vIFcc/w6yCYR3dWCMI3BPx1hTk6cUO4c0yp4UrA4J0GYz61Ei9EEo16PZmBAWRm6HSC0a+SCYId3zSUqIhz7HwIVh9qD7SbrpF50KCvzfv/ee9/5BFmnGG3BjzKY5jerxkTJqRZF+XxCceP3FCC4P8v5wjjm7Cmt8GYYDEPIPIZBWDdYjJs9t6fxAQp5QVk1yifEq0yD/dPhWIA1PXrEK49G+qaMTcxLe3NY4rffXyEZHU5NXLwpgwji8qBYb2skoC1Dx8Qcns2JiDC9c9fV3xShKiD6rihsrJcmzDT39yl4X7NjMjtfC5lGhwQLzSh/gmCOLfXAyR9Ju7/AhrSSM0Qc3l6O9v4/gbx/Ffnew/2Dxr1NyYhyBDznM28mM3Zh4OXrnxyT59kjgyJjNh1Y08bywK13VZtBKLV7F7goY4bc5MEH8c5OYB8tC4btQCKO9cd5lTcznBMPgYx2+CG6FyE+4vI2bt+9+6wZIwYnZ39+lt/NrNgm/FTJhs4EpR9Czx/RGq8nSdUbtfuy4dKITcBC9+vI8YFvv7g8HIqtMgyKrs7vLkOAj+kYZrFrWmbEwhYIo2nq5pkB8vYtcwQynad+sRuy+UQ9MSgQDMT9bBvkvzMCx018F8u5bRfdTyfMHerEGoVyfmwL14W00jdw+2vRQj7fnOShxOwC+24ndL4sH+NzSN3Bz8nCaoeQnME35DyW76bknzpJZxMk14Yz4nnUFjCi9Wq7TEsd/tvKvmWnFjbo5ECGcdpX1xX16ezUQXusmWpmiWBwEZ+RhsMLOHkf524nC87G38MVxeBUWYhVnGjgO0VqScaQ1aN/EqEahUWdr0Hc12wI6tfOjZ9+SB6MNUK1SJmGUjiedbSw3KGfvePMzTMYvYaqh1gc1ex5oRw/k/y3c0e8aWWdbujHEaMZ9RB1Q5O4S8xHz0+fu1zckcdx8cO1Jce57WTIE/7xagVD4ywXqOHKefPziLETLNIqkZWbr7aIUPMjc/d0sSos1UL8ijkcc53QlUvceNACGlCf9ALuFaa4cdNVB6dCkiCQXskjGsGN6E2ajAif6OON0kVpmWswEo2G0AGB5nOSp/Svv1TXWTVH2PvULMextQnJ+2TTiACmsHQJWk4Tu68P543kssxaOFh3bBI8KyhKJEjLDknm/tl37F5djOYe3QoRmbDEUJqNn9JYLdful3ajHz68EC/0bypMZiDthosBJD4ruE9HLpAfmRBncp9ZA4+KiHe6zs7CzIl+jzsphoj+pXv7ci6QnFnNUhzP+1u1Z86pCEWUNX/alaO0vmQtF/zre/nPdnUKIvEItxfTzdkt7ZMLFt5NAWvbPDs2KOvg/4oAhSBhotH573fOVDkc7PDnsgEM63M8pP0JFjqjc83xQAUCTdXqe7baOAJK2ao+nnVBQwdfzN2VZAmqbd/mM3sXSXExbpSKuxr3nTYb6AHwrbTdLdToBK084fha/1VCO2tZ44nqSWSvXYedz1t1ZAcaSOPDnlegzvHc10k3HIEADlY7+fzH9P1nTYJbVfX7WdqPrHR62ZUJJ7u92u/3idIosc1iKFw4R7Hptyjld/pfCicz063/GXQ9GQlX4NfQtivMeuFOxpjdA7pIGS9Ll4X7mHAW8CzJqr+Saicspeb+gjAa/8s6OfV6s863QmlZU0WNmqvw0bnKY3qV+9NOnusdpr41VUv0SV+JaqQyU8/uWXQtB3x1GlrPv6ZM1mJcFpYhW0aU4mji+KgkX/qasvn8Jqm2+adFz505ZLSkS3sYpqfY3UTk8lXIqrziGwKHpW8T8r0pfdDc67thFVto/+nztdC2Q17tRHfSr7qzUs06390nlk0+h5w9dFeoYthFVK80fZeCbRr2vcD1sMO91OssfwObXU+t8=
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000000000fe00000000000000ff00000000fffe0000
-  conveyorDirections: 00000000000000000200000000000000000000000000030000
-  conveyorBucketCounts: 00000000000000000200000000000000000000000000020000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: wonders
   campaignSeed: 2730273
   displayTitle: Volcano Temple
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 3
-  sectionBuckets: 1
+  frostMoves: 0
+  sectionBuckets: 0
   keyGates: 0
-  linkedBuckets: 0
+  linkedBuckets: 1
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 38628938621d9e64e934bb80f9d6184d,
     type: 2}
   usesTiles: 0

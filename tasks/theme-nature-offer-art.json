@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": 27,
+      "name": "lake",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait production background for a mobile sand painting puzzle, an exquisite naturalistic painterly illustration with finely rendered botanical textures and soft luminous lighting, matching premium illustrated sand paintings. Rich detail concentrated at LEFT x0-18% and RIGHT x82-100% side margins, some small corner accents. ENTIRE CENTRAL 64% x18-82%, from top to bottom, calm almost empty low contrast luminous wash for gameplay overlay. No central objects or horizon, no floor, no furniture, racks, supports, buckets, conveyor, UI, text or watermarks. Organic transitions, no rectangular frame, not flat vector clipart. Theme: a beautiful tranquil freshwater lake viewed as a decorative close-up of its margins. Clearly recognizable transparent turquoise water, soft delicate ripples and refracted sunlight; exquisitely textured water lilies with white and pale pink flowers, green lily pads, willow leaves, slender reeds, smooth wet pebbles, a small dragonfly on a reed at the far edge. Water must be visually recognizable, not just a blank mint background. Center pale aqua water with extremely subtle flowing ripple texture, brighter and quieter than margins. No shore cutting across center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-081ffdbd-9bd2-46a3-a367-cbc56a1c459e.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_27.png"
+    },
+    {
+      "id": 29,
+      "name": "autumn",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait production background for a mobile sand painting puzzle, an exquisite naturalistic painterly illustration with finely rendered botanical textures and soft luminous lighting, matching premium illustrated sand paintings. Rich detail concentrated at LEFT x0-18% and RIGHT x82-100% side margins, some small corner accents. ENTIRE CENTRAL 64% x18-82%, from top to bottom, calm almost empty low contrast luminous wash for gameplay overlay. No central objects or horizon, no floor, no furniture, racks, supports, buckets, conveyor, UI, text or watermarks. Organic transitions, no rectangular frame, not flat vector clipart. Theme: golden autumn birch grove in soft morning light. Beautiful finely textured white birch trunks with dark markings confined to extreme left and right edges, cascades of delicate golden and amber birch leaves, small russet fern fronds, mossy roots, acorns and fine autumn grasses confined to sides. Different visual identity from green enchanted forest: airy elegant white bark and honey-gold foliage against luminous warm ivory center, very soft mist and subtle golden light. Center almost empty, no tree trunks, no path or horizon across center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-11e79cab-bfa9-475e-801a-ca1cdcae8bbf.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_29.png"
+    }
+  ]
+}

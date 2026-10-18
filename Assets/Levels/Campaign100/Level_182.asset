@@ -16,50 +16,52 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280233271
+    rgba: 4280100914
   - serializedVersion: 2
-    rgba: 4292460977
+    rgba: 4287455805
   - serializedVersion: 2
-    rgba: 4283918710
+    rgba: 4288001486
   - serializedVersion: 2
-    rgba: 4292731879
+    rgba: 4292593080
   - serializedVersion: 2
-    rgba: 4281354328
+    rgba: 4281821581
   - serializedVersion: 2
-    rgba: 4288593622
+    rgba: 4292535273
   - serializedVersion: 2
-    rgba: 4287192889
+    rgba: 4283257943
   - serializedVersion: 2
-    rgba: 4289560672
+    rgba: 4289758824
   - serializedVersion: 2
-    rgba: 4279045906
+    rgba: 4278914063
   - serializedVersion: 2
-    rgba: 4292846965
+    rgba: 4292847481
   - serializedVersion: 2
-    rgba: 4285831086
+    rgba: 4280698200
   - serializedVersion: 2
-    rgba: 4281495702
-  encodedCells: S1:4:4096:18AB4F05:fZRNb+O4Gcc/A6PVdNjRZTkGYhi9qKydGsqlBuvxTvZCGAwgWJfAGQKBclnPdqkN9uSZVoKxFyKr2RLJyQgwhrGXQBMVA+ViGJoiCD9UH7mL7QuK0oIg88fn7c+HXK//72C/fA3+Fx78whfsvxd0gBHWWg9uGjx6237/n5iwm2WLsRZpfGSjZPbi3x2vXxLWDEII2LcX+/vJQetfxoOb1s98+ZINsnmWprN26+2602nwTWcAZNTw9XLFmMrILFtm5GZ/2fk1R38mBPg8W+34eq7S9ouLZEDYYMHYHrp+AD5i61Wr8/LrznrUUip9cZMxNmItdoOREGQ5H90sViuynEEdmVIXKbiaw+sP3CCEBuv5akTWywFTq4VKVCeDapaLlPzVcM/m9Zt1tnjZIiv2tVonanUBRTLFOm0Q6dKE1n4HerxdktVSpeD8vUrfg5P2gLTaF8it3Qf70woUJcskyxIg6fuFUupNm7SgOlFHggDOVhBdKdIGfqFUsv9mlrZnPxp/a+16vYJfArOKsSYBlaqUzpPMGE239zRbLy4yMITgjK123mFFkiRQGy0mmyZsqnaDtbK1SiHSKM3mBoX4xKfvvgeH4B3M24wNWukACs2yrI1wXms/Pu7/0/q1Gu02sTVoQaGMfIZ5dM1NUaKvmqpUSsh8b69pkSRVsNIgLjb6Ftfn7usm9+ahznPwPlNpShhGSOQ29NF3hYUJRSAG/+o5NCEBV4TsIVzbusYP/P78T81Mks6485y0G0iSGVTHoygKwwdrf9rN/VY5YL+/+55nGnh9HSFsrf4NCNsm88R3uvs/81QjKMDLn32yUbSB3MhcAXfUwedzMp8nT4GLayvlJ2979/T75Pfq9cFrROXQp3vPQRDgPOf2NK7w1vvLRu3q+9tp3HOoOhjG7KlBIhSirKZ67H3z92+b3d2X5STuTZ/IciovDdK8K6ZFnPvom199CymRgZTBnYRxXEqMuQ7FXXBpTPgk7cAZgEfGf2SnsawC8IqFMbnuP2BjsK2/3B2vqgDjU1nFUuowN9iEvLabBw/ecIYGJHhVDSWYS9nTocYm58KzHuYPdrNTZVw10XvTUr4z3ODQ1aa2LtZuZKfyYJ8EZVxW8fC0Cp4gDYlhlLt2g0KkrR87U0LjahKM5VGvOkbm6lKjMER2o3XoekLGcugEFR3LydStkP4cGWQ4cO5pj3tfSvZBerfdsSiLHn2GzGVuAuMARxFGtXsu5VDSrhDdKu7xO6xBGKlhky3WwKN7SL3qClc7k5M4embMpcHFpRG8hjYRtfWqUpZju7ETdP/ogjQg24nOXV57qObG9Kv4qGcFdxG3oCxMmOLoXehyiwX816aCAJFbWwuCNNxchcNL3NhzDWL0i+50apvhweJmfLy9wtwFGXOjhS66flXZuyIQ2mAN2Zlx9QSHKG9WI/djEN4GlRWR7zSZoS+MOYt/MBB6F0zUh+6hOwa+zRusz4APYR4w0qHpo/tJ5Iox56IJjs2ZNmelgS3GOUfQa2LzGFlbW7GrDeBYf3xnMGwwF1g3Z0nYWjzuamsifghkmUNYaKL6GrkmLvHGWvEqoDtzfOzK3xnMawElCn7X9M0na/uIQvo6pB9zsEBhTktjXHQW+Lc9aB3rbLgLu46mH2J5MkTcoZMrrc+6Y8QLcPHJrzVv8jthTr8/RBRTZK8pbdIrp8dlhazNd3x4ytERdqmw9pCOXcdFRSCDorbRbkG/OoonJxLfPkLOERXdQ8h8+qrkR4LGV3nxobKHW48HhYzHllPh11s4d0VMqU+nstyAEOfn0HHVBJqRg/dtvZGyLLd+1x/TMrbexoJAXVmel69AvS4S9jyYTAV1CnAhnVp0kR9xW07uDid4I4SN7mnvDrqL0i0KHj3ehdvJDaZBFR93hQ9CboJeF+qEJ0cu0k1ro74PV7iDmqvMDcHlPwA=
+    rgba: 4284911015
+  encodedCells: S1:4:4096:AE08F07A:bVNBjxo5Fv4Nng5hvdWXdUjCcuu1ALWoE2MViFsJeVqouEyDnN6eXBiSsVrdpxomKZX2UjPbQV7msiOEUN2sVgUhc2mVSB/aP2pfkYxWo11LBa763vv8ve89p+mXtUr/z7oUv+9q7H8ClmnaA/zy8NIbi9/+CDOxAnyVHhLJRaV6/sdcJrzLsRCswOPaRbV6/t8TemPIA7CAmZfWulF4QS7epb8f0YNkJg74Ev7DWdwNK+G71RqEFkcXuSwq8F7au/CiyIvby6q3ilj6Z60mQCrEMvUuhUiXaxaGhIXV8ViMI7F6gpIB4JcihsqW8DuuEEK6XiS8c+CbYewYNkvjVRpfsm4lvlzXAIezvGpbiG8RxqY0XsZx5PViT5C0Rqqgety9WMZh9LPCAefm3+n6t4ull8aCQHJYbffOX4QivRi/aCNH+Zyn8Vqs03UPmEkch2FKyPfdczHr1vDbs9Ig+CmN30WrZRRGJCSkemB535156b+wf5bxHktjIH8XhjVvBhQ1Au68r5LoZ6yuh3xfWBjHtRcACS8ka0L+Fob/qIahUsn1Q/3raB2nYbtKDvg6PWyiMIy+wghdPdz5YVzUXBxMxCqqkTYwdUkYYX/gT+7dDz8BcNAVtgUTlRAeEkVRF+FFkEzdbwYELCekQ9qsO4ZOMsiPPPYU6+xW42a+eF5QAyFjHeikx4ANHFZIGz/BOKj7Pxb8xSMl9LoC0REToC5bcGXQ2yYvbGXVA848rwJMjD1BKOABxwO0d58T+EDISyk77POKKgghzbOSGQz4/nnv8LEK+bPPEVFU4MHtrYM5d56zJQlZBXBJOuwN4JUwKfJLi3J/n/HBS0LYrDhfvnzfecJmleqfADe3/DvaLw3q5bfke6hgJpsNId+/6UQvCeB6oXmD5qq8/3HwF+gKIa/orgUcTW/kFfjWGOo2k4fSs68Ab7dnI+rQH5qUUpceJzrR5vrBuosr/Yz8tet1GaP5jW3QkbuwOahTW/OYz5Wa3D0D74vLRelr0XQpvbGjAlfOvRxgpU58/t2hM8NRg9JPdLcbQf5CKTUwPkfbEgwpGwNuKR01RvaxQX9JtjA+eotK3PERRHXYPxnb5aCNyhNKj5RWWDlgIS/dOs7AP/kabDvOqaUj0XLzI5QotcVo4XAfBiXzTWv6hrl31NoWzW1+jNQc0jeOU9IL5Dt87x7Rkenndmjz1rXF6O+q01EggKNbpFFWF6JBnd3e1D/t7qxFeD5XEi8KnCvtl1qUClcHQQCbj8ZFCeB5kmDEMfz4PMuhNO2jR7OjH3fHKgF9r5MFFOAEmWM4B9s+artDBtn+r1Bb4ZtKjA5Khhtwiub0zrrGHJudhlxYaCSxA/w6KN5t7ubBowGmX9Xn1RQfsKNNph0Mbuyt/cSHnA9LX+D55GkZcOfeKMDvA2sp39ucJjgpn/yi1KmVeOskhRCFb3Md1Fs8k3ZT5CZNoHc/KA1NTkDrQu8dtL/n2duz20JZ8i3kU6XMQkGft+BjthsaW4Irt1BzjFWBN1QCM4AUGiDk+EM+PHK4MV+0z5V7pIomIo03SdHnoJ/tjdGH49WDLNNEIQMzoNECYeQYNDQ8m9yAWBA0nY9+APd4Cbz3uQNDeQT38D6X5aIafIomVKhtoJ3EcRJjH5rT3O1zqeUcBE3cm2bjtIH05JWFaDWVZTl1qe1LAwVhpF41XPeK6omUZ87i9GoiJ3IK/aH+51aoU/FUX48m5asNNF5KR5YnzSlt5cGQO0VAc9QwZiSR1JxfS2nKftnNad9ynpniWlzlj+7RSQNDRzO9k+aab5o0D+ijN5Gv765s4xteGlr3cFG5D/iGn1G333oAsuZrSBoGgXVdN+cQEpSRPDMwXztqJIIISk0ryCS9gV39uJ5sHbPJeH3qNo28vwEG1zxm1+VJNuH58WMdrtp1WRs+pSD0UT7Y+80wM1DSmdOvu3sXXJloaMzebv4D
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000000000fefffffeffffffffffffffffffffff
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000020000030000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: people
   campaignSeed: 18963268
   displayTitle: Mountain Shepherd with Wooden Flute
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 1
-  keyGates: 0
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 1
   linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
-  swappingColors: 1
-  loopInventory: 1
+  swappingColors: 0
+  loopInventory: 0
   mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: b786bee28c6f47d439566f4fea4d19b5,
     type: 2}

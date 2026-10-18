@@ -1,0 +1,55 @@
+{
+  "tool": "built-in image_gen",
+  "composition": "Calm center, detailed natural side borders; six nature backgrounds and one winter",
+  "assets": [
+    {
+      "id": 24,
+      "name": "forest",
+      "prompt": "Use case: stylized-concept. ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Exquisite naturalistic painterly game art with finely rendered real botanical material textures, refined rich details and soft atmospheric lighting, matching high quality illustrated sand paintings. Frontal decorative composition: densely detailed beautiful botanical objects at LEFT x0-16% and RIGHT x84-100% edges with small corner accents. Keep ENTIRE CENTRAL 68% x16-84%, y0-100% almost empty, softly textured low-contrast wash: freely placed gameplay overlay will cover it. Calm elegant organic transitions, no explicit rectangular frame. No UI, text, buckets, conveyor, racks, people, furniture or perspective floors. NOT simple flat vector clipart. Theme: Enchanted forest: detailed mossy old oak bark, layered ferns, delicate mushrooms, ivy and tiny forest flowers framing the side edges; central softly luminous pale sage/ivory mist. No central tree, trail or horizon.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-75012a49-4246-4dda-9d24-d86b6c50463e.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_24.png"
+    },
+    {
+      "id": 25,
+      "name": "birch",
+      "prompt": "Use case: stylized-concept. ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Exquisite naturalistic painterly game art with finely rendered real botanical material textures, refined rich details and soft atmospheric lighting, matching high quality illustrated sand paintings. Frontal decorative composition: densely detailed beautiful botanical objects at LEFT x0-16% and RIGHT x84-100% edges with small corner accents. Keep ENTIRE CENTRAL 68% x16-84%, y0-100% almost empty, softly textured low-contrast wash: freely placed gameplay overlay will cover it. Calm elegant organic transitions, no explicit rectangular frame. No UI, text, buckets, conveyor, racks, people, furniture or perspective floors. NOT simple flat vector clipart. Theme: Spring birch grove: exquisite white birch bark and hanging tender green leaves, subtle white anemones, moss and fine grasses along the sides; center broad pale fresh mint/ivory airy wash. No central trunks.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-3e4424ef-fe8c-4a6f-a527-787aecdbc99b.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_25.png"
+    },
+    {
+      "id": 26,
+      "name": "meadow",
+      "prompt": "Use case: stylized-concept. ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Exquisite naturalistic painterly game art with finely rendered real botanical material textures, refined rich details and soft atmospheric lighting, matching high quality illustrated sand paintings. Frontal decorative composition: densely detailed beautiful botanical objects at LEFT x0-16% and RIGHT x84-100% edges with small corner accents. Keep ENTIRE CENTRAL 68% x16-84%, y0-100% almost empty, softly textured low-contrast wash: freely placed gameplay overlay will cover it. Calm elegant organic transitions, no explicit rectangular frame. No UI, text, buckets, conveyor, racks, people, furniture or perspective floors. NOT simple flat vector clipart. Theme: Summer wildflower meadow: beautifully naturalistic richly colored cornflowers, poppies, daisies, golden grass stems, tiny butterflies at outer edges; center soft pale warm cream with barely perceptible sunlight texture. No central flowers.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-7275cc93-080f-4aea-a01d-842b6fcc0409.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_26.png"
+    },
+    {
+      "id": 27,
+      "name": "lake",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait production background for a mobile sand painting puzzle, an exquisite naturalistic painterly illustration with finely rendered botanical textures and soft luminous lighting, matching premium illustrated sand paintings. Rich detail concentrated at LEFT x0-18% and RIGHT x82-100% side margins, some small corner accents. ENTIRE CENTRAL 64% x18-82%, from top to bottom, calm almost empty low contrast luminous wash for gameplay overlay. No central objects or horizon, no floor, no furniture, racks, supports, buckets, conveyor, UI, text or watermarks. Organic transitions, no rectangular frame, not flat vector clipart. Theme: a beautiful tranquil freshwater lake viewed as a decorative close-up of its margins. Clearly recognizable transparent turquoise water, soft delicate ripples and refracted sunlight; exquisitely textured water lilies with white and pale pink flowers, green lily pads, willow leaves, slender reeds, smooth wet pebbles, a small dragonfly on a reed at the far edge. Water must be visually recognizable, not just a blank mint background. Center pale aqua water with extremely subtle flowing ripple texture, brighter and quieter than margins. No shore cutting across center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-081ffdbd-9bd2-46a3-a367-cbc56a1c459e.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_27.png"
+    },
+    {
+      "id": 28,
+      "name": "tropical",
+      "prompt": "Use case: stylized-concept. ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Exquisite naturalistic painterly game art with finely rendered real botanical material textures, refined rich details and soft atmospheric lighting, matching high quality illustrated sand paintings. Frontal decorative composition: densely detailed beautiful botanical objects at LEFT x0-16% and RIGHT x84-100% edges with small corner accents. Keep ENTIRE CENTRAL 68% x16-84%, y0-100% almost empty, softly textured low-contrast wash: freely placed gameplay overlay will cover it. Calm elegant organic transitions, no explicit rectangular frame. No UI, text, buckets, conveyor, racks, people, furniture or perspective floors. NOT simple flat vector clipart. Theme: Tropical nature garden: lush richly detailed monstera and palm leaves, vibrant hibiscus flowers, orchids and fine tropical ferns confined to outer side edges; center soft pale warm mint/ivory atmospheric wash. No central leaves or jungle vista.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-4ce57816-7ebe-4157-992e-a18d5725d74e.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_28.png"
+    },
+    {
+      "id": 29,
+      "name": "autumn",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait production background for a mobile sand painting puzzle, an exquisite naturalistic painterly illustration with finely rendered botanical textures and soft luminous lighting, matching premium illustrated sand paintings. Rich detail concentrated at LEFT x0-18% and RIGHT x82-100% side margins, some small corner accents. ENTIRE CENTRAL 64% x18-82%, from top to bottom, calm almost empty low contrast luminous wash for gameplay overlay. No central objects or horizon, no floor, no furniture, racks, supports, buckets, conveyor, UI, text or watermarks. Organic transitions, no rectangular frame, not flat vector clipart. Theme: golden autumn birch grove in soft morning light. Beautiful finely textured white birch trunks with dark markings confined to extreme left and right edges, cascades of delicate golden and amber birch leaves, small russet fern fronds, mossy roots, acorns and fine autumn grasses confined to sides. Different visual identity from green enchanted forest: airy elegant white bark and honey-gold foliage against luminous warm ivory center, very soft mist and subtle golden light. Center almost empty, no tree trunks, no path or horizon across center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-11e79cab-bfa9-475e-801a-ca1cdcae8bbf.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_29.png"
+    },
+    {
+      "id": 30,
+      "name": "snowforest",
+      "prompt": "Use case: stylized-concept. ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Exquisite naturalistic painterly game art with finely rendered real botanical material textures, refined rich details and soft atmospheric lighting, matching high quality illustrated sand paintings. Frontal decorative composition: densely detailed beautiful botanical objects at LEFT x0-16% and RIGHT x84-100% edges with small corner accents. Keep ENTIRE CENTRAL 68% x16-84%, y0-100% almost empty, softly textured low-contrast wash: freely placed gameplay overlay will cover it. Calm elegant organic transitions, no explicit rectangular frame. No UI, text, buckets, conveyor, racks, people, furniture or perspective floors. NOT simple flat vector clipart. Theme: Winter snowy fir forest: exquisite frosted fir boughs, snow-covered evergreen needles and pinecones, fine silver ice crystals, elegant rowan berries, softly painted white snow accumulated along the side edges; center quiet luminous pale ice blue and ivory wash. Beautiful winter nature, no Christmas ornaments, no buildings, no central trees.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-9712645a-5c0b-4839-a2a0-8a4f3076f537.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_30.png"
+    }
+  ]
+}

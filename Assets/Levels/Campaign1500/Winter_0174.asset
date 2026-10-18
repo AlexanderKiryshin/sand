@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0174
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4292975616
+  - serializedVersion: 2
+    rgba: 4294901502
+  - serializedVersion: 2
+    rgba: 4278190080
+  - serializedVersion: 2
+    rgba: 4278271433
+  - serializedVersion: 2
+    rgba: 4287456827
+  - serializedVersion: 2
+    rgba: 4289044106
+  - serializedVersion: 2
+    rgba: 4281699557
+  encodedCells: S1:3:4096:FC86B85D:xdQxa1NRFAfw7+Du5Guz2MElFaKr9jakQwcHn1OJhZh3KnQIiJ/AQYdbEKS6xW41mLanQ4YuRahShFJD827j4FojCNJBh+f/nHtfklpBOgnhcfPLveecnHfvNTYy/+PDr8KgxxQPPSnwwI+rjsk9D/6ESuJfME7EOfhbDKmgY1Kf+Lf7+G1yxVru1zHlGbk572uYdE18QZaaxDUwxmit4oq2OvRLrrFQEEecWzZ6EbGmMvZoLinBf+HLDGZLGfz6CM5U2mPK1G88mjR2N3d3ygNxxFmJeGWXIwSXUvfg24g7JUHQj+Y7ptx3wv9S7/KgG+Jk6lqkPexynzH4jLxZ5jJ0WP0Ts+Mt9Z/4IdPO3I/bfW6oY9IBeKcn6Zp34Uug+mM87I8sa/U06Z22NpdidTSyKW6PZ9m7w6KKNn5fPH2fOx4m93jZpeecmMqN2AXvjHyj7s54MXi97pZiyXfWazGKqDu/CWh75KtIdrI75nHuHTqJRr5Y9vHdSyatr5J6D3mdDW4OeMBjnqKNHYq30ZQxr8FlPRUqB5Pfx31R8q1TQV7vuHd5nVybSuc9FOk9+Yv38bh6MV+duoAPRk5/+Ebw1tBtqk5n3B6ybYqz92qrj/a6WfuVOekMGNtD+5+0JMjqzPxCZ6uP+brN9HA3JPha49jn3de7Ab9+wIl54OuhsvMuH4OT4Z1lk+d+U09SM/ip1KM+7XyieXXk2pheOl18eAUvm8IS7DbcI5eNjd03VFROdCM15a1h/pXb9h4qmn7zNJL583ZzXa8mV1zGXu0nZVRLE8bYTS01tvQRZ98S3NFK0Ug3EAre4yq2wR7jOnKTtdDqVFxG4iYt5i570o/kThuiLgknzWd0/Bs=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 33611299
+  displayTitle: 
+  seasonalNumber: 174
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 07ad2d560dc2e1f4ca2a2a03d155aee9,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

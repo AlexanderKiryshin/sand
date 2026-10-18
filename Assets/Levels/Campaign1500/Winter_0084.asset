@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0084
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4288508202
+  - serializedVersion: 2
+    rgba: 4294308079
+  - serializedVersion: 2
+    rgba: 4291204941
+  - serializedVersion: 2
+    rgba: 4284892433
+  - serializedVersion: 2
+    rgba: 4281280387
+  - serializedVersion: 2
+    rgba: 4293513656
+  - serializedVersion: 2
+    rgba: 4286936979
+  - serializedVersion: 2
+    rgba: 4292127865
+  - serializedVersion: 2
+    rgba: 4293910997
+  - serializedVersion: 2
+    rgba: 4293050265
+  encodedCells: S1:4:4096:AAF12846:XVVBc+I6Ev4Nwq4swy1KhbG4GbGs4pszqkwmt9mKh7d7w6Q0WLedDWEyN3CWEb7FZByLG/CeR9av3Daz77INVVBq6etPre6vtSa5/T+TQojKVj0Mphsjcnt0iKoSiagELCUbrXP4lbUUFvbH21o05wpwJbCe45wQOJ6IIoFlkSSJ0L8sOQvQKSYN+h5PNWHbZrHxNIs57i4Q8h3yputMsN7YaZABg6JBW+7jGOPnZx/hDmsAYkXxvn16UtXVamvjrdIYj5HH0L+WnQVg5do5yxzbzrJMeUKYHt53fb9vnPHbTpgDFl4viJ3u+8GhPhTAvxabnXNoIRdfdlzahQtgApbjJIabFUBzZ05Ih5/mlw53dUM3JwkRmapkcUyVCsySuUa/d13kBioeVtNSQejmC6mxmfGUMpo8oessdFW5F3b7RkgLidVEJ7bUMstw2vM573AXne4DZmyRQPILzbdaUCpzssL7AefKFQoyHVibDytjK/t+ngynS7JcazJk/Hf1lFuN86KvzNBmtpIfXoRY0+5yMpTZNT9k/in2eyV1aEqVOVjJCyFWzjPcKlNsYbJejjH1UmU2VKnU2pu7Sq5kgUVmFVyCOFuL4z5VlB5SutAZ/4/5ucqcQ6VUZiB5mFBNPE0uUnFgIRe30dfv1pqbyVqSPK+9fqqajB0CWtTyNupHs28/V8aDl109Q+XlU2O7tGTOON0mURSNoh8/M6VoGogN1I5Xw6t2W88XQrDuP2b/jGbw+Z6p3xyOmCfIZGgylQyR7+WVnD58AoTPb/G3+hNT2SBlamLgFvCo+7KbP36+H83mrw9bjf8e/U1h5QROuoFgQmiMznI856M/GoTZnH8NUmwyxHv9Mw2PQuQ4qS/mevSHuJ/PP+vHIlXt1L4TW4Kbqk7EiSPo/byoxQr6AFYgmZBOTXBf68NEdhwTr/89f43tNPmcQBWlKjioNjuTwRhPUtqhAZI0iv7SgT56gK5jlNIgRH4KPcA48tthIujH2ey7FA9zsFefTsQ6HFBXqfDOQYiibseZRW0Jzi/R2+SvKaVNj+0UzVuLPvwta2cURbv3o/P45fUxmlPqIJ+82Sl9I3URZps1+xpFP74/wC6w/YgxtvIw5eJZ6AqRdbdCH6PRj/w+up19O59/+KlY280GiPm9oAIwMkzfzebR+eun18f395dffgNWzjbkbZ8xhByCe8H00xygz7/kN/PLxwcErMbMOigMxxcIhc/KmOhPm40iVnZ8imi+R3wMW3fx1LbfRXMogaOd6yVlEFfrFvMbrFhk2eJ2fnSOGv+2BXFpQa5CN/TgP0dQ4d/+jPAWC3QKHPN1B3F4s9gNXbSz7COEjm6jCOfVtFsyvrStWATQubrFXQV0Lfg5+MGgT9FGHzUR/J3QZZm0GW1DJmcgHSRPQp407gLUbb+y74pGZJljLNADaaqV4r+kExBKXaVtUDWoaZV+/dFIcyFOLEBDpwi5KsppVV4jHxCUBcHCXa2r/+l3LC5qdqBmfOO6FpoGRLfpzlhLkIemhAlbhe6p6F4POv7CMdqQ+NcObMCfBwc2dAfANER3N+ETAcK4K48SDjKwnNDDFeKuEPgNB3OeLidTWR4BMFWpSJmHeDhIiT1ZFJy7T6E/2GmSQoZAztIsZYuQu61BDi+QXXF+DSBjU6RncJ6Z9kENnNC9Dt0d9yqbNCH4kysNpR7G1vYmUKmX/AUgeJoU29A255HvO9TLtLU1orHAPITAfIEvJB+Lxo+gKg+M2q0N0iKJAcF94nzK6LXvNAAvIgBZpFUpQlUmsf4A/g6/gyioIfCSdIXoQiOeDV01hVl3deTV5vzuxF182MDYs7K2cD1n1agMBn9DIXyqiis0fRZin1dxIpwUFCiRrBTXv2Bh+l4ixqAuZA0T6RTevtCWeg1pl0uYy1VrsWQbIaWtK92MXhBto3POff67sWXP4iBkG9zshLFynL8ZiPYlACymK2sKD3Pfn+i6SoT9Lw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 24185689
+  displayTitle: powerful red icebreaker ship pushing through thick turquoise sea
+    ice, polar cliffs, wide high-angle view
+  seasonalNumber: 84
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 4d48668854d1bf04582a4f381d5dcce0,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

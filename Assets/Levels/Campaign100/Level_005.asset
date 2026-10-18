@@ -16,51 +16,76 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280954129
+    rgba: 4290947639
   - serializedVersion: 2
-    rgba: 4292975616
+    rgba: 4287344368
   - serializedVersion: 2
-    rgba: 4294901502
+    rgba: 4290156943
   - serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4283580208
   - serializedVersion: 2
-    rgba: 4281218361
+    rgba: 4291806071
   - serializedVersion: 2
-    rgba: 4285045955
+    rgba: 4291607380
   - serializedVersion: 2
-    rgba: 4282867539
+    rgba: 4289036908
   - serializedVersion: 2
-    rgba: 4287456827
+    rgba: 4288768066
   - serializedVersion: 2
-    rgba: 4289044106
-  encodedCells: S1:4:4096:33D25397:dZS9juIwEMefwbog2BZtQ3kyW6S0Mha4jIgLHgNdThElEkUod5MV67e9mfFHnKAbIXDmN/OfDwPOud3W5bbb5uZeuEPvbsa/5nxHroxH+1qILPg9jzUv3MB7JtC8b90Ou5hcjYXpwVjtizjX/0Sus/TAv9wjcFM3dszS+QEn6fveu4SZBDD0HIIT/3RJwDTane+Jc4G3b3eKAmC/ryc9581wlVaPUb6Tkd+wAEYU7vrEEc1oABu5Rv4gTi2I4UoFQDdAwz2fOsgz/0GOqTbY6FrPH/1G9CzQSORN5KZ9Wp8eeE/cJS7bMvGb56gfsbXVWNIyHlO+wAtE0PELB5XI2T9xSv+bKtjx4TnrH4vPs81Mv9nR53mBI4CdGYh7n+X30My5Tlz0G+J2YcB8Q1yQ/n/5racSzZLrSR/5kX3yRO8fkh+S/g05p8vB8YcP0yGdIgJ3JRFZylQg8CNzPRL/kFVjV9zghvXRmB8A9swBihqjAbkInNUr5sIASMkNYmveFHdnHG8B3J45BHG0hmSl9JeAZXgEPePok7Iink4JC1tr76X5fvMJVvYeBRQKSDbqf+ATphexfQU243wYsI+cfyTuI/HHAkXWwJLjSU+4wG3N+X7OhbZzvqoblXEV3CcNNrQPGYcwwABAyy+JK5h4GhC/xhDq5Fyo2ur9H7oByudvgMhNiXq1H6I+82LB6V4Hw5dX/sL0tusQdGLtAworkJcVphsnrFBtt2becRwUdvW5d2U1orqrsTt2e44GRSFqGCXp0+IDX0e+PpAI//8ZDBVt691Y3wcclLCYjzsytFCPWeMSK6Aqbk6+eXWfP/ED7kuN5VAWC96tL5FjBxV/kDz1nvGuLeiiaG0qFr+s4wJZQfgryZvLeQfMlYrZE76EFgFbg3aZHNK5R7zA7pVPAXGyBU9baLPJ0f4B
+    rgba: 4289827626
+  - serializedVersion: 2
+    rgba: 4290949302
+  - serializedVersion: 2
+    rgba: 4288773911
+  - serializedVersion: 2
+    rgba: 4292334812
+  encodedCells: S1:4:4096:7FC01969:tVXPi9w2FP4bdJgBk5wmh5YhpyrFG+Fb9x/YBg9ssxcfbCjspVVBXjO3HMakvZiSDcI5jbr1RtUlhNC6zs1sphXvj+onzzRJk0JP/ZhBmve9X3rvScM55zG+3HJulnbxPrb4isBxw4UR3Fq7XHwAa4U11t7ZggMPwQcq4rAup892cvoePuN8u9yGuJPh9sMAU3h7wEfRD7wJoe0U4CMIa0Nu5XJR1++km6O/09ouN/XRdb3HtfokCL8Ne6xmsag/Rqn266f/wv3fKOtNXW4O+3JaIEBKZcgrrjebd5oTFBCre2GRMVeSm1BFdFXGinMFdVUeA8GuVJuyVN1yseVK1RsQdR24YzUpwE9wZkKvgvHxvWO+h+TcO0/OeyL7CPbWGOuPfzp2MZGzDkaYH6lMaNNd2DupdsqYe0IN7UiIJmVHSm06FXd3hPButMhPxFxi6uCKbtMpXGMbx1ZaWz1IpQpza0NCnfMz8AUr5qwMImPpTyJvvRPUGSsOE0QBGxmijSbkwoXiQkwD5mktK8kdtVqf6v4+KhUr6alEAImTC+MTJcWO0qu7iy/Tz6U6Up2z9v7FNIBKlWMiufB0lt4sztIn/TAM16jLFaEmSVVu4Cvw/ixNwaczprXBGa0h0tAd6ocXStku8JSCT4u0ErEsq0T+onUUQfbq4kLF1S5FjAmCSznoV890q7MZO0lTfhNOmMjxK+fPriqkyCM9IWKMIRNPY+UT/Vv5tHkeMhwGzZo9Gzly63HdGeUn57M56+E4ApgO1q6T0ij+8vuHdFDom6Yn6+zUeecrLttXekjfotCNtmuqlEQlvX3Zvjhd5Sd7bhU8MKZRXR7mMqbb0cmT9J8o8hUmbo3BeMTpdZGm+V6epyui0brYKARPrB3tTnBPbw3JGSnVRqLASq6PaqRef1d7slTkcEPrzqqnQz/0/Q+xHPaVGHR76ojOV8XPidGhJ0Gu90s/aI31uXEj5Vf0DD/6oR2iVrcHc/BQeizjkRL/Ywth3/YR69t2730InYAaV7s19zPd9KhqlqHEU6xIR1na9G0U3d+R49afYZyzIosiHdqg2yZbpfMBrWppbbzjXcJucLcY+3rOdIMGZahXwyJ2Ap5T5XEZVZfM2YQsY0WxQsGbE6LHty4v9fMuMb8OPeRs0snB58UKt4ZuFUV++WKkqG/Tc3qDWwUNJFMUN6RQ8ofQZXNBD+C2+gPznc+LCUQS3WzTHFUuug4NYQK98TSxjjovuR5O9sq8QsvwOie4FeeTb87p9z4asonO+lhKMXLcdmEIrKVSPGv7PsoKhJsXl4P8IjwP3owOSUPr6TTq2XzvoMD+QuGWu+CAiFvNdN+Equ953MAoRnwEwGTTOhogCaNerIosnOhSs29EhRdnbawket02LIMxy+ZTAsUMzixxYzoedwIhUP1ZBgU4mCrSNJENf5AVnggvdp7Oi7dI87xALNFZgRfS4SlJMH30Jn9Dgg7NQNnj6W2yhPslcDWxS0w8nuezLNSYMdvhlQynS6ThiRIJTzhe2/MpQXTuv/i/AA==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets:
   - colorIndex: 1
     count: 1
-  - colorIndex: 9
+  - colorIndex: 2
     count: 1
-  - colorIndex: 5
+  - colorIndex: 3
     count: 1
   - colorIndex: 4
     count: 1
-  - colorIndex: 3
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
     count: 1
   - colorIndex: 7
     count: 1
   - colorIndex: 8
     count: 1
-  - colorIndex: 2
+  - colorIndex: 9
     count: 1
-  bucketLayout: 00000000000000fe00000000ff000000000000000000000000
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000040000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: places
   campaignSeed: 426235
-  displayTitle: 
+  displayTitle: Turquoise Salt Pools
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
   mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 01994ffa92b112b4390ffe9244108c61,
     type: 2}

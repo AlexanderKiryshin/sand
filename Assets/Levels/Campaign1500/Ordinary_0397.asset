@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0397
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289172350
+  - serializedVersion: 2
+    rgba: 4290426033
+  - serializedVersion: 2
+    rgba: 4283855216
+  - serializedVersion: 2
+    rgba: 4280959160
+  - serializedVersion: 2
+    rgba: 4285372590
+  - serializedVersion: 2
+    rgba: 4289165640
+  - serializedVersion: 2
+    rgba: 4285290032
+  - serializedVersion: 2
+    rgba: 4293714651
+  - serializedVersion: 2
+    rgba: 4280231722
+  - serializedVersion: 2
+    rgba: 4293900673
+  encodedCells: S1:4:4096:A07F47C6:VVRBc9rIEv4NI2IJc5uhMPjdxERW5FuIqF3ezcgTwVGk3sjLbdCiDrkZ23jsGwjFO7k5W0Wx/Mptkby39bo4oPn66/56eroTeXjeHyrTh/+3Z631XkshdtXX/qD31dnzPw6IH/T8o/vnrvpfuSO+/wffP+tDI3I+Jrvnvf6f/cxWxUHnywlvy8fqvMNWPxz2P2Lvq4AzH+aOPAJ2IqdH/LD/KU7bnFt5DaTcP98c2ERO0fEm+S+qweePvpQg05sV0VSeTaS0kxv5E3+nONQ9KfNUEvy8WdWpfLbIRP7U4VzwNI/SHD5JuVouE6k1u9FEyh8OnF7AYz1LAVKZrgiTmrGJxjQykbuDfpcRFx6Hfg7pStq5JSnrMNtqoAY03ehCxvkyjpEdJ6hrSgmdrNgr4juUeMn9bA469iVGxxhSsilKYwzJu6neuT6HrN2JIwkgc2hJ9nrGEpmcySqBTZAO6q4ezVMsT4Lvec/s+8RmjFmrRJ6RLAJwH+nLTKUpSMgtHk3shNkssQljyUVtnvrx7ZLBEc9zOPE/0TOCcEIoIRmfOTHcLqMM9UEKOfhzIMyiWMoZIf/KWgo46HpJZCUA+eBk7cRKJqiPELdWUz5v69xrK+wP4pgFwMrx7iTqcxVTWUa0Ini7eZqjQYyF2uR7IleSzLot5WVLrZptvBrIKzKkKbKnyLcp5023BrrTbflOWiVoY/4qtiRTuaIubzrDNizrM0tUfEyeVl2EBDPgz68R6HLnViuvhXefQ96u2gyKJJJIwjLHandrZNmhvAPSQX1UYZIqkSSJRRSZxZ6iWnf5vMDuSJltjm3HVuzqiYLZFef8Ft9QFAdXn1BAh8qPRw+5smw6czjPyK0G7sWR9xu2WLcveFa1XjJC2wrZmb3sxNlclGVQIM7GUXbkN4jLuV+cWETXOVFDU5gi/l0zYRbyP6iw0WCc0+KUUN2Z2yfWxhQZwCMLIjNMRXGYXnKeukVVXbcW89hYV7cAbXYaBOXYK0RJSfHNNX+NHm5cIwrRJGQ5A8XIJuCiLFjh8cIT5bmXqSsjvHGxAMYIWdO1MCLyRMCtrStMUBpPjMs+kpp3HeGWrY1h1tgzBZ29fvMLU4o7acMviygKuMc+Q7w5t9Zfo+B0bdGoKIzgm4RIBVbmlK0JQOyFoUG211SGR+a9aA4m2EvbpPCVPS4ViFbfbHnz6XpUomZFXq4fIE/A/C7tXz/X60xEffM2KJ6E8J4ItdabNw8TW9q9nnIGWtdZyYfFwhQPo/FdROj6afAmvLdtOwwHPT3K6iww4+HcGCF4yepr88fgPrwntj3onQ88IT6bNZYqIjYUfNC7NqEJ0RbG8DDcIiBYex0UxjyNuTcIr8NBBYelqVxezOaPouTGwJDcjjwx6C3D9+GbcNvrb53aC3qcr7HnXWaxA+3yt4NeD/ksfPtr37RNxWddi0T9a3x5dMjNh/59eD24Hxxxh+NodCyLPKhbfFd3HS3E4DosIyEqBVvmOaRWr1vkTndUSujoJVsUYyOGzaYnNkGrFpqsVa9P1vrdduZzys4cKM+LIBi2Rn12VZ4IH3Fr8h5jLahyR3cc4nMTYa1FcRd1eR9UbUlv/h2a7V+EfBuL/uyDMYE5WmF4jaDdHi67vPzNUZed06ArNmb8A95w53tjd2Cd6fu3Zp7SXYOswZiY4wsxpSmXpvZd4UpbWm632Kbk9QsoAzDmUVl5mJEJEpnbRBN7qTjO16F8wePtIvIKfItlWRAK3OWMSkqqzfqluDMLc2rOUZnhZWlUzSFToDhDMEP+F/DhBdrb84Ij7nkFU6k8TC3cAQR3qbwkrln4Tc48zl/8roez6yC1Xm0/QnaHho2Ls0t5q3PC1oGHo4WW4w7JZ8nuIB2Fk9YiV1m0ZIS5dDaTaudXO1LuXhvyazq9iJymKzIRnTRx1y9JflxweWof199uJ7unPBLgxq0PnmBD628=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 41480003
+  displayTitle: Norwegian fjord village
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 6796bf53a7913f545b06e27a46329e4f,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

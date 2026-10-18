@@ -1,0 +1,47 @@
+[
+  {
+    "variant": 1,
+    "master": "sand-cover-winter-v1-master.png",
+    "master_size": [
+      1636,
+      961
+    ],
+    "export": "sand-cover-winter-v1-800x470.png",
+    "size": [
+      800,
+      470
+    ],
+    "opaque": true,
+    "png_decode": "PASS"
+  },
+  {
+    "variant": 2,
+    "master": "sand-cover-winter-v2-master.png",
+    "master_size": [
+      1636,
+      961
+    ],
+    "export": "sand-cover-winter-v2-800x470.png",
+    "size": [
+      800,
+      470
+    ],
+    "opaque": true,
+    "png_decode": "PASS"
+  },
+  {
+    "variant": 3,
+    "master": "sand-cover-winter-v3-master.png",
+    "master_size": [
+      1635,
+      962
+    ],
+    "export": "sand-cover-winter-v3-800x470.png",
+    "size": [
+      800,
+      470
+    ],
+    "opaque": true,
+    "png_decode": "PASS"
+  }
+]

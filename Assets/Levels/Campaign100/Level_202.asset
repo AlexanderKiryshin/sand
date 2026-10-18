@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4279110426
+    rgba: 4285416605
   - serializedVersion: 2
-    rgba: 4285644013
+    rgba: 4285842160
   - serializedVersion: 2
-    rgba: 4279118946
+    rgba: 4279053152
   - serializedVersion: 2
-    rgba: 4280175748
+    rgba: 4279912835
   - serializedVersion: 2
-    rgba: 4291200056
+    rgba: 4291527220
   - serializedVersion: 2
-    rgba: 4279246985
+    rgba: 4278983230
   - serializedVersion: 2
-    rgba: 4280390116
+    rgba: 4281636318
   - serializedVersion: 2
-    rgba: 4281693108
+    rgba: 4280707759
   - serializedVersion: 2
-    rgba: 4278917438
+    rgba: 4279110169
   - serializedVersion: 2
-    rgba: 4279320754
+    rgba: 4279448498
   - serializedVersion: 2
-    rgba: 4285480343
+    rgba: 4282458955
   - serializedVersion: 2
-    rgba: 4282328138
-  encodedCells: S1:4:4096:6F4A523A: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
+    rgba: 4279245958
+  encodedCells: S1:4:4096:0B3B7FDF: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000000000ff0000000000000000fefffe000000
-  conveyorDirections: 00000000000000000000000000000000000000010003000000
-  conveyorBucketCounts: 00000000000000000000000000000000000000030002000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: people
   campaignSeed: 21057848
   displayTitle: Spice Seller beside Saffron Baskets
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 0
-  linkedBuckets: 1
+  linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 284d71631358e8945aa34185ad5169cb,
     type: 2}
   usesTiles: 0

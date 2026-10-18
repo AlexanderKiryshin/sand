@@ -1,36 +1,65 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 public static class InventoryLoopRoute
 {
-    // Compact two-row rings (not the full 5-row perimeter). Variants keep layouts distinct.
-    private static readonly int[][] Variants = CreateVariants();
+    private static readonly int[] OuterRing = { 0, 1, 2, 3, 4, 9, 14, 19, 24, 23, 22, 21, 20, 15, 10, 5 };
+    private static readonly int[][] Variants = CreateVariants(false);
+    private static readonly int[][] CompactVariants = CreateVariants(true);
+    public static int[] Cells { get; private set; } = OuterRing;
 
-    private static int[][] CreateVariants()
+    // Mix rectangles and bent paths while keeping each route connected to the front.
+    private static int[][] CreateVariants(bool compact)
     {
-        var variants = new System.Collections.Generic.List<int[]>();
-        for (int row = 0; row < 4; row++)
+        var result = new List<int[]>();
+        if (!compact) result.Add(OuterRing);
+        else
             for (int width = 3; width <= 5; width++)
-                for (int left = 0; left <= 5 - width; left++)
-                {
-                    var ring = new int[width * 2];
-                    for (int x = 0; x < width; x++)
+                for (int height = 2; height <= 5; height++)
+                    for (int left = 0; left <= 5 - width; left++)
                     {
-                        ring[x] = row * 5 + left + x;
-                        ring[width + x] = (row + 1) * 5 + left + width - 1 - x;
+                        if (2 * (width + height) - 4 < 8 || width == 5 && height == 5) continue;
+                        var ring = new List<int>();
+                        for (int x = left; x < left + width; x++) ring.Add(x);
+                        for (int y = 1; y < height; y++) ring.Add(y * 5 + left + width - 1);
+                        for (int x = left + width - 2; x >= left; x--) ring.Add((height - 1) * 5 + x);
+                        for (int y = height - 2; y > 0; y--) ring.Add(y * 5 + left);
+                        result.Add(ring.ToArray());
                     }
-                    variants.Add(ring);
+        var seen = new HashSet<string>(result.Select(r => string.Join(",", r.OrderBy(c => c))));
+        for (int v = 0; v < result.Count && result.Count < 512; v++)
+        {
+            var route = result[v];
+            if (route.Length >= (compact ? 18 : 22)) continue;
+            for (int edge = 0; edge < route.Length; edge++)
+            {
+                int a = route[edge], b = route[(edge + 1) % route.Length];
+                int dx = b % 5 - a % 5, dy = b / 5 - a / 5;
+                for (int sign = -1; sign <= 1; sign += 2)
+                {
+                    int nx = -dy * sign, ny = dx * sign;
+                    int ax = a % 5 + nx, ay = a / 5 + ny, bx = b % 5 + nx, by = b / 5 + ny;
+                    if (ax < 0 || ax > 4 || ay < 0 || ay > 4 || bx < 0 || bx > 4 || by < 0 || by > 4) continue;
+                    int c = ay * 5 + ax, d = by * 5 + bx;
+                    if (Array.IndexOf(route, c) >= 0 || Array.IndexOf(route, d) >= 0) continue;
+                    var expanded = route.Take(edge + 1).Concat(new[] { c, d }).Concat(route.Skip(edge + 1)).ToArray();
+                    if (compact && expanded.Select(cell => cell / 5).Distinct().Count() == 5
+                        && expanded.Select(cell => cell % 5).Distinct().Count() == 5) continue;
+                    if (seen.Add(string.Join(",", expanded.OrderBy(cell => cell)))) result.Add(expanded);
                 }
-        return variants.ToArray();
+            }
+        }
+        return result.ToArray();
     }
-
-    public static int[] Cells { get; private set; } = Variants[0];
 
     public static void Bind(LevelData level)
     {
         if (level == null || !level.loopInventory) return;
-        Cells = ResolveVariantFromLayout(level) ?? Variants[VariantIndex(level)];
+        if (level.inventoryLoopCells == null)
+            ApplyStructure(level, EstimateNumber(level));
+        Cells = level.inventoryLoopCells;
     }
 
     public static int Next(int cell)
@@ -39,110 +68,34 @@ public static class InventoryLoopRoute
         return i < 0 ? cell : Cells[(i + 1) % Cells.Length];
     }
 
-    public static void ApplyStructure(LevelData level)
-    {
-        ApplyStructure(level, CampaignProgression.LoopLevel);
-    }
-
+    public static void ApplyStructure(LevelData level) => ApplyStructure(level, EstimateNumber(level));
     public static void ApplyStructure(LevelData level, int levelNumber)
     {
-        Cells = Variants[VariantIndex(level, levelNumber)];
+        level.EnsureBucketLayout(); level.EnsureConveyorMetadata();
+        // Early lessons occupy their own variants; later loop lessons recur every six levels.
+        int variant = levelNumber <= CampaignProgression.LoopLevel + 2
+            ? Mathf.Max(0, levelNumber - CampaignProgression.LoopLevel)
+            : 3 + Mathf.Max(0, levelNumber - CampaignProgression.LoopLevel - 3) / 6;
+        Cells = variant % 3 == 0 ? Variants[(variant / 3) % Variants.Length]
+            : CompactVariants[(variant - variant / 3 - 1) % CompactVariants.Length];
+        level.inventoryLoopCells = (int[])Cells.Clone();
         for (int i = 0; i < LevelData.BucketLayoutCellCount; i++)
         {
-            level.bucketLayout[i] = Array.IndexOf(Cells, i) >= 0 ? (byte)0 : LevelData.BucketLayoutWall;
-            level.conveyorDirections[i] = 0;
-            level.conveyorBucketCounts[i] = 0;
+            level.bucketLayout[i] = LevelData.BucketLayoutEmpty;
+            level.conveyorDirections[i] = 0; level.conveyorBucketCounts[i] = 0;
         }
-
-        // Feeders sit under the moving ring (inner/blocked cells), never on the path.
-        PlaceInnerFeeder(level, Cells, 0, ConveyorDirection.Front, 3);
-        PlaceInnerFeeder(level, Cells, Cells.Length / 2, ConveyorDirection.Front, 3);
-    }
-
-    private static int VariantIndex(LevelData level, int levelNumber = 0)
-    {
-        int number = levelNumber > 0 ? levelNumber : EstimateNumber(level);
-        return (int)(unchecked((uint)(number * 13 + level.campaignSeed * 7)) % (uint)Variants.Length);
     }
 
     private static int EstimateNumber(LevelData level)
     {
-        if (level?.bucketSettingsOverride != null)
+        var rules = level?.bucketSettingsOverride;
+        if (rules != null)
         {
-            string id = level.bucketSettingsOverride.segmentId;
-            if (!string.IsNullOrEmpty(id))
-            {
-                int underscore = id.LastIndexOf('_');
-                if (underscore >= 0 && int.TryParse(id.Substring(underscore + 1), out int number))
-                    return number;
-            }
-            return level.bucketSettingsOverride.startLevelIndex + 1;
+            string id = rules.segmentId;
+            if (!string.IsNullOrEmpty(id) && int.TryParse(id.Substring(id.LastIndexOf('_') + 1), out int number)) return number;
+            return rules.startLevelIndex + 1;
         }
         return CampaignProgression.LoopLevel;
     }
 
-    private static int[] ResolveVariantFromLayout(LevelData level)
-    {
-        level.EnsureBucketLayout();
-        var open = new bool[LevelData.BucketLayoutCellCount];
-        for (int i = 0; i < LevelData.BucketLayoutCellCount; i++)
-            open[i] = !LevelData.IsBucketLayoutWall(level.bucketLayout[i])
-                && !LevelData.IsBucketLayoutConveyorSlot(level.bucketLayout[i]);
-        for (int v = 0; v < Variants.Length; v++)
-        {
-            int[] ring = Variants[v];
-            bool match = true;
-            for (int i = 0; i < LevelData.BucketLayoutCellCount && match; i++)
-            {
-                bool onRing = Array.IndexOf(ring, i) >= 0;
-                if (onRing != open[i]) match = false;
-            }
-            if (match) return ring;
-        }
-        // Fall back to any variant that covers all currently open cells.
-        var openCells = Enumerable.Range(0, LevelData.BucketLayoutCellCount).Where(i => open[i]).ToArray();
-        for (int v = 0; v < Variants.Length; v++)
-            if (openCells.All(c => Array.IndexOf(Variants[v], c) >= 0)
-                && Variants[v].All(c => open[c]))
-                return Variants[v];
-        return null;
-    }
-
-    private static void PlaceInnerFeeder(LevelData level, int[] ring, int nearIndex, ConveyorDirection preferred, int count)
-    {
-        int ringCell = ring[nearIndex % ring.Length];
-        int x = ringCell % LevelData.BucketLayoutColumns;
-        int y = ringCell / LevelData.BucketLayoutColumns;
-        int[] candidates =
-        {
-            (y > 0 ? (y - 1) : y + 1) * LevelData.BucketLayoutColumns + x,
-            (y < LevelData.BucketLayoutRows - 1 ? (y + 1) : y - 1) * LevelData.BucketLayoutColumns + x,
-            y * LevelData.BucketLayoutColumns + Mathf.Clamp(x - 1, 0, 4),
-            y * LevelData.BucketLayoutColumns + Mathf.Clamp(x + 1, 0, 4)
-        };
-        for (int i = 0; i < candidates.Length; i++)
-        {
-            int cell = candidates[i];
-            if (cell < 0 || cell >= LevelData.BucketLayoutCellCount) continue;
-            if (Array.IndexOf(ring, cell) >= 0) continue;
-            if (LevelData.IsBucketLayoutConveyorSlot(level.bucketLayout[cell])) continue;
-            level.bucketLayout[cell] = LevelData.BucketLayoutConveyorSlot;
-            ConveyorDirection dir = preferred;
-            int exit = ConveyorDirectionUtility.GetTargetLayoutIndex(cell, dir);
-            if (exit < 0 || Array.IndexOf(ring, exit) < 0)
-            {
-                foreach (ConveyorDirection tryDir in new[]
-                         { ConveyorDirection.Front, ConveyorDirection.Back, ConveyorDirection.Left, ConveyorDirection.Right })
-                {
-                    exit = ConveyorDirectionUtility.GetTargetLayoutIndex(cell, tryDir);
-                    if (exit >= 0 && Array.IndexOf(ring, exit) >= 0) { dir = tryDir; break; }
-                }
-            }
-            level.SetConveyorDirection(cell, dir);
-            level.SetConveyorBucketCount(cell, count);
-            if (exit >= 0 && LevelData.IsBucketLayoutWall(level.bucketLayout[exit]))
-                level.bucketLayout[exit] = 0;
-            return;
-        }
-    }
 }

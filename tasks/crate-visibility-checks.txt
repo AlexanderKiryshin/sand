@@ -1,0 +1,5 @@
+PASS: level 58 GameScene captured at 540x960 with five visible crate covers.
+Initial: crates closed. First dispatch: open crates retain wooden frames. Second dispatch: crates closed.
+CanvasRenderer missing on BucketCoverGraphic reproduced before fix; all five covers now have active, nonculled renderers with alpha 1.
+Hint moved over the painting when its booster-adjacent position would cover inventory cells.
+Russian lesson: Ящики меняют своё положение с каждым ходом.

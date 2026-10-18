@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0402
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282419354
+  - serializedVersion: 2
+    rgba: 4280429342
+  - serializedVersion: 2
+    rgba: 4288197303
+  - serializedVersion: 2
+    rgba: 4280370244
+  - serializedVersion: 2
+    rgba: 4281689193
+  - serializedVersion: 2
+    rgba: 4286217845
+  - serializedVersion: 2
+    rgba: 4283256634
+  - serializedVersion: 2
+    rgba: 4292534499
+  - serializedVersion: 2
+    rgba: 4283612109
+  - serializedVersion: 2
+    rgba: 4294036909
+  encodedCells: S1:4:4096:06871447:VVVBc+K4Ev4NJnYynhtCtpK9YQUDR9syhL3ZSGS8NzCxmdwwiZWZ2yyVxMPNxH6JjrupIgy/8olXe3jbVTrYX6v1dUv99eHwb8vkKgqmlX3HJ74/OBz++hf+/XDYb4pC60xqSAgl759/9f4fn+03+6K4wsVE++Sr7s3+jzr6B7qVK81vnwppPfY4YRL3o1zT/3fCphhs9reHXAY/7ItbQheaz34E/lyb/JJnHjabL8UDOtpKeofMf4ygWjHvvC6PlCUzb/Zg2clHYsrvP24mNBjUxN+Fuv75VEYvCr4+7ybpIdkd8asxUQkhcKIH5YtyPL4wPx52h9tdKvHNVTHwVXpJfq/LgR4o73LLb+bf3wEAmb2TXIoFmRM/oDDQwor1fx0zQEma2PgkPqZQrCc+JcxoDgm7Yvr+iPNZskl2xfvH7UNR0IE/YSGBXKPO+sf7ptjkiPOPw25/+L5YFM8j4v+gqsRfy+jno2SUcml/JnmxOPSKYjlQnTJixM28SqyL/eGcg/yJ8/dDsSie8OqRXzOhyRTYoBTi5NdDjjDiMQCH50WS5sWrEwjdJ2QL3EAEkTjwLG/h1Aa7D1lrO8bt5DUiRM8EUKqq/GuDYhus+IrHH4ckmSXnxSJWKKnBzZbSoD7kM2zd3yz50n7epa3kZF0scEdjE/OKuar4+pE3UHOFzUY7lTVa2PZ6YV+uzgxkjO8AGX3E+bDZRjzvYFkDO26vYo5xPpxEUEmzRp23EEs6eReCDAHAM57iP3sPMTBLp3DPRDjLj8UZZpyDVF4R4NILJOsbMzIfrInIeAaPv7vp4jK1LBVCqrkAGPaV5unzbgldYDbmBVpg3spm3e4q7i1neTxUluOm2kkCAG7QfXvVWuCVzd0lxs9P3YaVewYWNXUwuV920Nll3HrOTYCsOI3X8clZf2GLqcpGJSQzj+WSUVb0WmwWfrIwbvmhvcBazdpEWYJ7jIxstYZFV16Bhbv4yRzP8nHJKA0NRZxBV0OhMUA2Pl9n1rib5Ll8anoEt2CrKY6btW1kTb9cYA8QbnlpB3tRA8fkb4IGQQToNLF5N+61YmzibDayMfYCKx5DlyBD/QaUqX3Kr6cx4onZzSz/rINzbJ34xKUEkrZC5vEpOFu+Ge0xKrNtNNS02LOYR2lFnFJXR9O4AtfTN6hjU2TbpmmcTvXG/DQI6QVVdKV2FYa0m7dvwVdT541vAzpu641OW1FcQmo9Ur62CfhP8HavReY1b6iBe3qjh2pbiV1Gmd8HpK3x67GXUYV/y8KABKdLbMUYx5IguWiXLlNR96SVEVXGd+tar5mzHY/j2A2By/rEVWrQ9VrZdQW1zAoofWGkEUWd4/5S/Rm6jIGuY174ArbA1vergaY2ggjHjmM5HmQZgeh6+uWOadDjWwLpoNIb/hLbdOhqF6pqORANl2NoUBBm7pwoxkhYZFVjhIQi1cOPoIlYp4W53D/LW2pPf6nj1ZgYphRaHVZnCUJD1cB5iyG1w19FpQn9gg+3MFCoWFZUwldhU2u3tKHb70x0Rwl0526wNUbqJzHtzn471xSQUWjwZ28VtdxmOGt73K1GQMrbVEnB50hcZGpP9hGJKpJdA/keG1qlG7pajpTdrBGUQUZVEI4g0ZuAwu6pNzJERUpR6spTMptozUy20CtitI4yxLueEnnBKBQ6EUKdZ0MCZP0hR7Kxjs3Ye2kLohHjTJTiTTgF8Y2ur2UcaYHCh3nXE4HDxm7iCE0IEZmVCu8MzbiXeIffsw4LiKzjHSdjVfQVISoF8A4+54ixsQzvSe0iJpnxEdXKSEZQrGGSA2RLvMmbfAQBlHLAAaxEnykyC/lckmI/eaSsyUhnjdy7e9mSAIry59hXZYRekvMklQmUa9y70iDgBJjArQS8rBS91p8WUloLOb1OXtb4xHchBQZALFSbs3Eo1Ms1lnCvd5xuxSfmSm2nbO4Si8F5SIKqfAkWx8G3LnoLnLggJIAYABAXwK3w2yeKiPQvx8GBkyRPEjQbgsSXctKEhiv6jtANQOfJU3K0VIphmg0ZyRLiVoZbin4ldLtF0iT5x2GSpsiUJYBhDVytHI2UsZOxO0k/vpUD4OjDc4T4fwE=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 42003648
+  displayTitle: iron greenhouse
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 4494970f4de91674584e1ebc91df1e73,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

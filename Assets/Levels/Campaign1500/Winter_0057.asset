@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0057
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4287331725
+  - serializedVersion: 2
+    rgba: 4294571507
+  - serializedVersion: 2
+    rgba: 4287844899
+  - serializedVersion: 2
+    rgba: 4292583804
+  - serializedVersion: 2
+    rgba: 4293971125
+  - serializedVersion: 2
+    rgba: 4294041301
+  - serializedVersion: 2
+    rgba: 4289636546
+  - serializedVersion: 2
+    rgba: 4293178777
+  - serializedVersion: 2
+    rgba: 4290409536
+  - serializedVersion: 2
+    rgba: 4291791966
+  encodedCells: S1:4:4096:A4223E85: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 21365925
+  displayTitle: snow fairy making frost flowers
+  seasonalNumber: 57
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 5
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: d89aec257866d4d43bceb99db35b0a7a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0186
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284188023
+  - serializedVersion: 2
+    rgba: 4290545751
+  - serializedVersion: 2
+    rgba: 4281215259
+  - serializedVersion: 2
+    rgba: 4279395538
+  - serializedVersion: 2
+    rgba: 4288179266
+  - serializedVersion: 2
+    rgba: 4293518558
+  - serializedVersion: 2
+    rgba: 4288454044
+  - serializedVersion: 2
+    rgba: 4293307761
+  - serializedVersion: 2
+    rgba: 4285025324
+  - serializedVersion: 2
+    rgba: 4293040210
+  - serializedVersion: 2
+    rgba: 4293445799
+  - serializedVersion: 2
+    rgba: 4280044134
+  encodedCells: S1:4:4096:4AB855B4:hZRNj9tEGMc/g2WqlaU9DXITklOYLcLd3NYgrcilrqbe7N5WZLaquWSFO0TcDG2H+OSa1J3S01YtkcspS5PAnKLkQMV+KP7jZHclQDCJbI9/z/vzjPmb8j8X5//HLw3cfvkveM45P/x5/fzi7j+51vxtWY7Wm6ev/q6twSPzdKu8vl4tCayjdYANeoYrvYa/66FR1whgI+GV5ZCOr7Ce61SWBiMFvB6+kLcO5d1hid9wLMfDtJRVgJw/Ljd6w08pfTkEuzSz4UP/O7yVZu3S3Ht1IK945SD1v6/ggdvZ+WX4/NG4lMMX3m0Y1Hyqr3m74/sXuCs5lOZfShLzKeefr/kfS3+18lM81X+Q6xX0gPnO3o7Z7AGv/K/l9eLN01nE+crfofSc+r7f8Vf5/ArPOSFTHUX+Hhzv+VCnP+7ngzWDn/u86Yqp1p2dP5e+WTv5zr737Wyjfh+uH8ah1l/oXdnswMaKtpfeh1sbCs/HPD6ZoQ27Wv72WWWB5uc3TAoyMpVhsMA5BFI53+34Jv+V/8GvnEfTih/1cEGMOoXM0nBY8H28nOoJvxmdxow9bBIzB/qn0/erTmfVpqsvUZTpPdLjEWOChU9I1QZNjyi9uOh09r4ytnuTyREXbsjCGjmGPKcz/Yznzf1zMze62eP3etw9CcIwvkluHkf8k3PqRYDnqJjWR+7kqNaL3XtxGAeEMNTRaNFzTaueM0bcE4exXsBieGCzKsZoam7wFrjsnTtyAnYShqeheM1OIj59g1l6APj40GUkCQInYy5jJ6dM1B7VwCRPUxypYRowQk4tLBaGTATgJOAP5FhPmjKSMoXaDdBBxlgMyIIwjp/My/EDPucT9Ja5xAFXlGEJEULfnc0xtUk0IZP0wCVEKUgowYwFCwm4ojxuTBrDxqQZBmx8phzlZJTFsZHow8BBSci4bDRkELPXJAZVHrUYCyGwtWUJgtU4KxsI3iV3RgoOPMRwh8WF6AtVbPWNxBlKyUjADGeebVkZcugXI9xUjZBkXB66RqQAH1HL2rIy+BhZ2Mc1kjTHDfA4dA33KFUKRegypuJBGNfQp/nbQxf1YpV5wweiqFKImdE/I7LRMFtjvkVbqovqGI48YhRdpogRFQkUAoR7oz+ocsQYCNJM6i6CZ+7HwKY/qjsoqhIVsYhNCcCBCbBD7Ra46MYo8qjSR2ZVcswdqS6io5ZQcVGI0HgPQxEnWtcDEwzCQ+yU9tE7RNgFh6EQZzE9Mva7KC7yR/0KIYoBBJAzO3mXztMDFrjGPbhDrVYGASG6IzVgGRuZkwgHo8p+rnLbsTIMiMr6ohDo6CyVaeCSp8qUV+W5ydHqd51+IZToDmrmIB/U5agL7CmVZ2hPqx9bg35RDASbGF53E9VVOeLPVMuxM7XOwRRBm89ygg9gNT1OK+8/GxSq6FcNqHj16ahjNnOl3lf1h13bWgsQqev1epIESD33WkvwAYIX3kagPtdSJpI8vWGmb7G41FdmDFE2WVmXBHu0B5ltQ67ICnizKi7lN2mCs2G1PG9hL02DB1sWYlUODLiJia0unysLytsLU5vMMnOQ2ZZiLKnDd1InqmVaay23FwtzyDLUGG5CF5YTMyIwT+3FdqvVXtp2pS6KQpnRqJZtUdpaLjCdtuW0+g4abPpFLjG9oEur3W7TZXuh7OKhMM0afbTRDyyoLxfUtm263P4L
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 34868047
+  displayTitle: Orange Helicopter above a Fjord
+  seasonalNumber: 186
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 470db85951cd88c44812c5464af0fa61,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

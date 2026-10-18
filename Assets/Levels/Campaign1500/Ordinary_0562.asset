@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0562
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4290608703
+  - serializedVersion: 2
+    rgba: 4288909712
+  - serializedVersion: 2
+    rgba: 4280887331
+  - serializedVersion: 2
+    rgba: 4282600022
+  - serializedVersion: 2
+    rgba: 4283462044
+  - serializedVersion: 2
+    rgba: 4287913235
+  - serializedVersion: 2
+    rgba: 4285884261
+  - serializedVersion: 2
+    rgba: 4290630633
+  - serializedVersion: 2
+    rgba: 4284651228
+  - serializedVersion: 2
+    rgba: 4293247912
+  encodedCells: S1:4:4096:7DB8DF2A:jVRBb9s2FP4N1EEbchPjRkFvDWWr7q0WOdrXWlyko2yADXqrxPilvcWLYqbH1drMY4ahy/wr9yinwTAU6AhYEvi9973vfXz0fr/f2/231idrHx6/Hr4ZYK39f7h9wIDov+h+//CvvKMooH8cPh+eCP9+0nZETioaU/o1pl8f/zyU3++fB9eE0NuQ0Lf0+RP+vI0+Hj6ikCJuNbmmAQnu+6x78r59M+vJ68UJJQGNAhIFAaFRFOw/n0YfZOskwhQRGkSn+EQOxElE6w13TrQ51/qjl0UotRS5ESKEZJ0TXJWq3U4X+mShr/SKrtcaEVLReuJKV3wwRWs7d64XVGt6W2OEz4/or8Jxvps1UDjLxY7qCHEdr04DsrilUT0TrkQ840VpkciLioIwiDw5+bwbz0Tn3Muc89nWlcr43Ygc+ZcNJkPnxoktdoyXKH/rPoCXtOpzX6vSgOqcwcRiqpQyx/ZKksf13l1CClDYlucqL2euFCbfOeexe0KurZ1CAoBnjuVdAeWM8Vzw7WP66hc1V8PcN+146xzw8lnnZrwg1YG+AdgUyinUzK3Ft+Bd7so7xFD80WuPc4g3xc6VxdS5u924c8Xwib8BszEAsLNWKW6UULu7wh30YX7aMJDIcY4CUZbhfFN0u6LY9PD1BUMMGAOI74pcGTByY22BrfTyXqepxxt8xFuLOD8HxJ3bHfh/ggz6tc7P76ZvlElyWNstli8P1qa8hrg2EFu/hBg2sBYex/wW8yU/7vOxwNoqdNhsLPA+/wW2CDJlrJHYXwrrwiKuoO3NtuSMm2M4Y5Jjf9xLsHc9fnfAo1dqH4E0X/F4fZPX50rVDmPtriSVvn/hyZGb+Xxsm3uCrdcjgOjo1Ygx02yu0nza49akeLQ3mAE8JlVIKjbKWMonyvR4Kzh6bL1cgH7mRwztT7aceXwqjJnuXHJwrMe1ZltoEn8IsZ0q7nWAMTE0ske1bhR6kxxDg74IX9gPYwwDeU9CghpTIxOZgIHNaXo4C+kjnk0Q1EjBsAXZZBzOr7bjXhiiFAZ1P73Vp/zlFHdMbV3Kk7Gv77XWdU2qinyZi0GGDDSNN3mSDBLUKRk0NUaQECdkpfVqjOpx/5JzgXMkTeqjAHTYN3hyxpYsZXBqcpMnLGYSu40p5NjbwYFwxOZDbiGJJWuExKCmHkBOHg3So1vFs3KIVVKW0YlMM2zjLPNoSLxFGmeEK8HXWHWAXRjDjtPMJ5Pq4SL0JjPeTtv2CqiUk6xJWXr2O6Lo4NUp4iMGf1nW5mNG6zrJDEuYtBXR5L6z9gIL4CXja5sneD0Az4glN7sblK8rHdofEF6tsALPjjMcp2yAV65TE/RPL5ZLG+ieAD3hLxkyIw6wnc19/5qd/Bj6t16hsRmM/Fl7//mME33h7aMILkaj1BPgSbAkYzhJ3HJdLTQKeBdq7IDpJpWA1gmx1Cf28pxzPB8dhqQv7+cIWWeu6dwynDu8FCwMvT/VO1891P3fQDb8eSj0Ki9kfsmr3tvQT7nWyxP/F5J0bzMubwTO6SDxR1P1DwwYLVnn2LyETHVC8ByvjafFH+o7rHl7xpyYZVsxy0UmDarD0l88QY+X2zHrRLLNlZgPcai/h+M+dvDOi/frN+Hr82ymVKIy4Ow76ewf
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 58760288
+  displayTitle: Dubrovnik city wall
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: dd0fc8d94cbd2c74a8ae5ac937ca7669,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

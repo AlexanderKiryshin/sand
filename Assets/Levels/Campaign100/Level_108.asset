@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4282996072
+    rgba: 4282930792
   - serializedVersion: 2
-    rgba: 4286862615
+    rgba: 4286731028
   - serializedVersion: 2
-    rgba: 4282400060
+    rgba: 4281740581
   - serializedVersion: 2
-    rgba: 4289572814
+    rgba: 4291274639
   - serializedVersion: 2
-    rgba: 4290020694
+    rgba: 4289691467
   - serializedVersion: 2
-    rgba: 4280622359
+    rgba: 4282334783
   - serializedVersion: 2
-    rgba: 4281740324
+    rgba: 4280688153
   - serializedVersion: 2
-    rgba: 4284380043
+    rgba: 4284183179
   - serializedVersion: 2
-    rgba: 4279570187
+    rgba: 4279635723
   - serializedVersion: 2
-    rgba: 4291275413
+    rgba: 4289704399
   - serializedVersion: 2
-    rgba: 4293517527
+    rgba: 4293517012
   - serializedVersion: 2
-    rgba: 4288203257
-  encodedCells: S1:4:4096:734DFBCF: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
+    rgba: 4288268536
+  encodedCells: S1:4:4096:F7A10AAA:jVXPi+PIFf4bhEAlsTdhzaVP3gpdFpvLdEoDae0lQprD9l6MwbKZXERtVCqSizBIMvTFFEjWTi4Lk02i9WUaeRJSp2aX2YnRH5Una5Nzypah9L363vd+lbHERpKUaF6vumnR6wqjabGG75NjjpJl3F2GDp4J//rrCcfSKpJaszIjq1bDCUwGek/pT8MwGYimQBwX5cJIUrYuh1MH3688wIfoL4C7Lc6PvNpmaM4x1/Wu+fF0T+8B/nX4ADhhvDruTZSgRDQuK6SMh/t3AA8nGlIauQ2rMmSivEx462KdYf15uK4vQSXwN6uKINPILSIxLCHRczwZDPejf9loh52JjD2usWjAQm//i39JvcjNmvKwSyxNYAb4mktdzj/+YkA9zzUb/VOhoVwQJoRcYdlKzbjqG4awo9xsd/njBhWcSCkYYRLLnf5pgFQOFCRyo9U1s1ppritdl2HZ4O1OZ+gjZHoMQZhkZZgLvRCuJBCgZHjF12n83ViqE6UEuaw0jZV2QBMOMt3yKEZ8VJEe9jifl1lxKBlxBZOSMRct9OX3V/xesN0CZWVeESx52wrJXOzGGzz/61ju0zDnPy7Wh3JfZUS2Q9u6rcCYzLVk251GCYTvlm5pmpVo238Pjy1YMEzWGtcgwlN3OYqywmVlmrey/XkAggYqDiG72pTCIzOqdAf4omkA/zPgkjUrw9LGJJ8uB4EAN5fmogYYHAju4gZr2wRwUFC7xOCxuTDnh793l9PlEQgwX+02WQHml+HQgvcyMbV5fdU78AYyLXdLPrUJ9FSZr7h5XCRABzmH+DjGOzM7fIQKDuUC73JS5Uf3eRqPbwVu8Ypo/DASdBi6K8dmXs9/vpzA3+nbBlpuhU20fB6LLCsRV7xCNeyuY/HIRCP1W9PaPY/6ZJWi3K3K42/fQbXfgQDBW8IWWYWuGRJFxjc8Q8uX09z9RIlsCMPGjlwFML0iO5yV2kfaDd2F0k60gPOi2hljH7PdZq4Ts8yfYTIvIyNvZSN5/Kin29PQCVwlBTMt8/l0mipCWmhRNzbXmvW3rhPEWMTkEGvf/XI9dCnw1y7P0qX16XJpWIlvSXnIi+4yORBbRjBxk9TaPHfQPzl3XVSX1sj9eygaNEqDRVHHfAkl0tw4KZLy0NQwE8Of0NAt67bFhGw2PClOA3JRwuH6aea/i8Lom7VHP/8CtQRzkglhvo707YqJCmV8/tr2vnn1A43+0PCWY7gWCr58GcVNxvgeWenhdXT3m1fqA/1jzThIypjF0+QFb25bnpv7tLAUDvte9W/qlHCyTbk1b9O44Qt0LKFdLSOMPHoX0TdzAjipGfrwKxa3qEyWuMg0S3sRRFEQPKl1uiZ49Tp9pT7TX7ZbVmpHxHOhvYicwLaVT9XM86h68O3ZXQTVZNzY50W5fPX0FDoOKLgJ7dmNDSuwA7gVCDtauYWSXClb9Uop379iVwuYR4FzLdHMdK3eq4ceQlA3D+o8G+FZkC5dcatvxOfLN4b2Hs5SOlKoBzgfqJsA34q1iTaCLd4n6B9qbDHlq95XkWM/gRlnx2av/ZMn/3rLAfepF/reSKAiz3fuFMdS1833in34gaDtYauo55z70cedciI7QtqcaHGh3lK1QrWxL2YxDRWFJEA0tu3wtcEbiaze79dojVDxVsB/TziquAbokgpujhJRv1fiC77tgSkMvRtnyo8thC5YY1mg2/fH8Hoagu7Ank0G4jODsRZtaQ8uwcJXD47ywHEQOU+zcwDpHuNVnh9A+cIxNJ9GgR1FZw/2Z7unD7btwwlgdaJeARg4wRnYAD+HowYFimaRZ6vr294JvLFM9Oyps7qjICRw7LtrNPY19z31VRj41yxOr53//QCbon3vjzvHfri2AcgZqx1dH+dJzSZrzwmmI1MrADhaQJRh5MBnZgf/B/4f
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000ff0000ff00000000fefe00000000000000000000
-  conveyorDirections: 00000000000000000000000000010100000000000000000000
-  conveyorBucketCounts: 00000000000000000000000000020400000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: places
   campaignSeed: 11213322
   displayTitle: Basalt Sea Arch in Surf
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 0
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 0
-  alternatingCrates: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
   swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: d6bcc4eb083eab24c84522cacaa0d493,
     type: 2}
   usesTiles: 0

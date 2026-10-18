@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0608
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284320961
+  - serializedVersion: 2
+    rgba: 4290552719
+  - serializedVersion: 2
+    rgba: 4279771439
+  - serializedVersion: 2
+    rgba: 4293190626
+  - serializedVersion: 2
+    rgba: 4281684088
+  - serializedVersion: 2
+    rgba: 4294166176
+  - serializedVersion: 2
+    rgba: 4293514179
+  - serializedVersion: 2
+    rgba: 4294227071
+  - serializedVersion: 2
+    rgba: 4284566325
+  - serializedVersion: 2
+    rgba: 4288248927
+  encodedCells: S1:4:4096:59D87521:NZRPW9u4FsY/g2p8Z+gOJSHEO+egFGdnMJM77BRVzKQ76CDS7iak0dPshk5zfbuDXLd1dphAiD7lvAq9fmJb8U8673uO/uT5lzzP9/76Gc/8AvfBHPfZJ/83HxqT559967PnB9d4PBEan/iGGzPJn3xjkf/uue964Gb5wSUNn7nN93zjxebl++R7IMOjXTPLZ8ZzLw/iX8o3T/F8et0BH5qJtRud7//duGhjZN4++jwcys7FzOTDibEHm5jX+V/P9umbPpbaSHNhzMxYazd5DT97/h1cHQtFQcZMA94ndmL8uNxd+/jgb8QRaQooPasZr+7z9zzPkXpn+JVIEe5Inp168z/4cDd/muX5fHhK979STWf78cXjmbGX5pk/rfOvuXksTScRTOuQif7Hr2NPn/nB2xzhvp+bjhEyZIzp9P3kvae/9Dx//DQEP31rOhQySfqYpWf2N4+zzPPWuyGK1TbmcaClDhEhZNa+RQY9z4f8Xf5uaArzmGiKvb6vQPMi+8Nm2WyYPzqTI7awXaQumR99nG3J48xfSHH33KCcp7WV0FqpQjU0+rze+sEvL1cLY87Mq6u1Jh1qUqJgcZqxNMvGmICJrbWM/cPW24kWA6HnCg5ituW59RV8VB9648zqZDDQYIXWmxQY8xi8o/6038zX/z0MSKsCEWLJNLtjof7BwysUrpPca38p7wDRGZOp7Xn73RDmkd69j660isskCHx8aXsWc9Shd+YnY8WDKjFeyLIsk418gfCZMW5sJpd2VUd23voN+K/eX0DZOMvOJ7UPFoGaczHfFhuelGWAGt4E1o7tBxuiCh+tvdLzbeiLDVdQvwl62bh31STIXOEnyoGE/f+PlzcDX9/tVw37fFESyGf9OTjGD1Lo/7SvbFcB34skgH3BBjAoMY03Az9Dr2qNV+T5FcbDv/ABFPzLYnDkufxzpULoW1FibQiPIB6yOHjpx/f0hzd9P96K+1hheQkVM4XwMtzy/r419FEmfQXajIRmYTGARhExRqnn+0GyozcL4QUpHYdhkUCjgIpI98EP58jqeHxcX0qB1RNrzDDm0BcgXWZZvd1uac1GJwdYVyjfzWu/fnToC5Be/73H28kaVbn78uYC6kqE81a5LTU7Aj+b5ZzrQdknnWrdEEIVZXyzAMcOSJnc2W2MeKrKUCA0DUURlIwVgvwVZFtbOzyIeE3jX6b1vwxhZZEgLTZngKAgvtW8TloS4bA4nQn/cU6YQwErRGXrusG5CmOq1XjuzsG0CLSYKx+DyuT8WvFI+7bWnN6e4mAp7pOE7onmUdsR39mvKngj1ZjvqMYkIbqvQbrA3aCgyaMu56Bz1QiuqcHrN0e6hmi1rha1Vn/k+O1DpURGiaIvdLvLR3x17I+vtq6a/+GjyPEaV8RKcE58xvuc/4bPhxHn9SbnDr+ICPkhK3r4tNufcm744b95xA8rtDlvcSJGybwr6f0L7ip3UrZervzIc7sqpyd9HmKvImMuHsrKufU0qtzaORct1hFegx0sNlSbIvEQ7fGr5ojvjiCPN8RdNSgkpLFw78Rd1asidxJF5e3KTQ8XDt1cf4co9uNhY3kSwb2D+G3U5BVMcr5AvbDQwcX8ejuQfFStnGtWbrRa80U5qhqYv1gFilSiZJjenbjpmldVtV58rNwCOwmHCXWxsWJMq0zDk1HW9Nu+Wo2qBRJ4SYJBn8lY9LVkL6ZlVcL49MTaOqrnukLEgqTUscCqCFi2cotmteC96eFy2ZpWqG+I3eZ3O06XkKXjQxetKp5ly+Vi3VqUIQ7b0MfHxtBa3lURnzajW7csodRyDrs1xmZ6LemuCqV849Zl67ZEfSO4r6LIb1TcTBG6pTtdvsB3V9bdEvOwLqN/AA==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 63577822
+  displayTitle: diving bell
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: b0c982d2e4c50e04dbc8d98a98539787,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

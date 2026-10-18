@@ -30,6 +30,8 @@ public class TutorialController : MonoBehaviour
     private bool levelHintActive;
     private SandEconomyHud economyHud;
     private LocalizationManager localization;
+    private ColorFocusPanel filterPanel;
+    public int FilterTutorialStep { get; private set; }
 
     public void HandleBucketFilled(Bucket bucket)
     {
@@ -40,6 +42,7 @@ public class TutorialController : MonoBehaviour
 
     public void HandleLevelCompleted()
     {
+        FilterTutorialStep = 0;
         if (tutorialEnabled) CompleteTutorial();
         if (gameUI != null) gameUI.SetHintVisible(false);
     }
@@ -52,9 +55,21 @@ public class TutorialController : MonoBehaviour
 
     private void Update()
     {
-        if (CampaignGallery.IsOpen || (SandEconomyHud.instance != null && SandEconomyHud.instance.IsShopOpen))
+        if (Time.timeScale == 0 || CampaignGallery.IsOpen || (SandEconomyHud.instance != null && SandEconomyHud.instance.IsShopOpen))
         {
             SetTutorialVisualsVisible(false);
+            return;
+        }
+        if (FilterTutorialStep > 0)
+        {
+            if (introAnimator != null && introAnimator.IsPlaying) { SetTutorialVisualsVisible(false); return; }
+            var swatch = filterPanel != null ? filterPanel.GetSwatchRect(FilterTutorialStep == 1 ? filterPanel.RedColor : (byte)0) : null;
+            if (swatch == null) { SetTutorialVisualsVisible(false); return; }
+            EnsureOverlay();
+            Vector2 center = overlayRoot.InverseTransformPoint(swatch.TransformPoint(swatch.rect.center));
+            float size = swatch.rect.width * swatch.lossyScale.x / overlayRoot.lossyScale.x;
+            animationTime += Time.unscaledDeltaTime;
+            SetTutorialVisualsVisible(true); UpdateHighlightRing(center, size); UpdateHand(center, size);
             return;
         }
         if (tutorialEnabled && phase == 1)
@@ -102,6 +117,7 @@ public class TutorialController : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (filterPanel != null) filterPanel.SelectionChanged -= HandleFilterSelected;
         if (localization != null) localization.onLanguageChange -= RefreshLanguage;
         if (gameUI != null) gameUI.OnHintDismissed -= HandleHintDismissed;
         if (introAnimator != null)
@@ -122,6 +138,8 @@ public class TutorialController : MonoBehaviour
         ConveyorBelt conveyor)
     {
         if (gameUI != null) gameUI.OnHintDismissed -= HandleHintDismissed;
+        if (filterPanel != null) filterPanel.SelectionChanged -= HandleFilterSelected;
+        FilterTutorialStep = 0;
         gameManager = manager;
         gameUI = ui;
         if (gameUI != null) gameUI.OnHintDismissed += HandleHintDismissed;
@@ -138,17 +156,36 @@ public class TutorialController : MonoBehaviour
         watchTime = 0f;
         levelHintActive = false;
 
-        tutorialEnabled = gameManager != null
-            && !GameProgressStore.GetBool(CompletedKey)
-            && (!tutorialOnFirstLevelOnly || gameManager.CurrentLevelIndex == 0);
+        bool seasonal = gameManager != null && gameManager.IsSeasonal(gameManager.CurrentLevelIndex);
+        tutorialEnabled = !seasonal && gameManager != null
+            && (!tutorialOnFirstLevelOnly || gameManager.CampaignLevelIndex == 0);
 
         ResolveCanvas();
         EnsureOverlay();
         ResolveIntroAnimator();
 
+        if (seasonal)
+        {
+            DisableTutorialVisuals();
+            gameUI?.SetControlsInteractable(true);
+            gameUI?.SetHintVisible(false);
+            bucketInventoryUI?.Refresh();
+            return;
+        }
+
         if (!tutorialEnabled)
         {
             DisableTutorialVisuals();
+            filterPanel = FindObjectOfType<ColorFocusPanel>();
+            if (manager != null && manager.CampaignLevelIndex == 1 && filterPanel != null)
+            {
+                FilterTutorialStep = 1;
+                filterPanel.SelectionChanged += HandleFilterSelected;
+                gameUI.SetControlsInteractable(true);
+                ShowFilterHint();
+                bucketInventoryUI?.Refresh();
+                return;
+            }
             if (gameUI != null)
             {
                 gameUI.SetControlsInteractable(true);
@@ -156,9 +193,9 @@ public class TutorialController : MonoBehaviour
             }
 
             // Always (re)show lesson hints on level load/restart — do not gate on persisted seen state.
-            if (manager != null && manager.CurrentLevelIndex > 0 && CampaignProgression.IsLessonStart(manager.CurrentLevelIndex))
+            if (manager != null && manager.CampaignLevelIndex > 0 && CampaignProgression.IsLessonStart(manager.CampaignLevelIndex))
             {
-                string lesson = CampaignProgression.GetLesson(manager.CurrentLevelIndex);
+                string lesson = CampaignProgression.GetLesson(manager.CampaignLevelIndex);
                 if (!string.IsNullOrEmpty(lesson) && gameUI != null)
                 {
                     gameUI.SetTutorialHint(lesson);
@@ -195,6 +232,7 @@ public class TutorialController : MonoBehaviour
 
     public bool IsBucketInteractionAllowed(Bucket bucket)
     {
+        if (FilterTutorialStep > 0) return false;
         if (!tutorialEnabled || completed)
         {
             return true;
@@ -267,7 +305,7 @@ public class TutorialController : MonoBehaviour
 
     private void CompleteTutorial()
     {
-        if (tutorialEnabled)
+        if (tutorialEnabled && !GameProgressStore.GetBool(CompletedKey))
         {
             Analytic.Track("tutorial_completed");
             GameProgressStore.SetBool(CompletedKey, true);
@@ -512,13 +550,27 @@ public class TutorialController : MonoBehaviour
         }
     }
 
+    private void ShowFilterHint()
+    {
+        gameUI?.SetTutorialHint(CampaignText.Get(FilterTutorialStep == 1 ? "tutorial_filter_pick" : "tutorial_filter_all"), FilterTutorialStep == 1 ? 4 : 5);
+    }
+    private void HandleFilterSelected(byte selected)
+    {
+        if (FilterTutorialStep == 1 && filterPanel != null && selected != 0 && selected == filterPanel.RedColor) { FilterTutorialStep = 2; ShowFilterHint(); }
+        else if (FilterTutorialStep == 2 && selected == 0)
+        {
+            FilterTutorialStep = 0; SetTutorialVisualsVisible(false);
+            gameUI?.SetHintVisible(false); bucketInventoryUI?.Refresh();
+        }
+    }
     private void RefreshLanguage()
     {
+        if (FilterTutorialStep > 0) { ShowFilterHint(); return; }
         if (gameUI == null || (economyHud != null && economyHud.IsTutorialActive)) return;
         if (tutorialEnabled)
             gameUI.SetTutorialHint(CampaignText.Get(phase == 0 ? "tutorial_pick" : phase == 1 ? "tutorial_watch" : "tutorial_repeat"), phase + 1);
         else if (levelHintActive)
-            gameUI.SetTutorialHint(gameManager.CurrentLevelIndex == 0 ? CampaignText.Get("tutorial_free") : CampaignProgression.GetLesson(gameManager.CurrentLevelIndex));
+            gameUI.SetTutorialHint(gameManager.CampaignLevelIndex == 0 ? CampaignText.Get("tutorial_free") : CampaignProgression.GetLesson(gameManager.CampaignLevelIndex));
         if (bucketInventoryUI != null) bucketInventoryUI.Refresh();
     }
 

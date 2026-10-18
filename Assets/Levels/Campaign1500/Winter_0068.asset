@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0068
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293564256
+  - serializedVersion: 2
+    rgba: 4292968246
+  - serializedVersion: 2
+    rgba: 4293701772
+  - serializedVersion: 2
+    rgba: 4288456919
+  - serializedVersion: 2
+    rgba: 4282330161
+  - serializedVersion: 2
+    rgba: 4288311913
+  - serializedVersion: 2
+    rgba: 4280840691
+  - serializedVersion: 2
+    rgba: 4293846762
+  - serializedVersion: 2
+    rgba: 4294036667
+  - serializedVersion: 2
+    rgba: 4290336277
+  encodedCells: S1:4:4096:EDBD1AC3:bVVLc9s2EP4NIBJF9A1Q41q8gRtrRN06kWu3t45N2T76IVTWrY0dukeZkgPkJsFigdxI15kpf2UXVJKm06w0FIVvd7Hv5fxrYpxn2fz75j1g/Bt0jvhLzknz/QbdXWfz3X/B4H+4yvaH/LPqgHhG+hXvQt3u337hJkvEA/qVvFLq4OSzNFuGhDCCxPVOc1Smc6VOvmuuJ8RQArkiRBCjFWcMjzI1mdsXKMRiMCionKJAhNAq9HoOs0ypyxfkCzmnVSI6K6fabVT0Jsv2ldql+JorfC6dc2hS/N7ik1JAPHundgH8jUBN4txKK8JnFj6oPsAN4plKAJSXAzCK3M1YybTZWSrlrjyc7d+CMYhbYzQJ8oTxjgoD1cejNw3DEbI6pjTeqVYczdhSnBvb/WmiPuFW77A8RKPA0qBiwYyS/l27jQcev34gITUiRBudSggZUI7OLY3Xd+vxd4bRlZsl6IPOCYnjrTwhQt/few40cN2hwraF1Ur27l0MhFglyEw1dJBla9HhuQGaW7leaEH1nVKBUFeF2lxx042D2W4BhZPFQoUQ4NXWXvyQbTRcZzYUYj1N1trJhevXAxEnuonuhuFYO63XP8qFTYtFj5O6jG1Itn9vsoN0krheUaw/rq/S01O5/XEw4MLA85smO0iTZ1Im47QnR3KkJ0WLBexDcB5l159w+6uUH2UhD8fpROGv3K6mO9Pz/aGPng874qOzkRzfS5lOCukMq1/23r5tov9Oq/6TbI2no7P3faW11MXVxR/yaZo22UcftJC93lMaH4pDWSgp5VUxyp7xl2dnaaNAnb1uEUq65JexchOLHMUoTfuPgvTECLU8hL8BTOPk+VlrEw91kqZyD9M1mWBVHN3sjwCABQGmBAsYP24xyo4ftMV6vMeSdSOL51gN1v/Bw9NxdnyUpmv/t2cTGL1yDSUo72AJhzfH6d7TUfqAzHBVAOCLoQDUa8ByhnG6l+J3LzEGq1q6cW/TP0olKNE349QTKkhV//XcSmwKT8IHG+VFmo4ahuMjjF5Z1/VffWetgCYbxpjRTZouTsZ7RVhv6PEZabeB+u6zWMRXGIE9+/gJnG7XW38ChnDZNIm2tih5/R+avqchuBA7yXOcHOBRWVef0erDRQqCBsJh2yEulbMkqqlxUNfSmzpOgRJvH4YXa8RqdCKBxHhu50Ls1ecuEQD40scMW+z+3OYWTUp039j+KUZ7gThlM05M4fOEfvgZkTceoYxcA44B51Ub64AxZK7qKBI5BUZEIpXPp3M5yuBPSFCbIGUVMxRDS4xOAGcMEgWX4JgwLjTWh4WKhAYwMAmQWIUC84DaBTrXuWvjTEsCP1XDcoWCOMogFM7SOups0ZpxAX4e+96GGOVAgLN5u1M2sYsIsiFKXDnFBRJ3lPUacDr51Ayk7NZLi3FhUG5WA7qGprGKC/33Ji+9Nl7BgrKFRnQCB27Zx0mPqgf6MZJyeD0czsPInW1j+QTMe9eJKV7OKx6YCymvh3OXbDnSbfYZIdDB9cDKrSioooJaNUSiUT2NDBp6RwK0DhnqKSoAZXuv3MEwqaK62SAaxyIZoF5nOozQ6mcv/JC3q21kYGxFcX84yruURCTwF0rED1oB+hJVAY0C3DPEOxpBjHxVLS8Rf9WqhBahP+YkEOCXYFybqualvKT58LLzWMawg0uU4YJs1t8qCkjcmCSHoay26g4XeZtjfRLv5bLZngNcz1LOD7pc1NWgime6D02Q25t9GYWcnKOBLeID3Y06WDj/AA==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 22510025
+  displayTitle: bright blue ice-sailing boat with a triangular striped orange sail
+    skimming across a frozen lake, snowy mountain horizon, side action view
+  seasonalNumber: 68
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 6
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 1ccbd58a5c86dca48aec55af54c84018,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

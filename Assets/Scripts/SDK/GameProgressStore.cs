@@ -13,6 +13,8 @@ public static class GameProgressStore
         {
 #if UNITY_EDITOR
             return UnityEditor.SessionState.GetBool("Sand.CampaignPreview", false)
+                || UnityEditor.SessionState.GetBool("Sand.MarketingPreview", false)
+                || UnityEditor.SessionState.GetBool("Sand.ReworkPreview", false)
                 || UnityEditor.SessionState.GetBool("Sand.AudioPolishChecks", false)
                 || UnityEditor.SessionState.GetBool("Sand.BuildSizeChecks", false);
 #else
@@ -30,7 +32,7 @@ public static class GameProgressStore
         {
             try
             {
-                return MirraSDK.IsInitialized;
+                return GameSdkReadiness.IsReady;
             }
             catch
             {

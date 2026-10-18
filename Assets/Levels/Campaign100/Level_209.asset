@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4287687931
+    rgba: 4282998360
   - serializedVersion: 2
-    rgba: 4284534268
+    rgba: 4293845707
   - serializedVersion: 2
-    rgba: 4290691006
+    rgba: 4279310622
   - serializedVersion: 2
-    rgba: 4289495893
+    rgba: 4283545027
   - serializedVersion: 2
-    rgba: 4281607450
+    rgba: 4281959810
   - serializedVersion: 2
-    rgba: 4284460276
+    rgba: 4289773754
   - serializedVersion: 2
-    rgba: 4290764013
+    rgba: 4280121007
   - serializedVersion: 2
-    rgba: 4285824408
+    rgba: 4280039740
   - serializedVersion: 2
-    rgba: 4291209354
+    rgba: 4279782765
   - serializedVersion: 2
-    rgba: 4280563857
-  - serializedVersion: 2
-    rgba: 4286470707
-  - serializedVersion: 2
-    rgba: 4285437390
-  encodedCells: S1:4:4096:00DC182E:ZVXPb9s2GP0bnKHwhvZirpGzIDelU4XsUphuK2iXdWXrxr1U3bjM0KVVMybwKUmTKIgvg5W5hHt1URi7dJGBBtxlHqZ6Af+oPVJJmmJfEIni+3687/GzlCulUtjMXGKuNbfLWS99r0L85co4zLCB7TXOeYFVz3qnFNB+avGZ1rpXOvA9Zy+2eKoOD/dNKhiPEKl1zK2HRe3+Pp9xjXuBzKiuNRZpidvAD9hJ13ozE+nEUQQ3nSKgN4t75vo3gBl3tGNTA7ZJ0Mbanm1op7eGCO5E/MwcOOkY3s40Lgq9gyTFGRKRiDiEkDgi5rnQe2nvADyAx4VeImfmLFl0Zvs4MJ0XqKfjc7z40STT6AsMAXNicqF3k8GEjtZKkqa/TgyHyCHovuAoXqnUyELEbUYTZEKL2LBCmigyi6Ur9okAjo0Hbg65ZOk8CjnwNdGWHb+ETxljpEZIZA6j4DPLJNalR81crv2Du2NxfWFGHTJXgUJEs4Xakzgq983BFLE9VseQB36PXZyCPXCrvc1cqVSix2Q6Me5FTCLozy8JZ+PrhE0W7FPE4acL233EDTdT/7sa+JPPz6S0/Muh4kCRYvxmzPQ2Q4oo0lM90x8dDLdVNhqx9AGbJ2UDhTnc89mAqJjKEZsfjeenH1vnzlytnB9ncQxjV34fd+wM8KIzjaMyNZkDpQ4fW1tdJD1DnnfOe4uMuuPVEWOryDC2ewg85Rfdb82uRWX0+D1bRMQSjrdjdJ3DUJDpaLfF2JnDmLFS4045NMaBlTYqHRZPLX6mK/CIscsei9eAPy0WDfFP4pktwk5R4Jd/+SnG18RXnEs4HNDHGv/6Z4NDNqvPA8Ym9y9qsHEn/lV6lh8x6TEXn9h4vDGQkvOvSun+hzN2w/Xl7DVwO5wgoFjzUQmpiWoz5vflTTdJvKT+XNRFlTH30XnsZKJUO3G9o2VfJv5nQniJaN2QUp3jbby3koFcdxNXNABvCu+hDDN/eMKGZReqKwaySTNJqS+E6DcyOpGBlJnMvndbwyH2Vb4uPFe47tayEIFHQ9o+USqktB3mucqpCpohvbUsVCJEVwzdfGWQD5GCMhnkYRAGdBIefNPf9FSX5hvC2xCubKu2hIUoFA6CGa9QBHxxe6fibnr9k2xTiH0hGvIEPFwpNwJxV4XhF1Fli9JctYdg6jW6Xl+K45VgSG/eaWzfpX61Ib/cZhXxsLni0+A+dQfijkzU4bNmQAnZnqt+S68/N6EuXur5/UR4vmk78Tc8Ua2RCv7JrYwGWaa6Yd4eJCjwAv7uK+lL6dsXR898D4bs6l+MDSRFChcmrVXrwDdeNqAIYx9au55cFonrDrwSlptmvidX98MTxrr77d2BXMmWIWnfgtIXLmZEtR8zHPr6Vu80DGQWBF4Q9o+kdG2W+h9tdg+HerhQ1zpngyCXAYUfzPek179eU7sPmR6fOrWefqcgloRewZGtn/j0OiHPq/eiIn07fdu6pU4gZUAVtfH9jNIf8DOsv5vu4BvX068VVe31vmTsFfAsoNTEV37yqvxt50nrzZ/4bHYNLYX8J5gHxHPyzDNkXciWCKWE1eZI5gZVWdX5DVL6ou9jaiHcccMya9I8pMcZVk9vU0kzmpuBS9z+i1K5ZqiG5aqfHCvQwjAmaCh4Sa2Hau+m6S5rpQcMX5vWLp5A2RBGLiz+Aw==
+    rgba: 4286353034
+  encodedCells: S1:4:4096:D3677656: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
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 00000000000000fe00ff00fe00000000000000000000000000
-  conveyorDirections: 00000000000000000000000200000000000000000000000000
-  conveyorBucketCounts: 00000000000000040000000200000000000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: journeys
+  artTheme: ordinary
   campaignSeed: 21790951
-  displayTitle: Icebreaker in Golden Polar Light
+  displayTitle: bronze armillary sculpture in a modern botanical planetarium
+  seasonalNumber: 0
   beltCapacity: 5
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
-  sectionBuckets: 1
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
   keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
-  alternatingCrates: 1
+  alternatingCrates: 0
   swappingColors: 0
-  loopInventory: 0
+  loopInventory: 1
   mysteryBuckets: 0
-  bucketSettingsOverride: {fileID: 11400000, guid: 20cc15ee284140e4aa4082048ab3adce,
+  bucketSettingsOverride: {fileID: 11400000, guid: efb3c9505c8ebf24ea8d97eaf808ea04,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

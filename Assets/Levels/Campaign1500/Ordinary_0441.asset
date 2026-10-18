@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0441
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283133843
+  - serializedVersion: 2
+    rgba: 4293583838
+  - serializedVersion: 2
+    rgba: 4284767305
+  - serializedVersion: 2
+    rgba: 4293575065
+  - serializedVersion: 2
+    rgba: 4280958820
+  - serializedVersion: 2
+    rgba: 4287665557
+  - serializedVersion: 2
+    rgba: 4285768136
+  - serializedVersion: 2
+    rgba: 4289316313
+  - serializedVersion: 2
+    rgba: 4280624161
+  - serializedVersion: 2
+    rgba: 4292256102
+  encodedCells: S1:4:4096:D0B73022:ZVRBd6M4Ev4NGj8Ze2/Bbifdt4zaJPRtPRpn1jfaT3HYm5EtQ26sHxY54jyDMjeahURzmzTr7uFXbuH028sWD4H01fepKFFFm/83WtNmBs+6mdGmHprt2p//Q2Fe16e3WUMpjKb5esI/vOEzk/6ATXNIkaBDc/b6TwHOJyF64jT1jFITDKEVrNBSAGC2qyduXUMMH97wHFH6BxF/B6/JK21xoA7pcDihrb5jIyS4MLurYSsE+IcJvA1N8zRlCJ1t0b0wzS8YpmZLbIdW25xMTOT28RWZrkxzKS4mwJu0cU1+OJimdJ5xaHjcM5ehc0G9Czo5rbfaE3BihjwLGSJYXBZkI/LfqHlSaX1aDbQz3snFgkmDEOKLozjeT6fDN/RdizvWmXBDLA+80EJcC7kRlhiduKPWbW8JQTpR9mxRfjEwvVv5aJ08zJ/fAyz2O2GNilAaNuUt47MUKX8U8MHeG//KE8JKTE4gSWA/9Te+xVPOX1cDmCopvL23z2QcL0E0NuMwE5BPy6vvR/CNEm/M/cU+fNh6vhjtn/amGQqI6ch/WY3gzEhvdPev5d7Ybpe+MPlg742iu1/aQ2o+jeAk9dg43ycGRvLhSqTkanfo9cL+z4JO//hb8o+mkZmRcSMx7K02/K0WvVT5KOtJFDymqXptpJu/iAfeI0rFKs5iKefvOrwDycTzbfy9QaUjUhVHEHZsxJlaKHdtz+eEjHPxmH1vVCLDUKosVhK4Mu4Z85IULnEKYj0qwJWUYaxQEAPsRGF4VeCBeinsiox5fENVpsC6OJQySmIjRLleXh5yrfuMueiMqlhmd+FDiBFCCVyoDL6N0d7XW61dZwn5kwcJPyHDjoMwznFwfnlNvtYPvS+2ixwqFRANwA3kOHH1LrW5f0nIQF58sbkgFKI3kiXEiLTtdTosksK8JnCWOxiXU8oegG0zpjkhl1uhN55lepw71V/c4mJKRddx2JjsNeF83RUF4KNg1FNrOCACuPrMOtFgJ62rjRh0DXEe4yy9xXL8tSY8pRSh0OKHB2MrLIt3nEVybu0i1sX47LUWdELFqFd1Wb/g8DOROHKwwRBmDF8SWt9DmWriV4zZBR8doFT/qtzD7U8R4N6n5lMHKoUMvKpCIUKOa4+LhzleY7TUWtPmuBpQ6Bn7F6Eh3YX2ld18ZWDOYs46v82mHm9r1WF4XGDAIWukaXG2gPtPSu9nbcF/lkw/hkTrcYuDMuH1fCr+Q+nHe8CVz3eh4T5r/VIU5N+6IKR4vaerX5tZDRVOpYMcrQOtD34lRh5p97+hbzaFHMq+fvJAVduV1uyaOeP5/AY2hhKYDaEPaVs/PWnbt+faJuvvZC5uWfLRo1Posb9PaKOf3ge6H85ZkkB8x45IhfVrTWdAN3E8BTzQ9rNmySEmV+RrhffUgla48qFFM3xD263DonJDnu6WFpw5lOZ0Rev6WFPW/wYfjDtjzO/0GspJrY/Eb9LpqQXPZk70rRHd0mVlhLM4XPQyJdWmQhKa75TyxmHA7wfObZvSKDKyLOlmikln+qk5NoQw4KuclAwvFiiKEmJxv+8zJrNd8xFyU/ZvGlbqErkOZoeFe12xPnsp2SJESjTDVRsf6xKUPy5wwkp3LfLUGOutsXxUKpzMGLtqWEeMRF7BT7x0D8uXwD+kiYpiQym/0NHSlGVVsdxyoAI0C3gfXSvfh3ChOshBnTc6FwLrp1jjca59mxyJkVlFGGc9KOskVqz//s59eSKQBNbZVBrpO/XDUDtoNwhKFJBbN8/dUhfLqu0lCSCGEcJDO3YVrHlsOLrUzwWZ5xKFSl3Ema96BmIo2G2KKidVCQFepcTWraqEZpuK9k1YxUuR66oqXa2fiV2UkGVwyOQOVEC/1EIHdlUFlavzfmzgU0MyVAQ3GHPtimtSWYFV9rHj9hOZqd7G95X0lRAKaS3srr59tuzKzd10AZxw47d79zKhxH8B
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 46095998
+  displayTitle: Cornish fishing harbor
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 520ff4e3c27035642b7b3565fe3a7ccf,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0190
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284639084
+  - serializedVersion: 2
+    rgba: 4292921768
+  - serializedVersion: 2
+    rgba: 4286482834
+  - serializedVersion: 2
+    rgba: 4280624673
+  - serializedVersion: 2
+    rgba: 4293390320
+  - serializedVersion: 2
+    rgba: 4289363276
+  - serializedVersion: 2
+    rgba: 4289828216
+  - serializedVersion: 2
+    rgba: 4286798641
+  - serializedVersion: 2
+    rgba: 4283122230
+  - serializedVersion: 2
+    rgba: 4292652394
+  - serializedVersion: 2
+    rgba: 4288325810
+  - serializedVersion: 2
+    rgba: 4290299085
+  encodedCells: S1:4:4096:9D35601C:hZTPc9tEFMf/Bo3UARFOYjyBDBexblOhXIR2AMW51GXrTK0LLV4L31KIZGguSbG8plzcaIjftJemJGUEF42atkG6BI+ndLx/FE9OOlwYWK9GM/68930/9mnT9D/Xyv9g41/+XFfS1LvAxrkGvnqHb/hXn2lpijapYRj/+N/8/SLeOu4s/fT4InbzKF3Bpydah6h3IeI8eee3c1cDWfWIkDx9I3WYrj9ef1xpXnCD7fGYtI8r+6NFDG39l4U2ZmisGE0WC8Fai4wPVzDG9/VPkK802U1jsZqB2GSzTnqRbzt1Go8XvLbAe/dFwNhO9CaDJUY3sic3URfZsmEMYy42/Rvd8Lwrfzw0v2AntebCWawaRsCF6Ne2azcGmBNj7HJW+PI8shBX39sT8a9x/14rivhRhWVR+MxfdA95fzUO4liE9z4Mt293GTuZFTZpz5AfokUcb+8MMLzYGba6t161SnQuZLGRMWMlxS3iq2z7+MdALO+0Zt1o1maXC1muycxfnFoquGhNe3Ev6EdR02ellLiJlLK9wCkqK3I7Ff0+JjZjJ9JHi4rLGh7WYSrEUG1dSuP+DZ9JJtcQTEtbyuIEq//VMHgwvLs95OKvGSuKWSUu54U9lbOiZvAQ8w9C3uy+39tEl2kVvJRTaZ9J6Wspj9Cfi7h/58XRn2WRV864yoIsyUcyucWx/6zD46utqImq04rJuVyz86Ppo41vj3vRcnfauSOCW63Kb149qLFmt4+mS9+kvTCKHunXm3HAZ/ncR179ZGmTk6OPs6OU8+3uEK4x93ZYFsjL4jzFfDp/+k7xlHN+lw+/Ux6Azu0SKyrn8yLH9mdl2zeepLzH7ywLPTmoaz0VBWZ2bpMzWZCctVtsuXfc48urE0cZe8rTrTyfo3BBzkrbz5kfLnew9bwLQLXEc7d6L/BQMTFSpZfbJ/wVq22iAIDZoGBeO35hIzcVBfmlPOvw59FAMOQTxaSg377x3EZHpeL+JSfv8HBZiDsshYlruomut16h45KpqFjfhnn9Jx52A7HDBpMRpe5rvR6aWL1LVWUu2SXid7gIW/Gq8QAmcKrXfb37al7miaIMC8neNX0/vh/0u2E0mAC1cm386EusjihK3i19ZhMWilEc8jgaAoCuaWZ+D7GqKNMODv7l9iwW/fsR5z9X2NMa44fqvFx6SzHb8XTeNuc/4UcRdXAyRhMAT3fHkJX5ex+ZRPKX82vkXeRX+8PugicJuBqcrtnBFbMYBG/nu1cKvAxE2I+xusofXApnRARvk/ZQiKzzvCOqtbt5IkYw8ijQ3D5DH5XIUIiXg5eDiYgXJiOoEnQoZGZWWyV5VxzEU+SIUSkYCoCDhLoJJI1rrE+m6HJrPihq/co5eDASGD4B3fWSU/X6Zt6Or4jwbPsli9E13AMxwQLwdD0AS1XEqm0lWvj65C36QxT3fxQjAbsVBy8B1TGDzyGhluo4lI5lJIYTVBcwobTiY0VDFV2lCSG2c0p+S1Ec1QVQmni4FcUBOqbJM2jU3VPrSW9RIEpQ6lGHeppJvUTfQKlTS63b9wTWiBGwAFAUy6UKUIxSlWOZWZ2oeOONBJ/AB8Q0yb5t4xhXC82tsVpX7+KFNiExfC1MBzMy7QzbrDkVP1XIuN5ADtbtUU+oVFNx8DMCnqdiLaDv62oOXRHA6VZ1OTm07tJndFxQWsf0PKgrDT3f4hwsZ0sIatYJoUnxLGtQz0s8j1LTAZPE3+Pk7IqAaq5KXGqRolGVik1KLOy5tTfCWnaBY2+SBqHQsIlNEzr2cODp2DQPYAS6wrsoRy2PekAb5j5NNB0/SZc4ZOJhw+G7iOJKiAvVS8VRwBCqU1dVDPQQYPyYeuNGYin0matp7hKFfQqKq5tq3fMsFAhxeHQn0Sm8tkhVCGZl6gmxrH0cCjRAWeT4Akq0zK0OQYPEspR9gP0DgL8B
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 35286963
+  displayTitle: Mountain Goat on a Slate Ridge
+  seasonalNumber: 190
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 4528d34413a244644af6b3078a41f45f,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

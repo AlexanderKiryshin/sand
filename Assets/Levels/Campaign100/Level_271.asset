@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4285829283
+    rgba: 4283721847
   - serializedVersion: 2
-    rgba: 4292731364
+    rgba: 4289758824
   - serializedVersion: 2
-    rgba: 4279377695
+    rgba: 4280111193
   - serializedVersion: 2
-    rgba: 4283985536
+    rgba: 4286998339
   - serializedVersion: 2
-    rgba: 4281969600
+    rgba: 4282232773
   - serializedVersion: 2
-    rgba: 4280825399
+    rgba: 4285565854
   - serializedVersion: 2
-    rgba: 4282536280
+    rgba: 4282271562
   - serializedVersion: 2
-    rgba: 4291339661
+    rgba: 4292731365
   - serializedVersion: 2
-    rgba: 4280712331
+    rgba: 4280647052
   - serializedVersion: 2
-    rgba: 4288049742
+    rgba: 4293376913
   - serializedVersion: 2
-    rgba: 4279848792
+    rgba: 4279904040
   - serializedVersion: 2
-    rgba: 4288460746
-  encodedCells: S1:4:4096:A20260F0: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
+    rgba: 4288525251
+  encodedCells: S1:4:4096:C270B285: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000000000ff0000000000000000fe00fe0000ff0000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000000000000000000200020000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: wildlife
   campaignSeed: 28284149
   displayTitle: Pika on a Mossy Boulder
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 0
-  linkedBuckets: 1
+  linkedBuckets: 0
   largeBuckets: 1
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: e4aeccbbf2f79544fb656dd00a5ce623,
     type: 2}
   usesTiles: 0

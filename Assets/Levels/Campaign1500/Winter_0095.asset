@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0095
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293186262
+  - serializedVersion: 2
+    rgba: 4293702042
+  - serializedVersion: 2
+    rgba: 4294309627
+  - serializedVersion: 2
+    rgba: 4293640887
+  - serializedVersion: 2
+    rgba: 4287591535
+  - serializedVersion: 2
+    rgba: 4291926146
+  - serializedVersion: 2
+    rgba: 4281740590
+  - serializedVersion: 2
+    rgba: 4283453795
+  - serializedVersion: 2
+    rgba: 4293912303
+  - serializedVersion: 2
+    rgba: 4288781994
+  encodedCells: S1:4:4096:3A12B7A2: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 25337708
+  displayTitle: cross-country skier on a forest track
+  seasonalNumber: 95
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 74e805dac160f4348b976b91fb3124f8,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

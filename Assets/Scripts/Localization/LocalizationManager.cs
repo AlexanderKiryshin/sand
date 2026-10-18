@@ -44,7 +44,7 @@ public class LocalizationManager : MonoBehaviour
 
     private IEnumerator SetLanguageRoutine()
     {
-        yield return new WaitUntil(() => MirraSDK.IsInitialized);
+        yield return new WaitUntil(() => GameSdkReadiness.IsReady);
         LanguageType language = MirraSDK.Language.Current;
         switch (language)
         {
@@ -86,8 +86,8 @@ public class LocalizationManager : MonoBehaviour
             ["free"] = "Free",
             ["no_money"] = "Not enough coins",
             ["shop"] = "Shop",
-            ["beginners_kit"] = "Beginner's Kit",
-            ["premium_set"] = "Premium set",
+            ["beginners_kit"] = "Large bundle",
+            ["premium_set"] = "Small bundle",
             ["remove_ads_bundle"] = "Remove ads bundle",
             ["reamoveAdDescription"] = "Disables ads during gameplay",
             ["beginners_kit_info"] = "+{0} coins and +{1} to each booster",
@@ -124,8 +124,8 @@ public class LocalizationManager : MonoBehaviour
             ["free"] = "Бесплатно",
             ["no_money"] = "Недостаточно монет",
             ["shop"] = "Магазин",
-            ["beginners_kit"] = "Набор для начинающих",
-            ["premium_set"] = "Премиальный набор",
+            ["beginners_kit"] = "Большой набор",
+            ["premium_set"] = "Малый набор",
             ["remove_ads_bundle"] = "Отключить рекламу",
             ["reamoveAdDescription"] = "Отключает рекламу во время игры",
             ["beginners_kit_info"] = "+{0} монет и +{1} к каждому бустеру",
@@ -162,8 +162,8 @@ public class LocalizationManager : MonoBehaviour
             ["free"] = "Ücretsiz",
             ["no_money"] = "Yeterli para yok",
             ["shop"] = "Dükkan",
-            ["beginners_kit"] = "Başlangıç Seti",
-            ["premium_set"] = "Premium set",
+            ["beginners_kit"] = "Büyük paket",
+            ["premium_set"] = "Küçük paket",
             ["remove_ads_bundle"] = "Reklamları kaldır",
             ["reamoveAdDescription"] = "Oyun sırasında reklamları kapatır",
             ["beginners_kit_info"] = "+{0} para ve her boostera +{1}",
@@ -200,8 +200,8 @@ public class LocalizationManager : MonoBehaviour
             ["free"] = "Kostenlos",
             ["no_money"] = "Nicht genug Münzen",
             ["shop"] = "Shop",
-            ["beginners_kit"] = "Anfänger-Set",
-            ["premium_set"] = "Premium-Set",
+            ["beginners_kit"] = "Großes Paket",
+            ["premium_set"] = "Kleines Paket",
             ["remove_ads_bundle"] = "Werbung entfernen",
             ["reamoveAdDescription"] = "Schaltet Werbung während des Spiels aus",
             ["beginners_kit_info"] = "+{0} Münzen und +{1} für jeden Booster",

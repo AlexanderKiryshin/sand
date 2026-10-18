@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using MirraGames.SDK;
 using MirraGames.SDK.Common;
 using TMPro;
@@ -9,7 +10,11 @@ public class RewardedShop : MonoBehaviour
 {
     [SerializeField] private int beginnerKitBonus = 5;
     [SerializeField] private int beginnerKitBonusGold = 4000;
-    [SerializeField] private int premiumKitBonus = 2;
+    public const int SmallBundleBoosterBonus = 5;
+    public const int RemoveAdsBoosterBonus = 10;
+    public const int SingleBoosterPackCount = 10;
+    private readonly Dictionary<BoosterType, (Button button, TextMeshProUGUI price)> boosterPacks
+        = new Dictionary<BoosterType, (Button button, TextMeshProUGUI price)>();
     [SerializeField] private int premiumKitBonusGold = 1000;
     [SerializeField] private int gold300 = 300;
     [SerializeField] private int gold700 = 700;
@@ -30,6 +35,7 @@ public class RewardedShop : MonoBehaviour
     [SerializeField] private Button gold1200Button;
     [SerializeField] private Button removeAdButton;
 
+    private float shopTime;
     public static Action OnNoAdsBuy;
     public bool IsAdActive = true;
 
@@ -58,7 +64,8 @@ public class RewardedShop : MonoBehaviour
 
     private System.Collections.IEnumerator InitPaymentsRoutine()
     {
-        yield return new WaitUntil(() => MirraSDK.IsInitialized);
+        yield return new WaitUntil(() => GameSdkReadiness.IsReady);
+        LoadDataOrInit();
         RestorePurchases();
         SetCurrencies();
         if (LocalizationManager.Instance != null)
@@ -77,12 +84,13 @@ public class RewardedShop : MonoBehaviour
 
     public void OpenShop()
     {
+        if(!gameObject.activeSelf){shopTime=Time.timeScale;Time.timeScale=0;}
         if (AdManager.instance != null)
         {
             AdManager.instance.OnWindowEnabled(true);
         }
 
-        MirraSDK.Analytics.GameplayStop();
+        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStop();
         gameObject.SetActive(true);
         transform.SetAsLastSibling();
         SetCurrencies();
@@ -90,12 +98,16 @@ public class RewardedShop : MonoBehaviour
 
     public void CloseShop()
     {
+        if(!gameObject.activeSelf)return;
+        var offer=FindObjectOfType<NatureBackgroundOffer>();if(offer!=null && offer.IsOpen)return;
+        var tabs=GetComponent<CosmeticShopTabs>();if(tabs!=null && !tabs.CanClose)return;
+        Time.timeScale=shopTime;
         if (AdManager.instance != null)
         {
             AdManager.instance.OnWindowEnabled(false);
         }
 
-        MirraSDK.Analytics.GameplayStart();
+        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStart();
         gameObject.SetActive(false);
     }
 
@@ -136,6 +148,25 @@ public class RewardedShop : MonoBehaviour
         WireButton(removeAdButton, BuyRemoveAd);
     }
 
+    public static string GetBoosterPackTag(BoosterType type)
+    {
+        switch (type)
+        {
+            case BoosterType.Magnet: return "booster_magnet_10";
+            case BoosterType.Transparent: return "booster_fill_10";
+            case BoosterType.Shuffle: return "booster_shuffle_10";
+            default: throw new ArgumentOutOfRangeException(nameof(type));
+        }
+    }
+
+    public void BindBoosterPack(BoosterType type, Button button, TextMeshProUGUI price)
+    {
+        string tag = GetBoosterPackTag(type);
+        boosterPacks[type] = (button, price);
+        WireButton(button, () => Purchase(tag));
+        SetPrice(price, tag, button);
+    }
+
     private static void WireButton(Button button, UnityEngine.Events.UnityAction action)
     {
         if (button == null)
@@ -152,7 +183,8 @@ public class RewardedShop : MonoBehaviour
         try
         {
             IsAdActive = !GameProgressStore.GetBool("no_ads")
-                && !MirraSDK.Payments.IsAlreadyPurchased(productTag: RemoveAdTag);
+                && (!GameSdkReadiness.IsReady
+                    || !MirraSDK.Payments.IsAlreadyPurchased(productTag: RemoveAdTag));
         }
         catch
         {
@@ -162,6 +194,7 @@ public class RewardedShop : MonoBehaviour
 
     private void RestorePurchases()
     {
+        if (!GameSdkReadiness.IsReady) return;
         MirraSDK.Payments.RestorePurchases(fetchData =>
         {
             fetchData.RestoreProduct(RemoveAdTag, () => ApplyPurchase(RemoveAdTag));
@@ -176,10 +209,12 @@ public class RewardedShop : MonoBehaviour
         SetPrice(gold700PriceText, Gold700Tag, gold700Button);
         SetPrice(gold1200PriceText, Gold1200Tag, gold1200Button);
         SetPrice(removeAdPriceText, RemoveAdTag, removeAdButton);
+        foreach (var pack in boosterPacks)
+            SetPrice(pack.Value.price, GetBoosterPackTag(pack.Key), pack.Value.button);
         if (!IsAdActive)
         {
-            removeAdPriceText.text = CampaignText.Get("purchased");
-            removeAdButton.interactable = false;
+            if (removeAdPriceText != null) removeAdPriceText.text = CampaignText.Get("purchased");
+            if (removeAdButton != null) removeAdButton.interactable = false;
         }
     }
 
@@ -187,6 +222,13 @@ public class RewardedShop : MonoBehaviour
     {
         if (label == null)
         {
+            return;
+        }
+
+        if (!GameSdkReadiness.IsReady)
+        {
+            label.text = CampaignText.Get("unavailable");
+            if (button != null) button.interactable = false;
             return;
         }
 
@@ -212,10 +254,23 @@ public class RewardedShop : MonoBehaviour
 
     private void Purchase(string tag)
     {
+        if (!GameSdkReadiness.IsReady) return;
+        bool settled = false;
         MirraSDK.Payments.Purchase(
             productTag: tag,
-            onSuccess: () => ApplyPurchase(tag),
-            onError: () => Debug.LogWarning("Failed to purchase " + tag));
+            onSuccess: () =>
+            {
+                if (settled) return;
+                settled = true;
+                Analytic.BuyInApp(ProgressSaveService.CurrentLevelIndex.ToString(), tag);
+                ApplyPurchase(tag);
+            },
+            onError: () =>
+            {
+                if (settled) return;
+                settled = true;
+                Debug.LogWarning("Failed to purchase " + tag);
+            });
     }
 
     private void ApplyPurchase(string purchaseKey)
@@ -230,8 +285,17 @@ public class RewardedShop : MonoBehaviour
                 coins?.AddCoinsOnBuy(beginnerKitBonusGold);
                 break;
             case PremiumKitTag:
-                boosters?.GrantChargesToAll(premiumKitBonus);
+                boosters?.GrantChargesToAll(SmallBundleBoosterBonus);
                 coins?.AddCoinsOnBuy(premiumKitBonusGold);
+                break;
+            case "booster_magnet_10":
+                boosters?.GrantCharges(BoosterType.Magnet, SingleBoosterPackCount);
+                break;
+            case "booster_fill_10":
+                boosters?.GrantCharges(BoosterType.Transparent, SingleBoosterPackCount);
+                break;
+            case "booster_shuffle_10":
+                boosters?.GrantCharges(BoosterType.Shuffle, SingleBoosterPackCount);
                 break;
             case Gold300Tag:
                 coins?.AddCoinsOnBuy(gold300);
@@ -246,12 +310,10 @@ public class RewardedShop : MonoBehaviour
                 IsAdActive = false;
                 GameProgressStore.SetBool("no_ads", true);
                 GameProgressStore.Save();
-                boosters?.GrantChargesToAll(beginnerKitBonus);
+                boosters?.GrantChargesToAll(RemoveAdsBoosterBonus);
                 coins?.AddCoinsOnBuy(beginnerKitBonusGold);
                 OnNoAdsBuy?.Invoke();
                 break;
         }
-
-        Analytic.BuyInApp(ProgressSaveService.CurrentLevelIndex.ToString(), purchaseKey);
     }
 }

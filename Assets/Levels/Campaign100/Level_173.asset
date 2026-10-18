@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4282932098
+    rgba: 4283322674
   - serializedVersion: 2
-    rgba: 4293450459
+    rgba: 4291078513
   - serializedVersion: 2
-    rgba: 4286274109
+    rgba: 4280040070
   - serializedVersion: 2
-    rgba: 4291869348
+    rgba: 4286822359
   - serializedVersion: 2
-    rgba: 4291930747
+    rgba: 4284710272
   - serializedVersion: 2
-    rgba: 4291807182
+    rgba: 4281763535
   - serializedVersion: 2
-    rgba: 4287727242
+    rgba: 4288905530
   - serializedVersion: 2
-    rgba: 4280754462
+    rgba: 4293642390
   - serializedVersion: 2
-    rgba: 4289568059
+    rgba: 4279309346
   - serializedVersion: 2
-    rgba: 4294439666
-  - serializedVersion: 2
-    rgba: 4282354401
-  - serializedVersion: 2
-    rgba: 4286820065
-  encodedCells: S1:4:4096:06FE1F50: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
+    rgba: 4293452765
+  encodedCells: S1:4:4096:D9B31315:hZVBe+I4EoZ/QxEcktzQhrGHW0bgbvfNjeRschNYpMmNMfHzMDe8nRHNLU56UHNL05Aot0BoWP3KLTOnOa2Cgu23qr4qYZW0xrHa6Z21dqb/OfBR8fVpJXe6MPgH05/2j2K8doQseOE+lX9jvDuxhf9XtGv3vxZP9MzqI7yazfbR9ny34TsoiZlEWPhXXvO98Mra87fCoLxZHUEo5UYX+WXg7AXGVyvbjwouNyeAPN5Lzty6rBdpqquaezbY83CTy0NuH/RupncnsPmKtU5UtimFfKZWNra34LQ4xhZyZ8dHYmPHE+VmpH0llOtmTFZEfPGTz0og7ax+IqwdK0WUuj7fZMg5c0Ln4u1yNnXiW5eU2p5SLiH1LBQyVleuU+bhI+ekJkL5mZCSJKqNvJqFHWCnVy6UQTryps2hLDcfCUi3HRKSrZ3NKLOT8DPyspR9KctpVCtJkDUpyFUJRjyWlr0yB0JHOGxw6ETdcgIgJcS3oVJqyyW7lhyAxUyU+xFLuzFaSzThgEU5IchycStiBvzmUKSHjs+YwzgHxxEcBEDM2CKEmDMYRhAdhD7nUnIeShQXaBKHyKQTMuij/gHgWkjgvCFDFosGZ5eCHWO8uCz6EY8iYAJDhZxeYjnQ7LIyoJBgHFhyCGm3/IbZlgVQKqQDZx0hwXkFXMET58xxGpg8A3EKsEh+jxQ0YwDnhIsfDjeys3Hsx1Y5xgXaWEHTAWk3W1undsX939ZUdkLqSB40ady6WleugyhinT/SSLqVzfdg0+nUezEL/ejMXrIyrteHNKL0jwF7Y+VWc8ASvojeWMJw8M1lGIevNz6lrWgQscW81TK9cvjS68U8dFjvGDBXwBJ6AUtbp/miZ8yj7C0c6MkarxPpaf3lCAL6cpaYQTQhUqrrKrn5hfBTckmqNXx7jwDStDf008SfkXaNxIT8/qD5TFvv8VfEttRfJml3gUncb0kN3cj7B32J/Ls5Rn+A/sJPl37HXuafvFXeJvn7bwXfPZvHKe4e6C/RV14Ha/10Z+6ej3PzqI3xxs/mi/63rsLZ0n8xZoE71XzDv+MXczw2It+9DxJ9hPn1u8n6ZU7vtQ7Wwf2TnNHAM0p/CGgPd/FRqZ/61H+f3GuPlpMPCZvTViug14uAdiI0qByBMJR+8NHf0HnQwn+GriXyefpQLMDxI3LclXkwR07R39BOcWX8SHu6tzij6+Uw/UvjDzUfNvBjqI9BWnOPJg86oTTRz7gYecNEJmlQ6pukU4hQ/am5/i2Z+1jI45325kOK3LBlEBTh6X904/v9M9r7WIb2vPkFNQ0zHJj9DMx/lzP9HADFND3E48WFCZBHxlwsDRr9ar5pS2+S9IEgJ55cLoaYFjUXOM0rmhw8fzifJ5FPyDj3ctkwN71ey5hCCALkLdOhyTD6q+hzSnVvxbxlfhwH0cWPJ2QmiKhs0ST9F5miu/f5fGB6N3MTtGhsDP1hEtqitJGmbmY9lDhP/1wIAx1xYdL5MPXNkL5bsiBNvbHVGdHpZbaYB67DDp3sptoV754OkwMM/1Ntc0LUdGBfzOPReZqK7vXh059N+dSY+7SZrK2dTElG7O7afDkfDLriM9zeHnQW7xZLim8ftt7JKneJzaFXy9J08/HuqftEu9/lmWkOo31vL1rpzt3Z+pb5r3alNvKpM5Lv5sFN+jdeYRGzrZ1YW8cDob6tqhLNtde++Ymwvp/Y6RQeM2SLR0bd9ZQeF6JbOyvsbV1hj66oyshOslV9iu+TdgkQ9FgVc6zcSqWC7XzrTrdWuaik8TiB6spORiqbepk7KgSyKwA3U68VBVA5sTCqVAnxJri82MpJVlIVR608gu3/LquMStNKW+arLcCW5DDJXOXmu1t7DVU3A1WpoADwNww7qVSL6LduW8SYBVTxFvYjZG9YCwrjSYQSWYZhRwVQI9QqLtib1kR5xVGUZ65o1kYDR4ADI5JVQUgZnW694ij9f/x/
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 0000000000fe00ff00ff00000000fe00000000000000000000
-  conveyorDirections: 00000000000000000000000000000100000000000000000000
-  conveyorBucketCounts: 00000000000200000000000000000300000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: places
+  artTheme: ordinary
   campaignSeed: 18020707
-  displayTitle: Geothermal Pools under Snow
+  displayTitle: traditional dragon boat racing with rowers on a tropical river
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
-  alternatingCrates: 1
+  alternatingCrates: 0
   swappingColors: 0
-  loopInventory: 0
-  mysteryBuckets: 0
-  bucketSettingsOverride: {fileID: 11400000, guid: 6f57ac9473db26f418b2be9670c1a3bf,
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: b5d1744d032bdcf45b791ff039d5538c,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

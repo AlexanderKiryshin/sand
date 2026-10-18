@@ -1,0 +1,189 @@
+{
+  "type": "non-consumable",
+  "products": [
+    {
+      "tag": "sand_theme_stars",
+      "name": "Starry night"
+    },
+    {
+      "tag": "sand_theme_artdeco",
+      "name": "Art deco"
+    },
+    {
+      "tag": "sand_theme_marble",
+      "name": "Marble"
+    },
+    {
+      "tag": "sand_theme_wood",
+      "name": "Wood workshop"
+    },
+    {
+      "tag": "sand_background_greenhouse",
+      "name": "Greenhouse background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_alpine",
+      "name": "Alpine background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_chalet",
+      "name": "Chalet background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_harbor",
+      "name": "Harbor background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_atelier",
+      "name": "Atelier background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_observatory",
+      "name": "Observatory background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_copper",
+      "name": "Copper background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_circuit",
+      "name": "Circuit background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_mosaic",
+      "name": "Mosaic background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_bamboo",
+      "name": "Bamboo background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_honeycomb",
+      "name": "Honeycomb background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_blueprint",
+      "name": "Blueprint background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_forest",
+      "name": "Forest background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_birch",
+      "name": "Birch background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_meadow",
+      "name": "Meadow background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_lake",
+      "name": "Lake background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_tropical",
+      "name": "Tropical background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_autumn",
+      "name": "Golden birch grove background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_snowforest",
+      "name": "Snowforest background",
+      "category": "background"
+    },
+    {
+      "tag": "sand_background_nature_bundle",
+      "name": "Nature collection — forest, lake and golden birch grove",
+      "category": "background_bundle",
+      "background_ids": [
+        27,
+        24,
+        29
+      ],
+      "recommended_discount_percent": 50,
+      "pricing": "Configure the bundle price in the platform catalog at 50% of the sum of sand_background_forest, sand_background_lake and sand_background_autumn in the same currency. UI displays actual SDK savings, never a fixed or fabricated discount."
+    },
+    {
+      "tag": "sand_background_botanical_bundle",
+      "name": "Botanical collection",
+      "category": "background_bundle",
+      "background_ids": [
+        12,
+        21,
+        28
+      ],
+      "recommended_discount_percent": 50,
+      "pricing": "Configure the platform price at 50% of the sum of the three individual background prices in the same currency. UI reads actual SDK prices and savings."
+    },
+    {
+      "tag": "sand_background_travel_bundle",
+      "name": "Travel collection",
+      "category": "background_bundle",
+      "background_ids": [
+        13,
+        15,
+        25
+      ],
+      "recommended_discount_percent": 50,
+      "pricing": "Configure the platform price at 50% of the sum of the three individual background prices in the same currency. UI reads actual SDK prices and savings."
+    },
+    {
+      "tag": "sand_background_cozy_bundle",
+      "name": "Winter comfort",
+      "category": "background_bundle",
+      "background_ids": [
+        14,
+        17,
+        30
+      ],
+      "recommended_discount_percent": 50,
+      "pricing": "Configure the platform price at 50% of the sum of the three individual background prices in the same currency. UI reads actual SDK prices and savings."
+    },
+    {
+      "tag": "sand_background_artist_bundle",
+      "name": "Creative workshop",
+      "category": "background_bundle",
+      "background_ids": [
+        16,
+        20,
+        23
+      ],
+      "recommended_discount_percent": 50,
+      "pricing": "Configure the platform price at 50% of the sum of the three individual background prices in the same currency. UI reads actual SDK prices and savings."
+    },
+    {
+      "tag": "sand_background_material_bundle",
+      "name": "Unusual materials",
+      "category": "background_bundle",
+      "background_ids": [
+        18,
+        19,
+        22
+      ],
+      "recommended_discount_percent": 50,
+      "pricing": "Configure the platform price at 50% of the sum of the three individual background prices in the same currency. UI reads actual SDK prices and savings."
+    }
+  ],
+  "registration": "Register these exact tags and prices in the platform payment catalog. The game reads localized prices from MirraSDK and disables purchases when the product is unavailable. Ownership is restored through SDK purchase restoration."
+}

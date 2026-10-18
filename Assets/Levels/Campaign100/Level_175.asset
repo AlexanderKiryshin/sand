@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4286416333
+    rgba: 4282426607
   - serializedVersion: 2
-    rgba: 4285746039
+    rgba: 4286728023
   - serializedVersion: 2
-    rgba: 4279901968
+    rgba: 4279966734
   - serializedVersion: 2
-    rgba: 4280706378
+    rgba: 4280370478
   - serializedVersion: 2
-    rgba: 4280647546
+    rgba: 4280840020
   - serializedVersion: 2
-    rgba: 4285480496
+    rgba: 4284364610
   - serializedVersion: 2
-    rgba: 4288790518
+    rgba: 4285628100
   - serializedVersion: 2
-    rgba: 4285620389
+    rgba: 4285813908
   - serializedVersion: 2
-    rgba: 4282722855
+    rgba: 4282787617
   - serializedVersion: 2
-    rgba: 4286596943
+    rgba: 4286464559
   - serializedVersion: 2
-    rgba: 4282889718
+    rgba: 4280648584
   - serializedVersion: 2
-    rgba: 4282678990
-  encodedCells: S1:4:4096:3BC7E05E:fZVBb9s2FIB/A53NViJdwgKGY/Ti0DWcYZfOEobtFkT+AVYA1tLNQwGtjS9SMYepe5kNeGXWSxRAjblejAJrMeqiBGi8WT9qj5LdpTvk2ZKo9z0+vkc+PAlxv0T3Yz6/F58Dr983/Qu+cyUiLOoYR/mquO5wzqsYJKpjUFXewbCOc0WE8aQ64dyd4c9SebUZsRrcgHJO3epG+VPlFtcUE5SxGmM5Bw8UXkERhh9XLIRfJCh1Rq/5bMOFGCmLcCHZGWNCeBRUsHLB+YyKl+zK07RFAlax4nEMnG/EjYUnBC3B/AsBU2NPzP6bzifcE8ojWkjHFZ/eCjD/DDcxgNuylPN3InsivPj8DiruFx7dXkh4JD6ld2ZP18/fKd1OVs96n+Tw6pz/XzA73QuXyQqlH+U4mNwhc4cqKZ9G9evEQGkqdViK0rmAk4I4XUVjWv4gMPBKmpyMdzHMiWexd0Zd18WzvdgRO7IeXmdSwl/fxbAZVG0wheOJ4giKbEc++ysDKHMe+ade1ZmVHOrMhfbWmwMf/JmlifywUvz5cBBxZ2eJPIhDnchF+aRyawyHMsmk3rv6Z+hfeWKk1WCvvyFkKn4rG2iVDTPfzxJ99w84aCg1QsilmIvp/mX9SdnQZSKlhrJMf3OykOhCiFYI1TkXsRM//wB8layklgJ/qAfqIKFAsVAPJ975eONniqMszXQYZVqvKryzKIZCACkv/YEPsSUoS4Bn2SpoPDVN01b+hWVuLRFKpZEAzwww9X3U0E3TMk0oJrD7KjVSJA0weuX7p0Pf1xYN/XsA5mX0Y85vBygBmzSAybd+haHG+LGtDGK4Ok8RMoBnp4GGKiiAKkWH+iEA0zxSVj4CyVCAUBAgbYi0ADVePTa7gLpdGyyaBDisjzRkpCeGsqwcmoWARbfbtXIb0KM0Q2h3n1QeqwTyGEwbsAkX6WyBQQW14e1rhbvmDwqDD0u5MJtmnjX466onKL5br9HMn5ZtW/lyhZgmmZj5GhZRt0JrddfubMsmjqI2aRIwW/PCIPf3iDjndrcJlUC6pkrU3nDlHNyTaHagKGl3ikDsIjbbUoE2ybGj4Nb+C3SU48LBemceEUK54hraQg2UZwqr5DsKg6aqv8m8BbyhDuC6mGeDiVUEPReew8l2G1X8wQC1SaeIGtCRpby7UHzubBuVfCn90zYhnc3CR0eACfSNPnbKqJTKEpRc0CZ5lHm+SqbcdWJKNTYYh4tAC1SqttVZU/V27ByPHMZ+ZrUSQ7XpmqikzGLouLSkCgprDL/m5EuZTqfOdLanQXfFWsjIl7xDDqYcmhXFOMTQeNuFeh3di375wHVnEF/rAVZ9GxMV+I1cvfm2876zddZj0N0h+hZoH6gZUASE8+ugbxzc7JcCxLQDMgX/n4O9SX4xlnLs0upSK6FbFkDXhX9LTVPJ3mQPVyU57jn0tRYuVnqt2lfd7YDM65zvTwh5/ytdC3wManrA+tSlLXIM/RiSQMGybyyTca8/mpyFAewYU92xRatiLxYvnZj/DY1xW01X3xMc1mrkOO+fVaY+a+6nzKNluVIdN/+A4aL3zuioX8U0cJaZ0yuWJw/yLxppinU81RK9Kx3YEcioc0zdtQaSpiMEg6Wbp7Q+IPov
+    rgba: 4288592626
+  encodedCells: S1:4:4096:6F586CE1:pZXNb+JGFMD/hqm6ONXmNAdK0J463gSyRwalCnuLrVTlRqUBuycnLeNGvoRI2EE5LZKT4ciunDDtrUKVyolVW1LJf1TfG0M+WmkvfRL28H7ve+yx1v9Lqv/RlJ/9o1NNH4yq1FxAplUAuHpH1wIKc5/SZ6LoJ0V9mqt/886zf++Al9frCvxOKk95MrgBLsSwstFErwbr1WCQJDeeKngCMqgkg0F0lRjR5oreSnlCJH6hvo9yc6/oKt5SVRh4mR4ZfWgRc8cpjXpqzVXqibKIw4qUlpUkvVtqxqm8Dfc8yHFLqY9c+tAQ4Iny1EYuoUgBs+9bpNPxv4TJTycPsLCDFFSfWcSvTpewgf5Gb/KbSnZo9hMhgp4EvyBOH8qDdSqUuhYC4v/dLZFIw1Q2eDYxBmliXQ6lRXK5RcIRKDa+k6wKxWkhrDI9sQIZlIikmS88UemI6VRDa4b3LVH+jEQyIEQmPRg6aC8nM1VGnNHyiTXsbQEkyCugG14rkSoxFUMK/8on0V8DsuZC3Ocd0RP9uyGtdgRddVLwD++D1TYh20SWy8u8koqTVTfT+MwkPfqxL3MSLFfLHPyHH0n+qkOHca+MjytjbAe4tCB8HhFLlqCHLqV10MNjTb+q1+kKOKaXYCZLW4Z3amlVg4EeaCoDGM4SOAFOLGJ18SHD10FrAdxaRdsW1G5BEDODvT84d76HrYY3iQ45xF2hgeHY4wHwOf9ZH1ZphbsFDyD5Kke5kgcv3jotzrWjNeeuC8UHK+RhnoOJlAfkG5eDuB8O3SZ3IgiwHWD5JoCUvwXHLndc123hpYkcdq+QKEb/AwgLMm8D5m8feWBt4y0/dtcyN9fmD/bpE773wCE7xyiQh9t76xTO/M89TOy+PipiLNzFot10m+6R4xwvQNyivMY+GDSBv25w15nDAi1RsC6X2fp314Vly+ZoP58XEIzaGJ039AQXLW4fYQXtxUuAaNTEtDb462+dNw3O2VETeHPjj07uC8bfZz48H+xrHv4KCijALdgC+24xpr1d5JLJvR8dLHjeQgbSnjP2QesUHiN2IU/lnoROHPdRWmwML7ovGKudRjKPZJdhJxh9jq3YTGdaw7s0lrCryzyqNezCfw6zcN/YbKb1vi/6IoxX5HwpaxfrPYNusSg2rmtMocOre5JYcSzr3GnDXjRYIWPG6nDSZGfx/VWyFcsYdLyxoSgK/UcyDuF0i5PaE8KKFEr7Y5XEePolyQPj5mKzsYIS01lxPK7d1+HHt2d1b6b2sT674MwB/eckKDG7djrshkpp/R5ww2YX6IITU56UJWGLfiiTEEYLONtndsOug9Xp4iWcP12tr8NQWkm8+YhBmSrFCGQYl8i5P+qOYut8GY9uDZ6w7/AUSneZJXt+ClkFcGz4Th8ad3OIpZc1TyufSO3HAtoNk3isYYf1jo+4JDL5RffO9zBk0VCPcZPA93vDHhx6fdKdHcoMttV8c5LddX2+vvOTTIhRgDsOcmgmctOwHz/EMVgZmRkOY+TchvU/
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000000000fffe00000000000000ff0000fe0000
-  conveyorDirections: 00000000000000000000000300000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000000300000000000000000000040000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: fantasy
   campaignSeed: 18230165
   displayTitle: Origami City on a Lotus Leaf
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 0
-  linkedBuckets: 1
+  linkedBuckets: 0
   largeBuckets: 1
-  alternatingCrates: 0
-  swappingColors: 0
+  alternatingCrates: 1
+  swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 31fd36581594d974d96d64e52b90549f,
     type: 2}
   usesTiles: 0

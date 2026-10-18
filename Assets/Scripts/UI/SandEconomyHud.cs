@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using MirraGames.SDK;
 using TMPro;
@@ -13,6 +14,7 @@ public class SandEconomyHud : MonoBehaviour
 
     private Canvas canvas;
     private GameManager gameManager;
+    private ConveyorBelt boosterConveyor;
     private TextMeshProUGUI coinText;
     private TextMeshProUGUI levelCompleteTitle;
     private GameObject completePanel;
@@ -20,8 +22,17 @@ public class SandEconomyHud : MonoBehaviour
     private GameObject buyPopup;
     private GameObject noMoneyToast;
     private GameObject skipLevelButtonGo;
+    private Button rewardedSkipButton;
+    private RectTransform rewardedSkipIcon;
+    private bool rewardedSkipPending;
+    private bool completionContinuePending;
+    private int levelLoadVersion;
     private TextMeshProUGUI buyPopupTitle;
     private TextMeshProUGUI buyPopupPrice;
+    private TextMeshProUGUI buyPopupAdLabel;
+    private TextMeshProUGUI buyPopupCloseLabel;
+    private RectTransform buyPopupCard;
+    private Image buyPopupIcon;
     private BoosterType pendingBuyType;
     private readonly Button[] boosterButtons = new Button[3];
     private readonly TextMeshProUGUI[] boosterTitles = new TextMeshProUGUI[3];
@@ -92,6 +103,7 @@ public class SandEconomyHud : MonoBehaviour
     /// </summary>
     public void SetSkipLevelButtonVisible(bool visible)
     {
+#if UNITY_EDITOR
         GameDebugSettings settings = GameDebugSettings.Get();
         if (settings != null)
         {
@@ -101,7 +113,9 @@ public class SandEconomyHud : MonoBehaviour
         if (skipLevelButtonGo != null)
         {
             skipLevelButtonGo.SetActive(visible);
+            MobilePortraitLayout.Instance?.ApplyLayout();
         }
+#endif
     }
 
     private void EnsureServices()
@@ -134,6 +148,12 @@ public class SandEconomyHud : MonoBehaviour
 
     private void WireEvents()
     {
+        boosterConveyor = FindObjectOfType<ConveyorBelt>();
+        if (boosterConveyor != null)
+        {
+            boosterConveyor.OnConveyorChanged += HandleBoosterConveyorChanged;
+        }
+
         if (CoinManager.instance != null)
         {
             CoinManager.instance.OnCoinsChanged += HandleCoinsChanged;
@@ -155,6 +175,17 @@ public class SandEconomyHud : MonoBehaviour
 
     private void Update()
     {
+        if (skipLevelButtonGo != null && skipLevelButtonGo.activeSelf != GameDebugSettings.ShowSkipLevelButton)
+        {
+            skipLevelButtonGo.SetActive(GameDebugSettings.ShowSkipLevelButton);
+            MobilePortraitLayout.Instance?.ApplyLayout();
+        }
+        RefreshSkipButtons();
+        if (buyPopup != null && buyPopup.activeSelf)
+        {
+            ApplyBuyPopupLayout();
+            if (Input.GetKeyDown(KeyCode.Escape)) CloseBuyPopup();
+        }
         if (IsShopOpen) return;
         if (!handAnimating || handRect == null || !handRect.gameObject.activeSelf)
         {
@@ -170,6 +201,11 @@ public class SandEconomyHud : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (boosterConveyor != null)
+        {
+            boosterConveyor.OnConveyorChanged -= HandleBoosterConveyorChanged;
+        }
+
         UnwireTutorialConveyor();
         ClearTutorialGameplayFreeze();
 
@@ -193,6 +229,8 @@ public class SandEconomyHud : MonoBehaviour
 
     public void OnLevelLoaded(int levelIndex)
     {
+        completionContinuePending=false;
+        levelLoadVersion++;
         if (BoosterService.instance != null)
         {
             BoosterService.instance.SyncUnlocks(levelIndex);
@@ -200,7 +238,7 @@ public class SandEconomyHud : MonoBehaviour
 
         RefreshBoosters();
         TryStartBoosterTutorial(levelIndex);
-        MirraSDK.Analytics.GameplayStart();
+        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStart();
     }
 
     public void ShowLevelComplete()
@@ -216,7 +254,7 @@ public class SandEconomyHud : MonoBehaviour
             AdManager.instance.OnWindowEnabled(true);
         }
 
-        MirraSDK.Analytics.GameplayStop();
+        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStop();
         StartCoroutine(PlayStars());
     }
 
@@ -283,6 +321,7 @@ public class SandEconomyHud : MonoBehaviour
     private void CompleteBoosterUse(BoosterType type)
     {
         BoosterService.instance.ClearTargetMode();
+        FindObjectOfType<GameUI>()?.SetFillTargetHintVisible(false);
         if (tutorialType == type)
         {
             FinishTutorial();
@@ -305,7 +344,12 @@ public class SandEconomyHud : MonoBehaviour
             return;
         }
 
-        if (!BoosterService.instance.IsUnlocked(type, gameManager.CurrentLevelIndex))
+        if (!BoosterService.instance.IsUnlocked(type, gameManager.CampaignLevelIndex))
+        {
+            return;
+        }
+
+        if (type == BoosterType.Transparent && !HasFillTarget())
         {
             return;
         }
@@ -368,44 +412,13 @@ public class SandEconomyHud : MonoBehaviour
 
     private void OpenBuyPopup(BoosterType type)
     {
+        if (buyPopup == null) return;
         pendingBuyType = type;
-        if (buyPopup != null)
-        {
-            buyPopup.SetActive(true);
-        }
-
-        Transform iconTransform = buyPopup != null ? buyPopup.transform.Find("BoosterIcon") : null;
-        if (iconTransform == null && buyPopup != null)
-        {
-            GameObject iconGo = new GameObject("BoosterIcon", typeof(RectTransform), typeof(Image));
-            iconGo.transform.SetParent(buyPopup.transform, false);
-            RectTransform iconRt = iconGo.GetComponent<RectTransform>();
-            iconRt.anchoredPosition = new Vector2(0f, 40f);
-            iconRt.sizeDelta = new Vector2(84f, 84f);
-            iconTransform = iconGo.transform;
-        }
-
-        if (iconTransform != null)
-        {
-            Image iconImage = iconTransform.GetComponent<Image>();
-            ApplySprite(iconImage, GameUiSymbols.Booster(type), Color.white);
-            if (iconImage != null)
-            {
-                iconImage.type = Image.Type.Simple;
-            }
-        }
-
-        if (buyPopupTitle != null && LocalizationManager.Instance != null)
-        {
-            buyPopupTitle.text = LocalizationManager.Instance.GetText(BoosterCatalog.GetLocalizationKey(type));
-            buyPopupTitle.rectTransform.anchoredPosition = new Vector2(0f, 120f);
-        }
-
-        if (buyPopupPrice != null && LocalizationManager.Instance != null)
-        {
-            buyPopupPrice.text = LocalizationManager.Instance.GetText("buy_for", BoosterCatalog.BuyPriceCoins);
-            buyPopupPrice.rectTransform.anchoredPosition = new Vector2(0f, -20f);
-        }
+        buyPopupIcon.sprite = GameUiSymbols.Booster(type);
+        RefreshBuyPopupText();
+        ApplyBuyPopupLayout();
+        buyPopup.transform.SetAsLastSibling();
+        buyPopup.SetActive(true);
 
         if (AdManager.instance != null)
         {
@@ -473,12 +486,19 @@ public class SandEconomyHud : MonoBehaviour
 
     private void ShowNoMoney()
     {
+        ShowToast("Not enough coins");
+    }
+
+    private void ShowToast(string message)
+    {
         if (noMoneyToast == null)
         {
             return;
         }
 
+        noMoneyToast.GetComponentInChildren<TextMeshProUGUI>().text = message;
         noMoneyToast.SetActive(true);
+        noMoneyToast.transform.SetAsLastSibling();
         StopCoroutine(nameof(HideNoMoneyLater));
         StartCoroutine(HideNoMoneyLater());
     }
@@ -494,19 +514,18 @@ public class SandEconomyHud : MonoBehaviour
 
     private void OnCompleteContinue()
     {
-        if (AdManager.instance != null)
-        {
-            AdManager.instance.ShowInterstitial(() =>
-            {
-                CoinManager.instance?.AddCoinsOnComplete();
-                FinishCompleteAndNext();
-            });
-        }
-        else
-        {
-            CoinManager.instance?.AddCoinsOnComplete();
-            FinishCompleteAndNext();
-        }
+        if(completionContinuePending)return;
+        completionContinuePending=true;
+        var offer=FindObjectOfType<NatureBackgroundOffer>();
+        if(offer!=null && offer.TryShow(gameManager,ContinueAfterInterstitial))return;
+        if(AdManager.instance!=null)AdManager.instance.ShowInterstitial(ContinueAfterInterstitial);
+        else ContinueAfterInterstitial();
+    }
+    private void ContinueAfterInterstitial()
+    {
+        if(this==null || !completionContinuePending)return;
+        completionContinuePending=false;
+        CoinManager.instance?.AddCoinsOnComplete();FinishCompleteAndNext();
     }
 
     private void OnCompleteDouble()
@@ -542,7 +561,7 @@ public class SandEconomyHud : MonoBehaviour
             AdManager.instance.OnWindowEnabled(false);
         }
 
-        MirraSDK.Analytics.GameplayStart();
+        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStart();
         gameManager?.LoadNextLevel();
     }
 
@@ -557,6 +576,7 @@ public class SandEconomyHud : MonoBehaviour
         tutorialWaitingTarget = false;
         HideHand();
 
+        if (gameManager != null && gameManager.IsSeasonal(gameManager.CurrentLevelIndex)) return;
         if (BoosterService.instance == null)
         {
             return;
@@ -727,10 +747,10 @@ public class SandEconomyHud : MonoBehaviour
         GameUI ui = FindObjectOfType<GameUI>();
         if (ui != null)
         {
-            if (gameManager != null && gameManager.CurrentLevelIndex == 0)
+            if (gameManager != null && gameManager.CampaignLevelIndex == 0)
                 ui.SetTutorialHint(CampaignText.Get("tutorial_free"));
-            else if (gameManager != null && CampaignProgression.IsLessonStart(gameManager.CurrentLevelIndex))
-                ui.SetTutorialHint(CampaignProgression.GetLesson(gameManager.CurrentLevelIndex));
+            else if (gameManager != null && CampaignProgression.IsLessonStart(gameManager.CampaignLevelIndex))
+                ui.SetTutorialHint(CampaignProgression.GetLesson(gameManager.CampaignLevelIndex));
             else
                 ui.SetHintVisible(false);
             ui.SetControlsInteractable(true);
@@ -907,6 +927,7 @@ public class SandEconomyHud : MonoBehaviour
 
     private void HandleBoosterActivated(BoosterType type)
     {
+        FindObjectOfType<GameUI>()?.SetFillTargetHintVisible(type == BoosterType.Transparent);
         RefreshBoosters();
         BucketInventoryUI inventoryUi = FindObjectOfType<BucketInventoryUI>();
         if (inventoryUi != null)
@@ -928,6 +949,7 @@ public class SandEconomyHud : MonoBehaviour
 
     private void HandleBoosterModeCancelled()
     {
+        FindObjectOfType<GameUI>()?.SetFillTargetHintVisible(false);
         RefreshBoosters();
         BucketInventoryUI inventoryUi = FindObjectOfType<BucketInventoryUI>();
         if (inventoryUi != null)
@@ -963,11 +985,12 @@ public class SandEconomyHud : MonoBehaviour
 
     private void RefreshLocalized()
     {
+        if (BoosterService.instance != null && BoosterService.instance.ActiveTargetMode == BoosterType.Transparent)
+            FindObjectOfType<GameUI>()?.SetFillTargetHintVisible(true);
         RefreshBoosters();
         RefreshShopText();
         RefreshCompletionText();
-        if (skipLevelButtonGo != null)
-            skipLevelButtonGo.GetComponentInChildren<TextMeshProUGUI>().text = CampaignText.Get("debug_skip");
+        RefreshBuyPopupText();
     }
 
     private void RefreshShopText()
@@ -976,11 +999,18 @@ public class SandEconomyHud : MonoBehaviour
         foreach (var label in shopPanel.GetComponentsInChildren<TextMeshProUGUI>(true))
         {
             string parent = label.transform.parent.name;
+            if(parent=="ThemeCard" || parent=="BackgroundPaper")continue;
             if (label.name == "ShopTitle") label.text = LocalizationManager.Instance.GetText("shop");
             if (label.name == "Description") label.text = LocalizationManager.Instance.GetText("reamoveAdDescription");
             if (label.name == "Title")
             {
                 if (parent.StartsWith("Gold ")) label.text = parent.Replace("Gold ", "").Replace("Btn", "") + " " + CampaignText.Get("coins");
+                else if (parent.StartsWith("booster_"))
+                {
+                    foreach (BoosterType type in Enum.GetValues(typeof(BoosterType)))
+                        if (parent == RewardedShop.GetBoosterPackTag(type) + "Btn")
+                            label.text = LocalizationManager.Instance.GetText(BoosterCatalog.GetLocalizationKey(type)) + " ×" + RewardedShop.SingleBoosterPackCount;
+                }
                 else label.text = LocalizationManager.Instance.GetText(parent.Replace("Btn", ""));
             }
             if (label.name == "Caption")
@@ -1001,6 +1031,38 @@ public class SandEconomyHud : MonoBehaviour
         }
     }
 
+    private bool HasFillTarget()
+    {
+        ConveyorBelt conveyor = boosterConveyor != null ? boosterConveyor : FindObjectOfType<ConveyorBelt>();
+        if (conveyor == null)
+        {
+            return false;
+        }
+
+        foreach (ConveyorBelt.BeltEntry entry in conveyor.Entries)
+        {
+            Bucket bucket = entry.Bucket;
+            if (bucket != null && bucket.State == BucketState.OnConveyor && !bucket.IsFull)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private void HandleBoosterConveyorChanged()
+    {
+        if (BoosterService.instance != null
+            && BoosterService.instance.ActiveTargetMode == BoosterType.Transparent
+            && !HasFillTarget())
+        {
+            BoosterService.instance.CancelTargetMode();
+        }
+
+        RefreshBoosters();
+    }
+
     private void RefreshBoosters()
     {
         if (BoosterService.instance == null || gameManager == null)
@@ -1008,10 +1070,11 @@ public class SandEconomyHud : MonoBehaviour
             return;
         }
 
+        bool hasFillTarget = HasFillTarget();
         for (int i = 0; i < 3; i++)
         {
             BoosterType type = (BoosterType)i;
-            bool unlocked = BoosterService.instance.IsUnlocked(type, gameManager.CurrentLevelIndex);
+            bool unlocked = BoosterService.instance.IsUnlocked(type, gameManager.CampaignLevelIndex);
             int charges = BoosterService.instance.GetCharges(type);
             if (boosterTitles[i] != null) boosterTitles[i].text = LocalizationManager.Instance != null
                 ? LocalizationManager.Instance.GetText(BoosterCatalog.GetLocalizationKey(type)) : type.ToString();
@@ -1024,7 +1087,8 @@ public class SandEconomyHud : MonoBehaviour
                     && type == BoosterType.Transparent;
                 boosterButtons[i].interactable = unlocked
                     && !tutorialLocksOtherBoosters
-                    && !tutorialBlocksFillUntilBucket;
+                    && !tutorialBlocksFillUntilBucket
+                    && (type != BoosterType.Transparent || hasFillTarget);
                 Image frame = boosterButtons[i].GetComponent<Image>();
                 if (frame != null)
                 {
@@ -1149,10 +1213,17 @@ public class SandEconomyHud : MonoBehaviour
         RectTransform shopRt = shopBtn.GetComponent<RectTransform>();
         shopRt.anchorMin = new Vector2(0f, 0.5f);
         shopRt.anchorMax = new Vector2(0f, 0.5f);
-        shopRt.anchoredPosition = new Vector2(-40f, 0f);
-        shopRt.sizeDelta = new Vector2(64, 64);
-        shopBtn.GetComponent<Image>().color = new Color(.16f, .39f, .37f);
+        shopRt.anchoredPosition = new Vector2(-56f, 0f);
+        shopRt.sizeDelta = new Vector2(88, 88);
+        ApplySprite(shopBtn.GetComponent<Image>(), HintUiSprites.RoundedPanel, new Color(1f, .76f, .22f));
+        RectTransform cart = CreatePanel("CartIcon", new Vector2(.5f, .5f), new Vector2(.5f, .5f), Vector2.zero, new Vector2(70, 70), shopRt);
+        Image cartImage = cart.gameObject.AddComponent<Image>();
+        cartImage.sprite = GameUiSymbols.Get(GameUiSymbol.Shop);
+        cartImage.color = new Color(.08f, .24f, .23f);
+        cartImage.preserveAspect = true;
+        cartImage.raycastTarget = false;
 
+        shopBtn.gameObject.AddComponent<ShopGoldBadge>();
         CoinSpawner spawner = root.gameObject.AddComponent<CoinSpawner>();
         spawner.coinCount = 25;
         GameObject coinPrefab = Resources.Load<GameObject>("UI/Coin");
@@ -1166,35 +1237,122 @@ public class SandEconomyHud : MonoBehaviour
 
     private void BuildSkipLevelButton()
     {
-        Button skip = CreateStyledButton(canvas.transform, "SkipLevelBtn", CampaignText.Get("debug_skip"), HintUiSprites.RoundedPanel, SkipCurrentLevel);
-        skip.GetComponent<Image>().color = new Color(.15f, .37f, .37f);
-        TextMeshProUGUI text = skip.GetComponentInChildren<TextMeshProUGUI>();
-        text.fontStyle = FontStyles.Bold;
-        text.color = new Color(1, .99f, .91f);
-        text.enableAutoSizing = true;
-        text.fontSizeMin = 18;
-        text.fontSizeMax = 24;
+        rewardedSkipButton = CreateSkipButton("RewardedSkipLevelBtn", SkipCurrentLevelRewarded, true, 1);
+#if UNITY_EDITOR
+        Button skip = CreateSkipButton("SkipLevelBtn", SkipCurrentLevel, false, 2);
+        skipLevelButtonGo = skip.gameObject;
+        skipLevelButtonGo.SetActive(GameDebugSettings.ShowSkipLevelButton);
+#endif
+        MobilePortraitLayout.Instance?.ApplyLayout();
+    }
+
+    private Button CreateSkipButton(string name, UnityEngine.Events.UnityAction onClick, bool rewarded, int slot)
+    {
+        Button skip = CreateIconButton(canvas.transform, name, HintUiSprites.RoundedPanel, onClick);
+        ApplySprite(skip.GetComponent<Image>(), HintUiSprites.RoundedPanel, new Color(.15f, .37f, .37f));
         RectTransform rt = skip.GetComponent<RectTransform>();
         rt.anchorMin = new Vector2(1f, 1f);
         rt.anchorMax = new Vector2(1f, 1f);
         rt.pivot = new Vector2(1f, 1f);
-        rt.anchoredPosition = new Vector2(-30f, -100f);
-        rt.sizeDelta = new Vector2(220f, 56f);
-        skipLevelButtonGo = skip.gameObject;
-        skipLevelButtonGo.SetActive(GameDebugSettings.ShowSkipLevelButton);
+        rt.anchoredPosition = new Vector2(-32f - slot * 88f, -104f);
+        rt.sizeDelta = new Vector2(72f, 72f);
+        RectTransform icon = CreatePanel("SkipIcon", new Vector2(.5f, .5f), new Vector2(.5f, .5f), Vector2.zero, new Vector2(46f, 46f), rt);
+        Image image = icon.gameObject.AddComponent<Image>();
+        image.sprite = GameUiSymbols.Get(GameUiSymbol.Skip);
+        image.color = new Color(1, .99f, .91f);
+        image.raycastTarget = false;
+        if (rewarded)
+        {
+            rewardedSkipIcon = icon;
+            icon.sizeDelta = new Vector2(46, 46);
+            icon.anchoredPosition = Vector2.zero;
+            RectTransform video = CreatePanel("VideoIcon", new Vector2(1, 0), new Vector2(1, 0), new Vector2(-6, 6), new Vector2(50, 36), rt);
+            Image videoImage = video.gameObject.AddComponent<Image>();
+            videoImage.sprite = BusesUiArt.Ad;
+            videoImage.preserveAspect = true;
+            videoImage.color = Color.white;
+            videoImage.raycastTarget = false;
+        }
+        return skip;
     }
 
-    private void SkipCurrentLevel()
+    private bool CanSkipCurrentLevel()
     {
-        if (gameManager == null || !GameDebugSettings.ShowSkipLevelButton || CampaignGallery.IsOpen
-            || IsShopOpen || (completePanel != null && completePanel.activeSelf))
+        return gameManager != null && !CampaignGallery.IsOpen && !IsShopOpen
+            && (completePanel == null || !completePanel.activeSelf)
+            && (buyPopup == null || !buyPopup.activeSelf);
+    }
+
+    private void RefreshSkipButtons()
+    {
+        bool canSkip = !rewardedSkipPending && CanSkipCurrentLevel();
+        if (rewardedSkipButton != null) rewardedSkipButton.interactable = canSkip;
+        if (skipLevelButtonGo != null) skipLevelButtonGo.GetComponent<Button>().interactable = canSkip;
+        if (rewardedSkipIcon != null)
         {
+            rewardedSkipIcon.GetComponent<Image>().sprite = GameUiSymbols.Get(rewardedSkipPending ? GameUiSymbol.Restart : GameUiSymbol.Skip);
+            rewardedSkipIcon.localRotation = rewardedSkipPending
+                ? Quaternion.Euler(0, 0, -Time.unscaledTime * 180f) : Quaternion.identity;
+        }
+    }
+
+    private void SkipCurrentLevelRewarded()
+    {
+        if (rewardedSkipPending || !CanSkipCurrentLevel()) return;
+        if (AdManager.instance == null)
+        {
+            ShowAdUnavailable();
             return;
         }
 
         int current = gameManager.CurrentLevelIndex;
-        Analytic.Track("level_debug_skipped");
-        Analytic.AbandonLevel("debug_skip");
+        int version = levelLoadVersion;
+        rewardedSkipPending = true;
+        RefreshLocalized();
+        RefreshSkipButtons();
+        AdManager.instance.StartRewarded(current.ToString(), "skip_level", () =>
+        {
+            if (this == null) return;
+            rewardedSkipPending = false;
+            RefreshLocalized();
+            // Ignore an old reward if the player loaded or restarted a level during the ad.
+            if (gameManager != null && version == levelLoadVersion
+                && current == gameManager.CurrentLevelIndex && CanSkipCurrentLevel())
+                AdvanceSkippedLevel("level_rewarded_skipped", "rewarded_skip");
+            RefreshSkipButtons();
+        }, () =>
+        {
+            if (this == null) return;
+            rewardedSkipPending = false;
+            RefreshLocalized();
+            RefreshSkipButtons();
+            ShowAdUnavailable();
+        }, requireAdView: true);
+    }
+
+    private void ShowAdUnavailable()
+    {
+        if (noMoneyToast == null) return;
+        ShowToast(CampaignText.Get("ad_unavailable"));
+    }
+
+#if UNITY_EDITOR
+    private void SkipCurrentLevel()
+    {
+        if (rewardedSkipPending || !GameDebugSettings.ShowSkipLevelButton || !CanSkipCurrentLevel())
+        {
+            return;
+        }
+
+        AdvanceSkippedLevel("level_debug_skipped", "debug_skip");
+    }
+#endif
+
+    private void AdvanceSkippedLevel(string eventName, string reason)
+    {
+        int current = gameManager.CurrentLevelIndex;
+        Analytic.Track(eventName);
+        Analytic.AbandonLevel(reason);
         ProgressSaveService.MarkLevelCompleted(current);
         if (BoosterService.instance != null)
         {
@@ -1346,45 +1504,106 @@ public class SandEconomyHud : MonoBehaviour
         Transform card = completePanel.transform.Find("Card");
         if (card == null) return;
         levelCompleteTitle.text = CampaignText.Get("victory");
-        card.Find("Level").GetComponent<TextMeshProUGUI>().text = CampaignText.Get("level") + " " + (gameManager.CurrentLevelIndex + 1);
+        card.Find("Level").GetComponent<TextMeshProUGUI>().text = gameManager.LevelCaption;
         int reward = CoinManager.instance != null ? CoinManager.instance.CoinsOnComplete : 50;
         card.Find("Reward/Amount").GetComponent<TextMeshProUGUI>().text = "+" + reward + " " + CampaignText.Get("coins");
-        card.Find("ContinueBtn/Label").GetComponent<TextMeshProUGUI>().text = CampaignText.Get(gameManager.CurrentLevelIndex + 1 >= gameManager.LevelCount ? "gallery" : "victory_next");
+        card.Find("ContinueBtn/Label").GetComponent<TextMeshProUGUI>().text = CampaignText.Get(gameManager.HasNextLevelInCampaign ? "victory_next" : "gallery");
         card.Find("DoubleBtn/Label").GetComponent<TextMeshProUGUI>().text = CampaignText.Get("victory_double");
     }
     private void BuildBuyPopup()
     {
-        RectTransform root = CreatePanel("BoosterBuyPopup", new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(580f, 430f));
-        Image bg = root.gameObject.AddComponent<Image>();
-        ApplySprite(bg, BusesUiArt.FrameBlue, Color.white);
+        RectTransform root = CreatePanel("BoosterBuyPopup", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+        root.offsetMin = root.offsetMax = Vector2.zero;
+        root.gameObject.AddComponent<Image>().color = new Color(.04f, .12f, .15f, .72f);
+        root.gameObject.AddComponent<Button>().onClick.AddListener(CloseBuyPopup);
         buyPopup = root.gameObject;
 
-        buyPopupTitle = CreateTmp(root, "Title", "Booster", 30, TextAlignmentOptions.Center);
-        buyPopupTitle.rectTransform.anchoredPosition = new Vector2(0f, 110f);
+        buyPopupCard = CreatePanel("Card", Vector2.one * .5f, Vector2.one * .5f, Vector2.zero, new Vector2(620, 650), root);
+        Image background = buyPopupCard.gameObject.AddComponent<Image>();
+        background.sprite = HintUiSprites.RoundedPanel;
+        background.type = Image.Type.Sliced;
+        background.color = new Color(.97f, .98f, .93f);
+        // Consume clicks inside the card, as in the settings menu.
+        buyPopupCard.gameObject.AddComponent<Button>().transition = Selectable.Transition.None;
 
-        buyPopupPrice = CreateTmp(root, "Price", "Buy for 90", 22, TextAlignmentOptions.Center);
-        buyPopupPrice.rectTransform.anchoredPosition = new Vector2(0f, 55f);
+        buyPopupTitle = CreateFixedTmp(buyPopupCard, "Title", "", 43, TextAlignmentOptions.Center,
+            new Vector2(0, 246), new Vector2(540, 70));
+        buyPopupTitle.color = new Color(.13f, .29f, .29f);
+        buyPopupTitle.fontStyle = FontStyles.Bold;
+        buyPopupTitle.enableAutoSizing = true;
+        buyPopupTitle.fontSizeMin = 30;
+        buyPopupTitle.fontSizeMax = 43;
 
-        Button adBtn = CreateStyledButton(root, "AdBtn", CampaignText.Get("watch_ad"), HintUiSprites.RoundedPanel, BuyWithAd);
-        adBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -91);
-        adBtn.GetComponent<RectTransform>().sizeDelta = new Vector2(510, 88);
-        adBtn.GetComponent<Image>().color = new Color(1, .78f, .28f);
-        var adLabel = adBtn.GetComponentInChildren<TextMeshProUGUI>();
-        adLabel.fontSize = 31; adLabel.fontStyle = FontStyles.Bold; adLabel.color = new Color(.15f, .29f, .27f);
-        adLabel.margin = new Vector4(83, 4, 12, 4);
-        CreateFixedImage((RectTransform)adBtn.transform, "RewardedVideoIcon", BusesUiArt.Ad, new Vector2(-204, 0), new Vector2(66, 66)).raycastTarget = false;
-        Button coinBtn = CreateStyledButton(root, "CoinBtn", "Coins", BusesUiArt.BtnGreen, BuyWithCoins);
-        coinBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -166);
-        coinBtn.GetComponent<RectTransform>().sizeDelta = new Vector2(340, 54);
+        Image preview = CreateFixedImage(buyPopupCard, "BoosterPreview", HintUiSprites.RoundedPanel,
+            new Vector2(0, 109), new Vector2(530, 150));
+        preview.type = Image.Type.Sliced;
+        preview.preserveAspect = false;
+        preview.color = new Color(.89f, .94f, .90f);
+        preview.raycastTarget = false;
+        buyPopupIcon = CreateFixedImage(preview.rectTransform, "BoosterIcon", GameUiSymbols.Booster(BoosterType.Magnet),
+            new Vector2(-38, 0), new Vector2(128, 128));
+        buyPopupIcon.raycastTarget = false;
+        var amount = CreateFixedTmp(preview.rectTransform, "Amount", "+" + BoosterCatalog.AdGrantCharges, 38,
+            TextAlignmentOptions.Center, new Vector2(83, 0), new Vector2(100, 70));
+        amount.color = new Color(.13f, .29f, .29f);
+        amount.fontStyle = FontStyles.Bold;
 
-        Button closeBtn = CreateIconButton(root, "CloseBtn", BusesUiArt.Close, CloseBuyPopup);
-        RectTransform closeRt = closeBtn.GetComponent<RectTransform>();
-        closeRt.anchorMin = new Vector2(1f, 1f);
-        closeRt.anchorMax = new Vector2(1f, 1f);
-        closeRt.anchoredPosition = new Vector2(-28f, -28f);
-        closeRt.sizeDelta = new Vector2(40f, 40f);
+        buyPopupAdLabel = CreateBuyPopupButton("AdBtn", -42, new Vector2(510, 96), new Color(1, .78f, .28f), new Color(.15f, .29f, .27f),
+            BusesUiArt.Ad, BuyWithAd, 32);
+        buyPopupPrice = CreateBuyPopupButton("CoinBtn", -150, new Vector2(510, 96), new Color(.89f, .94f, .90f), new Color(.13f, .29f, .29f),
+            GameUiSymbols.Get(GameUiSymbol.Coins), BuyWithCoins, 32);
+        buyPopupCloseLabel = CreateBuyPopupButton("CloseBtn", -246, new Vector2(510, 82), new Color(.97f, .98f, .93f), new Color(.13f, .29f, .29f),
+            null, CloseBuyPopup);
 
+        RefreshBuyPopupText();
+        ApplyBuyPopupLayout();
         buyPopup.SetActive(false);
+    }
+
+    private TextMeshProUGUI CreateBuyPopupButton(string name, float y, Vector2 size, Color background, Color foreground,
+        Sprite icon, UnityEngine.Events.UnityAction action, float fontSize = 30)
+    {
+        Button button = CreateStyledButton(buyPopupCard, name, "", HintUiSprites.RoundedPanel, action);
+        var rect = (RectTransform)button.transform;
+        rect.anchoredPosition = new Vector2(0, y);
+        rect.sizeDelta = size;
+        Image surface = button.GetComponent<Image>();
+        surface.color = background;
+        surface.preserveAspect = false;
+        var label = button.GetComponentInChildren<TextMeshProUGUI>();
+        label.color = foreground;
+        label.fontStyle = FontStyles.Bold;
+        label.enableAutoSizing = true;
+        label.fontSizeMin = 21;
+        label.fontSizeMax = fontSize;
+        label.enableWordWrapping = false;
+        label.raycastTarget = false;
+        float iconSize = Mathf.Min(56, size.y - 20);
+        label.margin = new Vector4(icon != null ? iconSize + 40 : 20, 6, 20, 6);
+        if (icon != null)
+            CreateFixedImage(rect, "Icon", icon, new Vector2(-size.x * .5f + 24 + iconSize * .5f, 0), Vector2.one * iconSize).raycastTarget = false;
+        return label;
+    }
+
+    private void RefreshBuyPopupText()
+    {
+        if (buyPopupTitle == null) return;
+        buyPopupTitle.text = LocalizationManager.Instance != null
+            ? LocalizationManager.Instance.GetText(BoosterCatalog.GetLocalizationKey(pendingBuyType)) : pendingBuyType.ToString();
+        buyPopupPrice.text = LocalizationManager.Instance != null
+            ? LocalizationManager.Instance.GetText("buy_for", BoosterCatalog.BuyPriceCoins) : "Buy for " + BoosterCatalog.BuyPriceCoins;
+        buyPopupAdLabel.text = CampaignText.Get("watch_ad");
+        buyPopupCloseLabel.text = CampaignText.Get("close");
+    }
+
+    private void ApplyBuyPopupLayout()
+    {
+        if (buyPopupCard == null || canvas == null) return;
+        Rect safe = Screen.safeArea;
+        float factor = Mathf.Max(.001f, canvas.scaleFactor);
+        float scale = Mathf.Min(1f, (safe.width / factor - 40) / 620, (safe.height / factor - 40) / 650);
+        buyPopupCard.localScale = Vector3.one * Mathf.Max(.1f, scale);
+        buyPopupCard.anchoredPosition = (safe.center - new Vector2(Screen.width, Screen.height) * .5f) / factor;
     }
 
     private void BuildShopPanel()
@@ -1393,23 +1612,24 @@ public class SandEconomyHud : MonoBehaviour
         root.offsetMin = root.offsetMax = Vector2.zero;
         root.gameObject.AddComponent<Image>().color = new Color(.06f, .16f, .18f, .78f);
         shopPanel = root.gameObject;
-        float width = Mathf.Min(900, Screen.safeArea.width / Mathf.Max(.001f, canvas.scaleFactor) - 64);
-        width = Mathf.Max(640, width);
-        RectTransform card = CreatePanel("ShopCard", new Vector2(.5f, .5f), new Vector2(.5f, .5f), Vector2.zero, new Vector2(width, 1500), root);
+        float width = Mathf.Min(1000, Screen.safeArea.width / Mathf.Max(.001f, canvas.scaleFactor) - 40);
+        width = Mathf.Max(520, width);
+        float height = Mathf.Min(1740, Screen.safeArea.height / Mathf.Max(.001f, canvas.scaleFactor) - 80);
+        RectTransform card = CreatePanel("ShopCard", new Vector2(.5f, .5f), new Vector2(.5f, .5f), Vector2.zero, new Vector2(width, height), root);
         Image background = card.gameObject.AddComponent<Image>();
         background.sprite = HintUiSprites.RoundedPanel;
         background.type = Image.Type.Sliced;
         background.color = new Color(.94f, .97f, .92f);
         var title = CreateFixedTmp(card, "ShopTitle", LocalizationManager.Instance != null ? LocalizationManager.Instance.GetText("shop") : "Shop", 44,
-            TextAlignmentOptions.MidlineLeft, new Vector2(-width * .5f + 280, 681), new Vector2(470, 70));
+            TextAlignmentOptions.MidlineLeft, new Vector2(-width * .5f + 280, height*.5f-69), new Vector2(470, 70));
         title.color = new Color(.13f, .33f, .33f);
         title.fontStyle = FontStyles.Bold;
         RewardedShop shop = root.gameObject.AddComponent<RewardedShop>();
         Button close = CreateIconButton(card, "CloseShop", GameUiSymbols.Get(GameUiSymbol.Close), () => shop.CloseShop());
         close.GetComponent<Image>().color = new Color(.16f, .38f, .37f);
-        close.GetComponent<RectTransform>().anchoredPosition = new Vector2(width * .5f - 64, 684);
+        close.GetComponent<RectTransform>().anchoredPosition = new Vector2(width * .5f - 64, height*.5f-66);
         close.GetComponent<RectTransform>().sizeDelta = new Vector2(76, 76);
-        RectTransform viewport = CreatePanel("ShopViewport", new Vector2(.5f, .5f), new Vector2(.5f, .5f), new Vector2(0, -40), new Vector2(width - 48, 1290), card);
+        RectTransform viewport = CreatePanel("ShopViewport", new Vector2(.5f, .5f), new Vector2(.5f, .5f), new Vector2(0, -100), new Vector2(width - 48, height-300), card);
         viewport.gameObject.AddComponent<RectMask2D>();
         Image scrollSurface = viewport.gameObject.AddComponent<Image>();
         scrollSurface.color = new Color(1, 1, 1, .001f);
@@ -1421,15 +1641,47 @@ public class SandEconomyHud : MonoBehaviour
         scroll.movementType = ScrollRect.MovementType.Clamped;
         scroll.scrollSensitivity = 48;
         float cursor = -8, rowWidth = width - 64;
-        Button beginner = CreateKitShopRow(content, "beginners_kit", PlaceBlockCenter(ref cursor, 238, 18), GameUiSymbols.Get(GameUiSymbol.Bundle), 4000, 5, 238, rowWidth, out TextMeshProUGUI p1);
-        Button premium = CreateKitShopRow(content, "premium_set", PlaceBlockCenter(ref cursor, 238, 18), GameUiSymbols.Get(GameUiSymbol.Bundle), 1000, 2, 238, rowWidth, out TextMeshProUGUI p2);
+        Button premium = CreateKitShopRow(content, "premium_set", PlaceBlockCenter(ref cursor, 238, 18), GameUiSymbols.Get(GameUiSymbol.Bundle), 1000, RewardedShop.SmallBundleBoosterBonus, 238, rowWidth, out TextMeshProUGUI p2);
+        Button remove = CreateRemoveAdsShopRow(content, PlaceBlockCenter(ref cursor, 274, 18), 274, rowWidth, out TextMeshProUGUI p6);
+        foreach (BoosterType type in Enum.GetValues(typeof(BoosterType)))
+        {
+            Button pack = CreateBoosterPackShopRow(content, type, PlaceBlockCenter(ref cursor, 132, 18), rowWidth, out TextMeshProUGUI packPrice);
+            shop.BindBoosterPack(type, pack, packPrice);
+        }
         Button g300 = CreateShopRow(content, "Gold 300", PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p3, 116, rowWidth);
         Button g700 = CreateShopRow(content, "Gold 700", PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p4, 116, rowWidth);
         Button g1200 = CreateShopRow(content, "Gold 1200", PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p5, 116, rowWidth);
-        Button remove = CreateRemoveAdsShopRow(content, PlaceBlockCenter(ref cursor, 274, 18), 274, rowWidth, out TextMeshProUGUI p6);
         content.sizeDelta = new Vector2(rowWidth, -cursor);
-        shop.BindRuntime(CoinManager.instance, beginner, premium, g300, g700, g1200, remove, p1, p2, p3, p4, p5, p6);
+        var bundlesViewport=CreatePanel("BundlesViewport",new Vector2(.5f,.5f),new Vector2(.5f,.5f),new Vector2(0,-100),new Vector2(width-48,height-300),card);
+        bundlesViewport.gameObject.AddComponent<RectMask2D>();bundlesViewport.gameObject.AddComponent<Image>().color=new Color(1,1,1,.001f);
+        var bundlesContent=CreatePanel("BundlesContent",new Vector2(.5f,1),new Vector2(.5f,1),Vector2.zero,new Vector2(rowWidth,1),bundlesViewport);
+        bundlesContent.pivot=new Vector2(.5f,1);float bundleCursor=-8;
+        foreach(var bundle in CosmeticBundleCatalog.All)CreateNatureBundleShopRow(bundlesContent,PlaceBlockCenter(ref bundleCursor,420,18),rowWidth,bundle);
+        bundlesContent.sizeDelta=new Vector2(rowWidth,-bundleCursor);
+        var bundlesScroll=bundlesViewport.gameObject.AddComponent<ScrollRect>();bundlesScroll.viewport=bundlesViewport;bundlesScroll.content=bundlesContent;bundlesScroll.horizontal=false;bundlesScroll.movementType=ScrollRect.MovementType.Clamped;
+        root.gameObject.AddComponent<CosmeticShopTabs>().Initialize(card,viewport,bundlesViewport,width);
+        shop.BindRuntime(CoinManager.instance, null, premium, g300, g700, g1200, remove, null, p2, p3, p4, p5, p6);
         root.gameObject.SetActive(false);
+    }
+
+    private void CreateNatureBundleShopRow(RectTransform parent,float y,float width,CosmeticBundle bundle)
+    {
+        var button=CreateShopCard(parent,bundle==CosmeticBundleCatalog.Nature?"NatureBundleShopCard":bundle.Tag+"Card",y,width,420);
+        var root=(RectTransform)button.transform;
+        var title=CreateFixedTmp(root,"NatureTitle","",34,TextAlignmentOptions.MidlineLeft,new Vector2(-105,156),new Vector2(width-270,58));
+        title.color=new Color(.13f,.33f,.33f);title.fontStyle=FontStyles.Bold;
+        var price=CreateShopPrice(root,new Vector2(width*.5f-114,156));
+        var hint=CreateFixedTmp(root,"NatureHint","",24,TextAlignmentOptions.Center,new Vector2(0,106),new Vector2(width-32,44));
+        hint.color=new Color(.13f,.33f,.33f);
+        float spacing=(width-64)/3;
+        for(int i=0;i<bundle.Backgrounds.Length;i++)
+        {
+            var art=CreatePanel("NatureThumbnail_"+i,new Vector2(.5f,.5f),new Vector2(.5f,.5f),new Vector2((i-1)*spacing,-34),new Vector2(spacing-18,210),root);
+            var graphic=art.gameObject.AddComponent<ThemeBackdropGraphic>();graphic.PreviewTheme=bundle.Backgrounds[i];graphic.FitWholeImage=true;graphic.raycastTarget=false;
+        }
+        var savings=CreateFixedTmp(root,"NatureSavings","",23,TextAlignmentOptions.Center,new Vector2(0,-165),new Vector2(width-32,44));
+        savings.color=new Color(.37f,.30f,.16f);
+        root.gameObject.AddComponent<NatureBundleShopCard>().Initialize(button,title,hint,price,savings,bundle);
     }
 
     private static float PlaceBlockCenter(ref float cursor, float height, float gapAfter)
@@ -1504,7 +1756,7 @@ public class SandEconomyHud : MonoBehaviour
     }
 
     private Button CreateRemoveAdsShopRow(RectTransform parent, float y, float height, float width, out TextMeshProUGUI price)
-        => CreateKitShopRow(parent, "remove_ads_bundle", y, GameUiSymbols.Get(GameUiSymbol.NoAds), 4000, 5, height, width, out price);
+        => CreateKitShopRow(parent, "remove_ads_bundle", y, GameUiSymbols.Get(GameUiSymbol.NoAds), 4000, RewardedShop.RemoveAdsBoosterBonus, height, width, out price);
 
     private void CreateKitChip(RectTransform parent, string name, Sprite icon, string value, Vector2 anchored, float width, float height)
     {
@@ -1564,6 +1816,22 @@ public class SandEconomyHud : MonoBehaviour
         tmp.overflowMode = TextOverflowModes.Ellipsis;
         tmp.raycastTarget = false;
         return tmp;
+    }
+
+    private Button CreateBoosterPackShopRow(RectTransform parent, BoosterType type, float y, float width, out TextMeshProUGUI price)
+    {
+        Button button = CreateShopCard(parent, RewardedShop.GetBoosterPackTag(type) + "Btn", y, width, 132);
+        var rt = (RectTransform)button.transform;
+        var icon = CreateFixedImage(rt, "RowIcon", GameUiSymbols.Booster(type), new Vector2(-width * .5f + 60, 0), new Vector2(80, 80));
+        icon.color = Color.white; icon.raycastTarget = false;
+        string key = BoosterCatalog.GetLocalizationKey(type);
+        string label = LocalizationManager.Instance != null ? LocalizationManager.Instance.GetText(key) : key;
+        var title = CreateFixedTmp(rt, "Title", label + " ×" + RewardedShop.SingleBoosterPackCount, 34, TextAlignmentOptions.MidlineLeft,
+            new Vector2(-width * .5f + 112 + (width - 360) * .5f, 0), new Vector2(width - 360, 70));
+        title.color = new Color(.14f, .33f, .32f); title.fontStyle = FontStyles.Bold;
+        title.enableAutoSizing = true; title.fontSizeMin = 22; title.fontSizeMax = 34;
+        price = CreateShopPrice(rt, new Vector2(width * .5f - 114, 0));
+        return button;
     }
 
     private Button CreateShopRow(RectTransform parent, string label, float y, Sprite icon, out TextMeshProUGUI price, float height = 116, float width = 836)

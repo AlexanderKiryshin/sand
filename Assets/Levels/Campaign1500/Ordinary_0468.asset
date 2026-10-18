@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0468
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284832863
+  - serializedVersion: 2
+    rgba: 4282478992
+  - serializedVersion: 2
+    rgba: 4279575077
+  - serializedVersion: 2
+    rgba: 4284128447
+  - serializedVersion: 2
+    rgba: 4291879407
+  - serializedVersion: 2
+    rgba: 4287923586
+  - serializedVersion: 2
+    rgba: 4288001231
+  - serializedVersion: 2
+    rgba: 4293898106
+  - serializedVersion: 2
+    rgba: 4281093462
+  - serializedVersion: 2
+    rgba: 4293380533
+  encodedCells: S1:4:4096:1CCD3EC8:fVVRj+I4Ev4NJj1B6TecEM6PiTkg89bBPSj3yJDN9rwFrguYt06HePO62u5F8xabbtb3dif1DMuvvAJmT1ppdSWBS/W56itXuZzt9k/yy/b/yij6Qzv+9Yafz//p9qdfvxu+/NnfOS8/PlW/Hp7+Is6ovKxp8S39jh8Phy//CxLHF/XTw+SCHw7H46f07cuns3lw56nT+rd7P0sv9E9HlG/b9MyTTHb0bAb/7H48Yqrbw3YzfTtZo/Jx4sUnbZUdLoSHFD3TVKXIO6rr2NvHpxId6m8/nkxbJD/Jux9Qf2SqG8exQPU3mb2h50nO+P30aev3i/3LrE48cXI649+O37dkafpS9sXji4x3gs7eLvbj75flzFFIPuYu77v9WPyCiW8v+OE7R9/lXEecc/yNx/85269/P37aXhhcbrRjXn2wdRC50SXwv+6O6fN2u/x6/Ds3AcBrU2VpsenuTXja8PaZpW+r7QoAuJv7tXNN0qGaTDDZUGNWb+9ZenwG+Akg0CCBQ0qHHzeb7GPWDY+r4/G9On6G7Wq1hJGzgJznkoaF3KR3abrAsF/fu0c4y2oLeaMcvyjTTTkrsvQWWwTL0Rj8HKCC560t6XxZ9SabzexUrfIZ8fmIQmyfA2wtvwBnIzfDOuulWZY+r2D180jT3ZxU1XL5FTAOlzLjj7dZ+jGdos9gPWKC9QAWz1DlC/hB96TkEzktxtPeE+L1iJm4om0LuXIGJm9jgE1Gi1tG/3nGEypy+TAGCDuvQKHKZDaRtNgxWuQwiAdaeFfQuBXkrz3lVT0kkDbrMp29IzAYB0ooQQYM5BD8opa0J/esE7k0qbv1EnGXmhsRavAjqFrTfSJpVUTKY4/TbmJzd6CNIaLP2vbAqdQri2XHGMN61KNdNgxpFJnkHRkYPNa6fe26khgteywrer1JuY9cnhgvI4HJKZ+zvUulY/p0GtE9LYVH+Fi7QpXp0HXksKmV1qrWHClDlXT28f503aiZyBfdCpQxKuJ6PqljQ3faY2KquObcmFrQOOvUUcSMDqn5OKFdE/EEK1dw3jdMSZV4/SjgkWIcz6KK3j7iwsSixaPYxJ7RQuwsW3PGxpFO+nTzziSCxczjOCpiQs04Dq1OdL7+Lg2naRjFSiCBKBPhlSI0j9zi3CJNlOxkVmRDxvdUeBOBcaiQZsci9LaKPaZbbLLsPhoPzanY2EeViJjiyYwmY8FDU26yLqgE65TsjGL0zojkdHIriCJPU2+WdTfAmNIeliQpzC16hob3Ld9wHqtCZrOeot5e09jjepbuBkYjwnnIlWbOq8zKDTWzbogt2CWxMDm32ghbkYgeE4XlmkjFKR3qPXaCGUbg/itgWyI3NJ7PuUylZ4TEqrOBTszcIsQPMD/OXdZ60DgDNHTHMzmOr0LygcKABBypSZCUykH8tmZid7dJXe9q3gawF9yxeEAcztfMSJfLSezhfKSv9vI0eGQAFuLvF5wXlOJs57tElGL6QMAmbZ/kOSftfDDIfdctVfPYNDwUQjw8gP3ZtgmxbXiGk3ZTC2xJsat5v+ORKm9DTgjBsSXPOOI3fjnxxElUrOwpebjOIXdwg40brq7u/X8U4g8pP8wrQYA4pGmgaUFeIssNXKl4csadG/Jv9Gwc4hhifELmdo5hCriKhYhFmxDlEHyOiHYSs87p3IGE2PXSXn4oMQd0bTlNY5tGr42xCSjCmD8vrz/bdSXEDcnXLUfjbdPasaBjkzUxub8+PVTyQyycgCzaVWQtTIT+JFyQ35wF6UKL4EuUV8YhAbYssrTinDTUCiBfY0Yw1ya37erFaQW8MZq/Rlo1Dm8IT6wFM4R2HMAMidPgLOGNwqMZYhFDSIczw/FhcBKAB3IVBJal8SsxwAowY/4L
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 48915762
+  displayTitle: flower-covered dovecote
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 81fc53995eb1b264093a58d0951b7763,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

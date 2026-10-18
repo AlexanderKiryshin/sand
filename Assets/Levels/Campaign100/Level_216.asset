@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4284442218
+    rgba: 4285423678
   - serializedVersion: 2
-    rgba: 4292790956
+    rgba: 4293962322
   - serializedVersion: 2
-    rgba: 4286416783
+    rgba: 4288190339
   - serializedVersion: 2
-    rgba: 4280624673
+    rgba: 4279903015
   - serializedVersion: 2
-    rgba: 4293390064
+    rgba: 4290238950
   - serializedVersion: 2
-    rgba: 4288705089
+    rgba: 4294170285
   - serializedVersion: 2
-    rgba: 4290023012
+    rgba: 4281819255
   - serializedVersion: 2
-    rgba: 4286207535
+    rgba: 4293706371
   - serializedVersion: 2
-    rgba: 4282990902
+    rgba: 4283670472
   - serializedVersion: 2
-    rgba: 4292652138
-  - serializedVersion: 2
-    rgba: 4288325038
-  - serializedVersion: 2
-    rgba: 4290167756
-  encodedCells: S1:4:4096:9398A11D:pZRBb9tGFsc/A0G2NStflq3jrpLL7KhutPJF0KBdxr7ExkTBSpc41VCVfVkHJl33lGxNjZyTNlOU0+QSBbID1heFdiKBvBiqYxScD9U3jIHd0146hg2Zv/f+7/3fGyqO/9Rx/j8uX/Py6H8eEmLE37wqsp3/5h+Ni8A4vhPH4jR+qZOdeBSX4fkGpLOWToAPRxByMfpHHBeazsY4LsNvj+GTAhci5PTO6+sGgTnOeMRCTIsH46IG+lR/3hhDDWfkbDhbXkiXdepG0dOdyqfQYJlSzfXxGae60ocKpwdk7aXWptf4XZfdo4fe8bWXUpk0Pvt19IF/4ThbXeDtvWDlmj8/P7tbKhLfOFsLjsOOe91pa5m+B6/lpaU3a4uKXl5Ls+nSiPUYW6BL48CL/0nh1JJU3brG7DbeYuyYBY+c5WB71Ka0rUpJmy5pY2UnZPdxh5302N7DwN+ab5wrlcKp5+dOWc8L+GbHP2Dss63mXvCOtlSWqixLk6ViGXHo81Yae37oLwfNhGaXKlPKzFQ+1rsfxczjt88PjrwVv6k7A3nNlcrbjp5VmbHuQvOjk+NuALRNAUJESbVU29EbLrNud7obBD1+2c4y+oGnNaUu1dKoB8tg3YDd95v9fdVO5+oyA/lE1eDv+tmud3PZ6bDQn/4QOFdZmhbJUDozV3O1/nnPa+46tMP6Kzf9psryXJdWuVqtJbvp+vDbY3ZVDtBek4Xb9851XpGrgLfGF4t7cfw+CH42NjdYd6upk+e6NZDIsBpjNIp773f9SBobhw+ZmufqEpiOyZJ56+TvLbiRbC/gtvhJWiz9LYHes3w1gemjrH16cHrge36wG5HGC9c6qSkwV0tqtQuVJyltOXTsHff8IOe28UKaL7+6SqGBJMUXGYTS9j1nC94IFkhJiBCNvwTv9NZqGGuHSY3eaILvY8ZkhDAR1uboajVrZwjDYrLFdNJhb+He0F5fRhVzXc7sG2+0b8MwlGp/1Eg6zF8OuzecIx6hSkPYyPsSBl9Cpgn+1tHmDoO1sx/2DjknqFR5ZgSrMJoGMSGfLuJ2B/hDb4U+4QNBpHg+fPAWlioMo5Mqqi9nuMM8sH/IpStx3Zg/uFKZaRiok7Upgvb5d+yRx/p9CYc0zOTxNKuZBppv55Si1pchv73tBYwPIshP1uQQqwx/gvDm9jxvVdVOyAO0G/hcpwu7ZMnf5rWHf0O45U3zu4m5w/nt/X7Qj36MBiBgW3KWmWwFpef7H88fr0xCrgOuDqOB5sIiwLsPFnAL/E733u5wCAj5/cMBl1zCeE1zkjJuprfg+fRwClHFCSMecVk1iCSGsdRJ5izcZ3knPWT9/T7nNwbAJUCYUNWiT5Ik5N0gfzpXPuf7WiCKwL2UQ+B4SN+0+gtP/d8vp1TT1080H3DNhXTruPtV/YwYyHz+jfj2wD85ijTnEahLzZH3tWuLnMCX7zBB/UJ/wDUH6rqWWReyZJDJ6upkOEtexR8sRFIQQerErTbq0hIuiBkVc4Je6QFEBRdDsOCKeoNIlbhCznDjDD0tDISD6K9DGECySoayLoWrW4F/K+ixDwPgDBQSY2JcZKU1GDKUgn1VDGThR4CjWgAqolFJEjNdrLuisi5gHDOJh9U6cGkOYIxmg0wmpbpZW5PSdmGb0jRwMnvE+9L+HqIQtiomEesWapCqq73OcL2K/3XyC3TymHeJhTGqu3Zi1mECUKAqbSIRPngykMN/85AIk5RMItMkWSN6GzKxiMDV//w4EM/t77+DeZJSnQi7UsPQo+XKmUUujGoEXmwUBIRUGpbZgEXaZynUB3G8Vn1m6m7hB7jliupEnMFmwIt8RqpmA9Y4jMRQ2sYJ9OSCOpElVMGVYpmGa2EXS1kr3g6XuNA4jI7gKrzrcFuGUmIbAZvB3YCvBxduIGjIsyJlEEFzhr3wDFZ584v9PwA=
+    rgba: 4290087989
+  encodedCells: S1:4:4096:91614792:dVRBd9s2Ev4NKGnJ0q1qX6P4xsKiGN0YwaLZm54MM8zNyximdOMTGZi5xVQZRDc/UcHiKGvrMviVO7S0b9tDRyKHxDfzzWBmiF7vH+SH4eifoBdpO/23oJY4+dvyj0eN4xK/Ar3uPz23/g//dNSXu+JH0TxoPLBvxKfj8sNRvy3XZfxiu48KZzGrT+Hlde/V/8wEc345PBa1sEVp9cUqfv0KP7xYPKz+JYreQyqKd+xXW68XA1uIOPEDng9fA/7r5/IH9qe42Tu27i1iLEanw4X5yfzmKfmq9/C2EPa5WExsXHxjEEHEewO9J5JU/vaRf3UmcftOnJ6v4297hoGutB0hnKVKFclT+eFn7/NKxB+eb2zmRKzJB6KLd2Mv90iuZGXqG8FWThnfluUCH/dz27vkhKQ+99Ic9Mq2Gbbf3ZbHDYt+ryYeJzL1yDx2dix28OA5so+wmxLTwr+RqrpKq07KGLOLGWZYNI794lx8FDVC9x4h3K/UTevOvo6ZngIoxAc22uNS1Nbqvv0WNnnlR3ZkAAUWoi9EtDhtacMyTRFbLdcjniT4VjifcQkgCGY2fnZwuWDFZQzZEel9ScRB7uGa2TYusWAzVjLYWFX5JLgsD/i/m1u0d+ICQOc59k5J5nmkIl8P+ONBRddxbP+yEpckTn0CeyDhwYB8ORjE9mDQhFuJypykpE3CJkApqiPPUT6J07w1ufd8VxovbsEXwf6Ce+L+azxh0Ad/OI8Bn64alhhsyobwS7mJhLBbRHLiQ4Fa8qtgDcLAFLK9YRyeYnYFTby7Azy4BasSfhEL49hlv83jhm4Co0AAsqcBw6yRuS3j+R17/MDYBP44JWl6wFEDT0IINZ+zJujHZuEcOn3H7Bm9fvH/SBM5928/QkyG5nDzxp5vI2tKLcRiwIPlkKpo09ia8xaLpCvT1MJTmvDoG3vD28OAylnI7BZOJMZL6TdzogLX43jTocEyoVk1TmUyS4IZz3lASSU3UuVDPpQnmeIn7VkOr9ssfBzStjXNM8+vQppxHErPCpRq53l2pRTnQcjbeEZp6im63UqlZIdnlPqeL8OtUllAeQfjTM4rEkpFVCi5UpRWV1UW0i3n4KFkTtTQ91Uapg0lD1UQpNxXOedpeJXxShHOYY4kjGPOJc/l0LLoQHk5x1dDiJQrP81TP4FWUxXSPLhAbkCzLOVpMCQ+53nOcxJegD8CsdDORdcUxEtlQFwCX3rFG/IO4anFpYG6qIEpeKZ0TM4hAX+ZypSToeGaePlnt/uCSx5y9ciHiem1secTjxj5gJxjvB7RkAYXKiTKm/J8k1sXg6rquPzxghgIE2Iu+TKgyERLLwhIFm6hkiR0ianF2MV618QPzC5C12hqwMsFIVtJXDTNTmBRox3d0sSEzZygLjboReaiC54itGwjlEgwAZxSY6cH6P0eDQZLF2XAjvSLgF+TPkbWBhvAjzsGrCSkzesGBnd3aRgYI7zJO1NkGCdjYmYJMgkG9P2su0B0QBVFxgafWDuN8ThFFLyI0H0tIiCY0VuMu0kwwBbGe5x60Ns0oMuifwjQ4Hs92sg3I6uIJnAO5CDK6mnthLquIb0ZMOI/nsAeCguTAgcuUeLTvi5q3QVSyBXA/Wi3Jm04MqvGKl0PHX32dKp3+kzreqTenK11LaCuLpw0nPqd7xvd+a4h5ZHGRY1x8XL0QCkfC0jC+/6fqjAA343OznoPfeAS650mpmsmbTKG+SOUkzdaRzRi/d7Tye/iVOu127QmBH+lfDgNVBexQ6WbLLQwm06dGzBquVLbnEitR1HkiB5SA10/1J8XqI2SttdGisMY+ar39Af4rc/0+rquxaKwEDI3RjJu+OHbypsaNm3Um53u7pCouy555P6Y/Bc=
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 0000000000ff0000fe0000fe00000000000000000000000000
-  conveyorDirections: 00000000000000000200000300000000000000000000000000
-  conveyorBucketCounts: 00000000000000000200000300000000000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: wildlife
+  artTheme: ordinary
   campaignSeed: 22524054
-  displayTitle: Mountain Goat on a Slate Ridge
-  beltCapacity: 3
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
-  sectionBuckets: 0
-  keyGates: 0
-  linkedBuckets: 0
+  displayTitle: giant mechanical dragonfly resting over a turquoise city reservoir
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
   largeBuckets: 0
-  alternatingCrates: 1
-  swappingColors: 1
+  alternatingCrates: 0
+  swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 0
-  bucketSettingsOverride: {fileID: 11400000, guid: 5f7c483d987fb354ea56afafdaf69d8d,
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: cc14f8fac4c94b24f81288801e796843,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

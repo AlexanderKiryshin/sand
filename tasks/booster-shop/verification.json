@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "main_scripts_match_validated_scripts": true,
+  "small_bundle_each_booster": 5,
+  "remove_ads_each_booster": 10,
+  "individual_pack_count": 10,
+  "individual_packs_repeatable": true,
+  "bought_boosters_preserved_on_unlock": true,
+  "small_bundle_gold": 1000,
+  "remove_ads_gold": 4000,
+  "remove_ads_disables_ads": true,
+  "languages_checked": [
+    "RU",
+    "EN"
+  ],
+  "real_payments_executed": false,
+  "new_products_need_platform_catalog_registration": true
+}

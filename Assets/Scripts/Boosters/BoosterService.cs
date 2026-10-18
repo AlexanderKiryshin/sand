@@ -27,7 +27,7 @@ public class BoosterService : MonoBehaviour
     {
         foreach (BoosterType type in Enum.GetValues(typeof(BoosterType)))
         {
-            if (currentLevelIndex < BoosterCatalog.GetUnlockLevelIndex(type))
+            if (!IsUnlocked(type, currentLevelIndex))
             {
                 continue;
             }
@@ -38,7 +38,7 @@ public class BoosterService : MonoBehaviour
                 continue;
             }
 
-            SetCharges(type, BoosterCatalog.StartCharges);
+            SetCharges(type, Mathf.Max(GetCharges(type), BoosterCatalog.StartCharges));
             GameProgressStore.SetBool(grantedKey, true);
             GameProgressStore.Save();
         }
@@ -48,7 +48,8 @@ public class BoosterService : MonoBehaviour
 
     public bool IsUnlocked(BoosterType type, int currentLevelIndex)
     {
-        return currentLevelIndex >= BoosterCatalog.GetUnlockLevelIndex(type);
+        int unlockedLevelIndex = Mathf.Max(currentLevelIndex, ProgressSaveService.HighestUnlockedIndex);
+        return unlockedLevelIndex >= BoosterCatalog.GetUnlockLevelIndex(type);
     }
 
     public int GetCharges(BoosterType type)

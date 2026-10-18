@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280039757
+    rgba: 4279044628
   - serializedVersion: 2
-    rgba: 4285247452
+    rgba: 4281948031
   - serializedVersion: 2
-    rgba: 4283713584
+    rgba: 4280426290
   - serializedVersion: 2
-    rgba: 4288136417
+    rgba: 4292136943
   - serializedVersion: 2
-    rgba: 4279903270
+    rgba: 4283837010
   - serializedVersion: 2
-    rgba: 4288261045
+    rgba: 4285311714
   - serializedVersion: 2
-    rgba: 4287795590
+    rgba: 4289364923
   - serializedVersion: 2
-    rgba: 4283596960
+    rgba: 4283398056
   - serializedVersion: 2
-    rgba: 4285227860
+    rgba: 4280629592
   - serializedVersion: 2
-    rgba: 4287198808
-  - serializedVersion: 2
-    rgba: 4280570748
-  - serializedVersion: 2
-    rgba: 4280185787
-  encodedCells: S1:4:4096:E131F2DB:bVVNbxNHGP4NL2jB8fqSFZWswgUNFjjiFBkLtadpOoXEvSClYyU9oSRexeFiU6sLOUULTsftpQ2J64HLhlpEnb24Ug5o90f1mfEHKurY3rX9vJ/P886s1v+7BiN3a4efA218innmp3zUDoetBV4c/nK4hHs41Cu5yTlPzMFBc4Y3tf65eyMI3rhffxMXXHhCiCdPQ5ck1IMvgtWgdmN1int4OQOx5zzCMLzeCYK/arU/8GuDSJAL4AlCPkRoPwqC4Jw/qN2y4XzgwvnzUIf6zIZ4cTMIHoskH7bbocctaq+Ca70tbb/wD7pRNvnN5iI+8xdi1t6Xh/DvZnme6yFwsVhzvrrBrSC4kgLX7Q1X3zTC3D8Kghtd45u3Wg/R4Cw6cFmz+Bh4+dwnvabbwJ07bLiQdYe/LN8sBxeU6BOt1AfL32wBtwYvL6LVIDg0TjlD3n9w0P4+cA0e/gnblZR/ql9Kh39jIE9Q7paBZ4aT9xlehHw3g/T8yu8bWYq6PsWv1STwl91y0A26XSplqc+9BX4q65sSEr3oBDZBkueJD9W8OYN7iL8LyhrlCAbnfv6PE3de/4bNL8NauL4crX59xUCA7z2Pe+T8K+J0vSXr9c3NVhHjsUwmz7PUjYbzrzw61WETFdbOlnoPy8u+D/1KNj4txAullHV5ltBygfwsz/IUvH+CdX1qQLw3ThqX8LcGc+3QGNA7+HxH3CSNBPWZbA4/0tsgR9ar27J5TZAZU5bmaXYrXYyOw+WbKi7CS4jb+cLyp9QhOfBXr96M+lJ+i6q4yVL7MlBnT2DroDOm1N3RipTXMM98jACJMX7qn4rTdriNwpnaHyjdlC2HgyAyfp7mo732cDgEPhhJxfR2S3ogDf2ZUjJBCe+wKeu7X21KvVU7ZnrQ37kOTW3/KVk8D8NhbRfaKqWPT3S/v/UBvAPJSjSxbbRkq17blKE6qao6BB7lhpw/kQ2SHzSHzboMw3jEYtUfDYZF4B/BPxE0yPNnTSlbLeDbd9SKGulRbHz+EfIJAZYxZOBMhs3W/vHZABxU2YnzTxtTPPNbzaE12VUtxXZGirGUjkAtzpXE5MY0wlZT1luof+uYMaaqimiEybfqG5DgyzN5YUiqfiwtvn+c8Dj3K4TZxTY2dBBeM7BS1fiVitGDyo4+5m8H2Lp8TAnRr7ro+1xWFbCtKi7p68uMY/SsgU/eRBe590TG+yzeUXcZe1/ik9TDZCcTu4Wujt8NEvEDaq8y620uJ/mkZEUUaZ4ZfwCtk6f9KmMWZ+uN1E+TkhscbkTCRdWYyY/H6NutNXee9KIoSg4bkaCOt8QalFeVst5rEUURjzqRvUdEj3vRRYdUdXIfxMC7B+SnKCpQgfDNLtERdKTWMkf9897jBw8L1j0yVPAinyxLdMTY5W0YIDnvdOCCEB1E55474Ok2Y1fvsxgJhNuvhXvPC9zufTCETUocmX1QH7OKgEkvusfEtD6yByisGDOMxfH6DOc9zHDUIf7aJSGKq4ltXlXcadDjYgn04X+IAH+vEiuHM0cbW7PbnguoJ+wBhBDxEp/h4K+ylmC27HwknGMHIs7YP2IxKlgX0xBcREgwO/zsMcUtPWgRRxXe9ollHae2OGSPlIqVxZk7zbAa7tE0fTaBQRUCjGcFzlIs7hbfYZbgqbwLgM/teMV27xT43N8W6PHb7F8=
+    rgba: 4286403201
+  encodedCells: S1:4:4096:0D1A62AA:bZVPc6M4FsA/g8J6Os4tIuuGucEbJ5ZvHZM4nRu1VnlXtzguDTl2N4QMt+CMI88NlHKjY6pNMcOnnIezWzszu69UBfJP768ez6X5v0I7yfGlNLT8K9w4tOzwCc3V/uifTmxoThfrAaXnirq0LEvzR5xTBxUu5aBw8fmm/F9eOnvHVZC8fLHxme+3tPzovtF9XIbep9nLyFOUvh2ndKWoMa6q3D1Xs1l4UXn/ZjR3yuhqgJwq6lTU3AVC1NOTo1/2pjsjZiW2bzkrx8md+FoMJ3L8s1Kou19fRFBiYpivQ9376x0hyfMLKOXgXqlR/iD+jvyK5hEau+fcImkA35STd0ttDn/lu9LdKKrkmtJpj3tH7RIgGiilkJvjByuhJR5WkVI/Cd4j9QfkUiq1zuXoAO7ftSd0o5xIrlVT9zjn0yd/LPGAzOWppW/fZc/lG7+cc8LH/0qWRbvouJIHfd+e8uxlEw2Qf2542PP45MRrb2UkFws5MvAY8/brm/6VSOoe4emSwY10JKocM589IMdgIzkI0prwXpIGpXUrB3eoAsazP7T8ea0cXPF8iOHxJBgxS5Z3jpR9fwKTd6J9391PHs94r3ch+HT7xZPmbiDXBg6845gnz9EaI/6N87ngs2xaYQEGC7TPWB/seF7Hi3UUmN8aLkjLs/QExnj9Tk6BedCfDmv+Ixak/Nx7JWFSN9cOnEVPlcxpoQEgnYf8eykH/rkgpBb1bPoM49VaLVXUN6Q4y+peeD2OpHkQ/B88qXl68qonSxnI6NEQQ1vMqW1OcudS9D7xei7qXx5gItdSRpqRvt3M+MW8HV/mn/knLoail0w/jydrub1UhWf3NzMRcj4OgtO4F85FIpIsgOHdNlqrCoiBVcDrs7rO5GDHwyRp+DwJ3G+rrTTOyDDfo0HcVTW7K3c1/1u4C+eNM4HvHbrOK0Y1sHO0y/nu+bzJBH9Nxsn0B2A2y4PFiG36AHdNLV6HvA0Er7HC9W468sk5bOQCGF2BtwraLvG26XjIRfyeGbI53Thr9G/5YDBBzoXgbVjPuOBp/FF777dURr6x8AaqJkxeOREXu1eezniSjr9p4m4cbYARD+A2nfdCEQ4vsA7T+T+z7JnZ3lJGeDUMvEJv0vRIYInDrndEnQQBlPDVGACLGapt70EILFvLSZvMePgpeKmM5SNnDLStPesyzXp8loijsE6wUNenZTksXKNHpiDALKYfslpwRO8SfoGff5/5tnZNSY22NHaYR9N0Vu+rLEScPmuwdOm6xtd97Zagt/YOazO3wmQnknn64q4YTiKjmfY0hmA0BPGctz3SpjyZBgN2cFzhzAKjTWFhCwCLGjHHxn/Nsjj98ZS6xUfkrnFL60DrjatZnKbTFoufNYEEdK3RvonW0vh24WKTTdJmLkQjsjSomC7NCLW7j/bU1oCcqHjatvNETILvigJQF4NCrg591uVilUHQpNfjT83yjhVuWVQVpbbjKKXtPpYKL/mHn4Ksl8ZOCfZBBap0qY1fvbILorVZ9Akcp3WQxpUF4B+uaHmOk/fqSI1sQgptucbyrtBDcFoay6pwKH+gj2pkRU8lIZ4uC79flFkcLEd90/cwdOWuFmpL1BPxCGGKEJvdOYtl5Zs+YUSpJ/cxVzjoVX6ABpgLhXfje9+daoMKj+rpabUyOXKHHhJCXJeAhYYK6HseuXFo8GTduJSBGjkW8uO+Zb2mJOveCcFpHpxoTXNPY4jkPzJspu1R9wI+zncfKDuF1Qi7EEhheeBh+EH8dQydrA+LG6IOQbndzgIPrK7VUbMTbzKS3i3N0X+Vb+F/5KZSiqwo9cEB2EQW+TNeVUDp8Z5jCgD5/dkfaLPC35B3f3dQ+p13lDGcwfhLkO7Ds6w9x2tVvkWsv7rHcDv+Ow==
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 000000000000fe0000ff00ff0000fe00000000000000000000
-  conveyorDirections: 00000000000002000000000000000100000000000000000000
-  conveyorBucketCounts: 00000000000002000000000000000200000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: fantasy
+  artTheme: ordinary
   campaignSeed: 7547807
-  displayTitle: Mountain Griffin
-  beltCapacity: 4
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
+  displayTitle: giant violet amethyst geode split open on a mineral museum pedestal
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 7
   sectionBuckets: 1
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 1
-  alternatingCrates: 1
-  swappingColors: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
   loopInventory: 0
   mysteryBuckets: 1
-  bucketSettingsOverride: {fileID: 11400000, guid: 3366b7c5389af694397bbeeba7586288,
+  bucketSettingsOverride: {fileID: 11400000, guid: b92d1bfd16180604d9bc4b7a12f15215,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

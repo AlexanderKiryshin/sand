@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Opening_3
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280954129
+  - serializedVersion: 2
+    rgba: 4278190080
+  - serializedVersion: 2
+    rgba: 4287456827
+  - serializedVersion: 2
+    rgba: 4289044106
+  - serializedVersion: 2
+    rgba: 4281539073
+  - serializedVersion: 2
+    rgba: 4289956892
+  encodedCells: S1:3:4096:B6FE5185:vdS9bloxFAfwl+gTVEYKRVlZujLUN2K5UjJgsaFITfHtUlj6BFlNyMJKKqGIJQSjqOoDZOjQirTCVjpVXaKsmfM/9v2+MGSpZIH9u+ac4w+ullb/97bID9lt3BGfJyL1g9Aeqb73j7aZ+P4SH+Oe669k5ndamUDWqM/IR7pt0D/vcMXQkGICl2+V5j/hJw0eknNy/EioJrk4qfGZ86u2YjdSkKsveMx8HI4hu4lsx41yfoUaviGupVG9foqvlntE/v2P86naQ/CzvcxthwoOVQvFvK4vyftxHBQTrJscstax30t7TH5qGE/ywoe/I2uw2Mv3SPIq51YKa2gnp+9Ubv6nxDNE6416K9m1quwt9VfT/IU8KD6CD+ATt//nO1xnvvmHsTG2X/IfT+Sb2GvZ/Cc/n5asUpeNW+fD2OPJSym4c+18NPW+BgV0rlb7q3LmHasXdN7dxH39Ia4WLsy1RCFQuEp8js713Psi9cujMZ1r7LYvClvHlrEf26rf02o323xAC/PyxvuM9vLr3Op21R8pTrsY5/ClTtdtJbO8SQspL/mo6naww6MXuv6wwp+w4HRArqTtjpJKvt7hU/JHg9RVj1xyXjmC4QP5YdFncvsWOUeoX1Fpaf76d20ka1ucWqNcZ+rj4pVIHLmCYl66xhTzIqC3ZT5+GtzscP9WYfwZ
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 1
+    count: 1
+  bucketLayout: 00000000000000ff0000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: 
+  campaignSeed: 216777
+  displayTitle: 
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 1608d8ef70482af418f0f5e68e382b11,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

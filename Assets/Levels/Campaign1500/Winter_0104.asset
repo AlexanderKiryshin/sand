@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0104
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281876565
+  - serializedVersion: 2
+    rgba: 4290696696
+  - serializedVersion: 2
+    rgba: 4282865784
+  - serializedVersion: 2
+    rgba: 4292977553
+  - serializedVersion: 2
+    rgba: 4289371562
+  - serializedVersion: 2
+    rgba: 4280231993
+  - serializedVersion: 2
+    rgba: 4294043371
+  - serializedVersion: 2
+    rgba: 4287131505
+  - serializedVersion: 2
+    rgba: 4278782995
+  - serializedVersion: 2
+    rgba: 4292787905
+  encodedCells: S1:4:4096:F6D8FEB1:XVVBc9o6EP4NGg8O5EjTocPNT2Mn6a2tWohvhApcbno8FJxbQqj6fONhB+FbJg1FvSWxK6pf+VbQvEnfMswYf6vd1e63H+acHaOwVRhCiHlZr9d10mw8GBPCT1IUodlnLjJawJvCAFxvPoQH5smKMDtHx15ft8wWhOMPDXh+0L8cys4ZO8Z9CN4E8LL+YF827VPzYVCvn0Zm4XLWgGwHu/PNZv2ZnUpjtBEiJMVBvfmW/AaC0QjChUYYQYiGJFf/w19JUgAO1iIFgedG4wk6qL+F8Js23Bw+JoQI4ED0tkww608iORt6yMzSqBS6VRCDvBeAivrbMLQdkxJh7CCMxr1SRFMheLdDikTUjUlCEqbpDGPsOR7G96iD+11dwReQDpqsDcnJx7Hcwr7/yA+HEAnfeBPIewUXNmFKSNpG3IswJIEQYJOzYEIgsK2UpBtZvZ471SFi4DAMrMMw8PKPIWlbl1QiucQYufagcbo+fYlva5NMRmEbrtaGh7aEwM7QeTRmTqPkFDvH+B8pM5nKSGbRvJpC7iG7h0EKGlGKfe68S6W1aCNlOVvPPYQ226HKiE4w5t67wsJZLuUmlWsFVgJceQ0RD9mN8iIYg0lNtozaabtQK7XcMmWwiMqpXqngi4EZiUR+krIQ5ETxwRYezKOsrzcqeAX4JTCv2FKUqOvKFi+nMKM9aNeRsOdti0I70nRW2VHRl2b6wuGBJ2C6wOct5Qnj87stvEkWNBF4Gngw3kuxMx2yzzNZbh2SPjWve0ZgohslSa6uiCUEc7PqFs83fVomQwefGQE0b5Gdocp6vcs/GJ2aDYV2TkUD4hfJtgLezXb5zXlyWZrpLZqUCdwPIDtns8oGN7v0Jt9/NKJ/jC8a4lLvFuxKEEPV0zYO+uB21qFI/CGSROgE3pGC/nzC94U2idhzfR+bMDcl5IcWrf/DjZiWQjSE15n0Hzt+CRUClZ7h4IFtW0Zc+O61nUCYviGb57gQCXy/1dye0B91kXw9SSPzuwH3+y53ptXKe7h/m0Tb8dHnuHB9XMFdUxRDSSLqw1gpLX/h9JQK4DTD76H6mEeSg8Wo9wtmozl74QY8mFpFOGYbGSPurpS6vzf5ijPEFR+qVfAnmgpN+PrnOnaQB7iKXeRyrqbO8W2NBdiBhOEarRTgDHC2WtLY83D3pqZqlAeThfz5XiG1jGtD4HmMcNeHHR717vxbVem6c46HE+XaDaDHSkZKfbpTCncjn0L8TLndhnjHeA9e0hN1o9TfVE0opdJRqsZn0rfdvInLXH2iKX3Z1xEdAFwdxLOvVRU5XaGF5pnJIwojACiTVah2mWfRYpYqjizJ7verm6QcSGQvqNRSLaX88kW0yNhBj+YsYS43+/l3gMJCnxi7NHmuQXHHwb4370SI86wq23ZdzJZzISibHuhwHfQvsOOtXMRnSsIqAkMz+NsoWjrp5zqv9cY96Kuq1rj7HmScwFgXhakWYZjq/T3f6xwGIGpLxVddq8Ft+IPZCzAiacT6d2cIMNDN6V28PEewHK4pSKGxHB/B5OnozOrhCmqGU9JZeSNwUZu9ju9YZvgVHw/jGDtCgIyiGlrMQnmOuyB1ViRdP7tTwJmul4j9c7KO2ZjJyICQew62aQ8HI4AZbKowbAaulF0HOMhZ0AWJVSovobufrT5oUl3V0P3fzGqwrXmo4pjT8s5lF4ADAcejGavy6lajMVOxJesPqhDTgugwPHL4it+PP3tALKm4LYvzHv2G3A9WPkKPMe5+GDme0/4LZmrPu4zTKUJvLN4KEJD7pLeSZK1kzFn7CM5fU9dFb2CUxmAUcC7H3AWWrWM+TI7YZPHj+8rljyRpXYl/AQ==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 26280269
+  displayTitle: ice skates on a frozen bench
+  seasonalNumber: 104
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 2f95dd5912257fb4fb836ac3150100aa,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

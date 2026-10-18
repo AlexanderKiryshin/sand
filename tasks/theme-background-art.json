@@ -1,0 +1,368 @@
+{
+  "tool": "built-in image_gen",
+  "composition": "Detailed painterly side margins, quiet low-contrast center; no stock backing or conveyor support frame",
+  "assets": [
+    {
+      "id": 4,
+      "name": "olive_marks",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale warm ivory paper with two tiny flat olive branch brush marks, gray-green oval leaves, in far opposite corners.",
+      "access": "coins",
+      "coins": 100,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-6f8c50cd-0512-469c-acf0-740d9fee7e0b.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_4.png"
+    },
+    {
+      "id": 5,
+      "name": "sea_pebbles",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale aqua ivory paper with three small flat blue-gray smooth pebble ovals in lower-left corner, one muted sandy oval at upper-right.",
+      "access": "coins",
+      "coins": 200,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-bee6e1c9-095b-4e17-b589-bd506009a7b5.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_5.png"
+    },
+    {
+      "id": 6,
+      "name": "rose_petals",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale rose blush paper with three simple muted rose petal brush marks at top left and two at bottom right, no actual detailed flowers.",
+      "access": "coins",
+      "coins": 300,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-de0a2728-5261-47e7-9179-8fd65390819e.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_6.png"
+    },
+    {
+      "id": 7,
+      "name": "fern_shadow",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale cool mint paper, two extremely simplified sage fern silhouettes at far upper-right and lower-left corners, minimal broad geometric leaf strokes.",
+      "access": "coins",
+      "coins": 400,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-cbb55700-4145-432a-a369-d005eaa5e8cc.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_7.png"
+    },
+    {
+      "id": 8,
+      "name": "moon_dots",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale lavender gray paper, tiny muted lilac crescent at upper-left corner and three pale violet simple round dots at lower right, not starry sky.",
+      "access": "rewarded",
+      "coins": null,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-fc8bac0a-a5bd-43a3-ba54-d345b56c4dec.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_8.png"
+    },
+    {
+      "id": 9,
+      "name": "rain_strokes",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Very pale blue ivory paper, four thin simple desaturated blue diagonal rain brush marks at extreme top right and lower left corners, no other objects.",
+      "access": "rewarded",
+      "coins": null,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-80df4d41-4736-4f42-bdd0-f5add9428ff6.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_9.png"
+    },
+    {
+      "id": 10,
+      "name": "maple_marks",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale warm amber cream paper, two simple flat terracotta maple leaf silhouettes in opposite corners, large quiet center.",
+      "access": "rewarded",
+      "coins": null,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-4f4b963b-64e2-4cb3-a757-e904ed10d9f8.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_10.png"
+    },
+    {
+      "id": 11,
+      "name": "reed_corners",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale sage yellow ivory paper, three slender gray-green reed strokes confined to bottom-left corner and one simple curved grass stroke at top-right edge.",
+      "access": "rewarded",
+      "coins": null,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-269c134f-8e2e-4750-925b-babd25a45273.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_11.png"
+    },
+    {
+      "id": 12,
+      "name": "Greenhouse",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-d29baee6-5544-44fb-98c4-47d5fe7b20bb.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_12.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Elegant Victorian botanical greenhouse: richly textured fern fronds, trailing jasmine, delicate orchids, aged bronze glazing details and terracotta flowerpots densely framing only the left and right edges. Center is an uninterrupted softly luminous warm ivory/sage wash with almost invisible paper and glass-light texture."
+    },
+    {
+      "id": 13,
+      "name": "Alpine",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-19121618-7d9a-4703-84fc-2a2af0a83b40.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_13.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Alpine mountain nature: intricate evergreen branches, alpine wildflowers, lichen on stone and small glimpses of distant blue peaks limited to the outer side edges. Center is a broad quiet misty pale blue/ivory atmospheric wash, no central mountain or horizon."
+    },
+    {
+      "id": 14,
+      "name": "Chalet",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-b20728df-5f05-46c2-a19b-94ea85937f7e.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_14.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Cozy winter chalet: intricately carved warm wood, snowy pine branches, wool textile folds, pinecones and small amber lanterns arranged along the side margins. Center is quiet warm pale cream and subtle champagne light with faint plaster texture, no center furniture or floor."
+    },
+    {
+      "id": 15,
+      "name": "Harbor",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-1897f40f-60b2-4642-8ad9-b0879379b9af.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_15.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Mediterranean harbor: weathered ropes, ivory sail folds, rich navy-painted wood, brass ship fittings, delicate olive foliage, small far-edge glimpses of blue sea and seaside facades. All objects on side margins; center is a calm pale sandy ivory/sea-mist blue wash, no horizon or center dock."
+    },
+    {
+      "id": 16,
+      "name": "Atelier",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-0efa61fe-5124-4c07-aaea-898c9fe5cf15.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_16.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Artist's refined atelier: exquisite ceramic paint vessels, natural bristle brushes, carved wood trim, draped linen, graceful flowers and gently lit art tools at side edges. Center is very quiet warm ivory linen/plaster texture with broad soft light, no center table or picture frame."
+    },
+    {
+      "id": 17,
+      "name": "Observatory",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-a0c52f5e-e167-4697-8381-b31d56f4ad4b.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_17.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Astronomical observatory: exquisite brass astrolabe fragments, engraved celestial globe details, indigo velvet folds and tiny warm lanterns richly arranged on the outer side margins. Center is uninterrupted muted smoky blue with delicate diffuse moonlight gradient and barely perceptible texture, NO stars in center."
+    },
+    {
+      "id": 18,
+      "name": "Copper",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-d2b6425f-5d14-4378-bee1-5aa8b3895613.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_18.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Clockmaker's copper workshop: intricately machined brass gears, patinated copper pipes, watchmaking tools, dark oak details and warm amber glass lights confined to side margins. Center is broad calm pale warm parchment wash and subtle plaster grain, no central machinery or workbench."
+    },
+    {
+      "id": 19,
+      "name": "Circuits",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-2dd50ce4-abaa-446b-9fb3-8b04b8767b6a.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_19.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Refined vintage electronics atelier: highly detailed ceramic insulators, copper traces, tiny analog components, precision mint-grey metal trim and delicate wiring along far side margins. Center is a quiet pale jade/ivory background with extremely subtle brushed surface texture; no central screens, circuits or bench."
+    },
+    {
+      "id": 20,
+      "name": "Ceramics",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-6e8b4712-2841-4929-b079-93a5a95d7e81.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_20.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Mediterranean ceramic courtyard: exquisite cobalt/ivory glazed tile fragments, limestone reliefs, terracotta vessels, jasmine and restrained bougainvillea arranged densely on side edges. Center is large calm ivory limestone wash with faint grain and soft sunlight, no central arch or floor tile grid."
+    },
+    {
+      "id": 21,
+      "name": "Bamboo",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-ea8e77e8-7ece-4c48-bd8b-c9a3b0293dd1.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_21.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Japanese bamboo garden: exquisitely painted bamboo trunks, layered leaves, fine fern and moss textures, a small stone lantern fragment and weathered warm bamboo trim confined to side edges. Center is large pale sage/ivory mist and softly textured wash, no center trunks, pavilion, pond or floor."
+    },
+    {
+      "id": 22,
+      "name": "Honey",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-29eeeb39-513e-4a02-911e-ac443b784220.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_22.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Honey orangery: detailed translucent amber honey jars, delicate wax comb fragments, beeswax candles, wicker and chamomile, tiny flower and leafy details concentrated on outer side edges. Center is pale warm vanilla/soft honey light wash with delicate grain; no central hexagon pattern, table or shelving."
+    },
+    {
+      "id": 23,
+      "name": "Blueprint",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-a9192480-1f3e-425c-ada3-e4fbb3b94120.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_23.png",
+      "prompt": "Use case: stylized-concept. Create ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Match premium naturalistic painterly craftsmanship, exquisite real material textures and gentle light of high quality illustrated sand paintings, not flat vector clipart and not a photorealistic room shot. Composition is absolutely essential: richest beautiful intricate recognizable objects confined to LEFT x0-16% and RIGHT x84-100% edges, with subtle small accents at top/bottom corners. Keep the ENTIRE CENTRAL 68% (x16-84%, y0-100%) almost empty, smooth, softly textured, low contrast and softly lit; this calm center supports overlay painting, conveyor and freely positioned colorful buckets. Smooth organic transition from detailed borders into calm wash, no explicit rectangular border or window around center. A midpoint between simple decorative game backgrounds and lavish painted illustration: exquisite detail concentrated at margins, restful center. Frontal decorative composition, not deep perspective room with floor: avoid horizons, floor grids, shelving, furniture, racks, legs or supports. No UI, people, buckets, conveyor, letters, logos, text or watermark. Theme: Architect's classical atelier: intricately rendered blueprint fragments without words, brass dividers, rolled plans, rulers, paper fibers and carved oak tool details crowded at side edges. Center is calm pale slate-blue/ivory plaster wash with subtle chalk texture, no central grid, diagrams or drafting table."
+    },
+    {
+      "id": 24,
+      "name": "forest",
+      "prompt": "Use case: stylized-concept. ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Exquisite naturalistic painterly game art with finely rendered real botanical material textures, refined rich details and soft atmospheric lighting, matching high quality illustrated sand paintings. Frontal decorative composition: densely detailed beautiful botanical objects at LEFT x0-16% and RIGHT x84-100% edges with small corner accents. Keep ENTIRE CENTRAL 68% x16-84%, y0-100% almost empty, softly textured low-contrast wash: freely placed gameplay overlay will cover it. Calm elegant organic transitions, no explicit rectangular frame. No UI, text, buckets, conveyor, racks, people, furniture or perspective floors. NOT simple flat vector clipart. Theme: Enchanted forest: detailed mossy old oak bark, layered ferns, delicate mushrooms, ivy and tiny forest flowers framing the side edges; central softly luminous pale sage/ivory mist. No central tree, trail or horizon.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-75012a49-4246-4dda-9d24-d86b6c50463e.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_24.png"
+    },
+    {
+      "id": 25,
+      "name": "birch",
+      "prompt": "Use case: stylized-concept. ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Exquisite naturalistic painterly game art with finely rendered real botanical material textures, refined rich details and soft atmospheric lighting, matching high quality illustrated sand paintings. Frontal decorative composition: densely detailed beautiful botanical objects at LEFT x0-16% and RIGHT x84-100% edges with small corner accents. Keep ENTIRE CENTRAL 68% x16-84%, y0-100% almost empty, softly textured low-contrast wash: freely placed gameplay overlay will cover it. Calm elegant organic transitions, no explicit rectangular frame. No UI, text, buckets, conveyor, racks, people, furniture or perspective floors. NOT simple flat vector clipart. Theme: Spring birch grove: exquisite white birch bark and hanging tender green leaves, subtle white anemones, moss and fine grasses along the sides; center broad pale fresh mint/ivory airy wash. No central trunks.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-3e4424ef-fe8c-4a6f-a527-787aecdbc99b.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_25.png"
+    },
+    {
+      "id": 26,
+      "name": "meadow",
+      "prompt": "Use case: stylized-concept. ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Exquisite naturalistic painterly game art with finely rendered real botanical material textures, refined rich details and soft atmospheric lighting, matching high quality illustrated sand paintings. Frontal decorative composition: densely detailed beautiful botanical objects at LEFT x0-16% and RIGHT x84-100% edges with small corner accents. Keep ENTIRE CENTRAL 68% x16-84%, y0-100% almost empty, softly textured low-contrast wash: freely placed gameplay overlay will cover it. Calm elegant organic transitions, no explicit rectangular frame. No UI, text, buckets, conveyor, racks, people, furniture or perspective floors. NOT simple flat vector clipart. Theme: Summer wildflower meadow: beautifully naturalistic richly colored cornflowers, poppies, daisies, golden grass stems, tiny butterflies at outer edges; center soft pale warm cream with barely perceptible sunlight texture. No central flowers.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-7275cc93-080f-4aea-a01d-842b6fcc0409.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_26.png"
+    },
+    {
+      "id": 27,
+      "name": "lake",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait production background for a mobile sand painting puzzle, an exquisite naturalistic painterly illustration with finely rendered botanical textures and soft luminous lighting, matching premium illustrated sand paintings. Rich detail concentrated at LEFT x0-18% and RIGHT x82-100% side margins, some small corner accents. ENTIRE CENTRAL 64% x18-82%, from top to bottom, calm almost empty low contrast luminous wash for gameplay overlay. No central objects or horizon, no floor, no furniture, racks, supports, buckets, conveyor, UI, text or watermarks. Organic transitions, no rectangular frame, not flat vector clipart. Theme: a beautiful tranquil freshwater lake viewed as a decorative close-up of its margins. Clearly recognizable transparent turquoise water, soft delicate ripples and refracted sunlight; exquisitely textured water lilies with white and pale pink flowers, green lily pads, willow leaves, slender reeds, smooth wet pebbles, a small dragonfly on a reed at the far edge. Water must be visually recognizable, not just a blank mint background. Center pale aqua water with extremely subtle flowing ripple texture, brighter and quieter than margins. No shore cutting across center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-081ffdbd-9bd2-46a3-a367-cbc56a1c459e.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_27.png"
+    },
+    {
+      "id": 28,
+      "name": "tropical",
+      "prompt": "Use case: stylized-concept. ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Exquisite naturalistic painterly game art with finely rendered real botanical material textures, refined rich details and soft atmospheric lighting, matching high quality illustrated sand paintings. Frontal decorative composition: densely detailed beautiful botanical objects at LEFT x0-16% and RIGHT x84-100% edges with small corner accents. Keep ENTIRE CENTRAL 68% x16-84%, y0-100% almost empty, softly textured low-contrast wash: freely placed gameplay overlay will cover it. Calm elegant organic transitions, no explicit rectangular frame. No UI, text, buckets, conveyor, racks, people, furniture or perspective floors. NOT simple flat vector clipart. Theme: Tropical nature garden: lush richly detailed monstera and palm leaves, vibrant hibiscus flowers, orchids and fine tropical ferns confined to outer side edges; center soft pale warm mint/ivory atmospheric wash. No central leaves or jungle vista.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-4ce57816-7ebe-4157-992e-a18d5725d74e.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_28.png"
+    },
+    {
+      "id": 29,
+      "name": "autumn",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait production background for a mobile sand painting puzzle, an exquisite naturalistic painterly illustration with finely rendered botanical textures and soft luminous lighting, matching premium illustrated sand paintings. Rich detail concentrated at LEFT x0-18% and RIGHT x82-100% side margins, some small corner accents. ENTIRE CENTRAL 64% x18-82%, from top to bottom, calm almost empty low contrast luminous wash for gameplay overlay. No central objects or horizon, no floor, no furniture, racks, supports, buckets, conveyor, UI, text or watermarks. Organic transitions, no rectangular frame, not flat vector clipart. Theme: golden autumn birch grove in soft morning light. Beautiful finely textured white birch trunks with dark markings confined to extreme left and right edges, cascades of delicate golden and amber birch leaves, small russet fern fronds, mossy roots, acorns and fine autumn grasses confined to sides. Different visual identity from green enchanted forest: airy elegant white bark and honey-gold foliage against luminous warm ivory center, very soft mist and subtle golden light. Center almost empty, no tree trunks, no path or horizon across center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-11e79cab-bfa9-475e-801a-ca1cdcae8bbf.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_29.png"
+    },
+    {
+      "id": 30,
+      "name": "snowforest",
+      "prompt": "Use case: stylized-concept. ONE production 9:16 portrait full-bleed decorative background illustration for a mobile sand-painting puzzle. Exquisite naturalistic painterly game art with finely rendered real botanical material textures, refined rich details and soft atmospheric lighting, matching high quality illustrated sand paintings. Frontal decorative composition: densely detailed beautiful botanical objects at LEFT x0-16% and RIGHT x84-100% edges with small corner accents. Keep ENTIRE CENTRAL 68% x16-84%, y0-100% almost empty, softly textured low-contrast wash: freely placed gameplay overlay will cover it. Calm elegant organic transitions, no explicit rectangular frame. No UI, text, buckets, conveyor, racks, people, furniture or perspective floors. NOT simple flat vector clipart. Theme: Winter snowy fir forest: exquisite frosted fir boughs, snow-covered evergreen needles and pinecones, fine silver ice crystals, elegant rowan berries, softly painted white snow accumulated along the side edges; center quiet luminous pale ice blue and ivory wash. Beautiful winter nature, no Christmas ornaments, no buildings, no central trees.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-9712645a-5c0b-4839-a2a0-8a4f3076f537.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_30.png"
+    },
+    {
+      "id": 31,
+      "name": "leafy",
+      "access": "coin",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Layered woodland leaves: several elegantly painted fern fronds, a few oak leaves and soft green botanical silhouettes along side edges. Simplified decorative botanical illustration, moderately detailed leaves, pale sage wash center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-09027d44-a86a-4c96-839f-d42f87a5ff71.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_31.png"
+    },
+    {
+      "id": 32,
+      "name": "wildflowers",
+      "access": "coin",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Wildflower border: small painterly daisies, cornflowers, thin grass stems and a few poppies along side edges. Simplified graceful natural botanical illustration, modest details, pale warm cream wash center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-6f8005c0-b80e-41e5-9359-6496a713f064.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_32.png"
+    },
+    {
+      "id": 33,
+      "name": "riverside",
+      "access": "coin",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Riverside border: simplified softly painted reeds, a few lily pads, rounded stones and willow leaves along the edges, delicate restrained blue ripple hints. Pale aqua wash center, simple medium-detail decorative nature.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-81b876b7-2fb9-4773-8bf7-4f6b38919490.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_33.png"
+    },
+    {
+      "id": 34,
+      "name": "goldenleaves",
+      "access": "coin",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Autumn foliage border: softly painted warm orange maple leaves, a few oak leaves and acorns along edges. Simplified elegant botanical illustration with moderate details, warm pale ivory center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-8a38c721-13dd-4894-8d8b-203cd40aad93.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_34.png"
+    },
+    {
+      "id": 35,
+      "name": "sprigs",
+      "access": "rewarded",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Sparse fresh green leaf sprigs and very light leafy silhouettes confined to side edges; only a few broad softly painted shapes and subtle mottled sage-and-cream wash. Very simple decorative botanical game background, identifiable little leaf shapes, no realistic tiny detail.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-41972423-7e9c-49c1-b95a-7122e7be5329.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_35.png"
+    },
+    {
+      "id": 36,
+      "name": "grasses",
+      "access": "rewarded",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Sparse tall grass strokes, a few tiny simple chamomile flower heads and light feathery grass silhouettes at side edges; soft cream-and-pale-yellow watercolor wash. Very simple low-detail nature decoration, identifiable grasses and tiny flowers, no intricate realism.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-27cdccd9-0ed0-4610-bbf4-8e972394bd89.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_36.png"
+    },
+    {
+      "id": 37,
+      "name": "pinewash",
+      "access": "rewarded",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Sparse simplified evergreen bough shapes and soft pine-needle brush strokes at side edges with pale blue-green misty wash. Very simple watercolor nature decoration, clearly identifiable small pine branches, no intricate details.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-436e517a-03f2-49bb-9894-fa24949d81e6.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_37.png"
+    },
+    {
+      "id": 38,
+      "name": "mint_breeze",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait mobile puzzle game background, 1024x1792 or higher. VERY SIMPLE, inexpensive-looking but tasteful watercolor paper illustration. Not a detailed landscape: only 3 to 5 extremely simple flat silhouettes/brush marks at extreme side edges or corners, large completely quiet pale center occupying 85% of image, few broad brush strokes, limited 3-color palette, no fine details, no realistic leaves, no ornaments, no frames, no text, no UI, no gradients alone. Much simpler than a botanical illustration; restrained minimalist painted graphic suitable behind colorful sand artwork. Mint breeze: pale ivory mint paper wash; one tiny flat muted sage two-leaf twig in lower left and one simple pale green curved leaf in upper right. Generous plain center. Only these accents.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-0649054b-ef08-4eb5-82f2-b2f7819bc6c9.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_38.png"
+    },
+    {
+      "id": 39,
+      "name": "sunny_grass",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait mobile puzzle game background, 1024x1792 or higher. VERY SIMPLE, inexpensive-looking but tasteful watercolor paper illustration. Not a detailed landscape: only 3 to 5 extremely simple flat silhouettes/brush marks at extreme side edges or corners, large completely quiet pale center occupying 85% of image, few broad brush strokes, limited 3-color palette, no fine details, no realistic leaves, no ornaments, no frames, no text, no UI, no gradients alone. Much simpler than a botanical illustration; restrained minimalist painted graphic suitable behind colorful sand artwork. Sunny grass: pale cream paper wash; two very simple ochre grass strokes at bottom left margin and three sparse soft yellow seed dots near bottom right corner; huge plain ivory center. Only these accents.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-1ff76aee-25ad-4c47-846b-d1c082edc8bf.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_39.png"
+    },
+    {
+      "id": 40,
+      "name": "blue_calm",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait mobile puzzle game background, 1024x1792 or higher. VERY SIMPLE, inexpensive-looking but tasteful watercolor paper illustration. Not a detailed landscape: only 3 to 5 extremely simple flat silhouettes/brush marks at extreme side edges or corners, large completely quiet pale center occupying 85% of image, few broad brush strokes, limited 3-color palette, no fine details, no realistic leaves, no ornaments, no frames, no text, no UI, no gradients alone. Much simpler than a botanical illustration; restrained minimalist painted graphic suitable behind colorful sand artwork. Blue calm: pale ice blue paper wash; two flat muted blue curved ripple brush strokes touching extreme lower right margin, one very small blue reed mark at upper left; large plain pale center. Only these accents.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-daa1f407-2880-4d90-9d65-6c5382753038.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_40.png"
+    },
+    {
+      "id": 41,
+      "name": "peach_leaves",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait mobile puzzle game background, 1024x1792 or higher. VERY SIMPLE, inexpensive-looking but tasteful watercolor paper illustration. Not a detailed landscape: only 3 to 5 extremely simple flat silhouettes/brush marks at extreme side edges or corners, large completely quiet pale center occupying 85% of image, few broad brush strokes, limited 3-color palette, no fine details, no realistic leaves, no ornaments, no frames, no text, no UI, no gradients alone. Much simpler than a botanical illustration; restrained minimalist painted graphic suitable behind colorful sand artwork. Peach leaves: pale warm peach ivory paper wash; three tiny simple terracotta oval leaf silhouettes confined to far upper left and lower right corners, huge plain warm cream center. Only these accents.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-b6bc0c13-6bbf-4c5d-b442-d073c3174efa.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_41.png"
+    },
+    {
+      "id": 42,
+      "name": "cloud_corners",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Cloud corners: pale sky-blue paper; two small simple white cloud-like broad brush shapes in extreme top left and lower right corners.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-00b31b53-c960-4a96-87a1-58c08b13aa63.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_42.png",
+      "access": "coins",
+      "coins": 100
+    },
+    {
+      "id": 43,
+      "name": "gentle_waves",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Gentle waves: pale seafoam ivory paper; three small flat turquoise curved wave strokes confined to extreme bottom-left and bottom-right corners.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-daae339e-fb3d-41e8-b93a-9b32db22ea2a.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_43.png",
+      "access": "coins",
+      "coins": 200
+    },
+    {
+      "id": 44,
+      "name": "bamboo_strokes",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Bamboo strokes: pale yellow-green ivory paper; two extremely simplified slim sage bamboo stem marks with 3 small flat leaf strokes at extreme left edge only.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-7b318035-ddff-4f55-9910-94efc13bed4b.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_44.png",
+      "access": "free",
+      "coins": 0,
+      "default_background": true
+    },
+    {
+      "id": 45,
+      "name": "lavender_marks",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Lavender marks: pale ivory lavender paper; two small loose lavender-purple plant marks with a few simple oval dots in opposite corners; no realistic flower detail.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-46622457-38fa-41e4-b340-efe2a94375c3.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_45.png",
+      "access": "coins",
+      "coins": 400
+    },
+    {
+      "id": 46,
+      "name": "sand_dunes",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Sand dunes: warm pale sandy cream paper; two broad simple ochre rounded dune-like strokes in extreme bottom corners, no landscape across the center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-171ca0aa-8689-4661-9911-d715d42ec1d6.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_46.png",
+      "access": "rewarded",
+      "coins": null
+    },
+    {
+      "id": 47,
+      "name": "berry_dots",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Berry dots: pale rose ivory paper; 3 small muted coral circular berry dots and 2 tiny flat sage leaf marks confined to far top right and bottom left corners.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-aba84c53-9648-445c-862b-33e9b36449e3.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_47.png",
+      "access": "rewarded",
+      "coins": null
+    },
+    {
+      "id": 48,
+      "name": "snow_dashes",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Snow dashes: pale icy gray-blue paper; 3 very small simple white snow-crystal asterisk brush marks confined to extreme corners, one pale blue curved stroke at lower edge.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-ead4cf41-7000-4e72-a447-8caa369c5403.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_48.png",
+      "access": "rewarded",
+      "coins": null
+    },
+    {
+      "id": 49,
+      "name": "dawn_wash",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Dawn wash: pale peach pink ivory paper; one small muted coral half-circle sun brush mark partially cropped at extreme upper-right corner and two soft apricot curved marks at lower-left corner. No central horizon.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-491aa08f-d562-4cbf-8cab-fba0d10dcbad.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_49.png",
+      "access": "rewarded",
+      "coins": null
+    }
+  ]
+}

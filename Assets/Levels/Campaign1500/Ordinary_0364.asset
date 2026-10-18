@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0364
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281778896
+  - serializedVersion: 2
+    rgba: 4293642938
+  - serializedVersion: 2
+    rgba: 4281430648
+  - serializedVersion: 2
+    rgba: 4279970081
+  - serializedVersion: 2
+    rgba: 4285108646
+  - serializedVersion: 2
+    rgba: 4285295196
+  - serializedVersion: 2
+    rgba: 4286563039
+  - serializedVersion: 2
+    rgba: 4292140777
+  - serializedVersion: 2
+    rgba: 4281093445
+  - serializedVersion: 2
+    rgba: 4291928195
+  encodedCells: S1:4:4096:FB212533:RVTPb9u4Ev4bCLrPq6sLFEZuApmo3JufKLnsrbAoWb29xqKT3gxZZXKsu7aV3gTSVnjNYnPwX7lDJ30diCI53/z4ZkhpNNq07Xh0lov2yU/tZuRVpxclrNuLX8sXw7FXbn7+xjfj8esSwNdg3q59xWHeeDe/+pVs9JLlV0A/NuNzLNh8OePneKPN/5P+li+/iQD/3/r2nH338AuHdK8Expv2bAg5czlX78bt+Ol00foUm/anf/v0QOBmrJRUu3ZzOp1GpxN0B+wuLjaAbXykm7wCA6nUMxhcjP48eXk6jxHsv3zdzlO1k2B0Vv7psQs//O7L7buv71RV7XZKVd8/j0bKPp1e5PPz6fmkbhRIlefroii6/55Oz/Tv0+K0O318zuUTQLKo1GwH6StvByz425Z+zdXHZ/DyqurdHV1Cdinz6pseLunbE/16tUw97O1VlVA9laosZKEbWfHyhoLy47UvKoOwC25Ncq3y21Itm7W0f3+2SjXprMhv8vKblLPUzj78AJdSSrnO6VtF/1F5+r88vyukl4Qv05nOlo3WBZUU7IErv87lCwxSpeWV1aq5z+2SX0O8RnLBrYOIDsSKlHEVzCqbWsVnKb3OIz47e97pLfCuUrJQV6QiKc3tYMoxQ3yRVDKR+tAu582NoDzNWWVjpzib0sxhvkjPeLPXj9s5p55LWiX81pIpL13Ns7SqErmf7ovHPeBaAt0ktrfcTPmhAPPbdJFLvdfto264a6B526kA/qYv81z7ulUG+F372ACuuc3mmrt6wTOZy6NzpRMmu9M/5CFmnEKv6XwveM25lHPZyEZ7So28l27GuGnnkrZ7YWecVqnMt/v1fjudZ/tLxl184DZxM9oX0DpuVbpQTftN60TKraScxwm3HwA/zIU13n+htrrQwJFUBxbz68MLvn2M+T5J1NV13uzveiYTViY0/rBIrumHtLTbywnvU6XS23z7vp7ST4OOxHRWLfKS+MPYiTo7rOG01X92l7qy2VGYyj7cRfu2fex/aCW3WRmu8AougvZ3gPMkOzw89isTHfrLqGg0Wk8Cg2kYskiDDBHyE4FRvI90ozvd0QkNAxNiwmBfa32vX6UwLqs1OuCeTTBBQVg301oXOdw7MFqdTQTDjnUWW2zAgEyJXlqvvy/8W+vVMuhcMGXIYRMyHJheZODbA4MlVKi1YivBakuQqEPSYbISVvf3B6r1tDyU91VusXNkWobCwqnGPa2LPK0LrpeFbWS5TB355IjgA84DHjsERHFBijXwOB7L7ZK7YDXE2g4nl6sQhxRwRhBi2ncrO+jiaENOwyhcEdERjMO+BhhhtBxMEu6G/EjR5Bgag1DYWcNCmAFHhKBPtpcIySH6bomLCCLIkNC9Zw/UhRiTMFz7QBox3PHBnTPMbzFaoThElg8QWkUQatUHNQrx0ZEuJEGE8QqHE4QGKBwa181Q5xqgCx6OEGhix1YdKt0Qu/sgROayJgGkwR2ylljaURcgx0qHDKsfEGFZACNCETKcCceMKMPvgRGYGBaEpnYZce/LCL7vzv8YBsZx0hsnGIqcCVHo1qRn2RsUTRAXVkAIQQjgUEwcTIyZ/MWsEAOnpxNuASdGhMbCy12ZIPa/GgJ/nchhhKxxqWGeBnWCGuYo6gVx3Iky6jCOLQTgxMLewkMss4Fx5t4B3nfuj44b68B34Yw7Ag0buHM5jDE3RN0QCcLWUwFfr3X8ABhcO2ymD2shyjddhybOABVDnFuAd2DgrmDj4hKSyciEk2WKDY1jzqADEH3CHPSHuRI28A3gLlPqDTXOxVA7FnZgTAhMaMkEL6dDHDdSXa57kiUx3CYO4aE2hkX58C8=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 38023946
+  displayTitle: Tuscan vineyard villa
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 612bbcce5922aae449534f3bad1af0df,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

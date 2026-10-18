@@ -1,0 +1,337 @@
+[
+  {
+    "name": "Начало уровня",
+    "eventId": "level_started",
+    "goalId": "669614090"
+  },
+  {
+    "name": "Использование бустера",
+    "eventId": "bonus_used",
+    "goalId": "669614094"
+  },
+  {
+    "name": "Бустер — магнит",
+    "eventId": "booster_magnet_used",
+    "goalId": "669614128"
+  },
+  {
+    "name": "Бустер — заполнение",
+    "eventId": "booster_transparent_used",
+    "goalId": "669614137"
+  },
+  {
+    "name": "Бустер — перемешивание",
+    "eventId": "booster_shuffle_used",
+    "goalId": "669614175"
+  },
+  {
+    "name": "Уровень 001 — старт",
+    "eventId": "level_001_started",
+    "goalId": "669614227"
+  },
+  {
+    "name": "Уровень 001 — победа",
+    "eventId": "level_001_completed",
+    "goalId": "669614266"
+  },
+  {
+    "name": "Уровень 002 — старт",
+    "eventId": "level_002_started",
+    "goalId": "669614342"
+  },
+  {
+    "name": "Уровень 002 — победа",
+    "eventId": "level_002_completed",
+    "goalId": "669614425"
+  },
+  {
+    "name": "Уровень 003 — старт",
+    "eventId": "level_003_started",
+    "goalId": "669614495"
+  },
+  {
+    "name": "Уровень 003 — победа",
+    "eventId": "level_003_completed",
+    "goalId": "669614690"
+  },
+  {
+    "name": "Уровень 004 — старт",
+    "eventId": "level_004_started",
+    "goalId": "669614725"
+  },
+  {
+    "name": "Уровень 004 — победа",
+    "eventId": "level_004_completed",
+    "goalId": "669614728"
+  },
+  {
+    "name": "Уровень 005 — старт",
+    "eventId": "level_005_started",
+    "goalId": "669614730"
+  },
+  {
+    "name": "Уровень 005 — победа",
+    "eventId": "level_005_completed",
+    "goalId": "669614732"
+  },
+  {
+    "name": "Уровень 006 — старт",
+    "eventId": "level_006_started",
+    "goalId": "669614765"
+  },
+  {
+    "name": "Уровень 006 — победа",
+    "eventId": "level_006_completed",
+    "goalId": "669614767"
+  },
+  {
+    "name": "Уровень 007 — старт",
+    "eventId": "level_007_started",
+    "goalId": "669614768"
+  },
+  {
+    "name": "Уровень 007 — победа",
+    "eventId": "level_007_completed",
+    "goalId": "669614769"
+  },
+  {
+    "name": "Уровень 008 — старт",
+    "eventId": "level_008_started",
+    "goalId": "669614771"
+  },
+  {
+    "name": "Уровень 008 — победа",
+    "eventId": "level_008_completed",
+    "goalId": "669615236"
+  },
+  {
+    "name": "Уровень 009 — старт",
+    "eventId": "level_009_started",
+    "goalId": "669615241"
+  },
+  {
+    "name": "Уровень 009 — победа",
+    "eventId": "level_009_completed",
+    "goalId": "669615409"
+  },
+  {
+    "name": "Уровень 010 — старт",
+    "eventId": "level_010_started",
+    "goalId": "669615411"
+  },
+  {
+    "name": "Уровень 010 — победа",
+    "eventId": "level_010_completed",
+    "goalId": "669615413"
+  },
+  {
+    "name": "Уровень 011 — старт",
+    "eventId": "level_011_started",
+    "goalId": "669615416"
+  },
+  {
+    "name": "Уровень 011 — победа",
+    "eventId": "level_011_completed",
+    "goalId": "669615481"
+  },
+  {
+    "name": "Уровень 012 — старт",
+    "eventId": "level_012_started",
+    "goalId": "669615482"
+  },
+  {
+    "name": "Уровень 012 — победа",
+    "eventId": "level_012_completed",
+    "goalId": "669615548"
+  },
+  {
+    "name": "Уровень 013 — старт",
+    "eventId": "level_013_started",
+    "goalId": "669615560"
+  },
+  {
+    "name": "Уровень 013 — победа",
+    "eventId": "level_013_completed",
+    "goalId": "669615658"
+  },
+  {
+    "name": "Уровень 014 — старт",
+    "eventId": "level_014_started",
+    "goalId": "669615660"
+  },
+  {
+    "name": "Уровень 014 — победа",
+    "eventId": "level_014_completed",
+    "goalId": "669615663"
+  },
+  {
+    "name": "Уровень 015 — старт",
+    "eventId": "level_015_started",
+    "goalId": "669615665"
+  },
+  {
+    "name": "Уровень 015 — победа",
+    "eventId": "level_015_completed",
+    "goalId": "669615674"
+  },
+  {
+    "name": "Уровень 016 — старт",
+    "eventId": "level_016_started",
+    "goalId": "669615715"
+  },
+  {
+    "name": "Уровень 016 — победа",
+    "eventId": "level_016_completed",
+    "goalId": "669615725"
+  },
+  {
+    "name": "Уровень 017 — старт",
+    "eventId": "level_017_started",
+    "goalId": "669615760"
+  },
+  {
+    "name": "Уровень 017 — победа",
+    "eventId": "level_017_completed",
+    "goalId": "669615809"
+  },
+  {
+    "name": "Уровень 018 — старт",
+    "eventId": "level_018_started",
+    "goalId": "669615814"
+  },
+  {
+    "name": "Уровень 018 — победа",
+    "eventId": "level_018_completed",
+    "goalId": "669615927"
+  },
+  {
+    "name": "Уровень 019 — старт",
+    "eventId": "level_019_started",
+    "goalId": "669615929"
+  },
+  {
+    "name": "Уровень 019 — победа",
+    "eventId": "level_019_completed",
+    "goalId": "669615942"
+  },
+  {
+    "name": "Уровень 020 — старт",
+    "eventId": "level_020_started",
+    "goalId": "669615979"
+  },
+  {
+    "name": "Уровень 020 — победа",
+    "eventId": "level_020_completed",
+    "goalId": "669616012"
+  },
+  {
+    "name": "Уровень 021 — старт",
+    "eventId": "level_021_started",
+    "goalId": "669616014"
+  },
+  {
+    "name": "Уровень 021 — победа",
+    "eventId": "level_021_completed",
+    "goalId": "669616050"
+  },
+  {
+    "name": "Уровень 022 — старт",
+    "eventId": "level_022_started",
+    "goalId": "669616100"
+  },
+  {
+    "name": "Уровень 022 — победа",
+    "eventId": "level_022_completed",
+    "goalId": "669616101"
+  },
+  {
+    "name": "Уровень 023 — старт",
+    "eventId": "level_023_started",
+    "goalId": "669616135"
+  },
+  {
+    "name": "Уровень 023 — победа",
+    "eventId": "level_023_completed",
+    "goalId": "669616276"
+  },
+  {
+    "name": "Уровень 024 — старт",
+    "eventId": "level_024_started",
+    "goalId": "669616316"
+  },
+  {
+    "name": "Уровень 024 — победа",
+    "eventId": "level_024_completed",
+    "goalId": "669616349"
+  },
+  {
+    "name": "Уровень 025 — старт",
+    "eventId": "level_025_started",
+    "goalId": "669616351"
+  },
+  {
+    "name": "Уровень 025 — победа",
+    "eventId": "level_025_completed",
+    "goalId": "669616353"
+  },
+  {
+    "name": "Уровень 026 — старт",
+    "eventId": "level_026_started",
+    "goalId": "669616355"
+  },
+  {
+    "name": "Уровень 026 — победа",
+    "eventId": "level_026_completed",
+    "goalId": "669616357"
+  },
+  {
+    "name": "Уровень 027 — старт",
+    "eventId": "level_027_started",
+    "goalId": "669616359"
+  },
+  {
+    "name": "Уровень 027 — победа",
+    "eventId": "level_027_completed",
+    "goalId": "669616394"
+  },
+  {
+    "name": "Уровень 028 — старт",
+    "eventId": "level_028_started",
+    "goalId": "669616395"
+  },
+  {
+    "name": "Уровень 028 — победа",
+    "eventId": "level_028_completed",
+    "goalId": "669616500"
+  },
+  {
+    "name": "Уровень 029 — старт",
+    "eventId": "level_029_started",
+    "goalId": "669616553"
+  },
+  {
+    "name": "Уровень 029 — победа",
+    "eventId": "level_029_completed",
+    "goalId": "669616723"
+  },
+  {
+    "name": "Уровень 030 — старт",
+    "eventId": "level_030_started",
+    "goalId": "669616746"
+  },
+  {
+    "name": "Уровень 030 — победа",
+    "eventId": "level_030_completed",
+    "goalId": "669616819"
+  },
+  {
+    "name": "Перезапуск уровня",
+    "eventId": "level_restarted",
+    "goalId": "669617420"
+  },
+  {
+    "name": "Расширение ленты",
+    "eventId": "conveyor_expanded",
+    "goalId": "669617539"
+  }
+]

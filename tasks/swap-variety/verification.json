@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "levels": 1200,
+  "rules": 1200,
+  "changed_assets": 22,
+  "all_paintings_preserved": true,
+  "model_route_checks": 2200,
+  "variant_members": [
+    4,
+    6,
+    8,
+    "all"
+  ],
+  "first_six": 186,
+  "first_eight": 190,
+  "first_all": 200,
+  "all_interval": 40,
+  "reserved_cups_included": true,
+  "main_assets_match_validated_assets": true,
+  "model": "PASS\nlevels=1200; routes=2200; groups=444; six=138; eight=137; full-stock=43; ordinary-late-routes=1219; no walls/feeders/speed-up; intro gates, stock-wide shuffles and per-color sand budgets verified.",
+  "ui": "PASS\nLevel 180 tutorial plus 6/8/all-stock challenges and real moves verified; full-stock screenshots captured in RU/EN; winter tutorials remain disabled.\n"
+}

@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4279505950
+    rgba: 4279505692
   - serializedVersion: 2
-    rgba: 4282870997
+    rgba: 4283004129
   - serializedVersion: 2
-    rgba: 4283006448
+    rgba: 4281757678
   - serializedVersion: 2
-    rgba: 4281362923
+    rgba: 4280503750
   - serializedVersion: 2
-    rgba: 4280691269
+    rgba: 4280888124
   - serializedVersion: 2
-    rgba: 4280496756
+    rgba: 4281812864
   - serializedVersion: 2
-    rgba: 4281353358
+    rgba: 4280960416
   - serializedVersion: 2
-    rgba: 4284133116
+    rgba: 4284395516
   - serializedVersion: 2
-    rgba: 4281028022
+    rgba: 4280035687
   - serializedVersion: 2
-    rgba: 4284835716
+    rgba: 4286025890
   - serializedVersion: 2
-    rgba: 4280702937
+    rgba: 4280835296
   - serializedVersion: 2
-    rgba: 4288854742
-  encodedCells: S1:4:4096:D81B042C:pZRBb9s2FMc/A7fIXZOd7ACpk54sA03aXToxNlT1ws50Z6UXpzEFu6ekMQnZObXYmgG7RHWsMToZmNFN6KULa03hLjkEBYx8qD05brGuQy97BmhJv/ce/+/xSav5z9vq/+Il83O8BDz7h6VU+ie4MVsLZsk0b2dLZuBWmD1+dgh2IwuFp4XbV7SQv3Iq5J8fzmwdHLLkq7PwwpUTuD07nNv6LJt5M59/vJHFQ4JCIV86/GCZetO8aZosyjLPsv2Tl+b6PCbsK4Hvxc1ttuf6Uy5CWZxz8/DfvOOJMCzumebT2e0nnDOPyRW5YXIOd88/4T3BmEwiybkorfwH73geCyAJF2AbH/F186U0BQcBHm+zPnDp3fqIB7LIgXuSFcWeEHuhEC/edwd4UUq/B2GeYEL4fnYVyp/mzcs/uyHnnMFz4QWCg6dIRTU7PjAZhFL0mC8ycR4gz4eLMBS/zI4mKAawf4exNqTgYpu/uzw4uISNZDgfkyDI5ztsVhkI4K/i+OIiuxFR/8M4ddgwFFf2bjwe9bJ4qESsiI0Z79leVfJZeyCeTAPIVRQiL0IRiJW9/In07ySa9X1/r0HGgQ8yJzzcCPaFqAbSFydSpjjth4NTvY/GB2zoC1BUlFCHL4ovJfDWUEd64GjHGitIvSJs6LQQxTt7RbmWaOm1QuhUOgzT6UD52CzIokwjjKNiMVgLE0rpsXzCpdTObVzBesPC2FIYY6U0tzusRZlTxdteiqNpJILyLUrRA1R7sDW+vyNEh6daJ7iMNdZLo7+wY9Yp6lKj67oXy23x8szTCjwiDBl3UAWrLUJ+QIuGQeifWJ06oL+tsKO0M7Br40SvUWQ8JOT7Eb1btsyBdQLBTltqXP52/9X0a30NxYjQZuxOQSEe2BCfhKnmv/82hhh0cfmNsX+EccvBllU22xy4zuw6QaM4ji/j6eXl5c8LL05xHgQJ6K8PtJ1CC3Nu7LoIjIwQGWLsYCgroV3mhBxanCISx0DPEXF3N03LwuWyaW3TVh12ACkY5YAT9xwZMXpTtvDysYUt12h1vWqm9VejPoqNkTul49fGPYx1uCL3i4uE5NoNwDVknI9cF2TSry7YhYKysXSUS9vH222EjhbQlUEVD0c/ou9WQH/ZWnZlJMMlgtC4uY/I3RoZ0+kB6kERcfl0reCfyAaXBmRdTZcQspfQyIgfoYsFRN5VrZ1b1lnW3yxtZQDrJoZtpiNkfAFlbj5uc/MMRsvO9r2Lc3MejwxioBHajJ7i8lmUOo4B3MYIGXbGF4F/ic4X75XLedOtU9qCSMoYZfXWDly+PkfxAhpNzTJ8P04GOpIeY5yB1RmFVIs9QhnZfYe3H5tm8lYPoh01wbideVxnCPUeacdWyslGvnEi+w6eOInjYBsrbWud6mxy30b2snQo7egGC5WDtaPxoG47KkqjN1qBH9eatVpJn3a9Si2RqVa1VqIjeyCh97qi0FC1WO5+jdJ2F6tN1di5hlo4myUniqRWWsGbQ9ycQXe5wBCPONuSqR0luj8ZKqxq0Ka6axDS5G+2jiesSY9Tnc1KpCJqt1iD1eu0021A83JVyBfpTPxCfRc7Deoj1KQG/AhvoaNEPqEi2zpS9WafVbRdJwChsV1SJ2iYqhpiodbSr2ReUi8ZVBCYCnQPvg6NRMPhku7sRXhCJlrDUeT4LvQ652o9ZKnPODnarfIQZEzSSHshYw9ZE940SKobwzQ6cqJJhHITNdkileFxrcnQrvBScTLRfRjkNlqWAc3tHuvoGkr+eABHBZ88P238DQ==
+    rgba: 4281949631
+  encodedCells: S1:4:4096:011C9772:pZPPb9s2FMf/Bi5RCju5VA6WLPOlptO00y6bmQgBc+FSppXTi7uYXtJc8kuEYF/aoVgw7BLEjsC5F6NwB/jWSYXgMZfFsd2h+qP2ZKdt2m2nPVsSqc/j9z0+PsXxRQyWzV5kk0E2mVzEpmlewBVfmHHWhLfJxHzHsyN2ZTH4Zt9PsomX+T/t6fHx0+SZMXOjf+ZTmlgyxPg6gnEOHmN8PA+TDxRALnN9+VhgbN47Zn5YngjAawy3R+5cEieT+Wj5OwH8SLi12VHkj5aPMsDYzAghDmfn/iGfCCSKgGUtnoXBJ/JXAYCvVGzb3BXD/+Lurnu5BTJfm5kf/40PKmJlW4jKrrv0EZ83L+YSLh6JgVhxXeFK8dM1fsesDeOEu1tia+AmmYrKL1cwhmtYk1KMbVesCFdUxMCeH+M4Ox/H8j2XYiArSS5CSojxBrrkYsy9yiiEEDXpJe6yNncMFH5gNanO/rpycDudzm87UO19O2nAcSvG28pzk9Vg7U6R7wgJk/NKsvVEALisibGA0S6yHXcIeVR2IfLsiMuqV6iPNrDf7qTZAjiDyzArhjKuZPdjWQsPSL27YsfyxtRLIoGuiIGZcytu/jKuyFpN6gLxl/I0WC+/hAKIJN1sTQ5hd/AlXQ4fqi4heUJ1+P1iYUu4e3JLurXKIDb3e2uE6FOlpCQkUuGLBTufGexJ+1tNL7EFsePY31SO8tbu2XakXywUcr3wFtaB1jjQ51rbWDllZ1UVFO/Sy/vLuy7GrzY43+DrAed/NLelkjqsLll5WJGfaOsAY4MbDxIPfrP3XJrNrg61LuR1XuMJpK3CusFLnJ9wzgsYXkKhlrQVUBpc6s2+Dtc5awMDha9wPtczCaHhWz/SQQ9/xsWT/AZPG5w/5PwZBjuICZHVJar73zH+olV81h/88GZiERdKeGRngsih1voxR500nO/LYhvuHTxzFGD4eg4+FzZkR0ObWpQYvMgNhAzEjVa6g3tBovAlV6thXa2Ry8lWWWwghIqoZezewVc2wc+OKAk1LpzyUieN2FTRaHO0mCR3G24OVzVXr2HLWv/GaHd4eaNYbJfTCfL7+LE0DFT23lpYV/spBB3GeKfY+rm4APW3MNZYHTnPvT3EmhDZYJy3ih3jwZ8zbUpBIRdgT9oxnUTopoF6qf7iDILtTaFfDb68g3/PZ4QkvpSII3YrBIWgwgwEQfrTRquD6cESroea2rBtIyCIoeAtYyjdbrWnWamF8XOFaWTjKqxEGCPEdGAwNlVqwbzFsFUI4oT3Em5hxDjWM4gVS4jPoFIZElzS3YY6VYCf5BRSZdycREyUmJhArdaovoe+um4cXNOd0u0JVOrkcAZjSuzoria+GvutphCaEhIqbg/zs/UCdrp6ZIchOaUhtf3USX9NQ9flg+oXus6jUHV7BGva1KvQbhYcVTPp79CCg/cbKmwqX+rDRMK6fxQFm9rOJx0b0SNLQ0DdMM5SUe0eYIn2xsHo4SoUzdZOw0GKc8OXEa1HmrPXrKnrEEFqoiPdhFyVYsyo3IicUPvMo/qwSxOFZjl/eveUNRzVYI6BPA/eVX17EzKjVRg6/G4jpZTDecq7gU6U6m7WNBllyTz7dd2xNxkyHDgxxrd9dlIPuSfONdWT9VUZwj4nDb4H0inkOZPL4TnVBqqsgHREaWO6q5eV7zvoBIr9SpPJhg7hiPhRZFOiiaVpUmvkewgie/B1kG5T1dWyrJd80iVNj0Z6WnmGdBg4QraroZ5+Xa3SG2wqomT65LDedE4c7kmfyr8B
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000fe0000ff00000000000000000000feff0000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000040000000000000000000000000002000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: journeys
   campaignSeed: 14459921
   displayTitle: Solar Rover on Red Dunes
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 8
   sectionBuckets: 1
-  keyGates: 0
+  keyGates: 1
   linkedBuckets: 1
   largeBuckets: 1
   alternatingCrates: 0
-  swappingColors: 0
+  swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: e5758cd18fa6f1345b7c44ce3fd9d875,
     type: 2}
   usesTiles: 0

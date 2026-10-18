@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0144
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279706937
+  - serializedVersion: 2
+    rgba: 4281417555
+  - serializedVersion: 2
+    rgba: 4285251317
+  - serializedVersion: 2
+    rgba: 4284768359
+  - serializedVersion: 2
+    rgba: 4292862704
+  - serializedVersion: 2
+    rgba: 4282288849
+  - serializedVersion: 2
+    rgba: 4288841867
+  - serializedVersion: 2
+    rgba: 4279644526
+  - serializedVersion: 2
+    rgba: 4281754008
+  - serializedVersion: 2
+    rgba: 4292194742
+  encodedCells: S1:4:4096:4EB5CEE3:NZVBd9s2Esc/AxDalnPDlHZE32w+M/KRXLiMfatkxJZuEhOUPNqPLhrdyE1SqDfRLR+xt+6THrf4lDtgmuGFjz/MYDDzx5CwM/gMkPDe3vK7kHPukX8BjZVKS8KAklGcUApT3q/X/K3jwfiNj5wrRRhlhIwYAZaWSil+b3jGGpgKiPlNaSkDIKQijFTAVanQmb/qwhbECWtuygV18Z1547Mn9E/9hPtNGDSOJ1xRwPiUVaMKEosb+jzhzVVousAs2yb8BfMD0ETriiX2trQpL1NCOrIlepWZ8MVxriutyegx5apf814dERkQ+cq03/m40iMyjusx7JCv/aqg25ZUzBTlwE+oxgPEQOJeldbGtCFEHvNPyVoN3McjQk3hbtev+4WtCkE28/3ur7VNKaZnkpaMq5rFyRl6iwPWXEIwMza1dvAnY5+MazquGSTCLui2eAmAmr9fr/nA9bhhnaHjZAQg7O/eBhiwZr44AlDExe9o9dvYB14ld8Kyw1MIATdYXAdYC+ePqREsq+9t78VRgx4XFz9AJcRN6g/7E9Yg577Hnp8ZGxYEsJkKkcK3/vXXBPT7P2lTvh5D25kA3AZC3A7+Oiifffg8eeGgwDSNQcMFtRCCUWDUAB47qINEKXu2YUjdFpR8fP8j1g17n6jeaj16stb+Z0NGQL5ZLj9xrDvRjN/voYZkYe0Xc2FezGD5qv3Fc5zA0X3/mjz16P+7uRjNvuguaIplJ3/0Bn2mrHy6JtgtpX4zq+Yj1pIXbZ03N/6gb4/B0zXj2Cy63Cybw7Ye37XB6gFlgv4Yn7GdrXdrTJZK2ZjTTWekaSbtwFGfhMR3e7uwPtTZsjqVpli1RueF4+7+EP1yj1yAvzLd+WlhriKTmUlxSof4hGw3fY9ysOrntluaqxafrFhGyNEdHgXReYzXM9U/Z8tJVkiZGXl8LgNw/vC4IJUGyneeRrdJJLMoa+XVJEMZgRfbdPolbqYEkjfVZLYsZBReRmEYTaIg8Tnf2bOS47V7U+tfq0mmc5mFl1kov+bZDfZpZzlPUh/7SYm9fevifwwvw/D910mIOkis5d6OwwGZfv61xPFQPMxC5CI8nMzma+zpAp5Sv2asphqSt2F+JcOZCDPcP5yL/ULsScxrgurFZicfsvxcRrPLMIuQ/43XwVrwaiT+GDY6WF2uzmUoZpjg1Xn4aW/3yGsPz3k3xgq8k9HmfIbKvAyjfJLd9GJnrSYxow+oH0huV3I1CQeTh5Po+O422d06EVb6zwZ8SD7I1XnmcIT1D8nOx6oC22mtc00TmOdFnkeRcy8Ol/LdNa36WyB6pD9rpt+BKfJuWyDOWtMh9wjhPva30v/T3kEdwEp22+AKFxgjczkiimDlPZxfOKHwTvnLvGuRZ+FL9zX/9+ivtYpLN1xG1SgB0kxr2bRBJmX09eV4KQ/7tFepuwNsa1Ap7KcPbdeGqA8pT4suClK6S0uoK/LTyfwE7nFWmI68MANNJ0cP7Xshntcpnv7dwr/x7k+Arbp8iwIlW7PNC8evr+94efSYYKfvhXj6w+TLH2I4HlFjig1yNGVTr34AHD5CHJhii3PSh61c5vNv3K4V9zw2vNM6DxqDFWlMMWn/4fjboSQBjH8NdBvJL7rqOhc+G3i4X795xOJj/GAanL/KjAtQmZlsDeI9Rkgpi7lYLEqqVzLC7+YYC2zM3O73FjNUHuFu9opbuHC1d/XWzts6exYe8bga3pmbqI3u9IG+motvC9aK2djuLI6pvRe46dYFjmFopz+V8tjnKf5/emU9dIfplrvr7nxRwRw7lCSM2KP4UeEhkwPn+o/hKygc/E/ICcSP+GkxqP47t9ZNOGccO1yqHn9i1va2778vGYYlQ/U6S+GPwHeZKpf32q0aeEy+h8GB/sT/m3LbpziRkf8f
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 30469429
+  displayTitle: brass winter lantern
+  seasonalNumber: 144
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: bcb6a92627691df4283aeb7adc942232,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

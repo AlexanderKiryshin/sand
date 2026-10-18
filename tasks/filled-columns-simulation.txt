@@ -1,0 +1,15 @@
+# Sand simulation checks
+
+Actual FallingSandSimulator, SandCollector, ConveyorBelt and BucketInventory; one grain per level cell for a bounded CPU check. No boosters, no player progress, no SDK.
+
+Level | Simulation ticks | Sand left | Buckets left
+--- | --- | --- | ---
+58 | 4346 | 0 | 0
+68 | 5460 | 0 | 0
+80 | 2310 | 0 | 0
+104 | 3083 | 0 | 0
+112 | 4043 | 0 | 0
+200 | 2893 | 0 | 0
+300 | 5577 | 0 | 0
+
+PASS: all 7 sampled random levels completed through real sand simulation without paid boosters at one grain per cell and the production emission budget. This check does not measure device FPS.

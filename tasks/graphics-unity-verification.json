@@ -1,0 +1,287 @@
+{
+  "status": "PASS",
+  "backgrounds": 46,
+  "source_aspects_preserved": true,
+  "minimum_psnr_db": 30.199,
+  "estimated_gpu_bytes_before": 275330624,
+  "estimated_gpu_bytes_after": 48234496,
+  "source_pngs_lossless": true,
+  "textures": [
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_4.png",
+      "psnr_db": 40.485,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_5.png",
+      "psnr_db": 40.363,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_6.png",
+      "psnr_db": 40.427,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_7.png",
+      "psnr_db": 39.618,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_8.png",
+      "psnr_db": 42.087,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_9.png",
+      "psnr_db": 41.688,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_10.png",
+      "psnr_db": 40.868,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_11.png",
+      "psnr_db": 40.263,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_12.png",
+      "psnr_db": 31.134,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_13.png",
+      "psnr_db": 30.199,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_14.png",
+      "psnr_db": 31.248,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_15.png",
+      "psnr_db": 31.3,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_16.png",
+      "psnr_db": 33.722,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_17.png",
+      "psnr_db": 33.928,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_18.png",
+      "psnr_db": 33.334,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_19.png",
+      "psnr_db": 34.337,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_20.png",
+      "psnr_db": 31.647,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_21.png",
+      "psnr_db": 31.694,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_22.png",
+      "psnr_db": 33.164,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_23.png",
+      "psnr_db": 31.79,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_24.png",
+      "psnr_db": 30.271,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_25.png",
+      "psnr_db": 30.942,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_26.png",
+      "psnr_db": 32.572,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_27.png",
+      "psnr_db": 32.24,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_28.png",
+      "psnr_db": 30.571,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_29.png",
+      "psnr_db": 31.531,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_30.png",
+      "psnr_db": 30.744,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_31.png",
+      "psnr_db": 34.414,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_32.png",
+      "psnr_db": 35.344,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_33.png",
+      "psnr_db": 35.812,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_34.png",
+      "psnr_db": 36.314,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_35.png",
+      "psnr_db": 40.101,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_36.png",
+      "psnr_db": 38.217,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_37.png",
+      "psnr_db": 37.136,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_38.png",
+      "psnr_db": 42.013,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_39.png",
+      "psnr_db": 42.418,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_40.png",
+      "psnr_db": 41.358,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_41.png",
+      "psnr_db": 42.121,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_42.png",
+      "psnr_db": 41.994,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_43.png",
+      "psnr_db": 41.794,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_44.png",
+      "psnr_db": 41.06,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_45.png",
+      "psnr_db": 41.303,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_46.png",
+      "psnr_db": 42.275,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_47.png",
+      "psnr_db": 43.847,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_48.png",
+      "psnr_db": 41.525,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_49.png",
+      "psnr_db": 41.796,
+      "format": "DXT1Crunched",
+      "source_aspect_preserved": true
+    }
+  ]
+}

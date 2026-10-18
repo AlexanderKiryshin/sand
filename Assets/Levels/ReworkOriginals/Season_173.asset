@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Season_173
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282737047
+  - serializedVersion: 2
+    rgba: 4292195474
+  - serializedVersion: 2
+    rgba: 4288642100
+  - serializedVersion: 2
+    rgba: 4290229072
+  - serializedVersion: 2
+    rgba: 4280623391
+  - serializedVersion: 2
+    rgba: 4292397512
+  - serializedVersion: 2
+    rgba: 4282422251
+  - serializedVersion: 2
+    rgba: 4287726984
+  - serializedVersion: 2
+    rgba: 4285157443
+  - serializedVersion: 2
+    rgba: 4292319850
+  - serializedVersion: 2
+    rgba: 4287539925
+  - serializedVersion: 2
+    rgba: 4293978089
+  encodedCells: S1:4:4096:BC494C18:VVXNbxtFFP8b9mBsYy5M41Wy8oVsCinc6KpFKpcETfFauWCah+PsxRIwRe7FLXFnG18IWstjfFpkqx58iYDYaHphRYZ0O38Ub9wP4CWxd/N7781v3mcqZTuVr8VzAUh79vq1LVOPEAJvcAIAGmbNl2gTCJpI4oK1sH9NcMFELliPbRc/8rVmilrjq7U9AWMieHNitHj9NH5rsZAeSQEVDBCX2P+ZWV5z99HBXI7b0ewpekICeALy8qT8ENro82Ai9z0t0WxylnpNVECckIVADVeO53XPe1vOicz7eHSM/CwL8rOcb7nQlE/k/lMZfuh/OZRCnB1FkYY0QupTKauCDBcNSQX+3mi5Y5EPwNO6RsZxZJKJuUwgvDow9IsBvcRLGTePjGUXX4PJ/PfPzhIqDuN6ElaP9jdNc00cIuTQF/PwRiEUPyRUi5DSy2qhNY7PAMQRtDTAcLRLBaWtahMWSXmPvhcWktgjEA2P+ojCEI1CegWXNSNpgW736P4XfxANfYG47rcEp+aAPiUJZics0MTZK1ynD6E12orx+sAB0rRRmE6ThkyTkE4KlCYFjq7dmIMeIE4aIZ0+rYbEO6Dp4Tu0j8e00HXcQntU7J9JWqV0U5LnxhzmN7J3Cj+cDPUQJIYXawTCfYqySdKzLe865hPqPWO0RbB+8Ltef1LfpFUy9lLZu5thUMxkqykzGySNFEs8vrtfEHIrlY3DmZycTAqKlhIew7p+WjxxJ7Q0Etlm2ki0J8IRVTEfHfWRoI7Ajbwp2Y+uk8XDkTHtGo1Pf+J8xOMLZaw9ECyvHB9zkmqNzOondX7RVecKz8dXTVxtcoP1SUjT5q1/9q2qVJTDDPpHBQVXboQPUCM1t89PVspRp1ytlGqpF4i/sDRJBBe5mdCwUlAdxZbdJVPmGYYAywCJqF4Kx3PPmFLl3HHOmbKWGCq4UPr4Ao5VRSk3EfFlh1kpOkUHv14oeC22WT+nHTRk6vhCqYrjOJ2/8XrYss1b4G4Q8nGn2EXzDlsioWMYnDrsb7x+04Vb5P2AkKDkqD/xVFPpLPnpip8z1LARCm7628HNIBi08Pb8ATrYxG4hTb5i6AduBS/lr9wMKoxVFG+RDRfPvVCIW/tgrbKYPSmjLUdPGwGeB/fVadhx2Ev5yrzd7N9n/JNX3oINsh1zvlf+Zn3lpZC9GtZGEPyL+65fctaRKK5OK84VUu/c/g++vX3z3o6/82uxxFaYEfN80nkcBDuBf/OVxraPuP/9LmO9zcwsJuL+ncCiiO/4VsO/5vvXHvnlEptLk+uBKH3NAh/llYfda/ZltCE65amMbD0+5Jx99AYPrPLurv8rw3S6h0Nk2F8tP/D/vUWws+PvdtljLPQ0TLaOyj12+07wX/maqSyzY9CbiFD0Vuz2/+Dgt++K0ovMTBIzoOKkztj/4J1HJZZgYRnStOVcdxTm4M6nL8F79wAelp0ikV4NZwoQVOH81MGQLjGx+GMrixeFkG3QuZlZF1hZrNhhx8r271q6zt4WNgNSsA1knmEM2AOFcnyh7Qjvsr00N1HbxbcMe4k7WIXs8dKqdJV6xh6LI7yh9LRZ4FHDslPBEj/vrhO/1HYiIOzOcK7TRAzD3/mqxIplrOVV9103z8y6VzLQ6UCI0SgywlJkSzTvCT7CvkKiJMJldkbDUZJm+gHaVjpdNv7xRz4KZWZcg/SlnaUn9XmmDXZKp8MOfm48ikcTnA2ZAU82hKjqu1dN3C5lVsIrIBtxMoyFqHsLmUnZqKKr1MsWuuCs2AOGc++5NANxwnGd1XB3te3IMZEnRhV8PEhQASsrpnTaNunMbkiME+QmiX/BXByIMEzEVNMwmeYE191M1vI2rONRa2oZWr7h1DsIrRtMEbj2w8Y8i4xs4EDH9SClmUzpeqWDxt3sYThwW9RkgyZyjAwwbevV+w8=
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000fe00ff00ff00000000fe00000000000000000000
+  conveyorDirections: 00000000000000000000000000000100000000000000000000
+  conveyorBucketCounts: 00000000000200000000000000000300000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: places
+  campaignSeed: 18020707
+  displayTitle: Geothermal Pools under Snow
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 6f57ac9473db26f418b2be9670c1a3bf,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

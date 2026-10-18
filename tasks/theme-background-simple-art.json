@@ -1,0 +1,61 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": 31,
+      "name": "leafy",
+      "access": "coin",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Layered woodland leaves: several elegantly painted fern fronds, a few oak leaves and soft green botanical silhouettes along side edges. Simplified decorative botanical illustration, moderately detailed leaves, pale sage wash center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-09027d44-a86a-4c96-839f-d42f87a5ff71.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_31.png"
+    },
+    {
+      "id": 32,
+      "name": "wildflowers",
+      "access": "coin",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Wildflower border: small painterly daisies, cornflowers, thin grass stems and a few poppies along side edges. Simplified graceful natural botanical illustration, modest details, pale warm cream wash center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-6f8005c0-b80e-41e5-9359-6496a713f064.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_32.png"
+    },
+    {
+      "id": 33,
+      "name": "riverside",
+      "access": "coin",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Riverside border: simplified softly painted reeds, a few lily pads, rounded stones and willow leaves along the edges, delicate restrained blue ripple hints. Pale aqua wash center, simple medium-detail decorative nature.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-81b876b7-2fb9-4773-8bf7-4f6b38919490.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_33.png"
+    },
+    {
+      "id": 34,
+      "name": "goldenleaves",
+      "access": "coin",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Autumn foliage border: softly painted warm orange maple leaves, a few oak leaves and acorns along edges. Simplified elegant botanical illustration with moderate details, warm pale ivory center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-8a38c721-13dd-4894-8d8b-203cd40aad93.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_34.png"
+    },
+    {
+      "id": 35,
+      "name": "sprigs",
+      "access": "rewarded",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Sparse fresh green leaf sprigs and very light leafy silhouettes confined to side edges; only a few broad softly painted shapes and subtle mottled sage-and-cream wash. Very simple decorative botanical game background, identifiable little leaf shapes, no realistic tiny detail.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-41972423-7e9c-49c1-b95a-7122e7be5329.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_35.png"
+    },
+    {
+      "id": 36,
+      "name": "grasses",
+      "access": "rewarded",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Sparse tall grass strokes, a few tiny simple chamomile flower heads and light feathery grass silhouettes at side edges; soft cream-and-pale-yellow watercolor wash. Very simple low-detail nature decoration, identifiable grasses and tiny flowers, no intricate realism.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-27cdccd9-0ed0-4610-bbf4-8e972394bd89.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_36.png"
+    },
+    {
+      "id": 37,
+      "name": "pinewash",
+      "access": "rewarded",
+      "prompt": "Use case: stylized-concept. ONE production full-bleed portrait 9:16 decorative nature background for a mobile sand painting game. This is a cheaper simpler tier of an elegant painterly botanical collection, visually softer and less detailed than rich realistic premium illustrations. Painterly watercolor/gouache, tasteful shapes, NOT solid monochrome. Keep the complete central 68% x16-84%, y0-100% almost empty with a softly textured low-contrast pale wash. Botanical motifs only at left/right side margins, airy restrained composition, delicate organic transitions without a hard frame. No UI, lettering, text, people, pots, furniture, shelves, buckets or conveyor. Theme: Sparse simplified evergreen bough shapes and soft pine-needle brush strokes at side edges with pale blue-green misty wash. Very simple watercolor nature decoration, clearly identifiable small pine branches, no intricate details.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-436e517a-03f2-49bb-9894-fa24949d81e6.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_37.png"
+    }
+  ]
+}

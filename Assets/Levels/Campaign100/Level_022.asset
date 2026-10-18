@@ -30,6 +30,7 @@ MonoBehaviour:
   - serializedVersion: 2
     rgba: 4281699557
   encodedCells: S1:3:4096:3AAE4B32:lZPPaxNBFMfPAUVIC9KDhITZpPFUKxSKQqCNsBNaov0PWoNQ2+jJgqe9VOsWocnL9pBDXShb0UMLHpKAUAQptEFroYcauvRQiHjKJRUxsGR8b2c3P9SLYbLMfObNm/fe903WLmf/Zyz4Ew5Rftrltj/nBuPHPfxETqIcGIe/eIHxTXYP2D94UMEj85JXSl1Ofjz7s/K2x8Hj8x4nhv9pYE9dnpLOfY5EmKwqGO+351AXIobDTW2HNk+X7DL6QS6IEyLjJ3Sq1Me/Ei/ZaL/dy6Xz0i590f8RYpP8k6eHj0tnspi3OQgNQ5VlXLBLDZocmo4GDm/G0nYfv2w66Yn21HEPz1ZwMl50tKbQmitTPfznSfmw6rjxmMQrlOoObleyn1qSJ9KU1Hu0fyS5KXksjW7GbORLyHcV/srPCxbtB/a2lKGhUN3M3GfiWXsRL5V8DOusRRTeJAmQexpLEV19cUz/wTFfKdkcwdcd3nbrg2PO60Jpxtuxlnew5vq5xf1mcEcyFVGkf1wGih6fBRWsPTdIWiZ8fm7ehUGuI9+gSETV404oNRPhqUWXfxQ+X3ZClAfxhluxtOzzZS2iM8wPQy0Qdjyeu7r+YlCJ86BddusoOEgeUBRg8dmgvdQWnlLIJ9rpiJJnSv2+/YXgBfIM8gOxZowA+yZCtmeOklRZuCWurDMw6shbPk/wKBMiv8cgiLa1DhdpTC9hGMM64KImur+CKKwYLMUNn/tnNEu1WCo8iX7sPs7uWMnr45y40+NIi8TzyRuCOp54orMxwHUMPk3xIGedUN8mVy0mQsTropD55cUT3srNUVIgjmrfsQm8e28ab5iFwYfAOdrHW2JVyVfAYPkfQgy1E2KfKjMpi0TKpjApWlIssaFmzK0DVjQFhQ5PFHMYkjac32Q8cFHIHAjf/jlKdUnRdRY/5zB14FeeJBwNUzsraKCpniaxSahXkxZ1yjM83+UDUA+5shuUustNnLCBGR7hYKk6qLzN1iab8l62NcItFSJxjk1rMJ04Ft/MkGuVMyVQJL46DVLWlxvyfcUDfFSHnH4NmOQN/92p8EGNvmvk8DH/Bg==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets:
   - colorIndex: 6
@@ -54,25 +55,26 @@ MonoBehaviour:
     count: 1
   - colorIndex: 8
     count: 1
-  bucketLayout: 00000000000000fe0000ff0000000000000000000000000000
-  conveyorDirections: 00000000000000010000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000030000000000000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: legacy
   campaignSeed: 2206628
   displayTitle: 
+  seasonalNumber: 0
   beltCapacity: 5
-  beltSpeedMultiplier: 1.2
+  beltSpeedMultiplier: 1
   frostMoves: 0
   sectionBuckets: 0
   keyGates: 0
-  linkedBuckets: 0
+  linkedBuckets: 1
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: ed56c455b231b334a8db5884e81b38e7,
     type: 2}
   usesTiles: 0

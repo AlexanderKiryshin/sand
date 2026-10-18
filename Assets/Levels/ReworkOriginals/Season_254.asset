@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Season_254
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4291546068
+  - serializedVersion: 2
+    rgba: 4292061851
+  - serializedVersion: 2
+    rgba: 4280167753
+  - serializedVersion: 2
+    rgba: 4282199851
+  - serializedVersion: 2
+    rgba: 4281091705
+  - serializedVersion: 2
+    rgba: 4284000994
+  - serializedVersion: 2
+    rgba: 4284435011
+  - serializedVersion: 2
+    rgba: 4287063900
+  - serializedVersion: 2
+    rgba: 4279571480
+  - serializedVersion: 2
+    rgba: 4290808686
+  - serializedVersion: 2
+    rgba: 4285497495
+  - serializedVersion: 2
+    rgba: 4281035959
+  encodedCells: S1:4:4096:B9895EE9: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00fe000000000000fe00000000000000000000000000000000
+  conveyorDirections: 00030000000000000100000000000000000000000000000000
+  conveyorBucketCounts: 00030000000000000300000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 26503756
+  displayTitle: Horse Tram through a Winter Market
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: e8c39fb13c72f1543ac2a5218a947d7f,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

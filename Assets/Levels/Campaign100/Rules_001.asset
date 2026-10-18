@@ -17,9 +17,9 @@ MonoBehaviour:
   startLevelIndex: 0
   levelCount: 1
   defaultPalette: {fileID: 0}
-  defaultGridWidth: 32
-  defaultGridHeight: 32
-  defaultColorCount: 4
+  defaultGridWidth: 64
+  defaultGridHeight: 64
+  defaultColorCount: 10
   defaultAutoColorCount: 1
   layoutTemplate: 00000000000000000000000000000000000000000000000000
   conveyorDirectionTemplate: 00000000000000000000000000000000000000000000000000

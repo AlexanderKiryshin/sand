@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4282343304
+    rgba: 4281947514
   - serializedVersion: 2
-    rgba: 4291661911
+    rgba: 4279374361
   - serializedVersion: 2
-    rgba: 4291289326
+    rgba: 4291025898
   - serializedVersion: 2
-    rgba: 4280826198
+    rgba: 4282919189
   - serializedVersion: 2
-    rgba: 4282525204
+    rgba: 4285678630
   - serializedVersion: 2
-    rgba: 4287259979
+    rgba: 4292584553
   - serializedVersion: 2
-    rgba: 4286744208
+    rgba: 4287931573
   - serializedVersion: 2
-    rgba: 4284106558
+    rgba: 4285689716
   - serializedVersion: 2
-    rgba: 4283269833
+    rgba: 4282808507
   - serializedVersion: 2
-    rgba: 4285544981
+    rgba: 4289886795
   - serializedVersion: 2
-    rgba: 4279440927
+    rgba: 4280825419
   - serializedVersion: 2
-    rgba: 4288196292
-  encodedCells: S1:4:4096:24960ED5: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
+    rgba: 4284192476
+  encodedCells: S1:4:4096:A551AD8A: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000000000ff00fe00000000000000fe00000000ff00
-  conveyorDirections: 00000000000000000000000000000000000003000000000000
-  conveyorBucketCounts: 00000000000000000000020000000000000003000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: people
   campaignSeed: 23676073
   displayTitle: Ceramic Tile Painter in a Blue Studio
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 8
-  sectionBuckets: 1
+  sectionBuckets: 0
   keyGates: 0
   linkedBuckets: 0
-  largeBuckets: 1
+  largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0
-  loopInventory: 0
-  mysteryBuckets: 1
+  loopInventory: 1
+  mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 7a842ebe48cb38e43ac14f7e3a25c708,
     type: 2}
   usesTiles: 0

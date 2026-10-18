@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0822
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279445147
+  - serializedVersion: 2
+    rgba: 4285966294
+  - serializedVersion: 2
+    rgba: 4283065991
+  - serializedVersion: 2
+    rgba: 4289374132
+  - serializedVersion: 2
+    rgba: 4279704112
+  - serializedVersion: 2
+    rgba: 4285434283
+  - serializedVersion: 2
+    rgba: 4290959595
+  - serializedVersion: 2
+    rgba: 4294296979
+  - serializedVersion: 2
+    rgba: 4281810776
+  - serializedVersion: 2
+    rgba: 4282087611
+  encodedCells: S1:4:4096:794C9752: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 85989828
+  displayTitle: colorful festival elephant carrying a silk canopy through a tropical
+    palace gate
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 36be86087b9b98446824d02666c0f566,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4291677398
+    rgba: 4288072177
   - serializedVersion: 2
-    rgba: 4290742892
+    rgba: 4290503160
   - serializedVersion: 2
-    rgba: 4279702036
+    rgba: 4279310122
   - serializedVersion: 2
-    rgba: 4282791474
+    rgba: 4281285462
   - serializedVersion: 2
-    rgba: 4281225867
+    rgba: 4286293200
   - serializedVersion: 2
-    rgba: 4281169088
+    rgba: 4280302727
   - serializedVersion: 2
-    rgba: 4285354826
+    rgba: 4281027533
   - serializedVersion: 2
-    rgba: 4284131035
+    rgba: 4284252591
   - serializedVersion: 2
-    rgba: 4279969080
+    rgba: 4282867330
   - serializedVersion: 2
-    rgba: 4286674551
-  - serializedVersion: 2
-    rgba: 4292062107
-  - serializedVersion: 2
-    rgba: 4280564064
-  encodedCells: S1:4:4096:0BFB7D1F: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
+    rgba: 4293316543
+  encodedCells: S1:4:4096:095E0791:TVRNd5tIFv0Nr0Y4aElZpGF2HYjbnp1FSUd4VxLllLJzWyZy75I5MUnvwJRSZCcZPJSXTjLT5lfOw47P6XcOX3XfV13qvi+fjXmfZV3XKbz+fNc92cPPZ9csNvrTm+wesR7vPf/7+PLTYxe1X69eZH91d90zfoovHx5Tol04cXKVZXLaPeH/67pPz459Ru7p+ecsO/rh3z8vf/47bkEusizbiXWhu4c/X+By9Yy/7XErd66usvHReiv0j0f84RnvjY9L9yq7kl6xXdYtVjp5wnvHDksCY+tP2RXPlc2jCeK6de9+dB+s9z/3z1iZvc80QQ85r3Anepem0/dfsvuTHncNqzfkikkOjqWRybbezV5qTFS1+sfbzhgW++OMlQ7kFrzP3iiXx02yzrJZ6bWtZqaOl8cxq+UxK0G9yByttaQfs2yivPhGM1azqjWMDceM2XmWcQk8l5+yjOZD1grDDEvYUWzsCWNVMVtKcIyVYyNaKC3FFxOHAxaYujJY5JglpRizCj6+yWywhNSbomEDtorZyBhTKRaXyEhJPkJmgWc5sFl+SX0+a+NRGNdmWxsDdWx0WUvAnkGfRV/HXpO3bFRjqzNm4saY2Dam3MbM3rL239IfGlmdekKz0YwdsQmLY4m1tiauJoysNqZyd17pLWVTKWQL9xFXtYkn6NMwUtj3yXYlOVmKoppru7241bVGWpGPOmalRXnuFUouhXR1U+ykUpWSammecPNZEHtLc+EUmbDySojJWjRyrsUHpYcSa8/nVrwkwv1YE6CmaaxKcCm5V7S2UkJrZBFszt2pTzkIAYQrpZG5wsUkmgJXuZbKIpsaQBPBCyosxx3fLJSSuSF6aYELXNyf3BKLWzCvfIuLNqgTy8Jl2/I4oBUHv62oUIIWJ94d5UFpCuISBHqvzMkOqtXlL3QO1D+J7638dRAwgGgAwMHK3mW/HajFS5d6tHgwMQUnCKIEwrARXMBVlkbp4uDaG9ER3d3ra794FURhRYPQaOzpXZqu0vMJSxaUeqaTot4FQXB+s4vChAL86qZpujlYNSN1Spvvd7NDP0Z8HIYRY4gT5+L3tD6IopYnbfwQsteLSRAcFTevWBAISih9Selt/HB4gVQG37628xLDA48esjhkhDiULtU08Oukc9fdN6HTVRQFwT9nLLgOKQVajPT2ZrYK7rs/pifdnQz/08e/PWLBPqWE0N0p25RHh7/cff/j20l099fhQXQZ3qRRiLimxJnq2awMNvnX7l/1NAq+F+Y2VfZxYIJzivmLazVu42u9aLv4fNmF1UGI7G3q1KxtCvNCe7o16WBanUTxtdTzchyyIDw0eB1hvGHLW2+VnlasEcsSD8ToMAiDShsWloeEEr3WG29lZsOyiUWlK714fY4OURpG04AIOv9dpfrGvFPXOtKH2pXtLp0iASjr1X7f39k6bWtWNmU7KfW11/o+YcEoMiaMe3rg7DJll8ygMho23MqTsuELchPsq/E/xvuI57u9ad0WWrVbk7uJqRsyIEGBv2ZB96mT59VmRgm4Y98M+XY0SmA4gOh1wBH1wcIfbLcOOmwHCaH2YFu4I38xEq92zKI+FQDKGTpgAwwSS1hyqyx6xHxn3IQkTxDnivt4TJVIZkrNlC6Ut8R0r7A3PqJCCIzCQ6xElZRaG+2LZk4JdxJCxj5FaWmcZKA1LHWppSUq6xiLgjNAuSL9OBwr9DASGpG3lYMC3ZJeUg707KjGyNaY9hLzAMF4skVNqdbglIVeX0iQQ+Y4tFi9tFrK6XElHSJ6+NF470WE1eLoM6Jp5/mFdpxelo81nAKnQo71tgQ0wLI1Hslza+8pmACfoUZtQOE7ANQZEgc052c9eLGHOZCEX1ewhsdeLNwSJsWoDcAl/5kkP8v3zoY2CLAJKNTb03KfFZ7NnsP6cs+hfQ8cEafvDccWfvaN5qd42wP+Eh/Cgr/Z/wE=
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 00000000ff00000000fffffefeffffffffffffffffffffffff
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000000202000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: journeys
+  artTheme: ordinary
   campaignSeed: 26503756
-  displayTitle: Horse Tram through a Winter Market
-  beltCapacity: 4
+  displayTitle: Roman chariot racing through a sunny ancient circus arena
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 1
-  keyGates: 0
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 1
   linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
-  swappingColors: 1
-  loopInventory: 1
+  swappingColors: 0
+  loopInventory: 0
   mysteryBuckets: 1
-  bucketSettingsOverride: {fileID: 11400000, guid: e8c39fb13c72f1543ac2a5218a947d7f,
+  bucketSettingsOverride: {fileID: 11400000, guid: a1ff632960c988b4bab68404429b3e63,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

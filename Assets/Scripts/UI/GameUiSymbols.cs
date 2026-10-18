@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameUiSymbol { Restart, Magnet, Fill, Shuffle, Lock, Shop, Coins, Bundle, NoAds, Close, Key, Link, Settings }
+public enum GameUiSymbol { Restart, Magnet, Fill, Shuffle, Lock, Shop, Coins, Bundle, NoAds, Close, Key, Link, Settings, Skip, Video, Levels }
 
 /// <summary>Bold, cached UI pictograms with consistent stroke weight, independent of font glyph coverage.</summary>
 public static class GameUiSymbols
@@ -35,6 +35,21 @@ public static class GameUiSymbols
         float d = 10;
         switch (symbol)
         {
+            case GameUiSymbol.Skip:
+                d = Line(p, .18f, .23f, .43f, .50f);
+                d = Mathf.Min(d, Line(p, .43f, .50f, .18f, .77f));
+                d = Mathf.Min(d, Line(p, .57f, .23f, .82f, .50f));
+                return Mathf.Min(d, Line(p, .82f, .50f, .57f, .77f));
+            case GameUiSymbol.Video:
+                d = Mathf.Abs(Box(p, .5f, .5f, .37f, .28f)) - .035f;
+                d = Mathf.Min(d, Line(p, .42f, .34f, .65f, .50f));
+                d = Mathf.Min(d, Line(p, .65f, .50f, .42f, .66f));
+                return Mathf.Min(d, Line(p, .42f, .66f, .42f, .34f));
+            case GameUiSymbol.Levels:
+                d = Box(p, .29f, .29f, .14f, .14f);
+                d = Mathf.Min(d, Box(p, .71f, .29f, .14f, .14f));
+                d = Mathf.Min(d, Box(p, .29f, .71f, .14f, .14f));
+                return Mathf.Min(d, Box(p, .71f, .71f, .14f, .14f));
             case GameUiSymbol.Settings:
                 Vector2 centered = p - new Vector2(.5f, .5f);
                 float angle = Mathf.Atan2(centered.y, centered.x);
@@ -84,9 +99,18 @@ public static class GameUiSymbols
                 if (p.y > .51f) d = Mathf.Min(d, Mathf.Abs((p - new Vector2(.5f, .59f)).magnitude - .17f) - .055f);
                 return d;
             case GameUiSymbol.Shop:
-                d = Mathf.Abs(Box(p, .5f, .40f, .29f, .26f)) - .035f;
-                if (p.y > .64f) d = Mathf.Min(d, Mathf.Abs((p - new Vector2(.5f, .66f)).magnitude - .15f) - .04f);
-                return d;
+                // Supermarket cart: handle, tapered wire basket, chassis and two wheels.
+                d = Line(p, .10f, .83f, .23f, .83f);
+                d = Mathf.Min(d, Line(p, .23f, .83f, .36f, .33f));
+                d = Mathf.Min(d, Line(p, .27f, .72f, .89f, .72f));
+                d = Mathf.Min(d, Line(p, .89f, .72f, .80f, .44f));
+                d = Mathf.Min(d, Line(p, .80f, .44f, .34f, .44f));
+                d = Mathf.Min(d, Line(p, .36f, .33f, .80f, .33f));
+                d = Mathf.Min(d, Line(p, .43f, .70f, .47f, .46f));
+                d = Mathf.Min(d, Line(p, .62f, .70f, .62f, .46f));
+                d = Mathf.Min(d, Line(p, .31f, .58f, .84f, .58f));
+                d = Mathf.Min(d, (p - new Vector2(.42f, .19f)).magnitude - .068f);
+                return Mathf.Min(d, (p - new Vector2(.75f, .19f)).magnitude - .068f);
             case GameUiSymbol.Coins:
                 d = Mathf.Abs((p - new Vector2(.43f, .53f)).magnitude - .27f) - .042f;
                 if (p.x > .57f || p.y < .26f) d = Mathf.Min(d, Mathf.Abs((p - new Vector2(.60f, .38f)).magnitude - .25f) - .042f);

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0405
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289642194
+  - serializedVersion: 2
+    rgba: 4283198097
+  - serializedVersion: 2
+    rgba: 4288259769
+  - serializedVersion: 2
+    rgba: 4283386957
+  - serializedVersion: 2
+    rgba: 4291746535
+  - serializedVersion: 2
+    rgba: 4285696942
+  - serializedVersion: 2
+    rgba: 4280038486
+  - serializedVersion: 2
+    rgba: 4281094011
+  - serializedVersion: 2
+    rgba: 4286937714
+  - serializedVersion: 2
+    rgba: 4279442733
+  encodedCells: S1:4:4096:B8BE0443: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 42325754
+  displayTitle: porcelain doll
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 96e9d73aefb65934da2b0d60e8809957,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

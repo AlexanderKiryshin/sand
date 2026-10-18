@@ -16,46 +16,48 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4282928752
+    rgba: 4284052633
   - serializedVersion: 2
-    rgba: 4293456612
+    rgba: 4293255578
   - serializedVersion: 2
-    rgba: 4290746116
+    rgba: 4290614019
   - serializedVersion: 2
-    rgba: 4287656219
+    rgba: 4284895528
   - serializedVersion: 2
-    rgba: 4291737117
+    rgba: 4291406348
   - serializedVersion: 2
-    rgba: 4285026592
+    rgba: 4292726872
   - serializedVersion: 2
-    rgba: 4292726615
+    rgba: 4292132653
   - serializedVersion: 2
-    rgba: 4282461208
+    rgba: 4282395675
   - serializedVersion: 2
-    rgba: 4285888604
+    rgba: 4287327515
   - serializedVersion: 2
-    rgba: 4292270508
+    rgba: 4291220160
   - serializedVersion: 2
-    rgba: 4284781249
+    rgba: 4293456871
   - serializedVersion: 2
-    rgba: 4289829980
-  encodedCells: S1:4:4096:6239E363:bVVPb9xEFP8Mc4lcfLNAKQ63iZMW5baOlZVy6mYwcIN1X+2QU1MzwuplRXFmm14gxdppcrJozQ69uIcqlblUWoU02g/Fm7Gdtoi38cby7897897sOGOUpcpVirtZlWXKwaju8+oOoxmrPEq/pJtMqVK5jpNxBLNVR3P5IefPGeL0MAy1g+Pcf67FGVe85GlVeYpTOqKbYVoyFvLPVlHE8Y/zMqw4T789RDFlIX44d3jK2Spijiq5KjOWZp5WUxoeCQEPOa840u6jecp5yNOMex5l3oh6TGDIkGeZ9s8QV4yNGA/pyNSXbudImD3glcrSEBObK01D2saIPdEOM10B1954k2IB4WaPHwlD+NGgDEkhw9AFaNgbsVhnEDd7NUeSh4xWjgb3DC52Qs1gOpGJzt9L70FLuIO1YTO1vddVb3AG0JZwyIw0NeIeHzF21BnErLPW2KhPgAKIuww9zrQx9c0IsFsx5Ibw5zXOtH7d4Mi4BxC3GUKd3jMZmJEb/AigX0O4KEHcxP1DB+tt/YizCLo1iBxELG5+1VXfNoixa72YPY7dq8u8b0+3gh3oDOLF0lkul2L2AY76u73BYmliikbv9R7b9g0hvmjh5WOk3qJdjdjCbT/Q/j2M8cTgdGBKZL/4uIJ8Z7no4d0g/0Lj62iBHbircbh4L6Z0vNVm9zEF+iMeLA9a+EB8jcBW5z+gg1ZvMKEvgXr6Aq+94LYmmfyL9+4G15FE62aK275/ndx0oseDiJox+j4i2mE3Mp241eJYlKnicrHcbdfl604hQT8+GUI03NqiP4vL1to3EaCFwcfYtAQLFLmRXuzkcSACJPgGH+xGUSFvD8Q/uGQYX89jgDli/X8cBVBMgw28jeiH8SgCfEijDT8vgr6JH8bY4NPAT6Ih/b8YI34ii2AIILulfkzABvwNzWsoMInZyMXGoK+v3bgrcNqQya8Bth4fFEPoxqXZY3qbwkptE6uBaE83cXzRjVt/7UXrwUuwyESQugkCqUsAPM429CwG/kkBr6W0yeTcEsRKCihAj/kkCUx31rGvUiY3SEPERFjf4TyGepXyG/yp6t3O4OkPMnlpkRonTeoFRMkDvnki9clQ4dH0ewISkvkNUhfCEjUcFCB/0oeTwoO0YvyswJxnIMhkLs+b+NMhFIVUSlVK4WGfKpwqPIUktt5KxP9qTuFsH+b6LYCnM6/Qe38f90AEb8WsaU7t5t3u98GyUviCUMr9DfEiSbTJy7ll17bdqKuHqNXvmdIpz+Dqj/35ARRzpS4KUtuT+tUaZnecUmkDvHOT4S46Xal4b8Wqm7pZkyhXBnYNR79r8FvAI8tuMLBf0mnV6FKWeO+WroO/FEJqjONnEnGswDUOrtNaxGJKbJuc28fzfTlHARaBLDRwTQaxnJ83DSHkdP5u9qpBW1dphjKw9r+ckgk5JnL/4nN7RZol4OU6hoD+cipwHxzPpvmzCS7F+TjiOJaBmGCJkE+JsJu1a8gYxBCf5cKqJ0QUuTgnZK0trA8RxwCXK+i8Jl68+YQU//G3CMFdgvXXzZvafmNa1TSv1mxsqYN3/wI=
+    rgba: 4289435997
+  encodedCells: S1:4:4096:597218F2:XZU/b9tGGMY/w6EalNZLCIQCoik4sa4KL0KuBulwqnJmG2Qi4CMaZ1JLHopObJj6kmopRDVm4cWGBpfSEiFwA12XwiwQqfxQfd+T5LQ5GRLN3/s+z3N/RNkO53csHO1QCHGltbaEsNshvzNwvuSUB5/e4a12GP7R1vqqra3Itgbz+bGQFrwcGnFuJbJlhRp4mFy1E9uatxMRiiMrcCjlRwPZki0xbx/P2zY4tGwd2oMosrnj0IAmgzHLRSTmoZTSFrptRcKSMm6FuzTgDu3zE6UUE8KyIiDH+G5byZEUAsydmPMYuJp8A3etJBnghyVjGUcRmMeUOy0UUO7TBHUTIaQIk6NDISUFcTSIX2CBElESwcztBC6OBlzKXdqnWBP9xEzBEylFIqAoCbkE3ximh1wKNzMW3yGXMpLwFvAYDSBDnyf7pl9dooEMougw5sAD0++AwAkzAuqHKEkSeRTAooJ+wKkx+FbGG+5+D+JBvOYwsJ3SWMp9lrlY8DYB55iDuxlo0KdxIE+ydUT1CIPLLecjw2EqbOOgJAf9WK7xuIv5IGHsMsY2cwjiaFQUQPu8wHwm6z7bKpzJ0neztw+Qj50tP/G2AuolU+6l8iGdCdiHOojk3SRQP7uLf9zhI4CG4xYF8pRtBNxlreu6Hr7FvUN5Bx1kvg2wrM34ES4/p5sFBoNfixwL3GqN6yGuFlBcAeSvigL7t7geYgW2F2YG8bjAhKf1cltwlmdD5F14QcFz5OyGDhXMa2n8adHFpQR9VtX+hivFab+75iPK/4Z+4Aa9MFg9ovQa4DK/BxHHHP1v1H1I+tVGPO/QAmawWxQ32VkG/LM1/4uBS6fPu0WxbS/MUm34LeaZQ3JDzzAIFhhcg+toj75Q7ykM5oGF4bCovT1Ks2qzJrRYj5xlaHDGWKO6R7EbBLfz5VkBs+nAJUOv9NTv0pFH/ztGHsP++57nuR1j1Pkfp888vHGf+ax6vN6GD8Z95IT9DmH2PmSmHPQ/6mUsz9le34iztQUcqpE52JT0SEqavQrSQv14vPUo4OK6c00ZIzB67NUrBg1eZ0thw4JRd7RkDZJmWY8UlX8PAtUAH6L2qLiuCm/WAwwb3UyXOdt5vkfHzvjrDnyh44Je536DuI3UJSpVBPfDreCgM4gYc6fb557nN27P0mbacNNmz2d+3oUzXD00X7ZDDjdYj1U7aZqlqklww249jvcjEYQikSL4AjR7zG80yOylUsQ7WzJyG54tdiQtfIL+Bo4T5rImuVyR818+eZB7bOepbYXC1k/EvGa9mrGZ62VNf0bIhBAv99mb6VxcWdZc6wq6VwdwiEBmhmtErHC1DG3rGH5dLA3IW/pwtFh1MXtp+IWGNr3Q0+ndNv4YTasazk5Vrk5hjV+nTfIasL5bWlM9L0s9XZ3liwU0lOo0y1DgvP6zXiCxLkqQ0fgH/2qVucaAVJNqMkWRaWldLPATBTRuwDlRuI1uBR0X0IZBoKxEjewyaxI4BiRdHUy0SQEV6FAuplCkhisC7U1yUDFYB+iZoktZGq9Su1mtCOyxYgezNwekwmAL0F5oI69d9Q4igELPz1KYJzHNC5MOgmim3r3LlYIALhvCVpLX03KxSYHzy9Rl5UJ8OCfweAR+Xur3A/KpymWnTVBO1WT2MWloY47TN/xf
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000fffe0000fe0000ff000000000000000000000000
-  conveyorDirections: 00000000000003000002000000000000000000000000000000
-  conveyorBucketCounts: 00000000000003000004000000000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: wildlife
   campaignSeed: 18858539
   displayTitle: Manta Ray over White Sand
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
-  keyGates: 1
-  linkedBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0

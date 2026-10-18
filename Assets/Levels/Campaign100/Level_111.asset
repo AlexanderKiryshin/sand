@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4293321208
+    rgba: 4278914592
   - serializedVersion: 2
-    rgba: 4291206084
+    rgba: 4284450515
   - serializedVersion: 2
-    rgba: 4280956248
+    rgba: 4286495738
   - serializedVersion: 2
-    rgba: 4292519040
+    rgba: 4281686709
   - serializedVersion: 2
-    rgba: 4283202494
+    rgba: 4279641434
   - serializedVersion: 2
-    rgba: 4289753957
+    rgba: 4280762771
   - serializedVersion: 2
-    rgba: 4287254070
+    rgba: 4281494751
   - serializedVersion: 2
-    rgba: 4289439222
+    rgba: 4284980977
   - serializedVersion: 2
-    rgba: 4279704112
+    rgba: 4282418419
   - serializedVersion: 2
-    rgba: 4291202210
-  - serializedVersion: 2
-    rgba: 4292132851
-  - serializedVersion: 2
-    rgba: 4281814139
-  encodedCells: S1:4:4096:189AB6F3:hVVBi9tGFP4Ns7VbE+1lh2xi5FzCJGlV5uJWOCW3xQw0oEvKZgTOrQ0WbE8xhA7ZXoKzUDW+RAUnnT1JpIm6k0sQhhjmR/WbkZyGXvqQxpr53vve996MZEW9VUoVWqtawYZ+ZeFXQvdYFHqhOhsO1cKDali0qLOwQ189aSM7Fo0JVXTh3RctL8YKLu5RhyHd8SILLcC8S+/odVi1bPWi0F4TlmkR0kUNukUX5z2clGGX9slHsS3ZJ1OnfbRQ9ScavaZFO1HhaUc6VI9FPXRukNoRIKNPYVrOx7X6P/se93fkkRr8u/Qhsd2T6BPyaKDiHhn3HiGNJ/9ghRC/+lhxSPeGKgZOeqUu0DVKv2qWic0f7yqHxXFMYBoWDumW5ZwLgY1Qde3KWsSegKDThVG/Wc5YY5ND+tE6fHTgJkvGObdcXBu5DUL4cIePe7QcKsbs1k55kig1wCJkqx3uZFy3Tb5N7MomXqCTtsOJm0S84VvLbSNcB79xS55/3HP4jRWzEXDGtoKaKh67SI877nHMnXYE3+R37cjEsWcO3HjsUrwHvOIRF5xNxbcdTDz9cUzGz/iKs6bJWT/K7x7dd0HOIR73XKI4jnhkG9vwZT9q9o9ETMZtfHvFt5ZLFN+s7Ba4OBL9sa8K0GUZx5NnUM2WS8u2nOQJcDEZx3JijNnbOw4nhHEWcWvRe0bsShxtRConNH5t4spUxjAX3djc2i3vN8n0uhCH8t4kvkyloZfIc7Z0Hoyj+7xvp+Df3JdyMpFX9nqf3wsiFx5ZF82avkX+RIh7V4LgtQkmsbzBWAQX4CsU0LdOvxDmFImN0fqE+Xi2ynMcD9tPePJ0I0QVmINQh/rOl5FPjuZh67jdtzZ5D/yQ+vjZOesMe2PRQ+BAN+KvgtJzUskbrfYIZwuw5Z/ZmyIRXNzX3qQDc4+vEoEkn4E/SRohZAq4+N3FuhuHp2k2OQf//sbiNUml/ILIr6E8QvDSHc1kc7NBmTaxdjolpBwZk/99PcojvBasQXfEmTv/6OMUDYCdGhMYsnIEkeuh2EQNPKBFbN6NaFCaEh7vo2XOeONkijPuBG/ZRrwzhoCirg15mufLfAu4EWc5mKIVNusaNYZqc3ra4ku0fwscKHNsjcVbaEw1KNUgyPN8hdOHV+8MWpZRhFqb5A+t/ZfG4Q2OELYwyfMIV+S2YmpfOAc6GJBbrkUoXfxUPTXP8z8fRGiB3Yc8SglKMAEJ/Iir7G5nDjKo01S0qkzp6oGV6AkxleksGFETlPjao1eGjPxPEJSBozFF5aatX/DCHKBhYXlah6/0hWl3ONSFd4F3faBRTbccVmGhu2eqLwUlwgL9RFG/tF4jcOcQuoEMFPC1iWeYzOQu9qMZhfj1+s1aynmaZuF/HUBvguzhmyy9/UOWZScyxZg55E6bRJnyQZaRrLViJufZHD6zdbw+mYEtu6KG8i2qPkgfIjAsiiKczOepPkln8yx7+QulP2dh2w5CKE3nvWPZsUl5cjGU5/NMY8/Li9qY87VvSpbdJvMMZ1m+GYU/Zle1k72HfuNwwqtG7NqRpPpCXh3N0/nE/ykXYXt68R08lvFJPJPy7QOZHmfZXM4v46/1HAU7ITGUzYHKtlxUJPVLeeIKPqcg+Ac=
+    rgba: 4283851384
+  encodedCells: S1:4:4096:704A12EC:xZRNb9tGEIZ/w9qhZOpmJylc3wzFjeqb3OVu2Nu6WjLKTQm5LHtLQXGwx9iuQ/emluJ6fCMCtYB+ZYeSYyCt22sHEETpmc93Z3lw8H/Y6Ol/84sHh8PHHaqKnC6qw6qqHvWoKEH1YBed+xfB1eiy+tIOu0TVxeFF51098OvXwVX1mN3zBMrrR/m9JaYp3HX1eA4yEKWUPBH/xo0RYBtTPgrfioR4MS9N+WgBU4IxhZwHRn78BxwNXxmEzDQ18L/x4XBYDd+V0tTCEM+MsVefJx5dDrf2jpg1iSkxy4Uth8PLLur0dPiZG5Fwk1MPWSaAv9j8+fS0Xe+efuaG06cspRVQbPmnNVuzLU8M58LUWSkklOC2SXefn35qN7yL5kDTl046AfBy66BSxR6qU31nuc2kAbnlT092T9kxPXxHjJPukGFZWlPAi/u2d73jTXzCBS+4aKRDK7MGCr7lzNt8UTznZcIR0Fm0IUC9zbD7zT0XQnBTWIHOhc5aKNymBf3yIV5wCCMDXQGHUOBNJ73uuhxd8u5kr0UdRRwdYoi1rDfy65ejIW0wVSdtGpuUS7SUgbLIzQ68/ljR6guava4TgeVyTuGIsnDIO753RQv+isITHhoIpYAwQfz64iMUVu4cV94ROf1IPK8zCRiEmc2KmrXkY7H3YdQSPyT8qnCCCieJtYnkqoWuypN2xFh1QNiFhUXqHDKwLg8ZK9A/PdppFWNnBwfM5QXa3NkUKQ0i2H30PNZ6xNt979dxWGRoMZVpN1peo9/u6Z/MJGJAFrP2Lrf5xE1D06lP9i1jmpm4p/pwdtZn7GfEoHDGbLq6QayOB4NZKjwD8fitpxY5SQ7WiBRwWoh6j3WW9kwE/fF5ev2BOi94nKaJzULSb4/d3sz0gM3S+M3qaNX/MG14EV2DDCi9C59dTBdoTNQyHSs1+zNm7I5OpUyCOomRxGP7nguprYHSWnvnDFcLjOtucTARPlut2Q7e/EEtfD8/Zus1Tk9uaTCQoS0QfdUO2BgZgfUC1aBd3/peOziyjjREtD6LiOdKrdZrhj3Wru/8XXJ2oabFDJ7tUN7Bwlfeql0PkFQe3Ple5wUWEq3lE58cir5K27Vqsc/aN0ufpe3qzt4uIdVl84w4dTGjs1s4n2l969Pjm+UNnY2JTiT39iPTa5lqaTo9pl59NtPtkrbe6fNJxZ3NjUcn5Hn6DBfUdE4/eg4dIAU452wyIXWUMkZ7JqIKzGM54soRT6OgtrltbBaoa4s/Ak31e7dZMA1+wyDVfhpYegeE3VGXWNONhG6jpmGq+eIJ006n6M9oWRvZUw5zhFviIWCyuOHlL95sPm/Y+6QhKRuYWrzpMj3Xbzk204PMP1HZcqYDOHPdRcSwxCnHqebqvEH9/FwqtCKmMTiAzLtdK1h6SzJofl4rDRBZjDytg8liTi27OMUstKleQiG/ojF5WmbaUzPN4nGNHr3J6CpHOtJ8cq5ncS7BTK5iL/yBrtQCSrroMhA9UsnrzYSZwBTA9hs6CVva97TTIfbHhVZKe1FqBMuieTx203ROcZPwPV3HTKlkoqGvvbYXsL8A
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 00000000000000fe00fffffe00000000000000000000000000
-  conveyorDirections: 00000000000000020000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000030000000200000000000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: wildlife
+  artTheme: ordinary
   campaignSeed: 11527509
-  displayTitle: Walrus on Pink Sea Ice
-  beltCapacity: 4
+  displayTitle: red Mars rover exploring a steep orange canyon under a pale sky
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 0
-  keyGates: 0
-  linkedBuckets: 0
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
   largeBuckets: 1
-  alternatingCrates: 1
-  swappingColors: 0
+  alternatingCrates: 0
+  swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
-  bucketSettingsOverride: {fileID: 11400000, guid: 86af74ef924e6564ebfc4ebf08cf67b0,
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: b94f8f5dc9f4316438607493c04330bc,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

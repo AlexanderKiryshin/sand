@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_310
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4294440182
+  - serializedVersion: 2
+    rgba: 4294430907
+  - serializedVersion: 2
+    rgba: 4281089376
+  - serializedVersion: 2
+    rgba: 4285684298
+  - serializedVersion: 2
+    rgba: 4285893039
+  - serializedVersion: 2
+    rgba: 4281477931
+  - serializedVersion: 2
+    rgba: 4289839066
+  - serializedVersion: 2
+    rgba: 4290021486
+  - serializedVersion: 2
+    rgba: 4283063940
+  - serializedVersion: 2
+    rgba: 4293440406
+  encodedCells: S1:4:4096:51A3EB25:RVXPe9o2GP4bZNrQcbMCiaMbaGH1blDN8XzreBzGbgmu6nKjlLrpDcePo/hGPJq4NyuMevor98mhnZ7HWPj93u+XpFexy3nA04An6v+BYUjmBteBE7OQO8xxBU+/o1LjQ49zfugOB9xJwkBUMpE1k+BGj+AeluCRp5/RRe09Sy1J8NNoLDA+xEF4YHE3tC4OQs62XiD2KD7JDy/LY5ztkgsnGaYD55LHzoxvv+MNavbWXTxsk0vn4EtQYs6fBXwm1B7v2XhYHGLLjJ3gC5+g2SUfOJwLtY8fF/jO1hNvwM+dpMxCjhnnbrV7wo0r3DvU9YcBHxW4nO1mg4yHQcba+wRxrwMvNxn2rxudUmyzYeYEDjf2CYB/+H18GH5+eCWnZRZAd9TMCbR/1ULIxl1o36uTTjS+rYyShzyExlkBM5BUBjbWza4uY9lZ/sR2rYEXckXA4MJEwMfIWDcAN7rdu83oNssGkDugiUJYEmmWxEQ/rRHCPUrp6CycmUcc/Gf12kijVC0TrbsNhGgD0ze7QKxSqD3zeEYEQaVSLYLmVwvVGqm7TnDDxdtd4LkpD2ckhjJUqUir/Gof907UVfahyfhFsp0FnDsaF6TCRG+DO0rV+3+r/oIFAwgdBk4gPA8JZSGZgRc5pKT7rUWvA1Z6asYCHlw6LhKZRaSAZP2jLqRP/cewWboz5jEepq7KEiFEpipRnZ6+GY0e/7KP42cDIXdtBnsN9q/IxNM496dT2qmcdpwMnIC7QrmOE6t4D1cPS3uRRx3ISp1JxlmgspSx1NCghRCaT6j99lyw7dftN9jnM1Upb5biSljiU9FEc9/ebKbTQ5Z4wYBdwgK0ZSXmxrwZRcUkiqLx8p7atP9b0j57u4X4WaIqfzymRUE3RRT50fMxTKe/p2R1w/T+ddhkU5zmG3uxuQJ+tBz7m4IuBgke7FzHDT/eF3ZOi9wejfylxiPfL6Z9tlMDEXBhzcEdpTb81PEBj3w6iZJ4F0N89uIXcE7z2kTTozHkMB43fw88Hd+d/2IDlNt2PvInUASgy1VmOSkLf0t5X7zegP+8gDHxfVTzmysh2JeEVVseCggPuK8NouV8riPAwoXsT+aZVpqKqCh8GzKeQHa+9h9FaOW23X7blW3OYwuo9kgb+D/wM2H9fe6G5Rbaa202Ne5D8XX9mv8M84kYniXcIe/vAb8aAx7d+3UDm0i4IsgFu9k6rCJ+QW2g6swnk+94cjRx07OtA3sf6HRcbMawfqN8AXbNlSvavJ9cl+42zIBv57AgRb6AHl5p+gr4zjy5/jZTmWf5dj7ZAMQXNp0sof1QniukgW71cfAqWLnNCPZMTk/pBIqE8MKzMEI3KziXyttQWHv63o+OT6GP9i1afXJdC475TVmBsPUK+6SwFxJO4Cl9pPTbC/HJFQQfYVRmLYJz+9VlQY+xrNRmWsHhE5VwkSR2A+mDD1pAXuYjBRKsHmj20lZZ7L5A2YeRJM8RMu/oI6H0n0xJjH+dVr9StYotLYXrn3EbkrynCOXwZComPY7WtGWYIEXyj/mDMrEBWgJ6AjhCsdnjxvoLNnCLdOLnRn9owtd3BwhICBkw73Lzri/lMSikc/sBaxKyT0DPGsg0axytObzNr6T3ikjDNA00RSYyprUpWh+gdQO1dNfICQbQNOY1ZCOzxhsggBAKS5BaUEx4XnMCoU8/Yv0N+NoUbCFzqLFsYZ9LiY3XOaAmenOkcT1MaADSkngUg2IRmCK4Qt4dYYN26rwxAoNSwsUCPSY6FFLk/Mq4sztKU5F2UGJ98SH4YDwVgIi5mMt9AAyKrNTeFopBGP0YJpZa0kGSTUWejH9A+jENo1Uqk+hrob7cDN0Oo3ZimHhvbz45r/+aP3zX/+vZfw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 949880
+  displayTitle: Winter Reindeer
+  seasonalNumber: 10
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 535cb440e34d7974b8e2e09ef8bc67cd,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

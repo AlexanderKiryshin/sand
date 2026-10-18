@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0377
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4286082663
+  - serializedVersion: 2
+    rgba: 4287671493
+  - serializedVersion: 2
+    rgba: 4292263860
+  - serializedVersion: 2
+    rgba: 4282732370
+  - serializedVersion: 2
+    rgba: 4289433987
+  - serializedVersion: 2
+    rgba: 4280033317
+  - serializedVersion: 2
+    rgba: 4283993764
+  - serializedVersion: 2
+    rgba: 4294033035
+  - serializedVersion: 2
+    rgba: 4294291047
+  - serializedVersion: 2
+    rgba: 4292927460
+  encodedCells: S1:4:4096:EB38463D:TZXBbuM4EoafoRRR7p2baDkCfLMZtd2+yaGlxtxkhe5Mbs468l7tYczF3gaCF3SOGzTg7C3y9CTQU+5P927PEoZg4asq/lVFll5esOrx8b09TU6tW8eXP5d4d8+DEMczneDx9H/40/Phu9lxLEQ7aRPhQogf/HB6enlv23/DUgj4KsYbGPzJ2/bpzGsrJqqbsFeHnf2Z1m1r23HbPn+awF0JxYD7zX/5YXy04tA6Xe+OJ6UqLiZuh3MG7lFDmmidCXgJrkri3Pl/1310/IS0IFp0FVOKOf4/hRZ8iADihPiiO2dFkZIMscN3AeCHkR65LWpnQERpWkS83wAercXvMNoa4fxrPCjsbb1URpz/68V+X8JcvzneDm37xJvucCqxAW+A2trasTWPv45cVSfjU8uFfWr51OeSW8fse/tu9Cj5OzJ8cnUQVjzZ66BJI+ughTBjtv9ImxEUgFuLmH/bWVtB3Kk9nbm83nRiMTFI257AP/8TfG+dOZIyxuSpbsRPzIjWNcR+vgSv4ew2FNIZ5KZoKHxrJ8Lu7YfLMSE+ToQoxV0ObrQhTaP22+MIAv5yKURVi1/fhuJ6SCbXGhb+JjebpoztbX0RgI9F8bgNVREaeTbo+GQ6sd/8Jp7Bk6x8VY/k8WKj5UobnUu/F3Y6nomGexb0eEVzhW7EoSexnETqUcd0NlFMFCyLyqM5p9ALQ2BtdqbD+2FnE9PKGC8I44oKCvGXSO6kgYAcpkQhLX/m012eVhzRPbP1SObQhyQ94GWkitZ42TascuNtKTdhLHe5zl0CIe2KXiu2Zh3EaZUZgwjQVZlcaqdww7fz3hbtyoPYrEzPdMDzfIcGSR3BvM/NdOvfT1eLHPF/0kRap7nMwWM+XQbVVXUfXG6n02DYozve32y0n7rawl9uDXhQkSovlgtBOMIcSUmJzWER61laFIU4oWhTmWU6jnk8zaWrntFxXxVMDRRdDC6kie6ravX7H1HkEnfVy+MiKXHyI/7zcvVxVc2yDJwD6sx3/sasbpapn+YPqypLVw9ZRE3T53DOUJtcyzj1wTfT2arycUU/KjVomtfXVGZQvtY3JRWKFUr9onCDA5awtGkxCdJzb3N5oxThaqpSiZJ8dX2Zmzg2b6n0g3ProywbJDiN9UNWyXw1+6O6j5qooaVLf4rTuaouB2x5Uc9klUH/x2oavZkoR/NlOpVEVXWTPNDFX5msgqusC95cXbJXkmvPU4kIIK1USj3MAp9I9eYP94NhtF1X1SXlzaRdBlSI2t4u5cINoItiY8DcWmDkJKKoqiVesp1e5WhJ9WOtFohaoLZYy+XZKMiyH3iRtk9266sPBWOwUG56LZaLwN5+qCrpK/UNcynBbPh9MikZuChLAcPAzSlo6mOq1KhQLlMfDVYpC4KgwhlhCI7a02trx7LjDiI5PmN+cOPD2EdfM1d8bpWRBknTjdud+VhyGci0QOPlUmbFZ5NyHTO6Yb22vZhJZwtOPOQF3sqx2ZrcMIYUlMcG4rXhk4GX+lEEIxqU5MZHAfHI0GNwTyEd76+cz78Ghb2BfFOqJEGEOUt9iohgpIHhlFhrpN5+YUax5OSxHqBHGRrb580Qx2w/xgXQXx45vi2U+74K4Y8uEWYwMrqq7Xot2dAYdUvdO1ZAEkszRlGPq3KPIXtcz0x3ZEx9W3+6SwqWco+uED+c95Sy45PFBeloI5VWyVw9H957wzKrj7Nuo/Z0q2qLO2BiI0vdVwm+cL27vpepdJF8Kve/HfdHq/Uas+JL7+q5O0z2iuEr5N8q/1uLL9jh7mjNGhNgGmsjJqLE9cVJDL5a+sr5/hfIe5G7XX6ewKYzPCj6xoeKviZjcTzY4oD9/wM=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 39385423
+  displayTitle: river paddle steamer
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: acda6c34ccb4ce54fbd427a16db21e61,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

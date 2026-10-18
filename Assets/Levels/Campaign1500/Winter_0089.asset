@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0089
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293782258
+  - serializedVersion: 2
+    rgba: 4289560947
+  - serializedVersion: 2
+    rgba: 4292781201
+  - serializedVersion: 2
+    rgba: 4285031271
+  - serializedVersion: 2
+    rgba: 4286359767
+  - serializedVersion: 2
+    rgba: 4279967525
+  - serializedVersion: 2
+    rgba: 4282990396
+  - serializedVersion: 2
+    rgba: 4280498013
+  - serializedVersion: 2
+    rgba: 4293116866
+  - serializedVersion: 2
+    rgba: 4281819051
+  encodedCells: S1:4:4096:D94B6A1E:hZTPU+PGEsf/himWhNnbk4i0HO3h4dIRELK8Nyoo5fVtvdrWwFEoGpYbiT1udBNygMmNqoXSzl/5euy8c2yrytKnp/vbv+QXeV6XQ3FwEKdxRd9Jp5QCupTnQ+L5/8Kv6+JE1QImk4SP40U8jk8cL0a+mntF6M3rYQGjDhYy4McqrsJyZVUIyp8HhQqUF46EgAAXMq3NQbWu1Bqt85/v11AnoSf8Yj8/QbmK8afn6gTUyl7VqlSqrNWQdAkvlnIFY/0cYxrHhUJ7W5OCuoRA0McPC4AaZGEM8fF8hf0tUVIW+B7xMtEoa0CQD2ayTjzs7cZ3WQ59IYaiBlCyJgGw5sdxQu5tSC6VCoXvDUtBqa4AVunlH+kTcUS0N54CEueXXhiIXBaS7iCtiuRd9Yi63+irKbIS89qTAeRJrYrhZJxO90M6bm9VAUdDvwjEdZEEAHN4El+EofwOVlsOYTjyi5Hwx2EO9fxIiM7jOI3jBZJ+qyiA2C+EL8ohjFwVBL/HarIfO3nEqew+mVyPfA9IiAg6wxZVctht+YcPcagCz/eHp3HhToPm5i7Xh39u+W2chKoeXQvqg3N/ChofWHy/e99vDG7H40lRU3fCawoyF4VK9AO7XOCPafZ6hraJsT8Ly6IK/fHp/Eid1gk8vfu8TjHLrE6/W5T9x/iEBsCL59Q8HUAVT4/jcErBbbNrIcWPmFYAlSrqQMIIYIGDYTWz9tV+PGNTSYoq6kKp8pza44OM0USny97+zc9Z1tukP1v9XtSeKoIVBGVSPa3X5iC9yGYzxhb9VaPxm/OtwEOoi7EcY2oekmyWTT4x/JhrLXGa02zAF2pQoOQ4TQtIsixj52eYfJWAUzdXauQD0C4c5t0laL3hMdbZV400UhRB0HlxrTziGij/bPc8xzr+ijq+oRLRD46En1OBQeaOZ2c0rPEF6pvK84phDQW135fxBLXd8CXxmiqcqbIqPNiswf4NPWjgzXEJPYwvlpi5LVHknYYLniYLGnw7I46kE6h+s99pyD3aMGNM8cSxp7UkvkTpeIazX/zQcyvUGf55n99RwZUlLgFA1he9zfyQtqTrjGHsyPxobDaTs1ekfQO5oFbMfEXnjWmJh+bF2sw2dolIK9fEGc0R5VW605yxb4/mxyx7bfoGmxvyT/F7y4RQjr9OdyvP3Gfnr/atsY2WGtRv2M/4YCOevdj3Hm33Lss280On5ZjeA++jlnjr+O7Bk+Ov1vaWXgW6HtMm7e2wSOy0D3zavPfW//mV/Dc0YLIAXQNtohCMC/NtzbFhzPAJ6cMrmy1pLFz99lxlBh2D9fTVMs8cayvfrmZLmTsDHJrBUAy4YZf0SrDs0dzrBnvdNLLSOP3tgzAHFIAZNp5s+JqzO+zfrpAOX0z7x04YUs8vebCisrH2kbfneAVUXOrfdPlps/ZiBxaAlD/7/Ffb8vbKlY6CT9vLLRfSTar9ztgzVeoc4M1xuGrZM+8i4skYeD/r37Pk0ZgXwO8brl3PSJwxIR6ZpSUOh1Tpltq84f/dcNYxg4FhDfFzxnjbmh5TuNT4bDYGLTMf5tQA4v98aP/TO4ApF3z74PCBs5eL3e3Ni9yTeu8O9N7/7Y2zEzv/3J1XUOmfXkC/c3fu6YBFJtox3ZbjqoyRYYqOiJa7vrWd6KKODbr2U4aaGn+c4hljVP2u5U7G9gU6iHhr5iUs9CZsG4mOtQM6y6Kdwc5GghlE0ZfkZ7IzhgaPuse4oREQTLTkxyVErOWRS94ZRIzUURvJB82KMSSDbdNu6aLy7wjTueiRm6WI/nJDfoyrPHPTLf6VR66JzsaFo4yoR5R2S2lv8/of
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 24709334
+  displayTitle: winter gnome carrying a lantern
+  seasonalNumber: 89
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: d79df7b723147c54e959412bbaadd670,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

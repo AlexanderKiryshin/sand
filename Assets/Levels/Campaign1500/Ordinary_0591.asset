@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0591
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4286818249
+  - serializedVersion: 2
+    rgba: 4290623155
+  - serializedVersion: 2
+    rgba: 4278990511
+  - serializedVersion: 2
+    rgba: 4293255904
+  - serializedVersion: 2
+    rgba: 4280101955
+  - serializedVersion: 2
+    rgba: 4283067525
+  - serializedVersion: 2
+    rgba: 4282418371
+  - serializedVersion: 2
+    rgba: 4281552482
+  - serializedVersion: 2
+    rgba: 4279047196
+  - serializedVersion: 2
+    rgba: 4286285974
+  encodedCells: S1:4:4096:D0E4A677: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 61797429
+  displayTitle: fiddler crab mangrove
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 3003b59f391494e4baad1007b3053e8b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

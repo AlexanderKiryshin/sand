@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0729
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4288991223
+  - serializedVersion: 2
+    rgba: 4292920505
+  - serializedVersion: 2
+    rgba: 4283132066
+  - serializedVersion: 2
+    rgba: 4286887403
+  - serializedVersion: 2
+    rgba: 4279705649
+  - serializedVersion: 2
+    rgba: 4292077303
+  - serializedVersion: 2
+    rgba: 4282994278
+  - serializedVersion: 2
+    rgba: 4284847834
+  - serializedVersion: 2
+    rgba: 4286548385
+  - serializedVersion: 2
+    rgba: 4293045134
+  encodedCells: S1:4:4096:17D1FD17:hVXBbttGEP2Ghbay1FvpNE58c5eJqCPDsbU8tuqWztGpQdu5WSt6RN+MXYWTo2xZLHtUULTIV3ZWaYoCLVICEgm+2TdvZt4ut4fbj1+6oij6QsDhLmBH8eq/Foe/LUd8dDHhh/Bm+y88hIzdwmHgi6K/wX9E3mITO7z8h5pDvm8/vvkr/BZH1lkKML8Yu8PwwCGfKdA2ukEKb6PtK+x9s8M/s6vsAOe6WfgdHtVqANH2sPlLxfZe2RF6WiLtB/i7JMnd04+z5nN/hhaV9UQTehLwe4uTybMIsz92+POZnYf04JvkGcPndc34RYSTD0Hd1tWIo24CqXea8ZntECfNfoRqnys4PNRqgSOcgEib7Nl9NKux5Wi6RwhsBxGNaleNepDGUpF7w2xYD9P5QsGTp1FEkVI2WeAexNol3olVl+v5MK0tSngazSZRvMFEE0EWQ6JjUJmXd8MVs6TnrGbvm7KMaeG1HoB2AAk4sL18jajSJ9FsNmE8hbK8I9Daa1jHd9ZCDjhSIA5mN3tRWfY7/mngy4OEzo+BqdCu8maG7bOyL0rGRRoCpEg9rLOV0us2biaI7ZOAlrsIgLO6cHbIpUiATDcNd+q5KD8xlGfvHp7zzZhjpop5Hvl4jpNOnPXhPOAn+4gHw7J8dXkCmgPm49jryQrOTmCXYHqL1cEjF473uQSfr9qE8jyXQkhR3mzK/Vlrvp0F/BaHIs1krKRbd+d9yXh0QrYoLtobhn9v66+5jBiAdN2dCRDi6OpqqGxR1TNj8Ldfn2/zXbWUyaHoCyHu2oOX6vIH8+2bsqurupu9TWHXMZBn/VSI6+rg5VSV9eyipLLrOsMD5S5KbsRu/VFRj9VDfXGDtyUl29+7biMEyFQKOGNYPBi8yZhWGSxPHN28VzTf9KDrchYnStFiUbqH9uonY67KcnyJH25vu3eeOIkICboay/Ev9VVhzEV5UG4qvIhu314GiSnjctU9thfq6mfD5bmHzebRtB22C4YzZpAyZ1O3481VZUzlFD0UpkBjyr4HR0EBE8wf2l6HVWFGyU8JgzfGdDfy6MhrxvvrLo/VywV2WDBDUjNP+9pZGQNxjSJddWKNatHia17KWFeYts6uKeYm+YEQaZ6m111cK9xwQGVtpawlyU7RPKVBmFE8WsdoccMJDM9qOs0Mj1lkQKEPQqzejzs0tq4Zf6GUmhrTF0dS+URRSMH+vC5487UsgGEVZPBbRYnSMIBBmjJu8XqPawzLC/O4ERIYVryxaCC8XvPZULfFlOmnTP9Yc2dIx4o1kPCk5x2+ftyNTHzPjWg7fvALzXsnceRkuqgNjkZK3g3EnWE7Bpwa6qWkrHNa/9K1OAraeZ/tusR4kZDn/khIkoHv6hGjlTpy0lQV7nF+LoZ6QCGncB6VAigqjmKjj/a4P6dfea+cgN4nv03dQM4xszjFQrFzxfEjb8XMed1LPQsVKTdbuSOwFhtWL5PHJTizFyYRMC6UV6X8mGpw3FSdUFaoTNzx+ZKF0n0vBMjgGs8D9Kd0Ol0qEfZL8BLbQQeOUJQQWhwbR6cv+IhjQH6apNA+1AOBI03MC/KxyRK2MrD8neVTLphH6gex0EqnlLzIUsg8CJswN8Tk5bvQcA5bmoYNQk5gC4B26TLi+npwDnwesq90sjxdEilfLX8eKjzmBmZ2OUg5Oy/jE5X4Mqf8SMooHPGcyCc//ihYALuDlCOaIitWCImplKIBH4C0O5Eb4q9GQ25aNHRKORuRh6s1f2sgYbskDTv8//A/AQ==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 76257950
+  displayTitle: desert rally car
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 17530e7271e9cac49bc50aaa4a975d37,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

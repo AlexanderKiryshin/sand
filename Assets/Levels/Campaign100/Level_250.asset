@@ -16,52 +16,71 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4283649095
+    rgba: 4280955207
   - serializedVersion: 2
-    rgba: 4292202694
+    rgba: 4286350727
   - serializedVersion: 2
-    rgba: 4280031506
+    rgba: 4292925898
   - serializedVersion: 2
-    rgba: 4280888100
+    rgba: 4292987548
   - serializedVersion: 2
-    rgba: 4281380845
+    rgba: 4280446184
   - serializedVersion: 2
-    rgba: 4283393908
+    rgba: 4287331340
   - serializedVersion: 2
-    rgba: 4282399541
+    rgba: 4289831197
   - serializedVersion: 2
-    rgba: 4286664228
+    rgba: 4291541098
   - serializedVersion: 2
-    rgba: 4278913029
+    rgba: 4294374382
   - serializedVersion: 2
-    rgba: 4283444236
-  - serializedVersion: 2
-    rgba: 4280764506
-  - serializedVersion: 2
-    rgba: 4285632936
-  encodedCells: S1:4:4096:319E6711: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
+    rgba: 4293370699
+  encodedCells: S1:4:4096:5F204024:bZRNU9tIEIZ/g5w4S454wYFjmPGHcgsa25Jv2JndwC2Yaokc1y61cmSlktq5JRLg2ePibBX+ldsjDEmq0q5SWXpm3unpr83mV3agdfOXYGsTrb/98Lq2j/H393da6/unt/GbYGzx+ukL45/2B5u7cXn3tOPsB642d+tNsL73zP1P271/H/6L0tyrSrlGPOF/tO4otd2PWEpjSmPE/aOLU93xhHrcL0w5GpmVK92Nkmvro+4IodRWTMV0sywvh6oylXEtPusI40m95RCOepf+HJFPMfcBfzkVQky15W/umAPkZTXHmHcL10aD1evrjTdj9hljhGoJ4N90+6XlZ8d2t97nlZ70FLLAZTcEKG/mwnCktJxuwzNWbFgAQ0TqsQtu5W06Vl3r483j/Vkh5wUFLrpGqLNBvb21TYaCEEOI0Rr1hFtOVR09Dl8tzzyMY8sBe4aDtf9Oex5/H6zVA2eLkUIrcFNIt/O7FJYfq+8csKg5e3ja0J0jUZO9Vqt1vOUYYoI4GpVaq9p902o3WtaYhvYEy7G30oPjmk/a7Vbra6tteQxAkNT6f+qBp2z1TevNu+e1ul1TbLnylKwDYI01GMYh5HGIRYLhrt6TSrDA/vl5u+a1fh3hIkmKk9eeFAG7uG/Pb7V3HeaRPYJ/i+Q3PXgrXzqcwG+bj/99PHJL1p9BUvM4W7zSff/omaOeqpPzo6w22viM6ETv+HunzMVg7D1wgizH6CFBvjPIqP/yS6rEtQlsgaw3hrj2PiYJ1xEenDR0SxtHqJL5WkmjNjDyYj+N0PL3+txxTvTuQE6PA+HJygQk8tUFLSFO8oSjQ0fD580TZ9qipOJ65jZRy9WyCqgHSDjZ92Ww03ReH0585RvXuNIIWbql27/BhEh/I184jt7VzSvKTFBxwSir42aXAEVfC/L3HMf5clgQ+S4x5/2yEsYsM2RO1GBsrhPCPldRn49gBcGttSyAVhNqWP63x8mmBaFta0JfVq4wakmHE910nA9X1E85WAtKfFUaWGJfPv9qysB/azTjF3FBggWKfkbKCCh8KUTbmGDWdZu443xI2LkFCyQZrlzB1w57AtrX5vDD8yt6f2UrkRbcbQUlvUBhEsZhOoMT89I8W6aNDJOCkbCriFDVuQXcaenm7rWrmhVFSDEWyucFhfWDKwMhbDi6eeSZDseUMpx3SZLVobp/rb1w9L584fpZJtzPb7qfk2FWEJJ14GEBtPVpg6hIV65LdzytbEuzQLzlOf6h9w+J0tK4ipMS2ZYhPn/L47A4mFxfmwcT1ZK9tFU32spDukVlaZ9pSpHKrYOPPIacZ5w1zrjx1EWxYEx8v6jmszCKVpwrXwm7rszs5S2vO/QAosLzcwNhrjyXx3pAS44FcJAAucW77XPIuzJN45BLz7NnsIhCypHskIiBF8BQJiMog1R5tauuwtsFJuwaxxhaOYDyI4KKcmVDEBiDPR8vkdq2A9t/+ZddGZKfRLGNkr2pHXw8uqk3W63EcFjNIA/784SHupIuH1I3ZrHiq9Z3jOACQNrQhUBGCWFxjLe4DIW9JXsQRTD0VNYHuJlFQtkslGg+IV6E9biKpIzCKMuHUdr3EBXVo40PevVYC10lmEEe+RnZuWT5p9s5HiRohyF0QapufxFBnZ5kUft4CyUezFmA66UHQ6XknM+i/wE=
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 00000000000000fe00000000ff000000000000ff0000fe0000
-  conveyorDirections: 00000000000000000000000000000000000000000000020000
-  conveyorBucketCounts: 00000000000000040000000000000000000000000000030000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: fantasy
+  artTheme: ordinary
   campaignSeed: 26084840
-  displayTitle: Moonlit Stone Owl Guarding a Gate
+  displayTitle: wooden sailboard rider surfing a turquoise wave with an orange striped
+    sail
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 0
-  linkedBuckets: 1
+  linkedBuckets: 0
   largeBuckets: 0
-  alternatingCrates: 0
+  alternatingCrates: 1
   swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
-  bucketSettingsOverride: {fileID: 11400000, guid: f14574d81cd65de4da427d4544957a64,
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: a34728ad1bb7fc24d9a1edf581c20f6b,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

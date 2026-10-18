@@ -21,9 +21,9 @@ MonoBehaviour:
   defaultGridHeight: 32
   defaultColorCount: 4
   defaultAutoColorCount: 1
-  layoutTemplate: ff000000fefe000000ffffffffffffffffffffffffffffffff
-  conveyorDirectionTemplate: 00000000020300000000000000000000000000000000000000
-  conveyorBucketCountTemplate: 00000000040300000000000000000000000000000000000000
+  layoutTemplate: 00000000000000000000000000000000000000000000000000
+  conveyorDirectionTemplate: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCountTemplate: 00000000000000000000000000000000000000000000000000
   fillMode: 2
   randomComponents: []
   maxGrainsPerBucket: 147

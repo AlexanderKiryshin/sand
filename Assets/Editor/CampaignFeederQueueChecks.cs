@@ -32,6 +32,33 @@ public static class CampaignFeederQueueChecks
         }
         finally { UnityEngine.Object.DestroyImmediate(root); UnityEngine.Object.DestroyImmediate(rules); UnityEngine.Object.DestroyImmediate(level); }
         RunAccessPathRecall();
+        RunSideFeedPriority();
+    }
+
+    public static void RunSideFeedPriority()
+    {
+        var level = ScriptableObject.CreateInstance<LevelData>();
+        var rules = ScriptableObject.CreateInstance<LevelSegmentRules>();
+        var root = new GameObject("SideFeedPriorityRegression");
+        try
+        {
+            level.gridWidth = 30; level.gridHeight = 1;
+            level.cells = Enumerable.Repeat((byte)1, 30).ToArray();
+            level.palette = new Color32[] { Color.red };
+            level.EnsureConveyorMetadata();
+            level.bucketLayout[6] = LevelData.BucketLayoutConveyorSlot;
+            level.SetConveyorDirection(6, ConveyorDirection.Right); level.SetConveyorBucketCount(6, 1);
+            rules.maxGrainsPerBucket = 1;
+            var inventory = new BucketInventory(); inventory.BuildFromLevel(level, 1, rules);
+            var waiting = inventory.ConveyorSlots.Single().ReservedBuckets[0];
+            var advancing = inventory.GetBucketAtLayoutIndex(12);
+            var belt = root.AddComponent<ConveyorBelt>(); belt.Configure(30);
+            Require(inventory.TryTakeBucket(inventory.GetBucketAtLayoutIndex(7), belt, level, true), "Magnet frees the side outlet.");
+            Require(inventory.GetBucketAtLayoutIndex(7) == waiting && advancing.LayoutIndex == 12,
+                "Side feeder owns its freed outlet before the column advances into it.");
+            Debug.Log("SIDE_FEED_PRIORITY_PASS");
+        }
+        finally { UnityEngine.Object.DestroyImmediate(root); UnityEngine.Object.DestroyImmediate(rules); UnityEngine.Object.DestroyImmediate(level); }
     }
     private static void RunAccessPathRecall()
     {
@@ -43,13 +70,12 @@ public static class CampaignFeederQueueChecks
             level.gridWidth = 26; level.gridHeight = 1;
             level.cells = Enumerable.Range(0, 26).Select(i => (byte)(i % 6 + 1)).ToArray();
             level.palette = new Color32[] { Color.red, Color.green, Color.blue, Color.yellow, Color.cyan, Color.magenta };
-            level.campaignTemplateVersion = 1; level.keyGates = true;
+            level.campaignTemplateVersion = 1; level.alternatingCrates = true;
             level.EnsureBucketLayout(); level.EnsureConveyorMetadata();
             level.bucketLayout[3] = 254;
             level.SetConveyorDirection(3, ConveyorDirection.Left); level.SetConveyorBucketCount(3, 1);
             rules.maxGrainsPerBucket = 1;
             var inventory = new BucketInventory(); inventory.BuildFromLevel(level, 1, rules);
-            inventory.TryDispenseAll(level);
             Require(inventory.GetBucketAtLayoutIndex(2) != null, "The feeder may enter the reserved aisle.");
             var belt = root.AddComponent<ConveyorBelt>(); belt.Configure(26);
             belt.OnBucketReturned += inventory.ReturnBucket;

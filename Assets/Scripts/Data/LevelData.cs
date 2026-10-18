@@ -72,7 +72,10 @@ public class LevelData : ScriptableObject, ISerializationCallbackReceiver
     public string artTheme;
     public int campaignSeed;
     public string displayTitle;
-    [Range(3, 5)] public int beltCapacity = 5;
+    public int seasonalNumber;
+
+    public int GetProgressionIndex(int databaseIndex) => seasonalNumber > 0 ? seasonalNumber - 1 : databaseIndex;
+    [HideInInspector] public int beltCapacity = 5;
     [Range(0.6f, 1.5f)] public float beltSpeedMultiplier = 1f;
     [Min(0)] public int frostMoves;
     public bool sectionBuckets;
@@ -82,6 +85,8 @@ public class LevelData : ScriptableObject, ISerializationCallbackReceiver
     public bool alternatingCrates;
     public bool swappingColors;
     public bool loopInventory;
+    // Runtime route survives removal of decorative walls outside a moving ring.
+    [NonSerialized] public int[] inventoryLoopCells;
     public bool mysteryBuckets;
     [Tooltip("Optional per-level override for bucket layout generation (uses segment layout fields).")]
     public LevelSegmentRules bucketSettingsOverride;

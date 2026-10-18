@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0672
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289382884
+  - serializedVersion: 2
+    rgba: 4294300854
+  - serializedVersion: 2
+    rgba: 4287211974
+  - serializedVersion: 2
+    rgba: 4279970604
+  - serializedVersion: 2
+    rgba: 4293061617
+  - serializedVersion: 2
+    rgba: 4284061915
+  - serializedVersion: 2
+    rgba: 4282340439
+  - serializedVersion: 2
+    rgba: 4285891211
+  - serializedVersion: 2
+    rgba: 4281693074
+  - serializedVersion: 2
+    rgba: 4294359942
+  encodedCells: S1:4:4096:5F3E7FA5:bZVBc6M6Esc/A4Vt8PEx5bx5vrGyDT4mVgzkZjsknr15cYR1TFAsmBvG2EpunhCw9rapN6lZf8ptktvW9AEofq3Wv1st6b+n2q5+nX5nz/HT2yd//y0/XSWfHP+eP1d7+vGxJP+P/j6d3rrz6t/vpysIQz7dTsbP+tn95KfTw4Mh/yzeT98J/fXx1/B/fjp2rY/4J0P+VbxfFeTu/WS8Xf1t+G+n7tuH8k9hx/ZfxRgvyRIEdi/OjOnPbtevhUcQqNutx1fYoePlmWEYK+C+P63n+J7WfGpspEc9TEq95uDUufBrDd1nFwR1Oj/+IRMPYwIG4YMbw9h8qWMYF6M/YYDx4yilA9MTQt9cTCzjqtcxjGnHeHC/fvBKyhGm5PVAS8zIysW3f9T/jY3aqV+xJmUJ4ceYeHg5CBw86Zxq8Gx+cKPy+JiRcBeDyyIkIzzrGBf1+NSH55dOws2SkuW4Ak53gYt94J1pLsymMd24iVNJqpNwfCSkR9bLXU9tbv5lTB8iS/tjOr0UvJ2QYL1YH0uyLMfhuPfoMyjDw9zWvkw7Ir+lpOURAvOXyzILFw17fg78IkM6JDh9rCgt15A+W5CBmq2oms9HwDdor0KiD69yqBzIpyVkR+g8n12SG0gfEpkaM1YNi0q6Ws0pIcFi1p9d7sZnNTd+5FLyctgmWTiygTutAZn5zT5Zn210pHYOB5k4sqJEhNnxXCfxTlukt/4jCc4eGkT1Y/PRwfJFUn63q3Yh2ab6Ks9nh3Jx7miK7scy4UwWFtn2siNwd6Su8ixdLUgaN0012gDnLUnJk1UWuxXhqd7I03S1IgHvI5Xvq4R7hYTqaDtrBz2Y6hbwQIuCa9+y46cKF1KTJR1oA0uExMptq5+lgRUg4WtC3vNYQvsVcqARa6cTUmqqOlEXKyQs3xLQWYVXOEXRpja1t6vBAtZiMvHvykVf91vrRDLGCkcW1LIJ3a1ac6jgveUHpExnk6bk8uCwClctqG1B71qErXt3aRSFIUGq2qS8kpyNk4pCBlhiuchMe3mf9YNjpKp5k64lLjzsSCgAcYgXEpaqdgr524GiKAeaVKWHmWQQvixh9drbQbbsp+liRdBk8iqBMwdWt6GwRqq2gtZ+h3q5mQarQFeyA0SnmEoqG2S/HFpR42afZlYTqQdqhi0RyzHzmPS0SiPXjXY40EpVUTXk+25IZavvwuJI2F3FRG9N9FnYCtcC6aai+FEh5cR/Hcr1k5RjUjUIblhLfF0Ofd8/H1nnso1v+qabZurxZbS2tZpbWHvB38AhPXexyW5yjuPYcYpRS9x+cKkdZRIQosZx7zXmWRxzIcBD2d7e4cZQX4cv2MMc55dRI2F7xvdcuHvsLkA/vrb0NcT3HOcyv8y2FpY8wnguOHMJbZNxoz1PQoI9r5g1TYKtQrr4+vXbJOO4hA4hvWbqSvkNu3mVyGqoMoGXN3dD5MVPSUkqegNVYTKsFxpEmApzMN/vhSKO++W6cvZz4E6Psa1T1JLNArgywg4DR5wMGWwa4egsjmKhxgzFDt5iGdmTI8auiFWmKxNFmUwyG6noniugHT8pP//pX2wjrFupMJElo8yyzydqO2IS8NZC/7FtOO5cYY94v42gY9qKiSTAKuLOFpmRhVzsIGVxHgcmUhUqKw/Og3Nu3nPOrEn+rMbYUcvJiC0kGGcFAou4knK+5Vkm/L3LkVI6UFgMrbC3kZ1FKFFhY6nCzkRe4XqLYMy5HKKhlXE7g8ZDUQI0+6p3jm5NYfARoSzZj7ilpGaSRRBJiF/i69HFXL64OEMoOVppwqs15PF0zIQpDJFvLjCWyB5hM7OdozVDRztV0tfMFLZi28az4J4jh3K3DaBsQSUSO7hXFHOYCWHn3QfBuetKO4CTfSi8JY3XFWr5ZvCE9qDvK1xSLsYvDtxvd3g7Lgb9XWb7ueJbi1NX2Qi4cJjjEo8RZ8FD6JLjOly1HlEgo19ikM1P3+EaxP8D
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 70280478
+  displayTitle: Belgian canal houses
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 1c2aa056ebe7b814a9336ca29e4f4ede,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -21,6 +21,7 @@ public static class CampaignSimulationChecks
     public static void RunBefore58() => RunCore(0, 56);
     public static void Diagnose50() => RunCore(49, 49, 8000);
     public static void RunAfterAccessFix() => RunCore(accessFixSubset: true);
+    public static void RunQueueProgression() => RunCore(queueProgressionSubset: true);
 
     public static void RunInEditor()
     {
@@ -30,18 +31,61 @@ public static class CampaignSimulationChecks
                 throw new InvalidOperationException("Save modified scenes before simulation checks.");
         var setup = EditorSceneManager.GetSceneManagerSetup();
         try { RunCore(); }
-        finally { EditorSceneManager.RestoreSceneManagerSetup(setup); }
+        finally { RestoreSetup(setup); }
     }
 
-    private static void RunCore(int firstIndex = 0, int lastIndex = 299, int maximumTicks = 12000, bool accessFixSubset = false)
+    public static void RunReworkInEditor()
+    {
+        if (EditorApplication.isPlayingOrWillChangePlaymode) throw new InvalidOperationException("Stop Play Mode before simulation checks.");
+        for (int i = 0; i < UnityEngine.SceneManagement.SceneManager.sceneCount; i++)
+            if (UnityEngine.SceneManagement.SceneManager.GetSceneAt(i).isDirty)
+                throw new InvalidOperationException("Save modified scenes before simulation checks.");
+        var setup = EditorSceneManager.GetSceneManagerSetup();
+        try { RunCore(0, 1199, reworkSubset: true); }
+        finally { RestoreSetup(setup); }
+    }
+
+    private static void RestoreSetup(SceneSetup[] setup)
+    {
+        // A nested check may start in an unnamed temporary scene. Unity cannot
+        // restore its empty path; the outer check restores the saved scene.
+        if (setup.Any(s => s.isLoaded && s.isActive && !string.IsNullOrEmpty(s.path)))
+            EditorSceneManager.RestoreSceneManagerSetup(setup);
+    }
+
+    public static void CheckSceneRestore()
+    {
+        var original = EditorSceneManager.GetSceneManagerSetup();
+        try
+        {
+            EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+            var temporary = EditorSceneManager.GetSceneManagerSetup();
+            RestoreSetup(temporary);
+            var active = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+            if (!active.IsValid() || !active.isLoaded) throw new InvalidOperationException("Temporary scene restoration failed.");
+            EditorSceneManager.OpenScene("Assets/Scenes/GameScene.unity");
+            var saved = EditorSceneManager.GetSceneManagerSetup();
+            EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+            RestoreSetup(saved);
+            active = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+            if (active.path != "Assets/Scenes/GameScene.unity" || !active.isLoaded) throw new InvalidOperationException("Saved scene restoration failed.");
+        }
+        finally { RestoreSetup(original); }
+        File.WriteAllText("tasks/campaign-rework-scene-restore.txt", "PASS: unnamed temporary scene safely retained; outer saved scene restored.");
+    }
+
+    private static void RunCore(int firstIndex = 0, int lastIndex = 299, int maximumTicks = 12000, bool accessFixSubset = false, bool queueProgressionSubset = false, bool reworkSubset = false)
     {
         EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
         ConveyorPlacementChecks.Run();
         var database = AssetDatabase.LoadAssetAtPath<LevelDatabase>("Assets/Levels/LevelDatabase.asset");
         var report = new List<string> { "# Sand simulation checks", "", "Actual FallingSandSimulator, SandCollector, ConveyorBelt and BucketInventory; one grain per level cell for a bounded CPU check. No boosters, no player progress, no SDK.", "", "Level | Simulation ticks | Sand left | Buckets left", "--- | --- | --- | ---" };
-        int[] samples = { 0, 2, 11, 13, 15, 17, 19, 21, 23, 25, 27, 37, 47, 49, 57, 67, 79, 89, 99 };
+        int[] samples = { 0, 1, 2, 11, 13, 15, 17, 19, 21, 23, 25, 27, 37, 47, 49, 57, 67, 79, 89, 99 };
         if (database.LevelCount >= 300) samples = samples.Concat(new[] { 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 124, 149, 174, 199, 224, 249, 274, 299 }).ToArray();
+        if (reworkSubset) samples = new[] { 0, 1, 2, 3, 4, 12, 299, 300, 399, 599, 799, 999, 1000, 1037, 1049, 1057, 1079, 1099, 1199 };
         samples = samples.Where(i => i >= firstIndex && i <= lastIndex).ToArray();
+        if (queueProgressionSubset)
+            samples = samples.Where(i => new[] { 17, 19, 25, 27, 47, 57, 67, 79, 103, 111, 199, 299 }.Contains(i)).ToArray();
         if (accessFixSubset)
             samples = samples.Where(i => i >= 111 || (database.levels[i].campaignTemplateVersion > 0 && database.levels[i].keyGates))
                 .OrderBy(i => i == 47 ? 0 : i == 111 ? 1 : i < 111 ? 3 : 2).ToArray();

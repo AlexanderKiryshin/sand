@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4292521892
+    rgba: 4283194964
   - serializedVersion: 2
-    rgba: 4290548894
+    rgba: 4289047260
   - serializedVersion: 2
-    rgba: 4280029969
+    rgba: 4281156407
   - serializedVersion: 2
-    rgba: 4293043595
+    rgba: 4284775034
   - serializedVersion: 2
-    rgba: 4282870429
+    rgba: 4282676933
   - serializedVersion: 2
-    rgba: 4282460188
+    rgba: 4287404453
   - serializedVersion: 2
-    rgba: 4285022505
+    rgba: 4279443808
   - serializedVersion: 2
-    rgba: 4281481293
+    rgba: 4293579719
   - serializedVersion: 2
-    rgba: 4291399025
+    rgba: 4279375909
   - serializedVersion: 2
-    rgba: 4289819473
-  - serializedVersion: 2
-    rgba: 4287651392
-  - serializedVersion: 2
-    rgba: 4289834194
-  encodedCells: S1:4:4096:056C9CE7:VZXPj9tEFMf/Bpdo0QKXDYhqoRc0xXEIl7CjImePldEicSkuM5uYCwTNdOMTuN2alktiy9lJuLRbOXjcS5vKJh4ujUAC5D+KN8mWtm/Xq9183vfNj/f265KUlM3pXAiRScMYd8Vr0RyuCkLUTf+CPzBex01GPOJSb7r5c3c8Hm/Bvtif7DchCClukpgQ/aFhgHp/shVuYiIQIiwZMn86F7vAx0Amk8kFhmy0QK1hZPKe0FxX32/+H/BrkpKWS5HHErG/5ZDxSoo77Kul+53rLeTuC958JZClCELcJYV8yzAm/yvXV2b/1PW6RhYiHUoWhOewPXn5Ba7lTECCJJHL/MJFLueZkcmk2SyadV1fkXImZS0lQnSRpZ+0CCvnhkzT2Xpd14//lToyeNBHrEoKG33t09J4IFNZMagqtTzTCeWckHTpD9uMvm98n6aVZI9fiGEF6ZEOclFEIXYMxtLRgMitHB5omTcTfcv0TO6aRU0J83KWarXQKULIRbQilmnmq4Jfrv2S0w7V8p7QYkhCw2nbcgVXjPCatUrqM1XlWU8zOZIj00Kd39C0v1AFqaFVlJqwx4stDAYUWdwtWsPBiClSM49wuEsNc3jogJquZyopWsuElH7NPc5JSx+gJ0ejihBCV/OrbjEXzD9hLcRoi5uMaf1o4HuEMuonnCUzjHGsqMuY4u4igeqKUzhsSXyTCHOQYp1wQozn35LS9EY5h1CU+6QTdaLcdHubBHsX/1nQlPlA/VJR6hX8xFvOLHS+SWgYcbwmI4+xkvOyJHAXfvGw6CAUaB4LDCNypaRQGBJYwXnB5fnKghl3TbKerOvubiyYR5XPFYGjFqmanbcRMhFEEIahcye0eMlofuLDfSS+onk082C6wjAIrVAHMb1DD0YjnTPlemUnYm33uhuER44VBqCPV+ScCCxEnGV2LJfHK+Reh9pHjgPPnVD/A+BrMb6IxOKmGQTBhl/XemxvocTxD9h2by1NEqJgo4WcwLZ/jp7JT3T/Ipll8dmqDdsP7gIPNK/OvixyeQ+aXP0OOeLsSV/z8Ch0vjpywtBObl97JO9NYfrOYIZXnydX4fB3W3C0W0fOUTiahzvdR6DPZudC9vaqTrSCdiSXr9S/OI7zd107O9n89iFoIyFnT2CJzEWnd0FvWQhWcZy/HOfjv5ufNQ5wNjOyQz3q7VaF/qqRG6DNPVr3L+35xLSxQAyuqmlg/Lz+9d9PrcD6qN8+wH4YQLHhZxhHeAyN7zYmwn4O/y73LWSakbB/PGgfvPsG7uJYT4WIfxLv1QIM4dKtJDOX7+DbUfugkYouZOCusJ+N7Vjsz3Cc2bDvxwLHw875agnqDAt60F8GYJwPBtOY9WIBtmdj3I7iqYiNbhsNr0FLRA9K4PU7e7+uLzrXWCXaULEA2tUfvPccfAeaC6EL4OxN4PiVaDRqsMAY2sv7C1ER9vZLrtdsjKVU6oxzAS4EE7w0ut0X/Fn/ROW7zh/FDCyp4v23jUtGtKkf68HHsVT5Bz+Fx67HRrDud3rMpjLb1BcVVfLe8ekxOTomHvd3DOPGDhbGNbHZLSlVJh9CA8mpc+yqcgYvo/6OsWukhubPMsnBCU7D4wC4pZh6f3dcZfAaSYQY4xPtgRS4E2ruSqWtazCH2cj1oRYq7YOcfOEck9OvviGSg+2JvgCDnAp9vMMNBq4XIWTrXBsLW2zuEhs34CVGzCPwLpdxpidfVlWuv8XWFuAN6dM7wE4Llm+5UrlUla8TjDHofcbAM6jP81ypSvnAlVKHF5dvY87ucFLeB3fVsdr8VL2Xvfthaj+FDagtV+qJsvHrMbMp8FJr5y9LG9gWPWFvvsTe01LtTR6uPnyqSkNfzrjxHw==
+    rgba: 4280369041
+  encodedCells: S1:4:4096:A769DE7F:VVTBcptIEP2GMZg1R7dkJOuGm1KW3IARsXNb2cQpbgg8tq6pdWbhZllxcfXiRDu+rWoJm/nKbZRslUOVihKv+/Xr19ODFuIAnROMDr05ryf1y+dTXa8QTw7cwegYEY9nR9uf8FVd7yGuTDz37gjP3xfjl/AB5Z8aeOpdoDcY88io1z+lHzzUNdb3v3rGNJhBmPDx6iecCcJJH3uP58l4nqzHMIYX6UyImhsW3r9B8OrxbPUvOC8Y2KEQa++311jzaMjr8QWhHF6kZ0JYg3ia179eOGNwALbwsHoBM0cICM18GJ8CwHR49hVgh5Pug7sDVtqXC4CQH96v5scjZq1EqFf1TX26rg8s61E9MsaGFzwzsz34e3JqwhAmQLmMbGDq8cxaCAsHe4H3sGAA9Q3A4iP0lYu6vvtLMJYkiQs4DAtcfIDVeBsWw14Ay3oRRRHvO+EBjS/8vTAov95OMqfvz+A7kSbfd6w/+cXACUTgLERBMYc7PKuD+sYyg1nB1ixIIRSCi1CAc7Oub3jN7urIKphZhIcZusEJiAshnHAkZTVaiUIU8Y1hmowRlfBm/Co0eBH+U1VSbhbDTMS8OGDmWjzUvOA89ADiPN5qnd5KFS4/dKkpYka/qxsWmPnisLfQ6XSqk9a28j902l6ZUVEUFBXPyPgs2+Otpidpl1/EB50myb7JeVyIrBB7o5DH1j9ad1RgAjG0aZq0qZUVJhecF1R9PosrratEV9fvbim5TRO9n/GABhNnJxyi6J0k9q56+7HnTtqkvf2lrjPGhJUFAzCDtus6am75sYf757mugTMeMxZNuBlL2XWVApBp8j1iEtqfWCDMjKO/ij9KSpZqOe+S+Q+C8GxhBu6AcXQXsSTrNkot35UwP/oecbVccEstCcc8vJVSUXvq9+vVGN7v8KOjsOB4HweRl1P5qncn3RSwXXxNPhFFeiQKD42An3v5V+LX5WXS6msqddmuCG9hZja4jM0hDradpO7SqtPV0xk1NppDMlkJ4TdLk1nobKtSKt1KnSTVko73Je1iNSssV0XmIVrm+WYjpZalTrR+frAfPsjVXM/MKWLEsyZnf2/KHqcOKp0IdbwgvLrKsUFcC3asWKM2ZbXRSdWlyfPywVLOVjHPbk5QCJYzpQjflLqSHfWQxsqOn+xpYzQYC6Fsiz3uIi57/FYmCVlpMxftHAshArb8ju8UkopEb5QdNNg8niHxW8ZdYxsUUEoqcSsvE5oFQ7+xrSlGZAKLmN0QrqQqNdnUSlmqhqobHh5aRdxEJkNsevybLst0N0rKR0OiEwvuRoU3pf+7Ekrq555L2R428gwWEDGPGiG5RtPjpValUmdfcmtadv4IwItMm3s+1egJVFcRu4oo/KmTuALggeFyTiKU7/tKfat69og1vkw3CCFgZtIYnvzIYqSpV6nUk2tMaVqv8iIGMw9cGwNmeI8qcH2kEN8rTHK78xd0Y5CyiKEVRCY+udj46Bv+E2JHVvghXZl0Qu0g840z7pINimFk5EhtVl2Fixh+C0yXxDPX4JzwqHj0o6ikWaTVc+bRvdGQERgELqplwJgiJ2V/WGTSvabFz/dUhJ7y6b5QGJm9RYRWZEOrl3RvXMyk33uP+PhKNrvU/ibo1/0NiYNz2o0+5ZXsj3iPdrrs+pOkryG0nAvsv8pql0dJz+rbrdQpHcY3AYQRhJ4uFe2upv2jd/csO2qM9kGPQiccAsyeS6Vptzc0GDpcVc/W0b5WE+CcbjbY6e0/Vn1XRCXpjJKYt+thOBwxkD8e/eNdyfZz2XX6bT5kEcRXfareNVHuyKsq+Sz1ZG9qRB533JwGuqu5o+5jK+JvYWrsowfx66G8/p9+s3tpmbRdW1jnsygYnFyd/wc=
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: ff000000ffff000000fffffffefeffffffffffffffffffffff
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000000002040000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: places
+  artTheme: ordinary
   campaignSeed: 29017252
-  displayTitle: Lakeside Sauna in Deep Winter
-  beltCapacity: 4
+  displayTitle: red panda sleeping curled on a high garden pagoda roof
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 1
-  keyGates: 0
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 1
   linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
-  swappingColors: 1
-  loopInventory: 1
+  swappingColors: 0
+  loopInventory: 0
   mysteryBuckets: 1
-  bucketSettingsOverride: {fileID: 11400000, guid: c8457531291b0c141a30aa2f1a491c51,
+  bucketSettingsOverride: {fileID: 11400000, guid: 6770dd7ea79317646a354e5cad6eb2c6,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

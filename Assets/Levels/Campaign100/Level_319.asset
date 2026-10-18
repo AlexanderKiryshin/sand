@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_319
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4286080079
+  - serializedVersion: 2
+    rgba: 4289104246
+  - serializedVersion: 2
+    rgba: 4278784297
+  - serializedVersion: 2
+    rgba: 4294570483
+  - serializedVersion: 2
+    rgba: 4291931805
+  - serializedVersion: 2
+    rgba: 4288393692
+  - serializedVersion: 2
+    rgba: 4280106623
+  - serializedVersion: 2
+    rgba: 4284057295
+  - serializedVersion: 2
+    rgba: 4281163955
+  - serializedVersion: 2
+    rgba: 4294103753
+  encodedCells: S1:4:4096:23C21F2A:XVTBbttGEP0GEmHR6saFVyh4C5hKydkb1ubNC60R8BaZpijfChVa8Rq75PLs1OQeqy5je7+yM0tJCTq2JIBv5s2bt7OcTLjwQyFCywz1QkGo56UmIDwT3A/3xguHIPR4ZumeRZBIiEesjQgRgnshDSfC+t6VZYwKE2G954U2PeOEC7HwfJJZK7y9TZkRFB96UA+9OOeGMsCttdwbaMrYwueUL3+mnl9MGf3HGmpDyq3IQmKDvbWGEMKXauqRL+UAHJYwX5AFCPKv/I/RnlFIWOpfQu+LthRaBcxk5E3ghf7nn5bTPQMCzndtmC31S5TB1IyZaAJDTj8XRVkmjIZc1N2Q3lafBoA8lrKzyOdhUatarXJDieDb7lu6qF7RLSogKwtFXZZKtUolUyKGqntleddaY8GJfcoyflcrBQmqLK8JGWTXat2+WptRLwBboqVyAT3Ur1MOuIZobRbuJ8MwEbSoS5dQY9Jgq3uXYDNCAjK8odGtQ1SDKYUQatMi/kp96O97YVSrou9HBX0diU5KlNAGob8P4ShQXd+pHjl0ORX6XhZIIIg/7H1CAO97VLTrYcbrW71rZk+Ic7EPgtACf191upe7XV+ur/9qVBmDwlYIGuJi3ClVoWIlq65fXz+Vah0/Ih54EELkS91KqbXsuqZtE60aXSpoKCji1IP+O8QrEN6qB40yVd+2nPuEQ0ZWKC1XgFdS9u1TB9PoCo6DCB9WDQ70uq5Wd50EWEJx3zorZ3KABhz139blddFrgCX6ADlFkRcJGByQ4Mpm4tOt+FtD+byr8HDaIklmNwbW2r8KhmwhMpsVyC6rylkPa7BMfn+xgg5WEAMXIKq2UL6RuwYGW5uzt/P5ef6vhUvDjGGw2eCOjB8biVavWTS/vz+fvbBTJE/AHlfgExCUZvt+s9nMZlgLBPApvgL9o2watxqL+GZ2Hp9/vTCIGtixukR6uZO6Anwdz+EvfsBikGDSxcNazuNONjtXrzfzeBOvOsacQogSOsey2e66MSHGuHTVLi52MF3TqkO9/gD0EmB7SNluUX7VAOQyuji+kd+sTe3YYdvs5jFOP5ZX2ACqxwA8r5BfAVDWuiwe4/v3zTNAODvc0bzcIl7BcKsCAoaJt8diMMk8NXKzaR39RV4Us/u4YYimbkJ49SB/BZsBa8qAYNNcOF8dO/YH/RvQp+HeJHmewNsCzElP5/MA/cEfnK1NMP/hAhu72Qy2cbh016jA83y4PNXCFDbN0V8J5rRt7ggvfsDhv0a86yRs9//xhZvzTznHe611ie1ZjypSJzAbBODS4WBQifW5HnUZOIABNhzu6h0uMBAgntRrJ98dgck+LhaCbh0O9UWeF47eUTicMSD4YyQok7yQq/7yKN6yFJxcZOKAa128BZruOUVvTXqaMnqW8/mm/1Bd4rPlWDvaj18W79FvK/bu3Wi8m3rc/5HEHJf1uzRXCu66AsTTw5GaU1aaor8p0sCXHZ/94D14hPVmZHC/jmhMGjc4xSN0zaxjMoetTu33OBAcNtL94vKNFgPDsd2RdwwxOC7rXhKp24WDuBSBzB6X+HRTTjZYhwvX+dDk6Mvh2h7K/wM=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 1892441
+  displayTitle: Winter Squirrel
+  seasonalNumber: 19
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 28e8c4acc3de3aa49b7afdfcca83f03d,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -16,48 +16,50 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4286365943
+    rgba: 4286365687
   - serializedVersion: 2
-    rgba: 4286396738
+    rgba: 4286462792
   - serializedVersion: 2
-    rgba: 4281811832
+    rgba: 4280629612
   - serializedVersion: 2
-    rgba: 4286736820
+    rgba: 4286802355
   - serializedVersion: 2
-    rgba: 4285369807
+    rgba: 4282880498
   - serializedVersion: 2
-    rgba: 4287127192
+    rgba: 4287257749
   - serializedVersion: 2
-    rgba: 4287319928
+    rgba: 4283191437
   - serializedVersion: 2
-    rgba: 4286333280
+    rgba: 4287188082
   - serializedVersion: 2
-    rgba: 4282814192
+    rgba: 4282411458
   - serializedVersion: 2
-    rgba: 4283446354
+    rgba: 4283905366
   - serializedVersion: 2
-    rgba: 4279769904
+    rgba: 4279506989
   - serializedVersion: 2
-    rgba: 4282671019
-  encodedCells: S1:4:4096:6B7A5216:fZPPb9s2FMf/BmLzgK455ZKiOxlsh9rSpQirFE4uhqMuq31aVTrwThsCU+h6SjObMHIJjB64+DQHjkf3kirtltCXQitQWfyj9h7lZB2G9gURLX7ej+97pG6vfsJ2i+WbT+Bbq5+zfflZ6qLd//7H+78tY12whEUKcdvtyTV8vr6LPwtfKcVu0BX9QgzmWlt9XUqvhPUhFKwnb3+U//cSWbbzgxRtzrvd/n+4bJDy6l9OQyw4/+ppV8iBvHVdYfXrkJQd74v2I0JIJPqgY9kT2OMwJEaiCf4l8PtdMZBxD8X/HMNjh9TJmewLCelLyKPuM/CFLFBB7O/fq9dJ/blTzsmSF52sxRAi7mHQT46zgvNn7k3E8CfEdwQcyl341Q5cfcYH4iP7M6zD7i8CUjp9LOLx//lZP263eYDhjMXiVI/3UOKGEKelUggOh7EIOEPbg/qnWoPkHsZMwhI5IuRHmOxGBFjsiSWXEhvgDQwnZY6GXIgOnwDvx6KPShrYIKk7Lnj3mvMuF7vd9qTpBJLn/0rucK31E760tO4SPLnGbYxfdK54I3QC3rmXbptvRJ3eRFcX8LYoOE6QnDkeRCwSnZMpcBZNPmASrF9yc+csiAJwqQHXmkWDD7WIByEMgNyAixHgdPDxGPl4K5DTWhQETVd/hTB2IB8yBm6bGnh1fSqnVZff6SPrwD8wBjuO19alnC4YO7ni93lPPnQiaxrLL+DK7T7Y2m62whI28G4L8rcese0QsbYD4NNX29sQ33ADCA/kTvggDAu+SIGfHPK3wFdwwuUHUvIaqNwZDAZap76F+IOdEDh0+AU5+xXe4bbLjcFAHkIG/4Wc6p2w4fjKkdmT8vTx9tNePJhOXYXFoYxE6Ky+QsoHUgagXsqZnky7wO2h3OUBxoelISnH0E8n6knZ0TXG+1NtawzOy/H6zdK7GBvuHHTjGotOaryvOzU4hG+b4XtwuEnqeGFj+MTFJpwBELhEcGUTo9k5DZv1On774pR3OjW2jg7sBI6Uv2XsTmLGXiPk3N2ZdmfTWvs3+jD2lJ2z8zyBM7k06yxiExZFLG+lrVaS2zBshf4b+8Zc+GyTgYjUtrZta2tI6UhlCqyiKhfGmDl9n5uL70e4pRovcz8pHIZKAc1t4vlJblLg/qiiRilNKSDlUZUB99L5cJ4Yz/eSoctwrIYVWFI7VEkCnJp57qW24uU3ydFRBnEmU4WrwXjwSKwPVbxUHdmsdezE+SjHM4nzSKBlWPMivxPqYYYmiEfu++mx8q64urbcGIUd5vMLiLgBIak/PFajK+7N564KZFEg9lj5xvrHFwZTZE5fU2U2nxu4bnfB5w9qDfVoTqlP0UAdPpOEpncx32xm8tRDWnBn1UtzJUkbM9beHYoe0JKfwpoWal4qRYfQjJm50YwqtkqpHS2FoF14xqLDsGKppTS1bneO7pmfKn+OozYwhiqciVVWZSM3RGUwQwZFx8ms6tnZpQcNpGkGCiB5NlIW0lk78seULqyd6bGdUTO0o0zhqVhbGWt08NNklCV0hh9XAiVMagvDyuM8tQlcFpiQvnTnCjVAJM1fVfH10uQ4jHVdNYgxLdbz6R3t/CErzGVMtf4H
+    rgba: 4285435343
+  encodedCells: S1:4:4096:4D6694BA:jZPPTyM3FMf/Boty2JITh4orGkV0dnpp1wppyAVFVjXiVHVkZqO9VECtBE4pCtP0tJqOIm84ITYJ3l7CANnEvUSgTRf8R/U9Twjpqq36QDOxP37f98uzuvrP1viX/f9njbX/ok8wihZ3LhdhI4qa0SPP9C6/Wl3wRCtGi6lemsECDjmf+894jhxmQVYRFwLe/BtvTImZc07JJOBRI1p7yvDekMEYk2lEYYEQ8j34L5b6OZkQDYnDP/8M+NcgsFqM1hpYDvrD3qBpM7ecUJ7VgUHCtejPSY5Mfs04eeSN7AS8+ve5CSGvcRUWrP7cP/oCj71Hn+UTXH/KrX05MbD7s9Wn8KtsuTqJQlA8Bm4mWYYhdIeCO6UQVdVDaFT0TRjd5HK5TCAMCgDvXoGjUnU7Kti6MahPXvEm5xx4k8MQlFKP8d9nfMDRaEAxD+QnM943OVs2TI4HmNSMv+SQQNgMx1ObIDl5KqmAnD/aw8QK/PDEeQH47iOfZgEm2SoMigHyOuiHuxkneGAQ8ACXBRpScFff0oINUgAOI4a5BvTRANdr+CrBwupvPyOblHYXeI/2gYPc1DYgR7YoPatTCk08Ry7KEXKMbxtEbgPar9My7FiuaL+v3lB6fjvjP/Ljft3WgFypXv9MlcrmDrid0Hr5XJXMB3pnlM2v11o7K12YO2PMrZ2AOe8rWJxarmrtVlRUvwRXEB+vGPi3bEHBfcZFL2qokw8GLUeWyPpptNa/N+b3ULXqcOCNUI2+up/xZ9uDMnyb9d9eNkPMHkzUWsXzouVmskzI8WrEqzxoRqqqFMQ6FXAJg58ygR1CWnCfqnjruKLwghaJYsS7lpOlHMGPqFiCKwsdLpV4X1WhScHNgz2wQkgTL0+1GyCndRp0laIlOtRVeiXMw4TAeMOoW1Wcis19qkAEB35D6f5Qi8Op2eUl297uvjBTcyQEyJTp1ZbuDDnfGuoXdDZh6R5+NH+05ZE4FUJL7Y0CukXNi7tNOr0Dt7wTS8b8dsJqUl57WqeOifVy/Fr67EAa+dFx8olTYfkKYzoFrjsJPGSHsQN/mfmu4zg+YwyOwH6qPfhLga84FQnCLHFTB17+dd5PgXbi1I097fips8PQKhK07S+GfuDupbF0Rh0v3QbvNrhmlCUrGs3ztJSu9pxrNrf8HhzKd2Z8BBiEtEUS/GOnEkMUTw8qEEK77nqFpd46VFBjC7azpFkygvRH4Dpyd1h+fCDYTg/zwyS0xpS9Ubp35LNrr/JWbIy8oU4FtB8NpPGZevDEnrx9GGsmFqyHj6G3M4t38e65NxSf2Ma8XP8ay5FgPvuO+RJgewYTR/qiN7Kc5f0aoD3hzwtJsSWYDPBkeCiE9FElifMx+EJHksTdS8UGzFIqaNWFiGUixT0ckbLjysSXSa3We/6u3o7ror0H5UhrGoQSCV9LW3awyA3pwrfTlhoukSfdDShu1B4dYqYSdj05cuDbH0Mah2Ict1HCFTACMdadmu2T0EhTvSesE/RI2SnqMW6onvoL
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000feffff000000fe0000000000000000000000
-  conveyorDirections: 00000000000000000000000000020000000000000000000000
-  conveyorBucketCounts: 00000000000000030000000000020000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: journeys
   campaignSeed: 22838241
   displayTitle: Desert Sail Wagon under Purple Sky
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 8
-  sectionBuckets: 0
+  sectionBuckets: 1
   keyGates: 0
-  linkedBuckets: 0
+  linkedBuckets: 1
   largeBuckets: 1
-  alternatingCrates: 1
+  alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
   mysteryBuckets: 0

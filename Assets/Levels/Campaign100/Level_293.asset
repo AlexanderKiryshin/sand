@@ -16,50 +16,52 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280695885
+    rgba: 4280827470
   - serializedVersion: 2
-    rgba: 4291479486
+    rgba: 4291480259
   - serializedVersion: 2
-    rgba: 4290631135
+    rgba: 4290767353
   - serializedVersion: 2
-    rgba: 4284002296
+    rgba: 4283936504
   - serializedVersion: 2
-    rgba: 4286868292
+    rgba: 4286868549
   - serializedVersion: 2
-    rgba: 4283263376
+    rgba: 4283329170
   - serializedVersion: 2
-    rgba: 4282480050
+    rgba: 4283339995
   - serializedVersion: 2
-    rgba: 4287730070
+    rgba: 4287730585
   - serializedVersion: 2
-    rgba: 4290701817
+    rgba: 4290303202
   - serializedVersion: 2
-    rgba: 4292130972
+    rgba: 4292131487
   - serializedVersion: 2
-    rgba: 4285841396
+    rgba: 4285579767
   - serializedVersion: 2
-    rgba: 4283406044
-  encodedCells: S1:4:4096:1693B85A:dZRNa+M6FIZ/g5jULrSrzK67Ysht6GwKIhmwN1no4q1pRs4l2QSMNUOy6YQE3eky0BnP7Loq2ZWKhKJsCiZeRD9qjvwR56vvxpKfo/fIxzqyrFTVXLN9RVHKP+b88ZBH0XRa3/F43OOgep4m83l8rO5xiJhaqU2RqVq90NuJtmXlKmOqeuWvkk/zRBdFiFW3RpzriP8550+/rSnQ0dOMzC74mJAqzLgW0NEVPGe/9expNubE5YQQCH753OUTXugH52PukrF+gAF/WTsYd+kEfEZ5CDCI0CNCnNjBQnYprYXyvrOxcV3OIR0ZK4WxpKnCHp3fdzhPozodWvsKTwfbdKP50vZDOaELqSa2uOcw0NalQkdiR/bgCUknlMr1cIeDkmGgcCzy2QDSt/cj1Japg+VgM8leSyHLYLtYvWrjzFRKxny6r3kTY6X8uZRDxpiDiw2XW2eJEjaOldIliRVuz8OlLUoHtsS4wHrggJ8T5IzRBi6wgzPp0ud5mA1TrHdQ4kyaLvLxxnxLwzCxBW6Hzjs8c4OCNI6YF5Is/cJENQ4Qw0pAwdiwh3zVvTngyhEyGTKlPNQzK2ZQuansWmNbsTAxHcc3PGR6KPRl0yx5rBLVM5+7fz4YCE1WE4RMhCjb7FOpRMQ96vW90DwFEobUsuppN7022/r7pBiYrG96vK8Qt77z76ccpUf915WM6rADIew4vgmSdg2a5bTlQtcQl7i6CziFFELnCRb+1cvokqd0I851PYWtYvrT+sZPWz92OSEKDrIQJvtkvY50Z+1hYgsJh8Zg19G17rfxAU+LYCBrOuIHi0FZFQw0jUbcfZdXlreRxY8F5BxfT+tHDdL8wblvWLV/SgP6peAo/eXBynxAUT0L+JeQL6jgRuMsDegvarf/Xetv6CP3xNhwhIzsULG3n6OHV4t3+oicINQCduK5RPnoDdnYx82mv4g+XBqWge46BmqNW5AFEQebb4kdeItmuwHN9GxY1Lvs8DveuXMRQidwUAI4/PE5im9W8bmJ+iZ6RvVocVu7ekCeoRtCsTgrg5/0h57nKUMNjPnZSp5p7jh4uJRSBEkaYVDPD1EP9u35lUD3DEDA+m4J9Xk976MwkRLjtHQ4pTDspW2eYAl/XG6dfy09aMOlEzK22OvAbLGuINxKTCspmjbn+SBgGx1v4rgM2Hprl8MtBxUfcyg5S9L7ZD9gy0FbxAchuwFwB8b2+zl0bdW6uKcce43XMR6wHSV/AQ==
+    rgba: 4282414515
+  encodedCells: S1:4:4096:31B7F0F6:bZQxi+NGFMc/wwOvvEtUGVLsdYkgnJNqYbCKceNCQUknsjfyYjUGYRWnZneRGR9pgsGc2FSugrtwwkqYawyKVOx8qLwZWbZs7x8syfr935unmXmTpqjb3l6bC1lWmrYs6/UF11qio8myfre+4DrLLXpq07ve+oxbVr/fP6mlliLv20l0lhPOeW145jzt19X2Ng6yJ7fXS1Ou9N7SN/7X+vtluuB842w+8cR1vuU1P+jTj/q2SVy8/uI4GE/zCZvzz43B5Q53E7wk3HWcf2hEiBBs/HnB0TRXlgR/roOXnx1H4UwwxlZM/D4+DONiesYXPIlsQies1laInG/FhAU43jiec7zRV9aSXcX0fjZhZZQTMeF8/PU1aPNyRkI781mMg6qsNIoydqoyDqMov2/+qerPHCwW/uG5Lr6WqAulohUxbBjdJ8JvkHJ4TNDwAcFxfSFEJWMcdF/Atl2YjUnQFCEmUWj7AzujRy5zfK2xjQ/EJjYq3DPJKL5pYeWI8NWeUxWAWVu4FisZy2n93IzdVjajGSETNaM6OiTnovu5LsLLaJ2VZK9BictUyu7dBZWRLT5KGcc+BPHkkke4ueJK2pUJ97uOWXTuOidcZGEky6BD8sAAMD0oA5F/04qP46g7zbsvD4jnszkA3r14eOCVHRaM4bvSBABWlixNraXqpy/qa+wMl6z8cxfc8GkFqlueXLjGnYt6fvnJorhBBB2G2zD2V2m6uB45WomjuoCP1RSqcfKZedtP/1At0xLneo4zGnqr/hd+Db+e8sSxVXcVXhBYSxxzdBbvOKo8UkCcWi84nMOdc67W1jQhVeHnEKUnoQte2l9c5D7wsIpXVsrfMpCwXuMHa/k2rxNMcVbnR8NV0nCmcZfsUmgqxBn8AA2HOkG8e1mlD7oED0ZXcOR57SgG5cPNd8tnPt7B6APUhv/AMUso7ggN8Rv81fJmZSwMeEwMUMt0tQOHdGD2sSJGdRfGBit/gD7zgM8fn/jIHRvISeGRgRyWA9yckclgBvAIuJAcODB4jNQWwt3UkcNiWJCu6e2mEvKtsbopfwP4V/ebjDKhd4H/99TYebI0GOzKQeALQ/WUUFIthHmqyp9i9Z60hQ6xqaZCN3Ip1WGKooLue7amNKN4BCCXX6necfTQHzpYTRAakOPZREiriRus+F7xSX/RrH4ojoZhi9Pjozzq9IzZ65gA2/0tRyuBPiMvzppCnqQIL46jojoaLs+68yIqdPwP
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000fe0000fe00ff00ff00000000000000000000
-  conveyorDirections: 00000000000000030000030000000000000000000000000000
-  conveyorBucketCounts: 00000000000000030000020000000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: places
   campaignSeed: 30588187
   displayTitle: Golden Dunes around a Crescent Lake
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 1
+  frostMoves: 8
+  sectionBuckets: 0
   keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
-  alternatingCrates: 1
+  alternatingCrates: 0
   swappingColors: 0
-  loopInventory: 0
+  loopInventory: 1
   mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 66814f5b2bc49e04a979560f2c351f0a,
     type: 2}

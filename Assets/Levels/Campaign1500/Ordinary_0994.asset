@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0994
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281815667
+  - serializedVersion: 2
+    rgba: 4282283950
+  - serializedVersion: 2
+    rgba: 4284326368
+  - serializedVersion: 2
+    rgba: 4288466166
+  - serializedVersion: 2
+    rgba: 4280233798
+  - serializedVersion: 2
+    rgba: 4291276966
+  - serializedVersion: 2
+    rgba: 4286022554
+  - serializedVersion: 2
+    rgba: 4290891744
+  - serializedVersion: 2
+    rgba: 4288065232
+  - serializedVersion: 2
+    rgba: 4291071598
+  encodedCells: S1:4:4096:54318589:fVQ9e9s4Ev4NQxmmVQI0o7gkKZ2T7SxCiXQdaEO03SWbhWl12liEmC4SY0HptNYXXefRk+hX3sDO3uWuuClIgO/MO+8Mhtjv/68N/mf/df84Lr/93Oz2aqd+8c32g9fq0wP/dt992u9s9N8eg/1guxzw7vd6WJ7yH/v9vVLqGbgf2Dz/1Hm4uXtr7malG5gfA/XhQT3n7012je/7T2NyV40L/vDirB567f2ge4MMard/FJt5s7mutBlrPXMPVnPT85bbbfvHMz543Ggz++S+rfeSOvljhDp49/Wy1/0+UMpkj2Y8NBPzOC7kzah+dNPJdRF3mxfl1LzKkECPN2qzGjbG8/T9oSuLVQEf2915oRflNnujMq0LnVRb90gXo1t5+uHjn/2bk5eT1mwza/JS65uiPr6WxVaiTeSbLB3liTz6koxO/5rev9INCqdXn5xC91V66ZNsR5JE3L29/hL38+nrWLPG5vBWqjV1byslReBKIWOzvTbLIFvwJtvtNtc3q7zowyT/eihBdHbpWY9fpjRYFqe/s3TQl7Klxv2HvLfOLwlM1Hkg7lBMp1aqN/tGIvNUOkCKefUiUzI0fUKF8OdvssJ0S7XZN9R9gu7V1cHlVBF6JIiQQF71ssNianACNtvxKJXg3/a/GCWpBJCSZesgU8G8y76p3W8qxfhFMFy1+zKQAgBalM7zh1n3QGUv3iuCsCAS2JmWREBCp6ROFg0WwQL7PxJSFesLRIQcCQKhP15etzPpr8bL12ot8neuUusFsbqkJCQMpkq11br3OTvF1fCQ4Sku3ivMgQ5AY+9WHU2ytdmU90apm1x1fle5QnxICEAQR7en6ephOc2rEnGVXx2+y9SNsuxiCB6vhRt/O+9N/2GmFof8heoeTq8wtxTaZc1zENNtGiszNhZ/v1Zr/Q4rk0NBCrd9fEEg+PP4gzFdY3hph3T2eSakbRKhwKKHvLqcnSxLY41zk5mX2+3s8yXi4LKIx/cTM6m1n3EcYWNKU5n2JfYQNnXnLN4Y0ynb/CduHYyel6nAg3FPYs75FFPPzX/ZxFj97okTNDkvzcsn9rL7i0eKzadAw2ZU4mCYLrf2C27lgwteFJW8W/F/43Pcon+B6Ig5NdZsdnlVVb0nHN/LkC97vHeB50uAOnEU8Yr3nmFcOYTQv5ZVdYDd1zQQIWvy/1iVomq/jasD5Ce0k4Stv7FmzMtqVdjpYpzjALlD8GVEo7iycI2G05cAeOQAEedXGK9r4Xngx1beCUiHMlZVsCIrK9ZW54vwvO3HkRXHsBe0XVWbS7pA/4pYHIJzOI6ing2oHXi2vqruW5jjZAqC/E67GT/r88+e8KsOklQV4kBqwXkQRracY85h2VtaPMDWLeZP/wicndMI9feuyKIiy6qweAulicLyQysUEDXP7vRoyDhZFlrPx2nrSJKVxvkSMPRIcBZ3LkapqzW501oPddrSeqQRtf9HeEHiuPVxqHXDIXfDhnSLtOVpnzokwXgCgkRxuwb6RDA4piHzWa0FntNiLMEOUBKSgMWRF6JK8IIIIxgTNEgc5mAs7QCF8+AYKItYhE5PVvMwNWUh9ZnngOcFYQLUo0+Yh4cgCJ4h8aMWfqphEGVe6Ec23AOnhkcoai0Z1LwnLmSOPMZYyCLq2VfAKOq0iiKGWOxQB19RM8KxsIufOsLQcxwIedPzBKNhUMNLz0MMfbwoRCaHhTgRSOs4lHpYt/RRLWB9DJiHQsHWZInRP0okSIaopIBO1DoRfFgyfDgM7FRisGPlAAMHp58w4SdYXIBKbDx2G7XbByN4Q9ublVI/wYlleBm1UAHeJOgAqAscH7NhNAgfP+GsYTX2f6XITwkSYCorAJloKCRW50if/Qs=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 104003216
+  displayTitle: baobab flowering tree
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: dc89c0870dfd14346a36ba8e71874329,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

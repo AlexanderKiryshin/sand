@@ -1,0 +1,266 @@
+{
+  "status": "PASS",
+  "png_count": 24,
+  "languages": [
+    "RU",
+    "EN"
+  ],
+  "levels": 6,
+  "backgrounds": 6,
+  "custom_conveyors": 6,
+  "custom_casings": 6,
+  "same_gameplay_state_across_languages": true,
+  "sizes": [
+    [
+      1440,
+      2560
+    ],
+    [
+      2560,
+      1440
+    ]
+  ],
+  "files": [
+    {
+      "file": "RU/level-001-forest-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "acfdb5a551b55cb9c83ba6c0af5d0298271c00e2873024248f1b65f185f8d687",
+      "before_compression_sha256": "5eba5fb330b9f9067ae80996a0e299006fbcc07f7db125b5f9478a95da4163d7",
+      "rgba_sha256": "6dbb1a3a3de38fbb37515cfdb44703dc9222ee8712ee5f000273067495ecf12d"
+    },
+    {
+      "file": "RU/level-001-forest-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "c895071100d07d05d8b2d4c9e68bc70a689b6245b8820f0440c329b3f5756a5c",
+      "before_compression_sha256": "2d55890862dbc7d356df93dbd052216a97818dcc21a3b76ee8acbcb527410d81",
+      "rgba_sha256": "56c023c82fc1cf3bccd2680c32053e42b46060330d7082ef5baf12ce42aaa555"
+    },
+    {
+      "file": "EN/level-001-forest-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "a7b8b2e328ded98a9d42d7504dd7a943dea095f2dcd73e78deb0240eba00ab5f",
+      "before_compression_sha256": "26f4f7945f01fe27ddc7d75ae024c1601f6a541b979ecd16bf9dc0f29a019efc",
+      "rgba_sha256": "33d5d488124fb234f3d5e92fc61c80dc4f67454aaa5ecbeffcdd1ee4df5e6be3"
+    },
+    {
+      "file": "EN/level-001-forest-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "61336db38e574ef2d70d79558b2cf9e72c36bd685718d52686759b840adf6bc4",
+      "before_compression_sha256": "7b7e7cc9f62f389b0653eeccd67573c6bd8cbcf559bac4c0c1b9d2f36ab65b33",
+      "rgba_sha256": "ba351365e53f8d369efd7842f90c3e2e3e6754c1724a1c3ff55961b5ae01dc69"
+    },
+    {
+      "file": "RU/level-005-blue-calm-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "0664b1d2f7f46d8f900adf0bc6c307bf34c4960eceb1c0e7e9d14d608c62f0af",
+      "before_compression_sha256": "cd96a2d4ef1cb7aae271cec5196f1838235299ae58ba92f1c03e92b4431b9467",
+      "rgba_sha256": "79f47504e3de7ecabdec115f338c46ab8c589158917badcc43aa4d4eb48ea03b"
+    },
+    {
+      "file": "RU/level-005-blue-calm-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "584ba42daed50c8dd149ad974fcc953501158011be16ec3ad102bcb34a098a2c",
+      "before_compression_sha256": "6cef18076cc60d53c7bea9214c1d3b6d4abd24d4262c99bce152340803606c0d",
+      "rgba_sha256": "9afc8e638d9a374694accab81f6733c288d5a6c7fa54422b6d28a0cfb5e49a49"
+    },
+    {
+      "file": "EN/level-005-blue-calm-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "6a6ab6c20619d35d0aa757f1a07247d4bd10d319d551010ebdc47950d281ae60",
+      "before_compression_sha256": "23b1521e0c6674c2c1129f8aa0aaf692dc40b905e706b88084dbe95738f94e13",
+      "rgba_sha256": "ec4e1cac15e076d0d3094e156f6dd4e80b9f2febf169ef2ce43878b359dee59e"
+    },
+    {
+      "file": "EN/level-005-blue-calm-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "cc2aea32e139deb9af4539683d1f896899af696c875b3c2b6ee7e5341ebb8350",
+      "before_compression_sha256": "eef161a1df7e0ee725d03f7554f4241301d241ca8ccec561844f97fdd4875517",
+      "rgba_sha256": "0afaa853f4a198c537224dc1338fcfcaed833d785edab8ee3195a974ff8c9365"
+    },
+    {
+      "file": "RU/level-007-tropical-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "cb1b8dfde582ec9b7e54cd789cb20056e38d08a639086dacc1d7cd01c84bd08d",
+      "before_compression_sha256": "3a785d28d00a2f009e13fb37eac612bd3eb0d2f95ef78298d0db0e466fbf76d1",
+      "rgba_sha256": "2df6a29bae753f7ee349b286d1d8a944f17427c1ddee40df9e2fc7f4da29ba4e"
+    },
+    {
+      "file": "RU/level-007-tropical-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "c845b0ec4b87db0d1c1dc7a8a7131e8f70b3a41e86c4b2df330827bc62777802",
+      "before_compression_sha256": "0825d02c0f659d94d97b5becab6f8313756fcb1f27c512d43fec3b914fcc11f5",
+      "rgba_sha256": "c04c7769a2cf90ff12a03314808383b8d4d4f8e865099cb2ebdc5a4f933ff519"
+    },
+    {
+      "file": "EN/level-007-tropical-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "0dbdda0f1884577305f118cc54940cacedbbd2b185e857b4ac4cb59e76a6d062",
+      "before_compression_sha256": "51520fcc3bd531e2ac7c894d23543425f1c10e596ca6d0b222a304c3ccb71752",
+      "rgba_sha256": "4c0c06112e71b8f1abafe4dc53c5f0d9d7b10fad99ca1797d62835dcdc4d42f1"
+    },
+    {
+      "file": "EN/level-007-tropical-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "0bd80399dce7051709cec698b9cb4986ff46562c00677ab2187fce371a25aec3",
+      "before_compression_sha256": "1ab49dc2311d2fc7fe3d9493b34fd0ded559dd11b9b6f5b2447163470b1197f0",
+      "rgba_sha256": "445e4e0fbedf185297280fa28ce672a95666a8b072f52a4370e916f2578bec96"
+    },
+    {
+      "file": "RU/level-009-lake-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "0a33cdef275b22d1a371956189064cd8ea8b2d183239f724c1a1954be2334d4b",
+      "before_compression_sha256": "f4edd457bfd4b30af1bf54e4d97a96b2e9453e633f632aca7d589976b900bb81",
+      "rgba_sha256": "8497caed8119daea1576a1cff42b5370e7d19c748081f87b87bbfb29e2c2ab41"
+    },
+    {
+      "file": "RU/level-009-lake-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "f91b1c1d222170ae88bc1df86da2e7e1eb37fb1e69bcc8603d306f85ef53f4bf",
+      "before_compression_sha256": "c4688389d5ed417321d1106f5d1dd0d76a05b505e4a7a9e11af151122a65e6b0",
+      "rgba_sha256": "e4b390631b8a156d98b074309b11c75e54f2497f203ddd177bde1b5cd326c599"
+    },
+    {
+      "file": "EN/level-009-lake-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "c21125de09a73ac37f3d6ccb10cc46a22cff10cf2631edee7a6d3069909ff659",
+      "before_compression_sha256": "d11a21a082acc84865d4be6f8a4162a2128a923b4fdcfc2a7bf6c14029e53391",
+      "rgba_sha256": "60334091fdab56860ce3ca1c80920fe93de25a7292bb130e2cd9261524c599a1"
+    },
+    {
+      "file": "EN/level-009-lake-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "470754c1d54dcab38fb5967b01c9fa321921334a390edec075de9989e3a6add6",
+      "before_compression_sha256": "af62244e5ff861e533193efa663b988e461ec973807c2bae0d3c89c502b2c9a6",
+      "rgba_sha256": "e6cdd0141a580f6193ba58cf29bb1ffb80a06dabfd243cfb89b1bed09e4085d6"
+    },
+    {
+      "file": "RU/level-038-autumn-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "7a555395a3b4c8126856b52566880dc9490cb2218ebb163ffdd7e687e479ba5e",
+      "before_compression_sha256": "f9d30e8824dc5cdd264b831d7188fae492d6477f7c8630c3d3dc4b4fca1500f8",
+      "rgba_sha256": "27242d4d1c1c59e0e139a22b542edbca0096ab67611bab6d007ecf5dfea7db8d"
+    },
+    {
+      "file": "RU/level-038-autumn-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "4aaa885d87b61e4d7578e900de8f0d48c12923fff11297f8455d5d2760e0da7f",
+      "before_compression_sha256": "a6a3f3b5fb14130a75fcd1260316805a9cd11514c00a9a4b2971bbf200022034",
+      "rgba_sha256": "41c509fa4f5c8958f3e18ee06a032d1b7db8729c888946f042ea27bc240328c9"
+    },
+    {
+      "file": "EN/level-038-autumn-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "0f1ec690d373e54810b7c60353b36a3c4e3347cf190cf750ee2d4999a3399af3",
+      "before_compression_sha256": "fbf73674fbb7d40d843315c409a4c305bd3e9847e98d19862a81444ea8325708",
+      "rgba_sha256": "1c3a0d0aebf80994ecd2a4b08b687ed4a04d9de7d3b6ca7299731651dcd5e837"
+    },
+    {
+      "file": "EN/level-038-autumn-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "7e1d77fc3f1730f75133c2b0cca441b9311e2b8c0f4b0aa4e3795d8c1931e201",
+      "before_compression_sha256": "d800d3c0b43a51ab200fe39f924a9456f75c9fb065866ce227e8d5271405f7c3",
+      "rgba_sha256": "b062d1b79248f906b1c5a6a84f8ee4c1b77c9ffc3610ab6ed36830ef41718319"
+    },
+    {
+      "file": "RU/winter-001-snow-forest-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "8772e7c331af875464d9df0a5ea554a8356edf6f51af1e7f6eba2a174015cf94",
+      "before_compression_sha256": "9579ed8122543d70a627b4d96d880a285950c663b60caf701ba0e31441068363",
+      "rgba_sha256": "a4bc62fa3a421ed3639939c9974ba050394f293e18429b6d9c5e4b03f411cf2f"
+    },
+    {
+      "file": "RU/winter-001-snow-forest-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "4104b77cc00bcdd92d1a0e53523dd06557b468c3ab3fc4bde30c657bb2f5c819",
+      "before_compression_sha256": "a3a23c2bd546dcbd581d216d18b7041b4cee6d8d8260545bff9364d63ac1411a",
+      "rgba_sha256": "16123609b2ecb221d284477c4425e263e973ff49dc7338355310ed85d8274a51"
+    },
+    {
+      "file": "EN/winter-001-snow-forest-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "sha256": "e3c759a4de1c69a327cec1b7b2878ee895dfebc2271b88379519a6300cf96e05",
+      "before_compression_sha256": "2df16ba51fede43b88e45b235b4641964f929437a95306f1f6ed2a55fce47f6f",
+      "rgba_sha256": "6e3a38b1aafbf504f172f45ed9458eb2bbadba95c534481650fa11813940e762"
+    },
+    {
+      "file": "EN/winter-001-snow-forest-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "2df87da3607b444f6d5ade7e06602dca6b46142f8847f07f0fd1c26b8b293219",
+      "before_compression_sha256": "3c1c562d4b3b73a9f6ab100cd5ab71fa2d65f4fee3c72071e4188b0e9c75b2f3",
+      "rgba_sha256": "eaf757207ddc88d5289b929c08cb9a1025096eaa79b9620dea2a4d0da31669ee"
+    }
+  ],
+  "losslessly_compressed": true
+}

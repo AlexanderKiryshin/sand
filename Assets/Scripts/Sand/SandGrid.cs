@@ -22,6 +22,7 @@ public class SandGrid
     private int sandMaxY = -1;
     private bool boundsNeedRecalc;
     private int remainingCount;
+    private readonly int[] remainingByColor = new int[256];
 
     public int Width { get { return width; } }
     public int Height { get { return height; } }
@@ -75,6 +76,7 @@ public class SandGrid
                         int y = originY + sy;
                         cells[y * width + x] = colorIndex;
                         remainingCount++;
+                        remainingByColor[colorIndex]++;
                         UpdateSandBounds(y);
                         NotifySandAt(x, y);
                     }
@@ -161,11 +163,13 @@ public class SandGrid
         if (previous != 0)
         {
             remainingCount--;
+            remainingByColor[previous]--;
         }
 
         if (value != 0)
         {
             remainingCount++;
+            remainingByColor[value]++;
             UpdateSandBounds(y);
             ClearVacancyQueued(index);
         }
@@ -363,6 +367,8 @@ public class SandGrid
         return remainingCount;
     }
 
+    public int CountRemainingForColor(byte colorIndex) => remainingByColor[colorIndex];
+
     public byte[] GetCellsCopy()
     {
         byte[] copy = new byte[cells.Length];
@@ -388,6 +394,7 @@ public class SandGrid
         UpdateColumnAfterRemove(fromX, fromY);
 
         byte previous = cells[toIndex];
+        if (previous != 0) remainingByColor[previous]--;
         cells[toIndex] = color;
         displayColors[toIndex] = display;
         MarkDirty(toIndex);

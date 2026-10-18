@@ -16,51 +16,61 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4285355412
+    rgba: 4280101413
   - serializedVersion: 2
-    rgba: 4288898465
+    rgba: 4281888873
   - serializedVersion: 2
-    rgba: 4287656917
+    rgba: 4285502079
   - serializedVersion: 2
-    rgba: 4290154795
+    rgba: 4281745984
   - serializedVersion: 2
-    rgba: 4291929958
+    rgba: 4291081194
   - serializedVersion: 2
-    rgba: 4282723640
+    rgba: 4285357660
   - serializedVersion: 2
-    rgba: 4278780932
+    rgba: 4288052170
   - serializedVersion: 2
-    rgba: 4280554775
-  - serializedVersion: 2
-    rgba: 4292859355
-  - serializedVersion: 2
-    rgba: 4286006609
-  - serializedVersion: 2
-    rgba: 4288257526
-  - serializedVersion: 2
-    rgba: 4286218233
-  encodedCells: S1:4:4096:E0569167:bVXPb9s2GP0bggB20OQy+ZDA2CUmkGSRjzbWXAcLg7tTW0Di3F4cL/q4rJfUmMgmuxStD0R7qbfJLrdLZsCJR11cA03R6I/aR0r+0XYvsQLzve99jxTJ9MvRIO4PThlsO1/ggeNEonXOdwC24UvaqThO+ZwNom0G/1eOKDnOacDYKYTl453lWFZdqpYqitNthuUAfNUiTUmp5BBC+kMYOAKCYzg+XvKVWVpNDU36zg70nWP2oLgsJrMU6zM4zlMB8BQEzAUVsgrnKTDYC6GLARb0UjNzQg4BCYv7QTjPV7GPCqmaNrvAgkq7vc9KneJ+aZHvneFSyx/sOwCFcMchhYN1USGYfAVd3tkr0eKhv1shDwtdWsWWZEbm5UmbdEjnYJ903mOaTvvDJ8WJvj3d7ZAuOSBdSC/2u5EfLMjMwz8kZL1DZtUgrUJb0AVdJSRxSTpUAzVrozfMyHrx7GZB5oghvvOx+Phi9pAIVgxYhAu7pKuzIYtV6/00Okh/m02f8Nv1s8zAJsBPAEKB6goT5klY+JCPJzqPAaAwQZZrbTzl6WcAzk8HKo5cdHy8lUI+/NrMPqsH9mbYavXVx+RmK01v7OgbtagHzvhQIf4tmO9T8/hLqbWPuHhJmuC22+BCnA9joaapSbmV/o3qMjrozD8EEQoRtpT6+h2OKIu+OtRJ5t8GNGDxeVR2KvFULXAn789BRJRRZlLEahWW32BcMJ+JSHA/Hg5bq4JpGnAmjEUoKP5GNPI/sdji9BH4glIsF76hkY9X+gBlIVAaRT4t0MLafb+wq8nvbqne+EMpB/kNoCEFcT3WC0x6Xg3R8NS9ezh/OhZUCMGvN/Uj79nder1m0ag3avVGxCGiYs8f6/b9yCw2ULj761uraTTqNdJZX9Ob9y+1vn0tfwbv5NvaT7XcwDx0UNCbyLpEyqbn1T4HA//SZHJHslnzekf1FQn29/jQt8ldMkKDWuMo95inBO5HQe4vm2Z03sWzCoAAwDi8cqVBE8fw87KRqTy+DhtXhawDeTFBC69nqZc9zON5a3uJmy8btpho2TuqNbIWL3EBvGSU6gtqI5IXEttgj56datZAX+ozFo1ZPgkpjUDWjeTITIIQxmEQct+2GOFhlkbTbNi0PUlKxwCC4hyu85Akm0jWpecSOhhEcHV1eWUiGIxm+oURaDPdsAN8oPR8DsZgpDGnaeP1JhMOFHcRpnt0uVRoo3gu5VspTfPBj4ENZ2nTYIQnHP3JqCep2RJhsInpEj0X4NXzSmpcLN0D3P2BiMEfjxb7D69dk03jG5XmHwM9xecY9KrgNt26nOA8zPkHiGDNT/RmnsEsAp7k11K6r3zgCqDN/d1fWjYCXj2uS7LLcfJcfgWshRZBNOZ8rJXlDWbmDkvIN2e4QTb28BCEEIxN/a0eVfNXYa5B7+Sk/B3mi+PvweuXJ//YrWgEkrj4432Kppe/+x+WY3KVN8suveaCQ7Vsrmgt8hJ8w/aP/fpnPmL5ZvMzX+R7tr6ZSRaW/wE=
+    rgba: 4281638386
+  encodedCells: S1:4:4096:41AD391F:hZXBcuM2DIafgS6rnE0q2XPEje9UsPQD1DR9la2wZ3css9fO1FM/dn+Akncz25kicRzpA0AABMFGQXyjcm6UMsYo+WtMZ+XLkFakjDX2mJXHs1aqtQ68YqPW7jfwtTuN6vhizEor71znnGZqjSLnbGu6bE85ZzLKa5g4d3oxjuW9c3DOC242OfsM/2oI7r15dQ8xfR8Mm+fA3Cu/adSD96RUvybXnZiTZg8QcCt8pdTfZm1gvcnE4qtCQFSsAm7uf92P7F84MdUt1yUHcE+kPVn2Hmi3xRPXqK9erG6C6bUas75uc9Zxy/ZfDK0qd5ZY11NWMX2EXZyu36DU1lXApVLUU6YYI+1jnLb76YtpxcErl2pUvdeJ+bSDTkz41es1x91xigOnVLZgU4pVElchc2Wd+6VZr/wwFbApLqL1edjV+o3e/5F2MYGXBx+nwqHZzh0D0S7+JKUMYj0A570E9VmmAeV12G8S+8LRpUOMh8OsIPYdCkeeeYrTP2/32+0eZwX1lRVQUh/2ktotxvv9hp975Q3bY7+xQOX3g/CbePgVbcT9K4LwEluzwL5ytKIxYeELhhywUvzmfZzGuSN2KZbp7bsCeNiXVJQCmkogSfDBObxrQUVJwXcp5YntEeAPvMDgA/YEewieU3y4RzGA05Y8jZfKeW85dTHH0uwCTRTGkTeuJNn7GyLj6Cbe6YlbET3NpS9lKnN/cHLcDHEK6OSc1SVxiGnZfOH8z+98FHJQvnD0HMNjb2V1nAZSY1ibI6Jjhe/NwQZPNMK/wTHLV6SXpAOjNCFnO2k9onG/5rYLdOHsZ5UiGkVRj84gHGoKWp1LzUJWkuqVy4iJRdhAHinCWSHVMLhk5QnVNe98juRxYlgkivpdVuRNi4lVfpAke1HVrA6m7fVFQC6fBfx9aHG42/IfAvNns8IRMJTmcEq51i/P/PnZ+DqgXh/xnpPUWak1OnclwwETEl0qCjjS3BcFnTvkIeN1xxxFZvVegZ85S+KuwuzAS+GGCRcLk/Nc/nzyBHtUxnRiLytVqTMJJ3bIgQ8P8zqdUSQ4IZmtvK+YlTN380XR6boszLGv4I/pvcgKnCcpjTmM4BydddbVi4LvEtw1M4eDFzGWz+KBOTHHKOYFrOk+rcB0JHbO8mZrhnZR6TLqMEMUMLe1QHCDNTiC3qu8cDU02nf2JFOKPbDCduYR3I84PG3e1Cytw42JO6Eax9PsJZ82j2sMvEXl80eu8bM08J8XbPbGL+8VSRBgp2xnvnpBhsO1GXkotiRuwBfrlV4bXIZDAyeh7Wsi/8f/BQ==
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 0000000000000000fefe00000000ff00000000000000000000
-  conveyorDirections: 00000000000000000100000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000403000000000000000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: places
+  artTheme: ordinary
   campaignSeed: 17497062
-  displayTitle: Pink Sand Beach and Black Palms
-  beltCapacity: 3
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
-  sectionBuckets: 0
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 0
-  alternatingCrates: 1
+  displayTitle: lotus bloom
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
   swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 1390a9f1d8c7f6d43af4a4ab488d5f28,
     type: 2}
   usesTiles: 0

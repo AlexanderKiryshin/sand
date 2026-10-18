@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280239462
+    rgba: 4280375405
   - serializedVersion: 2
-    rgba: 4288517743
+    rgba: 4290495162
   - serializedVersion: 2
-    rgba: 4280972748
+    rgba: 4280577744
   - serializedVersion: 2
-    rgba: 4279508252
+    rgba: 4281027133
   - serializedVersion: 2
-    rgba: 4280636058
+    rgba: 4280635543
   - serializedVersion: 2
-    rgba: 4282020992
+    rgba: 4279311130
   - serializedVersion: 2
-    rgba: 4281809695
+    rgba: 4279971379
   - serializedVersion: 2
-    rgba: 4283019753
+    rgba: 4283018987
   - serializedVersion: 2
-    rgba: 4281422409
+    rgba: 4282809754
   - serializedVersion: 2
-    rgba: 4290429369
+    rgba: 4288255346
   - serializedVersion: 2
-    rgba: 4279972413
+    rgba: 4280039510
   - serializedVersion: 2
-    rgba: 4285229633
-  encodedCells: S1:4:4096:5F3729F2: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
+    rgba: 4283065177
+  encodedCells: S1:4:4096:493D515B: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000ff0000000000000000feff00000000ff00fe
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000000000000000020000000000000002
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: fantasy
   campaignSeed: 28179420
   displayTitle: Mushroom Village on a Giant Boot
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 0
-  keyGates: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
-  alternatingCrates: 0
-  swappingColors: 0
+  alternatingCrates: 1
+  swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 1
+  mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 7912848be45d3f6448edb74b0f7f68fe,
     type: 2}
   usesTiles: 0

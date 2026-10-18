@@ -1,0 +1,4 @@
+PASS: the regression reproduces two buckets in cells 16 and 17 below the compact loop; both rise into cells 11 and 12 when those cells are free.
+PASS: buckets already on the loop move first; lower buckets wait if their entry is occupied, then enter after it opens.
+PASS: entering buckets stop on the loop and join its next clockwise step.
+PASS: 900 fresh campaign runs complete without inventory overlaps and preserve all per-color sand budgets.

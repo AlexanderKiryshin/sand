@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0661
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4288309296
+  - serializedVersion: 2
+    rgba: 4281359756
+  - serializedVersion: 2
+    rgba: 4288721345
+  - serializedVersion: 2
+    rgba: 4280296752
+  - serializedVersion: 2
+    rgba: 4282928715
+  - serializedVersion: 2
+    rgba: 4282484909
+  - serializedVersion: 2
+    rgba: 4286677120
+  - serializedVersion: 2
+    rgba: 4283414230
+  - serializedVersion: 2
+    rgba: 4293123289
+  - serializedVersion: 2
+    rgba: 4293832822
+  encodedCells: S1:4:4096:4F24E2D2:jZRBd9o4EMc/g7uwbLhVGBP2FmQw9BYjheQIWDb0aEB19wa2o9LbksDq2jqEKje2yfKiT7lj0nb3tG/nPfywfzP/GWlG0vp/2bvDf+JWrfXXf3HmW8Cp9fKmnv8hv8Jvepj3053WDoKXB/X8b/6b1mW2GHNeO7z1hn/mPLcfHjMF6mCcc5Hev8j/m/Pr8UlK10+0Gnpvq/dcf1f4xv37ZZk5N6y5Vco7VGfLY7x++KEv+cLzneqIt95bV0mwUw/f5D8euXXL6Ex6Lgu5P2PVp+137fL+yNfc5synZBGsGd1493lwzk9+2esHyBJeeJbvs6Ca9cDJQ3+q53yrDeOXGCp5UDT0aJIym0XO9GLUYwN2dQ/lGb/L62OliF9TQqhv+3xGN1wEywDBZ/lzrg9/ViOfeh5ji5DRZCJ9MR7u1E6B/vy4DWhGqytvRBtsJs3Ij/yAVcZb4GoJ61CqyshtaN6TLWHctBAKxG7CFnnkMl+JYiYPN6ttBS0qF9WFAFM2245fOBjfRGy1LszjuBse8e4qGfJ/OJtOufxSOMMVzjFgRyHS4eNMnThHfulPfY4L2BmwVIhY7OoL9+4duxbBDlIpFbnWjBmfhINzcwKFGoiM/YaY74I8WyRHaZKjFmjH6baOFsi9G/hFsU2H4CBX0dKJMZ5cx7HAQqHcQCDob9PUYcFanhKPES+gjFFG6kduj6Xf3xoMN9OqBQ5gLjlaDSFVR4MhAinYQwfzmYyoK3ou8aBPpP6qltVrDYwrza2ALusqXV2bRPSIKQJCkvrnulWpv5qXoHt6DyNEuZ+aKOcFiE9qgxqv1xbB4fv80WnVvSW4S0jhnBCz9rkuYYnRZPmNby7djfQtE3IHpmtC/dKqIVptP3w9O3x91HLT3mykFXqEWCEhfeQ2arBg1xbGG2P/qK21tFYyijBBm1vXfY3QykKNYaWxxG+M4pN2loyuVxLjm4hHp713EB97WDAbZx399KijzJldmpsGfh9Sq4WHjAqnmUH3j/2q6gCEOZcTjnH3otWAngUJZR5JAmLjRvLMum3MO7h1E+06OORDCoVSSry049q7uztte4OrncK9YdvBjfpmdO6ZBHxYcv7Kvkqa2oXhp511gFOR2fh+SBOAhNG0VzC1bWuMSdLsZEHmYKeJHVxB5ApSEPvqZ3N/52kcdoaFM2eIF5lKuiIfyk+EeOS8VyD7R1ubWfOyaOM0U6SDXARbSF4zWiTntJjo7eNzq3HTIp7qNlU95KG0TNfdMpayNOgm83Sr0XrS2OK4S7LQDAknqPJ5l99nLOiCW6pdpeIMYy9LJiuCpo04VcsAsNcTLBCpXjYhN654P1ECB2TeM2cI9Yr98zRI53pf1I0V7vLQ87r5dJowu2vrg5+yvifAQTxpeYo5pPUucuyCw7uwMij2DVaafzSM/QO0CuXDDXtayCVQjS16xbn+WOqflcVei17QzOqD/Io7WmEc+sVSX89Ln8pa7x8YHMy4bdEh8LwVXpUvdgddNkoG3JEnRmB3Wgo36JAdjxhjNZ6x7b788fAWHL4+Jx0B68oE7gTHbWHTRlbcG3A25nBLah0HnvjjQxtnOzxmxfmAmcIoHQwo/UyXIQ3ufECz1iXeOZ3JrGCc9LeqBIL7T4d52dg/K+lzGUZfJlGvezNkzK8yUTJy+3p8GvKSrqWMWrh7ezqcQX47Bu1yjvYgb8g2ueSbTYSt8MuQpQooCB9vcDCtyUa6t5EZtdsTboXxpKUcw4C4PeTPfSg6vZBVeWvNTt9X3JW16MTG3Ogfo/MsltxIuJinMhpt0NXUXApxsn8DYP5SplzLiPCIr1YX69EqojR14rw245vJUMqV60npj2ZEri56zjJluxemwe1v
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 69128459
+  displayTitle: Swedish archipelago boathouse
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: a280e09aa8443cd4da32053fd2b88110,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

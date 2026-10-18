@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0584
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283715633
+  - serializedVersion: 2
+    rgba: 4293189599
+  - serializedVersion: 2
+    rgba: 4288852417
+  - serializedVersion: 2
+    rgba: 4287852350
+  - serializedVersion: 2
+    rgba: 4283472580
+  - serializedVersion: 2
+    rgba: 4287793787
+  - serializedVersion: 2
+    rgba: 4283132783
+  - serializedVersion: 2
+    rgba: 4291664749
+  - serializedVersion: 2
+    rgba: 4281347608
+  - serializedVersion: 2
+    rgba: 4293311384
+  encodedCells: S1:4:4096:1832406D:bVVNb9s4EP0NRBxp1dsqRWr45shRukc3jKL21s0qQo6uWCrpjXFkgse6RsrqJuRDyx7VYCHwV+6jnF3sAh0kgsU38+aNSM5MwtDCJu5h6+Ghbd3brXU2DNfAwrCzP7VxONjkp7hbdeh68Ngm+h9uHXPY6ckkHP8X36YbSEM70XW37vQ20z8OHX5O3Ou4Xo/7vpvUdec8OoT8ZZ95tz61HrvKdDgZKLquexrgQZLLrhE/tnoMsRoLevP6GRmeutb9ZAJIh7Xtaw0b23CyBR281n04rsdrPQnXGt762+UnHXaT9RbHn16P4bOu7RCtS/0Jpdfa1QyyunYK6slEP5sCCTLVSKf7uu+HRVfBsxnt0my3Co7WppTxRP9rgXZUkIpIoDqlNKEF5Rs9BL4zuls7h+FN6xQ4T0BBOb9F1He1cWX2TpfD6YbSDUsojeHHef+B3wJ4rkVzDdQJoJRFSHS/4fsRR9ZaJ26t58lGp5uB4DJKkj9v+csPcZIwYFBN41uqE31JWZEUnPF49cMLvzlBCQJAe869j6/332gex6zkLH786oWlE0KdMbZkRL4peHTMLu+/8ohfveVxwfixKwlFFfJoLnd3oyJBaLmi1ASPcZGAnib8OGYRIaeC+DtfUcN9eXPzsZHQzxz18UE0O8Zn8zkh0ssPk6YUMiPv+f6B4Df4otEsgsbFSBCymMpsYaQCLh73DgldxQgGS7E7H3lwaFReKSNX2W4D/nNfUDmDvPIkp9QrRZnLPFdKyiy74PsVfBMJbubPJaUjUmWylbk6veThgUqyLM+qPD+BeEoFVVSqtjIqN+XCu75W2UMGe1BH2K8RFTIiQsrK+Ei/0Qd3lW+yaRTdXZz+4aoM5HQn898bFw/8QxscterVq+s76VcncAimIjKw7MEYn6XcKJ9kMgzvpJTAZ4v4/OHOmIssa03AvEe4KvMqPMtMJU/Bv+A3ftkamV8YE0z56tFUppUhqmnz0/MTJrybRoFbZkahsAczbZXMI5VHrapQo0juG9Oa/CIwJq/y3YY0kOorWS1Vq07Ygt4b0wTthcoq+QAKCR3tmZHXd22rcsY235385jewBlmVVdBXSRWoZSa5Ugy3CIQS/wZ71ObKeZuLh4uj36vlsqRWG3MVkEBA3OHZEb5sVbWo5chEe1GUfcRloJSQKzIENiaAKtUERhpVREVnV/wXvJEgIMLHPshc+LIJSIN9KQsh2Yp7A3oVCJ9IX0pCAhMQIsql3BGnnGH7G6gTAU6Ri/eNcVSiWBEQMkbZnIAcKML9JSppiATzjiSlLIdbQogJhGiM8L0Cn88QGa2WrS/KlbtjlJMF4oGTZMQbJCNHUeTwUz5cQgIFQoCYON9R04hpGO94vkjYEM+AEwHitzjvHnSI6V60g1N9fEld86Ejt0hkAzxqnK/DyelNolNtnQPW1II0c+A7hEynvwIX8xFF50B/etd7XkIId/EHnoHYOAJ+m6auOznzeBrMQcJ5tDQ8lkdZ9GPlWpjtN85JJylZcDJnNCoIj5dxwbvkaTv06pSil2oc1Hsc57PVjE+jOCqKxa2bgj26m60xSF58tqN5OjtsGZ0tZ9FtzQCHVtuwTjf1k+uz9HNKu/SJ7u+5fj3ugGGm2LqmVOv7jf7lLVqk+UZfhrMvXyzrgWOwuCS271NrR2jQNu3vZ3tDw7cYKNZ+6sOuX6NJ6/pFstn07yybhhQzR1s0d+eGZw0ldmjoeKGzQg+/nD5Mt7rX3dCsUzcAUt0zpp9b/7qv/wY=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 61064326
+  displayTitle: Slovenian lake church
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: dc4fb539a923ce74aa60e14ed0a566be,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

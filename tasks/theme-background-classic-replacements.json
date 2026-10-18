@@ -1,0 +1,77 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": 4,
+      "name": "olive_marks",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale warm ivory paper with two tiny flat olive branch brush marks, gray-green oval leaves, in far opposite corners.",
+      "access": "coins",
+      "coins": 100,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-6f8c50cd-0512-469c-acf0-740d9fee7e0b.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_4.png"
+    },
+    {
+      "id": 5,
+      "name": "sea_pebbles",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale aqua ivory paper with three small flat blue-gray smooth pebble ovals in lower-left corner, one muted sandy oval at upper-right.",
+      "access": "coins",
+      "coins": 200,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-bee6e1c9-095b-4e17-b589-bd506009a7b5.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_5.png"
+    },
+    {
+      "id": 6,
+      "name": "rose_petals",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale rose blush paper with three simple muted rose petal brush marks at top left and two at bottom right, no actual detailed flowers.",
+      "access": "coins",
+      "coins": 300,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-de0a2728-5261-47e7-9179-8fd65390819e.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_6.png"
+    },
+    {
+      "id": 7,
+      "name": "fern_shadow",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale cool mint paper, two extremely simplified sage fern silhouettes at far upper-right and lower-left corners, minimal broad geometric leaf strokes.",
+      "access": "coins",
+      "coins": 400,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-cbb55700-4145-432a-a369-d005eaa5e8cc.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_7.png"
+    },
+    {
+      "id": 8,
+      "name": "moon_dots",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale lavender gray paper, tiny muted lilac crescent at upper-left corner and three pale violet simple round dots at lower right, not starry sky.",
+      "access": "rewarded",
+      "coins": null,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-fc8bac0a-a5bd-43a3-ba54-d345b56c4dec.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_8.png"
+    },
+    {
+      "id": 9,
+      "name": "rain_strokes",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Very pale blue ivory paper, four thin simple desaturated blue diagonal rain brush marks at extreme top right and lower left corners, no other objects.",
+      "access": "rewarded",
+      "coins": null,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-80df4d41-4736-4f42-bdd0-f5add9428ff6.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_9.png"
+    },
+    {
+      "id": 10,
+      "name": "maple_marks",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale warm amber cream paper, two simple flat terracotta maple leaf silhouettes in opposite corners, large quiet center.",
+      "access": "rewarded",
+      "coins": null,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-4f4b963b-64e2-4cb3-a757-e904ed10d9f8.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_10.png"
+    },
+    {
+      "id": 11,
+      "name": "reed_corners",
+      "prompt": "Use case: stylized-concept. ONE full bleed 9:16 portrait background for mobile sand painting puzzle, at least 1024x1792. Very simple minimalist watercolor paper graphic, only 2 to 5 broad flat shapes at extreme corners/side edges, huge almost plain pale low contrast center occupying 85% of image. Limited 3-color palette. No detailed realistic botanical art, no ornate frame, no landscape, no horizon across center, no central objects, text, UI, watermarks. Inexpensive calm basic skin, distinct design, textured watercolor wash. Pale sage yellow ivory paper, three slender gray-green reed strokes confined to bottom-left corner and one simple curved grass stroke at top-right edge.",
+      "access": "rewarded",
+      "coins": null,
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-269c134f-8e2e-4750-925b-babd25a45273.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_11.png"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(CanvasRenderer))]
 public sealed class BucketCoverGraphic : MaskableGraphic
 {
     private bool crate;
@@ -13,15 +14,18 @@ public sealed class BucketCoverGraphic : MaskableGraphic
     protected override void OnPopulateMesh(VertexHelper vh)
     {
         vh.Clear(); if (amount <= 0) return;
-        Rect r = rectTransform.rect; float size = r.width * .88f;
+        Rect r = rectTransform.rect; float size = r.width * (crate ? 1.04f : .88f);
         Vector2 center = r.center + Vector2.up * ((1 - amount) * 115);
-        float visibility = Mathf.Clamp01(amount * 4);
         if (crate)
         {
-            Quad(vh, center, new Vector2(size, size), new Color(.59f, .32f, .12f, visibility));
-            for (int i = -1; i <= 1; i++) Quad(vh, center + Vector2.up * (i * size / 3), new Vector2(size - 9, size / 3 - 5), new Color(.88f, .61f, .27f, visibility));
-            Quad(vh, center, new Vector2(size * 1.12f, 10), new Color(.98f, .78f, .42f, visibility), 42);
-            Quad(vh, center, new Vector2(size * 1.12f, 10), new Color(.74f, .44f, .18f, visibility), -42);
+            // Only the closed panel is visible; open cells have no wooden outline.
+            Color frame = new Color(.59f, .32f, .12f, 1);
+            float lidHeight = size * amount;
+            center = r.center;
+            Quad(vh, center, new Vector2(size, lidHeight), frame);
+            for (int i = -1; i <= 1; i++) Quad(vh, center + Vector2.up * (i * lidHeight / 3), new Vector2(size - 9, Mathf.Max(1, lidHeight / 3 - 5)), new Color(.88f, .61f, .27f, 1));
+            Quad(vh, center, new Vector2(size * Mathf.Lerp(1, 1.12f, amount), Mathf.Lerp(2, 10, amount)), new Color(.98f, .78f, .42f, 1), 42 * amount);
+            Quad(vh, center, new Vector2(size * Mathf.Lerp(1, 1.12f, amount), Mathf.Lerp(2, 10, amount)), new Color(.74f, .44f, .18f, 1), -42 * amount);
         }
         else
         {

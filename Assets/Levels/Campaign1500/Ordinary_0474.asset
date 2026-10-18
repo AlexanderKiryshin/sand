@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0474
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4288723666
+  - serializedVersion: 2
+    rgba: 4294164369
+  - serializedVersion: 2
+    rgba: 4286789907
+  - serializedVersion: 2
+    rgba: 4288124315
+  - serializedVersion: 2
+    rgba: 4285228902
+  - serializedVersion: 2
+    rgba: 4281089859
+  - serializedVersion: 2
+    rgba: 4281625753
+  - serializedVersion: 2
+    rgba: 4292925909
+  - serializedVersion: 2
+    rgba: 4283931344
+  - serializedVersion: 2
+    rgba: 4291727952
+  encodedCells: S1:4:4096:443B995E:bZTNc9q6FsD/Bj3bGLPk3pnLZMeVaWl2LjIf2blY0GTHNMjx3XlKpHgJIY3bnSdg5SxJ6Nxc/5XvmNDOm3erYSRxfudTR9ZJedJsNsvX8VS+lGXzF6OCWdZ8qjbNo8bFYT5IcWl+y3B72Debq1Y1VT8Utg6SbFXhw+64ed+q6PHfqtU6hvrB/6R3B5j9AEfaWlUS1Lp7Nc7Q86qV/a8KxqzQbfZz/GSrrPlD5q9/ul4dKmlVpj9xxdH1kWeHSptHXwfOj/GbN17QWq2q1F7B6tU+XL+u4krdT7J/j/C4XjEZ3f2C84Pwazbsy/QX+GifiC9CiBtx//L//LnqSFY05x/n9+L31UXZ+s+q6gbmiv1Ztc5aq5fVS7Hng8XlviwvduVFWTZ+3IT9yf6l/PBULmP/XOt4cORnR94oTxonTx/KMhE1Jv/YKJvtlny/M9mu8ZT9/r51xjrDZcDIjIiFUFOiQgaJSUyPWKbpMc9kPYNxbiZRpBTImvLDyyAnnHCL8NAEJ3CHpre+tOUsBV042uKWx2cemfrbVEYCBj1TpcDzmlCqiGxmDvshD/iCcB7OIm5196u5kKOCKCH6UaqXRXq/1vWQeKaY3Yd3YWcoZBqoVEeiryFayJv7RCdKp1rIr4yFd9+UjPqxBBBxLZICgwrtLGSqphakKXdvxVwIiAhUMzZBXfW3jkJ30y3Eyh9n87no24IUAiBBhSjKtnZcQ0WtxOR2/YTmfSJneRFBosQ8kjZoPRP9+aMUtTXLPkoxQb+ypmOpHVvaOeBZiImV5UKEVxkRl5NYzURNKoBYx0qJSNnpnbkkjs/W6wyNtYijIsYpxjS5lHb00TTJTXAdRxG6msAXZ1ZgCzBHMeehUvVQMGv5ca6wMWybfBBAZqKIZqBBnzOldr764g2HXEUyJ4WUqQVEYpIQ6TQFOykvB3ZmLsNI6BwK6JuRdhwH9aKoEHq6C29kLTMJVxM7qQlwOQPIR4lWReoATPeX19GAZ1cTqTWJNXTSO50TPIYHWTjX0T6cflKR8K9ycFTVkDF0sPjtCKRSg8VoPJhMsAV+TcHX5UzGaQ/cGxtGz9Movtb8+U35D3c/XWET1SN4AoR1TpkCsqQhn24v+NvPnXP+16yw8US2TgiRH/jjRGE0hwSnF39NuP83FzPHI6aQDvbBCnqulSr9CE4OHo9Y6F4K0qZdYyYeHSyA91yDKIyXANbnkIzLwnN7bWrgrXsUYHi0wU2CXCkUpHMpPdamlBoeFpZes33vjC1Ub1lXOPCgFRkyFznefw3ENL83DPZZPbx9sAnBMJp0DeYZyFmiiMOM0jWsb2012JDwTc8j3u2zYTKT0uEAHTjmupEF4+/rVDHz3PrU7vZvKd2duf6SsUei4PvwjDm9TqgGvU6nHnDyxujQfYPSMTMtdDAasvoIzLB4G57t+Twav6HGbzvktOkNTTXV6dj04NR+SHnYMalJq8pZiOm999ZBkiTqmmzeUUNqIUzKOz0szVuHnVMDP8HTxuNisIh0m85BeSEJc6vT6dIh646tusdY2aizkDlKcKXzWGwDImq0Rxljz+hmV5aVl4XK1Sa1lajNLBL4z5TeYvxTSn8rX7qV7iJJNSjbmU+Ih8m57WdvSNvt015ZuuMhKrBkAzcabgYOIfSWupRs2h16im8lPa1nyH0MUgeFrwKh3YrnQY9SF49pvyR1fMIxS9NRDnZHVa0jhDy0n+kG3tE6ZNkyQw3mv14CIGhPgtzrugDvxg58JdlyWV9WiRCbaAziEnI+YlMCMDKU2OCtqlc+Qh81UjtPF44T7E6CLQAYqbrWkDtZ/R4wU+4v0s0I7xX8XXLk7z7/Fw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 49544136
+  displayTitle: Barcelona mosaic terrace
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: fa1cdf0b1765979448894caf995943f4,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

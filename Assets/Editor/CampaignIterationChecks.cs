@@ -23,8 +23,10 @@ public static class CampaignIterationChecks
             if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty) throw new InvalidOperationException("Save scene before checks.");
             EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             ConveyorPlacementChecks.Run();
-            Run();
+            if (mode != "rework_simulation" && mode != "scene_restore") Run();
             if (mode == "simulation") CampaignSimulationChecks.RunInEditor();
+            if (mode == "rework_simulation") CampaignSimulationChecks.RunReworkInEditor();
+            if (mode == "scene_restore") CampaignSimulationChecks.CheckSceneRestore();
             File.WriteAllText("tasks/campaign-iteration-status.txt", "PASS " + DateTime.Now.ToString("O") + " " + mode);
         }
         catch (Exception error)
@@ -70,18 +72,23 @@ public static class CampaignIterationChecks
                     Require(!level.linkedBuckets || all.Any(b => b.LinkedPartner != null && b.ColorIndex != b.LinkedPartner.ColorIndex), $"Level {index + 1}: missing different-color linked pair");
                     Require(!level.swappingColors || all.Any(b => b.SwapPartner != null), $"Level {index + 1}: missing swap pair");
                     Require(!level.keyGates || all.Any(b => b.KeyId != 0) && all.Any(b => inventory.IsGateClosed(b)), "Key and locked gates exist");
-                    if (level.keyGates && index + 1 >= CampaignProgression.LargeLevel)
+                    if (level.linkedBuckets)
                     {
-                        foreach (var key in all.Where(b => b.KeyId != 0 && b.LayoutIndex >= 0))
+                        int wanted = CampaignProgression.LinkedPairCount(level.GetProgressionIndex(index) + 1);
+                        if (level.loopInventory) wanted = Mathf.Min(wanted, 1);
+                        var linked = all.Where(b => b.LinkedPartner != null).ToList();
+                        Require(linked.Count / 2 >= wanted, $"Level {index + 1}: need {wanted} linked pairs, got {linked.Count / 2}");
+                        var seen = new HashSet<Bucket>();
+                        foreach (var cup in linked)
                         {
-                            int col = key.LayoutIndex % LevelData.BucketLayoutColumns;
-                            int row = key.LayoutIndex / LevelData.BucketLayoutColumns;
-                            Require(!inventory.Buckets.Any(b => b.LayoutIndex % LevelData.BucketLayoutColumns == col
-                                && b.LayoutIndex / LevelData.BucketLayoutColumns > row),
-                                $"Level {index + 1}: bucket stacked under key");
+                            if (!seen.Add(cup) || cup.LinkedPartner == null) continue;
+                            seen.Add(cup.LinkedPartner);
+                            Require(Mathf.Abs(cup.LayoutIndex % LevelData.BucketLayoutColumns
+                                - cup.LinkedPartner.LayoutIndex % LevelData.BucketLayoutColumns) == 1,
+                                $"Level {index + 1}: linked pair must occupy neighboring columns");
                         }
                     }
-                    if (level.swappingColors && index + 1 >= CampaignProgression.SwapLevel)
+                    if (level.swappingColors && level.GetProgressionIndex(index) + 1 < CampaignProgression.MultiSwapLevel)
                     {
                         var swap = all.First(b => b.SwapPartner != null);
                         Require(swap.LayoutIndex / LevelData.BucketLayoutColumns
@@ -100,8 +107,9 @@ public static class CampaignIterationChecks
                     {
                         var swap = all.First(b => b.SwapPartner != null);
                         int size = swap.Capacity;
+                        int partnerSize = swap.SwapPartner.Capacity;
                         BoosterMechanics.TryShuffleInventoryColors(inventory);
-                        Require(swap.Capacity == size && swap.SwapPartner.Capacity == size, "Shuffle preserves swap compatibility");
+                        Require(swap.Capacity == size && swap.SwapPartner.Capacity == partnerSize, "Shuffle preserves the swap pair's color capacities");
                     }
                     int removed = 0, moves = 0;
                     while (inventory.CountRemaining() > 0 && moves++ < 500)
@@ -110,17 +118,33 @@ public static class CampaignIterationChecks
                         Require(inventory.Buckets.Select(b => b.LayoutIndex).Distinct().Count() == inventory.Buckets.Count, "No inventory overlap");
                         var positions = inventory.Buckets.ToDictionary(b => b, b => b.LayoutIndex);
                         bool cratesOpen = inventory.CratesOpen;
-                        var swap = inventory.Buckets.FirstOrDefault(b => b.SwapPartner != null && inventory.Buckets.Contains(b.SwapPartner));
+                        var swap = inventory.Buckets.FirstOrDefault(b => b.SwapPartner != null && b.ColorSwapGroup == null && inventory.Buckets.Contains(b.SwapPartner));
                         byte oldColor = swap != null ? swap.ColorIndex : (byte)0;
+                        int oldCapacity = swap != null ? swap.Capacity : 0;
+                        int partnerCapacity = swap != null ? swap.SwapPartner.Capacity : 0;
                         Bucket next = inventory.Buckets.OrderByDescending(b => inventory.IsCrateCovered(b)).ThenByDescending(b => b.KeyId)
                             .ToArray().FirstOrDefault(b => inventory.IsBucketAccessible(b, level) && inventory.TryTakeBucket(b, belt, level));
                         Require(next != null, $"Level {index + 1}, seed {level.campaignSeed}, run {run}, move {moves}: blocked route: " + string.Join(",", inventory.Buckets.Select(b => $"{b.LayoutIndex}:{b.ColorIndex}:ice{b.FrostMoves}:key{b.KeyId}:gate{inventory.IsGateClosed(b)}:crate{inventory.IsCrateCovered(b)}:link{b.LinkedPartner?.LayoutIndex}")));
-                        if (inventory.CrateBucketCount > 0) Require(inventory.CratesOpen != cratesOpen, "Crates toggle once per successful action");
+                        if (inventory.CrateBucketCount > 0)
+                            Require(inventory.Buckets.Where(inventory.IsCrateCovered).All(b => b.LayoutIndex % 5 % 2 == (inventory.CratesOpen ? 1 : 0)),
+                                "Crates consistently cover alternating columns");
                         if (level.loopInventory)
                             foreach (var bucket in inventory.Buckets)
-                                if (positions.TryGetValue(bucket, out int old)) Require(bucket.LayoutIndex == InventoryLoopRoute.Next(old), "Every remaining bucket advances one clockwise slot");
+                                if (positions.TryGetValue(bucket, out int old))
+                                {
+                                    bool onLoop = Array.IndexOf(InventoryLoopRoute.Cells, old) >= 0;
+                                    if (onLoop)
+                                        Require(bucket.LayoutIndex == InventoryLoopRoute.Next(old), "Existing loop buckets advance before lower buckets enter");
+                                    else
+                                        Require(bucket.LayoutIndex <= old && bucket.LayoutIndex % LevelData.BucketLayoutColumns == old % LevelData.BucketLayoutColumns,
+                                            "Outside buckets rise in their own column");
+                                }
                         if (swap != null && inventory.Buckets.Contains(swap) && inventory.Buckets.Contains(swap.SwapPartner))
+                        {
                             Require(swap.SwapPartner.ColorIndex == oldColor, "Compatible pair swaps once per successful action");
+                            Require(swap.SwapPartner.Capacity == oldCapacity && swap.Capacity == partnerCapacity,
+                                "Swapping transfers each color's exact sand capacity");
+                        }
                         bool after = inventory.CratesOpen;
                         Require(!inventory.TryTakeBucket(next, belt, level) && inventory.CratesOpen == after, "Rejected repeated click does not toggle crates");
                         foreach (var entry in belt.Entries.ToArray())

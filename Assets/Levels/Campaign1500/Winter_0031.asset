@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0031
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293444271
+  - serializedVersion: 2
+    rgba: 4285169325
+  - serializedVersion: 2
+    rgba: 4294241002
+  - serializedVersion: 2
+    rgba: 4281942915
+  - serializedVersion: 2
+    rgba: 4280688675
+  - serializedVersion: 2
+    rgba: 4288838761
+  - serializedVersion: 2
+    rgba: 4285285419
+  - serializedVersion: 2
+    rgba: 4280429914
+  - serializedVersion: 2
+    rgba: 4293776586
+  - serializedVersion: 2
+    rgba: 4291470225
+  encodedCells: S1:4:4096:5C2B225B:VVVLj9s2EP4NE6UuqFu1SeHtTZ3sJvLRkQHluC5oq3tzF6Fj3QLUJrpHxy6Y3FS2bqmbuohS8Vd2htqkW8KwRH3z+DgvWvdgAa0ahtV5V8fOWecy+wV37h6u+65JG3/nXYa0HtgQNZmp00nsbzY3Cgi31v1/Cagmtmoc9t4jCZCTc/kAv/Ot2HR3iFXlMSjjmQpUrGNXm843kUO8UUqRb+KHyfyCiViGO+8nkxT9KVKdwmElxoQn2VhlvqW3zenUf8GTqckRgV/7DZFCVG2lvFf0yYKdr7XWX2ctNIjNqiXjfRe3PuZIZNH8OH+tl/q5433sbyeYYdVBy2FCcOfJYiqXRfln+OCbanK36tvWB9i1/jyZH+WT6eMaYojixio16gfTdRS7EXxI9vNynDxaxW3su9XoubrrGD+rcYXOV0mSl+XTqfedh6aqTtW64ghg8v2pt/RxSocr5dzHftI2qrrd7Kqum7STfXfZdtB9m+QHc1xK4kOR61R3Uspfbk7Jk0pdkv1kujfGyOOogd6rbrW7XY+88q+myTMUzjX75GAKczTex64JOcgwosd58Zt1mTsbTw8mN8eSq2SolSHiyd/fvaDnOEnI/iGkJ8B2yGOSJKp8hm7/JDGHojTHvygVKYJlKfqdjc38TW7ddLwvjCmJYiYAeqAkxEQg/oZoTfPHkCTFfs8CpZQ1ZmCdRYEOGM/z393eTAumb8qP8oRW1KkFEQl8mRSHoniGxXhKATi+M+UtQGRtatOIOb7cs76AnEJvxi927zklNbhagIAsw1dlXrD9qTRUe1K+jkVosPZrziziS7nPaWFuTHFgvK6dIHzx0YFoU8xZnXAOvvlHSqiH3lA6GPCEHxifMY43MbWmYxGlTtzC/jALOFk+lm/Qk3UnGnedrNUOiGP7YUb2DePSXNzVrCvqnja/jmMiEPsLIkaVsZALeZFm3FgC+2Y5+1lThKGB9L1h+wsy8AdSSJHwpu8WWg8zZLKf5fkxZ/wjN1aU4a2uqm72KAyQtnqX54ci4CmntHdip7VS+8cQWsfvZjkxeC/1V5b7NnUbwrWWlGYKMWz1kTNwE9wPuKYu1EvOA+FyTSfX+ge5zULp0REZ1kv2PgK/3V3LrdZnC/l5MGwU21+3ExEGmgBJ26dScrm5KKLQBtxHFOtwxGva/iTlJTsQ0S8q8NPe+0aEM660dkt5wWd3/agK6lrvFl1Thxi91RqX7D7LbFYH9S0zJJwcCAH6AqXk4FgnNvfmCf8UcyWRzFa7o+FusQ7+w7cqpiHc8xzWyI1FBVuLwH6pSejTiEIUg+8caG0k41HtqqC+ppEa2G8qRVJal4E+1e4Ar2lAcGjIHY0buJIlB4foicE76ftwA6wIF3ClkZPLhXsl5W7Aa47dimZUTPpI/VTzaF9JXmvVxcMlpBh/K9MUI0gdxlcqCKiuDdcUBP9gqNfDNr66Dfhr77/gZInuD8GHbeOb6+uAE/+AU5r4H8IO24n9cdAXED/AudaIAggUb6W8WG65tOj2406OhylNU9ymYQ+2TcMFWQ8lDIEBUP0A0ClpqlBO6awDY5oV9MLTsLYkzzmE1mUsmGF9L0Od41iy/jw9eQsYpTChg5Mi3jPguZjd4zQ+kIYQ7S2nCnhgRvWgji5ObXgBwRPzXw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 18635052
+  displayTitle: family building an igloo
+  seasonalNumber: 31
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 3
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 62fd7963e8c08d547bf3b6dc08cf7d27,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

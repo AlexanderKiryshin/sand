@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0447
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280702623
+  - serializedVersion: 2
+    rgba: 4283393933
+  - serializedVersion: 2
+    rgba: 4278979857
+  - serializedVersion: 2
+    rgba: 4281284941
+  - serializedVersion: 2
+    rgba: 4280434799
+  - serializedVersion: 2
+    rgba: 4282812891
+  - serializedVersion: 2
+    rgba: 4285829304
+  - serializedVersion: 2
+    rgba: 4279904839
+  - serializedVersion: 2
+    rgba: 4289316840
+  - serializedVersion: 2
+    rgba: 4279836203
+  encodedCells: S1:4:4096:3F6B5589:TZXBcts2EIafAWnJaHwzIoWSbjat1uUtNDJieKMS2Ixvakd01Fs5cmH5Zomw1rzZk5pBbhapCYKn7IJp2kKa4eHDcn/8u1gCQMrlzgCYMmIMoiLlDuc85WT6OHcJIE+Ql9qYmBUtv3cJ5w7JHueESACewH+cMc7vMY4TlxA3SaSN58hBG8ZYxArkau5yQpxZxjn8w0H/x2dqjvEJdxKw708Jl8izu+gj7kC5s3vkCDs3lktUi/Gz7DZSLQc+dTGYSNLGc8tLqLJ5PB8jB3ieYWInkZ1X4HCZOiRBruaPSr1p+bMpcgzuMHBSe1L7fpW5Xi7whPCp42QAhJdOWFirMP4J48V+byzEG+TccdGVXdmx3CEkI08GroRHvYVXhUXInZescHblXniO5yRudoo8FZ6Xez3xptikLZfGOStJglVAXgI7w/hcDMZd4LMNs5lJksxslTKXGGCDS0qVUmyD3ItQN1qHMrFKbX4Y9OjDkt8NxwCXZ9AuXQIhNv4mRn1hLoT69XmT3VxuAGy0BkimSs2TpIQPvWWufl47A1ZVnEfI09QWn2SZy3kMNP1cLTvk1knMtWqiAuuApZPf+BODutFi+eP0fjrN7kl4t4K29Ohey+O0OXFClL9JO+Ra8WnnG5cJd1v+rmEmHtAcT+eIM3mW3LQnuEs4uThNkrhbN+ak+vLbJxYtb1NZpNEndaeEOHX2LxLU19S+71eerD2/urMHv8qEuDWGcHpBkpu48f3f/L/uenbXG3vwTyIXeCkIzy/cRJoAAfDOMT4+6xL5dS487MopyYV7uhsetdwZ+X6NNwmVLYX4cgw6QYueZ/zX21HLD3z/rQS8LNdCiE0Jx7a1gEsnQZ46ztNoPXN1uTMLTwhYg8Y2kugSJ42Pd9J9kgV3d+fa5FgsVLHmUiOe7VMUyB3nJ26AW32YfoP8HKSepjKd0EP/hCfkgMeT9Lbcldhtm7W0OzUandLXR/Uai3HA6Yp6sPuM8rAHjgsN/QtInT9D33T5JT/4g47TSakvPZEHINc32pALL19Off8EFVW/JK1YIoS3qUH+4JQl6bF+ePCdT7AlgHz+E90xJgjQK6IjFo4CH7FQKnxnZ48xZh34QVCASSlyNjo6qQZ5pVQPG+A9GAOj41KvAc4kxSqxw6NhpYRaqjM8hIs3lk/ftg1CjWeH0uFRr1K5qNRd2/dGj0wMZg/gakglvv8wpi2v2kGI6bGchXbKD0KMVzZ+RR9U7onK1IFvee0HHZxeg7BLxbbpHt7SvMopctOU9g3C1A/yytkyFl8tWffwYEK9CaVfzMnRWptmSPJlNXhGXpm42xNjVoxoLkYT8bWskcdmL3vwaPUeef2Oh9V27/jFYn30Nkd5x+vXDbvILinrrpx9U5/zLf16fuyHtf/iAbm/hubjPJMxDtP0VWDKXteb/5Q9iovs1o7eLMu+qmcuesiavT+MeXvJ6Hscg5M+n2ZKZY9ZpgY5wXlu2HDV8i5OtVU/lf0NyH4ZpfSBTlBkHC22Jsax/REdTW3Tm/YPqyu6QmDixVfTxIzleJ2WFYISirYqPbpiaFPDPMu7Gx1VOt1draA/kdDH0eGt8FMUxDHFPWwBJt8ZH8hZrqol5Bu96+N4M4Gp8xg5hXiFBbGeUloNSLKW/QnXQWDi3EeDlzDcGaP3shA9o5PpPnbA/usmxtRDvK8nD7qLJdO/u5IVjJ1nL1HowLwwlvl1EOfbCU4MPXypsZqsmJ1CPwr9dtX4i5m3KuNGl5OIoZrG2V5uc2b+4YGPPm4hwqHgxQxTNgsfPoybwP++goDRMqjjLn59rFsfjb5q/P+tIK62QW0WIWtsry+2mjao61sC+2CLxvjmGrnWaOcWxv/GtzJihpfN5Ph1tB9puh3u/s3+Nw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 46716453
+  displayTitle: mouse violin concert
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 1fa2d7bd510c0c740871646d7927d4f5,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

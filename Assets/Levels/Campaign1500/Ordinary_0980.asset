@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0980
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284652479
+  - serializedVersion: 2
+    rgba: 4294167214
+  - serializedVersion: 2
+    rgba: 4282143324
+  - serializedVersion: 2
+    rgba: 4283266718
+  - serializedVersion: 2
+    rgba: 4280496697
+  - serializedVersion: 2
+    rgba: 4286431986
+  - serializedVersion: 2
+    rgba: 4282540419
+  - serializedVersion: 2
+    rgba: 4286347636
+  - serializedVersion: 2
+    rgba: 4291287784
+  - serializedVersion: 2
+    rgba: 4293965711
+  encodedCells: S1:4:4096:9AB41C8C:dZRLb+M2EIB/AyFZao5VWxTJTR0x9B4FUWLcW0AzTo/CuhRyVEl74t42TrDs3rJtk+oa9FD4V3bobB+HloYFkt/McF7k4fA/41adFWd/fPnf8Oxbj8Pqi311+q/N4uyv2QevEAf7wuvf/6GHophejsp+gxj56XXyqvJyRrD4OE3R3AeUCqP+lbn+Wb0cSIQ+t+qpKE5J/6W49RIl8f6Sv3t+OSsOZy93Hjv8uiDbZCcqo1LDOQdQtD4UP9KGHT7hyD16NZiHB+5ofbuK7lhL1osjl2RdYi74Xr35WBRRXEVevA71ypW50u2XtJbxQG/tJ1x4JXEXdzbhIXKaIrbWPk7HGCfyDS2qyiZ3D1+/ch/PJ/REKfgovd945QfiX31RFHcOYzqtfZpUN50WdxRc9Djfru9+vZtOv4nuKRU5Do+qI+fUMNKW7YtfwzTtvKykkkceHZEk7qIKeTxTxBU57F+5jJY8xSe7qLHLoTj9gTZIwNpOYZxEYV5ZKe3IGiyKRdyklc0kDR8/FZrIq6qB3VDHavl15N4fBVQlllb6Torm/ftBxnIheUMq0tDPyxGvaumzERoTJsS/+Eq2q9a0kWcd2S95q4ebVz5Evoy8kXKJGDlWrWY2qWMBjtyT9jqess62MWKV6PRRC0RGnL299Gq1mdHJJ2tL+kI07aqrNfM4jmi3b41vVq6haLeR+ysoE2NzUTOsiXct861gjOZXdJryDYfErPmqlnLc4pYJCl9VDcsH0rdSJYY33J7zOq8YlXeWLJetGB32uB3WdtWYzc9tO2iepyKaV0kuZlK3qRdX620GmpdNC4NeqRospacbVnWjKeJx1a2xMwDNkupwCbkfRtnZt0NeO+30iKvz9XarN8M4em0B/GboVQWoOJS4MR4FGds+G13BmPdOoCzr0nzHYdn2eWWPd4VJOeS8Qqi4YNRAK/NmBLP06+9t7LVjK6Q5QJImQrnmPOULbSAp2dLS3YvZlWIcuUEQxiRs1M1NAwZSnkO0H7mJQ224MdAuTTJ5rpNK80sqpqUrqLmZGVMaXhrgSzObMlMmoMVq6ZV1QrZGz1CNZuZSM5LgtDWuM6bf70W4nT9VFBe++axLBIBJ0jqfFlCByiyEeUBxjuTH4JRVwIEnvmbTgtqa1etMMUDxxgv0g/K2Iq83Qg9s2i0QK5ZaxnpEWDq6oWqw5GZSVyx7nnY7Xzmo2eWMUYidoIRTVxvDWaog/2VadCNw3rDB5WpkdutwTe9Eoxl0FTSPdjGlYGY8ybKxEQ3rytr2jNoN3pZrWw83i0mWLmNpkvT23PW2y92aXdaTnumcaXC7G8MhZQKW2LM03ZS5BNlbG2/GeZaV+PzTA25YttNu7G0tl8Y5uuMOQGsRzDWYvNL0FhoqpFegDUejN2EfKGNGa7qi90E0SsE1eCZrFYwLcxaO4zrWUoS/R3ovfYCL0LxyqkEIF/1iDo0E2N/KVLH3YX7hLmrYa4D7OYRp8RTosPh3NVO1MPsmOEbV01Q4SG6ybM7BSSAZ1suabOZ0saO+8+B+mboFp1KCE+CYTbu5Ju5koPo5KV3/lD1BHA4FJY/6AFAK58Mc4oPo0qeTMlIRD6v7ekuLBJv73/YgGo+un06md/Mo4QB7yj4YlL6J/s5DVdL52UkMdU75EmmaWkHOe5BF3GSpH6bp+ciB+rJOWa0fPuVqTwHdhzD99BjmnJozAPqE3V8b957o4UCfiil1Ej4/fAjhgYc9sEFmt+E2pXCP/HW8fJruQ5WwdzS54A7/BA==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 102537010
+  displayTitle: Egyptian river temple
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 52f387bf07ea1ac43845f19392dd5903,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

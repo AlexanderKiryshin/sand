@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
+    rgba: 4279309334
+  - serializedVersion: 2
+    rgba: 4281760707
+  - serializedVersion: 2
+    rgba: 4280367438
+  - serializedVersion: 2
+    rgba: 4279377967
+  - serializedVersion: 2
     rgba: 4278387718
   - serializedVersion: 2
-    rgba: 4281892294
+    rgba: 4279448938
   - serializedVersion: 2
-    rgba: 4280179094
+    rgba: 4278982435
   - serializedVersion: 2
-    rgba: 4278848784
+    rgba: 4278717457
   - serializedVersion: 2
-    rgba: 4279576376
+    rgba: 4281224292
   - serializedVersion: 2
-    rgba: 4279515761
+    rgba: 4279380290
   - serializedVersion: 2
-    rgba: 4279112988
+    rgba: 4288802300
   - serializedVersion: 2
-    rgba: 4279180332
-  - serializedVersion: 2
-    rgba: 4281224548
-  - serializedVersion: 2
-    rgba: 4279249744
-  - serializedVersion: 2
-    rgba: 4280499022
-  - serializedVersion: 2
-    rgba: 4288342264
-  encodedCells: S1:4:4096:904B1027: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
+    rgba: 4280047249
+  encodedCells: S1:4:4096:E82D2B45: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000ff000000000000ff0000000000fe000000fe
-  conveyorDirections: 00000000000000000000000000000000000000000300000002
-  conveyorBucketCounts: 00000000000000000000000000000000000000000400000003
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: people
   campaignSeed: 25770653
   displayTitle: Female Miner with a Brass Headlamp
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 0
-  linkedBuckets: 1
+  linkedBuckets: 0
   largeBuckets: 1
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 0a8d1d79a04f94043a1ba92dc95ac3d3,
     type: 2}
   usesTiles: 0

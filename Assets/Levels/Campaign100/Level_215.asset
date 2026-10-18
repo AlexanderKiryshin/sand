@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4288310138
+    rgba: 4287261825
   - serializedVersion: 2
-    rgba: 4280954531
+    rgba: 4280954526
   - serializedVersion: 2
-    rgba: 4287809524
+    rgba: 4288973724
   - serializedVersion: 2
-    rgba: 4284495149
+    rgba: 4284560685
   - serializedVersion: 2
-    rgba: 4290413099
+    rgba: 4290803755
   - serializedVersion: 2
-    rgba: 4285743674
+    rgba: 4285940536
   - serializedVersion: 2
-    rgba: 4287190611
+    rgba: 4281813473
   - serializedVersion: 2
-    rgba: 4283181088
+    rgba: 4283181345
   - serializedVersion: 2
-    rgba: 4290157730
+    rgba: 4285705191
   - serializedVersion: 2
-    rgba: 4285955496
+    rgba: 4287322199
   - serializedVersion: 2
-    rgba: 4282013155
+    rgba: 4290896630
   - serializedVersion: 2
-    rgba: 4284960350
-  encodedCells: S1:4:4096:E5FC233B:PZXPaxtHFMf/hqFB23VzUnootU9RocXOxTCMtkGXHkLwUTB5IwVdFtQZBLoEFnsTfNniSEx7agQFb3SST616cSLkVJk/qt83K2dsy2g/7735vh8ze1FKKcuyzKQM+AhhE8Iu8OpJWZTlBR7iH6x0KDK5AV/WuyW43ETQ+GfM4SHZc7l4UsM/NBywAN9s4RFkAKmPFzvssWziY+F/tuGIeFgv6/q4U9cBe1zu+eA8Q3iWhqfHdecEvN4FRg0voGJ8xy5hedzhdbyoe7x9l6MPWID+C0ERv+Gdxa5XyEKfSj2OIrH5NnwMdd35wqXsqUl37Bqu9Xa5uKfgSHe0kblze07IfXEfnf2DGsnIoY7OM6U5887e4Hi5C7zD0BiHsl2R1DSNqTfenMpIcV7WOTmedBWNtpHHPWL9CIXvSoLB3FB+d/sf+OKrPzkF4N6IuQQ3bk5knLhGZ+uHdcORL8Izx5oQ5eS2OxWWIpbgY1BDoqIsemzgSJFz5q6PHK7ZH4XUI82dl8xzqJ9VBkL1aBFzX45IxfnBXOgWwWbmDGxlb/OkE+XRUsrLMnsKA1JKklGyWXu+vA1fX0gJ3mpxceieh2iw3D2E7gFzRlpQF8XCr4780ZPbEZ7bcW+saQabGYyyOK0h/HvSWb8PfUS15qU1apwMycb4GJMMfL1evxemK4tM9cgYcn2a9ZGIPh+w/z/cIZErmFMPntJW3kED8f6b0HS/6kqZDQh1QP1cNbRkWEIRGj6y2C+7kFlsgJ2Dcx5oQCemx1+KMU+whlBwbpNSIWbXeYkvMh48HJGC1FhMaIZ+b+Fdd3bYKtbrPE4mjq11E+uHpMMPcXNAmkJwqzmepbIuTcW1pWb3hVUHAT1r3LMsUzZJBfhd7b0PBhlPDWl63XA5IJsn+dzXMzj7sxekhDMU218q7K/NfI5jUHnP0f0Lp6ZG4UC+Yi55ACz4XDx79syfneWGupbO8VxlRZaIU+ZJ7hLmWNa0JqKLpOSpLuRDUWF+KBGVEGeRkxHOKTT6ARfoIK+4GMm8Et6/hfy3qDbmuZASDUq7Uye4sq1E/AKJP3aco01u9sP2QAjrEsMeSfr87FfHC18sBlZWCjzRlAzFEEfQPz9zSQKOYuaUyTFsHuSwhjSP+qE+aZUKfpJ30Xat1RWEThORJ+DCWMvRrSHDo8ED73F5TF2VO+GT3LhmGWe2qC2rnsF8CkFOpBXfM4lAsJY1Wy297xPNHfHsOXCRDxqOdftBX+HBVVpNDI1s5C7Psu/r+u93bV6fwYWHKS4dJMCdG2fyqN0+XB22V+31Z5+KJE2Ek8ST6ISofo583az3vE2KwF16WmD+EeF1KVeMbvCzPjxAu6oJkqE3fAP1W/NhWYCfnNzs77+DKu0TkrhkjgvsNC3akcEdCh//AXlzn7cu+dWD1NLq1YdvWfsKKtur9TeYB5RbvGE+dkkuPoWjmFz7MEqsWYPIoz+NUQN/fdRerdb3KdT1gU9zV8qB0vH2zMXRfX5rqFj87j26yfoUwcT2k6ObdWe9v/5v1qvfYODflAWajcOC0n8KP7UfRQmP42eKgeATpBVphe6IvcLV/g81Epf8eiv5irCuH75jgvqt+LONDEXzho0aUebvvrQARszTy/0rmCDBCY7fwNW7k5tapOn/
+    rgba: 4285089877
+  encodedCells: S1:4:4096:CCF9DB76:TVXPaxtHFP4bpmsUtN2TcnBKfdmOapDim1+GRegW7ENzEloPZvGlvohAL6VLWIIvdg5hUC6LzBIeuYUWVOWytTBymT+q3xvJSZ+xLO838973vvdjq4qorKpqQ95XG594mGpbfCmzq0psixOtt3jij94p5Vs/3lyFA2WFAxng5Pex9wk8KOe6Lb76rYMqgwO4V6X3rUrbRF27rvL+qN3hlQRYe4/rPlFRpN2qqxAj8Tv8HDHWAsJJ4pxbruZd1w3uy4ALP4TWPmmVm69g81U6DrxD9DfCP4muvVKpWwVb3sHh1WZEdLtNc9161VWDd8ulXHeDdjymMRWGRzt87Y8G7xBdbrv5ABkkRLZo3oJAhgTBYKDdcjmfuyWOdb2/A87NCOwtbXzu1QDPASMDrURlotxaJqKGDOikWiOAxHDIPmmJKvHAt78UzR0kV4JDnhsXCXsP4YE3zIVtpr6NcN91U/GB4OMjT6JLzg1wO+U4AuVUpfqpcxHYtq3UJTcWFIBb7rTGXyuRyHUhNe3uAytMbpsimeBSpBEE9MY+N2VWgru1hSV7GBcMMX1QR10jfmgcImMbRADLCzLA119wIIpQfqIr9A30t0ayxAdlNF5/gT4Pyn9ofX8i16kAnjdySGztP0De771LLjrhGXIzZIfWhEYMOOxaeUsX5EcjhEaIUwsxQ6N7/9tsOXv/MMGT/F+kbpp4Yv8KvtBPmfe/zmaz9zX4ltV9bjlveGobc5vnt2VGwC/fI0BbG+B5Ltp1ooVwtHhQVv5a4j8kY0lfMseROJ2KSoayyvsbhwzbe8SrcviTCjbJVE4aacJw+0gOU/ZGGk/qk05ERMi3896Rf3adi68dZHCIv2v/Geo+HxbmQnCzHZ+cbnna0VNDW20GdmL8PeqTy/xkdA4FNOraFI+4QauYtd3Nj+DoCt38/RzFVxD8vrYX609vt9NN5/bTguthqqW0z/XUmj7OlHQc5jMr81oxQ4OAr1bThvZY6L0A/oakwzgW/PN2MqfIozDS2aWpOJYGa1JmpV6enKxevTo9s8fKhsn4SBkPj8kaG9exQgYnYmdDjkcIS8fwzbHOg4DwAPIvT37GP6g5Gnf0AgrDb8CHSq7+uTo9O+vURVAXcMSPuIpOdnZ2y7YA7dxQv2bbxJ102nCsTl9u8RdSKbg/RQEFTzWUg5/Tx/tNXYS2NbS3YHjmYcBhiyFYTsIcSVv3RTauQZwX4CyHZJCKToeoD1Z7dbjVcLqoudn5wLD7NWnNxgZ6uMPxQvFHfrTjlvpYP4f6sC4gfcE8hKPs02pn7nWvH6kamyIGLqmluuaMNr3e/uWsB9s/0golq+ORaGMZiweTcdC7nO1MR4pFOyRyjvFRrCkbHXyFZ+imKJA3aJ/c1pz+kdE3GK+HSOkI3LZ4wakZlzcuLN/lyoHhkzRKbaqtbLAczaN19c8BqF32fhCOl8BBe9KR/gSuFsONF3wmP4j0RKuaI6UEx3gwGNwB/8ph/6mq0et1VX3crlhoeND7ynC2/x2WMXKQ8Bh8aFzHB2D+PwO+YNmAYcfCw8GH17I55j/2bkTFnyJ0hryecjJ5gxFLAsNvhs5ZhNdbWAEdVv5ZyPASOcivCvzl9ZfDATrx6lkokRg+97HKozChskRAIW6ffUtwtt8DvvgP
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000ff0000fe000000fe000000000000000000ff00
-  conveyorDirections: 00000000000000000001000000020000000000000000000000
-  conveyorBucketCounts: 00000000000000000002000000030000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: fantasy
   campaignSeed: 22419325
   displayTitle: Rainbow Staircase in a Storm Cloud
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 1
+  frostMoves: 8
+  sectionBuckets: 0
   keyGates: 0
   linkedBuckets: 0
-  largeBuckets: 1
+  largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0
-  loopInventory: 0
-  mysteryBuckets: 1
+  loopInventory: 1
+  mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 0ba6921588ddc004cac581ea494646fc,
     type: 2}
   usesTiles: 0

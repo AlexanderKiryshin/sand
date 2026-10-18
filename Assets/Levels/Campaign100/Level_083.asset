@@ -43,27 +43,29 @@ MonoBehaviour:
     rgba: 4278325122
   - serializedVersion: 2
     rgba: 4289976559
-  encodedCells: S1:4:4096:3EE52A32:pZO9jqMwEMefgbTJFoylNCQNI21zt/swROKKlSjXzb3UUWxj0dBc4+bSZt1S8gw3Yxtjk8AW+5cIJr/58nhc119qDKtnxAs9CzwGA3S6xHgg3gT3ewvm45JjEt7xiMYBAseU+xjN6JR4swHbjN6dhPe6DFT4FufE69x1Zp2PwzjrQfiIjq+PeT2sc9/2lfC0t3Fo6sXB3XVfppybWEfNl1LO/DI33es98GdcTo139/xqunYJPecqP4wx3ZsHTfBlDXz4RyBV8bi+J7xmTqOWprZy0wPIPK3c84b7CGXEZxjqT7jc5nKN00+1iC61wyy7SbuMsOVEyL8C98QGgUPCvYXWOoqfcDb5O3H3XUYMkBoGveMWCvoPROAlohB5H7hzwBKjGAJBa+mrK/2ICRGn6bX8FQI6kxIx4ZIjzdWVlAnDTvqD5Q9UHavjYy4Cr467bMv/O9zZ7LLfGxxglx2yfJPrL/ghyzY5KXf9Fa59WcpVMfXV832SL9urm+HbeYMrvc5CdQnX+3+Wv2BHRsaAekn50x/LfxC3f9xUDh29z55P+XPgRQvtHm7xgJyowlaxI1hOKvgMS7fo9UkViuV5bkOLeYCuhqkxLk9hA51DjfpExdkt0gc9aqrGd0V/RrywBSYclbpydzq/jXba2DTUxmniCyGcW8uVG0wRET6M+TLQBYxuH32isPdFLCJ6j+m6/fwP
+  encodedCells: S1:4:4096:3EE52A32:pZS9kpswEMefAbd2ClYzbrAb7cw1l8vD4BlSZIYyavJSoUijoaFJoyZufWopeYbblYSQsM0V+c9gBL/9RnLTfKoprl4QL3St8BQN0OuS4pF4G93vLZhPa56kmGae0DRA5JjzEKOdvDJvNmCbKbiT8F6XkQrf4pz4OfeTec6ncVr0IHxCp2+PeTM+52HsT8JTb9PYxiHelR6kcs5DbJLhK6UWflmGHvQz8hdc75rgHvjV9t0aBs5V/rHW9j8CaKMva+SPfwRSPW+IOfXCG+a01fLUTn73ADLPKw+85TmCTPgCY/0ZV9tcPeP0U6+iK+MxyzXplgl2nAj51+Cv1CByyHiwMMYk8TPOJn9n7p9lwgBpYDB47qCgdyAil4hClEPk3gElJjEEgjEqVCfDFhMisaAM6nsM6E0kYsYVR1qqk5QJYyfDwfEHqo/18TEXkdfHXbHl/z/c2+yKXxscYFccinKTm0/4oSg2OckFkOj6llDkXFd+JSHwfZav2Oub5dN5gyvdzkL3GTf7f46/YU9G1oJ+y/mX346/EncvbrqEnu7nwOf8JfCig24Pt8R/OFGFnWZHcJxU8TeUfjGYk640K/DShY6bbDBXy9Ran6dygc6xRnOi4lyL9ECXnqsJUzHvCa9cgRlHra88nT600c2NBYzWa+YrIZw7xzmvSOrmPyzqcTkMdACT00ePKNx5yY6TTxluTl8/AA==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: ff000000ffff000000fffffefffeffffffffffffffffffffff
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000000200030000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: legacy
   campaignSeed: 8595097
   displayTitle: 
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 8
   sectionBuckets: 1
-  keyGates: 0
-  linkedBuckets: 0
+  keyGates: 1
+  linkedBuckets: 1
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0
-  loopInventory: 1
+  loopInventory: 0
   mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 62b04d6825f2fa0478d2f26f48eeb02f,
     type: 2}

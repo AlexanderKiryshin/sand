@@ -16,49 +16,51 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4282608035
+    rgba: 4282870433
   - serializedVersion: 2
-    rgba: 4279703581
+    rgba: 4279769117
   - serializedVersion: 2
-    rgba: 4285347086
+    rgba: 4285875257
   - serializedVersion: 2
-    rgba: 4281538828
+    rgba: 4281801485
   - serializedVersion: 2
-    rgba: 4285613888
+    rgba: 4291931009
   - serializedVersion: 2
-    rgba: 4280888375
+    rgba: 4280757822
   - serializedVersion: 2
-    rgba: 4289485588
+    rgba: 4289617429
   - serializedVersion: 2
-    rgba: 4283114254
+    rgba: 4283377167
   - serializedVersion: 2
-    rgba: 4292192628
+    rgba: 4285675276
   - serializedVersion: 2
-    rgba: 4280422406
+    rgba: 4280488198
   - serializedVersion: 2
-    rgba: 4281484650
+    rgba: 4281747308
   - serializedVersion: 2
-    rgba: 4279109895
-  encodedCells: S1:4:4096:A48F1AF0:NVXPbxvHGf0b2KRGAPo0URYGuacOVS5cn8SJMpjwItCU1fpkRloEIi8FLSyd3DIj6wvtSyEkQtEbMzWIwV6oBISR1aVjghA280f1DdPOieTjfD/ee983IZTBLZV1yrjgnLLKCaGMoeLllbO2DjjlUggrBJVOKWHiZ6KseMntfBNSD9w5Z+dC4rrYGCmskTSbzag29y6EOpR2Gf+Be5sYrodQWmd0JY1Vi939JZI66+oU8JMbElrTFRWC6pr5ugw24sKq4EP8B8mepKusK+XGeeC1E86hLkSP5fSJBPHpbKrVpkwXLq2RW1krN3eBAQ9vSdOMz2ZSOQe8rO3SoHHyt3dJCJM0aNJFMS2Eqx1b1BGfSxQdqqr922+oUBN1p9OCxKZEf6Wz/xbOGLF+XlW7+HPQc3VdSJTFmOsrZ9XS0H0FfJwE78NcFzfX1+jfBV9GTo2Q5v6uWlWjdiyxows+LXpWgD+oAnEk0d5dc/WHuypUQWW6QH7cAmPID11I0uld1WhsqzZ6+B3vzWXty1gf1DPkJ81Vc121x2Bco37em1vcj8oICbzl8wonBR6yKX9Z9IR1wBWEi/heaFbNxmq0s0RRzAqtljWLykaciMKDZgN4pCDMYnx1H5gTc0gnBQf+sNFoVO3nUcMPU96VIt63ERfoT4bbiI/baWChx6ddLTY1q908es8QfRpCjN/e7lzAv+mSFOkoQFoR26NNHQNAAhZQ9oxzLVyZBngWhzKC1baNVbUjmIVvptOeoGXtnYBlDST/jiHsw8aKeRuWUJFLAe+FUkUB0N79xody0liB34P6AyqQ0R+ldbBfbP9SofXbZnUW3rUsfPGEnAgLt7M+YDIoe2+9qhh7fYgSnjwmhQTOj3YDpTMdNn4PAmxT9h8h6oD6bWg5Af5RvSa5TSfnVbPyfguygFM06I6/S06cW+Hv1s8bbRbmpI0KWlrrzg9wH9Mwveaa57fVv1YrFkzGhQpgTjm4Txm65tObotvNJyD4hV9kGrHr0Bd2PrGHc+J/pYubVzdXSxfx/utMD8BNvw/Xu1j89Og1L+CIL1q/NF5s+txobWzExWNLRvJX+zPIWXR/ev91+/TNgneyjG7rEFVT0pisqzGO3eJm8PP78TrzspMRJYsQTQXxaNal71EyBu6ro9WxDssO118/SAJmBhQbA6dcZvo64/yro+b+p3PJM70cb8u+lBx7JeLdz8VTMRzwF0eDz3jH8Ox9czRH7ALuMVP+SXdwRmJ/UIz/XoBIdcnFmtVSyAJbxxwPTqbdk97pkBdnF8VAiY7eF9U7J0WHwK74+NnnF8Wzy5OP/sI/mvL9S/VY9sTd2sHT7BBDSsPh8J9d/ur7lfmZ75tD1e9IWicuG/RYfnpo6Mc/7t88axb9j9/IE6jmBB/IXxnod+5A7PfMg2/59IhXXzbW+s/kFg4VyvMEe8V5dtr5Qrxvvvrhk3/IKs+zTO+JzRIblSUBkQJ7Rz0hm+zh83UF/MuOxlKxcONmAf5d2Ucuo+Vtvh4n4/x4nY9/Ja7m8GUCa/zkWAe1cOo8Kqv1OF8jxPoNdo0pz7chLu38O1hT25PPjnsMGaokT3ISy7lTLCgtncoy3jNyspfmCYl5lScRJ2vtu9qVjIkO1KFMMZamS/n2l9GI5dgmeCwWNbobieKm4D3CPJWJ2aT20ShJYGlnS2yG4JngnP+ND82j0jJhy1a+SP0BHjFXeix2n9r06dDtY/cEdiA2orVw4RyvHQ4eDmxX7lN2fFEMPzyBUHt5K91z4QBz+TteB7xwrD8cXtTpcEineZ5vXc1UjOBdqLE9WGD58Kl7lLqnwzwZ5Tneuzj0gALiM5+fvdZswtDg8Az3/aQuvdjhNd5GLKOa9dMRS3xQZyyNy8n7xf/uA2eKRSZGzB8wgMwjksfWRRoQUDPW2v38p9ZbtjuThPk0bbmyjJsf70+OHwP7/8nzBF88+EGO4Mr/Ag==
+    rgba: 4279109896
+  encodedCells: S1:4:4096:5DA42C1D:LZXBb9tGFsb/BrVFsAvtJQOBiCleWjmunZwqT21yVpc9eYM9RRG42cq3xqBY9FQPokfFN6sVx/WJHQTMgBelgbApfeIKhsHOH7XfGOHBsPCbee/N+755Y621puRcc26sMUILzbXhklaLY21M24CPSsHxkTGGc4m1JqRZMku0KS0Dr7BQL3To+J0MuRFhNJuloeZl1XzigoOKLX5ZFyojopTL0hRNG1hzp5H/nWkdvpiFMsxoniWhNIY1bYUCkdgIEzQ2wAriFNGcZhEZxHccCaTmbdA4bLOQUzqj1dyYKihMheokijbbGzt29SzCMJvN8pnjDLzVWgptqPnspm/tadNKyhKc79iIyuU3ulygAG679bRBgAuiTKVpgga5fOBaGCnLzZu6ZuDViNSzbHZ2zCvTML9yJy8l3dVP63rq2cZWFyo9maXHGj23lZCup6G829Trqd14CLlUqUoTrnXp5MGHrlLvptv5bF3b2G4l0qfJHC1vKuQ3QlAYTm7iTsfb9MfW5o6v5lq3TdVy4boridnNurup+zFi5qs0nUcom92LzkNw33p1va69KfhVki6xX7Tg4hPv2brudtbxvaRXSZ5k2rQMxWmtIQnR9kG384nbH9PZKjLCMjgD5wg5FLd/63Q6df8Xx69/yFXEt35hwOC+kIg3jeNTL6gCe5Urpbjxg9aA3sffsQ3iP+9PnQsq9YOKSuF7Fo6F08BhrvfYX3vMIsCMVFYayypYjztDU9HY287aSVTBtlcZRVqWbWOcpSXK+4lBzZvumtmRrVCiirS2LfRx+lFId1soZzvgtnBOvY5+M+i/a4ARkuRvT9DZ03od29Oe2dqrH0kLv7jnyE4k4fTte5d/KP60RXWN/vlFUYxxQOCc7Pa210X9dvzQ8K29zkLtqhc4/v136wcf6rr+095IGbZ2ucCd8g3Ozs9zypUeNafvv1n3+82IIjjrIgPvFdhPsMMzFVH8vjtdrz27uFRcWBtCf9/Fp2cqSRKl4j8edDoPWUW7OfHWjrSoCvP2CanH9P3J2cn8zjgB7NF+piQKBBf+UAtKv5TYn8ze+R866151RVHGJy0uujAa7lZnb2DIVbJ6N/lvZ3Jklbv+PVNBGCm4lPkqe6Vmq/Rk5+Nfnj/IbUnnMmQF6uOENZTP6WeJCGcH/3n6YU81tKTLkHmtdDMJ1c9W2eFulipFh3vrvZ0hXS0o2nhtFfIcJe6mq2x1CJV3D9TzzscdlatBvlPHBWIvuRAyvQznhxOa7B2sHjxNdlS4OFDReNySBoe0u5eUzgfRZKBWL75MDoalyBTfPGxHfCk1gnzxbzlLdjP5+a/q40AdhOYqJO4zE3LNuDvA48H5SbKvDtf5X9UlcbHAdW77IskydmQWnP7x++Dk6/XZt1+8CfOM4KacyPSNhH5DsToOu2eD5PFg/U1nc/6atDZXJELjCRhzy/z8mH+ofx58/q+X9Waz/0sGUUuYzvdazNyWFQp8Ovx9t9up4/j1MutxU8LN5i1ap+2Iq0hS2Y3r6WQax5up90eULwSGpgd9tKle4UBww/ZmugGP66P4jbsLVXtrDfQdD5fnUcTDR9eTNVZgwG3iEE9A6Y8xtYibpaIofLnXq/7p0d8NSvBeE5eYSOPWiF4jlskqy2nL8Gl+8TIes9iNQ21Yi+EU8OXJCtMePBhLHvC7mHlD6XjQVswyfrlK88PDV4+sHnJefde8DTx3YQ1Gc9VatuX5/uElUYMLJ/Sotab6zl1Y3Fyc0dpHlrHFPi3+N2KCM+0z37Q+KPZWtvUtXjg2HAwue3Yw2J9M4DrTeoZjb1NVaK8bBMHe9+Uj+9X5i5h7jGHmFHhN8Jq2rQ3wXhztff1TG9yyYvACeIwHqxAGlVTg1isCzIggYDGzT16gCRbvQ1Pg5cVcB2dsxArtN6dNAzhuAhYw/HEcGRz30aWCDX2fIboNAo95TeObe9q2zG1DnwJWuH/G7DRmQYP97tlAM/4P
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000fffe00ff00000000feff00000000000000000000
-  conveyorDirections: 00000000000000000000000000020000000000000000000000
-  conveyorBucketCounts: 00000000000004000000000000030000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: people
   campaignSeed: 8071452
   displayTitle: Sorceress
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 7
   sectionBuckets: 1
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 1
-  alternatingCrates: 1
-  swappingColors: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
   loopInventory: 0
   mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 80167689e1a14304c9fb73d13cdcfb62,

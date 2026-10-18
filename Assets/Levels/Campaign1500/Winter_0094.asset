@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0094
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283785094
+  - serializedVersion: 2
+    rgba: 4293188581
+  - serializedVersion: 2
+    rgba: 4292912782
+  - serializedVersion: 2
+    rgba: 4284106049
+  - serializedVersion: 2
+    rgba: 4281346354
+  - serializedVersion: 2
+    rgba: 4291408063
+  - serializedVersion: 2
+    rgba: 4290942356
+  - serializedVersion: 2
+    rgba: 4289118708
+  - serializedVersion: 2
+    rgba: 4288440907
+  - serializedVersion: 2
+    rgba: 4291332457
+  encodedCells: S1:4:4096:2296931F:XVVNc9rIFv0NmkGZ8dtNO5ZjL2kjgnYOLVywU9zXfmaXBloa72JAbWsXVz2smiUGU63dpG306F/5rkTmfd2iWqBzv8+RsHZvWVlfVKa29pev1P6fZUpu47SMpWyb7Nuvf9osUz9CMMhmsUxkLu8Tqdomzh+TTClVw9WplMxzGftTpVK1yPMPj7mUT9tyn7e01T25tWmqZFvFsfyQf8tTvJ8hrGKZ4pFUvnmSpFLJK8dpUdqeqjYWsbfxIpGL+zqL/KiwjW+OM1c1WOHW/pHniSqrH6U/xQkcADdVMX72ePaEDnldxo9xClfrfirRsCF0qCLlIsfsT1gePe+VncsaV39ZmqunPMExKsNe5gnCC7UvUeFY7akGFzVu8Vtpc+w8R88akdUSEoFxezyZGHsrZR0c/0id1GUTZCdP3h1srcUaClvN/7KkPnAoY93Gnzj6P/MqOQ71H58Kp2rsOA56DXG/+f/Yr9/ur9XBl9+cr5+dawC1+DfyWJ+Oc6/Uwew3Q2kDcYkl7X/HR/8giDviq7NruBDiHdxwtvA/3O+Lf2FEXRw8Tu7j4qYRnsn7j0jB1AajVOUfczrtjfMZ94igprABpSittrW3KLA0J6Kkh/1+oryUjujI8yniVu9sNW8ttnb8EoyKcVd0zIj8wIsdyihT8W2eYSd/n7BXys81FxRrUFrTg5rbb0HK8xBa9A9gR8+HxDdV/UqDtMyeEoKEi8jlW8rAbR42exQb1AVWqHTsLXKPPLLIJWFn2ecepZ/pG+K6gx2UaSy9x/T4kxe5LJzB2mt2LiOsRPVmZwOjdpkUJP/EJXd7AHDkX80pAK3iK0OWZPP09vyO8evQhc/N4KAFMLmkl1I/xGrzovRJeds8Fev2AbjnDmvPOAfaBdjHb9L42A7N5vmMNjDeBehAOCsGPFSIlrpQvrEn85vV8xW7noPD4QIgZJpxdULKqgHU5E8tPmO8G3bhJwiBV1nApTQgy4fYM/Y0wpDuutsaferCGmv/DKH7RQX2dKkJnvRzBN2LcDf2zjkEBV9fAgifKI1kW9Ty7RCA8+4DoRE0GOe7BkxwP3ITb5o1v4MQKA+FteA6a2gNHMSNFNM0Lg9tYG0Qvj0Pj6JdAeBMoMQWr8uhsor03m+todaEVkxJxNrgNhSsw7b9GdZyvOH9bYBM2sHZtjnqwdElZzeAC/Dtu3WHzWaFpVLvAjo4aRZ/u4LVGjYNKMGjgdscsffER3ILWtCMGv0LQDSc9+fMtg7NmEhf6x05vvMDExjkefUO5isWYvo+m3c8E1Dl+YTEqtO8LbfGjh1g0O8zBjgs900wUspYQr7rotcnhj5EcAnsOUQnFAm1I59QjxDTm8WMM2ZFNNe8xYACLlO8jXA/SJ79nTHBgLF4GoVmFbKWeYPoSAA+Y1qj+HUngxWwMWMRe2VDRsuhC+JdaIobckyWeqMFtbtiOZucM7sKzrpvg8ZERJMQwH4Pigf5gkU8Eb/01qxAUU8RF02YVTgSSwi5exir3tlh07T6AT0L6FBMtygfDro4IbWJ9jPzmoae0VdLzWl7msELVPHfb08r2IjjKfJt6bpP6fNFOHdd4V+9MY3SwebwKHgbH/fqoTZFyENXEFQNNoYx1TvCDCBYjYQM/ICac7g+Ik1jB0rbShs7W2wH876ZUoowJQ64+P6wjOsZ8mIs0k+7/Q7V5ah/g/1E4DVHmBGkyJDYov4zE5Td6Bv2fkoEhzalQ1Q4ORasY8mILG2r0tgzPxLkjh5TzIgcAY621AyDC/2KGh6gngS5MM3LVmgRD+3h9xdMgFvUerXrH90JjKCnZhit3ziEnJpy2V8Wr1o/yDt98ToiQvqn/qyKhWp/ONn+HfD7UvYYOyZKpJ44hAjWQ9z/vwA=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 25232979
+  displayTitle: snow-covered lighthouse
+  seasonalNumber: 94
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: ecc49edf42c9c8240af3270de8961678,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

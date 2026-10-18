@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0903
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280955942
+  - serializedVersion: 2
+    rgba: 4293910988
+  - serializedVersion: 2
+    rgba: 4285093432
+  - serializedVersion: 2
+    rgba: 4282016859
+  - serializedVersion: 2
+    rgba: 4292789107
+  - serializedVersion: 2
+    rgba: 4286808432
+  - serializedVersion: 2
+    rgba: 4287346101
+  - serializedVersion: 2
+    rgba: 4282162848
+  - serializedVersion: 2
+    rgba: 4288974895
+  - serializedVersion: 2
+    rgba: 4291673922
+  encodedCells: S1:4:4096:1AB21BCF:VVVBVxs3EP4N86Qubm5dCml7U2Yr8FGssDc+OhEt3Ba5WpMbxd2lvfllE6scQ6BvfaOBJNav7MhO0nZ49j78Sd+Mvvk0CwAKONdz783T5zeHPcMOfzaG79tMsUJxDjCfv+RT9Z0xXxlzdHl82GpjJGJPM1bOAfjcJ+f+wD83xrxWbfa0pf3IMi2YtVoDb70+98VrMzZjrfVzTfiCM0RkyLwaij8Lpb053ElNmu4fDn42z40GwQRrEUAr+vPO//SLifhj82pKeXKumVD0YZrPFkq1flan6XgnTc0rym4Gl1xp6AEIrWYL3c6L1g2H36YUJtY59FwNOfcqU7rwU1BFay1qgseEvlrQXsp6XsxAg/dURTZ1ubXpOse4nhTnWs85n6mMVuoS2unUonXpJqofe6wlYZSCTC08KNZe+j2s7e54jW9LYoSoHBPTFuZlfeCLDNGeEnjKqEbxssc1By3FVgFtb+L8S9ILC8Kte0byDmk7qBwF11teT5m6iAvUUbqH1ZFJWQYcEZgYqHaWcL2v2y2UeHF06qSz6ZgJEBbBytz7IheFqP2EcHv0hFhc6hhyISUOMzaj46NAV7QRTwlF9/iUZcIKXBQTaBZFj3r5K9d7zsoh4ZV0jmUyB2w1qez9VrZPRuDEZ8k2WDmUhAsk24HW1aJHJXBdYY6UAi/cHq7D8tj9ump99lqezyZ5HmHCUcYnsqgAl74txEDYWWMxkQ7xto77LeHkCgWDgryEYnuxoJ+qZsP/NbOYAxDeYkIsTuwOvERp9/aoxorKpCPk0Xmt2wJ14ax77acCLxp5jdI1UtpBxlU0R0MeQyfrJqY9i7U7d2u5TZgCmC2KDACtHVSNriSexY9zvzOdY6x+vmj3qVFUmbqcZHQqKa/PpGOKW0WnBz/gdAUjPtDVPvE47FvntgGIHZEz1urNftte7tO3k31SQIMSDHJNPdRVssaTJOLYVNfXXZ+MKRkHclgJSQK0y9rTNuK2vr24RUs1syxWOAEHESdPDP4iHts0w728yEokB1Eg1NPEUj/cY0fa2+3aOZlogZ9xv10m9JN1u/Vi3bzqonZMlOQAyEtghRPCDrglAYci5rd7T9084oJkVV5bYfPJxGLdVLHrR798P/5RkRCMTIl0wx2Wn/E3q+Ux3V7zhAkSilaLUr1snpBQ0cA1u+66zhx3TxmjfiKW1G/GrINyCxiw64cbY25uuq4fjQVrfqQ0DtxdWC1PxmkwZify3/TX3oPYeUolLp51192xeYj0putu+uyzPUta4oSVu103fghdXEBLbrp+XCBY9KiQ5I/3XQjL0K0ezAbfRL9P54ylwF0IJ1/N4ujYMQcflssIfloEkEC5S/jON/30CT7ry/chhBdhHUvsE3O3Wq2a0wMFNUuESSL+KHyK5TKs6HGSNNQ05vdRttWvQ3z3IXyJbhXKui5BWqkk9jXdIQy/fUHj1w/0pMvaNE0Bc4Lf/bv7Pqz+CB/o7N8vEbbK2/UIiGP0j48vNOH6LVULM+ruu+vo4yjbN2n6sPy9LYYhjCBcEXm3OgPVVB0iHfkTs9qi/er+yofwdwirjWRITV5t8NHd6P5e++bD1WL9f9Ut+7f/wu2kvB/pnvf+qogERPHmbLVaEr5O0VNqPGr5FQ1I/0Wtbp0+rgn3o7eP2kM+ovkTwl+Lz2psukLdvAt3Axo9nt4fl6GYf2J46JYnJ8fhgbK9WC2/BiiU9207uF/L+MNGyxjvH4kAuTpY6DmooW6vwsfw31gOINCrmfuZolfdcHjl/wcHGMEdDRBOswCUH9IY/hhUpDiJycNoGQfM3Bf/AA==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 94480796
+  displayTitle: Philippine turquoise karst lagoon
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 894da7dbf5254484b82096eccb4a70b3,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

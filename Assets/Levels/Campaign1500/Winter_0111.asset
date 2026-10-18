@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0111
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293570188
+  - serializedVersion: 2
+    rgba: 4281345065
+  - serializedVersion: 2
+    rgba: 4287650876
+  - serializedVersion: 2
+    rgba: 4289819724
+  - serializedVersion: 2
+    rgba: 4291924076
+  - serializedVersion: 2
+    rgba: 4284563252
+  - serializedVersion: 2
+    rgba: 4284445358
+  - serializedVersion: 2
+    rgba: 4294372072
+  - serializedVersion: 2
+    rgba: 4289301639
+  - serializedVersion: 2
+    rgba: 4293773237
+  encodedCells: S1:4:4096:18E08F38:jVXBcttGEv2G8XISeI60w42PKoAsSzcuBlqRt4mmZRq3GBRi6BaXXVjrhoopDudmioYN3RALNjhfmTf0bk6pyoIiKOD19Lzuft1D7K8u4QzurTWG+F/hbWsD/Li/x9nUP/739XXwp4Fz/mYN+3mAx33JYVQOHzjxDXfeRmB/dvSAeYujd879c/jq07DyWNuCXJ8S8OX+24Lw3v3yZDgavgLuWufXEpkFu/qSfgfYncS9u9sPh2V/iGxVnSlGnd0/2jz9TmCBkRIGw7LswcGpjvnIyGzy+umNa2lljPxs7bBcG9fTihMxzYiqzZPtosaLhTFn8c78pyyNDWhFMOBTIno12tILTjxQgs13L8v1uoJfQQp7I3lVPdoutxteVYFh1e5tuUYCHPGu6lRl0lW/zX/XWyMcO0Gc78vyY7N31DrFWVfxqqft7e1o+Dz9PJ1vGFNvPzZNOJNgUCm6JCWpGNantRb1+HK7CtgbmTSzXRiHm3OuLhXFcvtoezWandV3+YSS6a5pREcDxn/9SDojyqQajYoXs3G+DE/n4yTRFkEjnKPy2fnjmZ6cHD96l9fhVZ4tr4qlnMkFIXOXdHmRnGazOD4u/vW42BbFVZHV+RJ7B6RJjeX4Qp7e7uM8e/Lz7ZP65fGL7KbPNwu5W2QXc7mMLutoctzkefFwVE+WRXOViR4FlbuzbNLEWZYBP73J8vCXUb1fFfkkQ1kXwCE5+9Sakyyqs32WFZ/+Uc8uroo6E0xNo1gPrOmFsS/zrC7wbZgS9oXJ67xhQiktJcKDjyjLJvlVmN88OD+pi2byOcQGKpFS3QvXm3kYZnJSHw86erzaFn2R57lrmeZJC9SacBmdv8/u+6P68qLL97fuJDzdB0wxVu0RRy8kdf3ZydfxbfhoO2d3D9lT/VvA2lRcl+t+AYEiHAVD9cNPd8GRSUNn5htn727Lcg39VgEbXzCTLo2iH764TwKt2lvj3pa4vmcJcTlmNKXWMGeFgSPD8bHX5VdvsUCQbHxpRGVE63S3Wt1XEJVpgbNfYcAYV6RNIt9BrLqtUt6y/YeZ3pXfk4bBWlGi741DF9OhW7kc7Ehwhs0ZvSnLZ5TIcJOSSyTX5MYyCqVG+sqPaAx6XVqT6Hg18++4TtxRLKOYT7Us1+g+wdvGGS03Z7IBnqJdKIrl+UxOX68pgWtawUA281hKrJfzKIzih0yRelOm8E/o7MYoeya17oSU0wj772aRlK/Lfw+At4p3Jv0w9/uTDkEM/OKEQP0Z51wxzsguVkKjG9GMvWMKE6tHvOWa2161eEoD3JwOdTKYJ3BNA8VSuv6KdKDOikh3SA0IRvFzkrEEKRAr1y2E0nXOKWqhSRkNQBt2kYbwWne9RsWM7W0vwJLaJIqj86nUdMizF9eBB/6QJXhM5GAqGUsVKiqcs80mEIcJhwmB8QD2CAWzFTgosfZuE7BDIH74OlTX4yRS75/j2xqvFox/a77N1QSjSvmlIvUIcIeP8RT9r1cSR0sw0zPhB+uPr5xoe3Fw05ug436QKkfWy8Q509w4jG/u+8S7Y0IQF4zAmTNP32w2ngAUDRY99C0U4oMVY95nsflGEDM6MIE7ENccmYRMLOMO6TlcOMEwp1tfiER7DiqojGN28/6zOBxMuHydCAXqBOapYsmCQXdIC/ijh6FuZJR4IrVCGUIZon775gMCd4E9rEfCSWpf4tArEf/b5/u+9fLBDug8BKZ3YTiDwGAB5dpP4IVo/NGKDAgWyRjSRn9EegwfFqLC4absIX3C68Lj4JActljNdy0Og/awv3X/Bw7eniIhACl1Lx86JMuZ//n/Aw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 27013372
+  displayTitle: ice dancer spinning on a pond
+  seasonalNumber: 111
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: e883f5e356f22384b9a1ffc4d41fe800,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

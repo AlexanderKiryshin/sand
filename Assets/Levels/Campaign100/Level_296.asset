@@ -16,52 +16,71 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4283644454
+    rgba: 4279508788
   - serializedVersion: 2
-    rgba: 4286401598
+    rgba: 4289622082
   - serializedVersion: 2
-    rgba: 4288178767
+    rgba: 4279974756
   - serializedVersion: 2
-    rgba: 4291797650
+    rgba: 4284172871
   - serializedVersion: 2
-    rgba: 4290036943
+    rgba: 4281296023
   - serializedVersion: 2
-    rgba: 4278782216
+    rgba: 4282331181
   - serializedVersion: 2
-    rgba: 4284315025
+    rgba: 4291945703
   - serializedVersion: 2
-    rgba: 4291158134
+    rgba: 4285478673
   - serializedVersion: 2
-    rgba: 4290478187
+    rgba: 4283605973
   - serializedVersion: 2
-    rgba: 4288717904
-  - serializedVersion: 2
-    rgba: 4280492322
-  - serializedVersion: 2
-    rgba: 4281549141
-  encodedCells: S1:4:4096:8B79DF69:ZZXPbxNHFMf/hnXalYK5YKNIKb3YE1m1zY0l6oYeY0WoXBbTR8zzNazU+FIh0pXDJbYVaeTeApY1ORmiATq+slbr/aP6fbsBhDqSV5v9vB/f9+bNxJgbPvsLI0tteJVvVsnzLo3hlGY5b1Vv/Y8L4QIbVatUqkp9w0+MIaK5GSZiUK0rJQajawPweTInpldJksy/8sJgu+SVTj/MIkuUFBwLj2rBtyV+8ox8WoB+ADctdYE0XzjiD4eHlvzhh+RQuBEMXs/5CP7mNGEIPEkuc56valX8R9u64lXMSTQjnp0mM5EAmAznUKjBtd72Khs28mk2GyaFxPkQj5ZR9WpFg1cqkfWicmRu/J3752uuWqijOsp5fatOvCgrQ2jR9UIdgVLjnHfRnEaN1DsyXwzAUWnBPYjnu6XKwtWUGMSdztHvjzpmb6fgjPb45FWY76B3rXWG9ZtbdYwJJrk+jhZEthwRtDiXAvefpoNB/GYv57S1RRR5d8hNNx07cadl5ygeXO69DsTf59QjyOyPbcH7x4NOp/Pp5c/m9W34My1oo7JJ5QUzZysYxJ2jT48OXs7n5nZlxBGT5WjDLsham62WWRwfrZiPDjAYP9SRP3JEZX7niFnUP4/jT0TOZmhEq1qnEruuZZ+Q3Ao/jlfvUZA9Bf9JKeTnLUh4vnoKnyxbDuJVH/79X685+ZFFE47jOO/NYJAtia1zcbFTfuRF5NWi4yyGs6RfimDXJ9npC0N3HntvydIqi1dx5tZpLBty8Ixmw2HOSyljh4EGcdy3bI/B7YEchovhK2M8l6K/a0RdZ/HSooY+U/om5+bUzInWsD9e8ZrWmUyqw2Pwp8z6hTkZJrqa0sJm750DR3xY4OXl3MxbLw5PEvBpl2zGACm6Bn/Jn2BOWzgZSeKqU72TLuGOIlL4X6I76XBu5DjYYcK2PdXNpbj1ad0n/gX+aT5q5hmpF17a0HqTXSRh/+oStUWjurhA+/61GFuE410vaNL5+aT5D1ENNjcx/zeSofP3duyPAeGkTLSsSQ/OkNsG76o/Dumu29EF0derR3eJzvVYL1QNhhvybRzmz2atiZdgGtFWfTR2qt2l6mOA7qbg6GPErHs60ERbpcqtqO6XnfO06tFUaaV3I2I/IuumvV560/O4ZOVv3XNUI5pKZtl352yoe359Y+FZH9boC+PXBMb8Ajsa6cl+J6KyTwhpy9x1bO1uz+WUAykl7Ox/j2sXrtzQb7GlCAsrhD/TISzCcLKPHZPDq7V1JEercNebqHY81uHkCdVxagPNOZcAiHIeEp3pnm081GFD9iQMriBP6KLIgsndVelz3A7fISb6EwTgaIWTM5Rza9fMYRAG+/dZWhfsvitDG8prMCNMrgSfHwYaDQ8DLDSuETQkgyv4cqLzSvIlKXw8n1gkkhxu7e7pOr4UPEQ5sEIk8CK8g/EYXz7ve/4yQTFSpaxa6KY5UaopqcLCTKq8EhGN8D6dfxwLV0okFFqeyN3g3FSEX/EOytDUlrtUtIgd0b2lQ9dxfwa2nHNujz8rkG3myG7pDe2faUSSb0RfZxQ14CAp1/AxpRAinlFjXFSJn3TLkksds3/20TlJ3YOAvAp9HaHYaotCvAbEb7p2rZr/Q7g2uMI4yECwE/FK49hGzab60qvA+Z6EeMA1axtK4wrFKW185qhc9pvdA1f+Dw==
+    rgba: 4281933068
+  encodedCells: S1:4:4096:83A3610D:ZZVBd9M4EMc/g1a1IbmtH7sp3IRi89JbN6oKvvmpSte9hThqm2MhL4QbgVLhW/FzsuYWGkTQp9yR09JSlBfnPf/mPzMazSjW76vrFUV79v4aGVTzEVMjRM/rd1/vcltzw5kZDb38d30TOblhzES9sV7fQXH9RDVXXJno6J3Wd7Xf3YMxUI9irmz/4EL/YvC65iDuDWPIcBjqDb8OEm94puaoZOCD1Ty3+Y2P12zDG6qYctOE9ByHz/paDwnkXPWWflU1bK/3Qd+sa35Rx49MNF00vvGDe5xNtF1D3cb2y3RafXo50bc8X+eOw2KjqyeyrKYX2/u3epfH89f78HOSzU0sZVm0Zv+417OfBmxyUfPIHlEpq7PWHab188nEyYELG1Ia7ulJ6y6/WSero6OUUnKu37SC4HcOxe2UKQ2t1sFZ8PB3bk1Iy3RocjAIZp/uu1dWMSouvykb61nQquDd9q98xNpErKGRgMwWL97dC29ixsjyjSuo1n9MHz29ix8qbmPOmH37yFpj9X/VWdC+U0bVV5YzntnMNa2xSRW0Pp/fRvdVzc0oG9RHJvZmLxf7NwYnHHrLxixfx5lcPbFQ6HNdVY8PfianMtB/0DbODr8bDYW2O0VaBO8dnW2GChpYr2IzOQ7sTnVlm4IWra/nHwPYmeIwOhiMYRQm2aOtsOzbozKEHBtu4jZfnHUd31dBgLCnerR6sR1MT8zN0LZJ1rXcPADeRuRUoXIJZQL3/oazrcHWiGcPuGk9JZIqIn7k/z5ufR6pjf89lvUzxp7tm1F7+HeiovGVPXp/Nhte+yd7jHHOnyGjdpSluD3Gli63g8X1nYFQ+zlTWRbSofXLwQ4ZD+dI5DrdcGR9RBnzL0NChCqVn5RVeenZL69qTLEZ+ajbnZMsQVuDUvVEUslLY6M/W4AxUqapmtCfXDOwKA9KIav0hxrhv4JjjuDuMc1+M0QuBsv8MhEhKaqBOfLM9pnA/X6UKtukfYSQZKxX9gihIsSexDafV6cqwrgYNqnKECI0PCh9UohOOCCdjrXl+NjHqNOhktmsSaiPULl1SUXVsUUanfawTMEtLaTHYqZ24R4jJYpw0mkMIqKiFCUNx0WxxywbxRkUC2xFsRjg3ilXqENwzeWQ2ZXlNa8aRTnt+94SOldQ5LiUisUrp++h0L+UtPhh1NIfqsjtypOVVKt4xUHv8wzKK6cNUVby2BU/obSs0u7KZmI/MxFTuABe9RVBGDoEE0qqRafL7AESak7SPgy7rBZw9v6poohg2O0kHbTNqnyQzQXktMzz7ZcdRegAUoMEyXQR7jK+EsfqC6GlMcCDh6jn95uoXlUFXK3E/nzoN+C2yPOgpVXkzt5hjChhGegXfeU3eG7X+XZLmw2HLJGHwl3HT12+Jrfa8VqPUIIxwZfUcQm8513lcH2/aWkqYQuoTCA/BCdOuwN5GmHirTTodUufQO0ELgTBwHE3423RgfJ78NcBk+u48y8EBe6ajG+hxPmHW0R9hPgnBCYXFcRz/umu4og2MhXBRUsHQo4PhVQ1xx5BId1FaLdoIAze3Ikj8Yyi8aF0wUMXvz5m1yuQKdjIcQrPkMqS4DDZVHE3BD1xFSGIvsKIjA9DQtOGR264OywMJ0KpeBVSMfWQDEUib/UQjtac1lxSnFQ0kf8D
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 00000000ff00000000fffefffeffffffffffffffffffffffff
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000020002000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: wildlife
+  artTheme: ordinary
   campaignSeed: 30902374
-  displayTitle: Wolverine beneath Aurora Pines
-  beltCapacity: 4
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
-  sectionBuckets: 1
+  displayTitle: large blue and gold observatory telescope pointing toward a crescent
+    moon
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
   keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
-  swappingColors: 0
-  loopInventory: 1
+  swappingColors: 1
+  loopInventory: 0
   mysteryBuckets: 0
-  bucketSettingsOverride: {fileID: 11400000, guid: 46be5b643bd4dc94bbe2e66bbb494105,
+  bucketSettingsOverride: {fileID: 11400000, guid: 9da5efb1d16031f46ab2cf4b134bd30b,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

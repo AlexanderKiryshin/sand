@@ -1,0 +1,4 @@
+PASS: ordinary cells outside the conveyor route contain buckets.
+PASS: existing conveyor buckets take their clockwise step before lower buckets rise into empty conveyor cells.
+PASS: entering buckets wait for the next conveyor step; new feeder views retain their delayed appearance during movement.
+PASS: focused entry regression and 900 complete campaign runs preserve valid movement and sand budgets.

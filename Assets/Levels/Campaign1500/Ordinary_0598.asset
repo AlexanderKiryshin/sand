@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0598
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289055723
+  - serializedVersion: 2
+    rgba: 4293574824
+  - serializedVersion: 2
+    rgba: 4280504154
+  - serializedVersion: 2
+    rgba: 4282608783
+  - serializedVersion: 2
+    rgba: 4279969829
+  - serializedVersion: 2
+    rgba: 4286089373
+  - serializedVersion: 2
+    rgba: 4290013271
+  - serializedVersion: 2
+    rgba: 4286133290
+  - serializedVersion: 2
+    rgba: 4284982476
+  - serializedVersion: 2
+    rgba: 4292929002
+  encodedCells: S1:4:4096:B09807EF:XZXPb5tIFMf/hmmy3sAtrGpY36wBVHKrGCO5t4YMtXMjwMTuLawcWN9CY8/INwSxOnszauOUv3IfdtutduzEEp83733n/RgIIWzrMaQg9dwwCl373yLAQ68HXHkwMsM4PCx+5YwxL0Roh855JsTRIDN+cC+OGSthO0L91BAagDTVU+MX/2RbIlSqodFsjv4Ljf/kEWM9FZ2eSrQzxGQNBoUQmkh/CPUYQYoStmdoLfQiN3IA/KYjTTs4xK+B7/gN2uR7PsgO4gNN07W27QxITBD6+5Xg6obzfCC4wYtcM9JufztoQV+M0J9wMH0thMibNBWZWPFs0O2HxQhDaKULVRsAfl0UjSi4vtwXgyP3iIfQ3YvoG0JkfMGLrMhW2QvfH3FLWK2gl+WtyAsxu8/1JS9WWSYK/TuPGTlF+2yiFzzjOS/4AHQsCoMPmuN+QupYGB8WHPQLXhQaiMzy/Id/L+5B5nJwuRF8IbS2WXFugEBgFx1nNUJivVrAsfI85y/aMgehy+Ynh/yIPMszLrLs8l7XxYcP3GhegNnH+Agtc77iYg0WC94UGd8bh/12q3X8VIHMZR8m/kLoq83++v4zLyB7gwHtH+qnKmsB0id+F2Kj2f5TnqZdBa1nbcCgfhJNMpFN8II/5jwNaCU04Jd9+mXQ7+KXs8k9X02wn92veLN6U2m5aNTrvvUHOxkD74Uiv6cT/Dq711/oX2+q4it0yeUXGkXsUN9wwxc0s6jt68bFJysSoofCoKKVDGrgKiRgeTmxfAtbC+sTnt5r2g0DTnplTYhSvv+W6xMK3LcoY3j6941z400TGj233zwTWp8ml1ihPq6ohSmeMwczzID3lC8XwJX32B9WPgWOMa4iG0cBK2PgMfPgAXq4xTYQS8Ifri7w3JrHtbTjrcu82iESIZz4wCoM/yWWCGTVUobbini4VGG+EBDQj99j7FRyDEMLfVvOn7CbOEgO/SE4hp0goMKVI8M5YyFyxolvseFYYkUZYjrE1fT6CcxsOVfkHDGnShwrucDKE1JKOBiW02uM5zaz56EtEaWSSd8sTQnjH2OfWpKC/1M7Gs2DSBI7ONnWlURvpRzaPoVVj57o2K3RKKZ4LOe97fj0CWIjZUiqEfGIhIVKSSxzFElIopQsJGX5TSLLJT/W1apzZbG55co6mEN/QHwvSQJ4OslToe0pDajfYzZx7CQ2KxVG4D1dMzETD+05XArTpzmNIxpEtsViG584Krqi4CARvUaDjzTrMQt8BtmJXAsj+Hb3ILi32A4aXzq1xLSWcWBR6Xg9p1KuAnYLKX9o2ttlW5tQnBjOMnUdqMpQ1hX0zS2bpVnatsvW7gzAh7zadlU3QQFlq9mMfdzDtZLCbKkKCiF1coQj8+swOkHJoxCciWV/3w70VkW7XavWoAX7bhjgEzRik7Vgm6xol825F7OPDMG9+hFq5I9POv74mYn183nb3u1Tz4XTeHDzwpnAAXSYOnoMFjkT4WZwpzUeIR4LGNx9JugbEWUsSZJziL9r786XzaEMGOoVExP7pVOX8mq+ymbs7NUd6O8uBY+4jLimi108GkL8q1E8Y7Nemr20zQC4S8xjNTEUYHtaTv1qFCSM79JG7zhg1v1YZqTiE0UZr0w6Xyd5f73svyMHB+CeEOp2EwScxlQqs8X6BbXvyH9rCtzESEpyFcgVO3s4+23/tgP1kVswii5W2pYS0hlB3p+9n7tjcuUkUTdMLBhREtCk9/u6Ud+pYScghk8CiSQMEgr9/ZgkPGHb7l2otrvvKuLu/QnHxBbMh+mSegzv0haF/+yO3IxjcACpPk5IskOlstuVMBQ/+90lYQ9K3nlFqFXVtpaKVJRDDr6nwiSdBdioKjpA5a1iYgD/Ag==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 62538451
+  displayTitle: hyacinth pot
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 42925eb5cea75424ca36effd5b0bec50,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

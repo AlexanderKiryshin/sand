@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0132
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282414774
+  - serializedVersion: 2
+    rgba: 4292925664
+  - serializedVersion: 2
+    rgba: 4282862420
+  - serializedVersion: 2
+    rgba: 4286626018
+  - serializedVersion: 2
+    rgba: 4279637273
+  - serializedVersion: 2
+    rgba: 4288449681
+  - serializedVersion: 2
+    rgba: 4286015335
+  - serializedVersion: 2
+    rgba: 4293967019
+  - serializedVersion: 2
+    rgba: 4282267689
+  - serializedVersion: 2
+    rgba: 4293763971
+  encodedCells: S1:4:4096:7B796068:dVVNc9s2EP0NHMn29FjYlujcKPBjeLTDKNOjLFMe5maRBqTcKkUEpSPdiDBvFUNR0K3OTMTgV3ZB25m2k+7Yloi37+0DQO9K+fPI/2f9Fa5/lnH45zdI+bdMvVLPPIe1DJ5qXkvO/0tvWKu6znnCVbxofHz1lOc1z4HL+U7B6GU5aYRgXYJmJhWUZFxHCmcAyMYvBwCUn2PWRRBQbirl3v3GvzdeuXyuq6NZB+A0W8nOV7mafuVKW/G5bBTQjHZQysNkdfpN7idfG7O7ZMcbCzzlFQMB/rCS3W9Sjh8UKa8T5VxPlT1KM/gQUtI1Z4Q0VfMdQKmujM3w/BTpCMxTdnBILOtc53w71vUUpQqvmNrAk8z16sCIzdXZ5JM01XWkBDbT+BRgDnXRgfWd5gDjCdTOOaSAfeWvymXO9HTftwHeryR9AzicPeKgD3xKHYztTt0H/Xq/ysRjc4KzJzR7z84Q6Yj51oGEDvD5x0dZyQx2qCegf/L7GaJT2BkzsX3aA3dy/TjjB5kjNAL8fXymM4g59WIchuomeB2sM54/oQ3gy2qTMVYxRO3IJPZDEpAMjD3yLFe4UzkHyYgTIkr+wJ2uKUpxLkRwboW83j+lK9i4XB1X4RmNI0y8G18sg4XwRRkn8kMCm8gTviIxJWwW4evdZ7hYjnZ+JYLNXx9ydQpruCmHwQ46HcnEhVguYWujeBqsnTrhyQ5j/MAwY52UicD3LVHg+1pHi8CfhhPmxIRRHM8d6m0DC5OYEEJxmenICsR56NiAk3jGPNpekO6YEAezE4vgxQRdV4FglFAo/SkGfMxufetO0wbHnknHw0wfL4KYkbs+aSvcuz458rxI04y+18YWsZdrfUNAkZArdcLdXu9I0+48zzxWKdH9eDuFq42hAGOgg3q988t2o6+ZUML7NRw74KgL/lzsUGz37rWjqO0PRoBr5qXpWZ3ZfBxF5BNjmJ4BbhxFmnEzapm2Z2pm+51peCSCn23Ypl4b6rfu2hj4hq0Zl+YA8DbYsyMnvgT8OjRb0Q0e2i0DLLaAbxg3gPfjDeBXZu8dxqGBxUgMbGxpxtG7gWmeRpd9YwuH7Jm2BTguArscjJhLjVYL+J3I67crBjcc21YlwlIIezgYFRjP8RHGPvjrRyRdE5ROYibEFN4eyyeOgxdO6To36sIQ63szZGAsiiHGLcCLGUFjEjoVppQ5aPEWz0nlCkNAuIFVulhFiBAmV2cdV/S10CtcgeH3GYePQiUN55pxguPjP5dtePaw4rvwEgnI/UXh7MtbZyBGxRS4ratW0fB9VUf8BgI+/dInRNjFshDuKdKwwn2/EC8xZJVgvhgtLrbAbythkP+Bu0O2nULKrbjfNH4afxhwF3yoXLLN6Ifd+PYzd1wbEhq8LAq1vz4mw/WE8z1PNt9TDv2mh7g+DvwSw/tjepA/zJqeuxcXSRD4Q78sRekGJWMFuFQBrQ7aPfS7CdiBy1lCAeHflpDtl0OfdDniKTSFFN1avt+QSvjrFvdxhX1oXqrNcT4hJFjeAzgMyubf0AH2tuWdeaqNqraL0H13XkGGmMala2FI8Oequ0MjbVp9z7esGJSbGrgspw2I3nAE/t7Aa3hs4GfP4IDtxuNmcrzMEWi8y2Z8sYOsztdKD2TlM5zXK6pmBkQtqRoLgOuw7fxluD1nqVZ18aoH401Nxvp5aikyaOsKyPnTDw5UqJuWX8uV/qqilpovzSM81LlcIf46+mCyKlGF18CERfk3
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 29212681
+  displayTitle: historic green tram crossing a frozen city square, overhead wires,
+    bundled passengers, three-quarter street-level view
+  seasonalNumber: 132
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 213478c7be5411e4a8fde32e6c733bc5,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

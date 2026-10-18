@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0320
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279244056
+  - serializedVersion: 2
+    rgba: 4280900301
+  - serializedVersion: 2
+    rgba: 4283668453
+  - serializedVersion: 2
+    rgba: 4279513739
+  - serializedVersion: 2
+    rgba: 4290565604
+  - serializedVersion: 2
+    rgba: 4284119178
+  - serializedVersion: 2
+    rgba: 4280300867
+  - serializedVersion: 2
+    rgba: 4279778996
+  - serializedVersion: 2
+    rgba: 4282209891
+  - serializedVersion: 2
+    rgba: 4286818487
+  encodedCells: S1:4:4096:20E286D2:VVVNc9s2EP0NmLrFKEdKneG1kmszvUnCRLSPzdCpfFNtgaZutGVu4Fso2kZ7Y2QBWd5SW1LIX9mF5HSmIEfE6HF3H95+sGf5BObzGeJFc96YJMFkIyuIN3b4cZRYhBgmQhzEzdvec2MkJhViXYE0rB8KZVqsBJu+HABzq7RAi9Nu8iPhI0lbPPky6gwEZ/9bhQ5F2AeeMnnyRTzkhdZ0a/frnl5OuBZPKobp+ml0HxZC75e/A3dvFmKeZJicD/v39LYvXu1phXRpvRjNM2iS2Wnx8AO79IN3Va9Z6KUczxLfZ/xhEb4A7yXmpHio2Sf/2vH6pBlLgfk6LR/0xzlLe0s1F/qiH+vw4BVnbNDRxdNpLuYAuMS5KIS43IXP99xzYpnn+oBwiZbsRRH+dwBH39ee7+nwIwBDJRx3Ubye7vUUPm3DyzsLSU34ZUBvjER3+Hb5K5pQ09FvIAwFjptzJYqrhMwPWJogLhuQb0lOLsEPr8ZT3Bihr8hHMZ8/cjZRlIhf9L1QaPxQSAPJrSi+NX1y4Bj2xUFBzBYi/+z8V3UzmzkcRPEqbeE7fL54uf0hLOpGJlKIbxsiMMx9z/PywGuLYhEO6qyVi82dRLK/Wn0YFGIwOLbw+OW9PHm3GHw+r3hf3AAeJaLz+92I8MVQi50Moc4Hv2d3wEoF0eZU+BcAQz3Si1d16Pz5n1lqWwgctkPhP9/GuT5dDAaPcKLrKLwv9JXivwznfMLeCBF8bk6E/053B8RQ033fCa9Giko1lmwriuCfyOWATkCJ1P/c60UQUuoWxzfSIBOfvMvxLkfDa5IkpNQtdPitvjj6dfhETsSjZykHHhXcsPC6fjt3eNfc1NFwDswOikGqChc8H7SJQFf7eaD/wOfjw+HNlqVDP1cp4UIvwrbueosd/qIuOU+/zQjvLAAedW/g66JL7HPdIQ06Ci2mcQb9j2EHRoVua/+h8HLv59yj6qH/MkBF+vQPRED2xbMOctFrez/7VFqB7iQZdSr/iu/mokuq+c/aL0S3vXxylUmVqFqkz8vfcCqKnoLCX+rgL9HrLpee7xMBf0vi94sATkTngpeUIx08Ci/4vGx7A0cwrhV/POzBSdi5VrDDC+EdLpftTsfhGWZ2dNh2oa8RtL/Z45kVo+JF5+HNmQIaHOCmCuHBW33YZzbdpCrlnsM52QtB3Ug9RPZH7JhxW67XFR16nofAMtjjrMysDn5iLcbi89nMIC/5o7heZ0TL9TRT2VYEnJWpjaWUCbZS9il8Xhm1n2oslRkradJN6ipBY+osZZzBjYHXoZZatsNjs0oSBbZKd38a+G6vKHSL27PbeCqNVMrZT4iI2uOwabHUMHW8TppZ09AsZpw7HPd4tiFyWTxW2zhL5J00Knad/B9uzmngqk3jMo6UVx67LrcSWy44K6V0TsaRG87oBnSVqR2Oe9xYxsvNNoqiKaKxY/nVMcPv+CTdslZ51OyGu6ILLKfVkmovwITbTbQ629AoQJXYxGw5YoS3cqdfzChoI6ua3M+a2WZGDwRL4u7xNzQBAZMp2BVaC9aFgNRSHHT6AUlT1yijW0PuATGhnjRqSiLSe7xEaczZelWdR/uVyLNZJKNtSyXUIKSHqSNcvR+/Sejj9V0AgJIBVi4C3Nk1rl6aO9wDjpWtIVUWlSIy8sZO6xWS53XjmBt5Hu2KRJGBU0RtK9vc7lh/+Ik+aEQKUp5+XRNOruDDrDLYuBr+vjjdaenQO4sNwxKnv71fRevkVrmWdZ7gK7qdJSuX1JlJohUm5myKcRJNJY6rI9WypIQiJmiJF7rMmcg4Xjg1zpzqM7VoxiZGVysOIUWk22KLcleRGPgv
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 33415870
+  displayTitle: Kyoto torii path
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 67567cd2fa5c6f448acd48b33dac2a96,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

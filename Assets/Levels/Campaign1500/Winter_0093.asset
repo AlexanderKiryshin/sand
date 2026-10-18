@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0093
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4294432975
+  - serializedVersion: 2
+    rgba: 4294835196
+  - serializedVersion: 2
+    rgba: 4293636763
+  - serializedVersion: 2
+    rgba: 4294634988
+  - serializedVersion: 2
+    rgba: 4294702325
+  - serializedVersion: 2
+    rgba: 4294566880
+  - serializedVersion: 2
+    rgba: 4294166456
+  - serializedVersion: 2
+    rgba: 4287194970
+  - serializedVersion: 2
+    rgba: 4291531644
+  - serializedVersion: 2
+    rgba: 4281086262
+  encodedCells: S1:4:4096:ADBD681C:LVTBdtu2Ev0GRDRRd4lIOafZqeOKoneUQajpTjQhv2QHiwQT71g6Quxd6raBuHPUJqR2fXkvYfCVHbiFDiWSM3Nn7p0Z2c61zrkONoP/nX9xV8Ntezi0V+1X19qhH9wB3wM8Zs59fuPeWDcM1h5ub+3QDgOaXD8c5hA3C7xtbXtlXbuzth3sYHce84DXKcyBLToEf+ssGtrh9Nv5YDtrnfUQcXcKF4xeOPdbi9Hv3g3WvRuGDl3t18ENMACc3QP/r/spgr61tkN813aDgz5Gv9bFP37nYsqGzy/Jfm7aXXtrD+3OFw6fDlhm7AYXn5M6TGfNNLgK2gPG26/evv/qCX5yQzz6xs0ZO7+Gp7+cNtW/+HCHHE43/0cA+tLdTjL8PI2eTzfOJF9O+3bX+/DzL54+Xi9/nDCWKVm+czA62TikiRICBJ6n+wlL+Y9kVyyTv30CKGd259A+30PzEP1Cf0uzyaOnTEqDnOGs77zGYPeb/yH+1dANXx6ZMZOZZIYt+Bjj8T20HXOHs3ag3U1rjs+0ZIzJyc/sssezi+9c+8wdjoc2Xr4f3s5BBY9ZlhWinPUPDg7JOXsj3KHOPs4rgu1eiCYvAdC6R3vrXrjD3V/O/fWNen2hVW2ICs36hw30x3sE8C7WfX6BQFU+1uNLfpQzmRQC9Tt/PuqPH/W7wbXt759jdTQ++S6V6SQtzRKd4DzLT+Di5499e4g7gI0Wxx9kOmaMV3Iia1iu5OTx6nt4ImKYRRUvV2UmpWAszScZwBRGpGQyla/PMzF9kq1ypJ7yfJJzKY8ggobQSOG9zGW6TtM8Z2YiEZnnhCh4OHWS5CyXXAt0W7++uTnnecq1VvrBTJraNBguJXu4Lt4/l2mq8QgZzBqAxkSNzzBhqZlkMp+gX5lqkRYEhZqivRIiT2Vpon3TeL9Jxou0VltiDAnPCoEF4yGzuIfjtUzFOGMLSQw1YCJKCRGFDkOyOupffby+KCUn6CE1UQYihKCm4jwQ1yu5YFF/I7nQnI/ZdbUGQA9Asy60wC9m3vfnyKTQqFAmJ54e5tBo5jxNudRCrES5Ehzvs8nigT8nmhdeEfQohBahUQT9csyJVsrxFGWyWipsq0asH+pKKAwpAtTXA/sHYwDESsplyCdS8DDBniihC0RG3a8RqINRjj3iqCRbIF8MLAjaEy00nc6hiyNYobjojjt4SRQvNDFLykPsxP18b+f7mPguIcTlhB2RGvMSPEpVwVt7Yk0fVx7dF8xljgJiB3Wotgnhf3bT/t7GBRfc2zFvmsnyiRaFCokiN+97mf7ZP0PsAvu3ILRIpBxnBI2cyl/tsqQVP65JIFKBwyVTqjhKZmi01OFqa195hqYxWOsaBcF5lb5JpoFREsi0fzb7Z9SWAQ0TrVcoZalFgKI11fUFW4TRrovjixnVdSBUiHWL/ChcQQNTA7Uorve7XTdvVKJNSKok1DXOuixJBLCNqA7I3e7edk2Iw2RqWhuB1XHcTxz+ujZLWXe46D3OI85yPaI0wK5gZzA9NDXR7PJDv/pDeDg6jQFHbrvVS8F9zY2h5Em2PpYyrB9IxPjKNBUVovhnvWpK+VgmQV1H/rnzmOjD9dY/BqIcEZL4jqNECub2DYCCBqukZqSLAuvgguhAkagpTvbdzmCGsG42AeGKhCpcl5xtqVZcFYTed3tjMQGtsPUG90uRdV6woxBddXJt6m5jdnZjKjTVxIQ1JWGAc1NojaOiZ3f21bbbjSi2BmngKz9ChnBeE0K3ubTLvOp7aiLPHE0Yj5WqQqDZ0IujHa7Thyqknrfh1MtL0Qk7YmgIVH7sDf5BBVPQka+AEizE5yG4FHpr8rxf83JbR5RAEyFjFKGmxiicJ0J4leDi11Xt30e+QAyNsGUUt1IUOD7JWJGp8UJTH4p1NhFEymtJdIh/KZpQ2Pg+REDJ3w==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 25136169
+  displayTitle: lynx tracks near a spruce
+  seasonalNumber: 93
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: f10dbcac6ab46904fbce9c349eff076a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

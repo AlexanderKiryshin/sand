@@ -16,52 +16,71 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4282787852
+    rgba: 4280426791
   - serializedVersion: 2
-    rgba: 4289292553
+    rgba: 4288594914
   - serializedVersion: 2
-    rgba: 4293377406
+    rgba: 4289235807
   - serializedVersion: 2
-    rgba: 4291133971
+    rgba: 4287381526
   - serializedVersion: 2
-    rgba: 4294236591
+    rgba: 4280698745
   - serializedVersion: 2
-    rgba: 4294768361
+    rgba: 4282940076
   - serializedVersion: 2
-    rgba: 4292585309
+    rgba: 4285899204
   - serializedVersion: 2
-    rgba: 4282800335
+    rgba: 4284885196
   - serializedVersion: 2
-    rgba: 4291793979
+    rgba: 4284765520
   - serializedVersion: 2
-    rgba: 4286598406
-  - serializedVersion: 2
-    rgba: 4280228705
-  - serializedVersion: 2
-    rgba: 4289493554
-  encodedCells: S1:4:4096:D5E756FB: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
+    rgba: 4291159027
+  encodedCells: S1:4:4096:D497D61A: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
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 00000000000000000000fffe000000000000fe00ff00000000
-  conveyorDirections: 00000000000000000000000100000000000001000000000000
-  conveyorBucketCounts: 00000000000000000000000300000000000004000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: journeys
+  artTheme: ordinary
   campaignSeed: 16030856
-  displayTitle: Red Kayak below an Ice Wall
+  displayTitle: mosaic artist assembling a large blue peacock wall mural in a sunny
+    courtyard
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
-  keyGates: 0
+  keyGates: 1
   linkedBuckets: 1
-  largeBuckets: 0
+  largeBuckets: 1
   alternatingCrates: 0
   swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
-  bucketSettingsOverride: {fileID: 11400000, guid: dc08bec929f24e549baad83d3bfb4308,
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: b314976ceb1854f4dbfa5dd5bd4e8336,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0422
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4285029437
+  - serializedVersion: 2
+    rgba: 4287212765
+  - serializedVersion: 2
+    rgba: 4285432239
+  - serializedVersion: 2
+    rgba: 4291156202
+  - serializedVersion: 2
+    rgba: 4281028968
+  - serializedVersion: 2
+    rgba: 4280844259
+  - serializedVersion: 2
+    rgba: 4279312936
+  - serializedVersion: 2
+    rgba: 4279641439
+  - serializedVersion: 2
+    rgba: 4280498094
+  - serializedVersion: 2
+    rgba: 4283328645
+  encodedCells: S1:4:4096:836C245E:RZXPd9o4EMf/BrXl5S1H2bglt0WkKb7VVmiTWwiDs74tJWrZG5vninJrExaRW+KWWNzAcZzqr9yR2b4VFx6f+fGdkWYgZEJIdDEQDREbY3zz/9l3nPD5qUQO0YWAR+O3NePG5MWOn1CHEkIkIaeWF4alIecPxvzi3KV1YuMTuIigWKdpGFQG4i/Lj7jbsvwUBUjwDjLmsPA7Jhjrsajic6dW+V+W8UeYX1ketkOjtRYiN/tBmxkMTiaN0lwMQLGUsYCnLE31ymubBndZbrmsb2MQ8E1p1gr20yZjTIhhDNyhbctPSRQnHtw8nfRf8rSj8fNhLA5ko+W+IB+R1zYAXm/9FEv4kS01u9Oo8HH26pn7nEQJIX9uehcNWGu9dG/UldZOhgof5wENXpDoM9nbbAzASk21vluqZafDONfDvI/NeEYA/q6RJ3PQzBRGuFOZ0hrraKePccBdFJ+QTK96c5WdR4vsRyfVWB4LdXoS7/PgLZGTr9iPcZJ9O5fqfI6ZUT8L+bWJCx5gdRUWC5VEyVTO57o6HafT71HOwwm51Tob32XnIAWe5N5Sl7Hva0dwlxOCVWWvmvryo8VihRxzpG22Xo27nJONzlR2rL0pFTsDbJBmaTtf65VAfqvVNAvvrtQOeys4T/Uxt1x73jPkS9lpaoUaxUrfCfElOWLtHz8f1uOx8DgWP5UauRh73rKwRgMdtHnI3U9iPHqBXC06VpMYiwGgiFVjcNF0Oed9Mb7jcr1U2FGdCeSfo33tDb1o0A2w91ysKCe6wnhWVh0dCfEZoIFXx/loJbrkdmmh0qulld8N0KhgFOOjgRh2sb225U/Vm8RX5Xri4pBZbzQQItjcWvdsIcfjT+juYYHygFEaBA+W7/qrdXm/8/c8Ic4PWQP9McbI8q8q6/yU9xrbsTM4pz4+7R5e38jej8T8FV9psbI2Cfpz9wG6fNR9Yefn9jcpZVWjjTCIXmJ+7g481MjJqbQTEuX32EDbAvEHJJETVPVZbudvkphkofUXocVyGsGAnuHTsS12d7yWGIkKpihORpAALoaAY4td+h8vTFSWMuqKf5IEokYLOUY4+8VJGcuDKEKVCUAJPeTWwP0VH7mfyxyxBBkcgWQW9wvuWF4je4cGBVwCTlkSHRXBFv05Ny51t5V/Ynli4rmCsnEEwf4W9ZmTgNJWSSbPSa00+WxmZsZA4p+99HtFo1+YkNKTwPo/JwfGTw7zGSZ48J137hkuuwL3W15ws7UryMZHXpQIwhO3D5Ab8969njO7X0hRIi/NbK9ewgnuSCiA4Xj6Ny1e8T3keWlOk/ppQbCtEB+Y2IC5McZWP9nDdBgQItg07NN6gCPcolYE7rc9VFgCBqjXTmEWuDh0D7GPHBMwH3uKPMKVnPs1AEPbAgNAEMcFFuX7VX8wft2YelkYklf3+nIbx3DgM2PIpOq/5bKUZMOqV0F36S3H4w9Fa4M/lJM98PnbIRoUBfrbJV83dEhfi9f8wTNxVIN6MMJ31wc02P1NABSZonQoPGN+J8bnXWyQ28qOoeIwd5R6wz68celZEXdM3bf5h3eaj7wtcnwoiNkbc/O+dw4dlr+ldvS+d8LRQNBXbqEKyy+TwswwUJ7TFoYfrlh63LbPbK6Uwv+Ds7iYbRb4Ld8yHvQBZ6ppZ7CB2MfwaioXUzn1HWdrcO3a+RnyoReE0+nhJSvXS70EbHWUOY5Dr8euZx8gdbWTqMMFxsg6VzCVeCVYIHdxsoNqfNIwyXT7CldQ57tcmOn0XbS/tXk5pe6oC4edRL2iN/Pdirpe5g7lTUrpmQNBaGVQpcBq01mTDj2c60v1FF41XRvAnkCpqcIal5l2Wi3yhjlbH5dZ75gHbmXwLw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 44098228
+  displayTitle: ranunculus bouquet
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 19354454dd7699f40b57d2109e2fb422,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

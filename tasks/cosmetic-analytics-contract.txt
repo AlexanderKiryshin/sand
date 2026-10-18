@@ -1,0 +1,7 @@
+cosmetic_acquired: a new cosmetic was granted after a gold purchase, rewarded bonus, no-ads bonus, confirmed individual payment or confirmed bundle payment.
+Parameters: cosmetic_id (stable name key), cosmetic_category (background/conveyor/casings), cosmetic_index, acquisition (coins/rewarded/no_ads_bonus/purchase/bundle_purchase), product_id. Existing level/attempt context is attached by Analytic.
+cosmetic_selected: an owned cosmetic was applied and changed the selected item. Parameters: cosmetic_id, cosmetic_category, cosmetic_index, plus existing level/attempt context.
+Previewing, failed/unavailable payments or rewards, restoring purchases, and repeated ownership grants do not create new acquisition events. Applying the already selected cosmetic does not create another selection event.
+Bundle purchases report only their newly owned backgrounds. Existing buy_inapp still represents the confirmed payment; do not add acquisition counts to payment counts.
+Both event names use the existing WebGL Metrica/GameAnalytics adapter; Editor and preview do not send production requests. Metrica goal configuration and production receipt have not been verified in this change.
+Checks: Tools/check_cosmetic_analytics.ps1, Tools/check_ad_analytics.ps1, Tools/check_web_analytics.cjs; native Unity references used for Editor and non-Editor WebGL C# compilation. No new player build was produced.

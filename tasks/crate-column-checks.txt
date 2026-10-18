@@ -1,0 +1,4 @@
+PASS: 58 GameScene portrait captures show crates covering alternating full columns: 1/3/5 then 2/4.
+PASS: covers have CanvasRenderer, remain visible when open, and do not overlap the hint panel.
+PASS: 900 fresh campaign runs complete with matching accessibility and conserved color budgets.
+When no open route remains, the next crate tick exposes the remaining columns to avoid trapping the final cup.

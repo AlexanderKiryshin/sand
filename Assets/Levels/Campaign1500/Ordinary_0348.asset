@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0348
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284594652
+  - serializedVersion: 2
+    rgba: 4293302632
+  - serializedVersion: 2
+    rgba: 4282550432
+  - serializedVersion: 2
+    rgba: 4294032536
+  - serializedVersion: 2
+    rgba: 4292921794
+  - serializedVersion: 2
+    rgba: 4289839313
+  - serializedVersion: 2
+    rgba: 4293125611
+  - serializedVersion: 2
+    rgba: 4282403917
+  - serializedVersion: 2
+    rgba: 4288979112
+  - serializedVersion: 2
+    rgba: 4286282885
+  encodedCells: S1:4:4096:0A595C87:ZVRNc5tIEP0NU1QRb44Ujiu5ESoO8W3ZwSpdHcYY37SKB8NtY8FYurlYWSNu/gBruDmKMDO/cnskp7Zqd3QQ8Lpfd7/uHowFnDomoW1ZVkgsm5DI2p2QMIaHj4BLQfQHPwwsS+P7W/yEEIIfh49NQ8V05+LD12A/D+DffsVFTGjXCevXwZbt26/PEcGWoPEFFVLF1v+OD/h9UFPIQLXi4D/oCZtExPYBTFMpwYL867jNjkF836/BgIpGKJX9Yti3Iwv7mOj8TrBIhchkK5U6eHXGOGcvONA4kGBBaQP8UrVbA3uCE0opG0Kpfs6egD8TEtyVeq/jYp9RucoODywf8GgrsBAtJKA+aPqCZY2ar9gxxoAf+BciTinUCAwz7e/TjseyYoMwtHEeTRiEaIFfVwDuef4kV3UrrwcYDmEha6DAdFuAgpBhIqtWxjU53uEkggxlK5Y6AZB/0qhlDO9trvEcegz8tGkliAwKEPK06uFRtu0WBxEZo1h0Ogc5xZh27UrUVV1xHYCxCPABblLatkq1Axwr3op6iEOOQ42TnLH9GmZEKShiimuoJBZDjHscAA4oYyeRSIEXLNT0Qp4RIYc6OODRFp+wpNFNVq2aRZzEtdgWB0dH1ydqBAVioDjXXZtuxcE51tlH8MPbADpFFeuuHmvyCQM8z0kEFYSnogEC0ICQGIJC7oDrEYIKc6gwvIApUH0vSF3Lgunc2RbXJjoc4EC/guKFgMXBQR6xfIeTfIAH4UUn1bIlAtKfMRyy3YDBEEN+A8glyLuqj4kQ5KJhYR6FOv2cbFs0YNoj2kDyG+gtkVMShLAeO/b8VYQakLpuod3VbTOD2QN9tgaMJcWCxC0BdsFbmSXLZkagBrJvgQ8oQLuzOtapg8qyK/ssrrSCsMYXBApJWnUW12p7F1R8vWnPyYxghmFbUhtwqqqY1HoHWrVeEzLXeMgGJ5Z1b+VF0i37ltRa/sx1T0mwOM/PySRndnBPBt+yolnqqVD92NUwWahoXmjdLV9ENqWqVzMpJO/V+pSAYItZ9HLNYDhgYVgBuCoK1UrOr0Eu0CuJFmo7mrAwU1jWLDvPhao4P813irDFpX6Aq662fb3OARZHC6X2J2TX0/nOTkKA0wk9PT1+VHGlHvSlqOeFEd3bayZt6/tBnkZho9qNOjq2g9z2MYuiHAJdXEf4h74xwghv1KY9+kr80IbrL9xObT73sPVR34V+HizPNgqWhuB9Gy5IGN3NNf7b+9l5f1g+KMj6083XAbYDuLeswIbV+snxI5dzb0T9E+t7MQs202Ro25Z/rPfuSIgez3nJ+epPp4BLZBZlAabD90AdBseW97h0b0EP13NEU8AVkDHo51AM0+P31s/ffa+quLHiPed7d/egJ9jMInXwmHYfelytb4G59zjnnuc8vG0YeymeikR2meyoN+Zlyb0+VYfI5J479jhbiCQtnlIzU13J1aq6lMo8RGOJbvnejXtZLK6fpowVWZZzxdeHCDkm6syRQkvOb64v01sAqUlZwkwTjcCVQjTzoXM9XvYVF2lWFGysLUx0gxqnQ4gqw11X6BmNEDLfIjqiNDGRyZJnx3XWD5/Ko9JwS8dAFGwPj9JzCqiB3pgQ4fm3d/et6yLXQOYINS+iP+pGFLmOg76hyyNnZMiPDzSGD6M374xUIXc5Hv81fqCK7rkJOkBZ/8Xo+i9XheG6hmsiAym+yhzjZu0aY1SiB88x2g8f3fEhN7xlqpzRj/nhJ3e9NqB0VDpqz3FHl5535Xn0ikKb+r27L+7ncWU4CBmGc27eJTd7sCtFnszcsi+vEDikb+7ijrvw8ta5+lzG8+qhXWWl6954hq6FGiP3uTR4ajjjQ7dUsuz/AQ==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 36348282
+  displayTitle: pegasus above a meadow
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 7f57c469817721d4588a9a06fccb18ca,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -28,6 +28,7 @@ public sealed class BucketMechanicVisual : MonoBehaviour
             section.rectTransform.anchorMin = Vector2.zero; section.rectTransform.anchorMax = Vector2.one;
             section.rectTransform.offsetMin = section.rectTransform.offsetMax = Vector2.zero;
             section.type = Image.Type.Filled; section.fillMethod = Image.FillMethod.Horizontal; section.fillOrigin = 1; section.fillAmount = .5f;
+            section.enabled = !bucket.IsMystery;
             section.transform.SetAsFirstSibling();
         }
         if (bucket.KeyId != 0 || bucket.SlotCost > 1 || bucket.SwapPartner != null || bucket.HasSecondSection)
@@ -48,19 +49,21 @@ public sealed class BucketMechanicVisual : MonoBehaviour
                 badgeText.text = bucket.SlotCost > 1 ? "2" : "1|2"; badgeText.color = Color.white; badgeText.raycastTarget = false;
             }
         }
-        if (inventory != null && (bucket.GateKeyId != 0 || inventory.IsCrateCovered(bucket)))
+        // Crates belong to board cells and are rendered by InventoryCrateRowView.
+        if (inventory != null && bucket.GateKeyId != 0)
         {
             var go = new GameObject("BucketCover", typeof(RectTransform), typeof(BucketCoverGraphic)); go.transform.SetParent(transform, false);
             var rect = (RectTransform)go.transform; rect.sizeDelta = new Vector2(100, 100);
             cover = go.GetComponent<BucketCoverGraphic>(); cover.raycastTarget = false;
             gateLock = MakeImage("GateLock", go.transform, GameUiSymbols.Get(GameUiSymbol.Lock), Vector2.zero, new Vector2(47, 47));
-            // The crate row moves even when a cup underneath still needs its key.
-            coverAmount = (inventory.IsCrateCovered(bucket) ? !inventory.CratesOpen : inventory.IsGateClosed(bucket)) ? 1 : 0;
+            coverAmount = inventory.IsGateClosed(bucket) ? 1 : 0;
             coverFrom = coverTo = coverAmount;
             coverElapsed = CoverDuration;
-            cover.Show(inventory.IsCrateCovered(bucket), coverAmount);
+            cover.Show(false, coverAmount);
         }
         LateUpdate();
+        var focus = gameObject.GetComponent<BucketColorFocus>() ?? gameObject.AddComponent<BucketColorFocus>();
+        focus.Initialize(bucket, inventory, body);
     }
 
     private void LateUpdate()
@@ -69,9 +72,10 @@ public sealed class BucketMechanicVisual : MonoBehaviour
         if (section != null)
         {
             section.sprite = body.sprite;
-            body.color = SandDisplayColors.FromPalette(level.GetPaletteColor(bucket.FirstColor));
+            section.enabled = !bucket.IsMystery;
+            body.color = bucket.IsMystery ? new Color(.3f, .36f, .48f) : SandDisplayColors.FromPalette(level.GetPaletteColor(bucket.FirstColor));
             section.color = SandDisplayColors.FromPalette(level.GetPaletteColor(bucket.SecondColor));
-            if (bucket.CurrentFill >= bucket.FirstSectionCapacity) body.color *= new Color(.55f, .55f, .55f, 1);
+            if (!bucket.IsMystery && bucket.CurrentFill >= bucket.FirstSectionCapacity) body.color *= new Color(.55f, .55f, .55f, 1);
             label.text = bucket.IsMystery ? "?" : bucket.RemainingForColor(bucket.FirstColor) + "|" + bucket.RemainingForColor(bucket.SecondColor);
             label.fontSize = 21; label.color = Color.white;
         }
@@ -92,8 +96,7 @@ public sealed class BucketMechanicVisual : MonoBehaviour
     {
         if (cover != null && inventory != null)
         {
-            bool crate = inventory.IsCrateCovered(bucket);
-            bool closed = crate ? !inventory.CratesOpen : inventory.IsGateClosed(bucket);
+            bool closed = inventory.IsGateClosed(bucket);
             float target = closed ? 1 : 0;
             if (coverTo != target)
             {
@@ -102,8 +105,8 @@ public sealed class BucketMechanicVisual : MonoBehaviour
             coverElapsed = Mathf.Min(CoverDuration, coverElapsed + Mathf.Max(0, deltaTime));
             float t = coverElapsed / CoverDuration;
             coverAmount = Mathf.Lerp(coverFrom, coverTo, t * t * (3 - 2 * t));
-            cover.Show(crate, coverAmount);
-            gateLock.color = new Color(1, 1, 1, inventory.IsGateClosed(bucket) ? (crate ? 1 : coverAmount) : 0);
+            cover.Show(false, coverAmount);
+            gateLock.color = new Color(1, 1, 1, inventory.IsGateClosed(bucket) ? coverAmount : 0);
         }
     }
 

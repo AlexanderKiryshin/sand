@@ -16,41 +16,74 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
+    rgba: 4280954129
+  - serializedVersion: 2
+    rgba: 4294901502
+  - serializedVersion: 2
     rgba: 4278190080
   - serializedVersion: 2
-    rgba: 4281218361
-  - serializedVersion: 2
-    rgba: 4283480559
-  - serializedVersion: 2
-    rgba: 4278338163
+    rgba: 4279118151
   - serializedVersion: 2
     rgba: 4278279105
   - serializedVersion: 2
-    rgba: 4281699557
-  encodedCells: S1:3:4096:070DA803:jdQxbBtVGAfwOZSlF4NkuQx2P19shAW9wRXx5trOvXOJxE1EngpHocLPUTNEQl3TuIZGsl+sqFaUAekyZGsd9KIOLFWFdEAllAnzqgzAiKdKnft/785OBgYk6+nu5+/efe973zvJlfyfv+mL//YTPrtex7j67Pnmo+e4eC35fuw/8f2Dmld1shH83ivJM+zP+MFWVVBa0KgftNcRSkzEriwRMIFb2sX9ztybn4mgKSiCt1VZxH4mS1lE/iqCNXhwvJK4knmKJMXzRO1jcyGnmIiyMeqfkzn3+3TuYuLqEatQe/2HB/0Yb/7b/w35r4gz+Lt4Szc0YT/ypX/kTmZlQy/42UflLyq96YMUX3pyo8LkzpXrGy8lb1mOna5IXhnzyl13+eZfnK53CIutOvbhH3ENV2vLX7bXyx8LespbrmMvJkXerC3T31wv4Sm/xJzy3KsVGnHV2KCv1CXm3bVmm7K4lNPeUbfVD67vfz7zUgOlgL90nU9dEbTVWdvs7HumpI3OlZPSApbZVq9vY+MmctqnUaAaYzrRRX7IL3gUZNgY+Ri3Iz0P9Xg3YJ2r8KiEsjzhHzJPSYUcu8S2Cc4ceI+vNxF/8PvxdMu4MKPf4/daXyv54ttjHS/mPuaqfEfJT7CEbjwDsUZ27tx4RMZt+LXz/tw1Isy//sKdmR9sJT7RT+kkYx/Bnexkj7d0VoG3n9R5hAZwzOX2EHVzT2PvZHpzT7FxYJ3KG6fltLIXB8Su8ZbgSryNt7zz8yb6JK1WMUaFIhOdb7qX4YdtJdxA8KbuomKnJQL1fuKyFsjY61yNSdnaj+DFCL1Ug+fhvGlfbsZemiTxxtX2wNNtHy+saeI/mIxpIgcFeBDHf4/44v0SDtSa0M7yODWYv+eKkA7hOG4DQkwxEkhV90AYPua4aYoenHmRTA5OGPa1oxkIa/d+mflh2A/0vsMZtsB4Pcd8OnrMjQcpuDBeQ4D/SFLsFsthHLdfSRTf84U+y/mioEVm4XVIzULxPe90L2mVXVcUkLazkEcCbO5BpjFEqnkh9Ki3Gjh0vZxyejpV82y+fgsVMU5rcBa7dUT6a4PXFXQkNKfdF8OtOCAsHOVxXnI6Jap7QiQfiqE7xmyULgpUuM78avJVGWIj6roHBjWdqucmHtbMX8zu1b4bkr1w4UOUMuOtlIcHLnygfGSSN6v2rfPg0PVn1/Zb82A0HHkieZeTveBvAA==
+    rgba: 4285045955
+  - serializedVersion: 2
+    rgba: 4278271433
+  - serializedVersion: 2
+    rgba: 4289044106
+  - serializedVersion: 2
+    rgba: 4279788344
+  - serializedVersion: 2
+    rgba: 4284373249
+  - serializedVersion: 2
+    rgba: 4279463255
+  - serializedVersion: 2
+    rgba: 4289956892
+  - serializedVersion: 2
+    rgba: 4281030955
+  encodedCells: S1:4:4096:45967FA2:jZQ7buMwEIbPQKgLoIYB7DqhYQKBXJmwqlzCNug6oSA2ewAVuYSRZiH4Fi42hbcgkMoI77Izw9EjtgPsBIgkfjP/PEwyxmSnHyz+H/97E741Hwi/btPTqWkajP2CV8URH/QojiOOyQvfrZCD00m+afJADoXXvIAOhfcpumlE4r80CtAKODj8asbc7UggWeF21ZHUPt5EDMRtrY8995u6+xBCYAvOrnzPXWnrPwNHAWdtn6Dwuyvura07Aee3kG3g+xgXxPXJqeJY+NIip1EdkLdt6+3Keq+gMaWQW02NHlrggJ8g3laezEF6iKfu2xvc++2K+W/igrnpueX62hGfW9/bKvED8z3xauDmBl8NGBpA3raDfmVH4VABzOLQ8T1yM8a+9Dph5q35Fg723vYcHZYXuGR+x1z52/HEoUD3A4/E90+X2OsxFy9XnATO5xhz5FfyxM90OAA/kKLiItNTIw954i6tLyvyS1/vwAXwkKd4AMvkRly/t5A7pwzAp70wpwH9mIfEoXwpaexgkGMqX73PzsDT8XKA5XqoHb5efca94e72O1oaMMhp5nlc6LTEDlN61xrrC9BeXKipnPS8Jl+p1R2J58CdXCOX014dnLOUHOfzIi38SeqBSrV2gjwE5ivY8t+5qTOKpiJfFHDbc8B25ojn5KDUDB0mEocnJbwuZyrD2aT5QQdmsp5PpAKTj1DMjKtLKeAXMBB033G7MnxvpPkiN6hPHHBluLcgSAJ4ifxRqXvkXjOP6Zk/wPkBLh/vpdzAUbzkArbGDhzmG0kXxSwlFnk3RFXhtWLnG/gHQ8gEb83AdVICmNEas5cmEyweIt7g8AInlHnty5kYeAx0SBRei2RwEWZdebngn0A8LHEEaKWZMQ8jvng21Y7CjfnsJzeeojGUwBsTL3lMvEKHFJ4W874DtGcUKBl3Z5MHxAoY3n2FIC54NNvaXAZ/c9h+3sKCd8NVYnFL4xv+Bw==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets:
-  - colorIndex: 4
-    count: 1
-  - colorIndex: 6
-    count: 1
-  - colorIndex: 3
-    count: 1
   - colorIndex: 1
     count: 1
   - colorIndex: 2
     count: 1
-  - colorIndex: 5
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 12
+    count: 1
+  - colorIndex: 13
     count: 1
   bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
   conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: ordinary
   campaignSeed: 7319
   displayTitle: 
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
   mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: b1ff847302b41d04f811c0699932397c,
     type: 2}

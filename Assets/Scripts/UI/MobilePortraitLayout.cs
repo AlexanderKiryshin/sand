@@ -9,6 +9,7 @@ public class MobilePortraitLayout : MonoBehaviour
     public const float ReferenceHeight = 1920f;
 
     private const float HeaderHeight = 100f;
+    private const float ControlsRowHeight = 88f;
     private const float HorizontalPadding = 32f;
     private const float SandWidthFraction = 0.96f;
     private const float SandMaxSize = 720f;
@@ -76,17 +77,11 @@ public class MobilePortraitLayout : MonoBehaviour
 
         LayoutHeader(margins);
         LayoutResetButton(margins);
-        RectTransform skip = FindRect("SkipLevelBtn");
-        if (skip != null)
-            skip.anchoredPosition = new Vector2(-margins.right - 30f, -margins.top - 100f);
-        RectTransform levelsBtn = FindRect("LevelSelectButton");
-        if (levelsBtn != null)
-        {
-            levelsBtn.anchorMin = levelsBtn.anchorMax = new Vector2(1f, 1f);
-            levelsBtn.pivot = new Vector2(1f, 1f);
-            levelsBtn.anchoredPosition = new Vector2(-margins.right - 30f, -margins.top - 170f);
-            levelsBtn.sizeDelta = new Vector2(168f, 56f);
-        }
+        LayoutControlButton("LevelSelectButton", margins, 0);
+        LayoutControlButton("RewardedSkipLevelBtn", margins, 1);
+        LayoutControlButton("SkipLevelBtn", margins, 2);
+        RectTransform coins = FindRect("CoinHud");
+        if (coins != null) coins.anchoredPosition = new Vector2(-margins.right - 140f, -margins.top - 56f);
         // Fit the completion card on narrow phones and short editor game views.
         Transform completion = transform.Find("EconomyLevelCompletePanel/Card");
         if (completion != null)
@@ -100,7 +95,7 @@ public class MobilePortraitLayout : MonoBehaviour
         LayoutHintOverlay(bottomBase + boosterReserve, usableWidth);
 
         float hintTop = bottomBase + boosterReserve;
-        float contentTop = ReferenceHeight - margins.top - HeaderHeight - TopSectionGap;
+        float contentTop = ReferenceHeight - margins.top - HeaderHeight - ControlsRowHeight - TopSectionGap;
         float middleStackHeight = ConveyorHeight + SectionGap + EstimateBucketAreaHeight() + 42f;
         float maxSandSize = contentTop - hintTop - SectionGap - middleStackHeight;
         float sandSize = Mathf.Clamp(
@@ -120,6 +115,16 @@ public class MobilePortraitLayout : MonoBehaviour
         float bucketAreaHeight = EstimateBucketAreaHeight();
         float bucketCenterY = belowSand - ConveyorHeight - SectionGap - bucketAreaHeight * 0.5f;
         LayoutBucketInventory(bucketCenterY, usableWidth);
+        // A tip above the boosters can hide the entire bottom bucket row.
+        // Keep the board usable by placing overlapping tips over the painting instead.
+        RectTransform hint = FindRect("Hint");
+        if (hint != null)
+        {
+            float bucketBottom = bucketCenterY - bucketAreaHeight * .5f;
+            float hintHeight = hint.sizeDelta.y > 1f ? hint.sizeDelta.y : HintHeight;
+            if (bottomBase + boosterReserve + hintHeight + 8f > bucketBottom - 8f)
+                LayoutHintOverlay(contentTop - sandSize + 12f, usableWidth);
+        }
         // Debug LevelSelect panel is replaced by the in-game LevelSelectUI menu button.
 
         BucketInventoryUI inventoryUI = FindObjectOfType<BucketInventoryUI>();
@@ -188,8 +193,17 @@ public class MobilePortraitLayout : MonoBehaviour
         resetButton.anchorMin = new Vector2(0f, 1f);
         resetButton.anchorMax = new Vector2(0f, 1f);
         resetButton.pivot = new Vector2(0f, 1f);
-        resetButton.sizeDelta = new Vector2(200f, 80f);
+        resetButton.sizeDelta = new Vector2(72f, 72f);
         resetButton.anchoredPosition = new Vector2(margins.left + 16f, -10f);
+    }
+
+    private static void LayoutControlButton(string name, SafeMargins margins, int slot)
+    {
+        RectTransform button = FindRect(name);
+        if (button == null) return;
+        button.anchorMin = button.anchorMax = button.pivot = new Vector2(1f, 1f);
+        button.anchoredPosition = new Vector2(-margins.right - 32f - slot * 88f, -margins.top - 104f);
+        button.sizeDelta = new Vector2(72f, 72f);
     }
 
     private float LayoutBoosterBar(float bottomBase, float usableWidth)

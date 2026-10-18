@@ -16,48 +16,50 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280628885
+    rgba: 4280694166
   - serializedVersion: 2
-    rgba: 4284252061
+    rgba: 4283594648
   - serializedVersion: 2
-    rgba: 4280233279
+    rgba: 4279310370
   - serializedVersion: 2
-    rgba: 4287475660
+    rgba: 4285239994
   - serializedVersion: 2
-    rgba: 4281681755
+    rgba: 4281352791
   - serializedVersion: 2
-    rgba: 4284847301
+    rgba: 4291881718
   - serializedVersion: 2
-    rgba: 4287137418
+    rgba: 4280167229
   - serializedVersion: 2
-    rgba: 4283196536
+    rgba: 4286151811
   - serializedVersion: 2
     rgba: 4278453513
   - serializedVersion: 2
-    rgba: 4292452994
+    rgba: 4292387459
   - serializedVersion: 2
-    rgba: 4279310371
+    rgba: 4282867313
   - serializedVersion: 2
-    rgba: 4291158768
-  encodedCells: S1:4:4096:0F21E2E0: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
+    rgba: 4287476692
+  encodedCells: S1:4:4096:68E71DE6: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000ff000000fefffe00000000000000000000000000
-  conveyorDirections: 00000000000000000000000100000000000000000000000000
-  conveyorBucketCounts: 00000000000000000004000300000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: wildlife
   campaignSeed: 30378729
   displayTitle: Echidna beside a Flowering Banksia
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 8
-  sectionBuckets: 0
+  sectionBuckets: 1
   keyGates: 0
-  linkedBuckets: 0
+  linkedBuckets: 1
   largeBuckets: 1
-  alternatingCrates: 1
+  alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
   mysteryBuckets: 0

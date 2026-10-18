@@ -18,7 +18,7 @@ public static class CampaignMechanicsChecks
             level.palette = new[] { new Color32(220, 40, 50, 255), new Color32(40, 140, 230, 255) };
             level.cells = Enumerable.Range(0, 64).Select(i => (byte)(i < 32 ? 1 : 2)).ToArray();
             level.campaignLevel = true;
-            level.beltCapacity = 3;
+            level.beltCapacity = 4;
             rules.maxGrainsPerBucket = 2;
             var inventory = new BucketInventory();
             inventory.BuildFromLevel(level, 1, rules);
@@ -40,12 +40,12 @@ public static class CampaignMechanicsChecks
             Require(BoosterMechanics.TryShuffleInventoryColors(inventory), "Shuffle runs");
             Dictionary<byte, int> after = Remaining(inventory);
             Require(before.All(pair => after[pair.Key] == pair.Value), "Shuffle preserves remaining sand per color");
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < ConveyorBelt.MaxOnBelt; i++)
             {
                 Bucket next = inventory.Buckets.First(b => inventory.IsBucketAccessible(b, level));
                 Require(inventory.TryTakeBucket(next, belt, level), "Available slot accepts bucket");
             }
-            Require(!belt.CanAcceptBucket() && belt.IsFull(), "Three-slot level enforces capacity");
+            Require(!belt.CanAcceptBucket() && belt.IsFull(), "Legacy four-slot level now allows five buckets");
             Debug.Log("CAMPAIGN_MECHANICS_PASS: overflow, frost, wrong-color rejection, partial recall, shuffle conservation, belt capacity.");
         }
         finally

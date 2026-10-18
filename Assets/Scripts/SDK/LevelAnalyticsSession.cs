@@ -4,6 +4,7 @@ using System.Collections.Generic;
 /// <summary>One attempt, one start, and at most one terminal outcome, independent of UI panels.</summary>
 public sealed class LevelAnalyticsSession
 {
+    public const int FunnelLevelCount = 30;
     private readonly Action<string, Dictionary<string, object>> send;
     private readonly Func<double> now;
     private readonly Dictionary<int, int> attempts = new Dictionary<int, int>();
@@ -37,6 +38,14 @@ public sealed class LevelAnalyticsSession
         data["moves"] = moves; data["boosters"] = boosters;
         if (values != null) foreach (var pair in values) data[pair.Key] = pair.Value;
         send(name, data);
+        // Stable goals allow ordered level funnels before parameter values arrive in Metrica.
+        if ((name == "level_started" || name == "level_completed")
+            && context.TryGetValue("level", out object value)
+            && value is int level && level >= 1 && level <= FunnelLevelCount)
+        {
+            string outcome = name == "level_started" ? "started" : "completed";
+            send("level_" + level.ToString("000") + "_" + outcome, new Dictionary<string, object>(data));
+        }
     }
 
     public void Move() { if (active) moves++; }

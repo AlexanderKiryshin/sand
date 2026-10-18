@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0797
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4288069087
+  - serializedVersion: 2
+    rgba: 4291682542
+  - serializedVersion: 2
+    rgba: 4280044431
+  - serializedVersion: 2
+    rgba: 4286679198
+  - serializedVersion: 2
+    rgba: 4284061140
+  - serializedVersion: 2
+    rgba: 4283392644
+  - serializedVersion: 2
+    rgba: 4279047723
+  - serializedVersion: 2
+    rgba: 4280762215
+  - serializedVersion: 2
+    rgba: 4281298620
+  - serializedVersion: 2
+    rgba: 4279577169
+  encodedCells: S1:4:4096:F9F6BAAE:TVXPV9tIEv4bWnZ7x7mpY+cNc3MKBUk3e3scdm9CEYu4OYhGw5UJ7fhGHESPbqZjQvsGGpDov3JLnsy+Lb0nvaevq7rqq19FLvIp/6iUXUhrS9uUSqnpNEloMhZTl10KIQb8i2psK6pEfKk44lE64dylCAvOlSptObelapqyAcQ/oIEDkvlUnIkpH6DNeoH6Bao3SvEeMYYa+uSfsAytsC9q/09Z28WsNaEIoe9Sg88orPLBdMDYFzudFjafPyBuc0oIcVexRx9U9fyGc8Ympdp/LtXPzxhCc96jxCErSFgpcrydo4FzVe+L7BcprVLREc0FmiAsEd3We8YYOvjvTBRS9n8OkqMmb1nIhehNRca7iP/p56LIi/lZ9LaTHhWn6CXGgcEi3up/XLZ46Xt/BCr6KUlQfV6quWqmYnv/pES8Z++BesYklFwpqcqiaKnOtnht7XGnr329NGZ0RUZK5vOyqJdT9J8wxvGuXTDaMWuTrLV2S6nmYVUDxveBjAeTpVK71H1JKuQNuY3pYosvMyFP0YOPcPLTKNbHkYc40eexe5nLupGNEJctQ6POHiOkAwnCQQzA+uxG3kjEkcH3GX9cP6RuvKFOv/8IURAkyfBxIZFOTD/yVAS/mKc0DNNbSiGgt4SZltNF3RRoIRcs2nkKSvAO2O2K3LksYi3nUPqARBW5gNcmJc6IJk6SDl3MDCbQcZTvg5TI0eBp74ANRx4xThQz5rS5Q3eVDyBFIVwSmL5DIv+100KERIS5jjtUvk6kzIW71dqqEcdlg9lMkavwFQFIvXmCpewg5rYgqnZcpzxM06oCF5SvEJ7+hZAZmfWc5pVujIUNeODWN3WZYJG0aHF1lSuAa9/bSIi94xCCtqikOBVv0Bv/ZHURhv59HGrjeZCmvtdhWDMo8fDq3gahDvWrh2Tle8YLzUxrCJ27truS5OToKdyrvpsXL4T0Mnw5xsvN/Tp2J5xiIyaj8LfD4yCAq08mfTKbYBOoTbCsOu64y3uIA3gjDeuXGOL0yEur40Rp2AyHjPMuPxTvRjEYU4D3FEJnubGgI0rTNkccT4g7cgBo87oMvQCC1CR9bL7IdR4IdcgZT8aTWzCforWHbK6I22cpUjUm13JJ++Pu+ITzXdDrAKI0+UEzrV7fvQGohpgjh7/nb6tYJzvEPSArLEEVQIUhAMABdZ3fOOfftHHdW0wisSuAQC9DbxPcY41SOiuweHex30k0fIR/QmqtjrXRaRWE31nQd9nvcqrXw2i2PDc1VLoDGr4bE9u13jiR47pfc9759h/wQ2wurZf3EFwvdYyh2s3bPupnGd/VJr5AfyAA7Ay41ibd+EcX0cp0XP475+8qnaaou2cCDca7aA1VfpisCbnuy/eTb8bXAeJ49UtV6SCw872XfxwNHdadDNr44k348kkHlUbrVRXKz2ecUVi7mIQxF9mzpqDTZQx/1Ga4p6c4LxmLL4yrGeE8E3eV0U8vQbgoPwf9CZ90mcNYsIJ0NuYOlzxE5y4WVp8/j9ewww7Za/brB1s9vvk44cPJhD9D+Fn3Z2TChd9J+4KxbOfWEUAnzpCxQUajvPu2P2xblsXu9sPuCP8Xwm53w3B6Mf683sHPQZqyv4V3h8zppTzbHwyy9+vhj9/j7XvCu6kzycqEyjNexC532OjORV8GCDHunPacCbc2To5wxuAELUz618XY5UBdJC27tDWWDZWt3LRTvpWv27cQWSbt4h5rny7k3/JV5QXfL1UpxFw2jT3CFTd0FvX/DszlDWJqq3Fjt9pJYu3Cyv+TSylrnNU22Ur0a7sX5aL+ccbaWtbKqtY2Cvoxx5WJsGq3Z4MrsMahgEPlOqWRmPayzNqbov1VSly+7YZVsLUsDnEz4fLAOOoyL2yDC8c2JjFLWNPoVByecsGzwzVarBfzGkfwPRanMQEsccvaGd7dHVu7XNjFzWJxY32E9FoHeKB5p9SoN56pqmmW/wU=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 83371603
+  displayTitle: carrot cake
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: e9894e37fb985944b84bf59ac8b2c277,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

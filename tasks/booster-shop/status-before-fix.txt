@@ -1,0 +1,5 @@
+FAIL
+System.InvalidOperationException: Wrong pack label for Magnet
+  at ShopBoosterBundleRunner.Require (System.Boolean value, System.String message) [0x00009] in E:\myProjects\sand\Temp\MarketingCapture\Assets\Editor\ShopBoosterBundleChecks.cs:48 
+  at ShopBoosterBundleRunner+<Check>d__6.MoveNext () [0x00450] in E:\myProjects\sand\Temp\MarketingCapture\Assets\Editor\ShopBoosterBundleChecks.cs:88 
+  at ShopBoosterBundleRunner+<Start>d__5.MoveNext () [0x00035] in E:\myProjects\sand\Temp\MarketingCapture\Assets\Editor\ShopBoosterBundleChecks.cs:55 

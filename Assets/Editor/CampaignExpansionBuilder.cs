@@ -38,6 +38,7 @@ public static class CampaignExpansionBuilder
     [MenuItem("Window/Sand/Campaign/Append 200 Levels and Mix Themes")]
     public static void Build()
     {
+        CampaignAtlasSlicer.ClearCache();
         var database = AssetDatabase.LoadAssetAtPath<LevelDatabase>(DatabasePath);
         Require(database != null && (database.LevelCount == 100 || database.LevelCount == 300), "Expected 100 or 300 campaign levels.");
         var manifest = JsonUtility.FromJson<Manifest>(File.ReadAllText("tasks/campaign-expansion-art.json"));
@@ -77,13 +78,12 @@ public static class CampaignExpansionBuilder
                     string path = Root + "/Level_" + art.number.ToString("000") + ".asset";
                     var level = AssetDatabase.LoadAssetAtPath<LevelData>(path);
                     if (level == null) { level = ScriptableObject.CreateInstance<LevelData>(); AssetDatabase.CreateAsset(level, path); }
-                    int left = Mathf.RoundToInt(tile % 5 * texture.width / 5f), right = Mathf.RoundToInt((tile % 5 + 1) * texture.width / 5f);
-                    int bottom = Mathf.RoundToInt((4 - tile / 5) * texture.height / 5f), top = Mathf.RoundToInt((5 - tile / 5) * texture.height / 5f);
-                    var colors = Array.ConvertAll(texture.GetPixels(left, bottom, right - left, top - bottom), c => (Color32)c);
+                    RectInt crop = CampaignAtlasSlicer.TileRect(texture, tile, 5, 5);
+                    var colors = Array.ConvertAll(texture.GetPixels(crop.x, crop.y, crop.width, crop.height), c => (Color32)c);
                     var settings = ImageProcessor.Settings.Create(64, 64, 12);
                     settings.autoColorCount = false; settings.autoBackgroundColor = false;
                     settings.backgroundColor = new Color32(32, 62, 71, 255);
-                    var processed = ImageProcessor.Process(colors, right - left, top - bottom, settings);
+                    var processed = ImageProcessor.Process(colors, crop.width, crop.height, settings);
                     level.gridWidth = processed.width; level.gridHeight = processed.height;
                     level.cells = processed.cellIndices; level.palette = processed.palette; level.subGrainsPerAxis = 1;
                     level.displayTitle = art.title; level.artTheme = art.theme; level.usesTiles = false;
@@ -176,7 +176,7 @@ public static class CampaignExpansionBuilder
             {
                 Array.Clear(level.bucketLayout, 0, 25);
                 int count = Mathf.Min(wallCount, 3);
-                var cells = Enumerable.Range(5, level.alternatingCrates ? 10 : 20).OrderBy(_ => rng.Next()).ToArray();
+                var cells = Enumerable.Range(5, 10).OrderBy(_ => rng.Next()).ToArray();
                 foreach (int cell in cells.Take(count)) level.bucketLayout[cell] = 255;
                 foreach (int cell in cells.Skip(count).Take(feeders))
                 { level.bucketLayout[cell] = 254; level.SetConveyorDirection(cell, (ConveyorDirection)rng.Next(4)); level.SetConveyorBucketCount(cell, 2 + rng.Next(3)); }

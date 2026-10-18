@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "levels": [
+    {
+      "level": 361,
+      "changed_pixels": 4096,
+      "mechanics_unchanged": true,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0361.asset",
+      "source_row_bounds": [
+        755,
+        975
+      ],
+      "square_crop": true
+    },
+    {
+      "level": 362,
+      "changed_pixels": 4019,
+      "mechanics_unchanged": true,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0362.asset",
+      "source_row_bounds": [
+        755,
+        975
+      ],
+      "square_crop": true
+    },
+    {
+      "level": 363,
+      "changed_pixels": 4096,
+      "mechanics_unchanged": true,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0363.asset",
+      "source_row_bounds": [
+        755,
+        975
+      ],
+      "square_crop": true
+    },
+    {
+      "level": 364,
+      "changed_pixels": 4096,
+      "mechanics_unchanged": true,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0364.asset",
+      "source_row_bounds": [
+        755,
+        975
+      ],
+      "square_crop": true
+    },
+    {
+      "level": 365,
+      "changed_pixels": 4096,
+      "mechanics_unchanged": true,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0365.asset",
+      "source_row_bounds": [
+        755,
+        975
+      ],
+      "square_crop": true
+    }
+  ],
+  "inventory_routes": 40
+}

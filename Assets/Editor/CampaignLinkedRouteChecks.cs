@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -7,30 +8,29 @@ public static class CampaignLinkedRouteChecks
     public static void Run()
     {
         var level = ScriptableObject.CreateInstance<LevelData>();
-        var rules = ScriptableObject.CreateInstance<LevelSegmentRules>();
         var root = new GameObject("LinkedRouteRegression");
         try
         {
-            level.gridWidth = 3; level.gridHeight = 1;
-            level.cells = new byte[] { 1, 2, 3 };
-            level.palette = new Color32[] { Color.red, Color.green, Color.blue };
             level.EnsureBucketLayout();
-            for (int i = 0; i < 25; i++) level.bucketLayout[i] = 255;
-            level.bucketLayout[0] = level.bucketLayout[5] = level.bucketLayout[10] = 0;
-            rules.maxGrainsPerBucket = 1;
-            var inventory = new BucketInventory(); inventory.BuildFromLevel(level, 1, rules);
-            var a = inventory.GetBucketAtLayoutIndex(5);
-            var b = inventory.GetBucketAtLayoutIndex(10);
-            Require(a != null && b != null, "Two cups on the narrow route.");
+            for (int i = 0; i < level.bucketLayout.Length; i++) level.bucketLayout[i] = LevelData.BucketLayoutWall;
+            level.bucketLayout[0] = level.bucketLayout[5] = 0;
+            var inventory = new BucketInventory();
+            var a = new Bucket(1, 10, 0);
+            var b = new Bucket(2, 10, 5);
             a.LinkedPartner = b; b.LinkedPartner = a;
+            ((List<Bucket>)inventory.Buckets).AddRange(new[] { a, b });
             var belt = root.AddComponent<ConveyorBelt>(); belt.Configure(3);
-            Require(inventory.TryTakeBucket(inventory.GetBucketAtLayoutIndex(0), belt, level), "Remove the front cup.");
-            Require(!BucketRouteAccess.IsAccessible(10, level, inventory), "A stationary cup really blocks the rear cup.");
-            Require(inventory.IsBucketAccessible(a, level) && inventory.IsBucketAccessible(b, level), "Both linked cups vacate their cells together.");
-            Require(inventory.TryTakeBucket(b, belt, level) && !inventory.Buckets.Contains(a) && !inventory.Buckets.Contains(b), "The linked pair dispatches atomically through the same exit.");
-            Debug.Log("LINKED_ROUTE_REGRESSION_PASS");
+            Require(!inventory.IsBucketAccessible(a, level) && !inventory.IsBucketAccessible(b, level), "A linked partner above a cup blocks the whole pair.");
+            Require(!inventory.TryTakeBucket(a, belt, level) && !inventory.TryTakeBucket(b, belt, level)
+                && inventory.Buckets.Count == 2 && belt.Entries.Count == 0, "Blocked dispatch must preserve both cups and belt slots.");
+            level.bucketLayout[1] = 0;
+            b.SetLayoutIndex(1);
+            Require(inventory.IsBucketAccessible(a, level) && inventory.IsBucketAccessible(b, level), "Both column-front cups become available together.");
+            Require(inventory.TryTakeBucket(b, belt, level) && !inventory.Buckets.Contains(a) && !inventory.Buckets.Contains(b)
+                && belt.Entries.Count == 2, "Either available cup dispatches the pair atomically.");
+            Debug.Log("LINKED_FRONT_ACCESS_REGRESSION_PASS");
         }
-        finally { UnityEngine.Object.DestroyImmediate(root); UnityEngine.Object.DestroyImmediate(rules); UnityEngine.Object.DestroyImmediate(level); }
+        finally { UnityEngine.Object.DestroyImmediate(root); UnityEngine.Object.DestroyImmediate(level); }
     }
     private static void Require(bool value, string message) { if (!value) throw new InvalidOperationException(message); }
 }

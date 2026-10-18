@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0725
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4287219437
+  - serializedVersion: 2
+    rgba: 4293910487
+  - serializedVersion: 2
+    rgba: 4288126114
+  - serializedVersion: 2
+    rgba: 4283795368
+  - serializedVersion: 2
+    rgba: 4290236643
+  - serializedVersion: 2
+    rgba: 4281877840
+  - serializedVersion: 2
+    rgba: 4279704356
+  - serializedVersion: 2
+    rgba: 4283721589
+  - serializedVersion: 2
+    rgba: 4284984539
+  - serializedVersion: 2
+    rgba: 4293968032
+  encodedCells: S1:4:4096:99E5DF88:jVPBdto4FP0GNThBWxN60uyCCZDsPBG2NTtiFMIygchKdpkQiS6pjax0p44paNu0aYevHJmUmTmzmdHxwUj3vfvue7per//fcr/89ff7y7/Bw8PDv/E7zjdn+fd/RrjuNoIntESuaUlzuKX/O1+IXNhXLl7+KvsrOna3YS4Vefpj/cu+xUvW9dnaUwh9taB9SN3loo3+cHfryQ9Lf64iVRgsVwiVXO553Q34gL39bdkLvpV8p4yOERpJhYaWzD0n7hn3WDUL9pfuZt1RSmVkqCrq5bZ+/jgVTPsDduGe272inEYIozGqv8aTG6kuNHicv3OJ3VJ6ek1pRlFh/KJWErjTnPRn7dEm/nyE0P761BvJsxWO9jcMvyE0Fjl7u9nY2ih7fn6uNRQKECqP3qzwRHJZTvTQlY2Rlx64XqPGOl6tWeK6/3grOG+563I86wP3g/uhdp3SaIO6jV5/xBIhRgevgt204b51v5zWPkQbSZ96AyY45XyLNxqb3/Xhx7L8yPgZF5RxYad/+CW1rB+vXfflZ/CXBOKpEFyIZLNnKfp6d7fewu49hZNxIpL2Q22z78jmev18Wl5FuZaUdtuZSMS2OB1F6bcfL6+X3xAwoTRBnC/rW/GsdXZCX423N+EgqYnWWNDKtp73sv4YSa++vqtKMZLdZCDTlsiPtjj00qYXqOf1fcXfaz8U7Zh0mPj8tRyddbWLtIqGVmJwn+OxEFE7PlNTip43prYGrGSUNfcPvXCSB+8FTxKvNZ3S8U8vp992wY3MTkiCJjz0H4QQxBMqvHiFlYoqmgXs5F4kNA2zJPdabU/wKVlvCvw4fS4yRVjlXoRJiBDNeaftJaqbeXbFnvfsaYMRgiS/oHmGkL3WeNS2Gd5xXIZ0POAAUOkhEYchtzCbPj52JCLEIeSMkNgzsOIAJCaNUCr7ZbVHwpvy/JgAcBMVvR2gtQFEismUspyrccLbD4xLDyB0RVf4zIcGglkSTvhICCpY3qEPNAmAr1Az6gKQQt/oWxrmwvYuE8nDlgLJwGoCftyMUGQ0BGPbfdt6asoFzwehT3dLHOwA4CNTYFMXy8nEGkrAXX0ldq74whgAbKJvH78YHj+EE+u5PAR2DaozHkQYVlbwFiEwRFH9XLFlmybiQsMVaA3myvL7iq0Ai5CBvjtH1tEZ51WbbnhMuNPr6WKWsWwVGdNrzJHPEp/TvZJfOGC6MMBWyCIlpTFDd973UTKjzOZDcDmI6Z7BNDI9SiNpP++462C0e0WrxmAI1A5QERozv7iiTK2U2o/7js+KWxoVtleYBaazQqpZQUze4Kcs6xNQjBlQ1KBKgMxTDvkKwKwodEVVnypg2C2MWNoPw456UeiTA9BZ2FuBEEQZirDfREUx1u9ZAbU9NbcxvFxoK9SKNQCZvrXNeAp5oO1ITc+cpCZaamzKEXc1sEV8HCqYf7aExjjmiJnLVQEXwADdNdAMkTa0CqbLklwbPaub/BPAprAYKPRGCF+asb+CtjttTjzjv8GRFQUMBhqBGXRkxbT9wl62Tbk9X7xr4ML2h2yqMYUV2jZAgjJdStIl5LF0vYElDm0dDDwDjiqWu8Vi2RIsDQVx7KztiZWMx9oDZuZY+ZzS1kMiLkUe9Gu2QQ0rlkdJqovb7h7wqPII7B0TDQipX0KAscZPHaX83iMX4QfWuZYBJsRq0MNqd2G9q49anZvuY2+oqGTdDuPNg85iaCMCQ4jOFlCJ2Sjpzs1xPKdIUdVKjwOLO3O8wFmaOkEisxV2yFGLFZQxSXd6zpAAh2Zk6PjVY4+GQYX1yNFYAiaZVL9D0PMhISzug8IgSgMW4+YCqyx7kipVl2boO7jbJTdzYtv/L/xP
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 75831115
+  displayTitle: African wild dog
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 6fae6b87087a43f43b7b7d669d642b00,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

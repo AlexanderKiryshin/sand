@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0309
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282071647
+  - serializedVersion: 2
+    rgba: 4291148741
+  - serializedVersion: 2
+    rgba: 4283323532
+  - serializedVersion: 2
+    rgba: 4281017646
+  - serializedVersion: 2
+    rgba: 4288965964
+  - serializedVersion: 2
+    rgba: 4288055444
+  - serializedVersion: 2
+    rgba: 4287648032
+  - serializedVersion: 2
+    rgba: 4292206834
+  - serializedVersion: 2
+    rgba: 4286077896
+  - serializedVersion: 2
+    rgba: 4292522135
+  encodedCells: S1:4:4096:2B6BC8B4:tZXNcts2EMefAQPEUx6LWDKjGw1WNY+saGV0zRRiR7cyIew+AAdnM/6AfaPF8WhzqzxOPXzKLEBSpuxcuwdS1A///cKCbJr/1zjfTn5O7jru7CfcPA/49u2KPT162HLeRWoXv+K9n+7eNKunV7ws8eL3T1Lqo91yh40/wNtVof9DN8YY3zfcL31jhoGaldYa78h52asHeTytZKqPjrkp92TOJnx7Z5y7Y7xkfLRLert19U2ajk+FzBRfypewfXPMV5//yo9FruRSKikn+22+M5d+dsiNyJfS2jjny4ZPtgNusqPMGNnaUqn8k5Sf5KjlV+eoH/UcfSiMk48Vhmuwr/Kq8887rtTSLSukzG0+jn/hvf/c8lyeLVP7NOJ/3bT1dbzIrVwVquX4y7WdqzvLtf0nx5tShU7tinNhrF6Nnb5oY2jZ/z45V879teny21luL9NmJa1/u3dmn0+l/PsRsSyODO7cGy5C8d5iqfWVyd7wEQ1E0/HUmDd8KsQjNg/d4/CMXnF9Rk/E52bH032exsEFZf869xZrfTPghZaEiDh8dPrU8dFQr3+nIY3Jd8cdtgG+tNw+iUTMWIjDtxrwM9PjKZbGCFbH+/Atx4YXRaF/EyIWcVt9h7XG/pvUqd8RMUvoLPxuo+94jly7XJNAxGw9P3wpztkVcnSefkwYiWuIS/P8tBpwDKBtq09DrI1BdYu76gpEkc7HmeUoz2MW1wsGcGu3XeGJak1dt/4PZiQGAC/+anpzPLt+NqlOk2lCkmhdAXnh7WHHcnQ6TxIWRBH1KFzs63mmGi1PE8YqoMSL2e2AZ45j/fLPKYkqT7AE8y9dho6PeYYTpnWRzusqJIxFdRs/u7Hx54pnZoNcFvM6SkRSQ3DZ8sJs4B4UvpM2psADg93D7akjctFz+HBP4YMxt7wozpZjHJ11AJFo/avU3HsgBMpBaJnnGaEX5j66GHf1ZT52S4DlJsWzTkILykPa6rffYAOlKMupL0SafsToDnz2HD5/AHiAQJxAtI6ElHPGmEt8XbatBWuRWNubkAdJSInj45YreF9F1aLygCL/ww9YElpZ1kzcggc4gChIKmL1JPd/iUN6aTvmXrrI/wGoYuwJwQQglcsDavNrPwG2OoWjQOqQBYBbitMjqNvvrOMKeTRjJEkqQUUqp0E7DlnmvgaYH6ZFaoIb4hFRnIpuGlQzcQsePIAZDiMOxaIm6XgwTI4DUBGsYYFRaAWHndoeXBd+g1tDBR4G8BZ1BZivm7Qe456AsM1LANAL/AA=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 32271770
+  displayTitle: Santorini blue-domed church
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 31348ca69ed66cc40a994e759c72c786,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

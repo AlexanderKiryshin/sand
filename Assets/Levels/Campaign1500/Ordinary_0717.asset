@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0717
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278585359
+  - serializedVersion: 2
+    rgba: 4283989941
+  - serializedVersion: 2
+    rgba: 4279774545
+  - serializedVersion: 2
+    rgba: 4279047464
+  - serializedVersion: 2
+    rgba: 4280106868
+  - serializedVersion: 2
+    rgba: 4290369004
+  - serializedVersion: 2
+    rgba: 4287737038
+  - serializedVersion: 2
+    rgba: 4282008918
+  - serializedVersion: 2
+    rgba: 4282342791
+  - serializedVersion: 2
+    rgba: 4280428341
+  encodedCells: S1:4:4096:98184BA6:PZXPc9u2Esf/BlScVo+3QlFk9SYtUJu80YSmMW8mjaTqMZ1AdW91G9LKzZX1AvFmyawE31jSHQZ/ZRfym4fxwfZn97uL/QEKEQM0ZccSHXZaW4B1yGGtdWeMkZWBmMUMdGeZ1vpgMr55BrQxWj+9cBD4933HmN4gB62fM8iQTx+NOwVSJnTHmo29Pxh+0PwnCevD4cuTOSBX6np0jvqrVdl5TwY2L/6H8Q52zgB5EcTlG2G1td4S9TvI5PqQDbdpcPRfFttYd2XfltaeBWcb/ST5+uS9UsrFV8X1a6e/IXei7EwAQbZzHPFfiAO1UGoa60Opy3utzSfezKqMrw9mbMz8HAD18x9ivFvbYZDtoLXxA3JtzHJ+CpCZ8e/qlJUXSeufl4f0xupZKIGbOVxLTJSrfLDF/C88+11WGrp9o2cmw/qZn4dcwulOLT7k0OgNSU4GJ2O6Pitnj66+89Ul/QjV2NUHuD59bsdDMx2utZ09APC3sudh9sOtyn8vps+/FvMs3Z6k1bPuKvo9UPmxIeNHuv2i1M/qdG1/U5SaMa1sxunHEZX0oXc+mjKb4P0Xn21n1WtqaPrn8+qEpumghOnr1Q6MEIW6/keXv6qvlTSjCudiTM8z8erDlEJZpuIVVUvdfSpQJjD7Up9sxxSyOB2mwTKAjKZqsdG2WBRKfb/5UY+q7VZOrlglF5snmkoplXLui8UiL+73xTsz5913CbvZjqQ7aaX+i+5FkaNAXhR7E6z634Kk50csd0Z1ji+cwV9b9MdxfTWXEvmcM/Y4VlqXyFWBAn/e7oNIeA8g5ZS7sR2MqHbhjxwNzOlcCNGbZjBnsCzeF45b5Dmmh3fIlzMRP1L6CNTFfH9DU13aT7mLjgZKvYuFGIwRjkboixec4eagf1EcS5Av1AWfUzouUkp57OFqaeuXxTWGX6I/auQUj4xTIXjyBvjKdj7B8rwoFItfFN3KKREZq4bbW1//iP7ktvhcvJwc25jynhB/l/rWCc2steQ3p14cb7FQdM4mlzLjq50AG3mIbX1XfP60P1ZB5TKYkNZe1OUdMV+8S2t9/CF4lvv9slBv0wuIsvkwqL6iEMuhdQe5II0pUOPtbNJjVYUDQDkmMHX6fu3f+ZNW3haHIiZRDzI8kmdyDmCt9uvadoQ10r7a/eCRMaUDOucw2wUBG+iO1KS2NmpHRfFZCPLAILvBCmK6OZbY1gQTtL3Im3zTiwjzJtDAbj7YZenIxScY3tahFwoGsTer+pDYsDKDwSDbjTlkuk/8JEwEI3EssCEZThXdWrYby2ozzT7Ypl/HPvEj73Z5TuyTlB6TckgHpjvbV9evra3rtsXyBHJlvtljKmeSkytJ6Y1eweDc9uukDVHgUoK4xRHobLSr0jjKnmE1wft0dtVay3pXFQgBOEO5j8WQVDKQOIyWhNAkwrIrfs+AZTf4cOXYm0kVyiO3PvI2FA+X8eMFy+QQJdToP9b+9D9eNxZfdYYtEl6A1xs6CVX0GXecWKKh6REfnAH7Y4hLN3SPp3oHMhLMtR9Q4QyLiwbZMB0et1blALOIAVZ/AknrMehhESZXWD0pM2kWKuMz3DHUn+AnIrLhWR8NLtH5fSo5VMt3mB/Erj+A/W3CpiQeGnDJbzjH1YaX/Ik/iW1S4qRA7cZQ4qthkMHVkeN//DpEaKHDWcPjOmgkxP/npA4blA+xN3eERJ57OKqzGOQMOabSIy3YEOKXSfa8yBls3mAtkYPLsYMS7h0OfR9zFM5gDZI7Dug/aZrECtuGjW+FRwROCF9puHjhHqkDnC3PLzFDPyKeYFcYNoMAC47fT1SEuCVth3vnVgm5yDiux0awHvEmPSuixK1gm/glXpcIixE4yEZ4EYkn+ObUHt7Lksi2KIZtEvcJfpti/I30Jz3iWoOFrn2bIMeuihJDswD5vw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 75001202
+  displayTitle: piano tuner at an upright piano
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: bb2850c7090cc47419616da2e2e2a4e5,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

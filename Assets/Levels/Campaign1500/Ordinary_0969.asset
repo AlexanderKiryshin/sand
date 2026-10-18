@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0969
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4288596204
+  - serializedVersion: 2
+    rgba: 4291618550
+  - serializedVersion: 2
+    rgba: 4280694864
+  - serializedVersion: 2
+    rgba: 4284310382
+  - serializedVersion: 2
+    rgba: 4279442216
+  - serializedVersion: 2
+    rgba: 4286227406
+  - serializedVersion: 2
+    rgba: 4281487991
+  - serializedVersion: 2
+    rgba: 4287072662
+  - serializedVersion: 2
+    rgba: 4283332260
+  - serializedVersion: 2
+    rgba: 4294497972
+  encodedCells: S1:4:4096:4C5CEEEF:bVTPc+I4Fv4b5M6K9tGuVBpyS2SjcMwg2qZvKePQHB0SgfZGC6O4bySEFkfHYEXHyW7NzOav3OfMTO1u7ciFZOp773s/vie/vcF6ffuL9fefYTv95R0/9f8XO319+8Jum1PgX/7C1/cB3zdIaVuf/h8Hf7Y0mf96ikpb1F/+K+of55f9dp+9+jcI8dp2/hODnbydAvvb91jvZzWvMcJO3Sv+9acbwxD99fT1J3bnzowVGc46aFEW9e/49xw3pqf+80dtVjXnrYWxaNGqbWsF9X65Ybgp+8GxwnKMMqyUMu7ZB4ys5W/f2a1GP5++1oYLjtfTE7xQVFlbZihzavGrYE8bxC3QYuzgG5EtaGEMtaV7YlwP16uM162aoy3Hz7ObLMM9Ygoljb1ZFAWuUSmsFRyhHfpGyQePP1NSNAlYD6IgjBxPuBlC8GYIkQ4vqTwUqlcJj1LjIs/4K4zpI1j0KJGo7EmV5LQ4CCiDdtBZ1al5SchHb6GIoh+8QlIqFa2EqxSxiFJIvEvIJ/yspMpnJ/dE5kb0lLuQMqkRJRZz2qcSxYDLGYZ9cpCGtq5ykxSIjqcZ0EvqXABr0mrw0vpq3LpShlRZPj7gda7GdzwgcpQe47GMEIjjOlf9qqpQTu7EOifJwL8gSZDeodHgCGpBGarF8+ERLceVuE5ZkjhfQzbacCQwNN7DTWdK6yE5IfyahCTNNF8JgVHJsYtKHxoGWp4gkYW8m264RRbD6IiG2hSmgy4hjMuRk73MjOC8RhxzntW3ONtKpWoQCpUOWHMuarHlHPEs287tHV/fU0krF+FV5eJb0FXARHLBsjVN28hm91SBMjXoYayDkZr3eD0+APeSEMLRCSUgb896nqKGozM5s3yVppAbyKcy3oUdlDG4hiHpNP23YkzCKVpRQsKKrxoYXDsLpVLXIaSYqyQkd1mjL5lmK0lzlZPHdoNbRJJqfhk2kbsSPFvrgJAkl8qKa0nG9owmh/nnFHB9QWSSPv4IqCRVMT60JqG9tt2/oQG7SM2EvIBNmhIBJJDh+NDpKjuxZ7OFjYJQjcKXgAVpSttLBXU0DerKZGZnArs7pu4rev+VjdJ0o4Nz0pOXtHImJGmVpktmP+7p2NBdugd/pUmvX/cWMJ+tYpTXlbWzpyBXJtfkHyQtmO7/xKY1mhYC+pPMiqKYDkYpPQx0+CkNx/8cPMZBd4oOq07ZI0CbJHk/ePqaD/pEhmH+NHq6IKJ2pfiw+HRVRcFkTKJgcJweir6E8p7SJUmMyHNhzzvnFVtOqnAo2TzMx0GYpg9JWk3ywuBQyYU4McNix4ZRsD86XyaPo8FxLNNDc3eFFUoUilqMfP/Bv1+ugxGDRlKZLnP1zTQX3vOb5XlgwW4f9O9LJdBb3/Ec30OO4/+x4rzjt9vrONaDVI8GPkw3eDo+8tE3455TMzsbi50+eqeIN4A7nn/0rZhxfj3oMKaKqxENZcj6949az9/5IUBxu51fzrD+rX/ss23M2IjotjPHHQgJn2q4ER+zyznWm/g4ZhpwphkhcO2s8CPTZ8/Id9abNiAvn1nb9/ex+kFkPXx2T3y4BZHqAwtwOcho3+N8GKlARpAfZLdUpijCwPZUwLNrRee8NIGyRkVaN50pWFUU1dD2CmL5xCgspjZWe9tnWjtZ5kVMWmoiO2RLLAJTCP6yAHzYDxp/rQnZS2atjeMNrgPw33IbR/soJeB/CaXAnWEDmF1zlH1equhoyzYsDvop2+i2H0OxpD/qk0DaIY6p7NUi2jA2JhvAmyYzFu8CSZdRcJSpZFzBJz0K6EbH8aPexhs9fwC9GQtosCxVMrCKysaPQf/1DW/U87afN42FtMDGoSxoMXDHWrdvMo3cd+Vf/hwMvdNzQOHvFh7t+81vv4N4G+Rnnj/fLd8T07Bz3rwgvdIvWn9ED8f+O63WS61v4fg3
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 101392910
+  displayTitle: Azerbaijani caravanserai
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 6ace03600658aec46ae28771bc0227fd,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

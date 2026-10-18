@@ -31,6 +31,11 @@ public class GameUI : MonoBehaviour
     private Image hintArrow;
     private TextMeshProUGUI hintBadgeLabel;
     private bool tutorialHintActive;
+    private bool boosterTargetHintActive;
+    private string previousHintText;
+    private bool previousHintVisible;
+    private bool previousHintTutorial;
+    private int previousHintStep;
     private float hintPulseTime;
     private int tutorialStep;
     private CanvasGroup hintGroup;
@@ -40,7 +45,9 @@ public class GameUI : MonoBehaviour
     private Button addSlotButton;
     private TextMeshProUGUI addSlotLabel;
     private bool slotAdPending;
+    private bool restartAdPending;
     private float slotAvailabilityTimer;
+    private int displayedLevelIndex = -1;
 
     public System.Action OnHintDismissed;
 
@@ -63,6 +70,12 @@ public class GameUI : MonoBehaviour
         if (localization != null) localization.onLanguageChange += RefreshLanguage;
     }
 
+    private void Start()
+    {
+        if(levelLabel!=null && levelLabel.GetComponent<HudLabelPlate>()==null)levelLabel.gameObject.AddComponent<HudLabelPlate>();
+        if(conveyorLabel!=null && conveyorLabel.GetComponent<HudLabelPlate>()==null)conveyorLabel.gameObject.AddComponent<HudLabelPlate>();
+    }
+
     private void OnDestroy()
     {
         if (localization != null) localization.onLanguageChange -= RefreshLanguage;
@@ -71,13 +84,23 @@ public class GameUI : MonoBehaviour
     private void RefreshLanguage()
     {
         RefreshConveyor();
+        RefreshLevelNumber();
+    }
+
+    private void RefreshLevelNumber()
+    {
         if (gameManager != null && levelLabel != null)
-            levelLabel.text = CampaignText.Get("level") + " " + (gameManager.CurrentLevelIndex + 1) + " / " + gameManager.LevelCount;
-        if (resetButton == null || localization == null) return;
-        var tmp = resetButton.GetComponentInChildren<TMP_Text>();
-        if (tmp != null) tmp.text = localization.GetText("restart");
-        var text = resetButton.GetComponentInChildren<Text>();
-        if (text != null) text.text = localization.GetText("restart");
+        {
+            displayedLevelIndex = gameManager.CurrentLevelIndex;
+            levelLabel.text = gameManager.LevelCaption;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        // The caption follows the current level independently of the board/UI rebuild.
+        if (gameManager != null && displayedLevelIndex != gameManager.CurrentLevelIndex)
+            RefreshLevelNumber();
     }
 
     private void StyleRestartButton()
@@ -87,31 +110,18 @@ public class GameUI : MonoBehaviour
         background.sprite = HintUiSprites.RoundedPanel;
         background.type = Image.Type.Sliced;
         background.color = new Color(.15f, .37f, .37f);
-        var legacy = resetButton.GetComponentInChildren<Text>();
-        if (legacy != null) legacy.gameObject.SetActive(false);
-        var text = resetButton.GetComponentInChildren<TextMeshProUGUI>();
-        if (text == null)
-        {
-            var label = new GameObject("RestartLabel", typeof(RectTransform), typeof(TextMeshProUGUI));
-            label.transform.SetParent(resetButton.transform, false);
-            text = label.GetComponent<TextMeshProUGUI>();
-        }
-        text.fontSize = 29;
-        text.fontStyle = FontStyles.Bold;
-        text.alignment = TextAlignmentOptions.MidlineLeft;
-        text.color = new Color(1, .99f, .91f);
-        text.raycastTarget = false;
-        text.rectTransform.anchorMin = Vector2.zero;
-        text.rectTransform.anchorMax = Vector2.one;
-        text.rectTransform.offsetMin = new Vector2(66, 4);
-        text.rectTransform.offsetMax = new Vector2(-10, -4);
+        foreach (Text legacy in resetButton.GetComponentsInChildren<Text>(true))
+            legacy.gameObject.SetActive(false);
+        foreach (TMP_Text text in resetButton.GetComponentsInChildren<TMP_Text>(true))
+            text.gameObject.SetActive(false);
         var icon = new GameObject("RestartIcon", typeof(RectTransform), typeof(Image));
         icon.transform.SetParent(resetButton.transform, false);
         var image = icon.GetComponent<Image>();
         image.sprite = GameUiSymbols.Get(GameUiSymbol.Restart);
         image.raycastTarget = false;
-        image.rectTransform.anchorMin = image.rectTransform.anchorMax = new Vector2(0, .5f);
-        image.rectTransform.anchoredPosition = new Vector2(36, 0);
+        image.color = new Color(1, .99f, .91f);
+        image.rectTransform.anchorMin = image.rectTransform.anchorMax = new Vector2(.5f, .5f);
+        image.rectTransform.anchoredPosition = Vector2.zero;
         image.rectTransform.sizeDelta = new Vector2(45, 45);
     }
 
@@ -125,8 +135,16 @@ public class GameUI : MonoBehaviour
     }
     public void Bind(GameManager manager, ConveyorBelt conveyor, LevelData level)
     {
+        boosterTargetHintActive = false;
         gameManager = manager;
         conveyorBelt = conveyor;
+        var renderer = FindObjectOfType<SandRenderer>();
+        if (renderer != null && renderer.DisplayRect != null)
+        {
+            Transform picture = renderer.DisplayRect.parent != null ? renderer.DisplayRect.parent : renderer.DisplayRect;
+            var reference = picture.GetComponent<ColorFocusPanel>() ?? picture.gameObject.AddComponent<ColorFocusPanel>();
+            reference.Bind(level, renderer);
+        }
         if (localization == null)
         {
             localization = LocalizationManager.Instance;
@@ -135,7 +153,7 @@ public class GameUI : MonoBehaviour
 
         if (levelLabel != null)
         {
-            levelLabel.text = CampaignText.Get("level") + " " + (manager.CurrentLevelIndex + 1) + " / " + manager.LevelCount;
+            RefreshLevelNumber();
             levelLabel.rectTransform.sizeDelta = new Vector2(420, 60);
             levelLabel.fontSize = 36;
             levelLabel.fontStyle = FontStyles.Bold;
@@ -245,10 +263,22 @@ public class GameUI : MonoBehaviour
 
     private void HandleResetClicked()
     {
-        if (gameManager != null)
+        if (gameManager == null || restartAdPending) return;
+        if (AdManager.instance == null)
         {
             gameManager.RestartLevel();
+            return;
         }
+
+        restartAdPending = true;
+        if (resetButton != null) resetButton.interactable = false;
+        AdManager.instance.ShowInterstitial(() =>
+        {
+            if (this == null || !restartAdPending) return;
+            restartAdPending = false;
+            if (resetButton != null) resetButton.interactable = true;
+            if (gameManager != null) gameManager.RestartLevel();
+        });
     }
 
     private void HandleNextLevelClicked()
@@ -256,6 +286,31 @@ public class GameUI : MonoBehaviour
         if (gameManager != null)
         {
             gameManager.LoadNextLevel();
+        }
+    }
+
+    public void SetFillTargetHintVisible(bool visible)
+    {
+        if (hintLabel == null) return;
+        if (visible)
+        {
+            if (!boosterTargetHintActive)
+            {
+                previousHintText = hintLabel.text;
+                previousHintVisible = hintLabel.gameObject.activeInHierarchy;
+                previousHintTutorial = tutorialHintActive;
+                previousHintStep = tutorialStep;
+                boosterTargetHintActive = true;
+            }
+            SetHint(CampaignText.Get("fill_choose_bucket"));
+            if (hintCloseButton != null) hintCloseButton.gameObject.SetActive(false);
+        }
+        else if (boosterTargetHintActive)
+        {
+            boosterTargetHintActive = false;
+            if (previousHintTutorial) SetTutorialHint(previousHintText, previousHintStep);
+            else SetHint(previousHintText);
+            SetHintVisible(previousHintVisible);
         }
     }
 
@@ -269,6 +324,14 @@ public class GameUI : MonoBehaviour
 
     public void SetTutorialHint(string text, int step = 0)
     {
+        if (boosterTargetHintActive)
+        {
+            previousHintText = text;
+            previousHintTutorial = true;
+            previousHintStep = step;
+            SetFillTargetHintVisible(true);
+            return;
+        }
         EnsureHintDecorations();
         tutorialHintActive = true;
         tutorialStep = step;
@@ -280,6 +343,12 @@ public class GameUI : MonoBehaviour
     private void SetHint(string text, bool tutorialEmphasis)
     {
         if (hintLabel == null) return;
+        hintLabel.gameObject.SetActive(true);
+        hintLabel.enabled = true;
+        Stretch(hintLabel.rectTransform, Vector2.zero, Vector2.zero);
+        bool swapLesson = tutorialEmphasis && gameManager != null
+            && CampaignProgression.GetLessonId(gameManager.CampaignLevelIndex) == "lesson_swap"
+            && text == CampaignProgression.GetLesson(gameManager.CampaignLevelIndex);
         hintLabel.text = text;
         hintLabel.fontSize = 29;
         hintLabel.enableAutoSizing = true;
@@ -290,7 +359,7 @@ public class GameUI : MonoBehaviour
         hintLabel.alignment = TextAlignmentOptions.MidlineLeft;
         hintLabel.raycastTarget = false;
         hintLabel.margin = tutorialEmphasis
-            ? new Vector4(28, 66, 64, 18)
+            ? new Vector4(swapLesson ? 92 : 28, 66, 64, 18)
             : new Vector4(80, 12, 64, 12);
         hintShadow.gameObject.SetActive(true);
         hintShadow.sprite = HintUiSprites.RoundedPanel;
@@ -307,11 +376,11 @@ public class GameUI : MonoBehaviour
         hintBackground.color = new Color(1f, .99f, .94f);
         hintTopBand.gameObject.SetActive(tutorialEmphasis);
         hintTopBand.color = Color.clear;
-        hintIconBadge.gameObject.SetActive(!tutorialEmphasis);
-        hintIconBadge.sprite = HintUiSprites.CircleBadge;
-        hintIconBadge.color = new Color(.25f, .53f, .48f);
-        hintIcon.gameObject.SetActive(!tutorialEmphasis);
-        hintIcon.sprite = HintUiSprites.BucketIcon;
+        hintIconBadge.gameObject.SetActive(!tutorialEmphasis || swapLesson);
+        hintIconBadge.sprite = swapLesson ? HintUiSprites.RoundedPanel : HintUiSprites.CircleBadge;
+        hintIconBadge.color = swapLesson ? new Color(.80f, .24f, .73f) : new Color(.25f, .53f, .48f);
+        hintIcon.gameObject.SetActive(!tutorialEmphasis || swapLesson);
+        hintIcon.sprite = swapLesson ? GameUiSymbols.Get(GameUiSymbol.Shuffle) : HintUiSprites.BucketIcon;
         hintIcon.color = Color.white;
         hintIcon.preserveAspect = true;
         hintArrow.gameObject.SetActive(false);
@@ -321,11 +390,13 @@ public class GameUI : MonoBehaviour
         hintBadgeLabel.alignment = TextAlignmentOptions.MidlineLeft;
         hintBadgeLabel.margin = new Vector4(0, 0, 120, 0);
         hintStepLabel.gameObject.SetActive(tutorialEmphasis && tutorialStep > 0);
-        hintStepLabel.text = tutorialStep + "  /  3";
+        hintStepLabel.text = tutorialStep >= 4 ? (tutorialStep - 3) + "  /  2" : tutorialStep + "  /  3";
         LayoutHintCloseButton(tutorialEmphasis && tutorialStep > 0);
-        hintGroup.alpha = 0;
+        // Instruction changes must be readable immediately, including while gameplay is paused.
+        hintGroup.alpha = tutorialEmphasis ? 1f : 0f;
         hintPulseTime = 0;
         SetHintVisible(!string.IsNullOrEmpty(text));
+        hintLabel.ForceMeshUpdate();
     }
 
     private void HandleHintCloseClicked()

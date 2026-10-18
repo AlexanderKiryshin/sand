@@ -15,6 +15,10 @@ public class AudioSettingsMenu : MonoBehaviour
     private TextMeshProUGUI soundsState, musicState;
     private LocalizationManager localization;
     private float previousTimeScale;
+#if UNITY_EDITOR
+    private int cheatTaps;
+    private float lastCheatTap;
+#endif
     public bool IsOpen => overlay != null && overlay.gameObject.activeSelf;
 
     private void Start()
@@ -34,12 +38,18 @@ public class AudioSettingsMenu : MonoBehaviour
     {
         if (openButton == null) return;
         ApplyLayout();
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.U)
+            && (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))
+            && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
+            UnlockAllLevels();
+#endif
         if (IsOpen && Input.GetKeyDown(KeyCode.Escape)) Close();
     }
 
     private void BuildMenu()
     {
-        openButton = Panel("AudioSettingsButton", canvas.transform, new Vector2(68, 68), new Color(.15f, .37f, .37f));
+        openButton = Panel("AudioSettingsButton", canvas.transform, new Vector2(72, 72), new Color(.15f, .37f, .37f));
         openButton.anchorMin = openButton.anchorMax = openButton.pivot = new Vector2(0, 1);
         openButton.gameObject.AddComponent<Button>().onClick.AddListener(Open);
         Image icon = Panel("SettingsIcon", openButton, new Vector2(44, 44), Color.white).GetComponent<Image>();
@@ -57,6 +67,13 @@ public class AudioSettingsMenu : MonoBehaviour
         // An inner surface consumes clicks so changing a switch never closes the menu.
         card.gameObject.AddComponent<Button>().transition = Selectable.Transition.None;
         title = Label("Title", card, new Vector2(0, 192), new Vector2(540, 70), 43);
+#if UNITY_EDITOR
+        title.raycastTarget = true;
+        Button cheatTrigger = title.gameObject.AddComponent<Button>();
+        cheatTrigger.targetGraphic = title;
+        cheatTrigger.transition = Selectable.Transition.None;
+        cheatTrigger.onClick.AddListener(TapCheatTitle);
+#endif
         soundsToggle = BuildSwitch("Sounds", 65, out soundsLabel, out soundsTrack, out soundsKnob, out soundsState);
         musicToggle = BuildSwitch("Music", -53, out musicLabel, out musicTrack, out musicKnob, out musicState);
         soundsToggle.onValueChanged.AddListener(value => { audio.SetSoundsEnabled(value); audio.PlayTap(); });
@@ -108,6 +125,9 @@ public class AudioSettingsMenu : MonoBehaviour
         Time.timeScale = 0f;
         overlay.SetAsLastSibling();
         overlay.gameObject.SetActive(true);
+#if UNITY_EDITOR
+        cheatTaps = 0;
+#endif
         Refresh();
     }
 
@@ -122,13 +142,34 @@ public class AudioSettingsMenu : MonoBehaviour
     private void Refresh()
     {
         if (audio == null || title == null) return;
-        title.text = CampaignText.Get("audio_settings");
+        title.text = CampaignText.Get(LevelCheats.AllLevelsUnlocked ? "cheat_levels_unlocked" : "audio_settings");
         soundsLabel.text = CampaignText.Get("audio_sounds");
         musicLabel.text = CampaignText.Get("audio_music");
         closeLabel.text = CampaignText.Get("audio_done");
         RefreshSwitch(soundsToggle, soundsTrack, soundsKnob, soundsState, audio.SoundsEnabled);
         RefreshSwitch(musicToggle, musicTrack, musicKnob, musicState, audio.MusicEnabled);
     }
+
+#if UNITY_EDITOR
+    private void TapCheatTitle()
+    {
+        if (Time.unscaledTime - lastCheatTap > 1f) cheatTaps = 0;
+        lastCheatTap = Time.unscaledTime;
+        if (++cheatTaps < 5) return;
+        cheatTaps = 0;
+        UnlockAllLevels();
+    }
+
+    private void UnlockAllLevels()
+    {
+        LevelCheats.UnlockAllLevels();
+        FindObjectOfType<CampaignGallery>()?.RefreshProgress();
+        Refresh();
+        audio.PlayTap();
+        Debug.Log("Level cheat: all main and winter levels unlocked.");
+    }
+
+#endif
 
     private static void RefreshSwitch(Toggle toggle, Image track, RectTransform knob, TextMeshProUGUI state, bool on)
     {

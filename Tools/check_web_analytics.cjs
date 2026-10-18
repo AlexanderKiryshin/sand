@@ -31,6 +31,67 @@ assert.equal(browser.ym.a[0][1], 'init');
 assert.equal(browser.ym.a[1][1], 'reachGoal');
 assert.equal(browser.ym.a[1][2], 'level_completed');
 assert.equal(browser.ym.a[1][3].level, 300);
+for (const adType of ['interstitial', 'rewarded']) {
+  const eventName = adType + '_shown';
+  browser.LibraryManager.library.YandexMetricaSend2_js(eventName, JSON.stringify({
+    ...fields, adType, placement: adType === 'rewarded' ? 'magnet' : 'interstitial', result: 'shown'
+  }));
+  const goal = browser.ym.a[browser.ym.a.length - 1];
+  assert.equal(goal[1], 'reachGoal');
+  assert.equal(goal[2], eventName);
+  assert.equal(goal[3].level, 300);
+  assert.equal(goal[3].adType, adType);
+  assert.equal(goal[3].result, 'shown');
+  assert.equal(goal[3].placement, adType === 'rewarded' ? 'magnet' : 'interstitial');
+}
+for (const [product, eventName] of [
+  ['beginerKit_150', 'purchase_beginner_kit'], ['premium_kit_75', 'purchase_premium_kit'],
+  ['gold_300', 'purchase_gold_300'], ['gold_700', 'purchase_gold_700'],
+  ['gold_1200', 'purchase_gold_1200'], ['removeAd', 'purchase_remove_ads']
+]) {
+  for (const name of ['buy_inapp', eventName]) {
+    browser.LibraryManager.library.YandexMetricaSend2_js(name, JSON.stringify({...fields, product_id: product, result: 'success'}));
+    const goal = browser.ym.a[browser.ym.a.length - 1];
+    assert.equal(goal[2], name);
+    assert.equal(goal[3].product_id, product);
+    assert.equal(goal[3].level, 300);
+  }
+}
 assert.equal(scripts.filter(s => s.src === 'https://mc.yandex.ru/metrika/tag.js').length, 1);
-fs.writeFileSync(root + '/tasks/web-analytics-bridge-validation.md', 'PASS: official GameAnalytics WebGL progression/design bridges and Your Games Metrica initialization/queued goal preserve level 300 and event parameters. SDK/browser doubles; no production requests or credentials.\n');
+for (let level = 1; level <= 30; level++) {
+  for (const outcome of ['started', 'completed']) {
+    const name = 'level_' + String(level).padStart(3, '0') + '_' + outcome;
+    browser.LibraryManager.library.YandexMetricaSend2_js(name, JSON.stringify({...fields, level}));
+    const goal = browser.ym.a[browser.ym.a.length - 1];
+    assert.equal(goal[2], name);
+    assert.equal(goal[3].level, level);
+  }
+}
+for (const bonus of ['magnet', 'transparent', 'shuffle']) {
+  browser.LibraryManager.library.YandexMetricaSend2_js('booster_' + bonus + '_used', JSON.stringify({
+    ...fields, booster_type: bonus, level_booster: 'level_300:' + bonus
+  }));
+  const goal = browser.ym.a[browser.ym.a.length - 1];
+  assert.equal(goal[3].level, 300);
+  assert.equal(goal[3].level_booster, 'level_300:' + bonus);
+}
+for (const name of ['level_restarted', 'conveyor_expanded']) {
+  browser.LibraryManager.library.YandexMetricaSend2_js(name, JSON.stringify(fields));
+  const goal = browser.ym.a[browser.ym.a.length - 1];
+  assert.equal(goal[2], name);
+  assert.equal(goal[3].level, 300);
+}
+for (const name of ['cosmetic_acquired', 'cosmetic_selected']) {
+  const data = {...fields, cosmetic_id: 'theme_olive_marks', cosmetic_category: 'background', cosmetic_index: 4};
+  if (name === 'cosmetic_acquired') Object.assign(data, {acquisition: 'coins', product_id: 'sand_theme_ocean'});
+  browser.LibraryManager.library.YandexMetricaSend2_js(name, JSON.stringify(data));
+  const goal = browser.ym.a[browser.ym.a.length - 1];
+  assert.equal(goal[2], name);
+  assert.equal(goal[3].cosmetic_id, 'theme_olive_marks');
+  assert.equal(goal[3].cosmetic_category, 'background');
+  assert.equal(goal[3].cosmetic_index, 4);
+  assert.equal(goal[3].level, 300);
+  if (name === 'cosmetic_acquired') assert.equal(goal[3].acquisition, 'coins');
+}
+fs.writeFileSync(root + '/tasks/web-analytics-bridge-validation.md', 'PASS: official GameAnalytics WebGL progression/design bridges and Your Games Metrica initialization/queued goals preserve level 300, completion, interstitial/rewarded impressions, placement and cosmetic acquisition/selection parameters. SDK/browser doubles; no production requests or credentials.\n');
 console.log('WEB_ANALYTICS_BRIDGES_PASS');

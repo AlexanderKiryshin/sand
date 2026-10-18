@@ -21,6 +21,7 @@ public class Bucket
     public int GateKeyId { get; set; }
     public Bucket LinkedPartner { get; set; }
     public Bucket SwapPartner { get; set; }
+    public System.Collections.Generic.IReadOnlyList<Bucket> ColorSwapGroup { get; set; }
     public int RemainingForColor(byte color)
     {
         if (!HasSecondSection) return color == firstColor ? RemainingCapacity : 0;
@@ -132,6 +133,12 @@ public class Bucket
         {
             CurrentFill = Capacity;
         }
+    }
+
+    public void SetSectionCapacities(int firstCapacity, int secondCapacity)
+    {
+        FirstSectionCapacity = Mathf.Max(1, firstCapacity);
+        Capacity = FirstSectionCapacity + Mathf.Max(1, secondCapacity);
     }
 
     public void SetContents(byte colorIndex, int capacity, int currentFill)

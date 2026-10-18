@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0838
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278716945
+  - serializedVersion: 2
+    rgba: 4283584370
+  - serializedVersion: 2
+    rgba: 4279772220
+  - serializedVersion: 2
+    rgba: 4289515243
+  - serializedVersion: 2
+    rgba: 4283922107
+  - serializedVersion: 2
+    rgba: 4280101972
+  - serializedVersion: 2
+    rgba: 4286358225
+  - serializedVersion: 2
+    rgba: 4279441189
+  - serializedVersion: 2
+    rgba: 4281817497
+  - serializedVersion: 2
+    rgba: 4280958833
+  encodedCells: S1:4:4096:49DFC9BD:hZXBdto4FIafwZlOhulSJEDZBbWKw5KK+pDdUIRrdsUTBbwbIldDdg4n1MluSm0i7QpFCXrKuWIeYHwCOZxP9+pe6b+/tbVT3VvrvZmWYcRUNC0ZK6asuKUBJSbW/8Ot43Oh9OpimD7mON0Pu6zgjM1pIJL/eDmXESvJcOnl1Vbi4veMXUJ80sbJga9H6fBdUsnyuwUaOh6ySyEot9hqzcvbQXQ9vF94lRxl+bdDfHEZUNreEGsT4KJ33mgtvAw2yD8qpfZpeEkpxQZbqyG/mkO0V8m8LF9U9lpZGfaAtzk2h/6i6NirwArg1dyqnZVrUof6kgMvlXrwsgrgHHj1SUVWyjl+pomF8m1SzsVFDukdz6pHGxJqqW7x+yCxSFmovyfbLhj+Knlj8UKkkhie99wiTjjUN/W8V4fdK95Zo6Gf9bP8xRcisYSTGPKvX/8tv7oUFS/b3OPwNnjG7YDyms/x1vFfZfoKWJ5V/NEzDveB3OJglnC/+eeXZKXWOJRuAy/3TfouX2sZYHzZ4NwnMce6J7POCcDcy+IRU/89b2o1YrZxvDzTSn2G9pTv5bFlqYN7q5ThufG3yfHZlPNjaN4ssxVc7DWOn8pVso1JjNtnNjFGKf0PFFfuJ4oxdp6/rFYrbmOzeuBQf0zKdlz+nk2MMhFLQET+iqwI3xrS5gZXqli/GFvyrYV7gPhFjuO4tMmWxwk37peODbLG7lUUsZDl+cWKc062Bj/y9hjjWBm0SaBmHUH4buH7q/eUCmHxcuETH/+wTTSeOK6iguEca5AmqIv++UiwnVRxEyGDXNd9xdoLfCOCQEoJK14RTPIJtgjZpK/UfKgYWfgOOuoE6LMyOgWOkk0RBSFHdimEFOdUDFJB6XdjVYHsBp1uNiyVUQ3xDxBcfwuxAXDKDa8hF49QmIZDhFpCBm9Rq96VwcDxeNHYNA98lErgHSkFfQsliChl0MJiCbUj1Ee1kZQjhFxtElUH3cG6C/GDHI/ReNRHqDZz8R3oTQTdm/PqmgX0hNK8htAGEozRTIZV9OXQGWOzjynrvp1RWgHyrWi67zBEd4f0P9+ktP89ECcdSjO0HKvTCJ2iftitHngo9A52pnWYMNpEi30S9RlsQWf9jqzLECTU6sEFnNRnHVpFm+YT20cPsKDV6D34T2yX9iQVcDw3cI2oNUYrVozuEbrLxlJSDXecUgnnF9QHgqK7MQFH2QFH+WfYXEW79HFxI6g4oaxLp9C5UxVH6OjoLxmsVRSy17fYHY7sUhlD64qlbAL58w8QDvw8e5YBSGTQp3SjG9+Au3VH3vuwAJXI610xB3sUYbdLUfLwBPnlCo29ygisCyTmayaxgOZTGRxlydLFv8TkB3NPEYVtxebHVEinIDClFcj2fHIWHTCbxi97FYaP0J/jbqgV6zYKd26MKfCT/NOFWsYa9CUDAXOZKfZu/UkMILfacZP4TE2/4se8umhXDDp28ey3P2bhUKnkipuu2BU7vYsI3r5rl+CZCMai9unTSKnXSQL3H+6J6f1Md8svPBDgGi/Q88XZH6UitxIsjxsZyPVI+YsLLqk3yZ/c6DRWNroqb9Lg56bQMxgBKe2+BAGPax2xjlQ+vepWGkFHsAih2dzNJ+i0PrKKClD19fHxdB5T2Vh3Bcr9gKZBFGIO5xMj26zPuNlZ59vl+rx6d8dGIbtlWr1BqPK5BaJH0DbnNsUmPUXPcBKHianD53cF/2nHcauvsbn3UxAR9VsBatHgO5xo8w7NJo4bexWX9z9kERtwQdCklIXq0q+QJT5wfUVWO3gf6QhyyNFcaEXsBqZ3c0u2joNZS3k1iTmMNRioapeMcHiDuHUJMbqNPwbU5vBMljHYXUpDKNvofUJKDvwcb6lwb5xsMon3Tjbs/zg4oVWWx1Me2zl4Pn0GfpwvSQluCJr5Fw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 87673411
+  displayTitle: fan maker painting bamboo
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 2b70ceb48ca955d43b84ac6d56d31ec0,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

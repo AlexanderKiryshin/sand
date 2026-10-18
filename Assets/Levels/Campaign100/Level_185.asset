@@ -16,50 +16,52 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4291529855
+    rgba: 4291464061
   - serializedVersion: 2
-    rgba: 4282325769
+    rgba: 4282391305
   - serializedVersion: 2
-    rgba: 4282923572
+    rgba: 4282209890
   - serializedVersion: 2
-    rgba: 4281018926
+    rgba: 4280293397
   - serializedVersion: 2
-    rgba: 4281486444
+    rgba: 4279509906
   - serializedVersion: 2
-    rgba: 4283902222
+    rgba: 4283902481
   - serializedVersion: 2
-    rgba: 4290014295
+    rgba: 4290145877
   - serializedVersion: 2
-    rgba: 4287285220
+    rgba: 4287679205
   - serializedVersion: 2
-    rgba: 4288106804
+    rgba: 4288238390
   - serializedVersion: 2
-    rgba: 4280293395
+    rgba: 4281610285
   - serializedVersion: 2
-    rgba: 4292192683
+    rgba: 4292192169
   - serializedVersion: 2
-    rgba: 4280900798
-  encodedCells: S1:4:4096:F2A094FD:fZRBb9s2FMc/A5FmBqKbnRiFkUtD223VXRqRRaftNIuGYOjkJGzd9qIOGOHmmHoQNl+6AgmEnGLRTfeai9GhW6pbXQU+8EPtUW7TBhvGgyXyx/d///dEul79/1FfPmr/xX6/5AfXk8vV/leP+pIfJEly/Srf+EpnK7HjqnbxL06vcGO+vHdLfv2L5+3N6jrbuPR/cDVeVre3q+vVYvOzoUtel0jx58dqtSFl/XM8XfK+RO/9d7L+gcmtqpT3Nkreb9PQ8h0pq0L2JQY+kRffIt+0uA3giVGS3KpJSWnGkPf7cmGk3KvbXBOgbhAglyV3H8n6XredhJtWCSUnWwCBSB6jvGy1LN/c7X4wEeuUvFZ1M+CcWiy3mzTbkVu73cJE4iEudNHyFlDerCF/7HGawSNcujDGhCPkF7IqXwFlO9u0X+/ttjE/2t8zi4URXO6hv5psg0utkQYaqrk4rx6MzWIcifUnSLFfE/Q0wG7hpi2Ub9PFYrwYF6LYlejhUL5yS6fYEflq0u93F2OTGNwxOvtlWSMtf5/v2dZIxAukiyRaFNGSLwcNsYZ6ssBhFgVWaEy03v7C650QDcyjohDGYHbBAnHLG3yl4I3FKDQG3RszKoQQJpwflRueLDd06LxjxpFZJGMRiSgyQTFUCkFjyed0foDhBv2LsRBFtL7+Mn1gG7+sQGxchCYpzDjBhzCj+9VW+V3kvWCn3RbNjifCcckjU2CeaLP5APMfDm92w1HyUH6g8x+wejMW9gMWkRDZT0oNflY30cSurM/HB5EtYDwaGcE+8o/mTOGI45vqcCd4OMfGRKHA4kXRY8tRcoxXjImPmEQko79/E5QxLTgT+jWJXwyPBoP0doIo5Jwzn90PMhcPHdMs8wnJB4d4Droi5EHAGWcJFwwyf+oz7bvMIbPHEr95JDgPGAaPwoSx5sR3Pb+ZuXqFOMinaOkW7/QYjAQXCZ/+ql2X68x1CZnl+zthCKKJHLKAcxGEgRCYwgX6cuUuyf3R2U4qxOueDyCmfIqUWws6A7V699677wUcDkQAvakLAZ9ikWHIAXzI1pS5H98Qu/nxYBLwHtSwrCQUmjUFn3YAlMITceaSPE9vC+ZnGSSI+ZbWoPUEnipMO0pqM+QpZdDKeh2hvSlA1tSQwbM0ZTwIw1WSH6ffgcbrgy1yNfgabyVAmqaa+b3eKhaZpgC9DFrM95oADYrmj5CDx/SUlFyf6iaIwLWo2mj8gerIt3GN4EhTMgO8v0Eva1LUXjl5arn2KRekQl6kihC4Az38CwDk2Te4lOaY1NWrNp7kxDm5gdNWhs4nrrI4z22brpU4zwm5S5EjzrK1oxLn4Pdc8onjhgx6Lb/WyNaISod57hDIvI6q3MHL1MIZeQOApwbdxSQ9twvoRKtTj/GmwHDkDtPgwgqJj6wecSm83T/1AQ/PCk5P3udovvF2BevF8JgA1fk+qgaUlzbWCIa7Njw9R/lYu3+iDXADz4sryu64oS1XR8fHDtaswXGI86bpsmt4E0oJzwWiVO6gvhO/oY61Tam3FitVsYVmgJfuKC9bRqbvbRUz6DDEqhITh5Q8LaUqti2YBg1cs3yZAp5hPHqvlHxmt5zAmtrfz/ftZVQat52TuHxHPduHE9epoKGZE6uKOlXqr9yxbkq5mbXy3u5Cw0QNbZbz3DKMd8in8fklxuVY2fBPg1QqFRRVZT5SsVWUGqkaDofqHw==
+    rgba: 4282022080
+  encodedCells: S1:4:4096:5EC9220B:dZRBb9s2FMc/AwtjxuLTFEcYsp1C2fA0Xyq9pSiTU10ORqCTYnCp14vaYoKX2zwXQpBLOyCGllNDxujYXIwGKFLd4iowDH2oPcpJl3YoAdPS+/G993+PpCzrv2FbXxr6j9A6+SK1NpIk+cy0bqY71y9D5N9+yh/eej5JzBCf8J218u87Mz0vef8T7w5fu3kJl3zv47tlrVmrSwVmiOR/8UPkD5YB7Bt/cYOwVNv6XohrbInmkhuLHR4J+8G2ZfjVT0v3Xe1e8w2/bwkbF9jPubBtkyD0QGmNDdgTwpaMgQhFeCIC3rd7TRttngclR3fBNAMrFLsnG0WwHYYbJqVng3alNFhoqaEuTvuTy+KUL0Sz5N6mvsbCldqri/X+VWfE+V5psiwFytV9fNxzFcY/F1Z4OcrzRo4me9UKGWgqbG15bjiRoNC6G3S7Oc9R6URYYhNgFY1NFGazHgZaHea8mweds1mpwFZq1/yZbB6EonnAu6Nu3m1wKmhpdMxsv8ZpE8Lw5+4hPwzybt7mtluSejnvPMYZ3dF5dBgUBZ/zYiI+DrvZNkUU3TkCLC/gRVG0xa2xaGG5C94JOkgpl7DDz8LbC/Tw9WGLB4e8GwRt7j9s8MVicHuB6l/u8HnAgyQ4xRV553Q7Ho8R9K8DrF9e8STgPCl25pTnwdnzNP1lybH+Bd29auXI82TO84Ln3TVr6Tij/eZkpk/0rDVKODc58jlvFKpuvI8Gf+lk1t4Tjt45Gx0iHwW8QTuNWUfHcSwG1d/HJr49Hx00Wh2svsAC6E6D8gbyOIqexkfrHx4vAj5vt2ecNw47I6nx3Eld8vhpnMrZ2WI2m1M6M7cxoQmlLtWSxOkgfvR3+ogmSdGmlKJbC4+MwkPju+CQ6bFIRU/QYevM1SYilUNX1ZUPmrngkWmGFfRW21T7jnIVc9tUSvAUgGIbdY38VyHqC4pW9IcD2sIIekNjDp9Bk+CC/b6z7QyZpK4PrmRzejCkFJgChvkJyfo/0v4jV/obDhp86X9IKHMVOFCHiExfVYYzdvRISt9Bo0kzxOKY8a/ruC1fuvR8+kK0Xd+BHoAcJnji113zCoP4Q0F9lWVZOnGlYj78mbSwMVJjJRpUPMaO7B5PkadUA6bQWAWq1NphjlePU63prFjJsuP0B2W4i5yBcQbmvUxTzZT0vyIY4B/GJANKHUeb3ugtNU7TFK+k72ONx2nK7ivU7zgKObDJFiBO8fL6FJtUS9NNgt8HiT1n+BmpV+4+G5dcOobvpymZgjTLGQbowQq55tRZwSa+iGqE+K+U4/oeClyHZxHiLEOuKsR0OcvIb68UaOlh77x6lBqcAWizB7hLZgFyh7pQ9zZXohLXAHwdY+S39D2+EawMD5BiFRKPkROCu9yPq9gvShGTLZho3Fa2EpH0whiU0vvxPQek0kbm3fNMmp2rkAg5ITFoyPbvYVpXlzLOiWltpRK9SC/QnQB7m+3XsG/aNZxUyBv8Rq7gsT5G/4iAm9VQpdL0fRTH5RIf1J0ovjD1TAnoGjYXlCMrNxwFxvF4WkOcEXaOKshW3VFkyavZfehhce+MGkLemKqzTJ2sxOVVQ9sWPENuItXKttamKMBZcgxRJexJHKdfR9WYxFVMYyLcV0/eodB9c1kjwPQXmUlnMk5rGOabXmbqmNaieBCPDcanasmNCkLOTTNNxjjFEMiRXfPPxqBGokFWQylV/P0L
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000fffe0000fe0000ff0000000000000000000000
-  conveyorDirections: 00000000000000030000010000000000000000000000000000
-  conveyorBucketCounts: 00000000000000020000040000000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: fantasy
   campaignSeed: 19277455
   displayTitle: Night Circus on Floating Stones
+  seasonalNumber: 0
   beltCapacity: 5
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
-  sectionBuckets: 1
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
   keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
-  alternatingCrates: 1
+  alternatingCrates: 0
   swappingColors: 0
-  loopInventory: 0
+  loopInventory: 1
   mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: b0345f06e00625042a1be7803975658d,
     type: 2}

@@ -1,1 +1,1 @@
-PASS: actual inventory dispatch opens/closes crates; rejected clicks do not toggle; open initialization does not snap; opening and closing take 0.65 seconds with intermediate frames.
+PASS: full columns alternate 1/3/5 and 2/4; accessibility, rejected clicks and both animation phases match.

@@ -16,50 +16,52 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4282329869
+    rgba: 4282001420
   - serializedVersion: 2
-    rgba: 4287751160
+    rgba: 4280038201
   - serializedVersion: 2
-    rgba: 4281632412
+    rgba: 4281501598
   - serializedVersion: 2
-    rgba: 4280632649
+    rgba: 4279506451
   - serializedVersion: 2
-    rgba: 4280770666
+    rgba: 4280836973
   - serializedVersion: 2
-    rgba: 4283450142
+    rgba: 4287685881
   - serializedVersion: 2
-    rgba: 4279839536
+    rgba: 4279968545
   - serializedVersion: 2
-    rgba: 4281283623
+    rgba: 4280764748
   - serializedVersion: 2
-    rgba: 4279441688
+    rgba: 4283383836
   - serializedVersion: 2
-    rgba: 4280558614
+    rgba: 4281283619
   - serializedVersion: 2
-    rgba: 4278979594
+    rgba: 4278848266
   - serializedVersion: 2
-    rgba: 4292833833
-  encodedCells: S1:4:4096:8D707F7E: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
+    rgba: 4292769069
+  encodedCells: S1:4:4096:B4CEE12C:XZVBc6NGFsc/A1NKPLLn1ELbrJ3LmMhWOSdpWoUEJ4MZU55TMmXV7HEwrsZiLyNBIPJJWSUTpJNcTCGak5R2MaLnkku2NsWHCrJ3drf2FSd+r/v/7/ceNKUKRWyv2ltkmKIDaTB0MZCgZVU4x9nrMZQiiuhkXt0gTDFQwPny/pRcQBRxK+bIrQ2zWFxlbOIwzISP4Ljhf/HOcEfxkmthZaBQ1ktJ2MsRH0X7h77effqOW1U045WxurHIhqzY25zMb6ZkkOaNY1HkHuKiE/ASckmSVlnkEDadE/mVPqxL0iPfNQLbp5gkhFKq5CxnEUSBvuafPnLuuX5fN+kvM7nCptY0pI5rr43GPc99jibHQ5vkZBO1prNJIvM+8I8PzrYo5CYcd8q9q0NiEVS5kacbSkxfqL3gn3Dct9/+HIbhNu8K2Fna4saj90qGoV0XTbCV7/f7/wir5Q6mijO2i05etqU7J8BiAw+/KHlSJoThhBsFgS3LlWisSXEGhQvxCsP2Vv5NmTDjFpzu2TvOpsKbaNdq8g3d84QnW92/lfwvXJU7F0zosJRJOLLMA09UjDooX0+2AqUCt6NfI4tFEjpoHzbdZgce6kDluGG45T9XJ1zTsyxGHSdD59cY3Aqdutl9iosHflTy56PzLF9h6vig+kxys66qe8aTYrLl/R/LImulX6TkxHxaFAz4QDd027/b7z8KcM9V6S1FbWXM/7P4XWnX+Uym3aEVP/AvS26YErvoYHDAiuIrvR0sg+Ba080HfrRbcmSk313hNg6KYtiBY90wyjIYD7x/8uG0DrvIDwAkQddWfeNa14Dqg8tHrn/wzhtxgnjgLL262rnzVLEOhHP9sv96y/e/tuujbMX4H4nhiTXV0LUhDAQAHpf3x1qg21JI32ZLIBgvvDPNsp0gUL/7Nz/pfH2IpQmzLLl0pTV48T6Ng+Fn3Lcj3pcUpryfJ4EununDj2ZM4La5jwZJqy3YlO3NW5HxoikMDRz/AIBaktojh6jWZr1onuy7NWsEgDkbw7/+Z/uXxyNVp04ezaMAG/hNvw5n3wvCZ9wXteuaLeOKRQkG63ap+f2MvOkffeajoatSilFPkZUhAGL//2L0a8McpC3FUhhUfV18/V90JIqXmiAAvP4gWxGRIfB173+43nip6di2MJQHeCwzCOpqrXHUePT1un/kHWrGCEiWIKX0gqA2Phs1VU3bejjqi6IINF8LIFw75BeW5igOUFPRjYbYKNdqWs02GocmkEZsX1sS5iC8b99CqyY0mqLYGAZ1VYNXKrAyqh59lGhqxcP81jfEmufVtOD8+vywo5bVDNbU19dETq3LUcy6wB+N/GFtBEzzm+s6gI5LXdNmZOA4lyO/7gJoaucarh3oDc+/wpm7ZlHCxnnuOIFn2gpmErjWjLo4FEtzvGvTQ5LIw6z8xKCJ8b3iQh4c4lIYmrCdmXHWILmUsOkP2y5Q3jvweQvUBCAgXI7NFb69I9ES0fBGoXs7WZQx8xu9A8AaxytEjQH1BmdklqAZKj4VhYUxu28CAbcp5opnpi1BG/okjGY9qfj027/Kf7sOwPXggGGlKJ7xJr7FLiMkyqPZ3mLnE/IF4xjLfBbnqPi9gM6tu7ilRGbTJKyctievarbQjqW2Q+0nRcH5QAALRlPKyCTd+3Cx6wa6tMRrBUA/+OO3ybibLfNUya3VtKUsTpqz+itQFiHDWOru7u1NesyE9zKTo2TO5qlFEsZ4qTzCeysjhN7+hEh6crSezxBDZHkfybxk+l0IoMTibOP4NkElD2azQYgSb5w6mIa7gfSmlim8ciuUBytnZnQXJu48mqWnHYSsyu6iq9ZZOelG2atUCcZgSaKIZCyZya6BpUpr7JqBfSe0uSRnDslMUt4qKZomSR6O75Xi75ZzINjDRdjjuFVMlCVR8iwtlTfpNMlp8clRbG6ymFRDNKmuyDCfk17EItZjNEbKuPRA6A1HOcTtcGgFFSmcbRRCGaXxmMwXEVUS7NAKy/YQhyo5YWF1LhOHxGQQeR8VFvawhFiLsUGOOEwImoYpIU6ckrx8yKzk5W1b7RFCZJRGOZpv0jwd5MoslYk8DadhprD5RC6bLiOFMBrRLE//BA==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000000000fffffefffeffffffffffffffffffff
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000000002000200000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: fantasy
   campaignSeed: 20848390
   displayTitle: Sleeping Moon in a Forest Nest
-  beltCapacity: 4
-  beltSpeedMultiplier: 1.2
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
   frostMoves: 0
-  sectionBuckets: 1
+  sectionBuckets: 0
   keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
-  swappingColors: 0
-  loopInventory: 1
+  swappingColors: 1
+  loopInventory: 0
   mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 0fea8249e17b2a545b932ad186557cc6,
     type: 2}

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0815
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280360998
+  - serializedVersion: 2
+    rgba: 4294302922
+  - serializedVersion: 2
+    rgba: 4285418836
+  - serializedVersion: 2
+    rgba: 4282814917
+  - serializedVersion: 2
+    rgba: 4289516006
+  - serializedVersion: 2
+    rgba: 4287865782
+  - serializedVersion: 2
+    rgba: 4281745995
+  - serializedVersion: 2
+    rgba: 4282738818
+  - serializedVersion: 2
+    rgba: 4287462265
+  - serializedVersion: 2
+    rgba: 4292918433
+  encodedCells: S1:4:4096:88792E6E:hZVLd5tGFIB/w0SOkbwrsRSLnUNqB+/ajiSyrAuYZGc5DNAdtsxAdtjAjLKTSMHDEveo0vzKDijJ6a6Xo+d3X3PvnZnRxZbz8WBT8x+iNE0jc+XzSFY4H/0Pt1jI64vB9jtXlEaRW+FHt1x8+PhvrlzE4baF8jcVIXKDx60aevyb1yxGjHHeyJ1CZ79m8adcXivv3ZTzInVPmu8B5I43nw+O6fh2o99v+dHKxXT7jbdQeF6/xp/oHJfE/rq9PZ8R90ubbdNihVeyfBunnmf7Fo1S93VFlp78Q8aNy2T5IYxoBiqiX1EcjB+OT9bKcYebcU12ygONaHjquzNIMSFPDyej2h3t7X02SxGzor4f4yrEJCS6tz6Zn0zJUF6Pxms/nmWVauEQEGeVh4f4akozFEZRdiwXJ2Pmr/VPZwwB0k88F4VhZdlZpmOMqbD3duyVP33LpB0eSAm6QU5Z5WZmZ5i5D06O2CNC2NZWWl0NtMLXJmbJkOl6Ojm/K72CMc334+xM1epTxibveqZpIsuM380/qMVfhY+E5NepVmh1z4I7TYPQdKpLpKlyyb6yDz7yz3ztnLGdOoERodSEENIcWRUsS9txEGKadqPt4t9gBAIcgH7SB1FyaDvQ+ovqJSsZY3JRe7/2Y7CSArC4fgG8q+hDinwLoUa0d86Kwr+8q4qjlZSEC/cFRUEpHx6/tMxnVP/M1ssQA8hidrGSSP9+1sdPZBG/vPKtobl8Kgfojd/rh8VgqeNV4Q7jHjZmCyRHYpnDyxuEh6/ZHS7YbNm/Ni+n6PaVr1+XRewiUQpZhmweOo/35oD95pu/itVPPMtRsoNfvD2/rQZMfYRXKsVWpEf6veRSPpZf6Ej4N4fDeZzXtzo0eodBnx6oS2hk/7QTPUStvWnS0g8wnEDHAe8ezxhJTXimBkT3O3vnIwDXEp4ZBg0itffsk6+2brxMVvZc8Iy4CIAEezDLDgJHVVXGIn0CpYEPGQEggKFL2EcX4gW1k6eeqpZFqsP0mSkP9iEA/XTxes2P0hQnBwnNI/XGMO3DpFpp42kGTtVxvtg2/E0PAx1gen2vqumCemhRvZpDVXD1edPuMLUXHABaSlSSgK+xZVRpNx80INJRR+0GHoApAG4jKPgJnRfL398yd6p2fCx4jWcLHDibtwCArwisBpFQBOppy9VmJxzQeGnoeQVA7qUSaCk4b2FPfRY7eC6fcObd5wOQZK6Og6rlnXXvVH2W56axa75QbA8oxbgi5N0P3ubw/BHChutXEck0X0wo9Vr/QYfVP4Ta44t/LukUHboThGMsUa/EmNh7bojXTwG/x2QR2anB6zuMUDmKat7hVz1wOhbNh3piz+BUT0equvE5i7Emcld7bSLDRGyYTBdi4nR4BMaoxphp3eIGEQAH743JxIATqtsUJryHEHd2uzet+4sijAJP9NsQQ5WR2cS4OgOcf0mPFa2LPwgwsEV4CA1DN/SF7WCJ88/UeL9PH2ApyXWYGa3GJJuZnuguJZSEXocDCXhgBlPxQJLaDtr+icYe7c9I5J31QCDSN5MF0dN2haZjuRsfUfrk9oOZTlMxYOCXgyCCtG+bmTi4cp0rSMQk4gl0dOgAxwS/WygnESVRQrOhOJBrMdAREAdFhDshoiUhljDNLbRpeI7AN8FAwt0sBJ0m9XLK8VbhnwPxbwCCNrt25AKMA0k4oTi3a77jF0FnRbC055L4IsJE5D6iOy7uBPFL1F3q7IWbAAstKRFloXSjyBsxzvvw/5GCCf+UwrSdVt4VZv8mBm11ehcALKw9qu/vu4v4m1kFVNDGpokwTj106T08cR4Musii+m1aIpmo9Z2PRl/EzVc/VQUm+9JgSlq/rbRN/uShDeP/x2Mtxt9LG0V4j2k7IzlC9Y7/Cw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 85264644
+  displayTitle: Vietnamese floating market
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: f5bbc27761bb65a4ead2895e4b7a7040,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

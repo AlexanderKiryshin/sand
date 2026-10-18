@@ -1,0 +1,5 @@
+PASS: 49 unique loop layouts, 32 compact and 17 large; routes occupy 8, 10, 12, 14, 16, 18 or 20 cells.
+PASS: 900 complete campaign runs with conserved sand budgets and working mechanic transitions.
+PASS: inspected level 81 GameScene screenshot: compact 3x3 route with rounded turns.
+PASS: inspected level 68 GameScene screenshot: no crates; visible pink swap marker in the lesson matches the bucket marker.
+PASS: real level 68 dispatch swaps the marked pair colors.

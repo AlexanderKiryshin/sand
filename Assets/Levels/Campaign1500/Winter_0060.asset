@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0060
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284643999
+  - serializedVersion: 2
+    rgba: 4293827180
+  - serializedVersion: 2
+    rgba: 4294045426
+  - serializedVersion: 2
+    rgba: 4280095616
+  - serializedVersion: 2
+    rgba: 4293315011
+  - serializedVersion: 2
+    rgba: 4280820000
+  - serializedVersion: 2
+    rgba: 4289363564
+  - serializedVersion: 2
+    rgba: 4293702292
+  - serializedVersion: 2
+    rgba: 4285484865
+  - serializedVersion: 2
+    rgba: 4293820483
+  encodedCells: S1:4:4096:C12BDFB5:TZRPl9q2FsA/gx8ZcuiulwA2O9ATeLpryknSJfgIm+wwwzXqbqDYeHaxxyBmV/OQ0eze9LTJ8CkrM2laHQ629Lv/75WFXReU/H4+n5/vPp/P+vf3aj+dz0/gEeIx8kd58FweNvEbL/+IIMSh5Muo3DxqEf79v/lHJjzq9En94kELnDn6X7k2f/Yu/JoySi5njxK3+Oc39bbHHI0mjJEXfo4Rnz9/8/4EJV8TpoW+vAg8TpvfAvihTsvoDldMG/ib/z/+3H6+vH4kmU0YOdCaQ530jxcOn+CuBRcBnTphHiWq4pDfv6q3H9VTe9mCMnrGHIfp4nGDEucrXn4YvNGoBVb7EjwTLCtqlZf0zwAf3vGa5hCB9ZGVS4Q7NDqk7pQSv7z/k2PtDeiVQ8SYx1iykNWh9kRSzd9qjLXv4EVgWdYGBGJEGKV17f2d0vw/jxcDAP2DLhskC4q6ANQ5P939rNQNvlW1C07WTFcOlhBUjCHT+u2l5nwf3PESU7Jy+gcBOaKRboTHHkz/USlVGHdWyYkunC78U5KP6e7E4MGD/M4vBoNBQ5ialz1zWMQlYp8F9BLy8q3GAyNr6Y3H1tc6f5wiHxvRReX0vsSvOvclH7GixoSAlqxipwJdffR28L9SoPOTDsB22LGXegT8SdWIK+BCAy7Wfx28+vFNl3Qd5tR+s8lTl9lVejLHgsEHjU+DV4Mf75mO/Bipccqgy0nFiBh6VPP79zc6gMG9V3LO2YotFmiTdTHvCeF92GsD724GP/237Bx1gumnCBHHnVQJQwixGXxd94xlHimqRkOh5Nh3RPw6FaL0//OFe1kmCjW+TtVDIeWYrVRV63s3F3oz0EOjt4HE62gTBFuskKKf/eNgq9/0aEyCGTJdX3ceG7yTMmF2RWlcC7JjZmc+9o7afz6e76rH2jUI6GbHm4kQmWCnhr3B+cRhGObVtZztrua6A23CyjAaaXb6BFgEMlbbUVadhnbQ/x4eHhKSeZluVWr6ND8K/6NUYKfzmtGb9cZftAHijBhNgEA+TDYntBwF3ZVpG8MgrJjtDEbEATNJbBGEZlKg7LPEvQK7Mx2jTlkPCXVMMAUIfvUp4lxOIq83jfrECY1Oampt3ZiknJVIZohhgOjpBrArfcc7JKM20zeZCkh8zoNxJJDjHPl0QdnGHvaPkRDlx4o0xEa6EduaWnemgqJ6NQzsSqdQ+solI33ZPLbDWj3xm5uyv9LodII+uY0KlyWQMJrtNpJXzR1aiSjn2xpVpr3JKurrFkDbhNuIh2EjP6FORCq09EcUqzGLLOG1Imgs126xwb2/QMEFhgL2tkOmIYvjTcQKsY7cjQhOpg5+HCDotoW241Swv/Lc2HXXu8wVUaiCKeYKsT1KE+SGMzMmt24k3P7ajQ4RShm4zTwIVDuZjZBXGDGOPVet924Rz8dBvMVwDpYfKxBHd181VozeMqpWcVTELlsvdIJCxLzApT2vIvOMMXGKa35QnpoUcugHuDP3Acpo8Rqrw1ZSUYSouDjEcTGJi10g+X4hAh7o/FCGFhCDVFQxOW5kFAUYhH5oLk6IW+AcW8HjyCaUHHau01Cto4rDJEaBC4mWULxpchQ2SQkpwlu28XYnuY+UDPbKCvagK2D6eBJkdaCzo+NSb9FUGy65hDDfmqCfpxyPCTms3NX1kKXeXkk9HXx/jpdCKNIGP0QEm04njuarKFBhHCOYT0uEBEkdtA88de1K2ImPMYutPW/5lmuefQQL7DrYPnJO+7NbQ/XYusgLCX5TLHO/CZay63u7jhJrfWI4h/lvp3ghdydAoa3DGbFzaNqpL6vjLqmw1SwtLEvC0vd3KKH0bMzA7kLzNe4ZWdP+OIacL6UE3WFIRBna0r4WmE9jmxid7eE5yZs+b4Lk23J0oiqGtOoEcorUng0laT0WzQfVbIeoi7Nrwl8=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 21672193
+  displayTitle: bright red aerial cable car suspended over a deep snow-covered pine
+    valley, viewed from below against blue sky
+  seasonalNumber: 60
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 6
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 7ead6e445a9da8441ad284dbea50899c,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

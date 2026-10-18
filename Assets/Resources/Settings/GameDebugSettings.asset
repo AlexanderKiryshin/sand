@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7c3e91f2b4d4e6a8f0c1d2e3b4a5c6d, type: 3}
   m_Name: GameDebugSettings
   m_EditorClassIdentifier: 
-  showSkipLevelButton: 1
+  showSkipLevelButton: 0

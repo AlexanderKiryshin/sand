@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0502
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280962381
+  - serializedVersion: 2
+    rgba: 4283604124
+  - serializedVersion: 2
+    rgba: 4279773226
+  - serializedVersion: 2
+    rgba: 4280972667
+  - serializedVersion: 2
+    rgba: 4287277494
+  - serializedVersion: 2
+    rgba: 4290690544
+  - serializedVersion: 2
+    rgba: 4283938776
+  - serializedVersion: 2
+    rgba: 4284902757
+  - serializedVersion: 2
+    rgba: 4282276544
+  - serializedVersion: 2
+    rgba: 4289632381
+  encodedCells: S1:4:4096:CA903C3E:NVVBexo3E/4NQiJQ31be7Sa9KQNl8U27ojhH1pbBuTn50Gd6Ay/ZpjcMOOreWvdxsse2ibvVr+yIuDrwoH1nRqOZeV+RgCnNlVKSavt8Q4UgNJCBJOchlx21FJk4zmWxKlcMaBYy4nEi2yLopAEppFBiQkQQF6vwlmYEEIeQyZQsO0VGFBFMbOYsWKXFmOddAt0+gVYRMCk7ayoZWpBsz8IQU+Arvoct4owFLbFUhKas5D0RSBUqRUK+ilvWUkpJR5JekBLKWcFbAtOReBCRPAUqwOOM9TCFq3C+5GnICSNEAIGz7R7O+pTitiPom2fmwqxbkowoUykBKYjSQL6ntotZ798av+Y9Emid68OSq7ordwj7W33FjSAl5/xgMOJC23AzUxj/6u5/T7g4VSHiEefknLdPB5QQ3drsjFm8K0tjyKYiJCQ6TLkM+Uh9wPCMnFHE6/eLhSEEmqp5rXUapufzUQsmXYHf2nOzeKjNwuCFmyOH60+X5fPbaqbbM0xlMjE+gjG0oXaG8HdNFWqzV5tJmnK+uzamNg/1wuOuQrxwFi+6t8/5OFUM7PXDYvGwMDV11DWOWtVY5fEbjRch6bbL+uj98Avcvb22vmI2lNEK/2E55Kuyn2WzWsyyXzGN60c8IUmVTHOySWjIf6PxAOTHIYCofY0enXV2NQh5SWwCQNVyPITOkuJfcsAN4icKA7sEuls4Vqv+K/ZqLEBOzIO3aJxNTndHmKStGnnM8z1hnWJar3cH/FE7a+Wuq/Cilc1UqX+aElUMbsrdwuN6dnSh5cz19J/VeiTDdZlOwlDCUKn6AYucynV/el65Qn9xI6GkUiLkXN13tMYqmvofiKdnSzsttI72RCGjCE6EfB/pqK6xS21ZXp1lbVfw4tZlKdd3QY5DI3Fy7PDXOiJqpbc3mZtgqR1RkV5HXGue5wHfbrr6XPK8PxuxcjnVrpIqQrLgPOFhPMeK/9INuBbkdZiyQcEbQKIo1fYj6ePbmRkV+egbmuCO61F+Giiml3b7H349F8X896H49GKFeFu2Wl9ATp8BZEoV5XVlfsyOeXw//PR+FaMDkYPZBMblFHBRaipzJBlatj9dvlKK/UVOety6WIkhhYSox9nznmTnINm+HlDYWHLe32AzSpi6qttVM7ya0m2o6239TUZmG+j7wHoUj/eiq9TtpjlREw33NdwM6GZvkcnLPmjdHnyuwLm/A0w5bwusczlFokaoBmWL5nokP1vi3AcAJUN0GtYfX3zlIU+j8Zmep0voOaQG7BkyFoaXeu15jFXnWTHVbb0Sm8a6KqGFJHh+XesXvms5bwGRcR6XHzYucUcvM/XyHu6HdX2pUYIUCl4QzpQ6L/+uXPPazoQagPeH+iMAEyhDIznRaT4u1S0OrE0o4rXH64Ix0ZsVHcKwO+kahRRxgN5/eFnmSaMJoYiPAqUj6ZyFrXiKX8cRF1tt90R0NVEpX3PFNjbZEqB1PayHOtLdZk/WZ9g6oQIsx96TF5e4ry+Hbd/f7Q531JMvjP18kLDEPDCFvyTH6rXsFtA+aF12YvT3I4HCvcKehXzM91Gv+SOBG57yVsxv9Rfm8ZiTTMWoxFx3tu6PEzg+uHGMB7BEbReAuhDHqmRe7fCZKPjTArihYnsChzW52RDSuIQkoJ4sXPPzqQB7GEaO7Umbxx8r28UtshQfHS+NTYXbM995tDg3by/eGHr1PcUinGH9KncCW8wYU+aRzt8cZPvK/OAfEonMez5LoEom6It0M9FX3JgfdqpDK+eFPwyr5NhHn+i5edJ9c3HHnoXO4bxEEd8lpzFWKeUH6J35P/7emW/V58rzOOKrlyDLmI/DN6g2F+W7qTcwI/XZ6ShKlVoLT8dizDyO70ZZegOOeobTr1TYdk1C4d4QhviDx30c3nJO7TwOOEZtgmKa4PeDAcret+nWuX8B
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 52484467
+  displayTitle: frog lily-pad orchestra
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 6866fdecf80e3eb41887eb298eebad0a,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

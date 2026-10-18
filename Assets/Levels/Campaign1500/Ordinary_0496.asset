@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0496
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4292128883
+  - serializedVersion: 2
+    rgba: 4293841331
+  - serializedVersion: 2
+    rgba: 4283263392
+  - serializedVersion: 2
+    rgba: 4285161818
+  - serializedVersion: 2
+    rgba: 4288915635
+  - serializedVersion: 2
+    rgba: 4285242314
+  - serializedVersion: 2
+    rgba: 4281348406
+  - serializedVersion: 2
+    rgba: 4286415500
+  - serializedVersion: 2
+    rgba: 4289580003
+  - serializedVersion: 2
+    rgba: 4293125866
+  encodedCells: S1:4:4096:649A4F97:RVVNd9o4FP0N9knm9HRntUlbdo2KQ7sjFWCyywSB7a1B2N1NShBh11PLCLaZuFZ3deMM6FfOkyEz79hI1n3v3aunDxqNBtpb+dxBSOtLsi21hg4YDNj16B5rmNEll/rZYPDi9f+hJg3gj3uwUZqfmykq9yngE4jKS75t6IYJLnUJ+AQdMtUxuuz1WqYHQfA0Gpy/gZ5xNjGQg6RenXxPemGlJ9A09uFgBGyEymdRhMhHZy+vNIo2ZEaIvz2gN5dkNhu8rdU1jAh9OeO9Xvr2gF+0Cefptp53XSjd5rzHV2/3lOimF7PFF5nWzg1TSD4js3TVe42MKrRaCNlR/c1zdfjLBaWMseI1eoMWCHmtFutQNT2p6XWDbFzGhoxFp/ofTd49+lF2S2QyPjXZG+iCZxGbDdn4/mk50LL/QUbHHvkRF439Ei25P2fkOx7Pn5Y9HSfZrN/tksGnArg5uEyYO09Ixsaue9sHnLHc6856qtjpcKV12GIJLbabS5VHEXtKWRIlCSOPqlgTMoC6dljymZAxIUdXH6cauzmr8e9kxQ6W9FosjjPGXKZZztz8vk+qCYsAyrzpnYR2ms2zRcFYFzOmmNslckN6UsIIcyO3J4diPvQk8TysGCjspvJTFD3nd12ZDX1fUp8KplwFM5g9hiwaxnlG4xZzPeml0tAwXCR5rlTW267r0MiIcnHEositBwZqPe0n3bRKDrlZk7kHngegjpJg/DHpe9WXLAaevU/MYtOrQ9Q6VsksFcmQdac5I7HJEdCcpSqZEzZU62KdzAafwyHjY5aTsYmp5JMShZoTn6rgIUhmfm89ZGSc58ZHqVDuQipUJlsGh/wyzQzO2AreQNF0F+oH1ecx3ex+quJuNTrg6R6nO61p0ZdxtNYbOunLv+VcAj6EdzocdnytBVXrWSFiHVLfG6T+7ZQ+DNaVWj9myuCbYLJe+H1ZCZ/yv0fS78nJIBBxdxBUHaq1DLdi4QvpyW2HkGA5Pr9jKbsXXkE1pYGeBJCZSrBUfpdKxSuarxiuaBHC+IB2aBVWVIRitZCZF6wDGVJYuLzzowrDJ9pcBIvrKqRQB5NDTpSQ/khKSh90GFZVKPSX37Bd6S1fcSIj14Xd4EtBqQ/4rgql/gSnKdBi9R00FokKpIyU2ulqF1abbdivZKXDu/uNFLBZ1O5nMMu2gdrtKvFgNEt/MJHp3UjAPhNurgAPqP4Jp8SDqglhfDLv7lrIW19iFvwMmuudXl5rsy2bm0DQgZCkGQhxOxIu2+kN7HW9nGphnVgWOkYvLCsd4ftr2vkBk1KAq1DfTM0ZPnsH186rqxP+JhT0pHlPRQEL4gUn6Ow3ukLor69wGSALfR0JWm4wHlq/yuVqBDDGOdx0nF/Xt/bitDOwPmE8ca42nLu21cSYmSuI/0DgZrd+96+sNmkPrHLBOX9lW2/9412J+Pk9ZHc+R/jlr2ML7kqruuX869C68NrHJw5anL+Cm2TzmUWUWujiyrFKyM8xalxc0Qqh99EpTBEeZJcvLWMI4s/PHduGtBZqXb80+FE6sJBd4zU/hi8HWWfnGONTcLW8wZWFa9y5Mfj+Pwrvccux2g7+8MagqLQhf2Rb9gGnkQPxbefVEp9h6DkGz40ioLXOru2qAfpsB0vexNA66Bs2ooHfbh/BNQfKjDPG19aHiW2KiSND6UCfeKTtA6Xl6DlIKdwSZgGlfzLswGG3SboF31/a4q2vmAtkCg/GmKmGDRU9sh2Qd249mrnAwuCD/VFPFnDT/tlC2SrCOHnx/hnPDWwflTbwOHSL5isT3/wg97CbO9Z/5sCxmS8WEVC8IHuHj7lTlqB27/Vtav8L
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 51848174
+  displayTitle: Budapest thermal baths
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: c31bebb8f9c65c049a850f795cc72cea,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

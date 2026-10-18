@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0404
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4284906623
+  - serializedVersion: 2
+    rgba: 4292589927
+  - serializedVersion: 2
+    rgba: 4289684482
+  - serializedVersion: 2
+    rgba: 4289430332
+  - serializedVersion: 2
+    rgba: 4282461460
+  - serializedVersion: 2
+    rgba: 4291464197
+  - serializedVersion: 2
+    rgba: 4285679370
+  - serializedVersion: 2
+    rgba: 4292586791
+  - serializedVersion: 2
+    rgba: 4287716875
+  - serializedVersion: 2
+    rgba: 4293582513
+  encodedCells: S1:4:4096:954B1791:VZXPd9o4EMf/Bndh+5JbVRbs3LZKYcltHREjbrTo8bpHYB3orcFeVT2yWaPkVqzijo+UNoG/ckeGkGYeTxB95sd3RrLjar3S2iXkZEW2eyNbcqLvt+NRiJbcand2v5ppd7Vdnay2hKxuXTLb6iSphuhxkWh94lpOyHaF0SfkVuv71fswCUOYFBxrkJlLVtuZuyKE6OqW4N4oXCLHCrowBGSmycquGj/tsIjfcRf5Yk70jBCX6HGIDuNwZ/twVEEWRJMZVhoXe+ETh9rWqJrEKrtQy8ew4xWspq8MSIj+c/UjD8MlxeWCsVmib0ZaBsxmKjgmxRWGlhvGQ/2zWWk7fXXLgYPVcKPJg8OBWwM0jpvAAB7jQ7tQW38JKoMJxrdByUN8YXtuLcGoSRTd6KTgwz1HAUsFkC3tbqJRZ9FanQ53fDgMQWaAhzW+YDz5u4pe4/Ejx29QizB87/5YYiYpR8jDJzycAHhWApuBZwbYWgGK9ikdh9UfiUmWX5c59zkh1fFjIHIrX0olM5nxqsmrg+vRwDq83vNUNiXPpKwFQWbA93WFDcb2YOSkyJOMJ3hu6lKCNGyxMR24Hfg2MJI7ATCEHDzVwXVuyAY46/C2rS8Dy6W1DOwMOwD+mvNOnrO11QcNagcMOPXCohx8j7Ggee03sTHaaNCiTZjOpbRDhNECPlVqYDym6YNhkX9k0/M2ntkwBR7nEfB15fTgMMQJ1NOXeEnQPvl4mSBfwPCPg8NE2SsAMGMbRJhdcWNo9cCltA/KzQIzpMbkAe8EzP8K9QKmyBt2ympevwEcdcQY9yJzS9Kdw9nUSgmXmRsuQN15UbQxuck5Hw126a9Xdn2pk4G5xEnUGNuAWRM2ca3EJv3n3zNKq27VKHmZQ8DVgjPPRLAK7RCy5nl0RO9JWwVczj1lIMryjeFexbwPMcG0icVnTOEXcO+rBAOf1B3zovWiEhIUT+m3emVbaIHRMlMBcNWKAtYhvk/OKPepUpjuzPY6umDGTlHGUvYlY/4rGlyd0rdXUhZnNcRH2eyOE48Bz529kj1LUhYVvZ4za5wxtyfETZvJBg7sMOi34clcFx4RU0L0RXxNjz6DeeDRlFXw6Wszdt1mhisZ1Gk/qGwOCc7xku8e4LZ1YRVKRfxRzM+ZvU7WYypO968IfJXZ+cn4qtUHbjXGjX2agrua2N/9oMcCbuwZHjh6HG7POpLAP0ppc+PyO31qXxxH1vDkmsVfjfOrdeUJB6cblF5EMksfeoxLP2EWdYVfFp6s/frtW7Fj+uXjA8ZrUK50hXCkc+Ts49KeeL3HTaP6CIXorp8dHzubV7tdhs1M0/R1CoGUIu6J712n6zjPHfNYuCHj09TI4EM/fidajuWO8+wnZT0Rewpf6CKW7LlwyqLcFbv4X3YOLSE+yKAr4sznMRFYouvQc8tPqRX41vRieCZE+S6P3gjU+L0c0BRHDNMcZ9TEB14Fb8RzrC1FGZsQhlNIwyZM+3EplRlOlfV7EfKuKL1wRNwXzckQKJigX/6MI73riM+qjLpbdz1UZ+0yyXjbhPDOwSvKolYZlZe7xyVRRviXKAUJHPWCiwwivMR9G+E4+PnT/kIX5/u1Zvg6lIHKrmTvixAtTIwl+i3xW7fkxILpjxH+G8uytar0WrHo/Q8=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 42213106
+  displayTitle: whale shark and pilotfish
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: a9e56e26dfbe83d4e891dd3710d4e418,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

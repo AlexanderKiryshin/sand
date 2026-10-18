@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0149
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4294505459
+  - serializedVersion: 2
+    rgba: 4288919504
+  - serializedVersion: 2
+    rgba: 4282071625
+  - serializedVersion: 2
+    rgba: 4283521664
+  - serializedVersion: 2
+    rgba: 4285170870
+  - serializedVersion: 2
+    rgba: 4293381573
+  - serializedVersion: 2
+    rgba: 4279899935
+  - serializedVersion: 2
+    rgba: 4289887589
+  - serializedVersion: 2
+    rgba: 4292847242
+  - serializedVersion: 2
+    rgba: 4293101891
+  encodedCells: S1:4:4096:957EE79B:fVVNc9tGEv0NTVJjQTeCpOUc7QE18lEAGGiPIoCIOY4pj4ncpAE90pGmTAG8Ya0gaNyUqrhE/cr0yEkq5a3aKRZI8PU3Xj88Pf37OE//97SO/NfN/+Io4es/NwcP38O/bBmwf9wBvjfYZiDlXwHaHQP4LntzwECp3dNTxna4XUiFz3F2f+HNzpEAUD+pjFVtuw8gdy0i/B3yERuQTG6kUmqDWwclQ4mORHhupkT2QOGzGiqlGizrBdhojr22CKwGZW8cmclV2WBR71M2x7G4tMDDfl09W0tZNISXTQZ15jz/xSRUmSMrqoDOCh9xUZfFgiJm6EDlACJunLquswOLF01Z1FhQB4DS+Wq9VtnK+iuknIhNIdvyUZFBLRdbLKwXIRJxd9CBosSiwcZeUKmD8vGxtGWV+1D/2L7aq4qiLJAaIBhht1A/YgEMpI2wXwewxZZwCoIlZvCQ4c1ue1BmDwBD93UwGWnCG0IzxDaDr4uqvcf2eRrBaJon4yGVgVt8PoXt9+uL5gB2ACdB7IZcR/1Oje0zXBaVNTjs0lcfjgjPvVSv0843792GZkgneEHV9TtuP5gYka5jf1TTDBCffkdLGbjcA3Dd1O1cTXicLGN39uzdtvMWnBXAZdyRUz+Zdl4fevHk6jT53OAOy/axTsndAYd7geu7I9cNvXBylafT95RAPW7vf3WY/AXwow4Sz3fPwiDU6XI5S9Pov9TQ2adPrKoOKvXRDJJ0OnGNGevzpbmbTeNDWoaEOFwyyZTQg8R1/aGJInPuRZO7WdAhJp1BpmDBGGgThCPXHxgtzPn4rhgX1909OIOeZSD1/jHn08FoGBkuxGGqb2cpH/YwAWb5pIjVeZQkfuAZTwsqcTQrjoPh0ax+LDo2AvGEh+kbo6M3mnNPJz+lxyLwsbz9eWrZCfDyMnKvck0PNwrGJkjSsRck+Or21KctoCerCH/DjZ+b/DwVRTFN8+gCF0nx6fSzU1GEy+hNQP45DWqap5PiVT7v/sBv6zL4vCFeVTeHV9wEXs67YWqSNA21GJ5+uVCb+WpQK4bmMOfC457h3WgZxGlq8sGadRXcb7pnrEbj+qHgXBs+4MJm0DqUdrXW7/bPegu84TEF4LmJQ8+EYZrmxlMKqtXdiMlm9sdboUfkTB/hmaXhwVjzd1QYdDd7iLPfNzpwDY1GEK6XRpBh0JGQYQ9eNbuy+cxFLiLfRMLwaCIEN5xfsIpjuFmE978W6mNCoX09IDxYCh1QNZ3q7bwcpE32fqFwszomnBJ4WqdcBEvOa3VcF+u4UC9ZQ61cB7HPbWQqQkfC87qZBHW7T0UoCT2po9AnBhiTU25Nv+5pBdU7uyB9+R9vcW1SX4hAh0tjjA5F/p70h54e67OTvU2jXuuRr82A81wIoZNwclGrjEawOJkf9WiDVvp8YmgG8ZUwgSA+S2ADkq71S28gQ6KJp8fCiHFihBmI0E2hmh8BFJcfJh+sVME018Rf4o8mJvJRCkd8LrNr6psEGSLoE4OEjj0hEk17PFJrsYZac/1lDt2hR6Uqow/do82gY2ihOhveZaRQILJYx5Nw2FPMiBdWyhwjLoaSFySelr0yugqpQHCYEHZlQBqx53pNfWP7U8wuCTK5EmtzflcUxULmh12l8K0p7eBPSBixKZtrcx0R6exLBOCdAnwbciWR9hPw+o40vyxf2H36FpHOiRfdgocOHn859taoyM7pM1V6Qf+bgReJfStF/OhDMGdWyxSH6nR4HvaA/WCj/GbhL5wOvSi+ZS44NxD2pIipFwuv18TKukaZWZFW1Q3n1GL3tW0Z8XiNxP470uPavsukqkqSs4bBCTS1utGchPJ6Q1KMpVM3UNNS0MRprqQbC/gT
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 30993074
+  displayTitle: yak at a Himalayan snowy pass
+  seasonalNumber: 149
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: c78408516a33af648968bd33242859db,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

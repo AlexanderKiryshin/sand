@@ -1,0 +1,3 @@
+PASS: all 49 conveyor-loop levels have no walls outside the conveyor route and contain buckets on ordinary board cells.
+PASS: lower buckets rise through empty cells and stop when they enter the conveyor route.
+PASS: 900 fresh campaign runs complete with conserved color budgets and valid inventory movement.

@@ -177,7 +177,7 @@ public static class CampaignMechanicsVisualChecks
         CampaignVisualChecks.PressButton("CloseShop"); yield return .5;
         typeof(SandEconomyHud).GetMethod("OpenBuyPopup", BindingFlags.NonPublic | BindingFlags.Instance).Invoke(SandEconomyHud.instance, new object[] { BoosterType.Magnet });
         yield return .7; Capture("rewarded-booster-popup");
-        CampaignVisualChecks.PressButton(UnityEngine.Object.FindObjectsOfType<Button>().First(b => b.name == "CloseBtn" && b.transform.parent.name == "BoosterBuyPopup"));
+        CampaignVisualChecks.PressButton(UnityEngine.Object.FindObjectsOfType<Button>().First(b => b.name == "CloseBtn" && b.transform.parent?.parent?.name == "BoosterBuyPopup"));
         yield return .5;
         SandEconomyHud.instance.ShowLevelComplete(); yield return 1.5; Capture("victory-golden-coins-ad");
         Require(UnityEngine.Object.FindObjectsOfType<Image>().Where(i => i.name == "Coins").All(i => i.sprite == BusesUiArt.Gold), "Shared victory and HUD coin art");

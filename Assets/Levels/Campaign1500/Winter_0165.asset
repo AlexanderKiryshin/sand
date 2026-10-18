@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0165
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293579214
+  - serializedVersion: 2
+    rgba: 4284449209
+  - serializedVersion: 2
+    rgba: 4282011278
+  - serializedVersion: 2
+    rgba: 4293847535
+  - serializedVersion: 2
+    rgba: 4279835956
+  - serializedVersion: 2
+    rgba: 4290023047
+  - serializedVersion: 2
+    rgba: 4288394202
+  - serializedVersion: 2
+    rgba: 4285948517
+  - serializedVersion: 2
+    rgba: 4281087329
+  - serializedVersion: 2
+    rgba: 4292457386
+  encodedCells: S1:4:4096:AE50F300:JVVNc9s4Ev0NqEI0Lt6GkIurPRJRydgbYqxl6xYrdKjcVKvBKLwtpS3Ge+PI5MC6DRGsjbmxhoNR8Cu3oaAoSqXX3ejP10IIgRCfY3jhHo9GA8dYZZleUmZf+2guBF4jJMLhYn0RyQU+5rmlmjJmtYe/F30P77UQkR/JzcALlVlLD4wxyr6JvfCbKOAL0Tt8IdzQ5gDTJaOUWrsQYhM5uETewM8bXNzUeWY1YDToW77Bvgb1TYu54N4tULCu4XZ6fhZrJPohEnhT3AgnfXQEdQre6WCAsahwspBOuML5tS9cf3ZOW1AO9plrAV5H2BeFiwqPjsoE/LsD8JFtIdW68LJdF5Eb1aAO4I4+324FRgLJwh2l9KJovfdyUDmoo9Fv8qQa1ZxaFfSddL0rTtK7Om8ZXG5Vnp2PNVLKz+BB71vVIm+yhmm70q9Lrc00OCjVw6iQMiraY+/BigJ9fX2lIb+UQRZkUTzIrZeydT3IFUeoyu8Hrdm/2DmFcusetk4G3Ekc9cep1vo9hGC/JwDilm/gI/sbIcpK/Ai52+Va/wbRW8hf4aPChBBGohyLffJOvGhiIAbNzimErBYPf3iPeDwf77vHFBrmhc2WoHo3Qlx454sHgiO+r0j6kpZlVVUdVN9eMVlfRK10rvA2rqrZLNFdmnZ/i7vHt9faXlkFp1kft/0ICkpITLp0FltrL0sh5nvNtpDAJqoL50b/1dmkLHVcxV1GyTgIfLWfAw5FPzr3o53EJAnqaUZImVZC7NPPFvDeOd+jmbFpQkl5bjpTxtW13H8F/ckv0DIeobRjaUwnZaqn025aXiU//BpjwNkBIeQjFNssJfElYZlhhrx7TKqP3fUz4M/ofPapXl7GhE6NmdJ494jH89fJzwbu/47zeboEmJrUTCidJC8T8ZU8Bf9FQMFb8I6mnaZLoundW3Y9//X1APhPqi76xROMJuChrS2xcLsddtyWKv9ni9fQiEq5EcBdmKuOsuvS/lX+e0LyPKrBOkIfBOZJF6aGkntN344fwcbsHUYbdMafsBBjUlUJo6QzB1p1ZEJe4lAgEMA4UEPyuEsuNeDaXscxvUpmZfZnbYLMdusWLtmVX+J7TVbGPlbpzEI984264lzUrVKtqsjhubvXqZ1OZnHHHkm3Q5mqm8F/ap6EuBCzCV1mLNWG0p0OjpQI1ac3axeBDXQrEg3jxDr7MqExNPeO7sBusz2uvm1aVattEltjzdJOLd11dko7kmfv1UWd/zSqMdhP49Ras/pooZL30HGGKK4uFii/A4b0vpgRQldZZmxMiQn4NT6qU++zz8cQ5Jc4pR1bZdMMfLtnTLOSi/cjlTeQf8RPfKx1yrRh2cSQF8uWNs6DXt7cilZg5RKqiV4aeC5JB57Y60G0F4DfIeA4LqqUAT61xlgCo29oyX09EvkzsGPfF8cKcqrvp0vDaNzRlaHQOp9uUd5s+bkFviQ2JqvgAYMiAYMPBYe5VU3+pBTnHhJIqGbAnnA/UBP9oRceYaVW8/OOEJVmqdWZISlYN5pigYDYn9U97hcY2HmfTmAOMpuyGIp8xYDUUS8+5dAdOCyQfUpTCwOiIQ62MhMxwOhgH/CwXTCaabAcSG1+v1tm8eCDxEN2K7BfYJiyMQR9gMzsqsO7lamEH3z0KWugBuEAf8VA++bZHMQv84//Gw8CGjPLVB75YgHOCv5iVslKTW85GuntHsJbDLdZs3qDxOCx7/3fjeEfs/8g/vNp1QCZglWcZR++cdiJPZDwWF8ivbor9mr7DLsmCBxVM/8TVhsw7CIavxpv1R0sAvlXEdC+hxqLDzc4BIjkP7L8ZBsl5cj7CIgH0v9G5fAtOIcg1vNVJuvtK1oXAeujqI+Eyk5gSAzR4L266Y+b+gKhftRH4C+CleCbXEa853jhYXVHPUcRmEKwzyN0zkub+0BRfIjCBgW891j033nH+/8D
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 32676657
+  displayTitle: Highland cow at a snowy barn
+  seasonalNumber: 165
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 0790a73e58c96644396817e1e9f369dc,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

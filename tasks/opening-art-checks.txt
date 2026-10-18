@@ -1,0 +1,21 @@
+Opening artwork changes; level structures and mechanic flags stay in their original slots.
+Level | Art from old level | Queue buckets before/after | Max grains before/after
+1 | 7 | 15/15 | 410/410
+2 | 61 | 14/14 | 410/484
+3 | 10 | 13/13 | 410/456
+4 | 106 | 15/15 | 410/409
+5 | 118 | 15/15 | 410/416
+6 | 161 | 21/21 | 228/268
+7 | 168 | 26/26 | 205/208
+8 | 323 | 23/23 | 205/205
+9 | 356 | 26/26 | 205/205
+10 | 610 | 25/25 | 205/201
+61 | 2 | 33/33 | 147/147
+106 | 4 | 34/34 | 147/140
+118 | 5 | 33/33 | 147/140
+161 | 6 | 33/33 | 147/146
+168 | 1 | 33/33 | 147/141
+323 | 8 | 34/34 | 147/135
+356 | 9 | 32/32 | 147/147
+610 | 3 | 35/35 | 147/130
+PASS: 1200 unique paintings preserved; original database order restored; first ten mechanic/structure fields preserved; all 18 changed paintings have regenerated color spawns and capacity sizing.

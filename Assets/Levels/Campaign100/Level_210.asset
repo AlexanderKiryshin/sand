@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4284237316
+    rgba: 4284102408
   - serializedVersion: 2
-    rgba: 4284624658
+    rgba: 4285873171
   - serializedVersion: 2
-    rgba: 4288651107
+    rgba: 4288255304
   - serializedVersion: 2
-    rgba: 4284454318
+    rgba: 4281757292
   - serializedVersion: 2
-    rgba: 4281277188
+    rgba: 4280752902
   - serializedVersion: 2
-    rgba: 4286334740
+    rgba: 4285424138
   - serializedVersion: 2
-    rgba: 4280961077
+    rgba: 4284389037
   - serializedVersion: 2
-    rgba: 4287523365
+    rgba: 4287845412
   - serializedVersion: 2
-    rgba: 4290368722
+    rgba: 4290301639
   - serializedVersion: 2
-    rgba: 4282852618
+    rgba: 4282852106
   - serializedVersion: 2
-    rgba: 4281691493
+    rgba: 4281160513
   - serializedVersion: 2
-    rgba: 4280230672
-  encodedCells: S1:4:4096:7D342CE1:dVVBbxNHFP4NI2fBbH1hWy009LIaCFjNBWWDZcUXiwwuzl6yJUMIXGhs5rBzcVuiiFvkQFk1F5s6RKteojraitlLFFsjNPOj+mbXSRG0n7Vr7/ve+943b8b2IAEM551h8imcHEO4Lp4+510H7qFzeJFt4kc5OzSs48yHTi7rzJDkPeaHLpCH88P5oaGH0DsMKS0UzLNRXXiVNx8Ok2vAuzR+YhKg1qi5tNB2z82Fb+68dYsW5uaGzpCaJib9quEX+jE9dxGGrrMTuueWc/7N2yfUvUhwh/T8qTAfzvqHRfDbmV2D66aeGswClG7umupZrnO1COZ+voZP4Se5M7hOLnj25obpcZ3S0PksgZqXmtyY1bsXhY5zzXXcXOFep/JjoV7ws6THThGjd+XGo+ITaFGTGcIg6eYsRuf0/af0S5zz9+ZOH/669f/8Nhk9lBt053P+GsyT0h33d7481s92dnchtv6C/usTtjekO/fmskickJd/ewvHP7MX9NmjZ8WcvnEc09VPxYrQhGTph+5UTrkU3z0152B41Qm36E/KT30/4oEmursmokirTD+GsmEygD2ml7pCjAXXgdapH2Qyk2Kq9QuzKUBvrS/MfagpzYVkmknJuVCMMa236LzzHvjLdwPfVyyCWEo4y5hIeca0PIEOUI9kR4iM3bS1FB3GmeCK67EQOqP08I9ky24IKGXxkhCCd6ddpiMlwKDS6zTZukTLIlLgyYeSKJVKa8F4R8B7sHh4+N7upaKVcpmxtLYiWCC7gvmd2BdSKUI3B/ZdwVPGUskiWGKqZRb5tRW/EXGlZJK823o7AVkwIESaZixr8TGv1xoNreS0sp780uvuN/z6xO/Ua1kNFq21708aDCYZiUovmfPqB37Nr++DvRWpwJ61j5cOouAkjRp6lJSQ14/juBrX99MobUhdWcTouCYJjzgPNl4doUEPIwyoq5RJLZtV4LOUTCWfBi+TMkqQAcZ/SaEZu/+6hL461prAkyID4FEZ9VDvDu5MJGeTvcUKuszWphOmpIT+m0kyQJaph5FlMqieIvTnc909UUzpILGPEnuQDAa7eCkVMgviUqX0nHOdiS7MPyjDL5Z9hGwPYxHVdLaIEJ871tNGJlpdMHFkw/7aA7uM+vsr/HVcstBNAecjymRrOtWklP/i2ai8V/f5AS5VPNzRXGnGg9Yar5B36HCUrw/XfV29DcNSk4y1uGrpltanB2RwlLSB7mGmq9uwVDxZ05zBCRAtLkkVgb5l9RDaux3jU9TbXZIqFULqLpzl1Vv3reSwTWyQv9UvgYx3Z6ykyJTiwVQECBEredfeaKOmhXabMEVvKU1h8YpHRHNCkNUkP8AbQXazDFOGGcIeap5mUnZbhF9BOQ8ZqGnU+3WWKVnjWvPWMiEHHsmB7PYogS3wznwRwTdMKM6C5dWDaiXXT5qEwBAsD4/9KGIpiyTbby6vLl4haNQeGdJ0sHA/9hudFE6J4AGxVqslqzkq+hPbQriEIz/2Dz76k0lG9B72tAVMs+BthL1+pH3uN/ygc4r62APLwDzIaZiEhfH38ce4I8fp2KriU5LTMx4u6IDjat+LJx2JzzxYTyGd823LnLEzXOrj3/px1as0Z+UXgPkQ6LjNF/vbCGhrRhf+22CwbIKASgV9UU3apthqwouYvlZzFr3AiFjGo5UXWuS/ACabedLFWABHhCTtNklG7eTB+b83gmumP/oH
+    rgba: 4280694049
+  encodedCells: S1:4:4096:8923F400:bVTBbttGEP2GNSqmZXMx2yCKcjIICxHaI2UVJS9CNRYi7oVVuYFRXVw7ZQz7UgJGGCOXVk1tIr5QhZqAt6JUhIC8lRs13f2ozlKS7aIdailq38ybebNDpekNS66eGoZhpBN1w2f8TNJ/GcLhJG38ZFT7k4YxmdzkMIxJo66cqh1kCVeP+ioag/G+Ym0YURQZFVW1YYR1Izl7HS7JG0hz0bpXV78mq9yv0zMMqDfWbBetuG6odGcqm+KqCNf04YM4xiIw30RF1zcuorqxTFiVF17Ez9TG2hIVbaz0GHXFH93APwkVvMJVj8LoGg6N6NkS1qvWLTeX8P0KX0Ybk2o1rmlffXcXazPqURReOdywjd7ibkUVRcb/2X5/ei+sh1G9/n9oFAXu9GmkbInXr4BIUUZP+vThrWhtSlKofMP1zl8UbuDXhkx1JKn/DH9LulltKbW4lhk2K/3Rk1ujdoc/P420DzdD7esrURvJprFBwuj7V3aeteF0Z+vBli++MO4//UDhRCcEl7ERdKxDCwAc+0sAF6jMex+vcUK8wLIDJ+OUA/DSytySFr1PN0KDrMy2raAoOHDIO1CImZs7tOfdWcP7j/aPM1nkMwFSCM6zspDgtp8TkiRE33x0zG1LFLkspA2zrC2yonAKtzi9s4n59X13YWWF+KwrhTUXM9rhZS6tQlCoIXdCyIlVSle+PbAsq+B8Jmnu2lkhy/btqv59KxOWcFBiZ+5Il/M8z+eWJduzzyu8U5aZyJzMPsZ46s7sPFi8fJv1SvtbpX3HKmzhONLJOnbuAJ3lKDU4sQtaQi0hW4HsZLklciu3jwOUzhfO0eHhSZFjH++kXjMIjoNgHszn9sKW5YzyeR7I/DFA2XNPCdmyT84vg+AIy7OskgoAGceX5QwsAa6vE9aM6cs4joMAsxdU+i/2hn9cCo4CQdZ+Q4Jmy0Qbz3OHSykpY+wNlgbSboNqL2HKTPOtnUlZ7Poe+2bHdQFsh8MpxpNdj3noMC9dWfTfjaB2+3cKUPSAwg8p2SLkzQg5mgvReyzkj7sjNnpDoZ2VEuAsXZ0wGx7gER73fmmB16Q5tC3J8Ws7TXSiYRNNs4MjEbxgzHd3KOeO7YKA2tYyHtMfBHnO4xjYIyHAmtsdnDVOh+p4dYTZ0ZGULfMdMxcltZwSx0MCpXsk0VGgh03KYK/FoCn6tMTTp6oD7+hHvyYDVZ3XdPj2EGmGi4JLp5e5rkB5lxpRuMb8MX3RZBrzdvpuu63m24W2C3u1JO12ddJl47jpA8YHbu/QKXHOKZdd1kV8AFh+00RhCB9kQmQy4/imZAA+aOlUrxEPr92apnqclRaHeRtPmVJofkXSZDoA8EhXnUHzwLJLKvtCutlsQd0YpimAEqDrmNyMz20hpJAUcHjn/LwJqUpPptgE1aNFYNvCsvJSCDpDQZgzmZJBbQqph+xj2RHCzu1cYnqejxgwQH6ANCFsgBKPjuZ9ZzFfLOhjyrdbgN1RMEx1dcCjcad/7lzKk/fBieSjJoNaF1a4p2k+ey/58WHHOVwsJNtrDvHtXOI1neDdb5rxwzjuZ4cyiM3W7i4QWOHoUYNtNjRbw/E47nRguAvANA1WVsN44vsMR29smhhs+oiTFaoaCNBl6M6Gu9I3/6Qj9K/YB2ufWlfTCGjg4RAoXo3oMMXrymoDpkPXA+Wk/lauY1c4JAPwma8ha7cG/zEkGyjBXUjWuir7Bw==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000ff00000000fe00fe000000ff00000000ff0000
-  conveyorDirections: 00000000000000000000000200000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000000300020000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: fantasy
   campaignSeed: 21895680
   displayTitle: Fox Shaped Island under Stars
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 0
-  keyGates: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
-  alternatingCrates: 0
-  swappingColors: 0
+  alternatingCrates: 1
+  swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 1
+  mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 81aeb4d3b733b7b47aeb76434ed73da7,
     type: 2}
   usesTiles: 0

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0573
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281219377
+  - serializedVersion: 2
+    rgba: 4289635751
+  - serializedVersion: 2
+    rgba: 4285027637
+  - serializedVersion: 2
+    rgba: 4282147180
+  - serializedVersion: 2
+    rgba: 4286872176
+  - serializedVersion: 2
+    rgba: 4290545497
+  - serializedVersion: 2
+    rgba: 4284321729
+  - serializedVersion: 2
+    rgba: 4293704336
+  - serializedVersion: 2
+    rgba: 4279506704
+  - serializedVersion: 2
+    rgba: 4292270561
+  encodedCells: S1:4:4096:2CAB0759:PVVNV9s4FP0NahxyxC4Ce6h3QZhO2ImK41F2saNMO7s4iY6HHZ30eMqutPX4sHMSwogdISmpfuU82XQMMYrue/fdd/WBuS125raAlzGFfWBcvAyLl6EB1Af8tpooinc7kxe72xccCLy1MXX+rjA38ALKXc2RQqjyfHKpKoZq8h1k+S8lFFGpIh5RHiE/SX6zaqwmS+0ppQhJlKcS9Z3c2Jy/axmVNpgFGOhVAjFJhX+6sZix+C6FdC+BfIBtDctw9U9xBOit7Tm1cAJVgAGYoFqRy8/Fzgce25WqK6vqAwQQkHcPYPLFH4sDewVfWinqyPvkE1VA3P/4S/quIlMr4dZsIGWX20H1gmQokE7Vu/M/xkn9vYD6eV24/twokgxck9hxmuc1b5paWhul1IgouTWXMIoq2tzqSPPq7x7UHnle0ziXgNpfyLVpQOQdATj1VhOVBBaHZ2gF2RBYQeV5idobqVVf5ZZ/tapEkSiB6pVCkiR6olZoT9X4FDz17MLmNQ4K9GisAX8FuF5MgL9qqUjr7tVYT/oiCzsEcHQ3qVd2Op3aFgdKBSNxeDXLspZrcTxSngsB7nA6dNUpV+qE4xnAWTZYmzMtJhVBTmwP0RwPT0+YnoUWz56f7xGasHpnwOINJyshTx0mwivOOXCYBywGwtpJptL4x5MVcldcONIlRBKyNqHGAlWOf1fRej5Zsf4dm2Vye2wi0zRmrvEST9PY2qLI/LNGg6X+GEiz5r7pAc6WS3GTvv+ulA++87f8q0ZBDLUYNxBwznHpsISp3JowZ3o5wxlfSPMK8Y3Z35wjwULnRNxU20IzjTF3+Jvh9oHzzaOzmWWIcXyC23ZfeFpohB3B74fund73Hx3rE0POko2US7JDwDVjzGkF8g6J2aPgyNrIluIk9Y7ETK/0EmuBWlKWmHMpGDX+ei5aHGw/56HWqFwC3pEXWms+EA41D+ZBZLAhFAJ2wcEOZ+aES0f8YFyLAM7/A3MEVuSu1LpVMjDeCcWc8Sx0dJ/CyXvQMKe8Zsl1iRHnGHej+Gk/dMr3COqb6zbUmiTl0imRRgxh1OnLdY8flgIhOLrX2bxkid9GJQaB6Ao5/Q79SGls4BZ4vDLPnN8x2BoIBODOQjso7lDnRB70ILn/FHJmHhyVrCEZL5ulxvRtv1G2qAvaQia3oTGtw+JXXWrR4A2EZXzBoFb8BLjDefyjd579kv5bQmZT0pJdsGa/3dAU8F57szUb5m74VwWOBTReINT4dIcbJUdPZv86K59MNoi3h99S3V02ulK/ZxCiY5bdPz73+Gx77fPB2ce2n9JGYH8WeiH6TXQYA3vWoutefxuZK99AbyVCfwZdTV+fxdR93ftw3+kemHUv7pntvKV02W1wjTSGZVxq/SoL4S0wa4tZxjZSqVNqH40oDWiX9v11DyE2uIja0dYZ3MDV0BTP5tqc0eMqkB74cEjgOYCuAoBVZ29xnc0WkA4UAT0AOI7cSMJXuBTGdAQDjBat36cWpnFEokBKwGMKB4iexg0QlGWzN4ABA/BHMXGlPCXDL3mq/gpLXR1rWzw4DWKyPg6gRmSj4XLZczDsKjjUICWw+cSnNIqkpO6evdl8sAijjb+t5SexSw5AfhCMVUxTNTyFBWs4M9dAf2PaDWKfBDSCFilFsb276KLHQ+5+eNOx+dOnSK6tAbbdcYXrRRaeVxNxQCXol8fxNpjG0bAocuuvtn7RAFHYgXZ/gErrDu18s7fwogv4OLV09UXpBlO4LY+/pMrqtytku6HBYqyic/DGrI+jWZ9APiSMLQ7xdDymKrbXegRL8/N/Tv4f
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 59920226
+  displayTitle: Montenegrin island church
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: fb7cc887ae1cbf24097ff22667c997cf,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

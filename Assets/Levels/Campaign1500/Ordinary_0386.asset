@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0386
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282691518
+  - serializedVersion: 2
+    rgba: 4293900165
+  - serializedVersion: 2
+    rgba: 4281353688
+  - serializedVersion: 2
+    rgba: 4284237861
+  - serializedVersion: 2
+    rgba: 4289378243
+  - serializedVersion: 2
+    rgba: 4280298023
+  - serializedVersion: 2
+    rgba: 4285693048
+  - serializedVersion: 2
+    rgba: 4293257709
+  - serializedVersion: 2
+    rgba: 4281753440
+  - serializedVersion: 2
+    rgba: 4290217042
+  encodedCells: S1:4:4096:284AE372:pZTNb9s2FMD/BgLOB48V6tXVbdCaLsd0jFn75iS0ZN8U23SUWwdKtHObV8Wsb0RtquwtQrIY/Cv36CxogW3YYc+wIPH3vh/JIPi7qH9Y+14Wrf/HV83mk96/mKwUe351f2H1XU4LlSSgHsJr7Z4tVKt85qrlavVqcQY67pu9Cuqn919LFZ7B92KbPAC/aNWqBZ8K1EFj1Vqph63nK/AzDNWtqh9Kr92qV4Gqt/X2zMXen9o6x1xyC3bA6wVk6FbBtuVu4uXiCTvXlcV2FQyVChc+glIuaA1LH125G+duJBWTvgrUszgXgxdQaG1d7e5/HXfoVV99w2HNHsBwFSzA+T0hNKtmtyrx/qBCFy7CEIp6fBzC0xFChDXjOIGKoBEuHrYUZA/2PjSVpCPosc36szPQrhc+tm/Zgxu6rusSaighRybrjKHPrgl/VofwdMOuuw4pkbQigpssy8IwgGzrpmM+rHPX7wiYgoag3NjMvApa4Nc1A/ckpEvmHUoFuEh5xm3Th63D5g4GPvRH0ZkDJyQ1mmM/SR/DSyi6UBb85kCJ1AZz+zp0oc/Rha4OdnROifbln2pj+qb/0vi9cg9a3S5trImgHW/dIBRpDCkK4zO4D+ouEezCI8i/IQSt2NSkxq7XrvkueFnXTki6C+ydHxCCmLEpxpW1CSHxzDkoGYjYKRxAA/Iry62ma8su8oKMy9gb0l3q5AD6ZzdWc01p1SHtwZiSX+KlWO84FVVFCMYWcUTJScfn1JHzfDl78o4q0ZDUIi/AiZCwuPioVETB/pQg4buU9Q43do8AH1eMjTl/89mSkwaJKfFuRIY2bFNqz8lj+fOIR6NjOrcyprtC2lz3yqrH8gvaT96OzIgXo3OJbUdAfuCBGoxzXuSynB2P+pkZjaLReWLNh12OojoxCEkp1Sw6itqGR9HR+SRW2J4AheoINuihDtTbKHsb8X4UjY4+T5MveN9iQtZQ8V6WGv5TtI/5URRF59EplUm+Zz0GjtoHSGdQE/auoyjv09v4dFmlGSYdska4Ee/4sT321v1pnOTFkG2yDKMTmP5F48SmnJvjN79H59NZn6lTcLApMmwxggFRghDw/pNxmbC+dEubTzngO3cDnOp0F3kCp5i9p8vrP9Y25/v7GCG4k9RNnv7ojSd8ycpTWpZfi0lxxa3VGD3edOVNbiN+dH6VDZbqSk5UWbXXMl9mBhl91yXAp1MOEpcfZ3Jm+ksjxwRWkLUIjpEjEiY6ng5UmcskyT4tCzoWG2MgQg/O8rv7mo75lCWJKuBh52XxKAiDE2fRi7vdcbJ7mCl1iEqbXGU8btOZzOFMI1+gF131+qWCLabLiZSMyFhynmmO9G9wBTtX9MrbBIE67r3nseqKm/mBzVKO71qvQaEesPJ2YrXxHrhUglwWUE9mQP2Fv40TuMxZCtsAzbCQqvGhwv5GQLCvPa9ZXrJDDO1AagAc9b5isDdIW/TJ27PykB1C+J7p9YBjfY09tggLz8PyCwQWB0xPe0zIQ40O9mGiViMk5sBfqZjDVijUfDP4AvYQ1mbcmFSjFPjla7WneZtcKJmXSS5z8IshvSxDGsG19u6HjUVpm4yZXOZqNrVYpzi10ACoF+4UMUgZ6F8vGdsoNZMbDssQAgYAkZr1fa6LArxdJAzms5mPDc4gN0gQjr1+cRlC5+Z4MF8mOStz2LcGYas1DAAagnqXY/NfPLOV3kjFYpbE1nCsNRRg9jMMO7TZ5vZP
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 40327984
+  displayTitle: Swiss mountain railway
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 41ad118214053c84998152a067200cef,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

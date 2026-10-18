@@ -1,0 +1,78 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": 42,
+      "name": "cloud_corners",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Cloud corners: pale sky-blue paper; two small simple white cloud-like broad brush shapes in extreme top left and lower right corners.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-00b31b53-c960-4a96-87a1-58c08b13aa63.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_42.png",
+      "access": "coins",
+      "coins": 100
+    },
+    {
+      "id": 43,
+      "name": "gentle_waves",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Gentle waves: pale seafoam ivory paper; three small flat turquoise curved wave strokes confined to extreme bottom-left and bottom-right corners.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-daae339e-fb3d-41e8-b93a-9b32db22ea2a.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_43.png",
+      "access": "coins",
+      "coins": 200
+    },
+    {
+      "id": 44,
+      "name": "bamboo_strokes",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Bamboo strokes: pale yellow-green ivory paper; two extremely simplified slim sage bamboo stem marks with 3 small flat leaf strokes at extreme left edge only.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-7b318035-ddff-4f55-9910-94efc13bed4b.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_44.png",
+      "access": "free",
+      "coins": 0,
+      "default_background": true
+    },
+    {
+      "id": 45,
+      "name": "lavender_marks",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Lavender marks: pale ivory lavender paper; two small loose lavender-purple plant marks with a few simple oval dots in opposite corners; no realistic flower detail.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-46622457-38fa-41e4-b340-efe2a94375c3.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_45.png",
+      "access": "coins",
+      "coins": 400
+    },
+    {
+      "id": 46,
+      "name": "sand_dunes",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Sand dunes: warm pale sandy cream paper; two broad simple ochre rounded dune-like strokes in extreme bottom corners, no landscape across the center.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-171ca0aa-8689-4661-9911-d715d42ec1d6.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_46.png",
+      "access": "rewarded",
+      "coins": null
+    },
+    {
+      "id": 47,
+      "name": "berry_dots",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Berry dots: pale rose ivory paper; 3 small muted coral circular berry dots and 2 tiny flat sage leaf marks confined to far top right and bottom left corners.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-aba84c53-9648-445c-862b-33e9b36449e3.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_47.png",
+      "access": "rewarded",
+      "coins": null
+    },
+    {
+      "id": 48,
+      "name": "snow_dashes",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Snow dashes: pale icy gray-blue paper; 3 very small simple white snow-crystal asterisk brush marks confined to extreme corners, one pale blue curved stroke at lower edge.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-ead4cf41-7000-4e72-a447-8caa369c5403.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_48.png",
+      "access": "rewarded",
+      "coins": null
+    },
+    {
+      "id": 49,
+      "name": "dawn_wash",
+      "prompt": "Use case: stylized-concept. Create ONE full bleed 9:16 portrait mobile sand-painting puzzle background, minimum 1024x1792. VERY SIMPLE minimalist watercolor-paper graphic, broad flat shapes, limited 3-color palette, few sparse accents restricted to extreme side edges/corners; at least 85% of image is almost plain pale low-contrast softly textured paper for gameplay. No detailed realistic botanical rendering, no ornate border, no deep perspective scene, no horizon across middle, no central objects, no text, UI, frame or watermark. Only 2 to 5 simple brush marks or flat silhouettes. Inexpensive calm basic skin with tasteful watercolor softness, much less detail than premium nature art. Dawn wash: pale peach pink ivory paper; one small muted coral half-circle sun brush mark partially cropped at extreme upper-right corner and two soft apricot curved marks at lower-left corner. No central horizon.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-491aa08f-d562-4cbf-8cab-fba0d10dcbad.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_49.png",
+      "access": "rewarded",
+      "coins": null
+    }
+  ]
+}

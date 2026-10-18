@@ -16,50 +16,52 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4281828791
+    rgba: 4281895351
   - serializedVersion: 2
-    rgba: 4292119904
+    rgba: 4292251234
   - serializedVersion: 2
-    rgba: 4279505938
+    rgba: 4279044876
   - serializedVersion: 2
-    rgba: 4288710608
+    rgba: 4291937522
   - serializedVersion: 2
-    rgba: 4284905807
+    rgba: 4284839760
   - serializedVersion: 2
-    rgba: 4292267252
+    rgba: 4287527099
   - serializedVersion: 2
-    rgba: 4281744976
+    rgba: 4282073175
   - serializedVersion: 2
-    rgba: 4284505467
+    rgba: 4280624419
   - serializedVersion: 2
-    rgba: 4283584576
+    rgba: 4285097602
   - serializedVersion: 2
-    rgba: 4290356202
+    rgba: 4289565921
   - serializedVersion: 2
-    rgba: 4286870952
+    rgba: 4282006566
   - serializedVersion: 2
-    rgba: 4281480228
-  encodedCells: S1:4:4096:CFB00B8D:VVVBUyJZEv4NxIRhT0yfagwj2j7NPmfAgVObU7qv5mJMv1Y2uKjlayz2sgHRha2XCbUpxNPaiA856ZsSH33ZbkSk9mIgYun7UZuF7WxMBlQUfPllZn0vKxNAmqA4hTnqcFM5vlQwaZxwACrRAE2BlAXZU/M+tX1Q0jAMTm2wuekAtfbasHcGbcnVnH1qgW1EtuJDO2faFCT8DMGpsiQFm85SsDA4wifwasU3WwA7kGtXoI18CsmXhvHqZIRP4B2NKgOeu6Tg+JZEJ+PRJh9TIMOcNiwC0IGflez5xl9tZQKmjHMogS0vm0A5pVPG918hPooxZRiHwSxgkUHFK5L+ixdPMF8Z3Zz4t3db8eT0TQBytSUnnCeYrzwWoZzCXKFF8jZMS6Ucx+CPMF8ZReC+Df70+9RH2fxigW9LPhXBkyMHxF9NKSXf5z99hMK2hUJzNWEgOmlMTj4+pZLJt5sEDvmqoqComjICr2x8xiSPlSpzU67+CvVkTuUmKOARGv+efPGnBMq3lVR5+LjaOvSdti8d3vm/Por7irdv9n15b/vK9PPFknJk7Qm3zZ8UdyBecvyh7ajeHemLd1Jl+csnFaSktLg1RzeLbapSKaKP1svqtPdI5z4FH2iidAkdB46rGq2mjw9P1aTxMiqxY6xAz7o7hWRThTozPj7UOrOe9SU3+Vd1aX01EZdduNe6wd9GEdja2zNFOe/i2Rm5zxPHiVlQ6l4PM66rM4iztWyLZ1HjyWo1KrL4BdsI+Wnd7w90hmXYOmv1eI4HUQZfdc+wB+/jz7VO6XxtyBYY452eY3awhgCfwQwsmHvA4PjJx66RzwYf/tuSLci9NKm0gcxC/ubdv1LjMf0N4ovXjFX5fMuUPne4L4H4bf++iPi4/uYHzRZjbMCYh0wZnY6y7rGBbjZDjfhzd1hdHB/DEta2m4H0z31aeRjOk9btsauLmH9rWE3HxhbQYeCpntXCN1Ol5gjci6reclORPpmlMbbwnA1213vzLSqnk7PddhefPzPAb0MwtjS2uPDtdZXtql7LVyppPlBawIC77h1j7A1jY4tL3w5qjF1YAb62HZqchc3xhZH4sSF7jtl/T1cb1QzrKGm1LfDO1LvlET7GI33GYmysOhwM0+xcBqIcKAWF2AjPID8y9AgHYYb9sxn4SRww3YI7jIqPUny1a+SnMxctulnBqVEo1ULd0CIUUYGRDVhVVNPpC39Gl+aCek2IPhFoT/zBYO2NyFSFt/GuX6s0CSGCkBmi86SfifAfo0uDZf4oyn1HNOOEhCnE17cShGAnpwcRjt3yx5Ui8vZKpPBv7P8NBDU6o/sBY78hnrhRlcKewNKiAmbIAUm5/YMUSfVT5LdM2g+Hl3r/pl6OIhzMkL/aquIz8YRupAKYJuQL2XY9kt8m+XzcRSuSM6WQ0ick746s6LmlTc/FXyWvu5zteB2nMp4fj/8QT7gJUnJdrxsEsex3z54dFY+Ed3XVkuU8IXHiPlvmuWwxu9y9zNaK214k1bEQ5xRmds3YUuDFYv/Jfefxq4WwXEsIXY7wq2PR/LQRqzxzYxU3tmx2jwTRonyEvEQU4CE4arR2vdL479dlz8NmOxThPgqRrG2gHtc6FOFaMxQbxZrYONhQkuZEQ2w00CN0UymhG2Vh0/Xz5s5xOfGpgHynIfZDkRVXiS1xF8F1h97uzb6vCDH73gbpPzg91Dl5sKExuDh3lGOeqPkjsXo8s4r7BUcw3MaF1gfYSVjgOe4wgLOfPilnNpxvmjm7t0P65RCnicAueHPoWPLVzpnC7aFuUwBJaXOlRdRp5R674n5dwN9WKf2gTtsPw+bdl6bVPgiFDuvpi39URUs6QnwebaYO+aConsO7+zBspI/TVfaL6oEvOJ2PNqhqOqaqAOhmHXs0zZZwSEAXt60/vyNPVbRlbdrehwcUJ/3La5auil2vaSocAAAtaSvbbpv0fr8hBIZmLG1eWK8tqajpItNHOsU1Vq/8GnxMI4z5y+evUQ0w53G1WrimoaVye87fzTrC1V7as6jycfLB/wA=
+    rgba: 4283650624
+  encodedCells: S1:4:4096:C053A6E5:VZXNcxpHFsD/BmqjVVz2iVCuWJvbpMLY0SVSC5leXahSr9YFp2h2EF25pKQwgHTZGq1pPi6KR6CROUmdBl58SXllwM1tjQHRf1TeIDlbeVQNML9+r99Xv+YuEEVVhROHKqDSJTwejxNJISUlcHDtfMpNKRdkt8t7ACT+GPkGUW4K1+xTfujCZpFKgKIq5pWrEhHegKsrgvoArgIPzYDL3YqKx7+/cpDH12RkghK0Ryl64LjAOcT/JBDZPCj6CgkHWnH/jL+Pr4FqbT67VuDke1Tl1QZu/eU9jbxYQw2HI6/g9pJK/mTdvuOEbNwtk6e1pxVeT1l+Mug6a4n4PSYb5I7LKmrX2sp9CdJ5jF4vg0e+cc/TUKyIQMkDTgmhZO0OkwSJDEj8klXRuwQvQBcworX4Et6bj1NJaDVJA7nZVyiSJ+IkkUBIlhFgHfa56EHwNQC9wmzS5mzji08xRnlW6lm9wC+F05Icy0fSif9D3IUC1Iv9fD36gf5BitDgE0dH8F0FzasDLBXdCYN5jx59EVn4KtKnREkZlnrALzmRAmVOuhCSxJKjNigJJdFPlbATXg7HejjodLZ/VfGNxN+QXz3GFujZl3VclTd6qLWesVPcIrGR+GpZwCvghWq++JReIout/obPgByhn8GTZfgpcGuiV+zy90jINj40Y+kACq1O6UnkxM9rP4u84vDuWGc9fce3SFrSNHnSMQb3kMJRdXin9be4f8P/J8uw87CLnESlekyAY8vCaLCqj491aVpFjhZoAWNPRJV04OLaVe88T6/G9Oexf7M9xlj40xtFJQ0ISHUp1DfhqCzQf+Sa7Z3hgg9pPD5YejiVcIG5G3l6yUu/MRZ7mGWMFKKO5JTSlyVV7Q7KJ9pD7g12cw8eogss6HLiXqBzoqSEHMxf67KnZyeDSS6WzWSyN4woku5TXqxXSxdqoBtD3Whgjln2J5bZe3jD2BzPM9bFT+27/cEyNzqbNeg8e5F5FOXJAfc5oc/BBp5jzLyYj3Df3RXG9l48ukED5303jecTDgvqOHajbzC5sTF7mMmws0c3aIAdqb7koASVJ99lIvsrZMCybCXGViZjhob+lVYfki7n6iS25FnUjwRXMDY5m2T74HTx5Lueh9Z1Y1m/O8FNJrksA+kdVDiMyiYK0GjDdu8XrGQmOcO2QNiVvvtxar71LYNyT2+iUHK5nNkS1Wq60LIsy1jWutU4tPws+0NyzFxXekE5tJOWEP66vyNqlo2fP9aYAx6oj/8xvuXb1ltzYgm7aftoTr9d8kmv2nLrgTEL8xYdSFr/s5IlX1SFsNcta8YcIeqDRf22Zmzfnq3b1icRvmXbNiGi2tad1wDPLOvaCq1ty9q0Xm36p4flp/5FGSD0vJLnVYXlW95SqmVPCHzVDlFSrhf7i5f80Ts8fFXatmolr50m6c9isTLCwHQ60m6/OrBtzwtbhISfRTpe2J6buZlhtuYAyXZQbodB7Md0GKaDcmbmTcvzWceMOx9Nq7l9+eDsrw9Wz4p7sTbxpuZ41XSmxnTmJ6g9ujXN12gu3J62y23FVdDEt+uLE4Nnb1xuzEZj/fd2e9urTj2vgNO8jZrNsmnOTEc0a0P0YIcE3YPWtDYt1HFAUXSq2Zwbc1IS4kKbxVxCs9A7OjVGcorDak6csQhDfz5caL3YuQVHFmllZp6XcErVXfwLp0+HO6ahF3oxMSmcmKCg9gMlhQZeXzgEYSgWOKh01ComfIO4fi0dvJ/qtgtJoDylTdSHRrIJ+UCM6uFs/Bq6MMJj8s22groe6zG6CGwiXTlvlRWlDjl6OeBHAlxXTZHnogM1wYkOH0wFxzqGtk+o9FxVgfd6vGDsH9h78JEqnlbA98ElaZBuMc/1m9HCbO2ySD/1C8UBy6GaAoydAifDiwEegQnS3Pkv52EfpMQ7W0kHRyAUgfzXvJnvLts6uzUJb3EIqejeVVJxN7pN37//Vd1GXdvKnf+QdnmUnN8B
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: ff00000000fe00000000fffffeffffffffffffffffffffffff
-  conveyorDirections: 00000000000300000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000200000000000004000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: journeys
   campaignSeed: 20220016
   displayTitle: Electric Train through Cherry Blossoms
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 1
-  keyGates: 0
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 1
   linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
-  swappingColors: 1
-  loopInventory: 1
+  swappingColors: 0
+  loopInventory: 0
   mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 4e82b4d31fa96ca489cab4fa090ab417,
     type: 2}

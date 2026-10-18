@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0142
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283916409
+  - serializedVersion: 2
+    rgba: 4293115844
+  - serializedVersion: 2
+    rgba: 4286733393
+  - serializedVersion: 2
+    rgba: 4293633939
+  - serializedVersion: 2
+    rgba: 4287725445
+  - serializedVersion: 2
+    rgba: 4282857788
+  - serializedVersion: 2
+    rgba: 4280687903
+  - serializedVersion: 2
+    rgba: 4291286775
+  - serializedVersion: 2
+    rgba: 4289046459
+  - serializedVersion: 2
+    rgba: 4291988851
+  encodedCells: S1:4:4096:77E790F5:fVVLd9o4FP4NaoaUzC7CTEx2QbFNs6vRBOodOIbQHTHICTtCY6Xs4oSMmB2kFLtLcMM5+pVzZciic86Mjh+Svnt1H5K+K53UoZSmVKZSPVVJf2mSZngmQulp60/6H01Tn1ML/y9OLYNS+9f5bIizr61Znwu2/S9NUNXm9UxQGxVLSo6WKd4p2RQnGsa2pgGC75pF6NpnHGAtw7GGpzqOPlGMqY1vix7GeOXjrJW17DefCqH+Go4qrQ50+i1MMmALxyJWa4CUuGwvSthYGl5BIYsMF9s2hxeXll6pGRb6Cp4n7haMxVvTBZte+p7XhOVEXD5IEownIpmKCONIRCDxVdy3L41s2XjqvSR4/igSgRM1o/D7teUlyTTrV1xYOX7eOr8TuA433x521mIfgVAWCZjDSQkvJnemTN+8IX2QjL+XIn03MVnc8FdKn3bD/HcIuQKfym7c8NrrWkq1t2jII+j/JXZ4LDrhNWuxffS89cA3IyRKZCJYNjyY3XS6+z5qoJ2D3gZyNgqgM4HRLDaeRf5klBvOtnidMFMml8ci7qvUd4zlgch3Sa672KqPvoYzJEjwLMi1wl8S5aK/j5DaKMiFPWjgpMOi668uzFxPYRXQbyMUC1zGuDRYXzDiW1fCyLY2USEi4iJ0LaYEJ+VgU8Be99aqhMdvKTvY81nuAAxA6C83MvASp7D0emyy2+UDREYdJAqFl8XiQ3VkSe+L1V6FuTgSGHZfIHRCckisie8WTy3OCa/x5oAVSuq8OBpBuQY4KAgpGEVWGzFOR8Fr+dw6gkMr5z9IC50Y7dkzIcTzwnSsMcKdoMdbJ1L+lGefSSvnGbnkkZikb1Qlp5gFzrfW6LxZNtY/zghpeV7/XJ0d0vqwCjYUy/HmqlyzmgZZuKRga20PsWc4ALG5Ho82DpGv3LursRtS8EiB0r1WDqGuqdLldwd9whkdm6HszYih4C/DlpvzPNSAk4/NEbc8IsPRLRV+xQX4lHXBgQZCuQAhTGpBIKnFzqtVWSZu6jO2odT1vFnOQ6hhcjmGBHA+StevT/jyKmgM26Hpeo1cC/DDTnjmDwkPHdNvBy/lK5+hLt8DA41cA3B0VbN4CPml4zHXvhvjPkPM2uuaLe93kMGrfso3Z4ycE8JGhebPU80lhuF+sHd3SRh3pnMhOcHNdciWlXIZjswKF9y7SRFuyuSSBWP5RbFlpJ+afmei2Xrph7t2x0AqxXkkLgvaPRKMVzVc4Uf6y4odLvPASGNgMmAa/SPcoy5m4SvPDavt4qPuP8R5IUqKM6KIHoMoHBrGWiE6BPEIi1n+HdxjUX+q61TxH3Ab3P2rED2Avy/vh7PlO1C1gQCxeU4vnnT6BKQ2YAjBg1D4sLwHJgDNVAs39AKoM6UMsq5A/xmHD3lYXbepnX6+CUxlIJWM8QBVUhu45RYhXY+EImLJ+B821AUJeBCgEgX+mg8P34N5rDlg4KiHaVsCTnp9tl+qa+V9NDyMIQ5dVQLtqEcoC7PSAhe2lAcPDvmhOphZtUl/HvfSgEN2ifKvg9BHbIdFHesaVg6WOf0tDHlaBfuAv0cOXUkHslB3NFUSBpz2wzvu15R/HH2EkJxjgJ+wzOrbRVCzR10ebji+Ar6aCvBEbbqt6h1E3QysNGTcCjjthRCf4mZdFRlb1cE6Pg0Dmu5z7nM6APufNIAF6MoUqqRuO2fMp47/Og6Y6LP3CIpXVl5SJ03lMSRwwCyoq+kmYNRnARKwlfhvqinjtg3vGdAwlGTJOSW9VgVvGV4VaMAhgnEtcxNwKbV6tC1edecYckBplkFHJV+JOOqAYhWfXDnScdQcBAHWper/Aw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 30259971
+  displayTitle: snowy windmill
+  seasonalNumber: 142
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 20ff80e8ab9d5364ebc3a7282d4e636f,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

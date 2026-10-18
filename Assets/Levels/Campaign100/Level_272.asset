@@ -16,50 +16,52 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4279968557
+    rgba: 4279508006
   - serializedVersion: 2
-    rgba: 4278782993
+    rgba: 4280302691
   - serializedVersion: 2
-    rgba: 4284314508
+    rgba: 4289713640
   - serializedVersion: 2
-    rgba: 4282281907
-  - serializedVersion: 2
-    rgba: 4281489029
-  - serializedVersion: 2
-    rgba: 4280302688
-  - serializedVersion: 2
-    rgba: 4279774019
-  - serializedVersion: 2
-    rgba: 4279244834
+    rgba: 4281489545
   - serializedVersion: 2
     rgba: 4285766337
   - serializedVersion: 2
-    rgba: 4281612353
+    rgba: 4279708227
   - serializedVersion: 2
-    rgba: 4289385704
+    rgba: 4282347700
   - serializedVersion: 2
-    rgba: 4282864224
-  encodedCells: S1:4:4096:FD9E79C6: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
+    rgba: 4278783251
+  - serializedVersion: 2
+    rgba: 4283127654
+  - serializedVersion: 2
+    rgba: 4280822578
+  - serializedVersion: 2
+    rgba: 4281810247
+  - serializedVersion: 2
+    rgba: 4284381332
+  encodedCells: S1:4:4096:D3CBE818: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000feff000000fffffffffeffffffffffffffffffffffff
-  conveyorDirections: 00000002000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000002000000000000000003000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: people
   campaignSeed: 28388878
   displayTitle: Silversmith Making a Moon Brooch
-  beltCapacity: 4
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
-  sectionBuckets: 1
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
   keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
-  swappingColors: 0
-  loopInventory: 1
+  swappingColors: 1
+  loopInventory: 0
   mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: c8df3d81026139942bdf6d5eec3d8cd3,
     type: 2}

@@ -10,14 +10,37 @@ public class BucketInventoryUI : MonoBehaviour
     [SerializeField] private GridLayoutGroup gridLayout;
 
     public BucketView BucketViewPrefab { get { return bucketViewPrefab; } }
+    public bool IsMoving => activeViews.Values.Any(view => view != null && view.IsMoving);
 
     private readonly Dictionary<int, BucketView> activeViews = new Dictionary<int, BucketView>();
     private readonly Dictionary<int, ConveyorSlotView> activeConveyorViews = new Dictionary<int, ConveyorSlotView>();
+    private readonly List<BucketView> pendingLoopViews = new List<BucketView>();
     private BucketInventory inventory;
     private ConveyorBelt conveyor;
     private LevelData levelData;
     private GameManager gameManager;
     private bool boardCreated;
+    private RectTransform linkedLinesRoot;
+    private InventoryCrateRowView crateRowView;
+    private readonly Dictionary<Bucket, LinkedBucketLinkGraphic> linkedLines = new Dictionary<Bucket, LinkedBucketLinkGraphic>();
+
+    private void LateUpdate()
+    {
+        if (pendingLoopViews.Count > 0 && !IsMoving)
+        {
+            foreach (BucketView view in pendingLoopViews)
+            {
+                if (view == null) continue;
+                CanvasGroup visibility = view.GetComponent<CanvasGroup>();
+                visibility.alpha = 1;
+                visibility.blocksRaycasts = true;
+            }
+            pendingLoopViews.Clear();
+        }
+        if (linkedLines.Count > 0 || activeViews.Values.Any(view =>
+                view != null && view.Bucket != null && view.Bucket.LinkedPartner != null))
+            RefreshLinkedPairLines();
+    }
 
     public void Bind(BucketInventory bucketInventory, ConveyorBelt conveyorBelt, LevelData level, GameManager manager)
     {
@@ -57,6 +80,7 @@ public class BucketInventoryUI : MonoBehaviour
             if (view != null && view.Bucket != null) previous[view.Bucket] = view;
         activeViews.Clear();
         List<Bucket> sortedBuckets = new List<Bucket>(inventory.Buckets);
+        var newViews = new List<BucketView>();
         sortedBuckets.Sort((left, right) => left.LayoutIndex.CompareTo(right.LayoutIndex));
 
         for (int i = 0; i < sortedBuckets.Count; i++)
@@ -69,57 +93,96 @@ public class BucketInventoryUI : MonoBehaviour
                 PositionBucketView(view, bucket.LayoutIndex);
                 view.RefreshAppearance(levelData.GetPaletteColor(bucket.ColorIndex));
             }
-            else CreateBucketView(bucket, bucket.LayoutIndex);
+            else
+            {
+                CreateBucketView(bucket, bucket.LayoutIndex);
+                newViews.Add(activeViews[bucket.LayoutIndex]);
+            }
         }
+        // Existing cups complete the belt step before replacement cups appear.
+        if (levelData.loopInventory && IsMoving)
+            foreach (BucketView view in newViews)
+            {
+                CanvasGroup visibility = view.GetComponent<CanvasGroup>();
+                if (visibility == null) visibility = view.gameObject.AddComponent<CanvasGroup>();
+                visibility.alpha = 0;
+                visibility.blocksRaycasts = false;
+                pendingLoopViews.Add(view);
+            }
         foreach (BucketView old in previous.Values) Destroy(old.gameObject);
         foreach (ConveyorSlotView slot in activeConveyorViews.Values)
             if (slot != null) Destroy(slot.gameObject);
         activeConveyorViews.Clear();
         CreateConveyorSlotViews();
-        RefreshLinkedPairLines();
         RefreshInteractionState();
     }
 
     private void RefreshLinkedPairLines()
     {
-        Transform existing = bucketContainer != null ? bucketContainer.Find("LinkedPairLines") : null;
-        if (existing != null) Destroy(existing.gameObject);
         if (inventory == null || levelData == null || bucketContainer == null) return;
         var drawn = new HashSet<Bucket>();
-        GameObject root = new GameObject("LinkedPairLines", typeof(RectTransform));
-        root.transform.SetParent(bucketContainer, false);
-        root.transform.SetAsFirstSibling();
-        RectTransform rootRect = (RectTransform)root.transform;
-        rootRect.anchorMin = Vector2.zero;
-        rootRect.anchorMax = Vector2.one;
-        rootRect.offsetMin = rootRect.offsetMax = Vector2.zero;
-        var ignore = root.AddComponent<LayoutElement>();
-        ignore.ignoreLayout = true;
+        var liveLines = new HashSet<Bucket>();
+        if (linkedLinesRoot == null)
+        {
+            GameObject root = new GameObject("LinkedPairLines", typeof(RectTransform), typeof(LayoutElement));
+            root.transform.SetParent(bucketContainer, false);
+            root.GetComponent<LayoutElement>().ignoreLayout = true;
+            linkedLinesRoot = (RectTransform)root.transform;
+        }
+        RectTransform rootRect = linkedLinesRoot;
+        rootRect.anchorMin = rootRect.anchorMax = new Vector2(0f, 1f);
+        rootRect.pivot = new Vector2(0f, 1f);
+        rootRect.anchoredPosition = Vector2.zero;
+        float cell = gridLayout != null ? gridLayout.cellSize.x : MobilePortraitLayout.BucketCellSize;
+        float space = gridLayout != null ? gridLayout.spacing.x : MobilePortraitLayout.BucketSpacing;
+        rootRect.sizeDelta = new Vector2(
+            LevelData.BucketLayoutColumns * cell + (LevelData.BucketLayoutColumns - 1) * space,
+            LevelData.BucketLayoutRows * cell + (LevelData.BucketLayoutRows - 1) * space);
         foreach (Bucket bucket in inventory.Buckets)
         {
             if (bucket.LinkedPartner == null || drawn.Contains(bucket)) continue;
             Bucket partner = bucket.LinkedPartner;
             if (!inventory.Buckets.Contains(partner)) continue;
             drawn.Add(bucket); drawn.Add(partner);
-            BucketView a = GetBucketView(bucket);
-            BucketView b = GetBucketView(partner);
-            if (a == null || b == null) continue;
-            Vector2 from = a.GetComponent<RectTransform>().anchoredPosition
-                + a.GetComponent<RectTransform>().sizeDelta * 0.5f * new Vector2(1, -1);
-            Vector2 to = b.GetComponent<RectTransform>().anchoredPosition
-                + b.GetComponent<RectTransform>().sizeDelta * 0.5f * new Vector2(1, -1);
-            var lineObject = new GameObject("Link", typeof(RectTransform), typeof(LinkedBucketLinkGraphic));
-            lineObject.transform.SetParent(root.transform, false);
-            var line = lineObject.GetComponent<LinkedBucketLinkGraphic>();
-            line.raycastTarget = false;
-            RectTransform lineRect = line.rectTransform;
-            lineRect.anchorMin = Vector2.zero;
-            lineRect.anchorMax = Vector2.one;
-            lineRect.offsetMin = lineRect.offsetMax = Vector2.zero;
+            BucketView viewA = GetBucketView(bucket);
+            BucketView viewB = GetBucketView(partner);
+            if (viewA == null || viewB == null) continue;
             Color colorA = SandDisplayColors.FromPalette(levelData.GetPaletteColor(bucket.ColorIndex));
             Color colorB = SandDisplayColors.FromPalette(levelData.GetPaletteColor(partner.ColorIndex));
-            line.SetLink(from, to, colorA, colorB, 7f);
+            colorA.a = colorB.a = 1f;
+            Bucket key = linkedLines.ContainsKey(partner) ? partner : bucket;
+            liveLines.Add(key);
+            if (!linkedLines.TryGetValue(key, out var line) || line == null)
+            {
+                var lineObject = new GameObject("LinkMesh", typeof(RectTransform), typeof(LinkedBucketLinkGraphic));
+                lineObject.transform.SetParent(rootRect, false);
+                line = lineObject.GetComponent<LinkedBucketLinkGraphic>();
+                linkedLines[key] = line;
+            }
+            line.raycastTarget = false;
+            line.color = Color.white;
+            RectTransform lineRect = line.rectTransform;
+            lineRect.anchorMin = lineRect.anchorMax = new Vector2(0f, 1f);
+            lineRect.pivot = new Vector2(0f, 1f);
+            lineRect.anchoredPosition = Vector2.zero;
+            lineRect.sizeDelta = rootRect.sizeDelta;
+            // Hidden cups must not leak their colors through the joining bar.
+            if (bucket.IsMystery) colorA = new Color(.3f, .36f, .48f);
+            if (partner.IsMystery) colorB = new Color(.3f, .36f, .48f);
+            line.SetLink(viewA.BodyRect, viewB.BodyRect, colorA, colorB);
         }
+        foreach (var key in new List<Bucket>(linkedLines.Keys))
+            if (!liveLines.Contains(key))
+            {
+                if (linkedLines[key] != null)
+                {
+                    linkedLines[key].gameObject.SetActive(false);
+                    Destroy(linkedLines[key].gameObject);
+                }
+                linkedLines.Remove(key);
+            }
+        // Every board object occludes links, including walls and newly rebuilt spawners.
+        rootRect.SetAsFirstSibling();
     }
 
     private void CreateBoardCells()
@@ -169,6 +232,7 @@ public class BucketInventoryUI : MonoBehaviour
 
     /// <summary>
     /// Updates clickability / magnet pulse without rebuilding views (avoids inventory panel jump).
+    /// Linked pairs flip upright only when both cups satisfy the open condition.
     /// </summary>
     public void RefreshInteractionState()
     {
@@ -189,12 +253,44 @@ public class BucketInventoryUI : MonoBehaviour
             }
 
             Bucket bucket = view.Bucket;
+            bool open = IsCupOpenVisual(bucket);
             bool accessible = inventory.IsBucketAccessible(bucket, levelData);
             bool allowedByTutorial = gameManager == null || gameManager.IsBucketInteractionAllowed(bucket) || magnetMode;
             bool canClick = (magnetMode || accessible) && allowedByTutorial;
             bool magnetTapHint = magnetMode && !accessible;
-            view.ConfigureInteraction(accessible, canClick, magnetTapHint);
+            view.ConfigureInteraction(open, canClick, magnetTapHint);
         }
+
+        RefreshLinkedPairLines();
+        RefreshCrateRow();
+    }
+
+    private void RefreshCrateRow()
+    {
+        if (inventory.CrateRow < 0 || bucketContainer == null) return;
+        if (crateRowView == null)
+        {
+            var root = new GameObject("CrateRow", typeof(RectTransform), typeof(LayoutElement), typeof(InventoryCrateRowView));
+            root.transform.SetParent(bucketContainer, false);
+            root.GetComponent<LayoutElement>().ignoreLayout = true;
+            var rect = (RectTransform)root.transform;
+            rect.anchorMin = rect.anchorMax = rect.pivot = new Vector2(0, 1);
+            rect.anchoredPosition = Vector2.zero;
+            crateRowView = root.GetComponent<InventoryCrateRowView>();
+        }
+        Vector2 cell = gridLayout != null ? gridLayout.cellSize : Vector2.one * MobilePortraitLayout.BucketCellSize;
+        Vector2 spacing = gridLayout != null ? gridLayout.spacing : Vector2.one * MobilePortraitLayout.BucketSpacing;
+        crateRowView.Bind(inventory, cell, spacing);
+    }
+
+    private bool IsCupOpenVisual(Bucket bucket)
+    {
+        if (bucket == null || inventory == null || levelData == null) return false;
+        if (bucket.LinkedPartner == null)
+            return inventory.IsBucketAccessible(bucket, levelData);
+        // Pair flips together only when each cup's own open condition is met.
+        return inventory.IsBucketAccessible(bucket, levelData)
+            && inventory.IsBucketAccessible(bucket.LinkedPartner, levelData);
     }
 
     private void CreateConveyorSlotViews()
@@ -318,19 +414,22 @@ public class BucketInventoryUI : MonoBehaviour
     {
         BucketView view = Instantiate(bucketViewPrefab, bucketContainer);
         Color32 color = levelData.GetPaletteColor(bucket.ColorIndex);
-        view.Initialize(bucket, color, HandleBucketClicked);
+        view.Initialize(bucket, color, HandleBucketClicked, levelData, inventory);
 
         activeViews[layoutIndex] = view;
         PositionBucketView(view, layoutIndex);
 
         bool magnetMode = BoosterService.instance != null
             && BoosterService.instance.ActiveTargetMode == BoosterType.Magnet;
+        bool open = IsCupOpenVisual(bucket);
         bool accessible = inventory.IsBucketAccessible(bucket, levelData);
         bool allowedByTutorial = gameManager == null || gameManager.IsBucketInteractionAllowed(bucket) || magnetMode;
         bool canClick = (magnetMode || accessible) && allowedByTutorial;
         bool magnetTapHint = magnetMode && !accessible;
-        // Keep locked visual when magnet targets closed buckets — only pulse a tap hint.
-        view.ConfigureInteraction(accessible, canClick, magnetTapHint);
+        // Linked cups always start inverted, then flip together when both can open.
+        if (bucket.LinkedPartner != null)
+            view.ConfigureInteraction(false, false, false);
+        view.ConfigureInteraction(open, canClick, magnetTapHint);
     }
 
     private void PositionBucketView(BucketView view, int layoutIndex)
@@ -342,7 +441,7 @@ public class BucketInventoryUI : MonoBehaviour
 
         RectTransform rect = view.GetComponent<RectTransform>();
         Vector2 previousPosition = rect.anchoredPosition;
-        bool animateMove = levelData != null && levelData.loopInventory && view.HasLayout;
+        bool animateMove = view.HasLayout;
         LayoutElement layoutElement = view.GetComponent<LayoutElement>();
         if (layoutElement == null)
         {
@@ -393,7 +492,11 @@ public class BucketInventoryUI : MonoBehaviour
 
     private void ClearViews()
     {
+        pendingLoopViews.Clear();
         boardCreated = false;
+        linkedLines.Clear();
+        linkedLinesRoot = null;
+        crateRowView = null;
         foreach (KeyValuePair<int, BucketView> pair in activeViews)
         {
             if (pair.Value != null)

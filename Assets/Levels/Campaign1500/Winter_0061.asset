@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0061
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293701529
+  - serializedVersion: 2
+    rgba: 4283648845
+  - serializedVersion: 2
+    rgba: 4285623433
+  - serializedVersion: 2
+    rgba: 4289759615
+  - serializedVersion: 2
+    rgba: 4291078570
+  - serializedVersion: 2
+    rgba: 4291412430
+  - serializedVersion: 2
+    rgba: 4293969337
+  - serializedVersion: 2
+    rgba: 4294042081
+  - serializedVersion: 2
+    rgba: 4294703867
+  - serializedVersion: 2
+    rgba: 4279573602
+  encodedCells: S1:4:4096:EF66B6A0:hZVNe9pIEsc/Q7PaVZIbjYgdbiPFxOgm0bYnvhnTyPi2IWgMt8YoBb6NM7EkbjMJQu0bCL+kPuWW4vHuM3uZPvA88Kv6d711wSCvt+/xMuZtBM4tTkfYmeZOODXf3oSvVNy3P6ILu/b2aof7JfetgX5jDw7BG1z8HS8mMHK3wl007BqpG5aQnHmZbvHBiIETOvyDc34WoOvaDc4ryhOywsRw9NofjAS8yxzOl+k5xwJjUmYQkJHHu8NDMdA1DtmgNontY1G8dQXnBvO7XBic17Imd4hfjgb1yTv7YO/42yx+73seaXzocdtpEg+51fYK7jm1bovFPaWFRRq8TTUQFsXX45ZjOLw4v4seNBTnmfAtSrB3GvLfvrVsJ7L4KRQCP+9dWhqqrvYoe5+fOZn18WNTOO2aUHCu713nGvHeicfiR33l3vDN2TIUjmMw8Bb6u3u894iIac8rS0f+X3T/W2g7nxTz+ATy72J77ZKB6fmsK/iF81kfLm94O2aWrE0ivfF+cv613o5jl6303JJON+vpEfcVM+LTiX27iD8As7booVqtkmqn+KzD7L3wO22WzOwN3sDtS+axNnO20l2Amn5ehpp+6fpeR9iPCEDflFlt4EOKUT4/i4YjfTgFz2AW38QY1fWcwY6/+Qk1shRGUibaeiv8KSXsusX+Her5Sz/ZUbgwFbALGcX6vWA0DJaP4xxtTFtvUqgqML0pHGkZwUofeJbvc4G4Ot+Mk0etZ55pCQFg5nJ4KklAcvvQwh7s42XAda5TRgPCmBrJnU6Utz3JecjdUwa46Py8+ap16gnF2O9n5k5Hrn42qNzOZLxrRL+0ZPL4R7pK8hRUrqNpXcrl+7LbjhG+rYzvWjUsbmeMoqIzj6JAHiz7BoUfseljA++LBfVnYa5yrS9mQRSHPbA1VUf80xPr6u3j91Nq33hOzkkQQXcYSrjTjFW5UeXbu/y7nndDvNW6F4GEQIZ0mimj7jOxUS4lP4cmEpYyoNoEQ+LZ3KRcmWGvcdDUup9hiUtOn2E40HPTYAxAYVbUNhrHSf8HIouSh1q/BKYSTYmhixmO0xJGZDLsPXGdaPg1xfJcxftZXz6fMrySU8EZQ/zyWNzGuf4vHj5zsxyLBkaPDn35P/dQv6BOJGl++iDvbymBw7+43yQlX+l0VjzUzwqqjfyff494Try8IndxsV9o+KVMDoLes0CmfyWsksR4WO1+1TldH5UmoRz+ycvoFQOWQ4tG4+xZ/Dk8DaZiZsnT0ac06f0leOLzQEFQdsAkC8ipWOmf0V/8kIcAqNWgdpMkz6l/+Y8aRMNnd1BBXUYme32tBpd6XkoQT/r1TtgkDmY14B0J1VZF4eWSnHOldbTqOzJsDrIcgnqd03JglAWeI03mS0XT+WHM7WFrkJlqp2ZzDlM2q7HtHV4RN4FEenty2MrmniJvcofptuF395Ap0Cw9wmV/r/elNehbNuzQFqQHV3S3NLxmFfIXsMaD0Z78OBrMPV+Z3K/5FUEDcGW78Hq2eKE2yHFcl60w3a0ATXfNmtgerv/xb8dd5F+Tk33uYjlWgxu1ouml7eCfHFcYWw8RneVsx+C4KOvk6NUqLZ9HJ08bxN/ld6JI+hNm4Cty161wDuXzudZpzgSrOtkl1OT1i6rCVwAxKcwgz5lOknjGRGVN6rMOd9wJBLR/knJ09Sqd6zTJ53T7HRYX+jwu8AoOaP/E+umUfEWN2FJWstngG4Qjn2oWUfPSJwtzpRUjeRcLth4fsyN/MpGVVcnLPOYspjCNDe2GYzIrxAnv8IoR9yXF9XRJWuFsLeyaz7zi4dVJfcIPWBx2iOdPBtUKrWZsoMEOzCPOp3V/+tvgckZvt5yJNPk7ThvRWOPmmJ1MFf17BVwc7TdjMOlx6ZQq9B8=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 21776922
+  displayTitle: snowshoe hare beside berry stems
+  seasonalNumber: 61
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 6
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: a57f5d55648979c49813905b2baf1757,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

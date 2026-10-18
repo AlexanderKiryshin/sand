@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280891991
+    rgba: 4284960587
   - serializedVersion: 2
-    rgba: 4287791251
+    rgba: 4287659926
   - serializedVersion: 2
-    rgba: 4280165684
+    rgba: 4280424726
   - serializedVersion: 2
-    rgba: 4284566342
+    rgba: 4281815420
   - serializedVersion: 2
-    rgba: 4285498040
+    rgba: 4285491833
   - serializedVersion: 2
     rgba: 4278387203
   - serializedVersion: 2
-    rgba: 4281683577
+    rgba: 4280958301
   - serializedVersion: 2
-    rgba: 4279110670
+    rgba: 4279045134
   - serializedVersion: 2
-    rgba: 4279833620
+    rgba: 4280231478
   - serializedVersion: 2
-    rgba: 4285622389
+    rgba: 4285432764
   - serializedVersion: 2
-    rgba: 4280424982
+    rgba: 4279702549
   - serializedVersion: 2
-    rgba: 4285443057
-  encodedCells: S1:4:4096:99FE984D:fZRNb9s2GMc/A6Emcp2ctGTdslwMprHj7NKYXVqtl7ojDHi6tFkZu97FcBM6L5fAm0NDvQwtPKs6xbGXlu1pLVIrPHmZEKDQh9pDyclesI2ARZk//p83PpRl6UEGdZvY1n+MNakHlWgx+T//d/yrnIyLxX+VX2G09X+4fHSxfbVIaTIXLXkU03T6YZvhS2oVI2ceYET7EzWrMNH87EoehtEiGIkimQa40WZdr1NtfvGn/WJx0QmjKOrLPGPCg1Ftp278JaxiEeTgYiDaPaCdXpe1Gnp9EbRWqEOk+i0RC+NIIpxKChDS0AE1PENqPQLLI5xPYck32XJiOowcGlInomFkrYl27ZU828wYfIOxT4s0mo8ARzo4mC3r1YvCQOazmV2OHzEICJKmOjNNoUxn7/HXL+zGobnLHV0vcF9McBSFNKKPj1cG9t0MB86LtBj7T9TxFvp4A7eW8qhppusmndSe6tLMxny+z1oGTvHGURrt39ApU7qlAwgTF6LidepZzusyzQ9KVMcW7ofawexY857oeaLJOT+SIZ0EnlhG9/UzECPlptI8I8vHsV1K7yVcxnollFJuV/P7pYSHz6iOXX7U3BUBbOg0G/lyeAHu9dqXsf5lzEXPdyGE6o4hJxFf8kTvBb5SoidSw+OP/+Dj6LeIe50KOw2EqBweSWdS18N4ysP+ECnle9WgUhHbXF7qnWhf68uQNfJF3B2snWNX/g9L2pWUfCglpK+U5/U2mVhOzixyNqSMHEi4dCLfaNzzMgcbhxXWhKOL3g7lk5jnj9GJYQLWHnIIVRibXCc2kOXhsQ1vGINxpdu3izcZa5foFJX9H0u0fDMvM9LI5JUfQAaw4XmOMQYXCONM6zl+ncer7zAuEK8Wx+epXEdsMkv2V65jXBEL1LHLNJKkeqoxHBHO7ZhfLSzM3bmm/EpjKOlamTp0vqI5FAnywDs3CJHEHpwpNZynAzmkw7I+XhhV/fDqC2sDAnHbA4idzEk6pDr/WK2nnQIZkLWBbQ/g2u+yc/g0vNOg1gniDTvrc1Z/TQJ/Cv34y8v7CzJe9xInamadkAWwTMgSNNfN8fh2Xy+7o8mGvXUyWCN6fI8zeLzybT/Wu+4kyr0sIXMWsckzlGml0Fs5T/TyyE/cK5+nwIJNfkc4a6Qys2UZ60fBSPka/8RzBZuQwexBKpObakbgKNaJhKsDnru1d4/sGxtNw5jCEZjS2dXcIEnhOn9XqNx5amLRDDk6N46+sWG9psVxBDN1VVgq8EY228AmGhtgHzhT7mUJ6rm7q5iPEX9Qqk/dRA694kGg98wsE2zwZk5aZd4wsu8JgdQYHGHMVTCDTq5t8QO+W9rPpsxzsD8KVDsusdYH5sPGz02zdQGd3zSnueaeYiN9SeIfF4dq22xeCM6jaN+EPlUdxdxL7h8I31tGHD3genzQ+oSr2PxM61AF7XodN4Ca2fW52yTojGqnSfW94DrKuh22bYpYXr9wClA/ccXVymq97bF25vxEYz52nH043RpLDk+XqNbrVpaR8YnWI5HbQppMOITAllkqhZAf9ME/z8E56NDiAukK1Nj0BhIIevIVfG1v5TDGfuD61dNJEzLX2J5mbeBv0ib6/EkbY89zJwkE8Jnzn0+zh/qfn0cfyHeikIO7JQSbtJd3WuuydlcfRX7aJj+07pDAU66oJrxbVdVRd6T567xori+1jnX/+Jd6z4VeGSkGnoIzr7f3fqVg/QE=
+    rgba: 4285574641
+  encodedCells: S1:4:4096:7563E74A:bZRBc9pGFMc/g+Iwrp0TNJ62DJfMJhRXp0wWCxwucrx1IL6RLHI5dSzYyPGlMQVRcskYI+3gSxnTJFsuHbUEj071OONUow/VtxIk6TTvICT99v/ef/c9kUpBvCRkLMQmXkt9NspExjbJZz6LySJK/+XpT9UQB/ni/7Sj1IMFNsk75+P7QFxAhlFaX2BK7Y2bc5hOb4kwA+JARKy8R2e+3Xv/5UJ+EQaZjBAXYSjxk3bbh3isJT8tnRldhBngTyCzr/p+nba/+cSXvIRwabdt30deL2vRtvQ/ylwIMQngZiQgUlOAfq9rvdlibHAaicVETNJyEfymns9U+rBMatsNXKP0pjyWURBOQDoJJ2GQem77K/rJzw7L40tKgWVECMJQRiDE1jpPPHpJimY/j9ORMTgaCIllkso6/+sR13nLbJgi9j0CZ5E8nExCMatzXfFdDPVLIxH7gwrhPMQP1PdvNVhxu2Ed3JQ9i/c1CU6vpIPvqoOn3CmYmDQYTqclEgdi4SAMbFutWhrGmORx503Eg9MAth4eSn3Ys9WjWVPDJiGbAWAA4WEk5Za8ejZC6Ogu3iH5shPlDQSL+O67j9zWOmT86kzE8QKObsGPJEd2wSLj4FKEQm7sFHa+4G01d2TnfMMqkw97Pg0vP+jVnIfQbGYXdsi7j1wuheeLsKTOpj2K2tTo75CJPBZI3YoyVcY4xIfQfFS3bWq7FlvoX4QmXBOEmYz54E/1rZrt0ss5DlpnZZmf4O0TEtn3/WGrbQxkv6C02CN6GDKSmJQIkXjmO909w6AFOZK7MLGS8zuEVU4YAgMQXVYzYHrir5HqZFxJJODuxAIuF8wGnFI6gN6NCPnlTIwrO3pZb/A7qCrLw/SfD2HB16kUt/h5d1ggnKucrzxA2cifjwa93uM25B8OOTfsr1KBoougolSzEkOL+PD+46VkKvnFH8gzZhUyvkaglRUq5WAih9Bx8Yai6Iqi3EIondpSFOBrsH9PRdIFxO3kNcC6nlhK6CShj8eiokYgcoG8+4qMpEL0rS2dsMuz+HxQ9Shetb+STEGGRFJRLnfylOzOeTbG6N51UCelhZ/+CcMrZq1uyddHuXkVDPxaVOOFyzvvh98TPeIoN9f3o/KK0mJOl9d2lbQSpYfdefLm2Cxel+q/C3277fJDuJXustN5fg+7X0TZmWW/dp9NlpVfJUcL/VvNXf5xVcFPOxp3iueHq7F+sT3E8PqysXfXLFra5Z9u8zQj1uAtleKowr7mrxyvF4st3th03AJfjvRUNiB2wIY3jrmp9XFfKx70rd+JAu+z6izmKrJc5ZjjAt/W85um5ShLio+qbRT3EMowlugO8ftTkj4zu1YHuLfgqlzzrLbv3GOtUvAKt6zWmxWor6KplPpRDjY7/7ZpuqZWMplWguMeI7U67cXcU487Ngyaw8PX8IeCNxkcFXiTIyRnxFP3ex0P1TWrX5Qc/zYWBNkRjy3ss9oRohsdXpCYMWgANJfG7YcSx8xs+/W2UzQx1kx8VQoqwKuLBGgdefbMaFtOBeQaNq424fuyF1yOKaW+wZhjr4GedV2OIW81LiAd0iYdMvYWoYcNKME5dz34+mMOJ1SdPms2jY3bCD1oMOe6ct7jMF1efaHP1vkGrU3X4emEsSVlOuBIBYPz+a3CgiZtRudNGHxM3FVUFdmz+Xjlqmo9awzktKllGwN/Kvtv2/X5AdURzRk5qsKmiW2byrm1+i8=
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000fe000000000000ff0000000000000000fe00
-  conveyorDirections: 00000000000000030000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000040000000000000000000000000000000400
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: people
   campaignSeed: 30483458
   displayTitle: Harbor Pilot with a Brass Compass
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
-  keyGates: 1
-  linkedBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 1
+  mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 7db92f70f34985049a00c9c3f84ae57b,
     type: 2}
   usesTiles: 0

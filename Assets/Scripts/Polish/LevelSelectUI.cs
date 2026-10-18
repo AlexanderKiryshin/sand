@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class LevelSelectUI : MonoBehaviour
 {
@@ -13,6 +12,11 @@ public class LevelSelectUI : MonoBehaviour
     private void Start()
     {
         EnsureBuilt();
+        Canvas canvas = FindObjectOfType<Canvas>();
+        if (canvas != null && canvas.GetComponent<ThemeCustomizationMenu>() == null)
+            canvas.gameObject.AddComponent<ThemeCustomizationMenu>();
+        if (canvas != null && canvas.GetComponent<NatureBackgroundOffer>() == null)
+            canvas.gameObject.AddComponent<NatureBackgroundOffer>();
     }
 
     private void EnsureBuilt()
@@ -30,8 +34,8 @@ public class LevelSelectUI : MonoBehaviour
         RectTransform rect = (RectTransform)go.transform;
         rect.anchorMin = rect.anchorMax = new Vector2(1f, 1f);
         rect.pivot = new Vector2(1f, 1f);
-        rect.anchoredPosition = new Vector2(-30f, -170f);
-        rect.sizeDelta = new Vector2(168f, 56f);
+        rect.anchoredPosition = new Vector2(-32f, -104f);
+        rect.sizeDelta = new Vector2(72f, 72f);
         Image bg = go.GetComponent<Image>();
         bg.sprite = HintUiSprites.RoundedPanel;
         bg.type = Image.Type.Sliced;
@@ -39,18 +43,14 @@ public class LevelSelectUI : MonoBehaviour
         Button button = go.GetComponent<Button>();
         button.targetGraphic = bg;
         button.onClick.AddListener(OpenMenu);
-        var labelGo = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI));
-        labelGo.transform.SetParent(go.transform, false);
-        TextMeshProUGUI label = labelGo.GetComponent<TextMeshProUGUI>();
-        label.text = CampaignText.Get("levels");
-        label.fontSize = 24;
-        label.fontStyle = FontStyles.Bold;
-        label.alignment = TextAlignmentOptions.Center;
-        label.color = new Color(1f, 0.99f, 0.91f);
-        label.raycastTarget = false;
-        label.rectTransform.anchorMin = Vector2.zero;
-        label.rectTransform.anchorMax = Vector2.one;
-        label.rectTransform.offsetMin = label.rectTransform.offsetMax = Vector2.zero;
+        var iconGo = new GameObject("LevelsIcon", typeof(RectTransform), typeof(Image));
+        iconGo.transform.SetParent(go.transform, false);
+        Image icon = iconGo.GetComponent<Image>();
+        icon.sprite = GameUiSymbols.Get(GameUiSymbol.Levels);
+        icon.color = new Color(1f, .99f, .91f);
+        icon.raycastTarget = false;
+        icon.rectTransform.sizeDelta = new Vector2(44f, 44f);
+        MobilePortraitLayout.Instance?.ApplyLayout();
         return button;
     }
 

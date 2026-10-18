@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0055
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4282995297
+  - serializedVersion: 2
+    rgba: 4294703610
+  - serializedVersion: 2
+    rgba: 4281280551
+  - serializedVersion: 2
+    rgba: 4286089910
+  - serializedVersion: 2
+    rgba: 4294172636
+  - serializedVersion: 2
+    rgba: 4288116588
+  - serializedVersion: 2
+    rgba: 4287055893
+  - serializedVersion: 2
+    rgba: 4293773501
+  - serializedVersion: 2
+    rgba: 4293636506
+  - serializedVersion: 2
+    rgba: 4294156391
+  encodedCells: S1:4:4096:1F10A8F9:dZVPV9s4EMA/g2KTdntDjVmntzCpHY4Ohu0VFWUdbsREibltKbi7NxzsyjkmG9byrXQpxJ9yRw4P9tJ5iZ+ef5r/Y6mqyuaWqqo31U+kXGbXt99+xkV1vhfKm2+V8+9PuLMEcV1Vv9y/vKyX5doe8ULI6V74+uigenVfzavyUYPqcaGUGqb2SHKInJAQ4pXRt+rXck4f1UlVzVkp5Vza0+CTiASEwQ0vyP38t6rdTpWq1ics4dWJDIQ9gmomYUDIuNd6fKPe3T8qVa7f2WxdnqR8molYZbNlxhurmfdjsLDXc1XOH4sdWpbVik4HU0gh3DMOrI5Ix8atUpFSJzTZoXfl6hMT2VU8jTIwvP4YPo7luDiPimpCRbhzX/amyg2nMIPekrca49nB+O1oGgtZfV2L2Vd5tycKZ+BCD5wHRkeXztEoGmcPE/Fl8uNyNqsKFZzGroidpRPtmEc0+jjNBoOrc+TiEgOp8q3tiYhjtffeOSKkj2UcsMGlO/gywRSVWtuEXIXn6lFFkPUJSd3QPvpwFotCU5SGT8auK1URQm73zTP3Yoe9Gt1GP9Y1bns+ORWxiAZNw9mhfBpPDpPBOIzVhlO/ZXrxP3Gv2W10Mst675GzsTiwbmvvaur3fd+7dwGMW4sY9qKBq+MROUZWlXvE6K4I7/49EVLQ3wk5si4Ngxy3drB/K4cQk/imT8j2SmQOzWn/7MI0AGZ+lHwwied7hKB1r3HqwGnAbqn3Ganvn1FidZH6qE/ZIfE7AI7wQqt/NTE837+RDdY989EwesBg+1khXk9Pjdd2HLv7PrpkfEtk4yxILSbEIfsz5/DgeGTowsWh6QuHd/945d0UPLUFRtlilNJhz+uTi9h1PRNCTpqe2aKc8yZpkpYMOF1xaXVjdNB03ElIwDc9nnJu4FC3OLJFNqQXcfxXDCSOtjA532Q2pX2M0kQ7cje3LFR/uAA3jqN90/S3j3PKMFxyvYX8XtJPml99Rg51Fj6jBBedAzORwyTX6nE8r/kpmqZdjxiG7++TDiaAv5o/VDlcZZJblO4CMcDvdIinE7Q+xRsByFTAtQG2CxAib+Ga8viZqyKXgX5nQQc7AkSvmU4+xgrBUqoyybUB6mC7iEcsvbdWdSG8VUWBUGq+C57Z8UzGqXWn1XGQvqscx3JIN+LoU8Fsccbr8JCjb9yR21bNe5obHmVW/0InDiBzWeSrPNjoM2wAJqiXoCsLs0KiFNJONhx0/IQGmsOF636tuZLBamOg2UFMfLYaOg7ucGUtKrdonSBt6CkjPmVcY3RfSy55IjcOak7qWoADM/kkPAmsZ/2OX8cH7IkrWQSJxXUT+jqBDtGlMoDCdR09pmhTi0odgkG0WzSPQ0dhmWt1JRHZrOYA25ghH4HoQIK9SWt9KSnHolE6Ql2o/yF5u/sSH+7DntVuaUfzEB+7qJ8/76gTbCDvnQKSK7C0vnrG9qbD+8cjg/RQ/22KJSieeHuILdD+SeeYA4jQATkEWCqFDgqVB1ZgpchzAkfpLnGE4xTKmU31oZQXa9XGr0+Xtxx8pPw9WUYway/06Ch9cqEBGmie2EkR8Jzkavp9UVV4Ks0LPLgKnF9mWczCKUgWai1KBXhVrcs1PvFykjKw9efJnsaQ4tWJavrakuh8jlkOF236ImpdqQof2PiivS6lGgaLHN8HNOFohNM7vEvwyMxtPFMrXuC1RhN0HiQq3QwSTVZ2irch5SlORq6wwas2Zcqiqxc3csjxjwpDNCnrAaofnP0vFmpZlD+jjfwH
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 21148548
+  displayTitle: children rolling a giant snowball
+  seasonalNumber: 55
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 5
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 78bdd341834753a479d42a4c3dfab704,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0188
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4285823894
+  - serializedVersion: 2
+    rgba: 4284720364
+  - serializedVersion: 2
+    rgba: 4290946180
+  - serializedVersion: 2
+    rgba: 4289979122
+  - serializedVersion: 2
+    rgba: 4280687383
+  - serializedVersion: 2
+    rgba: 4284333563
+  - serializedVersion: 2
+    rgba: 4291018426
+  - serializedVersion: 2
+    rgba: 4285502409
+  - serializedVersion: 2
+    rgba: 4288705861
+  - serializedVersion: 2
+    rgba: 4280432015
+  - serializedVersion: 2
+    rgba: 4284367138
+  - serializedVersion: 2
+    rgba: 4284864764
+  encodedCells: S1:4:4096:186E6859:TVXPj9NGGP0bvCyrBLjsiFouzYkJsqycljVrVruXqp2q3ewFswzpyre4GllwiQFrRPdCvWUZ5QRSVCnlsiyhisyFbbAKnT+qbyZJ20+2Zed9v977PjtKKeU4DWfgwAh57OVO7qw4soFHQOrZM6WaTiMfDDzHGawTEvfWetKx1rSxzSZu1wvPzR3HI9ZcbmCkMNBgxVxI7MpcSuvgrdjwgUnjkXitgZseITyWLneBm0jHkbaKJGRl0GtIKTkn3OUxL3DfcPJ1Aq91d2AS1onHY8LnJl3iSdnj7sApPAIf48GXRmqexLmHRmLXNDMvYfF66RPXtg2SS9PJQPZI0Ssk8ERb/A7nbizRukWlhCPM47XW2nUJv2fqSCc3IgI4hzuXMvfOtZ7FLr80OoxthMHdAoGct6xucDD20SV57nHiWtaFV8S8rhPSqjUqoIePOklQzMhZmEPO6c2Ddevix9qkdN1cktjWIYmhZ9EkkYy1wKOVo3DhWRxq1Mtorc+fwC1u2exyiRNN0L3FGftLQ58Fgg4heIvUENHw53qfcaOdNGOQnMR4IrFe5v9eFxOkg/raAlzGLf2fJTPNqg+4gdo8xzS5NMEtssT3UV/rQWIp97ilR2JCWvEu4Nefx6/GTGqGGSS86M3pW4tjF/geG42YUwB3LQPiudzG41xBxssNZ1Td+2J8r8jzZbBZDbMQaOdwDOv+/Wp8iBUw/ZulxL5DXa6P9OE1Mra2d8j3yXLxbOO4Hunx3oixvfGYjbVew2ixJ6SuF9qvNGaL6PHX7Jrmbk8WIB/XejeE8vu/O1XFFg5jxtbs2tnBhmGI7GxSVZMJG1l8dLgCfrm05YHP9BEwxsxp8c9X1uf4cvIa2a1NugYf7+HFaRNJzhcOyRJnpsSIXXxKbhoca8u1UeNNd4l3q9GYjZ6Q2/6jeCHAecIn7F+rmGEiUr8d5wfGIcHL912XjZYJJhXYOG1KyfX7y9fyHYAbP5giIArrTvxN2qdiK9o6CA+2wm9ZZ0IX+ecmYH7qRyJMUxGFTIgp++Z/DoCp8oMLIkrDNAwdGtD+jTMIsKiQRn2a0cgXYQQJS7+c9qkx9tuv3Z+6rEOF2DYQDpqF4bNqOB1WSnWmQ6WqMiiHaqpopLIT1QyPw7Av/uicUVrimNKzIaWK4gvaTAWSR6JUVRCmlA4DVdkqdDh9MGy+2Cp9SkOlNuCV+iK41d4JxYmqpkjgl7EbK1T71OLPFUKm2/AKfV+pgFIB/VJxgCLZbDc8UI/epF0/2/bLs0C04bX5YqqE+pE/v7D7GCneb4RpVKJ82b0VhqJdUjTmZ3fNgs52P+lOifqZomB1kgqfBkHQh4DIY78MugMpy6r6arWq/D5VGVQBjAnRzXqGz9YD838SVD9f6U7a/SxM7XTmTGeaf+Cnl4/VWVVtrFasnW33gWNqAH0qoplO3lc7q2YoO28vPz0+yYJsOxUnJj5CDTi8qzZCwKfnV52XFTRTGbUqGMOW/FkXu8AHl3qvHXlcWYWUmsObVJT3k3zrSOOLfH7wlLzA/IadUlkH1BBBiTV9OLvCibO+6jR+UWranQgM2CQXJ9NAXY317ux0rVndcV/K65hJteP3z8wksQhIdJdzqBldfXnHdR7fNkq0Qa5DKfTGU/ZlfBNs+0YU6Ba9VZGwvQEs1TSg9+PrhqtfbociFL4o220DK7UkET3vmMcMYNr3/W3an+PTpQTpKXyr0Kq+aQQ0P/8D
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 35077505
+  displayTitle: Icebreaker in Golden Polar Light
+  seasonalNumber: 188
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 9b0ce3a77642ef248bc5eb0954a2be05,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

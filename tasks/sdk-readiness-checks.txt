@@ -1,0 +1,10 @@
+Sand SDK readiness verification
+- Reproduced screenshot TypeError with the installed mirraSDK_ads_library.jslib and missing Module.mirraSDK.
+- MirraSDK.IsInitialized already aggregates provider flags in SDK 5.1.31; WaitForProviders uses the same condition. The game adds a separate JS Module check.
+- New own-side WebGL jslib checks SDK modules/methods before game calls. SDK package files untouched.
+- Routed game ads, payments/restore, storage, language and gameplay readiness through this gate.
+- Node bridge regression: PASS for absent/partial SDK and actual installed SDK bridge calls when ready.
+- C# game callback regression: PASS for missing JS bridge, early initialization, ad success/failure, purchases/restore and analytics.
+- Actual installed SDK references + UNITY_WEBGL production C# path compile: PASS.
+- Existing web analytics bridge checks: PASS.
+- No Sand player build or Yandex upload performed. New player build is required for the published game to receive the fix.

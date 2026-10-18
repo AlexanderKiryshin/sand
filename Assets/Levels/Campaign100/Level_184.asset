@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280953633
+    rgba: 4279768607
   - serializedVersion: 2
-    rgba: 4291467623
+    rgba: 4294035117
   - serializedVersion: 2
-    rgba: 4284434217
+    rgba: 4288326088
   - serializedVersion: 2
-    rgba: 4279128764
+    rgba: 4283193954
   - serializedVersion: 2
-    rgba: 4289689928
+    rgba: 4280228797
   - serializedVersion: 2
-    rgba: 4293583837
+    rgba: 4289362523
   - serializedVersion: 2
-    rgba: 4293051557
+    rgba: 4292179234
   - serializedVersion: 2
-    rgba: 4293832556
+    rgba: 4287007133
   - serializedVersion: 2
-    rgba: 4287194427
+    rgba: 4292337129
   - serializedVersion: 2
-    rgba: 4293039951
-  - serializedVersion: 2
-    rgba: 4287533707
-  - serializedVersion: 2
-    rgba: 4282874477
-  encodedCells: S1:4:4096:378A2A6A:hZTPU9tGFMf/hq1I0xSf1BFO4ORsaKpKF4qmM7m6XRjhU5iybssJJ1gEn0LSoHBLNJqws1xCpwn1jbgOo1lfXPXQjPeP6vfJQDNtJ31jS7I/78f3vX325qv+B22z+z9cyg/h3fe4/x88kW3Z/+hl9bzm/Ct6J+lJErhYeaz9/M9oWHua/9PK4eX7cDeZ8m6bPh588WX/4PDSoYL7KemXKPFJv59+ecjSw4f9lJz76clOgku/l4A/OWCP0jQ9Sa9fy5YOcMfzeZ4pT5cfpufG2MPD4wt+cIL6sHT58ZTuG753PcPDWv/RSR/33obsIsHy/QpfMVEEz5tP6cPJGm6/brS7bTkXfUvf/MmimSiip8Wn5+XEBsLl1xSV7ixH0cxM9Dj929oPOl0ojJYixu45EdnSHxdwP/1ext4mZhSNlwCI8ltO481lOPEuBhVFsxWNZhq3ltlZi9hOmqJyb0WfJcnZ/RfJ1Yo7t5ac7O40+An4PRm/7SDD1WT/3p3KY8nZuvNTpY0mE8vNt1LSYaQ7V6f68H4sZZv6klIXuKxCwz5cvqocGIt+w5fd+oZsSpWbYbfpAXaT29dmqwos+o74ipBzMlN6qFuCTkkm7IwxSr+0RbU3xPZ2faDiN3pBdIizzeRz+ezF8la1OEi/IrvqB5G3ClmfW5fy47vMaQNuJe12kgiYuxELXcTFdl0IjJGi2L2EUbI5ITzRtrEwK81h3NsWPdrFhHrFSsruqhDNvADPi5bXNM3tTWh6hTiS9nq1JcS2eDcJWmKojBAmFnXaI1nfh9SDPREL8bsdWTuIlVcYbwg/+ePe66RT32nvpYnoiSs2PComOi+G2jRbPc9b2E1P1uX8yvp6eh3aS25HhaNVnA+LUQ/1eruvj9123VvtdJrgnE/CkBstVK4murcq3tDvsT+/5roaeHEQ8jJwvlFaqUIV5kbTrbu7bn9+3m3mwh0GCA+4tUaZwmhjR2bBdYX3S38+EbkrFgLOB0XJrLVxrjK4KDNqCdc9hhcs9znP/MZ4VNqBVsVEGaMwKPD+GrCCPJ5ds7WGmYT2SCkTQAbij4/nMXjTIq4c5oRFyfVAkUZVzAkkQG+5jgWlZw2nwbnmRY4SaOKt585XPC987iu/wdnAD0y2oWKV61ZhRNOrV+rEYub7PsRjvwxSk2nigsJpPCp7VwPnivonXOihoZ2YGuQ5tZDZEI0VGuV1oRcgu73dvOCMOw02OkJ8YKp4vB5gwyoH7mcOR38jrY2ZNkgjAK8Wc5Hz0uF8DAUjcBpeBp094qsVx/FxjgZLBq5JpFHcIEGd5r+Y8cqcU15abQaGTOPEsMU0IX7OOZvYsIYSA0pQ6BvI78Kq3LyEAsfWTk+1CQyN4UYn6WBNiI+Jh2gysDwYTEek4nq9AwHN5+Cc5IdBwA03EyyZggvSU7R707cIx3bVeEC1Z2kF4OO5U7vplw0IR/vPfGP4ILDkoJQ7DXdJGaJhz1Cbm2DAQ1SPL8K5DSkc8aNMGTtpBGV5FKtL7o8b45KOFyXKANmDieWxuCjPQ1ZDME2fT0rbKHHXgb7kmAkjiOtgHPJTOiOjmufcQyRD8jHetUFtxM0gyLCO+Lvx6OzH4xpjiIVZ25hFKJ2GUvR/RLtpLWNIQLxmfcOp8Uw972Bx6rc/c89wkLRM+IE5lv0F
+    rgba: 4294094457
+  encodedCells: S1:4:4096:15BAD7E9:nZRNj9s2EIZ/A1PacK86bLK+KcM41JHgxJB7M7YCtkfvurS7t6ILu8hNIaOljlk5C6tHH9JCv7JDyV+bFDl0AIkSn5l3RsOxm+a/zQEK5H38Bgyb4bBpfiKKinF23P/rctjiaBhFuyglyvN8lu9hE0WP0a4Z7iJ6i5rhI3J28SKazYMg2WO0t2bXNK935g7H+IW/4lHAw2GL7cVFWIaNvP1yZ9DQxU19udtHFktjzEV0Y55gXszNP/Rm+qaOOukbc3t7a1p7SpZybkaGnPrxIe+N8UaaojCjN5sSK7R2CZiC2oebZREgWVkAgE11BSgB+SE68FCASdK6Tuautl4CILb4gzEUG/hYo4a6HqjK+ipJeci/a+6MWXa1jSfItUaJGx84uoAbs1x4Cl++dSnyuEbUXAFuU63dy6bZ3Zk/H0YrAAMxIhdUWlAgjhCv1+/XR1tpFEKg0AggmEIo4/WZvUWwjs41JXXyZJjA5pyPVarDRyPIUAEy8jrDC3DokPYogcY46AtxLq8FjQWAS0NjJohS62dcxqkQYLHVSEqZkFtz4qMfN+gEJQGrnagAqiqtTvgBpHPSCoswsR40oJbyjI+oQSml9qIuA6U0iYND7fdrCdaYEWwTtyWcoMjrxNoO//3w+wOrvDExCO9qgW6itaoSgKP8Y4FswMBvapoM5KGB1OQTX6/D6G15jkmieU6frgVUk/P+rRZhgp+oMxgDB9B6455x0pibhRmhCuoC9ARXdbQ6P6PF48IIDSKcMFQ4v69S4f84uCx2K7MoKFiTekVdns1DI8Lt/jJ6/zLaDfVMopBAx0yYF0gzjuHHTg/4KvpwaQewSTc0grTJChvOMXCXWudLUMY+laX3PkSjsD5QT2fiU/CSZVm2NMwSTz26hB5oosmYRz+WV9mUHHxfEJeJ9JKOEb1SKWcu+/V1FsxfvxtcbxPwnYGi6JSxPL66IvqRtjKF2R7TMqYPReKff6s//RIEuOqxqdSYQ+sUJoUzltVkgb/jTNJCKf3BSH76ua6rmvZ/9pxNy489PHArLaPwEB/UWTpQ00l2xr0n/qatLst6LGVqWmY9xU76JE8ldTynWqfldY8x1bK65a0FHOJUx3Mi27qLvw58GuQVJz7IwnuILjvOep1AqxNPgR5Uf6/u/aDTn+55Pm3X4pznP7BexrJ9JSyn+JaHk6RjZb7tQmczNihZV1+X37OQIT7wPl20EUK31akHB1MvutUW4fvKg4M6OvDjU04C6bGNg72L2t9zjjNP/4H+ZHkuA6N56/pDNdJfrH9uVBuO3UkX/dcOYROP9Ov454bfhD8zG6Y//Y6DI/69DLb9/fx//i8=
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 00000000000000000000fffe0000000000000000000000fe00
-  conveyorDirections: 00000000000000000000000100000000000000000000000300
-  conveyorBucketCounts: 00000000000000000000000200000000000000000000000400
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: journeys
+  artTheme: ordinary
   campaignSeed: 19172726
-  displayTitle: Orange Helicopter above a Fjord
+  displayTitle: red race car entering a sweeping bend on a coastal race track
+  seasonalNumber: 0
   beltCapacity: 5
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
+  beltSpeedMultiplier: 1
+  frostMoves: 8
   sectionBuckets: 1
-  keyGates: 1
-  linkedBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 1
-  bucketSettingsOverride: {fileID: 11400000, guid: a6afcf25aa74ef74080297549eacae4d,
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 28a9f901078d4734ba596c2ca2709e54,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

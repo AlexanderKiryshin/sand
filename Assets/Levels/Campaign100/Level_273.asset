@@ -16,48 +16,50 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4294622072
+    rgba: 4285117432
   - serializedVersion: 2
-    rgba: 4284328439
+    rgba: 4282156530
   - serializedVersion: 2
-    rgba: 4279385266
+    rgba: 4279382683
   - serializedVersion: 2
     rgba: 4278786150
   - serializedVersion: 2
-    rgba: 4279316373
+    rgba: 4281683115
   - serializedVersion: 2
-    rgba: 4279116667
+    rgba: 4279116668
   - serializedVersion: 2
-    rgba: 4280181735
+    rgba: 4279784662
   - serializedVersion: 2
-    rgba: 4288076541
+    rgba: 4288273917
   - serializedVersion: 2
-    rgba: 4281419687
+    rgba: 4279517624
   - serializedVersion: 2
-    rgba: 4279717322
+    rgba: 4282080707
   - serializedVersion: 2
-    rgba: 4282079676
+    rgba: 4294555765
   - serializedVersion: 2
-    rgba: 4281827056
-  encodedCells: S1:4:4096:26A1C15B:TZTBbttGEIafQTn1TAG1qvDkAU2V8a00gaBHeteN4FNNrqH4FAvKBgxPzMEEqlPRBGB5M6PQ2PrSpA6s7o1CoEDZh+oMKaXZCwV9OzP/zM6M7/u+8I/FR50ou8l6vWeqTqQTMwhh4XdHBL440H+ptDEPkCdSMs4qCH/y/aC9EPnRI9BaNvMHvZ5UyBkDOIjJks5xEOXIbWMjr6WsGVsoYEd+JMiYFAw8gMzsEU+kG7KFFzI/EFseCeKNmX/Xe0Yc7dH8OBJ0g2LE9gjghbGz3jMpXXXmrMZHRxxh1Ek4zvYBVpe21ftbSoDKqfjZUWtLd4IoGozA619eWaifAcZy2NGR6GKTA/Fwv/I2xsIC1WxRAXjOUZs3MRTJF+h/Y+aD73onIQYAl6M2SszvknxvK5UYm/yHM/DUGHVF2wD0AFau1DBF/b00nCVVEmJ0P2hj452AW0YpT1qNNThlM+UmMUYVEbluH+CgmV8r92Fj8gx57VYiptzFlosfjX2joG+Z7POazZLkNEZTwVtOGt5a5rryVo1ppBnPVAJYfM7irb3w31nmoYJqaAbpevxcJmMsPGHR1SdaWIfDqdcfNpY0Txd1HXJsgY5TE0T95gZGsBoOkJ8zKQ+2uM0Py7iy92EfXl1d2TKVzlSykDDr4gcRf247VQNgy2Eq63CaQhiS+VZfxJ5vHHj1QTdpncq1C0kVxq1/sX2BygWn732Ypth9rgsKu4uxLj6+/gFbDcFZAfRTbN7aA2xOxr/6RyFqgw2N/HIj16cepB504dv8BGdqr+WQK2mYC6jxW84W7qnDnEdQ5SOzdsYgZUiQxzH1LuOOe8qYY2OCeZqGAHXScRQXYAez6RoFMWe0MkYmDupzMTuO7UvPwLiXHIbh6ydPFhuJbVJ5lcQJFpwe1udMuOMEpYWvix9MinzmAY5QG5rEiXeL6RrVj9ndnZGf1YnyUJ/L/K51ueBh7VJ21ThMZZ46WJyWUwPiCIpxNT2k3CvAuPYLkB6jEW+Fo0QBVY1U0Q0pr64dF8g/Gvoxza8DHsqrKuzvNfIRpl+l8gQ59a+ID0AlGF7h/KS3cm+8wOnEJoi6+oqYw3Rvny5UiTx8OcfNQP4li1qIRXTU3oiCV3V6rWzHafk55hVjbfyIg7QG+CdzNjLLc7zX2SOnIcICeoOMkdXmcp6PYOqFn2SdxNTBHFsbHWYW7TtYZRlxNK+Tp9hgvF0+BVuZ7BcKMMvy7BAcLN9anVD3taPHnOGt9Svah9MsH9S4eacY3uW75ma8bzU2lgn6eZ6rkIfEz7F3u+lH3aYxyCsvzz4z8ZbUE99t74XBvaOXn979qUtdlrqPODln290siBtLF1rrZbnUunlJ9mfBdrf7ojJZY8/z9zqn82KZtlwEQbs6ohjtm7mat3QwsHJ8HHfWGQc42mJl7GZQ7w3y7jRSqrHsRp82aPyqmY9s2OS7cxmOxbn4f3cNb26yw/mOqn/vPgE/32WH/vXv32fkPCO8v9J6ZW7Pg6/8Deakt8b3urwI9JdbeNqtVt8vC0ocU7/X97/dtz/1l4vybJd9URRLcrDUZXex1Dpe6oude432F+Vjv6sd0e4URVvAPz6Wjy/Qx84az89la1J8nPC4mBQUoCAvunWAn2I5eeJPirKYTCZviF/wgsJ3vgvyjQbLuPjm6HJStBrJ0WSJ37vltxw1TEo0pAvLx/9g2Dcd+A8=
+    rgba: 4280314348
+  encodedCells: S1:4:4096:657B63A3:VVW/b9tGFP4byKCwbHgRDdR2oCV+8qkMtJkhkDmhB3UrzwcoyBKr8JUCF6lDmWzKJaZfoMV1FcS3pVMBTZaAMEzuj+o7UlKSkyhR/O5973u/TkHARcDD4Ofzoc535/OvU1nIHIILUAweB3aFFt8byuG593H+K+ZS5mH7gvXxsoItysN/dCI9pzmfyzyR3T5ToPzaPAjIgXijUbqeN5+nhZTdmA18VNa2chCGQt1qvbXw/p1/TWXhxzGqfj8MRFgzhO0J6uF+y/1ocQMAOV7GBPO1hAxRbxmXApAVLn044VyIlQTeQLzd9Q7+I/vCQEz2jJ8IEYpaBHcQcd8j/YUxKcaqC6JNcLBmcCeInud8nH8xBpEtfRQ1uwitRt68QrwzB6TP5ESlVD+mxFp9wn6Je4SPTZP8dxXhJckL7fMqPUHAHOJvtrxs/tXGphIVizrxgS1QwHde3OLCuC4VyCcHU0aw4FX+OCloN8YyHy6ajfm8CxKTTqW9Vki7wvbYofoYbzwadSGV2Imrqq+j46w5fiEpQON87oKRSb+OXaw2iLee+0eCW4tWdncEJpUgiJOtYBL5xvEmyU3ieU2TEv8UQtFm8cY8uHS8nfJ20vLujGFpPo05Y1DT2xj5wHm9TWGNLS5SakAGYM1t/HbTdnOC09tk5C1Miy3Nc38F81V/7dn6wP3FLtl3lFGEi2/yOfvkKpzc3LtrLYyRqpXjCq77i8PFPgBq7Roq/wIlArAVXGVYJFNULuomNY8pcUD2lQPrn4ecwd4WqHuIX6aE56okPN745yIGuQ1UdfzzqjRGqXK69m/jF4Ip6ZLiCW6PylYXsDTf6xMCBvmRsvhh1lx0UZUyr+kr/xAzTH1QMMLDxWfTHfhU4AoP6SU4CwGnZA43k5Z7LruIadG1/PXwCIZ+geQ+evLW7J4neYKGCrjq64DHIi8L0u5D9JNpeYkv0ZB9XLemYDFjA1NFBzem9bpQUn0yBmzqwkok65hphefUwVnXl2pJTWKHux3bHYjFlGaC3tKYu+kgh6UxPg0vyefUZyqRdmQGHTTGNHDpq9J0SFbNLpifFKBQJrIwd2bkKx/LtAhW+RfiUpVbR5aA8GtzDb4i3PRP1jiDZPeK0pfItLgeHtH0YSmNb+3Bzi4DufuB9MMg3R9lv9hMUJeweF0fztAZgQ3gvJVlE0wRqMc6wjYI1YeaAx3H4lj8lWUIOdCApSyuOyTgp6Dc0QMqH3zJGg6S/j1JA2atq9kQLNlyHlgBh6NslMcXfklH3LfmBbbtNK8pi/gyI/740jdpUVTU1YYYDr1mU1gBWXYFYX5oitSsrS3/vue6Ohp0bqNIR7N3QyPl828np7j06OC7ibTu9aIo2tEEF501TPzKc4ggu35F7rNXuaYTnvDVZBE+2Pe8sXQtmjXc0YGRxeB5jVZH29JznQNJua3XZzM4Wj6u/Vfxvzygw8FJVvAoS+TJ73X0lQ/xspE5zsr6oOE907+BrLu3djLTx+S4xj/ohze6p+UGDZ6envW03rHEo4xiFKf673e4yU4UPerNtNbv9Xdr9nBjH9mln83e62qbvaJTrTfsmuBZFHAd9SxE16n96J09oj+1k+hMR2e8opjRvtqcbp49jaLjYzgTpxV/1IssTPmfkXj6LerHUQ2fCVu4H9cxPPnxQe/R5tZaHc/q+/8B
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000000000fffe00feff0000000000000000000000
-  conveyorDirections: 00000000000000000000010001000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000030003000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: places
   campaignSeed: 28493607
   displayTitle: Orange Canyon Slot at Noon
-  beltCapacity: 4
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
-  sectionBuckets: 0
-  keyGates: 0
-  linkedBuckets: 0
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
   largeBuckets: 0
-  alternatingCrates: 1
+  alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
   mysteryBuckets: 0

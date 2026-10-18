@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     public int CurrentLevelIndex { get { return currentLevelIndex; } }
     public BucketInventory Inventory { get { return bucketInventory; } }
     public int LevelCount { get { return levelDatabase != null ? levelDatabase.LevelCount : 0; } }
+    public int CampaignLevelIndex => GetDisplayNumber(currentLevelIndex) - 1;
+    public bool HasNextLevelInCampaign => currentLevelIndex + 1 < LevelCount && IsSeasonal(currentLevelIndex) == IsSeasonal(currentLevelIndex + 1);
 
     private void Awake()
     {
@@ -50,7 +52,15 @@ public class GameManager : MonoBehaviour
         BindEvents();
         EnsureConveyorView();
         ResolveTutorialController();
-        ProgressSaveService.Initialize(levelDatabase.LevelCount);
+        int ordinaryCount = 0, winterCount = 0;
+        for (int i = 0; i < LevelCount; i++) { if (IsSeasonal(i)) winterCount++; else ordinaryCount++; }
+        ProgressSaveService.Initialize(ordinaryCount);
+        WinterProgress.Initialize(winterCount);
+        int completed = ProgressSaveService.HighestCompletedIndex;
+        int following = completed + 1;
+        while (IsSeasonal(following)) following++;
+        if(completed >= 0 && following < LevelCount && following > ProgressSaveService.HighestUnlockedIndex)
+            ProgressSaveService.MarkLevelCompleted(completed, following);
 
         SandEconomyHud economyHud = FindObjectOfType<SandEconomyHud>();
         if (economyHud != null)
@@ -58,11 +68,22 @@ public class GameManager : MonoBehaviour
             economyHud.Bootstrap(this);
         }
 
-        LoadLevel(ProgressSaveService.GetResumeLevelIndex());
+        int resume = ProgressSaveService.GetResumeLevelIndex();
+        while (IsSeasonal(resume)) resume++;
+        if (GameProgressStore.GetInt("sand_selected_campaign", 0) == 1)
+            for (int i = 0; i < LevelCount; i++)
+                if (IsSeasonal(i) && levelDatabase.GetLevel(i).seasonalNumber == WinterProgress.Resume + 1) { resume = i; break; }
+        LoadLevel(resume);
     }
 
     private void LateUpdate()
     {
+        // A cup enters at the rear/outlet first, then advances after the current
+        // movement finishes, without requiring another player action.
+        if (gameState == GameState.Playing && bucketInventory != null && bucketInventory.NeedsSettling
+            && levelLoader != null && (bucketInventoryUI == null || !bucketInventoryUI.IsMoving))
+            bucketInventory.TryDispenseAll(levelLoader.CurrentLevel);
+
         if (!sandRenderPending || sandRenderer == null)
         {
             return;
@@ -200,16 +221,25 @@ public class GameManager : MonoBehaviour
 
         int maxIndex = levelDatabase.LevelCount - 1;
         index = Mathf.Clamp(index, 0, maxIndex);
-        if (!ProgressSaveService.IsLevelUnlocked(index))
+        if (!IsLevelUnlocked(index))
         {
-            index = Mathf.Clamp(ProgressSaveService.HighestUnlockedIndex, 0, maxIndex);
+            if (IsSeasonal(index))
+            {
+                int number = WinterProgress.HighestUnlocked + 1;
+                for (int i = 0; i < LevelCount; i++)
+                    if (IsSeasonal(i) && levelDatabase.GetLevel(i).seasonalNumber == number) { index = i; break; }
+            }
+            else index = Mathf.Clamp(ProgressSaveService.HighestUnlockedIndex, 0, maxIndex);
         }
 
         currentLevelIndex = index;
         StopCoroutine(nameof(PresentLevelComplete));
         FindObjectOfType<SandPourAnimator>()?.ClearPour();
         GameAudio.Instance?.ResetLevelAudio();
-        ProgressSaveService.SetCurrentLevel(currentLevelIndex);
+        if (IsSeasonal(currentLevelIndex)) WinterProgress.SetCurrent(levelDatabase.GetLevel(currentLevelIndex).seasonalNumber - 1);
+        else ProgressSaveService.SetCurrentLevel(currentLevelIndex);
+        GameProgressStore.SetInt("sand_selected_campaign", IsSeasonal(currentLevelIndex) ? 1 : 0);
+        GameProgressStore.Save();
         gameState = GameState.Playing;
         sandRenderPending = false;
 
@@ -225,7 +255,7 @@ public class GameManager : MonoBehaviour
         level = PrepareRuntimeLevel(level, bucketSettings);
         if (level.campaignLevel) bucketSettings = level.bucketSettingsOverride;
 
-        Analytic.BeginLevel(currentLevelIndex, level, ProgressSaveService.IsLevelCompleted(currentLevelIndex));
+        Analytic.BeginLevel(currentLevelIndex, level, IsLevelCompleted(currentLevelIndex));
 
         Random.State randomState = Random.state;
         if (level.campaignLevel) Random.InitState(level.campaignSeed);
@@ -276,7 +306,7 @@ public class GameManager : MonoBehaviour
         SandEconomyHud economyHud = FindObjectOfType<SandEconomyHud>();
         if (economyHud != null)
         {
-            economyHud.OnLevelLoaded(currentLevelIndex);
+            economyHud.OnLevelLoaded(CampaignLevelIndex);
         }
 
         HandleInventoryChanged();
@@ -302,6 +332,13 @@ public class GameManager : MonoBehaviour
         }
 
         int nextIndex = currentLevelIndex + 1;
+        if (IsSeasonal(currentLevelIndex))
+        {
+            if (IsSeasonal(nextIndex)) LoadLevel(nextIndex);
+            else OpenCollection();
+            return;
+        }
+        while (IsSeasonal(nextIndex)) nextIndex++;
         if (nextIndex >= levelDatabase.LevelCount)
         {
             OpenCollection();
@@ -320,12 +357,23 @@ public class GameManager : MonoBehaviour
 
     public bool IsLevelUnlocked(int levelIndex)
     {
-        return ProgressSaveService.IsLevelUnlocked(levelIndex);
+        return IsSeasonal(levelIndex) ? WinterProgress.IsUnlocked(levelDatabase.GetLevel(levelIndex).seasonalNumber - 1) : ProgressSaveService.IsLevelUnlocked(levelIndex);
     }
 
     public bool IsLevelCompleted(int levelIndex)
     {
-        return ProgressSaveService.IsLevelCompleted(levelIndex);
+        return IsSeasonal(levelIndex) ? WinterProgress.IsCompleted(levelDatabase.GetLevel(levelIndex).seasonalNumber - 1)
+            : ProgressSaveService.IsLevelCompleted(levelIndex);
+    }
+
+    public bool IsSeasonal(int index) => levelDatabase != null && levelDatabase.GetLevel(index) != null && levelDatabase.GetLevel(index).seasonalNumber > 0;
+    public string LevelCaption => CampaignText.Get("level") + " " + GetDisplayNumber(currentLevelIndex);
+    public int GetDisplayNumber(int index)
+    {
+        if(IsSeasonal(index)) return levelDatabase.GetLevel(index).seasonalNumber;
+        int number=0;
+        for(int i=0;i<=index;i++) if(!IsSeasonal(i)) number++;
+        return number;
     }
 
     public bool TryPlaceBucket(Bucket bucket)
@@ -439,7 +487,16 @@ public class GameManager : MonoBehaviour
         gameState = GameState.LevelComplete;
         Analytic.CompleteLevel();
         if (tutorialController != null) tutorialController.HandleLevelCompleted();
-        ProgressSaveService.MarkLevelCompleted(currentLevelIndex);
+        if (IsSeasonal(currentLevelIndex))
+        {
+            WinterProgress.Complete(levelDatabase.GetLevel(currentLevelIndex).seasonalNumber - 1);
+        }
+        else
+        {
+            int next = currentLevelIndex + 1;
+            while (IsSeasonal(next)) next++;
+            ProgressSaveService.MarkLevelCompleted(currentLevelIndex, next);
+        }
         StartCoroutine(nameof(PresentLevelComplete));
     }
 

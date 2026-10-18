@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4288593629
+    rgba: 4287803340
   - serializedVersion: 2
-    rgba: 4280368747
+    rgba: 4281031313
   - serializedVersion: 2
-    rgba: 4285827750
+    rgba: 4286100464
   - serializedVersion: 2
-    rgba: 4279702564
+    rgba: 4279702565
   - serializedVersion: 2
-    rgba: 4282483401
+    rgba: 4289449450
   - serializedVersion: 2
-    rgba: 4280361265
+    rgba: 4280426802
   - serializedVersion: 2
-    rgba: 4292932602
+    rgba: 4280696423
   - serializedVersion: 2
-    rgba: 4281294483
+    rgba: 4281695428
   - serializedVersion: 2
-    rgba: 4287276996
+    rgba: 4292604153
   - serializedVersion: 2
     rgba: 4280492876
   - serializedVersion: 2
-    rgba: 4290107119
+    rgba: 4285958820
   - serializedVersion: 2
-    rgba: 4285902829
-  encodedCells: S1:4:4096:BAA35B8E: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
+    rgba: 4284913616
+  encodedCells: S1:4:4096:1ABA92CB:LVXBbttGEP2GCbAR1NWljGs6ti4GLcRBdam7oQsil7WzTRXyYpdeJXIvVhTRUW5yULOBL2qgIIR9cgUJ4W1T04azvSSK0AbmR3WWzgoiiH37Zt7MPJLM89K52GKhy0JpVhq1pGSdaJ2lHmMsZV5qxf2fQtf9iqd4cTuLEzYq8BHrxf34MWu5uN+VO+OWwUeIGwz/o54Tx/syRf5W97et7s41/5SNUsNPRw9XDw5Wx4b/zV55GG0hzlgUjUapOeCl9sHbOE6bUm49miSi1DR8FrVTzO+NUq/Xfx2vvm3j9vN3t63Pzu41HqWIpRh+8WAhjuO7iD9cSr3Ne3dMANaxUyzQnOjtx1b/MG7KN3R7dMdxooLfsU+9a31239o/7Mct2X1+n/1bra9tFwLtiWf0Ib9vHzyN4tbii9a4lx/Vq03DZ3bbiEO8ebi/sL8wll3lyZfVqTPFProhm7eMwFH6Ss5bdtQetbpttr5Sd25VP5s2u5GNOC5Lur3+5LGU5+ud6PA/x1m9L02rF2yDptG2DLvWohxL6XW6ce48PfrL8Lv79qkJELVlGL6SEsfiur2647CVHxEeP1qNTr2v/PGrYrTMzRG/tWHqG985uHVouhMxnNtiaA6wkM05uMz9+I+4b08wgRW64bgVMtxbc9kVBtgsbBJbtoUdQIsg7hXxm+zsKs+PfinwBStuW6bB7J9wZPCWadrnaR4X5cvD/kJsTTx00LYcu8VWi7kvD/LquGjP/OF+E2eYsvsvsfICxwJWnGmON49R8/yCy+zTnqz+joYLC/OGLo63Xtzgby1knXbE6v3HOI5CoHu2jOUVofBxwHLQRezTSVDsvGk0dm9gec7kOhdj+O+ss7lqvYCTRlnc+nQDDxgDNnHCISuW9YtxdHnJF2XnzyBwGndnSeEAWcDS+vSrlDdJMOXDmnM8hTxwhkYhWr/A5acNxBsiyYA4Ds83nVolMc26XlLa9b3jpOFM//EVZq+ixkrtCUbwrvFwLr9dbohajfJvv7/rOMuOADFDBdf53XD+v3oyrG2SjAqaLzt3nE1ROcEKv+qTX/I8+VJLPla0UmUIHCcrfzzZQT5qWMELVHOxeTLNM+presKd6QmZ5cVTzlam8jRUVlUM7+YVosBXQmR5MiAnSdFlnFYrVEtVIaaEa61AwyX4/DipvX6Cjp9NjyJ5BsoiIghIpjVNeJAdE+ILZ7hznEyPforsn0G9IMKnRGtf65yTk4HWXLxOGpv5GrP2S6A0wegYH9d7PRMA6MNGoz7NzYQj0AYn5BxhqAApX+pZHsyCevAep2dtqGNNZiCeIQ7wnVj+AgpyHuT1QBv+e+QLosSW9CnAUJCP0KCBCGZi0+C9b3iBZ1Keoa4az3wyoP4McvE3NfxHSlMilI/1aqoSKjhBhYHIxZD+MJJ2CflECGMipYBQrr4dnIMiQDh9l6I+3+CZ6Sc26GNFZIKfU35FQNB3rSi68LF+fg/hm74+vvKpaHAJ6gpdoHdkyi640sCfFHSdqY0hqYA8B9QE/k6XsRJVWgk0NVxSnc10BhwuJQAg/sJmrEc1UI7qj310UEYaMz1oSJwkKH+pzVi7hGXBrixfUkIzQShQ4LslnxDkR2yufQModudmApnmA9M/NePP3msCQPfw+Zp8oD6Q8AGK0+Bja2Yo7bJURhzWmbSbHwBxWcaEACQA7gtc6wADAOyvHX4oUUrOGholIZET7I8QpgAYrIeyN/GozwdnmuJ4FUcw88WA7FBOYK+Jr2GX3aSconoKA84raGCOrbuHwWAPvzN2h21QtJipl3MRCEEER7yEyb5zWWo155/6AFwXR7IKEcTH/OqCArm93rEi27Z8LF0pTCCGyMowjOAXlPPb7SiyrCiiuyrDHlLFCzzggpALBfAMv9LbaxF7lGiFU8AxYGZBKgiLczTjD1/fEQ9wcuhSRYXC0KSMEsWZggzx/wE=
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000ffff00fefe000000000000000000000000000000
-  conveyorDirections: 00000000000000000100000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000203000000000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: people
   campaignSeed: 15297753
   displayTitle: Pearl Crowned Opera Singer
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 8
-  sectionBuckets: 0
-  keyGates: 0
-  linkedBuckets: 0
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
   largeBuckets: 1
-  alternatingCrates: 1
-  swappingColors: 0
+  alternatingCrates: 0
+  swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 1e832f85dff482040a33e3e72a9d7159,
     type: 2}
   usesTiles: 0

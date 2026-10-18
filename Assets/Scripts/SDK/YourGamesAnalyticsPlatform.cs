@@ -6,7 +6,8 @@ namespace YG
     {
 #if UNITY_WEBGL && !UNITY_EDITOR
         [DllImport("__Internal", EntryPoint = "InitYandexMetrica")]
-        private static extern void InitSandMetrica(string counterId);
+        // Match IPlatformsYG2's import: IL2CPP emits a native int32 return for bool.
+        private static extern bool InitSandMetrica(string counterId);
 #endif
         public void InitMetrica()
         {

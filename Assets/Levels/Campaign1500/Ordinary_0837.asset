@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0837
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279775176
+  - serializedVersion: 2
+    rgba: 4293714901
+  - serializedVersion: 2
+    rgba: 4281157736
+  - serializedVersion: 2
+    rgba: 4286014787
+  - serializedVersion: 2
+    rgba: 4288779888
+  - serializedVersion: 2
+    rgba: 4285040014
+  - serializedVersion: 2
+    rgba: 4280298546
+  - serializedVersion: 2
+    rgba: 4288920515
+  - serializedVersion: 2
+    rgba: 4283475927
+  - serializedVersion: 2
+    rgba: 4293641098
+  encodedCells: S1:4:4096:FD50E3E4:lZVPd9o4EMA/Ay95L5urkhDKLRGJgFvJGChHKiWujzUIh9vWgJLcCrYRe2tpSbxHB9JWn3JHhhy2l307B1vw0/zVaGzMv6SyeqzNHk2dGfPtSimhzP/jg+Wy9vxkOj1j6EQp7zf+4Kd+9XlojGeGjKmBN9iBRm/7+r64HYaeh8sLr66Y97jFHZAv9j38/ubXw9pi837CQjWkhtgfAL2mfdeffr10NnZVnkzYVWs4ISSz6iBlrv/0stla/PuiQq9+eDkfdqCX9HCfWeMDcj4eVI4mG08RQowE4Dqy/6Iy8K0F//5909Q/Iu8ijqOotHMlgJ/g4n3tem2+MuQNgCjWuojLrNzgDkCM3C8+G9O7JGQKyKNES7uBAHdc3LIxFzaxlVwbkG0RR1pDMSubBvC2g/yYTLvI0+sXjE7KZapT3TvOrPs2gONwkktKZCylG/jUn30QxxnpcA4OcvckyzIyTcpBE2QShZQqybnNJRaoD+1jdE+msZFNmSTtyQGlUsaYiqMdEEKLCHMh08yg9Ujqu4M92pcJaXAxBaffdjVILJxHiJTfekHvbq+w1EFAAMPjvJmgkT7yMua7epR9CaywdN0AKxUDhyBysaQnpEwazv1qter1HHa21I5ugg2fC25jEJifB6tbmUIsK2dLqQNM3YrmTXDbjq0m1KS8Bdm0PAmCHEdu5ICGNjEZ9sX9St4GekSXzWLgWuxwzfG8Y0HsYa/eydW7JgbImtKxpcUUtMO5q/XPTmZ4BFwI6NwdzDabvHd8XZXxc94ieIpG7Br/4Pm109f47/q3a2O+HbzZLlRI92ix9DvfPzzcrVB7uNnkPaizSvZ6L78Udkvsz+GmlHP1q/Kq/3b+OedMKeXPiqU8gEnpVb98ln6t4YET7ozUPftgE8gM1aPdbWkdvK3yQ+zvxliFE1aEPBsWoL61UB+1/qyp48NS5ozV5d3jk3+ENo2qbv0/jFSrsAjV+utnNqHUl0+pmhHTYFWrnyFm+8gp+1H+ozpQanWrwjnJHpTlhjhKMSiklDIWrqPDQOlgXp1l5oFVew3rxg8tP6M0xOAEeUpTPZkZRlmitR0elYlCjp5xR0jD1sl0VJmf0JnUOTeTMNwvpOc035A/g/q8SxOS88xUFKsU0jrFs6GM0uXSL9YHWtESckLwUl7S/ZwrVF3S5aL2po5pJHPcgE3sicsw56h7X6PLS5qe1P1TVbwjO1Fqv3B4kXtOabpMj9Z1f6AWytc4VLqk+0nl+lZ8mdZ8+FGfYaqKBvoEAyBdyz/SV2lFLxgMvVN+oDdlkhEzQk7OtjRscT8Zswd6R5PTkskEER3LS8gubQ1xYiQh69AJTeYava8BLK9Rmz1eECGBj5VHQ6YphofdDM6WJ0q1QDRxJowHazSlVRHscEbZ+3I7xt6DFg8SKUuf5sbycI543eEAhT9D1WriteeJvHUy78bQBVZglDeQA+pmdN9C5VjE8jpA/YFhIdrH70tn7cFIgbpqRjgIpBRNbNoHhipsMaao7eFMVZgD9HQcX+NADH6azo1RNzQZhQD26wCtHs4MrnGqJIkQXdfhG3UTJp/C7dcFJRF97ToCe8YWvdszlp/nvGvHQuJy4Qqc8ygl4l0bdUoX5yz/eIGI05WLxmONLYltVRJr4x/5NcXsBePc+hU4Uty+VXcJ+Vgi9MavYn5d4+RRLVzrOxecnH9pPTml7L95eeOh9X7wpEU/0bvoMoNZqPMwVOof
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 87568682
+  displayTitle: Thai longtail-boat pier
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 07c836b83866f684f88b6c6ca169a676,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

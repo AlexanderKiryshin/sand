@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4279050012
+    rgba: 4279050013
   - serializedVersion: 2
-    rgba: 4281890034
+    rgba: 4288209917
   - serializedVersion: 2
-    rgba: 4280241797
+    rgba: 4280959309
   - serializedVersion: 2
-    rgba: 4279995121
+    rgba: 4279402216
   - serializedVersion: 2
-    rgba: 4281033628
+    rgba: 4280309656
   - serializedVersion: 2
-    rgba: 4280236615
+    rgba: 4280447089
   - serializedVersion: 2
-    rgba: 4288537594
+    rgba: 4279985855
   - serializedVersion: 2
-    rgba: 4279588778
+    rgba: 4279448659
   - serializedVersion: 2
-    rgba: 4280303975
+    rgba: 4280239993
   - serializedVersion: 2
-    rgba: 4283720906
+    rgba: 4283459276
   - serializedVersion: 2
-    rgba: 4279594190
+    rgba: 4281377274
   - serializedVersion: 2
-    rgba: 4281705977
-  encodedCells: S1:4:4096:730D7742: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
+    rgba: 4281759475
+  encodedCells: S1:4:4096:91243D5C:VVTPb+JIFv4b3mKCUfrU2lufrAo/POwFpSyHMRcENaaUXCJmmbmysdfQ5OIxHspKXyxi2TXp4+4l6lMPLM24L1EnyirxH7VVZHo0W0hAve993/vee4bb26eiuL0tig+3fz4i+KEo9tEn+Vn8f0bx9Xy9fXh6wZ8+FE9d/Cd4H9XJXutbmfv8jHFx/we7KJ5uv0Gu907en8X1cy7Oc/Eg4afub5JXQ3YwNPNnEZYnz63PZ7XAKoru/q6jvttgXvEsiF8Ln+nB1dfvCAWZPTOF9J4vSWdegtBD8a5fhKTbQAhF1JYVi7XQuP9c2J4esC9nNVToQxMhnjfZ0N2TLZGA13bUvGLHLkE6IhxfzlCgB8RaW/dd6X5tpZumxeZEF8qBjY90dn16YmArfyO6ey1T8kWYO6HE3wWD3U3Tzuf5Yiqrv34tE+bpdk4baQfN001ttl5tROxouP0Dz1t5pqMlnQ4MB/U7kC+tGxS4L/jHPP3Uym2E3CH+crFD/WiSZ7MWCma/4/OUtmxSQ/0TFKy4cNHn3N5t+XbpFt0uHhgp5RkV5mro5fQR0mur/i7jRRd7POW8z2X8SL41y1o/bQYIrTg3H7tYtf1quIfRURM1jhFiiIbHiOmI0753xtpzO79CfTH3Vo2lxnFg95v0GCVUjFHnVKXJMOE7suSB1fDo1kixYXdMg6eEuDZx1YzbKU0+2V6GE29meJ6FnTU2Pc/dmHPrH8AjiHmS/GriUw8bG9Obz4jhmaYpUs38ekgTsDmJ0FRZYGzgbscyiIs7xqNpP37+yIZJQjkhNU1VHDzoXzodoW0ODGxbp+v8htOEcEpJWOrj9mDZcype2nWcZOt15hjnnFNCEiIOunDaC2Pi+F4F33jTjj0VD8+Ac05eDmoPwDMmnhDp3Hh9Q2w9t6L4hS8UWPsaNgaod2nN23iLUBCj6yjjQ8K5tMgNB7A7KfealIob5xFX5UeSyPcy7+FZ2SQRBI0ezXiWyASe8CSSyYyzEzxVppTBd63eUiBEJIjWRQbPAExsrvOBPR0u4Oe0xARLkKhsjtIkYtO19YBPD80TZ9E+SeKMybpyMKK5hEds51hz77qyHtaUtrX0X3BOZA9E+tjm87mHS0t1WLnrV1iWRXvn++EIs3y7pQPDUHR9ppqZJtkiKCrL4ZCM7/I89aZEXR0dl19VYpbwUOLJfviiAN2E0cPwgq+UGBTwpWwm9UMpIip08kp52dSOQO35CoRZJuUFn+6XQ8nuKio3dH+lzbS24F/xquif/O6CZG4nvSkHjQAHSnkKfhwxlZcj0XfkZxklQ5ImVI/7wUnDeeUCtFcM+MuGmBCwhQWdNGNrlavkulJSt0yNhYOIM+YLf5FYUIlok5T/qkahqioKLfks8RljEIk1ZlmMv7E5d5YXlawCsFBUWPlM4qoYI2XRJ/y++7BzwovKUIF4cFgFYRGAqSAmWfVhh615ffx9FcFQ0SaOUgU4VEEFAD/jCsBsjkZjaFU0UMuNY1wra1CGEkicRX/9C0yt4vS8/kOtJDhHYDyq8aqFtLrI+ImxN6UmtUhxlizDKkTwN+gkcLfBFnX0JvqOkC1i+RvrKf1lfVuGECowEbr5+jATj0UzSNwrjfNP1uX73Do99N+XKmAfQF0boJFmeNwfGopP1/+sj8b/cfJqnIEPC4BxSRuhg7nHxF9QecVnN6ODUX2FAGKh7VYgnPnUWON7Wy6ZccLU89FBPIJeAHcwKcX3+ET8dB8vvZRTm0fofFzac3sanAt/bc83/j4eo4PMTjwv8bTxqA5j0W/PF3gsXjN9WR8fjMZ17no+dVtikL13r8S8/B70hL/xoQbCM0wcw6m4Dj58nt1dKrKGDxIe3+iaJio8ysfsxx8s5W4Sq2ItcUl7wcdjACH/5e1jQ17cCdovJC6ByFrKUDVe8X/fvv2oRz+Oxz/7DyqXCytBxYdKSM8nywwP/hW+xaI/jf4XHkEHKPv/Aw==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000fffefe000000000000000000ff0000000000
-  conveyorDirections: 00000000000000000100000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000204000000000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: wildlife
   campaignSeed: 15716669
   displayTitle: Capybara in Orange Marsh Reeds
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
-  keyGates: 0
+  keyGates: 1
   linkedBuckets: 1
   largeBuckets: 1
   alternatingCrates: 0
-  swappingColors: 0
+  swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: caacb56567e46cd4c8fa57f87128bb9e,
     type: 2}
   usesTiles: 0

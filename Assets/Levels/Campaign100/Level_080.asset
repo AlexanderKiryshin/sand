@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4286083429
+    rgba: 4279046449
   - serializedVersion: 2
-    rgba: 4287323442
+    rgba: 4279048855
   - serializedVersion: 2
-    rgba: 4287734700
+    rgba: 4278916175
   - serializedVersion: 2
-    rgba: 4282854928
+    rgba: 4285823894
   - serializedVersion: 2
-    rgba: 4290434017
+    rgba: 4282815701
   - serializedVersion: 2
-    rgba: 4280623373
+    rgba: 4288004319
   - serializedVersion: 2
-    rgba: 4286810760
+    rgba: 4279711075
   - serializedVersion: 2
-    rgba: 4290819232
+    rgba: 4280505235
   - serializedVersion: 2
-    rgba: 4281482534
+    rgba: 4278650646
   - serializedVersion: 2
-    rgba: 4285088280
-  - serializedVersion: 2
-    rgba: 4283782467
-  - serializedVersion: 2
-    rgba: 4288920779
-  encodedCells: S1:4:4096:7EDB1EB7:fZRPb9s2GMY/g+ogRmtfQrhuqu0SOEbQxhcLHDNLp9YlEjS6NCA4yNrF85IgtU/dAni7JTNUsN4lmurAzEmpZ8PRLq0rGFj0ofZSdjtgQPcikSX++Lzvw78YqwiklCb+cigu/w8jCP+LKaSOTrv3/f9k+PivXH/VPd1b/+whwBjerMWHiaVE3W6XrkMBKQMsf4SnifOf5AMlh4ACaVyOXk7a8tlSLjFRnHa760v+5PtZJfv8m0WtK4l5oMrT0y5SHZ5QOtuqZPJLL9BCJIL8lJ6m/Hmc3Nq7G1dgJJCKNwYF9BT0exQBprSzS2n97aVMobyQDR4gGD6l94H/sFFvAT+cX8AYFnY4H0i0t0fpOnA9tksxpdvly8sFVXquI6Qw8Du0DAbLR+WCXHLMeQEtwvd/peVOHfR2/Wu1ovB3AXKCPnW4Vyl14jKlMV3KiaoPE/SpQzmO48N9SPAWxtoAfmWytP6ih1/a2o3jcqWe3F9wPuQpRniRgB7v0+SdO6/EUk95DThHcsFfPe3s7lM771qt1Qc+VDb50AAeSAMjGMWHO/n3u3Y97z5oT2CAfNBgDvjnA1OmHD2dvac2PcytnYcIHUC7yg7+TZMHAXiszG8TWj/Umkg5Bv2CD7BJzED35cYksW1a1qJ1ZYdzg5O0R6A22YM/pDanEBVtbQ2hAjhbUM7VHqWxbZfpIY2TeXZtzUDYZwSr8TkcB3Obfo54ntXWDKOoKvMa4w7Bm/axTRMFoZ89D6sISwLmGHCMGU7q+3GySGHTuKJputEgLK1MCMajJDNLljyBJW5mTZMtOWxvjJN3s6QSKzUUURx2LlvygW4+S7SZ3QH/MWS3W8ft7Cd1OjI56wAvzxNVI0mOZ6U2w4yPOQFrsM3Nj6VwnlSOZ2AiiZNsPucy2HaWOqe4YA5WNvNaKem0t0ql46STaTa1HMi5Oj6MFNRJ7wCvtJutLa00/2schloV9KAmhA8w/nklr7VLeX7UzE4e2ZmxF2kZYErNeLHh4pVO+GMrC36jaJu2OBtrWwm2GIc5cghz+UorPGpZLIpqbDqbwLLk2i1MOGEEJp8bZDOr3QLvRxZms52e8pUBA6uMk4c3gUm2tXCexU4UEgtXqkxdPRosva/O/xtrhDNhdeMFxtoL/C2u4NRaiA2GDYz16/6NlQ03tVF1HIJws1WF5trKzohUC+YVq/VeRjuaFbUinAtxFeOZFvmj2r2LG8uwZK46vUETLRzlNPN6NYpGpkyq8LS2rh6bNyaRvgj06ygb5aIoyll6dBZtreFRY6LhK1+6ps76Q9kY5SZNK0rDnU5q0/EICsL152I2FcPHxk0uavfFxVizXGuawwV8FI0jH5/wUVSb1uS5iLyTvuPzu5wf4Laa9DF3eni203evhWOci56Tc4TLV13OWFNtip7DAvJT5HDPEYPe7Z9CeA7xhMMdcczJNqzUudPnvNUWNdfxSjPvFyGKnhCrL3jk8s53LoePYu/EnRZ0LirJ70K8FoPp2ZEnpg4DCJca5Mr0RKHgiaOKUDFtuurnzPEEGxUREnDyvNoBh+8h6j8UQ7GIqXoM/zY9IIZQWAzvIJHyzm+PHglx1xMPddB75FwIgpgo+udiWoOPE6UFs8IpekW4oBx42WCCF4Hxla8gVe618IQOTWIwacCAeREZnuN4uTPBvGUC8aEhUA9Jriw4cBHoPa+YEcqJUF1qvul5Dg+48caDC8Tz1EUVAuoJxxFnrx2DKQ5HyAMLBKmLBEq5oOegdwDBZPsHIn2DRYB/CDVv0MW7K4oNDlOo2lUWsKd8pDeZSpC+Kw7f/wA=
+    rgba: 4283848303
+  encodedCells: S1:4:4096:56DED0E2:TZVNbxpJEIZ/QzFrNZ0boCjZ47i1wtxZK+Jm7TYfR2tjFI4TYleTG7HG085tjO1xcbOChD2/ct/uYZNtjMf46be+uqvIqM+qoIyZ1cQp9m0u2ClNKVFqEiEi5ixynl4zO+aiYE2UpGTMRpj+snl+FLkqALHFVUFrktSUtORVntuHNXCmMs6KsBHGwWUA4wnNpu22dR5yghqvQsGyWSYhBGKZOqaLHBvaMZTAEVhawkdCVK2s48JOcqdoScGB4zQ1IQD8MFcze6nWOTmvqJ/AvWu7NFUEF0vjNemzaS5yyZfuJC0U8keGpNMEWDH805myWi7VLZNRbJahAhAvM98WoUTUdDV70Q98XqS0LoIIMmP4qRQR1I+tyMXtQ3Z+hIzppHB+fUKFD1S0SYnzShDB6vwyVixz3vGSUmm4iXx28Tibq36BqoCfcBp5KYPI6XVm7cX8Sif+BNwpZchATME/8eXrdvY0z5/GoVomQ/gKBwO5bjiyt5Ut22PUjODfuT6SP/AfNdvc2nxc8vgauztLBz2ZRAtpqX/UtUysnVxOKh6bGD8KqEzUv9Zhycy+iLcPkZt4jwj2tTwDjuq6nNnn7Uzm7ubAXaEScwzjWMO6Xk1y2c5+m/Bl4IaLGN9xUNcjcFqhQGf1wv7i0COw3XA02sG+ttXr2UhZF3ASzq9vlkG7GwUb7fV046a3yvYjB/ZQD7F2dcPPnrxdt603BluYvXsJuD5wriQv8uLCe7OcRP7hlzjwNiqAGvrScZbC/aeAh/VP7mRpsTK58ewVj4an/5Pvg34684vKl6vQXB+G83ljIETvX+qqwkXY68XNEzpzD9rwQ3B7/C9eJTl6LLwPsOGNeadqrVaganEvdA78Ea/hcHTg/sXPKuDF6VZkPI/G56fDXbS/2wUucnovMtouqnnDT4cH/7thw4t9pZ/vpWQXN5x+bDbgZ+dr1lJNKtGPW3FJvaub3IbN+o78RLiG8/sHUc/cD/X1++fvvrkc/iuTfN1vZSX6/IQDd3nuDFL107+9x1jRr1/3b0SLfj5eThh6a931W5sX07GfXuR+JV/rN9VCbjIwfh95z1pfTK33+WeG/72C9ZvbfzC6lrhe+cnyM7pg6tEqDnxfK61X09sFRlgP3J+EJmFjrjkJjYg7KLIqVgvMHl/E/iHKVEJZhj9KySZb0foqDFZ2azxCH6LF4/RBE6sz5H/7/huIq1Yr7ifUWmfrfqtLmJiyZdhfF/3NpiylHGTvTBI74fg4PprTR2pJmC/xjqe9+Di8N4Gv1Hn7ER/SHpkNnj1KdULHLaJB1HslnxJTCuIaULoZtDACBik+ScNlKP4PTDtzJ2knSVutTlr2YCQ1g64c1lui1kaMkFCPjrFTqAP7vUrPAi6O7rSmTpp04LWlda/UoTrIXU6/4Nfsz06vhalWSkLloNWitFUeLNfb8gMMGDDdveu2wjNoRZKQ/2vxZZoX8/mOqyotpSEtQuJ6819wkuFUOHuHi0IaoUk3rN9/YgFEEft3AnW3pA6OLzVd3cxpvPs8v1pO7dMncHyvxbqXKcLNqqpCPLj844t5Hic/+MExUg3XrmC05lX8aul0Ta/b/ZY0HKnGW1DKEscPM6Igxw7d5N75FR8Cr5h1aFcZoIYxsI6UVMYgOYze/nVVNbpuLIJOzb8=
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: fe00000000ff00000000fffeffffffffffffffffffffffffff
-  conveyorDirections: 03000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 03000000000000000000000300000000000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: fantasy
+  artTheme: ordinary
   campaignSeed: 8280910
-  displayTitle: Moonlit Unicorn
-  beltCapacity: 4
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
+  displayTitle: old brass film projector casting a beam in an ornate empty cinema
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
-  alternatingCrates: 0
+  alternatingCrates: 1
   swappingColors: 0
-  loopInventory: 1
+  loopInventory: 0
   mysteryBuckets: 1
-  bucketSettingsOverride: {fileID: 11400000, guid: 0e73267c77d1fed4ba765cc444a52fe6,
+  bucketSettingsOverride: {fileID: 11400000, guid: dec827de9394d7545b24a4ddb54fad34,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

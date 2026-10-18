@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4283324116
+    rgba: 4280128991
   - serializedVersion: 2
-    rgba: 4292980857
+    rgba: 4292587647
   - serializedVersion: 2
-    rgba: 4282863942
+    rgba: 4280495141
+  - serializedVersion: 2
+    rgba: 4286613123
+  - serializedVersion: 2
+    rgba: 4285296096
   - serializedVersion: 2
     rgba: 4291483618
   - serializedVersion: 2
-    rgba: 4287664266
-  - serializedVersion: 2
     rgba: 4293053874
   - serializedVersion: 2
-    rgba: 4282087302
+    rgba: 4282138819
   - serializedVersion: 2
-    rgba: 4280172197
+    rgba: 4282342742
   - serializedVersion: 2
-    rgba: 4280457699
+    rgba: 4292844888
   - serializedVersion: 2
-    rgba: 4292713045
+    rgba: 4279713437
   - serializedVersion: 2
-    rgba: 4279709034
-  - serializedVersion: 2
-    rgba: 4280363301
-  encodedCells: S1:4:4096:24C91CE7:fZRBb9s2FMc/A5HDFEgnJfWwYJeUtZzAuixVvXbrqVnUDcvJkugWySUIFseoL0LahgJ1MYIhEtxTt5Oxi+MklUtdDHWxDfFD7VFK0nQY9iDJJH/v/d97JOHB4P/tj/9c/WHw5/Xor//kG5b1RfzKR9q/yy3r1mEweK/fZ5RStqIP3sNUL7F1nUGXdkRpSJNvYNQkFX1FYrfkSxI39TPKQaKvl3Ydb7nvVyTfsJb1Z1Tau68L3gS8PGhYll4B54KfrfRpwkOZw1ou9GEZHJY25BS43hzJHMlhqW41INyt6IUX2EGl+e3ZTOboF9HgUPAlyYllfe8uL1XOLoDn6RPLJZbbgK9uPSylHv34E9lybAI15Jw/IaRwIY2CE0Lcx4+MS9cj9zJGWcJfNiSTusCJzTl4vX5T2SH6dvMiZByKIGQZUlgPKxskhLI71vmBvdMk9xznKUsTukNIRRa61GxWnr2Bxg4dYiwRoyLyLW8EZSZPir7khv/eukigL/L2PjEyIdLa1gGFrTqUFTpQHH1JzmXjKSGZ4JwJ8bR6xGQEIU1445fEMsAhirhIOQsyYQqQyBnzyEP3TRL8okMTMuc85Zwm2cW8ct4gF/RXyYmdic7p20TubTLmnOciyxuvDXIp1YGTT7wvacIol5ZXhbAe2FuQWe6f617x4vB5EiaAaSrEtuc1iCe30CGQmhA75EzGCpHJj+e+sLwdFzYR+mt8KpSOCu0covMWIT/DkVkld4krzxucrkbgIGALouce2bhH7lij+F493U05lpn6nl2sOCX2ZIYGCesG1EJsOEEetT7zK8mh2v4auFZhwYZekxe36pvEKn7T7b+JfSGK8S21PSlfmNiFt1u/Kcco9T1jt5iWGrsiLwu2iGE7ktuidbeVVNyMgJey+LZLEL4CtYOWHBlGwQ2BZQGG81mjXWu3b/lVyQ9aNzvl2oDbzy+rGPLvtxyBHfCsbl5SKruy279h/IGzJMscxwYfgcUB/mCYb2li2s5me7qH4SKyLMu6joc3qyZ2qniEMVwCYeL9NviL3KSjPDO7NQG+cOxg2MTw7NewwNtZ3axlQi6JKc7amejiGs5wBi64CuuFc2ZudtttAe9d278zroVB/G+jx7Q05MPfWhDRHvJ9VFqvdAkCtLgYw6SnIeQzXwHEfYq4WrotIoVGhfLJTUB8I/GF+eEY1ofFc23DoarKL+/3IVCDsYrUIZc/QxUyqDDhpSg8GpJkiDgwGcf5vGAyth/ETFNBaagNkQqXGgLHY4iKYhp34rgzj9tafg654ElVrg7jJAig7k40jTvBuHP4lao9gOAc8fgURZQG495iFBx23qXHszk9VpCS7uXacJpCtjwa70VjOg8D6p+gBK35CmdIzE7H/agb9WNBF1EU+O2F3jFiSPWVx5SO1RGK5ydx2oli5dWxEoAk87miJCFlqK6giYZO10/j/Ds8VWYfNDRmiKlwLPRxHlIER6Sh7sJwnimL6wnaW1BmodKFpKHia8oMTUZqmvARi4UarHE/TtmrkO6rtI0RVXsTNDsemiqba/6cQSYFTcPeuubz5KS7wFS0SmcKMhla52gvRJNQBU4fhP4kQ1FWR349zRUEVayqaHKEJqk/xCFaDdEMUz8zQ7je+wo9Yv6aps6mNBe8Pg1lgTOT+nCjuxnvstnHETdTXodbXoP7uoBWNVTH/jA7wniBwwX+Bw==
+    rgba: 4279708777
+  encodedCells: S1:4:4096:85C967C0:dVTPb9s2FP4bhGKAM+tSLaiwbJeU7izBujQ2IgzbbRBqYL40C2Ss3WW2IMJNLoGg4hnmpVA6h2gu62HDvJPhrE1HXzTFtQzxj9qj3NRNsdEWxcfvfd/7QdqTyX+P3/9nfz0e+f5HO5/esA58/7cP7UyI4tdr4+Wk6/s3HP4WQszFn2tpOpko2L/OYMcwjLsKF9U/JsYj4+XEKHFz8ugJiiFq+MZeUaBGcVs5G8ZBqa+S3FmbhvGPmKJDdhvNnqni31FJ+iWIhrFnzIQs5kUV1e4oerizxv0SNwODZqKBEvp2Gd0va+ga61z8w+MdSvYk4kKWbN+nOJtG+M73cRh8tk2XiDvZYwWGuEnNMlNKcR0u9/rH1CRCCqmHiCOflkFC6rZe7fuvHwRHpknuillB5EMklXgYhnQui/Rwf9l0v+xtB9QlhRTzh3Qtbhih+QY788IP3eX2XtcM+v055lkgrsQNahitC5X3cev1dm9ZJ04taGG7Hb0sQvUvpUvsvk4fPKF3a4To354eXmUzoQfdkCK/VwTdt0qhj7FXUgpCml+tkCFvU9qjdDk9wuDKYepkUuqIE9ILLoq5+Jn69KKofmFQeoGEIkVcNEjWMPfd0G0FJuK0TrLH6vDUAadSzh1iOwdvXXpFMbrC3841heMNKAoppYM5+r/03CWlB6r9dClLEI9XICwyDH/k0sDtrVtIm5S68xKTGbFRgASH+AnUIeDwA6pO6NVK4Q7BzzeBe+T7P4VdBXfp+pjU2s0cqWqU949p93N6c6AjOaTLxL2YF8X8vhlsoHoZgdIZcVGkzKaoHm3wlsK7/r5DsKOnaPTeYDkbh+31y5X9GnWvSGlcqEnFqNH6dSjSxydzNsJoU7Pvlmt1ldQWcdbZYj7BoJRNjj+sIyPX9Yz7JV63k/clYpF1FO1u0TGl4x/sEm+WjPEHGqf8Rz5AvASahJd7g+s2Ucr515wvx0jsDmiL8NAd0NqAClHWfOXyhHPeuIf4mNfqhAdjviJNvMfEHbS4/ZyTRM4bDULcOrFrSRLYRBL8F2qQxD5d4YTHKPAhvEY43ocEJ9smpEZstaw1HZKoZWLbCTpxGyk4NTl6IAWdE+RwW6WBMOen/P1IynlrbWgfj+nWVL2qmw38VjUhAAAvMZpiOoL3o90GiDcmrmO4fMes3BAWuexI76MRa6JYq3Q8rx17cex5C1ziC3+JUtMWOfNyr80WgNxFvvA6nY63kPp8nZm2kHHc7jAPpReLdqctGfL0TVQJHdaO2cLzvos9xmSapiVzqmtqkSJXMm8R5YDUPNXSE1V5dVfb1abPipXTHlrtBbP03RTm7HI6rZxUpkW61Uif2SMnhpzlDliRjoqyWhTVtJLiTyOfjZ4jBMDazNGYnt7CcNnopFI9ye2o8qYdQd6+bMPIGmXnmrOlzdKqVoihIgCDFUA+w65IzGpxT+O3po5znsL5EGKWI47tz6d5BDPEwaqu9MYwJxE4jSE4DGwGciRGuAHg5GBxZiURg5Q9rURAhpAwSLIIongXwJb2ZWUFlw77ZBfTzfKEODxinA9ZBBZA9D2Hv2xQoIV6fDY6iy4trHslAc6YxYAAJGoJZ0PIefmyOMT8PAPLxlCYIbq8iNj5Kj/jI7BwHwmE25Kv7Ajw9DmwJJO3bJmoMO9w+9xeMUzlXw==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000000000fefeff00ff000000000000000000000000
-  conveyorDirections: 00000000000000000001000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000403000000000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: journeys
   campaignSeed: 21267306
   displayTitle: Wooden Biplane over Tulip Fields
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 0
-  keyGates: 0
-  linkedBuckets: 0
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
   largeBuckets: 0
-  alternatingCrates: 1
-  swappingColors: 1
+  alternatingCrates: 0
+  swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 41bee36a6a29ea745bd2d49bad4358bc,
     type: 2}
   usesTiles: 0

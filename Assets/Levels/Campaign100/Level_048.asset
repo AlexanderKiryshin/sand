@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280251569
+    rgba: 4288130715
   - serializedVersion: 2
-    rgba: 4283868632
+    rgba: 4283999961
   - serializedVersion: 2
-    rgba: 4281684029
+    rgba: 4280499759
   - serializedVersion: 2
-    rgba: 4287021016
+    rgba: 4287086035
   - serializedVersion: 2
-    rgba: 4278660430
+    rgba: 4281947972
   - serializedVersion: 2
-    rgba: 4288522366
+    rgba: 4280383410
   - serializedVersion: 2
-    rgba: 4279388275
+    rgba: 4278726740
   - serializedVersion: 2
-    rgba: 4287934888
+    rgba: 4279323000
   - serializedVersion: 2
-    rgba: 4279248170
+    rgba: 4278524720
   - serializedVersion: 2
-    rgba: 4289303360
+    rgba: 4289303876
   - serializedVersion: 2
-    rgba: 4285037412
+    rgba: 4285234533
   - serializedVersion: 2
-    rgba: 4281495415
-  encodedCells: S1:4:4096:87ADD44F:jZPPTxtHFMf/hrFiDW16sfsDKc1t1RaLvYCW1Gq5bNvJdNXeaFYOOU3EaLDCJWJDh5oLNRsz6g0aFG2OCGQYTtlWofX+UX1vxjbmEvUJe4f3eT++7+24KP6P/fl+HEX6ffi3KMpevy8b8m/40dHRq1n8DWRrfYLHD5sTo2+grE8CrrV+vVMUzRursaLQs1zrIfqj6BOHBeM7LinLXHut5xvN5nIULbv0WBH1q8vS0B37J+gmzTvw3XhKqJgXzOG2U6dpo1lz5V1+TASJY3CjCLTN2JVdjsbqGoQQLkHcupdGG41Z8YTQeUU4qk9T0LlFZnGT1Gk9rufdV46n6Tkhs7hGqRCiTgUr9Anyz2jcmDRuEhETNDX/HUu91QiFBrUal81PXXvKYsbooDvlghJGb/oLXo+ZGpjHDr8UZF+qW/q4EF3Oznx6nXMi5m8oEVImnOXs7EEEWDEGyxrrQ6zApOJMPnL8IXuqOGk2iNsaZL+jXEpIz7+F3eP4XDFCPASjSnHJGWNd2GwnhRKcS/puizoosDq0TJjJ0500xRY/MSbVLWMDyQduuij6JX0JBW7zPIcCbrgILlD6ME9u4YECdWuOuzvSSdhsAIjjMve1OzsdnDFJ2ASidMa+6niOI+zoH3PDJAylJPP4AtIiz3U705uMbRtYiTNY7draOd5cd7PhhgIfdL583E8YvBVmnkDtXQemnGi9gFIPeb69MNTDtqdja2d6Yn/s6vYPmJLNBoAt6709vOl68gWVdeblweNwDztlh5sL0XbvenEum3MBzjBq+MKFgjvq6bnsztJHmDjMesMedm9HK9Bj9aB115pWdLjy19IS/J9Z27MWhGwQ9TXfWK0LqQawSplES88hCSBYDyonJu//vpIb++wLcxGpvzO5Gukh8iEEQAUpJvdH5IyqzcYGzOixtbBqDs64DkFCcNxw8sGZ9eWRP8gOjNk3aPsmyY2JrjN7Y0/sXbhy3a40XUkSCnfn4GcHFoNxRHcX3j+tK0pjybm5eKTQO6qCaQkFd8i/X3huWQXKgjKccktNAqrgh8FM8uLKYv1qyq+svbAGIvBnY5j3jKoqCEaB0zCCzzMDkCUyOcNcgICDqqxCO4Lo9Fzk5gLI9xJ5EIRVCDwo4XMKFFx20RUuqwow5DkOh+rKHp9cX2HVqwoNvWEVeCsD9JyuF/at9R1dsis8bVDZYt0uQilsWlX3wwl1NrJFcRm60qHv6Fq7sws8Xf/Xt63Kj50AL23ygMPx5X0XUQajsbCwrPyphDUGx0Xx+VvnCGEl6MMBXMlxicIW48rlCHtAVgtYv6z6PuD0zeW90EkLUWv5jzFBP+i3ysmcxT104xnHD1t9E5h+qzUWeVyMxwu8rirouwtnJjOUni7CaoG1TNCapT6x8mEhVMY/Y/4D
+    rgba: 4281429624
+  encodedCells: S1:4:4096:6340197B:jVRLTxxHEP4NLQ/BPC5ZIWIRX6zRyCbey5KOX9mLMxpZEXNhQnrb8YnY3p6WT1jyTCNxsUxo+ogcK9ZwQmSFYLjAMigK/aNS1TPA+oJS2nlsfVVffVVdu0XxP4zSP6+Dn1BKr4M71+KY7ZH6/btbrdZsq9UaxTsI1zigjb29VxSTtRfSCdr23GzrCk8/T9ZZ208a/Db6ZyidgUeSq7sTLol6rjxZ+QbcC3SZsQRe+oxlqcuqUXKnLr2AybOthPcztQnuAgMwjNVlFxw7pHOm0gms70jIr7OtEXEtxngvk2YH5JFtgJcy3ho1nmQqz8Rn1zREJOwLmPUYz5TQfzUTmuPZKJz8zvssZTlTkIs4Z6wmSBKle6lWcnNN8d6ZAXKY4mHC+vxtwtJeq4VTeMu46Ovn6p6ECU+iOqYYH1HIeMrZmtDSjZD8lqc5vzUiIBP9vsqlFg5e6cssHREIo823ZKq1MQRmtyRykaXNdBJAmfpHbaW9LSnGO272v/RVymbhYJizTK2LPNdCmsceEHjkfa5yhgE1zHMlZCqMcOU7lOxqIXpK4RRAuQJLQfuaNvX5EvJOiFyNGCgyQuuJGvfIHeAagVMhtDBSX+2HMXIkG2GtxbjDPdqBHiQ4hQKd4sJyjdq8ej3IeymFIxbC3bTcd9ppg69oI6S4MjlPphB2OLCsCkk+QNmG25CpXScNA5BlSdwkTyfIBymN0fuQS24Qr+Nw3H+ymhFy7IQIfePpLtntOH9jXsfzvE4TAISn8J00/Bf2/UJnugvOVQxanR5zs/c8FOjhBI6ngeIHurEKcse+fnb81RLOBmKaDk/HcVTUWybdIX3VXX6wTDCtU5YuhC4/pDP0EZ1/UZqf6cYj+qCLwko0eElY8nDrVZf3X6ZbRopc0u4Z1HVwiX1C3xsnj+fN4ou7Zv6Ua7rehYMBcBeuHyFAKXaxQNrwnPHHlO6WjUGrWmaqzzLYIDimFOjWbpaXNkW9DWM2DRrUhzt9SctRe5eL/vO13KzlDH4NRp6uOvdiVJbn8Lz/cixNU9XjnDPYEXMwtu5gG10yZEbLegWgwfVSuez4En/TA7dOYXW1kQd/l5hvER80AQf3YUths+BnJ+DrMyhsbRTBBzlQxBvYMQwx++iILWB+FFtrB/aoLHdKrs0BIK/zfVfbVtb3g2gIBINy57A8+mPPlItHiNhBFFUWGCI/8Ic2Olr8dGhjKGTjwZHFslEVV3EUQAF/WKHnU1Gcnyw6BC/wwDOMfN93BY4WdwpgjlwyoCcWw3zE/WAQ4z9p7LRCFYz6CR+IBnCF7Y/FXOUgW2E1G8C7H/phFTrcD+Pi3zMbV6BmUAIWBKFfhY4jABUQ9LEovq2VxyjNB/VVe1hF4TBGnRBXlMUJBMRBWNnbMRaC3kGCjf0wCgPovjg8h54DpIDh2Hatbuia8P1oUMxBhWEAEVUbxuY3FrTb+BgUcGBtINiDFoIR3Hf8/t75CbhBWxXbtv+l1cNwgw5DuF0h/wE=
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000000000fefffe00000000ff0000000000000000
-  conveyorDirections: 00000000000000000001000300000000000000000000000000
-  conveyorBucketCounts: 00000000000000000002000300000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: journeys
   campaignSeed: 4929582
   displayTitle: Valley Airship
+  seasonalNumber: 0
   beltCapacity: 5
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
-  sectionBuckets: 1
+  beltSpeedMultiplier: 1
+  frostMoves: 4
+  sectionBuckets: 0
   keyGates: 1
   linkedBuckets: 1
-  largeBuckets: 1
+  largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 423d6b7c9e8c59d43a2c06d9dfdc0e4b,
     type: 2}
   usesTiles: 0

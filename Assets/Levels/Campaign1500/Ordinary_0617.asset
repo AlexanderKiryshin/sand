@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0617
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283794109
+  - serializedVersion: 2
+    rgba: 4293188828
+  - serializedVersion: 2
+    rgba: 4283393920
+  - serializedVersion: 2
+    rgba: 4280955172
+  - serializedVersion: 2
+    rgba: 4286097122
+  - serializedVersion: 2
+    rgba: 4293183926
+  - serializedVersion: 2
+    rgba: 4289172358
+  - serializedVersion: 2
+    rgba: 4293833859
+  - serializedVersion: 2
+    rgba: 4282601298
+  - serializedVersion: 2
+    rgba: 4291004754
+  encodedCells: S1:4:4096:32FE420D:jZVNT+M4GMc/g0kD6nHNTgTHzJNslb11YzTyMaSB7XHCyG25LUUNmSMalSy3YjPo+QK85FPuP+FlGK20WiOc5Pn5/7zYrt00/7fN/5OuGzNf47m3J/8NL/EfGNP1Ukpz+TPdayTUwRo+ZNf6gb3LZ9yZ5ujW/Ss+1u/Ect27DKQpG/nK9y7fkpWXnak0b2q8BzcS0RCsaV5MpYFIvvEzWa7nQaeSLxkhJ/nG5cfOgJjBq8UEu/KNl2YLtOxyepXLdw1EwNI5N68B0QU/QgViN+gNeO8NRm6VneMAWmPmf4oNYJefeUlE+vvP0r4d+psZHtuv32VQir86bVcnOiHCk44vetedbluE5odcCGEXyOLkGQdlx09M8I53w/2Tl8RRkBBLpIeoN5+l85j5S3Dkb7r6kLjcEuSFiLMIZPj5IC4KsosSvJ+asuOhl5gj4kMplpusKEJaGN/vE+jK2/J9ovKQkkOPSAhwu/tL7lNfgPlujiCgkUcssmwoDophaGk3FnZfkpT7fyyO8lsC3CiRHRSQY7glyuNd8LNfbxbHhU+p55OOcl/ZrBAhpVEo4t0tkh9rdlkRUzqcJmqQT4v0oBiEqeVUJ9Azn7PKp2OySZbzcFrEKfKPaUna0j4x2YijKfzb3LNqOKWCpl18Yn1HJ4dMWnnjvBDJgZ+QdhPe2Enhg1NK9HSrKFU+T4tbj8JwrDaWB25STFAfuF1aRWrgpRObIxHiA6V0oqfFobM6UahwXCjliyjhpIuYHDilI/gP+UaTgiEl5Q3GzqkoTBBepwojJjexn6fslvxJUWEHkVZJ5it/PFZajYeeTg4xf87VrlYC+ZFSsbhNhRoohbFpMs3DKSt4PXddfRG8M6lUDQutlBtHccZWFxuHLySpvVzkidVWqQF5ymVCDzh1NLGRYtQ/KQYqRpBbzYKdyPzMxqlWG5GHmWXWIqfcRm6iojh1RZGRjRNNTrlhuKy6dqcTLDfXWjGy4wRzwfz0FaS9AHXsEsJIU1Vc1ZaxL4h6Zf2wqlAHqwSTry307LSjXBBZHWmHbY4K1AtPNZrCque+Z1k7jK5HCIm1GFAYc5crptfaac/xBw4b9s8k7DaktRpzZrHaPUew+iPGnLM+9p+5chGF0If83KCvkAMfY0NpLLBKhj33Ectxwgvw+ryqd/zYatpYFQ3zkAtfwL/mxNYrru4qrncKQXhjFXlCEPa/7bwndvGdq+r8Uw3/zCNK9VAIjzMhOKkr8jYLzFm1+HS+jR8kj4RVSZ57lHX+wbtDhE01W82OfJHw3Y5Vxx9Cj4SP0QvT8+e2jai82rlTow/hlPBrIFdXHNovrwcceI3zZ2ZW4Yi646leN8cinOHeWJv7Xr8029+VmW2+VEJsmP9udoR9WvfyudlCRLMyV/PZb7M1vFn9bX7h2VPTALdzsxIp90PXF01zBX7eXKxHT7jzTFVWqybwl2tEqpor8B0cf/rUVDu8bvrj1UBfNfPyfn59VZnZ1V5om8f2+gJd07ateWjb7j7CHXJ2Jk3zeDHi9rptH9sO4v4qqxlVbXt9f1rK6qG6wkx+A1m1970e7errw+OqKoOz2cVs9dBW8NjcP/YX3OOpLE8vH697bw8zCdT+3ou+tj+1rxez/gnxO/IP
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 64520383
+  displayTitle: Lithuanian brick castle
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 4fc6b2fc122131e4e832269a0fbf6b46,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0171
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280169327
+  - serializedVersion: 2
+    rgba: 4291603316
+  - serializedVersion: 2
+    rgba: 4288381533
+  - serializedVersion: 2
+    rgba: 4282857761
+  - serializedVersion: 2
+    rgba: 4283716428
+  - serializedVersion: 2
+    rgba: 4291212955
+  - serializedVersion: 2
+    rgba: 4286541133
+  - serializedVersion: 2
+    rgba: 4285092398
+  - serializedVersion: 2
+    rgba: 4289239164
+  - serializedVersion: 2
+    rgba: 4291546569
+  - serializedVersion: 2
+    rgba: 4280032800
+  - serializedVersion: 2
+    rgba: 4285832119
+  encodedCells: S1:4:4096:09F7F1F5:bZVBb9s2FMc/gxAEReCcUiBY19P20shyjqYQYT4FNiPZ2akunNi3Tk4pN0fLE9ucCjVWKN/iRq6Zk1AbWcBTjsPyofYop+s6jHIEBT++/3uP5HskhMw7q7G99W1cbUmoNyjRY9r7Hz6XQAteJT90V1zKf3H5DChd2TuswFmvt/0N41zap6ShFZzOfyOQ8+xZizbsghNy8si/madwVXAb5Qn/at95ueKDbvRUNjXHCALCT9C5lt/WDl5ubzHGP/3YstE98tDhJ5mEf+Txg7kc00dObc3JZzmG9iN/2dnuMI9zv05XnDghz3oQ6xUoeGfLDTjnDbuh5R1UCNLURAeZLOTnMvIczrUt/vVDQrgQUPDsCl9WdzTi3KO23Sj8k5CPkWMAWYaLnFowGnncs23i6OXB/HmGfCrbiHtSgB9FXPPQWe0AdxJhmtO03cm2O9KCeoT6LUr6hKaAPOSXEu0tDGEm0b7u8ihoNYjtXbegyE/EPsRjmGfXEkPxWcQv3QblnrQhRn0uYBfjAylvOmMRMzfymN34RD+3bADCUd+3AMaw1bvpppbPcES0QUZeg5TbVc2tWPOn0+dbAyGYywacep9H+w3iQBXX8hJwPAUxfn4Vx2L9IIk4pf1iCXfKv5cDjvKw9bMl9jpNo2SgPrcpm2H2feIMUUDbo+VU5aX7zRzd8xF9O19tD+LCvt0sITQejNfanl5IvUS4+iHyLkC9tHmvnwfjNGGRR6/nbdrY1/vDfSYseHKPpg8GKrAxCzx6Mc8aHx29/kOTxRasPxT8YfM1G0SB5wmZ0l+K4z0cBmXLN1biD5s/MTOKXDarQLPABEwObVFwHd5Pg/w0cj2Zxvr44/gNmBl3kBqFwgffyCN3lr5ZFWhI+uAnwr1fBfdgTLwcU5T83ao8NY+n1loR/qbxq3G2Zqgz1uwP6Eqe9PHsWBtFcsb9unGxVvrrjNFXgf2VD+cC1u7R9cH6geYKV5h+9Ar7Km4RG8SwcWBQgz7y2+TY5QHVAjsYgc9eWGt0nRoHyyOqxGHuJ29o2bUv0L6MU964JQsOjCN1tK6oGgwMSA5Hx3Xtez/A1+A2FxsHS6qtaWnCSnDc5FZdu8fz55RjVhKglkcFNz6AsZcyNm6h/CeAqsOB3QpTLRVdLNWRmiTGh132Nm3SV47csQCP3+B2Lu6Wg8GXyZ27nMxz5Sezrks/TlNSBqwPa9EWdxdSHO75h0JtKEwgS2ljLlMSAp6/rvLnh6I+u5u0Li8Gyzz359I8pVLuhiGU/ShWpoWV12zeiKb4M1f5noy9F9eyYoUcMDxPnQmwhGhOWGOxLKn8phLx656s8mp0MgTfVQpplCzP2e2THO1vLN/v9SpVDkO2y6CplNrPlhf5RJXwUWoyZVJWLd4BLDwTqvdGXspL+MtzQ2kux1klkr0xwBw6flOVDKMAK6x2pnJ3Kivl1MdOCbGl8rxUgJIqJkAsrASiIGB+xYQoWajvB8TvfFbOxvCOs5lM3t59j/fA53zew5YkOjLpyuOd20eyVKf4ef7W9LsmMB6IDDsidxa18+TLPno5mlXM6IwlTFc1tmE2MPHTIedBbaFqpN/vM4czXfRhFL3vBnoeNmOsJK1etFNC1Lk2nnawq3Lc3X58WyNksVgUM0Lyh6qFeGdkPcvSm4/W+PBzUnD8LRZ9TPxymHAwnZChvlPTqtrFQntQOD1wSMDDIOTFDUMiXqvhJLVQNtqH4XsMy8kAigJDDzhnUSv+WaBGTV8KJz1Lc2yfgb4DVrVIFktUqeGlFnZ3o7LOTjd4jGEVwipBHTQeO3z/DQ==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 33297112
+  displayTitle: Fjord Longship
+  seasonalNumber: 171
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 18885c91d294a3648bb312e1353fa5f5,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

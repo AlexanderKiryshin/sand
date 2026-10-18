@@ -17,13 +17,13 @@ MonoBehaviour:
   startLevelIndex: 117
   levelCount: 1
   defaultPalette: {fileID: 0}
-  defaultGridWidth: 32
-  defaultGridHeight: 32
-  defaultColorCount: 4
+  defaultGridWidth: 64
+  defaultGridHeight: 64
+  defaultColorCount: 8
   defaultAutoColorCount: 1
-  layoutTemplate: 000000000000000000fe0000feff00000000ff0000ff000000
-  conveyorDirectionTemplate: 00000000000000000001000001000000000000000000000000
-  conveyorBucketCountTemplate: 00000000000000000002000004000000000000000000000000
+  layoutTemplate: 00000000000000000000000000000000000000000000000000
+  conveyorDirectionTemplate: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCountTemplate: 00000000000000000000000000000000000000000000000000
   fillMode: 2
   randomComponents: []
-  maxGrainsPerBucket: 147
+  maxGrainsPerBucket: 140

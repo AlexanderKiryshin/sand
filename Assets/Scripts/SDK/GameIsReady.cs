@@ -3,12 +3,9 @@ using UnityEngine;
 
 public class GameIsReady : MonoBehaviour
 {
-    private void Start()
+    private System.Collections.IEnumerator Start()
     {
-        if (!MirraSDK.IsInitialized)
-        {
-            return;
-        }
+        yield return new WaitUntil(() => GameSdkReadiness.IsReady);
 
         MirraSDK.Analytics.GameIsReady();
         MirraSDK.Analytics.GameplayStart();

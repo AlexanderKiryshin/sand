@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0793
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4292338667
+  - serializedVersion: 2
+    rgba: 4283389017
+  - serializedVersion: 2
+    rgba: 4279510050
+  - serializedVersion: 2
+    rgba: 4285361778
+  - serializedVersion: 2
+    rgba: 4281363307
+  - serializedVersion: 2
+    rgba: 4283011733
+  - serializedVersion: 2
+    rgba: 4289574075
+  - serializedVersion: 2
+    rgba: 4284793029
+  - serializedVersion: 2
+    rgba: 4287270546
+  - serializedVersion: 2
+    rgba: 4280763203
+  encodedCells: S1:4:4096:D48F55BC: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 82952687
+  displayTitle: Chinese moon gate
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 7243ee51e478bc445ad6899206107ef1,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

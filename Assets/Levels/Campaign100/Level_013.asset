@@ -16,54 +16,59 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4285361241
+    rgba: 4290013242
   - serializedVersion: 2
-    rgba: 4283119118
+    rgba: 4282260492
   - serializedVersion: 2
-    rgba: 4286885035
+    rgba: 4293304171
   - serializedVersion: 2
-    rgba: 4289638563
+    rgba: 4284309097
   - serializedVersion: 2
-    rgba: 4282009405
+    rgba: 4293648343
   - serializedVersion: 2
-    rgba: 4284303893
+    rgba: 4287527801
   - serializedVersion: 2
-    rgba: 4285111617
+    rgba: 4280823872
   - serializedVersion: 2
-    rgba: 4284639262
+    rgba: 4285809970
   - serializedVersion: 2
-    rgba: 4287401331
+    rgba: 4287997111
   - serializedVersion: 2
-    rgba: 4281607180
-  - serializedVersion: 2
-    rgba: 4286736437
-  - serializedVersion: 2
-    rgba: 4288661212
-  encodedCells: S1:4:4096:3B92F3F8:bVVNb9tGEP0Ni9QBlOTiabK1qZPBAGlQnhzCgCJf1MIFGvTihbuhzWMOUo/pgVr0JksIsGkvWcQGQvcSQiAq7ylWkSYtf1TfLCWjX0voA/t23sy8mVkePDk4K88O/r3Ozp6clSV+y9WKSsff8h5pKv9nUcS4okxm5P4LR8S7J1pnhbm2d5H7J15oPFvqem+NRw5eHZHRhTHXOHbctXWmJXBeaxyba5wk/EoYjxhfmytSbvVPF5nRxgxHQ7MOLwKuA070Q1aMmTrg523sRF7q1UlYj3FgNBwOV/RRSZXXJtgrZbIR4DHjmVvFpmqTGXAHHKYBHY6l48SAF2ZstpACRQVHtlrIiNpVjIZZppAi/dAy88povTQoYe+UBPu4RcdFi0mpVQFKvaVLLa/Zx5mEUGRUBrVAP9TIX7dw/GxoCk2aC1CYIhthc8zyaHY0fABjjQroz82yaaDUCJufsZIBh7HRms2/bbCWDVOOt1gKZn/wbMyglMbcYTx5F4INUjAePwW30hzKskmm+/ES+FPNuRPnASG0CqGZj80fzZuHFnWQnKkK0SPyFjWmSZp4svP90GQBD9GhNL9y9YN5syw7djI2EtJKhW4N+BhJL5uwfimFFYbbTW0h6uB/hOp/aOHkYSmE4GzByC3EB8AxbuEm/qrcEM9NC5OS7JWr9/sK/2g7LV5w9dULgy7hHFZwc2d6Q2w8D4OA+HfnnBaCXJs3TWe6IQ5DMsAf1bJ4Y0bZOrpmuWMnAvwBpd1elxbbP7Iuq5XcmHQ4fpMhduqlvnf65hpnBR5aITZEptA3e6f9yi881/DD39yLgRBB3L3+vPI+l/Ty+YeV/TK2gw3wS7QlHfltF/mTLur4Jzwvg3pTsItDlk+/9nNXbjtweeAxniaJp7AG7mu91708kpiGCCeuYB7HgC17F4dS9rzfxhRhECN00dUy+RhPg/lgEPiPTy2PoaPXPOBXTdyZ2iaxk8Eg+F90T2cVZm3XdiPQXCVxZwfNMRWvDg6E2FSL4/pCluXLuZ9fYNTf76MqO00yE4Mz2G96T566jh571SXfpfcITIikmYnoS/x5WxH14bzq+cgpn3s0JTTZb6xQ52IiNonSxTkUtKp3l9t8GYu3/jB5ZIUUaL9tNfOLi9mpz2lm+5A6mSLmQZx0hKaJFRBvN017wOZ1P+1LQt5af/3xPuxJ8H/MSy25//I9f3uxF3fELD94N2XTnRs3g/x02cWtKysQ3Ae9TQ/fPxLiiBA/UFdDeygDN7b3W9OIe7UQcSxqDRy9A/LycUrOL2a2l9pbGnf/zXgnvkciFnxXO7pE81xUC1+nYR35L+I4fqUm39x6pY9370aV9DildgP6s4Wb5afH3+FadbX3Xm1i5DHBsp+m1tt0lu7zuVkP3nqfVFKVkaYIH+j7opfOLAgC09yme7kim9rXXH/SXuu5n02Otc9z3c+7Ote1ovonmJBz7gQX06nHIZnjxq9zqfmmc7qf3lbhJQaVKtQYE6EkyDAa0kWlVLXiCzKKJIeZQxFJlc4lzwbeIVVXc/+VaJ9wTRKMcF+xNITNUp9HBEhifsDiKnXBzm7Kc1eGJ+qG39DE5SW1by2JaQgvEHy0bN9uJzoA4TV6gsqwkSsj1Vr8BQ==
+    rgba: 4279438348
+  encodedCells: S1:4:4096:607E2567:dZRPU9s4FMA/gyabbOitbmFNbl41tPRWKmzsG3UUCLeAozi+dXEi7FsCuIIbrBMjbhtMTPQp9zmwne5OVzNRZP3eP733JNXQql20rmlz9fPR0Grj8fj/uTYfjLuou/kjL37A2k633kXobckbP9O/FQwMrJd8PleN+b8dadqxqPtdpK1C0TT1XzvaZIzq9RX/HuSTelqJNOaw96rbrSEGvPEapnlDazS00o/2MqQP+jea1nj+XP09QyHArrZ2I1Dt0z9ofry+Ua4nQqA6QsBF/Qah1d7xJkyMUqAlQgamVNe6te4+Wp+skFwPGKPVEgKjmLr6LQJL3d9K9aBNKWNBi1ZK6OJyiLsaYFS6ZkHb3B3YAQdF7DZXGMPxa5DfUh0sm317J4wVcAzGn7k/rqL9Z94LA2mqWN4/MxBytTW/Xq91JxOUMNNWZmorxWfPvin40K6Ej5K3EDBjIZUDixTKmgJ0X/xfgfdaHeEem43CdDfikmcfSsvPXOdX43Ftm9IuMz04oAwjbjW/q+PXYW9TIDgtY3bO2KWd8uV72C+P57pN40bI0RVquj3GCGGs3Yn4cBXY83BtIeTjJsWTPiOQ2za10xdoGU1suBdC6HaTYmaaxJMDb7rsvPBiG6bKmu9PRIp7SZDnnpR2a0qrGJ/0trD1aymV7OkiOYSyzMjCs2V0R4cdabFsG69wRQgmknfAzf7CIlyaUDkZ/MmzIZivuDipf9oQHTeF03FFiDRJm04pm/LsslIp9RPhJ033UZK8P7K8lmRpZ0qIkznZLzsYo5LrW5jDFiP3dHk/GBA65UenBy1qZxCfSHy9eWqGqm8SyXk0tUkrKw4Ac6gz1n0h7tzHIS8ggVFhL+O9mEgiU3PIE6uG/fHtxSHG+dBiJJ1KEsk5UY4nW3Qj462DFNTNlmucLojH2rsdK46tQuWBZFQpL9NvBYyPGJ8fmbxvcxnHvHAyLqHSnNMZMy98PXmHDQy1MQnbjUFgJ+Vy0J7yFqNftpINIZputfJgMigv2wl5HqnOIyRItmmHpkKf6VDuh/PZwIOr9fhHZ8nDg+nRkC+3ei1KIT+3TeCYpAPWbq/fZYrHCmoRHWCQp+JS3DUNY4QZN+F7Glnl43QxzYryEgGf+HdQh2tshhnzpnaQ7FhFJPJYjcr2onKS/A6LI8zC1Aw5Xd+ziGMd5tG1721Bm1P5tmzXj+eMFLGVdi41008vDuPCY/0vwCXN3pUc5zEZEJLSJ4fN5JIXImFsC/fErSz7KFKBmV46LKUqDvIdWVwn0FlbJk10HfpVxZcWaT2wQUpzR3GPR9/KxOM3XE9uO8PiwwNkl560e1AWOP1GwQnoC5aMRHL3wDGG25e2oIdbdqgUG6l4AXkXSRLbk8MYHMDNIU1Gp7184VmppnhyJuCJ8zPhtw4wPYHqeees17HzwNtl4OJiT5wJcdYXIt+u4j9AH59AvcyFk+Vwx/vsQui6P7rwRdQ0MOl7WwZkh/I8LgY21JgxuHdiKMaToELFXpga59YBvXoq4uI+gvAZgwP4TiL0V/QxYLyPP7Owgz/ni8KJcmggaBZx9k2TO6+ql33m4Spc0ff4K/FHDjxhciUw+qbrzgeEYq/tvvHS3hpGJ2ArUiotBY45mJ9TVHkg7cqDRyitIENZvCiAzyQjsS/0iLrNikONJifwMhinKjYXUZFLeCvI8pjpqooqj3GrgsZmSg3gRRwGC3tmS5mHion7iuGir/eV0kv58i+5SgPnOvGljDi07FHVQMZfCu0jpGQTGUYeBZHigTOT0XLgPx1BUDC6AqaiXa6XH8/PLTNIdnl25T+ttoD7NZhXsvD76pixZ3Ip9kZ034C98Ri4gfbxShh9KswnZyPO2N3f
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets:
-  - colorIndex: 7
-    count: 1
   - colorIndex: 1
-    count: 1
-  - colorIndex: 5
-    count: 1
-  - colorIndex: 6
-    count: 1
-  - colorIndex: 4
     count: 1
   - colorIndex: 2
     count: 1
   - colorIndex: 3
     count: 1
-  bucketLayout: 00000000000000000000fe00000000000000ff000000000000
-  conveyorDirections: 00000000000000000000030000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000040000000000000000000000000000
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: wildlife
+  artTheme: ordinary
   campaignSeed: 1264067
-  displayTitle: Aurora Bear
+  displayTitle: astronaut repairing a silver satellite above Earth's blue curved
+    horizon
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 0
@@ -74,8 +79,8 @@ MonoBehaviour:
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 0
-  bucketSettingsOverride: {fileID: 11400000, guid: 2b10985572518be4fb4170d9209edabe,
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 9abf6f3b54bb95a4387809e9660c9df0,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

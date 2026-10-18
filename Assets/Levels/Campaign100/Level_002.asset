@@ -16,41 +16,76 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280954129
+    rgba: 4279770651
   - serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4288262590
   - serializedVersion: 2
-    rgba: 4281218361
+    rgba: 4283784546
   - serializedVersion: 2
-    rgba: 4282867539
+    rgba: 4280431666
   - serializedVersion: 2
-    rgba: 4287456827
+    rgba: 4280305244
   - serializedVersion: 2
-    rgba: 4289044106
-  encodedCells: S1:3:4096:160CDEB4:ndQxbxNZEADg34DJUTid/Wzi41Igom1oF8tjsdFlOVHErYXkxJMyvyBItlFO7HhjCZZruE2EBCkwZo0V0aUgOYXCICv2u6uuPkrqm3m7jh3uKqTV+u23z7Pz3sxuhDr6vmMpGXyp6805H5XG8eBjhPPzRx/Op352KU7xYv543icP/v+5LWvSNYNfL/mNk3DXr//HD5W2dj9XZVyb9z2eWvualzHOO+Fi34kszuQIN2e+TZgdOLf6J9/4fZmPb/q8otsYTC581aT4hkP9I0uZOcnPzQHO/C85l40vilswnGzPXJaUHmAXr0NKi+sROxjvvsfX2MeK3tq88Mawh3SIdNnTOU8B8dHDvlM5wr/Ptz9F7O1Xj2P3Yw/OV6n3FrUXPmbNFOA59oFdT1bb7BXvWJyP5xL/NtD5FoUyf8WL3TWl40c7pF5v6rbl+YkfoLZwUeMwelvR+qChgN37xXitIs7/GoU7PL2zQvc4TmDV1o+Q11PhfVahIt8ub2kJV+O7ie9UqeHbYGqiMIgkjh6JR+zO1HvG7zdlftM/dnj7HOPAcXSewkaVdv1jW3ySx6c9oBD1j5zhJSd2hRU5VWnHtx+KD6eubV5p9jd2b0OcU40k25d2OQPpk0bHXtvg9bYTH1vgcrWLrY7tVnWe0wCygGxddKkDtCLrze6HztSpNya/zimFJcj8ACBbwbeWxvkzP6xyVFWA9B5utOMKKe7wkFSgIJUr0ADvxRXy+WVwft/76Ylc5YbvMEi8rt9hZh9P+CpUn16gNpVrms5MFzYgAy7d9T+gPohbRvzq8nCdSuVO48LXYoezg0idXvOIvTOb/0cJsmdqWHRbpcRbPfFHpRwVKQWFSjFxMh6VMAg9VVjmPRl3lth1fYvzD4Hv2mofgwftSfSz+F2aRA+fFdiXM30MVPNPi8SLpPpNP5Ro7DrTXABXOk/JQv3u1PM1BQXjkAJyzet69T33JmRzudjJdhMfiJPZn6Ttu/MuebopfMS35twliX8q/WiaK/Y8rJsQFLtpbf4O8Pg0kjgtbqsFeQR/DlJPJOYwnzP1cni/5NGkrnAt5d2+I9ddjOsPU3e7uTJfc/yMeNl4U8FaV/H4Xw==
+    rgba: 4279054768
+  - serializedVersion: 2
+    rgba: 4279716299
+  - serializedVersion: 2
+    rgba: 4283002023
+  - serializedVersion: 2
+    rgba: 4279249546
+  - serializedVersion: 2
+    rgba: 4288581484
+  - serializedVersion: 2
+    rgba: 4278982464
+  - serializedVersion: 2
+    rgba: 4279181412
+  encodedCells: S1:4:4096:14BE2690:bVTPc9NGFP4blq7pOMqlyrQJmV7ChhACF41XTKh98aCFdsKJdlYR9omZSvGEE4EkDLlQEpvFOiXT0urmVg6Y1cXFNtHs/lF9K6fTTssbybL2e7/2+95Ka8GFFkKs+A+ST1gcAybGQoQ+/+0TuOiKPBbXzgYiXIHXmf/iWmVKiHy0w9cmv/wfP9Y618EkSJIHv5r3b2CpAGx7sXiqVzrPA85/mfrPJIu2cVi0bRt+k+SGVvpFEETHiVlIZhb+je9Hiyfvk53XA3Cwp/iXtsENbNuPwyiK3+29f//9SrA1X+Bo1TaVz3HeimLhD5I2X9sz8ccz6IoBjpPFwuN+FEFrUXgifi3eLyOEKl8Ablp48DAMI1/EPOqcJCcGvrBE0GdoabrB5DUPw8AXec43Tag9h5ZJhaBh9jP0By3sc7B23BDt0J5PZpxl8hlCSkp5d/nk2KQDeLIbNxp8L4zeJB96SsteD/Ds7TKDdu7zrc2tsNEVgR/B7i/LwlK4dXBg4rfC+y0e90DerWgBtv+7lJA+z5SeMyTAHU3CFfXTs6bg0Rsbat6weqSVXyoo2Fl47HMeDhr8zSUecsOJfd1SOt79ysBrOwubm7z9aNAMti+1d6NdO1lLJeTenhwsAE7IDg+CoJ03un648BCWoL6SQGBpe95OTsjO/rOAP5pUZRzOLxRyIAtQilD962RtjawSsspPT6vxaZvP23NzqLAKRt3Z28sEjBEuuKwq0eZf2RemMOrpTG5LcgU8rgQ8F2Wci9bu4+hPDZYVBFhSvXXJ8m3yUgS6XM8P4nYYLcwV7G3IavFU4trWVdHJRe4JnvNg1778B/njuuzLTOux0jurJIrCj6/a7ZEQmh/sbF2DdqVCw/SljG+Qzne3j2D4/LIYxy9afiT4VXKFXP+AhpXvN5+vkK2oA7J0gpoqqQ+6GfnRDdgR4CprRJfuPO0Er0SrI9rV1K2PmrHIw2ivX3Svj/yW347zlyIWrTISpeH6kdqesGh/DCel6L3ld8blJTIUZYTyDc1Ilrfusrt9raVloV6XC3mvh5bImYWGysGU4vxOtDc7JdBBMIgUWT2HfBDlrh4iUqlg56M+J3jJwXUCbhgj8qSWz8pZo2nDP4+mDrgQYL8CB4GMDm+BqLNIxUF4OvWQQ2lNlcpmCUmFtHqypfVgoiaORVN5T0K+3nSWQQatm5zH7UkWh5/3+9SzrBSGSKoND54OHQ4vQnZnrCZ+JytCskwDTUrDJDZrI5mWb1HdEzAEnehiD3aPajVL5c/7febOYgujoF3VsdZDEbw1eIYrt9Jurs5catVgFjGf1DI1jIeD0xaWDMnbfYPrrvtDtUZLiAaTNpQMAsMCpczx2Hc/Knr3hdWPb9KSV2pw1e3mcRPo1Ziy/oaXN9dTUH/ARQ7Uq+7uO6HLvcZkICmiinn9Zi4PxlJ3JwN1M03HOWPjWSS4b1HG2DI9yta7Gr6pg+zRxqhZIshDpdFocLFz0TRweAiH0FVAQNZ9m91kpxVURxRbTnZoWMfKGo/upFkmtYx15rkM9KQuRdi0jz2mB7qvAJQq088k9ZjrOIzRQ4opdlDdk/dUBvLABTVqlLoMkj5lRxSinSf0W6kLHXpTLTJoGaMnjLKjGCp4dSYzYBlJ5BoXKOiYTTGPMs1vsf39d9KIREd1VjKTCRPleC5lLnPzg7P9/VVsSeSo9VGVprREcQ8cWIl6LsZpNqDeOoXUaONpWqWjGnXN1wRu2FaJfotTjDwzt3XP7Veprpr0iJVK08nFJUxh+rGJYLjuYmf6FwxRz1B3fgIQdIThMl8qlxqH0nT0/8bRiLoONe51YIU+AYocRB2IwOdJzl09IJVSIAXSULe6Ybz/hTseHEaIAYpckEjfAzX+KWJCIatTjB2jVFZpYdXpKa4zA2PnLw==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets:
-  - colorIndex: 6
-    count: 1
   - colorIndex: 1
     count: 1
   - colorIndex: 2
     count: 1
   - colorIndex: 3
     count: 1
+  - colorIndex: 4
+    count: 1
   - colorIndex: 5
     count: 1
-  - colorIndex: 4
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
     count: 1
   bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
   conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: places
   campaignSeed: 112048
-  displayTitle: 
+  displayTitle: Maple Pagoda
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
   mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 75d55bb34b32db74f93aeadd96c44e24,
     type: 2}

@@ -9,19 +9,24 @@ public class BucketInventory
     private readonly List<ConveyorSlotState> conveyorSlots = new List<ConveyorSlotState>();
     private readonly Queue<Bucket> reserve = new Queue<Bucket>();
     private LevelData activeLevel;
+    private bool dispensing;
     private readonly HashSet<int> openGates = new HashSet<int>();
-    private readonly HashSet<Bucket> crateBuckets = new HashSet<Bucket>();
+    private readonly HashSet<int> crateLayoutIndices = new HashSet<int>();
     private readonly HashSet<int> reservedAccessPath = new HashSet<int>();
     public int CrateRow { get; private set; } = -1;
     public bool CratesOpen { get; private set; }
-    public int CrateBucketCount => crateBuckets.Count;
+    public int CrateBucketCount => buckets.Count(IsCrateCovered);
+    public IEnumerable<int> CrateLayoutIndices => crateLayoutIndices;
     public bool IsGateClosed(Bucket bucket) => bucket != null && bucket.GateKeyId != 0 && !openGates.Contains(bucket.GateKeyId);
-    public bool IsCrateCovered(Bucket bucket) => crateBuckets.Contains(bucket);
+    public bool IsCrateCellClosed(int index) => activeLevel != null && activeLevel.alternatingCrates
+        && index >= 0 && index % LevelData.BucketLayoutColumns % 2 == (CratesOpen ? 1 : 0);
+    public bool IsCrateCovered(Bucket bucket) => bucket != null && IsCrateCellClosed(bucket.LayoutIndex);
     public void HandleBucketFilled(Bucket bucket)
     {
         if (bucket != null && bucket.KeyId != 0 && openGates.Add(bucket.KeyId)) NotifyChanged();
     }
     public int ReserveCount { get { return reserve.Count; } }
+    public bool NeedsSettling { get; private set; }
     public IEnumerable<Bucket> ReservedBuckets { get { return reserve; } }
 
     public event Action OnInventoryChanged;
@@ -33,7 +38,7 @@ public class BucketInventory
     public void BuildFromLevel(LevelData levelData, int subGrainsPerAxis, LevelSegmentRules bucketSettings = null)
     {
         buckets.Clear();
-        openGates.Clear(); crateBuckets.Clear(); CrateRow = -1; CratesOpen = false;
+        openGates.Clear(); crateLayoutIndices.Clear(); CrateRow = -1; CratesOpen = false;
         reservedAccessPath.Clear();
         conveyorSlots.Clear();
         reserve.Clear();
@@ -42,18 +47,24 @@ public class BucketInventory
 
         if (levelData == null || levelData.cells == null || levelData.cells.Length == 0)
         {
+            NeedsSettling = false;
             NotifyChanged();
             return;
         }
 
         int maxGrainsPerBucket = bucketSettings != null ? bucketSettings.maxGrainsPerBucket : 0;
-        if (levelData.alternatingCrates || (levelData.campaignTemplateVersion > 0 && levelData.keyGates))
-            ReserveAccessPath(levelData);
         int grainsPerLevelCell = Mathf.Max(1, subGrainsPerAxis) * Mathf.Max(1, subGrainsPerAxis);
         if (levelData.loopInventory) InventoryLoopRoute.Bind(levelData);
         BuildFromGeneratedQueue(levelData, grainsPerLevelCell, maxGrainsPerBucket);
         if (levelData.campaignLevel) ApplyCampaignBucketRules(levelData);
-
+        SettleInitialLayout(levelData);
+        if (levelData.campaignLevel)
+        {
+            BalanceBucketSand();
+            MixColumnColors(levelData);
+            EnsurePlayableOpening(levelData);
+            ApplyAdvancedMysteryRules(levelData);
+        }
         NotifyChanged();
     }
 
@@ -101,7 +112,9 @@ public class BucketInventory
 
     private bool IsSingleBucketAccessible(Bucket bucket, LevelData level)
         => buckets.Contains(bucket) && !bucket.IsFrozen && !IsGateClosed(bucket)
-            && (!crateBuckets.Contains(bucket) || CratesOpen) && BucketRouteAccess.IsAccessible(bucket.LayoutIndex, level, this, bucket.LinkedPartner);
+            // A linked half cannot use a side route to skip cups above its column.
+            && (bucket.LinkedPartner == null || BucketGridAccess.IsAccessible(bucket.LayoutIndex, this))
+            && !IsCrateCovered(bucket) && BucketRouteAccess.IsAccessible(bucket.LayoutIndex, level, this, bucket.LinkedPartner);
 
     public bool TryTakeBucket(Bucket bucket, ConveyorBelt conveyor, LevelData levelData)
     {
@@ -131,28 +144,23 @@ public class BucketInventory
         }
 
         buckets.Remove(bucket);
-        crateBuckets.Remove(bucket);
         if (bucket.LinkedPartner != null)
         {
             buckets.Remove(bucket.LinkedPartner);
-            crateBuckets.Remove(bucket.LinkedPartner);
             bucket.LinkedPartner.Reveal();
         }
-        if (crateBuckets.Count > 0)
-        {
-            CratesOpen = !CratesOpen;
-            // With no outside buckets left there is no legal move that can reopen the row.
-            // Remove the empty crate mechanism instead of rejecting otherwise legal moves.
-            if (CountOutsideActions() == 0) { crateBuckets.Clear(); CratesOpen = true; }
-        }
+        if (levelData != null && levelData.alternatingCrates) CratesOpen = !CratesOpen;
         ApplySuccessfulMoveRules();
         bucket.Reveal();
         foreach (Bucket waiting in buckets) waiting.ThawOneMove();
         foreach (Bucket waiting in reserve) waiting.ThawOneMove();
         foreach (ConveyorSlotState slot in conveyorSlots)
             foreach (Bucket waiting in slot.ReservedBuckets) waiting.ThawOneMove();
-        TryDispenseAll(levelData);
-        NotifyChanged();
+        if (!TryDispenseAll(levelData))
+        {
+            EnsurePlayableOpening(levelData);
+            NotifyChanged();
+        }
         return true;
     }
 
@@ -179,37 +187,36 @@ public class BucketInventory
 
     public bool TryDispenseAll(LevelData levelData)
     {
-        if (levelData == null)
+        if (levelData == null || dispensing)
         {
             return false;
         }
-
-        bool changed = RefillReserve(levelData);
-        bool progressed;
-        int safety = 64;
-        do
+        dispensing = true;
+        try
         {
-            progressed = false;
+            bool changed = AdvanceBuckets(levelData);
             for (int i = 0; i < conveyorSlots.Count; i++)
             {
-                if (TryDispenseFromSlot(conveyorSlots[i], levelData))
-                {
-                    changed = true;
-                    progressed = true;
-                }
+                changed |= TryDispenseFromSlot(conveyorSlots[i], levelData);
             }
-
-            safety--;
+            changed |= RefillReserve(levelData);
+            // Advance the crate tick when only covered routes remain, including the final cup.
+            if (!changed && levelData.alternatingCrates && buckets.Count > 0
+                && !buckets.Any(b => IsBucketAccessible(b, levelData)))
+            {
+                CratesOpen = !CratesOpen;
+                changed = true;
+            }
+            if (changed)
+            {
+                buckets.Sort(CompareBucketsByLayout);
+                EnsurePlayableOpening(levelData);
+                NotifyChanged();
+            }
+            NeedsSettling = changed;
+            return changed;
         }
-        while (progressed && safety > 0);
-
-        if (changed)
-        {
-            buckets.Sort(CompareBucketsByLayout);
-            NotifyChanged();
-        }
-
-        return changed;
+        finally { dispensing = false; }
     }
 
     public void ReturnBucket(Bucket bucket)
@@ -222,35 +229,8 @@ public class BucketInventory
         bucket.ReturnToInventory();
         bucket.SetLayoutIndex(-1);
         reserve.Enqueue(bucket);
-        // Recall advances the waiting queue. Replacing the same front bucket could
-        // permanently hide a needed colour when the belt has fewer than five slots.
-        if (activeLevel != null)
-        {
-            if (!activeLevel.loopInventory)
-            {
-                // Advance the uncovered queue on crate boards too. Otherwise returning the
-                // same front cups can permanently hide a needed colour behind them.
-                var moving = buckets.Where(b => !crateBuckets.Contains(b)).OrderBy(b => b.LayoutIndex).ToArray();
-                var slots = CollectAvailableSlotIndices(activeLevel, LevelData.BucketLayoutCellCount)
-                    .Where(i => crateBuckets.Count == 0 || i / LevelData.BucketLayoutColumns != CrateRow).ToArray();
-                for (int i = 0; i < moving.Length; i++)
-                {
-                    if (i < slots.Length) moving[i].SetLayoutIndex(slots[i]);
-                    else
-                    {
-                        // A feeder can temporarily occupy the reserved access aisle.
-                        // Return surplus cups to the queue when compacting the board.
-                        buckets.Remove(moving[i]);
-                        moving[i].SetLayoutIndex(-1);
-                        reserve.Enqueue(moving[i]);
-                    }
-                }
-            }
-            RefillReserve(activeLevel);
-        }
-        buckets.Sort(CompareBucketsByLayout);
-
-        NotifyChanged();
+        // Recalled cups join the same rear queue without crossing walls or other columns.
+        if (activeLevel == null || !TryDispenseAll(activeLevel)) NotifyChanged();
     }
 
     private bool TryDispenseFromSlot(ConveyorSlotState slot, LevelData levelData)
@@ -295,8 +275,10 @@ public class BucketInventory
             grainsPerLevelCell,
             maxGrainsPerBucket);
 
-        TotalBucketCount = queue.Length;
         List<ColorQuantizer.BucketQueueItem> remainingQueue = new List<ColorQuantizer.BucketQueueItem>(queue);
+        if (levelData.campaignLevel)
+            PopulateBoardQueue(levelData, remainingQueue);
+        TotalBucketCount = remainingQueue.Count;
         if (levelData.campaignLevel) remainingQueue = InterleaveColors(remainingQueue);
         BuildConveyorSlots(levelData, remainingQueue);
 
@@ -316,30 +298,201 @@ public class BucketInventory
         }
     }
 
+    private void PopulateBoardQueue(LevelData level, List<ColorQuantizer.BucketQueueItem> queue)
+    {
+        int target = CollectAvailableSlotIndices(level, LevelData.BucketLayoutCellCount).Count;
+        for (int cell = 0; cell < LevelData.BucketLayoutCellCount; cell++)
+            if (LevelData.IsBucketLayoutConveyorSlot(level.bucketLayout[cell])) target += level.GetConveyorBucketCount(cell);
+        if (level.sectionBuckets)
+        {
+            int sections = CampaignProgression.SectionBucketCount(EstimateLevelNumber(level));
+            target += level.loopInventory ? Mathf.Min(2, sections) : sections;
+        }
+        if (level.largeBuckets) target++;
+        // Split the actual sand budget; never create extra demand or reduce authored cup counts.
+        while (queue.Count < target)
+        {
+            int largest = -1;
+            for (int i = 0; i < queue.Count; i++)
+                if (queue[i].capacity > 1 && (largest < 0 || queue[i].capacity > queue[largest].capacity)) largest = i;
+            if (largest < 0) break;
+            var item = queue[largest];
+            int half = item.capacity / 2;
+            queue[largest] = new ColorQuantizer.BucketQueueItem { colorIndex = item.colorIndex, capacity = item.capacity - half };
+            queue.Add(new ColorQuantizer.BucketQueueItem { colorIndex = item.colorIndex, capacity = half });
+        }
+    }
+
+    private void PopulateAccessPath(LevelData level)
+    {
+        // Split a seated plain cup after queue generation so existing colors,
+        // feeder stock and special placements keep their authored order.
+        foreach (int cell in reservedAccessPath.OrderBy(c => c))
+        {
+            if (GetBucketAtLayoutIndex(cell) != null) continue;
+            Bucket donor = AllInitialBuckets().Where(b => !b.HasSecondSection && b.SlotCost == 1
+                && b.LinkedPartner == null && b.SwapPartner == null && b.Capacity >= 4)
+                .OrderBy(b => buckets.Count(other => other.LayoutIndex % LevelData.BucketLayoutColumns == cell % LevelData.BucketLayoutColumns
+                    && other.ColorIndex == b.ColorIndex))
+                .ThenByDescending(b => b.Capacity)
+                .ThenBy(b => b.LayoutIndex).FirstOrDefault();
+            if (donor == null) break;
+            int share = donor.Capacity / 2;
+            Bucket opening = new Bucket(donor.ColorIndex, share, cell);
+            donor.SetColorAndCapacity(donor.ColorIndex, donor.Capacity - share);
+            buckets.Add(opening);
+            if (CrateRow >= 0 && cell / LevelData.BucketLayoutColumns == CrateRow)
+            {
+
+                crateLayoutIndices.Add(cell);
+            }
+            TotalBucketCount++;
+        }
+        buckets.Sort(CompareBucketsByLayout);
+    }
+
+    private IEnumerable<Bucket> AllInitialBuckets()
+    {
+        return buckets.Concat(reserve).Concat(conveyorSlots.SelectMany(slot => slot.ReservedBuckets));
+    }
+
+    private sealed class InitialSandShare
+    {
+        public Bucket Bucket;
+        public bool Second;
+        public int Weight;
+        public int Capacity;
+    }
+
+    private void BalanceBucketSand()
+    {
+        var cups = AllInitialBuckets().ToArray();
+        var shares = new Dictionary<byte, List<InitialSandShare>>();
+        foreach (var cup in cups)
+        {
+            Add(cup.FirstColor, cup, false, cup.SlotCost, cup.HasSecondSection ? cup.FirstSectionCapacity : cup.Capacity);
+            if (cup.HasSecondSection) Add(cup.SecondColor, cup, true, 1, cup.Capacity - cup.FirstSectionCapacity);
+        }
+        foreach (var group in shares.Values)
+        {
+            int units = group.Sum(s => s.Weight);
+            int total = group.Sum(s => s.Capacity);
+            int capacity = total / units;
+            int remainder = total % units;
+            foreach (var share in group)
+            {
+                int extra = Mathf.Min(remainder, share.Weight);
+                share.Capacity = capacity * share.Weight + extra;
+                remainder -= extra;
+            }
+        }
+        foreach (var cup in cups)
+        {
+            int first = shares[cup.FirstColor].First(s => s.Bucket == cup && !s.Second).Capacity;
+            if (cup.HasSecondSection)
+                cup.SetSectionCapacities(first, shares[cup.SecondColor].First(s => s.Bucket == cup && s.Second).Capacity);
+            else cup.SetColorAndCapacity(cup.FirstColor, first);
+        }
+        void Add(byte color, Bucket cup, bool second, int weight, int capacity)
+        {
+            if (!shares.TryGetValue(color, out var group)) shares[color] = group = new List<InitialSandShare>();
+            group.Add(new InitialSandShare { Bucket = cup, Second = second, Weight = weight, Capacity = capacity });
+        }
+    }
+
+    private void MixColumnColors(LevelData level)
+    {
+        if (level.GetColorsUsedInLevel().Length < 2) return;
+        for (int x = 0; x < LevelData.BucketLayoutColumns; x++)
+        {
+            var column = buckets.Where(b => b.LayoutIndex % LevelData.BucketLayoutColumns == x).ToArray();
+            if (column.Length < 2 || column.Select(b => b.ColorIndex).Distinct().Count() > 1) continue;
+            bool mixed = false;
+            foreach (var cup in column.Where(CanMix))
+            {
+                foreach (var other in buckets.Where(b => CanMix(b) && b.ColorIndex != cup.ColorIndex
+                    && b.LayoutIndex / LevelData.BucketLayoutColumns == cup.LayoutIndex / LevelData.BucketLayoutColumns
+                    && IsCrateCovered(b) == IsCrateCovered(cup)))
+                {
+                    int otherColumn = other.LayoutIndex % LevelData.BucketLayoutColumns;
+                    var remaining = buckets.Where(b => b != other && b.LayoutIndex % LevelData.BucketLayoutColumns == otherColumn).ToArray();
+                    if (remaining.Length > 0 && remaining.Select(b => b.ColorIndex).Concat(new[] { cup.ColorIndex }).Distinct().Count() < 2) continue;
+                    int old = cup.LayoutIndex;
+                    cup.SetLayoutIndex(other.LayoutIndex);
+                    other.SetLayoutIndex(old);
+                    mixed = true;
+                    break;
+                }
+                if (mixed) break;
+            }
+        }
+        buckets.Sort(CompareBucketsByLayout);
+        bool CanMix(Bucket b) => b.LinkedPartner == null && b.SwapPartner == null && b.KeyId == 0 && b.GateKeyId == 0;
+    }
+
+    private bool AdvanceBuckets(LevelData level)
+    {
+        bool changed = false;
+        foreach (var bucket in buckets.OrderBy(b => b.LayoutIndex))
+        {
+            // Belt cups have already taken their clockwise step. Only cups
+            // outside the route rise through the free cells above them.
+            if (level.loopInventory && Array.IndexOf(InventoryLoopRoute.Cells, bucket.LayoutIndex) >= 0) continue;
+            // Recalled pairs may re-enter at separate rear slots. Preserve neighboring
+            // columns without ever forcing the two halves back onto the same row.
+            if (!level.loopInventory && bucket.LinkedPartner != null && buckets.Contains(bucket.LinkedPartner)
+                && !AreInNeighboringColumns(bucket, bucket.LinkedPartner))
+                ReseatLinkedPair(level, bucket, bucket.LinkedPartner);
+            int target = bucket.LayoutIndex - LevelData.BucketLayoutColumns;
+            while (target >= 0
+                && (!level.loopInventory || Array.IndexOf(InventoryLoopRoute.Cells, bucket.LayoutIndex) < 0)
+                && !IsWaitingFeederOutlet(target)
+                && (!reservedAccessPath.Contains(target) || level.campaignLevel && reservedAccessPath.Contains(bucket.LayoutIndex))
+                && CanReceiveDispensedBucket(target, level))
+            {
+                bucket.SetLayoutIndex(target);
+                changed = true;
+                target -= LevelData.BucketLayoutColumns;
+            }
+        }
+        return changed;
+    }
+
     private bool RefillReserve(LevelData level)
     {
         if (level == null || reserve.Count == 0) return false;
         bool changed = false;
-        for (int index = LevelData.BucketLayoutCellCount - 1; index >= 0 && reserve.Count > 0; index--)
+        int rearStart = (LevelData.BucketLayoutRows - 1) * LevelData.BucketLayoutColumns;
+        var refillSlots = level.loopInventory
+            ? Enumerable.Range(0, LevelData.BucketLayoutCellCount).OrderByDescending(i => i / LevelData.BucketLayoutColumns).ThenBy(i => i)
+            : Enumerable.Range(rearStart, LevelData.BucketLayoutColumns).OrderBy(i => i);
+        int movingCount = level.loopInventory ? buckets.Count(b => Array.IndexOf(InventoryLoopRoute.Cells, b.LayoutIndex) >= 0) : 0;
+        foreach (int index in refillSlots)
         {
+            if (reserve.Count == 0) break;
             // Keep a gap on a moving ring so lower cups and feeder outlets can
             // become reachable. Feeders may fill it temporarily as their stock advances.
-            if (level.loopInventory && buckets.Count >= InventoryLoopRoute.Cells.Length - 1) break;
+            bool onLoop = level.loopInventory && Array.IndexOf(InventoryLoopRoute.Cells, index) >= 0;
+            if (onLoop && movingCount >= InventoryLoopRoute.Cells.Length - 1) continue;
             byte cell = level.bucketLayout[index];
             if (LevelData.IsBucketLayoutWall(cell) || LevelData.IsBucketLayoutConveyorSlot(cell)
                 || reservedAccessPath.Contains(index) || GetBucketAtLayoutIndex(index) != null) continue;
             // A newly freed feeder outlet belongs to its waiting cup, before the
             // general recall queue. Otherwise recalls can starve a feeder forever.
-            if (conveyorSlots.Any(s => s.RemainingCount > 0
-                && ConveyorDirectionUtility.GetTargetLayoutIndex(s.LayoutIndex, s.Direction) == index)) continue;
-            if (crateBuckets.Count > 0 && index / LevelData.BucketLayoutColumns == CrateRow) continue;
+            if (IsWaitingFeederOutlet(index)) continue;
+
             Bucket next = reserve.Dequeue();
             next.SetLayoutIndex(index);
             buckets.Add(next);
+            if (onLoop) movingCount++;
             changed = true;
         }
         return changed;
     }
+
+    private bool IsWaitingFeederOutlet(int index)
+        => conveyorSlots.Any(s => s.RemainingCount > 0
+            && ConveyorDirectionUtility.GetTargetLayoutIndex(s.LayoutIndex, s.Direction) == index);
 
     private int CountOutsideActions()
     {
@@ -347,26 +500,32 @@ public class BucketInventory
         var pairs = new HashSet<Bucket>();
         foreach (var item in buckets)
         {
-            if (crateBuckets.Contains(item) || pairs.Contains(item)) continue;
+            if (IsCrateCovered(item) || pairs.Contains(item)) continue;
             count++;
             if (item.LinkedPartner != null) pairs.Add(item.LinkedPartner);
         }
-        count += reserve.Count;
-        foreach (var slot in conveyorSlots) count += slot.RemainingCount;
+        // Hidden stock cannot reopen closed crates while the covered rear row blocks entry.
         return count;
     }
 
     private void ApplySuccessfulMoveRules()
     {
         var swapped = new HashSet<Bucket>();
+        var groups = new HashSet<IReadOnlyList<Bucket>>();
         foreach (var bucket in buckets)
         {
+            if (bucket.ColorSwapGroup != null)
+            {
+                if (groups.Add(bucket.ColorSwapGroup)) ShuffleColorGroup(bucket.ColorSwapGroup);
+                continue;
+            }
             Bucket partner = bucket.SwapPartner;
             if (partner == null || swapped.Contains(bucket) || !buckets.Contains(partner)
                 || bucket.CurrentFill != 0 || partner.CurrentFill != 0) continue;
             byte color = bucket.ColorIndex;
-            bucket.SetColorAndCapacity(partner.ColorIndex, bucket.Capacity);
-            partner.SetColorAndCapacity(color, partner.Capacity);
+            int capacity = bucket.Capacity;
+            bucket.SetColorAndCapacity(partner.ColorIndex, partner.Capacity);
+            partner.SetColorAndCapacity(color, capacity);
             swapped.Add(bucket); swapped.Add(partner);
         }
         if (activeLevel != null && activeLevel.loopInventory)
@@ -412,21 +571,134 @@ public class BucketInventory
             if (i < slots.Count) buckets.Add(pool[i]); else reserve.Enqueue(pool[i]);
         }
         PlaceSpecialsOnRows(level);
-        if (level.linkedBuckets && buckets.Count >= 3)
-            LinkDistantPair(level);
         if (level.keyGates && buckets.Count >= 8)
             PlaceKeyAndLocks(level);
         PlaceSpecialsOnRows(level);
+        if (level.linkedBuckets && buckets.Count >= 3)
+            LinkAdjacentPairs(level);
         if (level.swappingColors)
             PlaceSwapPair(level);
-        if (level.keyGates && EstimateLevelNumber(level) >= CampaignProgression.LargeLevel)
-            ClearColumnUnderKeys();
-        if (level.alternatingCrates && buckets.Count >= 10)
+        if (level.alternatingCrates)
         {
-            CrateRow = buckets.Max(b => b.LayoutIndex) / LevelData.BucketLayoutColumns;
-            foreach (var bucket in buckets)
-                if (bucket.LayoutIndex / LevelData.BucketLayoutColumns == CrateRow) crateBuckets.Add(bucket);
+            CrateRow = 0;
+            for (int index = 0; index < LevelData.BucketLayoutCellCount; index++)
+                crateLayoutIndices.Add(index);
         }
+        EnsureVisibleIce(level);
+        EnsurePlayableOpening(level);
+    }
+
+    private void ApplyAdvancedMysteryRules(LevelData level)
+    {
+        int number = EstimateLevelNumber(level);
+        int wanted = number < 230 ? 1 : 2;
+        if (CampaignProgression.HasHiddenSections(level, number))
+        {
+            // The introduction must show a question mark before its route opens,
+            // even when a changed picture makes all front sections accessible.
+            if (number == CampaignProgression.HiddenSectionsLevel
+                && !buckets.Any(b => b.HasSecondSection && !IsBucketAccessible(b, level)))
+            {
+                var section = buckets.FirstOrDefault(b => b.HasSecondSection);
+                var rear = buckets.Where(b => !b.HasSecondSection && b.LinkedPartner == null
+                    && b.KeyId == 0 && b.GateKeyId == 0 && b.SwapPartner == null && b.SlotCost == 1
+                    && !BucketRouteAccess.IsAccessible(b.LayoutIndex, level, this, null))
+                    .OrderByDescending(b => b.LayoutIndex).FirstOrDefault();
+                if (section != null && rear != null) SwapBucketInto(section, rear.LayoutIndex);
+            }
+            // Prefer a blocked visible cup so the lesson is seen before its colors reveal.
+            var sections = AllInitialBuckets().Where(b => b.HasSecondSection)
+                .OrderBy(b => b.LayoutIndex < 0 ? 1 : IsBucketAccessible(b, level) ? 2 : 0)
+                .ThenByDescending(b => b.LayoutIndex).Take(wanted);
+            foreach (var bucket in sections) bucket.SetModifiers(bucket.FrostMoves, true);
+        }
+        if (CampaignProgression.HasHiddenLinked(level, number))
+        {
+            var pairs = buckets.Where(b => b.LinkedPartner != null && b.LayoutIndex < b.LinkedPartner.LayoutIndex)
+                .OrderBy(b => IsBucketAccessible(b, level)).ThenByDescending(b => b.LayoutIndex).Take(wanted);
+            foreach (var bucket in pairs)
+            {
+                bucket.SetModifiers(bucket.FrostMoves, true);
+                bucket.LinkedPartner.SetModifiers(bucket.LinkedPartner.FrostMoves, true);
+            }
+        }
+    }
+
+    private void SettleInitialLayout(LevelData level)
+    {
+        if (level == null) { NeedsSettling = false; return; }
+        dispensing = true;
+        try
+        {
+            bool changed;
+            do
+            {
+                changed = AdvanceBuckets(level);
+                for (int i = 0; i < conveyorSlots.Count; i++)
+                    changed |= TryDispenseFromSlot(conveyorSlots[i], level);
+                changed |= RefillReserve(level);
+                if (changed) buckets.Sort(CompareBucketsByLayout);
+            }
+            while (changed);
+            NeedsSettling = false;
+        }
+        finally { dispensing = false; }
+    }
+
+    private void EnsureVisibleIce(LevelData level)
+    {
+        if (level.frostMoves <= 0 || buckets.Any(b => b.IsFrozen)) return;
+        var candidate = buckets.Where(b => b.KeyId == 0 && b.GateKeyId == 0 && b.LinkedPartner == null
+            && b.SwapPartner == null && !b.HasSecondSection).OrderByDescending(b => b.LayoutIndex).FirstOrDefault();
+        if (candidate != null) candidate.SetModifiers(level.frostMoves, candidate.IsMystery);
+    }
+
+    private void EnsurePlayableOpening(LevelData level)
+    {
+        // Ice and denser key boards can freeze every front cup; thaw an opening so a move exists.
+        if (level == null || buckets.Any(b => IsBucketAccessible(b, level))) return;
+        foreach (var bucket in buckets.OrderBy(b => b.LayoutIndex))
+        {
+            if (!bucket.IsFrozen && (bucket.LinkedPartner == null || !bucket.LinkedPartner.IsFrozen)) continue;
+            int frost = bucket.FrostMoves;
+            bool mystery = bucket.IsMystery;
+            bucket.SetModifiers(0, mystery);
+            if (bucket.LinkedPartner != null && bucket.LinkedPartner.IsFrozen)
+                bucket.LinkedPartner.SetModifiers(0, bucket.LinkedPartner.IsMystery);
+            if (IsBucketAccessible(bucket, level))
+            {
+                if (level.frostMoves > 0 && !buckets.Any(b => b != bucket && b != bucket.LinkedPartner && b.IsFrozen))
+                {
+                    var rear = buckets.Where(b => b != bucket && b != bucket.LinkedPartner && b.KeyId == 0
+                        && b.GateKeyId == 0 && b.LinkedPartner == null && b.SwapPartner == null && !b.HasSecondSection
+                        && b.LayoutIndex / LevelData.BucketLayoutColumns >= 2)
+                        .OrderByDescending(b => b.LayoutIndex).FirstOrDefault();
+                    if (rear != null) rear.SetModifiers(level.frostMoves, rear.IsMystery);
+                }
+                return;
+            }
+            bucket.SetModifiers(frost, mystery);
+        }
+    }
+
+    private void ShuffleColorGroup(IReadOnlyList<Bucket> group)
+    {
+        // Filled/recalled cups and cups already on the main belt keep their contents.
+        var stock = new HashSet<Bucket>(AllInitialBuckets());
+        var waiting = group.Where(b => stock.Contains(b) && b.State == BucketState.InInventory && b.CurrentFill == 0).ToArray();
+        if (waiting.Length < 2) return;
+        byte[] colors = waiting.Select(b => b.ColorIndex).ToArray();
+        int[] capacities = waiting.Select(b => b.Capacity).ToArray();
+        var order = Enumerable.Range(0, waiting.Length).ToList();
+        for (int attempt = 0; attempt < 8; attempt++)
+        {
+            Shuffle(order);
+            if (order.Where((source, target) => colors[source] != colors[target]).Any()) break;
+        }
+        if (colors.Distinct().Count() > 1 && !order.Where((source, target) => colors[source] != colors[target]).Any())
+            order = Enumerable.Range(1, waiting.Length - 1).Concat(new[] { 0 }).ToList();
+        for (int i = 0; i < waiting.Length; i++)
+            waiting[i].SetColorAndCapacity(colors[order[i]], capacities[order[i]]);
     }
 
     private static int EstimateLevelNumber(LevelData level)
@@ -459,9 +731,10 @@ public class BucketInventory
         for (int i = 0; i < specials.Count && front.Count > 0; i++)
         {
             if (specials[i].LayoutIndex / LevelData.BucketLayoutColumns <= 2) continue;
+            if (specials[i].LinkedPartner != null) continue;
             int target = front[UnityEngine.Random.Range(0, front.Count)];
             Bucket occupant = GetBucketAtLayoutIndex(target);
-            if (occupant == null || occupant == specials[i]) continue;
+            if (occupant == null || occupant == specials[i] || occupant.LinkedPartner != null) continue;
             int old = specials[i].LayoutIndex;
             specials[i].SetLayoutIndex(target);
             occupant.SetLayoutIndex(old);
@@ -469,31 +742,176 @@ public class BucketInventory
         }
     }
 
-    private void LinkDistantPair(LevelData level)
+    private void LinkAdjacentPairs(LevelData level)
     {
-        Bucket first = null, second = null;
-        for (int i = 0; i < buckets.Count; i++)
+        int wanted = CampaignProgression.LinkedPairCount(EstimateLevelNumber(level));
+        if (level.loopInventory) wanted = Mathf.Min(wanted, 1);
+        if (wanted <= 0) return;
+        // Generation can relocate an unlinked special while trying a pair;
+        // the full-layout check below keeps its key and exit routes clear.
+        var seats = FindLinkedSeats(level, true);
+        var candidates = buckets.Where(b => !b.HasSecondSection && b.SlotCost == 1
+            && b.KeyId == 0 && b.GateKeyId == 0 && b.LinkedPartner == null).ToList();
+        int[] originalPositions = buckets.Select(b => b.LayoutIndex).ToArray();
+        var linked = new List<Bucket>();
+        // Validate the entire set of pairs, so an early diagonal choice cannot
+        // consume the only safe seats for the remaining required pairs.
+        for (int attempt = 0; attempt < 64; attempt++)
         {
-            Bucket a = buckets[i];
-            if (a.HasSecondSection || a.SlotCost > 1 || a.KeyId != 0) continue;
-            for (int j = i + 1; j < buckets.Count; j++)
+            Shuffle(seats);
+            Shuffle(candidates);
+            if (attempt >= 48)
+                seats = seats.OrderBy(s => s.x / LevelData.BucketLayoutColumns != s.y / LevelData.BucketLayoutColumns).ToList();
+            int made = 0;
+            while (made < wanted)
             {
-                Bucket b = buckets[j];
-                if (b.HasSecondSection || b.SlotCost > 1 || b.KeyId != 0 || a.ColorIndex == b.ColorIndex) continue;
-                if (a.LayoutIndex / LevelData.BucketLayoutColumns == b.LayoutIndex / LevelData.BucketLayoutColumns
-                    && Mathf.Abs(a.LayoutIndex - b.LayoutIndex) == 1) continue;
-                first = a; second = b; break;
+                Bucket first = null, second = null;
+                for (int i = 0; i < candidates.Count && first == null; i++)
+                {
+                    if (candidates[i].LinkedPartner != null) continue;
+                    for (int j = i + 1; j < candidates.Count; j++)
+                    {
+                        if (candidates[j].LinkedPartner != null || candidates[i].ColorIndex == candidates[j].ColorIndex) continue;
+                        first = candidates[i]; second = candidates[j]; break;
+                    }
+                }
+                if (first == null) break;
+                bool seated = false;
+                foreach (var seat in seats)
+                {
+                    if (!CanHostLinkedSeat(level, seat.x, true) || !CanHostLinkedSeat(level, seat.y, true)) continue;
+                    int[] positions = buckets.Select(b => b.LayoutIndex).ToArray();
+                    SwapBucketInto(first, seat.x);
+                    SwapBucketInto(second, seat.y);
+                    first.LinkedPartner = second; second.LinkedPartner = first;
+                    // Reject a blocked partial arrangement before it consumes seats
+                    // needed by the remaining pairs, keys or feeder outlets.
+                    if (!CanClearLinkedLayout(level))
+                    {
+                        first.LinkedPartner = second.LinkedPartner = null;
+                        for (int i = 0; i < buckets.Count; i++) buckets[i].SetLayoutIndex(positions[i]);
+                        continue;
+                    }
+                    linked.Add(first); linked.Add(second);
+                    made++;
+                    seated = true;
+                    break;
+                }
+                if (!seated) break;
             }
-            if (first != null) break;
+            if (made == wanted && CanClearLinkedLayout(level))
+            {
+                foreach (var bucket in linked) bucket.SetModifiers(0, false);
+                return;
+            }
+            foreach (var bucket in linked) bucket.LinkedPartner = null;
+            linked.Clear();
+            for (int i = 0; i < buckets.Count; i++) buckets[i].SetLayoutIndex(originalPositions[i]);
         }
-        if (first == null || second == null)
+    }
+
+    // Check a private copy: diagonal pairs can otherwise block one another across
+    // columns or trap a key. Ice is temporary and does not change the exit geometry.
+    private bool CanClearLinkedLayout(LevelData level)
+    {
+        var trial = new BucketInventory { activeLevel = level };
+        var copies = new Dictionary<Bucket, Bucket>();
+        Bucket Copy(Bucket bucket)
         {
-            if (buckets.Count < 3) return;
-            first = buckets[1]; second = buckets[Mathf.Min(2, buckets.Count - 1)];
-            if (first == second && buckets.Count > 3) second = buckets[3];
+            if (!copies.TryGetValue(bucket, out var copy))
+            {
+                copy = new Bucket(bucket.ColorIndex, bucket.Capacity, bucket.LayoutIndex)
+                    { KeyId = bucket.KeyId, GateKeyId = bucket.GateKeyId };
+                copies.Add(bucket, copy);
+            }
+            return copy;
         }
-        first.LinkedPartner = second; second.LinkedPartner = first;
-        first.SetModifiers(0, false); second.SetModifiers(0, false);
+        foreach (var bucket in buckets) trial.buckets.Add(Copy(bucket));
+        foreach (var bucket in reserve) trial.reserve.Enqueue(Copy(bucket));
+        foreach (var slot in conveyorSlots)
+            trial.conveyorSlots.Add(new ConveyorSlotState(slot.LayoutIndex, slot.Direction, slot.ReservedBuckets.Select(Copy).ToList()));
+        foreach (var entry in copies)
+            if (entry.Key.LinkedPartner != null && copies.TryGetValue(entry.Key.LinkedPartner, out var partner))
+                entry.Value.LinkedPartner = partner;
+        trial.openGates.UnionWith(openGates);
+        trial.reservedAccessPath.UnionWith(reservedAccessPath);
+        trial.SettleInitialLayout(level);
+        while (trial.CountRemaining() > 0)
+        {
+            var next = trial.buckets.OrderByDescending(b => b.KeyId).FirstOrDefault(b => trial.IsBucketAccessible(b, level));
+            if (next == null) return false;
+            trial.buckets.Remove(next);
+            if (next.KeyId != 0) trial.openGates.Add(next.KeyId);
+            if (next.LinkedPartner != null)
+            {
+                trial.buckets.Remove(next.LinkedPartner);
+                if (next.LinkedPartner.KeyId != 0) trial.openGates.Add(next.LinkedPartner.KeyId);
+            }
+            trial.ApplySuccessfulMoveRules();
+            trial.SettleInitialLayout(level);
+        }
+        return true;
+    }
+
+    private List<Vector2Int> CollectLinkedSeats(LevelData level) => FindLinkedSeats(level, false);
+
+    private List<Vector2Int> FindLinkedSeats(LevelData level, bool allowSpecials)
+    {
+        var seats = new List<Vector2Int>();
+        for (int row = 0; row < LevelData.BucketLayoutRows; row++)
+        {
+            for (int col = 0; col < LevelData.BucketLayoutColumns - 1; col++)
+            {
+                int left = row * LevelData.BucketLayoutColumns + col;
+                if (!CanHostLinkedSeat(level, left, allowSpecials)) continue;
+                for (int rightRow = 0; rightRow < LevelData.BucketLayoutRows; rightRow++)
+                {
+                    int right = rightRow * LevelData.BucketLayoutColumns + col + 1;
+                    if (CanHostLinkedSeat(level, right, allowSpecials)) seats.Add(new Vector2Int(left, right));
+                }
+            }
+        }
+        return seats;
+    }
+
+    private void ReseatLinkedPair(LevelData level, Bucket first, Bucket second)
+    {
+        var seats = CollectLinkedSeats(level);
+        Shuffle(seats);
+        foreach (var seat in seats)
+        {
+            SwapBucketInto(first, seat.x);
+            SwapBucketInto(second, seat.y);
+            if (AreInNeighboringColumns(first, second)) return;
+        }
+    }
+
+    private static bool AreInNeighboringColumns(Bucket a, Bucket b)
+    {
+        if (a == null || b == null || a.LayoutIndex < 0 || b.LayoutIndex < 0) return false;
+        return Mathf.Abs(a.LayoutIndex % LevelData.BucketLayoutColumns
+            - b.LayoutIndex % LevelData.BucketLayoutColumns) == 1;
+    }
+
+    private bool CanHostLinkedSeat(LevelData level, int index, bool allowSpecials = false)
+    {
+        if (index < 0 || index >= LevelData.BucketLayoutCellCount) return false;
+        if (level.loopInventory && Array.IndexOf(InventoryLoopRoute.Cells, index) < 0) return false;
+        if (reservedAccessPath.Contains(index)) return false;
+        byte cell = level.bucketLayout[index];
+        if (LevelData.IsBucketLayoutWall(cell) || LevelData.IsBucketLayoutConveyorSlot(cell)) return false;
+        Bucket occupant = GetBucketAtLayoutIndex(index);
+        return occupant == null || (occupant.LinkedPartner == null && (allowSpecials
+            || occupant.KeyId == 0 && occupant.GateKeyId == 0 && !occupant.HasSecondSection && occupant.SlotCost == 1));
+    }
+
+    private void SwapBucketInto(Bucket bucket, int target)
+    {
+        if (bucket == null || bucket.LayoutIndex == target) return;
+        Bucket occupant = GetBucketAtLayoutIndex(target);
+        int old = bucket.LayoutIndex;
+        bucket.SetLayoutIndex(target);
+        if (occupant != null) occupant.SetLayoutIndex(old);
     }
 
     private void PlaceKeyAndLocks(LevelData level)
@@ -525,9 +943,34 @@ public class BucketInventory
 
     private void PlaceSwapPair(LevelData level)
     {
+        if (EstimateLevelNumber(level) >= CampaignProgression.MultiSwapLevel)
+        {
+            PlaceSwapGroup(level);
+            return;
+        }
         bool preferDifferentRows = EstimateLevelNumber(level) >= CampaignProgression.SwapLevel;
         if (!TryAssignSwapPair(preferDifferentRows) && preferDifferentRows)
             TryAssignSwapPair(false);
+    }
+
+    private void PlaceSwapGroup(LevelData level)
+    {
+        int number = EstimateLevelNumber(level);
+        var stock = CampaignProgression.AllBucketsSwapColors(number) ? AllInitialBuckets() : buckets;
+        var candidates = stock.Where(b => !b.HasSecondSection && b.SlotCost == 1 && b.LinkedPartner == null
+            && b.KeyId == 0 && b.GateKeyId == 0).ToList();
+        Shuffle(candidates);
+        int wanted = CampaignProgression.SwapBucketCount(number, candidates.Count);
+        var selected = candidates.GroupBy(b => b.ColorIndex).Select(g => g.First()).Take(wanted).ToList();
+        selected.AddRange(candidates.Where(b => !selected.Contains(b)).Take(wanted - selected.Count));
+        if (selected.Count < 2) return;
+        Bucket[] group = selected.ToArray();
+        for (int i = 0; i < group.Length; i++)
+        {
+            group[i].ColorSwapGroup = group;
+            group[i].SwapPartner = group[(i + 1) % group.Length];
+            group[i].SetModifiers(0, false);
+        }
     }
 
     private bool TryAssignSwapPair(bool requireDifferentRows)
@@ -542,63 +985,10 @@ public class BucketInventory
             if (requireDifferentRows
                 && a.LayoutIndex / LevelData.BucketLayoutColumns == b.LayoutIndex / LevelData.BucketLayoutColumns)
                 continue;
-            int sharedCapacity = Mathf.Min(a.Capacity, b.Capacity);
-            Bucket larger = a.Capacity > b.Capacity ? a : b;
-            int surplus = larger.Capacity - sharedCapacity;
-            if (surplus > 0)
-            {
-                reserve.Enqueue(new Bucket(larger.ColorIndex, surplus));
-                larger.SetColorAndCapacity(larger.ColorIndex, sharedCapacity);
-                TotalBucketCount++;
-            }
             a.SwapPartner = b; b.SwapPartner = a; a.SetModifiers(0, false); b.SetModifiers(0, false);
             return true;
         }
         return false;
-    }
-
-    private void ClearColumnUnderKeys()
-    {
-        foreach (var key in buckets.Where(b => b.KeyId != 0).ToList())
-        {
-            int col = key.LayoutIndex % LevelData.BucketLayoutColumns;
-            int row = key.LayoutIndex / LevelData.BucketLayoutColumns;
-            for (int y = row + 1; y < LevelData.BucketLayoutRows; y++)
-            {
-                int index = y * LevelData.BucketLayoutColumns + col;
-                Bucket below = GetBucketAtLayoutIndex(index);
-                if (below == null || below.KeyId != 0) continue;
-                int free = FindAlternateSlot(below, col);
-                if (free >= 0)
-                {
-                    Bucket occupant = GetBucketAtLayoutIndex(free);
-                    below.SetLayoutIndex(free);
-                    if (occupant != null) occupant.SetLayoutIndex(index);
-                }
-                else
-                {
-                    buckets.Remove(below);
-                    below.SetLayoutIndex(-1);
-                    reserve.Enqueue(below);
-                }
-            }
-        }
-    }
-
-    private int FindAlternateSlot(Bucket moving, int avoidColumn)
-    {
-        for (int i = 0; i < LevelData.BucketLayoutCellCount; i++)
-        {
-            if (i % LevelData.BucketLayoutColumns == avoidColumn) continue;
-            if (reservedAccessPath.Contains(i)) continue;
-            if (activeLevel != null)
-            {
-                byte cell = activeLevel.bucketLayout[i];
-                if (LevelData.IsBucketLayoutWall(cell) || LevelData.IsBucketLayoutConveyorSlot(cell)) continue;
-            }
-            if (GetBucketAtLayoutIndex(i) == null) return i;
-        }
-        return -1;
     }
 
     private static void Shuffle<T>(List<T> list)
@@ -679,7 +1069,7 @@ public class BucketInventory
             }
         }
 
-        if (!hasStructuralLayout)
+        if (!hasStructuralLayout && !levelData.loopInventory)
         {
             int slotCount = Mathf.Min(bucketCount, LevelData.BucketLayoutCellCount);
             for (int i = 0; i < slotCount; i++)
@@ -700,7 +1090,11 @@ public class BucketInventory
 
             slots.Add(layoutIndex);
         }
-        if (levelData.loopInventory && slots.Count > 1) slots.RemoveAt(slots.Count - 1);
+        if (levelData.loopInventory && !levelData.campaignLevel)
+        {
+            int gap = slots.FindLastIndex(i => Array.IndexOf(InventoryLoopRoute.Cells, i) >= 0);
+            if (gap >= 0) slots.RemoveAt(gap);
+        }
         return slots;
     }
 

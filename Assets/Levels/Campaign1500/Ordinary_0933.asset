@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0933
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283532979
+  - serializedVersion: 2
+    rgba: 4280039762
+  - serializedVersion: 2
+    rgba: 4291861591
+  - serializedVersion: 2
+    rgba: 4285883989
+  - serializedVersion: 2
+    rgba: 4292272622
+  - serializedVersion: 2
+    rgba: 4281426049
+  - serializedVersion: 2
+    rgba: 4287477988
+  - serializedVersion: 2
+    rgba: 4293512893
+  - serializedVersion: 2
+    rgba: 4287601319
+  - serializedVersion: 2
+    rgba: 4294227586
+  encodedCells: S1:4:4096:0C32C1D5:XZVNd9o4FIZ/w3WKDEsUxk26a1XStLsefE6hu0xGMe5OSiugOycHNJkdoSYiO/Ot7CZpUupfOVcm02lH5xgQj3Q/3itfUUppIL/n/40HfDY/ZlLhAvptOymW/Z3/PKiiwSMn9Mf+n7nal8rxXQ9Af83z21+4DGhPSmezRr0zT2v1K6fUq1Lq/vvsHClyVj35H+9Qeud+Ptt3oUrq6++/8NUuezJsb/KbuzxUaEMGkD38xK/ej0jUTvNnLpy8JtFIcvT9Bz+7MqYXc54o7f54M+mhDUj+5cEgWvD1pJ1a7TvZ3qPpT4rCFl9TIEeLiWlzTmAb1+XW7BZz1OekaZAvUB0n0/u4yMVBg/wpJdml228B+tH9ba6kK89n5MaYFPlZ1Bsbs+gB4frbbU7bSMrVD/h5/YHzajBYETBmvQJf+8ltvp4/XJu9uLR1z58qMuxm+XWXkAQi/XWj6OZ6M7+IivgMF1QOu+jtT9+vDEpwa8Q0N11ro/v8A0bYFtQDl1YZfEgSPjbTysJUbRzzlPPUGEXU0ol9AzgG8QlvzftdO11YjjlhBlTKoUsm9wX4HfP7bx+7n7o9yxeOc26wGsObvHAAfmrGTVmz5czGvDTkuMCg/wjlc8cPso25XFM6KVtrlwmWDUcVecqjFEW7wellV1EsZ88Sv8AG9Y04j+9RU5yV5TqIr0yvIpaw5R0sSwf4/TU3e8ZUAtP8A2vd2ycThM0vpkOAKMBM26ZpylpNbDhujk0X56lpzq0gMFRLXNs23WGlny0/UlO+Qm4cty3hwdFF6haYvSFcCPtbbMqpKeP8i2nZUFBY9bqASppBloCIF7Hbj7GYuQ3DUFIxbnZh6KTkAB6Upybj605qwrlthXMq1NisK3hCjNQl1Gjvco3qCn6Im8MKyKrKkGE2a2IrQo7XjpdANx2fZ0EgT7ZKNG18Vb5ECddKl6p84XjYUuCNt3xKpsWvS4OVrkYc6cXbkPjeamPci6GEdGey+ZBXAITWaL3yNlQSMnZ3l79hSxoUZ/JFfroAFWnnPgw9Kslr5kYt8PEzX0ebN2v0cFT4D0WVDArMGjLChX8dcc0YCHi35SC8FRsVCypnjN197kcRazyBpLXl2FGiu0MEo0X1BbPmWGvdCJu18HEoBcksQc5YEDF2zJOk/4qxj+yRB54gIRT2Tzlym0Afv8th2HDYUkrg7ZK5FHZfMNbfXx1xfsh0nRnj8oOAgDhgM8efs5lv7UXE67NomxPWVxFdy7IdALZbZzu+60S8vqNTh48bISWJDlTWUMAadXYO1jp+flQv9h82PNwvIAlpIeIOCPdqvtpJiv0mXYAkmhCFtZigCuei4gy8msGrbQA2kZ5WVIaz2ZVLsYIOYl5n8Hxrnww88CWV2UWRIgMCyqIc524yW01kwjkEwbKVHbJjjCkRZGnd3hFLseW9k3HU1zQgLavYaX3kAnystzGjCkqjVF/bDiG+47OissNDZg5HZUif4DFQgz5WzD28wouInzODgY0waVyr1DTqR1wVY+Ji3D0oIh/VFBoPaKBQL+TLg7D2mr1+yc4L5Rq2oiCgZ9ie+cL2lVrZl6d1w16yGLk5bEpB8F4CCJafpkFEVAmSXmrtAYs4c41LBoHjJFBaqUiqErrzrZqMsGc123jAJd6sRFFBInTRkT50FKyWtoTdqHfRIXjHCCWQqwVK0JElFSjXQjFPjR2puOmU8qQIcH/EFyWqZEcJ5Frj64XXYIBcYhLO/qCDKYiOwjso0b5PiltQBoqqfwA=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 97622666
+  displayTitle: seashell wind chime
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: fe1ed17434d43cc498a440dcdf1944c2,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

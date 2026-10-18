@@ -184,9 +184,10 @@ public static class LevelBucketLayoutGenerator
                     return;
                 }
 
-                int pick = UnityEngine.Random.Range(0, freeCells.Count);
-                int layoutIndex = freeCells[pick];
-                freeCells.RemoveAt(pick);
+                var wallCells = freeCells.FindAll(cell => cell < (LevelData.BucketLayoutRows - 2) * LevelData.BucketLayoutColumns);
+                if (wallCells.Count == 0) break;
+                int layoutIndex = wallCells[UnityEngine.Random.Range(0, wallCells.Count)];
+                freeCells.Remove(layoutIndex);
                 level.bucketLayout[layoutIndex] = LevelData.BucketLayoutWall;
             }
         }

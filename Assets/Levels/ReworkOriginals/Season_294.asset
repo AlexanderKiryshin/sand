@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Season_294
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4285689721
+  - serializedVersion: 2
+    rgba: 4293712593
+  - serializedVersion: 2
+    rgba: 4294637558
+  - serializedVersion: 2
+    rgba: 4289823337
+  - serializedVersion: 2
+    rgba: 4293312685
+  - serializedVersion: 2
+    rgba: 4293899406
+  - serializedVersion: 2
+    rgba: 4284303678
+  - serializedVersion: 2
+    rgba: 4279964688
+  - serializedVersion: 2
+    rgba: 4287457363
+  - serializedVersion: 2
+    rgba: 4289371286
+  - serializedVersion: 2
+    rgba: 4282002728
+  - serializedVersion: 2
+    rgba: 4291664768
+  encodedCells: S1:4:4096:C34ADB7D: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
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 0000000000000000fe00000000fe0000000000000000000000
+  conveyorDirections: 00000000000000000200000000020000000000000000000000
+  conveyorBucketCounts: 00000000000000000300000000030000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: journeys
+  campaignSeed: 30692916
+  displayTitle: Ski Lift above a Snowy Village
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 52ef9f4db6733c24e8675d2f74a59e1e,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -31,6 +31,13 @@ public class LevelPresentation : MonoBehaviour
         backdropTexture.Apply();
         backdropSprite = Sprite.Create(backdropTexture, new Rect(0, 0, 2, 128), new Vector2(0.5f, 0.5f));
         backdrop.sprite = backdropSprite;
+        // Keep the selected skin inside the base background, above its gradient.
+        // Separate Start callbacks must not race to place opaque siblings on top.
+        var theme = new GameObject("ThemeBackground", typeof(RectTransform), typeof(ThemeBackdropGraphic));
+        theme.transform.SetParent(backdrop.transform, false);
+        Stretch((RectTransform)theme.transform, 0);
+        theme.GetComponent<ThemeBackdropGraphic>().raycastTarget = false;
+
 
         var board = GameObject.Find("SandPanel");
         if (board != null)
@@ -49,14 +56,19 @@ public class LevelPresentation : MonoBehaviour
             }
             Image well = NewImage("SandWell", board.transform);
             well.transform.SetAsFirstSibling();
-            Stretch(well.rectTransform, 12);
+            // Keep the dark well behind the painting only — the bottom chrome stays
+            // the panel color so it does not draw a strip over the mosaic edge.
+            well.rectTransform.anchorMin = Vector2.zero;
+            well.rectTransform.anchorMax = Vector2.one;
+            well.rectTransform.offsetMin = new Vector2(12, 14);
+            well.rectTransform.offsetMax = new Vector2(-12, -12);
             well.color = new Color(0.13f, 0.22f, 0.25f);
             Image track = NewImage("PaintingProgressTrack", board.transform);
             track.rectTransform.anchorMin = new Vector2(0, 0);
             track.rectTransform.anchorMax = new Vector2(1, 0);
             track.rectTransform.pivot = new Vector2(0.5f, 0);
             track.rectTransform.offsetMin = new Vector2(12, 3);
-            track.rectTransform.offsetMax = new Vector2(-12, 8);
+            track.rectTransform.offsetMax = new Vector2(-12, 12);
             track.color = new Color(0.73f, 0.78f, 0.74f);
             progressFill = NewImage("PaintingProgress", track.transform);
             Stretch(progressFill.rectTransform, 0);

@@ -1,0 +1,35 @@
+{
+  "language": "ru",
+  "speed": 5.0,
+  "fps": 30,
+  "level": 9,
+  "background": "lake",
+  "tutorials": false,
+  "captions": false,
+  "victory_window_included": false,
+  "kept_source_frames": 769,
+  "kept_source_seconds": 25.633333333333333,
+  "output_frames": 154,
+  "duration_seconds": 5.133333333333334,
+  "audio": "Same speed as video, pitch preserved.",
+  "files": [
+    {
+      "name": "gameplay-ru-9x16-5x.mp4",
+      "bytes": 2165889,
+      "width": 1080,
+      "height": 1920,
+      "source_first_victory_frame": 769,
+      "full_decode": "PASS",
+      "no_victory_window": "PASS"
+    },
+    {
+      "name": "gameplay-ru-16x9-5x.mp4",
+      "bytes": 1418180,
+      "width": 1920,
+      "height": 1080,
+      "source_first_victory_frame": 769,
+      "full_decode": "PASS",
+      "no_victory_window": "PASS"
+    }
+  ]
+}

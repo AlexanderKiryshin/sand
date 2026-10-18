@@ -16,51 +16,61 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4291343691
+    rgba: 4279769119
   - serializedVersion: 2
-    rgba: 4287082484
+    rgba: 4292658099
   - serializedVersion: 2
-    rgba: 4291673272
+    rgba: 4288517265
   - serializedVersion: 2
-    rgba: 4283449140
+    rgba: 4281941564
   - serializedVersion: 2
-    rgba: 4291806065
+    rgba: 4283849816
   - serializedVersion: 2
-    rgba: 4290156945
+    rgba: 4284971647
   - serializedVersion: 2
-    rgba: 4289036652
+    rgba: 4281023371
   - serializedVersion: 2
-    rgba: 4288636737
-  - serializedVersion: 2
-    rgba: 4289037339
-  - serializedVersion: 2
-    rgba: 4289109191
-  - serializedVersion: 2
-    rgba: 4290354480
-  - serializedVersion: 2
-    rgba: 4292401379
-  encodedCells: S1:4:4096:053E1DEC:tVQ9j9s2GP4NRKHhoJs8FIGRpSAiNSi3HhKgm3DQlJvKhrwY2nQhldZTApzcMTjcXQh18nBXaDMKFxCYJVAjt837o/pQttN8AN36yJZpPu8X3w8qo9UeN+1k0gIT/EzbEZP3ZLsT+ARtOwvEcqnanWrAck8uw+bNMnxGk8tRBqvpFFL4trOw2OpNg/flx/aD57AduJ3Kp3wQ2WL6WXiTMbrZtJ1M/1W9+z72gFn7IzQXd+4sFl/uA3++qKZjQJPW/rr4ANZi+/Z5WD6ffl9NJovPUdWL/wnVJ9ar8V3/h/TC1rauLB78rU/reqfzwYEg8fDILqzWSlujFArSGq1B6B+gBokj4GxR1xZSxurAW1VZW51tuZE/C7aho8b2gbEHR2dHclserhVW5kF7M4ORm1Zpddt+B63ScpXQwCWXxiac857GIv7N+Qz/Er41wKXsN3SFELVKrDZwY8OuKa0xKtGyj/pHxH52r1zPA66uvOtc435KTKlUKohzojzCQ/W5tcpY4nvALbxwbkpYSwiHvHbua2OQDF5WJlDgE1E8hS8i5+OJyJ/iCLpKiCNNOLW1UqUFsreh/N7dyUl+aZHMPwTnzj3T2+PpArZ6Osn55DiPHGK9H47GSyqUrSrDqS9VMhznOeV5Hq28l7oy1Bvxu2+cc01nQk36LR9QKoTHS+e7rstyxS8er/2zmo5PdryQ1jT+l8vGe8+YXyd9T8BMDNJgnkud2m9BNYH3/p0gGkq4COa9f+Xj4DUwI090a8/TuTrVx1vrjL0MdMwF9a9ROJqb8+TKuS7fY+U7T5yMkiQgxK+bR02M/bc7PvJ+Zea4f4w2PV2s3aP8I0SMrYyW3OpaaTrJ4o/Yt4K+IlKpLa00OulF9CE5RyF5alEhAftpmaJEAx3vVeebF/Wp0jIpzZCc2pTr+qHuk2RM7T0SqQwZx3durtFJAXh3CY6Z54+Fit0O6/2i6yB+3yw2/XFBv2HtO+ebg2an6rqQ6O7J+anp1fDaB4VQFvce3merBqJ2Q6jyyscsYCw9ah/08xzvzm0oJbPZHDIWCWKhPE3nnWdZyDjQz3WVCjPwuS1vkEJ4if2KoftZvlr5d0UJi0anVBYXbnQS4wnZY9kqQxP4KMou/9qUF82q+WIUWDGWRbAPVlkVZ1nE1r3wL+Mc8ysidhCzPPCU2KS6iLJQOT4QlOdpUvSHDCTL3lBRlerKwTz4c5OSYGECFZ1A4Q06ZdDXnYuj0eeTsrCDCCOSSIJ/uJbkGn/AQmdkrHGyVj1mE/qh/YqkkGg45C3Dg+7sLp9IC/MyXCs0aGR93YRJAPIgEHf3U3CQkH/2lGQvQyK3aQ/tna1d9w1INIeVnMQBctuBHsPLojxbw51MMNdc9y+UotcMaR5JXDRwgRmOJRchhHC5iT6GdhY+4/xghekBhExVOgZJxyE1bw+hnyOdqJtRqQq3VzCiSkj0mN7+MEIQeQQH2Nca26rAFVQqLoa50QMdRmMIWSRx94ownMqWuLMGqSg1uiAW/MPZPw==
+    rgba: 4285376695
+  encodedCells: S1:4:4096:8872380E:vVXBcuM2DP0GNqSda+1uZq+2RO1eOQYVXbkCuL4mErm6eppEe01isfzsgk7a5rDn0uOhB48AH/AIeLP5X9Z9fvn8S2D/Bvdp+DUeL+ZAyzD9a9t+wMPnEqOn12HaXpB9VX3Eddxshm1FS8jvlqqq9h/99zfUUoh+ihV7b/cVfYyQyHtKR0o5x+J8gTfvB/bbDXpvU5i6acn5ErzXzKDqw+WiqspkIYR8pPz55abYSPM3VBQbXfAwZeDgHcUbvptd+6qyDW8+0jCw/5QyjR5b2r5FJOyBOQwxkqemajHlBRcA/4b3VBOga/rCO0zBAjM/WoCSdHU5QCh1/40o9hQDBdvlDkJTylJ490wY9Kd7X2rCaIhp6SAf4/aSzzBoH63Uk7eUYiYAOh9bSly9/9YBA0WK/rhkwBRynkJOsXlHm2YQ4kjTkRNgBmnyS2Z9wiXE4WGIX5IIr3niC4iOkI6ZVwgx9tq4P+c8n5Ibii1FoowxLzlNS4j6t3lOj/NfswBUeM55iXnKE6WFt0x1NcP89DjPt4Bko82eRmZ2hHxmfAlPj2aeS/mBNA356nmaiugZodlczdu9eBTz7XbfVwcuUWgoFApx861oPiOpgm+bL5XnJAB9wIKzdk8/4upunmf3uJ7LuoWyEsIFvx3H1q1ObD/Nb/iaUQEJIKeS4zhClO+4KPsspTEgxphLWnGMFK7n+ed8+jnP5cBaKCOFFM85dYmL9YNNp4LPp7U5CSGcYlSYlNsu56eH+YKX+PMt2x1/BEgrOTw/aiPMwz+4uOxzBI6/UjFlFk5YgcI4BjjsSVyci4WUfCZMSQnR8J2CxGm95t2IXb/rHTUrFwNw5VPLmFEgTfFU1piVg9/5AgfJEuP76so4yTkpyeckcxP96AkUjSMri35sqoNyJbRhhd1Bivl9fU/TNGIAGhqSqASXrSbGWcgC3+GYLWJkOa3eE8hWSAMEQqzNA+f6gEsbqVbcr2hJ7/uVFdbwTVjSFDL7OEW764HaOrTIMbysXam9+O6EZAHPGZQZUA8YdkNLGrdxpZB9b70YXSwPSIphVEZ7FwbuTNvqXgln1mY1/nCvOXvlhqiOThNq1FxVxPpboSjMBBAQlAzjeC10jA13ndUaLffcpjV3YKaI/Jjq+tzyc2nU3eJV79uebXTzwk+bzQjS4WhFH3sWLV4VDrW2eLT7+7xKEVgYTk328YpLwzOn1dbqiiS3bvp6D6BchBHUHR7AuNjyRLFUEVk08ajOLxzeGo/gOQ5g4HoqQ5WfaowtjJmpOFIIdsdMgMIhEHdvX60c+vaM5/O1cDySQO6Cs0ih7lf8AKj2wbfcITldZ+A5JmVdI9GygGeRAeshjItvU2kRoN7yk6yJ6JO1rUFrUEfLU3fhts9TSwPnB7o0pbU9oLV/UGwtsysDIPG0gFYeleOX4UGV5n0NkSs/5m6ceHaCtSC/aq15XqkW0YTEfxkeJoLU5txNLadWa9IhW2W5wClfl+HB+nGB+QfwXbWuySepbFEvd2HJ56hGe+YWnQqZXV0TTxM4OLDTc5dT4tbsSny2dgERx7gkYuVsW7LuOmvY2XhOsUsYOW1ME+GBeHDFHGlEpG50fwM=
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 000000000000000000fe0000feff00000000ff0000ff000000
-  conveyorDirections: 00000000000000000001000001000000000000000000000000
-  conveyorBucketCounts: 00000000000000000002000004000000000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: places
+  artTheme: ordinary
   campaignSeed: 12260612
-  displayTitle: Turquoise Salt Pools
+  displayTitle: red steam locomotive
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
-  keyGates: 0
+  keyGates: 1
   linkedBuckets: 1
-  largeBuckets: 0
+  largeBuckets: 1
   alternatingCrates: 0
   swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 7386436360417c94a8ad0322eeaf2c69,
     type: 2}
   usesTiles: 0

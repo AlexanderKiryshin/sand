@@ -1,0 +1,2064 @@
+1/1: buckets=14; empty=; layout=BBBBB/BBBBB/BBBB./...../.....
+1/2: buckets=14; empty=; layout=BBBBB/BBBBB/BBBB./...../.....
+1/3: buckets=14; empty=; layout=BBBBB/BBBBB/BBBB./...../.....
+2/1: buckets=12; empty=; layout=BBBBB/BBBBB/BB.../...../.....
+2/2: buckets=12; empty=; layout=BBBBB/BBBBB/BB.../...../.....
+2/3: buckets=12; empty=; layout=BBBBB/BBBBB/BB.../...../.....
+3/1: buckets=24; empty=; layout=BBBBB/BBBBB/BB#BB/BBBBB/BBBBB
+3/2: buckets=24; empty=; layout=BBBBB/BB#BB/BBBBB/BBBBB/BBBBB
+3/3: buckets=24; empty=; layout=BBBBB/#BBBB/BBBBB/BBBBB/BBBBB
+4/1: buckets=24; empty=; layout=BBBBB/BBBB#/BBBBB/BBBBB/BBBBB
+4/2: buckets=24; empty=; layout=BBBBB/BBB#B/BBBBB/BBBBB/BBBBB
+4/3: buckets=24; empty=; layout=BBBBB/BBBBB/BBBB#/BBBBB/BBBBB
+5/1: buckets=24; empty=; layout=BBBBB/BBBBB/BBB#B/BBBBB/BBBBB
+5/2: buckets=24; empty=; layout=BBBBB/BBBBB/#BBBB/BBBBB/BBBBB
+5/3: buckets=24; empty=; layout=BBBBB/B#BBB/BBBBB/BBBBB/BBBBB
+6/1: buckets=24; empty=; layout=BBBBB/BBBBB/B#BBB/BBBBB/BBBBB
+6/2: buckets=24; empty=; layout=BBBBB/BB#BB/BBBBB/BBBBB/BBBBB
+6/3: buckets=24; empty=; layout=BBBBB/B#BBB/BBBBB/BBBBB/BBBBB
+7/1: buckets=24; empty=; layout=BBBBB/BB#BB/BBBBB/BBBBB/BBBBB
+7/2: buckets=24; empty=; layout=BBBBB/BBBBB/B#BBB/BBBBB/BBBBB
+7/3: buckets=24; empty=; layout=BBBBB/#BBBB/BBBBB/BBBBB/BBBBB
+8/1: buckets=24; empty=; layout=BBBBB/B#BBB/BBBBB/BBBBB/BBBBB
+8/2: buckets=24; empty=; layout=BBBBB/B#BBB/BBBBB/BBBBB/BBBBB
+8/3: buckets=24; empty=; layout=BBBBB/BBBBB/BB#BB/BBBBB/BBBBB
+9/1: buckets=23; empty=; layout=BBBBB/B#BB#/BBBBB/BBBBB/BBBBB
+9/2: buckets=23; empty=; layout=BBBBB/BB##B/BBBBB/BBBBB/BBBBB
+9/3: buckets=23; empty=; layout=BBBBB/BBBB#/BBBB#/BBBBB/BBBBB
+10/1: buckets=24; empty=; layout=BBBBB/BBBBB/B#BBB/BBBBB/BBBBB
+10/2: buckets=24; empty=; layout=BBBBB/BB#BB/BBBBB/BBBBB/BBBBB
+10/3: buckets=24; empty=; layout=BBBBB/#BBBB/BBBBB/BBBBB/BBBBB
+11/1: buckets=24; empty=; layout=BBBBB/BBB#B/BBBBB/BBBBB/BBBBB
+11/2: buckets=24; empty=; layout=BBBBB/BBB#B/BBBBB/BBBBB/BBBBB
+11/3: buckets=24; empty=; layout=BBBBB/BBB#B/BBBBB/BBBBB/BBBBB
+12/1: buckets=24; empty=; layout=BBBBB/BBFBB/BBBBB/BBBBB/BBBBB
+12/2: buckets=24; empty=; layout=BBBBB/BBFBB/BBBBB/BBBBB/BBBBB
+12/3: buckets=24; empty=; layout=BBBBB/BBFBB/BBBBB/BBBBB/BBBBB
+13/1: buckets=24; empty=; layout=BBBBB/BBBBB/FBBBB/BBBBB/BBBBB
+13/2: buckets=24; empty=; layout=BBBBB/BBBBB/FBBBB/BBBBB/BBBBB
+13/3: buckets=24; empty=; layout=BBBBB/BBBBB/FBBBB/BBBBB/BBBBB
+14/1: buckets=23; empty=; layout=BBBBB/B#BBB/BBBBB/BBBFB/BBBBB
+14/2: buckets=23; empty=; layout=BBBBB/B#BBB/BBBBB/BBBFB/BBBBB
+14/3: buckets=23; empty=; layout=BBBBB/B#BBB/BBBBB/BBBFB/BBBBB
+15/1: buckets=23; empty=; layout=BBBBB/BBB#B/BBBBB/BBBBB/BFBBB
+15/2: buckets=23; empty=; layout=BBBBB/BBB#B/BBBBB/BBBBB/BFBBB
+15/3: buckets=23; empty=; layout=BBBBB/BBB#B/BBBBB/BBBBB/BFBBB
+16/1: buckets=23; empty=; layout=BBBBB/BBBBB/B#BFB/BBBBB/BBBBB
+16/2: buckets=23; empty=; layout=BBBBB/BBBBB/B#BFB/BBBBB/BBBBB
+16/3: buckets=23; empty=; layout=BBBBB/BBBBB/B#BFB/BBBBB/BBBBB
+17/1: buckets=24; empty=; layout=BBBBB/BBBBB/BFBBB/BBBBB/BBBBB
+17/2: buckets=24; empty=; layout=BBBBB/BBBBB/BFBBB/BBBBB/BBBBB
+17/3: buckets=24; empty=; layout=BBBBB/BBBBB/BFBBB/BBBBB/BBBBB
+18/1: buckets=24; empty=; layout=BBBBB/BBBBB/FBBBB/BBBBB/BBBBB
+18/2: buckets=24; empty=; layout=BBBBB/BBBBB/FBBBB/BBBBB/BBBBB
+18/3: buckets=24; empty=; layout=BBBBB/BBBBB/FBBBB/BBBBB/BBBBB
+19/1: buckets=23; empty=; layout=BBBBB/FB#BB/BBBBB/BBBBB/BBBBB
+19/2: buckets=23; empty=; layout=BBBBB/FB#BB/BBBBB/BBBBB/BBBBB
+19/3: buckets=23; empty=; layout=BBBBB/FB#BB/BBBBB/BBBBB/BBBBB
+20/1: buckets=24; empty=; layout=BBBBB/BBBBB/BBBBF/BBBBB/BBBBB
+20/2: buckets=24; empty=; layout=BBBBB/BBBBB/BBBBF/BBBBB/BBBBB
+20/3: buckets=24; empty=; layout=BBBBB/BBBBB/BBBBF/BBBBB/BBBBB
+21/1: buckets=23; empty=; layout=BBBBB/B#BBB/BBBBF/BBBBB/BBBBB
+21/2: buckets=23; empty=; layout=BBBBB/B#BBB/BBBBF/BBBBB/BBBBB
+21/3: buckets=23; empty=; layout=BBBBB/B#BBB/BBBBF/BBBBB/BBBBB
+22/1: buckets=23; empty=; layout=BBBBB/BBFBB/#BBBB/BBBBB/BBBBB
+22/2: buckets=23; empty=; layout=BBBBB/BBFBB/#BBBB/BBBBB/BBBBB
+22/3: buckets=23; empty=; layout=BBBBB/BBFBB/#BBBB/BBBBB/BBBBB
+23/1: buckets=23; empty=; layout=BBBBB/BBBBB/BBB#B/BBBBB/FBBBB
+23/2: buckets=23; empty=; layout=BBBBB/BBBBB/BBB#B/BBBBB/FBBBB
+23/3: buckets=23; empty=; layout=BBBBB/BBBBB/BBB#B/BBBBB/FBBBB
+24/1: buckets=23; empty=; layout=BBBBB/BBBFB/BFBBB/BBBBB/BBBBB
+24/2: buckets=23; empty=; layout=BBBBB/BBBFB/BFBBB/BBBBB/BBBBB
+24/3: buckets=23; empty=; layout=BBBBB/BBBFB/BFBBB/BBBBB/BBBBB
+25/1: buckets=22; empty=; layout=BBBBB/BB#FB/BBBBB/BBFBB/BBBBB
+25/2: buckets=22; empty=; layout=BBBBB/BB#FB/BBBBB/BBFBB/BBBBB
+25/3: buckets=22; empty=; layout=BBBBB/BB#FB/BBBBB/BBFBB/BBBBB
+26/1: buckets=20; empty=; layout=BBBBB/B##BB/BB#FB/BBBBB/BBBBF
+26/2: buckets=20; empty=; layout=BBBBB/B##BB/BB#FB/BBBBB/BBBBF
+26/3: buckets=20; empty=; layout=BBBBB/B##BB/BB#FB/BBBBB/BBBBF
+27/1: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BBFBB
+27/2: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BBFBB
+27/3: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BBFBB
+28/1: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBF/FBBBB/BBBBB
+28/2: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBF/FBBBB/BBBBB
+28/3: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBF/FBBBB/BBBBB
+29/1: buckets=23; empty=; layout=BBBBB/BBBBB/BFBBF/BBBBB/BBBBB
+29/2: buckets=23; empty=; layout=BBBBB/BBBBB/BFBBF/BBBBB/BBBBB
+29/3: buckets=23; empty=; layout=BBBBB/BBBBB/BFBBF/BBBBB/BBBBB
+30/1: buckets=22; empty=; layout=BBBBB/BBFBF/#BBBB/BBBBB/BBBBB
+30/2: buckets=22; empty=; layout=BBBBB/BBFBF/#BBBB/BBBBB/BBBBB
+30/3: buckets=22; empty=; layout=BBBBB/BBFBF/#BBBB/BBBBB/BBBBB
+31/1: buckets=23; empty=; layout=BBBBB/FBBFB/BBBBB/BBBBB/BBBBB
+31/2: buckets=23; empty=; layout=BBBBB/FBBFB/BBBBB/BBBBB/BBBBB
+31/3: buckets=23; empty=; layout=BBBBB/FBBFB/BBBBB/BBBBB/BBBBB
+32/1: buckets=23; empty=; layout=BBBBB/BBBFB/BFBBB/BBBBB/BBBBB
+32/2: buckets=23; empty=; layout=BBBBB/BBBFB/BFBBB/BBBBB/BBBBB
+32/3: buckets=23; empty=; layout=BBBBB/BBBFB/BFBBB/BBBBB/BBBBB
+33/1: buckets=23; empty=; layout=BBBBB/BBBBF/BBFBB/BBBBB/BBBBB
+33/2: buckets=23; empty=; layout=BBBBB/BBBBF/BBFBB/BBBBB/BBBBB
+33/3: buckets=23; empty=; layout=BBBBB/BBBBF/BBFBB/BBBBB/BBBBB
+34/1: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/BBFBF/BBBBB
+34/2: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/BBFBF/BBBBB
+34/3: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/BBFBF/BBBBB
+35/1: buckets=22; empty=; layout=BBBBB/BBBBF/BFBB#/BBBBB/BBBBB
+35/2: buckets=22; empty=; layout=BBBBB/BBBBF/BFBB#/BBBBB/BBBBB
+35/3: buckets=22; empty=; layout=BBBBB/BBBBF/BFBB#/BBBBB/BBBBB
+36/1: buckets=23; empty=; layout=BBBBB/BBBBB/BFBBF/BBBBB/BBBBB
+36/2: buckets=23; empty=; layout=BBBBB/BBBBB/BFBBF/BBBBB/BBBBB
+36/3: buckets=23; empty=; layout=BBBBB/BBBBB/BFBBF/BBBBB/BBBBB
+37/1: buckets=22; empty=; layout=BBBBB/BBBFB/BBB#B/BFBBB/BBBBB
+37/2: buckets=22; empty=; layout=BBBBB/BBBFB/BBB#B/BFBBB/BBBBB
+37/3: buckets=22; empty=; layout=BBBBB/BBBFB/BBB#B/BFBBB/BBBBB
+38/1: buckets=21; empty=; layout=BBBBB/BBBB#/#BFBB/BBBBB/BFBBB
+38/2: buckets=21; empty=; layout=BBBBB/BBBB#/#BFBB/BBBBB/BFBBB
+38/3: buckets=21; empty=; layout=BBBBB/BBBB#/#BFBB/BBBBB/BFBBB
+39/1: buckets=21; empty=; layout=BBBBB/BBB#B/BB#BB/BBBBB/FBBFB
+39/2: buckets=21; empty=; layout=BBBBB/BBB#B/BB#BB/BBBBB/FBBFB
+39/3: buckets=21; empty=; layout=BBBBB/BBB#B/BB#BB/BBBBB/FBBFB
+40/1: buckets=22; empty=; layout=BBBBB/BB#BB/BBBFB/FBBBB/BBBBB
+40/2: buckets=22; empty=; layout=BBBBB/BB#BB/BBBFB/FBBBB/BBBBB
+40/3: buckets=22; empty=; layout=BBBBB/BB#BB/BBBFB/FBBBB/BBBBB
+41/1: buckets=22; empty=; layout=BBBBB/#FBBB/BBFBB/BBBBB/BBBBB
+41/2: buckets=22; empty=; layout=BBBBB/#FBBB/BBFBB/BBBBB/BBBBB
+41/3: buckets=22; empty=; layout=BBBBB/#FBBB/BBFBB/BBBBB/BBBBB
+42/1: buckets=22; empty=; layout=BBBBB/BBBBB/BB#FB/BBBFB/BBBBB
+42/2: buckets=22; empty=; layout=BBBBB/BBBBB/BB#FB/BBBFB/BBBBB
+42/3: buckets=22; empty=; layout=BBBBB/BBBBB/BB#FB/BBBFB/BBBBB
+43/1: buckets=22; empty=; layout=BBBBB/FBBBB/#BBBF/BBBBB/BBBBB
+43/2: buckets=22; empty=; layout=BBBBB/FBBBB/#BBBF/BBBBB/BBBBB
+43/3: buckets=22; empty=; layout=BBBBB/FBBBB/#BBBF/BBBBB/BBBBB
+44/1: buckets=23; empty=; layout=BBBBB/BBFBB/BBBBB/BBBBF/BBBBB
+44/2: buckets=23; empty=; layout=BBBBB/BBFBB/BBBBB/BBBBF/BBBBB
+44/3: buckets=23; empty=; layout=BBBBB/BBFBB/BBBBB/BBBBF/BBBBB
+45/1: buckets=21; empty=; layout=BBBBB/B#BBB/BB#BB/BBBBF/BBFBB
+45/2: buckets=21; empty=; layout=BBBBB/B#BBB/BB#BB/BBBBF/BBFBB
+45/3: buckets=21; empty=; layout=BBBBB/B#BBB/BB#BB/BBBBF/BBFBB
+46/1: buckets=21; empty=; layout=BBBBB/B#BBB/BB#BB/FBBBB/BBBFB
+46/2: buckets=21; empty=; layout=BBBBB/B#BBB/BB#BB/FBBBB/BBBFB
+46/3: buckets=21; empty=; layout=BBBBB/B#BBB/BB#BB/FBBBB/BBBFB
+47/1: buckets=22; empty=; layout=BBBBB/BBFBB/B#BBB/BBBBB/BBBBF
+47/2: buckets=22; empty=; layout=BBBBB/BBFBB/B#BBB/BBBBB/BBBBF
+47/3: buckets=22; empty=; layout=BBBBB/BBFBB/B#BBB/BBBBB/BBBBF
+48/1: buckets=22; empty=; layout=BBBBB/BBBBF/#FBBB/BBBBB/BBBBB
+48/2: buckets=22; empty=; layout=BBBBB/BBBBF/#FBBB/BBBBB/BBBBB
+48/3: buckets=22; empty=; layout=BBBBB/BBBBF/#FBBB/BBBBB/BBBBB
+49/1: buckets=22; empty=; layout=BBBBB/BB#BB/BBBBF/BBBBB/BBFBB
+49/2: buckets=22; empty=; layout=BBBBB/BB#BB/BBBBF/BBBBB/BBFBB
+49/3: buckets=22; empty=; layout=BBBBB/BB#BB/BBBBF/BBBBB/BBFBB
+50/1: buckets=23; empty=; layout=BBBBB/BBBBB/BFBBB/BBBBB/BBFBB
+50/2: buckets=23; empty=; layout=BBBBB/BBBBB/BFBBB/BBBBB/BBFBB
+50/3: buckets=23; empty=; layout=BBBBB/BBBBB/BFBBB/BBBBB/BBFBB
+51/1: buckets=21; empty=; layout=BBBBB/#BFB#/BBBBB/BBBFB/BBBBB
+51/2: buckets=21; empty=; layout=BBBBB/#BFB#/BBBBB/BBBFB/BBBBB
+51/3: buckets=21; empty=; layout=BBBBB/#BFB#/BBBBB/BBBFB/BBBBB
+52/1: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/BFBFB/BBBBB
+52/2: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/BFBFB/BBBBB
+52/3: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/BFBFB/BBBBB
+53/1: buckets=22; empty=; layout=BBBBB/BBBBB/#BBFB/FBBBB/BBBBB
+53/2: buckets=22; empty=; layout=BBBBB/BBBBB/#BBFB/FBBBB/BBBBB
+53/3: buckets=22; empty=; layout=BBBBB/BBBBB/#BBFB/FBBBB/BBBBB
+54/1: buckets=22; empty=; layout=BBBBB/FBF#B/BBBBB/BBBBB/BBBBB
+54/2: buckets=22; empty=; layout=BBBBB/FBF#B/BBBBB/BBBBB/BBBBB
+54/3: buckets=22; empty=; layout=BBBBB/FBF#B/BBBBB/BBBBB/BBBBB
+55/1: buckets=23; empty=; layout=BBBBB/FBBFB/BBBBB/BBBBB/BBBBB
+55/2: buckets=23; empty=; layout=BBBBB/FBBFB/BBBBB/BBBBB/BBBBB
+55/3: buckets=23; empty=; layout=BBBBB/FBBFB/BBBBB/BBBBB/BBBBB
+56/1: buckets=21; empty=; layout=BBBBB/B#F#B/BBBBB/BBBFB/BBBBB
+56/2: buckets=21; empty=; layout=BBBBB/B#F#B/BBBBB/BBBFB/BBBBB
+56/3: buckets=21; empty=; layout=BBBBB/B#F#B/BBBBB/BBBFB/BBBBB
+57/1: buckets=22; empty=; layout=BBBBB/BBFB#/BBBBB/BFBBB/BBBBB
+57/2: buckets=22; empty=; layout=BBBBB/BBFB#/BBBBB/BFBBB/BBBBB
+57/3: buckets=22; empty=; layout=BBBBB/BBFB#/BBBBB/BFBBB/BBBBB
+58/1: buckets=17; empty=; layout=BBBBB/B.F#B/#.BBF/B.BBB/B.BBB
+58/2: buckets=17; empty=; layout=BBBBB/B.F#B/#.BBF/B.BBB/B.BBB
+58/3: buckets=17; empty=; layout=BBBBB/B.F#B/#.BBF/B.BBB/B.BBB
+59/1: buckets=17; empty=; layout=BBBBB/B#.#B/FB.BF/BB.BB/BB.BB
+59/2: buckets=17; empty=; layout=BBBBB/B#.#B/FB.BF/BB.BB/BB.BB
+59/3: buckets=17; empty=; layout=BBBBB/B#.#B/FB.BF/BB.BB/BB.BB
+60/1: buckets=17; empty=; layout=BBBBB/.FBBF/.B##B/.BBBB/.BBBB
+60/2: buckets=17; empty=; layout=BBBBB/.FBBF/.B##B/.BBBB/.BBBB
+60/3: buckets=17; empty=; layout=BBBBB/.FBBF/.B##B/.BBBB/.BBBB
+61/1: buckets=18; empty=; layout=BBBBB/BF#.B/BBFB#/BBB.B/BBB.B
+61/2: buckets=18; empty=; layout=BBBBB/BF#.B/BBFB#/BBB.B/BBB.B
+61/3: buckets=18; empty=; layout=BBBBB/BF#.B/BBFB#/BBB.B/BBB.B
+62/1: buckets=17; empty=; layout=BBBBB/#.#BF/B.BFB/B.BBB/B.BBB
+62/2: buckets=17; empty=; layout=BBBBB/#.#BF/B.BFB/B.BBB/B.BBB
+62/3: buckets=17; empty=; layout=BBBBB/#.#BF/B.BFB/B.BBB/B.BBB
+63/1: buckets=17; empty=; layout=BBBBB/F.#B#/B.BFB/B.BBB/B.BBB
+63/2: buckets=17; empty=; layout=BBBBB/F.#B#/B.BFB/B.BBB/B.BBB
+63/3: buckets=17; empty=; layout=BBBBB/F.#B#/B.BFB/B.BBB/B.BBB
+64/1: buckets=18; empty=; layout=BBBBB/BFB.B/BB#.F/BBB.B/BBB.B
+64/2: buckets=18; empty=; layout=BBBBB/BFB.B/BB#.F/BBB.B/BBB.B
+64/3: buckets=18; empty=; layout=BBBBB/BFB.B/BB#.F/BBB.B/BBB.B
+65/1: buckets=18; empty=; layout=BBBBB/#.FBB/B.BBF/B.BBB/B.BBB
+65/2: buckets=18; empty=; layout=BBBBB/#.FBB/B.BBF/B.BBB/B.BBB
+65/3: buckets=18; empty=; layout=BBBBB/#.FBB/B.BBF/B.BBB/B.BBB
+66/1: buckets=17; empty=; layout=BBBBB/#FB#B/F#.BB/BB.BB/BB.BB
+66/2: buckets=17; empty=; layout=BBBBB/#FB#B/F#.BB/BB.BB/BB.BB
+66/3: buckets=17; empty=; layout=BBBBB/#FB#B/F#.BB/BB.BB/BB.BB
+67/1: buckets=18; empty=; layout=BBBBB/B.#FB/FB#BB/B.BBB/B.BBB
+67/2: buckets=18; empty=; layout=BBBBB/B.#FB/FB#BB/B.BBB/B.BBB
+67/3: buckets=18; empty=; layout=BBBBB/B.#FB/FB#BB/B.BBB/B.BBB
+68/1: buckets=17; empty=; layout=BBBBB/BF.##/BB.FB/BB.BB/BB.BB
+68/2: buckets=17; empty=; layout=BBBBB/BF.##/BB.FB/BB.BB/BB.BB
+68/3: buckets=17; empty=; layout=BBBBB/BF.##/BB.FB/BB.BB/BB.BB
+69/1: buckets=17; empty=; layout=BBBBB/#FF.B/#BB.B/BBB.B/BBB.B
+69/2: buckets=17; empty=; layout=BBBBB/#FF.B/#BB.B/BBB.B/BBB.B
+69/3: buckets=17; empty=; layout=BBBBB/#FF.B/#BB.B/BBB.B/BBB.B
+70/1: buckets=17; empty=; layout=BBBBB/B#.FB/#BBF#/BB.BB/BB.BB
+70/2: buckets=17; empty=; layout=BBBBB/B#.FB/#BBF#/BB.BB/BB.BB
+70/3: buckets=17; empty=; layout=BBBBB/B#.FB/#BBF#/BB.BB/BB.BB
+71/1: buckets=18; empty=; layout=BBBBB/BF.BB/#BBF#/BB.BB/BB.BB
+71/2: buckets=18; empty=; layout=BBBBB/BF.BB/#BBF#/BB.BB/BB.BB
+71/3: buckets=18; empty=; layout=BBBBB/BF.BB/#BBF#/BB.BB/BB.BB
+72/1: buckets=18; empty=; layout=BBBBB/BBF.B/B#B.F/BBB.B/BBB.B
+72/2: buckets=18; empty=; layout=BBBBB/BBF.B/B#B.F/BBB.B/BBB.B
+72/3: buckets=18; empty=; layout=BBBBB/BBF.B/B#B.F/BBB.B/BBB.B
+73/1: buckets=17; empty=; layout=BBBBB/BF.B#/B#.BF/BB.BB/BB.BB
+73/2: buckets=17; empty=; layout=BBBBB/BF.B#/B#.BF/BB.BB/BB.BB
+73/3: buckets=17; empty=; layout=BBBBB/BF.B#/B#.BF/BB.BB/BB.BB
+74/1: buckets=17; empty=; layout=BBBBB/FB.B#/B#BF#/BB.BB/BB.BB
+74/2: buckets=17; empty=; layout=BBBBB/FB.B#/B#BF#/BB.BB/BB.BB
+74/3: buckets=17; empty=; layout=BBBBB/FB.B#/B#BF#/BB.BB/BB.BB
+75/1: buckets=17; empty=; layout=BBBBB/B.FB#/#.BFB/B.BBB/B.BBB
+75/2: buckets=17; empty=; layout=BBBBB/B.FB#/#.BFB/B.BBB/B.BBB
+75/3: buckets=17; empty=; layout=BBBBB/B.FB#/#.BFB/B.BBB/B.BBB
+76/1: buckets=19; empty=; layout=BBBBB/B.BBF/B.FBB/B.BBB/B.BBB
+76/2: buckets=19; empty=; layout=BBBBB/B.BBF/B.FBB/B.BBB/B.BBB
+76/3: buckets=19; empty=; layout=BBBBB/B.BBF/B.FBB/B.BBB/B.BBB
+77/1: buckets=18; empty=; layout=BBBBB/B.##B/FBFBB/B.BBB/B.BBB
+77/2: buckets=18; empty=; layout=BBBBB/B.##B/FBFBB/B.BBB/B.BBB
+77/3: buckets=18; empty=; layout=BBBBB/B.##B/FBFBB/B.BBB/B.BBB
+78/1: buckets=17; empty=; layout=BBBBB/#F.#B/BBBF#/BB.BB/BB.BB
+78/2: buckets=17; empty=; layout=BBBBB/#F.#B/BBBF#/BB.BB/BB.BB
+78/3: buckets=17; empty=; layout=BBBBB/#F.#B/BBBF#/BB.BB/BB.BB
+79/1: buckets=17; empty=; layout=BBBBB/.BBBF/.##FB/.BBBB/.BBBB
+79/2: buckets=17; empty=; layout=BBBBB/.BBBF/.##FB/.BBBB/.BBBB
+79/3: buckets=17; empty=; layout=BBBBB/.BBBF/.##FB/.BBBB/.BBBB
+80/1: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+80/2: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+80/3: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+81/1: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+81/2: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+81/3: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+82/1: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+82/2: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+82/3: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+83/1: buckets=9; empty=; layout=BBBBB/BBBB./#F#F#/...../.....
+83/2: buckets=9; empty=; layout=BBBBB/BBBB./#F#F#/...../.....
+83/3: buckets=9; empty=; layout=BBBBB/BBBB./#F#F#/...../.....
+84/1: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+84/2: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+84/3: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+85/1: buckets=9; empty=; layout=BBBBB/BBBB./###F#/...../.....
+85/2: buckets=9; empty=; layout=BBBBB/BBBB./###F#/...../.....
+85/3: buckets=9; empty=; layout=BBBBB/BBBB./###F#/...../.....
+86/1: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+86/2: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+86/3: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+87/1: buckets=10; empty=; layout=BBBBB/BBBBB/##F#F/...../.....
+87/2: buckets=10; empty=; layout=BBBBB/BBBBB/##F#F/...../.....
+87/3: buckets=10; empty=; layout=BBBBB/BBBBB/##F#F/...../.....
+88/1: buckets=10; empty=; layout=BBBBB/BBBBB/#F##F/...../.....
+88/2: buckets=10; empty=; layout=BBBBB/BBBBB/#F##F/...../.....
+88/3: buckets=10; empty=; layout=BBBBB/BBBBB/#F##F/...../.....
+89/1: buckets=9; empty=; layout=BBBBB/BBBB./FF###/...../.....
+89/2: buckets=9; empty=; layout=BBBBB/BBBB./FF###/...../.....
+89/3: buckets=9; empty=; layout=BBBBB/BBBB./FF###/...../.....
+90/1: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+90/2: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+90/3: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+91/1: buckets=10; empty=; layout=BBBBB/BBBBB/###FF/...../.....
+91/2: buckets=10; empty=; layout=BBBBB/BBBBB/###FF/...../.....
+91/3: buckets=10; empty=; layout=BBBBB/BBBBB/###FF/...../.....
+92/1: buckets=17; empty=; layout=BBBBB/.B#F#/.FBBB/.BBBB/.BBBB
+92/2: buckets=17; empty=; layout=BBBBB/.B#F#/.FBBB/.BBBB/.BBBB
+92/3: buckets=17; empty=; layout=BBBBB/.B#F#/.FBBB/.BBBB/.BBBB
+93/1: buckets=18; empty=; layout=BBBBB/B#F.B/BBFB#/BBB.B/BBB.B
+93/2: buckets=18; empty=; layout=BBBBB/B#F.B/BBFB#/BBB.B/BBB.B
+93/3: buckets=18; empty=; layout=BBBBB/B#F.B/BBFB#/BBB.B/BBB.B
+94/1: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+94/2: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+94/3: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+95/1: buckets=9; empty=; layout=BBBBB/BBBB./###F#/...../.....
+95/2: buckets=9; empty=; layout=BBBBB/BBBB./###F#/...../.....
+95/3: buckets=9; empty=; layout=BBBBB/BBBB./###F#/...../.....
+96/1: buckets=17; empty=; layout=BBBBB/.B#BF/.FB#B/.BBBB/.BBBB
+96/2: buckets=17; empty=; layout=BBBBB/.B#BF/.FB#B/.BBBB/.BBBB
+96/3: buckets=17; empty=; layout=BBBBB/.B#BF/.FB#B/.BBBB/.BBBB
+97/1: buckets=17; empty=; layout=BBBBB/F#.BB/BB.F#/BB.BB/BB.BB
+97/2: buckets=17; empty=; layout=BBBBB/F#.BB/BB.F#/BB.BB/BB.BB
+97/3: buckets=17; empty=; layout=BBBBB/F#.BB/BB.F#/BB.BB/BB.BB
+98/1: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+98/2: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+98/3: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+99/1: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+99/2: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+99/3: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+100/1: buckets=18; empty=; layout=BBBBB/#F.BB/BB.BF/BB.BB/BB.BB
+100/2: buckets=18; empty=; layout=BBBBB/#F.BB/BB.BF/BB.BB/BB.BB
+100/3: buckets=18; empty=; layout=BBBBB/#F.BB/BB.BF/BB.BB/BB.BB
+101/1: buckets=18; empty=; layout=BBBBB/BF#BF/BB#.B/BBB.B/BBB.B
+101/2: buckets=18; empty=; layout=BBBBB/BF#BF/BB#.B/BBB.B/BBB.B
+101/3: buckets=18; empty=; layout=BBBBB/BF#BF/BB#.B/BBB.B/BBB.B
+102/1: buckets=22; empty=; layout=BBBBB/#BBFB/BBBBB/BBFBB/BBBBB
+102/2: buckets=22; empty=; layout=BBBBB/#BBFB/BBBBB/BBFBB/BBBBB
+102/3: buckets=22; empty=; layout=BBBBB/#BBFB/BBBBB/BBFBB/BBBBB
+103/1: buckets=21; empty=; layout=BBBBB/BBFBB/B#B#B/BBBBB/BBBFB
+103/2: buckets=21; empty=; layout=BBBBB/BBFBB/B#B#B/BBBBB/BBBFB
+103/3: buckets=21; empty=; layout=BBBBB/BBFBB/B#B#B/BBBBB/BBBFB
+104/1: buckets=15; empty=; layout=BBBBB/BF##B/B###B/B..FB/BBBB.
+104/2: buckets=15; empty=; layout=BBBBB/BF##B/B###B/B..FB/BBBB.
+104/3: buckets=15; empty=; layout=BBBBB/BF##B/B###B/B..FB/BBBB.
+105/1: buckets=17; empty=; layout=BBBBB/.BBB#/.#FFB/.BBBB/.BBBB
+105/2: buckets=17; empty=; layout=BBBBB/.BBB#/.#FFB/.BBBB/.BBBB
+105/3: buckets=17; empty=; layout=BBBBB/.BBB#/.#FFB/.BBBB/.BBBB
+106/1: buckets=22; empty=; layout=BBBBB/BBBBB/#BBFB/BBBBB/BBBFB
+106/2: buckets=22; empty=; layout=BBBBB/BBBBB/#BBFB/BBBBB/BBBFB
+106/3: buckets=22; empty=; layout=BBBBB/BBBBB/#BBFB/BBBBB/BBBFB
+107/1: buckets=21; empty=; layout=BBBBB/FB#BB/BB#BF/BBBBB/BBBBB
+107/2: buckets=21; empty=; layout=BBBBB/FB#BB/BB#BF/BBBBB/BBBBB
+107/3: buckets=21; empty=; layout=BBBBB/FB#BB/BB#BF/BBBBB/BBBBB
+108/1: buckets=17; empty=; layout=BBBBB/#B.#B/BB.FF/BB.BB/BB.BB
+108/2: buckets=17; empty=; layout=BBBBB/#B.#B/BB.FF/BB.BB/BB.BB
+108/3: buckets=17; empty=; layout=BBBBB/#B.#B/BB.FF/BB.BB/BB.BB
+109/1: buckets=22; empty=; layout=BBBBB/BBB#B/BBBBB/BBBBF/BBBBF
+109/2: buckets=22; empty=; layout=BBBBB/BBB#B/BBBBB/BBBBF/BBBBF
+109/3: buckets=22; empty=; layout=BBBBB/BBB#B/BBBBB/BBBBF/BBBBF
+110/1: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+110/2: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+110/3: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+111/1: buckets=17; empty=; layout=BBBBB/BBF.#/#FB.B/BBB.B/BBB.B
+111/2: buckets=17; empty=; layout=BBBBB/BBF.#/#FB.B/BBB.B/BBB.B
+111/3: buckets=17; empty=; layout=BBBBB/BBF.#/#FB.B/BBB.B/BBB.B
+112/1: buckets=22; empty=; layout=BBBBB/BFBBF/BBBB#/BBBBB/BBBBB
+112/2: buckets=22; empty=; layout=BBBBB/BFBBF/BBBB#/BBBBB/BBBBB
+112/3: buckets=22; empty=; layout=BBBBB/BFBBF/BBBB#/BBBBB/BBBBB
+113/1: buckets=18; empty=; layout=BBBBB/B.B#B/B.FFB/B.BBB/B.BBB
+113/2: buckets=18; empty=; layout=BBBBB/B.B#B/B.FFB/B.BBB/B.BBB
+113/3: buckets=18; empty=; layout=BBBBB/B.B#B/B.FFB/B.BBB/B.BBB
+114/1: buckets=22; empty=; layout=BBBBB/BBBFB/#BBBF/BBBBB/BBBBB
+114/2: buckets=22; empty=; layout=BBBBB/BBBFB/#BBBF/BBBBB/BBBBB
+114/3: buckets=22; empty=; layout=BBBBB/BBBFB/#BBBF/BBBBB/BBBBB
+115/1: buckets=22; empty=; layout=BBBBB/BFBBB/BBB#B/BBBFB/BBBBB
+115/2: buckets=22; empty=; layout=BBBBB/BFBBB/BBB#B/BBBFB/BBBBB
+115/3: buckets=22; empty=; layout=BBBBB/BFBBB/BBB#B/BBBFB/BBBBB
+116/1: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+116/2: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+116/3: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+117/1: buckets=17; empty=; layout=BBBBB/.BF##/.FBBB/.BBBB/.BBBB
+117/2: buckets=17; empty=; layout=BBBBB/.BF##/.FBBB/.BBBB/.BBBB
+117/3: buckets=17; empty=; layout=BBBBB/.BF##/.FBBB/.BBBB/.BBBB
+118/1: buckets=22; empty=; layout=BBBBB/BBBBF/BBF#B/BBBBB/BBBBB
+118/2: buckets=22; empty=; layout=BBBBB/BBBBF/BBF#B/BBBBB/BBBBB
+118/3: buckets=22; empty=; layout=BBBBB/BBBBF/BBF#B/BBBBB/BBBBB
+119/1: buckets=22; empty=; layout=BBBBB/FBBB#/BBBFB/BBBBB/BBBBB
+119/2: buckets=22; empty=; layout=BBBBB/FBBB#/BBBFB/BBBBB/BBBBB
+119/3: buckets=22; empty=; layout=BBBBB/FBBB#/BBBFB/BBBBB/BBBBB
+120/1: buckets=19; empty=; layout=BBBBB/BBBFF/#B.BB/BB.BB/BB.BB
+120/2: buckets=19; empty=; layout=BBBBB/BBBFF/#B.BB/BB.BB/BB.BB
+120/3: buckets=19; empty=; layout=BBBBB/BBBFF/#B.BB/BB.BB/BB.BB
+121/1: buckets=23; empty=; layout=BBBBB/BBBBF/BFBBB/BBBBB/BBBBB
+121/2: buckets=23; empty=; layout=BBBBB/BBBBF/BFBBB/BBBBB/BBBBB
+121/3: buckets=23; empty=; layout=BBBBB/BBBBF/BFBBB/BBBBB/BBBBB
+122/1: buckets=10; empty=; layout=BBBBB/BBBBB/#F##F/...../.....
+122/2: buckets=10; empty=; layout=BBBBB/BBBBB/#F##F/...../.....
+122/3: buckets=10; empty=; layout=BBBBB/BBBBB/#F##F/...../.....
+123/1: buckets=18; empty=; layout=BBBBB/BFFBB/B##.B/BBB.B/BBB.B
+123/2: buckets=18; empty=; layout=BBBBB/BFFBB/B##.B/BBB.B/BBB.B
+123/3: buckets=18; empty=; layout=BBBBB/BFFBB/B##.B/BBB.B/BBB.B
+124/1: buckets=23; empty=; layout=BBBBB/BFFBB/BBBBB/BBBBB/BBBBB
+124/2: buckets=23; empty=; layout=BBBBB/BFFBB/BBBBB/BBBBB/BBBBB
+124/3: buckets=23; empty=; layout=BBBBB/BFFBB/BBBBB/BBBBB/BBBBB
+125/1: buckets=18; empty=; layout=BBBBB/FBF#B/B.#BB/B.BBB/B.BBB
+125/2: buckets=18; empty=; layout=BBBBB/FBF#B/B.#BB/B.BBB/B.BBB
+125/3: buckets=18; empty=; layout=BBBBB/FBF#B/B.#BB/B.BBB/B.BBB
+126/1: buckets=22; empty=; layout=BBBBB/BBFBB/BBBB#/BFBBB/BBBBB
+126/2: buckets=22; empty=; layout=BBBBB/BBFBB/BBBB#/BFBBB/BBBBB
+126/3: buckets=22; empty=; layout=BBBBB/BBFBB/BBBB#/BFBBB/BBBBB
+127/1: buckets=21; empty=; layout=BBBBB/BBBB#/BFBB#/BBBFB/BBBBB
+127/2: buckets=21; empty=; layout=BBBBB/BBBB#/BFBB#/BBBFB/BBBBB
+127/3: buckets=21; empty=; layout=BBBBB/BBBB#/BFBB#/BBBFB/BBBBB
+128/1: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+128/2: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+128/3: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+129/1: buckets=17; empty=; layout=BBBBB/BB.#B/#F.BF/BB.BB/BB.BB
+129/2: buckets=17; empty=; layout=BBBBB/BB.#B/#F.BF/BB.BB/BB.BB
+129/3: buckets=17; empty=; layout=BBBBB/BB.#B/#F.BF/BB.BB/BB.BB
+130/1: buckets=23; empty=; layout=BBBBB/BBBBF/BBBBB/BBFBB/BBBBB
+130/2: buckets=23; empty=; layout=BBBBB/BBBBF/BBBBB/BBFBB/BBBBB
+130/3: buckets=23; empty=; layout=BBBBB/BBBBF/BBBBB/BBFBB/BBBBB
+131/1: buckets=22; empty=; layout=BBBBB/BBBBB/BB#BB/BBBBF/BFBBB
+131/2: buckets=22; empty=; layout=BBBBB/BBBBB/BB#BB/BBBBF/BFBBB
+131/3: buckets=22; empty=; layout=BBBBB/BBBBB/BB#BB/BBBBF/BFBBB
+132/1: buckets=18; empty=; layout=BBBBB/B.B#B/BBFF#/B.BBB/B.BBB
+132/2: buckets=18; empty=; layout=BBBBB/B.B#B/BBFF#/B.BBB/B.BBB
+132/3: buckets=18; empty=; layout=BBBBB/B.B#B/BBFF#/B.BBB/B.BBB
+133/1: buckets=21; empty=; layout=BBBBB/BFB##/BBBBB/BBBBB/BBBFB
+133/2: buckets=21; empty=; layout=BBBBB/BFB##/BBBBB/BBBBB/BBBFB
+133/3: buckets=21; empty=; layout=BBBBB/BFB##/BBBBB/BBBBB/BBBFB
+134/1: buckets=9; empty=; layout=BBBBB/BBBB./#F#F#/...../.....
+134/2: buckets=9; empty=; layout=BBBBB/BBBB./#F#F#/...../.....
+134/3: buckets=9; empty=; layout=BBBBB/BBBB./#F#F#/...../.....
+135/1: buckets=18; empty=; layout=BBBBB/#BFBB/BFB.#/BBB.B/BBB.B
+135/2: buckets=18; empty=; layout=BBBBB/#BFBB/BFB.#/BBB.B/BBB.B
+135/3: buckets=18; empty=; layout=BBBBB/#BFBB/BFB.#/BBB.B/BBB.B
+136/1: buckets=22; empty=; layout=BBBBB/BFBB#/BBBBB/BBBFB/BBBBB
+136/2: buckets=22; empty=; layout=BBBBB/BFBB#/BBBBB/BBBFB/BBBBB
+136/3: buckets=22; empty=; layout=BBBBB/BFBB#/BBBBB/BBBFB/BBBBB
+137/1: buckets=17; empty=; layout=BBBBB/BBF.#/BFB.#/BBB.B/BBB.B
+137/2: buckets=17; empty=; layout=BBBBB/BBF.#/BFB.#/BBB.B/BBB.B
+137/3: buckets=17; empty=; layout=BBBBB/BBF.#/BFB.#/BBB.B/BBB.B
+138/1: buckets=21; empty=; layout=BBBBB/BB#BB/BB#BB/BFBBB/BBBBF
+138/2: buckets=21; empty=; layout=BBBBB/BB#BB/BB#BB/BFBBB/BBBBF
+138/3: buckets=21; empty=; layout=BBBBB/BB#BB/BB#BB/BFBBB/BBBBF
+139/1: buckets=22; empty=; layout=BBBBB/BBFBB/#BBBB/BBBBB/BFBBB
+139/2: buckets=22; empty=; layout=BBBBB/BBFBB/#BBBB/BBBBB/BFBBB
+139/3: buckets=22; empty=; layout=BBBBB/BBFBB/#BBBB/BBBBB/BFBBB
+140/1: buckets=10; empty=; layout=BBBBB/BBBBB/##F#F/...../.....
+140/2: buckets=10; empty=; layout=BBBBB/BBBBB/##F#F/...../.....
+140/3: buckets=10; empty=; layout=BBBBB/BBBBB/##F#F/...../.....
+141/1: buckets=17; empty=; layout=BBBBB/FB.FB/B#.#B/BB.BB/BB.BB
+141/2: buckets=17; empty=; layout=BBBBB/FB.FB/B#.#B/BB.BB/BB.BB
+141/3: buckets=17; empty=; layout=BBBBB/FB.FB/B#.#B/BB.BB/BB.BB
+142/1: buckets=22; empty=; layout=BBBBB/BBBFB/#BBBF/BBBBB/BBBBB
+142/2: buckets=22; empty=; layout=BBBBB/BBBFB/#BBBF/BBBBB/BBBBB
+142/3: buckets=22; empty=; layout=BBBBB/BBBFB/#BBBF/BBBBB/BBBBB
+143/1: buckets=22; empty=; layout=BBBBB/#BBBB/BBFBB/BBBBB/FBBBB
+143/2: buckets=22; empty=; layout=BBBBB/#BBBB/BBFBB/BBBBB/FBBBB
+143/3: buckets=22; empty=; layout=BBBBB/#BBBB/BBFBB/BBBBB/FBBBB
+144/1: buckets=17; empty=; layout=BBBBB/B.#F#/F.BBB/B.BBB/B.BBB
+144/2: buckets=17; empty=; layout=BBBBB/B.#F#/F.BBB/B.BBB/B.BBB
+144/3: buckets=17; empty=; layout=BBBBB/B.#F#/F.BBB/B.BBB/B.BBB
+145/1: buckets=23; empty=; layout=BBBBB/BBFBB/BBBBB/BBBFB/BBBBB
+145/2: buckets=23; empty=; layout=BBBBB/BBFBB/BBBBB/BBBFB/BBBBB
+145/3: buckets=23; empty=; layout=BBBBB/BBFBB/BBBBB/BBBFB/BBBBB
+146/1: buckets=10; empty=; layout=BBBBB/BBBBB/#F##F/...../.....
+146/2: buckets=10; empty=; layout=BBBBB/BBBBB/#F##F/...../.....
+146/3: buckets=10; empty=; layout=BBBBB/BBBBB/#F##F/...../.....
+147/1: buckets=17; empty=; layout=BBBBB/##.FF/BB.BB/BB.BB/BB.BB
+147/2: buckets=17; empty=; layout=BBBBB/##.FF/BB.BB/BB.BB/BB.BB
+147/3: buckets=17; empty=; layout=BBBBB/##.FF/BB.BB/BB.BB/BB.BB
+148/1: buckets=22; empty=; layout=BBBBB/B#BBB/BBBFB/BBBBB/BBFBB
+148/2: buckets=22; empty=; layout=BBBBB/B#BBB/BBBFB/BBBBB/BBFBB
+148/3: buckets=22; empty=; layout=BBBBB/B#BBB/BBBFB/BBBBB/BBFBB
+149/1: buckets=18; empty=; layout=BBBBB/FB.B#/B#BFB/BB.BB/BB.BB
+149/2: buckets=18; empty=; layout=BBBBB/FB.B#/B#BFB/BB.BB/BB.BB
+149/3: buckets=18; empty=; layout=BBBBB/FB.B#/B#BFB/BB.BB/BB.BB
+150/1: buckets=21; empty=; layout=BBBBB/B##BB/BBBBF/BBBBB/FBBBB
+150/2: buckets=21; empty=; layout=BBBBB/B##BB/BBBBF/BBBBB/FBBBB
+150/3: buckets=21; empty=; layout=BBBBB/B##BB/BBBBF/BBBBB/FBBBB
+151/1: buckets=22; empty=; layout=BBBBB/BB#FF/BBBBB/BBBBB/BBBBB
+151/2: buckets=22; empty=; layout=BBBBB/BB#FF/BBBBB/BBBBB/BBBBB
+151/3: buckets=22; empty=; layout=BBBBB/BB#FF/BBBBB/BBBBB/BBBBB
+152/1: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+152/2: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+152/3: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+153/1: buckets=17; empty=; layout=BBBBB/.BF#F/.#BBB/.BBBB/.BBBB
+153/2: buckets=17; empty=; layout=BBBBB/.BF#F/.#BBB/.BBBB/.BBBB
+153/3: buckets=17; empty=; layout=BBBBB/.BF#F/.#BBB/.BBBB/.BBBB
+154/1: buckets=22; empty=; layout=BBBBB/BBBBB/#FBBB/BBBFB/BBBBB
+154/2: buckets=22; empty=; layout=BBBBB/BBBBB/#FBBB/BBBFB/BBBBB
+154/3: buckets=22; empty=; layout=BBBBB/BBBBB/#FBBB/BBBFB/BBBBB
+155/1: buckets=21; empty=; layout=BBBBB/BFBB#/BBB#B/BBBFB/BBBBB
+155/2: buckets=21; empty=; layout=BBBBB/BFBB#/BBB#B/BBBFB/BBBBB
+155/3: buckets=21; empty=; layout=BBBBB/BFBB#/BBB#B/BBBFB/BBBBB
+156/1: buckets=18; empty=; layout=BBBBB/BB#BF/BF#.B/BBB.B/BBB.B
+156/2: buckets=18; empty=; layout=BBBBB/BB#BF/BF#.B/BBB.B/BBB.B
+156/3: buckets=18; empty=; layout=BBBBB/BB#BF/BF#.B/BBB.B/BBB.B
+157/1: buckets=22; empty=; layout=BBBBB/FBFBB/BB#BB/BBBBB/BBBBB
+157/2: buckets=22; empty=; layout=BBBBB/FBFBB/BB#BB/BBBBB/BBBBB
+157/3: buckets=22; empty=; layout=BBBBB/FBFBB/BB#BB/BBBBB/BBBBB
+158/1: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+158/2: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+158/3: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+159/1: buckets=17; empty=; layout=BBBBB/#FF.#/BBB.B/BBB.B/BBB.B
+159/2: buckets=17; empty=; layout=BBBBB/#FF.#/BBB.B/BBB.B/BBB.B
+159/3: buckets=17; empty=; layout=BBBBB/#FF.#/BBB.B/BBB.B/BBB.B
+160/1: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/FBFBB/BBBBB
+160/2: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/FBFBB/BBBBB
+160/3: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/FBFBB/BBBBB
+161/1: buckets=18; empty=; layout=BBBBB/B.#BB/B.FBF/B.BBB/B.BBB
+161/2: buckets=18; empty=; layout=BBBBB/B.#BB/B.FBF/B.BBB/B.BBB
+161/3: buckets=18; empty=; layout=BBBBB/B.#BB/B.FBF/B.BBB/B.BBB
+162/1: buckets=21; empty=; layout=BBBBB/B#BBB/BBB#B/BBBFB/BBFBB
+162/2: buckets=21; empty=; layout=BBBBB/B#BBB/BBB#B/BBBFB/BBFBB
+162/3: buckets=21; empty=; layout=BBBBB/B#BBB/BBB#B/BBBFB/BBFBB
+163/1: buckets=22; empty=; layout=BBBBB/FBBF#/BBBBB/BBBBB/BBBBB
+163/2: buckets=22; empty=; layout=BBBBB/FBBF#/BBBBB/BBBBB/BBBBB
+163/3: buckets=22; empty=; layout=BBBBB/FBBF#/BBBBB/BBBBB/BBBBB
+164/1: buckets=10; empty=; layout=BBBBB/BBBBB/###FF/...../.....
+164/2: buckets=10; empty=; layout=BBBBB/BBBBB/###FF/...../.....
+164/3: buckets=10; empty=; layout=BBBBB/BBBBB/###FF/...../.....
+165/1: buckets=17; empty=; layout=BBBBB/BB.FB/FB.##/BB.BB/BB.BB
+165/2: buckets=17; empty=; layout=BBBBB/BB.FB/FB.##/BB.BB/BB.BB
+165/3: buckets=17; empty=; layout=BBBBB/BB.FB/FB.##/BB.BB/BB.BB
+166/1: buckets=20; empty=; layout=BBBBB/B##BB/FBBB#/BBBBB/BBFBB
+166/2: buckets=20; empty=; layout=BBBBB/B##BB/FBBB#/BBBBB/BBFBB
+166/3: buckets=20; empty=; layout=BBBBB/B##BB/FBBB#/BBBBB/BBFBB
+167/1: buckets=22; empty=; layout=BBBBB/BF#BB/BBBBB/BBBBB/BBFBB
+167/2: buckets=22; empty=; layout=BBBBB/BF#BB/BBBBB/BBBBB/BBFBB
+167/3: buckets=22; empty=; layout=BBBBB/BF#BB/BBBBB/BBBBB/BBFBB
+168/1: buckets=18; empty=; layout=BBBBB/BB.FF/BB.B#/BB.BB/BB.BB
+168/2: buckets=18; empty=; layout=BBBBB/BB.FF/BB.B#/BB.BB/BB.BB
+168/3: buckets=18; empty=; layout=BBBBB/BB.FF/BB.B#/BB.BB/BB.BB
+169/1: buckets=22; empty=; layout=BBBBB/BBBBB/FBF#B/BBBBB/BBBBB
+169/2: buckets=22; empty=; layout=BBBBB/BBBBB/FBF#B/BBBBB/BBBBB
+169/3: buckets=22; empty=; layout=BBBBB/BBBBB/FBF#B/BBBBB/BBBBB
+170/1: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+170/2: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+170/3: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+171/1: buckets=17; empty=; layout=BBBBB/FF.B#/BB.B#/BB.BB/BB.BB
+171/2: buckets=17; empty=; layout=BBBBB/FF.B#/BB.B#/BB.BB/BB.BB
+171/3: buckets=17; empty=; layout=BBBBB/FF.B#/BB.B#/BB.BB/BB.BB
+172/1: buckets=23; empty=; layout=BBBBB/BBBFB/BFBBB/BBBBB/BBBBB
+172/2: buckets=23; empty=; layout=BBBBB/BBBFB/BFBBB/BBBBB/BBBBB
+172/3: buckets=23; empty=; layout=BBBBB/BBBFB/BFBBB/BBBBB/BBBBB
+173/1: buckets=17; empty=; layout=BBBBB/F.#B#/B.BBF/B.BBB/B.BBB
+173/2: buckets=17; empty=; layout=BBBBB/F.#B#/B.BBF/B.BBB/B.BBB
+173/3: buckets=17; empty=; layout=BBBBB/F.#B#/B.BBF/B.BBB/B.BBB
+174/1: buckets=21; empty=; layout=BBBBB/FB#BB/BBBB#/BBBBF/BBBBB
+174/2: buckets=21; empty=; layout=BBBBB/FB#BB/BBBB#/BBBBF/BBBBB
+174/3: buckets=21; empty=; layout=BBBBB/FB#BB/BBBB#/BBBBF/BBBBB
+175/1: buckets=22; empty=; layout=BBBBB/BBBBB/#FBBB/BBBBB/BBFBB
+175/2: buckets=22; empty=; layout=BBBBB/BBBBB/#FBBB/BBBBB/BBFBB
+175/3: buckets=22; empty=; layout=BBBBB/BBBBB/#FBBB/BBBBB/BBFBB
+176/1: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+176/2: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+176/3: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+177/1: buckets=17; empty=; layout=BBBBB/.B#FB/.#FBB/.BBBB/.BBBB
+177/2: buckets=17; empty=; layout=BBBBB/.B#FB/.#FBB/.BBBB/.BBBB
+177/3: buckets=17; empty=; layout=BBBBB/.B#FB/.#FBB/.BBBB/.BBBB
+178/1: buckets=21; empty=; layout=BBBBB/BBBBB/B#BB#/BBBBB/FBBBF
+178/2: buckets=21; empty=; layout=BBBBB/BBBBB/B#BB#/BBBBB/FBBBF
+178/3: buckets=21; empty=; layout=BBBBB/BBBBB/B#BB#/BBBBB/FBBBF
+179/1: buckets=22; empty=; layout=BBBBB/BFBBB/#BBFB/BBBBB/BBBBB
+179/2: buckets=22; empty=; layout=BBBBB/BFBBB/#BBFB/BBBBB/BBBBB
+179/3: buckets=22; empty=; layout=BBBBB/BFBBB/#BBFB/BBBBB/BBBBB
+180/1: buckets=17; empty=; layout=BBBBB/B.##B/B.FBF/B.BBB/B.BBB
+180/2: buckets=17; empty=; layout=BBBBB/B.##B/B.FBF/B.BBB/B.BBB
+180/3: buckets=17; empty=; layout=BBBBB/B.##B/B.FBF/B.BBB/B.BBB
+181/1: buckets=21; empty=; layout=BBBBB/#FBBF/BB#BB/BBBBB/BBBBB
+181/2: buckets=21; empty=; layout=BBBBB/#FBBF/BB#BB/BBBBB/BBBBB
+181/3: buckets=21; empty=; layout=BBBBB/#FBBF/BB#BB/BBBBB/BBBBB
+182/1: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+182/2: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+182/3: buckets=9; empty=; layout=BBBBB/BBBB./F##F#/...../.....
+183/1: buckets=17; empty=; layout=BBBBB/.#BFB/.#FBB/.BBBB/.BBBB
+183/2: buckets=17; empty=; layout=BBBBB/.#BFB/.#FBB/.BBBB/.BBBB
+183/3: buckets=17; empty=; layout=BBBBB/.#BFB/.#FBB/.BBBB/.BBBB
+184/1: buckets=22; empty=; layout=BBBBB/BBBBB/#FBBB/BBBBB/BBBFB
+184/2: buckets=22; empty=; layout=BBBBB/BBBBB/#FBBB/BBBBB/BBBFB
+184/3: buckets=22; empty=; layout=BBBBB/BBBBB/#FBBB/BBBBB/BBBFB
+185/1: buckets=17; empty=; layout=BBBBB/B#FB./FBB#./BBBB./BBBB.
+185/2: buckets=17; empty=; layout=BBBBB/B#FB./FBB#./BBBB./BBBB.
+185/3: buckets=17; empty=; layout=BBBBB/B#FB./FBB#./BBBB./BBBB.
+186/1: buckets=23; empty=; layout=BBBBB/BFBBB/BBBBB/BBBFB/BBBBB
+186/2: buckets=23; empty=; layout=BBBBB/BFBBB/BBBBB/BBBFB/BBBBB
+186/3: buckets=23; empty=; layout=BBBBB/BFBBB/BBBBB/BBBFB/BBBBB
+187/1: buckets=22; empty=; layout=BBBBB/#BBFB/BBBBB/FBBBB/BBBBB
+187/2: buckets=22; empty=; layout=BBBBB/#BBFB/BBBBB/FBBBB/BBBBB
+187/3: buckets=22; empty=; layout=BBBBB/#BBFB/BBBBB/FBBBB/BBBBB
+188/1: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+188/2: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+188/3: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+189/1: buckets=18; empty=; layout=BBBBB/BBF#B/B.B#F/B.BBB/B.BBB
+189/2: buckets=18; empty=; layout=BBBBB/BBF#B/B.B#F/B.BBB/B.BBB
+189/3: buckets=18; empty=; layout=BBBBB/BBF#B/B.B#F/B.BBB/B.BBB
+190/1: buckets=21; empty=; layout=BBBBB/BBBBF/B#B#B/BBBBB/FBBBB
+190/2: buckets=21; empty=; layout=BBBBB/BBBBF/B#B#B/BBBBB/FBBBB
+190/3: buckets=21; empty=; layout=BBBBB/BBBBF/B#B#B/BBBBB/FBBBB
+191/1: buckets=22; empty=; layout=BBBBB/B#FBB/BFBBB/BBBBB/BBBBB
+191/2: buckets=22; empty=; layout=BBBBB/B#FBB/BFBBB/BBBBB/BBBBB
+191/3: buckets=22; empty=; layout=BBBBB/B#FBB/BFBBB/BBBBB/BBBBB
+192/1: buckets=18; empty=; layout=BBBBB/BFBF#/BB.#B/BB.BB/BB.BB
+192/2: buckets=18; empty=; layout=BBBBB/BFBF#/BB.#B/BB.BB/BB.BB
+192/3: buckets=18; empty=; layout=BBBBB/BFBF#/BB.#B/BB.BB/BB.BB
+193/1: buckets=21; empty=; layout=BBBBB/#FBBB/BBB#F/BBBBB/BBBBB
+193/2: buckets=21; empty=; layout=BBBBB/#FBBB/BBB#F/BBBBB/BBBBB
+193/3: buckets=21; empty=; layout=BBBBB/#FBBB/BBB#F/BBBBB/BBBBB
+194/1: buckets=9; empty=; layout=BBBBB/BBBB./F#F##/...../.....
+194/2: buckets=9; empty=; layout=BBBBB/BBBB./F#F##/...../.....
+194/3: buckets=9; empty=; layout=BBBBB/BBBB./F#F##/...../.....
+195/1: buckets=17; empty=; layout=BBBBB/##F.B/FBB.B/BBB.B/BBB.B
+195/2: buckets=17; empty=; layout=BBBBB/##F.B/FBB.B/BBB.B/BBB.B
+195/3: buckets=17; empty=; layout=BBBBB/##F.B/FBB.B/BBB.B/BBB.B
+196/1: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBFB/BBBBB
+196/2: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBFB/BBBBB
+196/3: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBFB/BBBBB
+197/1: buckets=17; empty=; layout=BBBBB/FB.BF/##.BB/BB.BB/BB.BB
+197/2: buckets=17; empty=; layout=BBBBB/FB.BF/##.BB/BB.BB/BB.BB
+197/3: buckets=17; empty=; layout=BBBBB/FB.BF/##.BB/BB.BB/BB.BB
+198/1: buckets=22; empty=; layout=BBBBB/B#FBB/BBBBB/BBBBB/BBBFB
+198/2: buckets=22; empty=; layout=BBBBB/B#FBB/BBBBB/BBBBB/BBBFB
+198/3: buckets=22; empty=; layout=BBBBB/B#FBB/BBBBB/BBBBB/BBBFB
+199/1: buckets=22; empty=; layout=BBBBB/BBBBB/BBFB#/BFBBB/BBBBB
+199/2: buckets=22; empty=; layout=BBBBB/BBBBB/BBFB#/BFBBB/BBBBB
+199/3: buckets=22; empty=; layout=BBBBB/BBBBB/BBFB#/BFBBB/BBBBB
+200/1: buckets=10; empty=; layout=BBBBB/BBBBB/##F#F/...../.....
+200/2: buckets=10; empty=; layout=BBBBB/BBBBB/##F#F/...../.....
+200/3: buckets=10; empty=; layout=BBBBB/BBBBB/##F#F/...../.....
+201/1: buckets=17; empty=; layout=BBBBB/F.B#F/B.#BB/B.BBB/B.BBB
+201/2: buckets=17; empty=; layout=BBBBB/F.B#F/B.#BB/B.BBB/B.BBB
+201/3: buckets=17; empty=; layout=BBBBB/F.B#F/B.#BB/B.BBB/B.BBB
+202/1: buckets=22; empty=; layout=BBBBB/BBBBB/#BBBB/BBBBF/BFBBB
+202/2: buckets=22; empty=; layout=BBBBB/BBBBB/#BBBB/BBBBF/BFBBB
+202/3: buckets=22; empty=; layout=BBBBB/BBBBB/#BBBB/BBBBF/BFBBB
+203/1: buckets=22; empty=; layout=BBBBB/B#BBB/BBBBB/BBBBB/BBBFF
+203/2: buckets=22; empty=; layout=BBBBB/B#BBB/BBBBB/BBBBB/BBBFF
+203/3: buckets=22; empty=; layout=BBBBB/B#BBB/BBBBB/BBBBB/BBBFF
+204/1: buckets=17; empty=; layout=BBBBB/B.BFF/#.#BB/B.BBB/B.BBB
+204/2: buckets=17; empty=; layout=BBBBB/B.BFF/#.#BB/B.BBB/B.BBB
+204/3: buckets=17; empty=; layout=BBBBB/B.BFF/#.#BB/B.BBB/B.BBB
+205/1: buckets=22; empty=; layout=BBBBB/BBBBF/#BBBB/BBBBB/BFBBB
+205/2: buckets=22; empty=; layout=BBBBB/BBBBF/#BBBB/BBBBB/BFBBB
+205/3: buckets=22; empty=; layout=BBBBB/BBBBF/#BBBB/BBBBB/BFBBB
+206/1: buckets=9; empty=; layout=BBBBB/BBBB./F#F##/...../.....
+206/2: buckets=9; empty=; layout=BBBBB/BBBB./F#F##/...../.....
+206/3: buckets=9; empty=; layout=BBBBB/BBBB./F#F##/...../.....
+207/1: buckets=17; empty=; layout=BBBBB/BBB.F/BF#.#/BBB.B/BBB.B
+207/2: buckets=17; empty=; layout=BBBBB/BBB.F/BF#.#/BBB.B/BBB.B
+207/3: buckets=17; empty=; layout=BBBBB/BBB.F/BF#.#/BBB.B/BBB.B
+208/1: buckets=22; empty=; layout=BBBBB/BB#FB/BBBBB/BBBBB/BFBBB
+208/2: buckets=22; empty=; layout=BBBBB/BB#FB/BBBBB/BBBBB/BFBBB
+208/3: buckets=22; empty=; layout=BBBBB/BB#FB/BBBBB/BBBBB/BFBBB
+209/1: buckets=18; empty=; layout=BBBBB/BBF.#/BFB.B/BBB.B/BBB.B
+209/2: buckets=18; empty=; layout=BBBBB/BBF.#/BFB.B/BBB.B/BBB.B
+209/3: buckets=18; empty=; layout=BBBBB/BBF.#/BFB.B/BBB.B/BBB.B
+210/1: buckets=22; empty=; layout=BBBBB/B#BBB/BFBFB/BBBBB/BBBBB
+210/2: buckets=22; empty=; layout=BBBBB/B#BBB/BFBFB/BBBBB/BBBBB
+210/3: buckets=22; empty=; layout=BBBBB/B#BBB/BFBFB/BBBBB/BBBBB
+211/1: buckets=23; empty=; layout=BBBBB/FBBBB/BBBFB/BBBBB/BBBBB
+211/2: buckets=23; empty=; layout=BBBBB/FBBBB/BBBFB/BBBBB/BBBBB
+211/3: buckets=23; empty=; layout=BBBBB/FBBBB/BBBFB/BBBBB/BBBBB
+212/1: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+212/2: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+212/3: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+213/1: buckets=17; empty=; layout=BBBBB/BB.#B/FF.#B/BB.BB/BB.BB
+213/2: buckets=17; empty=; layout=BBBBB/BB.#B/FF.#B/BB.BB/BB.BB
+213/3: buckets=17; empty=; layout=BBBBB/BB.#B/FF.#B/BB.BB/BB.BB
+214/1: buckets=23; empty=; layout=BBBBB/BBBBB/BBBFF/BBBBB/BBBBB
+214/2: buckets=23; empty=; layout=BBBBB/BBBBB/BBBFF/BBBBB/BBBBB
+214/3: buckets=23; empty=; layout=BBBBB/BBBBB/BBBFF/BBBBB/BBBBB
+215/1: buckets=22; empty=; layout=BBBBB/B#BBF/BBBFB/BBBBB/BBBBB
+215/2: buckets=22; empty=; layout=BBBBB/B#BBF/BBBFB/BBBBB/BBBBB
+215/3: buckets=22; empty=; layout=BBBBB/B#BBF/BBBFB/BBBBB/BBBBB
+216/1: buckets=20; empty=; layout=BBBBB/#BBFB/BFBBB/BB.BB/BB.BB
+216/2: buckets=20; empty=; layout=BBBBB/#BBFB/BFBBB/BB.BB/BB.BB
+216/3: buckets=20; empty=; layout=BBBBB/#BBFB/BFBBB/BB.BB/BB.BB
+217/1: buckets=23; empty=; layout=BBBBB/BBBBB/BBFBF/BBBBB/BBBBB
+217/2: buckets=23; empty=; layout=BBBBB/BBBBB/BBFBF/BBBBB/BBBBB
+217/3: buckets=23; empty=; layout=BBBBB/BBBBB/BBFBF/BBBBB/BBBBB
+218/1: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+218/2: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+218/3: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+219/1: buckets=17; empty=; layout=BBBBB/B.F##/B.BFB/B.BBB/B.BBB
+219/2: buckets=17; empty=; layout=BBBBB/B.F##/B.BFB/B.BBB/B.BBB
+219/3: buckets=17; empty=; layout=BBBBB/B.F##/B.BFB/B.BBB/B.BBB
+220/1: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BFBBB
+220/2: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BFBBB
+220/3: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BFBBB
+221/1: buckets=18; empty=; layout=BBBBB/FB.BB/B#BF#/BB.BB/BB.BB
+221/2: buckets=18; empty=; layout=BBBBB/FB.BB/B#BF#/BB.BB/BB.BB
+221/3: buckets=18; empty=; layout=BBBBB/FB.BB/B#BF#/BB.BB/BB.BB
+222/1: buckets=20; empty=; layout=BBBBB/B##BF/#BBBB/BBBBB/BBBFB
+222/2: buckets=20; empty=; layout=BBBBB/B##BF/#BBBB/BBBBB/BBBFB
+222/3: buckets=20; empty=; layout=BBBBB/B##BF/#BBBB/BBBBB/BBBFB
+223/1: buckets=22; empty=; layout=BBBBB/BBBBB/#BBFB/BFBBB/BBBBB
+223/2: buckets=22; empty=; layout=BBBBB/BBBBB/#BBFB/BFBBB/BBBBB
+223/3: buckets=22; empty=; layout=BBBBB/BBBBB/#BBFB/BFBBB/BBBBB
+224/1: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+224/2: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+224/3: buckets=9; empty=; layout=BBBBB/BBBB./#F###/...../.....
+225/1: buckets=17; empty=; layout=BBBBB/B.BF#/F.#BB/B.BBB/B.BBB
+225/2: buckets=17; empty=; layout=BBBBB/B.BF#/F.#BB/B.BBB/B.BBB
+225/3: buckets=17; empty=; layout=BBBBB/B.BF#/F.#BB/B.BBB/B.BBB
+226/1: buckets=23; empty=; layout=BBBBB/BBBBB/FBBBB/BBFBB/BBBBB
+226/2: buckets=23; empty=; layout=BBBBB/BBBBB/FBBBB/BBFBB/BBBBB
+226/3: buckets=23; empty=; layout=BBBBB/BBBBB/FBBBB/BBFBB/BBBBB
+227/1: buckets=22; empty=; layout=BBBBB/BBB#B/FBBBB/BBBFB/BBBBB
+227/2: buckets=22; empty=; layout=BBBBB/BBB#B/FBBBB/BBBFB/BBBBB
+227/3: buckets=22; empty=; layout=BBBBB/BBB#B/FBBBB/BBBFB/BBBBB
+228/1: buckets=17; empty=; layout=BBBBB/BB.#F/B#.FB/BB.BB/BB.BB
+228/2: buckets=17; empty=; layout=BBBBB/BB.#F/B#.FB/BB.BB/BB.BB
+228/3: buckets=17; empty=; layout=BBBBB/BB.#F/B#.FB/BB.BB/BB.BB
+229/1: buckets=22; empty=; layout=BBBBB/BB#BB/BFBBB/BBBBB/BBBBF
+229/2: buckets=22; empty=; layout=BBBBB/BB#BB/BFBBB/BBBBB/BBBBF
+229/3: buckets=22; empty=; layout=BBBBB/BB#BB/BFBBB/BBBBB/BBBBF
+230/1: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+230/2: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+230/3: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+231/1: buckets=18; empty=; layout=BBBBB/BF#.B/B#BBF/BBB.B/BBB.B
+231/2: buckets=18; empty=; layout=BBBBB/BF#.B/B#BBF/BBB.B/BBB.B
+231/3: buckets=18; empty=; layout=BBBBB/BF#.B/B#BBF/BBB.B/BBB.B
+232/1: buckets=23; empty=; layout=BBBBB/BBBBB/FBBBB/BFBBB/BBBBB
+232/2: buckets=23; empty=; layout=BBBBB/BBBBB/FBBBB/BFBBB/BBBBB
+232/3: buckets=23; empty=; layout=BBBBB/BBBBB/FBBBB/BFBBB/BBBBB
+233/1: buckets=17; empty=; layout=BBBBB/B#.BF/BF.#B/BB.BB/BB.BB
+233/2: buckets=17; empty=; layout=BBBBB/B#.BF/BF.#B/BB.BB/BB.BB
+233/3: buckets=17; empty=; layout=BBBBB/B#.BF/BF.#B/BB.BB/BB.BB
+234/1: buckets=21; empty=; layout=BBBBB/B#BBB/B#BFB/BBFBB/BBBBB
+234/2: buckets=21; empty=; layout=BBBBB/B#BBB/B#BFB/BBFBB/BBBBB
+234/3: buckets=21; empty=; layout=BBBBB/B#BBB/B#BFB/BBFBB/BBBBB
+235/1: buckets=22; empty=; layout=BBBBB/BBBFB/BBBF#/BBBBB/BBBBB
+235/2: buckets=22; empty=; layout=BBBBB/BBBFB/BBBF#/BBBBB/BBBBB
+235/3: buckets=22; empty=; layout=BBBBB/BBBFB/BBBF#/BBBBB/BBBBB
+236/1: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+236/2: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+236/3: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+237/1: buckets=17; empty=; layout=BBBBB/B.FBB/#.#BF/B.BBB/B.BBB
+237/2: buckets=17; empty=; layout=BBBBB/B.FBB/#.#BF/B.BBB/B.BBB
+237/3: buckets=17; empty=; layout=BBBBB/B.FBB/#.#BF/B.BBB/B.BBB
+238/1: buckets=22; empty=; layout=BBBBB/B#BBB/BBFBB/BBBBB/BBFBB
+238/2: buckets=22; empty=; layout=BBBBB/B#BBB/BBFBB/BBBBB/BBFBB
+238/3: buckets=22; empty=; layout=BBBBB/B#BBB/BBFBB/BBBBB/BBFBB
+239/1: buckets=23; empty=; layout=BBBBB/BBFBF/BBBBB/BBBBB/BBBBB
+239/2: buckets=23; empty=; layout=BBBBB/BBFBF/BBBBB/BBBBB/BBBBB
+239/3: buckets=23; empty=; layout=BBBBB/BBFBF/BBBBB/BBBBB/BBBBB
+240/1: buckets=18; empty=; layout=BBBBB/##BB./BBFFB/BBBB./BBBB.
+240/2: buckets=18; empty=; layout=BBBBB/##BB./BBFFB/BBBB./BBBB.
+240/3: buckets=18; empty=; layout=BBBBB/##BB./BBFFB/BBBB./BBBB.
+241/1: buckets=21; empty=; layout=BBBBB/BB#BB/BB#BB/BBBFB/BBBBF
+241/2: buckets=21; empty=; layout=BBBBB/BB#BB/BB#BB/BBBFB/BBBBF
+241/3: buckets=21; empty=; layout=BBBBB/BB#BB/BB#BB/BBBFB/BBBBF
+242/1: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+242/2: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+242/3: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+243/1: buckets=17; empty=; layout=BBBBB/FB.FB/##.BB/BB.BB/BB.BB
+243/2: buckets=17; empty=; layout=BBBBB/FB.FB/##.BB/BB.BB/BB.BB
+243/3: buckets=17; empty=; layout=BBBBB/FB.FB/##.BB/BB.BB/BB.BB
+244/1: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/BBFBF/BBBBB
+244/2: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/BBFBF/BBBBB
+244/3: buckets=23; empty=; layout=BBBBB/BBBBB/BBBBB/BBFBF/BBBBB
+245/1: buckets=17; empty=; layout=BBBBB/.#B#B/.BFFB/.BBBB/.BBBB
+245/2: buckets=17; empty=; layout=BBBBB/.#B#B/.BFFB/.BBBB/.BBBB
+245/3: buckets=17; empty=; layout=BBBBB/.#B#B/.BFFB/.BBBB/.BBBB
+246/1: buckets=22; empty=; layout=BBBBB/BFBBB/B#BBB/BBBFB/BBBBB
+246/2: buckets=22; empty=; layout=BBBBB/BFBBB/B#BBB/BBBFB/BBBBB
+246/3: buckets=22; empty=; layout=BBBBB/BFBBB/B#BBB/BBBFB/BBBBB
+247/1: buckets=21; empty=; layout=BBBBB/BB#BB/BBBB#/BBBBB/FBBBF
+247/2: buckets=21; empty=; layout=BBBBB/BB#BB/BBBB#/BBBBB/FBBBF
+247/3: buckets=21; empty=; layout=BBBBB/BB#BB/BBBB#/BBBBB/FBBBF
+248/1: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+248/2: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+248/3: buckets=9; empty=; layout=BBBBB/BBBB./F####/...../.....
+249/1: buckets=17; empty=; layout=BBBBB/.BBBB/.FF##/.BBBB/.BBBB
+249/2: buckets=17; empty=; layout=BBBBB/.BBBB/.FF##/.BBBB/.BBBB
+249/3: buckets=17; empty=; layout=BBBBB/.BBBB/.FF##/.BBBB/.BBBB
+250/1: buckets=22; empty=; layout=BBBBB/BBFBB/BB#BB/BBBBB/BBFBB
+250/2: buckets=22; empty=; layout=BBBBB/BBFBB/BB#BB/BBBBB/BBFBB
+250/3: buckets=22; empty=; layout=BBBBB/BBFBB/BB#BB/BBBBB/BBFBB
+251/1: buckets=21; empty=; layout=BBBBB/BBB##/BBBBB/BFBFB/BBBBB
+251/2: buckets=21; empty=; layout=BBBBB/BBB##/BBBBB/BFBFB/BBBBB
+251/3: buckets=21; empty=; layout=BBBBB/BBB##/BBBBB/BFBFB/BBBBB
+252/1: buckets=17; empty=; layout=BBBBB/#B.FB/B#.FB/BB.BB/BB.BB
+252/2: buckets=17; empty=; layout=BBBBB/#B.FB/B#.FB/BB.BB/BB.BB
+252/3: buckets=17; empty=; layout=BBBBB/#B.FB/B#.FB/BB.BB/BB.BB
+253/1: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BBBBF
+253/2: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BBBBF
+253/3: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BBBBF
+254/1: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+254/2: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+254/3: buckets=9; empty=; layout=BBBBB/BBBB./#FF##/...../.....
+255/1: buckets=17; empty=; layout=BBBBB/BFB#./#BFB./BBBB./BBBB.
+255/2: buckets=17; empty=; layout=BBBBB/BFB#./#BFB./BBBB./BBBB.
+255/3: buckets=17; empty=; layout=BBBBB/BFB#./#BFB./BBBB./BBBB.
+256/1: buckets=22; empty=; layout=BBBBB/BBBFB/BBBB#/BBBBB/BFBBB
+256/2: buckets=22; empty=; layout=BBBBB/BBBFB/BBBB#/BBBBB/BFBBB
+256/3: buckets=22; empty=; layout=BBBBB/BBBFB/BBBB#/BBBBB/BFBBB
+257/1: buckets=18; empty=; layout=BBBBB/B.FBF/#.BBB/B.BBB/B.BBB
+257/2: buckets=18; empty=; layout=BBBBB/B.FBF/#.BBB/B.BBB/B.BBB
+257/3: buckets=18; empty=; layout=BBBBB/B.FBF/#.BBB/B.BBB/B.BBB
+258/1: buckets=21; empty=; layout=BBBBB/BBFBB/B#BB#/BBFBB/BBBBB
+258/2: buckets=21; empty=; layout=BBBBB/BBFBB/B#BB#/BBFBB/BBBBB
+258/3: buckets=21; empty=; layout=BBBBB/BBFBB/B#BB#/BBFBB/BBBBB
+259/1: buckets=22; empty=; layout=BBBBB/B#BFB/BBBBB/FBBBB/BBBBB
+259/2: buckets=22; empty=; layout=BBBBB/B#BFB/BBBBB/FBBBB/BBBBB
+259/3: buckets=22; empty=; layout=BBBBB/B#BFB/BBBBB/FBBBB/BBBBB
+260/1: buckets=9; empty=; layout=BBBBB/BBBB./FF###/...../.....
+260/2: buckets=9; empty=; layout=BBBBB/BBBB./FF###/...../.....
+260/3: buckets=9; empty=; layout=BBBBB/BBBB./FF###/...../.....
+261/1: buckets=17; empty=; layout=BBBBB/BFB.B/#BF.#/BBB.B/BBB.B
+261/2: buckets=17; empty=; layout=BBBBB/BFB.B/#BF.#/BBB.B/BBB.B
+261/3: buckets=17; empty=; layout=BBBBB/BFB.B/#BF.#/BBB.B/BBB.B
+262/1: buckets=21; empty=; layout=BBBBB/BFB#B/#BBBF/BBBBB/BBBBB
+262/2: buckets=21; empty=; layout=BBBBB/BFB#B/#BBBF/BBBBB/BBBBB
+262/3: buckets=21; empty=; layout=BBBBB/BFB#B/#BBBF/BBBBB/BBBBB
+263/1: buckets=21; empty=; layout=BBBBB/#FBBB/#BBFB/BBBBB/BBBBB
+263/2: buckets=21; empty=; layout=BBBBB/#FBBB/#BBFB/BBBBB/BBBBB
+263/3: buckets=21; empty=; layout=BBBBB/#FBBB/#BBFB/BBBBB/BBBBB
+264/1: buckets=18; empty=; layout=BBBBB/FF.BB/BB.#B/BB.BB/BB.BB
+264/2: buckets=18; empty=; layout=BBBBB/FF.BB/BB.#B/BB.BB/BB.BB
+264/3: buckets=18; empty=; layout=BBBBB/FF.BB/BB.#B/BB.BB/BB.BB
+265/1: buckets=21; empty=; layout=BBBBB/BBBFB/BBB##/FBBBB/BBBBB
+265/2: buckets=21; empty=; layout=BBBBB/BBBFB/BBB##/FBBBB/BBBBB
+265/3: buckets=21; empty=; layout=BBBBB/BBBFB/BBB##/FBBBB/BBBBB
+266/1: buckets=10; empty=; layout=BBBBB/BBBBB/###FF/...../.....
+266/2: buckets=10; empty=; layout=BBBBB/BBBBB/###FF/...../.....
+266/3: buckets=10; empty=; layout=BBBBB/BBBBB/###FF/...../.....
+267/1: buckets=17; empty=; layout=BBBBB/BF.#B/B#.FB/BB.BB/BB.BB
+267/2: buckets=17; empty=; layout=BBBBB/BF.#B/B#.FB/BB.BB/BB.BB
+267/3: buckets=17; empty=; layout=BBBBB/BF.#B/B#.FB/BB.BB/BB.BB
+268/1: buckets=23; empty=; layout=BBBBB/BBBBB/BBBFF/BBBBB/BBBBB
+268/2: buckets=23; empty=; layout=BBBBB/BBBBB/BBBFF/BBBBB/BBBBB
+268/3: buckets=23; empty=; layout=BBBBB/BBBBB/BBBFF/BBBBB/BBBBB
+269/1: buckets=19; empty=; layout=BBBBB/FBBBB/#BF#B/B.BBB/B.BBB
+269/2: buckets=19; empty=; layout=BBBBB/FBBBB/#BF#B/B.BBB/B.BBB
+269/3: buckets=19; empty=; layout=BBBBB/FBBBB/#BF#B/B.BBB/B.BBB
+270/1: buckets=22; empty=; layout=BBBBB/BB#BB/BBBBB/BFBBB/BBBBF
+270/2: buckets=22; empty=; layout=BBBBB/BB#BB/BBBBB/BFBBB/BBBBF
+270/3: buckets=22; empty=; layout=BBBBB/BB#BB/BBBBB/BFBBB/BBBBF
+271/1: buckets=22; empty=; layout=BBBBB/BBB#B/BBBBB/BBFBF/BBBBB
+271/2: buckets=22; empty=; layout=BBBBB/BBB#B/BBBBB/BBFBF/BBBBB
+271/3: buckets=22; empty=; layout=BBBBB/BBB#B/BBBBB/BBFBF/BBBBB
+272/1: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+272/2: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+272/3: buckets=9; empty=; layout=BBBBB/BBBB./##F##/...../.....
+273/1: buckets=17; empty=; layout=BBBBB/B.BB#/F.F#B/B.BBB/B.BBB
+273/2: buckets=17; empty=; layout=BBBBB/B.BB#/F.F#B/B.BBB/B.BBB
+273/3: buckets=17; empty=; layout=BBBBB/B.BB#/F.F#B/B.BBB/B.BBB
+274/1: buckets=21; empty=; layout=BBBBB/#BB#B/BBFBB/BFBBB/BBBBB
+274/2: buckets=21; empty=; layout=BBBBB/#BB#B/BBFBB/BFBBB/BBBBB
+274/3: buckets=21; empty=; layout=BBBBB/#BB#B/BBFBB/BFBBB/BBBBB
+275/1: buckets=21; empty=; layout=BBBBB/#BFBB/#BBBB/BBFBB/BBBBB
+275/2: buckets=21; empty=; layout=BBBBB/#BFBB/#BBBB/BBFBB/BBBBB
+275/3: buckets=21; empty=; layout=BBBBB/#BFBB/#BBBB/BBFBB/BBBBB
+276/1: buckets=17; empty=; layout=BBBBB/BB.#B/FF.B#/BB.BB/BB.BB
+276/2: buckets=17; empty=; layout=BBBBB/BB.#B/FF.B#/BB.BB/BB.BB
+276/3: buckets=17; empty=; layout=BBBBB/BB.#B/FF.B#/BB.BB/BB.BB
+277/1: buckets=22; empty=; layout=BBBBB/BFBBB/B#BBB/BBFBB/BBBBB
+277/2: buckets=22; empty=; layout=BBBBB/BFBBB/B#BBB/BBFBB/BBBBB
+277/3: buckets=22; empty=; layout=BBBBB/BFBBB/B#BBB/BBFBB/BBBBB
+278/1: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+278/2: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+278/3: buckets=9; empty=; layout=BBBBB/BBBB./##FF#/...../.....
+279/1: buckets=17; empty=; layout=BBBBB/#.BBF/B.F#B/B.BBB/B.BBB
+279/2: buckets=17; empty=; layout=BBBBB/#.BBF/B.F#B/B.BBB/B.BBB
+279/3: buckets=17; empty=; layout=BBBBB/#.BBF/B.F#B/B.BBB/B.BBB
+280/1: buckets=23; empty=; layout=BBBBB/BBBBB/BBBFB/BBBFB/BBBBB
+280/2: buckets=23; empty=; layout=BBBBB/BBBBB/BBBFB/BBBFB/BBBBB
+280/3: buckets=23; empty=; layout=BBBBB/BBBBB/BBBFB/BBBFB/BBBBB
+281/1: buckets=17; empty=; layout=BBBBB/#B#B./BFBF./BBBB./BBBB.
+281/2: buckets=17; empty=; layout=BBBBB/#B#B./BFBF./BBBB./BBBB.
+281/3: buckets=17; empty=; layout=BBBBB/#B#B./BFBF./BBBB./BBBB.
+282/1: buckets=21; empty=; layout=BBBBB/BBBBB/F#BF#/BBBBB/BBBBB
+282/2: buckets=21; empty=; layout=BBBBB/BBBBB/F#BF#/BBBBB/BBBBB
+282/3: buckets=21; empty=; layout=BBBBB/BBBBB/F#BF#/BBBBB/BBBBB
+283/1: buckets=22; empty=; layout=BBBBB/#BBBB/BFBBB/BBBBB/BBFBB
+283/2: buckets=22; empty=; layout=BBBBB/#BBBB/BFBBB/BBBBB/BBFBB
+283/3: buckets=22; empty=; layout=BBBBB/#BBBB/BFBBB/BBBBB/BBFBB
+284/1: buckets=10; empty=; layout=BBBBB/BBBBB/####F/...../.....
+284/2: buckets=10; empty=; layout=BBBBB/BBBBB/####F/...../.....
+284/3: buckets=10; empty=; layout=BBBBB/BBBBB/####F/...../.....
+285/1: buckets=17; empty=; layout=BBBBB/B.#BF/B.F#B/B.BBB/B.BBB
+285/2: buckets=17; empty=; layout=BBBBB/B.#BF/B.F#B/B.BBB/B.BBB
+285/3: buckets=17; empty=; layout=BBBBB/B.#BF/B.F#B/B.BBB/B.BBB
+286/1: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BBBFB
+286/2: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BBBFB
+286/3: buckets=23; empty=; layout=BBBBB/BBBFB/BBBBB/BBBBB/BBBFB
+287/1: buckets=21; empty=; layout=BBBBB/BBB#F/BBB#B/BBBBB/BFBBB
+287/2: buckets=21; empty=; layout=BBBBB/BBB#F/BBB#B/BBBBB/BFBBB
+287/3: buckets=21; empty=; layout=BBBBB/BBB#F/BBB#B/BBBBB/BFBBB
+288/1: buckets=17; empty=; layout=BBBBB/#F.BB/#B.BF/BB.BB/BB.BB
+288/2: buckets=17; empty=; layout=BBBBB/#F.BB/#B.BF/BB.BB/BB.BB
+288/3: buckets=17; empty=; layout=BBBBB/#F.BB/#B.BF/BB.BB/BB.BB
+289/1: buckets=22; empty=; layout=BBBBB/B#BBB/BBBBB/FBFBB/BBBBB
+289/2: buckets=22; empty=; layout=BBBBB/B#BBB/BBBBB/FBFBB/BBBBB
+289/3: buckets=22; empty=; layout=BBBBB/B#BBB/BBBBB/FBFBB/BBBBB
+290/1: buckets=9; empty=; layout=BBBBB/BBBB./#F#F#/...../.....
+290/2: buckets=9; empty=; layout=BBBBB/BBBB./#F#F#/...../.....
+290/3: buckets=9; empty=; layout=BBBBB/BBBB./#F#F#/...../.....
+291/1: buckets=17; empty=; layout=BBBBB/#B.BF/#F.BB/BB.BB/BB.BB
+291/2: buckets=17; empty=; layout=BBBBB/#B.BF/#F.BB/BB.BB/BB.BB
+291/3: buckets=17; empty=; layout=BBBBB/#B.BF/#F.BB/BB.BB/BB.BB
+292/1: buckets=22; empty=; layout=BBBBB/BBFBB/BBBB#/BBBBB/BBBFB
+292/2: buckets=22; empty=; layout=BBBBB/BBFBB/BBBB#/BBBBB/BBBFB
+292/3: buckets=22; empty=; layout=BBBBB/BBFBB/BBBB#/BBBBB/BBBFB
+293/1: buckets=18; empty=; layout=BBBBB/B.FBB/FB#B#/B.BBB/B.BBB
+293/2: buckets=18; empty=; layout=BBBBB/B.FBB/FB#B#/B.BBB/B.BBB
+293/3: buckets=18; empty=; layout=BBBBB/B.FBB/FB#B#/B.BBB/B.BBB
+294/1: buckets=23; empty=; layout=BBBBB/BBBFB/BBBFB/BBBBB/BBBBB
+294/2: buckets=23; empty=; layout=BBBBB/BBBFB/BBBFB/BBBBB/BBBBB
+294/3: buckets=23; empty=; layout=BBBBB/BBBFB/BBBFB/BBBBB/BBBBB
+295/1: buckets=22; empty=; layout=BBBBB/BFBBB/B#BBB/BBBBB/BFBBB
+295/2: buckets=22; empty=; layout=BBBBB/BFBBB/B#BBB/BBBBB/BFBBB
+295/3: buckets=22; empty=; layout=BBBBB/BFBBB/B#BBB/BBBBB/BFBBB
+296/1: buckets=9; empty=; layout=BBBBB/BBBB./F#F##/...../.....
+296/2: buckets=9; empty=; layout=BBBBB/BBBB./F#F##/...../.....
+296/3: buckets=9; empty=; layout=BBBBB/BBBB./F#F##/...../.....
+297/1: buckets=17; empty=; layout=BBBBB/BFB.B/BF#.#/BBB.B/BBB.B
+297/2: buckets=17; empty=; layout=BBBBB/BFB.B/BF#.#/BBB.B/BBB.B
+297/3: buckets=17; empty=; layout=BBBBB/BFB.B/BF#.#/BBB.B/BBB.B
+298/1: buckets=21; empty=; layout=BBBBB/##BBB/BBFBB/BBBFB/BBBBB
+298/2: buckets=21; empty=; layout=BBBBB/##BBB/BBFBB/BBBFB/BBBBB
+298/3: buckets=21; empty=; layout=BBBBB/##BBB/BBFBB/BBBFB/BBBBB
+299/1: buckets=22; empty=; layout=BBBBB/FBBBF/BBBB#/BBBBB/BBBBB
+299/2: buckets=22; empty=; layout=BBBBB/FBBBF/BBBB#/BBBBB/BBBBB
+299/3: buckets=22; empty=; layout=BBBBB/FBBBF/BBBB#/BBBBB/BBBBB
+300/1: buckets=17; empty=; layout=BBBBB/FB.BB/#B.F#/BB.BB/BB.BB
+300/2: buckets=17; empty=; layout=BBBBB/FB.BB/#B.F#/BB.BB/BB.BB
+300/3: buckets=17; empty=; layout=BBBBB/FB.BB/#B.F#/BB.BB/BB.BB
+Level 58, attempt 1: unfilled playable cell 6
+Level 58, attempt 1: unfilled playable cell 11
+Level 58, attempt 1: unfilled playable cell 16
+Level 58, attempt 1: unfilled playable cell 21
+Level 58, attempt 2: unfilled playable cell 6
+Level 58, attempt 2: unfilled playable cell 11
+Level 58, attempt 2: unfilled playable cell 16
+Level 58, attempt 2: unfilled playable cell 21
+Level 58, attempt 3: unfilled playable cell 6
+Level 58, attempt 3: unfilled playable cell 11
+Level 58, attempt 3: unfilled playable cell 16
+Level 58, attempt 3: unfilled playable cell 21
+Level 59, attempt 1: unfilled playable cell 7
+Level 59, attempt 1: unfilled playable cell 12
+Level 59, attempt 1: unfilled playable cell 17
+Level 59, attempt 1: unfilled playable cell 22
+Level 59, attempt 2: unfilled playable cell 7
+Level 59, attempt 2: unfilled playable cell 12
+Level 59, attempt 2: unfilled playable cell 17
+Level 59, attempt 2: unfilled playable cell 22
+Level 59, attempt 3: unfilled playable cell 7
+Level 59, attempt 3: unfilled playable cell 12
+Level 59, attempt 3: unfilled playable cell 17
+Level 59, attempt 3: unfilled playable cell 22
+Level 60, attempt 1: unfilled playable cell 5
+Level 60, attempt 1: unfilled playable cell 10
+Level 60, attempt 1: unfilled playable cell 15
+Level 60, attempt 1: unfilled playable cell 20
+Level 60, attempt 2: unfilled playable cell 5
+Level 60, attempt 2: unfilled playable cell 10
+Level 60, attempt 2: unfilled playable cell 15
+Level 60, attempt 2: unfilled playable cell 20
+Level 60, attempt 3: unfilled playable cell 5
+Level 60, attempt 3: unfilled playable cell 10
+Level 60, attempt 3: unfilled playable cell 15
+Level 60, attempt 3: unfilled playable cell 20
+Level 61, attempt 1: unfilled playable cell 8
+Level 61, attempt 1: unfilled playable cell 18
+Level 61, attempt 1: unfilled playable cell 23
+Level 61, attempt 2: unfilled playable cell 8
+Level 61, attempt 2: unfilled playable cell 18
+Level 61, attempt 2: unfilled playable cell 23
+Level 61, attempt 3: unfilled playable cell 8
+Level 61, attempt 3: unfilled playable cell 18
+Level 61, attempt 3: unfilled playable cell 23
+Level 62, attempt 1: unfilled playable cell 6
+Level 62, attempt 1: unfilled playable cell 11
+Level 62, attempt 1: unfilled playable cell 16
+Level 62, attempt 1: unfilled playable cell 21
+Level 62, attempt 2: unfilled playable cell 6
+Level 62, attempt 2: unfilled playable cell 11
+Level 62, attempt 2: unfilled playable cell 16
+Level 62, attempt 2: unfilled playable cell 21
+Level 62, attempt 3: unfilled playable cell 6
+Level 62, attempt 3: unfilled playable cell 11
+Level 62, attempt 3: unfilled playable cell 16
+Level 62, attempt 3: unfilled playable cell 21
+Level 63, attempt 1: unfilled playable cell 6
+Level 63, attempt 1: unfilled playable cell 11
+Level 63, attempt 1: unfilled playable cell 16
+Level 63, attempt 1: unfilled playable cell 21
+Level 63, attempt 2: unfilled playable cell 6
+Level 63, attempt 2: unfilled playable cell 11
+Level 63, attempt 2: unfilled playable cell 16
+Level 63, attempt 2: unfilled playable cell 21
+Level 63, attempt 3: unfilled playable cell 6
+Level 63, attempt 3: unfilled playable cell 11
+Level 63, attempt 3: unfilled playable cell 16
+Level 63, attempt 3: unfilled playable cell 21
+Level 64, attempt 1: unfilled playable cell 8
+Level 64, attempt 1: unfilled playable cell 13
+Level 64, attempt 1: unfilled playable cell 18
+Level 64, attempt 1: unfilled playable cell 23
+Level 64, attempt 2: unfilled playable cell 8
+Level 64, attempt 2: unfilled playable cell 13
+Level 64, attempt 2: unfilled playable cell 18
+Level 64, attempt 2: unfilled playable cell 23
+Level 64, attempt 3: unfilled playable cell 8
+Level 64, attempt 3: unfilled playable cell 13
+Level 64, attempt 3: unfilled playable cell 18
+Level 64, attempt 3: unfilled playable cell 23
+Level 65, attempt 1: unfilled playable cell 6
+Level 65, attempt 1: unfilled playable cell 11
+Level 65, attempt 1: unfilled playable cell 16
+Level 65, attempt 1: unfilled playable cell 21
+Level 65, attempt 2: unfilled playable cell 6
+Level 65, attempt 2: unfilled playable cell 11
+Level 65, attempt 2: unfilled playable cell 16
+Level 65, attempt 2: unfilled playable cell 21
+Level 65, attempt 3: unfilled playable cell 6
+Level 65, attempt 3: unfilled playable cell 11
+Level 65, attempt 3: unfilled playable cell 16
+Level 65, attempt 3: unfilled playable cell 21
+Level 66, attempt 1: unfilled playable cell 12
+Level 66, attempt 1: unfilled playable cell 17
+Level 66, attempt 1: unfilled playable cell 22
+Level 66, attempt 2: unfilled playable cell 12
+Level 66, attempt 2: unfilled playable cell 17
+Level 66, attempt 2: unfilled playable cell 22
+Level 66, attempt 3: unfilled playable cell 12
+Level 66, attempt 3: unfilled playable cell 17
+Level 66, attempt 3: unfilled playable cell 22
+Level 67, attempt 1: unfilled playable cell 6
+Level 67, attempt 1: unfilled playable cell 16
+Level 67, attempt 1: unfilled playable cell 21
+Level 67, attempt 2: unfilled playable cell 6
+Level 67, attempt 2: unfilled playable cell 16
+Level 67, attempt 2: unfilled playable cell 21
+Level 67, attempt 3: unfilled playable cell 6
+Level 67, attempt 3: unfilled playable cell 16
+Level 67, attempt 3: unfilled playable cell 21
+Level 68, attempt 1: unfilled playable cell 7
+Level 68, attempt 1: unfilled playable cell 12
+Level 68, attempt 1: unfilled playable cell 17
+Level 68, attempt 1: unfilled playable cell 22
+Level 68, attempt 2: unfilled playable cell 7
+Level 68, attempt 2: unfilled playable cell 12
+Level 68, attempt 2: unfilled playable cell 17
+Level 68, attempt 2: unfilled playable cell 22
+Level 68, attempt 3: unfilled playable cell 7
+Level 68, attempt 3: unfilled playable cell 12
+Level 68, attempt 3: unfilled playable cell 17
+Level 68, attempt 3: unfilled playable cell 22
+Level 69, attempt 1: unfilled playable cell 8
+Level 69, attempt 1: unfilled playable cell 13
+Level 69, attempt 1: unfilled playable cell 18
+Level 69, attempt 1: unfilled playable cell 23
+Level 69, attempt 2: unfilled playable cell 8
+Level 69, attempt 2: unfilled playable cell 13
+Level 69, attempt 2: unfilled playable cell 18
+Level 69, attempt 2: unfilled playable cell 23
+Level 69, attempt 3: unfilled playable cell 8
+Level 69, attempt 3: unfilled playable cell 13
+Level 69, attempt 3: unfilled playable cell 18
+Level 69, attempt 3: unfilled playable cell 23
+Level 70, attempt 1: unfilled playable cell 7
+Level 70, attempt 1: unfilled playable cell 17
+Level 70, attempt 1: unfilled playable cell 22
+Level 70, attempt 2: unfilled playable cell 7
+Level 70, attempt 2: unfilled playable cell 17
+Level 70, attempt 2: unfilled playable cell 22
+Level 70, attempt 3: unfilled playable cell 7
+Level 70, attempt 3: unfilled playable cell 17
+Level 70, attempt 3: unfilled playable cell 22
+Level 71, attempt 1: unfilled playable cell 7
+Level 71, attempt 1: unfilled playable cell 17
+Level 71, attempt 1: unfilled playable cell 22
+Level 71, attempt 2: unfilled playable cell 7
+Level 71, attempt 2: unfilled playable cell 17
+Level 71, attempt 2: unfilled playable cell 22
+Level 71, attempt 3: unfilled playable cell 7
+Level 71, attempt 3: unfilled playable cell 17
+Level 71, attempt 3: unfilled playable cell 22
+Level 72, attempt 1: unfilled playable cell 8
+Level 72, attempt 1: unfilled playable cell 13
+Level 72, attempt 1: unfilled playable cell 18
+Level 72, attempt 1: unfilled playable cell 23
+Level 72, attempt 2: unfilled playable cell 8
+Level 72, attempt 2: unfilled playable cell 13
+Level 72, attempt 2: unfilled playable cell 18
+Level 72, attempt 2: unfilled playable cell 23
+Level 72, attempt 3: unfilled playable cell 8
+Level 72, attempt 3: unfilled playable cell 13
+Level 72, attempt 3: unfilled playable cell 18
+Level 72, attempt 3: unfilled playable cell 23
+Level 73, attempt 1: unfilled playable cell 7
+Level 73, attempt 1: unfilled playable cell 12
+Level 73, attempt 1: unfilled playable cell 17
+Level 73, attempt 1: unfilled playable cell 22
+Level 73, attempt 2: unfilled playable cell 7
+Level 73, attempt 2: unfilled playable cell 12
+Level 73, attempt 2: unfilled playable cell 17
+Level 73, attempt 2: unfilled playable cell 22
+Level 73, attempt 3: unfilled playable cell 7
+Level 73, attempt 3: unfilled playable cell 12
+Level 73, attempt 3: unfilled playable cell 17
+Level 73, attempt 3: unfilled playable cell 22
+Level 74, attempt 1: unfilled playable cell 7
+Level 74, attempt 1: unfilled playable cell 17
+Level 74, attempt 1: unfilled playable cell 22
+Level 74, attempt 2: unfilled playable cell 7
+Level 74, attempt 2: unfilled playable cell 17
+Level 74, attempt 2: unfilled playable cell 22
+Level 74, attempt 3: unfilled playable cell 7
+Level 74, attempt 3: unfilled playable cell 17
+Level 74, attempt 3: unfilled playable cell 22
+Level 75, attempt 1: unfilled playable cell 6
+Level 75, attempt 1: unfilled playable cell 11
+Level 75, attempt 1: unfilled playable cell 16
+Level 75, attempt 1: unfilled playable cell 21
+Level 75, attempt 2: unfilled playable cell 6
+Level 75, attempt 2: unfilled playable cell 11
+Level 75, attempt 2: unfilled playable cell 16
+Level 75, attempt 2: unfilled playable cell 21
+Level 75, attempt 3: unfilled playable cell 6
+Level 75, attempt 3: unfilled playable cell 11
+Level 75, attempt 3: unfilled playable cell 16
+Level 75, attempt 3: unfilled playable cell 21
+Level 76, attempt 1: unfilled playable cell 6
+Level 76, attempt 1: unfilled playable cell 11
+Level 76, attempt 1: unfilled playable cell 16
+Level 76, attempt 1: unfilled playable cell 21
+Level 76, attempt 2: unfilled playable cell 6
+Level 76, attempt 2: unfilled playable cell 11
+Level 76, attempt 2: unfilled playable cell 16
+Level 76, attempt 2: unfilled playable cell 21
+Level 76, attempt 3: unfilled playable cell 6
+Level 76, attempt 3: unfilled playable cell 11
+Level 76, attempt 3: unfilled playable cell 16
+Level 76, attempt 3: unfilled playable cell 21
+Level 77, attempt 1: unfilled playable cell 6
+Level 77, attempt 1: unfilled playable cell 16
+Level 77, attempt 1: unfilled playable cell 21
+Level 77, attempt 2: unfilled playable cell 6
+Level 77, attempt 2: unfilled playable cell 16
+Level 77, attempt 2: unfilled playable cell 21
+Level 77, attempt 3: unfilled playable cell 6
+Level 77, attempt 3: unfilled playable cell 16
+Level 77, attempt 3: unfilled playable cell 21
+Level 78, attempt 1: unfilled playable cell 7
+Level 78, attempt 1: unfilled playable cell 17
+Level 78, attempt 1: unfilled playable cell 22
+Level 78, attempt 2: unfilled playable cell 7
+Level 78, attempt 2: unfilled playable cell 17
+Level 78, attempt 2: unfilled playable cell 22
+Level 78, attempt 3: unfilled playable cell 7
+Level 78, attempt 3: unfilled playable cell 17
+Level 78, attempt 3: unfilled playable cell 22
+Level 79, attempt 1: unfilled playable cell 5
+Level 79, attempt 1: unfilled playable cell 10
+Level 79, attempt 1: unfilled playable cell 15
+Level 79, attempt 1: unfilled playable cell 20
+Level 79, attempt 2: unfilled playable cell 5
+Level 79, attempt 2: unfilled playable cell 10
+Level 79, attempt 2: unfilled playable cell 15
+Level 79, attempt 2: unfilled playable cell 20
+Level 79, attempt 3: unfilled playable cell 5
+Level 79, attempt 3: unfilled playable cell 10
+Level 79, attempt 3: unfilled playable cell 15
+Level 79, attempt 3: unfilled playable cell 20
+Level 80, attempt 1: unfilled playable cell 9
+Level 80, attempt 2: unfilled playable cell 9
+Level 80, attempt 3: unfilled playable cell 9
+Level 81, attempt 1: unfilled playable cell 9
+Level 81, attempt 2: unfilled playable cell 9
+Level 81, attempt 3: unfilled playable cell 9
+Level 82, attempt 1: unfilled playable cell 9
+Level 82, attempt 2: unfilled playable cell 9
+Level 82, attempt 3: unfilled playable cell 9
+Level 83, attempt 1: unfilled playable cell 9
+Level 83, attempt 2: unfilled playable cell 9
+Level 83, attempt 3: unfilled playable cell 9
+Level 84, attempt 1: unfilled playable cell 9
+Level 84, attempt 2: unfilled playable cell 9
+Level 84, attempt 3: unfilled playable cell 9
+Level 85, attempt 1: unfilled playable cell 9
+Level 85, attempt 2: unfilled playable cell 9
+Level 85, attempt 3: unfilled playable cell 9
+Level 86, attempt 1: unfilled playable cell 9
+Level 86, attempt 2: unfilled playable cell 9
+Level 86, attempt 3: unfilled playable cell 9
+Level 89, attempt 1: unfilled playable cell 9
+Level 89, attempt 2: unfilled playable cell 9
+Level 89, attempt 3: unfilled playable cell 9
+Level 90, attempt 1: unfilled playable cell 9
+Level 90, attempt 2: unfilled playable cell 9
+Level 90, attempt 3: unfilled playable cell 9
+Level 92, attempt 1: unfilled playable cell 5
+Level 92, attempt 1: unfilled playable cell 10
+Level 92, attempt 1: unfilled playable cell 15
+Level 92, attempt 1: unfilled playable cell 20
+Level 92, attempt 2: unfilled playable cell 5
+Level 92, attempt 2: unfilled playable cell 10
+Level 92, attempt 2: unfilled playable cell 15
+Level 92, attempt 2: unfilled playable cell 20
+Level 92, attempt 3: unfilled playable cell 5
+Level 92, attempt 3: unfilled playable cell 10
+Level 92, attempt 3: unfilled playable cell 15
+Level 92, attempt 3: unfilled playable cell 20
+Level 93, attempt 1: unfilled playable cell 8
+Level 93, attempt 1: unfilled playable cell 18
+Level 93, attempt 1: unfilled playable cell 23
+Level 93, attempt 2: unfilled playable cell 8
+Level 93, attempt 2: unfilled playable cell 18
+Level 93, attempt 2: unfilled playable cell 23
+Level 93, attempt 3: unfilled playable cell 8
+Level 93, attempt 3: unfilled playable cell 18
+Level 93, attempt 3: unfilled playable cell 23
+Level 94, attempt 1: unfilled playable cell 9
+Level 94, attempt 2: unfilled playable cell 9
+Level 94, attempt 3: unfilled playable cell 9
+Level 95, attempt 1: unfilled playable cell 9
+Level 95, attempt 2: unfilled playable cell 9
+Level 95, attempt 3: unfilled playable cell 9
+Level 96, attempt 1: unfilled playable cell 5
+Level 96, attempt 1: unfilled playable cell 10
+Level 96, attempt 1: unfilled playable cell 15
+Level 96, attempt 1: unfilled playable cell 20
+Level 96, attempt 2: unfilled playable cell 5
+Level 96, attempt 2: unfilled playable cell 10
+Level 96, attempt 2: unfilled playable cell 15
+Level 96, attempt 2: unfilled playable cell 20
+Level 96, attempt 3: unfilled playable cell 5
+Level 96, attempt 3: unfilled playable cell 10
+Level 96, attempt 3: unfilled playable cell 15
+Level 96, attempt 3: unfilled playable cell 20
+Level 97, attempt 1: unfilled playable cell 7
+Level 97, attempt 1: unfilled playable cell 12
+Level 97, attempt 1: unfilled playable cell 17
+Level 97, attempt 1: unfilled playable cell 22
+Level 97, attempt 2: unfilled playable cell 7
+Level 97, attempt 2: unfilled playable cell 12
+Level 97, attempt 2: unfilled playable cell 17
+Level 97, attempt 2: unfilled playable cell 22
+Level 97, attempt 3: unfilled playable cell 7
+Level 97, attempt 3: unfilled playable cell 12
+Level 97, attempt 3: unfilled playable cell 17
+Level 97, attempt 3: unfilled playable cell 22
+Level 98, attempt 1: unfilled playable cell 9
+Level 98, attempt 2: unfilled playable cell 9
+Level 98, attempt 3: unfilled playable cell 9
+Level 99, attempt 1: unfilled playable cell 9
+Level 99, attempt 2: unfilled playable cell 9
+Level 99, attempt 3: unfilled playable cell 9
+Level 100, attempt 1: unfilled playable cell 7
+Level 100, attempt 1: unfilled playable cell 12
+Level 100, attempt 1: unfilled playable cell 17
+Level 100, attempt 1: unfilled playable cell 22
+Level 100, attempt 2: unfilled playable cell 7
+Level 100, attempt 2: unfilled playable cell 12
+Level 100, attempt 2: unfilled playable cell 17
+Level 100, attempt 2: unfilled playable cell 22
+Level 100, attempt 3: unfilled playable cell 7
+Level 100, attempt 3: unfilled playable cell 12
+Level 100, attempt 3: unfilled playable cell 17
+Level 100, attempt 3: unfilled playable cell 22
+Level 101, attempt 1: unfilled playable cell 13
+Level 101, attempt 1: unfilled playable cell 18
+Level 101, attempt 1: unfilled playable cell 23
+Level 101, attempt 2: unfilled playable cell 13
+Level 101, attempt 2: unfilled playable cell 18
+Level 101, attempt 2: unfilled playable cell 23
+Level 101, attempt 3: unfilled playable cell 13
+Level 101, attempt 3: unfilled playable cell 18
+Level 101, attempt 3: unfilled playable cell 23
+Level 104, attempt 1: unfilled playable cell 24
+Level 104, attempt 2: unfilled playable cell 24
+Level 104, attempt 3: unfilled playable cell 24
+Level 105, attempt 1: unfilled playable cell 5
+Level 105, attempt 1: unfilled playable cell 10
+Level 105, attempt 1: unfilled playable cell 15
+Level 105, attempt 1: unfilled playable cell 20
+Level 105, attempt 2: unfilled playable cell 5
+Level 105, attempt 2: unfilled playable cell 10
+Level 105, attempt 2: unfilled playable cell 15
+Level 105, attempt 2: unfilled playable cell 20
+Level 105, attempt 3: unfilled playable cell 5
+Level 105, attempt 3: unfilled playable cell 10
+Level 105, attempt 3: unfilled playable cell 15
+Level 105, attempt 3: unfilled playable cell 20
+Level 108, attempt 1: unfilled playable cell 7
+Level 108, attempt 1: unfilled playable cell 12
+Level 108, attempt 1: unfilled playable cell 17
+Level 108, attempt 1: unfilled playable cell 22
+Level 108, attempt 2: unfilled playable cell 7
+Level 108, attempt 2: unfilled playable cell 12
+Level 108, attempt 2: unfilled playable cell 17
+Level 108, attempt 2: unfilled playable cell 22
+Level 108, attempt 3: unfilled playable cell 7
+Level 108, attempt 3: unfilled playable cell 12
+Level 108, attempt 3: unfilled playable cell 17
+Level 108, attempt 3: unfilled playable cell 22
+Level 110, attempt 1: unfilled playable cell 9
+Level 110, attempt 2: unfilled playable cell 9
+Level 110, attempt 3: unfilled playable cell 9
+Level 111, attempt 1: unfilled playable cell 8
+Level 111, attempt 1: unfilled playable cell 13
+Level 111, attempt 1: unfilled playable cell 18
+Level 111, attempt 1: unfilled playable cell 23
+Level 111, attempt 2: unfilled playable cell 8
+Level 111, attempt 2: unfilled playable cell 13
+Level 111, attempt 2: unfilled playable cell 18
+Level 111, attempt 2: unfilled playable cell 23
+Level 111, attempt 3: unfilled playable cell 8
+Level 111, attempt 3: unfilled playable cell 13
+Level 111, attempt 3: unfilled playable cell 18
+Level 111, attempt 3: unfilled playable cell 23
+Level 113, attempt 1: unfilled playable cell 6
+Level 113, attempt 1: unfilled playable cell 11
+Level 113, attempt 1: unfilled playable cell 16
+Level 113, attempt 1: unfilled playable cell 21
+Level 113, attempt 2: unfilled playable cell 6
+Level 113, attempt 2: unfilled playable cell 11
+Level 113, attempt 2: unfilled playable cell 16
+Level 113, attempt 2: unfilled playable cell 21
+Level 113, attempt 3: unfilled playable cell 6
+Level 113, attempt 3: unfilled playable cell 11
+Level 113, attempt 3: unfilled playable cell 16
+Level 113, attempt 3: unfilled playable cell 21
+Level 116, attempt 1: unfilled playable cell 9
+Level 116, attempt 2: unfilled playable cell 9
+Level 116, attempt 3: unfilled playable cell 9
+Level 117, attempt 1: unfilled playable cell 5
+Level 117, attempt 1: unfilled playable cell 10
+Level 117, attempt 1: unfilled playable cell 15
+Level 117, attempt 1: unfilled playable cell 20
+Level 117, attempt 2: unfilled playable cell 5
+Level 117, attempt 2: unfilled playable cell 10
+Level 117, attempt 2: unfilled playable cell 15
+Level 117, attempt 2: unfilled playable cell 20
+Level 117, attempt 3: unfilled playable cell 5
+Level 117, attempt 3: unfilled playable cell 10
+Level 117, attempt 3: unfilled playable cell 15
+Level 117, attempt 3: unfilled playable cell 20
+Level 120, attempt 1: unfilled playable cell 12
+Level 120, attempt 1: unfilled playable cell 17
+Level 120, attempt 1: unfilled playable cell 22
+Level 120, attempt 2: unfilled playable cell 12
+Level 120, attempt 2: unfilled playable cell 17
+Level 120, attempt 2: unfilled playable cell 22
+Level 120, attempt 3: unfilled playable cell 12
+Level 120, attempt 3: unfilled playable cell 17
+Level 120, attempt 3: unfilled playable cell 22
+Level 123, attempt 1: unfilled playable cell 13
+Level 123, attempt 1: unfilled playable cell 18
+Level 123, attempt 1: unfilled playable cell 23
+Level 123, attempt 2: unfilled playable cell 13
+Level 123, attempt 2: unfilled playable cell 18
+Level 123, attempt 2: unfilled playable cell 23
+Level 123, attempt 3: unfilled playable cell 13
+Level 123, attempt 3: unfilled playable cell 18
+Level 123, attempt 3: unfilled playable cell 23
+Level 125, attempt 1: unfilled playable cell 11
+Level 125, attempt 1: unfilled playable cell 16
+Level 125, attempt 1: unfilled playable cell 21
+Level 125, attempt 2: unfilled playable cell 11
+Level 125, attempt 2: unfilled playable cell 16
+Level 125, attempt 2: unfilled playable cell 21
+Level 125, attempt 3: unfilled playable cell 11
+Level 125, attempt 3: unfilled playable cell 16
+Level 125, attempt 3: unfilled playable cell 21
+Level 128, attempt 1: unfilled playable cell 9
+Level 128, attempt 2: unfilled playable cell 9
+Level 128, attempt 3: unfilled playable cell 9
+Level 129, attempt 1: unfilled playable cell 7
+Level 129, attempt 1: unfilled playable cell 12
+Level 129, attempt 1: unfilled playable cell 17
+Level 129, attempt 1: unfilled playable cell 22
+Level 129, attempt 2: unfilled playable cell 7
+Level 129, attempt 2: unfilled playable cell 12
+Level 129, attempt 2: unfilled playable cell 17
+Level 129, attempt 2: unfilled playable cell 22
+Level 129, attempt 3: unfilled playable cell 7
+Level 129, attempt 3: unfilled playable cell 12
+Level 129, attempt 3: unfilled playable cell 17
+Level 129, attempt 3: unfilled playable cell 22
+Level 132, attempt 1: unfilled playable cell 6
+Level 132, attempt 1: unfilled playable cell 16
+Level 132, attempt 1: unfilled playable cell 21
+Level 132, attempt 2: unfilled playable cell 6
+Level 132, attempt 2: unfilled playable cell 16
+Level 132, attempt 2: unfilled playable cell 21
+Level 132, attempt 3: unfilled playable cell 6
+Level 132, attempt 3: unfilled playable cell 16
+Level 132, attempt 3: unfilled playable cell 21
+Level 134, attempt 1: unfilled playable cell 9
+Level 134, attempt 2: unfilled playable cell 9
+Level 134, attempt 3: unfilled playable cell 9
+Level 135, attempt 1: unfilled playable cell 13
+Level 135, attempt 1: unfilled playable cell 18
+Level 135, attempt 1: unfilled playable cell 23
+Level 135, attempt 2: unfilled playable cell 13
+Level 135, attempt 2: unfilled playable cell 18
+Level 135, attempt 2: unfilled playable cell 23
+Level 135, attempt 3: unfilled playable cell 13
+Level 135, attempt 3: unfilled playable cell 18
+Level 135, attempt 3: unfilled playable cell 23
+Level 137, attempt 1: unfilled playable cell 8
+Level 137, attempt 1: unfilled playable cell 13
+Level 137, attempt 1: unfilled playable cell 18
+Level 137, attempt 1: unfilled playable cell 23
+Level 137, attempt 2: unfilled playable cell 8
+Level 137, attempt 2: unfilled playable cell 13
+Level 137, attempt 2: unfilled playable cell 18
+Level 137, attempt 2: unfilled playable cell 23
+Level 137, attempt 3: unfilled playable cell 8
+Level 137, attempt 3: unfilled playable cell 13
+Level 137, attempt 3: unfilled playable cell 18
+Level 137, attempt 3: unfilled playable cell 23
+Level 141, attempt 1: unfilled playable cell 7
+Level 141, attempt 1: unfilled playable cell 12
+Level 141, attempt 1: unfilled playable cell 17
+Level 141, attempt 1: unfilled playable cell 22
+Level 141, attempt 2: unfilled playable cell 7
+Level 141, attempt 2: unfilled playable cell 12
+Level 141, attempt 2: unfilled playable cell 17
+Level 141, attempt 2: unfilled playable cell 22
+Level 141, attempt 3: unfilled playable cell 7
+Level 141, attempt 3: unfilled playable cell 12
+Level 141, attempt 3: unfilled playable cell 17
+Level 141, attempt 3: unfilled playable cell 22
+Level 144, attempt 1: unfilled playable cell 6
+Level 144, attempt 1: unfilled playable cell 11
+Level 144, attempt 1: unfilled playable cell 16
+Level 144, attempt 1: unfilled playable cell 21
+Level 144, attempt 2: unfilled playable cell 6
+Level 144, attempt 2: unfilled playable cell 11
+Level 144, attempt 2: unfilled playable cell 16
+Level 144, attempt 2: unfilled playable cell 21
+Level 144, attempt 3: unfilled playable cell 6
+Level 144, attempt 3: unfilled playable cell 11
+Level 144, attempt 3: unfilled playable cell 16
+Level 144, attempt 3: unfilled playable cell 21
+Level 147, attempt 1: unfilled playable cell 7
+Level 147, attempt 1: unfilled playable cell 12
+Level 147, attempt 1: unfilled playable cell 17
+Level 147, attempt 1: unfilled playable cell 22
+Level 147, attempt 2: unfilled playable cell 7
+Level 147, attempt 2: unfilled playable cell 12
+Level 147, attempt 2: unfilled playable cell 17
+Level 147, attempt 2: unfilled playable cell 22
+Level 147, attempt 3: unfilled playable cell 7
+Level 147, attempt 3: unfilled playable cell 12
+Level 147, attempt 3: unfilled playable cell 17
+Level 147, attempt 3: unfilled playable cell 22
+Level 149, attempt 1: unfilled playable cell 7
+Level 149, attempt 1: unfilled playable cell 17
+Level 149, attempt 1: unfilled playable cell 22
+Level 149, attempt 2: unfilled playable cell 7
+Level 149, attempt 2: unfilled playable cell 17
+Level 149, attempt 2: unfilled playable cell 22
+Level 149, attempt 3: unfilled playable cell 7
+Level 149, attempt 3: unfilled playable cell 17
+Level 149, attempt 3: unfilled playable cell 22
+Level 152, attempt 1: unfilled playable cell 9
+Level 152, attempt 2: unfilled playable cell 9
+Level 152, attempt 3: unfilled playable cell 9
+Level 153, attempt 1: unfilled playable cell 5
+Level 153, attempt 1: unfilled playable cell 10
+Level 153, attempt 1: unfilled playable cell 15
+Level 153, attempt 1: unfilled playable cell 20
+Level 153, attempt 2: unfilled playable cell 5
+Level 153, attempt 2: unfilled playable cell 10
+Level 153, attempt 2: unfilled playable cell 15
+Level 153, attempt 2: unfilled playable cell 20
+Level 153, attempt 3: unfilled playable cell 5
+Level 153, attempt 3: unfilled playable cell 10
+Level 153, attempt 3: unfilled playable cell 15
+Level 153, attempt 3: unfilled playable cell 20
+Level 156, attempt 1: unfilled playable cell 13
+Level 156, attempt 1: unfilled playable cell 18
+Level 156, attempt 1: unfilled playable cell 23
+Level 156, attempt 2: unfilled playable cell 13
+Level 156, attempt 2: unfilled playable cell 18
+Level 156, attempt 2: unfilled playable cell 23
+Level 156, attempt 3: unfilled playable cell 13
+Level 156, attempt 3: unfilled playable cell 18
+Level 156, attempt 3: unfilled playable cell 23
+Level 158, attempt 1: unfilled playable cell 9
+Level 158, attempt 2: unfilled playable cell 9
+Level 158, attempt 3: unfilled playable cell 9
+Level 159, attempt 1: unfilled playable cell 8
+Level 159, attempt 1: unfilled playable cell 13
+Level 159, attempt 1: unfilled playable cell 18
+Level 159, attempt 1: unfilled playable cell 23
+Level 159, attempt 2: unfilled playable cell 8
+Level 159, attempt 2: unfilled playable cell 13
+Level 159, attempt 2: unfilled playable cell 18
+Level 159, attempt 2: unfilled playable cell 23
+Level 159, attempt 3: unfilled playable cell 8
+Level 159, attempt 3: unfilled playable cell 13
+Level 159, attempt 3: unfilled playable cell 18
+Level 159, attempt 3: unfilled playable cell 23
+Level 161, attempt 1: unfilled playable cell 6
+Level 161, attempt 1: unfilled playable cell 11
+Level 161, attempt 1: unfilled playable cell 16
+Level 161, attempt 1: unfilled playable cell 21
+Level 161, attempt 2: unfilled playable cell 6
+Level 161, attempt 2: unfilled playable cell 11
+Level 161, attempt 2: unfilled playable cell 16
+Level 161, attempt 2: unfilled playable cell 21
+Level 161, attempt 3: unfilled playable cell 6
+Level 161, attempt 3: unfilled playable cell 11
+Level 161, attempt 3: unfilled playable cell 16
+Level 161, attempt 3: unfilled playable cell 21
+Level 165, attempt 1: unfilled playable cell 7
+Level 165, attempt 1: unfilled playable cell 12
+Level 165, attempt 1: unfilled playable cell 17
+Level 165, attempt 1: unfilled playable cell 22
+Level 165, attempt 2: unfilled playable cell 7
+Level 165, attempt 2: unfilled playable cell 12
+Level 165, attempt 2: unfilled playable cell 17
+Level 165, attempt 2: unfilled playable cell 22
+Level 165, attempt 3: unfilled playable cell 7
+Level 165, attempt 3: unfilled playable cell 12
+Level 165, attempt 3: unfilled playable cell 17
+Level 165, attempt 3: unfilled playable cell 22
+Level 168, attempt 1: unfilled playable cell 7
+Level 168, attempt 1: unfilled playable cell 12
+Level 168, attempt 1: unfilled playable cell 17
+Level 168, attempt 1: unfilled playable cell 22
+Level 168, attempt 2: unfilled playable cell 7
+Level 168, attempt 2: unfilled playable cell 12
+Level 168, attempt 2: unfilled playable cell 17
+Level 168, attempt 2: unfilled playable cell 22
+Level 168, attempt 3: unfilled playable cell 7
+Level 168, attempt 3: unfilled playable cell 12
+Level 168, attempt 3: unfilled playable cell 17
+Level 168, attempt 3: unfilled playable cell 22
+Level 170, attempt 1: unfilled playable cell 9
+Level 170, attempt 2: unfilled playable cell 9
+Level 170, attempt 3: unfilled playable cell 9
+Level 171, attempt 1: unfilled playable cell 7
+Level 171, attempt 1: unfilled playable cell 12
+Level 171, attempt 1: unfilled playable cell 17
+Level 171, attempt 1: unfilled playable cell 22
+Level 171, attempt 2: unfilled playable cell 7
+Level 171, attempt 2: unfilled playable cell 12
+Level 171, attempt 2: unfilled playable cell 17
+Level 171, attempt 2: unfilled playable cell 22
+Level 171, attempt 3: unfilled playable cell 7
+Level 171, attempt 3: unfilled playable cell 12
+Level 171, attempt 3: unfilled playable cell 17
+Level 171, attempt 3: unfilled playable cell 22
+Level 173, attempt 1: unfilled playable cell 6
+Level 173, attempt 1: unfilled playable cell 11
+Level 173, attempt 1: unfilled playable cell 16
+Level 173, attempt 1: unfilled playable cell 21
+Level 173, attempt 2: unfilled playable cell 6
+Level 173, attempt 2: unfilled playable cell 11
+Level 173, attempt 2: unfilled playable cell 16
+Level 173, attempt 2: unfilled playable cell 21
+Level 173, attempt 3: unfilled playable cell 6
+Level 173, attempt 3: unfilled playable cell 11
+Level 173, attempt 3: unfilled playable cell 16
+Level 173, attempt 3: unfilled playable cell 21
+Level 176, attempt 1: unfilled playable cell 9
+Level 176, attempt 2: unfilled playable cell 9
+Level 176, attempt 3: unfilled playable cell 9
+Level 177, attempt 1: unfilled playable cell 5
+Level 177, attempt 1: unfilled playable cell 10
+Level 177, attempt 1: unfilled playable cell 15
+Level 177, attempt 1: unfilled playable cell 20
+Level 177, attempt 2: unfilled playable cell 5
+Level 177, attempt 2: unfilled playable cell 10
+Level 177, attempt 2: unfilled playable cell 15
+Level 177, attempt 2: unfilled playable cell 20
+Level 177, attempt 3: unfilled playable cell 5
+Level 177, attempt 3: unfilled playable cell 10
+Level 177, attempt 3: unfilled playable cell 15
+Level 177, attempt 3: unfilled playable cell 20
+Level 180, attempt 1: unfilled playable cell 6
+Level 180, attempt 1: unfilled playable cell 11
+Level 180, attempt 1: unfilled playable cell 16
+Level 180, attempt 1: unfilled playable cell 21
+Level 180, attempt 2: unfilled playable cell 6
+Level 180, attempt 2: unfilled playable cell 11
+Level 180, attempt 2: unfilled playable cell 16
+Level 180, attempt 2: unfilled playable cell 21
+Level 180, attempt 3: unfilled playable cell 6
+Level 180, attempt 3: unfilled playable cell 11
+Level 180, attempt 3: unfilled playable cell 16
+Level 180, attempt 3: unfilled playable cell 21
+Level 182, attempt 1: unfilled playable cell 9
+Level 182, attempt 2: unfilled playable cell 9
+Level 182, attempt 3: unfilled playable cell 9
+Level 183, attempt 1: unfilled playable cell 5
+Level 183, attempt 1: unfilled playable cell 10
+Level 183, attempt 1: unfilled playable cell 15
+Level 183, attempt 1: unfilled playable cell 20
+Level 183, attempt 2: unfilled playable cell 5
+Level 183, attempt 2: unfilled playable cell 10
+Level 183, attempt 2: unfilled playable cell 15
+Level 183, attempt 2: unfilled playable cell 20
+Level 183, attempt 3: unfilled playable cell 5
+Level 183, attempt 3: unfilled playable cell 10
+Level 183, attempt 3: unfilled playable cell 15
+Level 183, attempt 3: unfilled playable cell 20
+Level 185, attempt 1: unfilled playable cell 9
+Level 185, attempt 1: unfilled playable cell 14
+Level 185, attempt 1: unfilled playable cell 19
+Level 185, attempt 1: unfilled playable cell 24
+Level 185, attempt 2: unfilled playable cell 9
+Level 185, attempt 2: unfilled playable cell 14
+Level 185, attempt 2: unfilled playable cell 19
+Level 185, attempt 2: unfilled playable cell 24
+Level 185, attempt 3: unfilled playable cell 9
+Level 185, attempt 3: unfilled playable cell 14
+Level 185, attempt 3: unfilled playable cell 19
+Level 185, attempt 3: unfilled playable cell 24
+Level 188, attempt 1: unfilled playable cell 9
+Level 188, attempt 2: unfilled playable cell 9
+Level 188, attempt 3: unfilled playable cell 9
+Level 189, attempt 1: unfilled playable cell 11
+Level 189, attempt 1: unfilled playable cell 16
+Level 189, attempt 1: unfilled playable cell 21
+Level 189, attempt 2: unfilled playable cell 11
+Level 189, attempt 2: unfilled playable cell 16
+Level 189, attempt 2: unfilled playable cell 21
+Level 189, attempt 3: unfilled playable cell 11
+Level 189, attempt 3: unfilled playable cell 16
+Level 189, attempt 3: unfilled playable cell 21
+Level 192, attempt 1: unfilled playable cell 12
+Level 192, attempt 1: unfilled playable cell 17
+Level 192, attempt 1: unfilled playable cell 22
+Level 192, attempt 2: unfilled playable cell 12
+Level 192, attempt 2: unfilled playable cell 17
+Level 192, attempt 2: unfilled playable cell 22
+Level 192, attempt 3: unfilled playable cell 12
+Level 192, attempt 3: unfilled playable cell 17
+Level 192, attempt 3: unfilled playable cell 22
+Level 194, attempt 1: unfilled playable cell 9
+Level 194, attempt 2: unfilled playable cell 9
+Level 194, attempt 3: unfilled playable cell 9
+Level 195, attempt 1: unfilled playable cell 8
+Level 195, attempt 1: unfilled playable cell 13
+Level 195, attempt 1: unfilled playable cell 18
+Level 195, attempt 1: unfilled playable cell 23
+Level 195, attempt 2: unfilled playable cell 8
+Level 195, attempt 2: unfilled playable cell 13
+Level 195, attempt 2: unfilled playable cell 18
+Level 195, attempt 2: unfilled playable cell 23
+Level 195, attempt 3: unfilled playable cell 8
+Level 195, attempt 3: unfilled playable cell 13
+Level 195, attempt 3: unfilled playable cell 18
+Level 195, attempt 3: unfilled playable cell 23
+Level 197, attempt 1: unfilled playable cell 7
+Level 197, attempt 1: unfilled playable cell 12
+Level 197, attempt 1: unfilled playable cell 17
+Level 197, attempt 1: unfilled playable cell 22
+Level 197, attempt 2: unfilled playable cell 7
+Level 197, attempt 2: unfilled playable cell 12
+Level 197, attempt 2: unfilled playable cell 17
+Level 197, attempt 2: unfilled playable cell 22
+Level 197, attempt 3: unfilled playable cell 7
+Level 197, attempt 3: unfilled playable cell 12
+Level 197, attempt 3: unfilled playable cell 17
+Level 197, attempt 3: unfilled playable cell 22
+Level 201, attempt 1: unfilled playable cell 6
+Level 201, attempt 1: unfilled playable cell 11
+Level 201, attempt 1: unfilled playable cell 16
+Level 201, attempt 1: unfilled playable cell 21
+Level 201, attempt 2: unfilled playable cell 6
+Level 201, attempt 2: unfilled playable cell 11
+Level 201, attempt 2: unfilled playable cell 16
+Level 201, attempt 2: unfilled playable cell 21
+Level 201, attempt 3: unfilled playable cell 6
+Level 201, attempt 3: unfilled playable cell 11
+Level 201, attempt 3: unfilled playable cell 16
+Level 201, attempt 3: unfilled playable cell 21
+Level 204, attempt 1: unfilled playable cell 6
+Level 204, attempt 1: unfilled playable cell 11
+Level 204, attempt 1: unfilled playable cell 16
+Level 204, attempt 1: unfilled playable cell 21
+Level 204, attempt 2: unfilled playable cell 6
+Level 204, attempt 2: unfilled playable cell 11
+Level 204, attempt 2: unfilled playable cell 16
+Level 204, attempt 2: unfilled playable cell 21
+Level 204, attempt 3: unfilled playable cell 6
+Level 204, attempt 3: unfilled playable cell 11
+Level 204, attempt 3: unfilled playable cell 16
+Level 204, attempt 3: unfilled playable cell 21
+Level 206, attempt 1: unfilled playable cell 9
+Level 206, attempt 2: unfilled playable cell 9
+Level 206, attempt 3: unfilled playable cell 9
+Level 207, attempt 1: unfilled playable cell 8
+Level 207, attempt 1: unfilled playable cell 13
+Level 207, attempt 1: unfilled playable cell 18
+Level 207, attempt 1: unfilled playable cell 23
+Level 207, attempt 2: unfilled playable cell 8
+Level 207, attempt 2: unfilled playable cell 13
+Level 207, attempt 2: unfilled playable cell 18
+Level 207, attempt 2: unfilled playable cell 23
+Level 207, attempt 3: unfilled playable cell 8
+Level 207, attempt 3: unfilled playable cell 13
+Level 207, attempt 3: unfilled playable cell 18
+Level 207, attempt 3: unfilled playable cell 23
+Level 209, attempt 1: unfilled playable cell 8
+Level 209, attempt 1: unfilled playable cell 13
+Level 209, attempt 1: unfilled playable cell 18
+Level 209, attempt 1: unfilled playable cell 23
+Level 209, attempt 2: unfilled playable cell 8
+Level 209, attempt 2: unfilled playable cell 13
+Level 209, attempt 2: unfilled playable cell 18
+Level 209, attempt 2: unfilled playable cell 23
+Level 209, attempt 3: unfilled playable cell 8
+Level 209, attempt 3: unfilled playable cell 13
+Level 209, attempt 3: unfilled playable cell 18
+Level 209, attempt 3: unfilled playable cell 23
+Level 212, attempt 1: unfilled playable cell 9
+Level 212, attempt 2: unfilled playable cell 9
+Level 212, attempt 3: unfilled playable cell 9
+Level 213, attempt 1: unfilled playable cell 7
+Level 213, attempt 1: unfilled playable cell 12
+Level 213, attempt 1: unfilled playable cell 17
+Level 213, attempt 1: unfilled playable cell 22
+Level 213, attempt 2: unfilled playable cell 7
+Level 213, attempt 2: unfilled playable cell 12
+Level 213, attempt 2: unfilled playable cell 17
+Level 213, attempt 2: unfilled playable cell 22
+Level 213, attempt 3: unfilled playable cell 7
+Level 213, attempt 3: unfilled playable cell 12
+Level 213, attempt 3: unfilled playable cell 17
+Level 213, attempt 3: unfilled playable cell 22
+Level 216, attempt 1: unfilled playable cell 17
+Level 216, attempt 1: unfilled playable cell 22
+Level 216, attempt 2: unfilled playable cell 17
+Level 216, attempt 2: unfilled playable cell 22
+Level 216, attempt 3: unfilled playable cell 17
+Level 216, attempt 3: unfilled playable cell 22
+Level 218, attempt 1: unfilled playable cell 9
+Level 218, attempt 2: unfilled playable cell 9
+Level 218, attempt 3: unfilled playable cell 9
+Level 219, attempt 1: unfilled playable cell 6
+Level 219, attempt 1: unfilled playable cell 11
+Level 219, attempt 1: unfilled playable cell 16
+Level 219, attempt 1: unfilled playable cell 21
+Level 219, attempt 2: unfilled playable cell 6
+Level 219, attempt 2: unfilled playable cell 11
+Level 219, attempt 2: unfilled playable cell 16
+Level 219, attempt 2: unfilled playable cell 21
+Level 219, attempt 3: unfilled playable cell 6
+Level 219, attempt 3: unfilled playable cell 11
+Level 219, attempt 3: unfilled playable cell 16
+Level 219, attempt 3: unfilled playable cell 21
+Level 221, attempt 1: unfilled playable cell 7
+Level 221, attempt 1: unfilled playable cell 17
+Level 221, attempt 1: unfilled playable cell 22
+Level 221, attempt 2: unfilled playable cell 7
+Level 221, attempt 2: unfilled playable cell 17
+Level 221, attempt 2: unfilled playable cell 22
+Level 221, attempt 3: unfilled playable cell 7
+Level 221, attempt 3: unfilled playable cell 17
+Level 221, attempt 3: unfilled playable cell 22
+Level 224, attempt 1: unfilled playable cell 9
+Level 224, attempt 2: unfilled playable cell 9
+Level 224, attempt 3: unfilled playable cell 9
+Level 225, attempt 1: unfilled playable cell 6
+Level 225, attempt 1: unfilled playable cell 11
+Level 225, attempt 1: unfilled playable cell 16
+Level 225, attempt 1: unfilled playable cell 21
+Level 225, attempt 2: unfilled playable cell 6
+Level 225, attempt 2: unfilled playable cell 11
+Level 225, attempt 2: unfilled playable cell 16
+Level 225, attempt 2: unfilled playable cell 21
+Level 225, attempt 3: unfilled playable cell 6
+Level 225, attempt 3: unfilled playable cell 11
+Level 225, attempt 3: unfilled playable cell 16
+Level 225, attempt 3: unfilled playable cell 21
+Level 228, attempt 1: unfilled playable cell 7
+Level 228, attempt 1: unfilled playable cell 12
+Level 228, attempt 1: unfilled playable cell 17
+Level 228, attempt 1: unfilled playable cell 22
+Level 228, attempt 2: unfilled playable cell 7
+Level 228, attempt 2: unfilled playable cell 12
+Level 228, attempt 2: unfilled playable cell 17
+Level 228, attempt 2: unfilled playable cell 22
+Level 228, attempt 3: unfilled playable cell 7
+Level 228, attempt 3: unfilled playable cell 12
+Level 228, attempt 3: unfilled playable cell 17
+Level 228, attempt 3: unfilled playable cell 22
+Level 230, attempt 1: unfilled playable cell 9
+Level 230, attempt 2: unfilled playable cell 9
+Level 230, attempt 3: unfilled playable cell 9
+Level 231, attempt 1: unfilled playable cell 8
+Level 231, attempt 1: unfilled playable cell 18
+Level 231, attempt 1: unfilled playable cell 23
+Level 231, attempt 2: unfilled playable cell 8
+Level 231, attempt 2: unfilled playable cell 18
+Level 231, attempt 2: unfilled playable cell 23
+Level 231, attempt 3: unfilled playable cell 8
+Level 231, attempt 3: unfilled playable cell 18
+Level 231, attempt 3: unfilled playable cell 23
+Level 233, attempt 1: unfilled playable cell 7
+Level 233, attempt 1: unfilled playable cell 12
+Level 233, attempt 1: unfilled playable cell 17
+Level 233, attempt 1: unfilled playable cell 22
+Level 233, attempt 2: unfilled playable cell 7
+Level 233, attempt 2: unfilled playable cell 12
+Level 233, attempt 2: unfilled playable cell 17
+Level 233, attempt 2: unfilled playable cell 22
+Level 233, attempt 3: unfilled playable cell 7
+Level 233, attempt 3: unfilled playable cell 12
+Level 233, attempt 3: unfilled playable cell 17
+Level 233, attempt 3: unfilled playable cell 22
+Level 236, attempt 1: unfilled playable cell 9
+Level 236, attempt 2: unfilled playable cell 9
+Level 236, attempt 3: unfilled playable cell 9
+Level 237, attempt 1: unfilled playable cell 6
+Level 237, attempt 1: unfilled playable cell 11
+Level 237, attempt 1: unfilled playable cell 16
+Level 237, attempt 1: unfilled playable cell 21
+Level 237, attempt 2: unfilled playable cell 6
+Level 237, attempt 2: unfilled playable cell 11
+Level 237, attempt 2: unfilled playable cell 16
+Level 237, attempt 2: unfilled playable cell 21
+Level 237, attempt 3: unfilled playable cell 6
+Level 237, attempt 3: unfilled playable cell 11
+Level 237, attempt 3: unfilled playable cell 16
+Level 237, attempt 3: unfilled playable cell 21
+Level 240, attempt 1: unfilled playable cell 9
+Level 240, attempt 1: unfilled playable cell 19
+Level 240, attempt 1: unfilled playable cell 24
+Level 240, attempt 2: unfilled playable cell 9
+Level 240, attempt 2: unfilled playable cell 19
+Level 240, attempt 2: unfilled playable cell 24
+Level 240, attempt 3: unfilled playable cell 9
+Level 240, attempt 3: unfilled playable cell 19
+Level 240, attempt 3: unfilled playable cell 24
+Level 242, attempt 1: unfilled playable cell 9
+Level 242, attempt 2: unfilled playable cell 9
+Level 242, attempt 3: unfilled playable cell 9
+Level 243, attempt 1: unfilled playable cell 7
+Level 243, attempt 1: unfilled playable cell 12
+Level 243, attempt 1: unfilled playable cell 17
+Level 243, attempt 1: unfilled playable cell 22
+Level 243, attempt 2: unfilled playable cell 7
+Level 243, attempt 2: unfilled playable cell 12
+Level 243, attempt 2: unfilled playable cell 17
+Level 243, attempt 2: unfilled playable cell 22
+Level 243, attempt 3: unfilled playable cell 7
+Level 243, attempt 3: unfilled playable cell 12
+Level 243, attempt 3: unfilled playable cell 17
+Level 243, attempt 3: unfilled playable cell 22
+Level 245, attempt 1: unfilled playable cell 5
+Level 245, attempt 1: unfilled playable cell 10
+Level 245, attempt 1: unfilled playable cell 15
+Level 245, attempt 1: unfilled playable cell 20
+Level 245, attempt 2: unfilled playable cell 5
+Level 245, attempt 2: unfilled playable cell 10
+Level 245, attempt 2: unfilled playable cell 15
+Level 245, attempt 2: unfilled playable cell 20
+Level 245, attempt 3: unfilled playable cell 5
+Level 245, attempt 3: unfilled playable cell 10
+Level 245, attempt 3: unfilled playable cell 15
+Level 245, attempt 3: unfilled playable cell 20
+Level 248, attempt 1: unfilled playable cell 9
+Level 248, attempt 2: unfilled playable cell 9
+Level 248, attempt 3: unfilled playable cell 9
+Level 249, attempt 1: unfilled playable cell 5
+Level 249, attempt 1: unfilled playable cell 10
+Level 249, attempt 1: unfilled playable cell 15
+Level 249, attempt 1: unfilled playable cell 20
+Level 249, attempt 2: unfilled playable cell 5
+Level 249, attempt 2: unfilled playable cell 10
+Level 249, attempt 2: unfilled playable cell 15
+Level 249, attempt 2: unfilled playable cell 20
+Level 249, attempt 3: unfilled playable cell 5
+Level 249, attempt 3: unfilled playable cell 10
+Level 249, attempt 3: unfilled playable cell 15
+Level 249, attempt 3: unfilled playable cell 20
+Level 252, attempt 1: unfilled playable cell 7
+Level 252, attempt 1: unfilled playable cell 12
+Level 252, attempt 1: unfilled playable cell 17
+Level 252, attempt 1: unfilled playable cell 22
+Level 252, attempt 2: unfilled playable cell 7
+Level 252, attempt 2: unfilled playable cell 12
+Level 252, attempt 2: unfilled playable cell 17
+Level 252, attempt 2: unfilled playable cell 22
+Level 252, attempt 3: unfilled playable cell 7
+Level 252, attempt 3: unfilled playable cell 12
+Level 252, attempt 3: unfilled playable cell 17
+Level 252, attempt 3: unfilled playable cell 22
+Level 254, attempt 1: unfilled playable cell 9
+Level 254, attempt 2: unfilled playable cell 9
+Level 254, attempt 3: unfilled playable cell 9
+Level 255, attempt 1: unfilled playable cell 9
+Level 255, attempt 1: unfilled playable cell 14
+Level 255, attempt 1: unfilled playable cell 19
+Level 255, attempt 1: unfilled playable cell 24
+Level 255, attempt 2: unfilled playable cell 9
+Level 255, attempt 2: unfilled playable cell 14
+Level 255, attempt 2: unfilled playable cell 19
+Level 255, attempt 2: unfilled playable cell 24
+Level 255, attempt 3: unfilled playable cell 9
+Level 255, attempt 3: unfilled playable cell 14
+Level 255, attempt 3: unfilled playable cell 19
+Level 255, attempt 3: unfilled playable cell 24
+Level 257, attempt 1: unfilled playable cell 6
+Level 257, attempt 1: unfilled playable cell 11
+Level 257, attempt 1: unfilled playable cell 16
+Level 257, attempt 1: unfilled playable cell 21
+Level 257, attempt 2: unfilled playable cell 6
+Level 257, attempt 2: unfilled playable cell 11
+Level 257, attempt 2: unfilled playable cell 16
+Level 257, attempt 2: unfilled playable cell 21
+Level 257, attempt 3: unfilled playable cell 6
+Level 257, attempt 3: unfilled playable cell 11
+Level 257, attempt 3: unfilled playable cell 16
+Level 257, attempt 3: unfilled playable cell 21
+Level 260, attempt 1: unfilled playable cell 9
+Level 260, attempt 2: unfilled playable cell 9
+Level 260, attempt 3: unfilled playable cell 9
+Level 261, attempt 1: unfilled playable cell 8
+Level 261, attempt 1: unfilled playable cell 13
+Level 261, attempt 1: unfilled playable cell 18
+Level 261, attempt 1: unfilled playable cell 23
+Level 261, attempt 2: unfilled playable cell 8
+Level 261, attempt 2: unfilled playable cell 13
+Level 261, attempt 2: unfilled playable cell 18
+Level 261, attempt 2: unfilled playable cell 23
+Level 261, attempt 3: unfilled playable cell 8
+Level 261, attempt 3: unfilled playable cell 13
+Level 261, attempt 3: unfilled playable cell 18
+Level 261, attempt 3: unfilled playable cell 23
+Level 264, attempt 1: unfilled playable cell 7
+Level 264, attempt 1: unfilled playable cell 12
+Level 264, attempt 1: unfilled playable cell 17
+Level 264, attempt 1: unfilled playable cell 22
+Level 264, attempt 2: unfilled playable cell 7
+Level 264, attempt 2: unfilled playable cell 12
+Level 264, attempt 2: unfilled playable cell 17
+Level 264, attempt 2: unfilled playable cell 22
+Level 264, attempt 3: unfilled playable cell 7
+Level 264, attempt 3: unfilled playable cell 12
+Level 264, attempt 3: unfilled playable cell 17
+Level 264, attempt 3: unfilled playable cell 22
+Level 267, attempt 1: unfilled playable cell 7
+Level 267, attempt 1: unfilled playable cell 12
+Level 267, attempt 1: unfilled playable cell 17
+Level 267, attempt 1: unfilled playable cell 22
+Level 267, attempt 2: unfilled playable cell 7
+Level 267, attempt 2: unfilled playable cell 12
+Level 267, attempt 2: unfilled playable cell 17
+Level 267, attempt 2: unfilled playable cell 22
+Level 267, attempt 3: unfilled playable cell 7
+Level 267, attempt 3: unfilled playable cell 12
+Level 267, attempt 3: unfilled playable cell 17
+Level 267, attempt 3: unfilled playable cell 22
+Level 269, attempt 1: unfilled playable cell 16
+Level 269, attempt 1: unfilled playable cell 21
+Level 269, attempt 2: unfilled playable cell 16
+Level 269, attempt 2: unfilled playable cell 21
+Level 269, attempt 3: unfilled playable cell 16
+Level 269, attempt 3: unfilled playable cell 21
+Level 272, attempt 1: unfilled playable cell 9
+Level 272, attempt 2: unfilled playable cell 9
+Level 272, attempt 3: unfilled playable cell 9
+Level 273, attempt 1: unfilled playable cell 6
+Level 273, attempt 1: unfilled playable cell 11
+Level 273, attempt 1: unfilled playable cell 16
+Level 273, attempt 1: unfilled playable cell 21
+Level 273, attempt 2: unfilled playable cell 6
+Level 273, attempt 2: unfilled playable cell 11
+Level 273, attempt 2: unfilled playable cell 16
+Level 273, attempt 2: unfilled playable cell 21
+Level 273, attempt 3: unfilled playable cell 6
+Level 273, attempt 3: unfilled playable cell 11
+Level 273, attempt 3: unfilled playable cell 16
+Level 273, attempt 3: unfilled playable cell 21
+Level 276, attempt 1: unfilled playable cell 7
+Level 276, attempt 1: unfilled playable cell 12
+Level 276, attempt 1: unfilled playable cell 17
+Level 276, attempt 1: unfilled playable cell 22
+Level 276, attempt 2: unfilled playable cell 7
+Level 276, attempt 2: unfilled playable cell 12
+Level 276, attempt 2: unfilled playable cell 17
+Level 276, attempt 2: unfilled playable cell 22
+Level 276, attempt 3: unfilled playable cell 7
+Level 276, attempt 3: unfilled playable cell 12
+Level 276, attempt 3: unfilled playable cell 17
+Level 276, attempt 3: unfilled playable cell 22
+Level 278, attempt 1: unfilled playable cell 9
+Level 278, attempt 2: unfilled playable cell 9
+Level 278, attempt 3: unfilled playable cell 9
+Level 279, attempt 1: unfilled playable cell 6
+Level 279, attempt 1: unfilled playable cell 11
+Level 279, attempt 1: unfilled playable cell 16
+Level 279, attempt 1: unfilled playable cell 21
+Level 279, attempt 2: unfilled playable cell 6
+Level 279, attempt 2: unfilled playable cell 11
+Level 279, attempt 2: unfilled playable cell 16
+Level 279, attempt 2: unfilled playable cell 21
+Level 279, attempt 3: unfilled playable cell 6
+Level 279, attempt 3: unfilled playable cell 11
+Level 279, attempt 3: unfilled playable cell 16
+Level 279, attempt 3: unfilled playable cell 21
+Level 281, attempt 1: unfilled playable cell 9
+Level 281, attempt 1: unfilled playable cell 14
+Level 281, attempt 1: unfilled playable cell 19
+Level 281, attempt 1: unfilled playable cell 24
+Level 281, attempt 2: unfilled playable cell 9
+Level 281, attempt 2: unfilled playable cell 14
+Level 281, attempt 2: unfilled playable cell 19
+Level 281, attempt 2: unfilled playable cell 24
+Level 281, attempt 3: unfilled playable cell 9
+Level 281, attempt 3: unfilled playable cell 14
+Level 281, attempt 3: unfilled playable cell 19
+Level 281, attempt 3: unfilled playable cell 24
+Level 285, attempt 1: unfilled playable cell 6
+Level 285, attempt 1: unfilled playable cell 11
+Level 285, attempt 1: unfilled playable cell 16
+Level 285, attempt 1: unfilled playable cell 21
+Level 285, attempt 2: unfilled playable cell 6
+Level 285, attempt 2: unfilled playable cell 11
+Level 285, attempt 2: unfilled playable cell 16
+Level 285, attempt 2: unfilled playable cell 21
+Level 285, attempt 3: unfilled playable cell 6
+Level 285, attempt 3: unfilled playable cell 11
+Level 285, attempt 3: unfilled playable cell 16
+Level 285, attempt 3: unfilled playable cell 21
+Level 288, attempt 1: unfilled playable cell 7
+Level 288, attempt 1: unfilled playable cell 12
+Level 288, attempt 1: unfilled playable cell 17
+Level 288, attempt 1: unfilled playable cell 22
+Level 288, attempt 2: unfilled playable cell 7
+Level 288, attempt 2: unfilled playable cell 12
+Level 288, attempt 2: unfilled playable cell 17
+Level 288, attempt 2: unfilled playable cell 22
+Level 288, attempt 3: unfilled playable cell 7
+Level 288, attempt 3: unfilled playable cell 12
+Level 288, attempt 3: unfilled playable cell 17
+Level 288, attempt 3: unfilled playable cell 22
+Level 290, attempt 1: unfilled playable cell 9
+Level 290, attempt 2: unfilled playable cell 9
+Level 290, attempt 3: unfilled playable cell 9
+Level 291, attempt 1: unfilled playable cell 7
+Level 291, attempt 1: unfilled playable cell 12
+Level 291, attempt 1: unfilled playable cell 17
+Level 291, attempt 1: unfilled playable cell 22
+Level 291, attempt 2: unfilled playable cell 7
+Level 291, attempt 2: unfilled playable cell 12
+Level 291, attempt 2: unfilled playable cell 17
+Level 291, attempt 2: unfilled playable cell 22
+Level 291, attempt 3: unfilled playable cell 7
+Level 291, attempt 3: unfilled playable cell 12
+Level 291, attempt 3: unfilled playable cell 17
+Level 291, attempt 3: unfilled playable cell 22
+Level 293, attempt 1: unfilled playable cell 6
+Level 293, attempt 1: unfilled playable cell 16
+Level 293, attempt 1: unfilled playable cell 21
+Level 293, attempt 2: unfilled playable cell 6
+Level 293, attempt 2: unfilled playable cell 16
+Level 293, attempt 2: unfilled playable cell 21
+Level 293, attempt 3: unfilled playable cell 6
+Level 293, attempt 3: unfilled playable cell 16
+Level 293, attempt 3: unfilled playable cell 21
+Level 296, attempt 1: unfilled playable cell 9
+Level 296, attempt 2: unfilled playable cell 9
+Level 296, attempt 3: unfilled playable cell 9
+Level 297, attempt 1: unfilled playable cell 8
+Level 297, attempt 1: unfilled playable cell 13
+Level 297, attempt 1: unfilled playable cell 18
+Level 297, attempt 1: unfilled playable cell 23
+Level 297, attempt 2: unfilled playable cell 8
+Level 297, attempt 2: unfilled playable cell 13
+Level 297, attempt 2: unfilled playable cell 18
+Level 297, attempt 2: unfilled playable cell 23
+Level 297, attempt 3: unfilled playable cell 8
+Level 297, attempt 3: unfilled playable cell 13
+Level 297, attempt 3: unfilled playable cell 18
+Level 297, attempt 3: unfilled playable cell 23
+Level 300, attempt 1: unfilled playable cell 7
+Level 300, attempt 1: unfilled playable cell 12
+Level 300, attempt 1: unfilled playable cell 17
+Level 300, attempt 1: unfilled playable cell 22
+Level 300, attempt 2: unfilled playable cell 7
+Level 300, attempt 2: unfilled playable cell 12
+Level 300, attempt 2: unfilled playable cell 17
+Level 300, attempt 2: unfilled playable cell 22
+Level 300, attempt 3: unfilled playable cell 7
+Level 300, attempt 3: unfilled playable cell 12
+Level 300, attempt 3: unfilled playable cell 17
+Level 300, attempt 3: unfilled playable cell 22

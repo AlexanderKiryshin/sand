@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0914
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280825159
+  - serializedVersion: 2
+    rgba: 4288531188
+  - serializedVersion: 2
+    rgba: 4290484374
+  - serializedVersion: 2
+    rgba: 4282342773
+  - serializedVersion: 2
+    rgba: 4291813875
+  - serializedVersion: 2
+    rgba: 4284916938
+  - serializedVersion: 2
+    rgba: 4283467427
+  - serializedVersion: 2
+    rgba: 4287796650
+  - serializedVersion: 2
+    rgba: 4287985781
+  - serializedVersion: 2
+    rgba: 4290884802
+  encodedCells: S1:4:4096:278D807E:hVRNbxo5GP4NVkdQrrMlpbl1Z6sN3KZr4bRHdr1l55aI2r0SuXZ75CNguEUTVfi40EjUv3Kf19Akqlbqm8AYP+/H835NsYsx7mJ1nW9j3ov0o1cUxS6PvdjOY178BI/pKsa7dNjSF8EdqANu54NYDeIpob3dOung0AFcwV9+mse7ajuQ+faUTNvtPJ/GeJrnW/yUMuZ0W1U5JOF4TvfrTo6wW7rM25K0q5j/INuH4/S0M93P2vmvsx+VSIjP7Kwg8Wed/8GrXnGUM+/h7Qf8HoXMdrui+OXohLgivwe0B7yY+dm045PCOs/Piv09vOvttilIvvdw4aNPrLoHdAV8DbzX20VfeO+n60gui1WAzDYrv9p0h3evjkzJ3eEYfAibpBT+uQ7J5W73iPTKh6OspBzehfAon6Luwn7zgMcenpsiwE9dpLujc3IykxLm3e/qSbxPIAX5JuW1r4F2H+Hg7V9MfRJ5vTkLSOMBhH/cdw6wHw6Pit5TuoBWG/9IhvL+uDroTBfeW/fJflpq5dw7+d46bbV1zn9yWqnLS6WUVo1nlh7qb/k+PZVaLNTis/mwvFr4hV6E1Xu6VEt5SUawxw+rjnKCesqPTsz9UrqlS3fWanOELVVcykv1+nwONW2ccxYMnKFQcFUTXklll0N5brQ7COdGCCeEmVMhyvmAmL8DsPT7GFbcLz9wOHLcUTXZXxKhmpMLyi3lpC9P/N5/i/G8rmH/VX5U+ikrr5xxiYGy2ql3Emar21Zgk6sr3Q2f7UARiPDGjvQyVndjwyBl3+miaLXqF0gEQceGB3oteJfK5eAMc9wNSFRqJzjNLF4ZKZAjRg5zWRf1n1EOZNHbFbG3RgEtWcOFdlSkl1TICh6ic2JENUCvMsFB+Pu4VnfVNYVAN0HSoEoogj552DC5k0MoXKUGfW9RL+0JcYrVK0kOpD70xrm+UYs6xSbKNNBnmNP2ARaX5ORLN006fbW4aN5O1rKN5oFgyZhSo0moW6x1g5ELqBS7ZSaHfTMrkTqYZjchPAmhDvuwelPybP4vGOqMkS0Je5lmvaZp/oPw4NtSUdUvHHWpMbkJM1okTDQ3nM9XlcwtK7Pyoj8WSjV+K9DiohXw94bzcjmRctC4MIpdNBDjRPyO0gf8g99bzrOvvhrKhj5RmQZeYqxfFuGmbtHKnKOg88npIG+AGFcNIklMwLHVmvinb8Evm5/r59ZaJRTTqqkZ8+fspgWlm/AE+O2kxUaNlFpz1G8qVpYlsn3KWNYirSxzQmGyUZrGRdbQyT8qCSUuOld4weo0w9ZgBbhVnAFAthyj0LQjq2hplTnuGUagL8a81JZaRaxGh5m8F/RAuxNaCmHQ8Wel0FbYtCTKniRnOGIUXYaAuuRWIyzWDfMHC/QAH2FglJWOM47Jsxx7LLKxNQawGVkByhwpiOeufC1wRvVAmHPaYej0R6bMMmShmywbYbCw3FTK0nDtbN8JvBasQ3MNjq7p+hkqUqIZnJVpH60Yw1HmbLMpHAeTzNEs9HnJfoqDm3YZSImxduOxEQZZjAUXfAQK7D8=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 95624896
+  displayTitle: Mongolian yurt camp
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 1
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 626eba632a196d947a4ea6de8233f9ef,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

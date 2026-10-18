@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0189
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279832074
+  - serializedVersion: 2
+    rgba: 4290030804
+  - serializedVersion: 2
+    rgba: 4291142314
+  - serializedVersion: 2
+    rgba: 4284113803
+  - serializedVersion: 2
+    rgba: 4286887414
+  - serializedVersion: 2
+    rgba: 4285880140
+  - serializedVersion: 2
+    rgba: 4286418380
+  - serializedVersion: 2
+    rgba: 4290941559
+  - serializedVersion: 2
+    rgba: 4288573789
+  - serializedVersion: 2
+    rgba: 4287790486
+  - serializedVersion: 2
+    rgba: 4283972915
+  - serializedVersion: 2
+    rgba: 4282263066
+  encodedCells: S1:4:4096:5DEE74B1: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 35190153
+  displayTitle: Frosted Glasshouse at Sunrise
+  seasonalNumber: 189
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 2c2462c676f278f4eb9433538fbe9f9c,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

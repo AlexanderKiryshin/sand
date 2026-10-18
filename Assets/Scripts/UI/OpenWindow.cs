@@ -5,7 +5,7 @@ public class OpenWindow : MonoBehaviour
 {
     public void Open()
     {
-        MirraSDK.Analytics.GameplayStop();
+        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStop();
         gameObject.SetActive(true);
         if (AdManager.instance != null)
         {
@@ -15,7 +15,7 @@ public class OpenWindow : MonoBehaviour
 
     public void Close()
     {
-        MirraSDK.Analytics.GameplayStart();
+        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStart();
         gameObject.SetActive(false);
         if (AdManager.instance != null)
         {

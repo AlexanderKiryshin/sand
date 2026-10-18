@@ -16,49 +16,51 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4279461771
+    rgba: 4279713860
   - serializedVersion: 2
-    rgba: 4288447316
+    rgba: 4288587683
   - serializedVersion: 2
-    rgba: 4280046430
+    rgba: 4282473311
   - serializedVersion: 2
-    rgba: 4289109622
+    rgba: 4288462804
   - serializedVersion: 2
-    rgba: 4279511842
+    rgba: 4279577634
   - serializedVersion: 2
-    rgba: 4288529627
+    rgba: 4289171804
   - serializedVersion: 2
-    rgba: 4288586905
+    rgba: 4288782208
   - serializedVersion: 2
-    rgba: 4288459192
+    rgba: 4283602366
   - serializedVersion: 2
-    rgba: 4278553288
+    rgba: 4279070616
   - serializedVersion: 2
-    rgba: 4289362997
+    rgba: 4289297720
   - serializedVersion: 2
-    rgba: 4279779136
+    rgba: 4279392102
   - serializedVersion: 2
-    rgba: 4283603140
-  encodedCells: S1:4:4096:C672CFA7:rVU9j9s2GP4NBOFB0E3uoQGuk8IorcCbDso5QCZHR+Rabi2qGOh2do5GnSk5WEQyCUIGwltatIA76RjGNZgl8Bj9qD7U3SUpWnTqa1D8eN7PR6/o9fp/lce//Sf8oip//7fzgz+uZqXL81/+Blzb3bmaZpPyrf3hn/b3VG9dzicl5z/e5DD76OXes7sHAdf6T+/LGzz/9QY/+2rxev2zmlf6JX/+EYfJwcHBMPxutcPXa6X03cnbslyWAX0dHsNrufyGDddnUODLEnJzfBAekyUeR/wLdaYqm/60nHzCg5xVYesuWzVTXPoSSerPYBU4QYDLD9N8w6fPJ+US8Pdffo7fx3zr9ibnMZ2qSanLZ5NlfoSgPT7X958Nh/nRgzfcJwEvjzVGfpRDhkhKz+Hx6M4dIQq6qMqJXmoo5flFwIehKo15/6EQliYeO5QwAV4dA89zBZmN9nNHnSeEKFXNJ0sdTpWew4XK89FslJ8IIRzGdASgmiyPR2oEUOcaOjOVz6DAPPez4LBSy2VID/hFj49yL6RktOuALoLv4DrfR/bV/QlWJxsnfbzrdgGHi/xKes3g6snG+zQmXYdsHmDgKJjNEFpdjPI3ijnJyfsd8BPem+pQY68CuXd7ITxn7w8/4RfAz6/DVOrBAv7th+5Dedzjj4/nYLkMcWaVmquN8tIxvkvK8pTlMz2fq57YnPc5fv1ESc95+75bqEdcgTCF8yrXJdfnavPIKeW98zsbeyXYXM/VtZzzx1p793K59J7a3WHxbnqaTj/hCpbqVCwU6veDXUef61OhdaCwKlVVqfRppTcFtl4Kuuv2ns4f+alagNfzK/spfD3R+tR7key67h0Tblrxnlit0LmShvVGwj7Z67oxK9xCpSr0lVKX0rnYDtUt6byU9LCLi1QIdQZ8OLxQIxKDdkb2hmgOKfZs4ih65KFMw5exPxzK1AmfMToGbuU7a731zFnqeMIewrAgNTHGjB3Hy6MkHgtXWAzXcsshCWFNZLLUUrojpCXjgSMJbUwiJG+YoYQ0htTGRMYQwiKSQLvG3phXxqZtvMKe9gq1CYGwiNDkplcx2ySJG8NtbZKsxuozCVpQkg3bcmZMHbEkMo3JqMETzq4cGE8ywlmzhbkhlBQZ3EcEGWSoKzKRY5nJuEm22YoyigyaumFRY6ipKdxE0rRIPSOMNaRlK1LTFUNNTZY0mBLjJacrU3vP2Nb6pq1bVGjjjGYRJVlDUuuYZ9xGpmXRtqZ120QRBUEsi5Iki7iVApS/Qr5xu22S2iIGR6WZ2RKaGAGimWAmIcZnWxRqcclgWyOaT8xWpngp3Jp4ULfG+jRhNkI9Nja2qQ1DL9GWy9Yw32TCF44XnraFYcTEoa5GoFtSOTAxa6xIuaNjj0Zr+MpY4+soQbOI1IuGMpNZNrYDSgsmwExmtz4Or9k7hhJAdSpxwQlYpGxVg5jaMxOHS6nlYlCbsUjRmgUuOXTiSvix8fHWcihQJoQcCNZCAz6Y8MjK2pUxzocrbSBhJXicCM7C0nEGDpxMv/WJgIrAzVEIHpQYigGeQAXXlZPIDBEcY06wor8gLWIF/6lHryMwPpvAQXASvhAMLvst5y6FGc76CPjqXL/qGQGxiCOcS11MiCBkvf5ujT/Zg+HJ/lF3iGt0r2PIsvkL
+    rgba: 4278554061
+  encodedCells: S1:4:4096:DC7E3010:rVS/b9w2FP4bXq70D1BLaNkC6slWry7qqbIaZ5UNJnWVJU4qA94iH45FOh2yHJAuGlKUoJaigQt4Y68qLPAWDR4I8Y/qo+wkLVJ06pNEify+9973SIpXV/+nfZqk/42n6dtf/mX8y19v3yxJP3v19mP8YOTbaejx/YOP4G8ffTN4p2GaLna+fhfg5W/vCN8dXmOXpSn7hMbpe1y8zy8OLq9eRoyFO38cpOE/gl/iU8RfYCyEdx+m3i4/wOdX50VRbB3sn/sAG1+FHi/Oi8tzxAYoeY7tdPGCRSwZw1dpkqanOFJcFoNhTdg+XaGI652Rdw+LD8YQxwAre/p7sUr1ZoJFFsWD53fwtERVvvPi3mgK1NxHeppuJemDO1wwNqSbiqcrGtrtAWde460JloQ+QbH3Z5aBoszrQx/EtwbCFkvYIGiFc6hawzBh4jVOWToVHj9lYuusKEhFYF3SDSTgSkzYYIifFtMzDPWIc07w2WSlJ6RJFJVY3vPIJ4/KM/GYcx3H4wsxOIapEOJMsAlLi+k0EmJE+LE28xliuwNDeENxycRTH8fjY5ip+QxXcVFGt6gQ70NdrO7EDfrPhSgbfHDocHLHOCzF4xL9d9r5a8RFM7hGSToR72xz7zgeAbRrf8NZOjm8g1fFxUW8Q0az+SyZDHiURn6WhXjhU2zsrrL4mBh4fZ2mk+aHiN2ZEDuefBFvRHFM9Jr58X4ZIX47CVGZhpAgvgtlFI/Ho7merQnebKeDAN+EGnfERryRhHGs6fwaHoojsh2Wd+ULoTFONsJViQFev5qv7bOjZjv8vfQFhqw80iwM72Ul24uPudHz+X12BNtsgUsYspAh2a/X5oTtxiO+0POfrw3mZ82t/LAQ/J7fEmz3aAwcp3d+onOCeHi3/sfkeHG6xcrReJRliM9ynfNtRhA7xVkwFPH9GHcPhyy7Xlurcq7504I883uzKLIMdx1U6ic+RsI6ALaGLPBu4yJ+9jmHRlW9lZ4FxkBGIIMm11xpI+ViLNGcDQiRy/bayNYQQjLZQpaDVmZAXS3xltJIMwygKefcCWiqjLKtM9LWrkaes1Ii0zp/odUUpOoDWuF472q0gTaE87dz3XqrAkNda+u+bqWVprYWA8jBHXla2kCpvl46XRvXt6Y3rcX0LSbwpE61ToMLqK16pZV1yvVSybqXFkUsXU97h2KgXyqNPedM33euV2ppVGttDT10zq1r0J3FONJhIoMiVG2XqnaKEE1PagBpgXZ5R2WgXVC3qjVttbTdUucZBaCoKNDLJ52yQVVbSjFPUAWB7nOSkyYzHc4jqYOudkGX27avsd5Ag+k5McZo6ippl/VSV7W+aXvdtdIZXfW6zRpjmkY5CpZLiqsHee2Ig0qCwVkwHHBQUwvQP+EkbzQFDdQpU9OudbWiGSdA3riqdctMa21yIJrfrOsanKnsDecNB8JdpZ3JzYlpUIwBLMeCAi3fcIIKOL/BqW78VuMUTymKCxJAB2CxxxuKBGdPOM8aknsOQSZv3wSAsvDLGM/iGn8M7bs5HnOZaSopn3jYK8CTD2eDg8mM/zRgNIeWQMV9RKINzfC3wAOQ68x3OTW5//DbGgMYQzCsj4UMfuLTE2RorD6DzB+r5FYXvnIyJB20oA9qHejG0/z56xsMeDua/QU=
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000fe00ffff000000fe0000000000000000000000
-  conveyorDirections: 00000000000000000000000000010000000000000000000000
-  conveyorBucketCounts: 00000000000002000000000000020000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: places
   campaignSeed: 7024162
   displayTitle: Sunflower Windmill
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 8
+  frostMoves: 6
   sectionBuckets: 1
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 1
-  alternatingCrates: 1
-  swappingColors: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
   loopInventory: 0
   mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: c516a5c43c653b646add64c5927d4294,

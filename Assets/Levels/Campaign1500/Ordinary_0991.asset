@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0991
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4279442230
+  - serializedVersion: 2
+    rgba: 4281555112
+  - serializedVersion: 2
+    rgba: 4279971944
+  - serializedVersion: 2
+    rgba: 4288791544
+  - serializedVersion: 2
+    rgba: 4284188895
+  - serializedVersion: 2
+    rgba: 4282477507
+  - serializedVersion: 2
+    rgba: 4283129232
+  - serializedVersion: 2
+    rgba: 4286490092
+  - serializedVersion: 2
+    rgba: 4280763783
+  - serializedVersion: 2
+    rgba: 4284250551
+  encodedCells: S1:4:4096:F63EBACD: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 103689029
+  displayTitle: Jordanian rock-cut facade
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: bf88dd4f2ef28f340b84e06307f39da8,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

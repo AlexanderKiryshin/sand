@@ -16,48 +16,50 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4289568400
+    rgba: 4289568401
   - serializedVersion: 2
-    rgba: 4289912564
+    rgba: 4289585143
   - serializedVersion: 2
-    rgba: 4286215278
+    rgba: 4280170321
   - serializedVersion: 2
-    rgba: 4283528860
+    rgba: 4282477745
   - serializedVersion: 2
-    rgba: 4280435392
+    rgba: 4281751160
   - serializedVersion: 2
-    rgba: 4282013557
+    rgba: 4285309645
   - serializedVersion: 2
-    rgba: 4280236113
+    rgba: 4281872683
   - serializedVersion: 2
-    rgba: 4287285746
+    rgba: 4287154419
   - serializedVersion: 2
-    rgba: 4284914888
+    rgba: 4285561730
   - serializedVersion: 2
-    rgba: 4291678673
+    rgba: 4291548120
   - serializedVersion: 2
-    rgba: 4283911492
+    rgba: 4284174922
   - serializedVersion: 2
-    rgba: 4280098336
-  encodedCells: S1:4:4096:BA9BBE2D:fZRBc9pGFMc/gwaPNRN86ZaATHNx5YGp8SVGlSzsU1rZyUwvGGXXBC4YrIWgSzUeI01yqa0Y1PaC49YdJZcU10y7nIqLSrUfqiuw23Sm7R/Nwuxv33v/fbvC9wEA5/7/CqT/m6UB8AEbf/gP/iWIKPjXIjSKt+x9G8x1Oz1+Oyvq+ytv/MjdmQ2E2xXpczb9x2iO2a+Inyi2bd8tiPQxef23YQAOlgGwwPsib9bm3s/Z1oAxnxTsOxvgxzcfMs8s9DwNXtgogoxGEmZ1PhY/iryABBtf9CLeS835rNLpXZ4o8zfNl4LVQwKw5vx9tTps8Z4gCK2OY91yi1WwBWtmeEMBYMsSBAt51jzetpx5ISt6egZwSqx9e/ho7s6ak79kHOtfCU27lZzbF+y/+BELawqNl+hhsmGbCcBKW6y6cxd5fGzbTWv/5eap1XRSrAHWrMm3STrHjtPrbe63nNQ3zZZ8Ermd2bd70QL2cTx707ETR8oLtcEmBUuIKrMk3pFzdOKpZVuVLGlZ1U/LZc9x5tYc25t+62z2PM9VVQXJEOlwy/OUnudogdn1vLJHv/XKsqRKni5DSXoqSxXFO1YdRwl0szfd9L54pbquNJMsQ6hLW2XJVrymS72Dzu+9KYv3XNdTJV2FEBoSqrRarvu4i4JGq7O5P6Y0qq4prqtDnWXA+a7ash93JpTqylQbGcNTx9GyVJF0F0JZb7SlLmuwe0MDt/tEowGlneVXN9vYYwkQwrK52fHcJ94NpbKUPqKRTJ2aDYVxA0Js4I5hP4IGXX+U2F79jpAcyVUpNbpu2WB8st0VZPtxl+Ut/2r2P62QratBnVL3vqvzBb2B8u5e4gj8ptCb76a8+DNhumK7KN9XL3T5UlKKCCY2wCNE3Qf05/VpxMXYhH5+H+zp0qp0VsEoebK5c6h1PZoj7YiTeDh9nDyRnvm6Dkte6nj/kXY40bwTZfDZgAxGhBQ3fgPgouA3dCW/l0qiDaiNNU2zVHXItse84lSavTtrtbKyFXQTZYj2GH6qOc41yohjqTK5jP457j1v6KVqqnWuKxvwifb0c+2VLklQgjvw6eu+n/YLqPEMJQ/OfXWyYXiatqPt7uJD8zDYnfwU7z/3ZaX+HKXK52t+5SwFd1gNbRfj3UO8C6/j3Gtf6hqMpw4AEKG7ENL44HaHhIxIfzm5cYlrSip5ANKF8TSko3A0ouyhIaGTUT/RKVyYdQVfFpLpwi8B/adI/8L4ulEtKQb2v3+d/KNBt9/H20vcQu3eKmZc5xb7fN8f/TM8xvE17gpDZK5wfDHG+dxiyObDGV0fcQscj8Ub06ib69zlM67P9RferUcsysNx3CLjWQPWEc5lsiju3+NiOW4mMRYfvMvVB3iYwe16HtUueYNbISIZiGzbJE5COiRiKZbhs7jdzmNDySqL3Fo+R8iApRfFkF4TUuHhMBvgOkblVJAtiRkURm0LQ8q+QlIpLhl1lDXqQdXt4jNYuGr/3VqyJWZWeKOIsVGaGA+62KuKq7Bwy8nKoCLG+kPjIR4xjlMKbsLwTL2ewdmI0eozjEW8hOsTc7mKTRnzzq4Kr9tD5gwOIV+rYZwNTIRD3EJBR0I7UkoUjdn9rogLuFRjN9t4mxlXsGcGsjqM49NVUW8TNdYvcYuQy9fNBs7CoIJdasqtwA1yq/mbKD5WyfDFtWpxUqzhYGwGHdqVf7354DJWIlckJ+bEvMjVYtViUDMRDcxJx+woJvWyuVP9ioVXCHfB1/lsEdXayAxN+oBeVujLVkfVOa60EJ0Qz7f5bAPjKq622ctuLlVGk3EqYZ18QqIzFOPsaFELYzMw24i+NUcwNW0uxfkIRfErPGatxexwzHEUbwZL41Z3PRObXwCuyLMFAQ7rgfkQrUOYGcTe/RiLc3daicei6zDKirk/AQ==
+    rgba: 4279375901
+  encodedCells: S1:4:4096:2D35F5A4:hZRBc9pGFMc/w46GZjC5VNguSU/4IcWydUksU9z2gqVVwPGlCKmm5eamGgdOImHUGV8IgYyAC3ad1oovLhNryPbSypg43Q/VFbYzmebQv1YzzP7evvd/uyt83+f5A/9/9fv/BfCfTp1E087vmz4r8FGNJzc/3o+HjO88c/lIH/j7k+sfrSeRuc1nrptKzUIOZkErf35UjeczC67rOvy1ohDy+iNbvMD/V+T12yvGPPGlZDTl8o7r3vA/gs8jO3f5g7u8UzDYjFNyb8QMnY2/vMMzbDKyuBStj2qwBMylwz//UGczeXD36TIzJxqfeJhx4Evz0crQ5K8aiBKkHDfFyrBREPil+abIb6pX3qIYx+EZTkVOrJ3Ms+WkqaeWjSYrMnsiMoPuDnuXG8uLKeMpLDizHXL4O1FcpKZbYM+DfVjkhQfyIjPvRHv8i3tN3eayu5ziYSnXhCXnqjvmgS1PNXk3aTjGYqpcSIEuuOA4jdJV93dTpWZ0WCUtKxqm0cSmoTW/NXNukyWfeXRzlmXlLL2w0zStCtZNxTJdg+VWmtZO07UuquWyZWmWhpnMDFbXDVPcaWYzE/kpI2X6vZVVdE0pY6xFQzWzStlyc4ULS965sJRvy5Zianhdx6qmYpHlELOumUtZVBf23zXPp1XLKpezjOtsvali3HBFN9fQqSokC9kpre9YlqJAVu9gAasdrDdwwVX0yyl9unZxTsPpvUI2c1aVLeZPwBkslBuN3PoundKw7L6jiiJrVvnnqmx0ukUBa4Azrjm/XggptbTBLwEhpDbVbVkwOh0Bd0yhYbo4le1OKX1wXK2ckKC/lxjUqWpYXRDUqEjBcB80Akpf/H2v1+7XXp69lep0QbO6cQ/jogB4cbGkAb349aLt/URqARnv0amplSpF3FlXQVxIbfL6Av26Qs+Cc1IjpB8/r5vzpa7eEbGqOuz+Wgoo6xYlRKwFLCAxJRuHfLd3zHYAY4NXN5TMpZIqtccbhJyyHv7yMgf8q55f/EEV4BXfKW4orHPFMXKjOqVhnWYOZ/8IxYqug7HULbbXlUiu+0bTvEvloRDxV35FLW5Ce6nntQss4IWiNNnR9b0XRQzDOf/Y99WieIhNrueJm7isKN8osJbJwBqs7T5OIM/3YUsycPLgba9i3Hkc1VhbA4iGskvQb74vbAHj/sGTyqQTt+sJEqySmQI7QEcnh5kVMCG58sr3vMf21K7ZgX2tuj08lI4ySfUIjhm/I+3ezF/pK3t4tDWXATgEf8sfJt/WqHzDpva0/vD28CjfE2ThUPbTfssf+nsyZbckGkx/BjHEpUdCiA/lXnoujYb+re7Anl7jeoDiKJYf4Qnjpy3EOPI/O62x5NSuT+sJhPKtGIywpIYDaUwg4SO2AiG7xlCkxKP8G26EH6mrbejFYygRdT1LkEjYwQgl0v0xtyuswj+cqnudOIqnE0FAbJsdL3trCHXiqixQkFQoityR35ZaHzaHdUgSHU+FyV/qpbytinp9+NlqvzUmtT2b7aL9oz1CbQmkiQSTbWB8QxpLq7UoP+O14N7LcQKk1dWJoE7CUIZ3zy+VTGdMOoSMok/EHr0YwuX9NIVwAiDDviZ782sau90sR0WZ23vTQpJUBMZDlfEqXtsAw1TKhLADDsguoFsrUJ1EvKHKYVUe9UPP87RH4zHp91GsiLa35AHLHoIxALkajkwgXU+aXY5HeJRHch5uwy7jrH6yGp591651PY30PRInCN2P4fQEqWEYgmzIjSqttU7QKXkT2FGCI/OCm6TDhMo++4jvT6Eh7ls6mivGTtnhcFyLgzxsD4B9LfJAPvliEK4YpldhW4zI8dwtLs21xRkPVZnKJ3KSrrw+fv5d9+pwi1y83T6HVRlkgXE4obdD8Zjj0NUl8PIcB9wFDBifQGRBvj0VrUEMXSsfY5wRgO1/AQ==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000ff000000fe0000feff0000000000000000000000
-  conveyorDirections: 00000000000000000002000001000000000000000000000000
-  conveyorBucketCounts: 00000000000000000003000003000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: journeys
   campaignSeed: 29121981
   displayTitle: Rescue Hovercraft in a Reed Delta
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 0
+  frostMoves: 8
+  sectionBuckets: 1
   keyGates: 0
-  linkedBuckets: 0
+  linkedBuckets: 1
   largeBuckets: 1
-  alternatingCrates: 1
+  alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
   mysteryBuckets: 0

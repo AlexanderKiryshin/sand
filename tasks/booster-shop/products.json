@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "booster_magnet_10",
+      "consumable": true,
+      "booster": "Magnet",
+      "quantity": 10,
+      "name_ru": "10 магнитов",
+      "name_en": "10 Magnets",
+      "price_source": "platform catalog",
+      "requires_platform_catalog_registration": true
+    },
+    {
+      "id": "booster_fill_10",
+      "consumable": true,
+      "booster": "Transparent",
+      "quantity": 10,
+      "name_ru": "10 заполнений",
+      "name_en": "10 Fills",
+      "price_source": "platform catalog",
+      "requires_platform_catalog_registration": true
+    },
+    {
+      "id": "booster_shuffle_10",
+      "consumable": true,
+      "booster": "Shuffle",
+      "quantity": 10,
+      "name_ru": "10 перетасовок",
+      "name_en": "10 Shuffles",
+      "price_source": "platform catalog",
+      "requires_platform_catalog_registration": true
+    }
+  ]
+}

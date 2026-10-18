@@ -125,7 +125,7 @@ public static class ProgressSaveService
         Save();
     }
 
-    public static void MarkLevelCompleted(int levelIndex)
+    public static void MarkLevelCompleted(int levelIndex, int nextUnlockedIndex = -1)
     {
         EnsureProgress();
         levelIndex = Mathf.Clamp(levelIndex, 0, levelCount - 1);
@@ -134,7 +134,8 @@ public static class ProgressSaveService
 
         if (levelIndex + 1 < levelCount)
         {
-            progress.highestUnlockedIndex = Mathf.Max(progress.highestUnlockedIndex, levelIndex + 1);
+            int next = nextUnlockedIndex >= 0 ? Mathf.Clamp(nextUnlockedIndex, 0, levelCount - 1) : levelIndex + 1;
+            progress.highestUnlockedIndex = Mathf.Max(progress.highestUnlockedIndex, next);
         }
         else
         {
@@ -167,6 +168,15 @@ public static class ProgressSaveService
         progress = CreateNewProgress();
         Save();
     }
+
+#if UNITY_EDITOR
+    public static void UnlockAllLevels()
+    {
+        EnsureProgress();
+        progress.highestUnlockedIndex = Mathf.Max(0, levelCount - 1);
+        Save();
+    }
+#endif
 
     private static int ReadInt(string key, int defaultValue)
     {

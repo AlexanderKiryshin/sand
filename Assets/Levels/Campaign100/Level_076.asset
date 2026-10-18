@@ -39,26 +39,28 @@ MonoBehaviour:
     rgba: 4278462021
   - serializedVersion: 2
     rgba: 4278233330
-  encodedCells: S1:4:4096:E0F53FEC:tZQ9b9swEIb/yymlYEuTCXhxp4BDanQyQCBeZYBLM2kIl4w1oGQ0bKACOhlZqlEGskiT3DqD+aN6R1IfrotuPUAf5MN773iULs//uy0H7wCbKyzlzr+OADTAkOBdSvsg3KhTqvsV0nr2vDGxiZGrzYAvOz4yT9DEqU5Y3HPpjdyRgSHebFz0gRGn2CYNIU42f2IMNDJa67DBHcQQD7GP8QtT05o4g7jdMeWQO944HofIm811GRvC+j0G1P8LHyVpxzV8v+ax5aHBGuiQKrC7lGdgeWMMvpw2mNXw5EYPYDlWH1CoWdi8SeL5m6u959o+Bzv0tY9bHlquYPh5AEa3uuQeUp3fDfhvYL3LQaH60FAlOdGCZymz3TJhHZnw9q0JbH3X2b2cdtCZGzkuMyk75wBWU64CN1rkeUb69/KD5+SYqDYYnhnyLOsFFLJEgUtnQXztOAngrFIwUSjPPCa+Jk4K6Ig8QY2ERQ6j89Jz+WG6Qu6MBe6TQbbMPJcDrnqeZy/ZnR0kA878p4n8OcMNWq56/UWL0T97vrcLwCanppccce4EbG1scS55ZgO4Evraeb5uuWx50p7EonV/oZsQ4qY7YUW3W7HNrXtR3Akx4JQiPoTIc+G4xaL1plMgvkX+1Ulf8Na2n8Q/uZ1EPvd8fM1fRTEvfPwbUGV05V+QkUJyqh9Y1dNqhTtEBbugEEYpM2XlwP1wNp9xwfbHXLyOlanPhsXQBSgnyhjDKMQcQ59PODJB2QWooqMBU8eUgvhpoqpGDJOqigCDpFWFK41R51viJTkf6e840AIoETPiFKHA8KX7o7TmSKqI+CO1iRPbF8TbX1bDW3WookPFVym1AYA97W4ctr9+mFQcY8z4k28k+zlWINWdQc0PUTk7uhF2ayrhgOuQV+d6Bt0QK3gzxNgAjjPOuzHKj70WmaLm8JHz1aNfgAmOrZqTfPOcP7qpcO/9qaeFOOV5kHqXvU+P+MRt8FhXmGAYOJ+Op7YGKHCMOU/tRGq575m4WRxTA8MLSN3xsedgezfiYMqpvqGb2o/7pp2CQX6sOf/CtD+S/W8=
+  encodedCells: S1:4:4096:E0F53FEC:tZQ9b9swEIb/yymlYIuTCXhxp0BDanQyQCBeZYBLM2kIl4w1oGQ0bKACOhlZqlEGskiT3DqD+aN6R1IfrotuPcASyYf33vEoX57/d1sOxgCbKyzlzg9HABpgSPAppX0RbtQp1f0OaT173hhuOHK1GfBlx0fmCRqe6oTxnktv5I4MDPFm46IPjDjFNmkIPNn8iTHQyGitwwZPwIEPsY/xC1PTmjgD3p6YcsgdbxznIfLmqkoYnrB+54D6f+GjJO24hu/XnFseGqyBDqkCuwveMLC8MQYHpw1mNby50QNYjtUHFGoWNm+SeP7mau+5tu/BCX3tectDy1V3zRQEMLrVJfeQ6vxuwH8D610OCtWHhirJiTY8S5ntlgnryES0oyaw9V1n93LaQWdu5rjMpOycA1hNhQrcbJHnGenfyw+ek2Oi2mB4Z8izrBdQyBIFLp0F8bXjJICrSsFEoTzzmPiaOCmgI/IENRIWOYzOS8/lh+kKuTMWuE8G2TLzXA646nmevWR3dpIMOPOfJvLnDA9ouer1Fy1G/+z53m4Am5yaXnLEuROwtbHFueSZDeBK6Gvn+brlsuVJexOL1v2FHnEc33Q3rOhxG29z614Ud3E84JQivuI4z2PHLY5bb7oF4lvkX530BW9t+yn+J7eLyOeej6/5a1zMCx//BlQZXfkXZKSQnOoHVvW0WuEJUcFuKGKjlJmycuB+OJvPuGH7Yx6/jpWpz4Zx6AKUE2WMYRRijqHPJ5yZoOwCVNHRgKk5pRD/NFFVI4ZJVUWAQdKqwp3GqPMt8ZKcj+g1OdAGKBEz4hShwPCl+0dpLZBUEfFHahMnti+Iu5j0136rDlV0qMQqpTYAsKfTjWnkelNSCYwxE0++keznWIFUdwa1OETl7Ohm2K2phAOuQ1Gd6xl0U6zgzRBjAzjOhOjmKD/2WmSKmsNHIVaPfgMmOLZqTvLNc/HolsK996eeFuKS50HqXfY+PeITd8BjXWGCYeB8Op7aGqDAkQuR2oXUct8z8bA4pwaGPyB1x8eeg+3diIOpoPqGbmk/7pt2Cgb5sRbiC9P+Sva/AQ==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000000000fe0000fe000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000004000003000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: legacy
   campaignSeed: 7861994
   displayTitle: 
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 8
+  frostMoves: 7
   sectionBuckets: 1
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 1
-  alternatingCrates: 1
-  swappingColors: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
   loopInventory: 0
   mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: e6a88b039e9ec9247813f69b5b17087b,

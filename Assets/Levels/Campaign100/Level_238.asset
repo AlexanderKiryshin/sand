@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4283205049
+    rgba: 4283006898
   - serializedVersion: 2
-    rgba: 4291395134
+    rgba: 4291461185
   - serializedVersion: 2
-    rgba: 4285051885
+    rgba: 4290700793
   - serializedVersion: 2
-    rgba: 4291218387
+    rgba: 4291284435
   - serializedVersion: 2
-    rgba: 4286352544
+    rgba: 4281620349
   - serializedVersion: 2
-    rgba: 4291606956
+    rgba: 4291607212
   - serializedVersion: 2
-    rgba: 4281686401
+    rgba: 4286418080
   - serializedVersion: 2
-    rgba: 4292188512
+    rgba: 4292254048
   - serializedVersion: 2
-    rgba: 4290700536
+    rgba: 4284854250
   - serializedVersion: 2
-    rgba: 4290669869
+    rgba: 4290735661
   - serializedVersion: 2
-    rgba: 4287875566
+    rgba: 4287810031
   - serializedVersion: 2
-    rgba: 4292521603
-  encodedCells: S1:4:4096:9A8C556D:fVXPaxtHFP4bhkUsYnsSpcSml2VajNDJZbT1VifhHalCujSoUzvxZXGUwbiXhhAWVxfVWtKX6cmU0ugmXGGW6SmkQmnnj+o3UgiFhjxptbvzvfe9H/PmabH4sBylv958CCfa+xD8CREtrl68fD/6+4NkTPTgK6L/K1zdLP5eKyXmRAlRetV4j/1vDxQgfIhevTrZv7nZ318svvri48X+Yn8b9f6USKSgeHmzaHi5L8sBUVXRXsMrrD+dUyoEpXtb9OZPOR9KWZKXRmNxpe4D8yG8+qnReLKuA5SZlLbyCsabCAjN6QXtPWmMBoBlbVCS2TJ4UpGKJBX+zY08KicacpfP3hIkQijPME+3cF+zMGS4bGWbHldKjcfzRMzTCym9acjwCbXO7/IlYgKe4BJjBWbGdt8cFHjo7Ox3kjyCjfbrHua4HdzzeJJMiyNEkZDemuHKWcxm7LgAfA/uFRSeHSFKAed5zmqSMRP98ORe0cB18tQ59awoEs8Chm5X1lj1sCiKRnE/OSq8rJ+e4He6mZ4o1kWFLqsnRbE5OUFYxabYSElkDT07U4X7CEWoXx9urYoCeHGEqq5QUFN1phv3dV+GlXla7ESp6ehtSXXoa+yKxzKXVLwTN0JZdBj5vGfkimJyKEuDQDaFO3PTwn0f6m3JtD5nz6dFUev2y+vN1K2hu4G9ewzqHCohC5hzbpRLeY27h3GdiTdOh2Gtz1gU+GXEU/64cU7+fLRxZ2tUzTmYSGa+c2/xlXGjTCCl184JscYi1lpvPHr2uif/oH+cnKDQdeRDqQPQk01zlvheE3Ii6c3Id0BYWW8vxPiXR33bWa/dGQoKV3TaY7ordfyXc4kYQyOTFlxOCaX6UlanzqvFY7+k1FqtexmdKtWbhDQGbl5jGVGiaRLVKwlIjToi0yyvvKGBruqXD31bZRN5943I7swp3HRXY4+Xh2gaucPhuhyrTHp+Je1YIFWqUpEiit7qIbpKdjIDpY4k2KgEeFWJBLodrWOfcJpNtvhqLKnnjxjswVWeKpl6/s64nZXWZB0hKcPpLC0NUgE3MBVJW5pOOagtKevMgfvwDA3GOMlpe5XKdntFspS1igbWPwKeAc+GaLl2OZjfDts0uEXOltjxynh79FkV+BtcLLsyOr/uygF280IuLeChwXQ4RpWpzsJmwBgfSnguI6r4cOeeaDAzw5hsdNviXGOg1PWS8+C2962S1PbTosVyy3nL8lCHQPzP8Uj15JyGfjzNCIa25LEt8RBzqAAy1eVu8mQHeOYBq3MfZ6yh4PdtN9gw/pANxFbRLfpyVjcs5rofsr4EgX4O7626rarmkjGwc740S8JkyvN86QeHpbqN4lsbHeSah943vMvJl7UJi6OwvxpSReGsZWMetHjEELmfe32c0/Dz3GTVNsZLU2cE28uDIADo4bw/Mb6+OTNQqegAFQo484e7j7bEKYou0JaRDup+HlAT5kAZv7X2stIykBEb5CzUh3EgyVpeQQEzL0b67PAz/xJyHQZ4OEYpMOmaLXD7DHkAnU7ZDPyA3W4J6sbiEClsq6vDtmjXStrpaq5zWYsqfuBfrSV0XK277UwD+NzwPPZfzm/5gfVUM2Ksy1b+n4H/Rzz9cZ9Mq7IXjB3LVUR03Wy9Q/GVbUFVzvm59sm2DDaPIl9y7qvrtxX/V81Y74wCvvTFbV6E8Y5DonASOxpxu+M06AwMW9q98n8B
+    rgba: 4292455554
+  encodedCells: S1:4:4096:EB2E0AF4:fVXBbttGEP2GhUqohHpigiIwcnFHMStsLwEJOahzIVJGMNJLI4F1E10EU54Y8skJAqL1hVB1WPDm9mT0IhCuIOypceAKyH5U39BuLykyAMXdfTOzj29nRxcXn7Yu/f5JnOj8U/DbWOJ3ov8Ff9466Md09fob+niTLTwuy7KIaIiHTi8u/vgowfmLjCgmsSDYQsj5xdYO0W8k48bOKIrjLkX3zy/Og+A8eMHhIVFd0zAIAF/f74oDde8GWwHwPzmeMYc3GUEie94niX/97VdB8C6b5cyMx9ZEmjTyBbHAdPU13Xl3ymLT9qwNkOqGFPBRP24ougbmNE09z5u24aDvBkE/HgoeUXTE3ObUU57ylUqW9cJu3wkCSDDKdrK4Gw0QqzxPJSXgVCnlre8Ep5lYP4uHGQ88pVJfAUowwlgHTfyN9Qdp2oQBVsqoUi3uCT7qF8VjUNgh4JJV8FJt+34B+B5yX78tRl+O4dIFO7i0WSld/XV6rwhOi6JfXLvsbXHwGFlyoTfhtqpfFkURFM/7j/AuzsZvDuS1OTvIFCRYdeoA84MCtPB+xUy11XQ2vi7c98BbvYcSdg0X4I+w0oZ+uh4VG/f5lL1avyluLBtvXjWSpipNUSnObdqcMBX/mWPBvI58t952m2LwkEMNIps3bnzmCncrVyPZtisKNZmGvc2Zu8Z4c1a4MXRTcipizrmjhLmHt8DurBjH1yeIFk3mx7J8gvr5ZePGJ8Uj/Lo4fu++mOALjP3b3eIr7U7yXdTIewcca+Mpt+dXGGDhKef0AbWSeklNztEVmGA6106OII5RgPbqxEs874G1znVRPNePUZI/Zdm4D0GhFn14qrzJwCt/cC6LR02QlfRZnGVT4EOXtZnLkSyJjTjXQ4S2veEI8fq9kzw6E/+jMMKkhWvyHQ63lvzim/HqpYTmU2wdc62HcZyzHQkePkTNHoUNHss+WR7exNgR5qGWO5evhlk4zBAkE3DKgYcZbteqroXyZ3s4miyOw4jVEYczXmagJDdQWyGL4PZeP485yiPk38ujPlN+iPyWWv0+cED9eBYe8kz2zKMYODf7H44iXg13OeI4CmsErWo6pL1Qy+23lg6HM7a0u7uX21lIbFlZ0gZDpF+hFusKKhLmqwlqt4UoranD1iL9IQ6W1lCcuFO1zEIZWZWGUfrHfNtdOOzqSzKVsdZMcywpKltlzXx0232MUbVZ29LfV8pfGmWMOWbHP+6EVjw0rS2Cfa+yQAQ1zF25JQQ0GpREcz/xfjVwrnzVwA0HIWe1vt0Dyw8weKJKP2UPZUodGjwgLR6aauOXZWltx5KtpDMkSfWsoxK7VLaztLZl9j2zrlSFPPsD6S6JQe+aWGzkIS5NF5dG+PkzaXw8SKRzsXRG3VJVywezNZpNNRkAZFbpdHrJu/VsIrd9+4nXo0oSTgGjbJMpdzq8Ws1SH/yQpfKNSff9pNIDHjwbpCXXk8Nnflr2TMnylfW62kdXE5mX0dwsOF3gM4xvqmORXPWsUenClGCoorWBn4F/acr9CXR7oi47S3RrwAlYrmf4HzL7xseuaiDnWJWlLxqasK41imSCpHWzAMWXnunJsLduTrSlJjzRZOs5QrQc+792PA0JckOaSRvKUW+OxWotopoUzjg2CwogcjxZKHxWs8cNLkUh6b1mUzyl8SXH3Hi32SHc7opaJqnWjccSRz8HDbUoG/wf
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000ff0000000000fe000000000000ff0000fe0000
-  conveyorDirections: 00000000000000000000000003000000000000000000030000
-  conveyorBucketCounts: 00000000000000000000000002000000000000000000040000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: places
   campaignSeed: 24828092
   displayTitle: White Desert Mushroom Rocks
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 0
-  linkedBuckets: 1
+  linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: d9667e9ac2572564383af3ec8d8edb5d,
     type: 2}
   usesTiles: 0

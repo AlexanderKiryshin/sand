@@ -1,1 +1,1 @@
-PASS: official GameAnalytics WebGL progression/design bridges and Your Games Metrica initialization/queued goal preserve level 300 and event parameters. SDK/browser doubles; no production requests or credentials.
+PASS: official GameAnalytics WebGL progression/design bridges and Your Games Metrica initialization/queued goals preserve level 300, completion, interstitial/rewarded impressions, placement and cosmetic acquisition/selection parameters. SDK/browser doubles; no production requests or credentials.

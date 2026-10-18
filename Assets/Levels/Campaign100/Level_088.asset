@@ -16,50 +16,52 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4285032799
+    rgba: 4288579168
   - serializedVersion: 2
-    rgba: 4288312651
+    rgba: 4288181837
   - serializedVersion: 2
-    rgba: 4282344070
+    rgba: 4282672516
   - serializedVersion: 2
-    rgba: 4288779643
+    rgba: 4288779644
   - serializedVersion: 2
-    rgba: 4288716698
+    rgba: 4288651420
   - serializedVersion: 2
-    rgba: 4288983997
+    rgba: 4288984254
   - serializedVersion: 2
-    rgba: 4281023047
+    rgba: 4281154635
   - serializedVersion: 2
-    rgba: 4288644704
+    rgba: 4284698927
   - serializedVersion: 2
-    rgba: 4281280535
+    rgba: 4280689948
   - serializedVersion: 2
-    rgba: 4287325239
+    rgba: 4287587897
   - serializedVersion: 2
-    rgba: 4283909153
+    rgba: 4282857238
   - serializedVersion: 2
-    rgba: 4286888927
-  encodedCells: S1:4:4096:A3B623BD:xZTPbxtFFMf/hpUdp5Z7wUqRSU/RpFqQfHEyTg3pJfKOm6ZcAt4hKL2UdTtawSXGqbbUFzcRy7AnLArU5mI1jbyZk9kcIjF/FO/NbuJESFx5kuWd93nv+37M2qORsbej/8924PPzf3CXj0avf8enz4bGMbxOlx2X/7Ys7fQ0LM9tOITActlp8w9fxxKelsuA6Z3yTaNtzk+t2t30tNaj5vuDjDbKa9zlp9++2wyygKWb2XWHufxHKT/qBUH530Ypq7tsIMVbOARBN3NX5hzs/THwu9eyuhdXj2vAj6Uv/EfXR0P+Ba9kAc7EsgqfZspBJfgruDjoVhz+otzFokGgLK3pGvbXxePF90k/2Hb5iyCzp4Ik3crlKfj79jd/BoyDZRFCEDuYm9aVfsCY4XscHKFNyDU+0y+RtzgPDlzki5auXsJD5N7t3jbsjQfMcMvSszm/pXXufNfo8y0I4rcGlu7P5Rtae1aLYT6vtZFbgugb/ZH6DHjL5TWIanUu++cNCtdEdTVnrUJ/DKzOuPtc2MAbDRDE6wD9XOIwY1t1Rp28MPNts5TntW7m2p8zDKk57B7NWyta96jDeAv5udaLuY3+tkPrh5R27PuGtzi0w9uU9oDncv0HFHthCx0hDYd2caINzH/SJH1NMYAeixBuXxCC3cCsdUpnUJ88mVHarjeoBENum3Zd+LQS0CfJOaUt5tCfpAx9nG8d3hNWh/StBOYn+vwBY46Th2zIt7WGfihiSpNEW17yMTpoiPpi0U4886bSDTO+3iLJiuFIiQf1v1unkOxwZ2E15dWU+6FPhMAFNl2jTu9pXW0CxwGpD+PhdLYnHqaYQvvV3NOkmkC/zJfSJiEECNumc95cTaoEC+B2cEKoQSh2wFYTQM1nRNMa6uN8UhLbFvZ9Bg62QgjxHq6SGe3Us/mAC3HkraN6x/7Ss0luxe7RTjqflJ/AhPaRCCn9dXkUjUswjxor8cubpWGaDg7hSaHgH0hFkYiVgpXGajwaZRw2JEKhztRI+KHwbPjBeEpBwGV+OAB/NFZKwCwErsuTZ8AV7M/csMWfhb58p1RkqoXy6y2FZuCRLLafwxZkvKcC9IRyYfLY8MgEyKLD4T9I+q3UIaOopLL8R0VZlJbLC3Kw6FsFCMCKcTwBGAO3uCy6B2fwJ7nvc34ITgkaSpVizJ/ma5znd/Nyv62msQIfIDWIVWli9Gne3dhT04KMi6U36MAYyI9LUVTASLnYmqoUqFd7p2nTl1ER1IeifGKwaefUNF2C9mPoRFryq33GVWECTkyBkBMUM+UjqRwHfuCNAA9XirFRmyCPnW12ErgFteuCcBybGlG2Vwxz3MNpr3GiDvb4abZPM3csMSRW1v5jfkLBsd/qoQJUiU2ZNBQ0GC8HaqqCzc1JvJApp+oSQqALp/eHelWZpshI4wUZdaksCGDszg+MnqhJtvlIRnKuMqE74x0neH/1Osjs1o0N4pcTManXqLU0UuMzIx6bQHyM1T8=
+    rgba: 4286954719
+  encodedCells: S1:4:4096:8580CE75:rZPPb9s2FMf/BmV2Fgy+ROs6zLeC7oRgvjilHS/zxY1kpOguxSw2w3op1IYR1os7O2Gi3fJDYX3rIRt8zhBlPHkO5hz4R+09UraXbqdhX0ACyc973/dISqPR/6Kj/55aDi9Go3dmWPs3HoTsYjQ0w018vXdBC7zpM3bxbpjO5uvuHe5u0i5r/67Uexi7ZdelFPl6eVTG2iN3RBlj++O+m2vd8E/gKWMl+lnQCdmBFM3CqrtQeTagfgCSkn/hLq067j9EaQAhp5If4mx15jFecJSU8dW9RdJowd11CDnJYn7cXPA/3Adg9Jjdtxa19rmoVqk1WHIc5/ZzUlxaChhz8gVxq1sWOzgdl8alJb8DG3esUo98uoobsBq/6ZUcOHcMKMD8JffIR85CWvd+dgIM6DghenzAxzp+ARwCltvIX55PdSlntSLmR7rQBhwUA+Q94HqR3vtTR2OTzpgfsnC5t7fIt/Ujf8tyyqBI7279GvIKcLg5SqHKLnACoM0aBVoDXo2mNDCC+2Hha07Ix06tjX6gJuQTf8ZBr/itLtXMiZi51vxR59ugbvkG7e95WtNGO2ANxDeQv9Uq1XzqOJTGfKO/91zrLrMN0wJyUppApOMEr2R6bfIDFsCNocONfhGR77ThlMep5NC/h90Ar1M6wfzpmFK/WLuUoJhz4uUbAll+Q3GFIsf8NUj0gzq8tyew/2jyoOUHfv3kxHKN5XzfbA/yCZl82bJfJroDn9ovFdqraPSfVOfc4/D9kBbFCqFfrFRNflUbHkse8WO8gK2gbiweal0l0bQ6ybnk3nHECbdnbcpXowqpTloU/yzpedIjEfe8Dzhp1U39NXhSwmNCsYOgMpmA/UOicWa2DyKEe3zDpBNQxCtkmv95xoFEcRzZuyYmwCN0w59zYnp8BPPyKPtphfM4E8lXYpPes/Zrx6mXxr+I0a9CZOf8OvsRDu1AHIkjy3kElxjHAoQHRt7AiXo4y3k6lXhQe7DCARO47kgKEx7bAtEugPQgEUO8Lp7KJ9e93A7SZcp2JQQcrKi31vH7DkuEUgJ9gX8dngUQkDKlwGAoFQiyM/A/PZdXssnYmZRP5PZv2TwAKPpvn8rD/ZoI2enrtKPEZZKpQ3WtcomzZ50BfeaoQaNZCweJyJQCC6WgOo4dypYHq02I7O+IBBkqw+IU36cxK0KcMF5Zd18IlUfYFSmfs4HIvpleKbWnftjZgQABRkLYCDiULsugWDLvKBFYO/fpPWas6BRElmSzgORpZreP73rREdvLPaGgspiVTRJs1UzgFxKFlf1+sbt/OcuHg5l5ZcVOEDbwJnZYN+8pEWKosrycEH6jQyFjZacwWMYSie30ab5D0WwX34qe6Jnp9bzNYZ4P3v4AXnigZlnc5YD9ZhC0+82CmG/xb0pWILnuO22wmDWlFoF/AQ==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000000000fffefffffeffffffffffffffffffff
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000000400000400000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: journeys
   campaignSeed: 9118742
   displayTitle: Lighthouse Bay
-  beltCapacity: 4
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
   sectionBuckets: 1
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 0
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
   alternatingCrates: 0
   swappingColors: 0
-  loopInventory: 1
+  loopInventory: 0
   mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: d393abea851345945a976b351b0c669b,
     type: 2}

@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0036
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4294176493
+  - serializedVersion: 2
+    rgba: 4292123767
+  - serializedVersion: 2
+    rgba: 4292397766
+  - serializedVersion: 2
+    rgba: 4281739821
+  - serializedVersion: 2
+    rgba: 4288058786
+  - serializedVersion: 2
+    rgba: 4281875104
+  - serializedVersion: 2
+    rgba: 4292720029
+  - serializedVersion: 2
+    rgba: 4286214773
+  - serializedVersion: 2
+    rgba: 4284829766
+  - serializedVersion: 2
+    rgba: 4288640853
+  encodedCells: S1:4:4096:7DA98DE8:hZXPc6M4Fsf/BjVL2e2bFW8RcyNqCtu3JMoYuHlsTUPOmdyB9Mrm5jFMRG42uIy4GTuF0V+58nTt7N72lYpS8dF776tfT710NHaL9YhSqGt30TwlFgJ9+LeJR5u0nBtNRGMYRhtmzhH4L4ZfbXxyLqrf/KDPMJwTL3qeA0P5mz+a9qRp8aZZUl+DiM7pSDHAzwwahLqdnvLjeMzEKl5o8keEPGQZ5Oand3jLVCP/5DPv4guvuf0hUyBTTYEBtWsOevEZAJ8tW+w/hP+5XEFoRQiN5moIrACGkzd3AZSmKmafVTv+vCx16fR97jFFRugA8MxLAkBU+8rJ5+PPahnXUWQh4qkAKEZA/ZZnKjD6k9nnM+955cijN5FF6bsJADCiIOM8V2QXkf6v4tkXH0wcTatPI+kPTpdT4W/9SAoCSmQdPXMy8UXaUXMAviFFqdq9O+6NyS8EPbKlhXqGDEU3Hl4g+s2y7vI2n66+sN9/eX2V7TeijsQKIff19eUxWoSUVqc9P4xn4PVqv73+Lr8vfzU53o2QEPtPHC+8+SVGT68/7T+8XfyoayH3FWNzVMYK2P/55//6Y7t7IyrOefYySkvG2CVWAt6+v7xIbmOMX1RYV7wa0t5oTivGMo+NL8goE+7gF1zgJ9xvWiGg8zUB/UMiA7A0Y3xII4GztJBJ/tXoXK8dm/t6w8uLk7GrjVe0rpziBWPU1DEcyj6jWppdcJmxspBS+HiCdg4pwWYEomrltKe+9mtW8pKlmGfsvbwwvjKAwZ3sOqTIF3sN8jIzK1awo8+yD5Yxh8cAzDKcgWW+GUl+8NSNlNJJS4FlqpxxZxghsE6KZLmOtF01Vo8Vv+0zZuNv7+wqdp+MY6oU04TdhDEn6rHkJsgznIBTll7nkpUM97DFSBDqH0TdHvwUrBlPgMKYx3BWeoxFDwmQZyWgUNnuPQLWJc+ML5wxBye+DEGnSZ6qGxTVX9ZVSsDW5gSgnF1wcXmXs16l2OyCddYPD4eSmN21fb0Qa6ky+3H0+Iru7Y052/og3PHSI92t7ROg5Kx0PKNv8ygHRcLWLAP9kHNCzrlNiOhtM87UTmCXRQuO3pPSHY/+CXeSt+/y09D1lQNrw1exYiy8LijvuxAepOtB8mi1XWV+2p8cHKdWftwzoICZvA9gTowrn+hblpkmXW1WD6417LBugGYzRVEN8i6TpHGwzhxC6Dh/c/DkrTfrPn0s1KUxArPvO+6RG7QtF8Sz2keN47wYI4TZYhF3RmjWVjK+oaz5IiXUWTVYt3GSmDbDquiMrXX7R0mIYmx5lnobfls7Z3ZIn7q2lxDRWYX5X/OT68f9BZk7MeVn7Cy/jhhLCbeofmquiwCCQ+kTFeOVdh5gB39TGSMevwv0U3jlyMhLXwUljhsMH+2N561npCioETe61GdGqOI+mnFXc4Yw0/1ys96TgmtIn8ZyfUyE+PWQ2I6+G+rJIEwZ2JCy1az4EEqOAvrOuXKjt5TjQ5oMpgmYkYuAVgzlJpkdQH2+VIaOs3Ka6ROuaVcB/0iruolreWeXCAT3ZWc4dIeuvKiO09KNrDtpEddxWMMqRgE88E573sHiocC2FtLpVx/cF3pNQ10WzQDe2W3Qns9QxwP3TCm10i4xmzjUNC286QDYj0Fd2fhBh/oD1MKQPnkk1TQa0nqCZOGFUmgtikqDOwfuaBlPu94cWCJsaiFiqv0R69B1+Jt8DjB0mzd6l6YpOIlWcMlveB1WDy52zvIBwbqcpsbpujwKyYSQu9QOG0fHWEi18Kw7+O0wpp39T25FTaNNmvNQYC6fGz4446J1k/s0U6TzpJGDRNuH1WBaybcEDiDGLsaJwvZmTEUjx1TVRKtxUbhtVe8oLAoOrcVt516dyIora2YrtHrHB2/VINaFBqeihnQ6+mIYQecavWpj3dXx2cGF1AM1G58hpee4YwWacfXnumgfnLbCGIph7doD7IblsqDBd904Si70SnOl4WJX6fCBnvE5LKMqPvV6VwGoPYmG6zvJa1ernf/H/w0=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 19158697
+  displayTitle: red vintage steam locomotive crossing a tall snowy stone viaduct
+    over a frozen turquoise river gorge
+  seasonalNumber: 36
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 3
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: a2fa616e46f831b499d1d0130dfcaef6,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

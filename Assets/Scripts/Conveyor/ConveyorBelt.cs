@@ -86,7 +86,7 @@ public class ConveyorBelt : MonoBehaviour
 
     public void ConfigureLevel(LevelData level)
     {
-        capacity = level != null && level.campaignLevel ? Mathf.Clamp(level.beltCapacity, 3, MaxOnBelt) : MaxOnBelt;
+        capacity = MaxOnBelt;
         levelCapacity = capacity;
         levelGeneration++;
         pendingRewardRequest = 0;
@@ -160,8 +160,14 @@ public class ConveyorBelt : MonoBehaviour
         if (partner != null && partner.State != BucketState.InInventory) return false;
         int needed = bucket.SlotCost + (partner != null ? partner.SlotCost : 0);
         if (FreeSlots < needed) return false;
-        Place(bucket);
-        if (partner != null) Place(partner);
+        if (partner == null)
+        {
+            Place(bucket);
+        }
+        else
+        {
+            PlaceLinkedPair(bucket, partner);
+        }
         NotifyChanged();
         return true;
 
@@ -171,6 +177,21 @@ public class ConveyorBelt : MonoBehaviour
             item.MoveToConveyor();
             entries.Add(new BeltEntry { Bucket = item, PositionX = x, PendingRemoval = item.IsFull });
         }
+    }
+
+    private void PlaceLinkedPair(Bucket a, Bucket b)
+    {
+        int pairCost = a.SlotCost + b.SlotCost;
+        float separation = BucketSpacing * pairCost * .5f;
+        float mid;
+        if (FindVisibleSpawnSlots(out mid, pairCost) == 0)
+            mid = GetWrapPositionX(null, pairCost);
+
+        a.MoveToConveyor();
+        b.MoveToConveyor();
+        // Higher X is upstream; keep the clicked cup on the leading (right) side.
+        entries.Add(new BeltEntry { Bucket = a, PositionX = mid + separation * .5f, PendingRemoval = a.IsFull });
+        entries.Add(new BeltEntry { Bucket = b, PositionX = mid - separation * .5f, PendingRemoval = b.IsFull });
     }
 
     // Greedily fit new buckets into actual visible gaps. No allocation, no extra inventory,
@@ -256,21 +277,65 @@ public class ConveyorBelt : MonoBehaviour
         bool changed = false;
         for (int i = entries.Count - 1; i >= 0; i--)
         {
-            BeltEntry entry = entries[i];
-            entry.PositionX -= move;
+            entries[i].PositionX -= move;
+        }
 
-            bool waitingForPartner = entry.Bucket.LinkedPartner != null && !entry.Bucket.LinkedPartner.IsFull;
-            if (entry.PositionX < ExitX && (!entry.Bucket.IsFull || waitingForPartner))
+        var wrapped = new HashSet<Bucket>();
+        for (int i = 0; i < entries.Count; i++)
+        {
+            BeltEntry entry = entries[i];
+            if (entry.Bucket == null || wrapped.Contains(entry.Bucket)) continue;
+
+            BeltEntry partner = entry.Bucket.LinkedPartner != null
+                ? entries.Find(e => e.Bucket == entry.Bucket.LinkedPartner)
+                : null;
+
+            if (partner != null)
             {
-                entry.PositionX = GetWrapPositionX(entry, entry.Bucket.SlotCost);
-                changed = true;
+                BeltEntry left = entry.PositionX <= partner.PositionX ? entry : partner;
+                BeltEntry right = left == entry ? partner : entry;
+                if (!NeedsBeltWrap(left)) continue;
+
+                float delta = right.PositionX - left.PositionX;
+                int pairCost = left.Bucket.SlotCost + right.Bucket.SlotCost;
+                float newRight = GetWrapPositionXExcluding(left, right, pairCost);
+                right.PositionX = newRight;
+                left.PositionX = newRight - delta;
+                wrapped.Add(left.Bucket);
+                wrapped.Add(right.Bucket);
             }
+            else
+            {
+                if (!NeedsBeltWrap(entry)) continue;
+                entry.PositionX = GetWrapPositionX(entry, entry.Bucket.SlotCost);
+                wrapped.Add(entry.Bucket);
+            }
+            changed = true;
         }
 
         if (changed)
         {
             NotifyChanged();
         }
+    }
+
+    private bool NeedsBeltWrap(BeltEntry entry)
+    {
+        if (entry == null || entry.Bucket == null) return false;
+        bool waitingForPartner = entry.Bucket.LinkedPartner != null && !entry.Bucket.LinkedPartner.IsFull;
+        return entry.PositionX < ExitX && (!entry.Bucket.IsFull || waitingForPartner);
+    }
+
+    private float GetWrapPositionXExcluding(BeltEntry excludeA, BeltEntry excludeB, int slotCost)
+    {
+        float spawnX = EntryX;
+        for (int i = 0; i < entries.Count; i++)
+        {
+            BeltEntry entry = entries[i];
+            if (entry == excludeA || entry == excludeB) continue;
+            spawnX = Mathf.Max(spawnX, entry.PositionX + BucketSpacing * (entry.Bucket.SlotCost + slotCost) * .5f);
+        }
+        return spawnX;
     }
 
     public int BeginSlotReward(out int generation)
@@ -287,6 +352,7 @@ public class ConveyorBelt : MonoBehaviour
         pendingRewardRequest = 0;
         if (!successful || !CanAddRewardedSlot) return false;
         capacity++;
+        Analytic.ConveyorExpanded(ProgressSaveService.CurrentLevelIndex.ToString());
         NotifyChanged();
         return true;
     }

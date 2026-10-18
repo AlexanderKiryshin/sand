@@ -28,6 +28,9 @@ public class ConveyorBeltView : MonoBehaviour
     private readonly List<Sprite> ownedSprites = new List<Sprite>();
     private readonly Dictionary<Bucket, BucketVisual> bucketVisuals = new Dictionary<Bucket, BucketVisual>();
     private readonly List<BucketCompletionAnimation> completingBuckets = new List<BucketCompletionAnimation>();
+    private RectTransform linkedLinesRoot;
+    private readonly Dictionary<Bucket, LinkedBucketLinkGraphic> linkedLineByKey =
+        new Dictionary<Bucket, LinkedBucketLinkGraphic>();
 
     private class BucketVisual
     {
@@ -87,6 +90,7 @@ public class ConveyorBeltView : MonoBehaviour
 
         UpdatePlatePositions();
         UpdateBucketPositions();
+        UpdateLinkedPairLines();
     }
 
     private void SyncFillBoosterPause()
@@ -487,6 +491,7 @@ public class ConveyorBeltView : MonoBehaviour
         // Pointer events can run after this view's Update. Apply the chosen visible
         // position immediately so a new bucket never flashes at the hidden entry.
         UpdateBucketPositions();
+        UpdateLinkedPairLines();
     }
 
     private void AnimateFilledBucket(Bucket bucket)
@@ -549,6 +554,89 @@ public class ConveyorBeltView : MonoBehaviour
                 visual.lastRemainingCapacity = remainingCapacity;
                 visual.capacityLabel.text = remainingCapacity.ToString();
             }
+        }
+    }
+
+    private void UpdateLinkedPairLines()
+    {
+        if (bucketContainer == null || conveyor == null || levelLoader == null || levelLoader.CurrentLevel == null)
+        {
+            ClearLinkedPairLines();
+            return;
+        }
+
+        EnsureLinkedLinesRoot();
+        var alive = new HashSet<Bucket>();
+        IReadOnlyList<ConveyorBelt.BeltEntry> entries = conveyor.Entries;
+        for (int i = 0; i < entries.Count; i++)
+        {
+            Bucket bucket = entries[i].Bucket;
+            if (bucket == null || bucket.LinkedPartner == null) continue;
+            if (alive.Contains(bucket) || alive.Contains(bucket.LinkedPartner)) continue;
+            if (!bucketVisuals.TryGetValue(bucket, out BucketVisual visualA)) continue;
+            if (!bucketVisuals.TryGetValue(bucket.LinkedPartner, out BucketVisual visualB)) continue;
+            if (visualA.rect == null || visualB.rect == null) continue;
+
+            Bucket key = bucket.GetHashCode() < bucket.LinkedPartner.GetHashCode() ? bucket : bucket.LinkedPartner;
+            alive.Add(bucket);
+            alive.Add(bucket.LinkedPartner);
+
+            if (!linkedLineByKey.TryGetValue(key, out LinkedBucketLinkGraphic line) || line == null)
+            {
+                GameObject lineObject = new GameObject("LinkMesh", typeof(RectTransform), typeof(LinkedBucketLinkGraphic));
+                lineObject.transform.SetParent(linkedLinesRoot, false);
+                line = lineObject.GetComponent<LinkedBucketLinkGraphic>();
+                line.raycastTarget = false;
+                line.color = Color.white;
+                RectTransform lineRect = line.rectTransform;
+                StretchRect(lineRect);
+                linkedLineByKey[key] = line;
+            }
+
+            Color colorA = SandDisplayColors.FromPalette(levelLoader.CurrentLevel.GetPaletteColor(bucket.ColorIndex));
+            Color colorB = SandDisplayColors.FromPalette(
+                levelLoader.CurrentLevel.GetPaletteColor(bucket.LinkedPartner.ColorIndex));
+            colorA.a = colorB.a = 1f;
+            line.SetLink(visualA.rect, visualB.rect, colorA, colorB);
+            line.transform.SetAsLastSibling();
+        }
+
+        List<Bucket> stale = null;
+        foreach (KeyValuePair<Bucket, LinkedBucketLinkGraphic> pair in linkedLineByKey)
+        {
+            if (alive.Contains(pair.Key)) continue;
+            if (pair.Value != null) Destroy(pair.Value.gameObject);
+            if (stale == null) stale = new List<Bucket>();
+            stale.Add(pair.Key);
+        }
+        if (stale != null)
+        {
+            for (int i = 0; i < stale.Count; i++) linkedLineByKey.Remove(stale[i]);
+        }
+
+        if (linkedLinesRoot != null) linkedLinesRoot.SetAsFirstSibling();
+    }
+
+    private void EnsureLinkedLinesRoot()
+    {
+        if (linkedLinesRoot != null) return;
+        GameObject root = new GameObject("LinkedPairLines", typeof(RectTransform));
+        root.transform.SetParent(bucketContainer, false);
+        linkedLinesRoot = root.GetComponent<RectTransform>();
+        StretchRect(linkedLinesRoot);
+    }
+
+    private void ClearLinkedPairLines()
+    {
+        foreach (KeyValuePair<Bucket, LinkedBucketLinkGraphic> pair in linkedLineByKey)
+        {
+            if (pair.Value != null) Destroy(pair.Value.gameObject);
+        }
+        linkedLineByKey.Clear();
+        if (linkedLinesRoot != null)
+        {
+            Destroy(linkedLinesRoot.gameObject);
+            linkedLinesRoot = null;
         }
     }
 
@@ -644,16 +732,16 @@ public class ConveyorBeltView : MonoBehaviour
 
         RectTransform rect = bucketObject.GetComponent<RectTransform>();
         float size = GetPlateSize() * 0.92f;
-        rect.sizeDelta = new Vector2(size * (bucket.SlotCost > 1 ? 1.7f : 1), size);
+        rect.sizeDelta = new Vector2(size, size);
         rect.anchoredPosition = new Vector2(ConveyorBelt.EntryX, 0f);
         rect.localRotation = Quaternion.identity;
 
         Image bucketImage = bucketObject.AddComponent<Image>();
         CanvasGroup visibility = bucketObject.AddComponent<CanvasGroup>();
         bucketImage.raycastTarget = true;
-        bucketImage.preserveAspect = bucket.SlotCost == 1;
+        bucketImage.preserveAspect = true;
 
-        Sprite openSprite = BucketArt.Open;
+        Sprite openSprite = bucket.SlotCost > 1 ? BucketArt.LargeOpen : BucketArt.Open;
         if (openSprite != null)
         {
             bucketImage.sprite = openSprite;
@@ -670,14 +758,11 @@ public class ConveyorBeltView : MonoBehaviour
         Bucket captured = bucket;
         button.onClick.AddListener(() =>
         {
-            GameAudio.Instance?.PlayTap();
-            if (SandEconomyHud.instance != null)
+            // Belt clicks select a fill-booster target; placed buckets cannot be recalled.
+            if (SandEconomyHud.instance != null && SandEconomyHud.instance.TryHandleConveyorBucketClick(captured))
             {
-                if (SandEconomyHud.instance.TryHandleConveyorBucketClick(captured)) return;
-                if (SandEconomyHud.instance.BlocksInventoryForTutorial) return;
+                GameAudio.Instance?.PlayTap();
             }
-            if (BoosterService.instance != null && BoosterService.instance.ActiveTargetMode.HasValue) return;
-            if (conveyor != null) conveyor.TryRecallBucket(captured);
         });
 
         GameObject labelObject = new GameObject("CapacityLabel", typeof(RectTransform));
@@ -726,7 +811,7 @@ public class ConveyorBeltView : MonoBehaviour
                 continue;
             }
 
-            visual.rect.sizeDelta = new Vector2(size * (pair.Key.SlotCost > 1 ? 1.7f : 1), size);
+            visual.rect.sizeDelta = new Vector2(size, size);
             if (visual.capacityLabel != null)
             {
                 visual.capacityLabel.fontSize = GetBucketLabelFontSize();

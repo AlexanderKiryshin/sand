@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280499554
+    rgba: 4280231470
   - serializedVersion: 2
-    rgba: 4293841076
+    rgba: 4293841593
   - serializedVersion: 2
-    rgba: 4282149270
+    rgba: 4281488771
   - serializedVersion: 2
-    rgba: 4279968300
+    rgba: 4287614192
   - serializedVersion: 2
-    rgba: 4281488000
+    rgba: 4280696930
   - serializedVersion: 2
-    rgba: 4282600276
+    rgba: 4283389796
   - serializedVersion: 2
-    rgba: 4285577962
+    rgba: 4286486451
   - serializedVersion: 2
-    rgba: 4285428347
+    rgba: 4287725422
   - serializedVersion: 2
-    rgba: 4283204279
+    rgba: 4282610080
   - serializedVersion: 2
-    rgba: 4292847219
+    rgba: 4292979063
   - serializedVersion: 2
-    rgba: 4289122538
+    rgba: 4283469766
   - serializedVersion: 2
-    rgba: 4284521935
-  encodedCells: S1:4:4096:D70DC264:pZRNb9vGFoZ/AyspqgBvyrqFr5KNMKVpItzY1hVc3bth6bFsWBvbykCVvSFYYUpkNnEcgY67IRh2Osis1FQwtCsa13KlTUC4Y0LzozqUAhTotgQIgXrOx/ueOeR4/K+v5p778xjVflk8VPWdf+BOwwHu/qeue73kW/pwCdRvHtsoboLtPVQEACiq6+erywB9PO6Nxq+ve8W6tQ2AW1t3w5zr9ZxX85D6eIy0ZwWtdtIBBqgDkOO/GzTfKV5wtL16/Wj7CGxfOEu+pleHy/TquKt1HtWLDecCIWC8XHD9C3Uv03Vd26wP6p3eYIR2Oq4Bc3T+Ym3BL0ZKDnqHhq/RYGfQ6GgaKOYVPvl1ddHm989y3uzVq83e+F2j1+yAR0ClfvoqzLvvXH2W93ldbzarA3201ukqHcZltbo/2blWncMFrw6r4Wi8tXU9ro5Un87L8Ri+6F6Ph833Tz9XHBmfj7eut768bq6en6NR2FP9X3RHytzk8HF1OES5qdXj4Wj1vDEM1/ITaF5030CwPdnPVaB1dy1ExZ16VR/qi8FV/2js1wCIL2/yh/XCyWDvpJE7GgazXJD+x4VWY1F8N8mncOQ6l6hbV7aO0UQEC+NF7b9vo734SFWsIlRzUeeik/PBILPJE33LMDZ5dJj8Jw9uIIS6ux2kH8Oz9YGU4on+DdzsGOx0fcHriu+gbqijjeD/KJVypu87XzcO483bJOfxM4QaR93uMUKhPHsgYqZD6G79FBefspy3D/h2p7PBjwdhyLkt07nulODJG/aGX+Yc22TlZUee1VE4UJj/+bTglLRSkUXsyYJj+ujsBPDBszB84FI+uJpjVHbrHXin+IZuE0G43Eux9QomgFV2S05Jvtz9X/2b57p+eP/bHogFJiIVjqNprqY5sAZrV7vT96eP9R5Cr9CPkmCCsaaVtPyC0FH6w6v3aKqHYW8yARs2xqSswZKjbphz9Tt5fDkJlfX1zDK//qDSFVDJjopwDOjCVw+ptMMuGmQsk1nwsS7Mw/IaYDrP1KxFayAFs7KC9pEtKYS/TeeSCIG/k1jI2HJVdmnJF2WSu7nEWOCazKgICNZKsP2RO4onPJtnQgUcrVvKmxAQGvAjVwNIGL8jKv/HULpIYonLJdhfFoYFdceMZzMhTDT46cHCZfJcmXfzwm0lz8m5zKb8hxQNkrsMewFW/7qLfGMhnzE2nZ6pvdlDl5zjcuAkcAWWovs8YNcALLu7mnLQPf0dBT8EicCG66y40ACuAUoOh0Y2m05TSejcPRxIH2MYwBUHGjZkEEQtwOzpdCoIEzgrBy2TsBWMEweCOG5bRl/5U+UfBMG3mFACzH7kqfNx4M3bmAI2g0bya3jKhRQZViOKPRM6wlRD+zaahez7/Xy6k/VUYHUAOMBMWgUSl2HLJ1+B8GpjH7rsal+J5gViq72paLJM/LIDZ9jXNMxbjpuewhgL6lOFiesA/yDwfIMITesLXIbgvg0tLFWI4ATbAARARGUPi7KTmcqsYbRLTKUGeK68u8AXftkre4JCSrjw4VurbQT0Fj8XPMtwLWEWYO2KT8swFUFAb4z4IFbpgmSCEBIlgRV/MGMat5QE28OmAS2/n0sLsNqdhMeRn9pu26R9T7VPsgPgJ4SYmPocE5m00r6otUk7jSKaMbVsNylJ8rXE+e5J4hb6QKPEn/uk5FFKiDFnMRGS+IQIn5pGKwCOGrX0WxhbfsDvA8CwfUepqm7Sg7iUgYIf2DG+lT5QS+/dM0Ixx3csTQh2+14UVQKp3vMsM9VATGql+LalTo/K1MQuBp5hEY9iM2atQPiYWjwTbZ/aK9z3mUvNtMb8iD+3TPUliO+VbvVBIJTjgxb2MiDAfSHox7eBAYIgJn5GqFRSYsqoKSgFwvAqpE9MkUTEZJVKgOP8naRiZpnY574Zf9g2PZu0LAuzzDBt7N9iOXN52oppX/oVp3a08sEKLM0w7wm4mbcYs0ElBsa3wLL5Xw==
+    rgba: 4285051364
+  encodedCells: S1:4:4096:BAF09527:hZPPU+PIFcf/BnnXHkNyGaUCE2cuTKNMFOtmEYqyLl5FTDn2xRDasDkxMNZScIGqTHm5NhrSpb7AYZb1VfZOurovWxK7per3R+XJTCpbuaRdli193s/ve5rN/u+5/if9xV1r+j94NUrc7x96CX/C9pX9C4beVp0nrttz+PSJ28+fDFr3s5mFvw2rF/ZWoiTkZxWtuL00vJ+t3s12m70kSfobkp/s8m+X3LL/kwHddx0SrfSiiEV8pe5W2K59TlC5z3ajyOlZVhRZ7tFk94n/1sbYS/fWfVRvWNZoWp+ORg4/W/KrL+xlhtXRzLbrB9bl9P3X06bV3OWEcUR779aWBqOPWE7jcHr50Jw1m1hDnYdVhK/eUdtu2bXJBG8+Xl0/TFcfrh+ur/ZGjsV/h/zk2UNrZjfjk2WY6+vr2fOm1Vp7Ty+bEar4p8n4u5k9i8cV/2b9/vDuvnb58HVtekhbezgK8i7GxlaP3/wGOWXfz2ovavd3tbXa9e7Hq9nMfvuPsTV5/83k1XfYBHV5y35uze7u7OvW9KFqu2bFCUuyyZvqrtFgh7eX1GriOJaytGZvG2OHc34UVRMi7hGlDZT8vnWYQ9WXvXccOVmW8riF1R+QxT61Rmv2/R6NTSHWUV8nqt9mX/Lf2zjEOg2PaI9S++2YUqrOg5f2X0nn2a1cSc7te9QPnzZ2kdOVA0qN3n5pvwpXrNdqxZLLYf9o0caIrtn0g/k11dtm237lxCevZW0nrThB2tindI/SCYwLf46cuHsbsnarljy7wPJ223RE6bk6LeTpuhOSsw21o5b+kKpf9UaGWljHeQwXP930nTAKN9Qf0ouKz2HwE7m4VR8mlP5w/smP3Yiws40v6v/qvLT3bo+4fASAH/Jivo+a8dAJHcLj3p719scX9oGTHriIDZhh5ETVcQghSWzFx1+t2VeYky6QlwBRFEbVl5DK4ll8/Gb9RTxdm5CzbR6A6UckdPBLqhMxEq+/juN97Mmc3WyV4GFc9EffkDiMuOQk7qpzOqHjuUnVxc+9MCQY+rM/waBzZT7pwDnXRgXnfczpVNwhTwV0fOQgukJqDTcpPnztOE/uDn6yrq8NaPjL3xUY/Fe5RtEycmWWKVUoowFW6mEeFNoLSU7CJ15dlezOVQlRN24c6AJgSMgC2yOfC0yVkmpewoj+eRLDEKru2hVpk6WVVFp159zQURzHkAfgRM7mf/0zrkzXF7TqPp4EAuYOSZAnOSGMbLA2U13fT/vjgw/78Tl24WX5IiQh4y5hoSMIU/Gpr5QRKk7H/BF2SJ4nOPUUdXUXm4SLse+X6FgUqfQCSIgJsW3GpdcmWaXO6fY2GBOAZ0SoPecGhgOH7MRSMO6HRHYm63P4fDJhSFIpwPoTP47la+wvjsdGmEpgH0AvWCBuSLvz5vg0Pv30R9J34zHLjR7MU/TvJM7CdIGQrtiKIiFcwrO/JVIHsGPMjga3PjCq9Mqtnz0SbfngIT8lGY5NQ4DTU1yA1o63BXoQKQ2aMLnJMHIZYO4SZHYjs6ATLuCGeI/gAemwAUkhwPoKo2DBSkUGg7DQqTOoFpmkbts1OsC5G7RhiitZenxTbpK8MAkW4Lq3AIUutDJGu55UZSrSoRhmOa4SqsylxOQ4ZG10UbIhmeeeaee4SkaaufBlwfJCBlqWoBQQryOJKHJcKrTQHIgvsT2TzoWGjhEJETLCwKnx0kCYUjkpYyAMLoZwS8UeHc76wXyIEBR57EPpC2nauPpg0lSz/JElgxTn4RVal4+pBql87XOhul3mAxFen7PgUcN8wYURcxBtWbQ9BTfYvqeJJxw368q0aAumIcUXyhRBKo1o98tAixC46uM0g5zxEgXIS1OCb4qUwdDLM10KsuibEiOxDC8mxaqgC0ZmSnjmRpde+Ei8UhuPc8MVGZoS3wiFy7e5qVBEaIcZ8wxus8u0VEy1cbJG+XIzxTqN+jc=
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000000000ff00fefe0000ff00000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000000040300000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: wildlife
   campaignSeed: 28807794
   displayTitle: Caracal in Sunlit Dry Grass
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
-  sectionBuckets: 0
-  keyGates: 0
-  linkedBuckets: 0
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
   largeBuckets: 0
-  alternatingCrates: 1
-  swappingColors: 1
+  alternatingCrates: 0
+  swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 482eaec8c2725f04dbf0d8013a6f5f71,
     type: 2}
   usesTiles: 0

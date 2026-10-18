@@ -16,50 +16,52 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4282533949
+    rgba: 4281415466
   - serializedVersion: 2
-    rgba: 4287144879
+    rgba: 4292789158
   - serializedVersion: 2
-    rgba: 4280692514
+    rgba: 4285890689
   - serializedVersion: 2
-    rgba: 4286021502
+    rgba: 4287415260
   - serializedVersion: 2
-    rgba: 4289364809
+    rgba: 4289035845
   - serializedVersion: 2
-    rgba: 4283077788
+    rgba: 4285159494
   - serializedVersion: 2
-    rgba: 4282347114
+    rgba: 4283999160
   - serializedVersion: 2
-    rgba: 4285488199
+    rgba: 4287472818
   - serializedVersion: 2
-    rgba: 4284790225
+    rgba: 4282079828
   - serializedVersion: 2
-    rgba: 4292337372
+    rgba: 4292141798
   - serializedVersion: 2
-    rgba: 4291275401
+    rgba: 4291207286
   - serializedVersion: 2
-    rgba: 4288398811
-  encodedCells: S1:4:4096:9DD3140E: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
+    rgba: 4282482562
+  encodedCells: S1:4:4096:F626CABA:ZVTNb+PGFf8bZu1IYqOTCm8T6ySMwKW8vhgiLNrwabc0FqtcJrQmMpyLsULGLObiUpFHji+s1KXH5SVOgjj0npTKRcJeCKtLTzB/VB/lRVCgTyIhvd/7+M28jzRN0/p6Pb1N68mv6VJuk+TX2+T6da12nawXcC25TWtJkqT1JV6/TpJ6krizZL12DbraWq322k0KSWuFE3yTpOvOu/Prdfjvpulrd15P3DQBjxo4rV9fu3N3rdutvXBT1+2+gGf2wp3/sAySuG4Cmvl8ttadu667VnPdr2/dtJums9vbdO7OZ64buOkMuHzj9v4MJi+t7vMUkoOuXu+m83rafX6Hf8ZCUNMLAm/fHGGBJ1FLaqWkjSebAXaEEIElPAsLBw+/cppBn5oUxAtsLOzVpmhK/AYLOZFiaHkmBTigHl2K+XnbHhqaMVHRwz52RtaoUP+O0x41sWUPOjqwRX8kRn1AzN9Rele8RkN7KPtWQ2wXVDyKvwbl/hJ/fFPgNwq+H2LRtgR9ZEf/Fzc9eg42Abj3af//cVoSI2yJRASBZeJC33vUz+nyRwnZI0tYQmCpYq3zeP/WQCEq0e4HdyJsIax7rX2tn7U3m6YzNU6lcUfRhwRiGJzLwlUN4pbexDeVVoBRCT4EUEJtUeFKTZ1WoOzhd8SjQWCYf4DEZGlAxSXnsn1ydoHHV+Lcwm9sy7LiGGGC5BLnWk8vlfTVcGRhC7X6+1fYOxGW9/YQAQmp9LQS4q3wpP3JZcNCY4d+45gPhoHMUoFrzeOGwphYJ959DGc5pKaF/9IZWtgklJTYOAGl2V4cXDadN5P7cUPc3ODJwQ4wXEEIsTg/7K1guGFbLgZj5wA1Ln5qDL7jtGTsI0T0j7xPZQuLm3N7pDeho/CPA1/uxW4P3YXkrf5t7xUN32Fsi6h1s+HsLsJ8GIVaYouSj0Kpp/5+z56ghnX+YIC37QeXsR7z3+Y9QtHEYKrpfrz3FYuM8UksV06fsZajfG7rV3CHPsq0/qe74o8b2j+7ivkgt1WuGLO5/8rt+VxzyX6ZP50Y8cbbjUiIKOZ7tv2tbkp73n0Shn6k9e56D1UyrnS+mxctcK9z/dPlyzXXyGQk9Y46635Et5GhdqYMeBsP8qF5Ibvdv7OOH/locCz//UPP9FZWbLS6FZqV00B4n/6czg1+PGWF2NkQTyjdPoBqkhKiFqFPYYtMOGN+zjiLomx84pm29zgdgWm8/OPzf0Sc5VzBCXYGka/Vxa5zifFdmnaPaCDuFWdxHEIEyXU+UBpOdXURVv9VrCezv6V4FHfKyAcDXfUjyWRTP0SSXwDcjvvSUAPEwojxMuMcOoyrzjTMp3rxSe0qixYLI6qWj+O8gwh2fL2Ilcx5DhcrP/vPDorCyJBwyU7plJYobdLVAZMhl3HMjHdXPsvKEk69erALHXSKDvuUbG+xnOVS5avJEZAadGyGwj41yLhfzBHgwWCw5Pr0ScPPckLsqYFohRyWiqEniJLR8BwidJ4+oQjJPvE2+rS0QgxCzRIhQKO0ueqcrm7dAa4RaDaM0nZw+KVZzPhoSdMKtlbbd09KxCnBXA4hqLnagisHjMCz0j/dscfp53Q5ltQqlBVCGeQpCJg3ZGdr6N0dUeKBtXlISMmswHzxrF/MuemgYEvg9Ig2ioiwmAg9JfS9jvwvirqOtig6u6Hp0b4J0eg2UKSN4XstZWwYRT4gGdyk6dF8HyBzVNAwHcURVDpvcjryqCeGs1p95j4uHkL9ceeYQRn97Jk+GPEzdfb97E+1NP2Av5dnC59JqaCSGZvyzkN08WUL8MLgLX1WySB0JJFCYYankxiu18+//fRv9b/CapRRZiE/jBWCIUOZDBVUfACtdIbeTdrb5VBF0AGhiiU6LmsWhfFx7ncYgxFkF/xEhTlbMKRig6FqlLNyaFTz3IdZyO0QhjBH4Q5jVWTAhkFhrngISYqQAzWV+V5kVBFn5QLVcRhqVUVAM86Ao14wPihnSGtZLZyRVKGhqoYRI5UBpWyhuF+GoFXJq2H1GMXoUeCYkAkiVDXQQZBaIkjyXw==
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: ff000000fefe000000ffffffffffffffffffffffffffffffff
-  conveyorDirections: 00000000020300000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000040300000000000000000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: places
   campaignSeed: 25875382
   displayTitle: Terraced City in a Meteor Crater
-  beltCapacity: 4
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
-  sectionBuckets: 1
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
   keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
-  swappingColors: 0
-  loopInventory: 1
+  swappingColors: 1
+  loopInventory: 0
   mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 1f10078f099dbfe44b6b2015bdeb6b2c,
     type: 2}

@@ -16,42 +16,71 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4292975616
+    rgba: 4283724180
   - serializedVersion: 2
-    rgba: 4294901502
+    rgba: 4288659679
   - serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4281880425
   - serializedVersion: 2
-    rgba: 4278271433
+    rgba: 4286999134
   - serializedVersion: 2
-    rgba: 4287456827
+    rgba: 4291486449
   - serializedVersion: 2
-    rgba: 4289044106
+    rgba: 4285176013
   - serializedVersion: 2
-    rgba: 4281699557
-  encodedCells: S1:3:4096:FC86B85D:xdQxa1NRFAfw7+Du1NdmsYNLKkRX7W1Ihw4OPqeSFmLeqdAhIH4CBx1uQZDqFrvVYNqeDhm6FKFKEUoNzTuNg2uNIEgHHZ7/c+99TWoF6SSEx80v951zct65z9jI/I8PvwqLHlN85kmBB35dFSZ5HvwJldS/YJ2oc/C3WFLBrcn5+L/dx2+TFGu538CWZySz3tew6br6vN5qEmlgjdVaRYq2euZXpDFfUEec2zZ6EbFLZezRbFKC/8KXaezWMvj1EZyptMeUOb/5aMLY3dzllAfqiLMS8couRwiupe7BtxF3UoOgH813TLnvhP/lvMuDboiTOXdF2sMu9xmLz8ibZZKhw84/MQtvOf+JHzLXmYW43eeGc2w6AO/0NF3zHnwJVH+Mi/2RZa2eS3q37ZpLsXM0sqluj2fYu+Cmimv8vnr6PndcTO7xsqQXnJjKjViCd4a+UZdzXgxer8tSrPnOey1GEXXxQ0DbQ19FspPdEY9z79BJNPTFso8vL5lcfZXUe8grNrg54AGPeIo2dijeRlNGvAbX+6lQOZj4PuqLmm+dCvp4R73L6yRtKl30UKT35C/ex+Xa5Xx18hI+GDr94RvBW2duU+d0zu0h26Y6e6+2+mivzNivzElnwBgP1/+kpUFWp+fmO1t97Hdj5g53Q4OvNY593n33bsCvH3BiHvh6qCze9WNwMryzDnnut9xJagY/1XqcT4lPNOccuTamlk4XH47hYVO4BdOG98hVY2P5horKiRukpj417B+7Y++joqk3TyPdP2c3192rSYrLmNV+Uka1NG6M3XSlxpY+4uxbggutFI12A6HgPa5iDPYYryOZqIVWp+q6UjdpMXedSb/Sd5oMH43OpT9pPqPwbw==
+    rgba: 4286942878
+  - serializedVersion: 2
+    rgba: 4294363036
+  - serializedVersion: 2
+    rgba: 4279640884
+  - serializedVersion: 2
+    rgba: 4294619502
+  encodedCells: S1:4:4096:3FEF0432:XVVNc9s4Ev0NLVhkdCQkkLtHCDG5nFtsSszOTZBA7hxJmXB5b/wy4rnNTLLR6qZw4xSuUzNVLv3KbdrOHhYXUXj9ul9/ADifz+fDP9T5/9fPLhg5Yufj4XD482Xzx9//hx/d5hk/Hp4Qf+UL+Yo+nX+GJnr5d3heT+Mn0H++kA/nD1Cb796enkajI+Ly4tX7ccS/e3vdG/nk9+eP8/GNWxt1Hr3uvxvkZ5gA4k+H4ysfvZ6P7Yu44w/7T4j/uv38r1HPh6I29BknDDWiox9I71En9JbyBYcX/huQ6BEt3tTCGCXaaxp+RtzAM/9w2MqxQoe/XUTE0w5on0D66+cPY/0OvyHA1QhfXBDizE9ByDXflxNpXKjl++jT4dAi/kvdilJwUXhLsgn3l9S/DyEIPsW/7X8x+aH1gAj0TLX2SKH3Div7GvPjlnBuFAaO3YkuKAgQYu8U2inuTW3y0GpeGLW/D4Spl/fzwvMEmlTxErcwGX/piaGjUOc6eGckJfPt1CN7ar/c3RvEi/BRrYwUD7kQXGcyEuGGNkFJ2qEe+TMiqAPyax0IHoJ/ZUU4OOks4INoR76IBzqnTHpfVX8ZD2qI59x3IQwG2476rPkiGa6+X8je2p8uYyEmgFkM3kOE/BNwXWqim7mRq8HG6ICU3nbPyS36D2QJWI35vsFitv1gZ/PKzpac1KixH5tVFbRw5r6Btm7gFIt4S4fKxttiAkjxdNYSrWnjAtT9gDjhGZWbzWXAjalhI/1LqJhnAAxMQRBbnCyltAw5STvjbigLoaS1C7wFgBhOe6iBbksB/LpLhm2llISvHbpvOcBQxORUAxQlAdfUojciavONNS203oaEQyFmfgPghcJ13RZMRHgkCmugngNMBZxOod/n7DJSDOMAFli4AmwNpA2YBnJnT8WS1KKNDGA8HgEnoGJxgtZMK/wdsu0l6mwjUfPRAmcKlja28cmjEumD9Bg8Ay0yWzPmNRNYdwFEiVNsfZAAJ2wQrnqUEHGErR1wqE/2Ln4UsncNh9aKh9ZwHnGCHUUD0I92GCAUOH/EKGWS5D+WiwhGEdgXAN/GThjFZInBPCxL83aIYzwRqBeDYdW+CCKSt1wnF5jWplyK4cGisinOmhAFFL6wbWe4r4ZWiE0Vt65oB/Fv+4w/YoDHeK6UKDKllC4dv0lRxE89GRUKewfj8ZoyvncCTypaMsoCKkUrTnjGYjHMOAk7OguF9KlUbKOY71PKWBxjEjjndwTqJMGz8k2pXhWz60YqNfG1FYSM5RIWBvv3b/lXk3vaU00u07d/VYoaDB+jRGL9L/YhmoXfHowKZN6bhhkqrnN3eIgwUbRlj7EdlH3Im9w0eRCYLu+DXtExoIraWQHWRo823pibgIKmDqXGSFX2GdO+E46NKlTl2Ps8uZVsvbz/uFAMq1GBzi7SjpaZkpNwj+ld6UxdOXXeKKTrol3fJCrz1I4VDqKNudXarwOp0ve4FTp+rqbuRDK9DlQIubrxzdVfKJVUdWn6MVHVaiFVj/cVXck/ux293SVyscIqr9I/OrYMSj+vinWuWJnc+rRUDopi/kTrq4XesIaxiuJl3y06Klce5I2nJJV6oiXDNyhT7lu9Y/7qJmCVvNIQpMjuTb7cqim28kKvd5eYGa0cQxntO0O3i3JtqncJY7S6Ttp86hQqeHdbpHi46aZS6wZLW+r3hZTyXZ57dJsktzpfJMkCWy4na83K9ULvuizHUJQGq0L/8WNnutWipKzKdKAMXhPgbVYJhpRqnWB60r+SUmt8IiZM89qkrlw9+VSxXMo0WQc4WBpvbqBZuaIVp3jfytVHVlLJVJLu8or2fvchp1lWXJmy/JwrLICaMJUvr7pFmmSs9JP7tMoynRpndcM22peVVJXW2S7ZlVWg/USbcqpQRLdj43OiNv8F
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 0000000000ff00ff00fe000000fe0000000000000000000000
-  conveyorDirections: 00000000000000000002000000010000000000000000000000
-  conveyorBucketCounts: 00000000000000000004000000030000000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: legacy
+  artTheme: ordinary
   campaignSeed: 6395788
-  displayTitle: 
-  beltCapacity: 4
+  displayTitle: archaeologist uncovering a colorful ancient floor mosaic in a sunny
+    excavation
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 6
   sectionBuckets: 1
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 1
-  alternatingCrates: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
   mysteryBuckets: 1
-  bucketSettingsOverride: {fileID: 11400000, guid: 7fb57cfa945d3e341a4d75a6cb7c87b9,
+  bucketSettingsOverride: {fileID: 11400000, guid: b5092a74ed56db84b8eb7ac10810d99f,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

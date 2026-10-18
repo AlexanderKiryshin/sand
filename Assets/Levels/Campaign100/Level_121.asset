@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4285154060
+    rgba: 4284233479
   - serializedVersion: 2
-    rgba: 4294045404
+    rgba: 4293781970
   - serializedVersion: 2
-    rgba: 4287913990
+    rgba: 4287848454
   - serializedVersion: 2
-    rgba: 4290023221
+    rgba: 4290549811
   - serializedVersion: 2
-    rgba: 4282065413
+    rgba: 4282262533
   - serializedVersion: 2
-    rgba: 4289033488
+    rgba: 4289099282
   - serializedVersion: 2
-    rgba: 4290354267
+    rgba: 4284711530
   - serializedVersion: 2
-    rgba: 4286801712
+    rgba: 4289826383
   - serializedVersion: 2
-    rgba: 4286599173
+    rgba: 4286204934
   - serializedVersion: 2
-    rgba: 4291673227
+    rgba: 4291343228
   - serializedVersion: 2
-    rgba: 4283839239
+    rgba: 4284894756
   - serializedVersion: 2
-    rgba: 4284118627
-  encodedCells: S1:4:4096:2DF01946:NZTPV9vGFsf/hilxLKOsXE78wlul44goZRN3KlFY+ZxO61QrImUMdIUjPI55GxWMhNWNj9LAlGziurGP3koF1abDhtNNTpM/qndMMraPZH3m3vu9P0b43rLhGo/+M7ZG683aaKl8s1rD5XG5zVe2X5li5cjC3r2nlltbKleGw2XAaYsvl9drNdc1X5qfY/dXMRqVv3hbXr5bKS+Xh+vdSrnr3/W2k1Akwqg2h8Jlw1bNttpL6Xg46pLWmFXIy23yk/tqW4i3S3e/MJ7/Rghb8pe6o+Vybd1LLVZjLhOCvdo2vrEqVfP5UrdGfJsTXi53PaudsiXDE+LFH48MUWF3XeZZlfKQp+VWd8fmrOX5nukmxvnF4EthVZ+67e7ny7WU2Cm3q0MfN9fBmmGcrBTlC4IxI1a70qqk5XZluOMTixFsQWkgQHcaP8XYHTPLftsak7fc89rEwH7VqmKMzdu8iNAO+8rzLI8T3+Jju8V9r91mGNwmpsd5Rn802lWI4Ps+aY881iY7zJpz02W/pUW5x3yPEALJsTb3bJt42CIGM3BiYbY/oXKFGBbxgUNs5rXtqmsRxhjeNrB7Yec0Ugos2/c8Aj+LeIzBlyXYgDTWvs1ONzmxCPGbzJ5zcsMxwy6zrFBGdLHiggKwBzTnc//gHjb5FFMxq9jEvkEWGbWdYRM4FO6ioG+EjVxL70UTG8wUD1EU7E+ZCzyT0vna/76AdNSffOYN/WF/tojkrEHpM8DnQcehv4y/yzO5eC+YHe4GWrHUR5T2ftJisJeLmcOCMadSlhZlFKJi4+Eior3wLyk3jQTvTiUzjoj9fV5AmV58M0O3kOMU/tJpXzvEwlQJ4tvECnOUZf0ATWWc93r575M+PzGxUPUzoBaESz2jxyBW5rSQh2k35U1ovwkJYpVUcyppD8X1vf2M0jxN0+AWZK8mCHawNcY5dfQMbGNJ43SSdvnUgPbCBGDXZa7n+4tU6pRGsl5P+93x2H/GPnKoMnDOv8spDXYd2h93OuOIu4o7C48xvv1wgRCb+zmd6boTppMuH3eaIBzjUqBcnMK0QO8mWkPXc56GYdjnkDjoE09WcbKK8RGkQLI8d7Q3nbDJO4dbhlIuYMHl6OHC4zXvovdDwWnwcAeOwok7z0yUhHiN8cED/Mw6opB43D8Muf9cMz7y49Igvn8cQR8XvlX8v53QPmQNmNwb/0iYYgv0waA7lDr0n4fV4mFjpIo255eRODNnkYnNc+CUfrYVHeQuHDz8KX4pPhXXq4n5ROFJb0s37m+N1Vx+0h9E4nhVJMq8kOqu6pY6mDf88v0pOn2SCHEO4uh+XwUm3grGfx/ALTxHZ+9flwbAofh07xE8/Ioo+9ebyvmpgLH9n4qiou9NlU9MvBOcaO7fYD27g3RNfOS98Qq+sX+ETbFwvJogLUBIiFiIS+Doh8RUQQl5gEVyInBJ6JrU0RX6ICC7PX6ieqH4/QVxHZkHkXB0FGTxnXjOw5tmJWQJhC8IfJmddSZZPIvfIeFQxH8FrgKwl/Davby+guSijQzOiV4StNEuznXiJLFeivh1CclThIL62rQ9RWeCdsI5BgcJ+UWUtO2ikHGJRvXdeFfqAwoPz6CbarVF6fKFBlFRiRbqjbqOJOIFqGEJDRQfiMGZvqnHSMaQ9f8bFM6Wo+pQurEX2fVphtAG0lVRow7VpghEDgQCjzBwAxm8Q9k32UExUBviwuxC0yU4AA6+5UUgN2/dujzSMydyer87NJjqcHCzMwTNgpsNIc91VIicXPYe98KoF+lcgsbs+o7CamWxPisE8GbSacGBsdyfyOzDlXw3A3YhnQ3kSIg8o71enb5RIg4/3LlWUIdPLgsZ/bh6DpSISrof/BzcV47l+yu4ODSHeYwjmtfp13kD/snd7E94hUk9vpJ/Kp7TXtSY+2isETj4jVzKSyljKTHY1mFae5qaadijNWgBaXoEkaX+s5TUKVG6cRgo87qaW4gAzuDVBda5pA9AXiFoRIVPKilUWs5yJ9fn2tTSnABS/Bc=
+    rgba: 4287130675
+  encodedCells: S1:4:4096:DBB9EC06:PZRBU9tIFsc/QxfRYmFfVvFSjHcvSVMdFHIiHRXlmktPeLsk5jKW0kVILtTUFpXKXBITl8r4otJCtjEXjGGF4ouW1WyMfHFmoMD2h5rXNrvtkiz17733f/36qcNa+/GJ3GIW9aLVIrcWrMnolM+K8/PFKpUqfOjO26wWV92o9NGySviz2u2iFfN2mboqdGMmDxXdtSyXL0ZWXGrHsbbYLXXc+ZgpSmn1u/tUVttlT27xdulju4ze93fl9aas2gehonIruk+pY1WduBTHvNzpFMuu06iyE0fZC49ddu7Wl+zF8sd53rFKvOwU256cX6Fl6Ya0VvgLs+sN6XY8GVkW59Li5TNrXu6u7NLXlLm52+7TXbb18KxYX4niMl9oc97mknmsfsCoraKZ5I332pVc1jpxZzUutmO+2vFcTuUSZQd2t/FDq8lorSEdz1kpbp11tjzOPdphctGl0q7HOUKqzPE8Z5cjOOusbDncW3I86jBKazKK5+AN44uSr3Knw5FJvJizyurIJb2OluDY5Ti56jlcnnXK3lO+K2WZSUldRuXJCNI9zp4idcoOSuADZ2g65c61b4hmVTqLd2wSX7rehFNXsjqIvablSO7hPNpIvEk54ZS6nlvPGWb+0Crr9CdI35gz5Xir+6kpjpulFa6zRO7w/2SDy80Jr1dmhN8VcPTvL8NzPnH15r/d5oNk9MqlNMwIEX70whiQ1nDYjM6LwzEZ9QkIuNpA92BOCGhGa4KQVreVFL7LF/LmXB7gNBMD5EcXsM8+RT4QQU2S3ZBLMb7MAfQTQr4s0+cnjX2JFfhaMTBHkju+SL4mibgiCVxGDaps3CIm676/DoFJhgOSyyUGCHF82v3WKFAlGZZQ/rLp+xAQsPNEIM6MLJ6L/QJjCncII0jf9yMAYqZwlf8BYBTHcTN6RamNnE65D5B/AanRF/Al7kZR4xKrY2vsMvcD8hyQK/iUVQBKl43DuPsGte0wXMYeZQda4KUBsLcHMBx2u1FzLHFv6QPVpPSXJzNawDcgnxC4ieOhf9nY1HtP0Z1qmbrmp4VKQipx3PAb/s2kN6hKlukFWggXeQKocPpl2IjPa5uTzJVSISb4kx1+aG6upy9TIfaGw5tm9NyVEx6o94+wAsv0bf0aAIz02/XQP6v12R1Xqpcsj44ouwjXNf/j1U3Db/albuy7+GrrV53kB5ECpAuFcbM5/jO+T/V7qvcgzFp6JWBgdsOs/nbjTZ3+z58o8/1RsPOI0r9iePjTeFx4/eptpKt6F1/1WspELhCnbTLZrej//maiMvqTsu3n2v10qIHvo9zFLT6GSpkP/h729tUdf4yTNd9fouGvT7Cs6lCpoLejVXT4Tzkdk2IzUZVh4dTB9mfV+qyxrXGs3af+yqbby/K31qwKEtVS6gXyr0P7jj9EHtp22MpM7MoAoyBPoyf6tKSh/4mG9rvsSfhOiaPbn8n27I7mzQUdVetjeVCf2mm+f4/s5LdNpQAG8ZHOQ/MFRVV4O4OvhWSOEBIgf3mc03nq+PV/qt4jlW1jWgOja/I5M1Bpp7Gvpv6hf6h6I2X2EjOA30ghzeMm7Pvr2AvaIFQS/8iABFg9SEfPku9JYPovNcTNxrGO19GPwU5ABviVbwAUCOlrZ9OcGpk7n03zH88+E/wWIOlqjkOpGTKRIMT8mQhJ7HPkKWQoRSarMPUVkINbQk7umZl4QfAQ0V2VTDiWcmL5IyHJIG+MbisDFB+vXfUKeES/w1kyHUBQo1LIgMBaOsrScTq6R7bzpPJehxigxR8EMaByJWAMlRRGUBljTrMknUWWFMAw9ZeU6pbBU2wDV5lsz4rpMkjeEAaeaZN+xNVnzzCJQb//r8TTSZL//g0/Ezz+kGdjSDcgHaClGG+IyQLwtHyFGeJhA1f9ylQkHaPt2lgYSHcSwNRQXae2D9OB68S086DdZ9EjwODfZ6M1RBVtChiIVAgxjvASsI94lFT6KfwO
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000000000fe00fe000000ff000000000000ff0000
-  conveyorDirections: 00000000000000000000000300000000000000000000000000
-  conveyorBucketCounts: 00000000000000000003000200000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: wildlife
   campaignSeed: 12574799
   displayTitle: Humpback Whale under Silver Waves
-  beltCapacity: 3
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 1
   linkedBuckets: 1
-  largeBuckets: 0
+  largeBuckets: 1
   alternatingCrates: 0
-  swappingColors: 0
+  swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: e29ff6b42a84ee34b8ee7437736dc28c,
     type: 2}
   usesTiles: 0

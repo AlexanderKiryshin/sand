@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0694
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289038245
+  - serializedVersion: 2
+    rgba: 4294360973
+  - serializedVersion: 2
+    rgba: 4284125869
+  - serializedVersion: 2
+    rgba: 4282410607
+  - serializedVersion: 2
+    rgba: 4286275960
+  - serializedVersion: 2
+    rgba: 4288135909
+  - serializedVersion: 2
+    rgba: 4283121736
+  - serializedVersion: 2
+    rgba: 4293318096
+  - serializedVersion: 2
+    rgba: 4280953378
+  - serializedVersion: 2
+    rgba: 4290611808
+  encodedCells: S1:4:4096:8518DE9E:fVRLc9s2EP4NqA3R9tHtdDS5eQBJ0dEDkAxyw5gQrN4ykuH6qIrUhrnlMTHtW0MoDHzL1O04/JVdSnaSdtzuSCSw3+63Dyx4ePh/8qb6unoM7VeIb02qR/Cq+oY/Jg/4m/5X1W//wvubJL7hH358WPW/8d4b9PEFPz2a76aOji37ebv9jvI+0jad7PIer/5Bg/s3nbLK31YbdOu/WR0+aLonvN++q35nUm3xBxmxBt5V/ykvLRMw5PMu2Hdq5MMCMf6pcfPVyLn3j/j2+9XVac4ZMsDw10cMnlVXL2VnsJzPeFXdtdcb9V33aPH/6d0VGJPMXTL/6Nrru/aAvG7buyft9ee2/XxdffJX63WaOCfnpWtRDtrPTw6e/NAeIN4e3ny43V+DTNww5ukGbzs9gtekW9zcfFHrInNumM5TpzJUXR9szPYOSIfLIBtAfDRikgnV1u2DkHaven7jg1QW+XM+SxzjAvHnbfvX1uBL3ITglRWzSX7uVm7m3Ba/lxzWIZTBcJnnzuFv+ID/gmm+uvVl0xRT5ZXkJXdYJPrL2xThP9t2F2NPeQPKJTz209Qx6PjlH+oAKzCtvAkeJANl1nIU5yLx1g15rVjoGNpXIRW+kSwwU/g0y0ySGPdRsT0VbsPtc3gVZCihYUHK6TSWbmLT08Gqp5UMt2PBpVc+lFiekqos4sKtqJRLmMciDdJzFryvS0iDG/oSwAJfErY4bc5/TVyoAxfBY3ZjOT0bsulsp4g5S9yCMZatEvQXMqiALDkxksmx6DowU4J7NlvuJmEsvcTGs7rMycp95EyMZ0xgSgIZeEACzEspzkqjV25Yq1p6JkVQnkvMPCBfZ+CZIHi0z2SXDZcYU0kk8GMsitU+jH0w2rlF+bazlgHF14JBCKmXrAzruiyMUyZMC4zZJHWQNceObkSO9tdlaM4SyACKpgRkVmkY4bzU43qMs5A2r3ePuLhgKxiNL5Iu9Nh3vWNjNjN41sDfM6zbTWAkUoFLvgRIkyUbzHpwjtOCx3DBmMvHgjkphcJbVtZSG0M1O2ez9KVAJWdOSM5wkIWobcFNBxs3lIwncfAIudAdSFBEkxNtqEWL2D3DWfbPsI6YsTBOBM81JeSoZzQFk+YOHTmOSDDxztGFIWezCboZTYzNgefAwvTIB1VrQgmlRpuZsdQiu8ZelYUFZsieHhCjtSaOzhwpoMHo1prFGGNgkkiWkY5TE73TM0CbHQOQETrQFONQok2P0oIcaz2aoEc0y5ryEoPFGIpQg9H2DF2USGSRz5DhCV5l0/kS4noQ6YIU0dpqXUSYx0AuRUp2jCVE09fuZIH+prCnxOAHCBm62+cmE2uxhLdPCWrinBbnVqeIZ/oFcWfD3uTIQlEUgyVogEWOG0vmUboEw/Rw1JucUYDRChYN4lpfAlAby6ib00nhziZkZJqcavwswFq9IxF2iqbesDzSJiJ0qQuApVmosA9hWhsjd4VuQp49xQbTCVmZ3yNKgPqIkGMrwMrspFGBZ8fGLgYQ7cCxNRoKuavNsUUuubOjwzRbxDa1L1bagLaFKXSOI7CwRZwKmS2CwSqAX5o8wpZg/sV6ir405OMGJ260T6JpcSkNAfBUUh86klRaPP20NjLNqLbGMou552ZQ4LWieSqN8lAcLcHHeXEsIyijCOPAIC0VlzqVfwM=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 72592435
+  displayTitle: French hilltop abbey
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 38c242e2dbd53e8478e1f790c7388ded,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

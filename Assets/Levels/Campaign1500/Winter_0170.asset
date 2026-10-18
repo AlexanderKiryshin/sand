@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0170
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280772253
+  - serializedVersion: 2
+    rgba: 4286469426
+  - serializedVersion: 2
+    rgba: 4286945971
+  - serializedVersion: 2
+    rgba: 4280817674
+  - serializedVersion: 2
+    rgba: 4283124043
+  - serializedVersion: 2
+    rgba: 4282196749
+  - serializedVersion: 2
+    rgba: 4280562764
+  - serializedVersion: 2
+    rgba: 4287197280
+  - serializedVersion: 2
+    rgba: 4279504137
+  - serializedVersion: 2
+    rgba: 4283773458
+  - serializedVersion: 2
+    rgba: 4280624166
+  - serializedVersion: 2
+    rgba: 4285219358
+  encodedCells: S1:4:4096:71EE3AEF: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 33192383
+  displayTitle: Winter Village
+  seasonalNumber: 170
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: dac90776fa5c33847b08039c5cb44c0e,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0335
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4291613923
+  - serializedVersion: 2
+    rgba: 4281812581
+  - serializedVersion: 2
+    rgba: 4282089416
+  - serializedVersion: 2
+    rgba: 4288981953
+  - serializedVersion: 2
+    rgba: 4279849113
+  - serializedVersion: 2
+    rgba: 4286089380
+  - serializedVersion: 2
+    rgba: 4283524486
+  - serializedVersion: 2
+    rgba: 4279376691
+  - serializedVersion: 2
+    rgba: 4285706985
+  - serializedVersion: 2
+    rgba: 4280101968
+  encodedCells: S1:4:4096:7195ABFC:RVVLd9NGGP0NA0ImLKeupWrnTkWZ7CZnkIFdEQM4OxshJdkhHE3I0uBU1c4VoR12yHGizq/sHQPtd2KfE9/v/bijNYRavbRN/V36Iskh0iNE6EDroLOl/R/vzxyq8wQ4cebAn9b2P/Pmc647e2Ppi/U3nFrVwH7p0AeePPjY/l7Xy7KYxQtNAVNauvjUKfx9nHhCrv8IX/9aVLrSXUA74E2/i9/Xdy9CSaTIs7zIq7yiPaxpp5fA8Rc1d28aibySzOU4qrpIO7x0eLisI3v32vrAvSyDtYZSFexwFBAue2tPbuw91O3JrNIXZe4RX0jZlc3XAq2NMnvicJFd6KAsiesSIdnFUfKhrl2bJleD3S8yD06rknyVmfC9TEpPDKXc9dVbvCjqp9oX3xTsVX9yTghKkwL5iySrKvqiGHyDh/bK2vqICDKDhof6k2peVOXc24UXnbVHw7qfeySRWeJJWeXo0OjIm2jtvyGBtb09GNnulofKPLjIq4ms8NGsSMh6u1ig9PPntrGlzGGeZTl0gjzRBdz/8uNi0iPEod2iAYmUH5MsgYtCFx5Bupy9uqnPr4Hhqzn48zFqkLmm53mOkrLKMGN+XCbnFnKNcZZmDw3SwfzTMZlNWGI4S8176n9xCjYKejowRX78Kc+Dj+lNF6mWpyydJFQ4/ImlEfX5W7dZdW7DrrZPOVfxdjNHH51M7Dyg67f0rA+pFdeNtYq3KWNqdNBFTsH/0i0frVlNKcINXdi+5TyOf7h18eiLjSg9wBdZGzm3HRR2NrExKn30YeQJC6smpJiNIYNrB2q0N4q5UXG7iUqnjW0/I2R8517vuZI6tLePeRsrtgr1EHDY9UlGnlVDN7yInmK8neImjRk76bBrd4dnDydEHG6HlXBJH26bJtrfM1PVrtwmLsOzO78Qwvg9e0tivpYeYjj7rGUx49v6qO7VHUG8lG38fkDc/IMPXU1Vi2Gk7XscY/yQzHzOWX9yrXdtKSylh+ry0iil+mjTvhWLAUdbpphqt2sspbVSsUm5Uoy3CrvcYnZs09xYl0MTBvVLKPBUsdbEp1IuWLvHWaus9WZYrpA2wEu10kgzfQ17plo33H/s4I3rWZ8q/TtqXf7FUnU6kTLmsWk52xyOrtwB9tvlif3cRAE9hGYhZcm4YnstMxbksVr18RZ6JaXLcnuqscPJdcvSS2MYM6uXyu5PzQZZ0roOb0oN/74Ytc4DZys13R4yw6erEER01oRlXiS4FRFAAQ5SlbKY8zvmfR1ScM0ZTlASzwyyfcNiM07jtsWaccN7uuxfbuM8wfb7JBPZZ3Sc87SdumaM+WpJn6JLMsPt3sfxPs72eXrJDduwtjVrg/nGaZw6GvOkPxvdn2Q/c5ViKtP1em+93qgV+p+C5MRkkImfDohcxIAZ9mfPkDGm017ydJFjwXzhaFq8GuHEmLptDAK46cXqIbgv82fHEnQ4I2IB9zU3cGBwK/hnDv6UjrcE+QkexLXte7MmcIAlVcrqPNMeuxTPE+dBfHpSltRwtd4jhiltz+dJko2PCUtuI4GZl4MSsuepMWQ9VuqmpoWW/NVo7rHbSQI+dDTmkWcbREd+uEw9YMcjGsxn5DU4hO8U2Iw+uCTjbVTqfNaKEaWB7jyyZoPs8WJHlNIbs396OpHsrbzAvoIkqrnM9qdg2mQyFoKDeq4+sjap8HJEtCqyKrBSEnQl9ncu1pzFk2S0e1gomBZ4cDCXYOTBb0pt32kQYFE3cF6W2pu+0yiWRkE3LHNHmlnV9V1EO+CInn96rUdan4OrcPN11PfuEaE0jCJaBrrwKzB0rjPgEbVN34EY7C7yLvVcLgZ5Ag7OqpLCKxb7K7gsnVkF8sabQDyRLIqAavpdAsBF4fLxdi8MuL7AS16CewOXNmSHJv8C
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 34994724
+  displayTitle: chocolate eclairs
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 1
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 24f5371a27ebc2b458db6295895f901c,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0037
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293315011
+  - serializedVersion: 2
+    rgba: 4279703837
+  - serializedVersion: 2
+    rgba: 4288058782
+  - serializedVersion: 2
+    rgba: 4282270800
+  - serializedVersion: 2
+    rgba: 4290554279
+  - serializedVersion: 2
+    rgba: 4292590515
+  - serializedVersion: 2
+    rgba: 4285754995
+  - serializedVersion: 2
+    rgba: 4293645778
+  - serializedVersion: 2
+    rgba: 4290756811
+  - serializedVersion: 2
+    rgba: 4294107874
+  encodedCells: S1:4:4096:E850E35E:hVVNb9tGEP0Nm1prwrcwbOz2GEpVlJvpkZn4Jtuk5NzoiCOjN0uU1s6NhcMseKwauMxNaOMw+yv7lpYcI5cOIGjBNzvz5nMFi7rc0aLUK7OT5CZuJSJpiWSuqC+eRpJZ5sYYIXNRliw0TzhZzPVFPPS284HLDhREDQWR5FIIKbYOJ+kTJ4nVUAseyoSZc12bHQ10kEgO1I13nnA8nwjm/mk8KbQptXaKAefTzs3wkCiLFxNO0w/Hg93TkcxrUzpa8yAuPLoh7lPKLhhySN0ZJVIkKyNqPXre/rBP7YwXHkUp6CxmipTLiRYrnTj11ZP97ZA8RcE+UUtokcQh8EkieGUcrkV0GlLmhjTtBiRYCBGpaZRO2AbgFIkTEB2QFS8jvYiFYAUmViTYsQ6JQgtDj+TzOXALTYtTFrlzHOsZoMBrLGTJ5RSpEolMiJ7BlW5PBZHrus39AHbGKcw6gm9onF9w8YaGnttIkDUuIoViaMlD4rur6CN8uw8CijQOJQtHwCrzVXaT0a77SMFy1IxKy/5ufGqi8MhzH4vFRVygeA7Hu3WQPVgPkUPoBu45L1LgFzxRNCN7nbJMNRJCOxjz8yecSM2HGUVNaEBmXeUr31dQINEds0Zhn2bIq+vi7sy30vVnSnkBTd3zY62RG5vyIFNdfy0nHViAQwq3gSPGKSEryn8ks8YDIUMiH2yFiPf7dd9fWo1d1AL0RHE0pYwe3Y56VfWp44euTZ3gorQFe4TPq2VVnc1vf6bg6kTEc8vPWq8ggK+79nDmn6GNFPHz4LYdWvNL+7mH/waHxl/IiMfKG6EnvuPLpX+Pz2+R7MmCZrdhmHXXeAV81pyW10NUaavfsl0XrN1bvDppDr25bzMwe52pj+1stoarg+X60FP+roted15ThLpt8N4GRyjAVSguaXyJ8Nbfrzdw1ZsBz0Inf9bq04P/3gNedULbq1qXehQ+4LPvahZHgiSmQ78CvuzB+wEA9x4/2UWAdn1orA9/nQAb/C+31XWABB7A/gAlEtqYasN72fze/Fv1Ogeue0h2yhwsML/6QTr+QaDCDCOQy1X9I/45iqIwG9JNwbySiOHlQ2J6y29NojuhCj2dL45FNOj+Y/5+sPCtKSRaVHUw+qOLVX+eLUtdb3L7Lfz4Ek0O84oly/GXfToxRtefNxau/+xhiDI17KeHg7TfUsFPXxHCq00Rqs6bKeyrKBzL+cRrDd2hcbBEy43CMlIYgaiPPdceLwLKhl/5zjQU7jXO5rMXp/M01cI9j9Gn86/zwpi6ftW7L+BZx6Ot31LsVm/ad+kpdZQEA3hY41GzFzFcIn/vhukfz4iNaTiCw7I6O4mZWyhtghG8OhwLk/KqdGqj/bbyP/VOhMCKdhwswdy8ddkaN6VYNS8BnhO7HEWeaxS3MDspiwZPrA8oGIOhtwqMV0DWgtMECnieuLZ5NKX5/W5V7hi7ozHiCbcSifDrdw1HUUIXenC2M5KO0KNILmJcbU3HBm8dCKxKMDWaoSZ0rfe4fyW1SYPUOPZyrm1LlnmeOwY+S33ZZy7Ml2tevYVZUMTekXmBQ82FLgW7MhmYo4CLt8mOfe5ykYN+bXEojFKPR5dy73hyd/T6HbwjC2Bh+7q0r0uuFqkY891o+3yPUjBuHAAHmxjvc/7ri9PonO/eD4/32ltYWaa215vt93/4fw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 19263426
+  displayTitle: arctic fox curled in a snowy den
+  seasonalNumber: 37
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 3
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 144b94b07ef0f8d4cb6473cfea2ec5a3,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

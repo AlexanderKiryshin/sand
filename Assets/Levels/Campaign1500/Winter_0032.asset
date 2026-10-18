@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0032
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283262605
+  - serializedVersion: 2
+    rgba: 4288376659
+  - serializedVersion: 2
+    rgba: 4281355123
+  - serializedVersion: 2
+    rgba: 4288976797
+  - serializedVersion: 2
+    rgba: 4285679658
+  - serializedVersion: 2
+    rgba: 4280102730
+  - serializedVersion: 2
+    rgba: 4283932902
+  - serializedVersion: 2
+    rgba: 4283182359
+  - serializedVersion: 2
+    rgba: 4291348693
+  - serializedVersion: 2
+    rgba: 4279440926
+  encodedCells: S1:4:4096:AAFE87F5:NVXPb9s4Gv0bCBnuZm5lpcD2jcuAhX2zTGet3pZrBoxvXk0Yj64FYszcxogGjG5x3CzYW52VK/Cv3Ee3K8CBncfvB9/33qf7z9+3D28hcGvtyXKecDwl4z+/8e/b8MfHdagSW+HXy8yrvwNhs58w33605RY4O+Mfvuy17nHOYgLCScXvT4H/IU6CRPxFSe3cxvJX34vBibX/CJW1SZUQKzj/53xfO1dPezxZ99ecMDT1+TTZkpKz04QnNNddU6tKAG+aCS9tFcT24XRArgB8R+vOKNUKIMFNOIreb7cP2yskwBUKSutglOtQKoRQCXKy99vvD9sLxr59embvs/QpmNQ58CBOSMirqozxjLBvk5exymjdaOVM4GUSguBXVcz/+R0hCRflSaXKNZmuazTI3yIfp8n99j+f3zFCWL9sqMxdmGf14k7EyzNevomPW/+8JYwk4u0TTeuuyfIWDSak7GMgQdz/7l+2yE8mfKaoDg1Vre6qEljAwND/b6/ACZskL7oAe6lu3S6cwKrgKHPuH5NgE/4B7aO/oRt0wQpRxjGVZ3yKC05YSnPEK300XRBrxCaE8fstf3hHcNKeaB6vrm41/orSxiskvTUvxRYnibX0QI/GadQ33TW3CXnxXmIE9gH9JaeKznUb8drVXZx24n0hLTJZAr2c+pRm3cBlyjmD7u0romVxz98E9Eb46Rea6s6YDAoyri/lYfyrfS28/917UkIqn/a43sBRxGttbT8KjBDvt2d8badU1c4YhfpaVWWEXwgvDsDZmiM+4s5R5Nfz6vqs7oQXe+89xsHsiOoYT4ePzvTOOIoQKX3h+9CjpbGyM3kq13MoQJQswYiLwktPGPSdUo3Ug332WJuoEGFBG5eHQsoE32xx68HMp9ifmUOiJElKnhxykIRMwPe30tUrRVEk+28kJfmNlzJHflhl/Us6zJ8ul0ZR86dZ/orkZcI9huqpBBHrQPV8cTlf0fTpb4uixQBKPkPtXEoZJx1oZHbZpPJRLvIN7FGh9Vme79Mc/LNrtV/ifs2wXszNbYcLTHuMJ/leyhTjL18Phy+PO9ek80G+zJ7gjgPkw3LqU8pYsv5Kh1E/qyXqGb2rxDV5BodUFqmEP759HapCLgYjpR/lF11XuMAY/08lpYeEsfXzQc7r+rHJdW2ckbZvkzG54mkq955B3+9VcfsIfdOsflzMn0orLsiYMEmlv4j6TdWtl4unZl/kTucaBuihbeD7okdghaHS83qhm0NR/5ll+q6PE3C1HEKFES9ylS3MYxhmUEmmYKHoMHvwYwGYM18cIKw61gcOi77xKRwupxf8bCW/z/Of/TlTu7sYTfwVEpdiDCdBPsuFAa5d3bbBWMumFz1+gc1pS8agXm3qfB5Ud2zxgEBMJWFjFp3I+Ay4G2gVjsC7to0E8riFy4oJMRbvlUJVrcOuPYauq+MWPj9kurbQ6WynorHqQBHvam3uokU5B3lvFfD3x/YY7dHQrq3bzqw2MDZOeHl6Bf98Wbd3ML4b0a7b1d1qFX7EFxI2RiM022zuXONWuxb7q1mtuopF/VXSyx7wbDHYtK4xl8eu1QYHtOVTSL9fWG4h9WwwuNk0fzWjXX3UTq1Ca68PsOYaDArCZmYwuNys/mpWmd7FNYXtGGGfxCmy8oMeDUYxXlO606smhH9L4IXnArsFuFqNRptVg/UNckM1gkovioOXMTlI/KBuVsgfmi7cnbdnTzLZk/6wPq/ZUuol8KYJGxsfXHyNz/PVjCXl1yteEqrUpdm4n7hNriL1PTIT2KFxVfVqo42pm805OpYU/3+LAoYZ7OYGON5N2Bvs6sfrGSInDC8KWBmvwjK50f+6seL0Y/edcV6sOX5i28X3bxmXbSQEceLHkf8B
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 18739781
+  displayTitle: blue wool scarf on a cabin hook
+  seasonalNumber: 32
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 3
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 04a8fc8c3a382134782b9561334e17c7,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

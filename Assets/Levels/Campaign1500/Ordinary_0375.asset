@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0375
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4287386981
+  - serializedVersion: 2
+    rgba: 4285373625
+  - serializedVersion: 2
+    rgba: 4280362785
+  - serializedVersion: 2
+    rgba: 4282082415
+  - serializedVersion: 2
+    rgba: 4283317825
+  - serializedVersion: 2
+    rgba: 4288529633
+  - serializedVersion: 2
+    rgba: 4285234571
+  - serializedVersion: 2
+    rgba: 4293516247
+  - serializedVersion: 2
+    rgba: 4290347924
+  - serializedVersion: 2
+    rgba: 4294032020
+  encodedCells: S1:4:4096:D2DB8715:TVRBg9o2Fv4Nmq1DtbcKBe/uDWTCdm6xBOwePYzHYY7OREyPY2wEvXVKMoab20w84tikLfhX9pPTZleAJL/v6b3vfU+4af5vHI9uLt3Hfcstli9jX5Yt3Li1dGP9I7b7P60Yn86bPZ5boxtGtcsRxuP/8CMsrb0cqnLfbh2KCXjzBcT4t8TUhnLZm2Z7/vv+M7GytPgJ9ZdnswfwavlyWzY7F6O09c6ehGzdvoTL+9tj89EFrD4s7KIR8lONh6fdn3hXomDkPD4dTqYujVDvDULZ/a48tHS6Du/YjbGv79e7a6G2Zn8Evj/Yw/FwrsR2d5S/2/rU3PxysnOh8tX+BLz81T6BjhL597+J2n6ydvFh/An5c3s4PTW7p492d7DnUuTnPcZYml0trtQ2E3J7fTpY0PtokWYoEcFnzoOlExUOcH54Ohz3p9OPTfNwAB4YI0LeY+FNL1SBUHxgm+Oh+XveHBsrlFwa409ZqLhSUgZCykvz9W15vJbN9TXH+TxRt/rpVn9YvFMCuLrYLRbm9pVaXyUu+zLJF7rU6btbrRjyqwDE3r79VsbJkAnh8Ae91vo33ZOMZUIFj6f5Iu7LKRuEDi/MPzRL3VcqpQZdZt5cJV0QUQPucGNSPdEYL+TNQr/gki+TMR8gtwrF7MoMDfuCv9UThShpoAKc58wUJkkKrcdbPZIDdQOpoFXIuBzAjWda9yZJ0dPnW7aeBgL4hKVBnmp/ELCe7rXKBsCVejUOBOcmnLAXeZj6jDPFgyVgxRb6PwGvx8HrMPB5yDUU7aYrk5jM6HSiV1qPlAwDkS8gP5f5SKaar4yBh9aTFDmEYsrVqsS0p3LTzaYKIE9QO0vDbrjkPBipJVw4Z6tQMBWmifEXSY70POBCmakxKyGmaIAYiWDJgZsFM0ox1ksFN8i+GgmxypSQiDPNYoiTKRlAplTcPADXIhyMLgDmYimyWBiVS+Vzye7FzTrN37DeRHcDd7p4iGfxKEHFXQn+96O3t/er52oFulqH7MXScBaK0TIbCXSUZwszKh74Q/LavOlBt7Dr477lQ0TClWIsn61NESsTD2Ljj6DZAm3CXRC4BUEQQou1EXFeFmY0U7M8ED6qCjlu22ACaZexqSGYmc5HcjnNUTIuklqtet3XkHbALyC1WhokKNCawviMoU3JsJt2dQ/pA5U/D4rED/1kZLrFT3e6/k5bOqvmXvVSUEI4ISTKPEy5GST6iRBqLf1g7TNrNakquBBriRvYWtrCsNhn1FKPuAfn4Jbqjvqdyu0xUa/q2HnlIEtoe4LOSe4eN9TF8GzrBNcKh++czbnCETZj556LMidVAetnFoUDM1ixmL6HM5UlkUfJxsUgY++uoNWm0/qab7w2NY08EtOKIsQPhLzcdOwFvTOxtbHLT0DNi2JXHIhTG807n09VBDipYHc7QuNqB4KI8whrG/UbgKbqVBUYEM9FuKN3KMqFQQyv71WkqGtU7hi0lOoNQb2bd/8EmxgmWhPr5PKiGYrZPGQJ3DZ4AVFazS+xPyNft5pEAu0xSW6+q342q8wYvJRXiOXZumo70Ef24qszW9g6eXj//CzrREFMwbQuamhD+vHjOJldkqyq6vpR1ZmNZjGorX/y6zmKpXE0iCXqgPYde8nPSDRDFT+sE7++gAQVjcZ96XXG9GljN7VCb5LKlWR8k20KSml/OJyRON5Bope0uDDxjMyrNfPB9TmYEDh4ULp27f/v5jIeerguhk3jaaKSokOqvvCiqDjbQZEiwj+QRGTDDN60PyurkkfSFzPSnz27/xfyR1Huk6iox++//ZtnO9VlkVTDeAyd3n8V0u/rKlKKkOlZfGnrR2hU2yLuz4dePPsD
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 39183884
+  displayTitle: Provence lavender farmhouse
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 67d4b52a75b0c7144b04270702582ded,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

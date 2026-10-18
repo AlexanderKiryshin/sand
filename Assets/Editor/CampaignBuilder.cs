@@ -19,6 +19,7 @@ public static class CampaignBuilder
     [MenuItem("Window/Sand/Campaign/Build 100 Levels")]
     public static void Build()
     {
+        CampaignAtlasSlicer.ClearCache();
         Directory.CreateDirectory(Root);
         AssetDatabase.Refresh();
         var database = AssetDatabase.LoadAssetAtPath<LevelDatabase>(DatabasePath);
@@ -61,17 +62,14 @@ public static class CampaignBuilder
                         textures.Add(atlasIndex, atlas);
                     }
                     int tile = number % 20;
-                    int left = Mathf.RoundToInt((tile % 5) * atlas.width / 5f);
-                    int right = Mathf.RoundToInt((tile % 5 + 1) * atlas.width / 5f);
-                    int bottom = Mathf.RoundToInt((3 - tile / 5) * atlas.height / 4f);
-                    int top = Mathf.RoundToInt((4 - tile / 5) * atlas.height / 4f);
-                    Color[] colors = atlas.GetPixels(left, bottom, right - left, top - bottom);
+                    RectInt crop = CampaignAtlasSlicer.TileRect(atlas, tile, 5, 4);
+                    Color[] colors = atlas.GetPixels(crop.x, crop.y, crop.width, crop.height);
                     Color32[] sourcePixels = Array.ConvertAll(colors, c => (Color32)c);
                     var settings = ImageProcessor.Settings.Create(64, 64, 12);
                     settings.autoColorCount = false;
                     settings.autoBackgroundColor = false;
                     settings.backgroundColor = new Color32(32, 62, 71, 255);
-                    var processed = ImageProcessor.Process(sourcePixels, right - left, top - bottom, settings);
+                    var processed = ImageProcessor.Process(sourcePixels, crop.width, crop.height, settings);
                     level.gridWidth = processed.width;
                     level.gridHeight = processed.height;
                     level.palette = processed.palette;

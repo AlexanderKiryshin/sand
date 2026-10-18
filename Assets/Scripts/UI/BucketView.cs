@@ -33,16 +33,18 @@ public class BucketView : MonoBehaviour
     private Vector2 moveFrom;
     private float moveTime = 1;
     public bool HasLayout { get; private set; }
+    public bool IsMoving => moveTime < 1;
     public void AnimateLayoutFrom(Vector2 from) { moveFrom = from; moveTime = 0; ApplyTutorialOffset(); }
     public bool IsFlipping => flipping;
     public float FlipProgress => flipping ? Mathf.Clamp01(flipElapsed / .65f) : 1;
     public bool LooksOpen => looksOpen;
+    public RectTransform BodyRect => bucketImage != null ? bucketImage.rectTransform : (RectTransform)transform;
 
     public Bucket Bucket { get { return bucket; } }
-    public Sprite OpenBucketSprite { get { return BucketArt.Open; } }
-    public Sprite LockedBucketSprite { get { return BucketArt.Inverted; } }
+    public Sprite OpenBucketSprite => bucket != null && bucket.SlotCost > 1 ? BucketArt.LargeOpen : BucketArt.Open;
+    public Sprite LockedBucketSprite => bucket != null && bucket.SlotCost > 1 ? BucketArt.LargeInverted : BucketArt.Inverted;
 
-    public void Initialize(Bucket targetBucket, Color32 color, Action<Bucket> clickHandler)
+    public void Initialize(Bucket targetBucket, Color32 color, Action<Bucket> clickHandler, LevelData levelData = null, BucketInventory stock = null)
     {
         bucket = targetBucket;
         onClick = clickHandler;
@@ -66,14 +68,10 @@ public class BucketView : MonoBehaviour
         ApplyVisual();
         UpdateRemainingCapacity();
         ApplyTutorialOffset();
-        if (bucket.SlotCost > 1) { bucketImage.rectTransform.sizeDelta = new Vector2(20, 8); bucketImage.preserveAspect = false; }
-        if (bucket.IsMystery)
-        {
-            bucketImage.rectTransform.localScale = new Vector3(0.78f, 0.78f, 1f);
-            if (capacityLabel != null) capacityLabel.fontSize = 22;
-        }
         var mechanics = gameObject.GetComponent<BucketMechanicVisual>() ?? gameObject.AddComponent<BucketMechanicVisual>();
-        mechanics.Initialize(bucket, bucketImage, capacityLabel, FindObjectOfType<LevelLoader>()?.CurrentLevel, FindObjectOfType<GameManager>()?.Inventory);
+        mechanics.Initialize(bucket, bucketImage, capacityLabel,
+            levelData != null ? levelData : FindObjectOfType<LevelLoader>()?.CurrentLevel,
+            stock ?? FindObjectOfType<GameManager>()?.Inventory);
     }
 
     public void SetSelectable(bool selectable)
@@ -110,7 +108,7 @@ public class BucketView : MonoBehaviour
             flipElapsed += Time.unscaledDeltaTime;
             float t = FlipProgress;
             float turn = t < .5f ? -180 * t : 180 * (1 - t);
-            bucketImage.sprite = t < .5f ? BucketArt.Inverted : BucketArt.Open;
+            bucketImage.sprite = t < .5f ? LockedBucketSprite : OpenBucketSprite;
             bucketImage.rectTransform.localRotation = Quaternion.Euler(0, 0, turn);
             bucketImage.rectTransform.anchoredPosition = new Vector2(0, Mathf.Sin(t * Mathf.PI) * 12);
             if (t >= 1) { flipping = false; ResetBodyPose(); ApplyVisual(); }
@@ -254,7 +252,7 @@ public class BucketView : MonoBehaviour
             return;
         }
 
-        Sprite sprite = looksOpen && (!flipping || FlipProgress >= .5f) ? BucketArt.Open : BucketArt.Inverted;
+        Sprite sprite = looksOpen && (!flipping || FlipProgress >= .5f) ? OpenBucketSprite : LockedBucketSprite;
         if (sprite != null)
         {
             bucketImage.sprite = sprite;
@@ -264,7 +262,6 @@ public class BucketView : MonoBehaviour
         {
             bucketImage.color = bucket.IsMystery ? new Color(0.3f, 0.36f, 0.48f) : Color.Lerp(baseColor, Color.white, .12f);
             if (pulseVisualImage != null) pulseVisualImage.color = bucketImage.color;
-            if (bucket.IsMystery) bucketImage.rectTransform.localScale = new Vector3(0.78f, 0.78f, 1f);
             return;
         }
 
@@ -311,7 +308,7 @@ public class BucketView : MonoBehaviour
         if (cachedRectTransform != null)
         {
             cachedRectTransform.localScale = Vector3.one;
-            cachedRectTransform.anchoredPosition = layoutAnchoredPosition + new Vector2(0f, tutorialBounceOffset);
+            ApplyTutorialOffset();
         }
 
         if (enabled)
@@ -424,7 +421,7 @@ public class BucketView : MonoBehaviour
 
         Vector2 size = cachedRectTransform != null ? cachedRectTransform.sizeDelta : new Vector2(56f, 56f);
         pulseVisualRect.sizeDelta = size;
-        Sprite sprite = looksOpen ? BucketArt.Open : BucketArt.Inverted;
+        Sprite sprite = looksOpen ? OpenBucketSprite : LockedBucketSprite;
         if (sprite == null && bucketImage != null)
         {
             sprite = bucketImage.sprite;

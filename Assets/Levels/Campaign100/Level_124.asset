@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4294308850
+    rgba: 4283515458
   - serializedVersion: 2
-    rgba: 4288507206
+    rgba: 4281669902
   - serializedVersion: 2
-    rgba: 4288058517
+    rgba: 4290073874
   - serializedVersion: 2
-    rgba: 4292983965
+    rgba: 4286164959
   - serializedVersion: 2
-    rgba: 4293053885
+    rgba: 4292780145
   - serializedVersion: 2
-    rgba: 4284827954
+    rgba: 4279700490
   - serializedVersion: 2
-    rgba: 4282396708
+    rgba: 4285490794
   - serializedVersion: 2
-    rgba: 4290940515
+    rgba: 4293319124
   - serializedVersion: 2
-    rgba: 4293714651
+    rgba: 4285236903
   - serializedVersion: 2
-    rgba: 4292848510
-  - serializedVersion: 2
-    rgba: 4283851632
-  - serializedVersion: 2
-    rgba: 4280030480
-  encodedCells: S1:4:4096:08D98F89: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
+    rgba: 4280553996
+  encodedCells: S1:4:4096:515B102D:nZTBbttGEIafYdREK+rmNeBUPMYQ2qsCIjKPTsFGyM0uQMm8rapoSN1UlNEqNwZs6PVNPFD1PmVndylZSQ0U6AgUKH0z/8zsDBnH1rRO4hPzBVaKLAjav5tv8AUiOhwY9j1vAG144PjFLen7Jz5dpx4eedJoHZvLql2AVbfY5G9izWsqUOtV8rBSCRNHdcOT2Oeca/2gMqjCMAxcdoeDpq8Tzs/nSlVGUIXhAE7CA03CPp8Xqh8EpekpAysftrxuNOlnSgdBqJQHnLvqWhxQVZrfKvWmpOgBQPMdt32t1CAMS5V1QMd90n+St/3xrnqk0kidiunb+COP40TXWnkjqm5AXLvygiNvfosvdFc9EPcsb0cDh3hKoLvVHeVXxH1oJ3vCkyT+qkyCbEftCeJlcOCHmSn1lhwezzi06c8s9o5Dr7K31MKgA+3pmfhSjeITh5HtUaiWF0URLJ72ZqnuxsbBHA/Fht7738sxnqxV4mpQ1GCg3nxhm3TBKodEm0KJIFhs7knllkVbHJcuPpLykMMLX7CrRfYHQp8xKEL7L+RyZvaTHoJKZWzQi3IvQXYTuv5/fXV94I2ee1D+9YJNURR37fmAwqurWNOkaBt++nmTVsAAyrHdPxNfsI2k7afpZtc9xnqA9VhRK6HZP+KRwFTrollBJFPBBO1xsKPjo2YTHeskqsRMv5TyWqYZZNgzC+LmEzYN7dcyS7vdlyi3ChninJkRQtjut08p6BiWY7ZdIGPTRvTMDOz8FPE+8dHNUD54Cml/E923K3yMJ/soZH4WM8k2vYJ+dmjIquOW1HK2VoxipJThnpq86NgdJytLgz/RSeOrEdtUEE83GnfxGW2ZXUO1owL3ADcCxohAk8SNTKU8Kuy1ed5Z1e9607grZ4j1UlAiCbRomFVpsfd9DTOG8d0dfFwy0Y0HUt4TB2BnCezp5ZEIvCbBWQYgGLzHNcX/3bel46OuVzvMJArRU+qrqjI0tW0eLdbC1wJh3UurJSI52MfPw+rAi08gLqWgalfTbOYllWIiYyDEzvHqh2jbE6CK9Rw3qc8/K7U1fVV2MFqPZYqgwqn+MGfrH+lFxh+gKgHdO03zHr4K1P7LQK9WuNkbXvdHHa7NnV/7HMeLgfHlH5b7rY2v6fNkkGnry6+XzPFvbe/X2sa/WzH5b8xrv3Zy7+b/i3P/cDNnf/rPORyE7h/X7ua0fH5+SZ/XdPGlaJ4Jk5fDX6LL1s6f4U8WDcnl9TN8IvMoyukml5PhqQzVG5Hl+cRx4yClcTnGR86kcaNvusjFqLQicpJHB5tEporcFdOK2GD7RxQN7f3E/DBVWY9WPqcaZe7KdBXlzoMqiy5z5yNl7tLYYkye4X/yfwA=
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 000000000000fefe0000000000000000000000000000000000
-  conveyorDirections: 00000000000000030000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000004040000000000000000000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: journeys
+  artTheme: ordinary
   campaignSeed: 12888986
-  displayTitle: Sled Dogs Crossing a Snow Bridge
+  displayTitle: spaceship research station overlooking Saturn and its luminous rings
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 1
   linkedBuckets: 1
-  largeBuckets: 0
+  largeBuckets: 1
   alternatingCrates: 0
-  swappingColors: 0
+  swappingColors: 1
   loopInventory: 0
   mysteryBuckets: 1
-  bucketSettingsOverride: {fileID: 11400000, guid: 57ac82e6b5a8d9d42b52cae3fe9586b8,
+  bucketSettingsOverride: {fileID: 11400000, guid: 88154057f5ff29444845188ae39704eb,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

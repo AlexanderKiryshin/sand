@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0595
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4288263888
+  - serializedVersion: 2
+    rgba: 4293964157
+  - serializedVersion: 2
+    rgba: 4286811542
+  - serializedVersion: 2
+    rgba: 4282140994
+  - serializedVersion: 2
+    rgba: 4281881225
+  - serializedVersion: 2
+    rgba: 4283732912
+  - serializedVersion: 2
+    rgba: 4279968803
+  - serializedVersion: 2
+    rgba: 4293708982
+  - serializedVersion: 2
+    rgba: 4284247916
+  - serializedVersion: 2
+    rgba: 4292272877
+  encodedCells: S1:4:4096:23B5E882:ZVRNc9s4FvwNKFrKmkfvHlJz0wKyIt8UPhKDvalMkCPfXKHAom+OQCLMbZWpWq5vGkLkYG6KJzMxf+U+KpvL7qtSiWSj8fG60VdXWJ9/+PzDVfP66n/ql30A54evwzDs/x9/28CIIxXxp/33z+//um/OL28dWPwbnkb8O/3z8I/n4Qkf/vYvcL3DzyPeNP8l48D+ecCxb3+24GzdNM3XpjkTxtp/fWosba7e799Y2zvNm3N9fULi8LrZ4zTvnff66tcfBQMQPKPfBjS4xlNzXuUDo5+aX4XotHWZwjXg+xyvz7illN70AoThUHTOuaBwy5/HEYjv983v1KNgBS+0EU64yLlL55iz/3768GPzqXmDdBogbiOIhEY+ntIFDocK4RijBuulF7xHpjYuskJAj6AVULs+NhLLlGAyl/XGuEJFAE6AXSFuweSyNGlptLF1XxvuctX1xvXctm6hrTVGzttA854Jxh8BFDKB28KAwH5Z62Ip576zwiG55lrxiitQhUDIjsfZMLeeHLXoaq1xp1ABwrVVkc1E5hzEdL1OVrWtRtQYVVltC8gUjsJ2FTaejbgWK83PuDJFFkFhlShMjn9L5KsVwK7mttZGFUpFFa+degdRvRD5hff4ijzWjOL8iDvV4RQ8K1RRL1pn9eMiILslavBooNZcdZ1Vpq/yYuVaKhjpKV2TuYciaF1wgCKqVNUpfU0RBkJmhtE5PRf0oAEsVyqzEb4L6xHUbqSiCpx5VvdGYYNRo2uK/F2apsakaVkao8uyTEcFuq6o8o4+txTBVH4bABzxVJpciUxnNYyeMGfhUCCZymQiw1KWuTJC2QIX18grTZ5UKM9GhpXMY5x7PHrnpsHYyTTdSrnRUdlbbngr4xx7VyFQmxQXk1sl+3QDIU9jE0rRS6dUhRrkSJUyOfIuFvP2Cv0u4Eg3R1pEKKoykGVJiV7HXgFr/96Ck/AWcMdtj1tTVdV3EYeYW4auz1hn4TaegLdeBQZ3jh7O81Uv4mNrw3ncOvaK3abz7UVCD64QWkUm4ryHi/AYRF08pbeL4B1n8nk1kMpUuVFGdXE6sQDxHNglXS3gLp3Onj/+ZRaZPFKJUgdIt8twk9GQLX+5iYO19P75vCM+3lGN7lHX8z4Owo0+UCZvP1qxZl54KdcTcfafUNcUtEeDJdpjcnt30f62Id5Ld+cJvEVEQbZsl5KylsaWkWdig7u5R14Ovg/YPfLR5OyGUW8m6YwuKSH2cEc876KdDWCwbWjTZwq7d1RS6jBafLwA3iV9uRkGgbcSamzlHEpmb1m8m89v/PjwICdz7zj4GAxLhxaklD066mIQbHnv58HDdkK+3Ay+dcsWcQwktHPA0EOeR07k8PBAyMkfToFrN04v7M5A0OLxECfDidwfEb8bhj92aDWXZADhjjMMAdCzLiZTOXmnpvLLbEIOt5JM7k/+SVweg2k2Rbu9wqhILXWbiVXJVpZkyrdqo5Tyh3uVoMkUdtUlt1LVkZIlOvRcEf6SMbn8+/E1WUt5vd7G6Knfj+RL5p8ekk7VqejV1D+RuQxNvZah5BcuKRTEEhJV5WpMoo6cTrvyuOuTyuhXa3dwooKEy+2fXGWVeiEDOe0014m0Ky4l8OUGVQiT8zYI8ckwkHrMjjINTRpSXteYEJ5MttPBx+7RFmCMph7jTaN6H00BAkNR3g1fCNZJKUxig1dbYzxiPme1yWJZiomUZOaffvt2YGHNt/zLLmoutQwB7uRAZ97Ax7QWkOnAcNObP+8r8caNd9AyjBBGgzHp0Wrt0mYYwpF372ITCwwczKVlhyoiDkyg9GrXy82K18JeainD+fw0oyvaLo3bYTKLlve1M9bpnz6A4ak5px5uYUYDHWJUcmEWRi/cRu50pGMugyWGGxvoJ0qPDnZcM/of
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 62216345
+  displayTitle: Romanian painted monastery
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: e3d7ee3c17755fb4f800f73053eaca3c,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

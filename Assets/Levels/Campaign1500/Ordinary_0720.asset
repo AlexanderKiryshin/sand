@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0720
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293513919
+  - serializedVersion: 2
+    rgba: 4291618039
+  - serializedVersion: 2
+    rgba: 4281026426
+  - serializedVersion: 2
+    rgba: 4279247171
+  - serializedVersion: 2
+    rgba: 4288398055
+  - serializedVersion: 2
+    rgba: 4285692814
+  - serializedVersion: 2
+    rgba: 4285373647
+  - serializedVersion: 2
+    rgba: 4291993191
+  - serializedVersion: 2
+    rgba: 4282939308
+  - serializedVersion: 2
+    rgba: 4288521657
+  encodedCells: S1:4:4096:49500A84:RZXPU+M4Fsf/hjA1Wz3cWrTiwTciJ+n0sS1ChdsaXrz2DScWxLe1o6jEjZ7a2UwfccAjbjHE9Oiv3OfQ06sKSVEf+f36vvcsxACgcgg5+DkA2vn73HWuVupagLS3QxqwY0LI+z04OXzjjZimYqWUgoqQMiLtacE/3p6/EuPLVLhSgYxAbjQQwAsHne0bfhJCTGWolAOyAvA1KAASkIOf9ngrhJILQVNK0APZciMpQACwe3Muuk0sRROkJDe2/LLelNvO+84BRrfncRqLVQg7SKQi9hG5Plz/ON/uumi0ccmuW8uQkJhcedV//s//VbuPK21JkE4tpEAU+cwN8o/Ifsc/N4tXYgpE6tDNhFEqSLgmd7/888t6/dv63dZmqlKws9kutUKYBy2/lBG9KuIv71j5Bxp40mJH0hsh8I4wlZFShc5JMZVDZv5YdzqZEFk3u8luSJ0IVpoAfTj162o4ZIytO9uvtkmmu7i20yxrjDEh08oJfh4I5OXr+lubxLu7bzaz1n41pQG+UeHucBrbEQqJUa7//O+PbJkOle/JcBNiRqzVaP1n3/z1g3OdGwNqyE9NqzQlzjev8JyHv7mwA0/L4eTRcFpLmlNSGq/ov9zdvHFLBFv823iaHwU7VzqBs5kUp5OweH/XSnFjsUa//zqZ+P6xC4EEMvy8YX6po7ZTTsRAjDlfS17y0XxHaKBz/2x5yvzjSduHJ+w3pSbsV7PpLyc8UEDpp9Jn/ENUPjxvO/bk640x2gRsxjlnL+Tctb7HJw9sdL7Jq1JVWD/GI7j2N588c1Rz/8XvewAeO/byKsJ+iznzjuTkbHm+KtnwbM71w6WEIT9WhB1DCICSXKhCKV5UzEPXUf8SaOAfkTzG5g77rHCC4VLp5lWx53kzgJbDPOjlUjk9VKygpFdWipcjNp5Lfnl6gdz/0IuUcXqMGSwJ0ZHiSjHOgS9PiwhIRXvHuW65gpDSnGF9TOhdQv9oGEGkSBDIKA97no+tLgnpV1zfXow9dbrE+LWiPUkN+ue85SEJJGdseXoJZ3wImJYjcbA19P05xHgBh89fsuV4U/CxIjipGLyiKliIRpC9BQys8NDYZFmZ8B5pqGkedJvMJpVWWCd+AemHDVNqeYYLoR39PEyvxABHoEJfikH44OnRmdYSd0FYqfC+K+wnxma226ALjpsEtVQVqhwqTKFJwtkt8zm3cN3Mb3kIUkf4YIhYYWDYCwIrxvnMXjcqE1w0jzPxdlYrOZLB9WDP2eIeQ3h5cwqhNjhulY6CqUXrHmsj6D9pZCrEPDG1qv1A+jpGxgyq3kxZZapKa4xTtd9G04d65u/5hBcinhlmsA447AbnzegHx3nstbYZ870LEbzeYyP0PcxvhANrQtTUHfjfeTG5Hg3KquJ8guEq7i9pRepaDJA+G98rR8+D52rHPM42Iz7zeRmEbo279rCzPUdeWDcr84Ue+aNyyA3bROBQ1z3ACTv3LI78DqBrjWNYyTamLAupbPP4ZPQv2J6kppCGQEVjcdWwVgJVNd1272jT8oAGGepLXHGYWPZY5GEmutljy8lH7xlqQmxMIcCf79Vv4qxZKUI+248vltQksBSDAIDzZsDE/RT/sxhWnfiePW850JYCTSsI87xB5LZvm1Yf3nLy/WSH6SxLrkht7d7XGHnrv11bNdDD5GrM5yKx+4O8VR+fr7FZ8GWxc60dlNMa12+AJ6mzdpPYrLGikZRk6TT7xMqZg0sfowNic/WKvynejwHqLMt+QkXEtCFdQUiAdiOJoWTtq45S0lzZrO12i2qINqZELIM2jCZb4XrO5ofbDkY0F02y50lM0unOFaFc6GOCVpjAywP8zOQtoa0mO5fUbCYyG6NVFCgTjP3VNG4yxXysjbGMT9ie5aKxsyZrhL0dlYtq4SaNrfeeRWX+Bw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 75307470
+  displayTitle: banana split
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 3c7bfd2b419734242a6417316b7162be,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

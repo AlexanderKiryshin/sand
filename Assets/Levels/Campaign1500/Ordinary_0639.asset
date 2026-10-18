@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0639
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4287939311
+  - serializedVersion: 2
+    rgba: 4279506975
+  - serializedVersion: 2
+    rgba: 4281750693
+  - serializedVersion: 2
+    rgba: 4284700497
+  - serializedVersion: 2
+    rgba: 4284390106
+  - serializedVersion: 2
+    rgba: 4286020230
+  - serializedVersion: 2
+    rgba: 4279706453
+  - serializedVersion: 2
+    rgba: 4281547324
+  - serializedVersion: 2
+    rgba: 4281221236
+  - serializedVersion: 2
+    rgba: 4289700267
+  encodedCells: S1:4:4096:260E8EB5:hZXPb9pIFMf/hmnXiOQ4ocHpLZllHe9t0Yg63FzkJhxx6XTgtnjTCcca1zxzCw7Yc4yURVn/lfvGJFuplTYvvyQ+833zfs0LTcfwmAhu2+muD9VPRkMvhb7sJXEoq+TxJ27T/3fwEm/xvtftwdvVW3kMAD9fsGvFIGZ9vopTiG35I5aPqxW8X0/fbm161R/THx0AHdnSLip7G73KIA2r+AcOsG2MznZxKuPUq1IbHu+raViR6r7mzR3EYSUF2DaAHe5WAkMA+xDRIUETcAzlaL0AkPJ2RPE3RrBKq8PDGpMU4J/mZn2+WUJ5crDNpJCP093tAdnjKt0ClPiVgcjKckhIFltfxZcm2VsFEtNGjt8ampNRI20Q8jEfWk8HwC4hHt18hea3jc1bZ/k3IETr+MAiQc1jsGNM8gYg7SbRRJdwtSgHwfA/PZSGQ4t3OTta+LdDH/LrA/LMKV6NjvkD5+7Rulhbw+urORuS7/oYurzPOT/P1zN1EmQHvvrzSe8j73Z5bb8yRanSw4XV0awYEswgsAh4e8rv2Fy1lXIOhsP8NAh0gOEHgfUk5pxFCq2tcj3Qbie3AlMBy+f84aHGR0q5DHl7eO1eWhsjPySjHucg8AqWq0INOmo2UwsWKCcvLP9v/2OPY/yAmTFUI8c/yollmU22u2mHfUI1pBh6rpRmhs8VVUfgldqrph+E4NymaJez+Vy7ypnXXJlmZViRMcYVU6C0XRROVLjMQf/tWXHh8eeskVN6stbI1abQel7MVTFJsB/eM8cbzgrHYcUgCDrX6ADuAJLvXNH2peM6BXK/E6liKVqofuLezFTtkrkFhm8FnS+Fm8kWJF5S88QzFTEcQzP+tXYXXstL4Dm+ubpRS3TvsGgwQL3hvLtX896eq0tH7fWbaM4yWeEJg7E83FyP0HEcLF+wyTXLIHys+vXzsf6oDF4ixw50WJBHmi0k1hyxH2D/ybrdmmF8DmNRh7GamydxT3wcAJwP+x2v/TOmtjgW2KaJiQ3kh5oHNb/SzPCi1k/EXAhBSNMilvUhXgKMRXiK+W2jPI9ytsTaTRukeYV63z/uPrTapbxFvVYYhMMmvcRbNTb+VUB8P8DpoMoNBxj/RqmFKpgUQq4a79JmcGj5ftrlreV5SE5ZhOWNNtqdyNRbkYuvTXKII4xvJwltSU71lw3OvO9bE5ISct8Tss4/9Th2KwSJ+WI6FhkJCAHfXLq2/KbvU/B21VTU+0LY2HeIBYxPGpS8ItAkPo432FRSCqEQtkgpDWl3G4tuN45XIWmY8cXdJUSKkxh7VMat8bjHexDupskvJBAtPBDHx0Znx7Yy53HEFZzhi8rJiLfMgI7xw894Domem5Z+Xp4z5g7IKBmjX3tM92arQs/dXCuVnjPlvMZsaGrbtIz3/uEvhfICefE79vRjw5IemADwR1JcZbSeJ3PFOYsY5my2cmpjfrjEzt03lM7UjJqhLwv3CFdlaXYbciFgqwdvnuKg7WWJTuv9jf9fYs+cOr4afAIcB1pfKHHrviYkxreAFRVFsQwsll3U5TQWwkxPqoqHHLytFK7OhszPN9nSuMKtKUFrhwS4XQDu5G+FvnCt4BN4Sc3B5lB4vF+9yPEDLxOR1ncDnDZzurZucpPh6qtekFcvyKt/AQ==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 66824421
+  displayTitle: Finnish lakeside sauna
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 8b24efc513251b245b5e650484460b24,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

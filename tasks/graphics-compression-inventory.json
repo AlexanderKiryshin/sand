@@ -1,0 +1,1482 @@
+[
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v1.png",
+    "bytes": 1966633,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v10.png",
+    "bytes": 2352557,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v11.png",
+    "bytes": 2157615,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v12.png",
+    "bytes": 2090094,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v13.png",
+    "bytes": 1934618,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v14.png",
+    "bytes": 1875507,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v15.png",
+    "bytes": 524241,
+    "size": [
+      512,
+      512
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v2.png",
+    "bytes": 1842649,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v3.png",
+    "bytes": 1707117,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v4.png",
+    "bytes": 2010781,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v5.png",
+    "bytes": 2428155,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v6.png",
+    "bytes": 1978695,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v7.png",
+    "bytes": 1974142,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v8.png",
+    "bytes": 1992379,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-v9.png",
+    "bytes": 1658425,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-winter-512x512.png",
+    "bytes": 482154,
+    "size": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-app-icon-winter-master.png",
+    "bytes": 2122539,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-cover-800x470.png",
+    "bytes": 763642,
+    "size": [
+      800,
+      470
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-cover-winter-v1-800x470.png",
+    "bytes": 716490,
+    "size": [
+      800,
+      470
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-cover-winter-v1-master.png",
+    "bytes": 2193001,
+    "size": [
+      1636,
+      961
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-cover-winter-v2-800x470.png",
+    "bytes": 714415,
+    "size": [
+      800,
+      470
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-cover-winter-v2-master.png",
+    "bytes": 2225308,
+    "size": [
+      1636,
+      961
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-cover-winter-v3-800x470.png",
+    "bytes": 718575,
+    "size": [
+      800,
+      470
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Art/AppIcon/sand-cover-winter-v3-master.png",
+    "bytes": 2147803,
+    "size": [
+      1635,
+      962
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_01.png",
+    "bytes": 3704543,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_02.png",
+    "bytes": 3965711,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_03.png",
+    "bytes": 4108092,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_04.png",
+    "bytes": 3756441,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_05.png",
+    "bytes": 3873956,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_06.png",
+    "bytes": 3958315,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_07.png",
+    "bytes": 3896037,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_08.png",
+    "bytes": 3937336,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_09.png",
+    "bytes": 3864372,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_10.png",
+    "bytes": 3981753,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_11.png",
+    "bytes": 3827325,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_12.png",
+    "bytes": 3970994,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_13.png",
+    "bytes": 3959580,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_14.png",
+    "bytes": 3874083,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_15.png",
+    "bytes": 3775346,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_16.png",
+    "bytes": 3751216,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_17.png",
+    "bytes": 3851235,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_18.png",
+    "bytes": 3941819,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_19.png",
+    "bytes": 3884765,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_20.png",
+    "bytes": 3913880,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_21.png",
+    "bytes": 3979217,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_22.png",
+    "bytes": 3944269,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_23.png",
+    "bytes": 3952846,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_24.png",
+    "bytes": 3911047,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_25.png",
+    "bytes": 3710368,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_26.png",
+    "bytes": 3815029,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_27.png",
+    "bytes": 3819046,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_28.png",
+    "bytes": 3895089,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_separation_01.png",
+    "bytes": 3815560,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/ordinary_separation_02.png",
+    "bytes": 3796901,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/winter_01.png",
+    "bytes": 3602041,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/winter_02.png",
+    "bytes": 3538552,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/winter_03.png",
+    "bytes": 3664430,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/winter_04.png",
+    "bytes": 3690979,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/winter_05.png",
+    "bytes": 3574233,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/winter_06.png",
+    "bytes": 4113494,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/winter_07.png",
+    "bytes": 4002934,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Campaign1500/winter_08.png",
+    "bytes": 3918394,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Images/Winter/WinterAtlas.png",
+    "bytes": 3520659,
+    "size": [
+      1402,
+      1122
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_10.png",
+    "bytes": 2156302,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_11.png",
+    "bytes": 2306004,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_12.png",
+    "bytes": 2866276,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_13.png",
+    "bytes": 2791071,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_14.png",
+    "bytes": 2626468,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_15.png",
+    "bytes": 2996886,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_16.png",
+    "bytes": 2785162,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_17.png",
+    "bytes": 2488735,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_18.png",
+    "bytes": 2666241,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_19.png",
+    "bytes": 2433645,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_20.png",
+    "bytes": 2890813,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_21.png",
+    "bytes": 2800048,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_22.png",
+    "bytes": 2575840,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_23.png",
+    "bytes": 3036461,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_24.png",
+    "bytes": 2726585,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_25.png",
+    "bytes": 2560274,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_26.png",
+    "bytes": 2625081,
+    "size": [
+      940,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_27.png",
+    "bytes": 2558454,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_28.png",
+    "bytes": 2628187,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_29.png",
+    "bytes": 2506150,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_30.png",
+    "bytes": 2821550,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_31.png",
+    "bytes": 2467945,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_32.png",
+    "bytes": 2355638,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_33.png",
+    "bytes": 2419754,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_34.png",
+    "bytes": 2254621,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_35.png",
+    "bytes": 2071656,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_36.png",
+    "bytes": 2148293,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_37.png",
+    "bytes": 2231283,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_38.png",
+    "bytes": 2135052,
+    "size": [
+      948,
+      1660
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_39.png",
+    "bytes": 1936206,
+    "size": [
+      948,
+      1659
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_4.png",
+    "bytes": 2267096,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_40.png",
+    "bytes": 2313251,
+    "size": [
+      948,
+      1659
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_41.png",
+    "bytes": 2038489,
+    "size": [
+      948,
+      1660
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_42.png",
+    "bytes": 2128103,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_43.png",
+    "bytes": 2266343,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_44.png",
+    "bytes": 2277794,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_45.png",
+    "bytes": 2235972,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_46.png",
+    "bytes": 2118944,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_47.png",
+    "bytes": 1895612,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_48.png",
+    "bytes": 2342831,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_49.png",
+    "bytes": 2099667,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_5.png",
+    "bytes": 2414783,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_6.png",
+    "bytes": 2285637,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_7.png",
+    "bytes": 2440015,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_8.png",
+    "bytes": 2222856,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/ThemeBackgrounds/background_9.png",
+    "bytes": 2271811,
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Assets/Resources/UI/BoosterAtlas.png",
+    "bytes": 1547072,
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "Assets/WebGLTemplates/MirraGamesTemplate/gameIcon.png",
+    "bytes": 4730,
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "Assets/WebGLTemplates/MirraGamesTemplate-1.0.3/gameIcon.png",
+    "bytes": 524241,
+    "size": [
+      512,
+      512
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "Assets/WebGLTemplates/MirraGamesTemplate-1.0.3/TemplateData/icons/sand-icon-192.png",
+    "bytes": 75984,
+    "size": [
+      192,
+      192
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      84,
+      255
+    ]
+  },
+  {
+    "path": "Assets/WebGLTemplates/MirraGamesTemplate-1.0.3/TemplateData/icons/sand-icon-32.png",
+    "bytes": 3082,
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      67,
+      255
+    ]
+  },
+  {
+    "path": "Assets/WebGLTemplates/MirraGamesTemplate-1.0.3/TemplateData/icons/sand-icon-512.png",
+    "bytes": 522051,
+    "size": [
+      512,
+      512
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      126,
+      255
+    ]
+  },
+  {
+    "path": "Marketing_Originals/sand-app-icon-v15.png",
+    "bytes": 524241,
+    "size": [
+      512,
+      512
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "Marketing_Originals/sand-app-icon-winter-512x512.png",
+    "bytes": 482154,
+    "size": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/sand-cover-800x470.png",
+    "bytes": 763642,
+    "size": [
+      800,
+      470
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "Marketing_Originals/sand-cover-winter-v1-800x470.png",
+    "bytes": 716490,
+    "size": [
+      800,
+      470
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/sand-cover-winter-v2-800x470.png",
+    "bytes": 714415,
+    "size": [
+      800,
+      470
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/sand-cover-winter-v3-800x470.png",
+    "bytes": 718575,
+    "size": [
+      800,
+      470
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/level-001-forest-16x9.png",
+    "bytes": 3836861,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/level-001-forest-9x16.png",
+    "bytes": 3921125,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/level-005-blue-calm-16x9.png",
+    "bytes": 3156210,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/level-005-blue-calm-9x16.png",
+    "bytes": 2944685,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/level-007-tropical-16x9.png",
+    "bytes": 3769175,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/level-007-tropical-9x16.png",
+    "bytes": 3781291,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/level-009-lake-16x9.png",
+    "bytes": 3618579,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/level-009-lake-9x16.png",
+    "bytes": 3699769,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/level-038-autumn-16x9.png",
+    "bytes": 3469873,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/level-038-autumn-9x16.png",
+    "bytes": 3780413,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/winter-001-snow-forest-16x9.png",
+    "bytes": 3874480,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/EN/winter-001-snow-forest-9x16.png",
+    "bytes": 3954765,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/level-001-forest-16x9.png",
+    "bytes": 3839965,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/level-001-forest-9x16.png",
+    "bytes": 3925453,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/level-005-blue-calm-16x9.png",
+    "bytes": 3158374,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/level-005-blue-calm-9x16.png",
+    "bytes": 2945343,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/level-007-tropical-16x9.png",
+    "bytes": 3773747,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/level-007-tropical-9x16.png",
+    "bytes": 3790415,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/level-009-lake-16x9.png",
+    "bytes": 3620203,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/level-009-lake-9x16.png",
+    "bytes": 3699867,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/level-038-autumn-16x9.png",
+    "bytes": 3471705,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/level-038-autumn-9x16.png",
+    "bytes": 3780514,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/winter-001-snow-forest-16x9.png",
+    "bytes": 3876171,
+    "size": [
+      2560,
+      1440
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "path": "Marketing_Originals/Screenshots/RU/winter-001-snow-forest-9x16.png",
+    "bytes": 3955126,
+    "size": [
+      1440,
+      2560
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  }
+]

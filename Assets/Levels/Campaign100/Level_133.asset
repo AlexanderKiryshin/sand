@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4284712045
+    rgba: 4279178510
   - serializedVersion: 2
-    rgba: 4293187781
+    rgba: 4293188038
   - serializedVersion: 2
-    rgba: 4288121449
+    rgba: 4284374843
   - serializedVersion: 2
-    rgba: 4280304699
+    rgba: 4281162835
   - serializedVersion: 2
-    rgba: 4285359943
+    rgba: 4287925094
   - serializedVersion: 2
-    rgba: 4280233246
+    rgba: 4280041015
   - serializedVersion: 2
-    rgba: 4281763204
+    rgba: 4281827966
   - serializedVersion: 2
-    rgba: 4279112974
+    rgba: 4280035611
   - serializedVersion: 2
-    rgba: 4281426779
+    rgba: 4284774235
   - serializedVersion: 2
-    rgba: 4282994224
+    rgba: 4282073638
   - serializedVersion: 2
-    rgba: 4285703595
+    rgba: 4284718494
   - serializedVersion: 2
-    rgba: 4290817934
-  encodedCells: S1:4:4096:792DD516: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
+    rgba: 4290883471
+  encodedCells: S1:4:4096:093934ED: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000fe00ffff00000000000000000000000000fe00
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000004000000000000000000000000000000000300
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: places
   campaignSeed: 13831547
   displayTitle: Rainforest Suspension Bridge
-  beltCapacity: 3
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 1
   linkedBuckets: 1
-  largeBuckets: 0
+  largeBuckets: 1
   alternatingCrates: 0
-  swappingColors: 0
+  swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 7fd7211096342754395303f2d16f9ac4,
     type: 2}
   usesTiles: 0

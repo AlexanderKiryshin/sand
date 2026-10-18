@@ -14,6 +14,7 @@ public class SandRenderer : MonoBehaviour
     public int DisplayScale { get { return pixelsPerCell; } }
     public int SubGrainsPerAxis { get { return subGrainsPerAxis; } }
     public float GrainStrength { get { return grainStrength; } }
+    public RectTransform DisplayRect => targetImage != null ? targetImage.rectTransform : null;
 
     public float SubGrainScreenFraction
     {
@@ -28,6 +29,21 @@ public class SandRenderer : MonoBehaviour
     private int textureWidth;
     private int textureHeight;
     private bool introPourActive;
+    private byte selectedColor;
+    public byte SelectedColor => selectedColor;
+    public bool HasRemainingColor(byte colorIndex)
+    {
+        return grid != null && grid.CountRemainingForColor(colorIndex) > 0;
+    }
+    public void SelectColor(byte index)
+    {
+        if (selectedColor == index) return;
+        selectedColor = index;
+        if (grid == null || texture == null) return;
+        CompleteIntroPour();
+        RebuildPixelBuffer();
+        ApplyTextureFull();
+    }
     private Sprite runtimeSprite;
 
     public bool IsIntroPourActive { get { return introPourActive; } }
@@ -37,6 +53,7 @@ public class SandRenderer : MonoBehaviour
     {
         ReleaseTexture();
         grid = sandGrid;
+        selectedColor = 0;
         subGrainsPerAxis = grid.SubGrainsPerAxis;
         pixelsPerCell = Mathf.Max(subGrainsPerAxis, pixelsPerCell);
         pixelsPerSimCell = pixelsPerCell / subGrainsPerAxis;
@@ -169,6 +186,7 @@ public class SandRenderer : MonoBehaviour
         Color32 fillColor = colorIndex == 0
             ? ClearPixel
             : grid.GetDisplayColor(x, y);
+        fillColor = ColorFocusPanel.FilterColor(fillColor, colorIndex, selectedColor);
 
         for (int py = 0; py < pixelsPerSimCell; py++)
         {

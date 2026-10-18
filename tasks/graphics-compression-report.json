@@ -1,0 +1,2040 @@
+{
+  "status": "PASS",
+  "files": 145,
+  "changed": 145,
+  "before_bytes": 396366093,
+  "after_bytes": 354767741,
+  "saved_bytes": 41598352,
+  "saved_percent": 10.49,
+  "pixels_and_dimensions_unchanged": true,
+  "records": [
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v1.png",
+      "before": 1966633,
+      "after": 1909501,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "253cee6d6cb54e59e2bb4921fb722f4ff10bf53f9d6ce06e290ced07b5417c07",
+      "before_sha256": "d7876e4e40854a0f457f50a20ba5c12c24615b36e84758dcce555b5bf8ea142e",
+      "after_sha256": "e2473b6b0d95292870d872110b4bc997c314a74e24d9ca0356aaf98e0bbc4408"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v10.png",
+      "before": 2352557,
+      "after": 2265522,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "cafdcaba5bfdc2f310253a1e6327cf16c3bb9df3ea74ae124b5a97da0d2b363c",
+      "before_sha256": "ed2cea387af32e4ed0de2f992c4e804d7cfb82d3449f099b878914be01fa187f",
+      "after_sha256": "723f98b352f4b097426cef7ea90b7821e21d65de54125b16f1fa5a6d0e789e09"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v11.png",
+      "before": 2157615,
+      "after": 2094371,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "c47c22992d8737616f7e32ea5cc7b151b6639f0acf71aa227fbe9e569d946977",
+      "before_sha256": "4e342a6bef6590d24ae9bbea33ad476d6a37983e75a64a7033ae6ba92fadcc6e",
+      "after_sha256": "3586b449b960d4d8b76224f1d365f2bc43e54a76e1ffcd96b48556e89690b1b6"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v12.png",
+      "before": 2090094,
+      "after": 1997992,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "cf873c04f54c24f2ac5a7a10b97a408504f80f40e77af42c22d3a1bbd465ba47",
+      "before_sha256": "eed73af9a16d5b9e3d73281bff4ae8d1b75eea404f1102495ed6361407c0c20e",
+      "after_sha256": "d74e2e0bfeb8d36ed60a2e00b46b0989fa012c34175f0017f7cb2f884b47c36f"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v13.png",
+      "before": 1934618,
+      "after": 1835773,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "2d1be4f827efa5f222a37d906ac5f4b6c7e06050141d8973381e65b65fd5a512",
+      "before_sha256": "4f525de8c32f2d47319c99926096db9182c628d355f92e5fbafc2aecb1c5c972",
+      "after_sha256": "96c45ddb1249ddcaf0566bf0009063bc1b45fa1c429146aef64cb28321c33cc2"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v14.png",
+      "before": 1875507,
+      "after": 1784785,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "a7e699506a4616fd87f563dc2835975efd78f9a813475420c1e17079650cb6b1",
+      "before_sha256": "e533c13dc1b7e7da8ac549e5b7fe3cce32d8e5fdd8bcdcf6b10d1156a229e59b",
+      "after_sha256": "159ee29bfd0d0bb31ba92c65ebdf753aff3f858558de34036f9cb453b07545ab"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v15.png",
+      "before": 524241,
+      "after": 344593,
+      "size": [
+        512,
+        512
+      ],
+      "rgba_sha256": "7f638a1ffd0203f82a10eef637200aeaa43c29107070036eef9b36aa2a0b9226",
+      "before_sha256": "7d6372e92bb4223c03b0d84f6c8242a5b7e209632c709dbf9dccd05377f33806",
+      "after_sha256": "afd582a36db1fef83c11bf03cdd7b1fb09c31a65693cf5265cd94cb87cae97b7"
+    },
+    {
+      "path": "Assets/WebGLTemplates/MirraGamesTemplate-1.0.3/gameIcon.png",
+      "before": 524241,
+      "after": 344593,
+      "size": [
+        512,
+        512
+      ],
+      "rgba_sha256": "7f638a1ffd0203f82a10eef637200aeaa43c29107070036eef9b36aa2a0b9226",
+      "before_sha256": "7d6372e92bb4223c03b0d84f6c8242a5b7e209632c709dbf9dccd05377f33806",
+      "after_sha256": "afd582a36db1fef83c11bf03cdd7b1fb09c31a65693cf5265cd94cb87cae97b7"
+    },
+    {
+      "path": "Marketing_Originals/sand-app-icon-v15.png",
+      "before": 524241,
+      "after": 344593,
+      "size": [
+        512,
+        512
+      ],
+      "rgba_sha256": "7f638a1ffd0203f82a10eef637200aeaa43c29107070036eef9b36aa2a0b9226",
+      "before_sha256": "7d6372e92bb4223c03b0d84f6c8242a5b7e209632c709dbf9dccd05377f33806",
+      "after_sha256": "afd582a36db1fef83c11bf03cdd7b1fb09c31a65693cf5265cd94cb87cae97b7"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v2.png",
+      "before": 1842649,
+      "after": 1746548,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "a90abae45b7f58e13b4fd9ba5816f48300002cac9a067d3a2ab890b6f64ce84e",
+      "before_sha256": "c6ea8e0e2be4b3c01b0d3b3e42d6b0dd86aa9e06ae9c74454e6aa85d2e1deec3",
+      "after_sha256": "888bacac7bcb2d9d916ac9b8b74bbfb9825369c0c833216068a44cb7d41b195f"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v3.png",
+      "before": 1707117,
+      "after": 1635678,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "df5f6b5a3cdcdec776ec65f65cf7ac8a00848f65494b3fbe88459f89127906ac",
+      "before_sha256": "79630169585062168cf7804ccfaf436c2a35f2e94bd0e42ad619d50a03323969",
+      "after_sha256": "9592a42057904e55f7e7a578b2e3e4cf1c6aba3b11afe3bc315a1b633e13abc1"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v4.png",
+      "before": 2010781,
+      "after": 1919322,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "21056123b707575f78e21661846a4efd243da5335a4231168c61cf96a01e0a2a",
+      "before_sha256": "c91d062e78b42138bf9cc74b6f68ee23e139952110616d79b05e43be7301073e",
+      "after_sha256": "7f6a23cf44a289b51ae77d534851f034f9ef5e8bc54f7bd44ce27d86a5a28c02"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v5.png",
+      "before": 2428155,
+      "after": 2344713,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "20e9c2a69318162b8bba819fb98c10d9d45125243b2730ec55fa56916166c84f",
+      "before_sha256": "43d4ed3c2ab7c15efd4f5d67378c0ebd47ea856d11b8827b1e27851f9f5ef511",
+      "after_sha256": "03b980a3f5630bd87f9ac25a7bcd7df1cff2ce0c59b356823da2d11b45af6aa8"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v6.png",
+      "before": 1978695,
+      "after": 1891144,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "0f703a91e047a02a7e2c52e270925b732041f7d5203fd8d3b555cd319433f630",
+      "before_sha256": "2c4a10194e498dc124412425e5e835bde1767edad91652bca0a39c1e1cf449df",
+      "after_sha256": "80a0683cd7c571e397a230e35a6b23c97674118547f2af99a0204e57d6ada3eb"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v7.png",
+      "before": 1974142,
+      "after": 1875512,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "55659d9933ebe0c1a10f4c709804fe3c2b8affb228836a8cb6d64b969d4a97e0",
+      "before_sha256": "55ced68f883ce9b2aa4ab01e13506e147b6001f3ba3e1f1b717ab96c0a49c4e4",
+      "after_sha256": "9d7ed14694da30e5d0f43930e8391f5557f331ae3b2b5fdf3c74350476b72c88"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v8.png",
+      "before": 1992379,
+      "after": 1919028,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "9287d627d5dc6819759b0e4e07ae959a9268c06a7d6072c0a39e4bb19f5d1bfa",
+      "before_sha256": "a16cf1aba7eeb07cab7dee204f338f5901764c0597a9bd28e1518d84b178e254",
+      "after_sha256": "de2c8e2cbe0b91e554203a6ae3201f77c85ba8ca8264fdde866590d6c9ef40fd"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-v9.png",
+      "before": 1658425,
+      "after": 1571833,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "f8008cb11d0337ee8802438982b2be416bf04ee41cc5434bd0298414b8666eed",
+      "before_sha256": "b768b3a9881fd1cfc7deb7e749503c9a7deeea694cbdbbf7bb8f03dd6646f6e1",
+      "after_sha256": "6f7eb00ddd362893b861ca79046aa2b39c10ca1a28edb94e8a1f72b0157e8e0c"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-winter-512x512.png",
+      "before": 482154,
+      "after": 379615,
+      "size": [
+        512,
+        512
+      ],
+      "rgba_sha256": "870c5f180bd6e8375e4728be6225d442295e79e91a86240ecc63cfc392ca3e12",
+      "before_sha256": "53114c067036f10b531cd223af19bdcb3da126c16c9cdbd2b96b1fb228a94fe6",
+      "after_sha256": "e1bf5da1e3f88d5c01caaaeb63e5d8af9e68fd3daa7acfe63db91a4026af315c"
+    },
+    {
+      "path": "Marketing_Originals/sand-app-icon-winter-512x512.png",
+      "before": 482154,
+      "after": 379615,
+      "size": [
+        512,
+        512
+      ],
+      "rgba_sha256": "870c5f180bd6e8375e4728be6225d442295e79e91a86240ecc63cfc392ca3e12",
+      "before_sha256": "53114c067036f10b531cd223af19bdcb3da126c16c9cdbd2b96b1fb228a94fe6",
+      "after_sha256": "e1bf5da1e3f88d5c01caaaeb63e5d8af9e68fd3daa7acfe63db91a4026af315c"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-app-icon-winter-master.png",
+      "before": 2122539,
+      "after": 1953118,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "df43c387d8e455eaeef75bc1468692badf4392534729551874a7e1c360fddbf0",
+      "before_sha256": "bd5cbec2deff7c85548d8954cf106295773183982da4efa2c80f3a49283df1bb",
+      "after_sha256": "76cb3385a00422068394ef58b7b8dc73dad13ec89c170ce47696e686ebd2ce88"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-cover-800x470.png",
+      "before": 763642,
+      "after": 504067,
+      "size": [
+        800,
+        470
+      ],
+      "rgba_sha256": "5ae0f0e7f75393ced7de35b68c379a156c377e37216cb6ed898bf283e8e59330",
+      "before_sha256": "8bb458354eec3b0a6e2b634a594f12099839c97bb0e76e7622bc31be80e18557",
+      "after_sha256": "018182d59fa6d26dd6d5c2b859a8db3d866843ba21a20ff94c3b09415746511b"
+    },
+    {
+      "path": "Marketing_Originals/sand-cover-800x470.png",
+      "before": 763642,
+      "after": 504067,
+      "size": [
+        800,
+        470
+      ],
+      "rgba_sha256": "5ae0f0e7f75393ced7de35b68c379a156c377e37216cb6ed898bf283e8e59330",
+      "before_sha256": "8bb458354eec3b0a6e2b634a594f12099839c97bb0e76e7622bc31be80e18557",
+      "after_sha256": "018182d59fa6d26dd6d5c2b859a8db3d866843ba21a20ff94c3b09415746511b"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-cover-winter-v1-800x470.png",
+      "before": 716490,
+      "after": 550625,
+      "size": [
+        800,
+        470
+      ],
+      "rgba_sha256": "6b370760206b61b251e1bf7dd98d6a271316a79852a01a3833266ea250960219",
+      "before_sha256": "4799e394f7f820c3e99d999d383e16e2d32b47e6fa02fa85de6708f4527b10ae",
+      "after_sha256": "949ada5b3358db47dd06db8adef51a3f46149ab571cdda5b9d02f6e2ffa9abab"
+    },
+    {
+      "path": "Marketing_Originals/sand-cover-winter-v1-800x470.png",
+      "before": 716490,
+      "after": 550625,
+      "size": [
+        800,
+        470
+      ],
+      "rgba_sha256": "6b370760206b61b251e1bf7dd98d6a271316a79852a01a3833266ea250960219",
+      "before_sha256": "4799e394f7f820c3e99d999d383e16e2d32b47e6fa02fa85de6708f4527b10ae",
+      "after_sha256": "949ada5b3358db47dd06db8adef51a3f46149ab571cdda5b9d02f6e2ffa9abab"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-cover-winter-v1-master.png",
+      "before": 2193001,
+      "after": 2055261,
+      "size": [
+        1636,
+        961
+      ],
+      "rgba_sha256": "e75d16da0c8dc80bae69cb7f5b0b104f4895f00e855a4c4280b7c84e40670400",
+      "before_sha256": "65178698431a2bf567903046a23b2d6873415cad56ca71a0a90e6bc93552ce4b",
+      "after_sha256": "a0e9cfc5da4c909ad42d8ac994da0d0b0a591b2a716f63058d4a9576fd32532e"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-cover-winter-v2-800x470.png",
+      "before": 714415,
+      "after": 548558,
+      "size": [
+        800,
+        470
+      ],
+      "rgba_sha256": "9f56c23fa3fe7184558b4bde6aaafa802c267acb22f48e9755a805a91d69a065",
+      "before_sha256": "2ca2b84e4703d1c72896646c101a274b49e334ef9f487ecaca2615210ffb8dee",
+      "after_sha256": "333bdbbd64f61f91d117e4115195006a1c1bea78a6afc819878f0ffc219de82a"
+    },
+    {
+      "path": "Marketing_Originals/sand-cover-winter-v2-800x470.png",
+      "before": 714415,
+      "after": 548558,
+      "size": [
+        800,
+        470
+      ],
+      "rgba_sha256": "9f56c23fa3fe7184558b4bde6aaafa802c267acb22f48e9755a805a91d69a065",
+      "before_sha256": "2ca2b84e4703d1c72896646c101a274b49e334ef9f487ecaca2615210ffb8dee",
+      "after_sha256": "333bdbbd64f61f91d117e4115195006a1c1bea78a6afc819878f0ffc219de82a"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-cover-winter-v2-master.png",
+      "before": 2225308,
+      "after": 2059462,
+      "size": [
+        1636,
+        961
+      ],
+      "rgba_sha256": "f187de258a3dc2d4c9a02011700465927c7756e6c2170bfb756a138fbd5b2402",
+      "before_sha256": "47d1fbaeaf21663ea536e4ef4d9304d92a4f83ba420c0175b5f6680ae139b8ea",
+      "after_sha256": "bf2e6493b9e6174cd6aa64c85e31ea4b0615dd64b1258e91acefe1eb98e99d67"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-cover-winter-v3-800x470.png",
+      "before": 718575,
+      "after": 558619,
+      "size": [
+        800,
+        470
+      ],
+      "rgba_sha256": "76ebb8c110aa3a7fabbc8855e4a5f4c3735bb6b17d0422b092f236df03f8a6a0",
+      "before_sha256": "408464dd4e51fab28d199b9a5ab385328bee13df834b61a473a5d1ce040f9cb2",
+      "after_sha256": "6d9745b58634805393078c22d17f196d4a6d61bc6077a4b6b0452149daf6221f"
+    },
+    {
+      "path": "Marketing_Originals/sand-cover-winter-v3-800x470.png",
+      "before": 718575,
+      "after": 558619,
+      "size": [
+        800,
+        470
+      ],
+      "rgba_sha256": "76ebb8c110aa3a7fabbc8855e4a5f4c3735bb6b17d0422b092f236df03f8a6a0",
+      "before_sha256": "408464dd4e51fab28d199b9a5ab385328bee13df834b61a473a5d1ce040f9cb2",
+      "after_sha256": "6d9745b58634805393078c22d17f196d4a6d61bc6077a4b6b0452149daf6221f"
+    },
+    {
+      "path": "Assets/Art/AppIcon/sand-cover-winter-v3-master.png",
+      "before": 2147803,
+      "after": 2012178,
+      "size": [
+        1635,
+        962
+      ],
+      "rgba_sha256": "cc571f11795a4a617bc6a18f7c520a2fccacb2eaa59fd65e1dedc9d832468c12",
+      "before_sha256": "8efeffeae21ad387ebf3f7ea24d7a8546faaec7ca9c490f865ac215cba805c90",
+      "after_sha256": "a292f93d5c2ae21353f28f02d2fafb9c441bbf46f79c97963a5911e3e74ceac8"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_01.png",
+      "before": 3704543,
+      "after": 3403368,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "0d32b7ee4a19338804fa417d4dbdc1ec99c373732409d16f766bc2dcf37eab93",
+      "before_sha256": "5ab459b8ac8277f69f6a8c7a2a196877f94b37eb67680d7ccc21fabbeb968c72",
+      "after_sha256": "1d119639ea42774cb50c22a76dcd93a63f5cfa0d1f66ba8196fe938420303a79"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_02.png",
+      "before": 3965711,
+      "after": 3578105,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "f7a04d7d21556c4a72452e4963ef20bd1eb8b13bbe30e00bc1c794bc010c2773",
+      "before_sha256": "aa217f5153331e815d42695ae85c5a136b0df9d74b6fe121367138bd93129868",
+      "after_sha256": "1afecb526a0eb9ddbd5ee9bb93ab03283e8ae07eaecadbebb6b03803ded7833e"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_03.png",
+      "before": 4108092,
+      "after": 3675813,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "870c2f2cfc30da43e5c36dac87219aa9451e01b25de869ba77642a3ec56fe2d9",
+      "before_sha256": "c92823e978b946c4cbc6f5135fa8e838b42fecf427a4c31386ec5e0cec3ef421",
+      "after_sha256": "0be4bc55b574f12ca7e2e879ac9fad733289288c68d2a3eb31523b83878a7fc2"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_04.png",
+      "before": 3756441,
+      "after": 3429777,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "e2bc999a6abfeeadcc47a60b721cffb5517d5b46ca87115bcbd5aa72d4f44e4d",
+      "before_sha256": "764d339535b7832523f6516eb579725a206bea76d33c3fc059e2b9e2d1b918e5",
+      "after_sha256": "3c84c4877110839fe2378ae7de557568325494674b4864e8a6cf5b8ad0f183bb"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_05.png",
+      "before": 3873956,
+      "after": 3508382,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "ce0614546c26eeb165db8f3e2d2425bcd5eacec9a03c81c21aa7a4bf53c1311d",
+      "before_sha256": "d91ccc1a1c137e9011c4861dfb013d8c54a0512b05a6f8433301b58da41b47d7",
+      "after_sha256": "4bea53d2b2ae1b372bfb0a939cdd743289e00b3b0ace79d2a90b1fbf8bbd3427"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_06.png",
+      "before": 3958315,
+      "after": 3570538,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "f2f56348c7a024da0bcdcb6f65c0f002c4a63aac2e68f43f20eff9231b93d4e3",
+      "before_sha256": "99e635bd67e599829b91220cbae237a5426f6ab39cb3b456972b8f9cc881ba2d",
+      "after_sha256": "6bc605810d81ddf592d2ce6a2a3025fb1ffc5f0f2b3406d9e7e007c6926f8c8f"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_07.png",
+      "before": 3896037,
+      "after": 3534838,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "e260c7690817642de0f933f8c43ac828fd4a28d5c68c471d40e205dc6eba0f29",
+      "before_sha256": "bd192301cc11e677c37b905108165a0df3fe479a37a0af1c0eb01275eb77b58a",
+      "after_sha256": "d0cb597c7fe0252857ab19bf7cad0a16a247b58411064889d86d9b7a01bb0817"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_08.png",
+      "before": 3937336,
+      "after": 3554345,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "817f468c4270f10089d57a060afef3e943ce21b9a438f75cc8a6d69560fbd8dd",
+      "before_sha256": "886b687ad6531c5ace7444a30bd68ce4e3b5cfb6c19bff96cf8eda3a37410089",
+      "after_sha256": "9019c624f8ab2374c48727c33f67196cd423ac3f13ed4a143030c1db11c4e6af"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_09.png",
+      "before": 3864372,
+      "after": 3509762,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "019ef905e5d6a4073ca7adbe6ca9d3fa4a36cf8482fa627d6832b4b695ea4447",
+      "before_sha256": "7f3383988075dae123b329ebe3c543513c6eb02b1998628e89aa6278b4054d6c",
+      "after_sha256": "8954351c7a359fa7784bcdb5a615c480e982d4e0e64f2a5ce28b64379edf054d"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_10.png",
+      "before": 3981753,
+      "after": 3589514,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "cd900add773418ec22635b554f6ef693e379dec1010d37578f78d9f3f0eeba2f",
+      "before_sha256": "8a8f9eec3e4e9a645d7f37566caea4088e01eb747b3cb672cdd5b0a3856c8d75",
+      "after_sha256": "d337bd9c63269c8dc0e760de68d13c0ee5054ad013e9715211a959c76750a744"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_11.png",
+      "before": 3827325,
+      "after": 3489466,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "8a985d562a78499caa907df0762f03f55610e12d1df668e3e74fa283dab7af78",
+      "before_sha256": "482cc8c0d5caab6af48680b8a0dcf0734e28c3e93e30629cc61cab536da4460b",
+      "after_sha256": "a23488e74081971d539c299268baff5e5662a911469bd887958a6dbc2f536805"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_12.png",
+      "before": 3970994,
+      "after": 3571788,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "60fe4babe81dc95c1950b04f5c565e94121edfd232f62d0986fe82fa851b6513",
+      "before_sha256": "24f9584a65c414ead82dc1b3ebd1219fc30fd817cfacb7edc07e56517dd73508",
+      "after_sha256": "3862204e9162de4eebd326457855f3a1dce50034737d9a30eedd3d338fb53755"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_13.png",
+      "before": 3959580,
+      "after": 3563485,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "a4162a27de9c4f31c7d6ac1853053590bd2a1ccf74af6ccd126fe98a98b9f5c3",
+      "before_sha256": "c0db1735cdac3c059655726bef7b404bd5c03cf34ab1378fe6d461441a70db91",
+      "after_sha256": "cd2577da374ebeac51c0d6889c316cc73e1aad86b8a4b1e3678e53c2d30e93ae"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_14.png",
+      "before": 3874083,
+      "after": 3514451,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "480b5943976c3604bf9e93af5c3161d88e34d03bcccea34d1bf7ca8396382b94",
+      "before_sha256": "c76a102f1fd900b9c070e532fd271c8fb5dabc6bc99936954f640644bf6c74b9",
+      "after_sha256": "b2b167da7a91563c3194d192f9acc4a785055bf08a6a67c21ae331a83e4c2115"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_15.png",
+      "before": 3775346,
+      "after": 3454817,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "d7a3224985160f2379ce3f81fb55671bb916e2fbd7c3f251e5cc33fe4291c478",
+      "before_sha256": "9c9ecf5c8943d2316397d0756810b962cc97eeed13d056c1dc7d1fbed94c51c3",
+      "after_sha256": "25d58360405af7470a6f41bddf20e76573e078c9e8c5aed30bdaeede6c231c2f"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_16.png",
+      "before": 3751216,
+      "after": 3427836,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "be3b79c544427dc17ab923a1336efa3a57ba3fb27f165a031dc3bc4e1f39fc28",
+      "before_sha256": "21f8263da1c4c5e2ed21671a673b07d24daa7eff91ea5e82a491e6181e598e68",
+      "after_sha256": "1f3d86f80411bb09a13f1ac68ee766e5cdec9f0210c3f1d7c08f072b3f806f87"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_17.png",
+      "before": 3851235,
+      "after": 3505268,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "2ff53a7817225726640c1a627b57ff1cdc8fead0a7228905e8d834804fcb0248",
+      "before_sha256": "d9dbf348fc54e13ce1f6365badc7123f59df3d8c558beaed13574eb58152b97e",
+      "after_sha256": "f7d8324dd9421b3c10f0502d59ccb3681079529a825b3f2ced494e601a6d7301"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_18.png",
+      "before": 3941819,
+      "after": 3566963,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "7e978d2bd414055e79202536b886a0abf1b08974b4305e8fa30fb033bfc64aa9",
+      "before_sha256": "af9d26ed1f2585fec1b0807dc5e42969c2425700a576a0f953a7cf1ae1d487b5",
+      "after_sha256": "abe082519f883e02e451a497a842fe41432b7cb834e333ed91550f566ed1022c"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_19.png",
+      "before": 3884765,
+      "after": 3527232,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "099c7691174d5db360d8fa0385f3e4c8e871de8587b1d121c0441f61d862e399",
+      "before_sha256": "f645ad2d654263aa262ae8f586fe82a05c7c34724d4459b9ff068200c9c90792",
+      "after_sha256": "e96b3e1392265e5accf743dd6bfc011035364988f79aca91ee9b3eae3fd704db"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_20.png",
+      "before": 3913880,
+      "after": 3535425,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "8cb0a01187955530bc00a3fe5fde98637c720489f706a84e5391f9b18eb59ea8",
+      "before_sha256": "f2a5ea7c362e852520c8f1eec7732db006e5a2c15c356c3a4be0325a21a3d9ee",
+      "after_sha256": "7923070fe34a15027730657c3d3336eb32b296835d72666effc2df79ea0807ef"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_21.png",
+      "before": 3979217,
+      "after": 3582102,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "002a0997f74c59900fb2bee8c3a667b4a95bce5e5fb0398a6d35700bdee5b631",
+      "before_sha256": "7d33dc40a741db1718bfaad9647e0c0b4e6693c26e4c8b547c39aa7ab33fce5d",
+      "after_sha256": "fb2268bea3b26d0bfb4550af5b2525b97072d3fd14b328472ef935a61f4b4dc0"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_22.png",
+      "before": 3944269,
+      "after": 3566693,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "73e74241c5b1cbe8cd2227a3174e5acca39e088d0942e19828b6cdf883c620c7",
+      "before_sha256": "4055c2c10330638cf0f00be7c244557e2cacf85300a25fdf6fda058e7a06b337",
+      "after_sha256": "031c484c797be0588bd90da20d8364cfb8d1d3fde0ac47cf8577bd296d7befd9"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_23.png",
+      "before": 3952846,
+      "after": 3566019,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "3e220196b07e349ad41a4621929fd4d1fdbfa28a75f6df31224c74b78da94092",
+      "before_sha256": "8eff0d1c870e805bef97c3519f82d686a7e8fc1ae4390065a38bd85e7d821378",
+      "after_sha256": "d5e5f2c5ff13e650cef5600fa4c24729b3a052831e8846cb67f05035fc1fac92"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_24.png",
+      "before": 3911047,
+      "after": 3530987,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "e303c48d5d8a54e9c1395368d6ff515abc2c9423001a342697f8c7b003fa02c5",
+      "before_sha256": "2ab3222a2e70db94dd8eee8215c75cb16fb8ac170e43a8ccda7a2dbc57ba32cd",
+      "after_sha256": "421e8b39bcd8ef8aff19c8a3cbf1a2b451247933b707b36dec20daa369dbf74c"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_25.png",
+      "before": 3710368,
+      "after": 3397599,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "09b24015ec2e78b5ede9460e75bda98e5ca327e13c05863aa3cdba71f46d0cae",
+      "before_sha256": "6dfa8b580378d36ccc243be0b625f27925c1078230518fc502b9b1463bd562cd",
+      "after_sha256": "d33be9cf503bf79f2de5b69d364ebb24887188e6289e7f80e961dcb74d0abee0"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_26.png",
+      "before": 3815029,
+      "after": 3483298,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "64159cd0dc4a017797e7a5fcddd1810583adfe8eab78f4f5afcf1439a364d21a",
+      "before_sha256": "c64be39ebf4dfb0bc50422351a695929f2e05235d4813f01773441b09ba9c642",
+      "after_sha256": "556c228de71e4405bfb1fdb964389f7e35db85f2f98a97b58d0516c3a84eb0f3"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_27.png",
+      "before": 3819046,
+      "after": 3470841,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "1784a9b1f4d5bc9a50aad59ff113a840f532dd6ee60a010c7fc633489c05a5ab",
+      "before_sha256": "70aefb4791b09535bfaf1670856069b6c8558e5345ef92807333960155539c71",
+      "after_sha256": "2a3962a8fbc698a956437bf9aef4015d152457d4c2d60febde0bcded41d0592d"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_28.png",
+      "before": 3895089,
+      "after": 3511814,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "aeec5cd29fff7521b261bc0109549a3aab445a8aad4a19d563f1a9822c10de41",
+      "before_sha256": "4ac87a9131d21b0459f154048793dbd5e45cf1b1081ae2a9fd1d1c4f3a9cd014",
+      "after_sha256": "7e4a470c2685868bb81ebcce9a95677472ebbf33db7d9e43993f9d85a90d1142"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_separation_01.png",
+      "before": 3815560,
+      "after": 3499722,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "a9322b8d775c33929a041ff14cb931d2b65e9587eec5b99e905ddaf7a2d7126b",
+      "before_sha256": "d2d9b871c63fd2a91a6fc758f61d21a3a11fc9491fce9d1aea45586525304df4",
+      "after_sha256": "28d87bacc20eec1a970001af1a032389372684c0804417a91811d5e6a56ff042"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/ordinary_separation_02.png",
+      "before": 3796901,
+      "after": 3460517,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "76e788b71b44f45eecea5f2d65c938cc156d29d60f7bf0879504daf10a8d9d22",
+      "before_sha256": "2fa278424bcab17e4c8250d89cdba65528cc98c32d30aace6a9e4b4f22f8938d",
+      "after_sha256": "14dceaa76d6a80debc3043adc7fec20790e4d835737ed94f857a036c95ca1445"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/winter_01.png",
+      "before": 3602041,
+      "after": 3326677,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "1eab96cf7068f27c6f8d7d9a1a7bef464671a20a5c83dca3e78b6625afc76ffc",
+      "before_sha256": "cdaead61a641f4bcc8dcf2eac4a38160a5abde119a05361880d2eb988e9ac5ce",
+      "after_sha256": "3c34e61a69eedaab22933f249b08ce78d86a38045893acd86d01d3fff542ccfc"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/winter_02.png",
+      "before": 3538552,
+      "after": 3300147,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "a8afd436af4e6e91dec7c1157f6e77f27917a7422a8eb341707410dae295549b",
+      "before_sha256": "25ac0037207e8563ed32080fb0fc258fe3622a7379d3659d6dfa04378fb8d6fd",
+      "after_sha256": "7cfb33e64ec7cb9d6a54832a4b24283eadde2bbd941a8166fc4b8f18f821c2c9"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/winter_03.png",
+      "before": 3664430,
+      "after": 3393931,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "4773a921872252e0731d2576942b6029cd6ead8d5093ff0f334b7e3729584f5f",
+      "before_sha256": "d0c0bb3dabf43325c8324b911143ff6a3cc0ed6f1a4fc133289d5bef0ffa096a",
+      "after_sha256": "f18c9120d02bb074cfbc308f6e2b3456291671f121c41a0547d98b27c04bf565"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/winter_04.png",
+      "before": 3690979,
+      "after": 3416891,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "3e4360560c18efa52deb0bc5dc53e252c6dd90afa526b359d558a85b25d58e25",
+      "before_sha256": "42b0fea0c1e3ee6d812a81405780db8dca75ab1869d52464250353cac3fb33e0",
+      "after_sha256": "2d6a4b09673c5c28516a46771e6f8267eefa158d28da4ffeeb38f06f6cc43106"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/winter_05.png",
+      "before": 3574233,
+      "after": 3331560,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "46a3590cbda066008d40a3656cdf741b1357ff5551349e3237675a3f650fdc9b",
+      "before_sha256": "29fe882ccaae9a6f9bd55ad4774ebfc1c2a2bdb3e5f9e22d5d4fcfb9ed92883d",
+      "after_sha256": "eafccd8b501e89a7f7a711b2e08bf54cedd576528cbb976bef26c52893cbc4aa"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/winter_06.png",
+      "before": 4113494,
+      "after": 3681821,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "ee0c5e1059d116ccef5269b9c8a89c64eb44b1707921f2891cb1291fb9245c03",
+      "before_sha256": "e209ee505d8b144ea9e3516c4e24d6818eaa565e4b7f9e611467a306f3be759f",
+      "after_sha256": "49cd2425a01c1d7d52e9db6110765da0d33eae91d6e1501e88bcaeeb2b9b4918"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/winter_07.png",
+      "before": 4002934,
+      "after": 3613917,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "65ccfb86dbc72d9f1338adce4127d410ba1d7d0c3f33ed450fc8178745c637c8",
+      "before_sha256": "c660747ddf7d26e639a576cec5ed2bc58760ad2f73042a70b6d2cd64de675ea7",
+      "after_sha256": "b271d6228b3e765bcfdca924fcd1ca0dbcee8693fd2b5bb47434dcd3a772ddc7"
+    },
+    {
+      "path": "Assets/Images/Campaign1500/winter_08.png",
+      "before": 3918394,
+      "after": 3570637,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "71d7d18bf51ab13b6a13292316e9a50b0999823d363bed4e69149d15c5cd69c3",
+      "before_sha256": "13f030bb641798f9c9a182b044baaf57042478a2db6679f9fabe71fec30def18",
+      "after_sha256": "8d465defb51727e849e503ac1bad7e34f14d248fac72ecd8cdd57b262104c5d4"
+    },
+    {
+      "path": "Assets/Images/Winter/WinterAtlas.png",
+      "before": 3520659,
+      "after": 3293846,
+      "size": [
+        1402,
+        1122
+      ],
+      "rgba_sha256": "6ec151ad08a3d804512e2c9358a9c4f26ac9e71579bb36cbbda6a5eb0ad9fba9",
+      "before_sha256": "b31ab772d1c9ca4ac9adfddf6d69a122a628cc1125e910cb3124954fa3c13694",
+      "after_sha256": "1750f73235db08332abc8febc96b7b90f0a46a74a6d62a504d89bcafebd5b63e"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_10.png",
+      "before": 2156302,
+      "after": 1991411,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "010c56576ea1918fa6ceba81b9bdf4c06cf8dc59fd57731907098168570cba2c",
+      "before_sha256": "36a6037ee38221907e3d11617decbaa4e1a6e0bdf08018a8276be6a6baea5093",
+      "after_sha256": "6049a98b19e940ccbf050d0f4e2a9f2b1b20e72efee5c26a08f496eea276ccb3"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_11.png",
+      "before": 2306004,
+      "after": 2026631,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "836a59de28c1c4ff3879ef58e266b6910515c41520171191c4f23ac68a90e317",
+      "before_sha256": "144bc85bd68e3681ae4d6e3b235cd3809a05e73a6bce70fefa0b9017fc511677",
+      "after_sha256": "59f247b5689fc36ea5e0fa9c4a82c62e7f09e61949178f68fedb626c8cd62043"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_12.png",
+      "before": 2866276,
+      "after": 2703933,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "079bcb5a83581f2ddc093937efb3dc293ffd96670a01326bf29d0b79dabf3ce6",
+      "before_sha256": "b597429bcafc4c7b1ac95936c3ff86b845d686b40a8a3f49684103257da6b16c",
+      "after_sha256": "a69077fb0d23a66a494fdc6db179b15e35e3ab667557b2f1202375bc1e153fb5"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_13.png",
+      "before": 2791071,
+      "after": 2604386,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "3fce85afa17fd3674e40593e232c2614e3595aed99b9cb0999499aa99abb8fa9",
+      "before_sha256": "63ba24cc88bddbdd742552cf8e2e11700ce9734b79fcca3fa19f3eab03f43ebd",
+      "after_sha256": "c6bd7820e44dac2836eb3ffee2289caf8d981c695e09262e385a07a918c4db6e"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_14.png",
+      "before": 2626468,
+      "after": 2500778,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "b3cfd47b17e9b9832ecd2b460bb212234be645ca768c63746325631bb0560293",
+      "before_sha256": "2740853121142b8cda00715d006e3581ff5b250623e71ac1c81d8dacfc7625b5",
+      "after_sha256": "8ca30e2ae5417e0e67d4ca04ca4134c05a615c3ea0606e90bed8c0f792667d43"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_15.png",
+      "before": 2996886,
+      "after": 2807575,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "78bc8524cd6cf8335ff2ce0cfca2aa3678b62f4fc5e4b1789450d094e1f66ed4",
+      "before_sha256": "2028908fc6aad558e011177494469b85fff5813d5c53b8210afd748e84ec7b5f",
+      "after_sha256": "43e9e7970d7cf6afc5e16e7e03dad6cd8b4712c9810b34987c3e0c860ac1796f"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_16.png",
+      "before": 2785162,
+      "after": 2578424,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "d24bba3ee78311c48c900bec7ee9daef329d5f8a8f7c5878e04db7354dee9df9",
+      "before_sha256": "f1de16ec04f529769e7636a44c4c91929b80352679bc142ae251117e4d86ccdc",
+      "after_sha256": "448288ec29d50e9a8d0700092a46f94f04fdd3184a73fe4c90344c774d0c1412"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_17.png",
+      "before": 2488735,
+      "after": 2322548,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "30de30f50577ccc8e1b257a4889769c3aa306067b521e078266c9d80bcb327a5",
+      "before_sha256": "f9023ed8022b7b2cba662da45e42669e3ad164b1ce9e832b4066a33ad4f5f8f8",
+      "after_sha256": "665a114265270cf8519324f9cbc7a99618ce3ba26f22b8c1c8b6a97c512c0795"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_18.png",
+      "before": 2666241,
+      "after": 2522652,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "8cbece51bdf11aa0f1e357d7c14bd5b0d6c3673b2dcf900ae4bdbba9ebbf3801",
+      "before_sha256": "74cb719eabb08c2d7f70837b5f0b88459034f918b6228dca7770f3a74479a9b8",
+      "after_sha256": "11325a345d78e2d8477c4efe78319e1858cad19aa555b6eb64066332763aa615"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_19.png",
+      "before": 2433645,
+      "after": 2297072,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "9c985c6f39913e7cae9353c5008133fb63b3ef8fc933b944f5de8b29404e6afa",
+      "before_sha256": "aa1fe89a3065a6787fa7f642da933ee188aea3d6ac0d4c93a90b6ab6a2a1ee12",
+      "after_sha256": "df6233590296d0a862bd034d2345005297355a73bb684731950099b0a99d0c05"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_20.png",
+      "before": 2890813,
+      "after": 2732573,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "6c5bb2abddac7dcde203a4ad78ca86b3539be26b1386cd324f850d6168272800",
+      "before_sha256": "980950ee3dbc5fcb3d57efe18e4922849efb12e474866df3aaf7aa144b4f3104",
+      "after_sha256": "ef240fc3e5a7757a728dd88d01d689a69e2cf34af63b8c41a82a01c33dc12afc"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_21.png",
+      "before": 2800048,
+      "after": 2617128,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "946b9443122eda84fae6939f6d6a5406d7e74d4d46785e53fc5e67945d1c6ed9",
+      "before_sha256": "cca764c77d48aff1084ab62b29d45ab3b6a0a2ab3f505cc66ef2b0bb76c5ed60",
+      "after_sha256": "ac35ec066ad600c8e98585ff74fbddc6a9f84be97415465a454eee0243e6c4cd"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_22.png",
+      "before": 2575840,
+      "after": 2522508,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "fa919c52c34babd0b8d9a4c4777ea69ff0bb8a602fd733696c0baa14e9081d4a",
+      "before_sha256": "cf1433afffc755468b5f1f5e414e0dcc0c4e616f2b4ce0c054377a2f07e32efc",
+      "after_sha256": "ff0a5bc269acf2e8fc631738aa8fbe949665a3567692af2bb91e7e5a75d91789"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_23.png",
+      "before": 3036461,
+      "after": 2777002,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "ef2c7f8291a3ea2c32fa7d517138ac4484ca8227dd6986dd02fcb2eb8c38b2b5",
+      "before_sha256": "f3f678b24df6f0636673499419313f1d13652db5673a9f89bd280e689983b35c",
+      "after_sha256": "2181dc9a21d4af4d7a608dee5fb87b9aa619b7777b5742c1795a149ff27be59c"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_24.png",
+      "before": 2726585,
+      "after": 2500298,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "67dac907f218fa08d7ee14bba81e83317fd322ad8563634bc9276aa2bd91f4ee",
+      "before_sha256": "8b5e4f5995c8456250cbf5c2cd2861c32fad7221eb4c572ff7418e9dd2037fea",
+      "after_sha256": "99cfea15b7d24ed53592a76acd5d071f432bba94a42819a68e129aa7ac2ddeb3"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_25.png",
+      "before": 2560274,
+      "after": 2406536,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "b627eef69e1c9bfe51ab3435ada610a9b850fe5d524fa817611c31ef7603f3df",
+      "before_sha256": "f6d1236213ae75cf316e27746c3188d9e6c542d8959a9ad64c98d4796cf4af66",
+      "after_sha256": "68843ef78f25034fc928656a8996600f0a38a3013b4c11b9868ce990c15d780e"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_26.png",
+      "before": 2625081,
+      "after": 2523753,
+      "size": [
+        940,
+        1672
+      ],
+      "rgba_sha256": "ae12752426d6313cd5a23be7c1bd1fd94836158b9f6a54ead68c8c2e689789f3",
+      "before_sha256": "84721aa85f1868c6c440a8ba600d90aacfe6c737e904caf760799adb7d3786f7",
+      "after_sha256": "985ebb56b03f3e6831aa1b0ea3cadc1513aea737f2ba4089b8edb4b03d46b502"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_27.png",
+      "before": 2558454,
+      "after": 2474188,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "12614d7c071f17465c70b9406b1104d4a3b6792de16c81034d04706825668840",
+      "before_sha256": "27190e104e5dd068396948c41f342d8643a1be3f0eb275bae1d2c207c47c531d",
+      "after_sha256": "7db09b87f632e5ec27c1cc78fb5abe65b475e1faecf43d90b0fc20196a3bb534"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_28.png",
+      "before": 2628187,
+      "after": 2480735,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "1d5cdff2d7d33eab5a81be2da066aecfa27c09d2f8aa35ce4e50c5793336d669",
+      "before_sha256": "2de34721aa30bbf3a095ea7048d748efa59a1a0a6cb1e339161030a931163aec",
+      "after_sha256": "a57c7a9e5f42870100d0fa244f8d1aaddfd071bf13e429b08b10ca7a79b17c14"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_29.png",
+      "before": 2506150,
+      "after": 2356870,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "3d9ebe93e1f4f72694a1794eb5f0380fc20954f6d0ecaa538a001046960884b4",
+      "before_sha256": "1561086b0ecc48380a11290d38079502bce4bd12c4816d93bab108d13fa9cb33",
+      "after_sha256": "3e68e9d208bea51d169438e180222273065f418947fe8607097f07f443265b89"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_30.png",
+      "before": 2821550,
+      "after": 2669859,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "ced0c04f57d9f534aba1781f405b80f505750f479d0d189431b425418bd3bd8f",
+      "before_sha256": "6d33c8381d935feeb498a2453c31bc6fb665db36765127df59d6af64ff6f48fd",
+      "after_sha256": "e79cb92a7ef9a11a7bbc729d676100e5480fec52b26a8a54c538d1ce8d7a3276"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_31.png",
+      "before": 2467945,
+      "after": 2301359,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "178690abde36861ba1342e4ce566ff6c508a4e3841d2c036d2c648d3351a74b2",
+      "before_sha256": "d8958f59dd030abb96854f4f64129248300a3eff8d349ea496f2b0a408dfcf8e",
+      "after_sha256": "679de4c52e1a8c333ab2ebee92dd59fb66614a52e5255fbb5b5a6b58d71c2b62"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_32.png",
+      "before": 2355638,
+      "after": 2231386,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "680a19156453aba35f217425abdac3b33806acc595b730e81a2cdea37bd517fb",
+      "before_sha256": "fef7818842af00ea297dc6dc0c0ceb37760f7826f069f7e8a11198ac53afa146",
+      "after_sha256": "07b369a59e0de9b83e2e8e5432a749b4a64b37091798755ab140e595a8a19b17"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_33.png",
+      "before": 2419754,
+      "after": 2261639,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "1b9eae48307adf22579bdddbfa76203d803f4443d0e392bf896f040e4b2b92e0",
+      "before_sha256": "360f1d5bd54611660bfaa21b96851ec24e4a9b495021efe582d42f10ae321e5a",
+      "after_sha256": "3176120ba9b557bf208db23361f6539e124cb46768cf13cf84fe5f87bdf29243"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_34.png",
+      "before": 2254621,
+      "after": 2159100,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "d23a9f7ce66a0cf7eb9f7332d0260aae7c2596466108efe925cacb11119fcba1",
+      "before_sha256": "5ff2e77145563858cf3b7dbf8362788076e03ca053e927b9e69352e10574704b",
+      "after_sha256": "1f3b6fdd90b46c32cc7399bef064c2091478b36e0a5720e128603eb5dead3e49"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_35.png",
+      "before": 2071656,
+      "after": 1892670,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "29c3488921792d0ee08bb45aba004a4d514ec6a357d17a33c7372d5e5dd7ae4f",
+      "before_sha256": "93d6e241734fbfc4832ded27b17494aabb0ce9a4d22a1fb8a681d9ac7cfe89d3",
+      "after_sha256": "700cd0655ea826690ef6a4512c515c5385b9af808c79e18fca8698514c27f19c"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_36.png",
+      "before": 2148293,
+      "after": 2064977,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "7d8e8815ebc67e06a2b3175ad9749b68a28e0d382c5f2da1d69b7fbf1bdd3a99",
+      "before_sha256": "f836d9267abe178324079f76e4a3f7e44eafd17a2548318a1756823b8c1b7e85",
+      "after_sha256": "4ccbf18fe26dd97eedb1dea7c39a3a8c00f6a2b529f5dae355b6e56b323d8b3b"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_37.png",
+      "before": 2231283,
+      "after": 2026927,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "444e9d0a614908430ec9d6cc247ffe9957b84ad47443c9f5bb3ea0661d197080",
+      "before_sha256": "ca1c5567b74699483113c827a335a348855c353516cfc3b598e39c91e3947072",
+      "after_sha256": "be4504a0db8e6e4cd70139107c88ffad0069d761baf1149b33cf1e13c164cc24"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_38.png",
+      "before": 2135052,
+      "after": 1821563,
+      "size": [
+        948,
+        1660
+      ],
+      "rgba_sha256": "163a30a98b63cee98233b11ab323769bc743e3547c6c2e14e34164a0aee4c65b",
+      "before_sha256": "038ea9e7df838293eb3b8fb0b8c44fca8a6f0a047004dec13ee42f03948a1e0d",
+      "after_sha256": "b2d188f282d3cd6ac2d0f2aaf12392d31d8756da1f9412db90b99034970cec68"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_39.png",
+      "before": 1936206,
+      "after": 1740989,
+      "size": [
+        948,
+        1659
+      ],
+      "rgba_sha256": "316af574dc23864f9c90e31bdd70a8d3be91fe53267507b6a49694015ebb698c",
+      "before_sha256": "0a8e8f7ff21bb924d6ce412b6b4ab219832c58f07ba21e9e1894cfcc4cb37859",
+      "after_sha256": "c808eebe9ca279b61d2ffd40b8531d058ebd6a3d927b46c81273c85755d80d9e"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_4.png",
+      "before": 2267096,
+      "after": 2001565,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "217b2ff88ada2a4468e877ac543496a1aad4f508217235fea8424e3545041edd",
+      "before_sha256": "b746e829e3da615c1b7358f2dc44b50d677e2d1c3d32fd95afd91bfecd1f30d0",
+      "after_sha256": "cddd159ccfab9c834d7c29d9353c23b275044c4651824a4231723f4ea3ac3975"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_40.png",
+      "before": 2313251,
+      "after": 2008788,
+      "size": [
+        948,
+        1659
+      ],
+      "rgba_sha256": "9aa0f7c9f08799ec130e7d86537901d40e97d9997eb8c2bd733ab7b0b34736f2",
+      "before_sha256": "84033eb2624384707c9230f54b284a2a5c6eb7bf81285d8b33f0db5a61a5cdae",
+      "after_sha256": "390eb87e99a6305f9e4ab460fe39130be8b7761e037bb00eb0fbde8db80d5d4e"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_41.png",
+      "before": 2038489,
+      "after": 1838529,
+      "size": [
+        948,
+        1660
+      ],
+      "rgba_sha256": "a824b2406689ebc06ccc6403f117711c500efc9367b07c0ef3c434e01131b49e",
+      "before_sha256": "ce0fc30acddc3dd57dc0e2a03bd7d3e4372478835ab15279f97a45ffc9be440d",
+      "after_sha256": "20580e4e74b958a2a95453e1eba710d9afadf35ed2c1e50463f074ac620a52d8"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_42.png",
+      "before": 2128103,
+      "after": 1916418,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "bae5046c7e458b561b3e5c8c5c338a2b20e45a2a5f3608b622ecbee5607e2691",
+      "before_sha256": "4dce3b06b687fbaefeb800facaf2edb3ff96a7ca4c0a9e8f3470e1ac917eab5c",
+      "after_sha256": "1ed69468c9c0cf94ecfb95bb902b0dfd7ceecd795a63c95f3d9e63a0e6ea2e54"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_43.png",
+      "before": 2266343,
+      "after": 1908557,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "0580c135042721d5f3363c9ec6f6103cc5f3c8c7333f3c0339a6136005ba0caa",
+      "before_sha256": "67555ed6caf9fa9d4f184171205135698a0333d1ba44587973f7b17036e5863b",
+      "after_sha256": "22d45c56ee00d53a7c7cd7bed033eede671aaa9d9b68a29c6a46b1717c6f6308"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_44.png",
+      "before": 2277794,
+      "after": 1986259,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "b8fee5d36092b5d5c96e82d80d31636866bcebf51a69b6164b844fb44c4c3857",
+      "before_sha256": "1c4a6a85727d4d63dabb7d67d8a701efb48dbf7ad859e955197edca5f205eeb2",
+      "after_sha256": "d43e2a96db03c334c51138205664bd540373e1e98c011d4e940311d58a57a959"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_45.png",
+      "before": 2235972,
+      "after": 1913266,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "7ed7eb3f2c28610efdde4fabdf84d8ffbeed9f1daa36c249b392c08993a5ef64",
+      "before_sha256": "2f703bf4bda36c62ce2f5cb70f76d7c196d70595102957ede438a667873183d6",
+      "after_sha256": "463438e1a39cf795eb695a20b761bce4dd3b5e41754eb702c926d0eeaa1da771"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_46.png",
+      "before": 2118944,
+      "after": 1859115,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "42b51d915640ff9962091fd7fcf66309896cb04197955348cd9e34cce91f64e2",
+      "before_sha256": "bf0c6d6975768c7d3db231cf5f8bd1aab87580980913b581d9a3af29765dd1a8",
+      "after_sha256": "7d683c3d7ff07a7238c7d39d8c3b133cae52c899ca95a087da5959a27f3dcb65"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_47.png",
+      "before": 1895612,
+      "after": 1669804,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "3c4a249ff8e5517ff7ace09d95d210a3f592cd6fada7baff3ff006806997763d",
+      "before_sha256": "e01e3ebee532e5d88232be15fb16438d9d00e53ba604d3f527537332ef023caf",
+      "after_sha256": "ba1f4290cb02a70a968e58b78d7756f46749ca6110cdf630890152791c3496fb"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_48.png",
+      "before": 2342831,
+      "after": 1957210,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "cd95a246847dc2a70c516cf46f1fe3ea423f34c1320062be757869637101f540",
+      "before_sha256": "d3a439d50682828ab680b5f01db9026216a0b2cbd74f32acd4ea599ed0a72b7d",
+      "after_sha256": "328ce8646041d69af1813ef3012dd76517f35a5dda2c4dfc01c5dafff75661c7"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_49.png",
+      "before": 2099667,
+      "after": 1910424,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "b3c39c07785b6d7c7b608151990bceaa17f49e67ba1def25a2b27fef3c1a81cc",
+      "before_sha256": "926187f1f55ab90cc30dc7ed7ef00ef45bb0fb588ce4a9fe0a01aa5a67a5fdc2",
+      "after_sha256": "ab91af9e6b572043386a9dcc6c2edd3d7eeedb2fe86ae768b34d48496a376a7e"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_5.png",
+      "before": 2414783,
+      "after": 2093294,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "d02a10127ef2f5c2a1670dfa7adc77fe133213473ed220ae0cfed3e1f2dfd7f3",
+      "before_sha256": "7eb1b45a59eb4d17f91b5f3d5d74b3ec6716c49df4096f4aab4ab58cf00e35e9",
+      "after_sha256": "bdae73bf0dcaef56240766b02ca6575dc4e2255e743921ada95a61aee67eca33"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_6.png",
+      "before": 2285637,
+      "after": 2069616,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "c7a18dd07e7d4628904b217552654ca61ec8af6a2a1f568a6ec466260bd0a908",
+      "before_sha256": "fdaabcb9bc5f2be7cc2b360e0fd1192af07d9abcfdbc08f824355aacc10bde53",
+      "after_sha256": "f8898437e2e8be9eacf832e50960292b5ad41344ffe463ab53e6678868aa7e65"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_7.png",
+      "before": 2440015,
+      "after": 2057870,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "99ec1593f6a9dec84e9904eaf2bf088117f77bb9ba663e127db49f96eb00250e",
+      "before_sha256": "c15074f5d239372cdb51cdf58b91d2be4800549544896df40c72b333a11a8cad",
+      "after_sha256": "8fc58ea56d364ae0aac1db2f8bf16e7ec6e765016adcdaf29dfedae26ccc24c2"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_8.png",
+      "before": 2222856,
+      "after": 1845987,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "d3d02878de360a916feac8393ddf7de40e7b5b190e34615bdd2652b047841cc9",
+      "before_sha256": "b41c355136bd50cd8788aeb7ee9058bfbf62aefa366f402b178ef0b3e1120140",
+      "after_sha256": "57a40d01f6ef81de7fd8f7622ee2cb5407f447cab32d2d8532e6f3a9269b22fc"
+    },
+    {
+      "path": "Assets/Resources/ThemeBackgrounds/background_9.png",
+      "before": 2271811,
+      "after": 1910390,
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_sha256": "f89c477f9f24cd74adc46d4e95fcd69b78280268b62b412928113f21c1a0eec4",
+      "before_sha256": "6dfea6dd0e8be555b648837dc6adcb1bdd2262ab3c7806dc22bd344297776578",
+      "after_sha256": "1d26d01e98d69af5c6cee4bbd96c4f3c26783d54a60d93f768eefe2a9184ae7a"
+    },
+    {
+      "path": "Assets/Resources/UI/BoosterAtlas.png",
+      "before": 1547072,
+      "after": 1464434,
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "76210abe22c30901c4ba9fea358ef76a1aebcb7b7ebc948cdad1edf7fea949b3",
+      "before_sha256": "dfe3e05d6858d7855f87dcd66b0f14975c13beaffea7f46ecdd097a739a88b51",
+      "after_sha256": "a9da8015cc43b548e65117368d0cc0b97d980831a8d962889b4c4e26921acd86"
+    },
+    {
+      "path": "Assets/WebGLTemplates/MirraGamesTemplate/gameIcon.png",
+      "before": 4730,
+      "after": 4312,
+      "size": [
+        256,
+        256
+      ],
+      "rgba_sha256": "2b06d775991095b14c1f1a44771a98d8227731538b5a4ae0a95a2eefea0471b1",
+      "before_sha256": "83513581234c0fc7d4795b8f76362f4c5d21af33ce45623fd2cc9f626409a8fa",
+      "after_sha256": "83a1338d0993f4e3a30def20d607dfd07797f6caee828e2f05889eabe77f1ea9"
+    },
+    {
+      "path": "Assets/WebGLTemplates/MirraGamesTemplate-1.0.3/TemplateData/icons/sand-icon-192.png",
+      "before": 75984,
+      "after": 58934,
+      "size": [
+        192,
+        192
+      ],
+      "rgba_sha256": "9991bc05ecc0194bf5f7f64f77b4dc43d005cd6f33a70188415b07f3a82fdf49",
+      "before_sha256": "4724d4782689b3e6d55995fdfdfc79a46f696a041b2627e547e3565b06dbf5da",
+      "after_sha256": "e8de55d32a213abfd996cdbd3411be8ef2d3b158206ec4c1abe34164131881ca"
+    },
+    {
+      "path": "Assets/WebGLTemplates/MirraGamesTemplate-1.0.3/TemplateData/icons/sand-icon-32.png",
+      "before": 3082,
+      "after": 2452,
+      "size": [
+        32,
+        32
+      ],
+      "rgba_sha256": "53f7af52a3978ac2b5d818a3c7867670675594a8e2b1012e8fdebc5fc839d151",
+      "before_sha256": "005982a239eee7083835857cf4aa9f9a94e83d9339640fe87218c20e177b48fa",
+      "after_sha256": "137f2950e40349e8f151bf3a7d182258f47f028a56db3792e5794be5197da508"
+    },
+    {
+      "path": "Assets/WebGLTemplates/MirraGamesTemplate-1.0.3/TemplateData/icons/sand-icon-512.png",
+      "before": 522051,
+      "after": 388081,
+      "size": [
+        512,
+        512
+      ],
+      "rgba_sha256": "73d3c56c09ae9000d2df2c3a36c458915a69a269a8d8447fe271ab2d76727fb4",
+      "before_sha256": "e085a1ba69aa28760339170087145f64ceca6d0443e84f48837917627d9c577b",
+      "after_sha256": "47f179356bc811cb0e6d7e856aea8de042e623f84508c8429a98882c65a0f4af"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/level-001-forest-16x9.png",
+      "before": 3836861,
+      "after": 3165075,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "ba351365e53f8d369efd7842f90c3e2e3e6754c1724a1c3ff55961b5ae01dc69",
+      "before_sha256": "7b7e7cc9f62f389b0653eeccd67573c6bd8cbcf559bac4c0c1b9d2f36ab65b33",
+      "after_sha256": "61336db38e574ef2d70d79558b2cf9e72c36bd685718d52686759b840adf6bc4"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/level-001-forest-9x16.png",
+      "before": 3921125,
+      "after": 3478792,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "33d5d488124fb234f3d5e92fc61c80dc4f67454aaa5ecbeffcdd1ee4df5e6be3",
+      "before_sha256": "26f4f7945f01fe27ddc7d75ae024c1601f6a541b979ecd16bf9dc0f29a019efc",
+      "after_sha256": "a7b8b2e328ded98a9d42d7504dd7a943dea095f2dcd73e78deb0240eba00ab5f"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/level-005-blue-calm-16x9.png",
+      "before": 3156210,
+      "after": 2418507,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "0afaa853f4a198c537224dc1338fcfcaed833d785edab8ee3195a974ff8c9365",
+      "before_sha256": "eef161a1df7e0ee725d03f7554f4241301d241ca8ccec561844f97fdd4875517",
+      "after_sha256": "cc2aea32e139deb9af4539683d1f896899af696c875b3c2b6ee7e5341ebb8350"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/level-005-blue-calm-9x16.png",
+      "before": 2944685,
+      "after": 2469942,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "ec4e1cac15e076d0d3094e156f6dd4e80b9f2febf169ef2ce43878b359dee59e",
+      "before_sha256": "23b1521e0c6674c2c1129f8aa0aaf692dc40b905e706b88084dbe95738f94e13",
+      "after_sha256": "6a6ab6c20619d35d0aa757f1a07247d4bd10d319d551010ebdc47950d281ae60"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/level-007-tropical-16x9.png",
+      "before": 3769175,
+      "after": 3078039,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "445e4e0fbedf185297280fa28ce672a95666a8b072f52a4370e916f2578bec96",
+      "before_sha256": "1ab49dc2311d2fc7fe3d9493b34fd0ded559dd11b9b6f5b2447163470b1197f0",
+      "after_sha256": "0bd80399dce7051709cec698b9cb4986ff46562c00677ab2187fce371a25aec3"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/level-007-tropical-9x16.png",
+      "before": 3781291,
+      "after": 3324917,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "4c0c06112e71b8f1abafe4dc53c5f0d9d7b10fad99ca1797d62835dcdc4d42f1",
+      "before_sha256": "51520fcc3bd531e2ac7c894d23543425f1c10e596ca6d0b222a304c3ccb71752",
+      "after_sha256": "0dbdda0f1884577305f118cc54940cacedbbd2b185e857b4ac4cb59e76a6d062"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/level-009-lake-16x9.png",
+      "before": 3618579,
+      "after": 2879976,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "e6cdd0141a580f6193ba58cf29bb1ffb80a06dabfd243cfb89b1bed09e4085d6",
+      "before_sha256": "af62244e5ff861e533193efa663b988e461ec973807c2bae0d3c89c502b2c9a6",
+      "after_sha256": "470754c1d54dcab38fb5967b01c9fa321921334a390edec075de9989e3a6add6"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/level-009-lake-9x16.png",
+      "before": 3699769,
+      "after": 3198676,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "60334091fdab56860ce3ca1c80920fe93de25a7292bb130e2cd9261524c599a1",
+      "before_sha256": "d11a21a082acc84865d4be6f8a4162a2128a923b4fdcfc2a7bf6c14029e53391",
+      "after_sha256": "c21125de09a73ac37f3d6ccb10cc46a22cff10cf2631edee7a6d3069909ff659"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/level-038-autumn-16x9.png",
+      "before": 3469873,
+      "after": 2726971,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "b062d1b79248f906b1c5a6a84f8ee4c1b77c9ffc3610ab6ed36830ef41718319",
+      "before_sha256": "d800d3c0b43a51ab200fe39f924a9456f75c9fb065866ce227e8d5271405f7c3",
+      "after_sha256": "7e1d77fc3f1730f75133c2b0cca441b9311e2b8c0f4b0aa4e3795d8c1931e201"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/level-038-autumn-9x16.png",
+      "before": 3780413,
+      "after": 3254887,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "1c3a0d0aebf80994ecd2a4b08b687ed4a04d9de7d3b6ca7299731651dcd5e837",
+      "before_sha256": "fbf73674fbb7d40d843315c409a4c305bd3e9847e98d19862a81444ea8325708",
+      "after_sha256": "0f1ec690d373e54810b7c60353b36a3c4e3347cf190cf750ee2d4999a3399af3"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/winter-001-snow-forest-16x9.png",
+      "before": 3874480,
+      "after": 3196987,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "eaf757207ddc88d5289b929c08cb9a1025096eaa79b9620dea2a4d0da31669ee",
+      "before_sha256": "3c1c562d4b3b73a9f6ab100cd5ab71fa2d65f4fee3c72071e4188b0e9c75b2f3",
+      "after_sha256": "2df87da3607b444f6d5ade7e06602dca6b46142f8847f07f0fd1c26b8b293219"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/EN/winter-001-snow-forest-9x16.png",
+      "before": 3954765,
+      "after": 3531976,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "6e3a38b1aafbf504f172f45ed9458eb2bbadba95c534481650fa11813940e762",
+      "before_sha256": "2df16ba51fede43b88e45b235b4641964f929437a95306f1f6ed2a55fce47f6f",
+      "after_sha256": "e3c759a4de1c69a327cec1b7b2878ee895dfebc2271b88379519a6300cf96e05"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/level-001-forest-16x9.png",
+      "before": 3839965,
+      "after": 3168589,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "56c023c82fc1cf3bccd2680c32053e42b46060330d7082ef5baf12ce42aaa555",
+      "before_sha256": "2d55890862dbc7d356df93dbd052216a97818dcc21a3b76ee8acbcb527410d81",
+      "after_sha256": "c895071100d07d05d8b2d4c9e68bc70a689b6245b8820f0440c329b3f5756a5c"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/level-001-forest-9x16.png",
+      "before": 3925453,
+      "after": 3483570,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "6dbb1a3a3de38fbb37515cfdb44703dc9222ee8712ee5f000273067495ecf12d",
+      "before_sha256": "5eba5fb330b9f9067ae80996a0e299006fbcc07f7db125b5f9478a95da4163d7",
+      "after_sha256": "acfdb5a551b55cb9c83ba6c0af5d0298271c00e2873024248f1b65f185f8d687"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/level-005-blue-calm-16x9.png",
+      "before": 3158374,
+      "after": 2420998,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "9afc8e638d9a374694accab81f6733c288d5a6c7fa54422b6d28a0cfb5e49a49",
+      "before_sha256": "6cef18076cc60d53c7bea9214c1d3b6d4abd24d4262c99bce152340803606c0d",
+      "after_sha256": "584ba42daed50c8dd149ad974fcc953501158011be16ec3ad102bcb34a098a2c"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/level-005-blue-calm-9x16.png",
+      "before": 2945343,
+      "after": 2471771,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "79f47504e3de7ecabdec115f338c46ab8c589158917badcc43aa4d4eb48ea03b",
+      "before_sha256": "cd96a2d4ef1cb7aae271cec5196f1838235299ae58ba92f1c03e92b4431b9467",
+      "after_sha256": "0664b1d2f7f46d8f900adf0bc6c307bf34c4960eceb1c0e7e9d14d608c62f0af"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/level-007-tropical-16x9.png",
+      "before": 3773747,
+      "after": 3082655,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "c04c7769a2cf90ff12a03314808383b8d4d4f8e865099cb2ebdc5a4f933ff519",
+      "before_sha256": "0825d02c0f659d94d97b5becab6f8313756fcb1f27c512d43fec3b914fcc11f5",
+      "after_sha256": "c845b0ec4b87db0d1c1dc7a8a7131e8f70b3a41e86c4b2df330827bc62777802"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/level-007-tropical-9x16.png",
+      "before": 3790415,
+      "after": 3333739,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "2df6a29bae753f7ee349b286d1d8a944f17427c1ddee40df9e2fc7f4da29ba4e",
+      "before_sha256": "3a785d28d00a2f009e13fb37eac612bd3eb0d2f95ef78298d0db0e466fbf76d1",
+      "after_sha256": "cb1b8dfde582ec9b7e54cd789cb20056e38d08a639086dacc1d7cd01c84bd08d"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/level-009-lake-16x9.png",
+      "before": 3620203,
+      "after": 2882612,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "e4b390631b8a156d98b074309b11c75e54f2497f203ddd177bde1b5cd326c599",
+      "before_sha256": "c4688389d5ed417321d1106f5d1dd0d76a05b505e4a7a9e11af151122a65e6b0",
+      "after_sha256": "f91b1c1d222170ae88bc1df86da2e7e1eb37fb1e69bcc8603d306f85ef53f4bf"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/level-009-lake-9x16.png",
+      "before": 3699867,
+      "after": 3199782,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "8497caed8119daea1576a1cff42b5370e7d19c748081f87b87bbfb29e2c2ab41",
+      "before_sha256": "f4edd457bfd4b30af1bf54e4d97a96b2e9453e633f632aca7d589976b900bb81",
+      "after_sha256": "0a33cdef275b22d1a371956189064cd8ea8b2d183239f724c1a1954be2334d4b"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/level-038-autumn-16x9.png",
+      "before": 3471705,
+      "after": 2729440,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "41c509fa4f5c8958f3e18ee06a032d1b7db8729c888946f042ea27bc240328c9",
+      "before_sha256": "a6a3f3b5fb14130a75fcd1260316805a9cd11514c00a9a4b2971bbf200022034",
+      "after_sha256": "4aaa885d87b61e4d7578e900de8f0d48c12923fff11297f8455d5d2760e0da7f"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/level-038-autumn-9x16.png",
+      "before": 3780514,
+      "after": 3255785,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "27242d4d1c1c59e0e139a22b542edbca0096ab67611bab6d007ecf5dfea7db8d",
+      "before_sha256": "f9d30e8824dc5cdd264b831d7188fae492d6477f7c8630c3d3dc4b4fca1500f8",
+      "after_sha256": "7a555395a3b4c8126856b52566880dc9490cb2218ebb163ffdd7e687e479ba5e"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/winter-001-snow-forest-16x9.png",
+      "before": 3876171,
+      "after": 3199585,
+      "size": [
+        2560,
+        1440
+      ],
+      "rgba_sha256": "16123609b2ecb221d284477c4425e263e973ff49dc7338355310ed85d8274a51",
+      "before_sha256": "a3a23c2bd546dcbd581d216d18b7041b4cee6d8d8260545bff9364d63ac1411a",
+      "after_sha256": "4104b77cc00bcdd92d1a0e53523dd06557b468c3ab3fc4bde30c657bb2f5c819"
+    },
+    {
+      "path": "Marketing_Originals/Screenshots/RU/winter-001-snow-forest-9x16.png",
+      "before": 3955126,
+      "after": 3533015,
+      "size": [
+        1440,
+        2560
+      ],
+      "rgba_sha256": "a4bc62fa3a421ed3639939c9974ba050394f293e18429b6d9c5e4b03f411cf2f",
+      "before_sha256": "9579ed8122543d70a627b4d96d880a285950c663b60caf701ba0e31441068363",
+      "after_sha256": "8772e7c331af875464d9df0a5ea554a8356edf6f51af1e7f6eba2a174015cf94"
+    }
+  ],
+  "unity_verification": {
+    "status": "PASS",
+    "backgrounds": 46,
+    "source_aspects_preserved": true,
+    "minimum_psnr_db": 30.199,
+    "estimated_gpu_bytes_before": 275330624,
+    "estimated_gpu_bytes_after": 48234496,
+    "source_pngs_lossless": true,
+    "textures": [
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_4.png",
+        "psnr_db": 40.485,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_5.png",
+        "psnr_db": 40.363,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_6.png",
+        "psnr_db": 40.427,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_7.png",
+        "psnr_db": 39.618,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_8.png",
+        "psnr_db": 42.087,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_9.png",
+        "psnr_db": 41.688,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_10.png",
+        "psnr_db": 40.868,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_11.png",
+        "psnr_db": 40.263,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_12.png",
+        "psnr_db": 31.134,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_13.png",
+        "psnr_db": 30.199,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_14.png",
+        "psnr_db": 31.248,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_15.png",
+        "psnr_db": 31.3,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_16.png",
+        "psnr_db": 33.722,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_17.png",
+        "psnr_db": 33.928,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_18.png",
+        "psnr_db": 33.334,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_19.png",
+        "psnr_db": 34.337,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_20.png",
+        "psnr_db": 31.647,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_21.png",
+        "psnr_db": 31.694,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_22.png",
+        "psnr_db": 33.164,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_23.png",
+        "psnr_db": 31.79,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_24.png",
+        "psnr_db": 30.271,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_25.png",
+        "psnr_db": 30.942,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_26.png",
+        "psnr_db": 32.572,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_27.png",
+        "psnr_db": 32.24,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_28.png",
+        "psnr_db": 30.571,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_29.png",
+        "psnr_db": 31.531,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_30.png",
+        "psnr_db": 30.744,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_31.png",
+        "psnr_db": 34.414,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_32.png",
+        "psnr_db": 35.344,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_33.png",
+        "psnr_db": 35.812,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_34.png",
+        "psnr_db": 36.314,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_35.png",
+        "psnr_db": 40.101,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_36.png",
+        "psnr_db": 38.217,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_37.png",
+        "psnr_db": 37.136,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_38.png",
+        "psnr_db": 42.013,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_39.png",
+        "psnr_db": 42.418,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_40.png",
+        "psnr_db": 41.358,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_41.png",
+        "psnr_db": 42.121,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_42.png",
+        "psnr_db": 41.994,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_43.png",
+        "psnr_db": 41.794,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_44.png",
+        "psnr_db": 41.06,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_45.png",
+        "psnr_db": 41.303,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_46.png",
+        "psnr_db": 42.275,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_47.png",
+        "psnr_db": 43.847,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_48.png",
+        "psnr_db": 41.525,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      },
+      {
+        "path": "Assets/Resources/ThemeBackgrounds/background_49.png",
+        "psnr_db": 41.796,
+        "format": "DXT1Crunched",
+        "source_aspect_preserved": true
+      }
+    ]
+  },
+  "main_project_importer_settings_verified": true
+}

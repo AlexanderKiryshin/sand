@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4282292657
+    rgba: 4291148963
   - serializedVersion: 2
-    rgba: 4281230449
+    rgba: 4282029719
   - serializedVersion: 2
-    rgba: 4285288970
+    rgba: 4279241223
   - serializedVersion: 2
-    rgba: 4279701259
+    rgba: 4280095758
+  - serializedVersion: 2
+    rgba: 4281674013
+  - serializedVersion: 2
+    rgba: 4286151030
   - serializedVersion: 2
     rgba: 4280818965
   - serializedVersion: 2
-    rgba: 4285690994
+    rgba: 4283192402
   - serializedVersion: 2
-    rgba: 4283254596
+    rgba: 4282398768
   - serializedVersion: 2
-    rgba: 4280694863
+    rgba: 4294031730
   - serializedVersion: 2
-    rgba: 4291545538
+    rgba: 4288052246
   - serializedVersion: 2
-    rgba: 4292850041
-  - serializedVersion: 2
-    rgba: 4288051990
-  - serializedVersion: 2
-    rgba: 4281937187
-  encodedCells: S1:4:4096:15810F1E:VVXPjxtFFv4bPFrIXMfSwEi7txaHjeeCUjVORF2Ael0a7bsE3N2B9WWRu5tFfZkREpb2uCSSh1wIAoTDzSdiLvHUczHS+6P42h5CeLLsdn1V3/ver2q9M9ycPF9+uvzTfrj9tcZa/TCd3J89+2z47St4OHy2f/BGSV34/HDwsHu1eDX87fj2kXqc0/HFwbtde1jtFz9Nmzh4hVutZXI5HyhvjpY/Ldvl8guuPZW9nLfUOOJ6HB9tLjZfHQyHD99uHz1kCkJ+/mz57O84TUTBJro4ennncnPw9sXwmCRY6wf/GB4MxIpwzXVtHqUjVj5++fnmUEQt1YmO6IAMRfah9q6lmjq1gc8cW+FAUvHxQKOLNFbfxpYcS0c8IwIuQl1642IIfZFTPmtToi5wIk5BmIREquOjgw0bVmqaSZWSTQKprCWTal3XenDwgYh3UFfZJlXEwUm0UmKPUjpv2qP/iETXcZeKNm98oMCxkBvLAgZ+6/KIo/NIgGumeep4DDgy3Sh7wFxdDlVsVLVd1YakGjSIsljoV8SSbw4pOnFOpYR8Vacual5b6YvG+mbY2JlJTrhqu2qmoioRwZAn+GSezkVmyBXchWku2mFRlKob7nGRN14S+BVctupa7Wr1FIu6PX+KorHGaScuorqoz6zdRm3rgqiu0/lYKSKDiALx9aSm3eFcw6ukc0Z+xXnyWz4Bk6hvJlsDHHtTHW409PrQIXzx0jES4Ldlstyf15y0RW4UGaY4eF+t9I9V07mUGLrE1/8lv1v0fztBslTHzldlcJoUhWM/vQneG1Ljt/jrwE6+breuNSJ2EljPUGbb8yu8Qbywl+nWoKWJHMI6o8fGiImkgTrrTIwqBVLPyDT6gwxHMhKjl0BqrYlq6xSM9Qgp788nQ9ahhRNORGMwIbOwZUdIJEX/5AzZAymksS1Mb0XKt8FEQdwkijbsvVvL6qwRa20xaSQIuB8HFcyFD8aTg8M2zLYIuquqzpRNQuJt7DrrTZ8B8o6pRDZlMp2FaCZNwELEkNHYgxjJA/k0R04Nn+FAh9Ao9kGOCXMnYiAwoUW9uBZN1bQgFb1B+mDEcYYijJONNrraWBTPojeVjTPYSBKhUazJtS4CJp7awqN1Q24x0f1cCyWntmjZ0FmBrpVUG9cuznHoHPcaqozby08nBuNSkvH10yeLB4tFjkKdW7QHNWbmjDbopnbq+tCNNV9Px0iDt2Q9dWbiEIMpdFI23heLxYMHk20IqCEC9IXYRg2Z2ezMdijm49SWzbRdfMJxCv2oy6wem6QtApq2rb1TNuWTxd7Yem9tzIuS/diPY1EBucLVubz6Py7YK3hFC2IaEIapAlVVfIrL89YWV9RfNdgCHmfq8sz4cvT9TXY3++7ud8tvFlcZ0Tu5sRXbmTWpvJeN1qv1+sUatso+zFaj9b9G1nQ5uZzMO1lvq9V6Z7tN+H99716Ly4WsOV1lqyw7Xa1HWB590zP1m/9dedQLcWbrbAdl/dfqRbZaPwfFJx9tyWLCTTzN9g72m17s3ZQQTZMy7/mzbMe5vlXQa7y+vuasKLe4QO2v/dLzPbBaw/8oO935+rixaHTz6tjOfln3Qq5BeWq8MdGHHh+9jiP89Wik7mtv7I8t9Xi2I9kz3e7NrguoE7a781kP98g/oRZP17hDrvkUzez/8P/iNRWQm63vZqfYJfP/vTefz818b1/2X4eHty/I5fc/L+d/sZMdfjn482U9n9/H537/vbP+dzD49jXc7PDLk/3ZPf7Hy3q5/B0=
+    rgba: 4285355018
+  encodedCells: S1:4:4096:CBCE15F3:jVQ9cyO3Gf4Na2ecu+gq2uejymSXt1IbAgI5k0ZeQCBm1MQWl9ySt4Bewk5F8wPrcSNxlyBmrrFn7Lm5ToXTkM0VKjzcHxWQ1CXpkpdf4Pvged6vBYSZuO9/DZo/vf9oP3zytPgWMSXE/8C1aJ4WH4z55Ocn758mzclx9Z0UmFbqy88bZ6bZeMJ/MGtjjkuMFCSAC9O8d+7sufe887gycvrLAVdIS1qQV6bZZI1Jw/z0bv3u/bdKA5RNr2Y4YYo6eTPmzaYzjdOvzbDRUOBfrNH8uXmnABSaQvGpbDQmZvKX09Ov718pYD7t+5deUIPOeQEVkm/m3RUnzYlZx8o6BNBzc9voIY3Uorso0VjHPadgvOxhRiok4Krnpk2LcATj7iArgeNepZRyAhSZAVNrN2mcCsK5mLmFcxaU8MkqlwPmilWwXk+MYnFVseI2y6puKRmnoEoKjFUzAeuX5g2HsKKqGA+dKpB2GiS3N4RxZjkUk8Y9p6hVqmI+nMedhbZdoKosEYO+35KaSY9Kz1LDtbiCzOqqK2l3OhMYMQcqKxxnOGIlzrLMJKwSoiuZ8pUo3x2m3OQVp13Klqw/NJqyirBzCreOLH0BPsfirzZOWpotlRsUKx+YMe/n6QUwLH2li6aSiVAsgYUxHSosA8kcZneKoFJx/qoxJtZzEpjOTY85xypZDex69JyB04KW4y/4shKcq57JrpZi3VuActaOugz7bhNF7iFhQnH8TWpsUjnRBaVtCcLPhzkJvKo+p0wRPjXDKBfCV+AbN7tjvdhCl0sQ5qsWw4zdDOdlqT2NVJwvBDsYl+Sl778CzhZpRkvlh0+0lvZS6ggzzmk0eQPaF0LtPGO+NKZwpiW/oygPFQP6xUxiwlikYJ1y6RLGSdxVcGcVxEwrPyIM1yxOlKLpeXIuJcdQEn6n/hBGLEw4HwDwVhhiNS3WSCS56t5y7GSXErSklNz4R4rEYcjQdDpGvs8EqI8zEgiirg+WSM6Y5yfYFlbypQVbMb661FyHiWQk8eegg1AYvh5may6TGfRB8eLSlxxR32DqZx7muB3dmtdrOcgraZGXuKvgIgJCsGUzkwuFuB3eOpSuGNWa0OoSy2XOgSiJe2K64gyNb4cXCK2G6MzjxBGpQ4IkRoIhWaaWIRh0kFyYqi0pSH9mnyFJJKH+oJ2nupcQd3PWlrDQ/lRSdinLmfTx5RJrC+nNRYhn0ywHmfWR9Ioj0g69PtAE+4G3OlGE1jrLEehziThBo6itL0DKHGHnaCuec9RXhvjHIQerwucoLuNRjKLEh0A9JV93JM6GJAId/DH4cxBcdAHyGKI2tudEY0jPdYusfcYu5lX2WTpSgBABkoNGJW8nZejOUtORSJAOxG07ckAseA3oRf1xxHGYdsphKpGdu2fBp8Fo3Fuea8hzS+S4igR2tj0w5Rj47WoFdH5XjJKSxHkbpetBlqXT+Q1amLX75lkQBH/fBMHD5iTIwfcgXros9dfNUpL0zAYPoyD4EDwEe6NAuI4SvT/reHiBpwP9zz30Pjga9RenDvOxipEKsyK8eX75eKl+u3ys6/rFdrOpH3ktwtzoViTD3+u9ea+3nf9853H/Pw6/v/BXgQwPcM1q7/bow2Fbva3rt2mLK032+J5Q7/x7t3nY1keZnZExIxCH+731PvJ2t9vH3m5ONpuTIj1L4uFrP4ij/na3/z5Svf4/Fv1WnvZRO07q7daTdofoT/G3h4T+1p+DjsMHz/Gs7Z62OfH4bltf78V+XOGuiFqb/9h2L7Ld79zsrh3Jo3aEiv/C673+7qkVwtfW+b1/tV+/+Mj/dwP2GWjLrxgciNsnhZPDerfd1rvrx5q99U/TEdh9OP4+fNzp23L9dn9V/X/4i6P/ZPcE73y/Hw+X3b8A
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000fffefffe0000000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000000300020000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: journeys
   campaignSeed: 14983566
   displayTitle: White Yacht in a Black Rock Cove
-  beltCapacity: 3
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
-  sectionBuckets: 0
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 0
-  alternatingCrates: 1
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
   swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: 85ce9a3d086cd4749ac52cb89a8ca72b,
     type: 2}
   usesTiles: 0

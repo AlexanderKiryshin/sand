@@ -16,52 +16,70 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4282397485
+    rgba: 4282292426
   - serializedVersion: 2
-    rgba: 4291993480
+    rgba: 4285613828
   - serializedVersion: 2
-    rgba: 4294372840
+    rgba: 4283379721
   - serializedVersion: 2
-    rgba: 4288199669
+    rgba: 4288903720
   - serializedVersion: 2
-    rgba: 4293776066
+    rgba: 4286479473
   - serializedVersion: 2
-    rgba: 4280687643
+    rgba: 4280818446
   - serializedVersion: 2
-    rgba: 4280823178
+    rgba: 4280242805
   - serializedVersion: 2
-    rgba: 4288377175
+    rgba: 4292007364
   - serializedVersion: 2
-    rgba: 4291267947
+    rgba: 4291800932
   - serializedVersion: 2
-    rgba: 4284699211
-  - serializedVersion: 2
-    rgba: 4293114015
-  - serializedVersion: 2
-    rgba: 4290554306
-  encodedCells: S1:4:4096:29A429C8:ZVXPb9tGFv4bRoYHMpOLx5CrMX0SS9Q197KtgACFLhY7gWXmMjIy1Y9c4g0qxMlFEqSl7FxMr1yNmQtjhHXpXkyDqqTxZR0l3sT8ozqUbbTAPoIcgt9833vz5r3hJDS6C+x4nMWVtQz/f6NHuPNQPO3OK8QREXf/BmFHPmq+j4u2DoKmuLDDC53jv6Ocr9Dl6jBVccuUPRum3qxoCHEHYXklKEK+AimYp++UYRc867YfT/qcOxg5CEk+lpMtulI+xqeId7MhODuj/0lYiEs6XpUvHo5EZmBnwj6nq2nlrXMLyxFfJXgz7GEDMayWpNq7xZkoR/HMN0KrMaTVrnO4wJobaBaRdC7dS+9Xq3F8FRdsxrrIZIytHVrabFloZt8V0HfTwjRe8SCDZMDC8/oyGrvjWzRevUyGaRwzuvzboshWlTQFIJdFOZkAdIVunUuDisMhGKUVSpnMhI9yoaEtaXdoHNf84wyk3b1SrSGNQQDqeygsfrqRvuNCYSo/EF4FN82PjCUzGj8xUKYgLsRxfpqfxsA5GDj8FDHPSbHaz41b+3QrHufzIqz6ExWhdA+HDYR2GE1kZuA0LuQLKKRwKDLI6UWtRgbtBJcqHSL16p5vL7pHeDMTZnYk7bq4o4To+VdCXMX5BI2nNVaFR2DAi6/uXP/xj5+/ETdxIVGXK4Aytb5XZDkVlRv0bs6vkl3Iz6yernapB+sbxUxZxheG9n18t7iKvWIL+PN7w0y9IRK72b2WsefvDLDFMMThOwjWXzXEzU18Eyd44R53cWVihDk3NcmWG0/wRym8e52P7+H8mNNFcYCNdyMZH8ef48v49aM759/L21bBweL20dg0je1GSVbV5/j1PVuTNzvwQLPi+4coNBqcl/ocv74u/MX3YFfIrV+eP6hsabyfNNjLX+K//Pf8417KAPQM0MnWoYtlf738BcXTjj2DY0yzfMF7AnxvVIfGrIAT/I2d/V8Cxw+Ao2oPuy0PD3d/+ie/1XdQ2+7Y8VSWkNK84IaumQ73ax0n5E7o7HwlQtux7WySZW/AF1RL5A7xwi50sMsF2rkWxLb3L+3PMUKgx5kCmo/fjvnLX0M1bPWyr67FfrZl26dJ/x0wQJUgoMccv/y3bCs72/rXdc8Z2Ju2vSLxVq8qZzAs27FygFpuB9vpgGP3ULftOIuQ5abgoxdAcIvQ89DmJdLfZrgkiK6vvenkIstIvcjnn3MuBBuGEYmiaBsg0RcaIXIz0WC88OLr75/rGi+BrYzluBdqp1Q0k06+yseIq3yh8Si/yxf7ZQh4cmb1ABjk9NYgi/Or+29b+hwIlF1ByHsGXMtSZbOBo9K3Zm/0Ib+KOMggpJlmuzs2lvRM3+G6XYFHJg0SJdseKLByareDdZZdroNJeW88CIWueIxZHwv5S8TFA8o8EAQKVLYgqMCiuX/+QGFN/xhzPY7CSCYnkAaHsMaS7/ve+dYeBelP8752Wexbc9AHAEBtxKAHIWAbHlkPvK0aAN65bmnIkucTpPOlp0maFc9r7mnk4aKiAA/6+1FEx3XJ/oH587LIZCTn6RFZSt8sBZ029dei/dRIkdH9wLwVpAEoWVmiX6gkUjb1yHLsgW4CiXvadtfXTwziAWKoRLd0Egli2nggF1sLvOBrjZjEtMy0pGJCiBVNwISYfH+ARNEMgh9JSE580+8TITFybqkQ+oaZcZEqIu3kvz/q7cWnkCmZjLDPNhS23vaUx3OeGbYGTs7SgsmFrs/VFE/wsWV1GIOWdbIJwLoBj34bWJr3Rc1Yek0KCF4eohGgAzwmbUHGlMLlYjH4/Rl19W1I6US4YyLOLZHUwikSQJ7/V1+WDE1jvQ7zPOYarj0i1mZnLMpgL6SsG1LwRI/0D9Rga3Mb771z9CXqEVPTKQj2IOj2lk9Q0TQ0RY1MzZS7MQ9WLI28l9JUFkKNHp8Nvr1AuRMqS4lola7PvphaG8IKoyAUFdqsMEzOtjQzlTVMGSWswaIWUvlHYQyFD+pUDnW2YWqMWEIGyvx1nbAoBQAF7rIg8oxtVVk20ifW0ogkAk2i/f7hdBsA9ic=
+    rgba: 4284961333
+  encodedCells: S1:4:4096:721FFCB1:hZVNV+JIFIZ/Q3S647izklbJjhQUx+wmBLrDDiHisGsCRZsdMlAOO2l00N1IuqXcCSRA/cq5lfjRu6kDnEOe+/lW3QomWEOIO5yjdJkYaxhT38c6JvAHY3hoO9xBbwZFCx9qJskBo/AFfzTjbxh8kGb6/iHSMaWpP3oLD0s+wj4+tJHp09QdhVz/1aBoQhE/rXf/h/D4naMHVyZ2rCQ9RiZ6mIdvEOIVTygh2FmlHMvw9puBjBe2FxRzF0OXCXf0ovsePmMiw8I+X+HgtT+eg/4XWpo9555ggmeuEMFL/cVMmEFo56U6Y7bwKcG/cMQR8MuDtAl/YdGA+nVh0hf+kHGg/x0l6dUGYWNriZ9W/iu33cQ/Pkq5j+/FkoSiRV55JiPzH6T5V/5CCIsWBSGv+p0giL//0p+tLUUk/Nnm8OSVo9ZFA/WO3jXcCqpFZ5afcC1QW4esr6hvm2SvRG4W2WbK1bWio+5HhZG3U7AyzFkzMtP6WKzA6sHHeN3BlcAzZZXqs/iqKOdgMIXvOA0fimiyrFqyfoQUVQXyQbkGo+qn1L0pajUlOQDKrpJEp8r179WmkmSwtyUHe70snK+lMmTSXRmqfygb80UDx/Ww2sPAL7uMMbXBFKb0qmO+fan/zrtRG8C11tEQDPwr+Bl8HuuO1MhEJj+/UdcYjoHfpcRk5BL4qDD94hYS/bBTz+/2duGY40D6m5RhxgrcDZP6TXRXz+/19gnwleSa9GfrymRe0pMz+j30VaXXlfoOPcasEeDGWoTTuWuDvzaeWwOFdYnU34mkMzShbNA/c+44yCxOCrjW8ynMkomcIOGst8fYv5y7YDC+z0qODak/XkrvKosho80Tg0k1q409ZLSSAcJDFQzWk9/YEYwSJHDQKPt9x6N6QjVMBWXD5+neuYVsyUm8KNWVDjVzCR/DIFMaQ+1zkJ7zC8M/q/pKlZJkwDWYLRiF5WTOj+Xe86eL4FbB1Q6lyYDaOsKauY5voDQdQfYTPxAfss90CQYE+ocyNFBF1g6hnAluUtx/fiZ+EsB25DXmYHkLSXGcdgfGc//6OU4SfPr8BXhRckf2rtsObXXjU+Uaaj4MSOW0LkXOgVC25PWKXqERLV53aEzJmhinl7IFU3KorT6ISu0h3UbQPqFRZ2NYWXA30Cv3vEqL+lvv2jvDKLjURBPCj6NkUIB7f3nFHI2Ed+5tMNqM0BIQHrGs5BCgObCaM+qE0+l59GO7HWl9KXFflf6a7eiGJ2JqTadedDufn3pNa4RreeCyPqig1GxCWfyOdWJ/er43WFr0e5/l+wynN53j3ccxCb950PxTg7GVcVQbqqTfSPYZ2bbIxbExv2BTMGh0GyIq9Aeq1S8sPeCmDlfxwr4r/jkEPBx0q6VOfjRScT9by1uaiWv6jQhmUzxoBsCH3UZpIBojtnt50FePgIvyPdo8idsqrkEA1m1U1u1Gl+0MDvrMQBayJseuMeXDgtxbyeNHJk4GC1YYHaDxpmKZx8GTyF2tz75S+hVGO4iDin8VMbuXR6eeU9l2VvyWwvULS6XsY9ymdOVu2IItijnhhBt0N81Tei/5sMGuyr4ou5yzv9ag7fKBc9Bd0HQtu1cMIsF5KT9e/djnmfJJOK2Ib4eiLTGxYWiLJCg/6T8njLP5ahnyZoV0XO9cYocSGPwWvAkMSh5HDTidfIKLlE5uReDTsk+7AybfAT5dFBuPnC/vpk8wMeWQw8XeLq+afw8YjIDV4m3RLmVgMrfcotSpfxPEaSN7NBh2/4//Bw==
+  legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
-  bucketLayout: 0000000000fffe000000000000fffe00000000000000000000
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000002000000000000000300000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
-  artTheme: places
+  artTheme: ordinary
   campaignSeed: 20115287
-  displayTitle: Snow Covered Torii by the Sea
-  beltCapacity: 3
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
+  displayTitle: small yellow submarine exploring a deep ocean thermal vent
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
   sectionBuckets: 1
-  keyGates: 1
-  linkedBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
   mysteryBuckets: 0
-  bucketSettingsOverride: {fileID: 11400000, guid: a988144a76186714abe7e6f17c0525ef,
+  bucketSettingsOverride: {fileID: 11400000, guid: 9504b89da99013345b84d5af18b3c38d,
     type: 2}
   usesTiles: 0
   usesUnitySpriteSheet: 0

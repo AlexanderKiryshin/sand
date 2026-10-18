@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "levels": 1200,
+  "rules": 1200,
+  "all_paintings_preserved": true,
+  "walls_and_feeders_removed": true,
+  "base_slots": 5,
+  "speed_multiplier": 1,
+  "model_route_checks": 2200,
+  "group_variants_checked": 416,
+  "swap_group_members": 4,
+  "ru_en_tutorial_and_visible_swap": "PASS",
+  "winter_tutorials_disabled": true,
+  "main_assets_match_validated_assets": true,
+  "introductions": {
+    "mystery": 12,
+    "linked": 20,
+    "ice": 30,
+    "keys": 40,
+    "sections": 55,
+    "covers": 70,
+    "large": 85,
+    "swap_pair": 100,
+    "hidden_sections": 120,
+    "loop": 140,
+    "hidden_linked": 160,
+    "swap_group": 180
+  }
+}

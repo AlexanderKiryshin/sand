@@ -1,0 +1,33 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": 38,
+      "name": "mint_breeze",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait mobile puzzle game background, 1024x1792 or higher. VERY SIMPLE, inexpensive-looking but tasteful watercolor paper illustration. Not a detailed landscape: only 3 to 5 extremely simple flat silhouettes/brush marks at extreme side edges or corners, large completely quiet pale center occupying 85% of image, few broad brush strokes, limited 3-color palette, no fine details, no realistic leaves, no ornaments, no frames, no text, no UI, no gradients alone. Much simpler than a botanical illustration; restrained minimalist painted graphic suitable behind colorful sand artwork. Mint breeze: pale ivory mint paper wash; one tiny flat muted sage two-leaf twig in lower left and one simple pale green curved leaf in upper right. Generous plain center. Only these accents.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-0649054b-ef08-4eb5-82f2-b2f7819bc6c9.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_38.png"
+    },
+    {
+      "id": 39,
+      "name": "sunny_grass",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait mobile puzzle game background, 1024x1792 or higher. VERY SIMPLE, inexpensive-looking but tasteful watercolor paper illustration. Not a detailed landscape: only 3 to 5 extremely simple flat silhouettes/brush marks at extreme side edges or corners, large completely quiet pale center occupying 85% of image, few broad brush strokes, limited 3-color palette, no fine details, no realistic leaves, no ornaments, no frames, no text, no UI, no gradients alone. Much simpler than a botanical illustration; restrained minimalist painted graphic suitable behind colorful sand artwork. Sunny grass: pale cream paper wash; two very simple ochre grass strokes at bottom left margin and three sparse soft yellow seed dots near bottom right corner; huge plain ivory center. Only these accents.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-1ff76aee-25ad-4c47-846b-d1c082edc8bf.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_39.png"
+    },
+    {
+      "id": 40,
+      "name": "blue_calm",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait mobile puzzle game background, 1024x1792 or higher. VERY SIMPLE, inexpensive-looking but tasteful watercolor paper illustration. Not a detailed landscape: only 3 to 5 extremely simple flat silhouettes/brush marks at extreme side edges or corners, large completely quiet pale center occupying 85% of image, few broad brush strokes, limited 3-color palette, no fine details, no realistic leaves, no ornaments, no frames, no text, no UI, no gradients alone. Much simpler than a botanical illustration; restrained minimalist painted graphic suitable behind colorful sand artwork. Blue calm: pale ice blue paper wash; two flat muted blue curved ripple brush strokes touching extreme lower right margin, one very small blue reed mark at upper left; large plain pale center. Only these accents.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-daa1f407-2880-4d90-9d65-6c5382753038.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_40.png"
+    },
+    {
+      "id": 41,
+      "name": "peach_leaves",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed 9:16 portrait mobile puzzle game background, 1024x1792 or higher. VERY SIMPLE, inexpensive-looking but tasteful watercolor paper illustration. Not a detailed landscape: only 3 to 5 extremely simple flat silhouettes/brush marks at extreme side edges or corners, large completely quiet pale center occupying 85% of image, few broad brush strokes, limited 3-color palette, no fine details, no realistic leaves, no ornaments, no frames, no text, no UI, no gradients alone. Much simpler than a botanical illustration; restrained minimalist painted graphic suitable behind colorful sand artwork. Peach leaves: pale warm peach ivory paper wash; three tiny simple terracotta oval leaf silhouettes confined to far upper left and lower right corners, huge plain warm cream center. Only these accents.",
+      "source": "D:\\CodexData\\.codex\\generated_images\\01a12084-6d7f-7af1-94c1-858698b053c9\\exec-b6bc0c13-6bbf-4c5d-b442-d073c3174efa.png",
+      "destination": "Assets/Resources/ThemeBackgrounds/background_41.png"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0195
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280699515
+  - serializedVersion: 2
+    rgba: 4291671994
+  - serializedVersion: 2
+    rgba: 4292535541
+  - serializedVersion: 2
+    rgba: 4290808438
+  - serializedVersion: 2
+    rgba: 4280032545
+  - serializedVersion: 2
+    rgba: 4283120434
+  - serializedVersion: 2
+    rgba: 4288968290
+  - serializedVersion: 2
+    rgba: 4288649904
+  - serializedVersion: 2
+    rgba: 4285637356
+  - serializedVersion: 2
+    rgba: 4291272341
+  - serializedVersion: 2
+    rgba: 4291612383
+  - serializedVersion: 2
+    rgba: 4286144082
+  encodedCells: S1:4:4096:EDA3A7FB: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 35818527
+  displayTitle: Wooden Toboggan on a Pine Trail
+  seasonalNumber: 195
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 19f04e7737f26b143ba9df420928410b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

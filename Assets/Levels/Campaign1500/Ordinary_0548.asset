@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0548
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4283723923
+  - serializedVersion: 2
+    rgba: 4281366990
+  - serializedVersion: 2
+    rgba: 4279054966
+  - serializedVersion: 2
+    rgba: 4279783328
+  - serializedVersion: 2
+    rgba: 4285948731
+  - serializedVersion: 2
+    rgba: 4292918933
+  - serializedVersion: 2
+    rgba: 4286162639
+  - serializedVersion: 2
+    rgba: 4282008921
+  - serializedVersion: 2
+    rgba: 4290631143
+  - serializedVersion: 2
+    rgba: 4279311150
+  encodedCells: S1:4:4096:2F7C6144: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 57294082
+  displayTitle: toy carousel
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: e678009db8b28eb419c2e08d12bfbd99,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -16,52 +16,69 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4280266737
   - serializedVersion: 2
-    rgba: 4281218361
+    rgba: 4279391113
   - serializedVersion: 2
-    rgba: 4283480559
+    rgba: 4284011002
   - serializedVersion: 2
-    rgba: 4279118151
+    rgba: 4289698956
   - serializedVersion: 2
-    rgba: 4278279105
+    rgba: 4289910766
   - serializedVersion: 2
-    rgba: 4285045955
+    rgba: 4280695623
   - serializedVersion: 2
-    rgba: 4282867539
+    rgba: 4285701057
   - serializedVersion: 2
-    rgba: 4289044106
+    rgba: 4293052082
   - serializedVersion: 2
-    rgba: 4281699557
-  encodedCells: S1:4:4096:7B70DF2D:pZTNiiIxEMefIdOhR48ThDkvEcFjdgvdfgyZJm0f3ZXOWVjE66AIedutqnx0emfcy0QIMb/611fSuVy+OPb2/9zaBwb7c5Bbywu2EjyS4/PlTPLI0Y+AME5BRyhy/pswG1ySd5symJnM5ZiczRFGnBzsSz4LROvRQeZkETimz35K72GE7MQMLUBWpyh2CdcxPHGz1NXOPuBwAlhqXf3LY+Z/Lj8xyWqtd59zGkt9/cBNibX21/4h18R95F3kMOXVbcpraSb8h4n5xwC1mITHDd7u3NDZgbpnCmxt7A7Ju8GVHPFbFFs7BN6N7ePg+UwG1A5klO+OHjn5RS3+cPEy4Ru70m/EnXPkf6hTfOarDU7EHXHswSAmXFcF5znxZeD6GwYh3iVe9Ib57wH5EPjgns2UV8IxQgueIpawXDO/Rm6Zu+fUWwN+vdJr7+eMu4Bd7r0E7z1xf3CBw7GQowMfxyEoHbSFHEfi88zHoyn1zI9OAUxubtYLCn90sIW2dC9LPeaGW1N+G/kRjoprkg/0CgduFTf3My5E4V8kLp17VVvmZfxcnzmo118OGpClHN5zfUp9x2Ib1JfpJ94IoErA05mNOKfXGGjxEwW/kFxizC6n53f4XUELoJ4gu5Aiubfz3QAb2lMYPjTAoHzknnMLnCuU9PT1d8Z9LRPH8rhBkh72LK8xkXSjkMBTePjvkffStPcmvac4FM9gA6Xq21Bm5C80mZtlBz0/Bg0tk54x4JOEEM8utPTmoeAoQX7v7caXJ5ZwuHzWNv37eOCLzKPxzhr8c8h8MeEidEGYbTJQSqbg4ZSkMDKHX+D9KvTcZWnG66gKLuIhG16YKTcQrqmRH/hf
+    rgba: 4279665097
+  - serializedVersion: 2
+    rgba: 4283853177
+  encodedCells: S1:4:4096:EECE0AF0:VZVNc9s2EIZ/A8NxXR0NNeRINxpRNPKxoU1Xt5iGkdGtcgK1uEUStTaOHmnEyY1SG5c9yjKQ4Fd2QUpyCo2+9sHuvtgFQGOFFDMlZ/nll/z/g7FFntuRECKAkMwvf6nNf+zwB8byRT6zQugQrJ7ncW2/XdTfC+YC0IkQMwC4uJvH35z5rrn8Mf7qXugNGFh+W+bHD2id3B7yu0AzI7QE+/iQz3P/c3eW0+ZeJ3MfQgshuQ2X+fxnWtzAr2uaL2vm3guhrdCgAPlpVAxh1G19vL39wpB+qPwDJTRj4cMUvMgrZ6+b46A5wbV9qJOIt08TzZkCdexHXhH9KSbN08VLkcTb5lhzANM/9rzI95oeoQt44e3hk9B3yBN2NOmtG2ufZvkP/tIaYQ0Yuzxi5VHRiGjniM13EOcJuxEqg9BwlmJB2fuO+9573+WiPZSaASRdTO9FlLpJbOecq6Vob2r+puH1PDcoTemeW95ub7TiISz/KUo3XIiau6H40FqrQELyV4UbDY+ud/xyHqtMWGntGDLzb809z6eUYrMu4ziWihFrpcb+m697jgkosvhyq9BONtJW9Ttw2jnwDAwhuL+cfx2/9Hy/5tuPqIs9E4vbF7LwkN+lrzhPFMtGxOlnLzyKan9rGfob2UZuOQtHX3fxI+xAOt1qa+zgk8pwddICBxOUh/p0JhaUMRaM6koXP0OualzxJ20GLEOuoeKAC1GPtT6KAp+sGTwbq6RSLrziPDRmXfk3Ij+lv0s7sFJa4cQJobB/YKv4RVW+p5GeSS2knFXyBmbLGdvlpzRKJxiy71KDkFpjDDkYsIO+9+k7xYHhzsON5zJILTcWal64/p/H8bVrQby1hwHl486f0STuT/u1WZ35nvfZ8WKfn6WJ8zdbXJz11rjiKGpreKkPw8iYIlZGGVyS2zNneu+P5adzuA/vx6CSqfEKVzMaWVvzwrW33Sar8v4ekmnieZWP7++4Kw/VhLRaZY9S5FHhuaJGT4f6UGrbpLUqexGdoH8UFc5826jrj+2jpE0wQflIaVJQz3MKPXrwR46jVUbdDn1XNvBUYQloRHf9pZ2O4yskrDM5WZW+C0D9g76ak7LspYyeENyTJ9hWf3KIv+fuKBSvKlH4e73naUbqBO7PSYmvaL3u0Rf/12RVBXBiWmXD/6lH/VcvnL5G9VUA/Nsqy5Oi8GmTjn/k+wQov3xVNW0DBx6S/YTGbWXzGykBONQ/JEGFWzhDkCAoCRmKMd/VJ00fRFBNQHtLVCPADc52/mk6koL6dYqNCEZ42MbI52zXn7RLBcpweMyNtZs+XiNcDXithc66NCp6kSDi5vwaGPrzgFwBPD+XuJrSqmMUiRzHIBHueFiUIy+e7eX8t/nF9M0jyuxRbU8BBjgJT6IWgRgzhse4n0yzBrasR8/ujR1j+i1OkVK2Cd9meHFfqZvHsuetur2JhvMYnz5SWHxIKTsafCJEk2kwLHtFqU7XPAOG8pXU1THHXbuRMPz7+6ez9WMLugzGZQLcxjPFA7xCOF6FszGHRJXG4hnaQhyzCxFv2VVY4h2YxR9DEFqH37d9YPw6uc4YuwhkcJ+xAYPzbZ9nrRU+z4c3jHOOR3DwHP8H
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets:
-  - colorIndex: 4
-    count: 1
-  - colorIndex: 6
-    count: 1
   - colorIndex: 1
-    count: 1
-  - colorIndex: 9
-    count: 1
-  - colorIndex: 8
-    count: 1
-  - colorIndex: 7
-    count: 1
-  - colorIndex: 3
     count: 1
   - colorIndex: 2
     count: 1
-  bucketLayout: 00000000000000fe00000000ff000000000000000000000000
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000030000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: ordinary
   campaignSeed: 949880
-  displayTitle: 
+  displayTitle: mango lassi
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 0
-  mysteryBuckets: 1
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 85363613e2e116f4c95d9cd2db70d578,
     type: 2}
   usesTiles: 0

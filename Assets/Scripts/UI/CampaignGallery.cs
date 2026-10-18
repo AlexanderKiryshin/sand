@@ -1,4 +1,5 @@
 using TMPro;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +22,10 @@ public class CampaignGallery : MonoBehaviour
     private Button previousButton;
     private Button nextButton;
     private readonly LevelPreviewCache previews = new LevelPreviewCache();
+    private readonly LevelPreviewCache collectionPreviews = new LevelPreviewCache();
+    private bool winterOnly;
+    private readonly List<int> visibleLevels = new List<int>();
+    private Button allTab, winterTab;
 
     public static CampaignGallery Show(LevelDatabase database, GameManager manager, bool completedLevelsOnly = false)
     {
@@ -46,7 +51,8 @@ public class CampaignGallery : MonoBehaviour
         gallery.database = database;
         gallery.manager = manager;
         gallery.completedLevelsOnly = completedLevelsOnly;
-        gallery.page = Mathf.Clamp(manager.CurrentLevelIndex / PageSize, 0, (database.LevelCount - 1) / PageSize);
+        gallery.winterOnly = manager.IsSeasonal(manager.CurrentLevelIndex);
+        gallery.page = (manager.GetDisplayNumber(manager.CurrentLevelIndex) - 1) / PageSize;
         gallery.Build(canvas);
         return gallery;
     }
@@ -63,23 +69,26 @@ public class CampaignGallery : MonoBehaviour
         if (belt != null) belt.SetMovementPaused(true);
         if (sand != null) sand.SetSimulationPaused(true);
         float width = Mathf.Min(880, ((RectTransform)canvas.transform).rect.width - 60);
-        RectTransform panel = Rect("CollectionPanel", transform, new Vector2(width, 1200), Vector2.zero);
-        panel.localScale = Vector3.one * Mathf.Clamp01((((RectTransform)canvas.transform).rect.height - 60) / 1200f);
+        RectTransform panel = Rect("CollectionPanel", transform, new Vector2(width, 1400), Vector2.zero);
+        panel.localScale = Vector3.one * Mathf.Clamp01((((RectTransform)canvas.transform).rect.height - 60) / 1400f);
         TextMeshProUGUI title = Label(panel, "Title", completedLevelsOnly ? CampaignText.Get("level_select")
             : manager.IsLevelCompleted(database.LevelCount - 1) ? CampaignText.Get("collection") : CampaignText.Get("gallery"), 40);
-        title.rectTransform.anchoredPosition = new Vector2(0, 535);
+        title.rectTransform.anchoredPosition = new Vector2(0, 645);
         title.rectTransform.sizeDelta = new Vector2(width, 90);
-        grid = Rect("Paintings", panel, new Vector2(width, 850), new Vector2(0, 20));
+        grid = Rect("Paintings", panel, new Vector2(width, 850), new Vector2(0, -50));
         GridLayoutGroup layout = grid.gameObject.AddComponent<GridLayoutGroup>();
         layout.cellSize = new Vector2((width - 48) / 5, 192);
         layout.spacing = new Vector2(12, 16);
         layout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
         layout.constraintCount = 5;
-        previousButton = ButtonAt(panel, "Previous", "<", new Vector2(-width * 0.32f, -460), () => { page = Mathf.Max(0, page - 1); RenderPage(); });
-        nextButton = ButtonAt(panel, "Next", ">", new Vector2(width * 0.32f, -460), () => { page = Mathf.Min((database.LevelCount - 1) / PageSize, page + 1); RenderPage(); });
+        previousButton = ButtonAt(panel, "Previous", "<", new Vector2(-width * 0.32f, -530), () => { page = Mathf.Max(0, page - 1); RenderPage(); });
+        nextButton = ButtonAt(panel, "Next", ">", new Vector2(width * 0.32f, -530), () => { page = Mathf.Min((database.LevelCount - 1) / PageSize, page + 1); RenderPage(); });
+        float collectionWidth = (width - 20) / 2;
+        allTab = CollectionCard(panel, false, collectionWidth, -(width + 20) / 4);
+        winterTab = CollectionCard(panel, true, collectionWidth, (width + 20) / 4);
         pageLabel = Label(panel, "Page", "", 30);
-        pageLabel.rectTransform.anchoredPosition = new Vector2(0, -460);
-        ButtonAt(panel, "Close", "×", new Vector2(0, -565), Close);
+        pageLabel.rectTransform.anchoredPosition = new Vector2(0, -530);
+        ButtonAt(panel, "Close", "×", new Vector2(0, -635), Close);
         RenderPage();
     }
 
@@ -91,20 +100,27 @@ public class CampaignGallery : MonoBehaviour
             Destroy(grid.GetChild(i).gameObject);
         }
         previews.Clear();
-        int pageCount = Mathf.CeilToInt(database.LevelCount / (float)PageSize);
+        visibleLevels.Clear();
+        for (int i = 0; i < database.LevelCount; i++)
+            if (winterOnly == manager.IsSeasonal(i)) visibleLevels.Add(i);
+        int pageCount = Mathf.Max(1, Mathf.CeilToInt(visibleLevels.Count / (float)PageSize));
+        page = Mathf.Clamp(page, 0, pageCount - 1);
+        UpdateCollectionCard(allTab, !winterOnly);
+        UpdateCollectionCard(winterTab, winterOnly);
         pageLabel.text = (page + 1) + " / " + pageCount;
         previousButton.interactable = page > 0;
         nextButton.interactable = page < pageCount - 1;
-        for (int index = page * PageSize; index < Mathf.Min(database.LevelCount, (page + 1) * PageSize); index++)
+        for (int entry = page * PageSize; entry < Mathf.Min(visibleLevels.Count, (page + 1) * PageSize); entry++)
         {
+            int index = visibleLevels[entry];
             int selected = index;
             bool completed = manager.IsLevelCompleted(index);
-            bool unlocked = completedLevelsOnly ? completed : manager.IsLevelUnlocked(index);
+            bool unlocked = LevelCheats.CanSelectLevel(completedLevelsOnly, completed, manager.GetDisplayNumber(index) == 1, manager.IsLevelUnlocked(index));
             RectTransform card = Rect("Level_" + (index + 1), grid, Vector2.zero, Vector2.zero);
             Image frame = card.gameObject.AddComponent<Image>();
             frame.sprite = HintUiSprites.RoundedPanel;
             frame.type = Image.Type.Sliced;
-            frame.color = unlocked ? new Color(0.96f, 0.94f, 0.84f) : new Color(0.28f, 0.37f, 0.4f);
+            frame.color = unlocked ? new Color(0.96f, 0.94f, 0.84f) : new Color(0.75f, 0.81f, 0.80f);
             Button button = card.gameObject.AddComponent<Button>();
             button.targetGraphic = frame;
             button.interactable = unlocked;
@@ -122,14 +138,102 @@ public class CampaignGallery : MonoBehaviour
             AspectRatioFitter aspect = painting.gameObject.AddComponent<AspectRatioFitter>();
             aspect.aspectMode = AspectRatioFitter.AspectMode.FitInParent;
             aspect.aspectRatio = image.texture != null ? (float)image.texture.width / image.texture.height : 1f;
-            image.color = unlocked ? Color.white : new Color(0.35f, 0.4f, 0.43f);
+            image.color = Color.white;
             image.raycastTarget = false;
-            TextMeshProUGUI label = Label(card, "Number", (index + 1).ToString() + (completed ? " •" : ""), 27);
-            label.color = unlocked ? new Color(0.13f, 0.23f, 0.27f) : Color.white;
+            string caption = manager.GetDisplayNumber(index).ToString();
+            TextMeshProUGUI label = Label(card, "Number", caption + (completed ? " •" : ""), 27);
+            label.color = new Color(0.13f, 0.23f, 0.27f);
             label.rectTransform.anchorMin = new Vector2(0, 0);
             label.rectTransform.anchorMax = new Vector2(1, 0.22f);
             label.rectTransform.offsetMin = label.rectTransform.offsetMax = Vector2.zero;
+            if (!unlocked)
+            {
+                RectTransform lockRoot = Rect("Locked", card, new Vector2(34, 34), Vector2.zero);
+                lockRoot.anchorMin = lockRoot.anchorMax = new Vector2(1, 0);
+                lockRoot.anchoredPosition = new Vector2(-21, 21);
+                Image plate = lockRoot.gameObject.AddComponent<Image>(); plate.sprite = HintUiSprites.RoundedPanel;
+                plate.color = new Color(.08f, .20f, .23f); plate.raycastTarget = false;
+                RectTransform icon = Rect("LockIcon", lockRoot, new Vector2(23, 23), Vector2.zero);
+                Image lockImage = icon.gameObject.AddComponent<Image>(); lockImage.sprite = GameUiSymbols.Get(GameUiSymbol.Lock);
+                lockImage.raycastTarget = false;
+            }
         }
+    }
+
+    public void RefreshProgress() => RenderPage();
+
+    private Button CollectionCard(Transform parent, bool winter, float width, float x)
+    {
+        RectTransform card = Rect(winter ? "WinterLevels" : "AllLevels", parent, new Vector2(width, 184), new Vector2(x, 500));
+        Image frame = card.gameObject.AddComponent<Image>();
+        frame.sprite = HintUiSprites.RoundedPanel;
+        frame.type = Image.Type.Sliced;
+        Button button = card.gameObject.AddComponent<Button>();
+        button.targetGraphic = frame;
+        ColorBlock colors = button.colors;
+        colors.disabledColor = Color.white;
+        button.colors = colors;
+        button.onClick.AddListener(() => { winterOnly = winter; page = 0; RenderPage(); });
+
+        var levels = new List<int>();
+        for (int i = 0; i < database.LevelCount; i++)
+            if (manager.IsSeasonal(i) == winter) levels.Add(i);
+        int[] samples = { 0, 6, 8 };
+        float paintingWidth = (width - 40) / 3;
+        for (int i = 0; i < samples.Length && levels.Count > 0; i++)
+        {
+            RectTransform art = Rect("CollectionPainting_" + i, card, new Vector2(paintingWidth, 114),
+                new Vector2((i - 1) * (paintingWidth + 8), 24));
+            Image mat = art.gameObject.AddComponent<Image>();
+            mat.sprite = HintUiSprites.RoundedPanel;
+            mat.type = Image.Type.Sliced;
+            mat.color = new Color(1, 1, 1, .9f);
+            mat.raycastTarget = false;
+            RectTransform inset = Rect("Inset", art, Vector2.zero, Vector2.zero);
+            inset.anchorMin = Vector2.zero;
+            inset.anchorMax = Vector2.one;
+            inset.offsetMin = new Vector2(5, 5);
+            inset.offsetMax = new Vector2(-5, -5);
+            RectTransform painting = Rect("Painting", inset, Vector2.zero, Vector2.zero);
+            RawImage image = painting.gameObject.AddComponent<RawImage>();
+            image.texture = collectionPreviews.Get(database.GetLevel(levels[Mathf.Min(samples[i], levels.Count - 1)]));
+            image.enabled = image.texture != null;
+            image.raycastTarget = false;
+            AspectRatioFitter aspect = painting.gameObject.AddComponent<AspectRatioFitter>();
+            aspect.aspectMode = AspectRatioFitter.AspectMode.FitInParent;
+            aspect.aspectRatio = image.texture == null ? 1 : image.texture.width / (float)image.texture.height;
+        }
+        TextMeshProUGUI title = Label(card, "CollectionName", CampaignText.Get(winter ? "winter_collection" : "all_levels"), 30);
+        title.rectTransform.anchoredPosition = new Vector2(0, -49);
+        title.rectTransform.sizeDelta = new Vector2(width - 24, 36);
+        title.color = new Color(.10f, .25f, .28f);
+        TextMeshProUGUI count = Label(card, "CollectionCount", string.Format(CampaignText.Get("collection_level_count"), levels.Count), 20);
+        count.rectTransform.anchoredPosition = new Vector2(0, -77);
+        count.rectTransform.sizeDelta = new Vector2(width - 24, 28);
+        count.color = new Color(.25f, .40f, .42f);
+        RectTransform selection = Rect("SelectedOutline", card, Vector2.zero, Vector2.zero);
+        selection.anchorMin = Vector2.zero;
+        selection.anchorMax = Vector2.one;
+        selection.offsetMin = selection.offsetMax = Vector2.zero;
+        Image outline = selection.gameObject.AddComponent<Image>();
+        outline.sprite = HintUiSprites.RoundedOutline;
+        outline.type = Image.Type.Sliced;
+        outline.color = new Color(1f, .76f, .24f);
+        outline.raycastTarget = false;
+        return button;
+    }
+
+    private static void UpdateCollectionCard(Button button, bool selected)
+    {
+        button.interactable = !selected;
+        button.GetComponent<Image>().color = selected ? new Color(1f, .96f, .83f) : new Color(.80f, .88f, .89f);
+        button.transform.Find("SelectedOutline").gameObject.SetActive(selected);
+    }
+
+    public static bool IsWinter(LevelData level)
+    {
+        if (level == null) return false;
+        return level.seasonalNumber > 0;
     }
 
     public void Close()
@@ -141,6 +245,7 @@ public class CampaignGallery : MonoBehaviour
     private void OnDisable()
     {
         previews.Clear();
+        collectionPreviews.Clear();
         if (pauseCaptured)
         {
             if (belt != null) belt.SetMovementPaused(beltWasPaused);

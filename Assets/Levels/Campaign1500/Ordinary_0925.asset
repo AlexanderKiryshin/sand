@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0925
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280363599
+  - serializedVersion: 2
+    rgba: 4294492056
+  - serializedVersion: 2
+    rgba: 4284177536
+  - serializedVersion: 2
+    rgba: 4281550468
+  - serializedVersion: 2
+    rgba: 4282794850
+  - serializedVersion: 2
+    rgba: 4284053689
+  - serializedVersion: 2
+    rgba: 4285438432
+  - serializedVersion: 2
+    rgba: 4293185999
+  - serializedVersion: 2
+    rgba: 4287805930
+  - serializedVersion: 2
+    rgba: 4289760394
+  encodedCells: S1:4:4096:85B67B2C:ZVQ9b+M4EP0NQmQL16YyrgtoKavthNASUhrSKLgykEyetjMsc45XZq+Q1RmOTTPlLfbg6Ffe0HH2Azu2AFFvPh7JN3N9/Yt1ZL9+vdjT09Nk8n3Vued9/eT+Tz/4Tlymp/dsXfcD5tDra+fgfFyG7unycobeirzBhEw65zqZnGs5x84FTN4dvttb0TOtc7mfwMnPK1eh7wZnXXcavjn0p9+7fnAO/9qeMMJ7+p3tOJxXZB8jhYgX4IK6l9Pp/PK3YGEVRZ1b9V33DndD/4a/mDgPs2xsqfTL5vX1/PF0AfvB2sPtNEQp0Zgvw+twutDs6ZdX1S3uTclC3DEGxdfh9cfyfRmGEe6wyHeogYVleLzwJpj49CWrZDZVHIQQIUC0t5uXePhmq4hVD7VSd/AgVyGwCL4ML674G4cP64qx20rJu1AoBSzGfJG/fA//pCoWlUpitTMrVQBACF+H/14vx9T/pVZM3KKMZgxXt+IWZgxg6O2ZXXf8uMKqsrepaPOFkA/sDhaEf6EDee2G2LKVlAer6eSRocAt5AAsB2uHV2s/xiKqxMFKoVBzrdFYqMoZ4TvizqxVnypKbtdKICqpUdtykWWUouqt3R0rYSiawrFBhS3q9FlEQkUhg5LlG0umKUmmjHQENI4TIVpR1zmEuUMtY4wS2MbBytz7+KiUqAWdYb6nKyXIuBRWK9uqe05gXqUL8qjCHTu6DJX9ZqqVHFGiiKRIRbSIY0oRN3u7e8P9wGu95aiuMVVSRCDeMljcxTvybbIsFWnBR14CxFIJIi2EtbHzaQ6N9rnne3Q/iKXbLaKtRBluiWZDHvEKA96mEugqJZJORM2KtIDmXN3Qk/heIjEbSzm9AeXLsigWEZijw+iwbcp9zv35fJxwDsB5VgDpYU9bOLgCGmtfcW82ymrus3ydlQD6ARbSug0SCclrpCiY+TMOa4GygGVBcmBr+yfFS87rLElKWMsinC5kQOTaOSz2f+zZ5oPVDRVvIedXczmDIm3HvIA1iWFB8t+QhuSY8BxSgJZzJpTDZ2mehzburGQWVcbbokgc99EzSh9gBnwK0PSx3pUsI3IB9wmfcd5qhUXBpzMSU9wJlS+qNONLnBUexfFZjZjwgkCyxn7QGvaC0tcUC2ecOs71Sh6SWnFzXFnLM/6IhN8UIz6aX62DZQTnbspZ1FV73WY8kfkdv/JgNPMXa5IsnWAYUgrbHZ8dfQ8pt3cTJr4/W6hGyDJEFjI2nKzOFOdbp30YhaFfQE0BpPxaPYRsOEY7hdw3WITnmjnxIIG0WEm10KYjoSvJSTNT5hLkjM0TmlUPUkYGP3fHqba0/bZtb6jBWR5STYAr0pEMCLZHul6Z8nqJc5XuIqpBxw6QolS1+YeizaHBjJP/oZnKOQUzl0Cp0mC2OR4k03WWPafaeMaipxsiQTijlj9sOlIfiaUO3JRItUibey+iMUYHu28O3ck2sXiUAfUJ7Seh7lJ22awe51RkbTddvKVz8lv5jK5hbJP8dtCB0Q1JVG42L0cb0ex7diPI+LVEe59stVkaNFh+PnbptkmzsbGNMbJ+fgyQRsVYm2BL5ajrzHiZ0XAxbjSJjFpY0OdG2cDpOdNy6SaM1r7CRyOCgJutzUQcrSitoqhsiVrTjulgGi3lOPFaGkfR3NM2WrqZgwd6xi21s3b3n6bI/Mb3fBTeFrU5F0YPHyV6qQzaVP0P
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 96776915
+  displayTitle: Kazakh desert canyon
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 1
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: aa124ae8066570746b2d5bd9416aae72,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

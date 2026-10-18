@@ -33,27 +33,29 @@ MonoBehaviour:
     rgba: 4284826625
   - serializedVersion: 2
     rgba: 4278325122
-  encodedCells: S1:4:4096:B54EBE9D:rZXNUtswEMefQRlT55pVEvcsw/SsjDK5M2jEFZhxuVrELD1CCeM+Am/bXUk2Tuz01D+DY+m3X1pJCSLJRl2hpYGjt4b+LA1cwzhMkYrIHbrogb3CEODz80/DTuQ2wVfEf3FEiu6OeUywKp8or+PRCScfirFi0tgyOeCxhAOeRqsMXo8oWiEWHi3FuTJL1zQTnMQcGocTCrwmQzkO3nOBRQ2TuOMYHmPlIiXg58uY74a8PqXOGm1Iet9M84OJurmY5MWCWgZojL1IZY6qXwD1d2tjmDPdcSuPzeYsF3oJHiVu92e4eM8pj7Mv57iZZ/wB57iem8n6855n/+YXXZtJ+yHXWcz/xXfD9NyUjP4HfJBkl7pv3lN8TSG/NqEAPo7fqXHvM86jTUbug/TZ0uPb6rrZ3XRx6nzIDa0agA7uNvG9mOkvnnNTdNhCT9tsd2ZPCxrwy9RdE2wcLe2Ii8SprtCGuvAzofv6c22OuTCwmeZdoCXZ9P0RHRc9z85w03PT87yf7g31jOfq7miMedivOl0sY0b5+TJl9WDvYvKOL8J2xwJ04vRJ6xdh/foSwPAmIpRxf4bi4rHwu1CAeir8CWf5H8Se2VfJ6+2YI3Pl+fCUchO+zcDzzTNLCBdQESh9mC8l0L1k6w3wYeOCEFTCqKAkCwml/1lVz1hI9uE5n04nIbZQAFW1BrIEdpaq5zRiAZswj+Zld7plYOVQHF6Gr92G6gz+sofxLXDX2kOrVDmlt7a1tiUpGQJO8NsD4duVnKAgmbXhl6QMCzqShN/tC0VHsjmoES5BvbUWQ4j2cX3CpaJ+tkmP87vqW0jAi1bRGeC+ivj2TtxVrPX9Gh4qNqzoCTyVIsxf+b36CE/SR/v42v4n/QU=
+  encodedCells: S1:4:4096:B54EBE9D:rZXNctowEMefQYxTc2UFuGcpmZ7FiPE9E41yTTLj5moFR+kxFDLuI+RtuyvJjsGmp/4ZjKXffmklG+9RJurGGxxYvGvwY3BgG8JhClVEbr2NHr5XGAJ8fv5pyAndJvgK+S+KiNHtKY8JVvIF81oanXH0wRgrIo2RycGfilmgaW+E9rcj6g1jC+cNxrnRS9s0ExxFHBp7DkN8Uo2GfBy858wXNUzijvtwGStnKQFd38a8HPL6nFqjlUapXTPNjzrq7mqSFwtsGXitzVUqc1T9ArC/WxPDTK+utivnm81FztQSnOd+u7vA2SHHPNaM15+4nmf0A5e4muvJ+vOeZ//mV12bUbshV1nM/8XLYXpqSobfAR8kKVP39SHFVxjyaxMKoOP4HRt3mFEepTN0H6TPls7vV7dNedfFqfMh17hqADy428R3bKa+eE5NUWELHW6zKfUOFzTg16m7OthYXNoJZ4ljXaENdeFmTPX150qfcqZhM827QEu06fvDOs56nl3guue653k/3RuqGc2lAtgED/sVeUn35/npYcrqwd7F5B1fhO2OBajE8RfXz8L61TWApk30IOP+DEXF+8KVoQDxUrgzTnI/kL2Sr+C32zH3xIWjwyP5JrzNwNGTp5cQHkCBQLowLzngc0nWG6DDRgV5EAl7ARItOEj3s6pefcHJh+ZcOp2IyEIAVNUa0BLImYue44gEZEI8msvudPPA5FAUnvLQC7mQwZ/3MN4FbltzbIWQU9q3rTEtSvAQcILfHxHfr/gEBU6sDf8kMizoRBx+t28Y3aPNUYywBLFvjQ8h2uf1GecC+9kmPc8fqm8hAS1aRGeAxyri+wf2UJHWj2t4qsiwwivQVIowf6f76iNcUR/t83v7n/QX
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000feff000000fffffffeffffffffffffffffffffffffff
-  conveyorDirections: 00000002000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000003000000000000000400000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: legacy
   campaignSeed: 10166032
   displayTitle: 
-  beltCapacity: 4
+  seasonalNumber: 0
+  beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 8
   sectionBuckets: 1
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 0
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
   alternatingCrates: 0
   swappingColors: 0
-  loopInventory: 1
+  loopInventory: 0
   mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: dfc63fc504946b54fbfa8edecbb5754d,
     type: 2}

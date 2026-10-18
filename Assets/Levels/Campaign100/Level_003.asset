@@ -16,41 +16,62 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280954129
-  - serializedVersion: 2
     rgba: 4278190080
   - serializedVersion: 2
-    rgba: 4287456827
+    rgba: 4281218361
+  - serializedVersion: 2
+    rgba: 4283480559
+  - serializedVersion: 2
+    rgba: 4279118151
+  - serializedVersion: 2
+    rgba: 4278279105
+  - serializedVersion: 2
+    rgba: 4285045955
+  - serializedVersion: 2
+    rgba: 4282867539
   - serializedVersion: 2
     rgba: 4289044106
   - serializedVersion: 2
-    rgba: 4281539073
-  - serializedVersion: 2
-    rgba: 4289956892
-  encodedCells: S1:3:4096:B6FE5185:vdS9bloxFAfwl+gTVEYKRVlZujLUN2K5UjJgsaFITfHtUlj6BFlNyMJKKqGIJQSjqOoDZOjQirTCVjpVXaKsmfM/9v2+MGSpZIH9u+ac4w+ullb/97bID9lt3BGfJyL1g9Aeqb73j7aZ+P4SH+Oe669k5ndamUDWqM/IR7pt0D/vcMXQkGICl2+V5j/hJw0eknNy/EioJrk4qfGZ86u2YjdSkKsveMx8HI4hu4lsx41yfoUaviGupVG9foqvlntE/v2P86naQ/CzvcxthwoOVQvFvK4vyftxHBQTrJscstax30t7TH5qGE/ywoe/I2uw2Mv3SPIq51YKa2gnp+9Ubv6nxDNE6416K9m1quwt9VfT/IU8KD6CD+ATt//nO1xnvvmHsTG2X/IfT+Sb2GvZ/Cc/n5asUpeNW+fD2OPJSym4c+18NPW+BgV0rlb7q3LmHasXdN7dxH39Ia4WLsy1RCFQuEp8js713Psi9cujMZ1r7LYvClvHlrEf26rf02o323xAC/PyxvuM9vLr3Op21R8pTrsY5/ClTtdtJbO8SQspL/mo6naww6MXuv6wwp+w4HRArqTtjpJKvt7hU/JHg9RVj1xyXjmC4QP5YdFncvsWOUeoX1Fpaf76d20ka1ucWqNcZ+rj4pVIHLmCYl66xhTzIqC3ZT5+GtzscP9WYfwZ
+    rgba: 4281699557
+  encodedCells: S1:4:4096:7B70DF2D:pZTNiiIxEMefIdOhR48ThDkvEcFjdgvdfgyZJm0f3ZXOWVjE66AIedutqnx0emfcy0QIMb/611fSuVy+OPb2/9zaBwb7c5Bbywu2EjyS4/PlTPLI0Y+AME5BRyhy/pswG1ySd5symJnM5ZiczRFGnBzsSz4LROvRQeZkETimz35K72GE7MQMLUBWpyh2CdcxPHGz1NXOPuBwAlhqXf3LY+Z/Lj8xyWqtd59zGkt9/cBNibX21/4h18R95F3kMOXVbcpraSb8h4n5xwC1mITHDd7u3NDZgbpnCmxt7A7Ju8GVHPFbFFs7BN6N7ePg+UwG1A5klO+OHjn5RS3+cPEy4Ru70m/EnXPkf6hTfOarDU7EHXHswSAmXFcF5znxZeD6GwYh3iVe9Ib57wH5EPjgns2UV8IxQgueIpawXDO/Rm6Zu+fUWwN+vdJr7+eMu4Bd7r0E7z1xf3CBw7GQowMfxyEoHbSFHEfi88zHoyn1zI9OAUxubtYLCn90sIW2dC9LPeaGW1N+G/kRjoprkg/0CgduFTf3My5E4V8kLp17VVvmZfxcnzmo118OGpClHN5zfUp9x2Ib1JfpJ94IoErA05mNOKfXGGjxEwW/kFxizC6n53f4XUELoJ4gu5Aiubfz3QAb2lMYPjTAoHzknnMLnCuU9PT1d8Z9LRPH8rhBkh72LK8xkRiTCDyFh/8eeS9Ne29iyjQUz2ADperbUGbkLzSZm2UHPT8GDS2TnjHgk4QQzy609Oah4ChBfu/txpcnlnC4fNY2/ft44IvMo/HOGvxzyHwx4SJ0QZhtMlBKpuDhlKQwModf4P0q9NxlacbrqAou4iEbXpgpNxCuqZEf+F8=
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets:
+  - colorIndex: 1
+    count: 1
   - colorIndex: 2
-    count: 1
-  - colorIndex: 6
-    count: 1
-  - colorIndex: 5
     count: 1
   - colorIndex: 3
     count: 1
   - colorIndex: 4
     count: 1
-  - colorIndex: 1
+  - colorIndex: 6
     count: 1
-  bucketLayout: 00000000000000ff0000000000000000000000000000000000
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
   conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: ordinary
   campaignSeed: 216777
   displayTitle: 
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
   mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 1608d8ef70482af418f0f5e68e382b11,
     type: 2}

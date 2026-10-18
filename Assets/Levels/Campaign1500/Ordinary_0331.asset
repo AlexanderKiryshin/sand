@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0331
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281579746
+  - serializedVersion: 2
+    rgba: 4282006228
+  - serializedVersion: 2
+    rgba: 4280234794
+  - serializedVersion: 2
+    rgba: 4289893239
+  - serializedVersion: 2
+    rgba: 4282944667
+  - serializedVersion: 2
+    rgba: 4292796646
+  - serializedVersion: 2
+    rgba: 4282145883
+  - serializedVersion: 2
+    rgba: 4293249205
+  - serializedVersion: 2
+    rgba: 4286489819
+  - serializedVersion: 2
+    rgba: 4294292090
+  encodedCells: S1:4:4096:CFA167D6:fZVNU9s4GMc/g8h6mRwjBpgcU2GEucY0KTejEdocIaA63IIQive4DY7wLXYJq/N2Otl8yn1kh267O1NNlMj6PW/6S4o3m3/bubSbn7WhW/+Un77+z7/4/uGu+vof/GPCu/j5R2ylhO+13bqdx89vAX6Hnq83nhd5WptBO2oKXG9O478Ku97UoLD2jZ+sPLebwlRPfpTKHB4Bb/mxq+s5J/3RAsrJrYTU1tZmjQBpsd7ckXF2E9eBc/u1KCDLtqzTag5upDI3PjpwiJ3bFAyaDHfj+WamqsVi7h8aDkFSmeY1P//TDiH4uF5FvvHcphBAvqWYKXozuPFFFnfWFv4jpU39EgpZrNekr+x777X2yEsAzk0ZsAg7PKLU5HXeenNsWtQVgHvu+4wQYga1v+fp2gdPba1ALiXtExpnZusN+sAGgQTwBfWtnOn3HwglIgSeFl7dJjgsAbiLyKzFB5duQhpFC19RXnPp8ThPqSFHKpxY6bn02tUGwCcTAk99TatXPajXuw0OBcj0cZX1YSbvUzp2WVYrXke2dYD0MSJeQklU9dG5SVqrmm/pwtqTOE+9RLBzCvjWE4x8FGG/VUEUJW883e5ezZs2JMaYlXuG4dwr1mjPtnaQhmY0rJzbTm6dYDjjlzUnOiTVyHP1jZ/Qp9+M4ByGx8QwMYYCnmr/T/U+nrJ8pj7pJYyPoDwx0C7ji++4ieO+MZP3CwvLe43IahUFQ5XH8zGUaduhOov7yojBICaVMir7XLX5mRr8Eqs4/jzMIs5DQkTCGSUVN5Fxr5Ttl4NWKIYfHh5MxM52Q224UbrFEzFK3AshHZyRUAmIqqg6ayU9ExqOdGB0gNDUmA6OSMiETqYkYpRpDcKZUBFGpgKFRNxKI3pMacVJ1HKZ2Mf4HZxNwjhKAs5fJ/KRAg+Vu+Ut3TNKymM4esk0hCIEipy6TJB+qNQ7zgWHBI/0KFLaUGMI4UnozK+cJZq0EXa4xHA2d7kWxrAABUFIUcJ5gPiEMDgOZbtcdlyJcekc1AlyCE/BBiEedEvcXpbtJUTplqWTmeCKCioCHwNaeQCeTeuWnDuMJ2NyzBw3QQIWq7LGXYzvEb4wifg4gYKOAm1Egl4Qgjw7S9zpYNdG3RFMJOjq4PoxokZAEs41alqJlghNYDANltfdzDRi6RPiYYKWAl0lAZjgboAxT4wmSsHBUKZxv4LOO9fAYR04mxquYXdArAU4o92a7zkvAu6ysrxVXIhbkT4ZBTvTXe1clWx/0nXYdXE3wQe7movRLbP5TBxCxOt2B+O963Lil1rCjBb8xfiLN+SHXv7VQS2Q9D/3Gl+ETsMN8Od35v1BXVzeg/4HOFOaH17wD6q5fzYF5coSuANePmJGuGA8sA/WxnY9txaJPbyTgdEFdBEy/fEySIS/X/P5cD63CHXwDjA8gs4I7J5AREv1ZQiXww6Bq87OBaySV7jkinMVTpNn2/f/sHkcAzeixWgIx0KJliAcESTKzZfzOJ7nw3kO8ik9VZwJGiYMDh867IzOgMPbzIJ/wgMzZWHLqLAXtjBp8b0y+Xv7uotTyVFP9OBqURUkpoXvQ/WCX/5Yx7HPACnEtMd6ysChY8iww/Z0VwsNL6dN7JuUoheRXsj4LWGJ0q89nehkf9BEj+cy/wc=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 34567889
+  displayTitle: Dutch tulip windmill
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 94b6595d276d54849bdbbc21330de750,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

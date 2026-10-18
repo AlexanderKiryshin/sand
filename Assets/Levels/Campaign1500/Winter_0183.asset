@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0183
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281999893
+  - serializedVersion: 2
+    rgba: 4288175367
+  - serializedVersion: 2
+    rgba: 4294171056
+  - serializedVersion: 2
+    rgba: 4290607114
+  - serializedVersion: 2
+    rgba: 4294768103
+  - serializedVersion: 2
+    rgba: 4291992135
+  - serializedVersion: 2
+    rgba: 4291529768
+  - serializedVersion: 2
+    rgba: 4293574529
+  - serializedVersion: 2
+    rgba: 4292717412
+  - serializedVersion: 2
+    rgba: 4285743878
+  - serializedVersion: 2
+    rgba: 4280888712
+  - serializedVersion: 2
+    rgba: 4289624103
+  encodedCells: S1:4:4096:D92EABAC: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 34561779
+  displayTitle: Red Kayak below an Ice Wall
+  seasonalNumber: 183
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 3618e0a90ce947b4c9e609e08fcfacde,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

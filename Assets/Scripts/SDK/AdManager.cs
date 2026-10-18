@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using MirraGames.SDK;
 using UnityEngine;
 
@@ -43,6 +42,8 @@ public class AdManager : MonoBehaviour
             return true;
         }
 
+        if (!GameSdkReadiness.IsReady) return false;
+
         try
         {
             return MirraSDK.Ads.IsRewardedReady;
@@ -58,12 +59,13 @@ public class AdManager : MonoBehaviour
         if (!CanStartRewarded(requireAdView)) { onNotReady?.Invoke(); return; }
         progress = progressMarker;
         placement = placementName;
+        bool adOpened = false;
         RewardedAttempt attempt = null;
         attempt = new RewardedAttempt(() =>
         {
             if (rewardedAttempt == attempt) rewardedAttempt = null;
             RestoreTimeScale();
-            Analytic.RewardedWatched(progressMarker, placementName);
+            if (adOpened) Analytic.RewardedWatched(progressMarker, placementName);
             onSuccess?.Invoke();
         }, () =>
         {
@@ -74,12 +76,17 @@ public class AdManager : MonoBehaviour
         rewardedAttempt = attempt;
         requestStartedAt = Time.realtimeSinceStartup;
         lastRewardedTime = Time.unscaledTime;
-        Analytic.RewardedStarted(progressMarker, placementName);
         if (!requireAdView && GameProgressStore.GetBool("no_ads")) { attempt.Complete(true); return; }
+        Analytic.RewardedStarted(progressMarker, placementName);
         try
         {
             // Installed SDK signature is (onOpen, onClose(isSuccess), tag).
-            MirraSDK.Ads.InvokeRewarded(null, watched => attempt.Complete(watched), placementName);
+            MirraSDK.Ads.InvokeRewarded(() =>
+            {
+                if (adOpened || attempt.IsSettled) return;
+                adOpened = true;
+                Analytic.AdShown(progressMarker, placementName, "rewarded");
+            }, watched => attempt.Complete(watched), placementName);
         }
         catch { attempt.Complete(false); }
     }
@@ -88,7 +95,7 @@ public class AdManager : MonoBehaviour
     {
         onInterstitialClosed = onClosed;
 
-        if (GameProgressStore.GetBool("no_ads"))
+        if (!GameSdkReadiness.IsReady || GameProgressStore.GetBool("no_ads"))
         {
             HandleInterstitialClosed();
             return;
@@ -98,12 +105,14 @@ public class AdManager : MonoBehaviour
         {
             if (MirraSDK.Ads.IsInterstitialReady)
             {
-                MirraSDK.Ads.InvokeInterstitial(HandleInterstitialClosed);
-                Dictionary<string, object> placements = new Dictionary<string, object>
+                string progressMarker = ProgressSaveService.CurrentLevelIndex.ToString();
+                bool adOpened = false;
+                MirraSDK.Ads.InvokeInterstitial(() =>
                 {
-                    { "placement", "interstitial" }
-                };
-                MirraSDK.Analytics.Report("video_ads_started", placements);
+                    if (adOpened) return;
+                    adOpened = true;
+                    Analytic.AdShown(progressMarker, "interstitial", "interstitial");
+                }, _ => HandleInterstitialClosed());
             }
             else
             {
@@ -136,7 +145,7 @@ public class AdManager : MonoBehaviour
     {
         try
         {
-            MirraSDK.Time.Scale = 1f;
+            if (GameSdkReadiness.IsReady) MirraSDK.Time.Scale = 1f;
         }
         catch
         {

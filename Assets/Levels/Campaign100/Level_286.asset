@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4284045102
+    rgba: 4280496938
   - serializedVersion: 2
-    rgba: 4291875964
+    rgba: 4291612794
   - serializedVersion: 2
-    rgba: 4286686129
+    rgba: 4290303202
   - serializedVersion: 2
-    rgba: 4278848264
+    rgba: 4286609970
   - serializedVersion: 2
-    rgba: 4284182643
+    rgba: 4284774009
   - serializedVersion: 2
-    rgba: 4280165659
+    rgba: 4282927140
   - serializedVersion: 2
-    rgba: 4286873140
+    rgba: 4279111692
   - serializedVersion: 2
-    rgba: 4288650826
+    rgba: 4288519242
   - serializedVersion: 2
-    rgba: 4281041295
+    rgba: 4281172880
   - serializedVersion: 2
-    rgba: 4280892466
+    rgba: 4282733902
   - serializedVersion: 2
-    rgba: 4280899416
+    rgba: 4280309334
   - serializedVersion: 2
-    rgba: 4290500579
-  encodedCells: S1:4:4096:905A99E3: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
+    rgba: 4286555058
+  encodedCells: S1:4:4096:00F8630E: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 0000000000000000fe000000000000ff00000000ff0000fe00
-  conveyorDirections: 00000000000000000000000000000000000000000000000300
-  conveyorBucketCounts: 00000000000000000200000000000000000000000000000200
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: wildlife
   campaignSeed: 29855084
   displayTitle: Sea Otter with a Shell in Kelp
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 0
+  frostMoves: 8
   sectionBuckets: 1
   keyGates: 0
-  linkedBuckets: 1
+  linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: e2f9b9b301e79614f96f4a5eb0ee0de5,
     type: 2}
   usesTiles: 0

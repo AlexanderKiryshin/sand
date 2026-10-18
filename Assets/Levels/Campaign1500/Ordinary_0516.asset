@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0516
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281094738
+  - serializedVersion: 2
+    rgba: 4291356913
+  - serializedVersion: 2
+    rgba: 4279987404
+  - serializedVersion: 2
+    rgba: 4279314994
+  - serializedVersion: 2
+    rgba: 4284392370
+  - serializedVersion: 2
+    rgba: 4285778919
+  - serializedVersion: 2
+    rgba: 4278925710
+  - serializedVersion: 2
+    rgba: 4280727252
+  - serializedVersion: 2
+    rgba: 4280318589
+  - serializedVersion: 2
+    rgba: 4283923068
+  encodedCells: S1:4:4096:DDCEBC40:NVVBc+I4Fv4NLytYpFvcHXbDbcbduGtv6nlZgm/0YCbmRgDHcBxT670S0i45N6UghbiJcjId/cp9Jr2isCi+99736ZP0jOwIXD+2tDHO2Vt105BMaBN7b54p20mB7Dh8NSVfG3oYKFMBVoC5+GZcZ6yVctZFDSCcK9UyWqUADe3ii52RTsO6hc4djBXc6HLfMms1h3FSJNHbwYTMAFjnqgbnAAdj1KtfqMU8KdrTZDSOgBnuBDjJiYHkySS9bd8miU+DAgQAa5+tAaRzxlyWKilUkiTTGva/+B7V9tr3Ch2QAJ2WafHFV/TNAz/INn4C1nodpQDEizgYtfiS+r7ysyzw8788z29z545bdQMM/maPZbqZdn2qHfxGePixc79pUuHdKHIwOTPu8aTK72ZZ7me9sAp/nY4cdO5vIpCXXxksuyfcz/Lcz3vovn7yR8J6NR5enLG18t8D8jzI8l7lvv65GcFYKcLx4uh0nXrCe//K8uCvjvfn3Wj8vcbdufcMJUHBe/6nPM+x6mTBzbhQKo6i8yOHz5R+RxRZkOckEfFj4I+iQu2jKHr9lsTdn+m1QLIAUeT+77u5sqNGFM690+Ky4KQgILyHQe6n7vtrByaeWC5U5teyPxEa5ESR07RJxNjZZeEmM5NS2VVtfK2QIsmEYDNqgFiT//OdWbxjwTtNPfLp9EU4ptSPRGvT/T/07lBNsBlZd3xUP0IHsf7yE18R7J/o/fQ1iggPHyLUC5J8Er4iE0/sGzJuFHllSecXo8+nyjVer57S6Xi9zouGVYocOoPluzX+yVuyMNgky5f5s9W83HO8gAnlkiEn5vyUfuvAvolHaLEBrsyyLl/jK0JX9CN9dR2wEs9xGMEsvajJSXONB6uaPW55YOFyWQ2iaJ7cUmr2XpsegZ/sDNItNPywG714T/9Mu3/M8p+D8ORgrq0BbTQ8W5F7u7hpTE19qp8FI23EhMPODOQTQLIbVAkfTlY50icP/psn+z4mThh+eQYAxlBkExLNEXuE/ydPQR54TV/u6Q5GW9nXUWhQIqX3CJ+ePxkIgXoBXS5A7MstRGXCEAPs4RQ/OMOFsAcoVOMUEG6vYMsFR5CS5dkd9QsArZ8KRTM6tIwN2UJquTVk54fgdwNvEmDwjgsp5WSqF6Gm/5is/sBVIDijllL2GYADVoWNGOMGtRuKrcYjzJ+4JuYF3W1qPFL0mZRAj87ByErO8ePfjaH8vWTUnwQFWckWfTx3IpbkPH70doRrBWiXDlBbHl7h21A7JD0zMuKuaDYJ78/SApANcSCA94mrEZOLIcO7ozeHsIyNusYKQ2TILBWzY7tbxEgpt6YQYrunFRBKBXEIxIwceC1Mjm+1bnvC9Nk51uMFBwwYKSVDqJku7JBvn1Nh8PxbDbOQrMXKah2xJSnYRrQZ17Ndv4wjt/SpHyBYCrNCVozBw0RakSza99pEL/CZGs5NRRGSvMC3PrNmjgzSov044keB8yz/R4v2W5J+ZI0QQsOYRjZPzi51kw4Y5bdOa6AFsHpmjma2LtPFfQOiuv41ooQ1qzEKsA4l234vFmXaBPdLlk9/ozVrU+dKsoq2ZPtv/vxs9vvmBLuENyTILZ3HPsIVNfQQB23D8GFC74MTTjIG2xBU31CFypJTmuo8PBe0P9R7PjTI8jEd2fo0ylrEAIdyO9/vyuuomweKlC3VD73nElmLvmywnlGYKa620M39hHIeVaxMbaLqUwk2GNKmzqY6rvMTEl6qa21Y9fWhT+9EgmZXiOeC7jfxU74sVUvzQ/n2hErWEoY9rEQ42NX1u5ahUteW17cR+tJJpPpkOdsayveTKKJWia+aLhaXxrxJ1icOjkxzR/godlDsRYPTWYUJnW1ykTgAZRP+Bw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 53942754
+  displayTitle: golden lion tamarin
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 3b506f4eb0fe17d449cf9331bd4a4e16,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

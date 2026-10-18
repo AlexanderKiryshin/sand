@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "active_campaign_levels": 1200,
+  "base_belt_capacity": 5,
+  "linked_buckets_require_both_column_fronts": true,
+  "linked_route_runs": 786,
+  "diagonal_pairs_checked": 1732,
+  "fixed_paintings": [
+    361,
+    362,
+    363,
+    364,
+    365
+  ],
+  "painting_route_runs": 40,
+  "main_project_matches_validated_code_and_paintings": true
+}

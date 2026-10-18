@@ -16,52 +16,69 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4287573725
   - serializedVersion: 2
-    rgba: 4281218361
+    rgba: 4292009706
   - serializedVersion: 2
-    rgba: 4283480559
+    rgba: 4293442449
   - serializedVersion: 2
-    rgba: 4279118151
+    rgba: 4284094377
   - serializedVersion: 2
-    rgba: 4278279105
+    rgba: 4287660154
   - serializedVersion: 2
-    rgba: 4285045955
+    rgba: 4279377707
   - serializedVersion: 2
-    rgba: 4281699557
+    rgba: 4287802579
   - serializedVersion: 2
-    rgba: 4281539073
+    rgba: 4280565074
   - serializedVersion: 2
-    rgba: 4289956892
-  encodedCells: S1:4:4096:A1DAC24B:tZVLbuMwDIbPQFtItY2RCwQMxms1AnqOooC7Djyo1wJm4d5gctvhy3okmcxqCCSO9ZG/KJp01vX/2+/r91N+vf473EOzVt9KuI+1gw/plofKgW7ueBdpDcgSY3fPaRFCjPoN6S4/iGaOfRp+bTgZ1PmpA4j4Qy4GlYCD7q5KHlwWAAf3nKI2DNHpWsWD+5h2ogDTdI633McjTtOON5+mH6j1azgiOQQX3wnj2d3w4BDn5XNH4cvyiJ8Ql36Z4P3r5TIiRuWp4vMnXEY4fQEsG/dZIxxxphKNPS4AF9QEva/1hWPDU8NfSF/ix5qnkh9tPJ/mOj+ihc/LiOOIfD7k8yXZPpX6IPYC7fy+4UdZX96E6/OHUgLgAlL8T9E5azN7djEO8cTbXhzrRJd5Snyh8eCujfESgpNfej6/gvEo/YXueNYWVw5cA5bhkOAAe+xBOumX9Bxw/sqd9A4i6AhA4Um42rHfmlB4shOU4QmZU27sBFwl4tV4kL4cUKZMXgWUcD0+nCrXJD9EOlzjYXwt3DX6EuprruPHhwwPuIdmvpVbdYzvQ8MtfUiqQnwovJPMVcOyhP0hRx9s+8TbbhyGLr99jJtpL8EwhG3+wZ4OXTcHFtBX0MFWVNtn7/0wDK/R0UWzt0jI7h2hQGkMKe9uby5LMRw63iWrW+sb54cA+07uYIs217Q5vjooVtVokww1T8olFarVnjfQT1HIJ6VY6IQ3Dr7wm1jjqRT6gT2FTyw9p+v6TLj8ZfwtOBf+Dw==
+    rgba: 4281754237
+  - serializedVersion: 2
+    rgba: 4283730356
+  encodedCells: S1:4:4096:F84FB915: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets:
-  - colorIndex: 8
-    count: 1
   - colorIndex: 1
-    count: 1
-  - colorIndex: 4
-    count: 1
-  - colorIndex: 3
-    count: 1
-  - colorIndex: 7
     count: 1
   - colorIndex: 2
     count: 1
-  - colorIndex: 9
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
     count: 1
   - colorIndex: 6
     count: 1
-  bucketLayout: 00000000000000fe00000000ff000000000000000000000000
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
-  conveyorBucketCounts: 00000000000000030000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: ordinary
   campaignSeed: 845151
-  displayTitle: 
+  displayTitle: bougainvillea arch
+  seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 0
-  mysteryBuckets: 1
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: bc2a819bb7014cf4b87b079a0d18b0c8,
     type: 2}
   usesTiles: 0

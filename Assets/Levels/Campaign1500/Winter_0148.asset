@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0148
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4293520371
+  - serializedVersion: 2
+    rgba: 4280571557
+  - serializedVersion: 2
+    rgba: 4279380826
+  - serializedVersion: 2
+    rgba: 4288981186
+  - serializedVersion: 2
+    rgba: 4283201471
+  - serializedVersion: 2
+    rgba: 4283324785
+  - serializedVersion: 2
+    rgba: 4279582081
+  - serializedVersion: 2
+    rgba: 4291546075
+  - serializedVersion: 2
+    rgba: 4287006365
+  - serializedVersion: 2
+    rgba: 4278785323
+  encodedCells: S1:4:4096:BACCD25B:JVXBdtrIEv0G4RCU2amQRiQ70xjF2oGFJZaS0Yi8XQJpAju6we14JyJDs0wsY+TdRBl5oq+ckl+fo3Mk3e6q6qpbtxyJ65ySlyUE4UIIa+KkQymTdJhm0pPZvEs4yW1iXSNa7dsq3x0p06Eae06WZr+7xCKkJLP/w5zcK4pUFEXFJ8uyw7w6k5e3aLl6s8hBVcbHqwpGfEKLF+dlSdB9iG+HvfxinTXrnqrElNI5Rsc54otuEKmD49rN5G8O5iCVikT80M1tjscm+1N2x0MvXF/KqW0aP4aqzDyKm4tFMj9cz4Yrcbr0nYfR4JgREQ5k7FX3U+J0H+NtPmS8JsYhrs/dMufRnVS9LJUVPpRO4jkdc7n8UEeYcsvGUPfymGH2VOcydWTiOF13vY3dIJyXnE3OydWdIjOZHTI6dDzppQMzgUez7YdrzDIaIINYHtMsiWmamgBhcgPQB6grOgSId8lfQebQw1aJj1+F/GCJ52ZbqtC0LEcJCKGEn5mU0Ayr8MvqvGI61NibFcCPRseDaYVHzTV1sqEzPOe7i53Wr4+v3Do0vMwQGPo5Gogo3SeZMyTt93fNsXYTJQ19shqAmyaq8p1E9nB+SLGGRGxN5mq7yLnT2VULsmzoqepHUnjTlF5eeh3u6nAuHDkWLrjAMHFJut6cE2c6lOnaBC62fVe7Vw2nt2nB7OA9QGSexMQZzfKf3LQIv3DlEfMcJ6QFYQjQ5mQmT5GOpahoJW6si05NwjfLaq0FGMLK82D+XVTEQ1rxvg7fdOv0tAHQMJBupIlGfr564RUp97prghgZy283JkRhaQdhwETzefgHt/LyKctMbbdkiqFZN1Dj2ppXNEWryfY6tPbTOe27woBV4IsQTho7VjtDQtuEegUVyTGjf7oYUx8evFUEgpxA7z1/Lt+FRrgoX0tMoFAS6Q1bAljkOJmuNHwBJpjCXJRyf8gyNu0SYbXExu/bJA98xUfnFrfE4kqWMDkX1WpeiM24Pnp+l/TC2hleS3DBzc0tesTNJL995Ey/eauqN26vF4ZljlsIdPL/MeydsixtsRLjR711AWzJbrjr/WM/2QLjtPLFcFHh3HwjGlq49nXTF+4oGBVE5Lb1bO92vFOWfGa6ujKqs606Gqi9NjeCkk9oXr7rJYPLnNpEtFtsotQv9AA0daDogl4i//PaTMZfO5gwzkYglbtd425k+HXXX/ekosZKDwTADoXiVkwNstYUvXHpfYzqUfvT+6QHGuAhAKzju9oK1sq9IuVX6Nd9ZpvfrrS6CmynAbvJuv0lqPogVlZWokEPrN/85wgJvxmd+lr9SJp+zfik1iPlMm6GdYN92nPxTWOBIlFqOverGjDFUhtLfTLWPyFNj2+wLK9bbF3bxsrYgmXtq/bDA9nqnyiaZk6yrCD8NWzMTewkul7DQHXsYE/9eKJB46ykGbUjDR5U3XvwXPNxqIzMwCAnJ2ojCsNpUWTErgXQbxijhphwARYdHv2NOvrTBR/84pDlTY0pzDM+KbJiOaZp0mpf3AD68t3Pv5xDzV2aEBi7v2Ydu2Is41o/hiiuL3cnA7l/W18L11HeskgT97SLjSG+Dxx9kySSrXzvFaBueV3yGj4qxiNyurTNN6DpPlgHte6nKiYdtQnc1rLlL1HAy9LcBkvsA8Emw6Qfc8tkpuCswzymtatuE641VsDm3Gw3az00iFFhmbxtDSwbHQj2PvLXL4ptua3ic7Wh5O33UQOeSwalzVp1o12WOfbwRVRQWjGXmM5YYxjcBp9XLZYvcC4Ul9fBE+JZRq+59UZvUyJg1hUXpnVAXXPSTjQvi7LYygzF8N6YHXCQTSgHdk+zvYz/vS2aZ4vi6fuX45xwzGy2euYzSoANnRRng52H/O9n9EQ/YuY4HKZdnIOU3D5K2ev9tqPr6HNhE+wt+iu9zmdDSYtymHUnqtehv+woGE/jRbGwf9IFdeblvhq11USQX2YFNluV1ytabst/z/4pbRTZ8+5DghVCUmG/cjDADM6eFtNtdX/8VZb0JRn4aZdNHBhGYJHyqSgXX57sSuZesNyekKjA2xiAs9Qu0D7GUFTyMlFO770VquAMTwMEBE/9Bw==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 30888345
+  displayTitle: gingerbread star cookies
+  seasonalNumber: 148
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: c4b0496bc055bb44489044f08aad8b77,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

@@ -16,30 +16,30 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4281308642
+    rgba: 4281308126
   - serializedVersion: 2
-    rgba: 4284913592
+    rgba: 4282690287
   - serializedVersion: 2
-    rgba: 4279254634
+    rgba: 4279188584
   - serializedVersion: 2
-    rgba: 4279785602
+    rgba: 4281167786
   - serializedVersion: 2
-    rgba: 4281018394
+    rgba: 4281281307
   - serializedVersion: 2
-    rgba: 4281027662
+    rgba: 4280699469
   - serializedVersion: 2
-    rgba: 4280642471
+    rgba: 4279919777
   - serializedVersion: 2
-    rgba: 4283149036
+    rgba: 4283999705
   - serializedVersion: 2
-    rgba: 4278855491
+    rgba: 4278854978
   - serializedVersion: 2
-    rgba: 4285172380
+    rgba: 4284977064
   - serializedVersion: 2
-    rgba: 4280254154
+    rgba: 4280188361
   - serializedVersion: 2
-    rgba: 4282615746
-  encodedCells: S1:4:4096:3C787DB0:fZTPb9NIFMf/hlECcTQ95UJV9RJNNl7Lp8hDXRQuiDWo6l5QzVRiT1FNh8i9BCEY1FyqaTYa+VaxHHKzHGSix4Uf6ma1+aP2jVMQuwt8pXHs+bzve/Nmpm39ujl7Pfue/pg9VWpr9gMppTYvfszVdqu1dbE129r6Jt9sWT3FcYGJWlut/+W3WKkqLGmtdVGFo8Hmx4g1Hz+RsvW1PqzsrFprUynkNkD9K6ilvgh5KKV6Ws2utiu2uVyt1OpzFplIeaNaEE5vt7aX47Eajzc/YKCjRjYAdQOXo8ar1biyrtRy3FKEkNFVCdQLa1f4UBV3LFZEXflRyzEiNNqYDWI1qjI8kZ+lKqvVW1K568++8BTHiVyNHZvy7TvYIA4huwLXOLpKAPbRsMYc4FSRHieheLbhjHA6wU2A3KaBlND3OxgUcrEhd45jsnbzCpZAyPvG8nlO05iLcacbiyP5lUo0noRL8c4ZxJhcXXJxXIHwc0CvK/uxuA792Dn5Oz4OBV+DcSBfHMmE3BY5FwIXEBKCL5ILrB1i64F6/2kg8p4YkVg8zz+R3oAfiuPDWJ7wHh8/YUoxLjpcnKJN7MS7fCfG3zpRb+loY1fx+kec2Ikv5SFyLvglUnybx3WnMfAVF11rjLGeRDA/4Qn6rTi//ZFzLnaq79iuFt9m4pEQ94S4/DMW4Q4Xa4jD7qY8HeBNxoBHs9lrkeR925O4ya/yVwcRXu6+Elu3X41783mSxNdDLCGOsVfrtxfGGRHa47gVeYhL4fxYJFzM7UEfPg4xptGobkg+crCbJE7D45BDKglJ70frFJLa43aWnOLsEX7IsqT4c2cP4xrBlwjijJwGoaRnrwnIxn4EpNw7kmEB4EfXsIbC2zQarO8RyHvRG3BZkJesoK4bDRsjp/3gd5seAAik96LH0pimviUbvmF7b8gpPIz2rpFBbjl5MIlu5sQ0zUCb35inzcD3uhN9LScDaVdzZxJFhJy/9JBlrmeMq3/xvCiC6n5BvuYZS40xnmcy0zFTeTeK8qqXnO4/tLytMbMutNbmZ+OHd83edZJW9/9+hJymSHyTusiHrD319iZNos0COabCpqVn9Jmeuho78YbMGN3sMK9G8ny/4hRLu4wlZjJpuh7T0Z5npsbD/u9E0eMCW+0Yj2ELE0N8D9diPLdvFrjIAfrPKcmwMaaZmZiaqcI8/CjyHGx9YMRpmjOmPWyxfmasX/v4AOLb+mVGSBEQF8HC1ClC45m2p2/hDiOO7LkmNeJXPIUpFJlpDrxbfxGgltt9nNaoNj8d1UydTPMaGRZQTutXfjxFqofpYmpI0QDSgxpIDbSdUgr7lR9PKx0UVOdZWaP9vIDzKSTtnAJk+/M3mCaHswwyH6a0Rs+hlhcZ7g3Ogpn3DeA/k/LsDIwPBeYGKOQiA1jMEfi4a6wEmvhl2s5IQWtAQYal7x8NIcznFBiK+wtgxXkGi7IoG7aQj7nxr6hMywJ5p8PYokw1k8mwLNPMgC6gXwILsILbsSkCPB+NhzD0vdKUKWMuK1LGOcP1WK699fA8ZD5bK+AsmM/xdK++NfuPOmgPWRB+gwd2dI5cac0hZ98VrwoF7vd4wIKg823UPbCPruDd7oEVOzjoMtHtMoavjIl/AA==
+    rgba: 4279784570
+  encodedCells: S1:4:4096:2FC67653:hZPPa9tIFMf/hicndb3KRdqwDc3JDEUV8iVZbbJlc+lm1SVsL2XbWWh18ZoyGPnSEIoJvaQimEE5lVIW08vUaYV5vjjW2l0yf9S+kfOjYWn2IST5fd77ft+Mxt1u/9rodq8v6P5Pgbu7/9e13HXnzzfl4z+1xHf3+/2V3dLlJHx7Fe93uys0ARV13/Rvu+thGJqhrs7XdXdduq+4JQ/P1nT7khMqRc4K3u4bvD6XOg9DnXOFci56uR0ae9PtWhbAhcLyrsmFy+shle2V1gCOe8HDcPdsHvN7z51j6xKHez/eBKvMdkN6GO31pS94GFqEbjorpIKmzHFOtDuf6iJKWwBlkzU4mq9cCmB5/2CocYbxhl3wXX2hfwwqPEa0AYob4Izjz/z4ZPrq1ZfqiGQcqmKK9lhrbo2mmodXAuBTONUvF+A0XuBL8cY5r59xZ40fF5zfUIp/+LQV83A6L7jlFssLdxc0POJrRcyXIIxhpDkP42m4V4xpU/XaSnESh2PuFjxeOtmAQscx33q2dmxZrmNDY8FkpjGf6SnnRVzE1M75S9gCx3HsFb1xj4RpYPEHcT7lMd3obRrfWFhQPy0/5hu0JMoKIYhvhfii0BtUxD/rorNFXtM43qAbcTGL3/WfvuP8AeGlmaZ1xo+NqOakLzpC3IK4/77P+dN+/ykv8lNjxjvlRGIeVTuM3/Nv9HduopdW17ZGND3nOs9LOuuInI7XaqGnI4AXpE4DxB0aImkK8etz4qJadczHVq5Ftp14NNN/akQBIB5EQpQ6q+DQt1Yze9OBzqpldfLErgJkOyBEUhrljkU1lpuvWra7bjKUfxghiLS1KQY2BtGiY5GHOY9lByYiio7R81sqZwo9L2rbjjV+xC0QOZ0Qhb/tRM+FlLVGW1QSyXY+wio+ebL9HJpQnqD7UbQI4Ff8eiqfMT+Va2J4J0p3FI1Oxw9+jqIfwM2+9VNfZp4vpbf9cHIYHR4nOVGEiPod92hCHuwelciG3xO/H0YjKAOJRy6wlJTlIE1TeVceJDLdWYRmAGQQyZ0IoE4kkIr1mGwzlUkzlCeHhlNUoM58dpD2PBKp+cN/5GFKC/JrtATDFw2XHmMdKQ9rgc96UXQ4Y1Ii2DtR9HEImPjSZ1TkpxAwRjKyXnLYpvUpBZnpTyklK705PzAckfbnb1s5r2uUoC3w/dqB7xP6vmm4qv8SRU/M6agNVUCLZH7Npp2QfmtMO4bl/kRVOhrDgR2Qe1u2sfeaZbKm0nRToTLcBqVaFTtt32EVWYMjbAOb4IDZCm3DEZtqUsHaTFb0COEAK3jQQ6xWcb5+2gaoVpvVplRBdYDEVZZhbdQknt3fzlVi29VxHRMPM6hAag/Ay7JaJ1GIPcwmKBCX6hm2AkyxBnUc5JUMB/KU+o9oVsSE2ASDLGmJEZ25BIeBGrCZPhXYYIzp0ekwaOS9DIf5aJAnmTcMBoizGf0FcsYaTGvGhspLG6O8hS3MkiQZJJjPGh2yEMxoMF+zo6NG7lOnSFirxVo5TnRA3DPYfL9Ueqnfop0pMxQTusgIW8RMTanDLoN8Z17eGJz/TtnVmLCOCLSZ0Guwr4U3MUKTr/LJhK6vtzeu6f4X
   subGrainsPerAxis: 1
   buckets: []
   bucketLayout: 0000000000fe000000fe000000ff0000ff0000000000000000

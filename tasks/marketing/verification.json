@@ -1,0 +1,33 @@
+{
+  "captions": false,
+  "title_cards": false,
+  "fps": 30,
+  "duration_seconds": 30,
+  "level": 9,
+  "background": "lake",
+  "background_index": 27,
+  "tutorials": false,
+  "source": "Real Unity scene and sand simulation, recorded in a disposable editor profile.",
+  "landscape_layout": "Native 1920x1080 render of the same gameplay state; complete field, extended scene background.",
+  "audio": "Existing game music and sound assets; effects aligned to logged gameplay events.",
+  "files": [
+    {
+      "name": "gameplay-9x16-30s.mp4",
+      "width": 1080,
+      "height": 1920,
+      "frames": 900,
+      "fps": 30.0,
+      "bytes": 6491950,
+      "full_decode": "PASS"
+    },
+    {
+      "name": "gameplay-16x9-30s.mp4",
+      "width": 1920,
+      "height": 1080,
+      "frames": 900,
+      "fps": 30.0,
+      "bytes": 4419013,
+      "full_decode": "PASS"
+    }
+  ]
+}

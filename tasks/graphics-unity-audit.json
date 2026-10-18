@@ -1,0 +1,474 @@
+{
+    "textures": [
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_4.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_5.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_6.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_7.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_8.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_9.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_10.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_11.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_12.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_13.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_14.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_15.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_16.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_17.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_18.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_19.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_20.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_21.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_22.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_23.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_24.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_25.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_26.png",
+            "format": "BC7",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 940,
+            "height": 1672,
+            "memoryBytes": 3144040,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_27.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_28.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_29.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_30.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_31.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_32.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_33.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_34.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_35.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_36.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_37.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_38.png",
+            "format": "BC7",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 948,
+            "height": 1660,
+            "memoryBytes": 3148040,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_39.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 948,
+            "height": 1659,
+            "memoryBytes": 12582536,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_40.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 948,
+            "height": 1659,
+            "memoryBytes": 12582536,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_41.png",
+            "format": "BC7",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 948,
+            "height": 1660,
+            "memoryBytes": 3148040,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_42.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_43.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_44.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_45.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_46.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_47.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_48.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/ThemeBackgrounds/background_49.png",
+            "format": "RGBA32",
+            "webglFormat": "DXT1",
+            "androidFormat": "ETC_RGB4",
+            "width": 941,
+            "height": 1672,
+            "memoryBytes": 12587496,
+            "crunched": false
+        },
+        {
+            "path": "Assets/Resources/UI/BoosterAtlas.png",
+            "format": "BC7",
+            "webglFormat": "DXT5",
+            "androidFormat": "ETC2_RGBA8",
+            "width": 512,
+            "height": 512,
+            "memoryBytes": 524968,
+            "crunched": false
+        }
+    ]
+}

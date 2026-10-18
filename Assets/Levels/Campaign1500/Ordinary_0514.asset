@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Ordinary_0514
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4287452959
+  - serializedVersion: 2
+    rgba: 4291679953
+  - serializedVersion: 2
+    rgba: 4282066723
+  - serializedVersion: 2
+    rgba: 4287925632
+  - serializedVersion: 2
+    rgba: 4290936623
+  - serializedVersion: 2
+    rgba: 4293373469
+  - serializedVersion: 2
+    rgba: 4282627290
+  - serializedVersion: 2
+    rgba: 4293026071
+  - serializedVersion: 2
+    rgba: 4282341755
+  - serializedVersion: 2
+    rgba: 4293971049
+  encodedCells: S1:4:4096:BEA59F56:hVRBc5s4FP4NKuDS3ELcuPhGhCewN2O5tX1ja1HWN3eDNsutNImGvXkcJ2puAXcdHduNmYx+5T6R7Hk1eMzo03vve9/70EaIR8YaphhTOVOqr/qOA48ihMyISTb/i3tLxjTM8qZRsPqAOqpPSETO6Nm1PVhoDHJAknb9VICr/ow85gziDYByRn/krFH584k+/CBXMzsmNFiJBBgke/YSrvGfCo6yhgwJPRXr22wlxBPdKyXS/L8zucobQlAmhOCDABti0Sgm7DZxiwMr6CGxRMpP8Vqs1ypfCZvnLzh0NIP8SdY/5hhDlvhno+ihrqtaejo8IlmWMXYpAl/gc4g8aPG7J/3HmmNCLMQy9rcQ18Awz/ewmyc3G5prxZqImHHGmoTdQn7ArUvFEtqk0EoyyXUBUy0tytigxf+KhwnM43JGlKLjnB13iYnmBL1l7Bj2FYuUJcQqfWaoRwI4POaPxiSfkzkomNgDfbDtHhYaojE2jeUBIX+yjXhiXBcCZXPBbgTroDGyPB9TcT5UbLMR7I8EeCiWU3onxDmz3iJkkuvAEFmaMdjIO5M9DFs1GdL4gnYabtgYBFxkC3BIWzUVMCq0Eecdn6Il56C+CJ4YTHn2A+BPMM38akxTyuiGUs7DtdjYv79HrEHgNc8Gitpx8V5tRIzeWNdiBBkWaMisLGd3q4nGEwajP0CPHRTfigcIGZNlnkKRG6yZsaSBvWBTo/GvX3TTgkJrIsuveJuedajQbR+BNAMYnkgpKLd+si5ff4IvomFvCbqGTWh/9CtNRbqnMIKVYQ3PADyAgInYCLowi56JjCFF8WVb5SD+DCIJUGSVUgsN793pBw+RyPPGpwKI2Ci72iWgVyDWGTWH99N6ekgimPT3NoG9FONWkUDgzCSkHuHRsEvIqzl60DR/3AB+irWkto1iWmFMomnkRBGJdRfW/Pxq9x3egO0TWlJCRqSG72A6dUmK0s4YoYN957UQ2pKUUjwysb+tulJKdxina80hX3zRpUQKZsXb0Me+uyVSdrmx0qNG4oB6GmdJTE9kiI2wrt3tdMtPLayXnQ6Xd3Oa7Dub9B8VxkS6kL6S/IW4WCdKZQljV6Z9p3zbrWUNR2r+YhWBnxJKzU6W/IYQHaCTehsCXu6MNlxnuDDiBOYwo8iwvI9eTXxXbuXnTyLAgQB/FeZw0eSzswb9gyyCZT2S8iiMv4qXdf55r/L300xR+nGzxFjiWsrp8wxT+M3PSPuNvffWH8MUREL3ody6Jn8OfxfJR+XANdb88tEwUPv5+tIv+ddv+nVSfJCueuz3I4cYHlhBwCN+gRLcn1AxcS5c0o22TrUtpybmof2s2kXJ3TJC97IqXZg4MHHKGmO+0xmg75kswwKY7qY1/+AHBhKTKcZbDgd0VfyukoSUuPZJLfkbjIP1ah56mL/29P0HJwo/2paYkCp0QGrIGEwwrrFxK+xaHyicXVSORkSGFzwEfBWkERAw/5PtQUbbCheyCrvRhQgCffcWrzroy7dnP9X3UbciQCJyumWrhOD8FUFG+Rwe+pL4jouLXrWNbttLk/MTfmrEre4SxiB3oePuJJfRyeY5/mvxAQ0wn4MVa5hS70iWXVc6zk7P4qEC05x2DbjE7BiUxhKUr0jlHsL+Kn0oyx3gWgEveJOmEB/WThXVr94Wu95OytKtirLkJxgbNTVMjA+7Xez5xnA0lFVVyynv8V2Pw/2D8VCOB3I3dbonPrGODivwtCwgSW+34xMRrmscgo3DQ31rG9R3p1FXFlICgR63xcALwaeSF1twxKjrDZ3K7e5kyXs6QQDGxTjcQkofH/nReGQc9ooCyP0PznlVFuU3zQ9rk0twRHQ0931UOL2ey/8F
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: ordinary
+  campaignSeed: 53733296
+  displayTitle: blue tang school
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 3f60880c89e489c47b5ffaf2dc706ca6,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

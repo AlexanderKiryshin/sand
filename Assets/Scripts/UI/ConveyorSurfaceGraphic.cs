@@ -8,6 +8,8 @@ public sealed class ConveyorSurfaceGraphic : MaskableGraphic
     // Extend the deck beneath the hoods without moving their entrance anchors.
     private const float DeckStart = -.04f;
     private const float DeckEnd = 1.04f;
+    public int PreviewTheme = -1;
+    public int Theme => PreviewTheme < 0 ? ThemeCatalog.Selected : PreviewTheme;
     private float travel;
     private ConveyorBelt conveyor;
     public void Initialize(ConveyorBelt belt) { conveyor = belt; }
@@ -39,9 +41,9 @@ public sealed class ConveyorSurfaceGraphic : MaskableGraphic
         Vector2 a = Plane(DeckStart, 0), b = Plane(DeckEnd, 0), c = Plane(DeckEnd, 1), d = Plane(DeckStart, 1);
         Quad(vh, a + drop + Vector2.down * 7, b + drop + Vector2.down * 7,
             c + Vector2.down * 7, d + Vector2.down * 7, new Color(.08f, .19f, .21f, .13f));
-        Quad(vh, a + drop, b + drop, b, a, new Color(.14f, .28f, .30f));
-        Quad(vh, b + drop, c + drop * .65f, c, b, new Color(.09f, .22f, .25f));
-        Quad(vh, a, b, c, d, new Color(.29f, .43f, .43f));
+        Quad(vh, a + drop, b + drop, b, a, Color.Lerp(ThemeCatalog.Deck(Theme), Color.black, .35f));
+        Quad(vh, b + drop, c + drop * .65f, c, b, Color.Lerp(ThemeCatalog.Deck(Theme), Color.black, .50f));
+        Quad(vh, a, b, c, d, ThemeCatalog.Deck(Theme));
 
         // Moving seams use the same projection as the stationary frame.
         const float spacing = 1f / 22f;
@@ -51,10 +53,11 @@ public sealed class ConveyorSurfaceGraphic : MaskableGraphic
             float u = i * spacing + phase;
             float lo = Mathf.Clamp(u, DeckStart, DeckEnd), hi = Mathf.Clamp(u + .003f, DeckStart, DeckEnd);
             if (hi <= lo) continue;
-            Quad(vh, Plane(lo, 0), Plane(hi, 0), Plane(hi, 1), Plane(lo, 1), new Color(.16f, .30f, .32f));
+            Quad(vh, Plane(lo, 0), Plane(hi, 0), Plane(hi, 1), Plane(lo, 1), Color.Lerp(ThemeCatalog.Deck(Theme), Color.black, .25f));
             Quad(vh, Plane(hi, 0), Plane(Mathf.Min(DeckEnd, hi + .0015f), 0),
-                Plane(Mathf.Min(DeckEnd, hi + .0015f), 1), Plane(hi, 1), new Color(.42f, .55f, .53f));
+                Plane(Mathf.Min(DeckEnd, hi + .0015f), 1), Plane(hi, 1), Color.Lerp(ThemeCatalog.Deck(Theme), Color.white, .20f));
         }
+        ThemePatternMesh.Draw(vh, Plane, Theme, horizontalOffset: -travel / Mathf.Max(1, rectTransform.rect.width));
         // Contact shadows follow the center of the painted base ellipse. This exposes
         // the footprint on the plane instead of making the upright cup look suspended.
         if (conveyor != null)
@@ -73,10 +76,10 @@ public sealed class ConveyorSurfaceGraphic : MaskableGraphic
             }
         }
         // Narrow rails and matching end housings sit ON the plane, never upright.
-        Band(vh, DeckStart, DeckEnd, .94f, 1, new Color(.71f, .79f, .73f));
-        Band(vh, DeckStart, DeckEnd, 0, .065f, new Color(.88f, .89f, .78f));
+        Band(vh, DeckStart, DeckEnd, .94f, 1, ThemeCatalog.Casing(Theme));
+        Band(vh, DeckStart, DeckEnd, 0, .065f, Color.Lerp(ThemeCatalog.Casing(Theme), Color.white, .35f));
         Quad(vh, a + drop * .30f, b + drop * .30f, b + drop * .22f,
-            a + drop * .22f, new Color(.32f, .46f, .44f));
+            a + drop * .22f, Color.Lerp(ThemeCatalog.Casing(Theme), Color.black, .25f));
     }
 
     private void Band(VertexHelper vh, float left, float right, float near, float far, Color tint)

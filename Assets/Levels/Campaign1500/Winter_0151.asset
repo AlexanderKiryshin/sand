@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Winter_0151
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4292910199
+  - serializedVersion: 2
+    rgba: 4293245097
+  - serializedVersion: 2
+    rgba: 4283851397
+  - serializedVersion: 2
+    rgba: 4281153109
+  - serializedVersion: 2
+    rgba: 4287074472
+  - serializedVersion: 2
+    rgba: 4293912555
+  - serializedVersion: 2
+    rgba: 4284236090
+  - serializedVersion: 2
+    rgba: 4279768607
+  - serializedVersion: 2
+    rgba: 4289771726
+  - serializedVersion: 2
+    rgba: 4289556826
+  encodedCells: S1:4:4096:0AF95625:nVXBcts2EP0GoFPNRDcgCVLxaEoKea0omb5WpCr2Jjhah7zViU3Ht4aUBV0jURZyI2dCd/CVXUhOOz30Us5oRHAXb99b7C4I+f8Po/9tq9HGCJEnR/Ss/u1ct4Rw4PL7+otOT67P624jOKeEn1ZcJHHVIeQZgzfEGN5ldCFOzgKSInpBOEMfTjk3hnXTLhf8ZDfsfRyOXjCSCURFMyGOcaRoOLcRGbverdw+EnBkB82iW5uO+QpNFxesywz8vPVdN6Wk7ZCFJI0xRDRfedMsLJQxcKb1aLenBIQETmrTNfsOAWIWiG+69ZmrqkBPZAMSBKlRvcGXDCipwdSL7plbepHeSrEAQHMXIb8CCIZSZEYZd90y9JTbE40gQnJC0Q8fisE4Qg7dkdcvPTdFQCYzWNAMv0JrAP/Qxx2NPAzQ3wlK6wVtGtwrOrSuMwksBdmvyr5y+0HFGa2zlqEgLk0GgiPIGyLd6XngBWXgLpuaGKBfBEDjYAzBr26XgvlFvgrOy/H0R1obI2pk1nZN00O3q/oR4OyDOlfnQT9+SYzT5Q1SqmtTZ5jpd+YK2ZQq1MV8ct5rDErGD6ZmTZchyytnf89nwUW5Ccq7Na8dSnkrkGGD4hzR/po/3rB5uFGHtVKPlANl3V8MFgcWF2TO9RquP11/zFcqVMFliimV0nkyxsHQQN90mwnwnszXm3ig9U9vhSMyirsbK7w1eX3/Hjk85KE/0In+NO443KDCmreybZs879U5arzNvcGgCLf68geHU6xZwdvGXH+7f2r+zKSAfe5Ny3xdeLtzdsavbQk2Jrv9xnJ6/4TnM8m9kcrXypvLd5Nt1fv8E224+d2Y+8bcAzwEa2+7jvNivAO4GI3E2SvuOU7rPDX82mlh4ubu5UMUKzUfQBBNoRiXPmf159ec3jwhv+Kt64+jB6Xc0A8GE7dQyqeyPnvt/PHBEfK2LN1xOF5dLcNZkXjlvFSbKTbG+SqIPuZCTobvXAS98mfDsq9TtVaHYV9wMhoH4Rz5DeEmiOLVpYbJKNAPdyu1hBLTVpS7/g7L88HJzpI4VHCIQk9v7g77+SadwCAIL5As5Y5c3kdJ6G52XhhN5jeH1Na2W6p5kvbxPBkX8uUHL9R9ddcfqbtDgjFHq0I/RKuxIB3Ao0xvphdRoba7sHg71Xs1jMoP+2Q5mQAsFpiCYTzW5S7UiSrccjO/clXp6TQFH7DlsFWy2eBxk3jaVzdhVIynZREoXYl5AgKI7SHYxhu/8jeqUEHiJ4EqC41CLm0nMWtfJv1tOrlTro6iMWY4jA6bYmct6IG/yxi2y5VSdzoZRxHa+7EOtG3QlmXYbssvMF0WpbfWelMlSqlSxx5mAvlhwRAuJcRxsImKg75AGUqHO+2/4kd89OIC66xKbuM42QZ6g7uTUI16mB37dLht5Vk6m8VVkswrVZSV9g+YAH7aD7ZdJu/2EO/5GOUNMMxml6aLI/djBIkeIl3OeukMpY4itCN9QS0DnLoLiVxE73Kr0yodVAPtj7VvgU+7cZDjzMKTutxra9d6Nq/sQZNnBdwOfs5linaI06lOh5XdSE8M7ZC2c78n970U3GGll4PqpNxeIYvjWCcM21q8RvsMEj1bWmgu7Z3BLASic2z8OcjtHpJq+BwYk8uPeRTW4bjCmQXVbGlPB8f5sx0j2fHdYpTfcMxXsyN9qx3tOPLwNpJHDMLxBVbBc+aYvUVwVDLOjtXCO4zLPdzu4PvDjuQtCj8WC7X5yqo9xj+mv8WxcozyzPNUVfJ4AZzSz2TnH7stGr6wDidEZEnsYOQ2A3+n20pDh78A
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: winter
+  campaignSeed: 31202532
+  displayTitle: dogsled driver crossing a mountain pass
+  seasonalNumber: 151
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 085c8d1ea54f6034f91f05e8599ce4fc,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

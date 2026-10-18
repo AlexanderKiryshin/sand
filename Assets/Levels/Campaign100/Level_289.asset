@@ -16,46 +16,48 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4285491287
+    rgba: 4285623387
   - serializedVersion: 2
-    rgba: 4293652463
+    rgba: 4293783791
   - serializedVersion: 2
-    rgba: 4279505681
+    rgba: 4281084963
   - serializedVersion: 2
-    rgba: 4282871165
+    rgba: 4282926386
   - serializedVersion: 2
-    rgba: 4288065470
+    rgba: 4291078541
   - serializedVersion: 2
-    rgba: 4282860849
+    rgba: 4282937215
   - serializedVersion: 2
-    rgba: 4286349699
+    rgba: 4286417811
   - serializedVersion: 2
-    rgba: 4284110401
+    rgba: 4284241729
   - serializedVersion: 2
-    rgba: 4281084964
+    rgba: 4279505680
   - serializedVersion: 2
-    rgba: 4292134580
+    rgba: 4291545795
   - serializedVersion: 2
-    rgba: 4280696400
+    rgba: 4280762452
   - serializedVersion: 2
-    rgba: 4290156408
-  encodedCells: S1:4:4096:4ED2A49F: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
+    rgba: 4289236077
+  encodedCells: S1:4:4096:FA17146C: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 000000000000ff0000000000000000fe00fe00ff0000000000
-  conveyorDirections: 00000000000000000000000000000001000300000000000000
-  conveyorBucketCounts: 00000000000000000000000000000003000200000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: journeys
   campaignSeed: 30169271
   displayTitle: Bamboo Raft through a Limestone Gorge
-  beltCapacity: 3
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
   sectionBuckets: 1
-  keyGates: 1
-  linkedBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0

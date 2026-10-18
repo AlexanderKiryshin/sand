@@ -16,51 +16,53 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4279378747
-  - serializedVersion: 2
-    rgba: 4279245097
-  - serializedVersion: 2
-    rgba: 4280957512
-  - serializedVersion: 2
-    rgba: 4282091472
-  - serializedVersion: 2
-    rgba: 4280902309
-  - serializedVersion: 2
-    rgba: 4279843174
-  - serializedVersion: 2
-    rgba: 4283197052
-  - serializedVersion: 2
-    rgba: 4284331246
-  - serializedVersion: 2
     rgba: 4278782994
   - serializedVersion: 2
-    rgba: 4280306307
+    rgba: 4282078056
   - serializedVersion: 2
-    rgba: 4279577679
+    rgba: 4280107898
   - serializedVersion: 2
-    rgba: 4289324535
-  encodedCells: S1:4:4096:505A905C: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
+    rgba: 4279645019
+  - serializedVersion: 2
+    rgba: 4281760707
+  - serializedVersion: 2
+    rgba: 4279379523
+  - serializedVersion: 2
+    rgba: 4283592326
+  - serializedVersion: 2
+    rgba: 4283541737
+  - serializedVersion: 2
+    rgba: 4279245612
+  - serializedVersion: 2
+    rgba: 4280703641
+  - serializedVersion: 2
+    rgba: 4280693823
+  - serializedVersion: 2
+    rgba: 4288667895
+  encodedCells: S1:4:4096:F6706E43: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
+  legacyCells: 
   subGrainsPerAxis: 1
   buckets: []
-  bucketLayout: 00000000000000fe00ff00fe0000ff00000000000000000000
-  conveyorDirections: 00000000000000010000000300000000000000000000000000
-  conveyorBucketCounts: 00000000000000030000000300000000000000000000000000
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
   campaignLevel: 1
   campaignTemplateVersion: 1
   artTheme: people
   campaignSeed: 14250463
   displayTitle: Mask Carver in a Cedar Workshop
+  seasonalNumber: 0
   beltCapacity: 5
-  beltSpeedMultiplier: 1.2
-  frostMoves: 0
+  beltSpeedMultiplier: 1
+  frostMoves: 8
   sectionBuckets: 1
-  keyGates: 0
-  linkedBuckets: 0
-  largeBuckets: 0
-  alternatingCrates: 1
-  swappingColors: 0
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 1
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: dfd4e48746af8a74396b8dc64aeb8b5c,
     type: 2}
   usesTiles: 0

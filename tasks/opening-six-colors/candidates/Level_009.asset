@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_009
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4294836478
+  - serializedVersion: 2
+    rgba: 4279295031
+  - serializedVersion: 2
+    rgba: 4292975616
+  - serializedVersion: 2
+    rgba: 4289976559
+  - serializedVersion: 2
+    rgba: 4294901502
+  - serializedVersion: 2
+    rgba: 4284373249
+  encodedCells: S1:3:4096:D1B880E1:VZTBaxtXEMbPvS6lUNJTPDK2FfVgYrWhN3sbNCvLkA1WsZdewjZkU49PTcDkH+gGDNZoV9RWT2YVKrvbg1GfKCY3XxTIRXUdtC+5lB6bUyDnzltJdgrSY/a38+bN9719DxmODgAPwGFbfqhIK/K0QrY/2Z9D65bLwAxOuTRSRDnnnwDtggkYQp4bqLSWqeA6um1Aq7hmIUcVNDzGoaLOi4fHc3gda3wzjGxkwNklw4+d32CA3KNmj3iOI0B3AbWqZRdoFVxO6FqX+EdOpCZyovBI+C0+SAqfhrDSjT+bF949V3h4jlY3zvYAgxkMf7Xm8bCCSYL8JQKmL/Zei6JyCFoEAmZwh6GR1Eu4rY3SYGYEIgRzja1EFf6gnNO1wU08FHXPYpjnqAf9Cde3FzGBlFWcVJijf9SUlxd3oRC0VRyf1ZuV15dcNUR7oFV8cIbF8DzbnvLd1aH9UKuwA7gZuvrxJceFQqBZVkGuc6amnFaPync8xr//zy/UatYKqkOMRGCSZupbPdlBPysjZhidOWKySZ0sTboeYMZQbVmdnD/+gOtDuyqlghy9GXPvG9mYaOuuuBe82qZTgfJqh77vl4Q/cIUPxs1kivo7RKfCPybnaVYeXfmwI3/hQA5nztCQl7lvTyT6HLX/gIWzovf3teqToidSXzjeu+sO1fD+1GbyyHtluO+usWpNyz8u6XEdvPcnsZou2/a/nvJlTdyb8O9O00097gcrWRpN8ltbgxZMeGIP4+QHocaE7NHb8oRH9nC9Izx9M2loyq2MOuJk+jbn78pt8dPw5Tb99SFn0k5a0VBr5s5P6ryrMDWdXeE05jTm78XSZgUt4S4Nrz4G4etNOYZSxwmvfN4R7rId2jp5CY3zZ8NLvtkn4aB9NkdAfG4/Jz27Ufb6oVV1YCTcnIJeILwN3qz3RTizsQYjc46sLhXw4Dk1wRPBMYT+spbkMIGgiDzmx05cbADqNDHXAhbxKRHf8KiIwbI86xps8M9yAMtyHHjrqxS6tcqEq19srNRdOeb/AhUKJKVHWWwzFCX3wo1ABMRRQlWW7yyGBhS7gBetaM5w6BiOvL6/BxuDj8z9VRHOOferXJLrYrQgHEbifN1wj0GrpfkGjJyaVjK3hCe5TVLnJOd1qp7IBXcD2Rc+kP3lJdNVC1YMhKoZpU8p9bvhPUmAQSt/dZL3r1IZdZJz056ve4Fn6j8ybixuSbxhHvNXLRlrDvsrJjCrIBfMRLNuYV/VdL433ng8EejnseT4omtg8kXpeAqgukwmzJMxnzhuI4+3cmliiMT/AQ==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: ordinary
+  campaignSeed: 845151
+  displayTitle: bougainvillea arch
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: bc2a819bb7014cf4b87b079a0d18b0c8,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

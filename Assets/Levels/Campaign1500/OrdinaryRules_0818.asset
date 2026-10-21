@@ -27,3 +27,5 @@ MonoBehaviour:
   fillMode: 2
   randomComponents: []
   maxGrainsPerBucket: 147
+  matchBucketOrderToSand: 1
+  verifiedLayoutSeed: 85570912

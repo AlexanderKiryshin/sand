@@ -13,6 +13,10 @@ public class RewardedShop : MonoBehaviour
     public const int SmallBundleBoosterBonus = 5;
     public const int RemoveAdsBoosterBonus = 10;
     public const int SingleBoosterPackCount = 10;
+    public const int RewardedGoldAmount = 100;
+    private Button rewardedGoldButton;
+    private TextMeshProUGUI rewardedGoldLabel;
+    private bool rewardedGoldPending;
     private readonly Dictionary<BoosterType, (Button button, TextMeshProUGUI price)> boosterPacks
         = new Dictionary<BoosterType, (Button button, TextMeshProUGUI price)>();
     [SerializeField] private int premiumKitBonusGold = 1000;
@@ -165,6 +169,46 @@ public class RewardedShop : MonoBehaviour
         boosterPacks[type] = (button, price);
         WireButton(button, () => Purchase(tag));
         SetPrice(price, tag, button);
+    }
+
+    public void BindRewardedGold(Button button, TextMeshProUGUI label)
+    {
+        rewardedGoldButton = button;
+        rewardedGoldLabel = label;
+        WireButton(button, WatchAdForGold);
+        RefreshRewardedGold();
+    }
+
+    private void Update() => RefreshRewardedGold();
+
+    private void RefreshRewardedGold()
+    {
+        if (rewardedGoldButton == null) return;
+        rewardedGoldButton.interactable = !rewardedGoldPending && AdManager.instance != null
+            && AdManager.instance.CanStartRewarded(true);
+        if (rewardedGoldLabel != null)
+            rewardedGoldLabel.text = CampaignText.Get(rewardedGoldPending ? "ad_wait" : "watch_ad");
+    }
+
+    private void WatchAdForGold()
+    {
+        CoinManager coins = coinManager != null ? coinManager : CoinManager.instance;
+        if (rewardedGoldPending || coins == null || AdManager.instance == null
+            || !AdManager.instance.CanStartRewarded(true)) { RefreshRewardedGold(); return; }
+        rewardedGoldPending = true;
+        RefreshRewardedGold();
+        AdManager.instance.StartRewarded(ProgressSaveService.CurrentLevelIndex.ToString(), "shop_coins_100",
+            () => { if (coins != null) coins.AddCoinsOnBuy(RewardedGoldAmount); FinishGoldAd(); },
+            FinishGoldAd, true);
+    }
+
+    private void FinishGoldAd()
+    {
+        if (this == null) return;
+        rewardedGoldPending = false;
+        // The SDK resumes time after an ad; the open shop must keep the level paused.
+        if (gameObject.activeInHierarchy) Time.timeScale = 0;
+        RefreshRewardedGold();
     }
 
     private static void WireButton(Button button, UnityEngine.Events.UnityAction action)

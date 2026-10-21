@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_005
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4290947639
+  - serializedVersion: 2
+    rgba: 4287344368
+  - serializedVersion: 2
+    rgba: 4290156943
+  - serializedVersion: 2
+    rgba: 4283580208
+  - serializedVersion: 2
+    rgba: 4291806071
+  - serializedVersion: 2
+    rgba: 4291607380
+  - serializedVersion: 2
+    rgba: 4289036908
+  - serializedVersion: 2
+    rgba: 4288768066
+  - serializedVersion: 2
+    rgba: 4289827626
+  - serializedVersion: 2
+    rgba: 4290949302
+  - serializedVersion: 2
+    rgba: 4288773911
+  - serializedVersion: 2
+    rgba: 4292334812
+  encodedCells: S1:4:4096:7FC01969:tVXPi9w2FP4bdJgBk5wmh5YhpyrFG+Fb9x/YBg9ssxcfbCjspVVBXjO3HMakvZiSDcI5jbr1RtUlhNC6zs1sphXvj+onzzRJk0JP/ZhBmve9X3rvScM55zG+3HJulnbxPrb4isBxw4UR3Fq7XHwAa4U11t7ZggMPwQcq4rAup892cvoePuN8u9yGuJPh9sMAU3h7wEfRD7wJoe0U4CMIa0Nu5XJR1++km6O/09ouN/XRdb3HtfokCL8Ne6xmsag/Rqn266f/wv3fKOtNXW4O+3JaIEBKZcgrrjebd5oTFBCre2GRMVeSm1BFdFXGinMFdVUeA8GuVJuyVN1yseVK1RsQdR24YzUpwE9wZkKvgvHxvWO+h+TcO0/OeyL7CPbWGOuPfzp2MZGzDkaYH6lMaNNd2DupdsqYe0IN7UiIJmVHSm06FXd3hPButMhPxFxi6uCKbtMpXGMbx1ZaWz1IpQpza0NCnfMz8AUr5qwMImPpTyJvvRPUGSsOE0QBGxmijSbkwoXiQkwD5mktK8kdtVqf6v4+KhUr6alEAImTC+MTJcWO0qu7iy/Tz6U6Up2z9v7FNIBKlWMiufB0lt4sztIn/TAM16jLFaEmSVVu4Cvw/ixNwaczprXBGa0h0tAd6ocXStku8JSCT4u0ErEsq0T+onUUQfbq4kLF1S5FjAmCSznoV890q7MZO0lTfhNOmMjxK+fPriqkyCM9IWKMIRNPY+UT/Vv5tHkeMhwGzZo9Gzly63HdGeUn57M56+E4ApgO1q6T0ij+8vuHdFDom6Yn6+zUeecrLttXekjfotCNtmuqlEQlvX3Zvjhd5Sd7bhU8MKZRXR7mMqbb0cmT9J8o8hUmbo3BeMTpdZGm+V6epyui0brYKARPrB3tTnBPbw3JGSnVRqLASq6PaqRef1d7slTkcEPrzqqnQz/0/Q+xHPaVGHR76ojOV8XPidGhJ0Gu90s/aI31uXEj5Vf0DD/6oR2iVrcHc/BQeizjkRL/Ywth3/YR69t2730InYAaV7s19zPd9KhqlqHEU6xIR1na9G0U3d+R49afYZyzIosiHdqg2yZbpfMBrWppbbzjXcJucLcY+3rOdIMGZahXwyJ2Ap5T5XEZVZfM2YQsY0WxQsGbE6LHty4v9fMuMb8OPeRs0snB58UKt4ZuFUV++WKkqG/Tc3qDWwUNJFMUN6RQ8ofQZXNBD+C2+gPznc+LCUQS3WzTHFUuug4NYQK98TSxjjovuR5O9sq8QsvwOie4FeeTb87p9z4asonO+lhKMXLcdmEIrKVSPGv7PsoKhJsXl4P8IjwP3owOSUPr6TTq2XzvoMD+QuGWu+CAiFvNdN+Equ953MAoRnwEwGTTOhogCaNerIosnOhSs29EhRdnbawket02LIMxy+ZTAsUMzixxYzoedwIhUP1ZBgU4mCrSNJENf5AVnggvdp7Oi7dI87xALNFZgRfS4SlJMH30Jn9Dgg7NQNnj6W2yhPslcDWxS0w8nuezLNSYMdvhlQynS6ThiRIJTzhe2/MpQXTuv/i/AA==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: places
+  campaignSeed: 426235
+  displayTitle: Turquoise Salt Pools
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 01994ffa92b112b4390ffe9244108c61,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

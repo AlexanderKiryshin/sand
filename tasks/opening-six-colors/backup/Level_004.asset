@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_004
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278914844
+  - serializedVersion: 2
+    rgba: 4293371222
+  - serializedVersion: 2
+    rgba: 4280101706
+  - serializedVersion: 2
+    rgba: 4281427612
+  - serializedVersion: 2
+    rgba: 4282089167
+  - serializedVersion: 2
+    rgba: 4293441142
+  - serializedVersion: 2
+    rgba: 4292009700
+  - serializedVersion: 2
+    rgba: 4287400059
+  - serializedVersion: 2
+    rgba: 4280894571
+  - serializedVersion: 2
+    rgba: 4293172296
+  - serializedVersion: 2
+    rgba: 4284199147
+  - serializedVersion: 2
+    rgba: 4293053357
+  encodedCells: S1:4:4096:7B3A4189:vVVNbxs3EP0NgiLXRnzSoSl8U6gtTMgXYckiBHMJdgfIYm8usA5gXZq62RbRRYlhrxFdhN1tTSiX+hIgN0HcogJ7KeJIbs0f1eFKTdAP9NiRZXLn8c28maGkt2//f3sQA/wXvg1ViEt772/+PfeHXlEx/Wav3d64f7+32bTbV+2rvfZ9NtWLz9p7V+hBb5qma3a7tsNLv+hV+se2O48xbI23N2j7qgOFTNNv711tnoerNH3T/mD3dwD4yZObP5+fWmvTj/CLCAL/m3Tvg+MI4XSQbo48mHTCypycfyRYO3QK6gOH25GQXWpO7tVQ8mn9H0/U+AsFjVizgGuHJ2iYPX26smv+Cx1AR8d3uvPn6dFhUpOfpql1dGtX1l+AghaXouqmTxx7cHT4DMkOx+V12OxGTM68rvkureHlYIngEl92lSSTVoMybkSLGnmarO1ws1g7OGs+akA4W0gGC3qc/NUGSfJF5M9LWdw9FVWPJP+0bRFWs8YlK/a9Qv4L3ldN3VJuN5/2N75h+hHv9fvetMYX8+NkWSNpujqqN8Nk2f+8MWd33QOdHifP0qPhUVK3LXFF2vHOVuOu+Mrhunu77vjKDoZ2mZw9zAbJVnerZbrTJF0l3Fxb1088gUGW319SxpKfLi5nPf1qhSRqbu2yDlrHp2SS+6e7J+qOmT13Di5vBssh3qphJp6frggZ/aCE+HUx2X1Vz6JgN7amL6lS4vQdEcXJamGnt+LUDuxr0Ob90I11TChB4la2PRpns58rq1G3pWRmjGOz8/F51swym9nxzRedxsgW13ZwkIsZ2bH2YaFY98LeHHxtD8bWNm/JrX14bgdERQBwPb4kquMrxrDU3TO727MPMPiJOEDcA3i/T5r7o85L8lLhgXeNT0bLy+uh/cWQHQIOt+PRMstcZqtOv2xcDpaPj5PzbaJIBCHEv6F6O8wwtrXZk4vDJLt5fLuPqFJRCY4vrg8OsIh3dpxlFxgpe5wS0lS5ysMSWpDlKtsfJOPR2YUxi565MD6htKkmmCAMEUd7ie/RWablwhhDECbcyxUFDzNIz+j51BhfvjK1YeogCnkpUL8XgEHM0XxjKo1rL89pHmFpuQBoBVDVJLle6vBK0RyVdwm4AhCQJjZGG9wJTWlOJ0oEJZSc8QDxeMoK5AljeMXiHdLEWSuf8xK6no8BjGFCc6alLrjxVJ6THUEIBBQmmB7xSoKhEz1dqyMTqgIvCEOK43E6K1PFkgnjYENzoppYegABCTwcMC/nH6SjUIc2VURygTWWEQr0XIlSOhjInBCSN2gQKE8xCENMAI94ZSDGLIaSBqbPOzgXIFRBiPNH3FFj96bNjiKTnTwKICS5Anc/mCtwY/j5UE184c0A4k6tDfVVtbi8S0npTyhx3vp2ttxOx6ggxBPNvEd9P6eidHVhfJ6HEHLAxsZaa9P3p0FB3HRCzK0wAUYKPJAxDzELsG6cT6XOfeGE5zyHQrijTJaMyZh1y+k0illBXeqwxM74gduyghUIRyb2RByKjl9x4cRhB10NuAimgLE4NvidWNEgRnFVVbr7E9YzEsVCa6hwlrySgpXQ0/i7iBXMGY+4y+auCI8YhwpvBn5uKojjMAasXMYQcY1UFFkVWsoqNGBibiqGbQfek9BHGn5hMx6HoTQSQmwXx3nWfcUAnMcc5f0B
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: wildlife
+  campaignSeed: 321506
+  displayTitle: Cheetah on a Termite Mound
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 5a548a6d29fcdd34d81148fd066a75a0,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

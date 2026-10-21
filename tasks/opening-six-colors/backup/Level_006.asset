@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_006
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278387971
+  - serializedVersion: 2
+    rgba: 4282824092
+  - serializedVersion: 2
+    rgba: 4278981649
+  - serializedVersion: 2
+    rgba: 4281493569
+  - serializedVersion: 2
+    rgba: 4280368733
+  - serializedVersion: 2
+    rgba: 4279971600
+  - serializedVersion: 2
+    rgba: 4287936966
+  - serializedVersion: 2
+    rgba: 4281895788
+  - serializedVersion: 2
+    rgba: 4291749104
+  - serializedVersion: 2
+    rgba: 4280764961
+  - serializedVersion: 2
+    rgba: 4285958552
+  - serializedVersion: 2
+    rgba: 4279312440
+  encodedCells: S1:4:4096:843C36A6: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
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: wildlife
+  campaignSeed: 530964
+  displayTitle: Okapi in Emerald Underbrush
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: f01b14c39bb2a724398e69382507dc05,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

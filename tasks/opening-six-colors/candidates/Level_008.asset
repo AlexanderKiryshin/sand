@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_008
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281479900
+  - serializedVersion: 2
+    rgba: 4281699557
+  - serializedVersion: 2
+    rgba: 4279295031
+  - serializedVersion: 2
+    rgba: 4289976559
+  - serializedVersion: 2
+    rgba: 4294901502
+  - serializedVersion: 2
+    rgba: 4284373249
+  encodedCells: S1:3:4096:55333C64:TZRPaBtHFMbPvYrcHAKVZ41FGx96cEJoLkVWd9bNwTr4UEGgVE1qSyOTgE0VXXtRQGn2ZW1S5PYgFINj5IKdna0j9ebGMkU9GCpXGtkn4VJsHYppzv3eSqWFYZF+vHl/vvfeCLmjjMa5Lknw0cO/Qm7cOcKPbTVL4rA04l19VU4Xha9MLmWSlf0RLx3pXnPKJbFgcqadpPjQz7YL/vvUXDW+YGA1R/sKIbJminl7yhExadSlLpHIgau65ZLfa0sZnZFdtRsoD346WgWCyO/fisnIjGQ/atWGEz04iyd3tvuLliSbeUNl4MQqXqzbzo7f2xAhz5kLlUKNzL9kvv4++J/dnDlTnyNNSy7+kZU7fn9dyUis010xE9IBn5TqvCUbun8Bbt01K8YL5bFfqnqreENfhDzzQhuWbVJ+lEvV828TO9lBfrayn4nKTU8UhZQRbW4VuLpU4Ze1rxSJoidwI0m2tVdibjo6qIG7XtyJSIrK6H32mDGd3ePaHXA4h6BePHKgzDSZbn7LrIATW9lUFUc/hh1rqy2jwZMIIWJFYblhZ4x+pOruJ1HL4RACNcoKaw4+0G46GgNPRqQDHmmdatfoPKJ8Ni6d6AyScdk+b4YcQxGVDpKPxB4jq+gS59PImzW4lUnPTkZl0bNlJcv8LG+ec4bgj3HLs52KMAnq6eVr34LHoQBcEb5VYT6lvu6M/8tl1UZx4ArimtZ/HCl5NgRUCGnaQ04Ud2iSIjGMn3rxMv3bGvOqIE84FEe9c2QvWps1Ubz2TEgoE3JI5EI9sYnB6D3numRFcD7gV2Jz1uaq8F99PCFZGcwDLC26Ysn3wBe2jqe4rsgMpKYqWiMkGoBJaFwPuUXcApSGdVAnbXStMAsPEcutcgDc+qudO3mN7nQy5Tg6iEEaLV/wIBOAt0wXnYyNIIl39koDrU61ultvUeiZA5F4d690Ml3Y/Ukt1/NYUwpHi9jjkxN0/0xdvuH1dUM9yXuFD4/KvcJ5s5QGFzOcKq2NuG5tHbh95sPQWWPTINz7rYMH5e/+x6cxt8w3go5u8byFPB3yFaNr398olw9Z7RHXLqwHN7V/n/rTE7wv4OIL8DRaHKi/G65384PQ+KkRP59qXo2eVpcfJqnpppl/bSbUW+YPWZ8Eqn8knoVcq3IAnoOeGDASv0KoWXqK66ZREofQfwmB8PiUAzUmMWm8F8zvYYC/qTZLJrtkMLysfAl1lW8vmUTh6l6NNZmX1Ax5nV8Yk+iO7fkciLkehPZ4qUziaOxQG+6RQ12EfwJ75vbD06ZGLy71PGmFtNiPRho582Z7wJnPr3Zz/HCFfFzq2u0fQs2X1fHKmBzpzKKfq9Bm+Vz71oi7PBypQgqvnPZV4IfvCdfI3LRO21rVfZyQ+6Mh62g/QIDXvESS/gE=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: ordinary
+  campaignSeed: 740422
+  displayTitle: camellia flowers
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: a436e6a392fab0743a6c427cbd873087,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

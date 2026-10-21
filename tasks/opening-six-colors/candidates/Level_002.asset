@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_002
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4281479900
+  - serializedVersion: 2
+    rgba: 4278233330
+  - serializedVersion: 2
+    rgba: 4279295031
+  - serializedVersion: 2
+    rgba: 4292975616
+  - serializedVersion: 2
+    rgba: 4294901502
+  - serializedVersion: 2
+    rgba: 4284373249
+  encodedCells: S1:3:4096:8477AB54:ZVRBaFtHED0HepJPxbk4XX3Rgy9B/XVxfUooGZuvu/mQg1FSPtbIhGKB8b2gQkqyvzG1VPdQ1JTQpGBbXdE6volSHUTgB4SkITqEkkulQzH43Ddfdhy3ICTt29nZN+/NLFn/yp4JbllDlz5k3ZOJIcUfvosXrM9xfq7z4D/x96zh2DOxyV6Ob67nOHbFuseX8fsT3bxTb8xfwl1VvM2kSSuX7x0A/8PF/+Mjbl+GUZynGWs+vMCL4n7lXJQYylgQOscPWJwTL4obdzLLWGfOLwVeEcf1hiEvzXKBl+MmizVP2oVrCv1w05pOitea8wAeLbiJqSL6li0hg+zctapMYy13z7axdYUsgjm0mzNfGlpe/m6BEhNdzc2lZJhsVcwc2X3OBUMvev2tXhoqVRrnI+SPTWBNdEMVQDCuDmITKXdP2WQu9MGdQWLf21WBLnBxVGsGL3fM+9l0/fAtXrRNSnbMj/2pOtfoq2m9xRt+JO5RJndWF450IJrL0vVolZbH7YLtY0uvkJ6bOBWBPDezSNYLZgQGcShuwqwO2urEBEOf7IKKj+yHvL4uBmbt5mno0awyf8ZSgXgl0ZI6hmoe1R6YI/6ZRZ2ErPiBJd8om7/A0V+kmumABteL5xaKvy3uk3TRRsjjxpmFCY638O9xkJhDKJuRi25AO9l8UDO7WaKxmqUuQoW4EaQR1bjv4jZlcvtgvtevJF4wu/j1XoMyUoB60oQXhYMBDAUfeWMo7ldwsD41ZIDvQqalytnS7cSR9As1X8bdyC4UrubQQV/YYvgWf87KvJVFJ9bjwQg565DaP70rA1c6cQwLxBcdgRi4oTUV+cR10bev3GDUm8bn6TXXW91TN3AT7HSlp25op0l35Hjki4wTd8zw4tT9xlJ+BTEhst+SoUNCXIEwluFISzD06Qbw02FZ3AA51o/m6brGh7Z9+qaHITtssft4Q9z8AJRUz5vKE8ZM2PGG2HlK8tFLnciUJ4fc4nUJ636UagUBkfrZErxzvHIg7iOVmuFvSWqYu94Ic0xaiHIroU84TIpakXZXOdQO5FlKXAszWgTVrBr7S1m5yixZpD3Rx2CKpzqkB8VtQtIRuu6zdx+xcnjEh8ddXCHufgljuJriHRTObulFaJ++UnF2FO/sAJffUeb2bfv0b5QGnKb4ljvuVtagMMsY9PRZwBYTWnEA40bPt1ag55/neGgbaHU02+cbWE1Q8lmqFK/3/xkzxRCDzfQxWTnASKItq0sblNmWXnn6siFPacUW1n6qTrYqpRcAPlg9w41Yx7kqy/e8rXj6Qmp8aP8F
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: places
+  campaignSeed: 112048
+  displayTitle: Maple Pagoda
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 75d55bb34b32db74f93aeadd96c44e24,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

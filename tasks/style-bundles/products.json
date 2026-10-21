@@ -1,0 +1,136 @@
+{
+  "products": [
+    {
+      "id": "sand_style_bamboo_bundle",
+      "consumable": false,
+      "title_en": "Bamboo garden",
+      "title_ru": "Бамбуковый сад",
+      "items": [
+        {
+          "part": "background",
+          "theme": 21
+        },
+        {
+          "part": "conveyor",
+          "theme": 21
+        },
+        {
+          "part": "casings",
+          "theme": 21
+        }
+      ],
+      "price_source": "platform catalog",
+      "requires_platform_catalog_registration": true
+    },
+    {
+      "id": "sand_style_alpine_bundle",
+      "consumable": false,
+      "title_en": "Alpine morning",
+      "title_ru": "Альпийское утро",
+      "items": [
+        {
+          "part": "background",
+          "theme": 13
+        },
+        {
+          "part": "conveyor",
+          "theme": 13
+        },
+        {
+          "part": "casings",
+          "theme": 13
+        }
+      ],
+      "price_source": "platform catalog",
+      "requires_platform_catalog_registration": true
+    },
+    {
+      "id": "sand_style_winter_bundle",
+      "consumable": false,
+      "title_en": "Snowy wonderland",
+      "title_ru": "Снежная сказка",
+      "items": [
+        {
+          "part": "background",
+          "theme": 30
+        },
+        {
+          "part": "conveyor",
+          "theme": 1
+        },
+        {
+          "part": "casings",
+          "theme": 1
+        }
+      ],
+      "price_source": "platform catalog",
+      "requires_platform_catalog_registration": true
+    },
+    {
+      "id": "sand_style_copper_bundle",
+      "consumable": false,
+      "title_en": "Copper workshop",
+      "title_ru": "Медная мастерская",
+      "items": [
+        {
+          "part": "background",
+          "theme": 18
+        },
+        {
+          "part": "conveyor",
+          "theme": 18
+        },
+        {
+          "part": "casings",
+          "theme": 18
+        }
+      ],
+      "price_source": "platform catalog",
+      "requires_platform_catalog_registration": true
+    },
+    {
+      "id": "sand_style_night_bundle",
+      "consumable": false,
+      "title_en": "Starry night",
+      "title_ru": "Звёздная ночь",
+      "items": [
+        {
+          "part": "background",
+          "theme": 17
+        },
+        {
+          "part": "conveyor",
+          "theme": 17
+        },
+        {
+          "part": "casings",
+          "theme": 17
+        }
+      ],
+      "price_source": "platform catalog",
+      "requires_platform_catalog_registration": true
+    },
+    {
+      "id": "sand_style_blueprint_bundle",
+      "consumable": false,
+      "title_en": "Blueprint studio",
+      "title_ru": "Чертёжный набор",
+      "items": [
+        {
+          "part": "background",
+          "theme": 23
+        },
+        {
+          "part": "conveyor",
+          "theme": 23
+        },
+        {
+          "part": "casings",
+          "theme": 23
+        }
+      ],
+      "price_source": "platform catalog",
+      "requires_platform_catalog_registration": true
+    }
+  ]
+}

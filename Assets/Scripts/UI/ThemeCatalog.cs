@@ -79,8 +79,15 @@ public static class ThemeCatalog
     public static Access AccessFor(int index,Part part) => part==Part.Background && index==DefaultBackground ? Access.Free : part==Part.Background && index>=8 && index<12 ? Access.Rewarded : part==Part.Background && index>=12 ? (index<PremiumBackgroundEnd?Access.Money:index>=MinimalRewardedStart?Access.Rewarded:Access.Coins) : AccessFor(index);
     private static int BaseCoinPrice(int index) => index>=PremiumBackgroundEnd ? 1000 : index < 12 ? 600 + (index - 4) * 200 : 1400 + (index - 12) * 100;
     public static int CoinPrice(int index) => index<MaterialCount ? CoinPrice(index,Part.Conveyor) : BaseCoinPrice(index);
-    public static int CoinPrice(int index,Part part) => part!=Part.Background ? Mathf.Clamp(400+(index<8?index-4:index-8)*100,400,1000)
-        : index>=MinimalBackgroundStart ? 400 : index>=4 && index<=7 ? (index-3)*100 : BaseCoinPrice(index);
+    public static int CoinPrice(int index,Part part)
+    {
+        if(part!=Part.Background)
+        {
+            int step=index<8?index-4:index-8;
+            return part==Part.Casings?Mathf.Clamp(100+step*100,100,600):Mathf.Clamp(400+step*100,400,1000);
+        }
+        return index>=MinimalBackgroundStart ? 400 : index>=4 && index<=7 ? (index-3)*100 : BaseCoinPrice(index);
+    }
     public static int ShopAccessRank(int index,Part part)
     {
         switch(AccessFor(index,part)){case Access.Money:return 0;case Access.Coins:return 1;case Access.Rewarded:return 2;default:return 3;}

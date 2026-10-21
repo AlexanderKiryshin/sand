@@ -16,30 +16,18 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4278387971
+    rgba: 4289976559
   - serializedVersion: 2
-    rgba: 4282824092
+    rgba: 4294901502
   - serializedVersion: 2
-    rgba: 4278981649
+    rgba: 4279295031
   - serializedVersion: 2
-    rgba: 4281493569
+    rgba: 4292975616
   - serializedVersion: 2
-    rgba: 4280368733
+    rgba: 4289956892
   - serializedVersion: 2
-    rgba: 4279971600
-  - serializedVersion: 2
-    rgba: 4287936966
-  - serializedVersion: 2
-    rgba: 4281895788
-  - serializedVersion: 2
-    rgba: 4291749104
-  - serializedVersion: 2
-    rgba: 4280764961
-  - serializedVersion: 2
-    rgba: 4285958552
-  - serializedVersion: 2
-    rgba: 4279312440
-  encodedCells: S1:4:4096:843C36A6:FVVBj9u4Ff4NL/JoEkWXcNyBOtiLQg87cHyxzWgFIRdv1otuo4uGGq7DzSUommmwuYxGqwpuL8FgO/A2F1kqIzC9GEFnkHUugust0uhHlUMQPOi9T+/jx4+PvJBZariiTmLOOXK6NEUIOUvlLKsgqzyzUMK5zQRPal4KpaNL5xZyVEB5PTdrD0qlztUwJjz5hvMqow5Ct9s9hyqONjuxhw3VV0nwByJGLIul16UI9XYaVJ1UX8FhIhWUoEbL5jib8Wy+VF2Ekt4U/pafOfbkRMQFzKpgb5bPAs73MlQ7iOZfb917dfN7mPwofGxWoOZ5hqnQ9NGoi0aItu5k2+zCds9X4NYgYiRSyqU4cHw9UdrA57Cx74a+UFB0uKRIpSkPDmSq2SE/PYPptJ3CXtWn4HKQAUr25kjxTATdxOmmzlfh9PBPWoWYqj6PvOiAuNwb8TjTPxh1U79ZT7dTR6kZ7ysJQhxQb8Z5N57RLkq7adN+ftK2XyRdRIpKUY/PD2pUVvUB6lLH6Xam7c7z8M299EDxIZ05R4XIRvPZQ6VQmqDcDkP7zvWDV79Vqs+G6a0E9RjPszj267yLEhNau/2wOHzzVy9L+TB1UV4wmc1HX9cjv7ttwy1A+OHbnc1f/H3BIcVJMvNjj45ojpKdyRYwQPP+v7adC6k4dBhLjitKtSDbaQjTFmxwD1efXexTrjjrGaZ/TOnjdnozNtu2aYwG7Ams95UXE8uVG76kZEcHn+ic8BDcwcaGM3A9TyoiSfmYV/FEh9pBGIY7AwCjMeA39yE/4mqfsDiS6j/TcLrdhk073QFooXHBWZ6N5ozmJvfOpbK3Gr61J3oFndBg0DasPSz8kmCvskJ72ratFm66DcGAxt4bIV9UnNOImZn6NWy+dVt30N5k6QobF9GlhxLhKYYDqtbNm59eDrBGt+1gB1z4Ai29+DytMkUYptaqXXwCF29aHcetLpA7FfLHgRrHZtmv+iv7zWL3lbu5wdutDbBMK0QEVUpG7JvYumgXeIDfN1u7dTfNwB0u1ZJiJmPOXEZOfv60ulwsMH4cNoOBofGPkq53vyv4UshIkBN4/nFXk7rYTLatYbcbKGkdzLvBiMi+JLh68eHjndcPNtjYauygxXBOhfTjMQVREMyfmev2bnO5MJqwHcCmae2Mz+WMG9HQ0gbAz15ct6cA7qTZtthtXOzmtXamNHnZi8ZO/xkxVqf/WCzuNFtsuA1AMfMPrDInKsKK9vDJ3+H9XdC2arYDbIQAw7wOyiDmJCYm55i/cFevLi8MA1pjA3BoPIq7IxX0zo856VcRESasPl6+XMBmgG1j0sJ4FieqNhx9o03Q9jZBG0aPDdbwZrCmsUDqeD91OS7B75z0YQWwsIGMfYCfPzSxsLx8lt1iPCsCCv8SsJYGvORej8K/O+DG8cEyznKj4JRK67zuNNcK4EKM6w5AB1aauRfMjgrOvEqUqd70tXxy5wEZs84NDd0xUd2vZkKejztEEXLx8jsB+Cl5WFNjZcGXAiVc8oOkLuXQlMQ337/93+tPHI8rtfr+Bk/JkWLyXLpWT/uPWZfy1903uhqn1+8A3gZi/z7pH3MBQRFHnFRXEl4/Fqwe02v2y8t3PblPjibP+BgMZTKfXxtk9/W79CguqcvcnbI/JiQONgxYAZUQ+OMuudv+k3snInALFytT99qHlBggO1DICH/YZT9dfpfuicSCgoCHcjR75MGcFCZEmKsfQFyuSaQ7nAnSgsiUyZzlZ7U+FE8QxVXMXmgDnY1zvq6sleAMaMfLjkyjsqQ5DGKLPb9bWMLzj07FL6dKgOVWuq+bEIDqlEI+Tf+8gELo/V+Kq0u+V/eNSFhgeh3oB0SqB2V+B7iQMTs1/3gpfePsdqWAaQHMIjAL0WOuCZwpzNbl8+uAmGnHcEG6ukKhT1b1DbjAmFnF1VpdXQuWzmCYggAwBSiXvOtX5ukDxwBztWZXbzmp4V6gfQIQSShi+J06pkEvAwZgs6v3fI4hnRmg4oJb+huccmmo+DzCtxDiBDgQk1rgUTCVZgBAdN4PT+fW0Ll1ox8rqqBjQdUBUUIEUWTa89SHIlGJvkX6xYq5Z1quByY3ZUQiAF4FZx1tBCNSUj+HzODAC62PtCLNMoLSUzDxZDqeeaoiuu0ZLo9uFAH+fw==
+    rgba: 4284373249
+  encodedCells: S1:3:4096:A9FEE2C7:bZRBaxtHFMc/Qzc5lZ6msypbqlPTNYH6Elag2USBLCFQdDVKF/wi2kLA+BNIPWlWNSRTdDAbn5qLrI4PUW+97EGEKJfKE3wy8iU+GXzu/83aqQ+FRTv7mzdv3vu/9ySVlv/zpJ/W4/YNHqlSXq3TG7yUaiwHfp2pG3zsXzX/6d61cVvr//jXFvxWfdHVsXGCn2gv0I8DPqiTlHmIrZqrwRdYDLXM9q94JisJO+bRSCdDGQ2mIUJS4kWC7RF4yH4CpafhIxGqIIoGpRyIDI5EK8WN06aSET7DkQyHYlhyeKkMX9jmAD7LMsleJ9k9XcK5wvPSkgpaagx1/kieJFq3ByUn7mzzfqBGOmBRnnDkXpaOs1TAwAsSaoE4wZeeGzCf+GpP1MovJbkJmYbSmfjEtbjrZuTM5u63Csr4xIXeuq9Pe86er8DdA52B3+pqOSWnP3juvncX8ZvfdFv/3s7kEbnnhpz9a+Xmqwu74DhP20o6cs8Mvb2cL5xdXVrKYC9UuuV+eUMT6oOf2B17RuxfqIF0l3ZlPbdHdHj+A9tLz7eRUd/NFwacumwP+SSgw3Fc6nq7hrp8L3QA/5Ng6bZ3nV2c9LrQUaMYARmlP8TOH8PT4S7EkYBcrI4/ejjzvGxDoizIQb6MFhPwmHeHqBdaJ2ixAg0tX61qV0PZYomD8GfpfDs9Kyy9t5TWzS1C4XtwiWrhiSnz9VL78jPm+XU8VFwPw7sY74V5+tY1eLe4rRAPeHVAuGdKK1cmx/OOQTzQDd2AmHHvq79do/USiZcJ66nb6ayeiKyIFXiXmwT5quwOcywLf28XYuJDIFRO5HOlXa9fczZCZ+83R4jNjszZznvmCjwI0StNbkTWp68l84fQDalp4oPga8oEdUXNIxWgv5WOc3NGWuZOsB/Pd5jfyVE1c0A1T8H1P8xnVDQ4HteIrnhwV6Gms9zwbHTeNSrP1TUnnpl1Rzeqhz7UNGhhSofgaIP5YhpWz9kYpQzBR/A/TlAdG1bKc30bw+y5z24SRkpWSv/IVcOMIRI/q4bnrdortwwPdvQozt1B59hyakZWKKGbJvwvFis3930l84I5ub0HcFXFdGJpydwf+Y5r8et4CzNwwk7ocMZH6t5QehvcfqX4OEbMc1NiInn3cIM7ZLmmw1MySBOtuybo4NbIXR3Pc0Rl9qkIIBd7dt8wN5vRco4s+gV762QinzR9p25EehOC71yUubfPJxt95kcdjTHc3sUsFzNaljR52ofIlx/JnNNFzyHsDCHZnX8B
   legacyCells: 
   subGrainsPerAxis: 1
   buckets:
@@ -54,18 +42,6 @@ MonoBehaviour:
   - colorIndex: 5
     count: 1
   - colorIndex: 6
-    count: 1
-  - colorIndex: 7
-    count: 1
-  - colorIndex: 8
-    count: 1
-  - colorIndex: 9
-    count: 1
-  - colorIndex: 10
-    count: 1
-  - colorIndex: 11
-    count: 1
-  - colorIndex: 12
     count: 1
   bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000

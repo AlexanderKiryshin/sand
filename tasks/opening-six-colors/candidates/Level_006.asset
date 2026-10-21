@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_006
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4289976559
+  - serializedVersion: 2
+    rgba: 4294901502
+  - serializedVersion: 2
+    rgba: 4279295031
+  - serializedVersion: 2
+    rgba: 4292975616
+  - serializedVersion: 2
+    rgba: 4289956892
+  - serializedVersion: 2
+    rgba: 4284373249
+  encodedCells: S1:3:4096:A9FEE2C7:bZRBaxtHFMc/Qzc5lZ6msypbqlPTNYH6Elag2USBLCFQdDVKF/wi2kLA+BNIPWlWNSRTdDAbn5qLrI4PUW+97EGEKJfKE3wy8iU+GXzu/83aqQ+FRTv7mzdv3vu/9ySVlv/zpJ/W4/YNHqlSXq3TG7yUaiwHfp2pG3zsXzX/6d61cVvr//jXFvxWfdHVsXGCn2gv0I8DPqiTlHmIrZqrwRdYDLXM9q94JisJO+bRSCdDGQ2mIUJS4kWC7RF4yH4CpafhIxGqIIoGpRyIDI5EK8WN06aSET7DkQyHYlhyeKkMX9jmAD7LMsleJ9k9XcK5wvPSkgpaagx1/kieJFq3ByUn7mzzfqBGOmBRnnDkXpaOs1TAwAsSaoE4wZeeGzCf+GpP1MovJbkJmYbSmfjEtbjrZuTM5u63Csr4xIXeuq9Pe86er8DdA52B3+pqOSWnP3juvncX8ZvfdFv/3s7kEbnnhpz9a+Xmqwu74DhP20o6cs8Mvb2cL5xdXVrKYC9UuuV+eUMT6oOf2B17RuxfqIF0l3ZlPbdHdHj+A9tLz7eRUd/NFwacumwP+SSgw3Fc6nq7hrp8L3QA/5Ng6bZ3nV2c9LrQUaMYARmlP8TOH8PT4S7EkYBcrI4/ejjzvGxDoizIQb6MFhPwmHeHqBdaJ2ixAg0tX61qV0PZYomD8GfpfDs9Kyy9t5TWzS1C4XtwiWrhiSnz9VL78jPm+XU8VFwPw7sY74V5+tY1eLe4rRAPeHVAuGdKK1cmx/OOQTzQDd2AmHHvq79do/USiZcJ66nb6ayeiKyIFXiXmwT5quwOcywLf28XYuJDIFRO5HOlXa9fczZCZ+83R4jNjszZznvmCjwI0StNbkTWp68l84fQDalp4oPga8oEdUXNIxWgv5WOc3NGWuZOsB/Pd5jfyVE1c0A1T8H1P8xnVDQ4HteIrnhwV6Gms9zwbHTeNSrP1TUnnpl1Rzeqhz7UNGhhSofgaIP5YhpWz9kYpQzBR/A/TlAdG1bKc30bw+y5z24SRkpWSv/IVcOMIRI/q4bnrdortwwPdvQozt1B59hyakZWKKGbJvwvFis3930l84I5ub0HcFXFdGJpydwf+Y5r8et4CzNwwk7ocMZH6t5QehvcfqX4OEbMc1NiInn3cIM7ZLmmw1MySBOtuybo4NbIXR3Pc0Rl9qkIIBd7dt8wN5vRco4s+gV762QinzR9p25EehOC71yUubfPJxt95kcdjTHc3sUsFzNaljR52ofIlx/JnNNFzyHsDCHZnX8B
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: wildlife
+  campaignSeed: 530964
+  displayTitle: Okapi in Emerald Underbrush
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: f01b14c39bb2a724398e69382507dc05,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

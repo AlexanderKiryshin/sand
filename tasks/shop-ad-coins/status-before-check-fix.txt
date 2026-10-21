@@ -1,0 +1,5 @@
+FAIL
+System.InvalidOperationException: Closing the shop failed to resume the game.
+  at ShopAdCoinsRunner.Require (System.Boolean value, System.String message) [0x00009] in E:\myProjects\sand\Temp\MarketingCapture\Assets\Editor\ShopAdCoinsChecks.cs:48 
+  at ShopAdCoinsRunner+<Check>d__6.MoveNext () [0x0111d] in E:\myProjects\sand\Temp\MarketingCapture\Assets\Editor\ShopAdCoinsChecks.cs:172 
+  at ShopAdCoinsRunner+<Start>d__5.MoveNext () [0x00035] in E:\myProjects\sand\Temp\MarketingCapture\Assets\Editor\ShopAdCoinsChecks.cs:55 

@@ -1,0 +1,13 @@
+Real Unity inventory and dispatch route validation; three generated runs per changed level. Sand physics is not simulated.
+Level | Art version | Runs | Result
+1 | 6 | 3 | PASS
+2 | 6 | 3 | PASS
+3 | 6 | 3 | PASS
+4 | 6 | 3 | PASS
+5 | 6 | 3 | PASS
+6 | 6 | 3 | PASS
+7 | 6 | 3 | PASS
+8 | 6 | 3 | PASS
+9 | 6 | 3 | PASS
+10 | 6 | 3 | PASS
+PASS: 30 real Unity runs; exact per-color bucket demand; required mechanics present; all dispatch routes clear.

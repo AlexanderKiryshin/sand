@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_007
+  m_EditorClassIdentifier: 
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4278780933
+  - serializedVersion: 2
+    rgba: 4288506032
+  - serializedVersion: 2
+    rgba: 4287526618
+  - serializedVersion: 2
+    rgba: 4286006607
+  - serializedVersion: 2
+    rgba: 4290617671
+  - serializedVersion: 2
+    rgba: 4280620569
+  - serializedVersion: 2
+    rgba: 4282657849
+  - serializedVersion: 2
+    rgba: 4284960645
+  - serializedVersion: 2
+    rgba: 4293057508
+  - serializedVersion: 2
+    rgba: 4289028500
+  - serializedVersion: 2
+    rgba: 4288192248
+  - serializedVersion: 2
+    rgba: 4286152697
+  encodedCells: S1:4:4096:64E19662:jVVBTxtHFP4ND8jslp5YSwnQXOClQGpf3E52UdRLpW5V1NMk1ixJetli7SI1F2OEXYVTEYeVucSNaMV1K7A1vsAiguT5UX2zaxs3qZR+ltf2fN9733tvdzzyZVW+navBnPfu7GM4jjxlNfa0yqoh/w9++ZM8lxbAPAC4H+bvGnr5jDMITw1/F9Qlbtmwq6sOD+AZYzMQ/gJgFrvLVJTTvSo5iEiX+fvsz5cMGqJI0XUKaO2UHCOpnbG3Z/OnC0zUjWF32bAlzLSuoMHXzxwAwcSe0x25r+I0nBmIYMECG8D40kjM6uo0D+EiwKwA0c15ZxVz5xyZQ4U9mGUrK45NCcblkci5ynCo9QzYi18BVIlka6URWbqi+grMrjdxvrHwgN139uK1psxTZxU94ZFeGwtof0G+0j64YwwGahsbONtGtC4fItrWmridkFdED6sbG/h8llKKSoDPpXU5oVcxo/pcfvkInyM2WxUEIQ8mNM0gSzHjnD/KVjAjG2yGcTvW2sy2NJ4QB87nbl4HmUYhZYMyOFgheTEdrDDwOGysR+/1oR7YjVs9bmCoic803Rwv3H8lb2jplX0b6Q8QCM6rtfjAtHVz+R6mOSpfi5hZHo9rwz+0/vm1Dkf9DUZvTbeNbfJajfPrweWh1pfKrG7yzVGO/OHgLrX5tylB5+P7lvP2tVZqOKR4YCKKY8+VPG+d+iCab9IvVcTbIKWMwrq3/PCKVvgImxSf8xCGTIZezd13HO+a3+E2jz8HiKQUUeDyel7IGPv82vBWAPJAMBlIIV0vqvNpaBZ+HjG5C2EkGURBFMTeNL8fxRHEcRBRuAwMTTwpJiLRCij/dhzEpGy1d+PWhsJvyiX+xH9HO5ozCygUZG9dTXCc+D73CfwpB3I9oNICJs5fqR3/xQ/+E38E88USjSCKfot7b+xdaYZN2636Ymss8XG22VZpcE7D6iSfgX/vO/+ePwUV9HLPcpokW/7HYKFXNoqyobeSyfr3Y971UhOPWCT4MAdIywqJrxwlnSL634r8+bggQYcckqKGZIpvIGv1zgsHPOob/tifyrPbU6hUrxAkfZX4kyKOt+gzLafKjvMWMUnIJpnYFP0rJcC6iPIZoCnSgDyOExPuY9oWcGBFF2pUwxLRHfWjnyuP/UX6+wPZhrC4dWVS7CVjbPnH5Sb9v4FswPlFwRocGXIpNYr1bYir9fb2m/IkHgf9Dv5uJF8mP4XgujHvqXRn/HSQRKu+Uke5hMxdD0x1RQJVOAwGAyKdrcQy84U4n1Bv4oDqpN9/bBoQtLmg6pECJ88fGQxOaFj0SortST1eNDC9U6SZLvWT8hGCQW0OoHHH5hZanyR97Aio1ikH7A93qMiBKg+KGs1O7zz+K3GEWzdHT7Au3J7aOKQ9P+qiktERs0THVrzWogsdgxeKPIZquk9sNhZghQ6XkPiVX02HabkotPy/eNueAbpFYFpMW/kYEacMPhGO/wA=
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
+  - colorIndex: 11
+    count: 1
+  - colorIndex: 12
+    count: 1
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 0
+  artTheme: places
+  campaignSeed: 635693
+  displayTitle: Pink Sand Beach and Black Palms
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
+  linkedBuckets: 0
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 0
+  bucketSettingsOverride: {fileID: 11400000, guid: 10520fed5f2f52a42b4c685aa08b9c4b,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

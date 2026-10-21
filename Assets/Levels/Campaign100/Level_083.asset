@@ -16,37 +16,49 @@ MonoBehaviour:
   gridHeight: 64
   palette:
   - serializedVersion: 2
-    rgba: 4280954129
+    rgba: 4279048985
   - serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4281805754
   - serializedVersion: 2
-    rgba: 4281218361
+    rgba: 4284831455
   - serializedVersion: 2
-    rgba: 4279118151
+    rgba: 4279849065
   - serializedVersion: 2
-    rgba: 4282867539
+    rgba: 4287006445
   - serializedVersion: 2
-    rgba: 4289044106
+    rgba: 4290032101
   - serializedVersion: 2
-    rgba: 4284373249
+    rgba: 4292598515
   - serializedVersion: 2
-    rgba: 4289956892
+    rgba: 4285238669
   - serializedVersion: 2
-    rgba: 4281030955
+    rgba: 4280236340
   - serializedVersion: 2
-    rgba: 4284826625
-  - serializedVersion: 2
-    rgba: 4280427865
-  - serializedVersion: 2
-    rgba: 4278792976
-  - serializedVersion: 2
-    rgba: 4278325122
-  - serializedVersion: 2
-    rgba: 4289976559
-  encodedCells: S1:4:4096:3EE52A32:pZS9kpswEMefAbd2ClYzbrAb7cw1l8vD4BlSZIYyavJSoUijoaFJoyZufWopeYbblYSQsM0V+c9gBL/9RnLTfKoprl4QL3St8BQN0OuS4pF4G93vLZhPa56kmGae0DRA5JjzEKOdvDJvNmCbKbiT8F6XkQrf4pz4OfeTec6ncVr0IHxCp2+PeTM+52HsT8JTb9PYxiHelR6kcs5DbJLhK6UWflmGHvQz8hdc75rgHvjV9t0aBs5V/rHW9j8CaKMva+SPfwRSPW+IOfXCG+a01fLUTn73ADLPKw+85TmCTPgCY/0ZV9tcPeP0U6+iK+MxyzXplgl2nAj51+Cv1CByyHiwMMYk8TPOJn9n7p9lwgBpYDB47qCgdyAil4hClEPk3gElJjEEgjEqVCfDFhMisaAM6nsM6E0kYsYVR1qqk5QJYyfDwfEHqo/18TEXkdfHXbHl/z/c2+yKXxscYFccinKTm0/4oSg2OckFkOj6llDkXFd+JSHwfZav2Oub5dN5gyvdzkL3GTf7f46/YU9G1oJ+y/mX346/EncvbrqEnu7nwOf8JfCig24Pt8R/OFGFnWZHcJxU8TeUfjGYk640K/DShY6bbDBXy9Ran6dygc6xRnOi4lyL9ECXnqsJUzHvCa9cgRlHra88nT600c2NBYzWa+YrIZw7xzmvSOrmPyzqcTkMdACT00ePKNx5yY6TTxluTl8/AA==
+    rgba: 4283195466
+  encodedCells: S1:4:4096:F89A2B96:HVVNl5s4Fv0Nr6OeWOwi7HTNslCg1nJUaeNdmYhKZpeioU5m2ZUK7to5oWJgpwyTQuw8x90G/cp5ao4XWPfxPu+7MmCmdhyMrKpJ5ZzfX5uZkVKeBWy+0eZfJjbWTmbViKNVCvHbv6wFNHi5nLPs4sc/hLU2rvZ/PB2GJFkEefHfaaCxlJWI+X25VNPQGqFvG2P+HbJNru7/rHuDuNQvNrx8WkzkOUgN2nihZMs6ld/GVv6GeH0WIG5W5AdIS83Un0smV2fVdrQHvUaDOQvynyUhHZVV3VkPLvGQkd3eA9BSdlKq6FJSiAU6qxF3dS1JVwLgIeIr9fK16UyFx9X+wYPDGkyvGwtg0MFRys2F1MRULtty73mGGoR2YwsAh3hCt4SgKxAuW/v04S8jZzHZ1fY5QFvHNO6gA00/Dmj4YNMwL0RhbTu2pydtWyDorTfruJokscPH4rYIE57bXbk9PUjbouuDfaKDrGYSJqqK6wvOlcphux8HOA69R6090XjWzTAK5MVt6HAO+7K1XifilTzarY3rdQzvVZbkZaLCPER8HO2MNK4p25KxemgORZqoVIU8UXn0rBnHYSa76rKu6zbPEt2c57e3KkowfpKnSd66rLGww34/RuX1RkQ8KVM/4IEfZMU1/7M1a0k0wKftPi0Yu+L87jb1GQsY4yrlSQ0zSQwF+Wmf5qG/CXlWKP8L2ygWOJK90SKW1gj5a53fIGsUz7KInal0wYIQs3yjO4rNWctf6UJxtkk4/z1K2I3aYAB8flACE/KWCvCVv3wVcZbx63cBf2RBhF16FMIzgy3BGMbZ8uMFZ5H/qNgCHTj/mTCp+lqfBmM23+bLDxe8SNjyHWMv5zebJAszel6U5VNte/MFZ5uU/IIvfnk8WyznGU/QAST55/J/dvv0diPlFb+4u/D5TVq9W52pIMFqzjcqLU/1vs4lgSseZSVWcX8p37FFgGN4/GcQJp/3Gipl6OFDxNG/68x8EfyOn/PLebLgxTcqvrw5AMX28lvOGMsYy+9UmCUv5svfgizv3n/vrXeAq9DPNs5go7BTYfQfyuRbllyaXddNgwUV+uwOexQkLvks+DoTuFzFd0COTNaat6Ef3JQXzgPjPuPPqCfnl58kNEIOdujeKxxtWURJjhMOk/CZ0W4lhGmktrYnAmfE7oqiwEJ4lPCvRBs5Jx2pOm1XpIMrP/DZDZIQ8TQNP09WTh5oQmQX44rhc+5ip1h6VhSqnmY77U12O6NakJ46Ax4EQRb9jYMZANCzLU+4OUTj5gMoFfkYJcmLR21iINVY2+3JStGZaUL8QxpyP/iOe49wJ57rsd4i7lF9mIYJ9+vKLQ9yukFFNAMVdY1rZNt+MNbJBaWgUpdItZLdYE3X1BjB2jce/kEeUaBSoPDIfY2fPxiqcbnQALCBaIYpAf68qqrrabLT+eP5EtdvfBC2HZyB6KgrA722/WSHIJkHy3Zbj9COyOSxx4bDjAKmVfe9NZyjelV7h1s9tShIYoInoAJz7u3Q8Nc4YaD7LVirGyQhmCO4HPH7PeKMxJKDNBVMVoDEyB5Qg7qO4oBZ/7F8r+NXeLyDqZVCOkUV5/7SHEVdlnpYS3UlUHhBAA4y1gZbLALmL6GrPpfarOc/U2z1XhpABGGc2IsgjH4SRGxHY6RyEmtro0G4rhnj0VfJfeYT6ERrmp1G7aT2gH3HF5xxZ02g8tL/DpQce9R20Efc/84JNuJENnITquvwp5bCYSA9yhd2EfreOYcZkTvNwyBPqroH0UNnNNJGA+3gQDWsGgIN8iN5XdlB6xpn1Rl8m1wSjj10R5v5/IzJbmwNoFNd4diNXRMc3YBtkO5KeruUcpwBhkOaxFNvUcEs2MGI2jEHVwZ5htIFWru6j+1pQBV1163jONFCEBQ1+PvRQsf1aY2XhF0DUgpio8lqjUU7A7zfOm3IFnE9xVBR8DqIycG2iKNwe7ohGq+qtfw/
   legacyCells: 
   subGrainsPerAxis: 1
-  buckets: []
+  buckets:
+  - colorIndex: 1
+    count: 1
+  - colorIndex: 2
+    count: 1
+  - colorIndex: 3
+    count: 1
+  - colorIndex: 4
+    count: 1
+  - colorIndex: 5
+    count: 1
+  - colorIndex: 6
+    count: 1
+  - colorIndex: 7
+    count: 1
+  - colorIndex: 8
+    count: 1
+  - colorIndex: 9
+    count: 1
+  - colorIndex: 10
+    count: 1
   bucketLayout: 00000000000000000000000000000000000000000000000000
   conveyorDirections: 00000000000000000000000000000000000000000000000000
   conveyorBucketCounts: 00000000000000000000000000000000000000000000000000

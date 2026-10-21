@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_117
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280122342
+  - serializedVersion: 2
+    rgba: 4281083942
+  - serializedVersion: 2
+    rgba: 4282674595
+  - serializedVersion: 2
+    rgba: 4280170853
+  - serializedVersion: 2
+    rgba: 4283063671
+  - serializedVersion: 2
+    rgba: 4279971405
+  - serializedVersion: 2
+    rgba: 4278980117
+  - serializedVersion: 2
+    rgba: 4279979161
+  - serializedVersion: 2
+    rgba: 4285172138
+  - serializedVersion: 2
+    rgba: 4279310632
+  - serializedVersion: 2
+    rgba: 4284529393
+  - serializedVersion: 2
+    rgba: 4279640889
+  encodedCells: S1:4:4096:B53D918E:TZXPbxvHFcf/hoXchgB7IhAICHIplttSsS+qRuMNzZPlkUBVF1WrR2MzJ8rROAteWG2VSaxLrTLpVr6Z5aajuRA0GqnbSxpm1pnMH9U3tOFkTgQ/+515v59SpcKTAjgl8IebjoQ/e8ds+4i5VCG3POWe45eWcyFKJQQ7ZschW+6rrFTauQEkKrPIXYo8E3sR+yFizDCH3AGksHQKObjM6/fZLlJ/rBVKG+iRZe3tADPynLHdN5iZDDnn9wmx3kxjBFq5z94dDSOtALqEaKtfpF6u1M+Yibrm+Ho3odoWRcVP3/L+W147wR1HvtRFUUwejFbWvcMMRqUzqb//H8WPRf/Hn69/8wnQUgMAJ8uijxd8+VSg/OEv+RTNc13y1aSYFP+iT4SXb+y8u58vUT/rEq8uslfe+X4U9tnb+AxsTYF7/s9+QeQd5FEU7YRHfHd1hxoNptz7P7OsbHea/vko3AGCRr2YsGMFHAw33UeTTFwg98G7jMyKwwvGSjfgFuDgYfFpR4aNb9C7iCEiCYXkK+bzh+kzrdZzdna21cAc4OOoTigBYybMjWo3Iy3kxRdrT8tVbo5Q/di/QOEyc6WjHyJ/WHw8vlIrjjdDIxgDXrKDteNoa8WLzeraBzcilIx7jeCQAjkgcqm9vHxYbNxWM6V2wyNCgougEQSbCewSvvS4VT7/7Pb27p+VQp/pr18jxYMmLvmyte4/eP7pYOfbe9rh8/QOWeHmYZL04Mk6W28N17+e7EX/ce6ARZQEK/k8+GQJPfqEsffroXiO1VNFmJ2IkEPpeVU9SIDTR4wtBqJVeP4nHz6SHHp15bnh5OC4E4v1YVFcVdVQ7Uc7hMTBOJSorxJIu4/Ow7NsiNcXt9X/Xu6zY6DjYCFv5ivu+O7nYSgFw+opqj+cIKfnm52zm2bTc05As3th5wZ8+Z18WyEn+ViG4VkDvaDUpthTF2fykLEi+iyK99g2yTel7Eg0oAlgbQozKzprf+xPivovDYm8KWMp84ZszgGUtQn2bCgfT25P9u63XwfNeRhnjxOeBwTtG5XWckruyVzGhCS9/DutNM4B66BdzRND/IHlKI6Ty6q0sdxlM7KZqUHggwRQdqdOi4Hvl41qqoRv7V+9yV5MzuV4RlN7IPYQF7eL66z0fBvrBxICs+8cCJ2p/eEeNlc/qq4zX17IVtzQ+zmh5/HyVLAJmxTV4tqV+zvbMpAytj1JzGvDU1G6D4f9fn8yKRYPLOoNlnuaB6Cz0dMl12SWfdBiE4zOxt3KquSAOW6wY0qBLUKRj/UH60j7i8Wi0isDeF1aEMJQCj1HtFsXmBt0b7EY2fIAE4xhTYQAODeppiO1/rXXY/4XynoHqbH0TvBegC3SVdPT8kQgL3z9l65mwZvaDMabCifHZeOTduPGF8ckRL0uGdfpKx/Aw9pxkshGfn6z2WRfXBaXV9W11vtcc3BOk0UwPtGZfExiWc2xHhvF1eInnbEfau4cGGeMrn93kpA8l/OYtNfy5mX1E95/7Ed4JjAKyhotaN4RMUnacu3manGtRuyYz4QDp60YCedmLm6fyb8T0t4ImsjLAZgZDiWnXYYxFC6FXpts/+3j/K/PqrQRxLiJ/DbCoaVAi1o7070hZGeLnK0FCVk2F4f/ng5wYgM/hVnmLe3lWGKhzING2qteBb8Ng3nzyBhTwkzUOP7of3F6xzH68YzwdhgGdxdBFXzvhNeDm11coF7mr7awESg2zrxZza8VZpCezvSpmZ1PXftZFbupBfObcK0Zrs1PtbLpWL8XE8jg4hucofiHNYb/PgxDLDNX65rnmxYoh9P2U6V66LPm2UeIX2Jv+KkJU1A9bA1YKqVTXLGC4+NHymmNS8xZ9zLJ6qUpceMOy1SXBx+x9payWjtcz9aPTYOJtOgkTrchjs1wC8erxd0siHDye4ej19ZC7L/fcjj1WDjy692vX1xCrtNpTyG19f8B
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: people
+  campaignSeed: 12155883
+  displayTitle: Baker beside a Round Bread Oven
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 1
+  alternatingCrates: 0
+  swappingColors: 1
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: f4c2a2c5553b6234f83e6b75a5f5922e,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

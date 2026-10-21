@@ -10,6 +10,8 @@ public static class NatureBackgroundBundle
     public static bool TrySavings(ProductData bundle,ProductData[] individual,out string regularPrice,out int percent,CosmeticBundle definition=null)
     {
         definition=definition??CosmeticBundleCatalog.Nature;
+        // Style sets mix coin/rewarded items with paid backgrounds; their prices are not comparable.
+        if(definition.IsStyleBundle){regularPrice=null;percent=0;return false;}
         var backgrounds=definition.Backgrounds;
         regularPrice=null;percent=0;
         if(bundle==null || bundle.Tag!=definition.Tag || !ValidPrice(bundle) || individual==null || individual.Length!=backgrounds.Length)return false;

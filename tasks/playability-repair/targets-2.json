@@ -1,0 +1,604 @@
+{
+  "cases": [
+    {
+      "index": 20,
+      "path": "Assets/Levels/Campaign100/Level_021.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 25,
+      "path": "Assets/Levels/Campaign100/Level_026.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 33,
+      "path": "Assets/Levels/Campaign100/Level_034.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 42,
+      "path": "Assets/Levels/Campaign100/Level_043.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 50,
+      "path": "Assets/Levels/Campaign100/Level_051.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 55,
+      "path": "Assets/Levels/Campaign100/Level_056.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 62,
+      "path": "Assets/Levels/Campaign100/Level_063.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 71,
+      "path": "Assets/Levels/Campaign100/Level_072.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 76,
+      "path": "Assets/Levels/Campaign100/Level_077.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 83,
+      "path": "Assets/Levels/Campaign100/Level_084.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 87,
+      "path": "Assets/Levels/Campaign100/Level_088.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 91,
+      "path": "Assets/Levels/Campaign100/Level_092.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 95,
+      "path": "Assets/Levels/Campaign100/Level_096.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 99,
+      "path": "Assets/Levels/Campaign100/Level_100.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 103,
+      "path": "Assets/Levels/Campaign100/Level_104.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 108,
+      "path": "Assets/Levels/Campaign100/Level_109.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 116,
+      "path": "Assets/Levels/Campaign100/Level_117.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 122,
+      "path": "Assets/Levels/Campaign100/Level_123.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 126,
+      "path": "Assets/Levels/Campaign100/Level_127.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 131,
+      "path": "Assets/Levels/Campaign100/Level_132.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 135,
+      "path": "Assets/Levels/Campaign100/Level_136.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 144,
+      "path": "Assets/Levels/Campaign100/Level_145.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 149,
+      "path": "Assets/Levels/Campaign100/Level_150.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 153,
+      "path": "Assets/Levels/Campaign100/Level_154.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 158,
+      "path": "Assets/Levels/Campaign100/Level_159.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 163,
+      "path": "Assets/Levels/Campaign100/Level_164.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 169,
+      "path": "Assets/Levels/Campaign100/Level_170.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 174,
+      "path": "Assets/Levels/Campaign100/Level_175.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 179,
+      "path": "Assets/Levels/Campaign100/Level_180.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 185,
+      "path": "Assets/Levels/Campaign100/Level_186.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 193,
+      "path": "Assets/Levels/Campaign100/Level_194.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 204,
+      "path": "Assets/Levels/Campaign100/Level_205.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 212,
+      "path": "Assets/Levels/Campaign100/Level_213.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 221,
+      "path": "Assets/Levels/Campaign100/Level_222.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 229,
+      "path": "Assets/Levels/Campaign100/Level_230.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 235,
+      "path": "Assets/Levels/Campaign100/Level_236.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 242,
+      "path": "Assets/Levels/Campaign100/Level_243.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 251,
+      "path": "Assets/Levels/Campaign100/Level_252.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 257,
+      "path": "Assets/Levels/Campaign100/Level_258.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 264,
+      "path": "Assets/Levels/Campaign100/Level_265.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 270,
+      "path": "Assets/Levels/Campaign100/Level_271.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 276,
+      "path": "Assets/Levels/Campaign100/Level_277.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 283,
+      "path": "Assets/Levels/Campaign100/Level_284.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 294,
+      "path": "Assets/Levels/Campaign100/Level_295.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 305,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0306.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 320,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0321.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 341,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0342.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 356,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0357.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 377,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0378.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 385,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0386.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 398,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0399.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 410,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0411.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 428,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0429.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 445,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0446.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 459,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0460.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 470,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0471.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 488,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0489.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 503,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0504.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 515,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0516.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 533,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0534.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 548,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0549.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 560,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0561.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 578,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0579.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 589,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0590.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 608,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0609.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 620,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0621.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 635,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0636.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 645,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0646.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 665,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0666.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 683,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0684.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 710,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0711.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 722,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0723.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 731,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0732.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 750,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0751.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 767,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0768.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 774,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0775.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 791,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0792.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 810,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0811.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 827,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0828.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 836,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0837.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 857,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0858.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 869,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0870.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 884,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0885.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 902,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0903.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 920,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0921.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 933,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0934.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 941,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0942.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 953,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0954.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 965,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0966.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 980,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0981.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 991,
+      "path": "Assets/Levels/Campaign1500/Ordinary_0992.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1020,
+      "path": "Assets/Levels/Campaign1500/Winter_0021.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1025,
+      "path": "Assets/Levels/Campaign1500/Winter_0026.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1029,
+      "path": "Assets/Levels/Campaign1500/Winter_0030.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1034,
+      "path": "Assets/Levels/Campaign1500/Winter_0035.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1039,
+      "path": "Assets/Levels/Campaign1500/Winter_0040.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1050,
+      "path": "Assets/Levels/Campaign1500/Winter_0051.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1057,
+      "path": "Assets/Levels/Campaign1500/Winter_0058.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1062,
+      "path": "Assets/Levels/Campaign1500/Winter_0063.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1068,
+      "path": "Assets/Levels/Campaign1500/Winter_0069.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1073,
+      "path": "Assets/Levels/Campaign1500/Winter_0074.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1081,
+      "path": "Assets/Levels/Campaign1500/Winter_0082.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1085,
+      "path": "Assets/Levels/Campaign1500/Winter_0086.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1089,
+      "path": "Assets/Levels/Campaign1500/Winter_0090.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1096,
+      "path": "Assets/Levels/Campaign1500/Winter_0097.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1100,
+      "path": "Assets/Levels/Campaign1500/Winter_0101.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1107,
+      "path": "Assets/Levels/Campaign1500/Winter_0108.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1113,
+      "path": "Assets/Levels/Campaign1500/Winter_0114.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1119,
+      "path": "Assets/Levels/Campaign1500/Winter_0120.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1126,
+      "path": "Assets/Levels/Campaign1500/Winter_0127.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1133,
+      "path": "Assets/Levels/Campaign1500/Winter_0134.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1138,
+      "path": "Assets/Levels/Campaign1500/Winter_0139.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1150,
+      "path": "Assets/Levels/Campaign1500/Winter_0151.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1155,
+      "path": "Assets/Levels/Campaign1500/Winter_0156.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1161,
+      "path": "Assets/Levels/Campaign1500/Winter_0162.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1167,
+      "path": "Assets/Levels/Campaign1500/Winter_0168.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1171,
+      "path": "Assets/Levels/Campaign1500/Winter_0172.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1177,
+      "path": "Assets/Levels/Campaign1500/Winter_0178.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1186,
+      "path": "Assets/Levels/Campaign1500/Winter_0187.asset",
+      "firstStrategy": 0
+    },
+    {
+      "index": 1194,
+      "path": "Assets/Levels/Campaign1500/Winter_0195.asset",
+      "firstStrategy": 0
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+[
+  {
+    "number": 1,
+    "subject": "fox",
+    "colors": [
+      "#E58C35",
+      "#F2A800",
+      "#37DC10",
+      "#009CE1",
+      "#FEFEFE",
+      "#01595E"
+    ],
+    "usedColors": 6,
+    "counts": {
+      "3": 949,
+      "4": 682,
+      "2": 282,
+      "6": 553,
+      "1": 890,
+      "5": 740
+    },
+    "meanBrightness": 0.632,
+    "darkAreaPercent": 0.0,
+    "image": "Assets/Images/OpeningSixColors/Level_001_fox.png",
+    "cellsSha256": "a6ff1a824f4770708584b1a3555347386da3bc849b7e2668a17fcd52fdd9bd6f"
+  },
+  {
+    "number": 2,
+    "subject": "pagoda",
+    "colors": [
+      "#DC3232",
+      "#F2A800",
+      "#37DC10",
+      "#009CE1",
+      "#FEFEFE",
+      "#01595E"
+    ],
+    "usedColors": 6,
+    "counts": {
+      "1": 924,
+      "5": 754,
+      "4": 1044,
+      "6": 575,
+      "2": 213,
+      "3": 586
+    },
+    "meanBrightness": 0.557,
+    "darkAreaPercent": 0.0,
+    "image": "Assets/Images/OpeningSixColors/Level_002_pagoda.png",
+    "cellsSha256": "fbd56fc83ab5391cc74e4059ca27d54e47de25cdee2445c1907d7fdbed7d8b67"
+  },
+  {
+    "number": 3,
+    "subject": "falcon",
+    "colors": [
+      "#E58C35",
+      "#F2A800",
+      "#EFD8B3",
+      "#009CE1",
+      "#FEFEFE",
+      "#01595E"
+    ],
+    "usedColors": 6,
+    "counts": {
+      "4": 845,
+      "3": 672,
+      "2": 1003,
+      "1": 796,
+      "5": 367,
+      "6": 413
+    },
+    "meanBrightness": 0.642,
+    "darkAreaPercent": 0.0,
+    "image": "Assets/Images/OpeningSixColors/Level_003_falcon.png",
+    "cellsSha256": "0e0f090ca9b05c6b744a67017127822587e3bf8d034d319b08052d8ca1d18532"
+  },
+  {
+    "number": 4,
+    "subject": "giraffe",
+    "colors": [
+      "#E58C35",
+      "#F2A800",
+      "#37DC10",
+      "#009CE1",
+      "#FEFEFE",
+      "#01595E"
+    ],
+    "usedColors": 6,
+    "counts": {
+      "4": 949,
+      "1": 720,
+      "2": 848,
+      "5": 458,
+      "3": 657,
+      "6": 464
+    },
+    "meanBrightness": 0.61,
+    "darkAreaPercent": 0.0,
+    "image": "Assets/Images/OpeningSixColors/Level_004_giraffe.png",
+    "cellsSha256": "6ead371e10a9b3a9e286a590b4187562f3b6d1afaac229b103ab14c2059517de"
+  },
+  {
+    "number": 5,
+    "subject": "ocean",
+    "colors": [
+      "#009CE1",
+      "#1C8CB3",
+      "#EFD8B3",
+      "#F2A800",
+      "#FEFEFE",
+      "#01595E"
+    ],
+    "usedColors": 6,
+    "counts": {
+      "1": 1063,
+      "5": 1229,
+      "4": 384,
+      "6": 202,
+      "2": 773,
+      "3": 445
+    },
+    "meanBrightness": 0.687,
+    "darkAreaPercent": 0.0,
+    "image": "Assets/Images/OpeningSixColors/Level_005_ocean.png",
+    "cellsSha256": "0b57e973e78d7afc532d53e08a297498895ded6924ca2e02bf6fb97a86fb73c2"
+  },
+  {
+    "number": 6,
+    "subject": "wolf",
+    "colors": [
+      "#EFD8B3",
+      "#FEFEFE",
+      "#37DC10",
+      "#009CE1",
+      "#1C8CB3",
+      "#01595E"
+    ],
+    "usedColors": 6,
+    "counts": {
+      "4": 696,
+      "2": 1443,
+      "1": 536,
+      "6": 422,
+      "5": 29,
+      "3": 970
+    },
+    "meanBrightness": 0.738,
+    "darkAreaPercent": 0.0,
+    "image": "Assets/Images/OpeningSixColors/Level_006_wolf.png",
+    "cellsSha256": "79ac4574fda5def2bc83455ab49ea55e8146aa096cc944769103c1620fd56370"
+  },
+  {
+    "number": 7,
+    "subject": "tropical",
+    "colors": [
+      "#E58C35",
+      "#F2A800",
+      "#37DC10",
+      "#009CE1",
+      "#FEFEFE",
+      "#01595E"
+    ],
+    "usedColors": 6,
+    "counts": {
+      "4": 1167,
+      "3": 758,
+      "6": 632,
+      "2": 749,
+      "1": 317,
+      "5": 473
+    },
+    "meanBrightness": 0.593,
+    "darkAreaPercent": 0.0,
+    "image": "Assets/Images/OpeningSixColors/Level_007_tropical.png",
+    "cellsSha256": "5c4f3eb48bd919b585d557f572c4f892ce8ae677dcb136666671057a8b02cc41"
+  },
+  {
+    "number": 8,
+    "subject": "rose",
+    "colors": [
+      "#DC3232",
+      "#E58C35",
+      "#37DC10",
+      "#EFD8B3",
+      "#FEFEFE",
+      "#01595E"
+    ],
+    "usedColors": 6,
+    "counts": {
+      "4": 580,
+      "5": 599,
+      "1": 999,
+      "3": 1080,
+      "2": 670,
+      "6": 168
+    },
+    "meanBrightness": 0.634,
+    "darkAreaPercent": 0.0,
+    "image": "Assets/Images/OpeningSixColors/Level_008_rose.png",
+    "cellsSha256": "b8cc7055fac1c43b3b385b10ff95535157c16ab9864cbb568673b9bc6ca186b6"
+  },
+  {
+    "number": 9,
+    "subject": "courtyard",
+    "colors": [
+      "#FE00FE",
+      "#37DC10",
+      "#009CE1",
+      "#EFD8B3",
+      "#FEFEFE",
+      "#01595E"
+    ],
+    "usedColors": 6,
+    "counts": {
+      "1": 717,
+      "2": 529,
+      "5": 903,
+      "3": 702,
+      "6": 391,
+      "4": 854
+    },
+    "meanBrightness": 0.646,
+    "darkAreaPercent": 0.0,
+    "image": "Assets/Images/OpeningSixColors/Level_009_courtyard.png",
+    "cellsSha256": "9497ee71dc67bb1881b5c7c54d488bf339b17239f9226bf9e9be9b5b3cf4d8d7"
+  },
+  {
+    "number": 10,
+    "subject": "lemonade",
+    "colors": [
+      "#E58C35",
+      "#F2A800",
+      "#37DC10",
+      "#009CE1",
+      "#EFD8B3",
+      "#FEFEFE"
+    ],
+    "usedColors": 6,
+    "counts": {
+      "3": 552,
+      "4": 930,
+      "2": 1123,
+      "6": 810,
+      "1": 151,
+      "5": 530
+    },
+    "meanBrightness": 0.718,
+    "darkAreaPercent": 0.0,
+    "image": "Assets/Images/OpeningSixColors/Level_010_lemonade.png",
+    "cellsSha256": "58783211fba75d9d05dd06788ec6a7a4e7b2e861cca522826b0e30dfdaab02b1"
+  }
+]

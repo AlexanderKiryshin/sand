@@ -60,6 +60,12 @@ public class LevelSegmentRules : ScriptableObject
     [Min(0)]
     public int maxGrainsPerBucket;
 
+    [Tooltip("Queue bucket colors in the order their full sand budgets become available from the bottom of the painting.")]
+    public bool matchBucketOrderToSand;
+
+    [Tooltip("Nonzero pins a verified campaign layout. Zero keeps a fresh random layout on each run.")]
+    public int verifiedLayoutSeed;
+
     public bool ContainsLevelIndex(int levelIndex)
     {
         if (levelIndex < startLevelIndex)

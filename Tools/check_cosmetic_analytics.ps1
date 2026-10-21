@@ -24,4 +24,4 @@ Add-Type ("using System;`nusing System.Linq;`nusing System.Collections.Generic;`
 $palette=@([regex]::Matches((Get-Content (Join-Path $root 'Assets/Levels/Campaign100/Level_002.asset') -Raw),'rgba: (\d+)')|ForEach-Object{$rgba=[uint32]$_.Groups[1].Value;[UnityEngine.Color32]::new(($rgba-band255),(($rgba-shr8)-band255),(($rgba-shr16)-band255),(($rgba-shr24)-band255))})
 $red=[TutorialRedVerification]::FindRedColor([UnityEngine.Color32[]]$palette)
 if($red -eq 0){throw 'Actual second-level palette has no visible tutorial target'}
-"PASS: red tutorial target is swatch $red; wrong color cannot advance; acquisition/equip context and deduplication; restoration is not acquisition; analytics errors preserve ownership; random unowned bundles and 50/70/90 cadence; 400-1000 material prices; live 25% palette availability and 1000 sand mutations."
+"PASS: red tutorial target is swatch $red; wrong color cannot advance; acquisition/equip context and deduplication; restoration is not acquisition; analytics errors preserve ownership; random unowned bundles and 50/70/90 cadence; 100-600 casing and 400-1000 conveyor prices; live 25% palette availability and 1000 sand mutations."

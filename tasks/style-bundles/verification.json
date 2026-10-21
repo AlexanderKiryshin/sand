@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "new_style_bundles": 6,
+  "existing_background_collections_preserved": 6,
+  "contents": [
+    "background",
+    "conveyor",
+    "casings"
+  ],
+  "ownership_and_partial_ownership": "PASS",
+  "purchase_callbacks_failure_success_duplicate": "PASS",
+  "SDK_restore_and_idempotent_grant": "PASS",
+  "analytics_categories_and_deduplication": "PASS",
+  "preview_items_and_matching_bundle_context": "PASS",
+  "languages_checked": [
+    "RU",
+    "EN",
+    "TR",
+    "DE"
+  ],
+  "new_products_require_platform_catalog_registration": true,
+  "main_scripts_match_validated_scripts": true,
+  "real_payments_executed": false
+}

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-/// <summary>Fresh bounded layouts use the existing component generator and the level's rules.</summary>
+/// <summary>Fresh or verified layouts use the existing component generator and the level's rules.</summary>
 public static class CampaignRunFactory
 {
     public static LevelData Create(LevelData source, int index)
@@ -12,7 +12,9 @@ public static class CampaignRunFactory
         try
         {
             CampaignProgression.ApplyPersistentRules(level, source.GetProgressionIndex(index));
-            level.campaignSeed = Guid.NewGuid().GetHashCode();
+            level.campaignSeed = level.bucketSettingsOverride.verifiedLayoutSeed != 0
+                ? level.bucketSettingsOverride.verifiedLayoutSeed
+                : Guid.NewGuid().GetHashCode();
             level.name = source.name + " (Run " + level.campaignSeed + ")";
             return level;
         }

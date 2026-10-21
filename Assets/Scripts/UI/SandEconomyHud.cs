@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Linq;
 using MirraGames.SDK;
 using TMPro;
 using UnityEngine;
@@ -1013,6 +1014,11 @@ public class SandEconomyHud : MonoBehaviour
                 }
                 else label.text = LocalizationManager.Instance.GetText(parent.Replace("Btn", ""));
             }
+            if (label.name.StartsWith("StylePart_"))
+            {
+                int part=int.Parse(label.name.Substring("StylePart_".Length));
+                label.text=CampaignText.Get(part==0?"theme_background_tab":part==1?"theme_conveyor_tab":"theme_casings_tab");
+            }
             if (label.name == "Caption")
             {
                 string key = parent == "GoldChip" ? "coins" : parent == "MagnetChip" ? "magnet" : parent == "FillChip" ? "transparent" : "shuffle";
@@ -1641,6 +1647,8 @@ public class SandEconomyHud : MonoBehaviour
         scroll.movementType = ScrollRect.MovementType.Clamped;
         scroll.scrollSensitivity = 48;
         float cursor = -8, rowWidth = width - 64;
+        Button adGold = CreateRewardedGoldShopRow(content, PlaceBlockCenter(ref cursor, 116, 18), rowWidth, out TextMeshProUGUI adGoldLabel);
+        shop.BindRewardedGold(adGold, adGoldLabel);
         Button premium = CreateKitShopRow(content, "premium_set", PlaceBlockCenter(ref cursor, 238, 18), GameUiSymbols.Get(GameUiSymbol.Bundle), 1000, RewardedShop.SmallBundleBoosterBonus, 238, rowWidth, out TextMeshProUGUI p2);
         Button remove = CreateRemoveAdsShopRow(content, PlaceBlockCenter(ref cursor, 274, 18), 274, rowWidth, out TextMeshProUGUI p6);
         foreach (BoosterType type in Enum.GetValues(typeof(BoosterType)))
@@ -1656,7 +1664,7 @@ public class SandEconomyHud : MonoBehaviour
         bundlesViewport.gameObject.AddComponent<RectMask2D>();bundlesViewport.gameObject.AddComponent<Image>().color=new Color(1,1,1,.001f);
         var bundlesContent=CreatePanel("BundlesContent",new Vector2(.5f,1),new Vector2(.5f,1),Vector2.zero,new Vector2(rowWidth,1),bundlesViewport);
         bundlesContent.pivot=new Vector2(.5f,1);float bundleCursor=-8;
-        foreach(var bundle in CosmeticBundleCatalog.All)CreateNatureBundleShopRow(bundlesContent,PlaceBlockCenter(ref bundleCursor,420,18),rowWidth,bundle);
+        foreach(var bundle in CosmeticBundleCatalog.All.OrderByDescending(entry=>entry.IsStyleBundle))CreateNatureBundleShopRow(bundlesContent,PlaceBlockCenter(ref bundleCursor,420,18),rowWidth,bundle);
         bundlesContent.sizeDelta=new Vector2(rowWidth,-bundleCursor);
         var bundlesScroll=bundlesViewport.gameObject.AddComponent<ScrollRect>();bundlesScroll.viewport=bundlesViewport;bundlesScroll.content=bundlesContent;bundlesScroll.horizontal=false;bundlesScroll.movementType=ScrollRect.MovementType.Clamped;
         root.gameObject.AddComponent<CosmeticShopTabs>().Initialize(card,viewport,bundlesViewport,width);
@@ -1674,10 +1682,16 @@ public class SandEconomyHud : MonoBehaviour
         var hint=CreateFixedTmp(root,"NatureHint","",24,TextAlignmentOptions.Center,new Vector2(0,106),new Vector2(width-32,44));
         hint.color=new Color(.13f,.33f,.33f);
         float spacing=(width-64)/3;
-        for(int i=0;i<bundle.Backgrounds.Length;i++)
+        for(int i=0;i<bundle.Items.Length;i++)
         {
             var art=CreatePanel("NatureThumbnail_"+i,new Vector2(.5f,.5f),new Vector2(.5f,.5f),new Vector2((i-1)*spacing,-34),new Vector2(spacing-18,210),root);
-            var graphic=art.gameObject.AddComponent<ThemeBackdropGraphic>();graphic.PreviewTheme=bundle.Backgrounds[i];graphic.FitWholeImage=true;graphic.raycastTarget=false;
+            art.gameObject.AddComponent<CosmeticBundlePreview>().SetItem(bundle.Items[i],bundle.Backgrounds[0],bundle.Items.FirstOrDefault(item=>item.Part==ThemeCatalog.Part.Conveyor).Theme);
+            if(bundle.IsStyleBundle)
+            {
+                var caption=CreateFixedTmp(root,"StylePart_"+i,bundle.Items[i].PartName,21,TextAlignmentOptions.Center,
+                    new Vector2((i-1)*spacing,-153),new Vector2(spacing-10,32));
+                caption.color=new Color(.13f,.33f,.33f);
+            }
         }
         var savings=CreateFixedTmp(root,"NatureSavings","",23,TextAlignmentOptions.Center,new Vector2(0,-165),new Vector2(width-32,44));
         savings.color=new Color(.37f,.30f,.16f);
@@ -1816,6 +1830,22 @@ public class SandEconomyHud : MonoBehaviour
         tmp.overflowMode = TextOverflowModes.Ellipsis;
         tmp.raycastTarget = false;
         return tmp;
+    }
+
+    private Button CreateRewardedGoldShopRow(RectTransform parent, float y, float width, out TextMeshProUGUI label)
+    {
+        Button button = CreateShopRow(parent, "Gold " + RewardedShop.RewardedGoldAmount, y, GameUiSymbols.Get(GameUiSymbol.Coins), out label, 116, width);
+        var title = button.transform.Find("Title").GetComponent<RectTransform>();
+        title.sizeDelta = new Vector2(width - 440, 58);
+        title.anchoredPosition = new Vector2(-width * .5f + 112 + (width - 440) * .5f, 0);
+        var badge = (RectTransform)label.transform.parent;
+        badge.sizeDelta = new Vector2(260, 70);
+        badge.anchoredPosition = new Vector2(width * .5f - 156, 0);
+        CreateFixedImage(badge, "VideoIcon", GameUiSymbols.Get(GameUiSymbol.Video), new Vector2(-96, 0), new Vector2(42, 42)).raycastTarget = false;
+        label.fontSizeMin = 18; label.fontSizeMax = 26;
+        label.margin = new Vector4(50, 5, 8, 5);
+        label.text = CampaignText.Get("watch_ad");
+        return button;
     }
 
     private Button CreateBoosterPackShopRow(RectTransform parent, BoosterType type, float y, float width, out TextMeshProUGUI price)

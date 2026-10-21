@@ -56,13 +56,13 @@ public class LevelPresentation : MonoBehaviour
             }
             Image well = NewImage("SandWell", board.transform);
             well.transform.SetAsFirstSibling();
-            // Keep the dark well behind the painting only — the bottom chrome stays
+            // Keep the white well behind the painting only — the bottom chrome stays
             // the panel color so it does not draw a strip over the mosaic edge.
             well.rectTransform.anchorMin = Vector2.zero;
             well.rectTransform.anchorMax = Vector2.one;
             well.rectTransform.offsetMin = new Vector2(12, 14);
             well.rectTransform.offsetMax = new Vector2(-12, -12);
-            well.color = new Color(0.13f, 0.22f, 0.25f);
+            well.color = Color.white;
             Image track = NewImage("PaintingProgressTrack", board.transform);
             track.rectTransform.anchorMin = new Vector2(0, 0);
             track.rectTransform.anchorMax = new Vector2(1, 0);

@@ -1,0 +1,5 @@
+FAIL
+System.InvalidOperationException: Style offer must show one final composition.
+  at StyleBundleRunner.Require (System.Boolean value, System.String message) [0x00009] in E:\myProjects\sand\Temp\MarketingCapture\Assets\Editor\StyleBundleChecks.cs:46 
+  at StyleBundleRunner+<Check>d__8.MoveNext () [0x00d34] in E:\myProjects\sand\Temp\MarketingCapture\Assets\Editor\StyleBundleChecks.cs:142 
+  at StyleBundleRunner+<Start>d__6.MoveNext () [0x00035] in E:\myProjects\sand\Temp\MarketingCapture\Assets\Editor\StyleBundleChecks.cs:53 

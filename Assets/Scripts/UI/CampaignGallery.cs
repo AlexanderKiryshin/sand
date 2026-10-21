@@ -178,7 +178,9 @@ public class CampaignGallery : MonoBehaviour
         var levels = new List<int>();
         for (int i = 0; i < database.LevelCount; i++)
             if (manager.IsSeasonal(i) == winter) levels.Add(i);
-        int[] samples = { 0, 6, 8 };
+        // Keep the regular pack's original fox, tropical coast and courtyard covers
+        // at their new level positions (11, 78 and 117).
+        int[] samples = winter ? new[] { 0, 6, 8 } : new[] { 10, 77, 116 };
         float paintingWidth = (width - 40) / 3;
         for (int i = 0; i < samples.Length && levels.Count > 0; i++)
         {

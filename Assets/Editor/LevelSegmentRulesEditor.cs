@@ -46,6 +46,8 @@ public class LevelSegmentRulesEditor : Editor
         rules.EnsureTemplate();
         EditorGUILayout.PropertyField(serializedObject.FindProperty("fillMode"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("maxGrainsPerBucket"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("matchBucketOrderToSand"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("verifiedLayoutSeed"));
 
         BucketLayoutFillMode fillMode = (BucketLayoutFillMode)serializedObject.FindProperty("fillMode").enumValueIndex;
         if (fillMode == BucketLayoutFillMode.RandomComponents)

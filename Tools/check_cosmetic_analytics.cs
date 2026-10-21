@@ -25,6 +25,7 @@ public static class GameProgressStore {
  public static void SetBool(string key,bool value)=>SetInt(key,value?1:0);
  public static void Save(){}public static void Clear()=>values.Clear();
 }
+public static class CampaignText {public static string Get(string key)=>key;}
 public class ThemeBackdropGraphic {public void SetVerticesDirty(){}public void SetMaterialDirty(){}}
 public class ConveyorSurfaceGraphic {public void SetVerticesDirty(){}}
 public class ConveyorHoodGraphic {public void SetVerticesDirty(){}}
@@ -90,14 +91,24 @@ public static class CosmeticChecks {
   for(int i=0;i<100;i++)Require(CosmeticBundleCatalog.PickUnowned()!=CosmeticBundleCatalog.Nature,"Owned nature bundle selected");
   foreach(var remaining in CosmeticBundleCatalog.All){
    Reset();foreach(var bundle in CosmeticBundleCatalog.All)if(bundle!=remaining)bundle.Grant();
-   ThemeCatalog.Unlock(remaining.Backgrounds[0],ThemeCatalog.Part.Background);
-   for(int i=0;i<20;i++)Require(CosmeticBundleCatalog.PickUnowned()==remaining,"Did not select sole unowned bundle");
+   for(int i=0;i<20;i++)Require(CosmeticBundleCatalog.PickUnowned()==(remaining.IsOwned?null:remaining),"Did not respect shared ownership when selecting sole unowned bundle");
    remaining.Grant();Require(CosmeticBundleCatalog.PickUnowned()==null && !NatureBackgroundBundle.ShouldOffer(50,false),"All-owned state still offered bundle");
+  }
+  foreach(var style in CosmeticBundleCatalog.All.Where(bundle=>bundle.IsStyleBundle)) {
+   Reset();style.GrantPurchased();style.GrantPurchased();
+   Require(Count("cosmetic_acquired")==3 && Count("cosmetic_selected")==0,"Style set must track exactly its three newly acquired parts");
+   Require(WebGameAnalytics.Events.All(item=>(string)item.Value["product_id"]==style.Tag),"Style purchase used wrong product tag");
+   Require(WebGameAnalytics.Events.Select(item=>(string)item.Value["cosmetic_category"]).Distinct().Count()==3,"Style acquisition categories missing");
+   Reset();ThemeCatalog.Unlock(style.Backgrounds[0],ThemeCatalog.Part.Background);Require(!style.IsOwned,"Background alone owns a complete style set");
+   style.GrantPurchased();Require(style.IsOwned && Count("cosmetic_acquired")==2,"Style upgrade did not grant/track only missing material parts");
+   Reset();style.Grant();Require(WebGameAnalytics.Events.Count==0 && style.IsOwned,"Style restoration emitted acquisition");
   }
   foreach(var part in new[]{ThemeCatalog.Part.Conveyor,ThemeCatalog.Part.Casings}) {
    var prices=Enumerable.Range(0,ThemeCatalog.CountFor(part)).Where(id=>ThemeCatalog.AccessFor(id,part)==ThemeCatalog.Access.Coins).Select(id=>ThemeCatalog.CoinPrice(id,part)).ToArray();
-   Require(prices.Min()==400 && prices.Max()==1000 && prices.SequenceEqual(prices.OrderBy(price=>price)),"Material prices outside 400-1000 or unsorted");
-   Require(prices.Take(7).SequenceEqual(new[]{400,500,600,700,800,900,1000}),"Material entry price steps changed");
+   bool casings=part==ThemeCatalog.Part.Casings;
+   Require(prices.Min()==(casings?100:400) && prices.Max()==(casings?600:1000) && prices.SequenceEqual(prices.OrderBy(price=>price)),"Material prices outside their category range or unsorted");
+   int[] expected=casings?new[]{100,200,300,400,500,600}:new[]{400,500,600,700,800,900,1000};
+   Require(prices.Take(expected.Length).SequenceEqual(expected),"Material entry price steps changed");
   }
   Require(Enumerable.Range(4,4).Select(id=>ThemeCatalog.CoinPrice(id,ThemeCatalog.Part.Background)).SequenceEqual(new[]{100,200,300,400}),"Basic background prices changed");
   Require(Enumerable.Range(31,7).All(id=>ThemeCatalog.CoinPrice(id,ThemeCatalog.Part.Background)==1000),"Nature gold background prices changed");

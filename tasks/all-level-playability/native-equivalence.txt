@@ -1,0 +1,1 @@
+PASS: all 32 control attempts on levels 1-20 match the unmodified production coordinate mapper exactly, including every recorded move, tick count and remaining grain count. Fixed geometry also passed 216120 comparisons against production transforms.

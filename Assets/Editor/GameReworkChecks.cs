@@ -162,13 +162,18 @@ public static class GameReworkChecks
     }
     private static void CheckCosmeticBundles()
     {
-        Require(CosmeticBundleCatalog.All.Select(bundle=>bundle.Tag).Distinct().Count()==6,"Bundle product tags are not unique");
-        Require(CosmeticBundleCatalog.All.SelectMany(bundle=>bundle.Backgrounds).Distinct().Count()==CosmeticBundleCatalog.All.Length*3,"A background appears in multiple bundles");
+        var backgroundBundles=CosmeticBundleCatalog.All.Where(bundle=>!bundle.IsStyleBundle).ToArray();
+        Require(CosmeticBundleCatalog.All.Select(bundle=>bundle.Tag).Distinct().Count()==CosmeticBundleCatalog.All.Length,"Bundle product tags are not unique");
+        Require(backgroundBundles.SelectMany(bundle=>bundle.Backgrounds).Distinct().Count()==backgroundBundles.Length*3,"A background appears in multiple bundles");
+        Require(backgroundBundles.Length==6,"Existing background collections changed");
+        foreach(var bundle in CosmeticBundleCatalog.All.Where(entry=>entry.IsStyleBundle))
+            Require(bundle.Items.Length==3 && bundle.Items.Select(item=>item.Part).Distinct().Count()==3
+                && bundle.Items.All(item=>ThemeCatalog.IsAvailable(item.Theme,item.Part)),"Style bundle must contain background, conveyor and casings");
         var prior=Enumerable.Range(12,19).ToDictionary(id=>id,id=>ThemeCatalog.IsUnlocked(id,ThemeCatalog.Part.Background));
         int selected=ThemeCatalog.SelectedBackground;
         try
         {
-            foreach(var bundle in CosmeticBundleCatalog.All)
+            foreach(var bundle in backgroundBundles)
             {
                 Require(bundle.Backgrounds.Length==3 && bundle.Backgrounds.Distinct().Count()==3 && bundle.Backgrounds.All(id=>ThemeCatalog.AccessFor(id,ThemeCatalog.Part.Background)==ThemeCatalog.Access.Money),"Bundle must contain three distinct money-only backgrounds");
                 foreach(int id in prior.Keys)GameProgressStore.SetBool("sand_theme_background_owned_"+id,false);
@@ -190,9 +195,9 @@ public static class GameReworkChecks
             foreach(int id in styles.Keys)GameProgressStore.SetBool("sand_theme_owned_"+id,false);
             foreach(int id in backgrounds.Keys)GameProgressStore.SetBool("sand_theme_background_owned_"+id,false);
             Require(ShopGoldBadge.CountAffordable(99)==0 && ShopGoldBadge.CountAffordable(100)==1,"Badge ignores actual gold affordability or repeats shared unlocks");
-            Require(ShopGoldBadge.CountAffordable(700)==11 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Conveyor)==4 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Casings)==4 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Background)==11,"Tab counters do not match their purchasable cosmetics");
+            Require(ShopGoldBadge.CountAffordable(700)==23 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Conveyor)==4 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Casings)==16 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Background)==11,"Tab counters do not match their purchasable cosmetics");
             Require(ShopGoldBadge.CountAffordable(4000)==30,"Badge includes money-only/rewarded styles or repeats shared products");
-            GameProgressStore.SetBool("sand_theme_owned_4",true);Require(ShopGoldBadge.CountAffordable(700)==10,"Purchased style remains in counter");
+            GameProgressStore.SetBool("sand_theme_owned_4",true);Require(ShopGoldBadge.CountAffordable(700)==22,"Purchased style remains in counter");
             GameProgressStore.SetBool("sand_theme_background_owned_31",true);Require(ShopGoldBadge.CountAffordable(100)==0 && ShopGoldBadge.CountAffordable(1000)==28,"Counter includes owned backgrounds");
         }
         finally
@@ -228,7 +233,7 @@ public static class GameReworkChecks
             for(int i=1;i<order.Length;i++)Require(ThemeCatalog.ShopAccessRank(order[i-1],part)<=ThemeCatalog.ShopAccessRank(order[i],part),"Shop does not show money, gold, then rewarded cosmetics");
             var prices=order.Where(id=>ThemeCatalog.AccessFor(id,part)==ThemeCatalog.Access.Coins).Select(id=>ThemeCatalog.CoinPrice(id,part)).ToArray();
             Require(prices.SequenceEqual(prices.OrderBy(price=>price)),"Coin cosmetics are not ordered by price");
-            if(part!=ThemeCatalog.Part.Background)Require(prices.Min()==400 && prices.Max()==1000,"Conveyor and casing gold prices must range from 400 to 1000");
+            if(part!=ThemeCatalog.Part.Background)Require(prices.Min()==(part==ThemeCatalog.Part.Casings?100:400) && prices.Max()==(part==ThemeCatalog.Part.Casings?600:1000),"Material gold prices are outside their category range");
         }
         var simplePrices=Enumerable.Range(0,ThemeCatalog.Count).Where(id=>(id>=4 && id<=7 || id>=ThemeCatalog.MinimalBackgroundStart) && ThemeCatalog.AccessFor(id,ThemeCatalog.Part.Background)==ThemeCatalog.Access.Coins).Select(id=>ThemeCatalog.CoinPrice(id,ThemeCatalog.Part.Background)).OrderBy(price=>price).ToArray();
         Require(simplePrices.SequenceEqual(new[]{100,200,300}.Concat(Enumerable.Repeat(400,simplePrices.Length-3))),"Simple backgrounds must have one price each of 100, 200 and 300 gold, with all others at 400");

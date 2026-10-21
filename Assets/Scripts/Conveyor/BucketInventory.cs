@@ -55,7 +55,7 @@ public class BucketInventory
         int maxGrainsPerBucket = bucketSettings != null ? bucketSettings.maxGrainsPerBucket : 0;
         int grainsPerLevelCell = Mathf.Max(1, subGrainsPerAxis) * Mathf.Max(1, subGrainsPerAxis);
         if (levelData.loopInventory) InventoryLoopRoute.Bind(levelData);
-        BuildFromGeneratedQueue(levelData, grainsPerLevelCell, maxGrainsPerBucket);
+        BuildFromGeneratedQueue(levelData, grainsPerLevelCell, maxGrainsPerBucket, bucketSettings != null && bucketSettings.matchBucketOrderToSand);
         if (levelData.campaignLevel) ApplyCampaignBucketRules(levelData);
         SettleInitialLayout(levelData);
         if (levelData.campaignLevel)
@@ -112,8 +112,8 @@ public class BucketInventory
 
     private bool IsSingleBucketAccessible(Bucket bucket, LevelData level)
         => buckets.Contains(bucket) && !bucket.IsFrozen && !IsGateClosed(bucket)
-            // A linked half cannot use a side route to skip cups above its column.
-            && (bucket.LinkedPartner == null || BucketGridAccess.IsAccessible(bucket.LayoutIndex, this))
+            // Empty neighboring columns never bypass cups in this bucket's own column.
+            && BucketGridAccess.IsAccessible(bucket.LayoutIndex, this)
             && !IsCrateCovered(bucket) && BucketRouteAccess.IsAccessible(bucket.LayoutIndex, level, this, bucket.LinkedPartner);
 
     public bool TryTakeBucket(Bucket bucket, ConveyorBelt conveyor, LevelData levelData)
@@ -266,7 +266,7 @@ public class BucketInventory
         return !LevelData.IsBucketLayoutWall(cell) && !LevelData.IsBucketLayoutConveyorSlot(cell);
     }
 
-    private void BuildFromGeneratedQueue(LevelData levelData, int grainsPerLevelCell, int maxGrainsPerBucket)
+    private void BuildFromGeneratedQueue(LevelData levelData, int grainsPerLevelCell, int maxGrainsPerBucket, bool matchSandSupply)
     {
         ColorQuantizer.BucketQueueItem[] queue = ColorQuantizer.GenerateLevelBucketQueue(
             levelData.cells,
@@ -279,7 +279,9 @@ public class BucketInventory
         if (levelData.campaignLevel)
             PopulateBoardQueue(levelData, remainingQueue);
         TotalBucketCount = remainingQueue.Count;
-        if (levelData.campaignLevel) remainingQueue = InterleaveColors(remainingQueue);
+        if (levelData.campaignLevel) remainingQueue = matchSandSupply
+            ? OrderBucketsBySandSupply(levelData, remainingQueue, grainsPerLevelCell)
+            : InterleaveColors(remainingQueue);
         BuildConveyorSlots(levelData, remainingQueue);
 
         List<int> availableSlots = CollectAvailableSlotIndices(levelData, remainingQueue.Count);
@@ -1023,6 +1025,41 @@ public class BucketInventory
         while (result.Count < queue.Count)
             foreach (var group in groups)
                 if (group.Count > 0) result.Add(group.Dequeue());
+        return result;
+    }
+
+    private static List<ColorQuantizer.BucketQueueItem> OrderBucketsBySandSupply(
+        LevelData level, List<ColorQuantizer.BucketQueueItem> queue, int grainsPerLevelCell)
+    {
+        var groups = new Dictionary<byte, Queue<ColorQuantizer.BucketQueueItem>>();
+        foreach (var item in queue)
+        {
+            if (!groups.TryGetValue(item.colorIndex, out var group))
+                groups[item.colorIndex] = group = new Queue<ColorQuantizer.BucketQueueItem>();
+            group.Enqueue(item);
+        }
+
+        // Queue a cup when its full budget appears in a bottom-to-top sand scan.
+        // Rare colors near the top must not occupy all five starting slots.
+        var available = new int[256];
+        var result = new List<ColorQuantizer.BucketQueueItem>(queue.Count);
+        for (int y = level.gridHeight - 1; y >= 0; y--)
+        for (int x = 0; x < level.gridWidth; x++)
+        {
+            byte color = level.cells[y * level.gridWidth + x];
+            if (color == 0 || !groups.TryGetValue(color, out var group)) continue;
+            available[color] += grainsPerLevelCell;
+            while (group.Count > 0 && available[color] >= group.Peek().capacity)
+            {
+                var item = group.Dequeue();
+                available[color] -= item.capacity;
+                result.Add(item);
+            }
+        }
+        // Preserve externally authored budgets if their grain scale differs.
+        foreach (var item in queue)
+            if (groups.TryGetValue(item.colorIndex, out var group) && group.Count > 0)
+                while (group.Count > 0) result.Add(group.Dequeue());
         return result;
     }
 

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: Level_083
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  gridWidth: 64
+  gridHeight: 64
+  palette:
+  - serializedVersion: 2
+    rgba: 4280954129
+  - serializedVersion: 2
+    rgba: 4278190080
+  - serializedVersion: 2
+    rgba: 4281218361
+  - serializedVersion: 2
+    rgba: 4279118151
+  - serializedVersion: 2
+    rgba: 4282867539
+  - serializedVersion: 2
+    rgba: 4289044106
+  - serializedVersion: 2
+    rgba: 4284373249
+  - serializedVersion: 2
+    rgba: 4289956892
+  - serializedVersion: 2
+    rgba: 4281030955
+  - serializedVersion: 2
+    rgba: 4284826625
+  - serializedVersion: 2
+    rgba: 4280427865
+  - serializedVersion: 2
+    rgba: 4278792976
+  - serializedVersion: 2
+    rgba: 4278325122
+  - serializedVersion: 2
+    rgba: 4289976559
+  encodedCells: S1:4:4096:3EE52A32:pZS9kpswEMefAbd2ClYzbrAb7cw1l8vD4BlSZIYyavJSoUijoaFJoyZufWopeYbblYSQsM0V+c9gBL/9RnLTfKoprl4QL3St8BQN0OuS4pF4G93vLZhPa56kmGae0DRA5JjzEKOdvDJvNmCbKbiT8F6XkQrf4pz4OfeTec6ncVr0IHxCp2+PeTM+52HsT8JTb9PYxiHelR6kcs5DbJLhK6UWflmGHvQz8hdc75rgHvjV9t0aBs5V/rHW9j8CaKMva+SPfwRSPW+IOfXCG+a01fLUTn73ADLPKw+85TmCTPgCY/0ZV9tcPeP0U6+iK+MxyzXplgl2nAj51+Cv1CByyHiwMMYk8TPOJn9n7p9lwgBpYDB47qCgdyAil4hClEPk3gElJjEEgjEqVCfDFhMisaAM6nsM6E0kYsYVR1qqk5QJYyfDwfEHqo/18TEXkdfHXbHl/z/c2+yKXxscYFccinKTm0/4oSg2OckFkOj6llDkXFd+JSHwfZav2Oub5dN5gyvdzkL3GTf7f46/YU9G1oJ+y/mX346/EncvbrqEnu7nwOf8JfCig24Pt8R/OFGFnWZHcJxU8TeUfjGYk640K/DShY6bbDBXy9Ran6dygc6xRnOi4lyL9ECXnqsJUzHvCa9cgRlHra88nT600c2NBYzWa+YrIZw7xzmvSOrmPyzqcTkMdACT00ePKNx5yY6TTxluTl8/AA==
+  legacyCells: 
+  subGrainsPerAxis: 1
+  buckets: []
+  bucketLayout: 00000000000000000000000000000000000000000000000000
+  conveyorDirections: 00000000000000000000000000000000000000000000000000
+  conveyorBucketCounts: 00000000000000000000000000000000000000000000000000
+  campaignLevel: 1
+  campaignTemplateVersion: 1
+  artTheme: legacy
+  campaignSeed: 8595097
+  displayTitle: 
+  seasonalNumber: 0
+  beltCapacity: 5
+  beltSpeedMultiplier: 1
+  frostMoves: 8
+  sectionBuckets: 1
+  keyGates: 1
+  linkedBuckets: 1
+  largeBuckets: 0
+  alternatingCrates: 0
+  swappingColors: 0
+  loopInventory: 0
+  mysteryBuckets: 1
+  bucketSettingsOverride: {fileID: 11400000, guid: 62b04d6825f2fa0478d2f26f48eeb02f,
+    type: 2}
+  usesTiles: 0
+  usesUnitySpriteSheet: 0
+  spriteSheetAssetPath: 
+  tilesX: 1
+  tilesY: 1
+  tileCellWidth: 16
+  tileCellHeight: 16
+  tileSources: []

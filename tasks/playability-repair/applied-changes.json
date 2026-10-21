@@ -1,0 +1,4802 @@
+[
+  {
+    "index": 16,
+    "number": 17,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_017.asset",
+    "oldLimit": 205,
+    "newLimit": 205,
+    "initialBuckets": 25,
+    "originalSha256": "380f061385785a0da6c24b9cb0e6ae85c6b4f2c422af08045192b0219b0d9745"
+  },
+  {
+    "index": 17,
+    "number": 18,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_018.asset",
+    "oldLimit": 205,
+    "newLimit": 205,
+    "initialBuckets": 26,
+    "originalSha256": "e3550b828b020f00909fe66398134dee98c76ddc2ac2fc592a07689a115610ef"
+  },
+  {
+    "index": 20,
+    "number": 21,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_021.asset",
+    "oldLimit": 187,
+    "newLimit": 187,
+    "initialBuckets": 27,
+    "originalSha256": "ac1d4f4da199a774e8a9c090f3f03cc42a3d1bf0ddbb92646dd7717a7fa70115"
+  },
+  {
+    "index": 22,
+    "number": 23,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_023.asset",
+    "oldLimit": 187,
+    "newLimit": 103,
+    "initialBuckets": 47,
+    "originalSha256": "d831f4375c9aa29f0bfd6cfd14cf45dd7494e8ec8034165826ef3137a789b4e9"
+  },
+  {
+    "index": 23,
+    "number": 24,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_024.asset",
+    "oldLimit": 187,
+    "newLimit": 187,
+    "initialBuckets": 28,
+    "originalSha256": "63d6a3c212482b42b4883b46b2f99a6ed675fdcddcc4eac8a8cc4273ece6c368"
+  },
+  {
+    "index": 24,
+    "number": 25,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_025.asset",
+    "oldLimit": 187,
+    "newLimit": 187,
+    "initialBuckets": 31,
+    "originalSha256": "bc5bdf84255b2abb59b6f3eeb2107717ac561305a292efd5e0b67edd6c1949f0"
+  },
+  {
+    "index": 25,
+    "number": 26,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_026.asset",
+    "oldLimit": 187,
+    "newLimit": 131,
+    "initialBuckets": 36,
+    "originalSha256": "77da4bf97e35a8d7806ff293d61af5143b42bd0be50943c65ae3755f3396dc24"
+  },
+  {
+    "index": 26,
+    "number": 27,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_027.asset",
+    "oldLimit": 171,
+    "newLimit": 171,
+    "initialBuckets": 30,
+    "originalSha256": "ac48731f178967ceb9b0f8421645f3c007df386be3238593c7befe19a3459ec5"
+  },
+  {
+    "index": 30,
+    "number": 31,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_031.asset",
+    "oldLimit": 171,
+    "newLimit": 171,
+    "initialBuckets": 30,
+    "originalSha256": "19702b00bfbf0cb837c661d707940efcff5fb87b5c839c32736106e99a9ab2d3"
+  },
+  {
+    "index": 31,
+    "number": 32,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_032.asset",
+    "oldLimit": 171,
+    "newLimit": 171,
+    "initialBuckets": 30,
+    "originalSha256": "681881b9ea5e33fc1bd1b638293e2353177e66acc82d9defa295f71f58cc74e6"
+  },
+  {
+    "index": 33,
+    "number": 34,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_034.asset",
+    "oldLimit": 171,
+    "newLimit": 145,
+    "initialBuckets": 35,
+    "originalSha256": "4db8b1060d4a8cc0a41c2252e32b8137935bd7cede1157fe58184404f72b7541"
+  },
+  {
+    "index": 34,
+    "number": 35,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_035.asset",
+    "oldLimit": 158,
+    "newLimit": 158,
+    "initialBuckets": 31,
+    "originalSha256": "997206ebc1e5eab46e5588f3ab6cc926507462d333321e20591d4275d531b4d5"
+  },
+  {
+    "index": 37,
+    "number": 38,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_038.asset",
+    "oldLimit": 158,
+    "newLimit": 158,
+    "initialBuckets": 33,
+    "originalSha256": "dbd8c8138dcc082018a2feca7cc41311fc99614ffc9e3c0fc7df4905097a040a"
+  },
+  {
+    "index": 38,
+    "number": 39,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_039.asset",
+    "oldLimit": 158,
+    "newLimit": 158,
+    "initialBuckets": 33,
+    "originalSha256": "0c1d02d49cce8c178440f689f6fbc2bac8c716421c0bdc171c4c35b340c18811"
+  },
+  {
+    "index": 42,
+    "number": 43,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_043.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 32,
+    "originalSha256": "1045a9d5672bf8d82c8181e3369e911cd20aa0c289f7bd2a2a7dc8db9136db01"
+  },
+  {
+    "index": 43,
+    "number": 44,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_044.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 45,
+    "originalSha256": "348fed11a9674834e47ec95ebf6785dba57f0a79fffd4ac10c541b4ef3b80e8c"
+  },
+  {
+    "index": 48,
+    "number": 49,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_049.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 38,
+    "originalSha256": "21f96ad99afcdbf544723ba89ccf985b270f61dd37bae687d0cd41b6622a5385"
+  },
+  {
+    "index": 49,
+    "number": 50,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_050.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 32,
+    "originalSha256": "1f2024170cc2792bb018f895645638ea09391614d75e3c23078c25d8521f52d4"
+  },
+  {
+    "index": 50,
+    "number": 51,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_051.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 34,
+    "originalSha256": "e7de3a638b2749340c0be2cc75d555529ba34af192f25835e1a255f7aa3178ef"
+  },
+  {
+    "index": 52,
+    "number": 53,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_053.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 39,
+    "originalSha256": "12362700c5df273db888cc6230737f7a1b7d2195d93c24a05b3a84c98823e396"
+  },
+  {
+    "index": 53,
+    "number": 54,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_054.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "647ebe6a71c4266d37dc3b39ef50fd3fd8c21474a68daa4e59d2933962562962"
+  },
+  {
+    "index": 54,
+    "number": 55,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_055.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "fd21f91cdb6f66aacf9af9041abf5ca856ea784e6e52314d6bde2330cf1cbe34"
+  },
+  {
+    "index": 55,
+    "number": 56,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_056.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 44,
+    "originalSha256": "9dd138a1516f389d028441539ee6bea19293b58a69840ca7e655a5ff8e922e3b"
+  },
+  {
+    "index": 56,
+    "number": 57,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_057.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 44,
+    "originalSha256": "8f139588fe059379bc6652fc1677507564c8ee57c989ab63200d01a6fa566f24"
+  },
+  {
+    "index": 57,
+    "number": 58,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_058.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "899c1975085356e4d27dd94538c200e0dcf1a6d3a20459ea55e6391a1e181759"
+  },
+  {
+    "index": 59,
+    "number": 60,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_060.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "de9191c8416f8220b8e87662777512fbea6c05f6786ec04f66b63a2ab49bac5e"
+  },
+  {
+    "index": 62,
+    "number": 63,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_063.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "067c76af7f6205181e76732771ae0741f4b375a81430ef519d5d7e5015b377f9"
+  },
+  {
+    "index": 63,
+    "number": 64,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_064.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 39,
+    "originalSha256": "386d8f14378c83f6574f116e876f63f9769cd881a26be2bd345286f3b02990f1"
+  },
+  {
+    "index": 64,
+    "number": 65,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_065.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "6e0821a2379711f6ce9e5edfa642a86e2233f08db563dc2fe5460cf82d140ddb"
+  },
+  {
+    "index": 67,
+    "number": 68,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_068.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 42,
+    "originalSha256": "876ab31c5bb335771005b49c59d38afc9e07864311bc0fd9aa98b1a57ed6f9c7"
+  },
+  {
+    "index": 71,
+    "number": 72,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_072.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 36,
+    "originalSha256": "16aaf764fa7729ddb1811a61ec05a8fd61d5c85f80ac0ae7098cfe108c43f845"
+  },
+  {
+    "index": 72,
+    "number": 73,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0073.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "8b184335a58030f5e91c35bf995ae5315580905ebca0f5698d0e598bbef0153f"
+  },
+  {
+    "index": 73,
+    "number": 74,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_074.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 35,
+    "originalSha256": "5ad39342dcb819e894f3c9c90189beaa347c53dcfc8b406dcb62d32fde561ad3"
+  },
+  {
+    "index": 74,
+    "number": 75,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_075.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "64ea96d077f0e99901968cfceffd9e6c89bcdc99915c9f104dcc8c863a7410c6"
+  },
+  {
+    "index": 76,
+    "number": 77,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_077.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "9af68367d4f67c5450400ac5f7677310aa7e7e000dde6876e9fee91338ef29f6"
+  },
+  {
+    "index": 78,
+    "number": 79,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_079.asset",
+    "oldLimit": 147,
+    "newLimit": 81,
+    "initialBuckets": 51,
+    "originalSha256": "fd467068a2d763e356360ad6d8a55c268172815fb7edf423d8137f2f1297f60c"
+  },
+  {
+    "index": 81,
+    "number": 82,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_082.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "73258d52cddc692b0f41b3ac6298b668203b7dc5532ed3abbab16989a0ee7ada"
+  },
+  {
+    "index": 82,
+    "number": 83,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_083.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "134340ebcd19ed34562ee0ef990555c39c9443994bf73d3cff7a1c3198d24fb1"
+  },
+  {
+    "index": 83,
+    "number": 84,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_084.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "bf3cd783bcf3ddf0adea9eb21b2c3fd16c4173a2c9261896a603fdfbf59eb932"
+  },
+  {
+    "index": 84,
+    "number": 85,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_085.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "cacd4c65aa40b52c73a46fa2cb9a2db45610ac20bbc7c7bb5abea843ee40997b"
+  },
+  {
+    "index": 85,
+    "number": 86,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_086.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 36,
+    "originalSha256": "e93f17d41352b65dcd49c3a7c3103e337e6a304d9460a109ef96921120976471"
+  },
+  {
+    "index": 86,
+    "number": 87,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_087.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 35,
+    "originalSha256": "d5e0b3e1e3d09f53501850bfa57c871b8ee0c91e29c801c4309c4dea46f1ca75"
+  },
+  {
+    "index": 87,
+    "number": 88,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_088.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 41,
+    "originalSha256": "802f9ade092d7626bf4eb52554fd7103b76978d1311d4e91a599193a46aa5a1a"
+  },
+  {
+    "index": 88,
+    "number": 89,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0089.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "092929732a036d3b6e06365081ecc21784600edb82fb77818c6748e60967087f"
+  },
+  {
+    "index": 89,
+    "number": 90,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_090.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "2dbf971788a203a54f17aca3d84569f3f312a53f28b95799861655419ed83735"
+  },
+  {
+    "index": 90,
+    "number": 91,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_091.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "ea5d469627efbd3eea3d4bd0727cc9a74ae1624d1219bd7e0dad1d5efc9231e7"
+  },
+  {
+    "index": 91,
+    "number": 92,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_092.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "260b247bdca21a6c9d4dd9ead2df037dc7fbec804bfa2639234e8e29ac79458c"
+  },
+  {
+    "index": 92,
+    "number": 93,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_093.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "fa16c5fb32d56f743ac2815ad1f3d15e11f9d8ace75abd0cf38844e358186c38"
+  },
+  {
+    "index": 93,
+    "number": 94,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_094.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "431df6d21c9a0bba57337dd2102cb89a10840458a769d406108021351a85d393"
+  },
+  {
+    "index": 94,
+    "number": 95,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_095.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "1d560dae9b0a1b1893d36f2f6fdc089a7a544e79ac10370833a95b4b151ef252"
+  },
+  {
+    "index": 95,
+    "number": 96,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_096.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "aad44a3a6d30f3b37dd74fab4f7cbbd7fcdc9fb2ca7cedb3c124c0c399970da2"
+  },
+  {
+    "index": 96,
+    "number": 97,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_097.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "6906076634ea4fd9d2177d4c4ac66db7e9a26ef1e22004e78fd09a2b528380c2"
+  },
+  {
+    "index": 97,
+    "number": 98,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_098.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "248301471c3bc600506023e2acc94088b5884aa9cf134666d24fdf7bbae86382"
+  },
+  {
+    "index": 98,
+    "number": 99,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_099.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "9931f16ea2a6acfced2983150a2199bee7bff4cd009b522b03b66ad51a6374fe"
+  },
+  {
+    "index": 99,
+    "number": 100,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_100.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "5fb486be411b5d5895a0bcdd39bbae3deece6275b8f703aa72773bf4feb8cdde"
+  },
+  {
+    "index": 100,
+    "number": 101,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_101.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "2d9ca405f694c967f15a1ec8f96b4188b7db84a6f0046b2823811dff080c97e7"
+  },
+  {
+    "index": 101,
+    "number": 102,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_102.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "195a84525298d5a6f15b4d5e3e12a32572f847dfe8ced87d2ba2aa928394c506"
+  },
+  {
+    "index": 102,
+    "number": 103,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_103.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "a599da7319dc527ded0b90b73c71fa00f52f07d7c9f6394d620d5e978c6b6368"
+  },
+  {
+    "index": 103,
+    "number": 104,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_104.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "0d0af67f83f4c87be1aaeb4adaa628b42413c954d150a4c1975b55e16dc50f63"
+  },
+  {
+    "index": 104,
+    "number": 105,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_105.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "7a1b3ada02935e687d1a57490e75295a3f903ae59a4056a68624e510c4468e51"
+  },
+  {
+    "index": 106,
+    "number": 107,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_107.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "2cab4793e5b09670034a4b26a0dfae4f69b35b3a1a9b44a59ad46c38a578ab94"
+  },
+  {
+    "index": 107,
+    "number": 108,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_108.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "85229cfe916aa4a543f58c643c670d755c577084c848acfa8f12343668156535"
+  },
+  {
+    "index": 108,
+    "number": 109,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0109.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "3a2246e53a53bc5bdc03ca2c254dc86d864550cf5c0140f2310102477ffd0e84"
+  },
+  {
+    "index": 111,
+    "number": 112,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_112.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "438eab14a19d84e753e6b064e652b5c5721cb324b9bc74ec860a753d8dddc113"
+  },
+  {
+    "index": 113,
+    "number": 114,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_114.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "0ff82ad29cc26c01d05a719aa2193cd12f61697f566c521fb700fcf9c6cd58b6"
+  },
+  {
+    "index": 115,
+    "number": 116,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_116.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "32d92a5c1a29a8d8dedba6bf96e0dd0ef699cfa5ef1f8b10d532ceee0bb9ee48"
+  },
+  {
+    "index": 116,
+    "number": 117,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_117.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "fda6235f364d754effab16901696caa78c44635b77077342007c00bd51c8aef5"
+  },
+  {
+    "index": 118,
+    "number": 119,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_119.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "1737930c288859fdbd78939343ec32dd278eb872cd2253244b72d0cd27b60cb4"
+  },
+  {
+    "index": 119,
+    "number": 120,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_120.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "a80e609b9f27f3c013a9475d4bf98f12f6e1eae1290bc3ff536f83f132c9c5aa"
+  },
+  {
+    "index": 120,
+    "number": 121,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_121.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "bbb13ca099ae465d3707de4c42380db7260e9240b50342ed373a17dd69057c0b"
+  },
+  {
+    "index": 122,
+    "number": 123,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_123.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "39dd1d04ab7ed21ea1c606c4dba49e40673dc8e219a05949e79871b1a82eb42a"
+  },
+  {
+    "index": 123,
+    "number": 124,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0124.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "4ca59de13e22d07fa78660c5afaf303254381395db3b9c32907dfd6e77e896e8"
+  },
+  {
+    "index": 124,
+    "number": 125,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_125.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "afebce7141b0616584e16f1602b70800a412618bf3a6531b023dc8f9fee2744e"
+  },
+  {
+    "index": 125,
+    "number": 126,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_126.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 39,
+    "originalSha256": "fb0f560c9e75b3afaea6fe49459f972559984e6ed797dc6632875b84935c6bed"
+  },
+  {
+    "index": 126,
+    "number": 127,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_127.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "b1448ddc9c79acaef454282aa610b210c41cee28ce2c6bcf1663c9ea3d5a70d8"
+  },
+  {
+    "index": 127,
+    "number": 128,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_128.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "5fdf5621c681b42c970bc24bfe420120dfb9e8ef7b88ff76ffdf562f68548c9f"
+  },
+  {
+    "index": 128,
+    "number": 129,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_129.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "cac6835c7b8c2d5bdd4f52895db8ac014a7eb8250172572e8eac172e81cade78"
+  },
+  {
+    "index": 130,
+    "number": 131,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_131.asset",
+    "oldLimit": 147,
+    "newLimit": 59,
+    "initialBuckets": 69,
+    "originalSha256": "06e1f60312d755f3ae63b82bcbc814d19dc83fc5a5c3c45521948fa1c7051c86"
+  },
+  {
+    "index": 131,
+    "number": 132,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0132.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 25,
+    "originalSha256": "5f7ef0a9efbb97f3763b3854b8da53d8589f4a916a1e634c30aa55d35691bd2a"
+  },
+  {
+    "index": 132,
+    "number": 133,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_133.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "0057f4fb3e525a3f4e71548ed49d70014de200a93b51d97756ed97d27a800039"
+  },
+  {
+    "index": 133,
+    "number": 134,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_134.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "91f2c5c7aa19e21657ace9ee59ecc3c45a98599c9b1c51228ec61e0ebfb8d6cd"
+  },
+  {
+    "index": 134,
+    "number": 135,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_135.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "d00dd588d87a51e2fcac89759d3dba0ba01a3ae24ae6ac9d750b8ba41cd2e772"
+  },
+  {
+    "index": 135,
+    "number": 136,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_136.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "c585246159bed5b961422709405f4e2da348f1028b44bee296dcb1210f0c3926"
+  },
+  {
+    "index": 136,
+    "number": 137,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_137.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "5c6c3abba31a1001bb3cbe875076eb3705c239aff5cbc419f70bbccfaf1ce05b"
+  },
+  {
+    "index": 138,
+    "number": 139,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_139.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "b096a8638659e1bfa9799921b212fbbe1984e1f1bd136eb0a164abc0f213cfe4"
+  },
+  {
+    "index": 143,
+    "number": 144,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_144.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "04d2223ac9eb938f83ee656da0e354e049e2f36cfbb106e9e87c58edbc4d7b72"
+  },
+  {
+    "index": 144,
+    "number": 145,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_145.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 35,
+    "originalSha256": "2a66ef75b1a3fa3a76817b778a6caa4dda44aea5df7c83e043c11ac17a3dc419"
+  },
+  {
+    "index": 145,
+    "number": 146,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_146.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "850215d1848b0ca5df2dd33fe05d18051ac357fd9c6a8a198e4e4d2ac89ac89c"
+  },
+  {
+    "index": 146,
+    "number": 147,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_147.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "0a4b52d0631f2e76730dd70512f63429727a80beb58c63c69451dc254e7f8b74"
+  },
+  {
+    "index": 147,
+    "number": 148,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_148.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "35046fd8bcab75c96191af3ef24d0260d4b14b0529e30ac101d35147ea0406f2"
+  },
+  {
+    "index": 149,
+    "number": 150,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_150.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "1b1f917dcf90da2489290bd1087722e19160722175b9e62f23eebee5597a291b"
+  },
+  {
+    "index": 150,
+    "number": 151,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_151.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "f2a272789ba77d417da09ca6f8618b118716986ac2c23095fb30f9b4aa801210"
+  },
+  {
+    "index": 151,
+    "number": 152,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_152.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "b9bc4aefd4566c86809a3592b2031bc2820d0bfa423e8b046356a6a449e22e43"
+  },
+  {
+    "index": 152,
+    "number": 153,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_153.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "fb9a91a6e006b2e289e8902883ce4892915e24c00827d80575400b87a4390cab"
+  },
+  {
+    "index": 153,
+    "number": 154,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0154.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 31,
+    "originalSha256": "41f2d83e0c655180a35eb3b281498851574e6ab049dcf59f1b07f3e0f99d0976"
+  },
+  {
+    "index": 155,
+    "number": 156,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_156.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 38,
+    "originalSha256": "c500489cbe8791151b1a54589be25dfdfa63d04889ef49faab1df6899aa38bc9"
+  },
+  {
+    "index": 156,
+    "number": 157,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_157.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "8f39ebddc1c233b97ceb79a32e8156246ed00b967452956a54f3ab56f0966c13"
+  },
+  {
+    "index": 157,
+    "number": 158,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_158.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "417e48c3fb46d958a4b251782f4b7cf7f6885963a0a0bebf607b6d0bfa743e5c"
+  },
+  {
+    "index": 158,
+    "number": 159,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_159.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "5f39bf003c00d5982e64dcde2b60e435b7c51e1f6626f62409c95fc37d754dfd"
+  },
+  {
+    "index": 159,
+    "number": 160,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_160.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 38,
+    "originalSha256": "26675d5e770c77813b86c70763999e701519d4e4eabc4710501b91700366cbcd"
+  },
+  {
+    "index": 161,
+    "number": 162,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_162.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "3d8a300aa2a6e4136a825fef9df8f77a581f86ba068a547019592d29bfa38bf5"
+  },
+  {
+    "index": 162,
+    "number": 163,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_163.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "67c0933d0270cf43e3cf28416748603666d85c2d5f21652af365d9f3570bbb40"
+  },
+  {
+    "index": 163,
+    "number": 164,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_164.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "2f30246f082d85ea49c00ff2395f403359dffefce0a669e2c4d2f4ddb7024f62"
+  },
+  {
+    "index": 164,
+    "number": 165,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_165.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "eddacd413aef6d66c4d528edc4fdd43e2300acaa18ea6652f1ca4a8f23520277"
+  },
+  {
+    "index": 165,
+    "number": 166,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_166.asset",
+    "oldLimit": 147,
+    "newLimit": 81,
+    "initialBuckets": 49,
+    "originalSha256": "6de6eaf752d624aebc2aec4d3f99c502d47e560863cd89c1c6c3742e7874341f"
+  },
+  {
+    "index": 168,
+    "number": 169,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_169.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "60c26494d9f3bb451dfd4f3a20c0a296b1dd1358a80b05d0fc8af10139401f94"
+  },
+  {
+    "index": 169,
+    "number": 170,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_170.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "5f412d4160c19d037c04e69ad97c2ff641133ca4da83db7047a94539e18f32e2"
+  },
+  {
+    "index": 170,
+    "number": 171,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_171.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 39,
+    "originalSha256": "38beafd968a4bd720d0fb6ef068ce43ed5aa54144c929b7ea40de0d30b66b4d9"
+  },
+  {
+    "index": 171,
+    "number": 172,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_172.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "a12e5f96f8f51ad89b553fcb3b3c2f7a82dc2bea61b129a81d00561fff942413"
+  },
+  {
+    "index": 173,
+    "number": 174,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_174.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 39,
+    "originalSha256": "e8462d91581c92735c5a96ed1d1e38f20eedb8833468d5779677e22c6b0d399e"
+  },
+  {
+    "index": 174,
+    "number": 175,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_175.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "f1f1104cb994e351bc3170e391ae73be3b53ea8c0b0f83b0abe620dc7b793c43"
+  },
+  {
+    "index": 175,
+    "number": 176,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_176.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "44ef8956f6cd19ed459f06e4f47faaa008af45864de4d098b96a3f021ddfe2d7"
+  },
+  {
+    "index": 176,
+    "number": 177,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_177.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 41,
+    "originalSha256": "f1e8c6691598614e9448252344f1449a7335eda03f6d9a44db919be0f1cf910f"
+  },
+  {
+    "index": 177,
+    "number": 178,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0178.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 39,
+    "originalSha256": "2df9b99bbbff7d0d6a0c27605cb0a7843eb3c74f8d9f5096b0539518f8bb2bd6"
+  },
+  {
+    "index": 179,
+    "number": 180,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_180.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "3f3d1b57820a86e17cc6e770fce46f64548018f0657d8a41c0ef42041d8e61bd"
+  },
+  {
+    "index": 180,
+    "number": 181,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_181.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "930bc7540b6d7caa55abed78b3bbc2c2213078896d9228f17c78e8afb987008d"
+  },
+  {
+    "index": 182,
+    "number": 183,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_183.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "f683aa7189557d17dc7a2efe85cc6470e25a3a44c1e1c6da61f4d165e95530b7"
+  },
+  {
+    "index": 183,
+    "number": 184,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0184.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "7f0cf73428088861539e8951cbce6851585e94befa8e214bba7957e973e2ca8c"
+  },
+  {
+    "index": 185,
+    "number": 186,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_186.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "a5960be7e2905596cb5a9ac4c728d3d42185d68cc07d6bb6d4525ad90e7ea3af"
+  },
+  {
+    "index": 186,
+    "number": 187,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_187.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "6d87b4f7b3da85be8eae437b1e6feed51055190f501cc7bb6410671929ea6b2c"
+  },
+  {
+    "index": 188,
+    "number": 189,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_189.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "511b4a550ca4e52e87d4e7ae1526c62647284c314cfa756765c978f0b319f365"
+  },
+  {
+    "index": 191,
+    "number": 192,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_192.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "a618da5c0bb5816f091bab9916e6ad7d0a772ac3572bb7feef4576a99a1fa9ee"
+  },
+  {
+    "index": 193,
+    "number": 194,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_194.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "b69b4a186ff5466fda1abf336b31305a01e9f73d259f2994c151e1db9f84c377"
+  },
+  {
+    "index": 197,
+    "number": 198,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_198.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "9ae16f6fea7993baad9290e699b706001a8245d0dad7af6f993a33b7002502e5"
+  },
+  {
+    "index": 200,
+    "number": 201,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_201.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "934aa08d8cb715ccffa96a87d6bfcb642094648feefd0e15ab3ef67739bf3040"
+  },
+  {
+    "index": 203,
+    "number": 204,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_204.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "bebf301ab53acfe2c3ba108087e7c9f78583df0e43fff482a6cfba61b71c5101"
+  },
+  {
+    "index": 204,
+    "number": 205,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_205.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "2b6791d80252ae2ad97e47d36a64c0eb7bcddfb5d373269603369a1c30724243"
+  },
+  {
+    "index": 206,
+    "number": 207,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_207.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 39,
+    "originalSha256": "46aede9adc83af517bebbcc67edfdbf7f9e2203c82546badf867963d933545ea"
+  },
+  {
+    "index": 207,
+    "number": 208,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_208.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "00fa3428c5ec12aa0902167aad9a5cbe2ccd61354873bb83e3f6247862e074d9"
+  },
+  {
+    "index": 209,
+    "number": 210,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_210.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "3ce7387aed26e17172ecee611027d614bbfc50368f0fe991f48ee73b9dbcbc1c"
+  },
+  {
+    "index": 212,
+    "number": 213,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0213.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "7ead303c8e09516dd037027f22c78b7ab2e824db7d0da56f13ca7e85347e2eb6"
+  },
+  {
+    "index": 217,
+    "number": 218,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_218.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 36,
+    "originalSha256": "c2e549c3b688e864a4789d1539c920b9f0f5a40cea74f242c33cb879063a9d5c"
+  },
+  {
+    "index": 218,
+    "number": 219,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_219.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "559aa7236145b383d98e9541d9bd3406abf2a80eb31dc1bdf03cd3007d1bd6e8"
+  },
+  {
+    "index": 219,
+    "number": 220,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_220.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "e7ccf6645d2b2c1844028657ce398b7d203e290829f891cd16381fee49601b7d"
+  },
+  {
+    "index": 221,
+    "number": 222,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_222.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "9b9956f194135b39b64d4a122ce46a55250a73409ad797ed0f57234c4a74c91e"
+  },
+  {
+    "index": 224,
+    "number": 225,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_225.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "17ec69ab25cbb4ff70731a1f833fd19b45800c1390361a39d887d8496e9e261d"
+  },
+  {
+    "index": 225,
+    "number": 226,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_226.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "bab808ab46b95219652e7a5b5318c92265abdf0673575589d2ec2d3b2bb86900"
+  },
+  {
+    "index": 227,
+    "number": 228,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_228.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "478a5c37583a58cecd9d3c6e5bc0abf9551ab5143de78e9dc3a7dfbbec1d1739"
+  },
+  {
+    "index": 229,
+    "number": 230,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_230.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 35,
+    "originalSha256": "2f415c0a9f655f6c6b6d07e49b732db2fec88907399b15c5fc3a0d4224006afb"
+  },
+  {
+    "index": 230,
+    "number": 231,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_231.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "ac99c7ee1cf4bfe47fe173cb71854126e95655ecf21735d05f45bf8bd90a7afb"
+  },
+  {
+    "index": 231,
+    "number": 232,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_232.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "267e4f2edca9bdd95f236ec0b9dd82e2ab8b63a02fd2167cd5e137496b9b25e6"
+  },
+  {
+    "index": 233,
+    "number": 234,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_234.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "ed173c618c15fb3d31591939ea16208756ed831e52345293e0362b985b0629fa"
+  },
+  {
+    "index": 235,
+    "number": 236,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_236.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "841b1029c7bd0d7bdcd48d5b25130f69e07b92b4548daee61adeb94316a3bd4e"
+  },
+  {
+    "index": 236,
+    "number": 237,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_237.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "8357f2274b01d82d540473a8b0e2e04c62e32194b612a8a3b20bfbf7df8a9f47"
+  },
+  {
+    "index": 237,
+    "number": 238,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_238.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "e0bab2349c15b98e57aa205c0d00afe86f4eaedd9f032b61a03ac5804d6478f2"
+  },
+  {
+    "index": 240,
+    "number": 241,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_241.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "18a0c9d58d88648f07a0b435fbe98454cf345370f7eb6c28564cb64b529cbf97"
+  },
+  {
+    "index": 242,
+    "number": 243,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_243.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "7df11711c4a4f74939e82975626149d91ebd2dd302508e70672e3726f7dfacfb"
+  },
+  {
+    "index": 245,
+    "number": 246,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_246.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "5b7f6f747aa0a8dd52efe36c0107b52a1aeeb88a76cc6de808b82757c79a8569"
+  },
+  {
+    "index": 248,
+    "number": 249,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_249.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "4441f59cc79d6cac517f8aef7a20fc7674a7a2bff8623f26302d565fdd85729a"
+  },
+  {
+    "index": 250,
+    "number": 251,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_251.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "e3e2ad4e25ce6fbeff81c25efd037a26c3e2a6ed1d8758e5c3d5a02d3d3eeb20"
+  },
+  {
+    "index": 251,
+    "number": 252,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_252.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 35,
+    "originalSha256": "8331ced7161fc5205559c9a3b57431b01393efbd24d26110c37b5912d04a9cf8"
+  },
+  {
+    "index": 252,
+    "number": 253,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_253.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "dbd323147c6499904955fb9156fba246e3c38992012605f62a5ceab27e99c678"
+  },
+  {
+    "index": 254,
+    "number": 255,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_255.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "36a4bad3c3c583336d8935a6ca7db2bd159cbac670505e6c0be5a24d76f98e2f"
+  },
+  {
+    "index": 255,
+    "number": 256,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_256.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 36,
+    "originalSha256": "6f45fa8c1cc00cd033dae3c02b22286a57b73b720c41bf0ffb72c22ec572ba02"
+  },
+  {
+    "index": 257,
+    "number": 258,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_258.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "b671e0bab4e7e31a9f65187e0bc055e325ee4f48e73d5a68f6f265a1f142a581"
+  },
+  {
+    "index": 258,
+    "number": 259,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_259.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "11c766bb56b812c8581946d1935a40c2a48ea88c103823e1927d5c5cd1e1b5cd"
+  },
+  {
+    "index": 259,
+    "number": 260,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_260.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 35,
+    "originalSha256": "3d56e5590cdcdaaead1ce169dc5693c088f1cc63235ed9e4a511379d7713cb16"
+  },
+  {
+    "index": 263,
+    "number": 264,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_264.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "840189188d0dc46f66f38bb2a36bc57d18a70e6b91be4e24caab6ad558b9215b"
+  },
+  {
+    "index": 264,
+    "number": 265,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_265.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "ebf0958b232c54eee7c9b84c3adabaa418d7872559d5c0b883c867cc98f86d88"
+  },
+  {
+    "index": 266,
+    "number": 267,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_267.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "2a05c9b96d462fa8d8407baa73972f9c3a0d221d74c1294372333f0698a56331"
+  },
+  {
+    "index": 267,
+    "number": 268,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_268.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "2123047166208ae43a393900a1a6c64c0a96206476f914ea7018394c468e8e67"
+  },
+  {
+    "index": 269,
+    "number": 270,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_270.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "920b7bc7655547ec752ea892cae9ede6b0a0fa9e20a3921fd8ce9d5a8177eeef"
+  },
+  {
+    "index": 270,
+    "number": 271,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_271.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "d3df4deb49201736c78fedf5c46b1255a422e0e9b6980932558e9a7206fdb125"
+  },
+  {
+    "index": 271,
+    "number": 272,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_272.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 32,
+    "originalSha256": "49a9aa10fc9f897b841953e90df490fbc675d011959ba98512f0a933488781de"
+  },
+  {
+    "index": 272,
+    "number": 273,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_273.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "7d94f2bff81a2e21ac0211618a37b1fe8e7cc596221182d8065f5e4e570303d0"
+  },
+  {
+    "index": 275,
+    "number": 276,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_276.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "9ea90fea3a81c6af1add6b955b622fa4c0df8dd003c4b1e1600985813fa7f8d7"
+  },
+  {
+    "index": 276,
+    "number": 277,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_277.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "d375ee149412c16ceb8c1e84946e93b7f7459b434b3c61aea7b508fe5ba14dd9"
+  },
+  {
+    "index": 278,
+    "number": 279,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_279.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "736bc520bb56235a6c5a76ade09c3732c1600a563f38cfff3ff7c7c6b45c4670"
+  },
+  {
+    "index": 281,
+    "number": 282,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_282.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "d946bc62b4855be33c8144364a06323381d2961b8190fab418aac57110bccfef"
+  },
+  {
+    "index": 282,
+    "number": 283,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_283.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "1ffe987c79f3549adf7f89b953ffb577b06fab6ae4233ed93dd2d050435c4e74"
+  },
+  {
+    "index": 283,
+    "number": 284,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_284.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 39,
+    "originalSha256": "b33e57bc000cdf892859063c5a4cf7ec38338e6fd4894d6a35639b013502dc5e"
+  },
+  {
+    "index": 287,
+    "number": 288,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_288.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 41,
+    "originalSha256": "c00c3b4bd0105e9cf6d87985f6c39f7ba2cd65d95f4a5683749a0724f339fb88"
+  },
+  {
+    "index": 290,
+    "number": 291,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_291.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "4bbc01745506fa972a13ac34b50f2706aa68a859a5a25d3ad981e0ce01ca9815"
+  },
+  {
+    "index": 293,
+    "number": 294,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0294.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "2c959d87b3f007bee09fafd2350630ec7b6bb9b38101aca8b9d1b398594a18fb"
+  },
+  {
+    "index": 294,
+    "number": 295,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0295.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "9ac93934b071fa13f518c6b5ee0ff79eae96d75d7501b5a723d2779bb6079d64"
+  },
+  {
+    "index": 296,
+    "number": 297,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_297.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "0e9ce0f92ff3425ae706bae8dddba53ca2b3a559f289e2a3ed97354d493c5dfe"
+  },
+  {
+    "index": 297,
+    "number": 298,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign100/Rules_298.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "54594b690af5f19f50413c8fa3b37420e44b40ddcd867d275fa68d3536812411"
+  },
+  {
+    "index": 302,
+    "number": 303,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0303.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "9cc5c8298960f357f444645ba4dad94c81baadd315441a7f8262b3966a4ed6df"
+  },
+  {
+    "index": 305,
+    "number": 306,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0306.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "0c2e04d4c36d7062ede62b7ca9e0dd2076ecf750fced00a247fc18fb317b8455"
+  },
+  {
+    "index": 308,
+    "number": 309,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0309.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "9f1e963bb8a018d8060abf2a3f8f04f0413ab88d419189c89bfc5b64d9e15952"
+  },
+  {
+    "index": 311,
+    "number": 312,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0312.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "d99e4c015da0d86ba6c81917ff97725903a58ab7f6196f59143bc5042168898e"
+  },
+  {
+    "index": 318,
+    "number": 319,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0319.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "41d2459857cf17ab91b1bdfa4fad438c8c88cae272caf0067733ce8da688a236"
+  },
+  {
+    "index": 320,
+    "number": 321,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0321.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 35,
+    "originalSha256": "3f08d419b903efa853ca6196553e383b3bb4492870936e692f4cb469b8fe7c73"
+  },
+  {
+    "index": 323,
+    "number": 324,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0324.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "11c0c2b8020e0eb2518cf4cbeea68b45d67d5c3be20943df66942bd8fa656e3b"
+  },
+  {
+    "index": 332,
+    "number": 333,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0333.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "fd95ad0d23335978f368e8ecdcc17776443f1e4bf6222ad60d5258825df6c0b7"
+  },
+  {
+    "index": 338,
+    "number": 339,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0339.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 31,
+    "originalSha256": "1f736823ad7f6fd03534fab4a9fd5d985f4e5986ca1113a9e933e8579368eb43"
+  },
+  {
+    "index": 341,
+    "number": 342,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0342.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "674fc4e4526b060aa1fcb3c9cacba3948a7b05e056187059b87d86bbafd862f4"
+  },
+  {
+    "index": 349,
+    "number": 350,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0350.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 32,
+    "originalSha256": "80c5ef9cece7649bed8c3f90b59c0ceac0567d5552ef1ae9e2b6260dd1cb9753"
+  },
+  {
+    "index": 350,
+    "number": 351,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0351.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "863cbcce5c40ee5047b408dec345ac41b914a6c4a1d2c3cab78275a9f37757cb"
+  },
+  {
+    "index": 354,
+    "number": 355,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0355.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "0132f67d11d7044bf2804514a43989025c2f22cb13d43d0cdb1426e5cc3d0dd9"
+  },
+  {
+    "index": 356,
+    "number": 357,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0357.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "623c72dee83236639559d967f708fb6c89f90563e02b61e67bd40edf88d0ca9f"
+  },
+  {
+    "index": 362,
+    "number": 363,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0363.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "a5193aa79fa4a870704684c94fe32ad29511c38885e221c7fbfceae99eec8953"
+  },
+  {
+    "index": 363,
+    "number": 364,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0364.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "60fb149eab666d1eae409b03d364131c6c014d6698a686c37286e8b5ff9f764b"
+  },
+  {
+    "index": 368,
+    "number": 369,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0369.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "8e22d1cfc9ae5a59709baa98ab762e3b88f3189ed725f0c3b3751c0445f8cabc"
+  },
+  {
+    "index": 377,
+    "number": 378,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0378.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "6e1ffd7944c34db06de2b27e788fb373f59144d748429e242bb5493d4471f7bb"
+  },
+  {
+    "index": 378,
+    "number": 379,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0379.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "0121c6f58b2382ca00ff09410ed0c7ecd77c2c1ed6a46d07c1642afa7f3c2391"
+  },
+  {
+    "index": 380,
+    "number": 381,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0381.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "b21cdaf198835cfd80d9581ced51314ecdd95e671d5cb31e061841cc2723430e"
+  },
+  {
+    "index": 383,
+    "number": 384,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0384.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "086c6d1bf611a044046e9470c87bf76313c4f351a6ecd7b6bd7f9e82c07197af"
+  },
+  {
+    "index": 385,
+    "number": 386,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0386.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 32,
+    "originalSha256": "c3e27f8e538242cd4ad6e1b5343d4a7f5bad5173e39dde34cbb9f72fc62ad81f"
+  },
+  {
+    "index": 386,
+    "number": 387,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0387.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "d7366d2d387946e9b92cde4344891aad070dfa3d35ef846b1ed12ad6acacb4ca"
+  },
+  {
+    "index": 392,
+    "number": 393,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0393.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "15094605e9e415984384a665ffb79b118af134fbdfaebd615ce3dc725c8865f5"
+  },
+  {
+    "index": 395,
+    "number": 396,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0396.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "a65c87a000271afc4db1bec5e49a1d3d5ad49fc75567cf11a6e434616724cb3b"
+  },
+  {
+    "index": 398,
+    "number": 399,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0399.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "0ebc334cdfe1866ee3667d7027b4520e4b60f6a91ad9ca307527d21ef228eac3"
+  },
+  {
+    "index": 401,
+    "number": 402,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0402.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "eee3fd2604e93cf9828720c4d91c0608b70127c4802f84420335280ca36c3e06"
+  },
+  {
+    "index": 407,
+    "number": 408,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0408.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "a2b9593f3071394437d60e6e6949cf859e5426a4ab9ac1ec95c98a671109a2b8"
+  },
+  {
+    "index": 409,
+    "number": 410,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0410.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "755398f6263677b75f02a9b3d626f083a9c62692898a54ef9dcea8a955b409dd"
+  },
+  {
+    "index": 410,
+    "number": 411,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0411.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 39,
+    "originalSha256": "bd54e552bd439f70b2136f482bd411e3b1f88a668f7c771eb09d54be9d0d507a"
+  },
+  {
+    "index": 416,
+    "number": 417,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0417.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "ce85f19699d3f5035843ec867d0087b3b2f9199eceb963f37a569d10b369ca91"
+  },
+  {
+    "index": 422,
+    "number": 423,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0423.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "ba2a6dea902a2514daeea1aa3b6d9d6f88b84b7f58ee573b03178064f16c9cc7"
+  },
+  {
+    "index": 425,
+    "number": 426,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0426.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "3bd62f3390ee5e541b46e4db887ff5dc0dd0fa086e85efb865ed9a97593b8b0b"
+  },
+  {
+    "index": 428,
+    "number": 429,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0429.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "270f0ca9c291554cbbdadf5e20a901e2ec7587d334b02ad06dba6683abf88a71"
+  },
+  {
+    "index": 437,
+    "number": 438,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0438.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "b943b3610021a55fd266c9b4971d972a742401cc7d6f47b7c6b42ad0f1d9f9e5"
+  },
+  {
+    "index": 438,
+    "number": 439,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0439.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "4e8a122d96b81b17a7804f2dcbd47f4bc698f84584d71e172b56c63ee69bb6d7"
+  },
+  {
+    "index": 443,
+    "number": 444,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0444.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 35,
+    "originalSha256": "8e2c98f0efcf80ac926d6ac07a217bf09850139ef1ef610ba5d3e675f811d008"
+  },
+  {
+    "index": 445,
+    "number": 446,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0446.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 32,
+    "originalSha256": "6806e1faa42e4f6efd91106285cc114d67a9788e3e8260da9d352ad373fa2f2a"
+  },
+  {
+    "index": 446,
+    "number": 447,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0447.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "723f4a71ece65d3d69674405860779c5c4b69e77b1a64a72d4ab0014c7879280"
+  },
+  {
+    "index": 455,
+    "number": 456,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0456.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "ad5f4f009e2e2f27e95f09df72795c3ffdfb276f6799106955f2d4e0f06e2df6"
+  },
+  {
+    "index": 458,
+    "number": 459,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0459.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "6713e4fb2cf42bf531ce7b51f6652917b87a1d4d872d9bc9dba1e87997ef1e7c"
+  },
+  {
+    "index": 459,
+    "number": 460,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0460.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "de03aef1b292c92bc83785920054e014d31ec720ec0020c05abd1f5daec620ee"
+  },
+  {
+    "index": 461,
+    "number": 462,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0462.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "1bdf9de4d3600b1c43933fb65c00bbf226f00771a49e41b71512052ae2bf8317"
+  },
+  {
+    "index": 467,
+    "number": 468,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0468.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "e7afbc521b710efadfa617e408b404bd8a4c5b115137de8683c48eeb73ebfc07"
+  },
+  {
+    "index": 468,
+    "number": 469,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0469.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "a80fd92c1f7a747e51ee7f6b4607d43d79e535d1a091d338b61bdf0b2f0dd173"
+  },
+  {
+    "index": 470,
+    "number": 471,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0471.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "cf2b52301ea6fad818cc9bc1290685796b2d3864a4bb3a8d7ce609f209ba84b3"
+  },
+  {
+    "index": 472,
+    "number": 473,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0473.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "9c6e1b7d9d753ae42150bee474cb43d8b21899c865a6e98cf25aa1426794bb66"
+  },
+  {
+    "index": 476,
+    "number": 477,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0477.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "d1f1d82ab9df52ac75114c296eb36655a9b2015c5a29853a360cc1e1980829b9"
+  },
+  {
+    "index": 482,
+    "number": 483,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0483.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "29d92320e58b346299713663b37c70f468fd2da8ee74a832ab57a1180c447784"
+  },
+  {
+    "index": 488,
+    "number": 489,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0489.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "71b22fb226ca418042c3758531c4b872afd458af5aa5c68b93561a5a56ae286f"
+  },
+  {
+    "index": 491,
+    "number": 492,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0492.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "899afaf9c950180ec39526b06ef9981c7a26386530dbc5e0d590bc96a9475d2c"
+  },
+  {
+    "index": 497,
+    "number": 498,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0498.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "e935a9a5f96ef2cd3a28a58d282ba81ae84f3f3cfa3a7165ea9ef4aa196bfbe6"
+  },
+  {
+    "index": 498,
+    "number": 499,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0499.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "78fdb79834a05283440fabb53faf189dff061975d44d7fb83954362c76deb4e2"
+  },
+  {
+    "index": 503,
+    "number": 504,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0504.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "c12865d77b0fba791728bb97ccb13d76cf941e428d9e49b3b40a934607d4f1f0"
+  },
+  {
+    "index": 504,
+    "number": 505,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0505.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "9871edae1bdd456881c6c2152b8bfa9cefd18d7f2b0b49c0fe05c4b8eefbcb79"
+  },
+  {
+    "index": 506,
+    "number": 507,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0507.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 39,
+    "originalSha256": "1c3f2edd6587f736a3628a471c5c232379b6dd00e7b7f8b2141dbec5aa4f055d"
+  },
+  {
+    "index": 509,
+    "number": 510,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0510.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "68ecdc115d907bc256b6748a9129287665227b1a98191882f8d39ecfcfb10e4b"
+  },
+  {
+    "index": 515,
+    "number": 516,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0516.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "e3de27006bedf9bc01e472d0f6f0857c1ddea66e62a17a93ab5e3a0ad3b19d94"
+  },
+  {
+    "index": 518,
+    "number": 519,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0519.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "c0f075292fc0ab18bac8efbaf376e639bec0bf7faf6ec32af6a8f9eaefd7f8f2"
+  },
+  {
+    "index": 527,
+    "number": 528,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0528.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "a04a2019b09dc8a7deeb623795173f4541055f330589755565c6194328963b45"
+  },
+  {
+    "index": 530,
+    "number": 531,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0531.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "e55ccefb85614af36f243bebfbd52be036f97c2a6d07300c6747e337faaf5c6a"
+  },
+  {
+    "index": 533,
+    "number": 534,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0534.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "b1b36813c44594472c3440cd3db0f353be9a18bf692333eb70469dc59922eb4c"
+  },
+  {
+    "index": 536,
+    "number": 537,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0537.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "6a00b16dab7a5a77b2a45615d46f9513a63064db943a8fd5711241076de8219d"
+  },
+  {
+    "index": 542,
+    "number": 543,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0543.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "d283b6c2be7d4197ba9f616567b7a3d7dbc6b01cfd97ad040fd3ebd8732f5496"
+  },
+  {
+    "index": 545,
+    "number": 546,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0546.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 31,
+    "originalSha256": "cafa2e9455ecb35f194f792d0d0af0c7e50722e3d18c012cbf540b7bda579aba"
+  },
+  {
+    "index": 548,
+    "number": 549,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0549.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 35,
+    "originalSha256": "0f83cb416f634bad5f9875737fa8537a685bc1a8c8a6826a53f7c34e91328c68"
+  },
+  {
+    "index": 549,
+    "number": 550,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0550.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "4f873d8c516bbda8b6cdd62a8d42c47963bc452b69699e2066825f8cedeaa9d6"
+  },
+  {
+    "index": 557,
+    "number": 558,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0558.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "c7f62c5c13c22fc1a27b8b208cc91876c5d60ea17b0535fdcb7ffc87efaf752a"
+  },
+  {
+    "index": 558,
+    "number": 559,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0559.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "1cae183b036fa211355692e4e8e31d02ceae892afbc37b7086d2ec465f3f78e6"
+  },
+  {
+    "index": 560,
+    "number": 561,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0561.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "c9c0642c7eddb3d9f39fdcff85c4e7e25230fe4dcd47b9b9fd842a6ba53c5d01"
+  },
+  {
+    "index": 563,
+    "number": 564,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0564.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "3eae93fd2a62901003fa91cd37fecf8010a9f9e360b32439ff04855a5ff54e5b"
+  },
+  {
+    "index": 569,
+    "number": 570,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0570.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "179dccacb75a8ed92696776e01362e8a14311d6f4852f63c154f5fac1d530cdc"
+  },
+  {
+    "index": 572,
+    "number": 573,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0573.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "86c83d66e9d8c0296e2c93c6d62b9259c0b167fe11cc57c7e4b426c80a80f3d1"
+  },
+  {
+    "index": 578,
+    "number": 579,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0579.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "51a252e6e7405a681bf67a977f1f0bd87fc4117ca9cd7b2e0e7133b59de8e9d9"
+  },
+  {
+    "index": 581,
+    "number": 582,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0582.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "a4bf7a0c46391b78143cd6d11ccc0999cfa5fbe6d597686362d61b2a89703f8e"
+  },
+  {
+    "index": 584,
+    "number": 585,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0585.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 25,
+    "originalSha256": "865041f1e89722791b6f3b98696d9bf5ec94aead16d7f400b2b92d9806d6f4af"
+  },
+  {
+    "index": 587,
+    "number": 588,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0588.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "457df0ff6a928fc81436750f5215ddd1887811c01a1b67813588442dc6118723"
+  },
+  {
+    "index": 589,
+    "number": 590,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0590.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 32,
+    "originalSha256": "42a23d5b8d14c48a9561903fb6eea7304e3b374ad1673b9e07fcb73a3d880cd8"
+  },
+  {
+    "index": 596,
+    "number": 597,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0597.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "cffa2b1de1dbf043d2ca3236470a298663788de41688f7aa46c156fe9fcf366f"
+  },
+  {
+    "index": 602,
+    "number": 603,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0603.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "5564b147397ab6260b39088e40ff0d4a8109fbe2b0bdb2302ee6a66776d0132c"
+  },
+  {
+    "index": 605,
+    "number": 606,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0606.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "2341b7105d331d22a4bbdc56ae88b2a9ff90e96a17934bd2a13e7dd8d8919e50"
+  },
+  {
+    "index": 608,
+    "number": 609,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0609.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "5b14999cc384c864cf08cb34877c8bb7a21e450619ddb6bfa11b3c9ba6819554"
+  },
+  {
+    "index": 611,
+    "number": 612,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0612.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "bb3b6ddd575822bfac5446372e0541c22bc45b67e61ad8ea386b8655583be71b"
+  },
+  {
+    "index": 617,
+    "number": 618,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0618.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "d74137a726083215c2b25e1b9c0388fe38b8b4375eb052d7534254478ba869e1"
+  },
+  {
+    "index": 619,
+    "number": 620,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0620.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 32,
+    "originalSha256": "58f9564882506ad5388c62e1caef9ebaa4f784f3c2ffcdc186b2ca00a8841182"
+  },
+  {
+    "index": 620,
+    "number": 621,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0621.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "5470f9b23246ceb5ab3588e135c9bd9c3e564ab9b2bef27a315bf043cc0477b7"
+  },
+  {
+    "index": 623,
+    "number": 624,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0624.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "df9d5eda681e5105d0a034306bf6897d63ace860e038afaf687f5100fd4a7ccc"
+  },
+  {
+    "index": 626,
+    "number": 627,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0627.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "e4ab44ee33804f3b0f2925316057e862a221a1548551e0f3f948807a36af1162"
+  },
+  {
+    "index": 632,
+    "number": 633,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0633.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "8d4f3c6dd3044dabd566fb348cf0368f04606b2043da0e56f988e9f903c4cb42"
+  },
+  {
+    "index": 635,
+    "number": 636,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0636.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "b7a86677cb688def1c5e22dc90e3e93a6d87a7ed01f5010eff4892229a420f09"
+  },
+  {
+    "index": 638,
+    "number": 639,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0639.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "86563160788afe4b3878cc7a6cbed7ef6e022d6353a6932dcaff1e29f98849e1"
+  },
+  {
+    "index": 641,
+    "number": 642,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0642.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "1b2b25da307cb9df2b9def74b8e72aa6375ee0e03e22eb7e66602485eda8fbe9"
+  },
+  {
+    "index": 644,
+    "number": 645,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0645.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "57d2bb10495ff2ca7ceca67ba2b081a8b3bc08e0658e0315bb29f6a8c0b98e16"
+  },
+  {
+    "index": 645,
+    "number": 646,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0646.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "199b9e05ac3b78821ca2d998917d1b12162c8b2ae434c06cf32f2de8c68a476b"
+  },
+  {
+    "index": 653,
+    "number": 654,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0654.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "8e6bba822a23390205a1cc9f625e2887978bf18f2a1fc03afe7257fbdfccc580"
+  },
+  {
+    "index": 656,
+    "number": 657,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0657.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "1185b0491d40c498c13c9f433a0f3400f6ae0b2712f6750efc332295dd0287ee"
+  },
+  {
+    "index": 662,
+    "number": 663,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0663.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "0a70005006f1741993cdc74153baf868fda3491ad50344a8e214c0f6ef899e29"
+  },
+  {
+    "index": 665,
+    "number": 666,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0666.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "b39df28b0e4c60c4ab4936ac39c1d56af18fa1ac3f11c8a269fff29e157f2925"
+  },
+  {
+    "index": 668,
+    "number": 669,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0669.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "b8117f57c7e2534ed3b929b953848cbe7b7ceb2f8b4eab730876037835eb32a0"
+  },
+  {
+    "index": 671,
+    "number": 672,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0672.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "fd278b338e4aa0ab4f6973c6733484c90d264b156e8ec4d074116514e55bce9b"
+  },
+  {
+    "index": 680,
+    "number": 681,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0681.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "eed96fbe425114b8e0439eaebb9e9282d35bdb11f8d0e7d03af19d91ff3dfa5e"
+  },
+  {
+    "index": 683,
+    "number": 684,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0684.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "9461a767e02163a99f5a889122f0f793f501f2d08d1a73f39dfba9113a7aff7b"
+  },
+  {
+    "index": 698,
+    "number": 699,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0699.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "7b01d402c9b88e34bfa7e8f530595f88e23b9ec7d392cd3a9bae3622118f6dd9"
+  },
+  {
+    "index": 701,
+    "number": 702,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0702.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "e6ceb56ef97f554c2adb2b8e97885d814e01e987f52db1b414e81017d81827d2"
+  },
+  {
+    "index": 702,
+    "number": 703,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0703.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "86aca08dc6bfc04425073692fdb84dd3148b08b5773a24a0b4a9817d4d52187e"
+  },
+  {
+    "index": 710,
+    "number": 711,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0711.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "946af3fbecaed6aa6d9ec42028d31fb88ab6f81eac1329c3e936c79d2af5e61c"
+  },
+  {
+    "index": 713,
+    "number": 714,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0714.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "ad4df8875c344773461dbd1cafc7906993de18a3e6edd373b45333fa71576eb9"
+  },
+  {
+    "index": 714,
+    "number": 715,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0715.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 25,
+    "originalSha256": "3f40ff2cf9bac24d8c6810d952f6fce782edcde5916c7de9b677c0aebb9cb39a"
+  },
+  {
+    "index": 716,
+    "number": 717,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0717.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "102cadd59d2c0d82f0d8b54490a168e95020bd6a04326a16c0edb2cd1379935a"
+  },
+  {
+    "index": 722,
+    "number": 723,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0723.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "cae975dc99649315b64033347dbc4447919095c33e70cededcfb1d2702aa4f5e"
+  },
+  {
+    "index": 725,
+    "number": 726,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0726.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "1035c91002460e19e7de4dfadfcbb75be2e6f4ddfa1427ebe89763d267bda1cc"
+  },
+  {
+    "index": 726,
+    "number": 727,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0727.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "744f091c1207fc37d6ba74570a9fcacb8a6e1732bfbc5983211ca5d5377fc81a"
+  },
+  {
+    "index": 728,
+    "number": 729,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0729.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "327f8b1a2801d4d2eb8defecdf1370b3d3f26d9e3557b2d90e9ff25141ca681d"
+  },
+  {
+    "index": 731,
+    "number": 732,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0732.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "bcc56bbd28a128d8a5974f02f2a4aa3bd5583f1daefa8ac88bb51a54f05e997e"
+  },
+  {
+    "index": 743,
+    "number": 744,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0744.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "8d8af96add53232dd013f52da1df057998729c2256a1070e73147a4ce9eb7cae"
+  },
+  {
+    "index": 746,
+    "number": 747,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0747.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "5b2a568ca3188b9357b62ea5822200b4a8df02c932dee97f3c23b92cb9532174"
+  },
+  {
+    "index": 749,
+    "number": 750,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0750.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "78e5640c66052404c618e58190fb5eea908ce4af50b11373323675b8049164c6"
+  },
+  {
+    "index": 750,
+    "number": 751,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0751.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "00c33cd341027409db76d127071a4d615ce508db1c596e36252c61d35010a70f"
+  },
+  {
+    "index": 752,
+    "number": 753,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0753.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "a48182a26af2d0ceb822f14c50adc224ab07d13f2261c30408f6282bb0d31f1d"
+  },
+  {
+    "index": 755,
+    "number": 756,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0756.asset",
+    "oldLimit": 147,
+    "newLimit": 81,
+    "initialBuckets": 51,
+    "originalSha256": "7a3cacc7fc952831c587c82537baf539133cb870ce0688925bf6840806251e12"
+  },
+  {
+    "index": 764,
+    "number": 765,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0765.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "a4d5fcda83519d2ff0e237f7831eef07c2203247108a1e3ecac7060d880494c1"
+  },
+  {
+    "index": 767,
+    "number": 768,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0768.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "31ccae5da632619d61ea029ccc18739222a88e0a6a046aa6282fd1815a0ba3d1"
+  },
+  {
+    "index": 769,
+    "number": 770,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0770.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 34,
+    "originalSha256": "9739431d36e66f73633bd7d5b86cd9db3daec5f2cd69b68a94d83604f4e63ec6"
+  },
+  {
+    "index": 771,
+    "number": 772,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0772.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "83a374903251639ba54f82f370868418654a3fbafbb6c904e84c4d83539c4832"
+  },
+  {
+    "index": 773,
+    "number": 774,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0774.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "f55ade8185cf7958d023ef07c398297a33807d5146680f80aca45fc4ac92b751"
+  },
+  {
+    "index": 774,
+    "number": 775,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0775.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "82629ee4ca47729cf7707bdb8b18f29878272169158f365db7262e0d444610e0"
+  },
+  {
+    "index": 776,
+    "number": 777,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0777.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "a0fec7b01072dce513c657f78c56380e750e77bf1d2c7f23585c228fe599c535"
+  },
+  {
+    "index": 782,
+    "number": 783,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0783.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "028d4316e861254a0e7f5a2ec02a21afa6ca957c77660d190846900ef40907ea"
+  },
+  {
+    "index": 786,
+    "number": 787,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0787.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "2d0afd0c29ec24bd64e150d64d530a8d6d018345af933ff5d28b7fc9bb20d109"
+  },
+  {
+    "index": 791,
+    "number": 792,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0792.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "6d8725381a36b55f4a13f3e97c1e43e80248bd3a88c2a5fc50e41fdd6282aff5"
+  },
+  {
+    "index": 794,
+    "number": 795,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0795.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "ea720820c9ee2f825b20138387834a03f307535e051965ccdb5e83a16c2b18cc"
+  },
+  {
+    "index": 797,
+    "number": 798,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0798.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "53aedbae7744b209766a68bdddb06dc528f9251b36094c2440df3f82c86e3417"
+  },
+  {
+    "index": 804,
+    "number": 805,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0805.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "9aa9ac085665d8d205059d9c2d02c571469d77c1548288823d9abb9f9cdb3985"
+  },
+  {
+    "index": 810,
+    "number": 811,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0811.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "fadfff8cc8d86457320e30012b807527ba919e933280442c7f2f1391b41d03c5"
+  },
+  {
+    "index": 815,
+    "number": 816,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0816.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "2e1cd83fd33418779dea7934702548a3844aec2f5ffd0c612b7b525a088bc894"
+  },
+  {
+    "index": 817,
+    "number": 818,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0818.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "f93f090f27d80edbff8a8cf3d1c64f9eb3788fc18cbca8cd35805e4a023e9b0b"
+  },
+  {
+    "index": 818,
+    "number": 819,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0819.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "1b186ef24020bbf74e2d9eab77a97f370c05b08ebac178e0718f259fbcafe659"
+  },
+  {
+    "index": 827,
+    "number": 828,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0828.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "5870d48f28ce7e3a1aeac84b7f161b3d2d959c088f3c0350e362229304b1f011"
+  },
+  {
+    "index": 830,
+    "number": 831,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0831.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "e611b0b8419055f12ff8ac81a74dace842ae1eab4b711d44b39a88a7587567ae"
+  },
+  {
+    "index": 833,
+    "number": 834,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0834.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "1af452e834379034c74719e93d73220f3397cf2cf4c68004259709241b5f2beb"
+  },
+  {
+    "index": 835,
+    "number": 836,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0836.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "99f042805324b5d357f437d0ed85768eb0c6d7b9b1667422e95962833e64f848"
+  },
+  {
+    "index": 836,
+    "number": 837,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0837.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "4656b4e17a61e4e8b9c2ec8a3c9eafdeef75656b2336ea5e60fb5f6a1b2ebfdf"
+  },
+  {
+    "index": 842,
+    "number": 843,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0843.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "fb9ce6aaf55630a8a42187dcee0ecdbd52d4ab958ed12c71a74e0de17b252572"
+  },
+  {
+    "index": 851,
+    "number": 852,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0852.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "538ff32e2d3779ddbb3b765b9da22ba85a4d44bec8a7c13df530990c144392c5"
+  },
+  {
+    "index": 854,
+    "number": 855,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0855.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "872758bd629ad8843a02955bb0a26e9102f51f18027598bc2091f265c3a00d1c"
+  },
+  {
+    "index": 857,
+    "number": 858,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0858.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "1a5207782ce3d98e6fb266b2d57918a7b99d05f6fe494b7183f9391595cbe2b0"
+  },
+  {
+    "index": 860,
+    "number": 861,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0861.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "b0eaac4bac35870fad031e2d7993819b5180de84e8a19e4d34b38fcdf34b7d26"
+  },
+  {
+    "index": 863,
+    "number": 864,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0864.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "64631ec19cec7b7cdcb818d825a003c7903359cbe084ae9b5b17401313552b85"
+  },
+  {
+    "index": 866,
+    "number": 867,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0867.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "4cf69caab47c349f1e2257ba326412285234c6ef0759b952af73a3d192a53061"
+  },
+  {
+    "index": 869,
+    "number": 870,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0870.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "adcfd29a79a745d2fffc2d50ca4336920a3f6d205bee2d9b9e9b493122b0829c"
+  },
+  {
+    "index": 872,
+    "number": 873,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0873.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "fd0a71b7cbbf27a19efe5a09ffd17c5d829ce64360149e433b2abc5c5ffb9e6a"
+  },
+  {
+    "index": 878,
+    "number": 879,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0879.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "20c1305540ba18c9707188d0ee1350642337aa6ed6820cb7ca53ca5b2828de0f"
+  },
+  {
+    "index": 881,
+    "number": 882,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0882.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "17e63b90957468061808a888f6bd3faae828a247e1ec5a4f4ecf8f79bd2dbb94"
+  },
+  {
+    "index": 884,
+    "number": 885,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0885.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "1147d44e647f2714b1a027717a3335401c48d026955a3a5a3edd2f49f0a17fff"
+  },
+  {
+    "index": 887,
+    "number": 888,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0888.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "286e1827c432a19951855e9e50016c6648d8faad31ff3e1ab6867ce1386c7270"
+  },
+  {
+    "index": 894,
+    "number": 895,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0895.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "dafd09014f34edafb5b4bad235082aa8ffea68302cb9e42557e3d242996c6776"
+  },
+  {
+    "index": 896,
+    "number": 897,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0897.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "5dad69a8cfc4e60c56c0de274c5535cd70aef0db8b9f0839368c203582142906"
+  },
+  {
+    "index": 902,
+    "number": 903,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0903.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "a0b391e4c85437b546bf108c6f923d0cab5bab0853acccc7b9ee72b6982693c3"
+  },
+  {
+    "index": 908,
+    "number": 909,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0909.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "edb781e3ce32c16cb67a2ffa4644a114120c2b1971476d75cb60abbb6f1fa257"
+  },
+  {
+    "index": 917,
+    "number": 918,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0918.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "5dc387652d2075155f9034b106bb383c457c7660594fa7884cd44da123f44852"
+  },
+  {
+    "index": 918,
+    "number": 919,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0919.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "e64b646af5b4bdd7cad144a26b621117b8d427f2929f0569f6be9c73ca1fcff3"
+  },
+  {
+    "index": 920,
+    "number": 921,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0921.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "6850a5579508d05cf4e041082e7a395c3169b7a6926dfede71cbc27b23416213"
+  },
+  {
+    "index": 923,
+    "number": 924,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0924.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "95a91279ff881d5853429ff51e7530d16b09e5de8eadd6ee77333a2959e13efb"
+  },
+  {
+    "index": 926,
+    "number": 927,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0927.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "78d4b3082883982b2cbadbe2f3ef18c7864e6930d9d6f8d3f119caf971a9d448"
+  },
+  {
+    "index": 932,
+    "number": 933,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0933.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "b15d1431beac71f23ab09a986bad4cdcafe24b78a5b71f691a205762dbd59368"
+  },
+  {
+    "index": 933,
+    "number": 934,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0934.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "cee93744034a006770e331b81bf4825d889845eb721042e8237c8a4da32b7d4c"
+  },
+  {
+    "index": 935,
+    "number": 936,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0936.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "438384824a7c232e6b30fc9214e57174ed447050de5938da48dbfce0dd6eb90d"
+  },
+  {
+    "index": 936,
+    "number": 937,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0937.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "88a0003be381bf6e00b8e6c0c22fdfbe084a91ec3ece0fc5fce260f4eb24de44"
+  },
+  {
+    "index": 938,
+    "number": 939,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0939.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "e11b1e93f19d1fc6b02d0aa3384b0df7f10f5c92036df40cc53e35735efc26e8"
+  },
+  {
+    "index": 941,
+    "number": 942,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0942.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "42451b6efd3ecbe0884c943f6ad3182c44bd87ba0de929f42733228270cb96a5"
+  },
+  {
+    "index": 947,
+    "number": 948,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0948.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 41,
+    "originalSha256": "d077ce6eb52b7f4b8a885662c8543567221d82ddee2d7c4992745427a34694c0"
+  },
+  {
+    "index": 949,
+    "number": 950,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0950.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "270e684f4bb7b52b8c741bc230ea47e80752fbfdbb1d0e2b25be2d084277f7cb"
+  },
+  {
+    "index": 950,
+    "number": 951,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0951.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "91316e88303535a1e0e7735e36c535f345f8cdb3c8bea7c6e127c6dbbf1fbd75"
+  },
+  {
+    "index": 953,
+    "number": 954,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0954.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "23a34bfbe0dd61142ff419eeb439d9c199e9d2ab986da23f0be4f64cfd54604f"
+  },
+  {
+    "index": 954,
+    "number": 955,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0955.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 25,
+    "originalSha256": "0f78b59156b1d1460ecb7b903c263ceef15af51b1f1b8eb37fbd02c1e0b40ff7"
+  },
+  {
+    "index": 956,
+    "number": 957,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0957.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "365fceecfb5878b78fc59cb326ec73ad06e84664afa3c447636d6b1fcb32fd6b"
+  },
+  {
+    "index": 962,
+    "number": 963,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0963.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "765ad852efef3eb6b62462994d224bb18a4976292b36345ad49b982bddd1e904"
+  },
+  {
+    "index": 965,
+    "number": 966,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0966.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "cb2f26addbe012025d57cfc32acdf74c80e60b23b84338027c314a167ace9b5f"
+  },
+  {
+    "index": 971,
+    "number": 972,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0972.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "bfc6b009f2b99620ed919d15b32944b361b51d7f043e8d593046907f707ddde4"
+  },
+  {
+    "index": 977,
+    "number": 978,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0978.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "fa47a5e83fbe2f0d2e5fdabfac3c7689fa9c7eb5c29f1bdcfdad9818e11df93d"
+  },
+  {
+    "index": 979,
+    "number": 980,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0980.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "c2cbb40a1594eb2bda5d8367c56c952796a51fb853b8118843d085de181d3f4a"
+  },
+  {
+    "index": 980,
+    "number": 981,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0981.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "7a954528eba330976bf74f1a4ed0e90962427c20f3e0602e84cc902c42cbb4a6"
+  },
+  {
+    "index": 983,
+    "number": 984,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0984.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 38,
+    "originalSha256": "36f71a25911bec752f1e9d757695c75c995941e4c3c5d4117c3a8e4ec062b1ce"
+  },
+  {
+    "index": 984,
+    "number": 985,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0985.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "e1932bd49dc95b9e7e15046a7fad639f11375744f8fa73af55bcdb2fca20bbeb"
+  },
+  {
+    "index": 987,
+    "number": 988,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0988.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "c9fb3d62abc8753ef1b0a459ac2b98e4c83e005a31a29ecdf9cc466b742286d2"
+  },
+  {
+    "index": 991,
+    "number": 992,
+    "winter": false,
+    "rule": "Assets/Levels/Campaign1500/OrdinaryRules_0992.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "d4f404ecc8906632c7602c359a33dd57d246117f9054490af48df86507b62dd2"
+  },
+  {
+    "index": 1006,
+    "number": 7,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign100/Rules_307.asset",
+    "oldLimit": 187,
+    "newLimit": 187,
+    "initialBuckets": 28,
+    "originalSha256": "c80672cdd818d2a2f52e9127af7182fcab79ad6a0dbc8b486d7b4fc98ab20f39"
+  },
+  {
+    "index": 1018,
+    "number": 19,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign100/Rules_319.asset",
+    "oldLimit": 187,
+    "newLimit": 187,
+    "initialBuckets": 27,
+    "originalSha256": "8c9f8cda15664c205ada3a32ecbe1584105a3cf0234d507fa554349a85f4f3af"
+  },
+  {
+    "index": 1019,
+    "number": 20,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign100/Rules_320.asset",
+    "oldLimit": 187,
+    "newLimit": 131,
+    "initialBuckets": 35,
+    "originalSha256": "e330d1643aadb45ae95d00e4ddc3a1f52fa8746f2bb4d7a9533ca942ebfa38e4"
+  },
+  {
+    "index": 1020,
+    "number": 21,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0021.asset",
+    "oldLimit": 187,
+    "newLimit": 187,
+    "initialBuckets": 27,
+    "originalSha256": "3a7f36ed8c19094f9a74181c7c46c599505f30461b13b11a414346f844f309fb"
+  },
+  {
+    "index": 1021,
+    "number": 22,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0022.asset",
+    "oldLimit": 187,
+    "newLimit": 187,
+    "initialBuckets": 27,
+    "originalSha256": "6272b33bd720b123c503f564d73d18f4360251bcd57535939dfc3fe78e63b9ec"
+  },
+  {
+    "index": 1022,
+    "number": 23,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0023.asset",
+    "oldLimit": 187,
+    "newLimit": 131,
+    "initialBuckets": 36,
+    "originalSha256": "095529b5041eb313ad08044f6e2259d2325e47af7a24f0145f9568a870d3111c"
+  },
+  {
+    "index": 1023,
+    "number": 24,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0024.asset",
+    "oldLimit": 187,
+    "newLimit": 159,
+    "initialBuckets": 32,
+    "originalSha256": "3d481e813b2969d46723c6632ffa90c3305755a41d7cf3e9c5df18460733d537"
+  },
+  {
+    "index": 1025,
+    "number": 26,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0026.asset",
+    "oldLimit": 187,
+    "newLimit": 159,
+    "initialBuckets": 31,
+    "originalSha256": "d1f59a73aaaa2f5dc5f82412193ab8027c05a2ac1424d5fa57eb40019fb80e40"
+  },
+  {
+    "index": 1026,
+    "number": 27,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0027.asset",
+    "oldLimit": 171,
+    "newLimit": 171,
+    "initialBuckets": 27,
+    "originalSha256": "7e5a848760ddc1d458cd9d80a38027df9d14b94f3b49adf45334c053ed0fb0b0"
+  },
+  {
+    "index": 1027,
+    "number": 28,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0028.asset",
+    "oldLimit": 171,
+    "newLimit": 145,
+    "initialBuckets": 34,
+    "originalSha256": "d1924fd91bea9caf45f71ce5910109a6f4d5719261634511297e8476d509f39b"
+  },
+  {
+    "index": 1028,
+    "number": 29,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0029.asset",
+    "oldLimit": 171,
+    "newLimit": 94,
+    "initialBuckets": 49,
+    "originalSha256": "b9ea79dfb7e6b789281f7a195bec8bd89ce0f7eee5525e5403b3e72135dfc4af"
+  },
+  {
+    "index": 1029,
+    "number": 30,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0030.asset",
+    "oldLimit": 171,
+    "newLimit": 171,
+    "initialBuckets": 28,
+    "originalSha256": "11b9b5b9814b685d8f4575d5aee6412960a2fb9debe224bc8277b1650640a657"
+  },
+  {
+    "index": 1030,
+    "number": 31,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0031.asset",
+    "oldLimit": 171,
+    "newLimit": 171,
+    "initialBuckets": 30,
+    "originalSha256": "6e75514ecf6a68faa4ba5f5d0810f1595b558e6991c183a71b6a5a6eb940a8f6"
+  },
+  {
+    "index": 1031,
+    "number": 32,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0032.asset",
+    "oldLimit": 171,
+    "newLimit": 145,
+    "initialBuckets": 33,
+    "originalSha256": "66c8ed405c5fdeb9ea284b4771f224740326803667b44092118db4706608946b"
+  },
+  {
+    "index": 1032,
+    "number": 33,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0033.asset",
+    "oldLimit": 171,
+    "newLimit": 171,
+    "initialBuckets": 28,
+    "originalSha256": "9de1d2b8fc37ce76555118722911ffca0c2beb33fcedc20c84bcbe7a705e86bb"
+  },
+  {
+    "index": 1034,
+    "number": 35,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0035.asset",
+    "oldLimit": 158,
+    "newLimit": 158,
+    "initialBuckets": 31,
+    "originalSha256": "89b88305c6f80484d0a50c6611339b53b4b2c3db9629dd842224fe8848e4fc5c"
+  },
+  {
+    "index": 1035,
+    "number": 36,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0036.asset",
+    "oldLimit": 158,
+    "newLimit": 158,
+    "initialBuckets": 30,
+    "originalSha256": "af829b7c378d07f007092f7971d9457cae4639b07dbd77b41e328d1fc6b1dfcc"
+  },
+  {
+    "index": 1037,
+    "number": 38,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0038.asset",
+    "oldLimit": 158,
+    "newLimit": 158,
+    "initialBuckets": 32,
+    "originalSha256": "91a93943b052ec28e53c1b0a7faaf64a9561d56b5df0659649d63e7cbfbe7697"
+  },
+  {
+    "index": 1038,
+    "number": 39,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0039.asset",
+    "oldLimit": 158,
+    "newLimit": 134,
+    "initialBuckets": 36,
+    "originalSha256": "f513d733b05df53cce297fc3a755a01dede4e379b63341c067d10a0ed9a3de1e"
+  },
+  {
+    "index": 1039,
+    "number": 40,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0040.asset",
+    "oldLimit": 158,
+    "newLimit": 158,
+    "initialBuckets": 31,
+    "originalSha256": "09717a7244c62555df34d31d4976557225ff38b03a0750762885b5d9f2a37806"
+  },
+  {
+    "index": 1041,
+    "number": 42,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0042.asset",
+    "oldLimit": 158,
+    "newLimit": 158,
+    "initialBuckets": 33,
+    "originalSha256": "3003151bc186f28c3ccbefb8ca92dd1c5620b2019c64214fe32a8f36251404fd"
+  },
+  {
+    "index": 1043,
+    "number": 44,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0044.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 34,
+    "originalSha256": "07f5e5e309c0552fb55072df9048457ecea2b80c133f7b514092ef347ea3498e"
+  },
+  {
+    "index": 1048,
+    "number": 49,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0049.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "d1b265cf5ded24f4db8611b6e8c20f1ccf248c9f5c404fc4f6e9785ca4d66492"
+  },
+  {
+    "index": 1050,
+    "number": 51,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0051.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "4ffa4213a5b515032cda176d2a55565d3a5b88018e2d7c746c7f70ff2a63fddc"
+  },
+  {
+    "index": 1054,
+    "number": 55,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0055.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 43,
+    "originalSha256": "ee4ec4b27661b3730f4f51366a91d77c0a02c43266cf2956750d49910f0636f0"
+  },
+  {
+    "index": 1055,
+    "number": 56,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0056.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 36,
+    "originalSha256": "200ba612cc6d6d6a658953fa9c0834df2d141404e505d177f870a2f979ad7f49"
+  },
+  {
+    "index": 1056,
+    "number": 57,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0057.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "56fc362783dec654ea6796909e6289e7313cff7d2b291a8d4113bab8b9dafdb1"
+  },
+  {
+    "index": 1057,
+    "number": 58,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0058.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "2ecab4f87ae86f37c86970d706555d7d83acfc4b56b4493a2431ba7bddb8a83e"
+  },
+  {
+    "index": 1058,
+    "number": 59,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0059.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "5e34c44594632248c3b989a2a2683cd5e4d153fce29f64465e91f1b47d8671a7"
+  },
+  {
+    "index": 1059,
+    "number": 60,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0060.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "556959f5973635dd6cc0b233099cf6314c8672dbf4380a6a81b766830c50278b"
+  },
+  {
+    "index": 1060,
+    "number": 61,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0061.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 35,
+    "originalSha256": "e97dad741b03050cd959b501e0496513a8a73f23af8dc6b3881fcfe6b54764d4"
+  },
+  {
+    "index": 1062,
+    "number": 63,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0063.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 37,
+    "originalSha256": "bd420cd7d4a3c1ead5ee04538212e7d6cd50c8356928bca87ce7786312dae085"
+  },
+  {
+    "index": 1063,
+    "number": 64,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0064.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 31,
+    "originalSha256": "6fb8793de4738eb2d17b60cffec8df5ca0b60a241dbbc9441735b55862b046e3"
+  },
+  {
+    "index": 1065,
+    "number": 66,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0066.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 43,
+    "originalSha256": "72ec58aa6b85be0cc4f006e4869629280b026ed4e3f2029412e812869259416e"
+  },
+  {
+    "index": 1066,
+    "number": 67,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0067.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 35,
+    "originalSha256": "27b184f48910b71eb8929ec8041f1ff8cc81e7aebbce85f0774ad5c3ab4399c3"
+  },
+  {
+    "index": 1068,
+    "number": 69,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0069.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 42,
+    "originalSha256": "0b98081df733086d3339c571462074c491c92824de6eedb3378e7b037c91e88f"
+  },
+  {
+    "index": 1069,
+    "number": 70,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0070.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "7c09ade5f7f006087826974c5691980372a32802006c5201e4658b2ae604ff18"
+  },
+  {
+    "index": 1071,
+    "number": 72,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0072.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "d2ffbd8e3fdd614829bf72f3dde08485876c0e04269822eec87655062feeb793"
+  },
+  {
+    "index": 1072,
+    "number": 73,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0073.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 36,
+    "originalSha256": "879dbf5f9917c022d07696a6a0fd316f68c97f9b16eadba2f1b1fff6e608f394"
+  },
+  {
+    "index": 1073,
+    "number": 74,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0074.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "0d5fc5e594e36afc06a30e596ed5e34926e3687a6e1e64eb32b2056bd9fc1dc8"
+  },
+  {
+    "index": 1075,
+    "number": 76,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0076.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "e0c86cd3dc6eaeac8e245e1ff88494ddc96c49ec9bd9f307a641f215d1877c3d"
+  },
+  {
+    "index": 1076,
+    "number": 77,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0077.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 32,
+    "originalSha256": "cb8659140a978b00ae9a8c5fb3586eba81c34a4cb969d78ddac75f0cf3115fb1"
+  },
+  {
+    "index": 1078,
+    "number": 79,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0079.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "8ad8a8356bd25335f7df6f7b05a0ed0e9ef8e5bbe7976e1319083dc6f96bea71"
+  },
+  {
+    "index": 1081,
+    "number": 82,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0082.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "1a64648aca3177b839f401e393506753ac6f041cd3c0ab5484a51463f7c416d1"
+  },
+  {
+    "index": 1082,
+    "number": 83,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0083.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 30,
+    "originalSha256": "901df5a92af25ac88134558e91aa359b31e1578f196f558a3be529f73f12475f"
+  },
+  {
+    "index": 1083,
+    "number": 84,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0084.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "14727dc780e44802bbb31b8840f1947b9c4d793bfac290a404e23e6488ff1f9d"
+  },
+  {
+    "index": 1084,
+    "number": 85,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0085.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "17e1c4a8fbe790ba5254e3fdaaef0f3dad7f329924caa2fa264eac7351d8bf8f"
+  },
+  {
+    "index": 1085,
+    "number": 86,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0086.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "166abb14a5fd07b2d5a793a1c2dbfcfa759aff4f0484adef6a7f2783ddb88010"
+  },
+  {
+    "index": 1086,
+    "number": 87,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0087.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "88905bacaa2b286862d80679f4cb704ab7155697e459d3c32c43ce41fe605b38"
+  },
+  {
+    "index": 1087,
+    "number": 88,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0088.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "9a7ff18094a239974cb534374bf10396824980194da50ee72f4793fdbfc6166c"
+  },
+  {
+    "index": 1088,
+    "number": 89,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0089.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "4981b6493e8f15d8e1a6f4750409843e948714fe7f56a43c5802e0b02ad9b3c4"
+  },
+  {
+    "index": 1089,
+    "number": 90,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0090.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "21a490365bb4f86b9f7dd55305b2f9a9ff86d33e8a3af708f87284f078142f77"
+  },
+  {
+    "index": 1090,
+    "number": 91,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0091.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "5c7ff176963c1b9b10e5f3669e588ff9e9c240e4899e614b95ae15f73d1b9b7b"
+  },
+  {
+    "index": 1091,
+    "number": 92,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0092.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "30e20fc28536d174242212038c3b8659a74c7e96ed465828490a6c6a6e605f03"
+  },
+  {
+    "index": 1095,
+    "number": 96,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0096.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "43be338a859231f4555cbbe0b70627b8f506baa870d68748fea2a518a565b674"
+  },
+  {
+    "index": 1096,
+    "number": 97,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0097.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "7bca0fd5b247845689a77ffd06689aac13950a1771a04bcf0ce1edbeb044038d"
+  },
+  {
+    "index": 1097,
+    "number": 98,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0098.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "4345c64a341a886dc513244b9ba073b26f6523902d7f6a235c23740f1073b680"
+  },
+  {
+    "index": 1098,
+    "number": 99,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0099.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "7c6efd42fc2057b62c3b2799a05d4fb239ecbdabf6bd0303a19666d10de70d89"
+  },
+  {
+    "index": 1099,
+    "number": 100,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0100.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 39,
+    "originalSha256": "06badcfdf90de7d2a98b239e24611ab6e8ad5b51c74e29bc83a67064a3db6e9b"
+  },
+  {
+    "index": 1100,
+    "number": 101,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0101.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "ed0fb667cbc8075403f4837a38fb135c1930f4ce62d4176dda838e29a38c8a95"
+  },
+  {
+    "index": 1103,
+    "number": 104,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0104.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "07cefa3de16975c00a14f51571659cd55e82fcfc816a3883d429bdaa28220038"
+  },
+  {
+    "index": 1104,
+    "number": 105,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0105.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "109d98c31b4605001337ca63bdb17984f53135439cf4e00691a9ec9cb3c9503b"
+  },
+  {
+    "index": 1106,
+    "number": 107,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0107.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "aea5aa45d6005bbfd6ba4f1bc3f77821f81989ab9e9206a6f29f85687167c752"
+  },
+  {
+    "index": 1107,
+    "number": 108,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0108.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "a50f64a51e6e7829946ea3001258739713c18976c2d1942745ae13feaaa9c58f"
+  },
+  {
+    "index": 1110,
+    "number": 111,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0111.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "d1dd01c8f572d9a4e8890314ed3d1a864e9cf5c477fb53829146b1a0aa869043"
+  },
+  {
+    "index": 1111,
+    "number": 112,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0112.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "ae64805ed0e2e4c979d1b11bdf3ec721c53436ab157a495281cfde5ffacee1e7"
+  },
+  {
+    "index": 1112,
+    "number": 113,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0113.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "f4cba357587d7c658810537fe82ef934120cda83c91465121558234f617ac6e7"
+  },
+  {
+    "index": 1113,
+    "number": 114,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0114.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "7d7449c7c57d2967deba1d79d7bae1ecd063910908e7f8f7f01ebebbf72b8419"
+  },
+  {
+    "index": 1115,
+    "number": 116,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0116.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "d6eebf50873a5801c78e0cb715557a95cb803f1a1b87ba1df898e1d4f6b64637"
+  },
+  {
+    "index": 1116,
+    "number": 117,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0117.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "52e020494ef9aa527df7c2dd858b4b3ad458a2e7676cd175f775a54e9f4c1e62"
+  },
+  {
+    "index": 1118,
+    "number": 119,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0119.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "5895a14859e395dd6ea0e64d00849ab95422e416475128cd40d023efbef074dd"
+  },
+  {
+    "index": 1119,
+    "number": 120,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0120.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "df5d41718211c8062f0cf95a39e8de22910918171917a9f8a8e49d80ef3fb1ae"
+  },
+  {
+    "index": 1120,
+    "number": 121,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0121.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "a566d8343f71ff35b5f07fb042d706c49d9ee00b6c83a838cfe8bb93c6e13192"
+  },
+  {
+    "index": 1121,
+    "number": 122,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0122.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "4237556c32da64851fc1bab7f14145b19b6ad0fe0d0be76a33944cff2c7bf295"
+  },
+  {
+    "index": 1125,
+    "number": 126,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0126.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "5b6fa177b8cb503dccad65d730bb107fb180a74b32837c426c9b3dc6e5362615"
+  },
+  {
+    "index": 1126,
+    "number": 127,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0127.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "95107991414cb1ada95a83e78f4a10e2e5ac08189b416a30c9dad2a985525d5d"
+  },
+  {
+    "index": 1127,
+    "number": 128,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0128.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "e76ab7e99c67c705589d7f24e556907cc3870c2711dde1232cd6fd6dc8b03026"
+  },
+  {
+    "index": 1128,
+    "number": 129,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0129.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 31,
+    "originalSha256": "5273b559e3f9820a10dad262bb25f14640a1e2e7980fe6cc048ecd1f556bb96e"
+  },
+  {
+    "index": 1130,
+    "number": 131,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0131.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "9e8d32ed4465bf494a615339387081ab89e3c716e0401eef8848082443e369fe"
+  },
+  {
+    "index": 1133,
+    "number": 134,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0134.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "fb80bfd257769f0d74b98eb894ba509490333e560a7a49742eeac5ebd5a6cf68"
+  },
+  {
+    "index": 1134,
+    "number": 135,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0135.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 25,
+    "originalSha256": "2cd41d8171879cedd90fed7f276c04506903cc5464756c18cd8ca58d1fc4e77d"
+  },
+  {
+    "index": 1135,
+    "number": 136,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0136.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "20e7027d8bd0c7db48c573751b4f9624d9ee8845ba5e02006b1e22045b9e2551"
+  },
+  {
+    "index": 1137,
+    "number": 138,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0138.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "8f5e608c10575a2e55b48d21f71b4cf98d3bc0bd0d467457e98bdf09de881466"
+  },
+  {
+    "index": 1138,
+    "number": 139,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0139.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "f5ad40166f848aa887f601d758355fb78ecec072f9634b251f6da33dc8e7ca75"
+  },
+  {
+    "index": 1144,
+    "number": 145,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0145.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "2799746b57f9ab06fe0127174dde5a67043c1130bce32b65251f32725230a547"
+  },
+  {
+    "index": 1145,
+    "number": 146,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0146.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 31,
+    "originalSha256": "554bad6f3f3ee5590a41366be3eaf44fef13cda66d18bd13dc1911192b481cb8"
+  },
+  {
+    "index": 1147,
+    "number": 148,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0148.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 32,
+    "originalSha256": "ff0b0a1a6ce476b3b97a63a02288c5ca7f01591eb2346f096ad88086c9696d62"
+  },
+  {
+    "index": 1150,
+    "number": 151,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0151.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "45e5323a61566a07fa865b53190f61e488d158022c3020119c2e2e3503e58c77"
+  },
+  {
+    "index": 1151,
+    "number": 152,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0152.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "44194f8356789287e63be08ae9cd0548e701ae11b257800cb5656c42fc399341"
+  },
+  {
+    "index": 1152,
+    "number": 153,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0153.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "c6c7a8a7df944b998a43ce1f8db1568557113caff48a958f9e65e2ba3572ac4f"
+  },
+  {
+    "index": 1153,
+    "number": 154,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0154.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "670a9ea43bdd249dcdc512552230e8f4eb01d11f120ca15f1e9832a391facab0"
+  },
+  {
+    "index": 1155,
+    "number": 156,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0156.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 30,
+    "originalSha256": "ca728811207c6960055b6d2e033e130c43a57301939e557b3d342cc4e751e3d2"
+  },
+  {
+    "index": 1156,
+    "number": 157,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0157.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "6cf301945413bd9c04530e7591cffb094060acf5cacc892d7ee0d9d37fee2b95"
+  },
+  {
+    "index": 1158,
+    "number": 159,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0159.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "b9afe184d1334441ce096c8d383fff22de0df5542f5b7a75e5b19ce917ad526e"
+  },
+  {
+    "index": 1159,
+    "number": 160,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0160.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "b15368d0dc22b969b7317e82e603d384d0f26572dfb37533021153a72998e29c"
+  },
+  {
+    "index": 1161,
+    "number": 162,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0162.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "dab7301d1dcbf785dfd7602b10b928f3e4a3208e56026e9bf6871c47529a99d2"
+  },
+  {
+    "index": 1162,
+    "number": 163,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0163.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 33,
+    "originalSha256": "ed9f930ac1fc87b1734e897f6ab4ff9d7320795ee4f3ba67a130763ef9ed9ea2"
+  },
+  {
+    "index": 1163,
+    "number": 164,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0164.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "a944005464fe478e28f134005020de1d246bb420f2efee926eec500389183dd9"
+  },
+  {
+    "index": 1165,
+    "number": 166,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0166.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "6da5cc8736b0ced9c56aa71eafb938bc289de6aadc430d972a1c400f786c3554"
+  },
+  {
+    "index": 1167,
+    "number": 168,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0168.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 26,
+    "originalSha256": "dd642d0138af005392c9457e24ae61dd847d1b45f70597ff4bdb67afffff0f05"
+  },
+  {
+    "index": 1168,
+    "number": 169,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0169.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "72e32740aa172225916177a5bd8f3e371d0babea0151c3aa49dac6e8f414d20e"
+  },
+  {
+    "index": 1169,
+    "number": 170,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0170.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "96a004987f07e492784070e479c14cd410f4e381bee9e6fbb7b425b84f274d17"
+  },
+  {
+    "index": 1170,
+    "number": 171,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0171.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 39,
+    "originalSha256": "34892895546acb1b3891bfabfe2539291a509bf8c09fa9858b0de628462c91ac"
+  },
+  {
+    "index": 1171,
+    "number": 172,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0172.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 41,
+    "originalSha256": "90dfe7a28e1c517c27211651cafe6044804c79089bea02bcbee89b6bcaa48dd0"
+  },
+  {
+    "index": 1174,
+    "number": 175,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0175.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "08914ee2325f6aca3bc8b6069854d399bd9efdc04d27ecf714f066916ec5ff7e"
+  },
+  {
+    "index": 1175,
+    "number": 176,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0176.asset",
+    "oldLimit": 147,
+    "newLimit": 81,
+    "initialBuckets": 48,
+    "originalSha256": "69e7716db1d8ff7462feeeb3c8297e6315ece843e7c3deb33ef391a3c810d522"
+  },
+  {
+    "index": 1176,
+    "number": 177,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0177.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 28,
+    "originalSha256": "b55cb876ca6c3237f7da4376af1dc04f16bc3ab36788e1af0c0608a01f4a0462"
+  },
+  {
+    "index": 1177,
+    "number": 178,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0178.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 40,
+    "originalSha256": "46a7746f5339dd88091e75352903b3b87a79d5f8ee3f2fc315e3a6c422f0703a"
+  },
+  {
+    "index": 1179,
+    "number": 180,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0180.asset",
+    "oldLimit": 147,
+    "newLimit": 103,
+    "initialBuckets": 39,
+    "originalSha256": "2206bfc9b9344f2678341b8a5ceacb0f0f74bf93d1b75b0795abd0e6890ad3e6"
+  },
+  {
+    "index": 1181,
+    "number": 182,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0182.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 34,
+    "originalSha256": "f4c6e03e20c91c93bb1186b4773b605596e69c815257e0d32033e2edf8eb9bc8"
+  },
+  {
+    "index": 1185,
+    "number": 186,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0186.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "1c82b08fa9512a5db7497d51e579e662501a064a40c41349053b7757f667f953"
+  },
+  {
+    "index": 1186,
+    "number": 187,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0187.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 27,
+    "originalSha256": "21091d48cbb5c23a2b31acb15f8434cfec5584f73a49ca7b21b909b845c068d7"
+  },
+  {
+    "index": 1189,
+    "number": 190,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0190.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 35,
+    "originalSha256": "973c80083f7969fde8a4a388d8e2b10790f19f9566f18ac28a48cc952ec202a1"
+  },
+  {
+    "index": 1191,
+    "number": 192,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0192.asset",
+    "oldLimit": 147,
+    "newLimit": 81,
+    "initialBuckets": 52,
+    "originalSha256": "9759e26ca34d173ad04897f7127be6c137969eff1f7c33c8c722d4cff1588211"
+  },
+  {
+    "index": 1193,
+    "number": 194,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0194.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 33,
+    "originalSha256": "0984ff6d4f12ef192bf65ca9dbfebf9df66c501c60c6131313c46aa7e50dc68b"
+  },
+  {
+    "index": 1194,
+    "number": 195,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0195.asset",
+    "oldLimit": 147,
+    "newLimit": 125,
+    "initialBuckets": 34,
+    "originalSha256": "2b70cc4ef9b93d3969b2e45d072716e3d3d90572837023f3c313f9299e766d9b"
+  },
+  {
+    "index": 1198,
+    "number": 199,
+    "winter": true,
+    "rule": "Assets/Levels/Campaign1500/WinterRules_0199.asset",
+    "oldLimit": 147,
+    "newLimit": 147,
+    "initialBuckets": 29,
+    "originalSha256": "01e41722647fe92a3b9069039547810287d98ffd8c7a1161e29b3322a5c33c4e"
+  }
+]

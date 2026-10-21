@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "reward_coins": 100,
+  "placement": "shop_coins_100",
+  "requires_actual_ad_even_with_remove_ads": true,
+  "success_cancel_unavailable_duplicate_callbacks_and_clicks": "PASS",
+  "shop_pause_and_resume": "PASS",
+  "languages": [
+    "RU",
+    "EN"
+  ],
+  "previous_bundle_rewards": "PASS",
+  "production_ads_shown": false,
+  "main_scripts_match_validated": true
+}

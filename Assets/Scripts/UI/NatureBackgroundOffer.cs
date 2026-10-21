@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using MirraGames.SDK;
 using MirraGames.SDK.Common;
 using TMPro;
@@ -12,12 +13,13 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     private CosmeticBundle bundle=CosmeticBundleCatalog.Nature;
     private RectTransform overlay,dialog,header,footer;
     private NatureOfferPager pager;
+    private CosmeticBundlePreview completeStylePreview;
     private Button previous,next;
     private TextMeshProUGUI selectedName,swipeHint,savingsLabel;
     private readonly Image[] pageDots=new Image[NatureBackgroundBundle.Backgrounds.Length];
     public CosmeticBundle CurrentBundle => bundle;
-    public int PreviewPage => pager!=null?pager.Page:0;
-    public void ShowPage(int page) { if(IsOpen && !pending)pager.ShowPage(page); }
+    public int PreviewPage => !bundle.IsStyleBundle && pager!=null?pager.Page:0;
+    public void ShowPage(int page) { if(IsOpen && !pending && !bundle.IsStyleBundle)pager.ShowPage(page); }
     private TextMeshProUGUI title,description,buyLabel,continueLabel;
     private Button buy,continueButton;
     private Action onContinue;
@@ -42,10 +44,13 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
         {
             int page=(i-1+NatureBackgroundBundle.Backgrounds.Length)%NatureBackgroundBundle.Backgrounds.Length;
             var art=Rect("Background_"+NatureBackgroundBundle.Backgrounds[page]+"_Slot_"+i,content,Vector2.zero,Vector2.zero);
-            var graphic=art.gameObject.AddComponent<ThemeBackdropGraphic>();graphic.PreviewTheme=NatureBackgroundBundle.Backgrounds[page];graphic.FitWholeImage=true;graphic.raycastTarget=false;
+            art.gameObject.AddComponent<CosmeticBundlePreview>().SetItem(CosmeticBundleCatalog.Nature.Items[page]);
             art.gameObject.AddComponent<CanvasGroup>().blocksRaycasts=false;
         }
         pager.Initialize(NatureBackgroundBundle.Backgrounds.Length);pager.PageChanged+=RefreshPage;
+        var completePreview=Rect("CompleteStylePreview",viewport,new Vector2(506,900),Vector2.zero);
+        completeStylePreview=completePreview.gameObject.AddComponent<CosmeticBundlePreview>();
+        completePreview.gameObject.SetActive(false);
         header=Rect("NatureOfferHeader",dialog,new Vector2(960,190),Vector2.zero);Face(header,new Color(Cream.r,Cream.g,Cream.b,.94f));
         title=Label(header,"Title",new Vector2(0,51),new Vector2(900,58),40);
         description=Label(header,"Description",new Vector2(0,-9),new Vector2(900,50),27);
@@ -90,9 +95,15 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     private void Open(Action continuation)
     {
         previousTime=Time.timeScale;Time.timeScale=0;onContinue=continuation;
-        for(int i=0;i<pager.content.childCount;i++)pager.content.GetChild(i).GetComponent<ThemeBackdropGraphic>().PreviewTheme=bundle.Backgrounds[(i-1+bundle.Backgrounds.Length)%bundle.Backgrounds.Length];
+        bool style=bundle.IsStyleBundle;
+        pager.enabled=!style;pager.content.gameObject.SetActive(!style);
+        completeStylePreview.gameObject.SetActive(style);
+        if(style)
+            completeStylePreview.SetItem(bundle.Items.Single(item=>item.Part==ThemeCatalog.Part.Casings),bundle.Backgrounds[0],bundle.Items.Single(item=>item.Part==ThemeCatalog.Part.Conveyor).Theme);
+        else
+            for(int i=0;i<pager.content.childCount;i++)pager.content.GetChild(i).GetComponent<CosmeticBundlePreview>().SetItem(bundle.Items[(i-1+bundle.Items.Length)%bundle.Items.Length],bundle.Backgrounds[0]);
         pending=false;purchaseFailed=false;Refresh();overlay.SetAsLastSibling();overlay.gameObject.SetActive(true);
-        Layout();Canvas.ForceUpdateCanvases();pager.ResizePages();pager.ShowPage(0,true);RefreshPage(0);
+        Layout();Canvas.ForceUpdateCanvases();if(!style){pager.ResizePages();pager.ShowPage(0,true);}RefreshPage(0);
     }
     public void Continue()
     {
@@ -139,9 +150,10 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     }
     private void Refresh()
     {
-        title.text=CampaignText.Get(bundle.TitleKey);description.text=CampaignText.Get(purchaseFailed?"nature_bundle_error":bundle==CosmeticBundleCatalog.Nature?"nature_bundle_description":"bundle_description");
+        title.text=CampaignText.Get(bundle.TitleKey);description.text=CampaignText.Get(purchaseFailed?"nature_bundle_error":bundle.IsStyleBundle?"style_bundle_description":bundle==CosmeticBundleCatalog.Nature?"nature_bundle_description":"bundle_description");
         continueLabel.text=CampaignText.Get("nature_bundle_continue");
-        swipeHint.text=CampaignText.Get("nature_bundle_swipe");RefreshPage(PreviewPage);
+        swipeHint.gameObject.SetActive(!bundle.IsStyleBundle);
+        swipeHint.text=bundle.IsStyleBundle?"":CampaignText.Get("nature_bundle_swipe");RefreshPage(PreviewPage);
         bool available=TryPrice(out string price,bundle);
         savingsLabel.text=available?GetSavingsText(bundle):"";
         buyLabel.text=pending?CampaignText.Get("ad_wait"):available?string.Format(CampaignText.Get("nature_bundle_buy"),price):price;
@@ -150,7 +162,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     public static string GetSavingsText(CosmeticBundle definition=null)
     {
         definition=definition??CosmeticBundleCatalog.Nature;
-        if(!GameSdkReadiness.IsReady)return "";
+        if(definition.IsStyleBundle || !GameSdkReadiness.IsReady)return "";
         try
         {
             var individual=new ProductData[definition.Backgrounds.Length];
@@ -172,7 +184,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
         }
         if(!IsOpen)return;
         if(!pending && bundle.IsOwned){Continue();return;}
-        Layout();pager.ResizePages();
+        Layout();if(!bundle.IsStyleBundle)pager.ResizePages();
         if(!pending&&Time.unscaledTime>=nextRefresh){nextRefresh=Time.unscaledTime+.5f;Refresh();}
         if(Input.GetKeyDown(KeyCode.Escape))Continue();
         if(Input.GetKeyDown(KeyCode.LeftArrow))ShowPage(PreviewPage-1);
@@ -198,9 +210,15 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     private void RefreshPage(int page)
     {
         if(selectedName==null)return;
-        selectedName.text=CampaignText.Get(ThemeCatalog.Names[bundle.Backgrounds[page]]);
+        bool style=bundle.IsStyleBundle;
+        selectedName.text=style?CampaignText.Get("style_bundle_shop_hint"):bundle.Items[page].Name;
+        previous.gameObject.SetActive(!style);next.gameObject.SetActive(!style);
         previous.interactable=next.interactable=!pending;
-        for(int i=0;i<pageDots.Length;i++)pageDots[i].color=i==page?Ink:new Color(Ink.r,Ink.g,Ink.b,.25f);
+        for(int i=0;i<pageDots.Length;i++)
+        {
+            pageDots[i].gameObject.SetActive(!style);
+            pageDots[i].color=i==page?Ink:new Color(Ink.r,Ink.g,Ink.b,.25f);
+        }
     }
     private static Button Navigation(string name,Transform parent,string glyph,UnityEngine.Events.UnityAction click)
     {

@@ -1,0 +1,72 @@
+[
+  {
+    "source": 1,
+    "destination": 11,
+    "sourcePath": "tasks\\opening-six-colors\\backup\\Level_001.asset",
+    "destinationPath": "Assets\\Levels\\Campaign100\\Level_011.asset",
+    "cellsSha256": "cb104f7aff76c4abb24230b3e10c0233da87958e97ee08536455f4ebcf8e5b93"
+  },
+  {
+    "source": 2,
+    "destination": 17,
+    "sourcePath": "tasks\\opening-six-colors\\backup\\Level_002.asset",
+    "destinationPath": "Assets\\Levels\\Campaign100\\Level_017.asset",
+    "cellsSha256": "db614e7e59ecd0e50eb0deb2ecf3b5f4656e82f0f09326fb8ba8c02c2349128d"
+  },
+  {
+    "source": 3,
+    "destination": 20,
+    "sourcePath": "tasks\\opening-six-colors\\backup\\Level_003.asset",
+    "destinationPath": "Assets\\Levels\\Campaign100\\Level_020.asset",
+    "cellsSha256": "93993f6037be911f0ac23b357f8f0cd8880164d6bac80982ed92c04ae0185c67"
+  },
+  {
+    "source": 4,
+    "destination": 23,
+    "sourcePath": "tasks\\opening-six-colors\\backup\\Level_004.asset",
+    "destinationPath": "Assets\\Levels\\Campaign100\\Level_023.asset",
+    "cellsSha256": "c133a1f169b668ad61560cd62390604cc7140540b6f8e982e520bd028f564564"
+  },
+  {
+    "source": 5,
+    "destination": 32,
+    "sourcePath": "tasks\\opening-six-colors\\backup\\Level_005.asset",
+    "destinationPath": "Assets\\Levels\\Campaign100\\Level_032.asset",
+    "cellsSha256": "e8568f8701615505b0836b8cb4fb4297d7818c7ef193c6bfa340359145303079"
+  },
+  {
+    "source": 6,
+    "destination": 58,
+    "sourcePath": "tasks\\opening-six-colors\\backup\\Level_006.asset",
+    "destinationPath": "Assets\\Levels\\Campaign100\\Level_058.asset",
+    "cellsSha256": "10eba907a1fe4723091e2641fc6f724156f2ced7b50a16408e8da411cbc5c67c"
+  },
+  {
+    "source": 7,
+    "destination": 78,
+    "sourcePath": "tasks\\opening-six-colors\\backup\\Level_007.asset",
+    "destinationPath": "Assets\\Levels\\Campaign100\\Level_078.asset",
+    "cellsSha256": "676c4ffb1b2f45831ae35098e8c93205a9d8ac798fc81221ff256e5c8a834b0d"
+  },
+  {
+    "source": 8,
+    "destination": 83,
+    "sourcePath": "tasks\\opening-six-colors\\backup\\Level_008.asset",
+    "destinationPath": "Assets\\Levels\\Campaign100\\Level_083.asset",
+    "cellsSha256": "ef101f94155da409c7857a5f3fb665c0c5dbe73e7dac9b74ff8bb43228191c1a"
+  },
+  {
+    "source": 9,
+    "destination": 117,
+    "sourcePath": "tasks\\opening-six-colors\\backup\\Level_009.asset",
+    "destinationPath": "Assets\\Levels\\Campaign100\\Level_117.asset",
+    "cellsSha256": "09ac595ec32887ff8e52bace9f118b32319420964456535b210671e2e2e4e1ea"
+  },
+  {
+    "source": 10,
+    "destination": 122,
+    "sourcePath": "tasks\\opening-six-colors\\backup\\Level_010.asset",
+    "destinationPath": "Assets\\Levels\\Campaign100\\Level_122.asset",
+    "cellsSha256": "5dd2c366a819247031d6b5fef028a9ff31fa615927882de3d8327fd98902c380"
+  }
+]

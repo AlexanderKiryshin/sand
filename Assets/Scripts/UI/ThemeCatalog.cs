@@ -25,12 +25,20 @@ public static class ThemeCatalog
         int selected=Mathf.Clamp(GameProgressStore.GetInt(SelectionKey(part),GameProgressStore.GetInt("sand_theme_selected",fallback)),0,CountFor(part)-1);
         return IsAvailable(selected,part) && IsUnlocked(selected,part)?selected:fallback;
     }
-    public static bool IsUnlocked(int index) => index == 0 || GameProgressStore.GetBool("sand_theme_owned_" + index);
-    public static bool IsUnlocked(int index,Part part) => part==Part.Background && index==DefaultBackground || (part==Part.Background && index>=8
-        ? GameProgressStore.GetBool("sand_theme_background_owned_"+index) || (index<12 && IsUnlocked(index)) : IsUnlocked(index));
+    private static string OwnershipKey(int index, Part part) => SelectionKey(part) + "_owned_" + index;
+    public static bool IsUnlocked(int index) => IsUnlocked(index, Part.Conveyor) && IsUnlocked(index, Part.Casings);
+    public static bool IsUnlocked(int index, Part part)
+    {
+        if (!IsAvailable(index, part)) return false;
+        if (part == Part.Background ? index == DefaultBackground : index == 0) return true;
+        // Old saves and restored shared-theme receipts retain everything they originally unlocked.
+        return GameProgressStore.GetBool(OwnershipKey(index, part))
+            || ((part != Part.Background || index < 12) && GameProgressStore.GetBool("sand_theme_owned_" + index));
+    }
     public static bool Select(int index)
     {
-        if (index < 0 || index >= MaterialCount || !IsUnlocked(index) || !IsUnlocked(index,Part.Background)) return false;
+        if (index < 0 || index >= MaterialCount || !IsUnlocked(index)
+            || (IsAvailable(index, Part.Background) && !IsUnlocked(index, Part.Background))) return false;
         var previous = new[] { Selected, SelectedCasings, SelectedBackground };
         GameProgressStore.SetInt("sand_theme_selected", index);
         GameProgressStore.SetInt("sand_theme_conveyor", index);
@@ -63,6 +71,7 @@ public static class ThemeCatalog
         if(!owned)Analytic.CosmeticAcquired(NameKey(index,part),part.ToString().ToLowerInvariant(),index,source,ProductTag(index,part));
         return Select(index,part);
     }
+    // Legacy shared entitlement, used only for old receipts and editor fixtures.
     public static void Unlock(int index)
     {
         if (index <= 0 || index >= Count) return;
@@ -71,9 +80,9 @@ public static class ThemeCatalog
     public enum Access { Free, Rewarded, Coins, Money }
     public static void Unlock(int index,Part part)
     {
-        if(part!=Part.Background || index<8){Unlock(index);return;}
-        if(index>=Count)return;
-        GameProgressStore.SetBool("sand_theme_background_owned_"+index,true);GameProgressStore.Save();
+        if (!IsAvailable(index, part)) return;
+        GameProgressStore.SetBool(OwnershipKey(index, part), true);
+        GameProgressStore.Save();
     }
     public static Access AccessFor(int index) => index == 0 ? Access.Free : index <= 3 ? Access.Rewarded : index >= 8 && index <= 11 ? Access.Money : Access.Coins;
     public static Access AccessFor(int index,Part part) => part==Part.Background && index==DefaultBackground ? Access.Free : part==Part.Background && index>=8 && index<12 ? Access.Rewarded : part==Part.Background && index>=12 ? (index<PremiumBackgroundEnd?Access.Money:index>=MinimalRewardedStart?Access.Rewarded:Access.Coins) : AccessFor(index);
@@ -93,8 +102,30 @@ public static class ThemeCatalog
         switch(AccessFor(index,part)){case Access.Money:return 0;case Access.Coins:return 1;case Access.Rewarded:return 2;default:return 3;}
     }
     public static int[] DisplayOrderFor(Part part) => Enumerable.Range(0,CountFor(part)).Where(id=>IsAvailable(id,part)).OrderBy(id=>ShopAccessRank(id,part)).ThenBy(id=>AccessFor(id,part)==Access.Coins?CoinPrice(id,part):part==Part.Background && AccessFor(id,part)==Access.Rewarded?(id>=MinimalRewardedStart?id-MinimalRewardedStart:id>=8?id-4:id+8):id).ThenBy(id=>id).ToArray();
+    // Retired shared products are restored, but are never offered for new purchases.
     public static string ProductTag(int index) => "sand_theme_" + Names[index].Substring(6);
-    public static string ProductTag(int index,Part part) => part==Part.Background && index>=12?"sand_background_"+Names[index].Substring(6):ProductTag(index);
+    public static string ProductTag(int index, Part part)
+    {
+        string prefix = part == Part.Conveyor ? "sand_conveyor_" : part == Part.Casings ? "sand_casings_" : "sand_background_";
+        return prefix + NameKey(index, part).Substring(6);
+    }
+    public static void RestorePurchases(System.Action<string, System.Action> restoreProduct)
+    {
+        foreach (Part part in new[] { Part.Conveyor, Part.Casings, Part.Background })
+        {
+            for (int index = 0; index < CountFor(part); index++)
+            {
+                if (!IsAvailable(index, part) || AccessFor(index, part) != Access.Money) continue;
+                int owned = index;
+                restoreProduct(ProductTag(owned, part), () => Unlock(owned, part));
+            }
+        }
+        for (int index = 8; index <= 11; index++)
+        {
+            int owned = index;
+            restoreProduct(ProductTag(owned), () => Unlock(owned));
+        }
+    }
     public static int Pattern(int index) => index < 6 ? 0 : index - 5;
     private static readonly Color[] Backgrounds = {
         new Color(.93f,.97f,.93f), new Color(.85f,.94f,.98f), new Color(1,.88f,.73f), new Color(.88f,.96f,.80f),

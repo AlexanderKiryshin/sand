@@ -188,22 +188,22 @@ public static class GameReworkChecks
     }
     private static void CheckGoldBadge()
     {
-        var styles=Enumerable.Range(4,20).ToDictionary(id=>id,id=>ThemeCatalog.IsUnlocked(id));
-        var backgrounds=Enumerable.Range(31,ThemeCatalog.Count-31).ToDictionary(id=>id,id=>ThemeCatalog.IsUnlocked(id,ThemeCatalog.Part.Background));
+        var ownership=Enumerable.Range(0,ThemeCatalog.Count).SelectMany(id=>new[] {
+            "sand_theme_owned_"+id,"sand_theme_conveyor_owned_"+id,"sand_theme_casings_owned_"+id,"sand_theme_background_owned_"+id
+        }).ToDictionary(key=>key,key=>GameProgressStore.GetBool(key));
         try
         {
-            foreach(int id in styles.Keys)GameProgressStore.SetBool("sand_theme_owned_"+id,false);
-            foreach(int id in backgrounds.Keys)GameProgressStore.SetBool("sand_theme_background_owned_"+id,false);
-            Require(ShopGoldBadge.CountAffordable(99)==0 && ShopGoldBadge.CountAffordable(100)==1,"Badge ignores actual gold affordability or repeats shared unlocks");
-            Require(ShopGoldBadge.CountAffordable(700)==23 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Conveyor)==4 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Casings)==16 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Background)==11,"Tab counters do not match their purchasable cosmetics");
-            Require(ShopGoldBadge.CountAffordable(4000)==30,"Badge includes money-only/rewarded styles or repeats shared products");
-            GameProgressStore.SetBool("sand_theme_owned_4",true);Require(ShopGoldBadge.CountAffordable(700)==22,"Purchased style remains in counter");
-            GameProgressStore.SetBool("sand_theme_background_owned_31",true);Require(ShopGoldBadge.CountAffordable(100)==0 && ShopGoldBadge.CountAffordable(1000)==28,"Counter includes owned backgrounds");
+            foreach(string key in ownership.Keys)GameProgressStore.SetBool(key,false);
+            Require(ShopGoldBadge.CountAffordable(99)==0 && ShopGoldBadge.CountAffordable(100)==2,"Badge merges separately purchasable items");
+            Require(ShopGoldBadge.CountAffordable(700)==31 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Conveyor)==4 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Casings)==16 && ShopGoldBadge.CountAffordable(700,ThemeCatalog.Part.Background)==11,"Tab counters do not match their purchasable cosmetics");
+            Require(ShopGoldBadge.CountAffordable(4000)==50,"Badge includes money-only/rewarded cosmetics or merges categories");
+            ThemeCatalog.Unlock(4,ThemeCatalog.Part.Casings);Require(ShopGoldBadge.CountAffordable(700)==30,"Casing purchase removed other categories from counter");
+            GameProgressStore.SetBool("sand_theme_owned_4",true);Require(ShopGoldBadge.CountAffordable(700)==28,"Legacy ownership remains in counter");
+            GameProgressStore.SetBool("sand_theme_background_owned_31",true);Require(ShopGoldBadge.CountAffordable(100)==0 && ShopGoldBadge.CountAffordable(1000)==46,"Counter includes owned backgrounds");
         }
         finally
         {
-            foreach(var state in styles)GameProgressStore.SetBool("sand_theme_owned_"+state.Key,state.Value);
-            foreach(var state in backgrounds)GameProgressStore.SetBool("sand_theme_background_owned_"+state.Key,state.Value);
+            foreach(var state in ownership)GameProgressStore.SetBool(state.Key,state.Value);
         }
     }
     private static void CheckRewardedClassicBackgrounds()

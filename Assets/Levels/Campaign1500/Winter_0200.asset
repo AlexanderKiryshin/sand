@@ -71,14 +71,14 @@ MonoBehaviour:
   beltCapacity: 5
   beltSpeedMultiplier: 1
   frostMoves: 0
-  sectionBuckets: 0
+  sectionBuckets: 1
   keyGates: 0
   linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
-  swappingColors: 1
+  swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 0
+  mysteryBuckets: 1
   bucketSettingsOverride: {fileID: 11400000, guid: adc30f0d4d16e144098ecde14e6ef702,
     type: 2}
   usesTiles: 0

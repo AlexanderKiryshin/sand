@@ -86,7 +86,7 @@ MonoBehaviour:
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 1
+  mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 41b34875df0b75b4dace8674d21c65a7,
     type: 2}
   usesTiles: 0

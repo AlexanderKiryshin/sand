@@ -1,0 +1,9 @@
+{
+  "level": 240,
+  "maxGrainsPerBucketBefore": 147,
+  "maxGrainsPerBucketAfter": 125,
+  "largeBuckets": 3,
+  "mysteryBuckets": 8,
+  "totalSand": "unchanged",
+  "reason": "Smaller portions let the five-slot belt clear while retaining the increased mechanic counts."
+}

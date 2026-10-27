@@ -61,6 +61,8 @@ public sealed class StyleBundleRunner : MonoBehaviour
         for (int id = 0; id < ThemeCatalog.Count; id++)
         {
             GameProgressStore.SetBool("sand_theme_owned_" + id, false);
+            GameProgressStore.SetBool("sand_theme_conveyor_owned_" + id, false);
+            GameProgressStore.SetBool("sand_theme_casings_owned_" + id, false);
             GameProgressStore.SetBool("sand_theme_background_owned_" + id, false);
         }
         ThemeCatalog.Refresh();
@@ -86,7 +88,7 @@ public sealed class StyleBundleRunner : MonoBehaviour
             {
                 if (!ThemeCatalog.IsAvailable(id, part)) continue;
                 bool expected = part == ThemeCatalog.Part.Background ? id == ThemeCatalog.DefaultBackground || bundle.Backgrounds.Contains(id)
-                    : id == 0 || bundle.Items.Any(item => item.Part != ThemeCatalog.Part.Background && item.Theme == id);
+                    : id == 0 || bundle.Items.Any(item => item.Part == part && item.Theme == id);
                 Require(ThemeCatalog.IsUnlocked(id, part) == expected, "Unexpected grant: " + bundle.Tag + "/" + part + "/" + id);
             }
             Require(selected.SequenceEqual(Enum.GetValues(typeof(ThemeCatalog.Part)).Cast<ThemeCatalog.Part>().Select(ThemeCatalog.SelectedFor)), "Purchase changed active cosmetics.");

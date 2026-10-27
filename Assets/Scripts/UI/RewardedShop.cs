@@ -8,8 +8,11 @@ using UnityEngine.UI;
 
 public class RewardedShop : MonoBehaviour
 {
-    [SerializeField] private int beginnerKitBonus = 5;
-    [SerializeField] private int beginnerKitBonusGold = 4000;
+    public const int SmallBundleGoldAmount = 1000;
+    public const int RemoveAdsGoldAmount = 4000;
+    public const int GoldSmallAmount = 800;
+    public const int GoldMediumAmount = 1500;
+    public const int GoldLargeAmount = 3000;
     public const int SmallBundleBoosterBonus = 5;
     public const int RemoveAdsBoosterBonus = 10;
     public const int SingleBoosterPackCount = 10;
@@ -19,45 +22,38 @@ public class RewardedShop : MonoBehaviour
     private bool rewardedGoldPending;
     private readonly Dictionary<BoosterType, (Button button, TextMeshProUGUI price)> boosterPacks
         = new Dictionary<BoosterType, (Button button, TextMeshProUGUI price)>();
-    [SerializeField] private int premiumKitBonusGold = 1000;
-    [SerializeField] private int gold300 = 300;
-    [SerializeField] private int gold700 = 700;
-    [SerializeField] private int gold1200 = 1200;
     [SerializeField] private CoinManager coinManager;
 
-    [SerializeField] private TextMeshProUGUI beginnerKitPriceText;
     [SerializeField] private TextMeshProUGUI premiumKitPriceText;
-    [SerializeField] private TextMeshProUGUI gold300PriceText;
-    [SerializeField] private TextMeshProUGUI gold700PriceText;
-    [SerializeField] private TextMeshProUGUI gold1200PriceText;
+    [SerializeField] private TextMeshProUGUI gold800PriceText;
+    [SerializeField] private TextMeshProUGUI gold1500PriceText;
+    [SerializeField] private TextMeshProUGUI gold3000PriceText;
     [SerializeField] private TextMeshProUGUI removeAdPriceText;
 
-    [SerializeField] private Button beginnerKitButton;
     [SerializeField] private Button premiumKitButton;
-    [SerializeField] private Button gold300Button;
-    [SerializeField] private Button gold700Button;
-    [SerializeField] private Button gold1200Button;
+    [SerializeField] private Button gold800Button;
+    [SerializeField] private Button gold1500Button;
+    [SerializeField] private Button gold3000Button;
     [SerializeField] private Button removeAdButton;
 
     private float shopTime;
     public static Action OnNoAdsBuy;
     public bool IsAdActive = true;
 
-    private const string BeginnerKitTag = "beginerKit_150";
     private const string PremiumKitTag = "premium_kit_75";
-    private const string Gold300Tag = "gold_300";
-    private const string Gold700Tag = "gold_700";
-    private const string Gold1200Tag = "gold_1200";
+    // Product IDs match the amount granted by each gold pack.
+    private const string Gold800Tag = "gold_800";
+    private const string Gold1500Tag = "gold_1500";
+    private const string Gold3000Tag = "gold_3000";
     private const string RemoveAdTag = "removeAd";
 
     private void Awake()
     {
         LoadDataOrInit();
-        WireButton(beginnerKitButton, BuyBeginnerKit);
         WireButton(premiumKitButton, BuyPremiumKit);
-        WireButton(gold300Button, BuyGold300);
-        WireButton(gold700Button, BuyGold700);
-        WireButton(gold1200Button, BuyGold1200);
+        WireButton(gold800Button, BuyGold800);
+        WireButton(gold1500Button, BuyGold1500);
+        WireButton(gold3000Button, BuyGold3000);
         WireButton(removeAdButton, BuyRemoveAd);
     }
 
@@ -117,38 +113,33 @@ public class RewardedShop : MonoBehaviour
 
     public void BindRuntime(
         CoinManager coins,
-        Button beginner,
         Button premium,
-        Button g300,
-        Button g700,
-        Button g1200,
+        Button g800,
+        Button g1500,
+        Button g3000,
         Button removeAds,
-        TextMeshProUGUI beginnerPrice,
         TextMeshProUGUI premiumPrice,
-        TextMeshProUGUI g300Price,
-        TextMeshProUGUI g700Price,
-        TextMeshProUGUI g1200Price,
+        TextMeshProUGUI g800Price,
+        TextMeshProUGUI g1500Price,
+        TextMeshProUGUI g3000Price,
         TextMeshProUGUI removePrice)
     {
         coinManager = coins;
-        beginnerKitButton = beginner;
         premiumKitButton = premium;
-        gold300Button = g300;
-        gold700Button = g700;
-        gold1200Button = g1200;
+        gold800Button = g800;
+        gold1500Button = g1500;
+        gold3000Button = g3000;
         removeAdButton = removeAds;
-        beginnerKitPriceText = beginnerPrice;
         premiumKitPriceText = premiumPrice;
-        gold300PriceText = g300Price;
-        gold700PriceText = g700Price;
-        gold1200PriceText = g1200Price;
+        gold800PriceText = g800Price;
+        gold1500PriceText = g1500Price;
+        gold3000PriceText = g3000Price;
         removeAdPriceText = removePrice;
 
-        WireButton(beginnerKitButton, BuyBeginnerKit);
         WireButton(premiumKitButton, BuyPremiumKit);
-        WireButton(gold300Button, BuyGold300);
-        WireButton(gold700Button, BuyGold700);
-        WireButton(gold1200Button, BuyGold1200);
+        WireButton(gold800Button, BuyGold800);
+        WireButton(gold1500Button, BuyGold1500);
+        WireButton(gold3000Button, BuyGold3000);
         WireButton(removeAdButton, BuyRemoveAd);
     }
 
@@ -247,11 +238,10 @@ public class RewardedShop : MonoBehaviour
 
     private void SetCurrencies()
     {
-        SetPrice(beginnerKitPriceText, BeginnerKitTag, beginnerKitButton);
         SetPrice(premiumKitPriceText, PremiumKitTag, premiumKitButton);
-        SetPrice(gold300PriceText, Gold300Tag, gold300Button);
-        SetPrice(gold700PriceText, Gold700Tag, gold700Button);
-        SetPrice(gold1200PriceText, Gold1200Tag, gold1200Button);
+        SetPrice(gold800PriceText, Gold800Tag, gold800Button);
+        SetPrice(gold1500PriceText, Gold1500Tag, gold1500Button);
+        SetPrice(gold3000PriceText, Gold3000Tag, gold3000Button);
         SetPrice(removeAdPriceText, RemoveAdTag, removeAdButton);
         foreach (var pack in boosterPacks)
             SetPrice(pack.Value.price, GetBoosterPackTag(pack.Key), pack.Value.button);
@@ -289,16 +279,15 @@ public class RewardedShop : MonoBehaviour
         }
     }
 
-    private void BuyBeginnerKit() => Purchase(BeginnerKitTag);
     private void BuyPremiumKit() => Purchase(PremiumKitTag);
-    private void BuyGold300() => Purchase(Gold300Tag);
-    private void BuyGold700() => Purchase(Gold700Tag);
-    private void BuyGold1200() => Purchase(Gold1200Tag);
+    private void BuyGold800() => Purchase(Gold800Tag);
+    private void BuyGold1500() => Purchase(Gold1500Tag);
+    private void BuyGold3000() => Purchase(Gold3000Tag);
     private void BuyRemoveAd() => Purchase(RemoveAdTag);
 
     private void Purchase(string tag)
     {
-        if (!GameSdkReadiness.IsReady) return;
+        if (!GameSdkReadiness.IsReady || !IsShopProduct(tag)) return;
         bool settled = false;
         MirraSDK.Payments.Purchase(
             productTag: tag,
@@ -317,6 +306,13 @@ public class RewardedShop : MonoBehaviour
             });
     }
 
+    private static bool IsShopProduct(string tag)
+    {
+        return tag == PremiumKitTag || tag == Gold800Tag || tag == Gold1500Tag || tag == Gold3000Tag
+            || tag == RemoveAdTag || tag == GetBoosterPackTag(BoosterType.Magnet)
+            || tag == GetBoosterPackTag(BoosterType.Transparent) || tag == GetBoosterPackTag(BoosterType.Shuffle);
+    }
+
     private void ApplyPurchase(string purchaseKey)
     {
         BoosterService boosters = BoosterService.instance;
@@ -324,13 +320,9 @@ public class RewardedShop : MonoBehaviour
 
         switch (purchaseKey)
         {
-            case BeginnerKitTag:
-                boosters?.GrantChargesToAll(beginnerKitBonus);
-                coins?.AddCoinsOnBuy(beginnerKitBonusGold);
-                break;
             case PremiumKitTag:
                 boosters?.GrantChargesToAll(SmallBundleBoosterBonus);
-                coins?.AddCoinsOnBuy(premiumKitBonusGold);
+                coins?.AddCoinsOnBuy(SmallBundleGoldAmount);
                 break;
             case "booster_magnet_10":
                 boosters?.GrantCharges(BoosterType.Magnet, SingleBoosterPackCount);
@@ -341,21 +333,21 @@ public class RewardedShop : MonoBehaviour
             case "booster_shuffle_10":
                 boosters?.GrantCharges(BoosterType.Shuffle, SingleBoosterPackCount);
                 break;
-            case Gold300Tag:
-                coins?.AddCoinsOnBuy(gold300);
+            case Gold800Tag:
+                coins?.AddCoinsOnBuy(GoldSmallAmount);
                 break;
-            case Gold700Tag:
-                coins?.AddCoinsOnBuy(gold700);
+            case Gold1500Tag:
+                coins?.AddCoinsOnBuy(GoldMediumAmount);
                 break;
-            case Gold1200Tag:
-                coins?.AddCoinsOnBuy(gold1200);
+            case Gold3000Tag:
+                coins?.AddCoinsOnBuy(GoldLargeAmount);
                 break;
             case RemoveAdTag:
                 IsAdActive = false;
                 GameProgressStore.SetBool("no_ads", true);
                 GameProgressStore.Save();
                 boosters?.GrantChargesToAll(RemoveAdsBoosterBonus);
-                coins?.AddCoinsOnBuy(beginnerKitBonusGold);
+                coins?.AddCoinsOnBuy(RemoveAdsGoldAmount);
                 OnNoAdsBuy?.Invoke();
                 break;
         }

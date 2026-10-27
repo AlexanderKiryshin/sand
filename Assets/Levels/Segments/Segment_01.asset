@@ -35,3 +35,5 @@ MonoBehaviour:
     direction: 0
     conveyorBucketCount: 1
   maxGrainsPerBucket: 500
+  matchBucketOrderToSand: 0
+  verifiedLayoutSeed: 0

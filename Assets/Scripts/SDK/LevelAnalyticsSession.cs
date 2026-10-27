@@ -8,6 +8,7 @@ public sealed class LevelAnalyticsSession
     private readonly Action<string, Dictionary<string, object>> send;
     private readonly Func<double> now;
     private readonly Dictionary<int, int> attempts = new Dictionary<int, int>();
+    private readonly HashSet<string> tutorialEvents = new HashSet<string>();
     private Dictionary<string, object> context = new Dictionary<string, object>();
     private double started;
     private bool active;
@@ -28,6 +29,7 @@ public sealed class LevelAnalyticsSession
             ["attempt"] = attempt, ["attempt_id"] = Guid.NewGuid().ToString("N"),
             ["title"] = title ?? "", ["theme"] = theme ?? "", ["mechanics"] = mechanics ?? "", ["replay"] = replay
         };
+        tutorialEvents.Clear();
         started = now(); moves = boosters = 0; active = true; Track("level_started");
     }
 
@@ -46,6 +48,20 @@ public sealed class LevelAnalyticsSession
             string outcome = name == "level_started" ? "started" : "completed";
             send("level_" + level.ToString("000") + "_" + outcome, new Dictionary<string, object>(data));
         }
+    }
+
+    public void TutorialStep(string tutorialId, int step, string stepId, string status, string reason = "")
+    {
+        if (!active || step < 1 || string.IsNullOrEmpty(tutorialId) || string.IsNullOrEmpty(stepId)
+            || status != "started" && status != "completed" && status != "skipped") return;
+        if (!tutorialEvents.Add(tutorialId + ":" + stepId + ":" + status)) return;
+        var data = new Dictionary<string, object>
+        {
+            ["tutorial_id"] = tutorialId, ["step"] = step, ["step_id"] = stepId,
+            ["step_status"] = status, ["reason"] = reason
+        };
+        Track("tutorial_step_" + status, data);
+        if (status == "completed") Track("tutorial_" + tutorialId + "_" + stepId + "_completed", data);
     }
 
     public void Move() { if (active) moves++; }

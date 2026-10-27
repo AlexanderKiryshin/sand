@@ -1,0 +1,590 @@
+[
+  {
+    "number": 78,
+    "index": 77,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 4
+  },
+  {
+    "number": 80,
+    "index": 79,
+    "kind": "full_mystery",
+    "hidden": 33,
+    "pairs": 0
+  },
+  {
+    "number": 128,
+    "index": 127,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 150,
+    "index": 149,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 5
+  },
+  {
+    "number": 152,
+    "index": 151,
+    "kind": "full_mystery",
+    "hidden": 35,
+    "pairs": 0
+  },
+  {
+    "number": 174,
+    "index": 173,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 5
+  },
+  {
+    "number": 176,
+    "index": 175,
+    "kind": "full_mystery",
+    "hidden": 28,
+    "pairs": 0
+  },
+  {
+    "number": 198,
+    "index": 197,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 5
+  },
+  {
+    "number": 200,
+    "index": 199,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 222,
+    "index": 221,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 224,
+    "index": 223,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 246,
+    "index": 245,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 248,
+    "index": 247,
+    "kind": "full_mystery",
+    "hidden": 30,
+    "pairs": 0
+  },
+  {
+    "number": 270,
+    "index": 269,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 272,
+    "index": 271,
+    "kind": "full_mystery",
+    "hidden": 28,
+    "pairs": 0
+  },
+  {
+    "number": 294,
+    "index": 293,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 296,
+    "index": 295,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 318,
+    "index": 317,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 320,
+    "index": 319,
+    "kind": "full_mystery",
+    "hidden": 31,
+    "pairs": 0
+  },
+  {
+    "number": 342,
+    "index": 341,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 344,
+    "index": 343,
+    "kind": "full_mystery",
+    "hidden": 30,
+    "pairs": 0
+  },
+  {
+    "number": 366,
+    "index": 365,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 368,
+    "index": 367,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 390,
+    "index": 389,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 392,
+    "index": 391,
+    "kind": "full_mystery",
+    "hidden": 28,
+    "pairs": 0
+  },
+  {
+    "number": 414,
+    "index": 413,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 416,
+    "index": 415,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 438,
+    "index": 437,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 440,
+    "index": 439,
+    "kind": "full_mystery",
+    "hidden": 30,
+    "pairs": 0
+  },
+  {
+    "number": 462,
+    "index": 461,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 464,
+    "index": 463,
+    "kind": "full_mystery",
+    "hidden": 27,
+    "pairs": 0
+  },
+  {
+    "number": 486,
+    "index": 485,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 488,
+    "index": 487,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 510,
+    "index": 509,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 512,
+    "index": 511,
+    "kind": "full_mystery",
+    "hidden": 28,
+    "pairs": 0
+  },
+  {
+    "number": 534,
+    "index": 533,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 536,
+    "index": 535,
+    "kind": "full_mystery",
+    "hidden": 31,
+    "pairs": 0
+  },
+  {
+    "number": 558,
+    "index": 557,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 560,
+    "index": 559,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 582,
+    "index": 581,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 584,
+    "index": 583,
+    "kind": "full_mystery",
+    "hidden": 28,
+    "pairs": 0
+  },
+  {
+    "number": 606,
+    "index": 605,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 608,
+    "index": 607,
+    "kind": "full_mystery",
+    "hidden": 30,
+    "pairs": 0
+  },
+  {
+    "number": 630,
+    "index": 629,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 632,
+    "index": 631,
+    "kind": "full_mystery",
+    "hidden": 30,
+    "pairs": 0
+  },
+  {
+    "number": 654,
+    "index": 653,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 656,
+    "index": 655,
+    "kind": "full_mystery",
+    "hidden": 30,
+    "pairs": 0
+  },
+  {
+    "number": 678,
+    "index": 677,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 680,
+    "index": 679,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 702,
+    "index": 701,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 704,
+    "index": 703,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 726,
+    "index": 725,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 728,
+    "index": 727,
+    "kind": "full_mystery",
+    "hidden": 30,
+    "pairs": 0
+  },
+  {
+    "number": 750,
+    "index": 749,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 752,
+    "index": 751,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 774,
+    "index": 773,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 776,
+    "index": 775,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 798,
+    "index": 797,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 800,
+    "index": 799,
+    "kind": "full_mystery",
+    "hidden": 28,
+    "pairs": 0
+  },
+  {
+    "number": 822,
+    "index": 821,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 824,
+    "index": 823,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 846,
+    "index": 845,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 848,
+    "index": 847,
+    "kind": "full_mystery",
+    "hidden": 30,
+    "pairs": 0
+  },
+  {
+    "number": 870,
+    "index": 869,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 872,
+    "index": 871,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 894,
+    "index": 893,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 896,
+    "index": 895,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 918,
+    "index": 917,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 920,
+    "index": 919,
+    "kind": "full_mystery",
+    "hidden": 30,
+    "pairs": 0
+  },
+  {
+    "number": 942,
+    "index": 941,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 944,
+    "index": 943,
+    "kind": "full_mystery",
+    "hidden": 28,
+    "pairs": 0
+  },
+  {
+    "number": 966,
+    "index": 965,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 968,
+    "index": 967,
+    "kind": "full_mystery",
+    "hidden": 30,
+    "pairs": 0
+  },
+  {
+    "number": 990,
+    "index": 989,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 6
+  },
+  {
+    "number": 992,
+    "index": 991,
+    "kind": "full_mystery",
+    "hidden": 29,
+    "pairs": 0
+  },
+  {
+    "number": 78,
+    "index": 1077,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 4
+  },
+  {
+    "number": 80,
+    "index": 1079,
+    "kind": "full_mystery",
+    "hidden": 33,
+    "pairs": 0
+  },
+  {
+    "number": 128,
+    "index": 1127,
+    "kind": "full_mystery",
+    "hidden": 28,
+    "pairs": 0
+  },
+  {
+    "number": 150,
+    "index": 1149,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 5
+  },
+  {
+    "number": 152,
+    "index": 1151,
+    "kind": "full_mystery",
+    "hidden": 28,
+    "pairs": 0
+  },
+  {
+    "number": 174,
+    "index": 1173,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 5
+  },
+  {
+    "number": 176,
+    "index": 1175,
+    "kind": "full_mystery",
+    "hidden": 49,
+    "pairs": 0
+  },
+  {
+    "number": 198,
+    "index": 1197,
+    "kind": "linked_focus",
+    "hidden": 0,
+    "pairs": 5
+  },
+  {
+    "number": 200,
+    "index": 1199,
+    "kind": "full_mystery",
+    "hidden": 28,
+    "pairs": 0
+  }
+]

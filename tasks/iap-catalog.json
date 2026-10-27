@@ -1,0 +1,826 @@
+{
+  "currency": "RUB",
+  "price_status": "Target platform catalog prices agreed with the user; these are not hardcoded game prices and have not been applied to a live platform. The game displays the actual SDK price.",
+  "economy_price_basis": {
+    "exchange_rate": {
+      "coins": 100,
+      "price_rub": 10
+    },
+    "booster_coin_purchase": {
+      "coins": 90,
+      "charges": 1
+    },
+    "rule": "The exchange rate is the undiscounted base rate. Gold packs apply their discount_percent to this base price: 10% for gold_1500 and 25% for gold_3000, with exact prices rather than rounding to multiples of 10. Direct booster packs retain base-rate prices, so coins from discounted gold packs buy boosters more cheaply. Resource bundles retain their bundle discounts and bonuses."
+  },
+  "remove_ads_price_basis": {
+    "booster_pack_ids": [
+      "booster_magnet_10",
+      "booster_fill_10",
+      "booster_shuffle_10"
+    ],
+    "formula": "90 + 90 + 90 = 270",
+    "bonus": "4000 coins and no-ads entitlement are included at no additional charge."
+  },
+  "products": [
+    {
+      "id": "premium_kit_75",
+      "name_ru": "Малый набор",
+      "category": "resource_bundle",
+      "consumable": true,
+      "price_rub": 130,
+      "rewards": {
+        "coins": 1000,
+        "magnet": 5,
+        "fill": 5,
+        "shuffle": 5
+      }
+    },
+    {
+      "id": "gold_800",
+      "name_ru": "800 монет",
+      "category": "gold",
+      "consumable": true,
+      "price_rub": 80,
+      "rewards": {
+        "coins": 800
+      }
+    },
+    {
+      "id": "gold_1500",
+      "name_ru": "1500 монет",
+      "category": "gold",
+      "consumable": true,
+      "price_rub": 135,
+      "discount_percent": 10,
+      "rewards": {
+        "coins": 1500
+      }
+    },
+    {
+      "id": "gold_3000",
+      "name_ru": "3000 монет",
+      "category": "gold",
+      "consumable": true,
+      "price_rub": 225,
+      "discount_percent": 25,
+      "rewards": {
+        "coins": 3000
+      }
+    },
+    {
+      "id": "removeAd",
+      "name_ru": "Отключение рекламы и набор ресурсов",
+      "category": "remove_ads_bundle",
+      "consumable": false,
+      "price_rub": 270,
+      "rewards": {
+        "no_ads": true,
+        "coins": 4000,
+        "magnet": 10,
+        "fill": 10,
+        "shuffle": 10
+      }
+    },
+    {
+      "id": "booster_magnet_10",
+      "name_ru": "10 магнитов",
+      "category": "booster",
+      "consumable": true,
+      "price_rub": 90,
+      "rewards": {
+        "magnet": 10
+      }
+    },
+    {
+      "id": "booster_fill_10",
+      "name_ru": "10 заполнений",
+      "category": "booster",
+      "consumable": true,
+      "price_rub": 90,
+      "rewards": {
+        "fill": 10
+      }
+    },
+    {
+      "id": "booster_shuffle_10",
+      "name_ru": "10 перетасовок",
+      "category": "booster",
+      "consumable": true,
+      "price_rub": 90,
+      "rewards": {
+        "shuffle": 10
+      }
+    },
+    {
+      "id": "sand_conveyor_stars",
+      "name_ru": "Конвейер «Звёздная ночь»",
+      "category": "conveyor",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "conveyor",
+            "theme_index": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_conveyor_artdeco",
+      "name_ru": "Конвейер «Ар-деко»",
+      "category": "conveyor",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "conveyor",
+            "theme_index": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_conveyor_marble",
+      "name_ru": "Конвейер «Мрамор»",
+      "category": "conveyor",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "conveyor",
+            "theme_index": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_conveyor_wood",
+      "name_ru": "Конвейер «Деревянная мастерская»",
+      "category": "conveyor",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "conveyor",
+            "theme_index": 11
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_casings_stars",
+      "name_ru": "Кожухи «Звёздная ночь»",
+      "category": "casings",
+      "consumable": false,
+      "price_rub": 100,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "casings",
+            "theme_index": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_casings_artdeco",
+      "name_ru": "Кожухи «Ар-деко»",
+      "category": "casings",
+      "consumable": false,
+      "price_rub": 100,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "casings",
+            "theme_index": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_casings_marble",
+      "name_ru": "Кожухи «Мрамор»",
+      "category": "casings",
+      "consumable": false,
+      "price_rub": 100,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "casings",
+            "theme_index": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_casings_wood",
+      "name_ru": "Кожухи «Деревянная мастерская»",
+      "category": "casings",
+      "consumable": false,
+      "price_rub": 100,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "casings",
+            "theme_index": 11
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_greenhouse",
+      "name_ru": "Фон «Оранжерея»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 12
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_alpine",
+      "name_ru": "Фон «Альпийская долина»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 13
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_chalet",
+      "name_ru": "Фон «Горное шале»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_harbor",
+      "name_ru": "Фон «Гавань»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_atelier",
+      "name_ru": "Фон «Художественное ателье»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_observatory",
+      "name_ru": "Фон «Обсерватория»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_copper",
+      "name_ru": "Фон «Медные механизмы»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 18
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_circuit",
+      "name_ru": "Фон «Микросхемы»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 19
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_mosaic",
+      "name_ru": "Фон «Керамическая мозаика»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_bamboo",
+      "name_ru": "Фон «Бамбуковая роща»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 21
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_honeycomb",
+      "name_ru": "Фон «Медовые соты»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 22
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_blueprint",
+      "name_ru": "Фон «Чертёжная мастерская»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 23
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_forest",
+      "name_ru": "Фон «Лесная чаща»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 24
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_birch",
+      "name_ru": "Фон «Берёзовая роща»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_meadow",
+      "name_ru": "Фон «Цветущий луг»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 26
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_lake",
+      "name_ru": "Фон «Лесное озеро»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 27
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_tropical",
+      "name_ru": "Фон «Тропический сад»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 28
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_autumn",
+      "name_ru": "Фон «Золотая берёзовая роща»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 29
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_snowforest",
+      "name_ru": "Фон «Заснеженные ели»",
+      "category": "background",
+      "consumable": false,
+      "price_rub": 200,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_nature_bundle",
+      "name_ru": "Природная коллекция",
+      "category": "background_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 27,
+            "name_ru": "Лесное озеро"
+          },
+          {
+            "part": "background",
+            "theme_index": 24,
+            "name_ru": "Лесная чаща"
+          },
+          {
+            "part": "background",
+            "theme_index": 29,
+            "name_ru": "Золотая берёзовая роща"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_botanical_bundle",
+      "name_ru": "Ботаническая коллекция",
+      "category": "background_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 12,
+            "name_ru": "Оранжерея"
+          },
+          {
+            "part": "background",
+            "theme_index": 21,
+            "name_ru": "Бамбуковая роща"
+          },
+          {
+            "part": "background",
+            "theme_index": 28,
+            "name_ru": "Тропический сад"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_travel_bundle",
+      "name_ru": "Коллекция путешествий",
+      "category": "background_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 13,
+            "name_ru": "Альпийская долина"
+          },
+          {
+            "part": "background",
+            "theme_index": 15,
+            "name_ru": "Гавань"
+          },
+          {
+            "part": "background",
+            "theme_index": 25,
+            "name_ru": "Берёзовая роща"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_cozy_bundle",
+      "name_ru": "Зимний уют",
+      "category": "background_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 14,
+            "name_ru": "Горное шале"
+          },
+          {
+            "part": "background",
+            "theme_index": 17,
+            "name_ru": "Обсерватория"
+          },
+          {
+            "part": "background",
+            "theme_index": 30,
+            "name_ru": "Заснеженные ели"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_artist_bundle",
+      "name_ru": "Творческая мастерская",
+      "category": "background_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 16,
+            "name_ru": "Художественное ателье"
+          },
+          {
+            "part": "background",
+            "theme_index": 20,
+            "name_ru": "Керамическая мозаика"
+          },
+          {
+            "part": "background",
+            "theme_index": 23,
+            "name_ru": "Чертёжная мастерская"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_background_material_bundle",
+      "name_ru": "Необычные материалы",
+      "category": "background_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 18,
+            "name_ru": "Медные механизмы"
+          },
+          {
+            "part": "background",
+            "theme_index": 19,
+            "name_ru": "Микросхемы"
+          },
+          {
+            "part": "background",
+            "theme_index": 22,
+            "name_ru": "Медовые соты"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_style_bamboo_bundle",
+      "name_ru": "Бамбуковый сад",
+      "category": "style_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 21
+          },
+          {
+            "part": "conveyor",
+            "theme_index": 21
+          },
+          {
+            "part": "casings",
+            "theme_index": 21
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_style_alpine_bundle",
+      "name_ru": "Альпийское утро",
+      "category": "style_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 13
+          },
+          {
+            "part": "conveyor",
+            "theme_index": 13
+          },
+          {
+            "part": "casings",
+            "theme_index": 13
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_style_winter_bundle",
+      "name_ru": "Снежная сказка",
+      "category": "style_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 30
+          },
+          {
+            "part": "conveyor",
+            "theme_index": 1
+          },
+          {
+            "part": "casings",
+            "theme_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_style_copper_bundle",
+      "name_ru": "Медная мастерская",
+      "category": "style_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 18
+          },
+          {
+            "part": "conveyor",
+            "theme_index": 18
+          },
+          {
+            "part": "casings",
+            "theme_index": 18
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_style_night_bundle",
+      "name_ru": "Звёздная ночь",
+      "category": "style_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 17
+          },
+          {
+            "part": "conveyor",
+            "theme_index": 17
+          },
+          {
+            "part": "casings",
+            "theme_index": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": "sand_style_blueprint_bundle",
+      "name_ru": "Чертёжный набор",
+      "category": "style_bundle",
+      "consumable": false,
+      "price_rub": 300,
+      "rewards": {
+        "cosmetics": [
+          {
+            "part": "background",
+            "theme_index": 23
+          },
+          {
+            "part": "conveyor",
+            "theme_index": 23
+          },
+          {
+            "part": "casings",
+            "theme_index": 23
+          }
+        ]
+      }
+    }
+  ],
+  "retired_product_ids": [
+    "beginerKit_150",
+    "gold_300",
+    "gold_700",
+    "gold_1200"
+  ],
+  "legacy_restore_only_ids": [
+    "sand_theme_stars",
+    "sand_theme_artdeco",
+    "sand_theme_marble",
+    "sand_theme_wood"
+  ]
+}

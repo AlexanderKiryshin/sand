@@ -405,6 +405,8 @@ public class SandEconomyHud : MonoBehaviour
         BoosterService.instance.BeginTargetMode(type);
         if (tutorialWaitingActivation && tutorialType == type)
         {
+            TrackBoosterTutorialStep("activate", "completed");
+            TrackBoosterTutorialStep("target", "started");
             tutorialWaitingActivation = false;
             tutorialWaitingTarget = true;
             UpdateTutorialHandForTarget();
@@ -595,6 +597,7 @@ public class SandEconomyHud : MonoBehaviour
         {
             // Wait for the player to place the first belt bucket, then freeze and guide Fill.
             tutorialWaitingFirstBucket = true;
+            TrackBoosterTutorialStep("place_bucket", "started");
             WireTutorialConveyor();
             RefreshBoosters();
             if (tutorialConveyor != null && tutorialConveyor.Entries.Count > 0)
@@ -611,6 +614,7 @@ public class SandEconomyHud : MonoBehaviour
     private void BeginBoosterActivationTutorial(BoosterType type)
     {
         tutorialWaitingActivation = true;
+        TrackBoosterTutorialStep("activate", "started");
 
         if (gameManager != null)
         {
@@ -666,6 +670,7 @@ public class SandEconomyHud : MonoBehaviour
             return;
         }
 
+        TrackBoosterTutorialStep("place_bucket", "completed");
         tutorialWaitingFirstBucket = false;
         UnwireTutorialConveyor();
         FreezeTutorialGameplay();
@@ -729,6 +734,15 @@ public class SandEconomyHud : MonoBehaviour
         PointHandAtBooster(type);
     }
 
+    private void TrackBoosterTutorialStep(string stepId, string status)
+    {
+        if (!tutorialType.HasValue) return;
+        bool fill = tutorialType.Value == BoosterType.Transparent;
+        string id = tutorialType.Value == BoosterType.Magnet ? "booster_magnet" : fill ? "booster_fill" : "booster_shuffle";
+        int step = stepId == "place_bucket" ? 1 : stepId == "activate" ? (fill ? 2 : 1) : (fill ? 3 : 2);
+        Analytic.TutorialStep(id, step, stepId, status);
+    }
+
     private void FinishTutorial()
     {
         if (!tutorialType.HasValue)
@@ -736,6 +750,7 @@ public class SandEconomyHud : MonoBehaviour
             return;
         }
 
+        TrackBoosterTutorialStep(tutorialWaitingTarget ? "target" : "activate", "completed");
         BoosterService.instance.MarkTutorialSeen(tutorialType.Value);
         tutorialType = null;
         tutorialWaitingFirstBucket = false;
@@ -1649,16 +1664,16 @@ public class SandEconomyHud : MonoBehaviour
         float cursor = -8, rowWidth = width - 64;
         Button adGold = CreateRewardedGoldShopRow(content, PlaceBlockCenter(ref cursor, 116, 18), rowWidth, out TextMeshProUGUI adGoldLabel);
         shop.BindRewardedGold(adGold, adGoldLabel);
-        Button premium = CreateKitShopRow(content, "premium_set", PlaceBlockCenter(ref cursor, 238, 18), GameUiSymbols.Get(GameUiSymbol.Bundle), 1000, RewardedShop.SmallBundleBoosterBonus, 238, rowWidth, out TextMeshProUGUI p2);
+        Button premium = CreateKitShopRow(content, "premium_set", PlaceBlockCenter(ref cursor, 238, 18), GameUiSymbols.Get(GameUiSymbol.Bundle), RewardedShop.SmallBundleGoldAmount, RewardedShop.SmallBundleBoosterBonus, 238, rowWidth, out TextMeshProUGUI p2);
         Button remove = CreateRemoveAdsShopRow(content, PlaceBlockCenter(ref cursor, 274, 18), 274, rowWidth, out TextMeshProUGUI p6);
         foreach (BoosterType type in Enum.GetValues(typeof(BoosterType)))
         {
             Button pack = CreateBoosterPackShopRow(content, type, PlaceBlockCenter(ref cursor, 132, 18), rowWidth, out TextMeshProUGUI packPrice);
             shop.BindBoosterPack(type, pack, packPrice);
         }
-        Button g300 = CreateShopRow(content, "Gold 300", PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p3, 116, rowWidth);
-        Button g700 = CreateShopRow(content, "Gold 700", PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p4, 116, rowWidth);
-        Button g1200 = CreateShopRow(content, "Gold 1200", PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p5, 116, rowWidth);
+        Button g800 = CreateShopRow(content, "Gold " + RewardedShop.GoldSmallAmount, PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p3, 116, rowWidth);
+        Button g1500 = CreateShopRow(content, "Gold " + RewardedShop.GoldMediumAmount, PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p4, 116, rowWidth);
+        Button g3000 = CreateShopRow(content, "Gold " + RewardedShop.GoldLargeAmount, PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p5, 116, rowWidth);
         content.sizeDelta = new Vector2(rowWidth, -cursor);
         var bundlesViewport=CreatePanel("BundlesViewport",new Vector2(.5f,.5f),new Vector2(.5f,.5f),new Vector2(0,-100),new Vector2(width-48,height-300),card);
         bundlesViewport.gameObject.AddComponent<RectMask2D>();bundlesViewport.gameObject.AddComponent<Image>().color=new Color(1,1,1,.001f);
@@ -1668,7 +1683,7 @@ public class SandEconomyHud : MonoBehaviour
         bundlesContent.sizeDelta=new Vector2(rowWidth,-bundleCursor);
         var bundlesScroll=bundlesViewport.gameObject.AddComponent<ScrollRect>();bundlesScroll.viewport=bundlesViewport;bundlesScroll.content=bundlesContent;bundlesScroll.horizontal=false;bundlesScroll.movementType=ScrollRect.MovementType.Clamped;
         root.gameObject.AddComponent<CosmeticShopTabs>().Initialize(card,viewport,bundlesViewport,width);
-        shop.BindRuntime(CoinManager.instance, null, premium, g300, g700, g1200, remove, null, p2, p3, p4, p5, p6);
+        shop.BindRuntime(CoinManager.instance, premium, g800, g1500, g3000, remove, p2, p3, p4, p5, p6);
         root.gameObject.SetActive(false);
     }
 
@@ -1770,7 +1785,7 @@ public class SandEconomyHud : MonoBehaviour
     }
 
     private Button CreateRemoveAdsShopRow(RectTransform parent, float y, float height, float width, out TextMeshProUGUI price)
-        => CreateKitShopRow(parent, "remove_ads_bundle", y, GameUiSymbols.Get(GameUiSymbol.NoAds), 4000, RewardedShop.RemoveAdsBoosterBonus, height, width, out price);
+        => CreateKitShopRow(parent, "remove_ads_bundle", y, GameUiSymbols.Get(GameUiSymbol.NoAds), RewardedShop.RemoveAdsGoldAmount, RewardedShop.RemoveAdsBoosterBonus, height, width, out price);
 
     private void CreateKitChip(RectTransform parent, string name, Sprite icon, string value, Vector2 anchored, float width, float height)
     {

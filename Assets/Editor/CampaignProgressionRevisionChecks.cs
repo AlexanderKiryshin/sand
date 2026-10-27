@@ -123,10 +123,10 @@ public static class CampaignProgressionRevisionChecks
         foreach (int n in new[] { 3, 14, 18, 24, 25, 28, 38, 48, 50, 58, 68, 80, 150, 203, 208 })
             Require(!CampaignProgression.IsLessonStart(n - 1), "Obsolete lesson remains at " + n);
         Require(CampaignProgression.GetLessonId(179) == "lesson_swap_group", "Group-swap tutorial missing.");
-        Require(fullStock > 0 && six > 0 && eight > 0 && ordinary > grouped, "Missing occasional variants or ordinary levels.");
+        Require(fullStock == 0 && six > 0 && eight > 0 && ordinary > grouped, "Missing occasional variants or ordinary levels.");
         File.WriteAllText(Path.Combine(Output, "status.txt"), "PASS\nlevels=" + db.LevelCount + "; routes=" + routes + "; groups=" + grouped
             + "; six=" + six + "; eight=" + eight + "; full-stock=" + fullStock + "; ordinary-late-routes=" + ordinary
-            + "; no walls/feeders/speed-up; intro gates, stock-wide shuffles and per-color sand budgets verified.");
+            + "; no walls/feeders/speed-up; intro gates, bounded shuffle groups and per-color sand budgets verified.");
         Debug.Log("PROGRESSION_REVISION_PASS routes=" + routes + ", groups=" + grouped);
     }
     static IEnumerable<Bucket> All(BucketInventory inventory)

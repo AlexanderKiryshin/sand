@@ -1,0 +1,203 @@
+{
+  "counter_id": 112386670,
+  "generic_events": [
+    "tutorial_step_started",
+    "tutorial_step_completed",
+    "tutorial_step_skipped"
+  ],
+  "parameters": [
+    "tutorial_id",
+    "step",
+    "step_id",
+    "step_status",
+    "reason",
+    "level",
+    "level_id",
+    "attempt_id",
+    "attempt",
+    "duration_seconds",
+    "moves",
+    "boosters"
+  ],
+  "deduplication": "One status per tutorial_id + step_id per level attempt; resets on restart. Repeated hints and localization refresh do not resend. Timeout sends skipped, never completed.",
+  "existing_tutorial_completed": "Preserved: first completion of the basic level-1 tutorial only.",
+  "goals": [
+    {
+      "event": "tutorial_step_started",
+      "name": "Туториал — шаг показан"
+    },
+    {
+      "event": "tutorial_step_completed",
+      "name": "Туториал — шаг выполнен"
+    },
+    {
+      "event": "tutorial_step_skipped",
+      "name": "Туториал — шаг пропущен"
+    },
+    {
+      "event": "tutorial_completed",
+      "name": "Туториал — базовое обучение завершено"
+    },
+    {
+      "event": "tutorial_basic_pick_completed",
+      "name": "Туториал 1 — первое ведро выбрано"
+    },
+    {
+      "event": "tutorial_basic_watch_fill_completed",
+      "name": "Туториал 2 — первое заполнение"
+    },
+    {
+      "event": "tutorial_basic_repeat_completed",
+      "name": "Туториал 3 — повторный ход"
+    },
+    {
+      "event": "tutorial_filter_pick_completed",
+      "name": "Туториал 4 — выбор цвета"
+    },
+    {
+      "event": "tutorial_filter_reset_completed",
+      "name": "Туториал 5 — сброс фильтра"
+    },
+    {
+      "event": "tutorial_booster_magnet_activate_completed",
+      "name": "Туториал бустера — Магнит — включён"
+    },
+    {
+      "event": "tutorial_booster_magnet_target_completed",
+      "name": "Туториал бустера — Магнит — цель выбрана"
+    },
+    {
+      "event": "tutorial_booster_fill_place_bucket_completed",
+      "name": "Туториал бустера — Заполнение — ведро на ленте"
+    },
+    {
+      "event": "tutorial_booster_fill_activate_completed",
+      "name": "Туториал бустера — Заполнение — включено"
+    },
+    {
+      "event": "tutorial_booster_fill_target_completed",
+      "name": "Туториал бустера — Заполнение — цель выбрана"
+    },
+    {
+      "event": "tutorial_booster_shuffle_activate_completed",
+      "name": "Туториал бустера — Перемешивание — применено"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_mystery_completed",
+      "name": "Подсказка 12 — скрытые вёдра"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_linked_completed",
+      "name": "Подсказка 20 — соединённые вёдра"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_ice_completed",
+      "name": "Подсказка 30 — лёд"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_keys_completed",
+      "name": "Подсказка 40 — ключи"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_sections_completed",
+      "name": "Подсказка 55 — секции"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_crates_completed",
+      "name": "Подсказка 70 — ящики"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_large_completed",
+      "name": "Подсказка 85 — большие вёдра"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_swap_completed",
+      "name": "Подсказка 100 — парная смена цвета"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_hidden_sections_completed",
+      "name": "Подсказка 120 — скрытые секции"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_loop_completed",
+      "name": "Подсказка 140 — кольцо"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_hidden_linked_completed",
+      "name": "Подсказка 160 — скрытые пары"
+    },
+    {
+      "event": "tutorial_mechanics_lesson_swap_group_completed",
+      "name": "Подсказка 180 — групповая смена цвета"
+    }
+  ],
+  "funnels": [
+    {
+      "name": "Обучение — первые вёдра и фильтр",
+      "events": [
+        "level_001_started",
+        "tutorial_basic_pick_completed",
+        "tutorial_basic_watch_fill_completed",
+        "tutorial_basic_repeat_completed",
+        "level_001_completed",
+        "level_002_started",
+        "tutorial_filter_pick_completed",
+        "tutorial_filter_reset_completed",
+        "level_002_completed",
+        "level_003_completed"
+      ]
+    },
+    {
+      "name": "Обучение — магнит и заполнение",
+      "events": [
+        "level_006_started",
+        "tutorial_booster_magnet_activate_completed",
+        "tutorial_booster_magnet_target_completed",
+        "level_006_completed",
+        "level_008_started",
+        "tutorial_booster_fill_place_bucket_completed",
+        "tutorial_booster_fill_activate_completed",
+        "tutorial_booster_fill_target_completed",
+        "level_008_completed",
+        "level_010_started"
+      ]
+    },
+    {
+      "name": "Обучение — перемешивание, скрытые и пары",
+      "events": [
+        "level_010_started",
+        "tutorial_booster_shuffle_activate_completed",
+        "level_010_completed",
+        "level_012_started",
+        "tutorial_mechanics_lesson_mystery_completed",
+        "level_012_completed",
+        "level_020_started",
+        "tutorial_mechanics_lesson_linked_completed",
+        "level_020_completed",
+        "level_030_started"
+      ]
+    },
+    {
+      "name": "Обучение — механики 30–100",
+      "events": [
+        "level_030_started",
+        "tutorial_mechanics_lesson_ice_completed",
+        "tutorial_mechanics_lesson_keys_completed",
+        "tutorial_mechanics_lesson_sections_completed",
+        "tutorial_mechanics_lesson_crates_completed",
+        "tutorial_mechanics_lesson_large_completed",
+        "tutorial_mechanics_lesson_swap_completed"
+      ]
+    },
+    {
+      "name": "Обучение — сочетания механик 100–180",
+      "events": [
+        "tutorial_mechanics_lesson_swap_completed",
+        "tutorial_mechanics_lesson_hidden_sections_completed",
+        "tutorial_mechanics_lesson_loop_completed",
+        "tutorial_mechanics_lesson_hidden_linked_completed",
+        "tutorial_mechanics_lesson_swap_group_completed"
+      ]
+    }
+  ]
+}

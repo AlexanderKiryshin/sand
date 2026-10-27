@@ -1,0 +1,83 @@
+{
+  "counter_id": 112386670,
+  "verified": true,
+  "funnels": [
+    {
+      "name": "Обучение — первые вёдра и фильтр",
+      "events": [
+        "level_001_started",
+        "tutorial_basic_pick_completed",
+        "tutorial_basic_watch_fill_completed",
+        "tutorial_basic_repeat_completed",
+        "level_001_completed",
+        "level_002_started",
+        "tutorial_filter_pick_completed",
+        "tutorial_filter_reset_completed",
+        "level_002_completed",
+        "level_003_completed"
+      ],
+      "url": "https://metrika.yandex.ru/stat/a9763fd5-84fa-4444-8508-644db1d64e45?id=112386670&period=month&group=day&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=true&view=Hierarchical&sortBy=-ym%3Aef%3AusersInStep1&showTotal=false&metricValueMode=Absolute&screenMode=Default&sh=d5bfbcd7fb07684558493db9119c27bb&table=event_funnels",
+      "verified": true
+    },
+    {
+      "name": "Обучение — магнит и заполнение",
+      "events": [
+        "level_006_started",
+        "tutorial_booster_magnet_activate_completed",
+        "tutorial_booster_magnet_target_completed",
+        "level_006_completed",
+        "level_008_started",
+        "tutorial_booster_fill_place_bucket_completed",
+        "tutorial_booster_fill_activate_completed",
+        "tutorial_booster_fill_target_completed",
+        "level_008_completed",
+        "level_010_started"
+      ],
+      "url": "https://metrika.yandex.ru/stat/4c6eb4eb-8039-4384-b9ea-2bf7d743380e?id=112386670&period=month&group=day&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=true&view=Hierarchical&sortBy=-ym%3Aef%3AusersInStep1&showTotal=false&metricValueMode=Absolute&screenMode=Default&sh=d5bfbcd7fb07684558493db9119c27bb&table=event_funnels",
+      "verified": true
+    },
+    {
+      "name": "Обучение — перемешивание, скрытые и пары",
+      "events": [
+        "level_010_started",
+        "tutorial_booster_shuffle_activate_completed",
+        "level_010_completed",
+        "level_012_started",
+        "tutorial_mechanics_lesson_mystery_completed",
+        "level_012_completed",
+        "level_020_started",
+        "tutorial_mechanics_lesson_linked_completed",
+        "level_020_completed",
+        "level_030_started"
+      ],
+      "url": "https://metrika.yandex.ru/stat/b133b143-9735-4660-bcf3-7394a451ba93?id=112386670&period=month&group=day&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=true&view=Hierarchical&sortBy=-ym%3Aef%3AusersInStep1&showTotal=false&metricValueMode=Absolute&screenMode=Default&sh=d5bfbcd7fb07684558493db9119c27bb&table=event_funnels",
+      "verified": true
+    },
+    {
+      "name": "Обучение — механики 30–100",
+      "events": [
+        "level_030_started",
+        "tutorial_mechanics_lesson_ice_completed",
+        "tutorial_mechanics_lesson_keys_completed",
+        "tutorial_mechanics_lesson_sections_completed",
+        "tutorial_mechanics_lesson_crates_completed",
+        "tutorial_mechanics_lesson_large_completed",
+        "tutorial_mechanics_lesson_swap_completed"
+      ],
+      "url": "https://metrika.yandex.ru/stat/bc4bc4ca-917a-4e16-b807-45c4e86d5a23?id=112386670&period=month&group=day&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=true&view=Hierarchical&sortBy=-ym%3Aef%3AusersInStep1&showTotal=false&metricValueMode=Absolute&screenMode=Default&sh=49ce8d1acfe8d9fcabca6844e4859583&table=event_funnels",
+      "verified": true
+    },
+    {
+      "name": "Обучение — сочетания механик 100–180",
+      "events": [
+        "tutorial_mechanics_lesson_swap_completed",
+        "tutorial_mechanics_lesson_hidden_sections_completed",
+        "tutorial_mechanics_lesson_loop_completed",
+        "tutorial_mechanics_lesson_hidden_linked_completed",
+        "tutorial_mechanics_lesson_swap_group_completed"
+      ],
+      "url": "https://metrika.yandex.ru/stat/0951751d-774c-47ee-b15a-a2d251587a9d?id=112386670&period=month&group=day&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=true&view=Hierarchical&sortBy=-ym%3Aef%3AusersInStep1&showTotal=false&metricValueMode=Absolute&screenMode=Default&sh=e9a6cf1d03fe0a200ca6273975c3627e&table=event_funnels",
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "tutorial_handlers": "Real basic/filter/booster/lesson handlers with doubles; duplicate callbacks, wrong actions, timeout, restart, winter suppression, failed booster actions and target retries.",
+  "managed_compile": [
+    "UNITY_EDITOR + UNITY_WEBGL",
+    "UNITY_WEBGL without UNITY_EDITOR"
+  ],
+  "regressions": [
+    "SDK startup",
+    "ads and purchases",
+    "boosters and level funnels",
+    "WebGL JavaScript bridge doubles"
+  ],
+  "webgl_build": "Isolated IL2CPP WebGL smoke player succeeded with production analytics, GameAnalytics and Your Games Metrica interfaces/jslib. Gameplay/UI isolated; no real counter/keys or events.",
+  "metrica_counter": 112386670,
+  "verified_goals": 27,
+  "verified_funnels": 5,
+  "real_tutorial_event_delivery": "Pending publication of the updated game build; no production events sent by tests."
+}

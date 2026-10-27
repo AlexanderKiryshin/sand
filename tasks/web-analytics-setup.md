@@ -17,7 +17,7 @@ MirraSDK продолжает обслуживать платформу, рек�
 
 Проверки callback рекламы и завершения уровней: `powershell -File Tools/check_ad_analytics.ps1` (путь к Unity Data можно передать через `-UnityData`). Проверка передачи целей в JavaScript-мост Метрики: `node Tools/check_web_analytics.cjs`. Используются имитации SDK, production-события не отправляются.
 
-`buy_inapp` фиксирует только подтверждённую MirraSDK новую покупку: все шесть товаров магазина, включая монеты, наборы и отключение рекламы. Параметры `product_id` и `name` содержат ID товара, `result=success`, `level` — номер уровня с 1. Повторный callback успеха одного запроса игнорируется. Ошибки оплаты и RestorePurchases не создают новую покупку. Денежная сумма и выручка этим событием не передаются. Проверки callback покупки входят в `Tools/check_ad_analytics.ps1`.
+`buy_inapp` фиксирует только подтверждённую MirraSDK новую покупку: монеты, наборы, бустеры и отключение рекламы. Параметры `product_id` и `name` содержат ID товара, `result=success`, `level` — номер уровня с 1. Повторный callback успеха одного запроса игнорируется. Ошибки оплаты и RestorePurchases не создают новую покупку. Денежная сумма и выручка этим событием не передаются. Проверки callback покупки входят в `Tools/check_ad_analytics.ps1`.
 
 В счётчике 112386670 через интерфейс Метрики созданы цели с точным совпадением идентификатора: `level_completed` (669604937), `video_ads_started` (669604948), `video_ads_success` (669605164), `buy_inapp` (669605805). Создание целей проверено; поступление реальных событий из опубликованной сборки не проверено.
 
@@ -27,18 +27,19 @@ MirraSDK продолжает обслуживать платформу, рек�
 
 | ID товара Mirra | Событие Метрики | ID цели |
 | --- | --- | --- |
-| beginerKit_150 | purchase_beginner_kit | 669606163 |
 | premium_kit_75 | purchase_premium_kit | 669606182 |
-| gold_300 | purchase_gold_300 | 669606252 |
-| gold_700 | purchase_gold_700 | 669606350 |
-| gold_1200 | purchase_gold_1200 | 669606355 |
+| gold_800 | purchase_gold_300 | 669606252 |
+| gold_1500 | purchase_gold_700 | 669606350 |
+| gold_3000 | purchase_gold_1200 | 669606355 |
 | removeAd | purchase_remove_ads | 669606360 |
+
+ID золотых пакетов обновлены под выдачу 800/1500/3000 монет. Имена существующих целей Метрики сохранены для непрерывности статистики; параметр `product_id` содержит новый ID. `beginerKit_150` удалён из магазина и обработчиков покупки, его историческая цель больше не отправляется. Актуальный состав и целевые цены всех товаров находятся в `tasks/iap-catalog.json`; фактические цены игра получает от площадки через SDK.
 
 Все цели созданы с точным совпадением через интерфейс счётчика и проверены в списке. Общий счётчик покупок смотрите по `buy_inapp`: складывать его с отдельными товарами не нужно, это два представления одних покупок.
 
 События буферизуются до готовности каждого сервиса отдельно. Editor, предпросмотр и проверки не отправляют production-события. Без ID/ключей отправка соответствующему сервису не запускается.
 
-Проверены логика попыток, JavaScript-мосты с имитацией SDK и компиляция WebGL-веток C#. В установленном Unity отсутствует WebGL Build Support, поэтому IL2CPP-сборка и поступление событий в реальные кабинеты пока не проверены.
+Проверены логика попыток, JavaScript-мосты с имитацией SDK и компиляция WebGL-веток C#. На этапе первичной интеграции WebGL Build Support отсутствовал. Позже модуль установлен; результат изолированной IL2CPP smoke-сборки аналитики указан в разделе шагов туториала ниже.
 
 Официальная документация: [Your Games Metrica](https://max-games.ru/plugin-yg/doc/metrica/), [GameAnalytics Unity](https://docs.gameanalytics.com/event-tracking-and-integrations/sdks-and-collection-api/game-engine-sdks/unity/).
 
@@ -67,3 +68,29 @@ MirraSDK продолжает обслуживать платформу, рек�
 Проверены существующие 79 целей, включая `level_started` (669614090), `level_completed` (669604937), `level_restarted` (669617420), `interstitial_shown` (669606027), `rewarded_shown` (669606127). Дубли не создавались. В отчёте за 1–6 октября на момент проверки «Нет данных по цели»; реальный приём событий пока не подтверждён.
 
 Доступна draft-сборка sand[14]-mirraSDK[5.1.31]; в её DOM присутствуют tag.js и инициализация счётчика 112386670, в консоли есть вызовы «Metrica send». Встроенная диагностическая панель при прямом открытии iframe не появилась. Наличие скрипта и вызовов не доказывает доставку в отчёты. Обычная ссылка без draft в используемой браузерной сессии показывает недоступность игры. Код аналитики и unityApp.js при этой настройке не изменялись; пересборка для изменения адресов счётчика не нужна. Подтверждение настроек: `tasks/previews/metrika-game-623948-addresses.jpg`.
+
+## Шаги туториала — 23 октября 2026
+
+В `TutorialController` и `SandEconomyHud` добавлены события каждого шага: `tutorial_step_started`, `tutorial_step_completed`, `tutorial_step_skipped`. Параметры `tutorial_id`, `step`, `step_id`, `step_status`, `reason` дополняют контекст уровня и попытки (`level`, `level_id`, `attempt`, `attempt_id`, время, ходы и бустеры). Повторный показ подсказки, смена языка и повторные callbacks не создают дублей внутри попытки. Перезапуск начинает новую попытку. Зимняя кампания по-прежнему не запускает обучение.
+
+Пять основных действий: первое ведро (`basic/pick`), его заполнение (`basic/watch_fill`), повторный ход (`basic/repeat`), выбор цвета (`filter/pick`), сброс фильтра (`filter/reset`). Таймер ожидания записывает `skipped` с `reason=timeout`; он не создаёт успешного заполнения. Старое `tutorial_completed` сохраняет прежний смысл первого завершения базового обучения на уровне 1.
+
+Обучение бустерам учитывает действительное включение и успешный выбор цели; для заполнения отдельно учитывается размещение ведра на ленте. Неудачное действие не завершает шаг, отмена и повторное включение не дублируют достижения. Подсказки механик на уровнях 12–180 фиксируют показ и подтверждение закрытием (`reason=hint_dismissed`).
+
+Для завершения шага дополнительно отправляется стабильная цель `tutorial_<tutorial_id>_<step_id>_completed`. Общую цель `tutorial_step_completed` и отдельные цели не складывать: это два представления одного действия. События идут через существующий WebGameAnalytics одновременно в Метрику и в design-события GameAnalytics `gameplay:*`.
+
+В счётчике **112386670 (sand)** через интерфейс созданы и проверены **27 целей** с точным совпадением, включая старое событие `tutorial_completed`. Точные идентификаторы и ID целей: [goals.json](tutorial-analytics/goals.json). Полный контракт: [contract.json](tutorial-analytics/contract.json).
+
+Созданы и повторным открытием настроек проверены пять последовательных воронок без ограничения окна:
+
+- [Обучение — первые вёдра и фильтр](https://metrika.yandex.ru/stat/a9763fd5-84fa-4444-8508-644db1d64e45?id=112386670&period=month&group=day&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=true&view=Hierarchical&sortBy=-ym%3Aef%3AusersInStep1&showTotal=false&metricValueMode=Absolute&screenMode=Default&sh=d5bfbcd7fb07684558493db9119c27bb&table=event_funnels) — 10 шагов.
+- [Обучение — магнит и заполнение](https://metrika.yandex.ru/stat/4c6eb4eb-8039-4384-b9ea-2bf7d743380e?id=112386670&period=month&group=day&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=true&view=Hierarchical&sortBy=-ym%3Aef%3AusersInStep1&showTotal=false&metricValueMode=Absolute&screenMode=Default&sh=d5bfbcd7fb07684558493db9119c27bb&table=event_funnels) — 10 шагов.
+- [Обучение — перемешивание, скрытые и пары](https://metrika.yandex.ru/stat/b133b143-9735-4660-bcf3-7394a451ba93?id=112386670&period=month&group=day&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=true&view=Hierarchical&sortBy=-ym%3Aef%3AusersInStep1&showTotal=false&metricValueMode=Absolute&screenMode=Default&sh=d5bfbcd7fb07684558493db9119c27bb&table=event_funnels) — 10 шагов.
+- [Обучение — механики 30–100](https://metrika.yandex.ru/stat/bc4bc4ca-917a-4e16-b807-45c4e86d5a23?id=112386670&period=month&group=day&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=true&view=Hierarchical&sortBy=-ym%3Aef%3AusersInStep1&showTotal=false&metricValueMode=Absolute&screenMode=Default&sh=49ce8d1acfe8d9fcabca6844e4859583&table=event_funnels) — 7 шагов.
+- [Обучение — сочетания механик 100–180](https://metrika.yandex.ru/stat/0951751d-774c-47ee-b15a-a2d251587a9d?id=112386670&period=month&group=day&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=true&view=Hierarchical&sortBy=-ym%3Aef%3AusersInStep1&showTotal=false&metricValueMode=Absolute&screenMode=Default&sh=e9a6cf1d03fe0a200ca6273975c3627e&table=event_funnels) — 5 шагов.
+
+Они дополняют четыре существующие воронки прохождения уровней, которые сохранены. Полные ссылки и порядок целей: [funnels.json](tutorial-analytics/funnels.json). В ссылках выбран последний месяц. Проценты каждой части считаются от её первого шага; это не единый процент от уровня 1 до 180. Метрика считает пользователей в последовательности событий; контекст `attempt_id` предназначен для отдельного анализа попыток.
+
+Проверены реальные обработчики с имитациями окружения (`Tools/check_tutorial_flow.ps1`), регрессии рекламы/покупок (`Tools/check_ad_analytics.ps1`), JavaScript-мосты (`Tools/check_web_analytics.cjs`), managed-компиляция полного изменённого UI/аналитики для Editor и WebGL (`Tools/check_tutorial_analytics_compile.ps1`). Дополнительно успешно собран отдельный IL2CPP WebGL player с реальными аналитическими C#-исходниками, GameAnalytics SDK и интерфейсами/jslib Метрики; игровой UI в этой smoke-сборке изолирован. Сборка содержит нулевой ID счётчика и не содержит ключей; SDK не инициализируется, production-события тестами не отправляются.
+
+Отчёт проверки: [validation.json](tutorial-analytics/validation.json). Подтверждение кабинета: [metrica-tutorial-funnel.jpg](tutorial-analytics/metrica-tutorial-funnel.jpg). Для поступления новых событий обучения требуется публикация обновлённой сборки игры; поступление реальных новых шагов пока не подтверждено.

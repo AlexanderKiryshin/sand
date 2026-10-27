@@ -72,11 +72,10 @@ public static class InventoryLoopRoute
     public static void ApplyStructure(LevelData level, int levelNumber)
     {
         level.EnsureBucketLayout(); level.EnsureConveyorMetadata();
-        // Early lessons occupy their own variants; later loop lessons recur every six levels.
-        int variant = levelNumber <= CampaignProgression.LoopLevel + 2
-            ? Mathf.Max(0, levelNumber - CampaignProgression.LoopLevel)
-            : 3 + Mathf.Max(0, levelNumber - CampaignProgression.LoopLevel - 3) / 6;
-        Cells = variant % 3 == 0 ? Variants[(variant / 3) % Variants.Length]
+        // Use compact introductory routes, then vary the route as the campaign advances.
+        int variant = Mathf.Max(0, levelNumber - CampaignProgression.LoopLevel);
+        Cells = levelNumber < CampaignProgression.LoopLevel + 12 ? CompactVariants[variant % CompactVariants.Length]
+            : variant % 3 == 0 ? Variants[(variant / 3) % Variants.Length]
             : CompactVariants[(variant - variant / 3 - 1) % CompactVariants.Length];
         level.inventoryLoopCells = (int[])Cells.Clone();
         for (int i = 0; i < LevelData.BucketLayoutCellCount; i++)

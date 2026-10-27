@@ -35,9 +35,7 @@ public class TutorialController : MonoBehaviour
 
     public void HandleBucketFilled(Bucket bucket)
     {
-        if (!tutorialEnabled || completed || phase != 1) return;
-        phase = 2;
-        BeginFirstStep();
+        FinishWatchStep(true);
     }
 
     public void HandleLevelCompleted()
@@ -75,7 +73,7 @@ public class TutorialController : MonoBehaviour
         if (tutorialEnabled && phase == 1)
         {
             watchTime += Time.unscaledDeltaTime;
-            if (watchTime > 20f) { phase = 2; BeginFirstStep(); }
+            if (watchTime > 20f) FinishWatchStep(false);
         }
         if (!stepActive || completed)
         {
@@ -200,6 +198,7 @@ public class TutorialController : MonoBehaviour
                 {
                     gameUI.SetTutorialHint(lesson);
                     levelHintActive = true;
+                    Analytic.TutorialStep("mechanics", 1, CampaignProgression.GetLessonId(manager.CampaignLevelIndex), "started");
                 }
             }
 
@@ -250,6 +249,9 @@ public class TutorialController : MonoBehaviour
 
     public void HandleHintDismissed()
     {
+        if (levelHintActive && gameManager != null && gameManager.CampaignLevelIndex > 0
+            && CampaignProgression.IsLessonStart(gameManager.CampaignLevelIndex))
+            Analytic.TutorialStep("mechanics", 1, CampaignProgression.GetLessonId(gameManager.CampaignLevelIndex), "completed", "hint_dismissed");
         levelHintActive = false;
     }
 
@@ -267,6 +269,8 @@ public class TutorialController : MonoBehaviour
 
         if (phase == 0)
         {
+            Analytic.TutorialStep("basic", 1, "pick", "completed");
+            Analytic.TutorialStep("basic", 2, "watch_fill", "started");
             phase = 1;
             stepActive = false;
             watchTime = 0f;
@@ -274,7 +278,19 @@ public class TutorialController : MonoBehaviour
             if (gameUI != null) gameUI.SetTutorialHint(CampaignText.Get("tutorial_watch"), 2);
             if (bucketInventoryUI != null) bucketInventoryUI.Refresh();
         }
-        else CompleteTutorial();
+        else
+        {
+            Analytic.TutorialStep("basic", 3, "repeat", "completed");
+            CompleteTutorial();
+        }
+    }
+
+    private void FinishWatchStep(bool filled)
+    {
+        if (!tutorialEnabled || completed || phase != 1) return;
+        Analytic.TutorialStep("basic", 2, "watch_fill", filled ? "completed" : "skipped", filled ? "bucket_filled" : "timeout");
+        phase = 2;
+        BeginFirstStep();
     }
 
     private void BeginFirstStep()
@@ -293,6 +309,7 @@ public class TutorialController : MonoBehaviour
 
         stepActive = true;
         animationTime = 0f;
+        Analytic.TutorialStep("basic", phase == 0 ? 1 : 3, phase == 0 ? "pick" : "repeat", "started");
 
         if (gameUI != null)
         {
@@ -552,13 +569,19 @@ public class TutorialController : MonoBehaviour
 
     private void ShowFilterHint()
     {
+        Analytic.TutorialStep("filter", FilterTutorialStep == 1 ? 1 : 2, FilterTutorialStep == 1 ? "pick" : "reset", "started");
         gameUI?.SetTutorialHint(CampaignText.Get(FilterTutorialStep == 1 ? "tutorial_filter_pick" : "tutorial_filter_all"), FilterTutorialStep == 1 ? 4 : 5);
     }
     private void HandleFilterSelected(byte selected)
     {
-        if (FilterTutorialStep == 1 && filterPanel != null && selected != 0 && selected == filterPanel.RedColor) { FilterTutorialStep = 2; ShowFilterHint(); }
+        if (FilterTutorialStep == 1 && filterPanel != null && selected != 0 && selected == filterPanel.RedColor)
+        {
+            Analytic.TutorialStep("filter", 1, "pick", "completed");
+            FilterTutorialStep = 2; ShowFilterHint();
+        }
         else if (FilterTutorialStep == 2 && selected == 0)
         {
+            Analytic.TutorialStep("filter", 2, "reset", "completed");
             FilterTutorialStep = 0; SetTutorialVisualsVisible(false);
             gameUI?.SetHintVisible(false); bucketInventoryUI?.Refresh();
         }

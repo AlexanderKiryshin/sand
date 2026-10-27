@@ -19,7 +19,7 @@ public class BucketInventory
     public IEnumerable<int> CrateLayoutIndices => crateLayoutIndices;
     public bool IsGateClosed(Bucket bucket) => bucket != null && bucket.GateKeyId != 0 && !openGates.Contains(bucket.GateKeyId);
     public bool IsCrateCellClosed(int index) => activeLevel != null && activeLevel.alternatingCrates
-        && index >= 0 && index % LevelData.BucketLayoutColumns % 2 == (CratesOpen ? 1 : 0);
+        && crateLayoutIndices.Contains(index) && index % LevelData.BucketLayoutColumns % 2 == (CratesOpen ? 1 : 0);
     public bool IsCrateCovered(Bucket bucket) => bucket != null && IsCrateCellClosed(bucket.LayoutIndex);
     public void HandleBucketFilled(Bucket bucket)
     {
@@ -293,8 +293,6 @@ public class BucketInventory
         {
             ColorQuantizer.BucketQueueItem item = remainingQueue[i];
             Bucket bucket = new Bucket(item.colorIndex, item.capacity, i < visibleCount ? shuffledSlots[i] : -1);
-            if (levelData.campaignLevel)
-                bucket.SetModifiers(i % 5 == 4 ? levelData.frostMoves : 0, levelData.mysteryBuckets && i >= 5);
             if (i < visibleCount) buckets.Add(bucket);
             else reserve.Enqueue(bucket);
         }
@@ -310,7 +308,7 @@ public class BucketInventory
             int sections = CampaignProgression.SectionBucketCount(EstimateLevelNumber(level));
             target += level.loopInventory ? Mathf.Min(2, sections) : sections;
         }
-        if (level.largeBuckets) target++;
+        if (level.largeBuckets) target += CampaignProgression.LargeBucketCount(EstimateLevelNumber(level));
         // Split the actual sand budget; never create extra demand or reduce authored cup counts.
         while (queue.Count < target)
         {
@@ -540,27 +538,34 @@ public class BucketInventory
         pool.AddRange(reserve);
         if (level.largeBuckets)
         {
-            bool merged = false;
-            for (int i = 5; i < pool.Count && !merged; i++)
-            for (int j = i + 1; j < pool.Count; j++)
-                if (pool[i].ColorIndex == pool[j].ColorIndex && pool[i].Capacity == pool[j].Capacity)
-                { pool[i].MakeLarge(pool[j].Capacity); pool.RemoveAt(j); TotalBucketCount--; merged = true; break; }
+            int wanted = CampaignProgression.LargeBucketCount(EstimateLevelNumber(level));
+            for (int made = 0; made < wanted; made++)
+            {
+                var candidates = pool.Take(LevelData.BucketLayoutCellCount).Where(b => b.SlotCost == 1).ToList();
+                Shuffle(candidates);
+                var first = candidates.FirstOrDefault(b => pool.Any(other => other != b && other.SlotCost == 1 && other.ColorIndex == b.ColorIndex));
+                if (first == null) break;
+                var donors = pool.Where(b => b != first && b.SlotCost == 1 && b.ColorIndex == first.ColorIndex).ToList();
+                Shuffle(donors);
+                first.MakeLarge(donors[0].Capacity); pool.Remove(donors[0]); TotalBucketCount--;
+            }
         }
         if (level.sectionBuckets)
         {
             int wanted = CampaignProgression.SectionBucketCount(EstimateLevelNumber(level));
             if (level.loopInventory) wanted = Mathf.Min(wanted, 2);
-            int made = 0;
-            for (int i = 0; i + 1 < pool.Count && made < wanted; i++)
+            for (int made = 0; made < wanted; made++)
             {
-                if (pool[i].SlotCost != 1 || pool[i].HasSecondSection) continue;
-                for (int j = i + 1; j < pool.Count; j++)
-                {
-                    if (pool[j].SlotCost != 1 || pool[j].HasSecondSection || pool[i].ColorIndex == pool[j].ColorIndex) continue;
-                    pool[i].AddSection(pool[j].ColorIndex, pool[j].Capacity);
-                    pool[i].SetModifiers(0, false);
-                    pool.RemoveAt(j); TotalBucketCount--; made++; break;
-                }
+                var candidates = pool.Take(LevelData.BucketLayoutCellCount).Where(b => b.SlotCost == 1 && !b.HasSecondSection).ToList();
+                Shuffle(candidates);
+                var first = candidates.FirstOrDefault(b => pool.Any(other => other != b && other.SlotCost == 1
+                    && !other.HasSecondSection && other.ColorIndex != b.ColorIndex));
+                if (first == null) break;
+                var donors = pool.Where(b => b != first && b.SlotCost == 1 && !b.HasSecondSection && b.ColorIndex != first.ColorIndex).ToList();
+                Shuffle(donors);
+                first.AddSection(donors[0].ColorIndex, donors[0].Capacity);
+                first.SetModifiers(0, false);
+                pool.Remove(donors[0]); TotalBucketCount--;
             }
         }
         // Repack into the existing structural template after merging, preserving every grain.
@@ -586,14 +591,35 @@ public class BucketInventory
             for (int index = 0; index < LevelData.BucketLayoutCellCount; index++)
                 crateLayoutIndices.Add(index);
         }
+        ApplyLimitedModifiers(level);
         EnsureVisibleIce(level);
         EnsurePlayableOpening(level);
+    }
+
+    private void ApplyLimitedModifiers(LevelData level)
+    {
+        int number = EstimateLevelNumber(level);
+        var plain = AllInitialBuckets().Where(b => !b.HasSecondSection && b.LinkedPartner == null
+            && b.SwapPartner == null && b.KeyId == 0 && b.GateKeyId == 0 && b.SlotCost == 1).ToList();
+        Shuffle(plain);
+        // Rotate the focal column and depth by level; the remaining positions vary by run.
+        int anchor = 5 * (1 + number / 5 % 4) + number % 5;
+        var waiting = plain.OrderBy(b => b.LayoutIndex == anchor ? 0 : b.LayoutIndex >= 5 ? 1 : b.LayoutIndex < 0 ? 3 : 2).ToList();
+        int frozen = level.frostMoves > 0 ? CampaignProgression.FrozenBucketCount(number) : 0;
+        int hidden = level.mysteryBuckets ? CampaignProgression.MysteryBucketCount(number) : 0;
+        for (int i = 0; i < waiting.Count; i++)
+            waiting[i].SetModifiers(i < frozen ? level.frostMoves : 0, i >= frozen && i < frozen + hidden);
     }
 
     private void ApplyAdvancedMysteryRules(LevelData level)
     {
         int number = EstimateLevelNumber(level);
-        int wanted = number < 230 ? 1 : 2;
+        if (level.mysteryBuckets && CampaignProgression.IsFullMysteryLevel(number))
+        {
+            foreach (var bucket in AllInitialBuckets()) bucket.SetModifiers(bucket.FrostMoves, true);
+            return;
+        }
+        int wanted = number < 230 || CampaignProgression.MechanicCountFor(number) >= 3 ? 1 : 2;
         if (CampaignProgression.HasHiddenSections(level, number))
         {
             // The introduction must show a question mark before its route opens,
@@ -717,30 +743,16 @@ public class BucketInventory
 
     private void PlaceSpecialsOnRows(LevelData level)
     {
-        // Keys and 1|2 specials prefer rows 1-3 (indices 0-2); locks use rows 4-5 later.
-        var front = new List<int>();
-        var back = new List<int>();
-        foreach (var bucket in buckets)
-        {
-            int row = bucket.LayoutIndex / LevelData.BucketLayoutColumns;
-            if (row <= 2) front.Add(bucket.LayoutIndex); else back.Add(bucket.LayoutIndex);
-        }
-        if (front.Count == 0 || back.Count == 0) return;
-        var specials = new List<Bucket>();
-        foreach (var bucket in buckets)
-            if (bucket.HasSecondSection || bucket.KeyId != 0) specials.Add(bucket);
+        var specials = buckets.Where(b => b.HasSecondSection || b.SlotCost > 1).ToList();
         Shuffle(specials);
-        for (int i = 0; i < specials.Count && front.Count > 0; i++)
+        foreach (var special in specials)
         {
-            if (specials[i].LayoutIndex / LevelData.BucketLayoutColumns <= 2) continue;
-            if (specials[i].LinkedPartner != null) continue;
-            int target = front[UnityEngine.Random.Range(0, front.Count)];
-            Bucket occupant = GetBucketAtLayoutIndex(target);
-            if (occupant == null || occupant == specials[i] || occupant.LinkedPartner != null) continue;
-            int old = specials[i].LayoutIndex;
-            specials[i].SetLayoutIndex(target);
-            occupant.SetLayoutIndex(old);
-            front.Remove(target);
+            var targets = buckets.Where(b => b != special && !b.HasSecondSection && b.SlotCost == 1
+                && b.KeyId == 0 && b.GateKeyId == 0 && b.LinkedPartner == null && b.SwapPartner == null).ToList();
+            if (CampaignProgression.IsLessonStart(EstimateLevelNumber(level) - 1))
+                targets = targets.Where(b => b.LayoutIndex < 10).ToList();
+            Shuffle(targets);
+            if (targets.Count > 0) SwapBucketInto(special, targets[0].LayoutIndex);
         }
     }
 
@@ -923,10 +935,13 @@ public class BucketInventory
         if (front.Count == 0) front = buckets.Where(b => !b.HasSecondSection && b.LinkedPartner == null).ToList();
         if (front.Count == 0) return;
         Bucket key = front[UnityEngine.Random.Range(0, front.Count)];
-        if (level.campaignTemplateVersion > 0 && !BucketRouteAccess.IsAccessible(key.LayoutIndex, level, this))
+        if (EstimateLevelNumber(level) == CampaignProgression.KeysLevel && !BucketRouteAccess.IsAccessible(key.LayoutIndex, level, this))
         {
             // A key behind its own locked approach makes an otherwise connected board insoluble.
-            var exit = buckets.FirstOrDefault(b => b != key && b.LayoutIndex < LevelData.BucketLayoutColumns);
+            var exits = buckets.Where(b => b != key && b.LayoutIndex < LevelData.BucketLayoutColumns
+                && !b.HasSecondSection && b.SlotCost == 1).ToList();
+            Shuffle(exits);
+            var exit = exits.FirstOrDefault();
             if (exit != null)
             {
                 int old = key.LayoutIndex;
@@ -935,11 +950,13 @@ public class BucketInventory
             }
         }
         key.KeyId = 1; key.SetModifiers(0, false);
-        var locks = buckets.Where(b => b != key && b.LayoutIndex / LevelData.BucketLayoutColumns >= 3
-            && b.LinkedPartner == null && !b.HasSecondSection).ToList();
+        var locks = buckets.Where(b => b != key && b.LayoutIndex / LevelData.BucketLayoutColumns >= 1
+            && (b.LayoutIndex % 5 != key.LayoutIndex % 5 || b.LayoutIndex > key.LayoutIndex)
+            && b.LinkedPartner == null && !b.HasSecondSection && b.SlotCost == 1).ToList();
+        Shuffle(locks);
         if (locks.Count < 2)
             locks = buckets.Where(b => b != key && b.LinkedPartner == null && !b.HasSecondSection).Reverse().Take(3).ToList();
-        int lockCount = Mathf.Min(3, locks.Count);
+        int lockCount = Mathf.Min(CampaignProgression.LockBucketCount(EstimateLevelNumber(level)), locks.Count);
         for (int i = 0; i < lockCount; i++) locks[i].GateKeyId = 1;
     }
 
@@ -951,8 +968,9 @@ public class BucketInventory
             return;
         }
         bool preferDifferentRows = EstimateLevelNumber(level) >= CampaignProgression.SwapLevel;
-        if (!TryAssignSwapPair(preferDifferentRows) && preferDifferentRows)
-            TryAssignSwapPair(false);
+        int wanted = CampaignProgression.SwapBucketCount(EstimateLevelNumber(level), buckets.Count) / 2;
+        for (int pair = 0; pair < wanted; pair++)
+            if (!TryAssignSwapPair(preferDifferentRows) && !TryAssignSwapPair(false)) break;
     }
 
     private void PlaceSwapGroup(LevelData level)
@@ -977,11 +995,13 @@ public class BucketInventory
 
     private bool TryAssignSwapPair(bool requireDifferentRows)
     {
-        for (int i = 0; i < buckets.Count; i++)
-        for (int j = i + 1; j < buckets.Count; j++)
+        var candidates = buckets.ToList();
+        Shuffle(candidates);
+        for (int i = 0; i < candidates.Count; i++)
+        for (int j = i + 1; j < candidates.Count; j++)
         {
-            Bucket a = buckets[i], b = buckets[j];
-            if (a.HasSecondSection || b.HasSecondSection || a.SlotCost != 1 || b.SlotCost != 1
+            Bucket a = candidates[i], b = candidates[j];
+            if (a.SwapPartner != null || b.SwapPartner != null || a.HasSecondSection || b.HasSecondSection || a.SlotCost != 1 || b.SlotCost != 1
                 || a.LinkedPartner != null || b.LinkedPartner != null || a.KeyId != 0 || b.KeyId != 0
                 || a.GateKeyId != 0 || b.GateKeyId != 0 || a.ColorIndex == b.ColorIndex) continue;
             if (requireDifferentRows

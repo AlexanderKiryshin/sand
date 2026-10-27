@@ -15,7 +15,7 @@ namespace UnityEngine {
  public enum NetworkReachability {NotReachable,ReachableViaLocalAreaNetwork}
 }
 namespace MirraGames.SDK.Common {
- public class ProductData {public string Tag,Currency;public float PriceFloat;public ProductData(string tag,float price,string currency){Tag=tag;PriceFloat=price;Currency=currency;}}
+ public class ProductData {public string Tag,Currency;public float PriceFloat;public ProductData(string tag,float price,string currency){Tag=tag;PriceFloat=price;Currency=currency;}public string GetFullPriceFloat()=>PriceFloat+" "+Currency;}
 }
 public static class GameProgressStore {
  private static Dictionary<string,int> values=new Dictionary<string,int>();
@@ -61,6 +61,10 @@ public static class CosmeticChecks {
  static int Count(string name)=>WebGameAnalytics.Events.Count(item=>item.Key==name);
  static void Reset(){GameProgressStore.Clear();WebGameAnalytics.Events.Clear();WebGameAnalytics.Throw=false;Analytic.ResetSession();}
  public static void Run(){
+  Reset();
+  Require(ThemeCatalog.Acquire(4,ThemeCatalog.Part.Casings,"coins"),"Casing purchase failed");
+  Require(!ThemeCatalog.IsUnlocked(4,ThemeCatalog.Part.Conveyor),"Buying Ocean casings also unlocked the Ocean conveyor");
+  Require(!ThemeCatalog.IsUnlocked(4,ThemeCatalog.Part.Background),"Buying Ocean casings also unlocked a background");
   Reset();Analytic.BeginLevel(49,new LevelData(),false);WebGameAnalytics.Events.Clear();
   Require(!ThemeCatalog.Select(12,ThemeCatalog.Part.Background),"Locked selection accepted");
   Require(Count("cosmetic_selected")==0,"Locked preview emitted selection");

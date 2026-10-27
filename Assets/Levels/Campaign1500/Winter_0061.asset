@@ -70,10 +70,10 @@ MonoBehaviour:
   seasonalNumber: 61
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 6
+  frostMoves: 0
   sectionBuckets: 1
-  keyGates: 1
-  linkedBuckets: 1
+  keyGates: 0
+  linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0

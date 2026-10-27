@@ -70,15 +70,15 @@ MonoBehaviour:
   seasonalNumber: 113
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 8
-  sectionBuckets: 1
-  keyGates: 1
+  frostMoves: 0
+  sectionBuckets: 0
+  keyGates: 0
   linkedBuckets: 1
   largeBuckets: 1
   alternatingCrates: 0
-  swappingColors: 1
+  swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 1
+  mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: f5216bdd4aa9ed74697a2b624e7edf6a,
     type: 2}
   usesTiles: 0

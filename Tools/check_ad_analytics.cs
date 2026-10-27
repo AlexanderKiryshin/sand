@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace UnityEngine
 {
-    public class GameObject { public bool activeSelf=true; public void SetActive(bool active) { activeSelf=active; } }
+    public class GameObject { public bool activeSelf=true; public bool activeInHierarchy => activeSelf; public void SetActive(bool active) { activeSelf=active; } }
     public class Transform { public void SetAsLastSibling() {} }
     public class MonoBehaviour
     {
@@ -92,7 +92,7 @@ public static class GameProgressStore
     public static int GetInt(string key, int fallback = 0) => ints.TryGetValue(key, out int value) ? value : fallback;
     public static void SetInt(string key, int value) { ints[key] = value; }
 }
-public class CoinManager { public static CoinManager instance = new CoinManager(); public void AddCoinsOnBuy(int count) {} }
+public class CoinManager { public static CoinManager instance = new CoinManager(); public int Coins; public void AddCoinsOnBuy(int count) { Coins += count; } }
 public class LocalizationManager { public static LocalizationManager Instance; public Action onLanguageChange; }
 public static class CampaignText { public static string Get(string value) => value; }
 public static class ProgressSaveService { public static int CurrentLevelIndex = 299, HighestUnlockedIndex; }
@@ -111,6 +111,39 @@ public static class AdAnalyticsChecks
 {
     private static void Require(bool condition, string message) { if (!condition) throw new Exception(message); }
     private static int Count(string name) => WebGameAnalytics.Events.Count(e => e.Key == name);
+    private static void CheckShopRewards(RewardedShop shop, System.Reflection.MethodInfo purchase)
+    {
+        var products = new[] {
+            new { Id = "gold_800", Gold = 800, Each = 0, Single = -1 },
+            new { Id = "gold_1500", Gold = 1500, Each = 0, Single = -1 },
+            new { Id = "gold_3000", Gold = 3000, Each = 0, Single = -1 },
+            new { Id = "premium_kit_75", Gold = 1000, Each = 5, Single = -1 },
+            new { Id = "removeAd", Gold = 4000, Each = 10, Single = -1 },
+            new { Id = "booster_magnet_10", Gold = 0, Each = 0, Single = 0 },
+            new { Id = "booster_fill_10", Gold = 0, Each = 0, Single = 1 },
+            new { Id = "booster_shuffle_10", Gold = 0, Each = 0, Single = 2 }
+        };
+        foreach (var product in products)
+        {
+            Reset(); CoinManager.instance.Coins = 0;
+            foreach (BoosterType type in Enum.GetValues(typeof(BoosterType))) GameProgressStore.SetInt(BoosterCatalog.GetSaveKey(type), 0);
+            var payments = MirraGames.SDK.MirraSDK.Payments = new MirraGames.SDK.FakePayments();
+            purchase.Invoke(shop, new object[] { product.Id });
+            Require(CoinManager.instance.Coins == 0, "Coins granted before payment success");
+            payments.Error(); payments.Success();
+            Require(CoinManager.instance.Coins == 0 && Enum.GetValues(typeof(BoosterType)).Cast<BoosterType>().All(type => BoosterService.instance.GetCharges(type) == 0), "Failed payment granted resources");
+            purchase.Invoke(shop, new object[] { product.Id }); payments.Success(); payments.Success();
+            Require(CoinManager.instance.Coins == product.Gold, "Wrong gold payout for " + product.Id + ": " + CoinManager.instance.Coins);
+            foreach (BoosterType type in Enum.GetValues(typeof(BoosterType)))
+                Require(BoosterService.instance.GetCharges(type) == product.Each + ((int)type == product.Single ? 10 : 0), "Wrong booster payout for " + product.Id);
+            Require(GameProgressStore.NoAds == (product.Id == "removeAd"), "Product changed the wrong no-ads entitlement");
+        }
+        Reset(); var removed = MirraGames.SDK.MirraSDK.Payments = new MirraGames.SDK.FakePayments();
+        foreach (string retired in new[] { "beginerKit_150", "gold_300", "gold_700", "gold_1200" })
+            purchase.Invoke(shop, new object[] { retired });
+        Require(removed.PurchaseRequests == 0, "Retired product can still initiate a payment");
+        Console.WriteLine("SHOP_REWARDS_CHECKS_PASS: 800/1500/3000 gold, unchanged bundles, x10 boosters, failed/duplicate callbacks, retired product rejected");
+    }
     private static AdManager Reset()
     {
         Analytic.ResetSession(); WebGameAnalytics.Events.Clear(); GameProgressStore.NoAds = false;
@@ -141,7 +174,7 @@ public static class AdAnalyticsChecks
         var bootingShop = new RewardedShop();
         var privateInstance = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic;
         typeof(RewardedShop).GetMethod("LoadDataOrInit", privateInstance).Invoke(bootingShop, null);
-        typeof(RewardedShop).GetMethod("Purchase", privateInstance).Invoke(bootingShop, new object[] { "gold_300" });
+        typeof(RewardedShop).GetMethod("Purchase", privateInstance).Invoke(bootingShop, new object[] { "gold_800" });
         typeof(RewardedShop).GetMethod("RestorePurchases", privateInstance).Invoke(bootingShop, null);
         Require(MirraGames.SDK.MirraSDK.Payments.PurchasedChecks == 0
             && MirraGames.SDK.MirraSDK.Payments.PurchaseRequests == 0 && MirraGames.SDK.MirraSDK.Payments.RestoreRequests == 0,
@@ -226,9 +259,9 @@ public static class AdAnalyticsChecks
         var earlyPrice = new TMPro.TextMeshProUGUI();
         var earlyButton = new UnityEngine.UI.Button { interactable = true };
         typeof(RewardedShop).GetMethod("SetPrice", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic)
-            .Invoke(null, new object[] { earlyPrice, "gold_300", earlyButton });
+            .Invoke(null, new object[] { earlyPrice, "gold_800", earlyButton });
         typeof(RewardedShop).GetMethod("Purchase", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic)
-            .Invoke(shop, new object[] { "gold_300" });
+            .Invoke(shop, new object[] { "gold_800" });
         Require(MirraGames.SDK.MirraSDK.Payments.PriceChecks == 0 && MirraGames.SDK.MirraSDK.Payments.PurchaseRequests == 0
             && !earlyButton.interactable, "Early shop interaction must not cross payments bridge");
         var init = (System.Collections.IEnumerator)typeof(RewardedShop).GetMethod("InitPaymentsRoutine",
@@ -245,11 +278,12 @@ public static class AdAnalyticsChecks
         BoosterService.instance = new BoosterService();
         var purchase = typeof(RewardedShop).GetMethod("Purchase", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
         var restore = typeof(RewardedShop).GetMethod("RestorePurchases", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+        CheckShopRewards(shop, purchase);
         var productGoals = new Dictionary<string, string>
         {
-            ["beginerKit_150"] = "purchase_beginner_kit", ["premium_kit_75"] = "purchase_premium_kit",
-            ["gold_300"] = "purchase_gold_300", ["gold_700"] = "purchase_gold_700",
-            ["gold_1200"] = "purchase_gold_1200", ["removeAd"] = "purchase_remove_ads"
+            ["premium_kit_75"] = "purchase_premium_kit",
+            ["gold_800"] = "purchase_gold_300", ["gold_1500"] = "purchase_gold_700",
+            ["gold_3000"] = "purchase_gold_1200", ["removeAd"] = "purchase_remove_ads"
         };
         foreach (string product in productGoals.Keys)
         {
@@ -262,7 +296,7 @@ public static class AdAnalyticsChecks
             Require(Count(productGoals[product]) == 1 && WebGameAnalytics.Events.Count(e => e.Key.StartsWith("purchase_")) == 1,
                 "One common purchase event and exactly one matching product event");
         }
-        Reset(); purchase.Invoke(shop, new object[] { "gold_300" });
+        Reset(); purchase.Invoke(shop, new object[] { "gold_800" });
         MirraGames.SDK.MirraSDK.Payments.Error(); MirraGames.SDK.MirraSDK.Payments.Success();
         Require(Count("buy_inapp") == 0, "Failed payment does not count");
         Require(!WebGameAnalytics.Events.Any(e => e.Key.StartsWith("purchase_")), "Failed payment has no product event");

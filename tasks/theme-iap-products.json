@@ -1,21 +1,46 @@
 {
   "type": "non-consumable",
+  "price_catalog": "iap-catalog.json",
   "products": [
     {
-      "tag": "sand_theme_stars",
-      "name": "Starry night"
+      "tag": "sand_conveyor_stars",
+      "name": "Starry night conveyor",
+      "category": "conveyor"
     },
     {
-      "tag": "sand_theme_artdeco",
-      "name": "Art deco"
+      "tag": "sand_conveyor_artdeco",
+      "name": "Art deco conveyor",
+      "category": "conveyor"
     },
     {
-      "tag": "sand_theme_marble",
-      "name": "Marble"
+      "tag": "sand_conveyor_marble",
+      "name": "Marble conveyor",
+      "category": "conveyor"
     },
     {
-      "tag": "sand_theme_wood",
-      "name": "Wood workshop"
+      "tag": "sand_conveyor_wood",
+      "name": "Wood workshop conveyor",
+      "category": "conveyor"
+    },
+    {
+      "tag": "sand_casings_stars",
+      "name": "Starry night casings",
+      "category": "casings"
+    },
+    {
+      "tag": "sand_casings_artdeco",
+      "name": "Art deco casings",
+      "category": "casings"
+    },
+    {
+      "tag": "sand_casings_marble",
+      "name": "Marble casings",
+      "category": "casings"
+    },
+    {
+      "tag": "sand_casings_wood",
+      "name": "Wood workshop casings",
+      "category": "casings"
     },
     {
       "tag": "sand_background_greenhouse",
@@ -185,5 +210,11 @@
       "pricing": "Configure the platform price at 50% of the sum of the three individual background prices in the same currency. UI reads actual SDK prices and savings."
     }
   ],
-  "registration": "Register these exact tags and prices in the platform payment catalog. The game reads localized prices from MirraSDK and disables purchases when the product is unavailable. Ownership is restored through SDK purchase restoration."
+  "legacy_restore_only": [
+    "sand_theme_stars",
+    "sand_theme_artdeco",
+    "sand_theme_marble",
+    "sand_theme_wood"
+  ],
+  "registration": "Register the eight sand_conveyor_* and sand_casings_* non-consumable products with separate platform prices. Each unlocks only its named part. Keep legacy sand_theme_* receipts available for restoration of the original conveyor, casings and background entitlement; do not offer those legacy products for new purchases. Background and bundle IDs are unchanged. The game reads localized prices from MirraSDK and disables purchases when the product is unavailable."
 }

@@ -195,11 +195,11 @@ public sealed class ThemeCustomizationMenu : MonoBehaviour
         if(!restored && GameSdkReadiness.IsReady)
         {
             restored=true;
-            try { MirraSDK.Payments.RestorePurchases(data=> { if(data==null)return;for(int i=8;i<ThemeCatalog.PremiumBackgroundEnd;i++)
-                {
-                    int owned=i;var part=i>=12?ThemeCatalog.Part.Background:ThemeCatalog.Part.Conveyor;
-                    data.RestoreProduct(ThemeCatalog.ProductTag(i,part),()=> {ThemeCatalog.Unlock(owned,part);Refresh();});
-                } }); }
+            try { MirraSDK.Payments.RestorePurchases(data=> {
+                if(data==null)return;
+                ThemeCatalog.RestorePurchases((tag,grant)=>data.RestoreProduct(tag,grant));
+                Refresh();
+            }); }
             catch(Exception e) { Debug.LogWarning("Theme restore unavailable: "+e.Message); }
         }
         if(IsOpen)

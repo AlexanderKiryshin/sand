@@ -1,0 +1,141 @@
+{
+  "counter_id": 112386670,
+  "verified": true,
+  "goals": [
+    {
+      "event": "tutorial_step_started",
+      "name": "Туториал — шаг показан",
+      "id": 673628412
+    },
+    {
+      "event": "tutorial_step_completed",
+      "name": "Туториал — шаг выполнен",
+      "id": 673628594
+    },
+    {
+      "event": "tutorial_step_skipped",
+      "name": "Туториал — шаг пропущен",
+      "id": 673628704
+    },
+    {
+      "event": "tutorial_completed",
+      "name": "Туториал — базовое обучение завершено",
+      "id": 673628711
+    },
+    {
+      "event": "tutorial_basic_pick_completed",
+      "name": "Туториал 1 — первое ведро выбрано",
+      "id": 673628716
+    },
+    {
+      "event": "tutorial_basic_watch_fill_completed",
+      "name": "Туториал 2 — первое заполнение",
+      "id": 673628747
+    },
+    {
+      "event": "tutorial_basic_repeat_completed",
+      "name": "Туториал 3 — повторный ход",
+      "id": 673628754
+    },
+    {
+      "event": "tutorial_filter_pick_completed",
+      "name": "Туториал 4 — выбор цвета",
+      "id": 673628761
+    },
+    {
+      "event": "tutorial_filter_reset_completed",
+      "name": "Туториал 5 — сброс фильтра",
+      "id": 673628768
+    },
+    {
+      "event": "tutorial_booster_magnet_activate_completed",
+      "name": "Туториал бустера — Магнит — включён",
+      "id": 673628773
+    },
+    {
+      "event": "tutorial_booster_magnet_target_completed",
+      "name": "Туториал бустера — Магнит — цель выбрана",
+      "id": 673628800
+    },
+    {
+      "event": "tutorial_booster_fill_place_bucket_completed",
+      "name": "Туториал бустера — Заполнение — ведро на ленте",
+      "id": 673628807
+    },
+    {
+      "event": "tutorial_booster_fill_activate_completed",
+      "name": "Туториал бустера — Заполнение — включено",
+      "id": 673628814
+    },
+    {
+      "event": "tutorial_booster_fill_target_completed",
+      "name": "Туториал бустера — Заполнение — цель выбрана",
+      "id": 673628821
+    },
+    {
+      "event": "tutorial_booster_shuffle_activate_completed",
+      "name": "Туториал бустера — Перемешивание — применено",
+      "id": 673628857
+    },
+    {
+      "event": "tutorial_mechanics_lesson_mystery_completed",
+      "name": "Подсказка 12 — скрытые вёдра",
+      "id": 673628872
+    },
+    {
+      "event": "tutorial_mechanics_lesson_linked_completed",
+      "name": "Подсказка 20 — соединённые вёдра",
+      "id": 673628882
+    },
+    {
+      "event": "tutorial_mechanics_lesson_ice_completed",
+      "name": "Подсказка 30 — лёд",
+      "id": 673628889
+    },
+    {
+      "event": "tutorial_mechanics_lesson_keys_completed",
+      "name": "Подсказка 40 — ключи",
+      "id": 673628896
+    },
+    {
+      "event": "tutorial_mechanics_lesson_sections_completed",
+      "name": "Подсказка 55 — секции",
+      "id": 673628903
+    },
+    {
+      "event": "tutorial_mechanics_lesson_crates_completed",
+      "name": "Подсказка 70 — ящики",
+      "id": 673628914
+    },
+    {
+      "event": "tutorial_mechanics_lesson_large_completed",
+      "name": "Подсказка 85 — большие вёдра",
+      "id": 673628921
+    },
+    {
+      "event": "tutorial_mechanics_lesson_swap_completed",
+      "name": "Подсказка 100 — парная смена цвета",
+      "id": 673628926
+    },
+    {
+      "event": "tutorial_mechanics_lesson_hidden_sections_completed",
+      "name": "Подсказка 120 — скрытые секции",
+      "id": 673628935
+    },
+    {
+      "event": "tutorial_mechanics_lesson_loop_completed",
+      "name": "Подсказка 140 — кольцо",
+      "id": 673628973
+    },
+    {
+      "event": "tutorial_mechanics_lesson_hidden_linked_completed",
+      "name": "Подсказка 160 — скрытые пары",
+      "id": 673628980
+    },
+    {
+      "event": "tutorial_mechanics_lesson_swap_group_completed",
+      "name": "Подсказка 180 — групповая смена цвета",
+      "id": 673629003
+    }
+  ]
+}

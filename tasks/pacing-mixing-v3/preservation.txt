@@ -1,0 +1,1 @@
+PASS: audited 10580 changed campaign asset lines against HEAD. Only mechanic flags, frostMoves, guided bucket order and the explicit level 240 capacity adjustment (147 -> 106; preceding revision 125) changed. Artwork, palettes, grids, total sand, seeds and level order are unchanged.

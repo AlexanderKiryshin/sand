@@ -158,9 +158,11 @@ public static class GameReworkVisualChecks
                 case 16:
                     var menu=UnityEngine.Object.FindObjectOfType<ThemeCustomizationMenu>();
                     GameProgressStore.SetBool("sand_theme_owned_4",false);
+                    GameProgressStore.SetBool("sand_theme_conveyor_owned_4",false);
+                    GameProgressStore.SetBool("sand_theme_casings_owned_4",false);
                     int coinStart=CoinManager.instance.Coins;CoinManager.instance.AddCoinsOnBuy(ThemeCatalog.CoinPrice(4));
                     menu.Open();menu.Choose(4);menu.ApplyPreview();
-                    GameReworkChecks.Require(ThemeCatalog.IsUnlocked(4)&&ThemeCatalog.Selected==4&&CoinManager.instance.Coins==coinStart,"Coin theme purchase or exact debit failed");
+                    GameReworkChecks.Require(ThemeCatalog.IsUnlocked(4,ThemeCatalog.Part.Conveyor)&&!ThemeCatalog.IsUnlocked(4,ThemeCatalog.Part.Casings)&&ThemeCatalog.Selected==4&&CoinManager.instance.Coins==coinStart,"Coin purchase leaked to casings or exact debit failed");
                     menu.ApplyPreview();GameReworkChecks.Require(CoinManager.instance.Coins==coinStart,"Owned theme charged twice");
                     GameProgressStore.SetBool("sand_theme_owned_8",false);menu.Choose(8);
                     GameReworkChecks.Require(!ThemeCatalog.IsUnlocked(8)&&CoinManager.instance.Coins==coinStart,"Paid-only theme bypassed payment");
@@ -351,9 +353,10 @@ public static class GameReworkVisualChecks
                     foreach(int id in Enumerable.Range(4,20))GameProgressStore.SetBool("sand_theme_owned_"+id,true);
                     foreach(int id in Enumerable.Range(31,ThemeCatalog.Count-31))GameProgressStore.SetBool("sand_theme_background_owned_"+id,true);
                     GameProgressStore.SetBool("sand_theme_owned_4",false);GameProgressStore.SetBool("sand_theme_background_owned_31",false);
+                    GameProgressStore.SetBool("sand_theme_conveyor_owned_4",false);GameProgressStore.SetBool("sand_theme_casings_owned_4",false);GameProgressStore.SetBool("sand_theme_background_owned_4",false);
                     if(CoinManager.instance.Coins>0)CoinManager.instance.TryToSpendCoins(CoinManager.instance.Coins);CoinManager.instance.AddCoinsOnBuy(1000);
                     UnityEngine.Object.FindObjectOfType<ShopGoldBadge>().RefreshCount();
-                    GameReworkChecks.Require(UnityEngine.Object.FindObjectOfType<ShopGoldBadge>().AvailableCount==2 && GameObject.Find("ShopGoldCounter").GetComponent<Image>().color.r>.8f,"Affordable gold counter not visible on shop icon");
+                    GameReworkChecks.Require(UnityEngine.Object.FindObjectOfType<ShopGoldBadge>().AvailableCount==4 && GameObject.Find("ShopGoldCounter").GetComponent<Image>().color.r>.8f,"Affordable gold counter not visible on shop icon");
                     var badgeBounds=new Vector3[4];GameObject.Find("ShopGoldCounter").GetComponent<RectTransform>().GetWorldCorners(badgeBounds);
                     GameReworkChecks.Require(badgeBounds.All(point=>Screen.safeArea.Contains(point)),"Shop gold badge is clipped by safe area");
                     Capture("44-shop-gold-badge");break;

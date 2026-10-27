@@ -66,7 +66,7 @@ public static class AllLevelPlayabilityChecks
             File.WriteAllText(Path.Combine(output, "progress.json"), "{\"checked\":" + results.Count + ",\"total\":" + cases.Length + ",\"passed\":" + results.Values.Count(r => r.passed) + ",\"unresolved\":" + results.Values.Count(r => !r.passed) + ",\"lastIndex\":" + item.index + "}");
         }
         int failures = results.Values.Count(r => !r.passed);
-        File.WriteAllText(Path.Combine(output, "status.txt"), (failures == 0 ? "PASS" : "UNRESOLVED") + ": " + results.Count + " levels checked; " + results.Values.Count(r => r.passed) + " completed; " + failures + " need deeper search. Actual sand, collection, conveyor and inventory; one grain per cell (production scene setting), five belt slots, no boosters, no artificial filling or recalls. One fixed layout seed per level. A bounded strategy failure does not prove impossibility.");
+        File.WriteAllText(Path.Combine(output, "status.txt"), (failures == 0 ? "PASS" : "UNRESOLVED") + ": " + results.Count + " levels checked; " + results.Values.Count(r => r.passed) + " completed; " + failures + " need deeper search. Actual sand, collection, conveyor and inventory; one grain per cell (production scene setting), five belt slots, no boosters, no artificial filling or recalls. Layout seeds are recorded in attempts.jsonl. A bounded strategy failure does not prove impossibility.");
         EditorApplication.Exit(failures == 0 ? 0 : 2);
     }
     static int IntEnv(string key, int fallback) { return int.TryParse(Environment.GetEnvironmentVariable(key), out int value) ? value : fallback; }
@@ -84,7 +84,8 @@ public static class AllLevelPlayabilityChecks
             {
                 if (level.campaignSeed != expectedSeed) throw new InvalidOperationException("Pinned runtime seed differs from witness seed");
             }
-            else level.campaignSeed = expectedSeed;
+            // Unpinned production levels use a fresh seed on every run.
+            else level.campaignSeed = unchecked(expectedSeed + IntEnv("SAND_PLAYABILITY_SEED_OFFSET", 0));
             result.seed = level.campaignSeed;
             if (forceSupplyOrder) level.bucketSettingsOverride.matchBucketOrderToSand = true;
             result.supplyOrder = level.bucketSettingsOverride.matchBucketOrderToSand;
@@ -261,6 +262,24 @@ public static class AllLevelPlayabilityChecks
         if (strategy == 2 && exits.Contains(level.loopInventory ? InventoryLoopRoute.Next(b.LayoutIndex) : b.LayoutIndex)) score += 600;
         if (strategy >= 3 && strategy < 6) score += demand[b.ColorIndex] * 800f / Mathf.Max(1, b.RemainingCapacity);
         if (strategy >= 6) score += ((b.LayoutIndex * 31337 + decisions * 7919 + strategy * 104729) & 255) * (strategy < 9 ? .25f : 2f);
+        if (strategy >= 12)
+        {
+            // Evaluate both linked cups and both sections against the actual outlet demand.
+            // These strategies only choose legal moves; physics and capacities stay unchanged.
+            score = 0;
+            foreach (var cup in b.LinkedPartner == null ? new[] { b } : new[] { b, b.LinkedPartner })
+            {
+                foreach (byte color in cup.HasSecondSection ? new[] { cup.FirstColor, cup.SecondColor }.Distinct() : new[] { cup.FirstColor })
+                {
+                    int remaining = cup.RemainingForColor(color);
+                    if (remaining <= 0) continue;
+                    score += demand[color] * (strategy % 3 == 0 ? 1f : 300f / remaining);
+                    if (belt.Entries.Any(e => e.Bucket.RemainingForColor(color) > 0)) score -= 1000;
+                }
+            }
+            if (b.KeyId != 0) score += 300;
+            if (strategy >= 15) score += ((b.LayoutIndex * 31337 + decisions * 7919 + strategy * 104729) & 255) * .25f;
+        }
         return score;
     }
     static Transform Rect(string name, Transform parent, float size)

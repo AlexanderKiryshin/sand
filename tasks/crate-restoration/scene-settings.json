@@ -1,0 +1,11 @@
+{
+  "ticksPerSecond": 60.0,
+  "maxTicksPerFrame": 16,
+  "maxCollectPerTick": 36,
+  "maxCollectPerFrame": 96,
+  "collectRowCount": 16,
+  "straightTicksBeforeDiagonal": 0,
+  "sandImageWidth": 650,
+  "conveyorWidth": 702,
+  "bucketWidth": 96
+}

@@ -55,12 +55,12 @@ MonoBehaviour:
   frostMoves: 3
   sectionBuckets: 0
   keyGates: 0
-  linkedBuckets: 1
+  linkedBuckets: 0
   largeBuckets: 0
   alternatingCrates: 0
   swappingColors: 0
   loopInventory: 0
-  mysteryBuckets: 1
+  mysteryBuckets: 0
   bucketSettingsOverride: {fileID: 11400000, guid: 530e902916f950f4c8b2029811989bf5,
     type: 2}
   usesTiles: 0

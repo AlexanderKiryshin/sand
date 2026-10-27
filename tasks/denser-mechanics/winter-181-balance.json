@@ -1,0 +1,7 @@
+{
+  "index": 1180,
+  "rule": "Assets/Levels/Campaign1500/WinterRules_0181.asset",
+  "old_max_grains_per_bucket": 147,
+  "new_max_grains_per_bucket": 100,
+  "reason": "Leave room for linked pairs on the five-slot belt; keep the full board and total sand unchanged."
+}

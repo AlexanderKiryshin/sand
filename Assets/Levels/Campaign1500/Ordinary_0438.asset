@@ -70,8 +70,8 @@ MonoBehaviour:
   seasonalNumber: 0
   beltCapacity: 5
   beltSpeedMultiplier: 1
-  frostMoves: 8
-  sectionBuckets: 1
+  frostMoves: 6
+  sectionBuckets: 0
   keyGates: 0
   linkedBuckets: 1
   largeBuckets: 0

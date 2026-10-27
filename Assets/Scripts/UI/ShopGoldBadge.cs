@@ -1,9 +1,8 @@
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-/// <summary>Counts affordable, unowned gold cosmetics; shared style unlocks count once.</summary>
+/// <summary>Counts affordable, unowned gold cosmetics independently in each category.</summary>
 public sealed class ShopGoldBadge : MonoBehaviour
 {
     public int AvailableCount {get;private set;}
@@ -12,15 +11,15 @@ public sealed class ShopGoldBadge : MonoBehaviour
     private float nextRefresh,changedAt;
     public static int CountAffordable(int gold,ThemeCatalog.Part? category=null)
     {
-        var products=new HashSet<string>();
+        int count=0;
         for(int p=0;p<3;p++)
         {
             var part=(ThemeCatalog.Part)p;if(category.HasValue && category.Value!=part)continue;
             for(int id=0;id<ThemeCatalog.CountFor(part);id++)
-                if(ThemeCatalog.AccessFor(id,part)==ThemeCatalog.Access.Coins && !ThemeCatalog.IsUnlocked(id,part) && gold>=ThemeCatalog.CoinPrice(id,part))
-                    products.Add(part==ThemeCatalog.Part.Background && id>=12?"background_"+id:"style_"+id);
+                if(ThemeCatalog.IsAvailable(id,part) && ThemeCatalog.AccessFor(id,part)==ThemeCatalog.Access.Coins && !ThemeCatalog.IsUnlocked(id,part) && gold>=ThemeCatalog.CoinPrice(id,part))
+                    count++;
         }
-        return products.Count;
+        return count;
     }
     public static RectTransform CreateBadge(Transform parent,string name,Vector2 size,Vector2 anchor,Vector2 position,out TextMeshProUGUI text)
     {

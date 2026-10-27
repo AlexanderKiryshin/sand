@@ -26,4 +26,5 @@ MonoBehaviour:
   conveyorBucketCountTemplate: 00000000000000000000000000000000000000000000000000
   fillMode: 2
   randomComponents: []
-  maxGrainsPerBucket: 147
+  maxGrainsPerBucket: 106
+  matchBucketOrderToSand: 1

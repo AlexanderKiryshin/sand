@@ -76,6 +76,31 @@ public class GameManager : MonoBehaviour
         LoadLevel(resume);
     }
 
+#if UNITY_EDITOR
+    private void Update()
+    {
+        if (!Input.GetKeyDown(KeyCode.W) || levelLoader == null || levelLoader.CurrentLevel == null
+            || CampaignGallery.IsOpen || Time.timeScale <= 0f)
+        {
+            return;
+        }
+
+        Analytic.AbandonLevel("debug_skip");
+        if (IsSeasonal(currentLevelIndex))
+        {
+            WinterProgress.Complete(levelDatabase.GetLevel(currentLevelIndex).seasonalNumber - 1);
+        }
+        else
+        {
+            int next = currentLevelIndex + 1;
+            while (IsSeasonal(next)) next++;
+            ProgressSaveService.MarkLevelCompleted(currentLevelIndex, next);
+        }
+
+        LoadNextLevel();
+    }
+#endif
+
     private void LateUpdate()
     {
         // A cup enters at the rear/outlet first, then advances after the current

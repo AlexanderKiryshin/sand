@@ -45,9 +45,9 @@ for (const adType of ['interstitial', 'rewarded']) {
   assert.equal(goal[3].placement, adType === 'rewarded' ? 'magnet' : 'interstitial');
 }
 for (const [product, eventName] of [
-  ['beginerKit_150', 'purchase_beginner_kit'], ['premium_kit_75', 'purchase_premium_kit'],
-  ['gold_300', 'purchase_gold_300'], ['gold_700', 'purchase_gold_700'],
-  ['gold_1200', 'purchase_gold_1200'], ['removeAd', 'purchase_remove_ads']
+  ['premium_kit_75', 'purchase_premium_kit'],
+  ['gold_800', 'purchase_gold_300'], ['gold_1500', 'purchase_gold_700'],
+  ['gold_3000', 'purchase_gold_1200'], ['removeAd', 'purchase_remove_ads']
 ]) {
   for (const name of ['buy_inapp', eventName]) {
     browser.LibraryManager.library.YandexMetricaSend2_js(name, JSON.stringify({...fields, product_id: product, result: 'success'}));

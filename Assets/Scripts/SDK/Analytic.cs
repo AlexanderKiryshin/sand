@@ -26,6 +26,8 @@ public static class Analytic
     public static void AbandonLevel(string reason) => Session.Abandon(reason);
     public static void BucketPlaced() => Session.Move();
     public static void Track(string name, Dictionary<string, object> data = null) => Session.Track(name, data);
+    public static void TutorialStep(string tutorialId, int step, string stepId, string status, string reason = "")
+        => Session.TutorialStep(tutorialId, step, stepId, status, reason);
     private static int LevelNumber(string index) => int.TryParse(index, out int value) ? value + 1 : 0;
     public static void AdShown(string progress, string placement, string adType)
     {
@@ -148,11 +150,11 @@ public static class Analytic
         string productEvent;
         switch (name)
         {
-            case "beginerKit_150": productEvent = "purchase_beginner_kit"; break;
             case "premium_kit_75": productEvent = "purchase_premium_kit"; break;
-            case "gold_300": productEvent = "purchase_gold_300"; break;
-            case "gold_700": productEvent = "purchase_gold_700"; break;
-            case "gold_1200": productEvent = "purchase_gold_1200"; break;
+            // Preserve configured analytics goals while reporting the new product IDs in event parameters.
+            case "gold_800": productEvent = "purchase_gold_300"; break;
+            case "gold_1500": productEvent = "purchase_gold_700"; break;
+            case "gold_3000": productEvent = "purchase_gold_1200"; break;
             case "removeAd": productEvent = "purchase_remove_ads"; break;
             default: return;
         }

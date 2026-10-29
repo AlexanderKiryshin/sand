@@ -18,7 +18,7 @@ MonoBehaviour:
     log: 1
     useYandexMetrica: 1
   Basic:
-    platform: {fileID: 0}
+    platform: {fileID: 11400000, guid: fabe82a4ab034324eb452cc7109f6d19, type: 2}
     autoApplySettings: 0
     autoPauseGame: 0
     editTimeScale: 1
@@ -72,6 +72,9 @@ MonoBehaviour:
     pixelRatioValue: 1.3
     developerBuild: 0
   platformInfo:
+    localProdGameId: 
+    localProdPort: 8080
+    localProdUseCsp: 1
     ownHost: 0
   platformToggles:
     useYandexMetrica: 0

@@ -16,12 +16,15 @@ public sealed class CosmeticShopTabs : MonoBehaviour
     public void Initialize(RectTransform root,RectTransform resourceView,RectTransform bundleView,float width)
     {
         card=root;resources=resourceView;bundles=bundleView;
-        float step=(width-64)/5;
+        int count = YoutubePlatform.PurchasesAllowed ? 5 : 4;
+        float step=(width-64)/count;
+        int visibleIndex = 0;
         for(int i=0;i<5;i++)
         {
+            if (!YoutubePlatform.PurchasesAllowed && i == 1) continue;
             int tab=i;
             var go=new GameObject("ShopTab_"+i,typeof(RectTransform),typeof(Image),typeof(Button));go.transform.SetParent(card,false);
-            var rect=(RectTransform)go.transform;rect.sizeDelta=new Vector2(step-8,64);rect.anchoredPosition=new Vector2((i-2)*step,card.rect.height*.5f-160);
+            var rect=(RectTransform)go.transform;rect.sizeDelta=new Vector2(step-8,64);rect.anchoredPosition=new Vector2((visibleIndex++-(count-1)*.5f)*step,card.rect.height*.5f-160);
             faces[i]=go.GetComponent<Image>();faces[i].sprite=HintUiSprites.RoundedPanel;faces[i].type=Image.Type.Sliced;
             go.GetComponent<Button>().onClick.AddListener(()=>Select(tab));
             var text=new GameObject("TabLabel",typeof(RectTransform),typeof(TextMeshProUGUI));text.transform.SetParent(go.transform,false);
@@ -42,7 +45,7 @@ public sealed class CosmeticShopTabs : MonoBehaviour
     }
     public void Select(int tab)
     {
-        if(!CanClose)return;
+        if(!CanClose || (!YoutubePlatform.PurchasesAllowed && tab == 1))return;
         SelectedTab=Mathf.Clamp(tab,0,4);resources.gameObject.SetActive(SelectedTab==0);bundles.gameObject.SetActive(SelectedTab==1);
         if(Attach()){if(SelectedTab>=2)menu.ShowEmbedded((ThemeCatalog.Part)(SelectedTab-2));else menu.HideEmbedded();}
         RefreshLabels();

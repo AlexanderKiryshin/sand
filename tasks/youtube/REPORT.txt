@@ -1,0 +1,112 @@
+YouTube Playables — sand, интеграция по образцу BUSES
+Дата: 28.10.2026 (Москва).
+
+РЕЗУЛЬТАТ
+Новая WebGL-сборка успешно собрана Unity 2022.3.62f3 и проверена локально в Edge.
+Ветка youtube; база main / 2c1a98bfdbbaeba2d2ccc4eaec6048dee96a1a39.
+Изменения не закоммичены и не отправлены. Хеши исходников — source-state.json.
+ZIP: Builds/YouTube/sand-youtube-buses-2026-10-28.zip
+Player: Builds/YouTube/2026-10-28-buses-r3/index.html
+ZIP: 27 125 678 байт (25,87 МиБ). Экспорт: 27 704 046 байт, 9 файлов.
+SHA256 ZIP: 3783c135ba5f607975c83d04015c498140d8bdff8e467c5be747fb5b222c3227
+Архив проверен на целостность и побайтно совпадает с протестированным player.
+Старый sand-youtube-2026-10-28.zip с Unity Gzip заменён этим результатом;
+старый архив не использовать для отправки. История — REPORT-superseded-gzip.txt.
+
+ОСНОВА И SDK
+BUSES: ветка youtube, a3ca8bda; импортированная Google-обёртка YTGameWrapper
+и UnityYTGameSDKLib.jslib с локальными исправлениями callbacks.
+Официальный GoogleYTGameWrapper.unitypackage скачан из google/web-game-samples.
+URL, SHA256 пакета и происхождение кода записаны в integration-provenance.json.
+Пакет с демонстрационной игрой не импортирован; Apache-2.0 заголовки сохранены.
+Web SDK https://www.youtube.com/game_api/v1 загружается раньше игрового кода.
+Объект YTGameWrapper один, сохраняется при смене сцен.
+Mirra 5.1.31, исходная ревизия 9c5c97b57a117874bc5f23e3f9c420cbced1ef30;
+пакет embedded в Packages/com.romanlee17.mirrasdk5 для воспроизводимости правок.
+Build — YouTubePlayablesConfiguration, Editor — EditorConfiguration,
+WebGL define — YOUTUBE_PLAYABLES, шаблон — MirraYoutubePlayablesTemplate.
+
+ПОДСИСТЕМЫ
+Запуск: YoutubeBootstrap ждёт облако/язык до игровой сцены GameScene.
+GameIsReady отправляется после интерактивности, без дубля от Mirra.
+Прогресс: GameProgressStore -> YoutubeCloudProgress -> YTGameWrapper.
+Формат entries, как в BUSES; чтение старого sand version:1/values и flat map.
+Ошибка/повреждение/таймаут загрузки блокируют запись для текущего сеанса.
+Save Promise подтверждает сохранение; изменения в полёте остаются dirty.
+Записи сериализованы, повтор ограничен, unresolved timeout запрещает новые записи.
+Пауза: единый SDK lifecycle, остановка Emscripten main loop, времени и звука.
+Отдельная причина блокировки рекламы; нет ForceResume или игнорирования pause.
+Звук: YoutubeAudio.Apply обновляет MirraSDK.Audio.Volume и его кэш.
+Mirra использует UnityEngineAudio; его собственная подписка на SDK mute исключена.
+FallbackPause выбран только как отдельный провайдер без Unity focus callbacks;
+весь Build preset остаётся YouTubePlayablesConfiguration / MirraWebBootstrap.
+Реклама: Google wrapper; true — единственный успешный результат rewarded;
+ошибка/false/таймаут без награды; результат ждёт SDK resume.
+Mirra JS: при YTGameLifecycle отключены дублирующие cloud init/autosave,
+localStorage fallback, ready, pause subscriptions и visibility pause.
+Language Promise общий для Mirra и игры, ограничен таймаутом.
+Сохранились изменения предыдущего порта: скрыты IAP, отключены внешняя аналитика
+и Метрика, язык из SDK, адаптация viewport/touch и Esc.
+
+УПАКОВКА
+Unity compression Disabled; decompression fallback off; caching off.
+Штатный Mirra YouTube postprocessor упаковал .data и .wasm в ZIP после сборки.
+В bundle локальные unityApp.js и JSZip с лицензией; внешнего CDN нет.
+.data.zip: 21 562 738 байт; .wasm.zip: 5 502 972 байта.
+Проверены ZIP entries, относительные пути, отсутствие .gz/.br/.unityweb,
+размеры каждого файла, общий размер и содержимое итогового архива.
+
+ПРОВЕРКИ
+- C# Editor, WebGL и изменённый модуль Mirra компилируются.
+- Полный IL2CPP/Emscripten/WebGL build: YOUTUBE_BUILD_PASS, exit code 0.
+- 9 проверок C# состояния сохранений выполнены настоящим Unity JsonUtility до build.
+- 15 JS-регрессий на фактическом .jslib и lifecycle: bridge.test.cjs.
+- 1 интеграционная проверка настоящего Mirra JS: mirra-integration.test.cjs;
+  нет двойных cloud/ready/lifecycle, один language request, нет localStorage access.
+- 19 проверок экспортированного player: browser-results.json.
+  Холодный запуск, один loadData, firstFrame/gameReady ровно один раз, пауза рендера,
+  облако после reload, false/error/true rewarded, награда во время SDK pause,
+  mouse/touch, portrait/landscape/resize, Console и Network.
+- Дополнительные 7 проверок аудио: audio-results.json (11 вместе с базовыми).
+  Измерен фактический WebAudio output через AnalyserNode: начальный mute,
+  unmute, pause, unmute во время pause, resume и сохранение mute в Mirra.
+- Screenshots portrait-touch.png и shop.png визуально проверены:
+  после touch ведро на ленте, песок сыплется, tutorial 2/3; магазин без IAP.
+- Ошибок Unity/browser нет. Внешние запросы — только SDK YouTube.
+- Локальный cold start около 4,1 с; JS heap snapshot около 63 МБ used / 73 МБ total.
+  Это наблюдения локальной среды, не peak-memory или мобильная сертификация.
+
+СРЕДА И ОГРАНИЧЕНИЯ
+Edge headless, WebGL2 software GPU, настоящий Unity player, детерминированная
+имитация YouTube SDK через Playwright route. Имитация отсутствует в архиве.
+Реальный YouTube Developer Portal/Test Suite, аккаунтное облако, реальные ads,
+Android/iOS webview и одобрение площадки не проверены. Загрузки/публикации не было.
+Начальная попытка Unity была остановлена из-за заполненного C: и записи лицензии.
+После появления свободного места сборка прошла, временные файлы направлены на E:.
+Это не остающийся блокер результата.
+
+ВОСПРОИЗВЕДЕНИЕ
+Unity: WebGL, Window/Sand/Build/YouTube Playables.
+Batch: -buildTarget WebGL -executeMethod YoutubeBuild.Build; SAND_YOUTUBE_OUTPUT
+задаёт новый отдельный каталог. Существующий каталог не перезаписывается.
+node tasks/youtube/bridge.test.cjs
+node tasks/youtube/mirra-integration.test.cjs
+node tasks/youtube/browser-smoke.cjs Builds/YouTube/2026-10-28-buses-r3
+Для отдельной аудиопроверки: SAND_AUDIO_ONLY=1; touch: SAND_TOUCH_ONLY=1.
+Playwright: NODE_PATH=C:/Users/user/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules
+python tasks/youtube/package-release.py <export-dir> <new-archive.zip>
+
+СКИЛЛЫ
+Обновлены web-platform-porting и вход youtube-playables-release:
+официальная Unity-обёртка, основа BUSES, Mirra YouTube preset, compression Disabled,
+локальный ZIP loader, единый владелец состояния и проверка реального player.
+Оба скилла прошли quick_validate; установленные файлы сверены с подготовленными.
+
+ИСТОЧНИКИ
+https://developers.google.com/youtube/gaming/playables/samples/unity_wrapper
+https://github.com/google/web-game-samples/tree/main/Unity
+https://developers.google.com/youtube/gaming/playables/reference/sdk
+https://developers.google.com/youtube/gaming/playables/certification/requirements_integration
+https://developers.google.com/youtube/gaming/playables/certification/requirements_stability
+https://developers.google.com/youtube/gaming/playables/certification/requirements_monetization
+https://developers.google.com/youtube/gaming/playables/certification/requirements_privacydata

@@ -2,7 +2,7 @@ using MirraGames.SDK;
 using UnityEngine;
 
 /// <summary>
-/// Progress API forwarding to MirraSDK.Data with PlayerPrefs fallback before SDK init.
+/// Progress API: YouTube cloud on Playables; Mirra and local Editor fallback elsewhere.
 /// </summary>
 public static class GameProgressStore
 {
@@ -43,6 +43,7 @@ public static class GameProgressStore
 
     public static bool HasKey(string key)
     {
+        if (YoutubePlatform.IsPlayer) return YoutubePlatform.HasKey(key);
 #if UNITY_EDITOR
         if (IsPreview) return preview.ContainsKey(key);
 #endif
@@ -56,6 +57,7 @@ public static class GameProgressStore
 
     public static int GetInt(string key, int defaultValue = 0)
     {
+        if (YoutubePlatform.IsPlayer) return (int)YoutubePlatform.Get(key, defaultValue);
 #if UNITY_EDITOR
         if (IsPreview) return PreviewGet(key, defaultValue);
 #endif
@@ -69,6 +71,7 @@ public static class GameProgressStore
 
     public static void SetInt(string key, int value)
     {
+        if (YoutubePlatform.IsPlayer) { YoutubePlatform.Set(key, value); return; }
 #if UNITY_EDITOR
         if (IsPreview) { preview[key] = value; return; }
 #endif
@@ -83,6 +86,7 @@ public static class GameProgressStore
 
     public static float GetFloat(string key, float defaultValue = 0f)
     {
+        if (YoutubePlatform.IsPlayer) return (float)YoutubePlatform.Get(key, defaultValue);
 #if UNITY_EDITOR
         if (IsPreview) return PreviewGet(key, defaultValue);
 #endif
@@ -96,6 +100,7 @@ public static class GameProgressStore
 
     public static void SetFloat(string key, float value)
     {
+        if (YoutubePlatform.IsPlayer) { YoutubePlatform.Set(key, value); return; }
 #if UNITY_EDITOR
         if (IsPreview) { preview[key] = value; return; }
 #endif
@@ -110,6 +115,7 @@ public static class GameProgressStore
 
     public static bool GetBool(string key, bool defaultValue = false)
     {
+        if (YoutubePlatform.IsPlayer) return YoutubePlatform.Get(key, defaultValue ? 1 : 0) != 0;
 #if UNITY_EDITOR
         if (IsPreview) return PreviewGet(key, defaultValue);
 #endif
@@ -123,6 +129,7 @@ public static class GameProgressStore
 
     public static void SetBool(string key, bool value)
     {
+        if (YoutubePlatform.IsPlayer) { YoutubePlatform.Set(key, value ? 1 : 0); return; }
 #if UNITY_EDITOR
         if (IsPreview) { preview[key] = value; return; }
 #endif
@@ -137,6 +144,7 @@ public static class GameProgressStore
 
     public static void Save()
     {
+        if (YoutubePlatform.IsPlayer) { YoutubePlatform.Save(); return; }
         if (IsPreview) return;
         if (UseMirra)
         {

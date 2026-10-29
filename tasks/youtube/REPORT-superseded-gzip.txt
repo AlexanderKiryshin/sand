@@ -1,0 +1,105 @@
+УСТАРЕВШИЙ ПОРТ: НЕ ИСПОЛЬЗОВАТЬ УКАЗАННЫЙ НИЖЕ ZIP ДЛЯ ОТПРАВКИ.
+Заменяется интеграцией BUSES; Unity Gzip не поддерживается YouTube.
+
+YouTube Playables — порт sand
+Дата сверки требований и проверки: 28.10.2026 (Москва).
+
+ИСТОЧНИК И АРТЕФАКТ
+Ветка: youtube (существовала до начала работы).
+База: main, 2c1a98bfdbbaeba2d2ccc4eaec6048dee96a1a39 (promo material).
+Начальное дерево было чистым. Изменения порта не закоммичены и не отправлены.
+Сборка: dirty working tree; хеши исходников — source-state.json.
+Unity: 2022.3.62f3, WebGL Build Support, IL2CPP OptimizeSize, Medium stripping.
+ZIP: E:/myProjects/sand/Builds/YouTube/sand-youtube-2026-10-28.zip
+Player: E:/myProjects/sand/Builds/YouTube/2026-10-28-r2/index.html
+SHA256 ZIP: fa19567335254b64b0a35a298e16c6e9f8a905b25e0f415f62f9837d4cf5ce42
+ZIP: 26 839 976 байт (25.60 МиБ). Экспорт: 26 954 863 байт (25.71 МиБ), 6 файлов.
+Крупнейший файл: data.unityweb, 21 525 897 байт (20.53 МиБ).
+Сжатие: Gzip с Unity decompression fallback; работает на обычном статическом HTTP-сервере.
+index.html лежит в корне ZIP. Все игровые ссылки относительные; исходники и настройки аналитики в ZIP не входят.
+
+КАРТА АДАПТАЦИИ: ПОДСИСТЕМА / ВЛАДЕЛЕЦ / ИЗМЕНЕНИЕ / ПРОВЕРКА
+Запуск / GameIsReady + HTML / SDK до кода игры; firstFrameReady на загрузочном экране;
+  cloud + язык до Unity Awake; gameReady после интро и снятия загрузки / реальный WebGL player.
+Данные / GameProgressStore → SandYouTube / только loadData/saveData в player;
+  прежние игровые ключи, версии прогресса, валюты и косметика сохранены / reload и JS-регрессии.
+Загрузка / youtube.js / повреждение, отказ и таймаут запрещают запись; поздний ответ
+  не подменяет текущий сеанс; игрок видит сообщение о несохранении / JS-регрессии.
+Запись / youtube.js / ревизии, одна запись в полёте, dirty до подтверждения, ограниченные
+  повторы; таймаут незавершённой записи блокирует последующие записи / JS-регрессии.
+Пауза / YoutubePlatform + Emscripten / SDK onPause/onResume; сохранение timeScale,
+  AudioListener.pause и остановка основного цикла, включая рендеринг / счётчик WebGL draw calls.
+Звук / YoutubePlatform / начальный mute и изменения до загрузки; платформа ограничивает
+  AudioListener, настройки музыки и эффектов сохранены; Mirra не владеет аудиовыводом /
+  JS-регрессии и проверка platform pause + unmute в player.
+Реклама / AdManager → YoutubePlatform → ytgame.ads / стабильные rewardId, награда
+  только при true, отмена/ошибка/таймаут без награды, один запрос, cleanup ввода;
+  callback ждёт onResume; interstitial только после завершения уровня, без показа на Restart /
+  JS-регрессии и реальные кнопки магазина с тестовым SDK.
+Покупки / магазин и ThemeCatalog / скрыты платные наборы, отключение рекламы и косметика
+  за реальные деньги; остаются монеты и добровольная rewarded-реклама / визуальная проверка.
+Аналитика / WebGameAnalytics, YG2, GameAnalytics / отключена автоинициализация,
+  GameAnalytics .jspre исключены из WebGL, настройки перенесены из Resources в Editor /
+  экспортированный JS и Network player без сторонних запросов.
+Язык / LocalizationManager / ytgame.system.getLanguage, ru/tr/de/en, fallback en /
+  JS-регрессии и английский интерфейс player.
+UI / MobilePortraitLayout + HTML / без блокировки ориентации; центрированный viewport
+  с полями при необходимости, без обрезания в узких окнах; Esc для магазина и галереи /
+  desktop, portrait, landscape, square screenshots, управление мышью и touch.
+
+КОНФИГУРАЦИЯ SDK
+Mirra 5.1.31 закреплён на 9c5c97b57a117874bc5f23e3f9c420cbced1ef30.
+Build configuration — встроенный FallbackConfiguration: офлайн-провайдеры без браузерной
+автоинициализации. Editor configuration — прежний EditorConfiguration.
+Платформенными сохранениями, языком, жизненным циклом и рекламой владеют игровые адаптеры
+YoutubePlatform / SandYouTube. Это исключает двойную инициализацию SDK и двойные ready-сигналы.
+Встроенный Mirra YouTube preset использует другой JS-контракт и упаковщик с ZIP/CDN;
+в этом порте он не выбран. Registry Mirra генерируется при сборке пакета и не обнаруживает
+конфигурации из Assembly-CSharp, поэтому используется существующий офлайн-пресет.
+WebGL define: YOUTUBE_PLAYABLES. Шаблон: PROJECT:SandYoutube.
+
+ПОДТВЕРЖДЁННЫЕ ПРОВЕРКИ
+- Editor C# и отдельная player-компиляция без UNITY_EDITOR; успешный WebGL linking и экспорт.
+- 17 детерминированных JS-регрессий: bridge-results.txt, bridge.test.cjs.
+- 18 проверок настоящего WebGL player в Edge с программным WebGL2 и подменённым только
+  SDK YouTube: browser-results.json, browser-smoke.cjs. Тестовый SDK отсутствует в ZIP.
+- Загрузка, единственные ready-сигналы, начальный облачный баланс, остановка/возврат
+  рендеринга, unmute при паузе, размеры окон, сохранение материального изменения и reload.
+- Магазин: false/rejection не награждают и освобождают кнопку; true даёт ровно 100 монет;
+  результат рекламы во время platform pause ждёт resume; rewardId стабилен.
+- Console: 0 ошибок; Network: только локальные файлы и запрос SDK YouTube.
+- Проверены содержимое ZIP, имена файлов, относительные ссылки, размеры и отсутствие
+  необработанных Unity template-маркеров. git diff --check пройден.
+- Скриншоты: desktop.png, portrait.png, portrait-touch.png, landscape.png, square.png,
+  shop.png, shop-after-ad.png. В узком viewport используется letterbox вместо обрезания.
+- Потребление JS heap и время локального запуска записаны в browser-results.json;
+  это точечное измерение, не сертификация пикового потребления памяти на мобильных устройствах.
+- После WebGL build изменена только CSS-геометрия viewport; тот же HTML исправлен в
+  исходном шаблоне и экспортированном player и повторно проверен в браузере.
+
+ОСТАВШИЕСЯ ПРОВЕРКИ В СРЕДЕ ПЛОЩАДКИ
+Загрузка в Developer Portal, Test Suite, настоящие аккаунтные cloud saves, реальные
+рекламные показы и YouTube mobile webviews (Android/iOS) не выполнялись.
+Публичная страница Test Suite не раскрыла инструменты без входа. Версия не отправлялась
+и не получила одобрение YouTube. Для рекламы нужно включить монетизацию игры в кабинете.
+После ingestion проверить initial transfer (<30 МиБ), память, производительность и звук
+на реальных устройствах. Локальные размеры архива не заменяют этот замер.
+
+ПОВТОРЕНИЕ
+В Unity: выбрать WebGL, Window > Sand > Build > YouTube Playables.
+Из batchmode: Unity.exe -batchmode -nographics -quit -projectPath <project>
+  -buildTarget WebGL -executeMethod YoutubeBuild.Build -logFile <log>
+SAND_YOUTUBE_OUTPUT задаёт новый, ещё не существующий каталог экспорта.
+JS: node tasks/youtube/bridge.test.cjs
+Browser (нужен Playwright + Edge): node tasks/youtube/browser-smoke.cjs <export-directory>
+ZIP: python tasks/youtube/package-release.py <export-directory> <new-zip-path>
+
+ОФИЦИАЛЬНЫЕ ИСТОЧНИКИ (основной английский текст, проверено 28.10.2026)
+https://developers.google.com/youtube/gaming/playables/reference/sdk
+https://developers.google.com/youtube/gaming/playables/certification/requirements_integration
+https://developers.google.com/youtube/gaming/playables/certification/requirements_monetization
+https://developers.google.com/youtube/gaming/playables/certification/requirements_privacydata
+https://developers.google.com/youtube/gaming/playables/certification/requirements_stability
+https://developers.google.com/youtube/gaming/playables/certification/requirements_design
+https://developers.google.com/youtube/gaming/playables/certification/requirements_i18n_l10n
+https://developers.google.com/youtube/gaming/playables/test_suite

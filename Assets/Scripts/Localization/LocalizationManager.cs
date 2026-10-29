@@ -45,7 +45,7 @@ public class LocalizationManager : MonoBehaviour
     private IEnumerator SetLanguageRoutine()
     {
         yield return new WaitUntil(() => GameSdkReadiness.IsReady);
-        LanguageType language = MirraSDK.Language.Current;
+        LanguageType language = YoutubePlatform.IsPlayer ? YoutubePlatform.Language : MirraSDK.Language.Current;
         switch (language)
         {
             case LanguageType.Russian:

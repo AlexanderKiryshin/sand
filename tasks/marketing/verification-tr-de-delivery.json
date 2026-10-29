@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "languages": [
+    "TR",
+    "DE"
+  ],
+  "videos": [
+    {
+      "file": "Marketing_Originals\\gameplay-tr-9x16-5x.mp4",
+      "sha256": "4f7154abe065d9cb763533ea96a32e14b1e4a614ca79551ad6b95ac0822fe030",
+      "audio_rms": 0.06731492280960083,
+      "seconds": 4.866666666666666,
+      "full_decode": "PASS"
+    },
+    {
+      "file": "Marketing_Originals\\gameplay-tr-16x9-5x.mp4",
+      "sha256": "6fc1c2386321007b6e0ccb03806b0db5c8141fe3ee1be69025c79df089504cd7",
+      "audio_rms": 0.06731492280960083,
+      "seconds": 4.866666666666666,
+      "full_decode": "PASS"
+    },
+    {
+      "file": "Marketing_Originals\\gameplay-de-9x16-5x.mp4",
+      "sha256": "0084cbecdd23544600dcb43a235b89411160b4f1f50e74a7b667205f374930ec",
+      "audio_rms": 0.06616498529911041,
+      "seconds": 4.7,
+      "full_decode": "PASS"
+    },
+    {
+      "file": "Marketing_Originals\\gameplay-de-16x9-5x.mp4",
+      "sha256": "745f53d7c795b9add2059480f858afc7d0ed322d3eca2b10b457493abecdb48b",
+      "audio_rms": 0.06616498529911041,
+      "seconds": 4.7,
+      "full_decode": "PASS"
+    }
+  ],
+  "screenshots": 24,
+  "screenshots_report": "screenshots-verification-de-tr.json",
+  "visual_review": "All four screenshot sheets and both aspects of both video contact sheets checked."
+}

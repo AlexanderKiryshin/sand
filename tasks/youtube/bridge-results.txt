@@ -1,0 +1,16 @@
+PASS Google wrapper exports load/save/audio/pause/ad entry points
+PASS Ready signals are sent once and wait for SDK resume
+PASS Early audio and pause are subscribed before cloud loading
+PASS Late Unity instance gets the current mute and pause
+PASS Empty and BUSES entry saves normalize for Unity JSON
+PASS Previous sand map remains compatible
+PASS Malformed, duplicate and future schemas fail closed
+PASS Actual jslib load rejects corrupt data without an empty-save callback
+PASS Load timeout ignores a late response
+PASS Save starts synchronously, acknowledges only Promise success
+PASS Save timeout is terminal despite a late success
+PASS Reward requires literal true; false, nonboolean, reject and throw fail
+PASS Ad timeout cannot grant a late reward
+PASS Ad completion waits for platform resume
+PASS SDK locale is fetched once for Mirra and the game
+15 wrapper/lifecycle checks passed

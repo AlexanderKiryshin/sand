@@ -23,13 +23,16 @@ public static class ProgressSaveService
 
     public static void Load()
     {
-        if (GameProgressStore.IsPreview)
+        if (GameProgressStore.IsPreview || YoutubePlatform.IsPlayer)
         {
+            int completed = YoutubePlatform.IsPlayer && GameProgressStore.GetInt(KeyVersion, 0) == 1
+                ? GetHighestSetBitIndex(GameProgressStore.GetInt(KeyCompletedMaskLegacy, 0))
+                : GameProgressStore.GetInt(KeyHighestCompleted, -1);
             progress = new PlayerProgress
             {
                 saveVersion = PlayerProgress.SaveVersion,
                 highestUnlockedIndex = GameProgressStore.GetInt(KeyHighestUnlocked, 0),
-                highestCompletedIndex = GameProgressStore.GetInt(KeyHighestCompleted, -1),
+                highestCompletedIndex = completed,
                 currentLevelIndex = GameProgressStore.GetInt(KeyCurrentLevel, 0)
             };
             ClampProgress();
@@ -96,7 +99,7 @@ public static class ProgressSaveService
         GameProgressStore.SetInt(KeyCurrentLevel, progress.currentLevelIndex);
         GameProgressStore.Save();
 
-        if (GameProgressStore.IsPreview) return;
+        if (GameProgressStore.IsPreview || YoutubePlatform.IsPlayer) return;
 
         // Keep PlayerPrefs mirror for local editor fallback.
         PlayerPrefs.SetInt(KeyVersion, progress.saveVersion);

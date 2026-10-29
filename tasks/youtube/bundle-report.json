@@ -1,0 +1,56 @@
+{
+  "bundle": "E:\\myProjects\\sand\\Builds\\YouTube\\2026-10-28-buses-r3",
+  "zip": "E:\\myProjects\\sand\\Builds\\YouTube\\sand-youtube-buses-2026-10-28.zip",
+  "zipBytes": 27125678,
+  "bundleBytes": 27704046,
+  "initialGameFilesBytesUpperBound": 27704046,
+  "initialTransferNote": "Includes all exported files, excludes the platform SDK and HTTP overhead. Recheck after YouTube ingestion.",
+  "sha256": "3783c135ba5f607975c83d04015c498140d8bdff8e467c5be747fb5b222c3227",
+  "files": [
+    {
+      "path": "Build/2026-10-28-buses-r3.data.zip",
+      "bytes": 21562738,
+      "sha256": "3d22d0f94056bf356920b43b67dd01e8d7b2ec37f15f927721ad138454032363"
+    },
+    {
+      "path": "Build/2026-10-28-buses-r3.framework.js",
+      "bytes": 483023,
+      "sha256": "ad648bf1dd88dbe2822397f86a7599ae02274b3639aadb8beaac204cb9c3f015"
+    },
+    {
+      "path": "Build/2026-10-28-buses-r3.loader.js",
+      "bytes": 13114,
+      "sha256": "8e5e44b2fb9658e0d328e9d8251dc1343df430c8032517c37f2d79405794086b"
+    },
+    {
+      "path": "Build/2026-10-28-buses-r3.wasm.zip",
+      "bytes": 5502972,
+      "sha256": "bc15d2566229c5bc5c807fce9eb3582d13b143f573109d33d4355c7dd0ca861a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 2479,
+      "sha256": "e7aae79a469ca6054b8132f96f4bbc860c96d39c80f66feff8c954e9a4ebadeb"
+    },
+    {
+      "path": "lib/jszip.min.js",
+      "bytes": 97631,
+      "sha256": "d14e71a95ef3290dec66a9cfdd8a37c2dd624f6f2b594c4512f607d4a56e19fc"
+    },
+    {
+      "path": "lib/LICENSE.markdown",
+      "bytes": 33753,
+      "sha256": "566c953c6090b1218ca6217dd7359d45dde46581968586dc607d59a78af6a9c4"
+    },
+    {
+      "path": "unityApp.js",
+      "bytes": 2180,
+      "sha256": "540ea5bd2902c498a557ede78e44094b0063946811a5c3328de49cbaaa8ed6ad"
+    },
+    {
+      "path": "ytgame-lifecycle.js",
+      "bytes": 6156,
+      "sha256": "8ba877f0b9fd7f39b1fe84da899175e7a742df7bd68183e9b2319a84b56f6eb7"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-﻿namespace YG.EditorScr.BuildModify
+namespace YG.EditorScr.BuildModify
 {
     using UnityEditor.Build.Reporting;
     using UnityEditor.Build;
@@ -28,12 +28,16 @@
 
         public void OnPostprocessBuild(BuildReport report)
         {
+#if YOUTUBE_PLAYABLES
+            return; // The YouTube template is self-contained; no Yandex/analytics injection.
+#else
             ModifyBuild.ModifyIndex();
 
             if (YG2.infoYG.Basic.archivingBuild)
                 ArchivingBuild.Archiving(BuildPath);
 
             BuildLog.WritingLog();
+#endif
         }
 
 #if PLATFORM_WEBGL

@@ -1,6 +1,15 @@
 ﻿<Solution>
   <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="MirraGames.SDK.Common.csproj" />
+  <Project Path="MirraGames.SDK.UnityEngine.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
   <Project Path="GameAnalyticsSDK.csproj" />
+  <Project Path="MirraGames.SDK.MirraWeb.csproj" />
+  <Project Path="MirraGames.SDK.csproj" />
+  <Project Path="MirraGames.SDK.Fallback.csproj" />
+  <Project Path="MirraGames.SDK.Editor.csproj" />
+  <Project Path="MirraGames.SDK.Prototype.csproj" />
   <Project Path="GameAnalyticsSDK.Editor.csproj" />
+  <Project Path="MirraGames.SDK.System.csproj" />
+  <Project Path="MirraGames.SDK.Addressables.csproj" />
 </Solution>

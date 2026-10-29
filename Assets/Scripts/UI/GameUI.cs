@@ -264,7 +264,7 @@ public class GameUI : MonoBehaviour
     private void HandleResetClicked()
     {
         if (gameManager == null || restartAdPending) return;
-        if (AdManager.instance == null)
+        if (AdManager.instance == null || YoutubePlatform.IsPlayer)
         {
             gameManager.RestartLevel();
             return;

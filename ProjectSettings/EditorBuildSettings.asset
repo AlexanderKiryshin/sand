@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/YoutubeBootstrap.unity
+    guid: c546f1e7887f481f965432a4cc883335
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 30e94a4deca98ca40a399fc1d0714abc
   m_configObjects: {}

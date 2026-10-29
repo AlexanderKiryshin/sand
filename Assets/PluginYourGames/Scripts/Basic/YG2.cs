@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YG.Insides;
@@ -39,7 +39,9 @@ namespace YG
         public static bool nowRewardAdv;
         public static Action onAdvNotification, onOpenAnyAdv, onCloseAnyAdv, onErrorAnyAdv;
 
+#if !YOUTUBE_PLAYABLES
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+#endif
         private static void Initialize()
         {
 #if UNITY_EDITOR

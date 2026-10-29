@@ -1,0 +1,32 @@
+[
+  {
+    "level": "warn",
+    "message": "Warning/GameAnalytics: Could not add progression event: SDK is disabled",
+    "timestamp": "2026-10-28T22:36:56.403Z",
+    "url": "http://127.0.0.1:8766/Build/sand[18]-mirraSDK[5.1.31].framework.js.br"
+  },
+  {
+    "level": "warn",
+    "message": "Warning/GameAnalytics: Could not add design event: SDK is disabled",
+    "timestamp": "2026-10-28T22:36:56.403Z",
+    "url": "http://127.0.0.1:8766/Build/sand[18]-mirraSDK[5.1.31].framework.js.br"
+  },
+  {
+    "level": "warn",
+    "message": "Manual synchronization of Unity Application.persistentDataPath via JS_FileSystem_Sync() is deprecated and will be later removed in a future Unity version. The persistent data directory will be automatically synchronized instead on file modification. Pass config.autoSyncPersistentDataPath = true; to configuration in createUnityInstance() to opt in to the new behavior.",
+    "timestamp": "2026-10-28T22:40:27.134Z",
+    "url": "http://127.0.0.1:8766/Build/sand[18]-mirraSDK[5.1.31].framework.js.br"
+  },
+  {
+    "level": "warn",
+    "message": "Warning/GameAnalytics: Could not add progression event: SDK is disabled",
+    "timestamp": "2026-10-28T22:40:27.426Z",
+    "url": "http://127.0.0.1:8766/Build/sand[18]-mirraSDK[5.1.31].framework.js.br"
+  },
+  {
+    "level": "warn",
+    "message": "Warning/GameAnalytics: Could not add design event: SDK is disabled",
+    "timestamp": "2026-10-28T22:40:27.426Z",
+    "url": "http://127.0.0.1:8766/Build/sand[18]-mirraSDK[5.1.31].framework.js.br"
+  }
+]

@@ -25,7 +25,7 @@ public sealed class WebGameAnalytics : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Bootstrap()
     {
-#if UNITY_WEBGL && !UNITY_EDITOR
+#if UNITY_WEBGL && !UNITY_EDITOR && !YOUTUBE_PLAYABLES
         if (instance != null) return;
         var root = new GameObject("WebGameAnalytics"); DontDestroyOnLoad(root);
         instance = root.AddComponent<WebGameAnalytics>();
@@ -35,7 +35,7 @@ public sealed class WebGameAnalytics : MonoBehaviour
     public static void Report(string name, Dictionary<string, object> data)
     {
         if (GameProgressStore.IsPreview) return;
-#if UNITY_WEBGL && !UNITY_EDITOR
+#if UNITY_WEBGL && !UNITY_EDITOR && !YOUTUBE_PLAYABLES
         if (instance == null) Bootstrap();
         data = new Dictionary<string, object>(data) { ["build"] = Application.version, ["platform"] = "webgl" };
         var pending = new Pending { name = name, data = data };

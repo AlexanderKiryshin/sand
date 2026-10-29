@@ -23,7 +23,7 @@
                 "stringCollection": [
                     {
                         "key": "Configuration",
-                        "value": "MirraWebConfiguration"
+                        "value": "YouTubePlayablesConfiguration"
                     }
                 ]
             }
@@ -84,6 +84,29 @@
                 "intCollection": [],
                 "floatCollection": [],
                 "stringCollection": []
+            }
+        },
+        {
+            "key": "YouTubePlayablesConfiguration",
+            "group": {
+                "boolCollection": [
+                    {
+                        "key": "Framework_PropertyGroup.Visible",
+                        "value": true
+                    },
+                    {
+                        "key": "Framework_PropertyGroup.Override",
+                        "value": true
+                    }
+                ],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": [
+                    {
+                        "key": "Framework_PropertyGroup",
+                        "value": "{\"forcePlatformType\":\"YouTubePlayables\"}"
+                    }
+                ]
             }
         }
     ]

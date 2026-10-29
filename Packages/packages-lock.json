@@ -7,13 +7,12 @@
       "dependencies": {}
     },
     "com.romanlee17.mirrasdk5": {
-      "version": "https://github.com/MirraSDK/SDK5.git",
+      "version": "file:com.romanlee17.mirrasdk5",
       "depth": 0,
-      "source": "git",
+      "source": "embedded",
       "dependencies": {
         "com.unity.addressables": "1.0.0"
-      },
-      "hash": "9c5c97b57a117874bc5f23e3f9c420cbced1ef30"
+      }
     },
     "com.unity.2d.animation": {
       "version": "9.2.0",

@@ -136,12 +136,12 @@ public class GameAudio : MonoBehaviour
     }
 
     // Audio preferences belong to this device and must be ready before SDK/cloud initialization.
-    private static bool ReadPreference(string key) => GameProgressStore.IsPreview
+    private static bool ReadPreference(string key) => GameProgressStore.IsPreview || YoutubePlatform.IsPlayer
         ? GameProgressStore.GetBool(key, true) : PlayerPrefs.GetInt(key, 1) != 0;
 
     private static void SavePreference(string key, bool value)
     {
-        if (GameProgressStore.IsPreview) { GameProgressStore.SetBool(key, value); return; }
+        if (GameProgressStore.IsPreview || YoutubePlatform.IsPlayer) { GameProgressStore.SetBool(key, value); GameProgressStore.Save(); return; }
         PlayerPrefs.SetInt(key, value ? 1 : 0);
         PlayerPrefs.Save();
     }
@@ -188,8 +188,8 @@ public class GameAudio : MonoBehaviour
             audioSource.PlayOneShot(clip, volume);
     }
 
-    private void OnApplicationFocus(bool focused) { applicationUnfocused = !focused; if (sandSource != null) ApplySettings(); }
-    private void OnApplicationPause(bool paused) { applicationPaused = paused; if (sandSource != null) ApplySettings(); }
+    private void OnApplicationFocus(bool focused) { if (YoutubePlatform.IsPlayer) return; applicationUnfocused = !focused; if (sandSource != null) ApplySettings(); }
+    private void OnApplicationPause(bool paused) { if (YoutubePlatform.IsPlayer) return; applicationPaused = paused; if (sandSource != null) ApplySettings(); }
     private void OnDisable()
     {
         if (audioSource != null) audioSource.Stop();

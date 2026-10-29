@@ -18,7 +18,8 @@ public static class MarketingCapture
     static MarketingCapture() { EditorApplication.update += Tick; }
     public static void Run()
     {
-        SessionState.SetBool("Sand.BuildSizeChecks", true);
+        // The disposable project's progress store recognizes this capture's own key.
+        SessionState.SetBool("Sand.BuildSizeChecks", false);
         SessionState.SetBool(Key, true);
         EditorSceneManager.OpenScene("Assets/Scenes/GameScene.unity");
         EditorApplication.isPlaying = true;
@@ -34,7 +35,6 @@ public static class MarketingCapture
         string output = Environment.GetEnvironmentVariable("SAND_CAPTURE_OUTPUT");
         File.WriteAllText(Path.Combine(output, "capture-status.txt"), (success ? "PASS\n" : "FAIL\n") + message);
         SessionState.SetBool(Key, false);
-        SessionState.SetBool("Sand.BuildSizeChecks", false);
         Time.captureFramerate = 0;
         EditorApplication.Exit(success ? 0 : 1);
     }
@@ -60,6 +60,49 @@ public sealed class MarketingCaptureRunner : MonoBehaviour
     GameManager manager;
     LevelLoader loader;
     ConveyorBelt belt;
+
+    void ValidateLevel(int index)
+    {
+        if (index < 0 || index >= manager.LevelCount)
+            throw new ArgumentOutOfRangeException(nameof(index));
+        if (int.TryParse(Environment.GetEnvironmentVariable("SAND_CAPTURE_MIN_LEVEL"), out int minimum)
+            && manager.GetDisplayNumber(index) < minimum)
+            throw new InvalidOperationException("Capture level is below the requested minimum: " + manager.GetDisplayNumber(index));
+    }
+
+    static MirraGames.SDK.Common.LanguageType LanguageFromCode(string code)
+    {
+        switch (code.ToLowerInvariant())
+        {
+            case "ru": return MirraGames.SDK.Common.LanguageType.Russian;
+            case "en": return MirraGames.SDK.Common.LanguageType.English;
+            case "tr": return MirraGames.SDK.Common.LanguageType.Turkish;
+            case "de": return MirraGames.SDK.Common.LanguageType.German;
+            default: throw new ArgumentException("Unsupported capture language: " + code);
+        }
+    }
+
+    static string[] ScreenshotLanguages()
+    {
+        string requested = Environment.GetEnvironmentVariable("SAND_CAPTURE_LANGUAGES") ?? "ru,en";
+        string[] languages = requested.Split(',').Select(code => code.Trim().ToUpperInvariant()).Distinct().ToArray();
+        foreach (string code in languages) LanguageFromCode(code);
+        return languages;
+    }
+
+    string[] ValidateLabels(string language)
+    {
+        string[] labels = FindObjectsOfType<TMPro.TextMeshProUGUI>()
+            .Where(t => t.isActiveAndEnabled && t.gameObject.activeInHierarchy && !string.IsNullOrWhiteSpace(t.text))
+            .Select(t => t.text).ToArray();
+        if (!language.Equals("ru", StringComparison.OrdinalIgnoreCase)
+            && labels.Any(t => t.Any(c => c >= '\u0400' && c <= '\u04ff')))
+            throw new InvalidOperationException("Russian text remains in " + language + " capture: " + string.Join(" / ", labels));
+        string levelWord = LocalizationManager.Instance.GetText("level");
+        if (!labels.Any(label => label.Contains(levelWord)))
+            throw new InvalidOperationException("Localized level caption is missing: " + levelWord);
+        return labels;
+    }
 
     void OnEnable() { Application.logMessageReceived += OnLog; }
     void OnDisable() { Application.logMessageReceived -= OnLog; }
@@ -113,12 +156,13 @@ public sealed class MarketingCaptureRunner : MonoBehaviour
         manager = FindObjectOfType<GameManager>();
         loader = FindObjectOfType<LevelLoader>();
         belt = FindObjectOfType<ConveyorBelt>();
-        string languageCode = Environment.GetEnvironmentVariable("SAND_CAPTURE_LANGUAGE") == "en" ? "en" : "ru";
-        var language = languageCode == "en" ? MirraGames.SDK.Common.LanguageType.English : MirraGames.SDK.Common.LanguageType.Russian;
+        string languageCode = (Environment.GetEnvironmentVariable("SAND_CAPTURE_LANGUAGE") ?? "ru").ToLowerInvariant();
+        var language = LanguageFromCode(languageCode);
         LocalizationManager.Instance.SetLanguage(language);
         GameProgressStore.SetBool("sand_tutorial_v2_complete", true);
         GameProgressStore.SetInt("sand_progress_highest_unlocked", 999);
         ProgressSaveService.Load();
+        WinterProgress.UnlockAllLevels();
         foreach (BoosterType type in Enum.GetValues(typeof(BoosterType))) BoosterService.instance.MarkTutorialSeen(type);
         camera = Camera.main;
         target = new RenderTexture(Width, Height, 24, RenderTextureFormat.ARGB32);
@@ -144,10 +188,12 @@ public sealed class MarketingCaptureRunner : MonoBehaviour
                 + "],\"backgrounds\":[" + string.Join(",", backgrounds) + "]}");
         for (shot = 0; shot < levels.Length; shot++)
         {
+            ValidateLevel(levels[shot]);
             Time.timeScale = 1;
             ThemeCatalog.Unlock(backgrounds[shot], ThemeCatalog.Part.Background);
             ThemeCatalog.Select(backgrounds[shot], ThemeCatalog.Part.Background);
             manager.LoadLevel(levels[shot]);
+            if (manager.CurrentLevelIndex != levels[shot]) throw new InvalidOperationException("Wrong video level.");
             // The game is unchanged; hide the editor-only skip button in the recorded UI.
             SandEconomyHud.instance.SetSkipLevelButtonVisible(false);
             for (int i = 0; i < 95; i++) { Time.timeScale = 1; yield return null; }
@@ -160,6 +206,7 @@ public sealed class MarketingCaptureRunner : MonoBehaviour
             Canvas.ForceUpdateCanvases();
             if (LocalizationManager.Instance.GetCurrentLanguage() != language)
                 throw new InvalidOperationException("Capture language changed unexpectedly.");
+            File.WriteAllLines(Path.Combine(output, "visible-labels-" + shot + ".txt"), ValidateLabels(languageCode));
             encoder = OpenEncoder(shot, Width, Height, "source-");
             wideEncoder = OpenEncoder(shot, 1920, 1080, "wide-source-");
             for (shotFrame = 0; shotFrame < frameCount; shotFrame++, globalFrame++)
@@ -278,21 +325,37 @@ public sealed class MarketingCaptureRunner : MonoBehaviour
         widePixels = new Texture2D(photoHeight, photoWidth, TextureFormat.RGB24, false);
         GameProgressStore.SetInt("sand_progress_highest_unlocked", 999);
         ProgressSaveService.Load();
+        WinterProgress.UnlockAllLevels();
         foreach (BoosterType type in Enum.GetValues(typeof(BoosterType))) BoosterService.instance.MarkTutorialSeen(type);
         int[] levels = { 0, 4, 6, 8, 37, 1000 };
         int[] backgrounds = { 24, 40, 28, 27, 29, 30 };
         int[] conveyors = { 21, 10, 15, 16, 9, 13 };
         int[] casings = { 12, 10, 15, 16, 9, 13 };
         string[] names = { "level-001-forest", "level-005-blue-calm", "level-007-tropical", "level-009-lake", "level-038-autumn", "winter-001-snow-forest" };
+        string selectedLevels = Environment.GetEnvironmentVariable("SAND_CAPTURE_SCREENSHOT_INDICES");
+        if (!string.IsNullOrWhiteSpace(selectedLevels))
+        {
+            levels = selectedLevels.Split(',').Select(value => int.Parse(value.Trim())).ToArray();
+            if (levels.Length != backgrounds.Length)
+                throw new InvalidOperationException("The screenshot set requires six level indices.");
+            string[] scenes = { "forest", "blue-calm", "tropical", "lake", "autumn", "snow-forest" };
+            for (int index = 0; index < levels.Length; index++)
+            {
+                ValidateLevel(levels[index]);
+                names[index] = (manager.IsSeasonal(levels[index]) ? "winter-" : "level-")
+                    + manager.GetDisplayNumber(levels[index]).ToString("D3") + "-" + scenes[index];
+            }
+        }
         var records = new List<ScreenshotRecord>();
-        Directory.CreateDirectory(Path.Combine(output, "RU"));
-        Directory.CreateDirectory(Path.Combine(output, "EN"));
+        string[] languages = ScreenshotLanguages();
+        foreach (string language in languages) Directory.CreateDirectory(Path.Combine(output, language));
         for (shot = 0; shot < levels.Length; shot++)
         {
+            ValidateLevel(levels[shot]);
             Time.timeScale = 1;
             simulator.SetSimulationPaused(false);
             belt.SetMovementPaused(false);
-            LocalizationManager.Instance.SetLanguage(MirraGames.SDK.Common.LanguageType.Russian);
+            LocalizationManager.Instance.SetLanguage(LanguageFromCode(languages[0]));
             ThemeCatalog.Unlock(backgrounds[shot], ThemeCatalog.Part.Background);
             if (!ThemeCatalog.Select(backgrounds[shot], ThemeCatalog.Part.Background)) throw new InvalidOperationException("Background selection failed.");
             ThemeCatalog.Unlock(conveyors[shot], ThemeCatalog.Part.Conveyor);
@@ -318,9 +381,9 @@ public sealed class MarketingCaptureRunner : MonoBehaviour
             belt.SetMovementPaused(true);
             Time.timeScale = 0;
             int grains = loader.CurrentGrid.CountRemaining();
-            foreach (string language in new[] { "RU", "EN" })
+            foreach (string language in languages)
             {
-                var locale = language == "RU" ? MirraGames.SDK.Common.LanguageType.Russian : MirraGames.SDK.Common.LanguageType.English;
+                var locale = LanguageFromCode(language);
                 LocalizationManager.Instance.SetLanguage(locale);
                 yield return null;
                 FindObjectOfType<TutorialController>().HandleHintDismissed();
@@ -332,11 +395,7 @@ public sealed class MarketingCaptureRunner : MonoBehaviour
                 if (ThemeCatalog.SelectedBackground != backgrounds[shot] || ThemeCatalog.Selected != conveyors[shot]
                     || ThemeCatalog.SelectedCasings != casings[shot])
                     throw new InvalidOperationException("Screenshot cosmetic selection changed unexpectedly.");
-                string[] labels = FindObjectsOfType<TMPro.TextMeshProUGUI>()
-                    .Where(t => t.isActiveAndEnabled && t.gameObject.activeInHierarchy && !string.IsNullOrWhiteSpace(t.text))
-                    .Select(t => t.text).ToArray();
-                if (language == "EN" && labels.Any(t => t.Any(c => c >= '\u0400' && c <= '\u04ff')))
-                    throw new InvalidOperationException("Russian text remains in an English screenshot: " + string.Join(" / ", labels));
+                string[] labels = ValidateLabels(language);
                 Transform victory = canvas.transform.Find("EconomyLevelCompletePanel");
                 if (victory != null && victory.gameObject.activeInHierarchy) throw new InvalidOperationException("Victory UI is visible.");
                 string portrait = language + "/" + names[shot] + "-9x16.png";

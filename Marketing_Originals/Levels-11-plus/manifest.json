@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "languages": [
+    "TR",
+    "DE"
+  ],
+  "minimum_level": 11,
+  "video_level": 39,
+  "screenshot_levels": [
+    12,
+    15,
+    21,
+    25,
+    39
+  ],
+  "winter_screenshot_level": 18,
+  "videos": [
+    {
+      "file": "gameplay-tr-9x16-5x.mp4",
+      "sha256": "f12282a90de5f4c51e5928205ef6655b9e7a069187fb0ac63a4db05f2c7d78f3",
+      "seconds": 6.0,
+      "audio_rms": 0.08058125525712967,
+      "audio_peak": 0.7343090772628784,
+      "full_decode": "PASS"
+    },
+    {
+      "file": "gameplay-tr-16x9-5x.mp4",
+      "sha256": "93c7de0480a8da042a949887c80079336a4544f5fc3972dba39ad63190bf34a5",
+      "seconds": 6.0,
+      "audio_rms": 0.08058125525712967,
+      "audio_peak": 0.7343090772628784,
+      "full_decode": "PASS"
+    },
+    {
+      "file": "gameplay-de-9x16-5x.mp4",
+      "sha256": "2c7286e635037d1acd281a6a2a271e3fd8a0a4a486de010526970fbc341ea311",
+      "seconds": 6.0,
+      "audio_rms": 0.09092047810554504,
+      "audio_peak": 0.7480446100234985,
+      "full_decode": "PASS"
+    },
+    {
+      "file": "gameplay-de-16x9-5x.mp4",
+      "sha256": "4702e37324a5f676867a83425f19e069aad83c996f6fea7caa0f3625a2a43eb3",
+      "seconds": 6.0,
+      "audio_rms": 0.09092047810554504,
+      "audio_peak": 0.7480446100234985,
+      "full_decode": "PASS"
+    }
+  ],
+  "screenshots": 24,
+  "screenshots_report": "screenshots-verification-de-tr.json",
+  "visual_review": "All four screenshot sheets and four video contact sheets checked. UI labels, framing, gameplay motion, and first/last frames reviewed."
+}

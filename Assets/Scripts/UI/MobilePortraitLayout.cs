@@ -39,7 +39,7 @@ public class MobilePortraitLayout : MonoBehaviour
         Instance = this;
         canvasScaler = GetComponent<CanvasScaler>();
         ConfigureCanvasScaler();
-        LockPortraitOrientation();
+        if (!YoutubePlatform.IsPlayer) LockPortraitOrientation();
         ApplyLayout();
     }
 

@@ -66,7 +66,7 @@ public class RewardedShop : MonoBehaviour
     {
         yield return new WaitUntil(() => GameSdkReadiness.IsReady);
         LoadDataOrInit();
-        RestorePurchases();
+        if (YoutubePlatform.PurchasesAllowed) RestorePurchases();
         SetCurrencies();
         if (LocalizationManager.Instance != null)
         {
@@ -170,7 +170,12 @@ public class RewardedShop : MonoBehaviour
         RefreshRewardedGold();
     }
 
-    private void Update() => RefreshRewardedGold();
+    private void Update()
+    {
+        RefreshRewardedGold();
+        if (YoutubePlatform.IsPlayer && Input.GetKeyDown(KeyCode.Escape) && !rewardedGoldPending)
+            CloseShop();
+    }
 
     private void RefreshRewardedGold()
     {
@@ -287,6 +292,7 @@ public class RewardedShop : MonoBehaviour
 
     private void Purchase(string tag)
     {
+        if (!YoutubePlatform.PurchasesAllowed) return;
         if (!GameSdkReadiness.IsReady || !IsShopProduct(tag)) return;
         bool settled = false;
         MirraSDK.Payments.Purchase(

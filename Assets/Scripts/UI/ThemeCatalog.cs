@@ -10,7 +10,7 @@ public static class ThemeCatalog
     public const int MinimalBackgroundStart = 38;
     public const int MaterialCount = 24;
     public static int CountFor(Part part) => part == Part.Background ? Count : MaterialCount;
-    public static bool IsAvailable(int index,Part part) => index>=0 && index<CountFor(part) && (part!=Part.Background || index>=4);
+    public static bool IsAvailable(int index,Part part) => (YoutubePlatform.PurchasesAllowed || AccessFor(index,part) != Access.Money) && index>=0 && index<CountFor(part) && (part!=Part.Background || index>=4);
     public static readonly string[] Names = { "theme_classic", "theme_winter", "theme_sunset", "theme_garden", "theme_ocean", "theme_lavender", "theme_candy", "theme_checks", "theme_stars", "theme_artdeco", "theme_marble", "theme_wood", "theme_greenhouse", "theme_alpine", "theme_chalet", "theme_harbor", "theme_atelier", "theme_observatory", "theme_copper", "theme_circuit", "theme_mosaic", "theme_bamboo", "theme_honeycomb", "theme_blueprint", "theme_forest", "theme_birch", "theme_meadow", "theme_lake", "theme_tropical", "theme_autumn", "theme_snowforest", "theme_leafy", "theme_wildflowers", "theme_riverside", "theme_goldenleaves", "theme_sprigs", "theme_grasses", "theme_pinewash", "theme_mint_breeze", "theme_sunny_grass", "theme_blue_calm", "theme_peach_leaves", "theme_cloud_corners", "theme_gentle_waves", "theme_bamboo_strokes", "theme_lavender_marks", "theme_sand_dunes", "theme_berry_dots", "theme_snow_dashes", "theme_dawn_wash" };
     private static readonly string[] ReplacementNames={"theme_olive_marks","theme_sea_pebbles","theme_rose_petals","theme_fern_shadow","theme_moon_dots","theme_rain_strokes","theme_maple_marks","theme_reed_corners"};
     public static string NameKey(int index,Part part) => part==Part.Background && index>=4 && index<12 ? ReplacementNames[index-4] : Names[index];
@@ -84,12 +84,25 @@ public static class ThemeCatalog
         GameProgressStore.SetBool(OwnershipKey(index, part), true);
         GameProgressStore.Save();
     }
-    public static Access AccessFor(int index) => index == 0 ? Access.Free : index <= 3 ? Access.Rewarded : index >= 8 && index <= 11 ? Access.Money : Access.Coins;
-    public static Access AccessFor(int index,Part part) => part==Part.Background && index==DefaultBackground ? Access.Free : part==Part.Background && index>=8 && index<12 ? Access.Rewarded : part==Part.Background && index>=12 ? (index<PremiumBackgroundEnd?Access.Money:index>=MinimalRewardedStart?Access.Rewarded:Access.Coins) : AccessFor(index);
+    private static Access OriginalAccessFor(int index,Part part)
+    {
+        if(part==Part.Background)
+        {
+            if(index==DefaultBackground)return Access.Free;
+            if(index>=8 && index<12)return Access.Rewarded;
+            if(index>=12)return index<PremiumBackgroundEnd?Access.Money:index>=MinimalRewardedStart?Access.Rewarded:Access.Coins;
+        }
+        return index==0?Access.Free:index<=3?Access.Rewarded:index>=8 && index<=11?Access.Money:Access.Coins;
+    }
+    // YouTube sells former individual IAP cosmetics for gold; bundles stay disabled separately.
+    private static bool UsesGoldInsteadOfMoney(int index,Part part) => !YoutubePlatform.PurchasesAllowed && OriginalAccessFor(index,part)==Access.Money;
+    public static Access AccessFor(int index) => AccessFor(index,Part.Conveyor);
+    public static Access AccessFor(int index,Part part) => UsesGoldInsteadOfMoney(index,part)?Access.Coins:OriginalAccessFor(index,part);
     private static int BaseCoinPrice(int index) => index>=PremiumBackgroundEnd ? 1000 : index < 12 ? 600 + (index - 4) * 200 : 1400 + (index - 12) * 100;
     public static int CoinPrice(int index) => index<MaterialCount ? CoinPrice(index,Part.Conveyor) : BaseCoinPrice(index);
     public static int CoinPrice(int index,Part part)
     {
+        if(UsesGoldInsteadOfMoney(index,part))return part==Part.Background?2000:1000;
         if(part!=Part.Background)
         {
             int step=index<8?index-4:index-8;

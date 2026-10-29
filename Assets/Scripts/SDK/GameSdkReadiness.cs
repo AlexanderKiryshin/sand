@@ -18,7 +18,7 @@ public static class GameSdkReadiness
         {
             try
             {
-                return MirraSDK.IsInitialized && CheckBridgeReady();
+                return YoutubePlatform.IsPlayer ? YoutubePlatform.Ready : MirraSDK.IsInitialized && CheckBridgeReady();
             }
             catch
             {

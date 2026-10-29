@@ -1,0 +1,48 @@
+using MirraGames.SDK.Common;
+using MirraGames.SDK.MirraWeb;
+using System;
+
+namespace MirraGames.SDK.YouTubePlayables
+{
+    [Configuration]
+    public class YouTubePlayablesConfiguration : Configuration
+    {
+        public override string Name { get; } = "YouTubePlayables";
+        public override string Description { get; } = "YouTube Playables Web support from MirraGames";
+        public override string IconName { get; } = "YouTube";
+        public override bool ReadOnly { get; } = false;
+
+        public override Type[] PropertyGroups { get; } = new Type[] {
+            typeof(Framework_PropertyGroup),
+            typeof(Logger_PropertyGroup),
+        };
+
+        // Провайдеры
+        public override string AchievementsProviderName { get; } = nameof(MirraWebAchievements);
+        public override string AdsProviderName { get; } = nameof(MirraWebAds);
+        public override string EventsReporterProviderName { get; } = "FallbackEventsReporter";
+        public override string GameplayReporterProviderName { get; } = nameof(MirraWebGameplayReporter);
+
+        public override string AddressablesProviderName { get; } = "UnityEngineAddressables";
+        public override string AssetBundlesProviderName { get; } = "UnityEngineAssetBundles";
+        public override string StreamingAssetsProviderName { get; } = "UnityEngineStreamingAssets";
+        // BUSES YoutubeAudio.Apply updates the Mirra cache; one owner of SDK mute.
+        public override string AudioProviderName { get; } = "UnityEngineAudio";
+        public override string DeviceCursorProviderName { get; } = "UnityEngineDeviceCursor";
+        public override string DateTimeProviderName { get; } = "SystemDateTime";
+        public override string TimeScaleProviderName { get; } = "UnityEngineTimeScale";
+
+        public override string BootstrapProviderName { get; } = nameof(MirraWebBootstrap);
+        public override string DataProviderName { get; } = nameof(MirraWebData);
+        public override string DeviceBrowserProviderName { get; } = nameof(MirraWebDeviceBrowser);
+        public override string DeviceInfoProviderName { get; } = nameof(MirraWebDeviceInfo);
+        public override string FlagsProviderName { get; } = nameof(MirraWebFlags);
+        public override string LanguageInfoProviderName { get; } = nameof(MirraWebLanguageInfo);
+        // YTGameWrapper owns SDK lifecycle; do not add Unity focus/visibility pause sources.
+        public override string PauseProviderName { get; } = "FallbackPause";
+        public override string PaymentsProviderName { get; } = nameof(MirraWebPayments);
+        public override string PlatformInfoProviderName { get; } = nameof(MirraWebPlatformInfo);
+        public override string PlatformInteractionsProviderName { get; } = nameof(MirraWebPlatformInteractions);
+        public override string PlayerAccountProviderName { get; } = nameof(MirraWebPlayerAccount);
+    }
+}

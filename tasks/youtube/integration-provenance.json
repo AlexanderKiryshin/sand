@@ -1,0 +1,20 @@
+{
+  "busesBranch": "youtube",
+  "busesCommit": "a3ca8bda",
+  "googlePackageUrl": "https://raw.githubusercontent.com/google/web-game-samples/main/Unity/GoogleYTGameWrapper.unitypackage",
+  "googlePackageSHA256": "23192de55bd1863c0462c4dbb3ed9885626144e0f53bbb54c9471721dddc2c97",
+  "wrapperBase": "Google wrapper imported and repaired in BUSES; preserve Apache-2.0 headers",
+  "mirraBase": "9c5c97b57a117874bc5f23e3f9c420cbced1ef30",
+  "mirraChanges": [
+    "Embed pinned 5.1.31 package for reproducible source changes.",
+    "YouTube preset retains MirraWebBootstrap and platform providers; UnityEngineAudio cache is controlled by YoutubeAudio.Apply; FallbackPause avoids Unity focus overriding SDK pause.",
+    "When YTGameLifecycle exists, disable duplicate Mirra cloud initialization/autosave, localStorage fallback, ready, pause subscriptions and visibility pause. Reuse bounded SDK language request.",
+    "Keep the installed YouTube ZIP build postprocessor."
+  ],
+  "wrapperChanges": [
+    "Save Promise acknowledgments, timeout terminal state, once-only callbacks.",
+    "Strict rewarded true, no reward on cancellation/rejection/timeout; defer result until SDK resume.",
+    "Load validation and normalization of BUSES entries and previous sand map; future schemas block writes.",
+    "Lifecycle/audio subscriptions before Unity loading; explicit window.unityGameInstance and main-loop pause."
+  ]
+}

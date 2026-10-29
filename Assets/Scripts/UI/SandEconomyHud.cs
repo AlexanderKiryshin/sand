@@ -1664,26 +1664,29 @@ public class SandEconomyHud : MonoBehaviour
         float cursor = -8, rowWidth = width - 64;
         Button adGold = CreateRewardedGoldShopRow(content, PlaceBlockCenter(ref cursor, 116, 18), rowWidth, out TextMeshProUGUI adGoldLabel);
         shop.BindRewardedGold(adGold, adGoldLabel);
-        Button premium = CreateKitShopRow(content, "premium_set", PlaceBlockCenter(ref cursor, 238, 18), GameUiSymbols.Get(GameUiSymbol.Bundle), RewardedShop.SmallBundleGoldAmount, RewardedShop.SmallBundleBoosterBonus, 238, rowWidth, out TextMeshProUGUI p2);
-        Button remove = CreateRemoveAdsShopRow(content, PlaceBlockCenter(ref cursor, 274, 18), 274, rowWidth, out TextMeshProUGUI p6);
-        foreach (BoosterType type in Enum.GetValues(typeof(BoosterType)))
+        if (YoutubePlatform.PurchasesAllowed)
         {
-            Button pack = CreateBoosterPackShopRow(content, type, PlaceBlockCenter(ref cursor, 132, 18), rowWidth, out TextMeshProUGUI packPrice);
-            shop.BindBoosterPack(type, pack, packPrice);
+            Button premium = CreateKitShopRow(content, "premium_set", PlaceBlockCenter(ref cursor, 238, 18), GameUiSymbols.Get(GameUiSymbol.Bundle), RewardedShop.SmallBundleGoldAmount, RewardedShop.SmallBundleBoosterBonus, 238, rowWidth, out TextMeshProUGUI p2);
+            Button remove = CreateRemoveAdsShopRow(content, PlaceBlockCenter(ref cursor, 274, 18), 274, rowWidth, out TextMeshProUGUI p6);
+            foreach (BoosterType type in Enum.GetValues(typeof(BoosterType)))
+            {
+                Button pack = CreateBoosterPackShopRow(content, type, PlaceBlockCenter(ref cursor, 132, 18), rowWidth, out TextMeshProUGUI packPrice);
+                shop.BindBoosterPack(type, pack, packPrice);
+            }
+            Button g800 = CreateShopRow(content, "Gold " + RewardedShop.GoldSmallAmount, PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p3, 116, rowWidth);
+            Button g1500 = CreateShopRow(content, "Gold " + RewardedShop.GoldMediumAmount, PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p4, 116, rowWidth);
+            Button g3000 = CreateShopRow(content, "Gold " + RewardedShop.GoldLargeAmount, PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p5, 116, rowWidth);
+            shop.BindRuntime(CoinManager.instance, premium, g800, g1500, g3000, remove, p2, p3, p4, p5, p6);
         }
-        Button g800 = CreateShopRow(content, "Gold " + RewardedShop.GoldSmallAmount, PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p3, 116, rowWidth);
-        Button g1500 = CreateShopRow(content, "Gold " + RewardedShop.GoldMediumAmount, PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p4, 116, rowWidth);
-        Button g3000 = CreateShopRow(content, "Gold " + RewardedShop.GoldLargeAmount, PlaceBlockCenter(ref cursor, 116, 18), GameUiSymbols.Get(GameUiSymbol.Coins), out TextMeshProUGUI p5, 116, rowWidth);
         content.sizeDelta = new Vector2(rowWidth, -cursor);
         var bundlesViewport=CreatePanel("BundlesViewport",new Vector2(.5f,.5f),new Vector2(.5f,.5f),new Vector2(0,-100),new Vector2(width-48,height-300),card);
         bundlesViewport.gameObject.AddComponent<RectMask2D>();bundlesViewport.gameObject.AddComponent<Image>().color=new Color(1,1,1,.001f);
         var bundlesContent=CreatePanel("BundlesContent",new Vector2(.5f,1),new Vector2(.5f,1),Vector2.zero,new Vector2(rowWidth,1),bundlesViewport);
         bundlesContent.pivot=new Vector2(.5f,1);float bundleCursor=-8;
-        foreach(var bundle in CosmeticBundleCatalog.All.OrderByDescending(entry=>entry.IsStyleBundle))CreateNatureBundleShopRow(bundlesContent,PlaceBlockCenter(ref bundleCursor,420,18),rowWidth,bundle);
+        if (YoutubePlatform.PurchasesAllowed) foreach(var bundle in CosmeticBundleCatalog.All.OrderByDescending(entry=>entry.IsStyleBundle))CreateNatureBundleShopRow(bundlesContent,PlaceBlockCenter(ref bundleCursor,420,18),rowWidth,bundle);
         bundlesContent.sizeDelta=new Vector2(rowWidth,-bundleCursor);
         var bundlesScroll=bundlesViewport.gameObject.AddComponent<ScrollRect>();bundlesScroll.viewport=bundlesViewport;bundlesScroll.content=bundlesContent;bundlesScroll.horizontal=false;bundlesScroll.movementType=ScrollRect.MovementType.Clamped;
         root.gameObject.AddComponent<CosmeticShopTabs>().Initialize(card,viewport,bundlesViewport,width);
-        shop.BindRuntime(CoinManager.instance, premium, g800, g1500, g3000, remove, p2, p3, p4, p5, p6);
         root.gameObject.SetActive(false);
     }
 

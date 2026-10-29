@@ -31,6 +31,7 @@ public class AdManager : MonoBehaviour
 
     public bool CanStartRewarded(bool requireAdView = false)
     {
+        if (YoutubePlatform.IsPlayer) return YoutubePlatform.AdAvailable(true);
         if (rewardedAttempt != null && !rewardedAttempt.IsSettled) return false;
         if (rewardedMinInterval > 0f && Time.unscaledTime - lastRewardedTime < rewardedMinInterval)
         {
@@ -56,6 +57,14 @@ public class AdManager : MonoBehaviour
 
     public void StartRewarded(string progressMarker, string placementName, Action onSuccess, Action onNotReady, bool requireAdView = false)
     {
+        if (YoutubePlatform.IsPlayer)
+        {
+            YoutubePlatform.RequestAd(placementName, true, earned =>
+            {
+                if (earned) onSuccess?.Invoke(); else onNotReady?.Invoke();
+            });
+            return;
+        }
         if (!CanStartRewarded(requireAdView)) { onNotReady?.Invoke(); return; }
         progress = progressMarker;
         placement = placementName;
@@ -93,6 +102,11 @@ public class AdManager : MonoBehaviour
 
     public void ShowInterstitial(Action onClosed = null)
     {
+        if (YoutubePlatform.IsPlayer)
+        {
+            YoutubePlatform.RequestAd("level_transition", false, _ => onClosed?.Invoke());
+            return;
+        }
         onInterstitialClosed = onClosed;
 
         if (!GameSdkReadiness.IsReady || GameProgressStore.GetBool("no_ads"))

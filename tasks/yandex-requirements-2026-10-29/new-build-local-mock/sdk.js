@@ -1,0 +1,27 @@
+// Local deterministic Yandex SDK double. Never distributed with the release.
+const MOCK_CATALOG = [{"id":"premium_kit_75","price":"130","priceCurrencyCode":"TST"},{"id":"gold_800","price":"80","priceCurrencyCode":"TST"},{"id":"gold_1500","price":"135","priceCurrencyCode":"TST"},{"id":"gold_3000","price":"225","priceCurrencyCode":"TST"},{"id":"removeAd","price":"270","priceCurrencyCode":"TST"},{"id":"booster_magnet_10","price":"90","priceCurrencyCode":"TST"},{"id":"booster_fill_10","price":"90","priceCurrencyCode":"TST"},{"id":"booster_shuffle_10","price":"90","priceCurrencyCode":"TST"},{"id":"sand_conveyor_stars","price":"200","priceCurrencyCode":"TST"},{"id":"sand_conveyor_artdeco","price":"200","priceCurrencyCode":"TST"},{"id":"sand_conveyor_marble","price":"200","priceCurrencyCode":"TST"},{"id":"sand_conveyor_wood","price":"200","priceCurrencyCode":"TST"},{"id":"sand_casings_stars","price":"100","priceCurrencyCode":"TST"},{"id":"sand_casings_artdeco","price":"100","priceCurrencyCode":"TST"},{"id":"sand_casings_marble","price":"100","priceCurrencyCode":"TST"},{"id":"sand_casings_wood","price":"100","priceCurrencyCode":"TST"},{"id":"sand_background_greenhouse","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_alpine","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_chalet","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_harbor","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_atelier","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_observatory","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_copper","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_circuit","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_mosaic","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_bamboo","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_honeycomb","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_blueprint","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_forest","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_birch","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_meadow","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_lake","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_tropical","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_autumn","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_snowforest","price":"200","priceCurrencyCode":"TST"},{"id":"sand_background_nature_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_background_botanical_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_background_travel_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_background_cozy_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_background_artist_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_background_material_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_style_bamboo_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_style_alpine_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_style_winter_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_style_copper_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_style_night_bundle","price":"300","priceCurrencyCode":"TST"},{"id":"sand_style_blueprint_bundle","price":"300","priceCurrencyCode":"TST"}];
+window.ym = () => {};
+const MOCK_KEY = 'sand-yandex-payments-audit-v1';
+const clone = x => JSON.parse(JSON.stringify(x));
+const state = JSON.parse(localStorage.getItem(MOCK_KEY) || '{"cloud":{},"receipts":[],"next":0}');
+const save = () => localStorage.setItem(MOCK_KEY,JSON.stringify(state));
+const player = {
+  async getData(){return clone(state.cloud);},
+  async setData(data){Object.assign(state.cloud,clone(data));save();console.log('MOCK_SAVE_CONFIRMED',Object.keys(state.cloud['sand-payment-receipts-v1']?.receipts||{}).length);},
+  isAuthorized:()=>true,getName:()=> 'Local test',getUniqueID:()=> 'local-test',getPhoto:()=>''
+};
+const payments = {
+  async getCatalog(){return MOCK_CATALOG.map(p=>({...p,getPriceCurrencyImage:()=>'/currency-mock.png'}));},
+  async getPurchases(){return clone(state.receipts);},
+  async purchase({id}){const receipt={productID:id,purchaseToken:'mock-'+(++state.next)};state.receipts.push(receipt);save();console.log('MOCK_PURCHASE',id);return clone(receipt);},
+  async consumePurchase(token){if(!state.cloud['sand-payment-receipts-v1']?.receipts[token])throw new Error('consume before committed reward');state.receipts=state.receipts.filter(r=>r.purchaseToken!==token);save();console.log('MOCK_CONSUME_AFTER_SAVE',token);}
+};
+const sdk = {
+  environment:{app:{id:'local-audit'},i18n:{lang:'ru'},browser:{lang:'ru'}},
+  async getPlayer(){return player;},async getPayments(){return payments;},async getFlags(){return{};},
+  features:{LoadingAPI:{ready(){console.log('MOCK_READY');}},GameplayAPI:{start(){},stop(){}}},
+  adv:{showFullscreenAdv({callbacks}){callbacks.onOpen?.();callbacks.onClose?.(true);},showRewardedVideo({callbacks}){callbacks.onOpen?.();callbacks.onRewarded?.();callbacks.onClose?.();}},
+  auth:{async openAuthDialog(){}},on(){},off(){},
+  feedback:{async canReview(){return {value:false};}},shortcut:{async canShowPrompt(){return {canShow:false};}}
+};
+window.YaGames={async init(){console.log('LOCAL_YANDEX_MOCK_ACTIVE');return sdk;}};

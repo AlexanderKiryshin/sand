@@ -1,0 +1,264 @@
+{
+  "status": "PASS",
+  "png_count": 24,
+  "languages": [
+    "DE",
+    "TR"
+  ],
+  "levels": 6,
+  "minimum_level": 11,
+  "captured_level_numbers": [
+    12,
+    15,
+    18,
+    21,
+    25,
+    39
+  ],
+  "backgrounds": 6,
+  "same_gameplay_state_across_languages": true,
+  "losslessly_compressed": true,
+  "localized_labels_verified": true,
+  "files": [
+    {
+      "file": "TR/level-021-forest-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 2774721,
+      "sha256": "ea772cb82e01871cfcd1e4ec520298c96217e8eec62351ad0eebb7f03e93d670",
+      "rgb_sha256": "753179aee2fa3541eacbaef38d61a4eddbcc75acaa675df139cf354e317c7332"
+    },
+    {
+      "file": "TR/level-021-forest-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 2123308,
+      "sha256": "75a9f27d56d5ac9be9d6b80b51483dd143a948ff787c91bd727c5fc1c2523476",
+      "rgb_sha256": "3e9d8f790517378ce0658345ddfe58d989856ac60139c792e905bd19f4b09f02"
+    },
+    {
+      "file": "DE/level-021-forest-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 2774088,
+      "sha256": "e11b3c3e70ebb14f50581525accae4708f4f7c17edea30af23b1e090e8017b7a",
+      "rgb_sha256": "9608869ecab72adf3c11fae8d44e8cef9e43ec8d84bc9adee06817ad94d1e4e5"
+    },
+    {
+      "file": "DE/level-021-forest-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 2122436,
+      "sha256": "8d776da69616570d3af8edd3eeae7956464b0774d6e0486c1fed840bd40ccd61",
+      "rgb_sha256": "7f9ce44f1aaeab1627d31d2c6b1bf12af852005c9f28a998a1863b1732bceb92"
+    },
+    {
+      "file": "TR/level-012-blue-calm-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 1773554,
+      "sha256": "8bb1a9424d99894117fa15743632468f3779b816e99c443d1b98691f978611e4",
+      "rgb_sha256": "1e00a4207204609a074deb21d7ff6d47545908ee652ee42b594a79437de75512"
+    },
+    {
+      "file": "TR/level-012-blue-calm-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 1421250,
+      "sha256": "455dd6794137ffde514cd36618ca61244c4cf3dc9759a30415a8da5d9550c64f",
+      "rgb_sha256": "53d4c2a3d91078844039a8db4a3748cebf081560dbf44bdb8ecb20a052524c0f"
+    },
+    {
+      "file": "DE/level-012-blue-calm-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 1772910,
+      "sha256": "fa508037311196b11fa7b0928d2f7ff645869a4d4a83dc808fbfebbb16430686",
+      "rgb_sha256": "1b94058a91e4730baf301a779e55ef72253014a3cf41f04bf19ef2a718ca361f"
+    },
+    {
+      "file": "DE/level-012-blue-calm-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 1420550,
+      "sha256": "c82391d66a1cb121d8b5b9f80229dc17a91ebe3ad3d18308712f4fd9c5a3b209",
+      "rgb_sha256": "6335f6d8cc1832eb67a384ad19e69838500f3fa4e767d8aab302477df658cff9"
+    },
+    {
+      "file": "TR/level-015-tropical-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 2631290,
+      "sha256": "fbbb9d0eaf259a385682b273c8c120ade52e62f33830bc90d7bf978ddf65f6cd",
+      "rgb_sha256": "6eed8f90ed6332c60b9e8d1b37d11c07f643854f0c946220a04d33881699e537"
+    },
+    {
+      "file": "TR/level-015-tropical-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 2026294,
+      "sha256": "2e8682432e0de5611fef2bfa6f34e5fae262e730c90f2ae18a8485b9339bff79",
+      "rgb_sha256": "02464e9ff6d801a15464ee6cd3d47212b227e776b65ba265280729fea9034b3b"
+    },
+    {
+      "file": "DE/level-015-tropical-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 2629040,
+      "sha256": "ffb944fe187c48ca802af369f2d544e315c9c064863f6397ebdb0d5a060b9314",
+      "rgb_sha256": "15d0b6d984b834caaa0c42f8c42b35e39705073dc8748ad12abe7aa87ae85947"
+    },
+    {
+      "file": "DE/level-015-tropical-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 2025011,
+      "sha256": "fa479c538cf0a7da4d121545fded1f8d52cd807c301120d5174d7ee7f5a68721",
+      "rgb_sha256": "3b2382d02a19d7d866334161ba8a5890e6b8691685302e6725d643ff32e5ae4e"
+    },
+    {
+      "file": "TR/level-039-lake-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 2645478,
+      "sha256": "36a633e17418f2cd660dfab0c1af854306438a8f563ead8a636de13fa0a2e456",
+      "rgb_sha256": "83c70f1f71b9676132379b2cb9932acb3498c62150e441f7869031258620cd2b"
+    },
+    {
+      "file": "TR/level-039-lake-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 2031931,
+      "sha256": "58069c97cbbfdccdac922d9803520edc1a08a24ae4d1703b0c1a52b9ec97f6df",
+      "rgb_sha256": "656647e3cce2c3e93546d02007b80933b2782f843f4cfbc446f0fc5a0fd6e984"
+    },
+    {
+      "file": "DE/level-039-lake-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 2641233,
+      "sha256": "0dcda86a5eccf99cdb124b84a632d0eaf6c445111e8ddacd75ac675d2d6d2834",
+      "rgb_sha256": "379ec827f1d2414f4afa699ecb752a35db3c4b9a06353beadd50617ca8120084"
+    },
+    {
+      "file": "DE/level-039-lake-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 2030592,
+      "sha256": "bf0921c2691b4bef08f2af4d0421c6042004f5545e8cea3d97daf9ca2cfcd986",
+      "rgb_sha256": "abaaff2192425d8415f45f212886a7a75f7606f0b705654c0bd73d7e860197f7"
+    },
+    {
+      "file": "TR/level-025-autumn-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 2561446,
+      "sha256": "513fa9098f2bb71d279474bfe89636f8521fd2c7afffa07a92aace95b07e4cb3",
+      "rgb_sha256": "5d6bd6b9a15897cc803b0f5132cde016c013de795732da65ca1e4c361042fae7"
+    },
+    {
+      "file": "TR/level-025-autumn-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 1714025,
+      "sha256": "2bd6123804d3e2a747fdc45837ec044da2819a59bc89b55b8fe026ec5b64e6e0",
+      "rgb_sha256": "e669bd39c819541c54e543eb06f07ee27dfd46a045dfca026304368732f49aee"
+    },
+    {
+      "file": "DE/level-025-autumn-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 2561312,
+      "sha256": "ba51605d98f2d1df17d9f169e0e0587ea9333e3d47929d7809f8c5c13816b52b",
+      "rgb_sha256": "49cf6b888ecd50e5c679259e0f34091761a2963a060a9b7e2950b88edbe956e9"
+    },
+    {
+      "file": "DE/level-025-autumn-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 1713420,
+      "sha256": "dd1853ee2d9d893159d6154c20a5e534c3370d5c031b3a2fda1a7df6c931b695",
+      "rgb_sha256": "0d7ca446eadd120208e79a6a4e5af55db70870be1c74b56853bfacbc48d136e4"
+    },
+    {
+      "file": "TR/winter-018-snow-forest-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 2775458,
+      "sha256": "beef6f858cdd5a11da8810bab3be01db798455ca9148189b2837a8f93d137946",
+      "rgb_sha256": "4afb3e2f72e80f07a4fdc29ab32066f6f9423d8fdbb8c94eb927dbcb841df2c3"
+    },
+    {
+      "file": "TR/winter-018-snow-forest-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 2054868,
+      "sha256": "280dfaff6afaa95d2e320391d7d8317831eeac55026cabf3d4f4d97b5ec80093",
+      "rgb_sha256": "3702c1e9f65504e86ac3bb6dd7932bb9789a4b38a4618f5fb79a5d122a1ee980"
+    },
+    {
+      "file": "DE/winter-018-snow-forest-9x16.png",
+      "size": [
+        1440,
+        2560
+      ],
+      "bytes": 2774791,
+      "sha256": "6a645b60d25646b3fbbabca2c1c30e8d9c38b5e5b7a1ea66c4fcacbd63c379ec",
+      "rgb_sha256": "f1ac55b6475df0a5163e417351feaee2ed0e4f415ffdde57746bdce0f17ea1c1"
+    },
+    {
+      "file": "DE/winter-018-snow-forest-16x9.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 2053968,
+      "sha256": "c72e004f8748c706bb5812b28fc431c97a556fa40da90e7a90cffd92af7bd488",
+      "rgb_sha256": "c4e10d1c2a3ad4b34b1024f084e3659533318c8cb718d606eac155e8e97a03a3"
+    }
+  ]
+}

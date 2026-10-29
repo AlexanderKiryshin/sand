@@ -1,0 +1,79 @@
+{
+  "bundle": "E:\\myProjects\\sand\\Builds\\YouTube\\2026-10-28-buses-r3",
+  "integration": "Google YTGameWrapper / BUSES / Mirra YouTube preset / ZIP loader",
+  "environment": "Local Edge / WebGL2 / software GPU; simulated YouTube SDK",
+  "assertions": [
+    "Exactly one cloud load: Google wrapper owns saves, Mirra does not duplicate it",
+    "Loading screen removed before gameReady",
+    "Exactly one firstFrameReady and gameReady",
+    "Existing cloud balance survives scene initialization",
+    "Initial SDK mute silences measured WebAudio output",
+    "SDK unmute produces measured game audio",
+    "SDK pause silences measured audio",
+    "Unmute while paused cannot restart audio",
+    "SDK resume restores enabled music",
+    "Mirra resume preserves the current SDK mute",
+    "Audio checks have no browser or Unity errors"
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:57355/",
+    "http://127.0.0.1:57355/ytgame-lifecycle.js",
+    "http://127.0.0.1:57355/lib/jszip.min.js",
+    "http://127.0.0.1:57355/unityApp.js",
+    "https://www.youtube.com/game_api/v1",
+    "http://127.0.0.1:57355/Build/2026-10-28-buses-r3.data.zip",
+    "http://127.0.0.1:57355/Build/2026-10-28-buses-r3.wasm.zip",
+    "http://127.0.0.1:57355/Build/2026-10-28-buses-r3.loader.js",
+    "http://127.0.0.1:57355/Build/2026-10-28-buses-r3.framework.js"
+  ],
+  "writes": [
+    {
+      "version": 2,
+      "entries": [
+        {
+          "key": "Coins",
+          "value": "123"
+        },
+        {
+          "key": "CoinsInPreviosLevel",
+          "value": "123"
+        },
+        {
+          "key": "sand_progress_version",
+          "value": "3"
+        },
+        {
+          "key": "sand_progress_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_progress_highest_completed",
+          "value": "-1"
+        },
+        {
+          "key": "sand_progress_current_level",
+          "value": "0"
+        },
+        {
+          "key": "winter_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_selected_campaign",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "readyMilliseconds": 4168,
+  "audioMuted": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0
+  ],
+  "audioRms": 0
+}

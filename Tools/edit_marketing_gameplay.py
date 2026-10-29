@@ -62,7 +62,9 @@ def tempo_filters(speed):
 
 
 def edit(language, speed):
-    source = OUTPUT / ("lake-source-en" if language == "en" else "lake-source")
+    source = OUTPUT / ("lake-source" if language == "ru" else f"lake-source-{language}")
+    config = json.loads((source / "capture-config.json").read_text())
+    assert config.get("language", "ru") == language and len(config["levels"]) == 1
     inputs = [("9x16", source / "source-0.mp4", (1080, 1920)),
               ("16x9", source / "wide-source-0.mp4", (1920, 1080))]
     infos = [inspect_video(path) for _, path, _ in inputs]
@@ -74,11 +76,9 @@ def edit(language, speed):
     output_frames = math.ceil(kept / speed)
     duration = output_frames / 30
     source_duration = kept / 30
-    if language == "en":
-        config = json.loads((source / "capture-config.json").read_text())
-        assert config["language"] == "en"
+    if language != "ru":
         # Reuse the game's music/effect mix, with this recording's actual events.
-        audio_folder = OUTPUT / "work/en"
+        audio_folder = OUTPUT / "work" / language
         audio_folder.mkdir(parents=True, exist_ok=True)
         original_audio.OUTPUT = audio_folder
         original_audio.SOURCE = source
@@ -88,7 +88,7 @@ def edit(language, speed):
     else:
         audio = OUTPUT / "gameplay-audio.wav"
     report = {"language": language, "speed": speed, "fps": 30,
-              "level": 9, "background": "lake", "tutorials": False,
+              "level": config["levels"][0], "background": "lake", "tutorials": False,
               "captions": False, "victory_window_included": False,
               "kept_source_frames": kept, "kept_source_seconds": source_duration,
               "output_frames": output_frames, "duration_seconds": duration,
@@ -128,8 +128,10 @@ def edit(language, speed):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--language", required=True, choices=["ru", "en"])
+    parser.add_argument("--language", required=True, choices=["ru", "en", "tr", "de"])
     parser.add_argument("--speed", type=float, default=5)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
     options = parser.parse_args()
+    OUTPUT = options.output.resolve()
     assert math.isfinite(options.speed) and options.speed > 0
     edit(options.language, options.speed)

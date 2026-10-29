@@ -78,6 +78,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     }
     public bool TryShow(GameManager manager,Action continuation)
     {
+        if(!YoutubePlatform.PurchasesAllowed)return false;
         if(overlay==null || IsOpen || manager==null || manager.State!=GameState.LevelComplete)return false;
         int number=manager.GetDisplayNumber(manager.CurrentLevelIndex);
         if(!NatureBackgroundBundle.ShouldOffer(number,manager.IsSeasonal(manager.CurrentLevelIndex)))return false;
@@ -88,6 +89,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     }
     public bool ShowFromShop(CosmeticBundle selection=null)
     {
+        if(!YoutubePlatform.PurchasesAllowed)return false;
         if(overlay==null || IsOpen || pending)return false;
         selection=selection??CosmeticBundleCatalog.Nature;if(selection.IsOwned)return false;
         bundle=selection;Open(null);return true;

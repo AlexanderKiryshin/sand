@@ -1,0 +1,127 @@
+{
+  "artifact": "E:\\myProjects\\sand\\Builds\\sand[18]-mirraSDK[5.1.31].zip",
+  "sha256": "8596942bf8fa381ef4a389c0dbfd941b15f4c322b99aff47af0b03ac5147f6b2",
+  "zip_bytes": 26432853,
+  "unpacked_zip_bytes": 26583301,
+  "file_count": 29,
+  "root_index_html": true,
+  "invalid_names": [],
+  "files": [
+    {
+      "name": "gameBackground.png",
+      "bytes": 8300
+    },
+    {
+      "name": "gameIcon.png",
+      "bytes": 344593
+    },
+    {
+      "name": "index.html",
+      "bytes": 1132
+    },
+    {
+      "name": "manifest.webmanifest",
+      "bytes": 360
+    },
+    {
+      "name": "unityApp.js",
+      "bytes": 12657
+    },
+    {
+      "name": "Build/sand[18]-mirraSDK[5.1.31].data.br",
+      "bytes": 21003190
+    },
+    {
+      "name": "Build/sand[18]-mirraSDK[5.1.31].framework.js.br",
+      "bytes": 108471
+    },
+    {
+      "name": "Build/sand[18]-mirraSDK[5.1.31].loader.js",
+      "bytes": 20680
+    },
+    {
+      "name": "Build/sand[18]-mirraSDK[5.1.31].wasm.br",
+      "bytes": 4560114
+    },
+    {
+      "name": "TemplateData/diagnostics.css",
+      "bytes": 1709
+    },
+    {
+      "name": "TemplateData/diagnostics.js",
+      "bytes": 12054
+    },
+    {
+      "name": "TemplateData/favicon.ico",
+      "bytes": 5438
+    },
+    {
+      "name": "TemplateData/fullscreen-button.png",
+      "bytes": 175
+    },
+    {
+      "name": "TemplateData/landscape-only.png",
+      "bytes": 7957
+    },
+    {
+      "name": "TemplateData/MemoryProfiler.png",
+      "bytes": 665
+    },
+    {
+      "name": "TemplateData/portrait-only.png",
+      "bytes": 7867
+    },
+    {
+      "name": "TemplateData/progress_empty_128.png",
+      "bytes": 4383
+    },
+    {
+      "name": "TemplateData/progress_empty_256.png",
+      "bytes": 4175
+    },
+    {
+      "name": "TemplateData/progress_full_128.png",
+      "bytes": 4341
+    },
+    {
+      "name": "TemplateData/progress_full_256.png",
+      "bytes": 4122
+    },
+    {
+      "name": "TemplateData/style.css",
+      "bytes": 2458
+    },
+    {
+      "name": "TemplateData/unity-logo-dark.png",
+      "bytes": 3042
+    },
+    {
+      "name": "TemplateData/unity-logo-light.png",
+      "bytes": 3077
+    },
+    {
+      "name": "TemplateData/webmemd-icon.png",
+      "bytes": 1670
+    },
+    {
+      "name": "TemplateData/icons/sand-icon-192.png",
+      "bytes": 58934
+    },
+    {
+      "name": "TemplateData/icons/sand-icon-32.png",
+      "bytes": 2452
+    },
+    {
+      "name": "TemplateData/icons/sand-icon-512.png",
+      "bytes": 388081
+    },
+    {
+      "name": "TemplateData/icons/unity-logo-dark.png",
+      "bytes": 5615
+    },
+    {
+      "name": "TemplateData/icons/unity-logo-light.png",
+      "bytes": 5589
+    }
+  ]
+}

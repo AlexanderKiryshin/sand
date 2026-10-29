@@ -1,0 +1,18 @@
+[
+  {
+    "file": "gameplay-tr-9x16-5x.mp4",
+    "sha256": "f12282a90de5f4c51e5928205ef6655b9e7a069187fb0ac63a4db05f2c7d78f3",
+    "seconds": 6.0,
+    "audio_rms": 0.08058125525712967,
+    "audio_peak": 0.7343090772628784,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "gameplay-tr-16x9-5x.mp4",
+    "sha256": "93c7de0480a8da042a949887c80079336a4544f5fc3972dba39ad63190bf34a5",
+    "seconds": 6.0,
+    "audio_rms": 0.08058125525712967,
+    "audio_peak": 0.7343090772628784,
+    "full_decode": "PASS"
+  }
+]

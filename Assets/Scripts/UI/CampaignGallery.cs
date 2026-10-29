@@ -238,6 +238,11 @@ public class CampaignGallery : MonoBehaviour
         return level.seasonalNumber > 0;
     }
 
+    private void Update()
+    {
+        if (YoutubePlatform.IsPlayer && IsOpen && Input.GetKeyDown(KeyCode.Escape)) Close();
+    }
+
     public void Close()
     {
         gameObject.SetActive(false);

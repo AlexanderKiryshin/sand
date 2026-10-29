@@ -1,0 +1,25 @@
+{
+  "environment": "Local Edge / WebGL2 / software GPU; simulated YouTube SDK",
+  "assertions": [
+    "Touch-capable mobile viewport starts and accepts input without errors"
+  ],
+  "errors": [],
+  "requests": [],
+  "writes": [
+    {
+      "version": 1,
+      "values": {
+        "Coins": 123,
+        "CoinsInPreviosLevel": 123,
+        "sand_progress_version": 3,
+        "sand_progress_highest_unlocked": 0,
+        "sand_progress_highest_completed": -1,
+        "sand_progress_current_level": 0,
+        "winter_highest_unlocked": 0,
+        "sand_selected_campaign": 0
+      }
+    }
+  ],
+  "superseded": true,
+  "supersededReason": "Old custom bridge / Unity Gzip export; not evidence for the BUSES-based port."
+}

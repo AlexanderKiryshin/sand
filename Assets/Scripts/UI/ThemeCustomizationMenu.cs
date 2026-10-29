@@ -192,7 +192,7 @@ public sealed class ThemeCustomizationMenu : MonoBehaviour
         float scale=Mathf.Max(.001f,canvas.scaleFactor);Rect safe=Screen.safeArea;
         opener.anchoredPosition=new Vector2(safe.xMin/scale+104,-(Screen.height-safe.yMax)/scale-104);
         if(!embedded)card.localScale=Vector3.one*Mathf.Max(.1f,Mathf.Min(1,(safe.width/scale-40)/700,(safe.height/scale-40)/1100));
-        if(!restored && GameSdkReadiness.IsReady)
+        if(YoutubePlatform.PurchasesAllowed && !restored && GameSdkReadiness.IsReady)
         {
             restored=true;
             try { MirraSDK.Payments.RestorePurchases(data=> {

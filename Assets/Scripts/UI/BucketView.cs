@@ -8,11 +8,6 @@ public class BucketView : MonoBehaviour
     [SerializeField] private Image bucketImage;
     [SerializeField] private Button button;
     [SerializeField] private TextMeshProUGUI capacityLabel;
-    [Header("Sprites")]
-    [Tooltip("White or grayscale sprite tinted with the bucket color when the bucket can be taken.")]
-    [SerializeField] private Sprite openBucketSprite;
-    [Tooltip("White or grayscale sprite tinted with the bucket color when the bucket is blocked.")]
-    [SerializeField] private Sprite lockedBucketSprite;
 
     private Bucket bucket;
     private Action<Bucket> onClick;

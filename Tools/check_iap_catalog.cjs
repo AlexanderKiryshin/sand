@@ -72,6 +72,7 @@ for (const [id, coins, charges] of [['premium_kit_75', 'SmallBundleGoldAmount', 
 }
 assert.equal(products.get('removeAd').price_rub, catalog.remove_ads_price_basis.booster_pack_ids.reduce((total, id) => total + products.get(id).price_rub, 0));
 assert.equal(products.get('removeAd').rewards.no_ads, true);
+assert.equal(products.get('removeAd').consumable, false, 'Remove ads must be a one-time purchase');
 for (const bundle of theme.products.filter(p => p.category === 'background_bundle')) {
   const item = products.get(bundle.tag);
   assert.deepEqual(item.rewards.cosmetics.map(c => c.theme_index), bundle.background_ids);

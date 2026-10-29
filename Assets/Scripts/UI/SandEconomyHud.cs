@@ -239,7 +239,6 @@ public class SandEconomyHud : MonoBehaviour
 
         RefreshBoosters();
         TryStartBoosterTutorial(levelIndex);
-        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStart();
     }
 
     public void ShowLevelComplete()
@@ -255,7 +254,7 @@ public class SandEconomyHud : MonoBehaviour
             AdManager.instance.OnWindowEnabled(true);
         }
 
-        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStop();
+        GameIsReady.SetLevelPlaying(false);
         StartCoroutine(PlayStars());
     }
 
@@ -422,6 +421,7 @@ public class SandEconomyHud : MonoBehaviour
         ApplyBuyPopupLayout();
         buyPopup.transform.SetAsLastSibling();
         buyPopup.SetActive(true);
+        GameIsReady.SetWindowOpen(buyPopup, true);
 
         if (AdManager.instance != null)
         {
@@ -477,6 +477,7 @@ public class SandEconomyHud : MonoBehaviour
         if (buyPopup != null)
         {
             buyPopup.SetActive(false);
+            GameIsReady.SetWindowOpen(buyPopup, false);
         }
 
         if (AdManager.instance != null)
@@ -564,7 +565,6 @@ public class SandEconomyHud : MonoBehaviour
             AdManager.instance.OnWindowEnabled(false);
         }
 
-        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStart();
         gameManager?.LoadNextLevel();
     }
 
@@ -1684,6 +1684,7 @@ public class SandEconomyHud : MonoBehaviour
         var bundlesScroll=bundlesViewport.gameObject.AddComponent<ScrollRect>();bundlesScroll.viewport=bundlesViewport;bundlesScroll.content=bundlesContent;bundlesScroll.horizontal=false;bundlesScroll.movementType=ScrollRect.MovementType.Clamped;
         root.gameObject.AddComponent<CosmeticShopTabs>().Initialize(card,viewport,bundlesViewport,width);
         shop.BindRuntime(CoinManager.instance, premium, g800, g1500, g3000, remove, p2, p3, p4, p5, p6);
+        shop.InitializePayments(this);
         root.gameObject.SetActive(false);
     }
 

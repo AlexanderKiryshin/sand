@@ -4,13 +4,15 @@ Push-Location (Split-Path $PSScriptRoot -Parent)
 try {
     New-Item -ItemType Directory -Force Temp/AdAnalyticsChecks | Out-Null
     $taskReferences = "$UnityData/MonoBleedingEdge/lib/mono/4.5"
+    $sdkPayments = (Get-ChildItem Library/PackageCache -Directory -Filter 'com.romanlee17.mirrasdk5@*' | Select-Object -First 1).FullName + '/Runtime/Common/Interfaces/Payments'
     & "$UnityData/NetCoreRuntime/dotnet.exe" "$UnityData/DotNetSdkRoslyn/csc.dll" `
         -nologo -target:exe -out:Temp/AdAnalyticsChecks/check.exe -nostdlib `
         "-r:$taskReferences/mscorlib.dll" "-r:$taskReferences/System.Core.dll" `
         Tools/check_ad_analytics.cs Assets/Scripts/SDK/GameSdkReadiness.cs Assets/Scripts/SDK/AdManager.cs Assets/Scripts/SDK/Analytic.cs `
         Assets/Scripts/SDK/GameIsReady.cs Assets/Scripts/UI/OpenWindow.cs `
         Assets/Scripts/SDK/LevelAnalyticsSession.cs Assets/Scripts/SDK/RewardedAttempt.cs Assets/Scripts/UI/RewardedShop.cs `
-        Assets/Scripts/Boosters/BoosterService.cs Assets/Scripts/Boosters/BoosterCatalog.cs
+        Assets/Scripts/Boosters/BoosterService.cs Assets/Scripts/Boosters/BoosterCatalog.cs `
+        "$sdkPayments/Components/IProductSupply.cs" "$sdkPayments/Components/IRestoreData.cs" "$sdkPayments/Types/RestoreData.cs"
     if ($LASTEXITCODE -ne 0) { throw 'Analytics check compilation failed.' }
     & "$UnityData/MonoBleedingEdge/bin/mono.exe" Temp/AdAnalyticsChecks/check.exe
     if ($LASTEXITCODE -ne 0) { throw 'Analytics callback checks failed.' }

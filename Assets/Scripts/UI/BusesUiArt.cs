@@ -7,36 +7,18 @@ public static class BusesUiArt
 {
     private static Sprite goldIcon;
     private static Sprite starIcon;
-    private static Sprite trophyIcon;
-    private static Sprite storeIcon;
     private static Sprite adIcon;
-    private static Sprite lockIcon;
-    private static Sprite closeIcon;
     private static Sprite frameWhite;
-    private static Sprite frameBlue;
-    private static Sprite ribbonYellow;
     private static Sprite btnGreen;
-    private static Sprite btnBlue;
-    private static Sprite btnRed;
-    private static Sprite removeAdsIcon;
 
     public static Sprite Gold => goldIcon ?? (goldIcon = Load("UI/BusesIcons/Icon_Gold"));
     public static Sprite Star => starIcon ?? (starIcon = Load("UI/BusesIcons/Icon_ImageIcon_Star01_m"));
-    public static Sprite Trophy => trophyIcon ?? (trophyIcon = Load("UI/BusesIcons/Icon_Trophy"));
-    public static Sprite Store => storeIcon ?? (storeIcon = Load("UI/BusesIcons/Pictoicon_Store"));
     public static Sprite Ad => adIcon ?? (adIcon = Load("UI/BusesIcons/Icon_ImageIcon_Ad_00_l"));
-    public static Sprite Lock => lockIcon ?? (lockIcon = Load("UI/BusesIcons/Icon_Lock"));
-    public static Sprite Close => closeIcon ?? (closeIcon = Load("UI/BusesIcons/Pictoicon_Close"));
     public static Sprite FrameWhite => frameWhite ?? (frameWhite = Load("UI/BusesFrames/Frame_BasicFrame_Square09_White"));
-    public static Sprite FrameBlue => frameBlue ?? (frameBlue = Load("UI/BusesFrames/Frame_CardFrame03_Blue"));
-    public static Sprite RibbonYellow => ribbonYellow ?? (ribbonYellow = Load("UI/BusesFrames/Label_TitleRibbon_Yellow"));
     public static Sprite BtnGreen => btnGreen ?? (btnGreen = Load("UI/BusesButtons/Btn_MainButton_Green"));
-    public static Sprite BtnBlue => btnBlue ?? (btnBlue = Load("UI/BusesButtons/Btn_MainButton_Blue"));
-    public static Sprite BtnRed => btnRed ?? (btnRed = Load("UI/BusesButtons/Btn_MainButton_Red"));
     public static Sprite Magnet => GameUiSymbols.Get(GameUiSymbol.Magnet);
     public static Sprite Transparent => GameUiSymbols.Get(GameUiSymbol.Fill);
     public static Sprite Shuffle => GameUiSymbols.Get(GameUiSymbol.Shuffle);
-    public static Sprite RemoveAds => removeAdsIcon ?? (removeAdsIcon = Load("UI/BusesIcons/Icon_Adremove"));
 
     public static Sprite GetBoosterIcon(BoosterType type)
     {

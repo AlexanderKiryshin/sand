@@ -125,6 +125,7 @@ public class AudioSettingsMenu : MonoBehaviour
         Time.timeScale = 0f;
         overlay.SetAsLastSibling();
         overlay.gameObject.SetActive(true);
+        GameIsReady.SetWindowOpen(this, true);
 #if UNITY_EDITOR
         cheatTaps = 0;
 #endif
@@ -136,6 +137,7 @@ public class AudioSettingsMenu : MonoBehaviour
         if (!IsOpen) return;
         overlay.gameObject.SetActive(false);
         if (Mathf.Approximately(Time.timeScale, 0f)) Time.timeScale = previousTimeScale;
+        GameIsReady.SetWindowOpen(this, false);
         if (audio != null) audio.PlayTap();
     }
 

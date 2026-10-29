@@ -94,6 +94,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     }
     private void Open(Action continuation)
     {
+        GameIsReady.SetWindowOpen(this,true);
         previousTime=Time.timeScale;Time.timeScale=0;onContinue=continuation;
         bool style=bundle.IsStyleBundle;
         pager.enabled=!style;pager.content.gameObject.SetActive(!style);
@@ -109,6 +110,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     {
         if(!IsOpen || pending)return;
         overlay.gameObject.SetActive(false);Time.timeScale=previousTime;
+        GameIsReady.SetWindowOpen(this,false);
         var continuation=onContinue;onContinue=null;continuation?.Invoke();
     }
     private void Purchase()
@@ -226,7 +228,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
         var button=root.gameObject.AddComponent<Button>();button.onClick.AddListener(click);Label(root,"Label",Vector2.zero,new Vector2(64,60),44).text=glyph;return button;
     }
     private static void Stretch(RectTransform rect){rect.anchorMin=Vector2.zero;rect.anchorMax=Vector2.one;rect.offsetMin=rect.offsetMax=Vector2.zero;}
-    private void OnDestroy(){if(IsOpen)Time.timeScale=previousTime;onContinue=null;}
+    private void OnDestroy(){if(IsOpen)Time.timeScale=previousTime;GameIsReady.SetWindowOpen(this,false);onContinue=null;}
     private static void Face(RectTransform root,Color tint){var image=root.gameObject.AddComponent<Image>();image.sprite=HintUiSprites.RoundedPanel;image.type=Image.Type.Sliced;image.color=tint;}
     private static RectTransform Rect(string name,Transform parent,Vector2 size,Vector2 position){var go=new GameObject(name,typeof(RectTransform));go.transform.SetParent(parent,false);var rect=(RectTransform)go.transform;rect.sizeDelta=size;rect.anchoredPosition=position;return rect;}
     private static TextMeshProUGUI Label(Transform parent,string name,Vector2 position,Vector2 size,float font){var label=Rect(name,parent,size,position).gameObject.AddComponent<TextMeshProUGUI>();label.fontSize=font;label.enableWordWrapping=true;label.enableAutoSizing=true;label.fontSizeMin=font*.7f;label.fontSizeMax=font;label.alignment=TextAlignmentOptions.Center;label.color=Ink;label.raycastTarget=false;return label;}

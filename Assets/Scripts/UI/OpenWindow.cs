@@ -1,11 +1,10 @@
-using MirraGames.SDK;
 using UnityEngine;
 
 public class OpenWindow : MonoBehaviour
 {
     public void Open()
     {
-        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStop();
+        GameIsReady.SetWindowOpen(this, true);
         gameObject.SetActive(true);
         if (AdManager.instance != null)
         {
@@ -15,11 +14,13 @@ public class OpenWindow : MonoBehaviour
 
     public void Close()
     {
-        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStart();
         gameObject.SetActive(false);
+        GameIsReady.SetWindowOpen(this, false);
         if (AdManager.instance != null)
         {
             AdManager.instance.OnWindowEnabled(false);
         }
     }
+
+    private void OnDisable() => GameIsReady.SetWindowOpen(this, false);
 }

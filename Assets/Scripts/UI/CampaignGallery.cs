@@ -48,6 +48,7 @@ public class CampaignGallery : MonoBehaviour
         overlay.sortingOrder = 100;
         root.AddComponent<GraphicRaycaster>();
         IsOpen = true;
+        GameIsReady.SetWindowOpen(gallery, true);
         gallery.database = database;
         gallery.manager = manager;
         gallery.completedLevelsOnly = completedLevelsOnly;
@@ -261,6 +262,7 @@ public class CampaignGallery : MonoBehaviour
             pauseCaptured = false;
         }
         IsOpen = false;
+        GameIsReady.SetWindowOpen(this, false);
     }
 
     private static RectTransform Rect(string name, Transform parent, Vector2 size, Vector2 position)

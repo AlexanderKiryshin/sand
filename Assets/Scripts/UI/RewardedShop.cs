@@ -20,6 +20,8 @@ public class RewardedShop : MonoBehaviour
     private Button rewardedGoldButton;
     private TextMeshProUGUI rewardedGoldLabel;
     private bool rewardedGoldPending;
+    private bool paymentsInitializationStarted;
+    private bool purchasePending;
     private readonly Dictionary<BoosterType, (Button button, TextMeshProUGUI price)> boosterPacks
         = new Dictionary<BoosterType, (Button button, TextMeshProUGUI price)>();
     [SerializeField] private CoinManager coinManager;
@@ -46,6 +48,11 @@ public class RewardedShop : MonoBehaviour
     private const string Gold1500Tag = "gold_1500";
     private const string Gold3000Tag = "gold_3000";
     private const string RemoveAdTag = "removeAd";
+    private static readonly string[] ShopProductTags =
+    {
+        PremiumKitTag, Gold800Tag, Gold1500Tag, Gold3000Tag, RemoveAdTag,
+        "booster_magnet_10", "booster_fill_10", "booster_shuffle_10"
+    };
 
     private void Awake()
     {
@@ -59,12 +66,21 @@ public class RewardedShop : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(InitPaymentsRoutine());
+        InitializePayments(this);
+    }
+
+    public void InitializePayments(MonoBehaviour coroutineHost)
+    {
+        if (paymentsInitializationStarted) return;
+        paymentsInitializationStarted = true;
+        // The HUD remains active while the shop is closed, including during SDK startup.
+        coroutineHost.StartCoroutine(InitPaymentsRoutine());
     }
 
     private System.Collections.IEnumerator InitPaymentsRoutine()
     {
         yield return new WaitUntil(() => GameSdkReadiness.IsReady);
+        if (this == null) yield break;
         LoadDataOrInit();
         if (YoutubePlatform.PurchasesAllowed) RestorePurchases();
         SetCurrencies();
@@ -90,7 +106,7 @@ public class RewardedShop : MonoBehaviour
             AdManager.instance.OnWindowEnabled(true);
         }
 
-        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStop();
+        GameIsReady.SetWindowOpen(this, true);
         gameObject.SetActive(true);
         transform.SetAsLastSibling();
         SetCurrencies();
@@ -107,9 +123,11 @@ public class RewardedShop : MonoBehaviour
             AdManager.instance.OnWindowEnabled(false);
         }
 
-        if (GameSdkReadiness.IsReady) MirraSDK.Analytics.GameplayStart();
         gameObject.SetActive(false);
+        GameIsReady.SetWindowOpen(this, false);
     }
+
+    private void OnDisable() => GameIsReady.SetWindowOpen(this, false);
 
     public void BindRuntime(
         CoinManager coins,
@@ -237,7 +255,18 @@ public class RewardedShop : MonoBehaviour
         if (!GameSdkReadiness.IsReady) return;
         MirraSDK.Payments.RestorePurchases(fetchData =>
         {
-            fetchData.RestoreProduct(RemoveAdTag, () => ApplyPurchase(RemoveAdTag));
+            if (fetchData == null || this == null) return;
+            foreach (string tag in ShopProductTags)
+                fetchData.RestoreProduct(tag, () => ApplyPurchase(tag));
+            // A non-consumable remains owned even when its bonus was supplied earlier.
+            if (fetchData.AllPurchases != null && Array.IndexOf(fetchData.AllPurchases, RemoveAdTag) >= 0
+                && !GameProgressStore.GetBool("no_ads"))
+            {
+                GameProgressStore.SetBool("no_ads", true);
+                GameProgressStore.Save();
+            }
+            LoadDataOrInit();
+            SetCurrencies();
         });
     }
 
@@ -293,7 +322,13 @@ public class RewardedShop : MonoBehaviour
     private void Purchase(string tag)
     {
         if (!YoutubePlatform.PurchasesAllowed) return;
-        if (!GameSdkReadiness.IsReady || !IsShopProduct(tag)) return;
+        if (purchasePending || !GameSdkReadiness.IsReady || !IsShopProduct(tag)) return;
+        if (tag == RemoveAdTag)
+        {
+            LoadDataOrInit();
+            if (!IsAdActive) { SetCurrencies(); return; }
+        }
+        purchasePending = true;
         bool settled = false;
         MirraSDK.Payments.Purchase(
             productTag: tag,
@@ -301,22 +336,23 @@ public class RewardedShop : MonoBehaviour
             {
                 if (settled) return;
                 settled = true;
-                Analytic.BuyInApp(ProgressSaveService.CurrentLevelIndex.ToString(), tag);
+                purchasePending = false;
                 ApplyPurchase(tag);
+                Analytic.BuyInApp(ProgressSaveService.CurrentLevelIndex.ToString(), tag);
+                SetCurrencies();
             },
             onError: () =>
             {
                 if (settled) return;
                 settled = true;
+                purchasePending = false;
                 Debug.LogWarning("Failed to purchase " + tag);
             });
     }
 
     private static bool IsShopProduct(string tag)
     {
-        return tag == PremiumKitTag || tag == Gold800Tag || tag == Gold1500Tag || tag == Gold3000Tag
-            || tag == RemoveAdTag || tag == GetBoosterPackTag(BoosterType.Magnet)
-            || tag == GetBoosterPackTag(BoosterType.Transparent) || tag == GetBoosterPackTag(BoosterType.Shuffle);
+        return Array.IndexOf(ShopProductTags, tag) >= 0;
     }
 
     private void ApplyPurchase(string purchaseKey)
@@ -350,10 +386,11 @@ public class RewardedShop : MonoBehaviour
                 break;
             case RemoveAdTag:
                 IsAdActive = false;
-                GameProgressStore.SetBool("no_ads", true);
-                GameProgressStore.Save();
+                if (GameProgressStore.GetBool("no_ads")) break;
                 boosters?.GrantChargesToAll(RemoveAdsBoosterBonus);
                 coins?.AddCoinsOnBuy(RemoveAdsGoldAmount);
+                GameProgressStore.SetBool("no_ads", true);
+                GameProgressStore.Save();
                 OnNoAdsBuy?.Invoke();
                 break;
         }

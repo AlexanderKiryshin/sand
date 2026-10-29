@@ -257,6 +257,7 @@ public class GameManager : MonoBehaviour
             else index = Mathf.Clamp(ProgressSaveService.HighestUnlockedIndex, 0, maxIndex);
         }
 
+        GameIsReady.SetLevelPlaying(false);
         currentLevelIndex = index;
         StopCoroutine(nameof(PresentLevelComplete));
         FindObjectOfType<SandPourAnimator>()?.ClearPour();
@@ -337,6 +338,7 @@ public class GameManager : MonoBehaviour
         HandleInventoryChanged();
         HandleConveyorChanged();
 
+        GameIsReady.SetLevelPlaying(true);
         if (winConditionChecker != null)
         {
             winConditionChecker.CheckConditions();
@@ -510,6 +512,7 @@ public class GameManager : MonoBehaviour
         }
 
         gameState = GameState.LevelComplete;
+        GameIsReady.SetLevelPlaying(false);
         Analytic.CompleteLevel();
         if (tutorialController != null) tutorialController.HandleLevelCompleted();
         if (IsSeasonal(currentLevelIndex))

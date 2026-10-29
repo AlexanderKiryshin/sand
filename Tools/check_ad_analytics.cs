@@ -11,7 +11,8 @@ namespace UnityEngine
     public class MonoBehaviour
     {
         protected GameObject gameObject = new GameObject(); protected Transform transform = new Transform();
-        protected void Destroy(object value) {} protected void StartCoroutine(System.Collections.IEnumerator value) {}
+        public readonly List<System.Collections.IEnumerator> Coroutines = new List<System.Collections.IEnumerator>();
+        protected void Destroy(object value) {} public void StartCoroutine(System.Collections.IEnumerator value) { Coroutines.Add(value); }
         protected static T FindObjectOfType<T>() where T:class => null;
         protected T GetComponent<T>() where T:class => null;
     }
@@ -36,7 +37,15 @@ namespace UnityEngine.UI
     }
 }
 namespace TMPro { public class TextMeshProUGUI { public string text; } }
-namespace MirraGames.SDK.Common { public class ProductData { public string GetFullPriceFloat() => "100"; } }
+namespace MirraGames.SDK.Common
+{
+    public class ProductData { public string GetFullPriceFloat() => "100"; }
+    public static class Logger
+    {
+        public static void CreateText(object owner, string message) {}
+        public static void CreateError(object owner, string message) {}
+    }
+}
 namespace MirraGames.SDK
 {
     public static class MirraSDK
@@ -49,9 +58,10 @@ namespace MirraGames.SDK
         public static class Analytics
         {
             public static int Calls;
-            public static void GameIsReady() { Calls++; }
-            public static void GameplayStart() { Calls++; }
-            public static void GameplayStop() { Calls++; }
+            public static readonly List<string> Events = new List<string>();
+            public static void GameIsReady() { Calls++; Events.Add("ready"); }
+            public static void GameplayStart() { Calls++; Events.Add("start"); }
+            public static void GameplayStop() { Calls++; Events.Add("stop"); }
         }
         public static class Time { public static int Writes; public static float Scale { set { Writes++; } } }
     }
@@ -65,12 +75,15 @@ namespace MirraGames.SDK
         public void InvokeInterstitial(Action onOpen = null, Action<bool> onClose = null)
         { if (Throw) throw new Exception(); Open = onOpen; Close = onClose; }
     }
-    public sealed class FakePayments
+    public sealed class FakePayments : Common.IProductSupply
     {
         public int PurchasedChecks;
         public int PriceChecks, PurchaseRequests;
         public int RestoreRequests;
         public bool AlreadyPurchased;
+        public bool RestoreFails;
+        public readonly List<string> Receipts = new List<string>();
+        private readonly Dictionary<string, int> supplies = new Dictionary<string, int>();
         public Action Success, Error;
         public void Purchase(string productTag, Action onSuccess, Action onError) { PurchaseRequests++; Success = onSuccess; Error = onError; }
         public bool IsAlreadyPurchased(string productTag)
@@ -80,8 +93,13 @@ namespace MirraGames.SDK
             return AlreadyPurchased;
         }
         public Common.ProductData GetProductData(string tag) { PriceChecks++; return new Common.ProductData(); }
-        public void RestorePurchases(Action<RestoredProducts> callback) { RestoreRequests++; callback(new RestoredProducts()); }
-        public class RestoredProducts { public void RestoreProduct(string tag, Action apply) => apply(); }
+        public void RestorePurchases(Action<Common.IRestoreData> callback)
+        { RestoreRequests++; callback(RestoreFails ? null : new Common.RestoreData(this, Receipts.ToArray())); }
+        public string GetSupplyId(string tag) => tag;
+        public int GetSupplyCount(string tag) => supplies.TryGetValue(tag, out int count) ? count : 0;
+        public void SetSupplyCount(string tag, int count) { supplies[tag] = count; }
+        public void SupplyProduct(string tag, Action apply, bool countProduct = true)
+        { apply(); if (countProduct) SetSupplyCount(tag, GetSupplyCount(tag) + 1); }
     }
 }
 public static class GameProgressStore
@@ -126,6 +144,7 @@ public static class AdAnalyticsChecks
         foreach (var product in products)
         {
             Reset(); CoinManager.instance.Coins = 0;
+            shop.IsAdActive = true;
             foreach (BoosterType type in Enum.GetValues(typeof(BoosterType))) GameProgressStore.SetInt(BoosterCatalog.GetSaveKey(type), 0);
             var payments = MirraGames.SDK.MirraSDK.Payments = new MirraGames.SDK.FakePayments();
             purchase.Invoke(shop, new object[] { product.Id });
@@ -151,8 +170,114 @@ public static class AdAnalyticsChecks
         Analytic.BeginLevel(299, new LevelData(), false);
         return new AdManager();
     }
+    private static void CheckGameplayLifecycle()
+    {
+        typeof(GameIsReady).GetMethod("Reset", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic).Invoke(null, null);
+        var events = MirraGames.SDK.MirraSDK.Analytics.Events;
+        events.Clear();
+        MirraGames.SDK.MirraSDK.IsInitialized = false;
+        var ready = (System.Collections.IEnumerator)typeof(GameIsReady).GetMethod("Start",
+            System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).Invoke(new GameIsReady(), null);
+        ready.MoveNext();
+        var wait = (UnityEngine.WaitUntil)ready.Current;
+        Require(!wait.Predicate(), "Ready must wait for SDK and level");
+        MirraGames.SDK.MirraSDK.IsInitialized = true;
+        Require(!wait.Predicate(), "SDK alone must not start gameplay before level load");
+        var shop = new object(); var offer = new object();
+        GameIsReady.SetWindowOpen(shop, true);
+        GameIsReady.SetLevelPlaying(true);
+        Require(wait.Predicate(), "Loaded level releases game ready");
+        ready.MoveNext();
+        Require(events.SequenceEqual(new[] { "ready" }), "An early open shop must suppress startup gameplay");
+        GameIsReady.SetWindowOpen(offer, true);
+        GameIsReady.SetWindowOpen(shop, false);
+        Require(events.Count == 1, "Closing one of two windows must not resume gameplay");
+        GameIsReady.SetWindowOpen(offer, false);
+        GameIsReady.SetWindowOpen(offer, false);
+        GameIsReady.SetLevelPlaying(true);
+        Require(events.SequenceEqual(new[] { "ready", "start" }), "Last window resumes once");
+        GameIsReady.SetLevelPlaying(false);
+        GameIsReady.SetWindowOpen(shop, true);
+        GameIsReady.SetWindowOpen(shop, false);
+        Require(events.Last() == "stop" && events.Count == 3, "Closing UI after a win must keep gameplay stopped");
+        GameIsReady.SetLevelPlaying(true);
+        Require(events.Last() == "start" && events.Count == 4, "Next loaded level resumes gameplay");
+        GameSdkReadiness.CheckBridgeReady = () => false;
+        GameIsReady.SetWindowOpen(shop, true);
+        Require(events.Count == 4, "Missing bridge defers UI analytics");
+        GameSdkReadiness.CheckBridgeReady = () => true;
+        typeof(GameIsReady).GetMethod("LateUpdate", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).Invoke(new GameIsReady(), null);
+        Require(events.Last() == "stop" && events.Count == 5, "Deferred state is delivered when bridge returns");
+        typeof(GameIsReady).GetMethod("Reset", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic).Invoke(null, null);
+        events.Clear();
+        GameIsReady.SetLevelPlaying(true); GameIsReady.SetLevelPlaying(false);
+        ready = (System.Collections.IEnumerator)typeof(GameIsReady).GetMethod("Start",
+            System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).Invoke(new GameIsReady(), null);
+        ready.MoveNext();
+        Require(((UnityEngine.WaitUntil)ready.Current).Predicate(), "A level completed before SDK startup is still ready");
+        ready.MoveNext();
+        Require(events.SequenceEqual(new[] { "ready" }), "Late SDK startup must not restart a completed level");
+        typeof(GameIsReady).GetMethod("Reset", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic).Invoke(null, null);
+        Console.WriteLine("GAMEPLAY_LIFECYCLE_CHECKS_PASS: SDK/level order, early and nested windows, duplicate events, win/next level, deferred bridge state");
+    }
+
+    private static void CheckShopRestoration()
+    {
+        Reset(); CoinManager.instance.Coins = 0;
+        foreach (BoosterType type in Enum.GetValues(typeof(BoosterType))) GameProgressStore.SetInt(BoosterCatalog.GetSaveKey(type), 0);
+        var shop = new RewardedShop();
+        var host = new UnityEngine.MonoBehaviour();
+        var payments = MirraGames.SDK.MirraSDK.Payments = new MirraGames.SDK.FakePayments();
+        payments.Receipts.AddRange(new[] { "gold_800", "gold_800", "gold_1500", "gold_3000", "premium_kit_75", "removeAd", "booster_magnet_10", "booster_fill_10", "booster_shuffle_10" });
+        // One of the two small packs was already delivered before the interrupted session.
+        payments.SetSupplyCount("gold_800", 1);
+        shop.InitializePayments(host); shop.InitializePayments(host);
+        Require(host.Coroutines.Count == 1 && shop.Coroutines.Count == 0, "Restore must run once on the active HUD, not the closed shop");
+        var routine = host.Coroutines[0]; routine.MoveNext(); routine.MoveNext();
+        Require(CoinManager.instance.Coins == 10300, "Restore all missing gold and bundle receipts exactly once");
+        foreach (BoosterType type in Enum.GetValues(typeof(BoosterType)))
+            Require(BoosterService.instance.GetCharges(type) == 25, "Restore resource kit, no-ads bonus and each booster pack");
+        var restore = typeof(RewardedShop).GetMethod("RestorePurchases", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+        restore.Invoke(shop, null);
+        Require(CoinManager.instance.Coins == 10300 && GameProgressStore.NoAds && !shop.IsAdActive, "Repeated restore must not duplicate rewards");
+        payments.SetSupplyCount("removeAd", 0);
+        restore.Invoke(shop, null);
+        Require(CoinManager.instance.Coins == 10300 && BoosterService.instance.GetCharges(BoosterType.Magnet) == 25,
+            "Existing no-ads ownership must protect its one-time bonus if the SDK supply counter is missing");
+        payments.RestoreFails = true; restore.Invoke(shop, null);
+        Require(CoinManager.instance.Coins == 10300, "Failed restore must not grant anything");
+        Require(Count("buy_inapp") == 0, "Restore must not count as a new payment");
+        var purchase = typeof(RewardedShop).GetMethod("Purchase", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+        purchase.Invoke(shop, new object[] { "gold_800" });
+        purchase.Invoke(shop, new object[] { "gold_1500" });
+        Require(payments.PurchaseRequests == 1, "Only one shop checkout may be pending");
+        payments.Error();
+        purchase.Invoke(shop, new object[] { "gold_1500" });
+        Require(payments.PurchaseRequests == 2, "Checkout can retry after cancellation");
+        payments.Success();
+        purchase.Invoke(shop, new object[] { "removeAd" });
+        Require(payments.PurchaseRequests == 2, "Owned no-ads cannot be purchased again");
+        // An already delivered non-consumable must restore the entitlement without its bonus.
+        GameProgressStore.NoAds = false;
+        CoinManager.instance.Coins = 0;
+        payments.RestoreFails = false;
+        restore.Invoke(shop, null);
+        Require(GameProgressStore.NoAds && !shop.IsAdActive && CoinManager.instance.Coins == 0,
+            "Previously supplied no-ads receipt restores ownership without regranting its bonus");
+        shop.IsAdActive = true;
+        purchase.Invoke(shop, new object[] { "removeAd" });
+        Require(payments.PurchaseRequests == 2, "Saved ownership must prevent checkout even with a stale shop flag");
+        GameProgressStore.NoAds = false;
+        shop.IsAdActive = true;
+        payments.AlreadyPurchased = true;
+        purchase.Invoke(shop, new object[] { "removeAd" });
+        Require(payments.PurchaseRequests == 2 && !shop.IsAdActive,
+            "SDK ownership must prevent checkout before shop initialization finishes");
+        Console.WriteLine("SHOP_RESTORE_CHECKS_PASS: all 8 products, SDK receipt counts, repeat/error restore, HUD startup, pending/retry checkout, no-ads ownership");
+    }
     public static void Main()
     {
+        CheckGameplayLifecycle();
         var bootingManager = Reset();
         MirraGames.SDK.MirraSDK.IsInitialized = true;
         GameSdkReadiness.CheckBridgeReady = () => false;
@@ -168,7 +293,7 @@ public static class AdAnalyticsChecks
             && rewardedAtBoot == 0 && unavailableAtBoot == 1 && closedAtBoot == 1,
             "Missing JS bridge completes ad requests without reward or unsafe time calls");
         MirraGames.SDK.MirraSDK.Analytics.Calls = 0;
-        new OpenWindow().Open(); new OpenWindow().Close();
+        var bridgeWindow = new OpenWindow(); bridgeWindow.Open(); bridgeWindow.Close();
         Require(MirraGames.SDK.MirraSDK.Analytics.Calls == 0, "Missing JS analytics cannot be called by UI");
         MirraGames.SDK.MirraSDK.Payments = new MirraGames.SDK.FakePayments();
         var bootingShop = new RewardedShop();
@@ -203,6 +328,7 @@ public static class AdAnalyticsChecks
         Require(readyRoutine.MoveNext() && !((UnityEngine.WaitUntil)readyRoutine.Current).Predicate()
             && MirraGames.SDK.MirraSDK.Analytics.Calls == 0, "Startup and early UI must wait before calling analytics");
         MirraGames.SDK.MirraSDK.IsInitialized = true;
+        GameIsReady.SetLevelPlaying(true);
         Require(((UnityEngine.WaitUntil)readyRoutine.Current).Predicate(), "Ready event awaits SDK initialization");
         Require(!readyRoutine.MoveNext() && MirraGames.SDK.MirraSDK.Analytics.Calls == 2,
             "Startup sends GameIsReady and GameplayStart after SDK initialization");
@@ -271,7 +397,7 @@ public static class AdAnalyticsChecks
         MirraGames.SDK.MirraSDK.Payments.AlreadyPurchased = true;
         Require(((UnityEngine.WaitUntil)init.Current).Predicate(), "SDK readiness releases initialization");
         init.MoveNext();
-        Require(MirraGames.SDK.MirraSDK.Payments.PurchasedChecks == 1 && !shop.IsAdActive,
+        Require(MirraGames.SDK.MirraSDK.Payments.PurchasedChecks == 2 && !shop.IsAdActive,
             "After SDK initialization, refresh purchased entitlement");
         Console.WriteLine("PAYMENTS_INITIALIZATION_CHECKS_PASS");
         MirraGames.SDK.MirraSDK.Payments = new MirraGames.SDK.FakePayments();
@@ -287,7 +413,7 @@ public static class AdAnalyticsChecks
         };
         foreach (string product in productGoals.Keys)
         {
-            Reset(); purchase.Invoke(shop, new object[] { product });
+            Reset(); shop.IsAdActive = true; purchase.Invoke(shop, new object[] { product });
             Require(Count("buy_inapp") == 0, "Request is not a purchase");
             MirraGames.SDK.MirraSDK.Payments.Success(); MirraGames.SDK.MirraSDK.Payments.Success();
             var data = WebGameAnalytics.Events.Last().Value;
@@ -300,9 +426,10 @@ public static class AdAnalyticsChecks
         MirraGames.SDK.MirraSDK.Payments.Error(); MirraGames.SDK.MirraSDK.Payments.Success();
         Require(Count("buy_inapp") == 0, "Failed payment does not count");
         Require(!WebGameAnalytics.Events.Any(e => e.Key.StartsWith("purchase_")), "Failed payment has no product event");
-        Reset(); restore.Invoke(shop, null); restore.Invoke(shop, null);
+        Reset(); MirraGames.SDK.MirraSDK.Payments.Receipts.Add("removeAd"); restore.Invoke(shop, null); restore.Invoke(shop, null);
         Require(Count("buy_inapp") == 0 && GameProgressStore.NoAds, "Restoration applies entitlement without counting a new purchase");
         Require(!WebGameAnalytics.Events.Any(e => e.Key.StartsWith("purchase_")), "Restoration has no product event");
+        CheckShopRestoration();
         foreach (int index in new[] { 0, 29, 30, 299 })
         {
             Reset(); ProgressSaveService.CurrentLevelIndex = index;

@@ -1,0 +1,20 @@
+{
+  "auditDate": "2026-10-30",
+  "branch": "youtube",
+  "head": "aada663da3021240449043bd50208945bdbbf938",
+  "pendingChanges": "?? tasks/youtube/audit-2026-10-30/",
+  "auditedPlayer": "Builds/YouTube/2026-10-28-economy-r4",
+  "currentSourcesAreNewerThanPlayer": true,
+  "sourceHashes": {
+    "Assets/Scripts/UI/ThemeCatalog.cs": "29dbafeaf760f2b4410b1caaf9f2f47687fc3df1c6d47583f241f5cbf2478d9e",
+    "Assets/Scripts/UI/SandEconomyHud.cs": "d6aa0acf94c931b8c9830f86eac8c0e8afddee1bc6458ce882d95f8187920b60",
+    "Assets/Scripts/UI/CampaignGallery.cs": "ef47e761da254fd7793d88d41554506239bfb6ebde7c1f4b653d1d6b2f260ec8",
+    "Assets/Scripts/UI/MobilePortraitLayout.cs": "a6a4779c92a5af482f2c655dadf47b4eb5ee022b301ff6ae36c697aa55f588f9",
+    "Assets/Scripts/SDK/YoutubeCloudProgress.cs": "bd88e5a65c852f074e8a2dda74c73128819cf7da13aa655863c7ff55555022cf",
+    "Assets/Scripts/SDK/YoutubePlatform.cs": "a05d270a2df9660db9ff6be6a4d98b075aadc7f11acd7fc4d6ee830757853b98",
+    "Assets/Scripts/SDK/GameIsReady.cs": "cffeff7bfd43c84cf968f4fc26816d700a2de959fa2d1d584b3c51b7585da4ec",
+    "Assets/WebGLTemplates/MirraYoutubePlayablesTemplate/index.html": "7368c3a00d626dcabf9c2d6a0d90797af5489b06b3d28af789559521868df1a2",
+    "Assets/WebGLTemplates/MirraYoutubePlayablesTemplate/unityApp.js": "388db7d5f308e3bc48ee1324e6745214d3220f68c756b7e6109a10a9479c8785",
+    "ProjectSettings/ProjectSettings.asset": "fc4d5ba7116fa52a278631772394922ba57c16b5706f1a323b2a2fc6ad4ee4ac"
+  }
+}

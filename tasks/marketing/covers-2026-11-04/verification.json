@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-04",
+  "generation": "built-in image_gen",
+  "export": "Proportional downscale; centered subpixel crop for exact ratio; no stretching",
+  "files": [
+    {
+      "file": "E:\\myProjects\\sand\\Marketing_Originals\\covers-2026-11-04\\sand-cover-lake-5x7.png",
+      "source": "D:/CodexData/.codex/generated_images/01a1a852-2491-75c1-a22f-27aa13eb05c8/exec-d5c4cd70-9f76-4fd2-9f9c-155f3b5e0673.png",
+      "source_size": [
+        1060,
+        1484
+      ],
+      "size": [
+        1000,
+        1400
+      ],
+      "ratio": "5:7",
+      "proportional_scale": 0.9433962264150944,
+      "source_crop": [
+        0.0,
+        0.0,
+        1060.0,
+        1484.0
+      ],
+      "opaque": true,
+      "png_decode": "PASS",
+      "sha256": "90FD136A544370823E53B7CDB7790AD24583ADDD83702D1F6A3315DFBD0EC28F",
+      "content_check": "PASS"
+    },
+    {
+      "file": "E:\\myProjects\\sand\\Marketing_Originals\\covers-2026-11-04\\sand-cover-lake-16x9.png",
+      "source": "D:/CodexData/.codex/generated_images/01a1a852-2491-75c1-a22f-27aa13eb05c8/exec-2e2ff1cd-0f79-4cc7-91b3-59c82087de3d.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "ratio": "16:9",
+      "proportional_scale": 0.9569377990430622,
+      "source_crop": [
+        0.0,
+        0.25,
+        1672.0,
+        940.5
+      ],
+      "opaque": true,
+      "png_decode": "PASS",
+      "sha256": "C70934475BEAC76032DA548A98D9CA0C8F3240240B5F7BCCD543E077A28A7583",
+      "content_check": "PASS"
+    }
+  ],
+  "visual_review": {
+    "generated_full_size": "PASS",
+    "exported_thumbnail": "PASS",
+    "composition": "Fox, board and complete conveyor visible in both covers",
+    "color_continuity": "Orange, cream and teal streams enter matching buckets",
+    "text": "None"
+  }
+}

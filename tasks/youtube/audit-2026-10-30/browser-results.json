@@ -1,0 +1,254 @@
+{
+  "bundle": "E:\\myProjects\\sand\\Builds\\YouTube\\2026-10-28-economy-r4",
+  "integration": "Google YTGameWrapper / BUSES / Mirra YouTube preset / ZIP loader",
+  "environment": "Local Edge / WebGL2 / software GPU; simulated YouTube SDK",
+  "assertions": [
+    "Exactly one cloud load: Google wrapper owns saves, Mirra does not duplicate it",
+    "Loading screen removed before gameReady",
+    "Exactly one firstFrameReady and gameReady",
+    "Existing cloud balance survives scene initialization",
+    "Platform pause stops Unity rendering including unscaled animations",
+    "Unmute preserves platform pause",
+    "Platform resume restarts Unity rendering",
+    "Portrait resize preserves cloud-backed state",
+    "Landscape resize preserves state",
+    "Cancelled rewarded ad grants no coins",
+    "Rejected rewarded ad releases the button without a reward",
+    "Confirmed rewarded ad grants exactly 100 coins through the shop",
+    "Reward callback does not resume a platform pause or update gameplay during it",
+    "Reward placements use a stable reward ID",
+    "Material coin change is acknowledged by cloud save",
+    "Reload restores acknowledged progress",
+    "No external requests except the YouTube SDK",
+    "No browser or Unity errors",
+    "Touch-capable mobile viewport starts and accepts input without errors"
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:56941/",
+    "http://127.0.0.1:56941/ytgame-lifecycle.js",
+    "http://127.0.0.1:56941/lib/jszip.min.js",
+    "http://127.0.0.1:56941/unityApp.js",
+    "https://www.youtube.com/game_api/v1",
+    "http://127.0.0.1:56941/Build/2026-10-28-economy-r4.data.zip",
+    "http://127.0.0.1:56941/Build/2026-10-28-economy-r4.wasm.zip",
+    "http://127.0.0.1:56941/Build/2026-10-28-economy-r4.loader.js",
+    "http://127.0.0.1:56941/Build/2026-10-28-economy-r4.framework.js",
+    "http://127.0.0.1:56941/",
+    "http://127.0.0.1:56941/ytgame-lifecycle.js",
+    "http://127.0.0.1:56941/lib/jszip.min.js",
+    "http://127.0.0.1:56941/unityApp.js",
+    "https://www.youtube.com/game_api/v1",
+    "http://127.0.0.1:56941/Build/2026-10-28-economy-r4.data.zip",
+    "http://127.0.0.1:56941/Build/2026-10-28-economy-r4.wasm.zip",
+    "http://127.0.0.1:56941/Build/2026-10-28-economy-r4.loader.js",
+    "http://127.0.0.1:56941/Build/2026-10-28-economy-r4.framework.js"
+  ],
+  "writes": [
+    {
+      "version": 2,
+      "entries": [
+        {
+          "key": "Coins",
+          "value": "123"
+        },
+        {
+          "key": "CoinsInPreviosLevel",
+          "value": "123"
+        },
+        {
+          "key": "sand_progress_version",
+          "value": "3"
+        },
+        {
+          "key": "sand_progress_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_progress_highest_completed",
+          "value": "-1"
+        },
+        {
+          "key": "sand_progress_current_level",
+          "value": "0"
+        },
+        {
+          "key": "winter_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_selected_campaign",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "entries": [
+        {
+          "key": "Coins",
+          "value": "223"
+        },
+        {
+          "key": "CoinsInPreviosLevel",
+          "value": "223"
+        },
+        {
+          "key": "sand_progress_version",
+          "value": "3"
+        },
+        {
+          "key": "sand_progress_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_progress_highest_completed",
+          "value": "-1"
+        },
+        {
+          "key": "sand_progress_current_level",
+          "value": "0"
+        },
+        {
+          "key": "winter_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_selected_campaign",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "entries": [
+        {
+          "key": "Coins",
+          "value": "323"
+        },
+        {
+          "key": "CoinsInPreviosLevel",
+          "value": "323"
+        },
+        {
+          "key": "sand_progress_version",
+          "value": "3"
+        },
+        {
+          "key": "sand_progress_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_progress_highest_completed",
+          "value": "-1"
+        },
+        {
+          "key": "sand_progress_current_level",
+          "value": "0"
+        },
+        {
+          "key": "winter_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_selected_campaign",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "entries": [
+        {
+          "key": "Coins",
+          "value": "373"
+        },
+        {
+          "key": "CoinsInPreviosLevel",
+          "value": "323"
+        },
+        {
+          "key": "sand_progress_version",
+          "value": "3"
+        },
+        {
+          "key": "sand_progress_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_progress_highest_completed",
+          "value": "-1"
+        },
+        {
+          "key": "sand_progress_current_level",
+          "value": "0"
+        },
+        {
+          "key": "winter_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_selected_campaign",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "entries": [
+        {
+          "key": "Coins",
+          "value": "373"
+        },
+        {
+          "key": "CoinsInPreviosLevel",
+          "value": "373"
+        },
+        {
+          "key": "sand_progress_version",
+          "value": "3"
+        },
+        {
+          "key": "sand_progress_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_progress_highest_completed",
+          "value": "-1"
+        },
+        {
+          "key": "sand_progress_current_level",
+          "value": "0"
+        },
+        {
+          "key": "winter_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_selected_campaign",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "readyMilliseconds": 3747,
+  "policyReadsAtReady": {
+    "language": 2,
+    "languages": 2,
+    "localStorage": 0,
+    "sessionStorage": 0,
+    "clipboard": 0
+  },
+  "audioMuted": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0
+  ],
+  "jsHeap": {
+    "used": 63191843,
+    "total": 71625755
+  }
+}

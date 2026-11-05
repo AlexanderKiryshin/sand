@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-04",
+  "mode": "built-in image_gen",
+  "source_branch": "youtube",
+  "source_commit": "aada663",
+  "design": "Existing game-faithful fox / lake marketing design",
+  "assets": [
+    {
+      "key": "portrait",
+      "name": "sand-cover-lake-5x7.png",
+      "refs": [
+        "E:/myProjects/sand/Marketing_Originals/gameplay-faithful-v1/sand-icon-lake.png",
+        "E:/myProjects/sand/Assets/Resources/ThemeBackgrounds/background_27.png",
+        "E:/myProjects/sand/tasks/previews/game-rework/19-detailed-customization-game.png"
+      ],
+      "prompt": "Use case: compositing.\nCreate a professionally finished game storefront cover, opaque full bleed.\nInput image 1 is the edit target and approved game marketing design. Input image 2 is the actual in-game forest lake backdrop. Input image 3 is the actual gameplay reference for the Honeycomb conveyor and Copper Mechanisms end casings; use only its conveyor shapes, not its UI or puzzle image.\nPreserve the recognizable orange pixel fox, cream SQUARE board, exactly three simple tapered open HANDLELESS buckets (left orange, middle warm cream, right teal), and honey-gold conveyor with restrained hexagonal linework and rose-copper rectangular end casings.\nKeep the actual game's visual language: crisp flat square pixel cells inside the fox board, small flat square falling particles, simple lightly outlined 2D buckets and belt, painterly lake background. All individual puzzle cells remain square. Do not stretch or warp the board or fox.\nCRITICAL: exactly three short sparse streams. Orange squares emerge from ORANGE fox cheek cells and enter the ORANGE bucket; warm cream squares emerge from CREAM muzzle cells and enter the CREAM bucket; teal squares emerge from TEAL picture background cells on the right and enter the TEAL bucket. Every stream and contents must match its source and receiving bucket. Show small drained white-backed gaps underneath the matching source patches. Keep the fox almost intact and readily recognizable. Particles never come from the solid cream board frame.\nReuse the lake artwork's turquoise water, gentle caustics, willow branches, mossy rocks and pink/white water lilies at the perimeter. Keep the scene clear at thumbnail size.\nNo text, numbers, logos, badges, HUD, coins, hands, bucket handles, extra buckets, new objects, glossy 3D cubes, round grains or watermark.\nOUTPUT: one PORTRAIT 5:7 cover, exactly 1120 x 1568 pixels. Recompose the source artwork for this tall canvas. Keep the square fox board large at about 82% of canvas width, positioned in the upper-middle area. Place three buckets and a shorter complete conveyor beneath it with clear falling streams between. The whole game scene should occupy about 82% of canvas height. All of the frame and both conveyor end casings must remain visible within 5% safe margins. Fill the remaining space above and below with the real lake background. The result is a finished single portrait image, not a mockup or montage."
+    },
+    {
+      "key": "landscape",
+      "name": "sand-cover-lake-16x9.png",
+      "refs": [
+        "E:/myProjects/sand/Marketing_Originals/gameplay-faithful-v1/sand-banner-lake.png",
+        "E:/myProjects/sand/Assets/Resources/ThemeBackgrounds/background_27.png",
+        "E:/myProjects/sand/tasks/previews/game-rework/19-detailed-customization-game.png"
+      ],
+      "prompt": "Use case: compositing.\nCreate a professionally finished game storefront cover, opaque full bleed.\nInput image 1 is the edit target and approved game marketing design. Input image 2 is the actual in-game forest lake backdrop. Input image 3 is the actual gameplay reference for the Honeycomb conveyor and Copper Mechanisms end casings; use only its conveyor shapes, not its UI or puzzle image.\nPreserve the recognizable orange pixel fox, cream SQUARE board, exactly three simple tapered open HANDLELESS buckets (left orange, middle warm cream, right teal), and honey-gold conveyor with restrained hexagonal linework and rose-copper rectangular end casings.\nKeep the actual game's visual language: crisp flat square pixel cells inside the fox board, small flat square falling particles, simple lightly outlined 2D buckets and belt, painterly lake background. All individual puzzle cells remain square. Do not stretch or warp the board or fox.\nCRITICAL: exactly three short sparse streams. Orange squares emerge from ORANGE fox cheek cells and enter the ORANGE bucket; warm cream squares emerge from CREAM muzzle cells and enter the CREAM bucket; teal squares emerge from TEAL picture background cells on the right and enter the TEAL bucket. Every stream and contents must match its source and receiving bucket. Show small drained white-backed gaps underneath the matching source patches. Keep the fox almost intact and readily recognizable. Particles never come from the solid cream board frame.\nReuse the lake artwork's turquoise water, gentle caustics, willow branches, mossy rocks and pink/white water lilies at the perimeter. Keep the scene clear at thumbnail size.\nNo text, numbers, logos, badges, HUD, coins, hands, bucket handles, extra buckets, new objects, glossy 3D cubes, round grains or watermark.\nOUTPUT: one LANDSCAPE 16:9 cover, exactly 2048 x 1152 pixels. Recompose the source artwork for this wider canvas. Keep the square fox board centered and proportionate, with its top at about 5% of image height. Keep three buckets and the complete conveyor underneath. The whole game scene should fill about 90% of image height. Both conveyor end casings and the entire board frame stay inside safe margins. Expand the actual lake scenery at both sides. The result is a finished single landscape image, not a mockup or montage."
+    }
+  ]
+}

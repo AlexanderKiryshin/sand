@@ -1,0 +1,103 @@
+{
+  "bundle": "E:\\myProjects\\sand\\Builds\\YouTube\\2026-10-28-economy-r4",
+  "integration": "Google YTGameWrapper / BUSES / Mirra YouTube preset / ZIP loader",
+  "environment": "Local Edge / WebGL2 / software GPU; simulated YouTube SDK",
+  "assertions": [
+    "Exactly one cloud load: Google wrapper owns saves, Mirra does not duplicate it",
+    "Loading screen removed before gameReady",
+    "Exactly one firstFrameReady and gameReady",
+    "Existing cloud balance survives scene initialization"
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:60758/",
+    "http://127.0.0.1:60758/ytgame-lifecycle.js",
+    "http://127.0.0.1:60758/lib/jszip.min.js",
+    "http://127.0.0.1:60758/unityApp.js",
+    "https://www.youtube.com/game_api/v1",
+    "http://127.0.0.1:60758/Build/2026-10-28-economy-r4.data.zip",
+    "http://127.0.0.1:60758/Build/2026-10-28-economy-r4.wasm.zip",
+    "http://127.0.0.1:60758/Build/2026-10-28-economy-r4.loader.js",
+    "http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js"
+  ],
+  "writes": [
+    {
+      "version": 2,
+      "entries": [
+        {
+          "key": "Coins",
+          "value": "123"
+        },
+        {
+          "key": "CoinsInPreviosLevel",
+          "value": "123"
+        },
+        {
+          "key": "sand_progress_version",
+          "value": "3"
+        },
+        {
+          "key": "sand_progress_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_progress_highest_completed",
+          "value": "-1"
+        },
+        {
+          "key": "sand_progress_current_level",
+          "value": "0"
+        },
+        {
+          "key": "winter_highest_unlocked",
+          "value": "0"
+        },
+        {
+          "key": "sand_selected_campaign",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "readyMilliseconds": 3440,
+  "policyReadsAtReady": {
+    "language": 2,
+    "languages": 2,
+    "localStorage": 0,
+    "sessionStorage": 0,
+    "indexedDB": 1,
+    "traces": [
+      {
+        "api": "language",
+        "stack": "Error\n    at Navigator.get [as language] (<anonymous>:4:280)\n    at http://127.0.0.1:60758/Build/2026-10-28-economy-r4.loader.js:1:10718\n    at createUnityInstance (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.loader.js:1:10918)\n    at Object.start (http://127.0.0.1:60758/unityApp.js:29:36)"
+      },
+      {
+        "api": "indexedDB.open",
+        "stack": "Error\n    at IDBFactory.open (<anonymous>:6:182)\n    at Object.getDB (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:120247)\n    at Object.getRemoteSet (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:121473)\n    at http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:119973\n    at Object.getLocalSet (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:121373)\n    at Object.syncfs (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:119907)\n    at http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:130808\n    at Array.forEach (<anonymous>)\n    at Object.syncfs (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:130740)\n    at unityFileSystemInit (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:3841)\n    at http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:4036\n    at callRuntimeCallbacks (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:22677)\n    at preRun (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:17892)\n    at run (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:395845)\n    at runCaller (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:395323)\n    at removeRunDependency (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:19136)\n    at removeEnumerateMediaDevicesRunDependency (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:6991)\n    at updateVideoInputDevices (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:4955)\n    at http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:5750"
+      },
+      {
+        "api": "languages",
+        "stack": "Error\n    at Navigator.get [as languages] (<anonymous>:4:280)\n    at getEnvStrings (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:228939)\n    at _environ_sizes_get (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:229627)\n    at blob:http://127.0.0.1:60758/fc23a57f-bfce-4c21-9ef0-576a5f5d5d3b:wasm-function[531]:0x2ed81\n    at callRuntimeCallbacks (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:22677)\n    at initRuntime (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:18067)\n    at doRun (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:395976)\n    at run (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:396283)\n    at runCaller (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:395323)\n    at Object.removeRunDependency (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:19136)\n    at http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:3990\n    at doCallback (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:130561)\n    at done (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:130715)\n    at Object.reconcile (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:123996)\n    at http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:120101\n    at IDBRequest.<anonymous> (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:121852)"
+      },
+      {
+        "api": "languages",
+        "stack": "Error\n    at Navigator.get [as languages] (<anonymous>:4:280)\n    at getEnvStrings (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:228960)\n    at _environ_sizes_get (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:229627)\n    at blob:http://127.0.0.1:60758/fc23a57f-bfce-4c21-9ef0-576a5f5d5d3b:wasm-function[531]:0x2ed81\n    at callRuntimeCallbacks (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:22677)\n    at initRuntime (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:18067)\n    at doRun (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:395976)\n    at run (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:396283)\n    at runCaller (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:395323)\n    at Object.removeRunDependency (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:19136)\n    at http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:3990\n    at doCallback (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:130561)\n    at done (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:130715)\n    at Object.reconcile (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:123996)\n    at http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:120101\n    at IDBRequest.<anonymous> (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:121852)"
+      },
+      {
+        "api": "language",
+        "stack": "Error\n    at Navigator.get [as language] (<anonymous>:4:280)\n    at V.Language.getBrowserLanguage (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:17:24599)\n    at V.Language.getCurrent (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:17:24767)\n    at V.Language.initialize (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:17:20124)\n    at o.createInstance (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:17:8735)\n    at r.createInstance (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:17:21907)\n    at async r.getWrapper (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:17:74825)\n    at async r.createInstance (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:17:75474)\n    at async Module.createMirraSDK (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:17:76853)\n    at async createAsync (http://127.0.0.1:60758/Build/2026-10-28-economy-r4.framework.js:185:177297)"
+      }
+    ]
+  },
+  "indexedDbAtReady": [
+    {
+      "name": "/idbfs",
+      "stores": [
+        {
+          "name": "FILE_DATA",
+          "keys": []
+        }
+      ]
+    }
+  ]
+}

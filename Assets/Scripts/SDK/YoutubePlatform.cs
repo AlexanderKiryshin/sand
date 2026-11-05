@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using MirraGames.SDK;
-using MirraGames.SDK.Common;
 using UnityEngine;
 using YTGameSDK;
 
@@ -31,9 +30,8 @@ public sealed class YoutubePlatform : MonoBehaviour
     private static YoutubePlatform instance;
     private static readonly YoutubeCloudProgress cloud = new YoutubeCloudProgress();
     private YTGameWrapper wrapper;
-    private bool languageLoaded, signaled;
-    public static bool Ready => instance != null && cloud.Loaded && instance.languageLoaded && MirraSDK.IsInitialized;
-    public static LanguageType Language { get; private set; } = LanguageType.English;
+    private bool signaled;
+    public static bool Ready => instance != null && cloud.Loaded && MirraSDK.IsInitialized;
     public static bool HasKey(string key) => cloud.HasKey(key);
     public static double Get(string key, double fallback) => cloud.Get(key, fallback);
     public static void Set(string key, double value) => cloud.Set(key, value);
@@ -60,12 +58,6 @@ public sealed class YoutubePlatform : MonoBehaviour
         });
         wrapper.SetOnResumeCallback(YoutubeGameplayFreeze.ResumeFromSdk);
         while (wrapper.IsPlatformPaused()) yield return null;
-        wrapper.LoadLanguage(tag => {
-            string code = (tag ?? "en").ToLowerInvariant().Split('-')[0];
-            Language = code == "ru" ? LanguageType.Russian : code == "tr" ? LanguageType.Turkish :
-                code == "de" ? LanguageType.German : LanguageType.English;
-            languageLoaded = true;
-        });
         wrapper.LoadGameSaveData(cloud.CompleteLoad);
     }
     private void Update()

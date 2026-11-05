@@ -26,7 +26,7 @@ public class SandEconomyHud : MonoBehaviour
     private Button rewardedSkipButton;
     private RectTransform rewardedSkipIcon;
     private bool rewardedSkipPending;
-    private bool completionContinuePending;
+    private bool completionPending;
     private int levelLoadVersion;
     private TextMeshProUGUI buyPopupTitle;
     private TextMeshProUGUI buyPopupPrice;
@@ -188,6 +188,13 @@ public class SandEconomyHud : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape)) CloseBuyPopup();
         }
         if (IsShopOpen) return;
+#if YOUTUBE_PLAYABLES
+        if (completePanel != null && completePanel.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+        {
+            CloseCompleteOnEscape();
+            return;
+        }
+#endif
         if (!handAnimating || handRect == null || !handRect.gameObject.activeSelf)
         {
             return;
@@ -230,7 +237,7 @@ public class SandEconomyHud : MonoBehaviour
 
     public void OnLevelLoaded(int levelIndex)
     {
-        completionContinuePending=false;
+        completionPending=false;
         levelLoadVersion++;
         if (BoosterService.instance != null)
         {
@@ -516,10 +523,23 @@ public class SandEconomyHud : MonoBehaviour
         }
     }
 
+    private bool TryBeginCompletion()
+    {
+        if (completePanel == null || !completePanel.activeSelf || completionPending) return false;
+        completionPending = true;
+        return true;
+    }
+
+    private void CloseCompleteOnEscape()
+    {
+        if (!TryBeginCompletion()) return;
+        // Dismiss with the normal reward and keep navigation available, without requesting an ad.
+        ContinueAfterInterstitial();
+    }
+
     private void OnCompleteContinue()
     {
-        if(completionContinuePending)return;
-        completionContinuePending=true;
+        if (!TryBeginCompletion()) return;
         var offer=FindObjectOfType<NatureBackgroundOffer>();
         if(offer!=null && offer.TryShow(gameManager,ContinueAfterInterstitial))return;
         if(AdManager.instance!=null)AdManager.instance.ShowInterstitial(ContinueAfterInterstitial);
@@ -527,13 +547,13 @@ public class SandEconomyHud : MonoBehaviour
     }
     private void ContinueAfterInterstitial()
     {
-        if(this==null || !completionContinuePending)return;
-        completionContinuePending=false;
+        if(this==null || !completionPending)return;
         CoinManager.instance?.AddCoinsOnComplete();FinishCompleteAndNext();
     }
 
     private void OnCompleteDouble()
     {
+        if (!TryBeginCompletion()) return;
         if (AdManager.instance != null)
         {
             AdManager.instance.StartRewarded(
@@ -544,7 +564,7 @@ public class SandEconomyHud : MonoBehaviour
                     CoinManager.instance?.AddCoinsOnDoubleReward();
                     FinishCompleteAndNext();
                 },
-                () => { });
+                () => { completionPending = false; });
         }
         else
         {
@@ -559,6 +579,8 @@ public class SandEconomyHud : MonoBehaviour
         {
             completePanel.SetActive(false);
         }
+
+        completionPending = false;
 
         if (AdManager.instance != null)
         {

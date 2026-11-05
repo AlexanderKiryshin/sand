@@ -1,0 +1,79 @@
+﻿{
+  "prepared_for_date": "2026-11-06",
+  "delivery": "E:\\myProjects\\sand\\Marketing_Originals\\Telegram\\2026-11-06",
+  "branch": "main",
+  "source_commit": "882c091",
+  "current_database_entries": 1200,
+  "ordinary_levels": 1000,
+  "winter_levels": 200,
+  "post_utf16_code_units": 1318,
+  "encoding": "UTF-8 with BOM",
+  "images": [
+    {
+      "file": "01-tropical.png",
+      "source": "E:\\myProjects\\sand\\Marketing_Originals\\Screenshots\\RU\\level-007-tropical-9x16.png",
+      "width": 1440,
+      "height": 2560,
+      "bytes": 3333739,
+      "sha256": "CB1B8DFDE582EC9B7E54CD789CB20056E38D08A639086DACC1D7CD01C84BD08D",
+      "source_capture_local": "2026-10-16 10:44:21",
+      "decoded": true,
+      "visually_reviewed": true
+    },
+    {
+      "file": "02-lake.png",
+      "source": "E:\\myProjects\\sand\\Marketing_Originals\\Screenshots\\RU\\level-009-lake-9x16.png",
+      "width": 1440,
+      "height": 2560,
+      "bytes": 3199782,
+      "sha256": "0A33CDEF275B22D1A371956189064CD8EA8B2D183239F724C1A1954BE2334D4B",
+      "source_capture_local": "2026-10-16 10:44:34",
+      "decoded": true,
+      "visually_reviewed": true
+    },
+    {
+      "file": "03-autumn-mechanics.png",
+      "source": "E:\\myProjects\\sand\\Marketing_Originals\\Screenshots\\RU\\level-038-autumn-9x16.png",
+      "width": 1440,
+      "height": 2560,
+      "bytes": 3255785,
+      "sha256": "7A555395A3B4C8126856B52566880DC9490CB2218EBB163FFDD7E687E479BA5E",
+      "source_capture_local": "2026-10-16 10:44:48",
+      "decoded": true,
+      "visually_reviewed": true
+    },
+    {
+      "file": "04-winter.png",
+      "source": "E:\\myProjects\\sand\\Marketing_Originals\\Screenshots\\RU\\winter-001-snow-forest-9x16.png",
+      "width": 1440,
+      "height": 2560,
+      "bytes": 3533015,
+      "sha256": "8772E7C331AF875464D9DF0A5EA554A8356EDF6F51AF1E7F6EBA2A174015CF94",
+      "source_capture_local": "2026-10-16 10:45:07",
+      "decoded": true,
+      "visually_reviewed": true
+    }
+  ],
+  "evidence": [
+    "Assets/Scripts/Data/CampaignProgression.cs: 1000 ordinary + 200 winter",
+    "Assets/Levels/LevelDatabase.asset: 1200 entries counted",
+    "Assets/Scripts/Localization/LocalizationManager.cs: Russian, English, Turkish, German",
+    "tasks/marketing/game-publication-info.txt: gameplay explanation",
+    "tasks/audio-polish-validation.md: audio, animation and settings work",
+    "tasks/playability-repair/report.txt: historical full replays on selected layouts",
+    "tasks/playability-repair/verified-0..3/status.txt: four recorded PASS results of 300 routes each"
+  ],
+  "limitations": [
+    "Screenshots are development captures dated 2026-10-16; later rules and UI changes are not represented as fresh captures.",
+    "Playability is reported as completed historical work on tested layouts; tests were not rerun for this writing task.",
+    "Existing uncommitted performance and UI edits were left untouched.",
+    "No claims about public release, live platform services, or measured performance gains."
+  ],
+  "revision": "v2: narrative style based on channel posts; original screenshots retained",
+  "style_sources": [
+    "https://t.me/alexander_kiryshin_gamedev/4",
+    "https://t.me/alexander_kiryshin_gamedev/8",
+    "https://t.me/alexander_kiryshin_gamedev/10",
+    "https://t.me/alexander_kiryshin_gamedev/13"
+  ]
+}

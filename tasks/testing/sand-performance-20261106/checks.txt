@@ -1,0 +1,11 @@
+PASS
+intro-1 tracked CPU p95 ms=1.875
+Collection target parity: 32640 positions/colors matched.
+pour-1 tracked CPU p95 ms=7.713, collected=2797
+intro-15 tracked CPU p95 ms=1.648
+Collection target parity: 65280 positions/colors matched.
+pour-15 tracked CPU p95 ms=7.913, collected=2089
+intro-150 tracked CPU p95 ms=1.925
+Collection target parity: 39168 positions/colors matched.
+pour-150 tracked CPU p95 ms=7.991, collected=1557
+Exact texture, particle and simulation parity: 60 snapshots.

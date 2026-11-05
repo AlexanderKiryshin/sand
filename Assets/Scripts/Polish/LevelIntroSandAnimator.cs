@@ -21,6 +21,7 @@ public class LevelIntroSandAnimator : MonoBehaviour
     private readonly List<SpawnRequest> pendingSpawns = new List<SpawnRequest>();
 
     private SandConveyorMapper mapper;
+    private LevelLoader levelLoader;
     private SandRenderer sandRenderer;
     private FallingSandSimulator sandSimulator;
     private Canvas canvas;
@@ -56,6 +57,7 @@ public class LevelIntroSandAnimator : MonoBehaviour
     private void Awake()
     {
         mapper = FindObjectOfType<SandConveyorMapper>();
+        levelLoader = FindObjectOfType<LevelLoader>();
         sandRenderer = FindObjectOfType<SandRenderer>();
         sandSimulator = FindObjectOfType<FallingSandSimulator>();
         canvas = FindObjectOfType<Canvas>();
@@ -101,6 +103,10 @@ public class LevelIntroSandAnimator : MonoBehaviour
         if (nextSpawnIndex >= pendingSpawns.Count && activeGrains.Count == 0)
         {
             FinishIntro();
+        }
+        else
+        {
+            sandRenderer.FlushIntroReveal();
         }
     }
 
@@ -265,14 +271,14 @@ public class LevelIntroSandAnimator : MonoBehaviour
 
     private void SpawnVisibleGrain(SpawnRequest request)
     {
-        LevelLoader loader = FindObjectOfType<LevelLoader>();
-        if (loader == null || loader.CurrentLevel == null)
+        if (levelLoader == null) levelLoader = FindObjectOfType<LevelLoader>();
+        if (levelLoader == null || levelLoader.CurrentLevel == null)
         {
             sandRenderer.RevealLevelBlock(request.levelX, request.levelY, revealStride);
             return;
         }
 
-        LevelData level = loader.CurrentLevel;
+        LevelData level = levelLoader.CurrentLevel;
         Vector3 endWorld = mapper.GetLevelCellWorldPosition(
             request.levelX,
             request.levelY,

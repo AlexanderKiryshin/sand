@@ -22,6 +22,7 @@ public class ConveyorBelt : MonoBehaviour
     private bool movementPaused;
     private float beltTravel;
     private SandConveyorMapper mapper;
+    private LevelLoader levelLoader;
     private SandPourAnimator pourAnimator;
     private int capacity = MaxOnBelt;
     private float levelSpeedMultiplier = 1f;
@@ -61,6 +62,7 @@ public class ConveyorBelt : MonoBehaviour
     private void Awake()
     {
         mapper = FindObjectOfType<SandConveyorMapper>();
+        levelLoader = FindObjectOfType<LevelLoader>();
         EnsureSettings();
     }
 
@@ -477,7 +479,9 @@ public class ConveyorBelt : MonoBehaviour
                 continue;
             }
 
-            if (!IsBucketStableForCollection(entry, gridWidth))
+            // The requested column already overlaps this bucket. A full scan for
+            // any aligned column would prove the same thing for every grain.
+            if (!IsInCollectionZone(entry))
             {
                 continue;
             }
@@ -678,8 +682,8 @@ public class ConveyorBelt : MonoBehaviour
 
     private int GetLevelGridWidth()
     {
-        LevelLoader loader = FindObjectOfType<LevelLoader>();
-        return loader != null && loader.CurrentLevel != null ? loader.CurrentLevel.gridWidth : 32;
+        if (levelLoader == null) levelLoader = FindObjectOfType<LevelLoader>();
+        return levelLoader != null && levelLoader.CurrentLevel != null ? levelLoader.CurrentLevel.gridWidth : 32;
     }
 
     public bool TryCollectGrain(byte colorIndex, int gridX, int gridWidth)

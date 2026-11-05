@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-06",
+  "result": "PASS",
+  "environment": "Unity 2022.3.62f3 Editor, fixed 60 Hz simulation, isolated in-memory saves, portrait 540x960; not a physical phone FPS measurement",
+  "timing_scope": "p95 CPU time for simulator Update, intro/pour animator Update and dirty texture refresh; excludes the rest of the frame and GPU rendering",
+  "actual_levels_asserted": [
+    1,
+    15,
+    150
+  ],
+  "measurements": [
+    {
+      "scenario": "intro-1",
+      "before_p95_ms": 34.483,
+      "after_p95_ms": 1.875,
+      "speedup": 18.39
+    },
+    {
+      "scenario": "pour-1",
+      "before_p95_ms": 305.722,
+      "after_p95_ms": 7.713,
+      "speedup": 39.64
+    },
+    {
+      "scenario": "intro-15",
+      "before_p95_ms": 41.751,
+      "after_p95_ms": 1.648,
+      "speedup": 25.33
+    },
+    {
+      "scenario": "pour-15",
+      "before_p95_ms": 204.873,
+      "after_p95_ms": 7.913,
+      "speedup": 25.89
+    },
+    {
+      "scenario": "intro-150",
+      "before_p95_ms": 48.268,
+      "after_p95_ms": 1.925,
+      "speedup": 25.07
+    },
+    {
+      "scenario": "pour-150",
+      "before_p95_ms": 179.519,
+      "after_p95_ms": 7.991,
+      "speedup": 22.47
+    }
+  ],
+  "exact_visual_and_simulation_snapshots": 60,
+  "snapshot_fields": [
+    "texture RGBA bytes",
+    "simulation cells",
+    "visible particle positions/colors/sizes",
+    "remaining sand",
+    "active pouring grains"
+  ],
+  "collection_target_comparisons": 137088,
+  "max_texture_uploads_per_frame": 1,
+  "webgl_csharp_compile": "PASS: current main-project sources, UNITY_WEBGL with UNITY_EDITOR removed; not an IL2CPP/browser build",
+  "source_sha256": {
+    "Conveyor/ConveyorBelt.cs": "8ac3edf3a70eead9b2eb8cf1a34ea27ac61a98a8ea4d5452e11aac11deb43c3a",
+    "Polish/LevelIntroSandAnimator.cs": "3bf874c1aad4295a0c3dd03c2a56e1f17c0a39e9b8d4b90e1e3a1fb5889ffd66",
+    "Polish/SandPourAnimator.cs": "ccd15bd03e2adac12ced668c66977736455a591adccc2542a36c510752782550",
+    "Sand/SandRenderer.cs": "f08a66e5cf30e0a3b1f67455dc3c5f92edea57012944025c5995ace30d1b0a85"
+  }
+}

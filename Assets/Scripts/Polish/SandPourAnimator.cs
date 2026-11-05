@@ -19,6 +19,8 @@ public class SandPourAnimator : MonoBehaviour
     private ConveyorBelt conveyor;
     private ConveyorBeltView beltView;
     private SandConveyorMapper mapper;
+    private LevelLoader levelLoader;
+    private SandRenderer sandRenderer;
     private Canvas canvas;
     private readonly List<PourGrain> activeGrains = new List<PourGrain>();
     private readonly Queue<PourGrain> pool = new Queue<PourGrain>();
@@ -42,6 +44,8 @@ public class SandPourAnimator : MonoBehaviour
         conveyor = FindObjectOfType<ConveyorBelt>();
         beltView = FindObjectOfType<ConveyorBeltView>();
         mapper = FindObjectOfType<SandConveyorMapper>();
+        levelLoader = FindObjectOfType<LevelLoader>();
+        sandRenderer = FindObjectOfType<SandRenderer>();
         canvas = FindObjectOfType<Canvas>();
 
         if (mapper == null && canvas != null)
@@ -66,9 +70,9 @@ public class SandPourAnimator : MonoBehaviour
     private Vector2 GetGrainSize()
     {
         float size = grainSize.x;
-        SandRenderer sandRenderer = FindObjectOfType<SandRenderer>();
-
-        LevelLoader loader = FindObjectOfType<LevelLoader>();
+        if (sandRenderer == null) sandRenderer = FindObjectOfType<SandRenderer>();
+        if (levelLoader == null) levelLoader = FindObjectOfType<LevelLoader>();
+        LevelLoader loader = levelLoader;
         if (mapper != null && loader != null && loader.CurrentLevel != null)
         {
             mapper.EnsureReferences();
@@ -186,7 +190,8 @@ public class SandPourAnimator : MonoBehaviour
 
     private void HandleGrainCollected(byte colorIndex, int simGridX, Bucket collectedBucket)
     {
-        LevelLoader loader = FindObjectOfType<LevelLoader>();
+        if (levelLoader == null) levelLoader = FindObjectOfType<LevelLoader>();
+        LevelLoader loader = levelLoader;
         if (loader == null || loader.CurrentLevel == null || pourLayer == null || mapper == null)
         {
             return;

@@ -29,6 +29,7 @@ public class SandRenderer : MonoBehaviour
     private int textureWidth;
     private int textureHeight;
     private bool introPourActive;
+    private bool introTextureUploadPending;
     private byte selectedColor;
     public byte SelectedColor => selectedColor;
     public bool HasRemainingColor(byte colorIndex)
@@ -191,14 +192,15 @@ public class SandRenderer : MonoBehaviour
         for (int py = 0; py < pixelsPerSimCell; py++)
         {
             int rowOffset = (cellOriginY + py) * textureWidth + cellOriginX;
+            // Every pixel in this row has the same facet lighting.
+            float light = py == pixelsPerSimCell - 1 ? 1.035f : py == 0 ? 0.965f : 1f;
+            Color32 rowColor = colorIndex == 0 ? ClearPixel : new Color32(
+                (byte)Mathf.Min(255, fillColor.r * light),
+                (byte)Mathf.Min(255, fillColor.g * light),
+                (byte)Mathf.Min(255, fillColor.b * light), fillColor.a);
             for (int px = 0; px < pixelsPerSimCell; px++)
             {
-                // Small, restrained facets keep the painting legible while giving sand depth.
-                float light = py == pixelsPerSimCell - 1 ? 1.035f : py == 0 ? 0.965f : 1f;
-                pixelBuffer[rowOffset + px] = colorIndex == 0 ? ClearPixel : new Color32(
-                    (byte)Mathf.Min(255, fillColor.r * light),
-                    (byte)Mathf.Min(255, fillColor.g * light),
-                    (byte)Mathf.Min(255, fillColor.b * light), fillColor.a);
+                pixelBuffer[rowOffset + px] = rowColor;
             }
         }
     }
@@ -206,7 +208,7 @@ public class SandRenderer : MonoBehaviour
     private void ApplyTextureFull()
     {
         texture.SetPixels32(pixelBuffer);
-        texture.Apply(false);
+        ApplyTextureChanges();
     }
 
     private void ApplyTextureRegion(int pixelMinX, int pixelMinY, int pixelMaxX, int pixelMaxY)
@@ -228,7 +230,22 @@ public class SandRenderer : MonoBehaviour
         }
 
         texture.SetPixels32(pixelMinX, pixelMinY, regionWidth, regionHeight, uploadScratch);
+        ApplyTextureChanges();
+    }
+
+    private void ApplyTextureChanges()
+    {
+        // SetPixels32 keeps every landed block in the CPU texture. Upload once
+        // after the animator has processed this frame, without revealing gaps.
+        if (introPourActive) introTextureUploadPending = true;
+        else texture.Apply(false);
+    }
+
+    public void FlushIntroReveal()
+    {
+        if (!introTextureUploadPending || texture == null) return;
         texture.Apply(false);
+        introTextureUploadPending = false;
     }
 
     public void PrepareForIntro()
@@ -352,6 +369,7 @@ public class SandRenderer : MonoBehaviour
         if (texture != null) Destroy(texture);
         runtimeSprite = null;
         texture = null;
+        introTextureUploadPending = false;
     }
 
     public void CompleteIntroPour()
@@ -362,6 +380,7 @@ public class SandRenderer : MonoBehaviour
         }
 
         introPourActive = false;
+        introTextureUploadPending = false;
         ApplyTextureFull();
     }
 

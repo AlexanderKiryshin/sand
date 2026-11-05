@@ -1655,6 +1655,9 @@ public class SandEconomyHud : MonoBehaviour
         root.offsetMin = root.offsetMax = Vector2.zero;
         root.gameObject.AddComponent<Image>().color = new Color(.06f, .16f, .18f, .78f);
         shopPanel = root.gameObject;
+        // MobilePortraitLayout changes CanvasScaler during startup. Apply that scale
+        // before sizing the shop, otherwise landscape views keep a very short list.
+        Canvas.ForceUpdateCanvases();
         float width = Mathf.Min(1000, Screen.safeArea.width / Mathf.Max(.001f, canvas.scaleFactor) - 40);
         width = Mathf.Max(520, width);
         float height = Mathf.Min(1740, Screen.safeArea.height / Mathf.Max(.001f, canvas.scaleFactor) - 80);

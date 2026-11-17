@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public sealed class ThemeBackdropGraphic : MaskableGraphic
 {
     private int previewTheme=-1;
+    private int appliedTheme=-1;
     private bool fitWholeImage;
     public bool FitWholeImage { get=>fitWholeImage; set { if(fitWholeImage==value)return;fitWholeImage=value;SetVerticesDirty(); } }
     public int PreviewTheme
@@ -13,6 +14,15 @@ public sealed class ThemeBackdropGraphic : MaskableGraphic
         set { if(previewTheme==value)return;previewTheme=value;SetVerticesDirty();SetMaterialDirty(); }
     }
     private int Theme=>PreviewTheme<0?ThemeCatalog.SelectedBackground:PreviewTheme;
+    private void LateUpdate()
+    {
+        // SDK/cloud saves can become available after the first canvas rebuild.
+        int theme = Theme;
+        if (appliedTheme == theme) return;
+        appliedTheme = theme;
+        SetVerticesDirty();
+        SetMaterialDirty();
+    }
     public override Texture mainTexture=>ThemeBackgroundAssets.Get(Theme) ?? base.mainTexture;
     protected override void OnPopulateMesh(VertexHelper vh)
     {

@@ -24,6 +24,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     private Button buy,continueButton;
     private Action onContinue;
     private bool pending,restored,purchaseFailed;
+    private LocalizationManager localization;
     private float previousTime,nextRefresh;
     private static readonly Color Ink=new Color(.10f,.27f,.29f),Cream=new Color(.97f,.96f,.88f);
     public bool IsOpen => overlay!=null && overlay.gameObject.activeSelf;
@@ -75,6 +76,8 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
         continueButton=close.gameObject.AddComponent<Button>();continueButton.onClick.AddListener(Continue);
         continueLabel=Label(close,"Label",Vector2.zero,new Vector2(310,60),27);
         overlay.gameObject.SetActive(false);
+        localization=LocalizationManager.Instance;
+        if(localization!=null)localization.onLanguageChange+=Refresh;
     }
     public bool TryShow(GameManager manager,Action continuation)
     {
@@ -230,7 +233,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
         var button=root.gameObject.AddComponent<Button>();button.onClick.AddListener(click);Label(root,"Label",Vector2.zero,new Vector2(64,60),44).text=glyph;return button;
     }
     private static void Stretch(RectTransform rect){rect.anchorMin=Vector2.zero;rect.anchorMax=Vector2.one;rect.offsetMin=rect.offsetMax=Vector2.zero;}
-    private void OnDestroy(){if(IsOpen)Time.timeScale=previousTime;GameIsReady.SetWindowOpen(this,false);onContinue=null;}
+    private void OnDestroy(){if(localization!=null)localization.onLanguageChange-=Refresh;if(IsOpen)Time.timeScale=previousTime;GameIsReady.SetWindowOpen(this,false);onContinue=null;}
     private static void Face(RectTransform root,Color tint){var image=root.gameObject.AddComponent<Image>();image.sprite=HintUiSprites.RoundedPanel;image.type=Image.Type.Sliced;image.color=tint;}
     private static RectTransform Rect(string name,Transform parent,Vector2 size,Vector2 position){var go=new GameObject(name,typeof(RectTransform));go.transform.SetParent(parent,false);var rect=(RectTransform)go.transform;rect.sizeDelta=size;rect.anchoredPosition=position;return rect;}
     private static TextMeshProUGUI Label(Transform parent,string name,Vector2 position,Vector2 size,float font){var label=Rect(name,parent,size,position).gameObject.AddComponent<TextMeshProUGUI>();label.fontSize=font;label.enableWordWrapping=true;label.enableAutoSizing=true;label.fontSizeMin=font*.7f;label.fontSizeMax=font;label.alignment=TextAlignmentOptions.Center;label.color=Ink;label.raycastTarget=false;return label;}

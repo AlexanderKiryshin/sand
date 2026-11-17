@@ -26,6 +26,8 @@ public class CampaignGallery : MonoBehaviour
     private bool winterOnly;
     private readonly List<int> visibleLevels = new List<int>();
     private Button allTab, winterTab;
+    private TextMeshProUGUI title;
+    private LocalizationManager localization;
 
     public static CampaignGallery Show(LevelDatabase database, GameManager manager, bool completedLevelsOnly = false)
     {
@@ -55,6 +57,8 @@ public class CampaignGallery : MonoBehaviour
         gallery.winterOnly = manager.IsSeasonal(manager.CurrentLevelIndex);
         gallery.page = (manager.GetDisplayNumber(manager.CurrentLevelIndex) - 1) / PageSize;
         gallery.Build(canvas);
+        gallery.localization = LocalizationManager.Instance;
+        if (gallery.localization != null) gallery.localization.onLanguageChange += gallery.RefreshLanguage;
         return gallery;
     }
 
@@ -72,7 +76,7 @@ public class CampaignGallery : MonoBehaviour
         float width = Mathf.Min(880, ((RectTransform)canvas.transform).rect.width - 60);
         RectTransform panel = Rect("CollectionPanel", transform, new Vector2(width, 1400), Vector2.zero);
         panel.localScale = Vector3.one * Mathf.Clamp01((((RectTransform)canvas.transform).rect.height - 60) / 1400f);
-        TextMeshProUGUI title = Label(panel, "Title", completedLevelsOnly ? CampaignText.Get("level_select")
+        title = Label(panel, "Title", completedLevelsOnly ? CampaignText.Get("level_select")
             : manager.IsLevelCompleted(database.LevelCount - 1) ? CampaignText.Get("collection") : CampaignText.Get("gallery"), 40);
         title.rectTransform.anchoredPosition = new Vector2(0, 645);
         title.rectTransform.sizeDelta = new Vector2(width, 90);
@@ -163,6 +167,23 @@ public class CampaignGallery : MonoBehaviour
 
     public void RefreshProgress() => RenderPage();
 
+    private void RefreshLanguage()
+    {
+        title.text = CampaignText.Get(completedLevelsOnly ? "level_select"
+            : manager.IsLevelCompleted(database.LevelCount - 1) ? "collection" : "gallery");
+        RefreshCollectionText(allTab, false);
+        RefreshCollectionText(winterTab, true);
+    }
+
+    private void RefreshCollectionText(Button button, bool winter)
+    {
+        int count = 0;
+        for (int i = 0; i < database.LevelCount; i++)
+            if (manager.IsSeasonal(i) == winter) count++;
+        button.transform.Find("CollectionName").GetComponent<TextMeshProUGUI>().text = CampaignText.Get(winter ? "winter_collection" : "all_levels");
+        button.transform.Find("CollectionCount").GetComponent<TextMeshProUGUI>().text = string.Format(CampaignText.Get("collection_level_count"), count);
+    }
+
     private Button CollectionCard(Transform parent, bool winter, float width, float x)
     {
         RectTransform card = Rect(winter ? "WinterLevels" : "AllLevels", parent, new Vector2(width, 184), new Vector2(x, 500));
@@ -252,6 +273,7 @@ public class CampaignGallery : MonoBehaviour
 
     private void OnDisable()
     {
+        if (localization != null) localization.onLanguageChange -= RefreshLanguage;
         previews.Clear();
         collectionPreviews.Clear();
         if (pauseCaptured)

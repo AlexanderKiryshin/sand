@@ -277,6 +277,11 @@ public sealed class ThemeCustomizationMenu : MonoBehaviour
     private void Refresh()
     {
         if(card==null)return;
+        if(backgroundViewer.gameObject.activeSelf)
+        {
+            fullTitle.text=CampaignText.Get(ThemeCatalog.NameKey(fullBackground.PreviewTheme,ThemeCatalog.Part.Background));
+            fullCloseLabel.text=CampaignText.Get("close");
+        }
         enlargeLabel.text=CampaignText.Get("theme_enlarge");
         title.text=CampaignText.Get(embedded?(Category==ThemeCatalog.Part.Conveyor?"theme_conveyor_tab":Category==ThemeCatalog.Part.Casings?"theme_casings_tab":"theme_background_tab"):"themes");subtitle.text=CampaignText.Get(Category==ThemeCatalog.Part.Conveyor?"theme_conveyor_tab":Category==ThemeCatalog.Part.Casings?"theme_casings_tab":"theme_background_tab");closeLabel.text=CampaignText.Get("close");
         selectedName.text=CampaignText.Get(ThemeCatalog.NameKey(preview,Category));balance.text=string.Format(CampaignText.Get("theme_balance"),CoinManager.instance!=null?CoinManager.instance.Coins:0);

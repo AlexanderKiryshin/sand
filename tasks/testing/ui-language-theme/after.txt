@@ -1,0 +1,15 @@
+PASS: open background viewer title changes language
+PASS: open background viewer close changes language
+PASS: open gallery title changes language
+PASS: collection name changes language: AllLevels
+PASS: collection count changes language
+PASS: collection name changes language: WinterLevels
+PASS: collection count changes language
+PASS: active booster tutorial changes language
+PASS: insufficient-coins toast is localized
+PASS: visible toast changes language
+PASS: pending bundle purchase changes language immediately
+PASS: saved background is reported selected
+PASS: late-loaded selected background invalidates BOTH mesh and texture
+PASS: unchanged background does not rebuild every frame
+PASS: saved selection does not override an explicit shop preview

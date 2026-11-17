@@ -22,6 +22,7 @@ public class SandEconomyHud : MonoBehaviour
     private GameObject shopPanel;
     private GameObject buyPopup;
     private GameObject noMoneyToast;
+    private string toastLocalizationKey;
     private GameObject skipLevelButtonGo;
     private Button rewardedSkipButton;
     private RectTransform rewardedSkipIcon;
@@ -490,21 +491,30 @@ public class SandEconomyHud : MonoBehaviour
 
     private void ShowNoMoney()
     {
-        ShowToast("Not enough coins");
+        ShowToast("no_money");
     }
 
-    private void ShowToast(string message)
+    private void ShowToast(string localizationKey)
     {
         if (noMoneyToast == null)
         {
             return;
         }
 
-        noMoneyToast.GetComponentInChildren<TextMeshProUGUI>().text = message;
+        toastLocalizationKey = localizationKey;
+        RefreshToastText();
         noMoneyToast.SetActive(true);
         noMoneyToast.transform.SetAsLastSibling();
         StopCoroutine(nameof(HideNoMoneyLater));
         StartCoroutine(HideNoMoneyLater());
+    }
+
+    private void RefreshToastText()
+    {
+        if (noMoneyToast == null || string.IsNullOrEmpty(toastLocalizationKey)) return;
+        noMoneyToast.GetComponentInChildren<TextMeshProUGUI>(true).text = toastLocalizationKey == "no_money"
+            ? LocalizationManager.Instance != null ? LocalizationManager.Instance.GetText(toastLocalizationKey) : "Not enough coins"
+            : CampaignText.Get(toastLocalizationKey);
     }
 
     private IEnumerator HideNoMoneyLater()
@@ -1001,12 +1011,15 @@ public class SandEconomyHud : MonoBehaviour
 
     private void RefreshLocalized()
     {
+        if (tutorialType.HasValue && (tutorialWaitingActivation || tutorialWaitingTarget) && LocalizationManager.Instance != null)
+            FindObjectOfType<GameUI>()?.SetTutorialHint(LocalizationManager.Instance.GetText(BoosterCatalog.GetTutorialHintKey(tutorialType.Value)));
         if (BoosterService.instance != null && BoosterService.instance.ActiveTargetMode == BoosterType.Transparent)
             FindObjectOfType<GameUI>()?.SetFillTargetHintVisible(true);
         RefreshBoosters();
         RefreshShopText();
         RefreshCompletionText();
         RefreshBuyPopupText();
+        RefreshToastText();
     }
 
     private void RefreshShopText()
@@ -1354,7 +1367,7 @@ public class SandEconomyHud : MonoBehaviour
     private void ShowAdUnavailable()
     {
         if (noMoneyToast == null) return;
-        ShowToast(CampaignText.Get("ad_unavailable"));
+        ShowToast("ad_unavailable");
     }
 
 #if UNITY_EDITOR

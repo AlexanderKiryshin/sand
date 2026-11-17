@@ -1,0 +1,12 @@
+FAIL: open background viewer title changes language
+FAIL: open background viewer close changes language
+FAIL: open gallery title changes language
+FAIL: collection name changes language: AllLevels
+FAIL: collection count changes language
+PASS: collection name changes language: WinterLevels
+FAIL: collection count changes language
+FAIL: active booster tutorial changes language
+PASS: saved background is reported selected
+FAIL: late-loaded selected background invalidates BOTH mesh and texture
+PASS: unchanged background does not rebuild every frame
+PASS: saved selection does not override an explicit shop preview

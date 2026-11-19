@@ -253,9 +253,13 @@ public static class GameReworkVisualChecks
                     Capture("31-coin-nature-game",()=>{themeMenu.SetCategory(ThemeCatalog.Part.Background);themeMenu.Open();themeMenu.Choose(8);});break;
                 case 43:
                     GameProgressStore.SetBool("sand_theme_owned_8",false);GameProgressStore.SetBool("sand_theme_background_owned_8",false);GameProgressStore.SetBool("no_ads",false);
-                    var bridge=typeof(GameSdkReadiness).GetField("CheckBridgeReady",BindingFlags.NonPublic|BindingFlags.Static);var previousBridge=bridge.GetValue(null);
-                    try {bridge.SetValue(null,new Func<bool>(()=>false));themeMenu.ApplyPreview();}
-                    finally {bridge.SetValue(null,previousBridge);}
+                    var adManager = AdManager.instance;
+                    try
+                    {
+                        AdManager.instance = null;
+                        themeMenu.ApplyPreview();
+                    }
+                    finally { AdManager.instance = adManager; }
                     GameReworkChecks.Require(!ThemeCatalog.IsUnlocked(8,ThemeCatalog.Part.Background),"Unavailable rewarded ad granted background");
                     Capture("32-rewarded-nature-backgrounds",()=>{ThemeCatalog.Unlock(35,ThemeCatalog.Part.Background);themeMenu.ApplyPreview();themeMenu.Close();});break;
                 case 44:

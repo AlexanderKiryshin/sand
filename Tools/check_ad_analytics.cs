@@ -202,12 +202,12 @@ public static class AdAnalyticsChecks
         Require(events.Last() == "stop" && events.Count == 3, "Closing UI after a win must keep gameplay stopped");
         GameIsReady.SetLevelPlaying(true);
         Require(events.Last() == "start" && events.Count == 4, "Next loaded level resumes gameplay");
-        GameSdkReadiness.CheckBridgeReady = () => false;
+        MirraGames.SDK.MirraSDK.IsInitialized = false;
         GameIsReady.SetWindowOpen(shop, true);
-        Require(events.Count == 4, "Missing bridge defers UI analytics");
-        GameSdkReadiness.CheckBridgeReady = () => true;
+        Require(events.Count == 4, "Unavailable SDK defers UI analytics");
+        MirraGames.SDK.MirraSDK.IsInitialized = true;
         typeof(GameIsReady).GetMethod("LateUpdate", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).Invoke(new GameIsReady(), null);
-        Require(events.Last() == "stop" && events.Count == 5, "Deferred state is delivered when bridge returns");
+        Require(events.Last() == "stop" && events.Count == 5, "Deferred state is delivered when SDK is ready");
         typeof(GameIsReady).GetMethod("Reset", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic).Invoke(null, null);
         events.Clear();
         GameIsReady.SetLevelPlaying(true); GameIsReady.SetLevelPlaying(false);
@@ -218,7 +218,7 @@ public static class AdAnalyticsChecks
         ready.MoveNext();
         Require(events.SequenceEqual(new[] { "ready" }), "Late SDK startup must not restart a completed level");
         typeof(GameIsReady).GetMethod("Reset", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic).Invoke(null, null);
-        Console.WriteLine("GAMEPLAY_LIFECYCLE_CHECKS_PASS: SDK/level order, early and nested windows, duplicate events, win/next level, deferred bridge state");
+        Console.WriteLine("GAMEPLAY_LIFECYCLE_CHECKS_PASS: SDK/level order, early and nested windows, duplicate events, win/next level, deferred SDK state");
     }
 
     private static void CheckShopRestoration()
@@ -278,33 +278,6 @@ public static class AdAnalyticsChecks
     public static void Main()
     {
         CheckGameplayLifecycle();
-        var bootingManager = Reset();
-        MirraGames.SDK.MirraSDK.IsInitialized = true;
-        GameSdkReadiness.CheckBridgeReady = () => false;
-        MirraGames.SDK.MirraSDK.AdsAccesses = 0;
-        MirraGames.SDK.MirraSDK.Time.Writes = 0;
-        bootingManager.CanStartRewarded(true);
-        Require(MirraGames.SDK.MirraSDK.AdsAccesses == 0,
-            "C# SDK instance exists, but ads must not cross the JS bridge before providers are ready");
-        int unavailableAtBoot = 0, rewardedAtBoot = 0, closedAtBoot = 0;
-        bootingManager.StartRewarded("0", "magnet", () => rewardedAtBoot++, () => unavailableAtBoot++, true);
-        bootingManager.ShowInterstitial(() => closedAtBoot++);
-        Require(MirraGames.SDK.MirraSDK.AdsAccesses == 0 && MirraGames.SDK.MirraSDK.Time.Writes == 0
-            && rewardedAtBoot == 0 && unavailableAtBoot == 1 && closedAtBoot == 1,
-            "Missing JS bridge completes ad requests without reward or unsafe time calls");
-        MirraGames.SDK.MirraSDK.Analytics.Calls = 0;
-        var bridgeWindow = new OpenWindow(); bridgeWindow.Open(); bridgeWindow.Close();
-        Require(MirraGames.SDK.MirraSDK.Analytics.Calls == 0, "Missing JS analytics cannot be called by UI");
-        MirraGames.SDK.MirraSDK.Payments = new MirraGames.SDK.FakePayments();
-        var bootingShop = new RewardedShop();
-        var privateInstance = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic;
-        typeof(RewardedShop).GetMethod("LoadDataOrInit", privateInstance).Invoke(bootingShop, null);
-        typeof(RewardedShop).GetMethod("Purchase", privateInstance).Invoke(bootingShop, new object[] { "gold_800" });
-        typeof(RewardedShop).GetMethod("RestorePurchases", privateInstance).Invoke(bootingShop, null);
-        Require(MirraGames.SDK.MirraSDK.Payments.PurchasedChecks == 0
-            && MirraGames.SDK.MirraSDK.Payments.PurchaseRequests == 0 && MirraGames.SDK.MirraSDK.Payments.RestoreRequests == 0,
-            "C# ready flag must not release purchases or restore while JS bridge is missing");
-        GameSdkReadiness.CheckBridgeReady = () => true;
         var earlyManager = Reset();
         WebGameAnalytics.Events.Clear();
         MirraGames.SDK.MirraSDK.IsInitialized = false;
@@ -388,8 +361,11 @@ public static class AdAnalyticsChecks
             .Invoke(null, new object[] { earlyPrice, "gold_800", earlyButton });
         typeof(RewardedShop).GetMethod("Purchase", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic)
             .Invoke(shop, new object[] { "gold_800" });
+        typeof(RewardedShop).GetMethod("RestorePurchases", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic)
+            .Invoke(shop, null);
         Require(MirraGames.SDK.MirraSDK.Payments.PriceChecks == 0 && MirraGames.SDK.MirraSDK.Payments.PurchaseRequests == 0
-            && !earlyButton.interactable, "Early shop interaction must not cross payments bridge");
+            && MirraGames.SDK.MirraSDK.Payments.RestoreRequests == 0 && !earlyButton.interactable,
+            "Shop pricing, checkout, and restoration wait for SDK initialization");
         var init = (System.Collections.IEnumerator)typeof(RewardedShop).GetMethod("InitPaymentsRoutine",
             System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).Invoke(shop, null);
         Require(init.MoveNext() && !((UnityEngine.WaitUntil)init.Current).Predicate(), "Payments initialization waits for SDK");

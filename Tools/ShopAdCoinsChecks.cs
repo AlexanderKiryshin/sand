@@ -56,7 +56,7 @@ public sealed class ShopAdCoinsRunner : MonoBehaviour
             catch (Exception error) { ShopAdCoinsChecks.Finish(false, error.ToString()); yield break; }
             yield return step;
         }
-        ShopAdCoinsChecks.Finish(errors.Count == 0, "Rewarded shop +100 coins: complete/cancel/duplicate callbacks/repeated clicks/no-SDK/no-ads/pause checks passed; Small Bundle +5 each / 1000 coins; Remove Ads +10 each / 4000 coins and ad disable; individual repeatable x10 packs grant only their selected booster; purchased charges survive mechanic unlock; actual reward handlers and RU/EN shop cards verified.\n" + string.Join("\n", errors));
+        ShopAdCoinsChecks.Finish(errors.Count == 0, "Rewarded shop +100 coins: complete/cancel/duplicate callbacks/repeated clicks/unavailable ads/no-ads/pause checks passed; Small Bundle +5 each / 1000 coins; Remove Ads +10 each / 4000 coins and ad disable; individual repeatable x10 packs grant only their selected booster; purchased charges survive mechanic unlock; actual reward handlers and RU/EN shop cards verified.\n" + string.Join("\n", errors));
     }
     IEnumerator Check()
     {
@@ -157,18 +157,17 @@ public sealed class ShopAdCoinsRunner : MonoBehaviour
             yield return null;
             Require(adButton.interactable, "Offer cannot be used again.");
         }
-        var readiness = typeof(GameSdkReadiness).GetField("CheckBridgeReady", BindingFlags.Static | BindingFlags.NonPublic);
-        object savedReady = readiness.GetValue(null);
+        var adManager = AdManager.instance;
         try
         {
-            readiness.SetValue(null, (Func<bool>)(() => false));
+            AdManager.instance = null;
             yield return null;
             Require(!adButton.interactable, "Unavailable ad offer remained enabled.");
             int before = coins.Coins;
             adButton.onClick.Invoke();
             Require(coins.Coins == before && callbacks.Count == 0, "Unavailable ad still granted coins.");
         }
-        finally { readiness.SetValue(null, savedReady); }
+        finally { AdManager.instance = adManager; }
         shop.CloseShop();
         Require(Time.timeScale == resumeTime, "Closing the shop failed to restore the previous game speed.");
     }

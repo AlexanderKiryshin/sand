@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: GameDebugSettings
   m_EditorClassIdentifier: 
   showSkipLevelButton: 0
+  unlockAllBackgrounds: 0
+  unlockAllLevels: 0

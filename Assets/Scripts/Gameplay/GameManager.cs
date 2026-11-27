@@ -262,10 +262,14 @@ public class GameManager : MonoBehaviour
         StopCoroutine(nameof(PresentLevelComplete));
         FindObjectOfType<SandPourAnimator>()?.ClearPour();
         GameAudio.Instance?.ResetLevelAudio();
-        if (IsSeasonal(currentLevelIndex)) WinterProgress.SetCurrent(levelDatabase.GetLevel(currentLevelIndex).seasonalNumber - 1);
-        else ProgressSaveService.SetCurrentLevel(currentLevelIndex);
-        GameProgressStore.SetInt("sand_selected_campaign", IsSeasonal(currentLevelIndex) ? 1 : 0);
-        GameProgressStore.Save();
+        // Keep the saved resume point when jumping to a level through the Editor override.
+        if (!GameDebugSettings.UnlockAllLevels || IsLevelUnlockedByProgress(currentLevelIndex))
+        {
+            if (IsSeasonal(currentLevelIndex)) WinterProgress.SetCurrent(levelDatabase.GetLevel(currentLevelIndex).seasonalNumber - 1);
+            else ProgressSaveService.SetCurrentLevel(currentLevelIndex);
+            GameProgressStore.SetInt("sand_selected_campaign", IsSeasonal(currentLevelIndex) ? 1 : 0);
+            GameProgressStore.Save();
+        }
         gameState = GameState.Playing;
         sandRenderPending = false;
 
@@ -372,7 +376,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        if (!ProgressSaveService.IsLevelUnlocked(nextIndex))
+        if (!IsLevelUnlocked(nextIndex))
         {
             nextIndex = Mathf.Clamp(ProgressSaveService.HighestUnlockedIndex, 0, levelDatabase.LevelCount - 1);
         }
@@ -383,6 +387,17 @@ public class GameManager : MonoBehaviour
     public void OpenCollection() { CampaignGallery.Show(levelDatabase, this); }
 
     public bool IsLevelUnlocked(int levelIndex)
+    {
+#if UNITY_EDITOR
+        if (GameDebugSettings.UnlockAllLevels)
+        {
+            return levelDatabase != null && levelDatabase.GetLevel(levelIndex) != null;
+        }
+#endif
+        return IsLevelUnlockedByProgress(levelIndex);
+    }
+
+    private bool IsLevelUnlockedByProgress(int levelIndex)
     {
         return IsSeasonal(levelIndex) ? WinterProgress.IsUnlocked(levelDatabase.GetLevel(levelIndex).seasonalNumber - 1) : ProgressSaveService.IsLevelUnlocked(levelIndex);
     }

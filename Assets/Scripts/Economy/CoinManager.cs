@@ -11,6 +11,8 @@ public class CoinManager : MonoBehaviour
     private int oneCoinCost;
     private int pendingCoinAdds;
     private int targetCoinsAfterAnimation;
+    private bool dataLoaded;
+    private int pendingCoinRewards;
 
     public event Action<int> OnCoinsChanged;
     public static CoinManager instance;
@@ -30,11 +32,14 @@ public class CoinManager : MonoBehaviour
             return;
         }
 
-        LoadDataOrInit();
+        TryLoadData();
     }
 
-    private void Start()
+    private System.Collections.IEnumerator Start()
     {
+        yield return new WaitUntil(() => GameProgressStore.IsPreview || GameSdkReadiness.IsReady);
+        TryLoadData();
+
         if (CoinSpawner.Instance != null)
         {
             CoinSpawner.Instance.CoinReachedTarget += AddCoinsFromAnimation;
@@ -54,6 +59,11 @@ public class CoinManager : MonoBehaviour
 
     public void AddCoinsOnComplete()
     {
+        if (!TryLoadData())
+        {
+            pendingCoinRewards += coinsOnComplete;
+            return;
+        }
         SnapAnimationIfNeeded();
         coins += coinsOnComplete;
         Analytic.GoldChanged(ProgressSaveService.CurrentLevelIndex.ToString(), coins);
@@ -63,6 +73,11 @@ public class CoinManager : MonoBehaviour
 
     public void AddCoinsOnDoubleReward()
     {
+        if (!TryLoadData())
+        {
+            pendingCoinRewards += coinsOnComplete * 2;
+            return;
+        }
         SnapAnimationIfNeeded();
         coins += coinsOnComplete * 2;
         Analytic.GoldChanged(ProgressSaveService.CurrentLevelIndex.ToString(), coins);
@@ -72,6 +87,11 @@ public class CoinManager : MonoBehaviour
 
     public void AddCoinsOnBuy(int amount)
     {
+        if (!TryLoadData())
+        {
+            pendingCoinRewards += amount;
+            return;
+        }
         SnapAnimationIfNeeded();
         coins += amount;
         coinsInPreviousLevel = coins;
@@ -82,6 +102,7 @@ public class CoinManager : MonoBehaviour
 
     public bool TryToSpendCoins(int value)
     {
+        if (!TryLoadData()) return false;
         SnapAnimationIfNeeded();
         if (value <= coins)
         {
@@ -157,6 +178,24 @@ public class CoinManager : MonoBehaviour
         OnCoinsChanged?.Invoke(coins);
     }
 
+    private bool TryLoadData()
+    {
+        if (dataLoaded) return true;
+        // A local fallback read before SDK startup must never become the cloud balance.
+        if (!GameProgressStore.IsPreview && !GameSdkReadiness.IsReady) return false;
+
+        LoadDataOrInit();
+        dataLoaded = true;
+        if (pendingCoinRewards != 0)
+        {
+            coins += pendingCoinRewards;
+            coinsInPreviousLevel = coins;
+            pendingCoinRewards = 0;
+            SaveCoins();
+        }
+        return true;
+    }
+
     private void LoadDataOrInit()
     {
         if (GameProgressStore.HasKey("Coins"))
@@ -168,7 +207,7 @@ public class CoinManager : MonoBehaviour
         {
             coins = 0;
             coinsInPreviousLevel = 0;
-            SaveCoins();
+            // As in buses, do not save defaults over a missing/failed cloud read.
         }
     }
 

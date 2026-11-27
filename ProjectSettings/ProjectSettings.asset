@@ -701,7 +701,7 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: PROJECT:MirraYoutubePlayablesTemplate
+  webGLTemplate: PROJECT:YouTubePlayablesTemplate-2.0.0
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 2

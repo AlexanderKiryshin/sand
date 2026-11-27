@@ -21,10 +21,11 @@ public sealed class NatureBundleShopCard : MonoBehaviour
     {
         if(button==null)return;
         bool owned=bundle.IsOwned;
+        bool available=bundle.CanPurchase;
         title.text=CampaignText.Get(bundle.TitleKey);hint.text=CampaignText.Get(bundle.IsStyleBundle?"style_bundle_shop_hint":"nature_bundle_shop_hint");
         NatureBackgroundOffer.TryPrice(out string sdkPrice,bundle);
-        price.text=owned?CampaignText.Get("purchased"):sdkPrice;
-        savings.text=owned?"":NatureBackgroundOffer.GetSavingsText(bundle);
-        button.interactable=!owned;
+        price.text=owned?CampaignText.Get("purchased"):available?sdkPrice:CampaignText.Get("unavailable");
+        savings.text=available?NatureBackgroundOffer.GetSavingsText(bundle):"";
+        button.interactable=available;
     }
 }

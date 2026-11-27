@@ -34,7 +34,7 @@ public static class NatureBackgroundBundle
     }
     public static bool ShouldOffer(int levelNumber,bool seasonal)
         => !seasonal && levelNumber>=50 && (levelNumber-50)%20==0
-            && levelNumber>GameProgressStore.GetInt(LastShownKey,0) && CosmeticBundleCatalog.All.Any(bundle=>!bundle.IsOwned);
+            && levelNumber>GameProgressStore.GetInt(LastShownKey,0) && CosmeticBundleCatalog.All.Any(bundle=>bundle.CanPurchase);
     public static void MarkShown(int levelNumber)
     {
         GameProgressStore.SetInt(LastShownKey,Mathf.Max(levelNumber,GameProgressStore.GetInt(LastShownKey,0)));

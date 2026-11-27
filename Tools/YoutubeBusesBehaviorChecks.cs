@@ -1,6 +1,6 @@
 // Standalone C# regression harness, following BUSES/Tests/AudioRegression.
-// Compile with YOUTUBE_PLAYABLES and the real LocalizationManager, YoutubeAudio,
-// YoutubeGameplayFreeze, CommonAudio, PauseChangeEvent and UnityEngineAudio sources.
+// Compile with YOUTUBE_PLAYABLES and the real LocalizationManager, GameSdkReadiness,
+// YoutubeAudio, YoutubeGameplayFreeze, CommonAudio, PauseChangeEvent and UnityEngineAudio sources.
 // Only engine/SDK boundaries are stubbed; do not copy this file into Assets.
 using System;
 using System.Collections;
@@ -16,20 +16,33 @@ public static class YoutubeBusesBehaviorChecks
     static int failures;
     public static int Main()
     {
-        foreach (SystemLanguage language in Enum.GetValues(typeof(SystemLanguage)))
-            Run("BUSES language selection: " + language, () =>
+        foreach (LanguageType language in Enum.GetValues(typeof(LanguageType)))
+            Run("YouTube SDK language selection: " + language, () =>
             {
-                Application.systemLanguage = language;
+                Application.systemLanguage = language == LanguageType.German ? SystemLanguage.Russian : SystemLanguage.German;
+                YoutubePlatform.Ready = false;
+                MirraSDK.Language.Current = language;
+                MirraSDK.Language.Reads = 0;
                 var localization = new LocalizationManager();
                 typeof(LocalizationManager).GetMethod("InitializeLocalizations", BindingFlags.Instance | BindingFlags.NonPublic)
                     .Invoke(localization, null);
+                int changes = 0;
+                localization.onLanguageChange += () => changes++;
                 var routine = (IEnumerator)typeof(LocalizationManager)
                     .GetMethod("SetLanguageRoutine", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(localization, null);
-                Equal(false, routine.MoveNext()); // No SDK request or asynchronous language wait.
-                var expected = language == SystemLanguage.Russian ? LanguageType.Russian :
-                    language == SystemLanguage.Turkish ? LanguageType.Turkish :
-                    language == SystemLanguage.German ? LanguageType.German : LanguageType.English;
+                Equal(true, routine.MoveNext());
+                var wait = (WaitUntil)routine.Current;
+                Equal(false, wait.Predicate());
+                Equal(LanguageType.English, localization.GetCurrentLanguage());
+                Equal(0, MirraSDK.Language.Reads);
+                Equal(0, changes);
+                YoutubePlatform.Ready = true;
+                Equal(true, wait.Predicate());
+                Equal(false, routine.MoveNext());
+                var expected = language == LanguageType.French ? LanguageType.English : language;
                 Equal(expected, localization.GetCurrentLanguage());
+                Equal(1, MirraSDK.Language.Reads);
+                Equal(1, changes);
             });
         Run("YouTube callbacks update Mirra volume and the cached enabled state", () =>
         {
@@ -109,6 +122,12 @@ public static class YoutubeBusesBehaviorChecks
     }
 }
 
+public static class YoutubePlatform
+{
+    public static bool IsPlayer => true;
+    public static bool Ready;
+}
+
 namespace UnityEngine
 {
     public class Object
@@ -126,10 +145,15 @@ namespace UnityEngine
     public static class Application { public static SystemLanguage systemLanguage; }
     public static class AudioListener { public static float volume = 1f; public static bool pause; }
     public static class Time { public static float timeScale = 1f; }
+    public class WaitUntil
+    {
+        public readonly Func<bool> Predicate;
+        public WaitUntil(Func<bool> predicate) { Predicate = predicate; }
+    }
 }
 namespace MirraGames.SDK.Common
 {
-    public enum LanguageType { English, Russian, Turkish, German }
+    public enum LanguageType { English, Russian, Turkish, German, French }
     public class WrapperAttribute : Attribute { }
     public class ProviderAttribute : Attribute { public ProviderAttribute(Type type) { } }
     public interface IAudio { float Volume { get; set; } bool Pause { get; set; } }
@@ -151,7 +175,19 @@ namespace MirraGames.SDK
     public static class MirraSDK
     {
         public static IAudio Audio;
+        public static bool IsInitialized => true;
+        public static readonly LanguageBoundary Language = new LanguageBoundary();
         public static readonly TimeBoundary Time = new TimeBoundary();
+    }
+    public class LanguageBoundary
+    {
+        private LanguageType current;
+        public int Reads;
+        public LanguageType Current
+        {
+            get { Reads++; return current; }
+            set => current = value;
+        }
     }
     public class TimeBoundary
     {

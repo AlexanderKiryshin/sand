@@ -30,6 +30,9 @@ public static class ThemeCatalog
     public static bool IsUnlocked(int index, Part part)
     {
         if (!IsAvailable(index, part)) return false;
+#if UNITY_EDITOR
+        if (part == Part.Background && GameDebugSettings.UnlockAllBackgrounds) return true;
+#endif
         if (part == Part.Background ? index == DefaultBackground : index == 0) return true;
         // Old saves and restored shared-theme receipts retain everything they originally unlocked.
         return GameProgressStore.GetBool(OwnershipKey(index, part))

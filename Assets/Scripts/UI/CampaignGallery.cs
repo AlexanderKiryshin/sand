@@ -28,6 +28,9 @@ public class CampaignGallery : MonoBehaviour
     private Button allTab, winterTab;
     private TextMeshProUGUI title;
     private LocalizationManager localization;
+#if UNITY_EDITOR
+    private bool editorUnlockAllLevels;
+#endif
 
     public static CampaignGallery Show(LevelDatabase database, GameManager manager, bool completedLevelsOnly = false)
     {
@@ -99,6 +102,9 @@ public class CampaignGallery : MonoBehaviour
 
     private void RenderPage()
     {
+#if UNITY_EDITOR
+        editorUnlockAllLevels = GameDebugSettings.UnlockAllLevels;
+#endif
         for (int i = grid.childCount - 1; i >= 0; i--)
         {
             grid.GetChild(i).gameObject.SetActive(false);
@@ -262,6 +268,9 @@ public class CampaignGallery : MonoBehaviour
 
     private void Update()
     {
+#if UNITY_EDITOR
+        if (editorUnlockAllLevels != GameDebugSettings.UnlockAllLevels) RefreshProgress();
+#endif
         if (YoutubePlatform.IsPlayer && IsOpen && Input.GetKeyDown(KeyCode.Escape)) Close();
     }
 

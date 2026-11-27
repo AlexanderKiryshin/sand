@@ -94,7 +94,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     {
         if(!YoutubePlatform.PurchasesAllowed)return false;
         if(overlay==null || IsOpen || pending)return false;
-        selection=selection??CosmeticBundleCatalog.Nature;if(selection.IsOwned)return false;
+        selection=selection??CosmeticBundleCatalog.Nature;if(!selection.CanPurchase)return false;
         bundle=selection;Open(null);return true;
     }
     private void Open(Action continuation)
@@ -121,7 +121,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
     private void Purchase()
     {
         if(pending || !IsOpen)return;
-        if(bundle.IsOwned){Continue();return;}
+        if(!bundle.CanPurchase){Continue();return;}
         if(!TryPrice(out _,bundle))return;
         pending=true;purchaseFailed=false;Refresh();bool settled=false;
         try
@@ -164,7 +164,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
         bool available=TryPrice(out string price,bundle);
         savingsLabel.text=available?GetSavingsText(bundle):"";
         buyLabel.text=pending?CampaignText.Get("ad_wait"):available?string.Format(CampaignText.Get("nature_bundle_buy"),price):price;
-        buy.interactable=!pending&&available;continueButton.interactable=!pending;
+        buy.interactable=!pending&&available&&bundle.CanPurchase;continueButton.interactable=!pending;
     }
     public static string GetSavingsText(CosmeticBundle definition=null)
     {
@@ -190,7 +190,7 @@ public sealed class NatureBackgroundOffer : MonoBehaviour
             catch(Exception error) {Debug.LogWarning("Nature bundle restore unavailable: "+error.Message);}
         }
         if(!IsOpen)return;
-        if(!pending && bundle.IsOwned){Continue();return;}
+        if(!pending && !bundle.CanPurchase){Continue();return;}
         Layout();if(!bundle.IsStyleBundle)pager.ResizePages();
         if(!pending&&Time.unscaledTime>=nextRefresh){nextRefresh=Time.unscaledTime+.5f;Refresh();}
         if(Input.GetKeyDown(KeyCode.Escape))Continue();

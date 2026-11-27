@@ -26,6 +26,7 @@ $sources=$sources|ForEach-Object{$_ -replace '(?<!\.)\bRandom\.Range','UnityEngi
 Add-Type ("using System;`nusing System.Linq;`nusing System.Collections.Generic;`nusing UnityEngine;`nusing MirraGames.SDK;`nusing MirraGames.SDK.Common;`nusing Object = UnityEngine.Object;`n"+($sources -join "`n")+"`n"+$harness+"`n"+$purchaseChecks) -WarningAction SilentlyContinue
 [CosmeticChecks]::Run()
 [CosmeticPurchaseChecks]::Run()
+"PASS: all 12 bundles blocked by any owned background, including shared backgrounds and random offers; owned materials alone preserve availability."
 $catalog=Get-Content (Join-Path $root 'tasks/theme-iap-products.json') -Raw | ConvertFrom-Json
 $expectedTags=@(foreach($part in [Enum]::GetValues([ThemeCatalog+Part])) {
  for($id=0;$id -lt [ThemeCatalog]::CountFor($part);$id++) {

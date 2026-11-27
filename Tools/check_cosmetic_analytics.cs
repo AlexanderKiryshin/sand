@@ -26,6 +26,7 @@ public static class GameProgressStore {
  public static void Save(){}public static void Clear()=>values.Clear();
 }
 public static class CampaignText {public static string Get(string key)=>key;}
+public static class YoutubePlatform {public static bool PurchasesAllowed => true;}
 public class ThemeBackdropGraphic {public void SetVerticesDirty(){}public void SetMaterialDirty(){}}
 public class ConveyorSurfaceGraphic {public void SetVerticesDirty(){}}
 public class ConveyorHoodGraphic {public void SetVerticesDirty(){}}
@@ -95,9 +96,26 @@ public static class CosmeticChecks {
   for(int i=0;i<100;i++)Require(CosmeticBundleCatalog.PickUnowned()!=CosmeticBundleCatalog.Nature,"Owned nature bundle selected");
   foreach(var remaining in CosmeticBundleCatalog.All){
    Reset();foreach(var bundle in CosmeticBundleCatalog.All)if(bundle!=remaining)bundle.Grant();
-   for(int i=0;i<20;i++)Require(CosmeticBundleCatalog.PickUnowned()==(remaining.IsOwned?null:remaining),"Did not respect shared ownership when selecting sole unowned bundle");
+   for(int i=0;i<20;i++)Require(CosmeticBundleCatalog.PickUnowned()==(remaining.CanPurchase?remaining:null),"Did not respect shared ownership when selecting sole available bundle");
    remaining.Grant();Require(CosmeticBundleCatalog.PickUnowned()==null && !NatureBackgroundBundle.ShouldOffer(50,false),"All-owned state still offered bundle");
   }
+  foreach(var bundle in CosmeticBundleCatalog.All) {
+   Reset();Require(bundle.CanPurchase,"Fresh bundle is unavailable: "+bundle.Tag);
+   foreach(int background in bundle.Backgrounds) {
+    Reset();ThemeCatalog.Unlock(background,ThemeCatalog.Part.Background);
+    Require(!bundle.IsOwned && !bundle.CanPurchase,"One owned background must block an incomplete bundle: "+bundle.Tag);
+    foreach(var related in CosmeticBundleCatalog.All.Where(candidate=>candidate.Backgrounds.Contains(background)))
+     Require(!related.CanPurchase,"Shared owned background did not block bundle: "+related.Tag);
+    for(int i=0;i<30;i++) {
+     var offered=CosmeticBundleCatalog.PickUnowned();
+     Require(offered==null || offered.CanPurchase && !offered.Backgrounds.Contains(background),"Promotion selected a bundle with an owned background");
+    }
+   }
+   Reset();foreach(var item in bundle.Items.Where(item=>item.Part!=ThemeCatalog.Part.Background))ThemeCatalog.Unlock(item.Theme,item.Part);
+   Require(bundle.CanPurchase,"Owned materials blocked a bundle with unowned backgrounds: "+bundle.Tag);
+  }
+  Reset();foreach(var bundle in CosmeticBundleCatalog.All)ThemeCatalog.Unlock(bundle.Backgrounds[0],ThemeCatalog.Part.Background);
+  Require(CosmeticBundleCatalog.All.Any(bundle=>!bundle.IsOwned) && CosmeticBundleCatalog.PickUnowned()==null && !NatureBackgroundBundle.ShouldOffer(50,false),"Partially owned bundles still offered when all backgrounds overlap");
   foreach(var style in CosmeticBundleCatalog.All.Where(bundle=>bundle.IsStyleBundle)) {
    Reset();style.GrantPurchased();style.GrantPurchased();
    Require(Count("cosmetic_acquired")==3 && Count("cosmetic_selected")==0,"Style set must track exactly its three newly acquired parts");

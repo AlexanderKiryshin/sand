@@ -11,6 +11,12 @@ public class GameDebugSettings : ScriptableObject
     [Tooltip("Shows the free test skip button only in the Unity Editor; rewarded skip stays available in builds.")]
     public bool showSkipLevelButton;
 
+    [Tooltip("Makes every background selectable for free in the Unity Editor.")]
+    public bool unlockAllBackgrounds;
+
+    [Tooltip("Makes every main and winter level selectable in the Unity Editor.")]
+    public bool unlockAllLevels;
+
     public static GameDebugSettings Get()
     {
         if (cached != null)
@@ -29,6 +35,32 @@ public class GameDebugSettings : ScriptableObject
 #if UNITY_EDITOR
             GameDebugSettings settings = Get();
             return settings != null && settings.showSkipLevelButton;
+#else
+            return false;
+#endif
+        }
+    }
+
+    public static bool UnlockAllBackgrounds
+    {
+        get
+        {
+#if UNITY_EDITOR
+            GameDebugSettings settings = Get();
+            return settings != null && settings.unlockAllBackgrounds;
+#else
+            return false;
+#endif
+        }
+    }
+
+    public static bool UnlockAllLevels
+    {
+        get
+        {
+#if UNITY_EDITOR
+            GameDebugSettings settings = Get();
+            return settings != null && settings.unlockAllLevels;
 #else
             return false;
 #endif

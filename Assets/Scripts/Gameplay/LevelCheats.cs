@@ -3,7 +3,7 @@ public static class LevelCheats
 #if UNITY_EDITOR
     private const string UnlockAllKey = "sand_cheat_all_levels_unlocked";
 
-    public static bool AllLevelsUnlocked => GameProgressStore.GetBool(UnlockAllKey);
+    public static bool AllLevelsUnlocked => GameDebugSettings.UnlockAllLevels || GameProgressStore.GetBool(UnlockAllKey);
 
     public static void UnlockAllLevels()
     {

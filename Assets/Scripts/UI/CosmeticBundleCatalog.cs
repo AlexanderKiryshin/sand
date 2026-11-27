@@ -26,6 +26,7 @@ public sealed class CosmeticBundle
         Backgrounds = items.Where(item => item.Part == ThemeCatalog.Part.Background).Select(item => item.Theme).ToArray();
     }
     public bool IsOwned => Items.All(item => item.IsOwned);
+    public bool CanPurchase => !IsOwned && !Backgrounds.Any(id => ThemeCatalog.IsUnlocked(id, ThemeCatalog.Part.Background));
     public void GrantPurchased()
     {
         var newlyOwned = Items.Where(item => !item.IsOwned).ToArray();
@@ -49,7 +50,7 @@ public static class CosmeticBundleCatalog
             new CosmeticBundleItem(material, ThemeCatalog.Part.Casings) });
     public static CosmeticBundle PickUnowned()
     {
-        var available = All.Where(bundle => !bundle.IsOwned).ToArray();
+        var available = All.Where(bundle => bundle.CanPurchase).ToArray();
         return available.Length == 0 ? null : available[Random.Range(0, available.Length)];
     }
     public static readonly CosmeticBundle[] All = {

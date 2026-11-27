@@ -44,41 +44,9 @@ public class LocalizationManager : MonoBehaviour
 
     private IEnumerator SetLanguageRoutine()
     {
-#if YOUTUBE_PLAYABLES
-        // Same language selection as BUSES/youtube.
-        SetLanguage(MapSystemLanguage(Application.systemLanguage));
-#else
         yield return new WaitUntil(() => GameSdkReadiness.IsReady);
-        LanguageType language = MirraSDK.Language.Current;
-        switch (language)
-        {
-            case LanguageType.Russian:
-            case LanguageType.English:
-            case LanguageType.Turkish:
-            case LanguageType.German:
-                break;
-            default:
-                language = LanguageType.English;
-                break;
-        }
-
-        SetLanguage(language);
-#endif
-        yield break;
+        SetLanguage(MirraSDK.Language.Current);
     }
-
-#if YOUTUBE_PLAYABLES
-    private static LanguageType MapSystemLanguage(SystemLanguage language)
-    {
-        switch (language)
-        {
-            case SystemLanguage.Russian: return LanguageType.Russian;
-            case SystemLanguage.Turkish: return LanguageType.Turkish;
-            case SystemLanguage.German: return LanguageType.German;
-            default: return LanguageType.English;
-        }
-    }
-#endif
 
     private void InitializeLocalizations()
     {
